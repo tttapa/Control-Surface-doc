@@ -85,13 +85,15 @@ Connections</h2>
 <li>SS: 74HC595 ST_CP</li>
 <li>MOSI: 74HC595 DS</li>
 <li>SCK: 74HC595 SH_CP</li>
+<li>A0: Push button (to ground, internal pull-up resistor will be used)</li>
 </ul>
 <p>Connect an LED (and series resistor) between each of the first 12 outputs of the shift registers and ground.</p>
 <p>Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
 <h2><a class="anchor" id="autotoc_md104"></a>
 Behavior</h2>
-<p>The LEDs display the level of the first track in your DAW.</p>
+<p>The LEDs display the level of the first track in your DAW. <br  />
+ When the push button is pressed, the VU meter switches from bar mode to dot mode and back.</p>
 <h2><a class="anchor" id="autotoc_md105"></a>
 Mapping</h2>
 <p>Map the Arduino as a Mackie Control Universal in your DAW.</p>
@@ -111,6 +113,7 @@ Mapping</h2>
 <div class="line"><span class="comment"> *   - SS:   74HC595 ST_CP</span></div>
 <div class="line"><span class="comment"> *   - MOSI: 74HC595 DS</span></div>
 <div class="line"><span class="comment"> *   - SCK:  74HC595 SH_CP</span></div>
+<div class="line"><span class="comment"> *   - A0:   Push button (to ground, internal pull-up resistor will be used)</span></div>
 <div class="line"><span class="comment"> * </span></div>
 <div class="line"><span class="comment"> * Connect an LED (and series resistor) between each of the first 12 outputs of </span></div>
 <div class="line"><span class="comment"> * the shift registers and ground.</span></div>
@@ -121,7 +124,9 @@ Mapping</h2>
 <div class="line"><span class="comment"> * Behavior</span></div>
 <div class="line"><span class="comment"> * --------</span></div>
 <div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * The LEDs display the level of the first track in your DAW.</span></div>
+<div class="line"><span class="comment"> * The LEDs display the level of the first track in your DAW.  </span></div>
+<div class="line"><span class="comment"> * When the push button is pressed, the VU meter switches from bar mode to dot </span></div>
+<div class="line"><span class="comment"> * mode and back.</span></div>
 <div class="line"><span class="comment"> * </span></div>
 <div class="line"><span class="comment"> * Mapping</span></div>
 <div class="line"><span class="comment"> * -------</span></div>
@@ -161,6 +166,7 @@ Mapping</h2>
 <div class="line"><span class="comment">// If you use 24 LEDs, for example, the LEDs will turn on in groups of 2 at a</span></div>
 <div class="line"><span class="comment">// time.</span></div>
 <div class="line"> </div>
+<div class="line"><span class="comment">// Push button to switch between dot and bar mode.</span></div>
 <div class="line">Button dotBarModeButton = A0;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
