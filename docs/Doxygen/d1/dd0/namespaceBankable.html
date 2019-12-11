@@ -211,6 +211,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a2636a5cfd753cbb040d004f512d47792"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize&gt; </td></tr>
 <tr class="memitem:a2636a5cfd753cbb040d004f512d47792"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#a2636a5cfd753cbb040d004f512d47792">MIDINoteLED</a> = <a class="el" href="../../d4/d3c/classBankable_1_1NoteValueLED.html">NoteValueLED</a>&lt; BankSize &gt;</td></tr>
 <tr class="separator:a2636a5cfd753cbb040d004f512d47792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b0fd5017e9ca0cbbb13826d9f6ea85"><td class="memTemplParams" colspan="2">template&lt;uint8_t RangeLen, uint8_t NumBanks, class Callback  = NoteCCRangeEmptyCallback&gt; </td></tr>
+<tr class="memitem:a73b0fd5017e9ca0cbbb13826d9f6ea85"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#a73b0fd5017e9ca0cbbb13826d9f6ea85">GenericNoteRange</a> = <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html">GenericNoteCCRange</a>&lt; <a class="el" href="../../db/d4b/classMIDIInputElementNote.html">MIDIInputElementNote</a>, RangeLen, NumBanks, Callback &gt;</td></tr>
+<tr class="separator:a73b0fd5017e9ca0cbbb13826d9f6ea85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85adec659384d587422ca05118d5edd8"><td class="memTemplParams" colspan="2">template&lt;uint8_t RangeLen, uint8_t NumBanks, class Callback  = NoteCCRangeEmptyCallback&gt; </td></tr>
+<tr class="memitem:a85adec659384d587422ca05118d5edd8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#a85adec659384d587422ca05118d5edd8">GenericCCRange</a> = <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html">GenericNoteCCRange</a>&lt; <a class="el" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a>, RangeLen, NumBanks, Callback &gt;</td></tr>
+<tr class="separator:a85adec659384d587422ca05118d5edd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc5810410df6a5469a1947be5242b81"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumBanks, class Callback  = NoteCCRangeEmptyCallback&gt; </td></tr>
+<tr class="memitem:afcc5810410df6a5469a1947be5242b81"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#afcc5810410df6a5469a1947be5242b81">GenericNoteValue</a> = <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html">GenericNoteCCRange</a>&lt; <a class="el" href="../../db/d4b/classMIDIInputElementNote.html">MIDIInputElementNote</a>, 1, NumBanks, Callback &gt;</td></tr>
+<tr class="separator:afcc5810410df6a5469a1947be5242b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65ee86043ff5e6488d73224cf6ca9a3"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumBanks, class Callback  = NoteCCRangeEmptyCallback&gt; </td></tr>
+<tr class="memitem:ad65ee86043ff5e6488d73224cf6ca9a3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#ad65ee86043ff5e6488d73224cf6ca9a3">GenericCCValue</a> = <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html">GenericNoteCCRange</a>&lt; <a class="el" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a>, 1, NumBanks, Callback &gt;</td></tr>
+<tr class="separator:ad65ee86043ff5e6488d73224cf6ca9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b40d332a6a0ecd62ef66efe9a9fba48"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumBanks&gt; </td></tr>
 <tr class="memitem:a2b40d332a6a0ecd62ef66efe9a9fba48"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#a2b40d332a6a0ecd62ef66efe9a9fba48">MIDINote</a> = <a class="el" href="../../de/d3e/classBankable_1_1NoteValue.html">NoteValue</a>&lt; NumBanks &gt;</td></tr>
 <tr class="separator:a2b40d332a6a0ecd62ef66efe9a9fba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,6 +248,78 @@ template&lt;uint8_t BankSize&gt; </div>
 
 </div>
 </div>
+<a id="a73b0fd5017e9ca0cbbb13826d9f6ea85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b0fd5017e9ca0cbbb13826d9f6ea85">&#9670;&nbsp;</a></span>GenericNoteRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t RangeLen, uint8_t NumBanks, class Callback  = NoteCCRangeEmptyCallback&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d1/dd0/namespaceBankable.html#a73b0fd5017e9ca0cbbb13826d9f6ea85">Bankable::GenericNoteRange</a> = typedef <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html">GenericNoteCCRange</a>&lt;<a class="el" href="../../db/d4b/classMIDIInputElementNote.html">MIDIInputElementNote</a>, RangeLen, NumBanks, Callback&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00215">215</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a85adec659384d587422ca05118d5edd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85adec659384d587422ca05118d5edd8">&#9670;&nbsp;</a></span>GenericCCRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t RangeLen, uint8_t NumBanks, class Callback  = NoteCCRangeEmptyCallback&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d1/dd0/namespaceBankable.html#a85adec659384d587422ca05118d5edd8">Bankable::GenericCCRange</a> = typedef <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html">GenericNoteCCRange</a>&lt;<a class="el" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a>, RangeLen, NumBanks, Callback&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00220">220</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afcc5810410df6a5469a1947be5242b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc5810410df6a5469a1947be5242b81">&#9670;&nbsp;</a></span>GenericNoteValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t NumBanks, class Callback  = NoteCCRangeEmptyCallback&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d1/dd0/namespaceBankable.html#afcc5810410df6a5469a1947be5242b81">Bankable::GenericNoteValue</a> = typedef <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html">GenericNoteCCRange</a>&lt;<a class="el" href="../../db/d4b/classMIDIInputElementNote.html">MIDIInputElementNote</a>, 1, NumBanks, Callback&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00224">224</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad65ee86043ff5e6488d73224cf6ca9a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad65ee86043ff5e6488d73224cf6ca9a3">&#9670;&nbsp;</a></span>GenericCCValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t NumBanks, class Callback  = NoteCCRangeEmptyCallback&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d1/dd0/namespaceBankable.html#ad65ee86043ff5e6488d73224cf6ca9a3">Bankable::GenericCCValue</a> = typedef <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html">GenericNoteCCRange</a>&lt;<a class="el" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a>, 1, NumBanks, Callback&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00228">228</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a2b40d332a6a0ecd62ef66efe9a9fba48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b40d332a6a0ecd62ef66efe9a9fba48">&#9670;&nbsp;</a></span>MIDINote</h2>
 
@@ -250,7 +334,7 @@ template&lt;uint8_t NumBanks&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00217">217</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00244">244</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
 
 </div>
 </div>
