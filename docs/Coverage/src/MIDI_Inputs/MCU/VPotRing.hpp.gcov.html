@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">63</td>
-            <td class="headerCovTableEntry">75</td>
-            <td class="headerCovTableEntryMed">84.0 %</td>
+            <td class="headerCovTableEntry">65</td>
+            <td class="headerCovTableEntry">77</td>
+            <td class="headerCovTableEntryMed">84.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">48</td>
@@ -142,7 +142,7 @@
 <a name="72"><span class="lineNum">      72 </span><span class="lineCov">         12 :     static uint8_t getPosition(uint8_t value) {</span></a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">         12 :         uint8_t position = value &amp; 0x0F;</span></a>
 <a name="74"><span class="lineNum">      74 </span><span class="lineCov">         12 :         return position &lt; 0x0C ? position : 0x0B;</span></a>
-<a name="75"><span class="lineNum">      75 </span>            :     }</a>
+<a name="75"><span class="lineNum">      75 </span><span class="lineCov">         12 :     }</span></a>
 <a name="76"><span class="lineNum">      76 </span>            :     /// Extract the center LED state from the raw value.</a>
 <a name="77"><span class="lineNum">      77 </span><span class="lineCov">         10 :     static bool getCenterLed(uint8_t value) { return value &amp; 0x40; }</span></a>
 <a name="78"><span class="lineNum">      78 </span>            :     /// Extract the mode from the raw value.</a>
@@ -183,7 +183,7 @@
 <a name="113"><span class="lineNum">     113 </span><span class="lineCov">          6 :         uint8_t value = sanitizeValue(midimsg.data2);</span></a>
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">          6 :         values[index] = value;</span></a>
 <a name="115"><span class="lineNum">     115 </span><span class="lineCov">          6 :         return true;</span></a>
-<a name="116"><span class="lineNum">     116 </span>            :     }</a>
+<a name="116"><span class="lineNum">     116 </span><span class="lineCov">          6 :     }</span></a>
 <a name="117"><span class="lineNum">     117 </span>            : </a>
 <a name="118"><span class="lineNum">     118 </span><span class="lineCov">         34 :     uint8_t getValue() const override { return values[getSelection()]; }</span></a>
 <a name="119"><span class="lineNum">     119 </span>            : </a>

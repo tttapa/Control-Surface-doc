@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/Def/MIDICNChannelAddress.cpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/Def/MIDICNChannelAddress.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">35</td>
-            <td class="headerCovTableEntry">35</td>
+            <td class="headerCovTableEntry">36</td>
+            <td class="headerCovTableEntry">36</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">6</td>
@@ -119,14 +119,14 @@
 <a name="49"><span class="lineNum">      49 </span>            :     const MIDICNChannelAddress &amp;toMatch, const MIDICNChannelAddress &amp;base,</a>
 <a name="50"><span class="lineNum">      50 </span>            :     uint8_t length) {</a>
 <a name="51"><span class="lineNum">      51 </span><span class="lineCov">         80 :     bool valid = base.addresses.valid &amp;&amp; toMatch.addresses.valid;</span></a>
-<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         80 :     bool addressInRange =</span></a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">        160 :     bool addressInRange =</span></a>
 <a name="53"><span class="lineNum">      53 </span><span class="lineCov">         80 :         base.addresses.address &lt;= toMatch.addresses.address &amp;&amp;</span></a>
 <a name="54"><span class="lineNum">      54 </span><span class="lineCov">         80 :         base.addresses.address + length &gt; toMatch.addresses.address;</span></a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">         80 :     bool equalChannelAndCN =</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">        160 :     bool equalChannelAndCN =</span></a>
 <a name="56"><span class="lineNum">      56 </span><span class="lineCov">         80 :         base.addresses.channel == toMatch.addresses.channel &amp;&amp;</span></a>
 <a name="57"><span class="lineNum">      57 </span><span class="lineCov">         80 :         base.addresses.cableNumber == toMatch.addresses.cableNumber;</span></a>
 <a name="58"><span class="lineNum">      58 </span><span class="lineCov">         80 :     return valid &amp;&amp; addressInRange &amp;&amp; equalChannelAndCN;</span></a>
-<a name="59"><span class="lineNum">      59 </span>            : }</a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">         80 : }</span></a>
 <a name="60"><span class="lineNum">      60 </span>            : </a>
 <a name="61"><span class="lineNum">      61 </span>            : END_CS_NAMESPACE</a>
 </pre>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/MIDI_Outputs/Bankable/Abstract/MIDIRotaryEncoder.hpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/MIDI_Outputs/Bankable/Abstract/MIDIRotaryEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">19</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -104,7 +104,7 @@
 <a name="34"><span class="lineNum">      34 </span>            :                       const Sender &amp;sender)</a>
 <a name="35"><span class="lineNum">      35 </span><span class="lineCov">          2 :         : BankableMIDIOutput(config), encoder{pins.A, pins.B}, address(address),</span></a>
 <a name="36"><span class="lineNum">      36 </span><span class="lineCov">          1 :           speedMultiply(speedMultiply),</span></a>
-<a name="37"><span class="lineNum">      37 </span><span class="lineCov">          3 :           pulsesPerStep(pulsesPerStep), sender{sender} {}</span></a>
+<a name="37"><span class="lineNum">      37 </span><span class="lineCov">          3 :           pulsesPerStep(pulsesPerStep), sender(sender) {}</span></a>
 <a name="38"><span class="lineNum">      38 </span>            : </a>
 <a name="39"><span class="lineNum">      39 </span>            : // For tests only</a>
 <a name="40"><span class="lineNum">      40 </span>            : #ifndef ARDUINO</a>
@@ -114,7 +114,7 @@
 <a name="44"><span class="lineNum">      44 </span>            :                       const Sender &amp;sender)</a>
 <a name="45"><span class="lineNum">      45 </span><span class="lineCov">          2 :         : BankableMIDIOutput(config), encoder{encoder}, address(address),</span></a>
 <a name="46"><span class="lineNum">      46 </span><span class="lineCov">          1 :           speedMultiply(speedMultiply),</span></a>
-<a name="47"><span class="lineNum">      47 </span><span class="lineCov">          5 :           pulsesPerStep(pulsesPerStep), sender{sender} {}</span></a>
+<a name="47"><span class="lineNum">      47 </span><span class="lineCov">          5 :           pulsesPerStep(pulsesPerStep), sender(sender) {}</span></a>
 <a name="48"><span class="lineNum">      48 </span>            : #endif</a>
 <a name="49"><span class="lineNum">      49 </span>            : </a>
 <a name="50"><span class="lineNum">      50 </span>            :   public:</a>

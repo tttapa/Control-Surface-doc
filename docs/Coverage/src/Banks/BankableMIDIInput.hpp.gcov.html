@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/Banks/BankableMIDIInput.hpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/Banks/BankableMIDIInput.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">58</td>
-            <td class="headerCovTableEntry">69</td>
-            <td class="headerCovTableEntryMed">84.1 %</td>
+            <td class="headerCovTableEntry">61</td>
+            <td class="headerCovTableEntry">72</td>
+            <td class="headerCovTableEntryMed">84.7 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">20</td>
@@ -184,7 +184,7 @@
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">         19 :         uint8_t diff = toMatch - base;</span></a>
 <a name="115"><span class="lineNum">     115 </span><span class="lineCov">         36 :         return toMatch &gt;= base &amp;&amp; diff &lt; N * bank.getTracksPerBank() &amp;&amp;</span></a>
 <a name="116"><span class="lineNum">     116 </span><span class="lineCov">         17 :                diff % bank.getTracksPerBank() == 0;</span></a>
-<a name="117"><span class="lineNum">     117 </span>            :     }</a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineCov">         19 :     }</span></a>
 <a name="118"><span class="lineNum">     118 </span>            : </a>
 <a name="119"><span class="lineNum">     119 </span>            :     /**</a>
 <a name="120"><span class="lineNum">     120 </span>            :      * @brief   Check if the given address is part of the bank relative to the</a>
@@ -204,7 +204,7 @@
 <a name="134"><span class="lineNum">     134 </span><span class="lineCov">          9 :         uint8_t diff = toMatch - base;</span></a>
 <a name="135"><span class="lineNum">     135 </span><span class="lineCov">         15 :         return toMatch &gt;= base &amp;&amp; diff &lt; N * bank.getTracksPerBank() &amp;&amp;</span></a>
 <a name="136"><span class="lineNum">     136 </span><span class="lineCov">          6 :                diff % bank.getTracksPerBank() &lt; length;</span></a>
-<a name="137"><span class="lineNum">     137 </span>            :     }</a>
+<a name="137"><span class="lineNum">     137 </span><span class="lineCov">          9 :     }</span></a>
 <a name="138"><span class="lineNum">     138 </span>            : </a>
 <a name="139"><span class="lineNum">     139 </span>            :     /**</a>
 <a name="140"><span class="lineNum">     140 </span>            :      * @brief   If matchBankableAddressInRange returned true, get the index of</a>
@@ -215,8 +215,8 @@
 <a name="145"><span class="lineNum">     145 </span><span class="lineCov">          8 :         uint8_t diff = target.getAddress() - base.getAddress();</span></a>
 <a name="146"><span class="lineNum">     146 </span><span class="lineCov">          8 :         if (type == CHANGE_ADDRESS)</span></a>
 <a name="147"><span class="lineNum">     147 </span><span class="lineCov">          4 :             diff %= bank.getTracksPerBank();</span></a>
-<a name="148"><span class="lineNum">     148 </span><span class="lineCov">          8 :         return diff;</span></a>
-<a name="149"><span class="lineNum">     149 </span>            :     }</a>
+<a name="148"><span class="lineNum">     148 </span><span class="lineCov">         16 :         return diff;</span></a>
+<a name="149"><span class="lineNum">     149 </span><span class="lineCov">          8 :     }</span></a>
 <a name="150"><span class="lineNum">     150 </span>            : </a>
 <a name="151"><span class="lineNum">     151 </span>            :     /**</a>
 <a name="152"><span class="lineNum">     152 </span>            :      * @brief   Check whether a given address is within a range of given length</a>

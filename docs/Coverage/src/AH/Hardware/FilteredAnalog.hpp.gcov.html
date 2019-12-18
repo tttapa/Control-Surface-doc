@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/AH/Hardware/FilteredAnalog.hpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/AH/Hardware/FilteredAnalog.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">17</td>
-            <td class="headerCovTableEntry">19</td>
-            <td class="headerCovTableEntryMed">89.5 %</td>
+            <td class="headerCovTableEntry">18</td>
+            <td class="headerCovTableEntry">20</td>
+            <td class="headerCovTableEntryHi">90.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">18</td>
@@ -180,9 +180,9 @@
 <a name="110"><span class="lineNum">     110 </span><span class="lineCov">         18 :         input = filter.filter(input);     // apply a low-pass EMA filter</span></a>
 <a name="111"><span class="lineNum">     111 </span><span class="lineCov">         18 :         if (mapFn)                        // If a mapping function is specified,</span></a>
 <a name="112"><span class="lineNum">     112 </span><span class="lineCov">         12 :             input = mapFn(input);         // apply it</span></a>
-<a name="113"><span class="lineNum">     113 </span><span class="lineCov">         18 :         return hysteresis.update(input); // apply hysteresis, and return true if</span></a>
+<a name="113"><span class="lineNum">     113 </span><span class="lineCov">         36 :         return hysteresis.update(input); // apply hysteresis, and return true if</span></a>
 <a name="114"><span class="lineNum">     114 </span>            :         // the value changed since last time</a>
-<a name="115"><span class="lineNum">     115 </span>            :     }</a>
+<a name="115"><span class="lineNum">     115 </span><span class="lineCov">         18 :     }</span></a>
 <a name="116"><span class="lineNum">     116 </span>            : </a>
 <a name="117"><span class="lineNum">     117 </span>            :     /**</a>
 <a name="118"><span class="lineNum">     118 </span>            :      * @brief   Get the filtered value of the analog input with the mapping </a>

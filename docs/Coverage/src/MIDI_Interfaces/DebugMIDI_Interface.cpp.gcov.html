@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/MIDI_Interfaces/DebugMIDI_Interface.cpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/MIDI_Interfaces/DebugMIDI_Interface.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">49</td>
-            <td class="headerCovTableEntry">58</td>
-            <td class="headerCovTableEntryMed">84.5 %</td>
+            <td class="headerCovTableEntry">50</td>
+            <td class="headerCovTableEntry">59</td>
+            <td class="headerCovTableEntryMed">84.7 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -122,14 +122,14 @@
 <a name="52"><span class="lineNum">      52 </span><span class="lineCov">         29 :         }</span></a>
 <a name="53"><span class="lineNum">      53 </span><span class="lineCov">         40 :         if (firstChar &amp;&amp; secondChar) {</span></a>
 <a name="54"><span class="lineNum">      54 </span>            :             // if we received two hex characters</a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">         14 :             uint8_t midiByte =</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">         28 :             uint8_t midiByte =</span></a>
 <a name="56"><span class="lineNum">      56 </span><span class="lineCov">         14 :                 hexCharToNibble(firstChar) &lt;&lt; 4 | hexCharToNibble(secondChar);</span></a>
 <a name="57"><span class="lineNum">      57 </span><span class="lineCov">         14 :             firstChar = '\0';</span></a>
 <a name="58"><span class="lineNum">      58 </span><span class="lineCov">         14 :             secondChar = '\0';</span></a>
 <a name="59"><span class="lineNum">      59 </span><span class="lineCov">         14 :             MIDI_read_t parseResult = parser.parse(midiByte);</span></a>
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">         14 :             if (parseResult != NO_MESSAGE)</span></a>
 <a name="61"><span class="lineNum">      61 </span><span class="lineCov">          4 :                 return parseResult;</span></a>
-<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         36 :         } else if (!isxdigit(data) &amp;&amp; firstChar) {</span></a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         40 :         } else if (!isxdigit(data) &amp;&amp; firstChar) {</span></a>
 <a name="63"><span class="lineNum">      63 </span>            :             // if we received one hex character followed by whitespace/other</a>
 <a name="64"><span class="lineNum">      64 </span><span class="lineCov">          1 :             uint8_t midiByte = hexCharToNibble(firstChar);</span></a>
 <a name="65"><span class="lineNum">      65 </span><span class="lineCov">          1 :             firstChar = '\0';</span></a>
@@ -140,7 +140,7 @@
 <a name="70"><span class="lineNum">      70 </span>            :             // Ignore any characters other than whitespace and hexadecimal</a>
 <a name="71"><span class="lineNum">      71 </span>            :             // digits</a>
 <a name="72"><span class="lineNum">      72 </span>            :         }</a>
-<a name="73"><span class="lineNum">      73 </span>            :     }</a>
+<a name="73"><span class="lineNum">      73 </span><span class="lineCov">         40 :     }</span></a>
 <a name="74"><span class="lineNum">      74 </span><span class="lineNoCov">          0 :     return NO_MESSAGE;</span></a>
 <a name="75"><span class="lineNum">      75 </span><span class="lineCov">          4 : }</span></a>
 <a name="76"><span class="lineNum">      76 </span>            : </a>

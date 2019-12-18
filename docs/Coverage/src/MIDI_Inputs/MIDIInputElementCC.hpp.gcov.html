@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/MIDI_Inputs/MIDIInputElementCC.hpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/MIDI_Inputs/MIDIInputElementCC.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">20</td>
-            <td class="headerCovTableEntry">28</td>
-            <td class="headerCovTableEntryLo">71.4 %</td>
+            <td class="headerCovTableEntry">21</td>
+            <td class="headerCovTableEntry">29</td>
+            <td class="headerCovTableEntryLo">72.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">5</td>
@@ -142,11 +142,11 @@
 <a name="72"><span class="lineNum">      72 </span>            :     /// Update all MIDIInputElementCC elements with a new MIDI message.</a>
 <a name="73"><span class="lineNum">      73 </span>            :     /// @see     MIDIInputElementCC#updateWith</a>
 <a name="74"><span class="lineNum">      74 </span><span class="lineCov">          6 :     static void updateAllWith(const ChannelMessageMatcher &amp;midimsg) {</span></a>
-<a name="75"><span class="lineNum">      75 </span><span class="lineCov">          6 :         for (MIDIInputElementCC &amp;e : elements)</span></a>
+<a name="75"><span class="lineNum">      75 </span><span class="lineCov">         12 :         for (MIDIInputElementCC &amp;e : elements)</span></a>
 <a name="76"><span class="lineNum">      76 </span><span class="lineCov">          6 :             if (e.updateWith(midimsg)) {</span></a>
 <a name="77"><span class="lineNum">      77 </span><span class="lineCov">          6 :                 e.moveDown();</span></a>
 <a name="78"><span class="lineNum">      78 </span><span class="lineCov">          6 :                 return;</span></a>
-<a name="79"><span class="lineNum">      79 </span>            :             }</a>
+<a name="79"><span class="lineNum">      79 </span><span class="lineCov">          6 :             }</span></a>
 <a name="80"><span class="lineNum">      80 </span>            :         // No mutex required:</a>
 <a name="81"><span class="lineNum">      81 </span>            :         // e.moveDown may alter the list, but if it does, it always returns,</a>
 <a name="82"><span class="lineNum">      82 </span>            :         // and we stop iterating, so it doesn't matter.</a>

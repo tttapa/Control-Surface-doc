@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/Selectors/ManyButtonsSelector.hpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/Selectors/ManyButtonsSelector.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">23</td>
-            <td class="headerCovTableEntry">23</td>
+            <td class="headerCovTableEntry">24</td>
+            <td class="headerCovTableEntry">24</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
@@ -95,7 +95,7 @@
 <a name="25"><span class="lineNum">      25 </span>            : </a>
 <a name="26"><span class="lineNum">      26 </span><span class="lineCov">          1 :     void update() override {</span></a>
 <a name="27"><span class="lineNum">      27 </span><span class="lineCov">          1 :         Parent::update();</span></a>
-<a name="28"><span class="lineNum">      28 </span><span class="lineCov">          4 :         for (setting_t i = 0; i &lt; N; i++)</span></a>
+<a name="28"><span class="lineNum">      28 </span><span class="lineCov">          5 :         for (setting_t i = 0; i &lt; N; i++)</span></a>
 <a name="29"><span class="lineNum">      29 </span>            :             // TODO: invert?</a>
 <a name="30"><span class="lineNum">      30 </span><span class="lineCov">          4 :             if (AH::ExtIO::digitalRead(buttonPins[i]) == LOW) {</span></a>
 <a name="31"><span class="lineNum">      31 </span><span class="lineCov">          1 :                 if (AH::ExtIO::digitalRead(buttonPins[this-&gt;get()]) != LOW)</span></a>
@@ -130,7 +130,7 @@
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">          2 :     ManyButtonsSelector(Selectable&lt;N&gt; &amp;selectable, const PinList&lt;N&gt; &amp;buttonPins)</span></a>
 <a name="61"><span class="lineNum">      61 </span><span class="lineCov">          2 :         : GenericManyButtonsSelector&lt;N&gt;{</span></a>
 <a name="62"><span class="lineNum">      62 </span><span class="lineCov">          2 :               selectable,</span></a>
-<a name="63"><span class="lineNum">      63 </span>            :               {},</a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">          2 :               {},</span></a>
 <a name="64"><span class="lineNum">      64 </span><span class="lineCov">          2 :               buttonPins,</span></a>
 <a name="65"><span class="lineNum">      65 </span><span class="lineCov">          4 :           } {}</span></a>
 <a name="66"><span class="lineNum">      66 </span>            : };</a>

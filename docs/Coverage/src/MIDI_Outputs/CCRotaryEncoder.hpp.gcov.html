@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 8e665b5792373b628c75b99513e3fe3376021c55 - src/MIDI_Outputs/CCRotaryEncoder.hpp</title>
+  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/MIDI_Outputs/CCRotaryEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">8e665b5792373b628c75b99513e3fe3376021c55</td>
+            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">7</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-11-30 20:37:56</td>
+            <td class="headerValue">2019-12-18 18:27:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -120,7 +120,7 @@
 <a name="50"><span class="lineNum">      50 </span>            :      */</a>
 <a name="51"><span class="lineNum">      51 </span><span class="lineCov">          1 :     CCRotaryEncoder(const EncoderPinList &amp;pins,</span></a>
 <a name="52"><span class="lineNum">      52 </span>            :                     const MIDICNChannelAddress &amp;address,</a>
-<a name="53"><span class="lineNum">      53 </span>            :                     uint8_t speedMultiply = 1, uint8_t pulsesPerStep = 4,</a>
+<a name="53"><span class="lineNum">      53 </span>            :                     int8_t speedMultiply = 1, uint8_t pulsesPerStep = 4,</a>
 <a name="54"><span class="lineNum">      54 </span>            :                     const RelativeCCSender &amp;sender = {})</a>
 <a name="55"><span class="lineNum">      55 </span><span class="lineCov">          2 :         : MIDIRotaryEncoder(pins, address, speedMultiply, pulsesPerStep,</span></a>
 <a name="56"><span class="lineNum">      56 </span><span class="lineCov">          3 :                             sender) {}</span></a>
@@ -128,7 +128,7 @@
 <a name="58"><span class="lineNum">      58 </span>            : // For tests only (PJRC Encoder library's copy constructor doesn't work)</a>
 <a name="59"><span class="lineNum">      59 </span>            : #ifndef ARDUINO</a>
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">          7 :     CCRotaryEncoder(const Encoder &amp;encoder, const MIDICNChannelAddress &amp;address,</span></a>
-<a name="61"><span class="lineNum">      61 </span>            :                     uint8_t speedMultiply, uint8_t pulsesPerStep,</a>
+<a name="61"><span class="lineNum">      61 </span>            :                     int8_t speedMultiply, uint8_t pulsesPerStep,</a>
 <a name="62"><span class="lineNum">      62 </span>            :                     const RelativeCCSender &amp;sender = {})</a>
 <a name="63"><span class="lineNum">      63 </span><span class="lineCov">         14 :         : MIDIRotaryEncoder(encoder, address, speedMultiply, pulsesPerStep,</span></a>
 <a name="64"><span class="lineNum">      64 </span><span class="lineCov">         21 :                             sender) {}</span></a>
