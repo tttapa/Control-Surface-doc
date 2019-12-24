@@ -76,7 +76,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">FastLED.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -88,7 +89,8 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for FastLED.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d48/FastLED_8hpp__incl.svg" width="2034" height="1112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d48/FastLED_8hpp__incl.svg" width="2034" height="1112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -106,12 +108,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc6/structDefaultColorMapper.html">DefaultColorMapper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default mapping from a 7-bit MIDI value to an RGB color.  <a href="../../d8/dc6/structDefaultColorMapper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d65/classNoteCCFastLED.html">NoteCCFastLED&lt; ColorMapper &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for Note or CC range or value input that displays the value to a FastLED strip.  <a href="../../d0/d65/classNoteCCFastLED.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d80/classNoteCCFastLEDCallback.html">NoteCCFastLEDCallback&lt; ColorMapper &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for Note or CC range or value input that displays the value to a FastLED strip.  <a href="../../d8/d80/classNoteCCFastLEDCallback.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d73/classNoteRangeFastLED.html">NoteRangeFastLED&lt; RangeLen, ColorMapper &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
-  <a href="../../d8/d73/classNoteRangeFastLED.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI Input Element that listens for MIDI Note messages in a given range, and displays their values using a FastLED LED strip.  <a href="../../d8/d73/classNoteRangeFastLED.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0d/classNoteValueFastLED.html">NoteValueFastLED&lt; ColorMapper &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +134,32 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d1/dd0/namespaceBankable"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html">Bankable</a></td></tr>
 <tr class="memdesc:d1/dd0/namespaceBankable"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for MIDI elements that can be added to a <a class="el" href="../../db/dbd/classBank.html" title="A class that groups Bankable BankableMIDIOutputs and BankableMIDIInputs, and allows the user to chang...">Bank</a>, to change their address or channel. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ab738b6e901f219f0f3b35e24378333a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9b/FastLED_8hpp.html#ab738b6e901f219f0f3b35e24378333a3">index_permuter_f</a> = uint8_t(*)(uint8_t)</td></tr>
+<tr class="memdesc:ab738b6e901f219f0f3b35e24378333a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type to permute indices.  <a href="../../d7/d9b/FastLED_8hpp.html#ab738b6e901f219f0f3b35e24378333a3">More...</a><br /></td></tr>
+<tr class="separator:ab738b6e901f219f0f3b35e24378333a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ab738b6e901f219f0f3b35e24378333a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab738b6e901f219f0f3b35e24378333a3">&#9670;&nbsp;</a></span>index_permuter_f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d7/d9b/FastLED_8hpp.html#ab738b6e901f219f0f3b35e24378333a3">index_permuter_f</a> =  uint8_t (*)(uint8_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function pointer type to permute indices. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d9b/FastLED_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../d7/d9b/FastLED_8hpp_source.html">FastLED.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

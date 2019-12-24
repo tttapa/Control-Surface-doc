@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - c318c75f6f98126cc149863cd3979d3cd5a29592 - src/MIDI_Senders/PitchBendSender.hpp</title>
+  <title>LCOV - afec0f0a95f3239400c12b9722dca1106ff7c951 - src/MIDI_Senders/PitchBendSender.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">c318c75f6f98126cc149863cd3979d3cd5a29592</td>
+            <td class="headerValue">afec0f0a95f3239400c12b9722dca1106ff7c951</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">8</td>
-            <td class="headerCovTableEntry">8</td>
+            <td class="headerCovTableEntry">7</td>
+            <td class="headerCovTableEntry">7</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2019-12-18 18:27:41</td>
+            <td class="headerValue">2019-12-24 19:42:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -80,22 +80,21 @@
 <a name="10"><span class="lineNum">      10 </span>            :   public:</a>
 <a name="11"><span class="lineNum">      11 </span><span class="lineCov">          9 :     static void send(uint16_t value, MIDICNChannelAddress address) {</span></a>
 <a name="12"><span class="lineNum">      12 </span><span class="lineCov">          9 :         value =</span></a>
-<a name="13"><span class="lineNum">      13 </span><span class="lineCov">          9 :             AH::increaseBitDepth&lt;14, INPUT_PRECISION_BITS, uint16_t, uint16_t&gt;(</span></a>
-<a name="14"><span class="lineNum">      14 </span><span class="lineCov">          9 :                 value);</span></a>
-<a name="15"><span class="lineNum">      15 </span>            :         // ignore address byte, just use channel and cable numbers</a>
-<a name="16"><span class="lineNum">      16 </span><span class="lineCov">         18 :         MIDICNChannel channelCN = {address.getChannel(),</span></a>
-<a name="17"><span class="lineNum">      17 </span><span class="lineCov">          9 :                                    address.getCableNumber()};</span></a>
-<a name="18"><span class="lineNum">      18 </span><span class="lineCov">          9 :         Control_Surface.MIDI().sendPB(channelCN, value);</span></a>
-<a name="19"><span class="lineNum">      19 </span><span class="lineCov">          9 :     }</span></a>
-<a name="20"><span class="lineNum">      20 </span>            : </a>
-<a name="21"><span class="lineNum">      21 </span>            :     constexpr static uint8_t precision() {</a>
-<a name="22"><span class="lineNum">      22 </span>            :         static_assert(INPUT_PRECISION_BITS &lt;= 14,</a>
-<a name="23"><span class="lineNum">      23 </span>            :                       &quot;Maximum pitch bend resolution is 14 bits&quot;);</a>
-<a name="24"><span class="lineNum">      24 </span>            :         return INPUT_PRECISION_BITS;</a>
-<a name="25"><span class="lineNum">      25 </span>            :     }</a>
-<a name="26"><span class="lineNum">      26 </span>            : };</a>
-<a name="27"><span class="lineNum">      27 </span>            : </a>
-<a name="28"><span class="lineNum">      28 </span>            : END_CS_NAMESPACE</a>
+<a name="13"><span class="lineNum">      13 </span><span class="lineCov">          9 :             AH::increaseBitDepth&lt;14, precision(), uint16_t, uint16_t&gt;(value);</span></a>
+<a name="14"><span class="lineNum">      14 </span>            :         // ignore address byte, just use channel and cable numbers</a>
+<a name="15"><span class="lineNum">      15 </span><span class="lineCov">         18 :         MIDICNChannel channelCN = {address.getChannel(),</span></a>
+<a name="16"><span class="lineNum">      16 </span><span class="lineCov">          9 :                                    address.getCableNumber()};</span></a>
+<a name="17"><span class="lineNum">      17 </span><span class="lineCov">          9 :         Control_Surface.MIDI().sendPB(channelCN, value);</span></a>
+<a name="18"><span class="lineNum">      18 </span><span class="lineCov">          9 :     }</span></a>
+<a name="19"><span class="lineNum">      19 </span>            : </a>
+<a name="20"><span class="lineNum">      20 </span>            :     constexpr static uint8_t precision() {</a>
+<a name="21"><span class="lineNum">      21 </span>            :         static_assert(INPUT_PRECISION_BITS &lt;= 14,</a>
+<a name="22"><span class="lineNum">      22 </span>            :                       &quot;Maximum pitch bend resolution is 14 bits&quot;);</a>
+<a name="23"><span class="lineNum">      23 </span>            :         return INPUT_PRECISION_BITS;</a>
+<a name="24"><span class="lineNum">      24 </span>            :     }</a>
+<a name="25"><span class="lineNum">      25 </span>            : };</a>
+<a name="26"><span class="lineNum">      26 </span>            : </a>
+<a name="27"><span class="lineNum">      27 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>
@@ -104,7 +103,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.14-5-g4ff2ed6</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.14-6-g40580cd</a></td></tr>
   </table>
   <br>
 
