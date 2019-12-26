@@ -6,7 +6,7 @@ var searchData=
   ['hardware_2dtypes_2ehpp_973',['Hardware-Types.hpp',['../d4/d35/Hardware-Types_8hpp.html',1,'']]],
   ['hardware_2edox_974',['Hardware.dox',['../d4/d45/Hardware_8dox.html',1,'']]],
   ['hardwareserialdebugmidi_5finterface_975',['HardwareSerialDebugMIDI_Interface',['../d8/d29/classHardwareSerialDebugMIDI__Interface.html',1,'HardwareSerialDebugMIDI_Interface'],['../d8/d29/classHardwareSerialDebugMIDI__Interface.html#a3f3d8782c348635bda4f0ae0403af1a1',1,'HardwareSerialDebugMIDI_Interface::HardwareSerialDebugMIDI_Interface()']]],
-  ['hardwareserialmidi_5finterface_976',['HardwareSerialMIDI_Interface',['../d9/d78/classHardwareSerialMIDI__Interface.html',1,'HardwareSerialMIDI_Interface'],['../d9/d78/classHardwareSerialMIDI__Interface.html#a689765de0ae6ff2e288782ff640054a6',1,'HardwareSerialMIDI_Interface::HardwareSerialMIDI_Interface()']]],
+  ['hardwareserialmidi_5finterface_976',['HardwareSerialMIDI_Interface',['../d9/d78/classHardwareSerialMIDI__Interface.html',1,'HardwareSerialMIDI_Interface'],['../d9/d78/classHardwareSerialMIDI__Interface.html#adc38084923fdeb5677bbc4a616607854',1,'HardwareSerialMIDI_Interface::HardwareSerialMIDI_Interface()']]],
   ['harmonica_977',['Harmonica',['../da/da6/namespaceMIDI__PC.html#ae70b7f033757f7f0e9e690fe15d9791c',1,'MIDI_PC']]],
   ['harpsichord_978',['Harpsichord',['../da/da6/namespaceMIDI__PC.html#ac203f2e71f07ffae31487bf6f398250c',1,'MIDI_PC']]],
   ['has_5fanalog_5fread_5fresolution_979',['HAS_ANALOG_READ_RESOLUTION',['../d7/d7c/ADCConfig_8hpp.html#a4af2da2db9e536067c953baac53b70e6',1,'ADCConfig.hpp']]],

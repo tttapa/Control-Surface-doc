@@ -56,7 +56,7 @@ var searchData=
   ['serialdebugmidi_5finterface_3c_20decltype_28serial_29_3e_1692',['SerialDebugMIDI_Interface&lt; decltype(Serial)&gt;',['../db/dc4/classSerialDebugMIDI__Interface.html',1,'']]],
   ['serialdebugmidi_5finterface_3c_20hardwareserial_20_3e_1693',['SerialDebugMIDI_Interface&lt; HardwareSerial &gt;',['../db/dc4/classSerialDebugMIDI__Interface.html',1,'']]],
   ['serialdebugmidi_5finterface_3c_20softwareserial_20_3e_1694',['SerialDebugMIDI_Interface&lt; SoftwareSerial &gt;',['../db/dc4/classSerialDebugMIDI__Interface.html',1,'']]],
-  ['serialmidi_5finterface_1695',['SerialMIDI_Interface',['../d9/db8/classSerialMIDI__Interface.html',1,'SerialMIDI_Interface&lt; T &gt;'],['../d9/db8/classSerialMIDI__Interface.html#ac0844a69a83458c622bf1f7f61fcd924',1,'SerialMIDI_Interface::SerialMIDI_Interface()']]],
+  ['serialmidi_5finterface_1695',['SerialMIDI_Interface',['../d9/db8/classSerialMIDI__Interface.html',1,'SerialMIDI_Interface&lt; T &gt;'],['../d9/db8/classSerialMIDI__Interface.html#a2670a5bed3a7599c6e539b589b1d1b99',1,'SerialMIDI_Interface::SerialMIDI_Interface()']]],
   ['serialmidi_5finterface_2ecpp_1696',['SerialMIDI_Interface.cpp',['../d5/db6/SerialMIDI__Interface_8cpp.html',1,'']]],
   ['serialmidi_5finterface_2ehpp_1697',['SerialMIDI_Interface.hpp',['../d1/d23/SerialMIDI__Interface_8hpp.html',1,'']]],
   ['serialmidi_5finterface_3c_20decltype_28serial_29_3e_1698',['SerialMIDI_Interface&lt; decltype(Serial)&gt;',['../d9/db8/classSerialMIDI__Interface.html',1,'']]],

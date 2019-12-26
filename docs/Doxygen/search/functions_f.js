@@ -24,7 +24,7 @@ var searchData=
   ['sendraw_3335',['sendRaw',['../dd/de5/classAH_1_1MAX7219__Base.html#a5933da27ff6167d5ef1650387c7dbe1e',1,'AH::MAX7219_Base']]],
   ['separatetracks_3336',['separateTracks',['../d7/dae/classMCU_1_1LCDDisplay.html#aca3eaa5399c0b5e66230e6887381b5a6',1,'MCU::LCDDisplay']]],
   ['serialdebugmidi_5finterface_3337',['SerialDebugMIDI_Interface',['../db/dc4/classSerialDebugMIDI__Interface.html#a90d117799ed93ae1f7f82caf42ee76c3',1,'SerialDebugMIDI_Interface']]],
-  ['serialmidi_5finterface_3338',['SerialMIDI_Interface',['../d9/db8/classSerialMIDI__Interface.html#ac0844a69a83458c622bf1f7f61fcd924',1,'SerialMIDI_Interface']]],
+  ['serialmidi_5finterface_3338',['SerialMIDI_Interface',['../d9/db8/classSerialMIDI__Interface.html#a2670a5bed3a7599c6e539b589b1d1b99',1,'SerialMIDI_Interface']]],
   ['set_3339',['set',['../d6/da4/classAH_1_1BitArray.html#a4804002144da0a2e9410b37e1d049d6c',1,'AH::BitArray::set(uint8_t bitIndex)'],['../d6/da4/classAH_1_1BitArray.html#afde50e27afbdd036dcf21389769a7f24',1,'AH::BitArray::set(uint8_t bitIndex, bool state)'],['../df/d06/classAH_1_1LEDs.html#a5d974649a0160ee9f49a43cbfb04fc6d',1,'AH::LEDs::set()'],['../d0/d04/classGenericSelector.html#ab81094bb663e67c0b4f37c017fa26e25',1,'GenericSelector::set()']]],
   ['setasdefault_3340',['setAsDefault',['../d9/d73/classMIDI__Interface.html#ac179dad8f24eedfa6a9f4e8dbaef7b46',1,'MIDI_Interface']]],
   ['setbase_3341',['setbase',['../d8/d4b/group__AH__PrintStream.html#gaee7a50f938e43275899e6a531bd69ce4',1,'setbase(uint8_t base):&#160;PrintStream.cpp'],['../d8/d4b/group__AH__PrintStream.html#gaee7a50f938e43275899e6a531bd69ce4',1,'setbase(uint8_t base):&#160;PrintStream.cpp']]],
