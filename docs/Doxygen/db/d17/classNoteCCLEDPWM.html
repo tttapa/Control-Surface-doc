@@ -86,12 +86,14 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for NoteCCLEDPWM&lt; NumLEDs &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d15/classNoteCCLEDPWM__inherit__graph.svg" width="226" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d15/classNoteCCLEDPWM__inherit__graph.svg" width="226" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for NoteCCLEDPWM&lt; NumLEDs &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/ded/classNoteCCLEDPWM__coll__graph.svg" width="226" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/ded/classNoteCCLEDPWM__coll__graph.svg" width="226" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -99,10 +101,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd5c5b8f438a56f42749ae09ae8113db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d17/classNoteCCLEDPWM.html#abd5c5b8f438a56f42749ae09ae8113db">NoteCCLEDPWM</a> (const PinList&lt; NumLEDs &gt; &amp;<a class="el" href="../../db/d17/classNoteCCLEDPWM.html#a8358e294e140dd4dcfbfae5e18567d1d">ledPins</a>)</td></tr>
 <tr class="separator:abd5c5b8f438a56f42749ae09ae8113db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae218fd905c5fe1c8c96cde47d5b26e02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d17/classNoteCCLEDPWM.html#ae218fd905c5fe1c8c96cde47d5b26e02">begin</a> (const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;t) override</td></tr>
+<tr class="memdesc:ae218fd905c5fe1c8c96cde47d5b26e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize: called once.  <a href="../../db/d17/classNoteCCLEDPWM.html#ae218fd905c5fe1c8c96cde47d5b26e02">More...</a><br /></td></tr>
 <tr class="separator:ae218fd905c5fe1c8c96cde47d5b26e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18565fa8a7683ef8a170267ae690875"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d17/classNoteCCLEDPWM.html#ad18565fa8a7683ef8a170267ae690875">update</a> (const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;t, uint8_t index) override</td></tr>
+<tr class="memdesc:ad18565fa8a7683ef8a170267ae690875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the given index: called when a new message is received for this index.  <a href="../../db/d17/classNoteCCLEDPWM.html#ad18565fa8a7683ef8a170267ae690875">More...</a><br /></td></tr>
 <tr class="separator:ad18565fa8a7683ef8a170267ae690875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2310f38447349141b6cc8748cfff37f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d07/structSimpleNoteCCValueCallback.html#a2310f38447349141b6cc8748cfff37f2">updateAll</a> (const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;noteccval)</td></tr>
+<tr class="memdesc:a2310f38447349141b6cc8748cfff37f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all values: called when a bank change causes all values to (possibly) change, or when the entire range is reset to zero.  <a href="../../de/d07/structSimpleNoteCCValueCallback.html#a2310f38447349141b6cc8748cfff37f2">More...</a><br /></td></tr>
 <tr class="separator:a2310f38447349141b6cc8748cfff37f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -164,7 +169,7 @@ template&lt;uint8_t NumLEDs&gt; </div>
           <td class="memname">void <a class="el" href="../../db/d17/classNoteCCLEDPWM.html">NoteCCLEDPWM</a>&lt; NumLEDs &gt;::begin </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -174,6 +179,8 @@ template&lt;uint8_t NumLEDs&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initialize: called once. </p>
 
 <p>Reimplemented from <a class="el" href="../../de/d07/structSimpleNoteCCValueCallback.html#a05fdead6b4eff50a45f77148e96efd36">SimpleNoteCCValueCallback</a>.</p>
 
@@ -196,7 +203,7 @@ template&lt;uint8_t NumLEDs&gt; </div>
           <td class="memname">void <a class="el" href="../../db/d17/classNoteCCLEDPWM.html">NoteCCLEDPWM</a>&lt; NumLEDs &gt;::update </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
+          <td class="paramname"><em>noteccval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -217,7 +224,9 @@ template&lt;uint8_t NumLEDs&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="../../de/d07/structSimpleNoteCCValueCallback.html#a60e082710fcf48d52b25628d90dce3ac">SimpleNoteCCValueCallback</a>.</p>
+<p>Update the given index: called when a new message is received for this index. </p>
+
+<p>Implements <a class="el" href="../../de/d07/structSimpleNoteCCValueCallback.html#abaff46f7b847a3859ead60b07990f9ff">SimpleNoteCCValueCallback</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
 
@@ -247,7 +256,9 @@ template&lt;uint8_t NumLEDs&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
+<p>Update all values: called when a bank change causes all values to (possibly) change, or when the entire range is reset to zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
 
 </div>
 </div>

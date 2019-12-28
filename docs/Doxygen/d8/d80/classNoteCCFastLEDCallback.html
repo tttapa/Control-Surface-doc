@@ -88,12 +88,14 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for NoteCCFastLEDCallback&lt; ColorMapper &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d6d/classNoteCCFastLEDCallback__inherit__graph.svg" width="224" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d6d/classNoteCCFastLEDCallback__inherit__graph.svg" width="224" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for NoteCCFastLEDCallback&lt; ColorMapper &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d51/classNoteCCFastLEDCallback__coll__graph.svg" width="224" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d51/classNoteCCFastLEDCallback__coll__graph.svg" width="224" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -112,10 +114,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a475473b33e8181826d881d1d9f6d828a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the mapping from the MIDI index to the LED index.  <a href="../../d8/d80/classNoteCCFastLEDCallback.html#a475473b33e8181826d881d1d9f6d828a">More...</a><br /></td></tr>
 <tr class="separator:a475473b33e8181826d881d1d9f6d828a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0746294a4e86f6c0030128487842c6d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d80/classNoteCCFastLEDCallback.html#a0746294a4e86f6c0030128487842c6d8">begin</a> (const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;input) override</td></tr>
+<tr class="memdesc:a0746294a4e86f6c0030128487842c6d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize: called once.  <a href="../../d8/d80/classNoteCCFastLEDCallback.html#a0746294a4e86f6c0030128487842c6d8">More...</a><br /></td></tr>
 <tr class="separator:a0746294a4e86f6c0030128487842c6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6429c92dee01945c06175918feff7ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d80/classNoteCCFastLEDCallback.html#ab6429c92dee01945c06175918feff7ca">update</a> (const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;input, uint8_t index) override</td></tr>
+<tr class="memdesc:ab6429c92dee01945c06175918feff7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the given index: called when a new message is received for this index.  <a href="../../d8/d80/classNoteCCFastLEDCallback.html#ab6429c92dee01945c06175918feff7ca">More...</a><br /></td></tr>
 <tr class="separator:ab6429c92dee01945c06175918feff7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2310f38447349141b6cc8748cfff37f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d07/structSimpleNoteCCValueCallback.html#a2310f38447349141b6cc8748cfff37f2">updateAll</a> (const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;noteccval)</td></tr>
+<tr class="memdesc:a2310f38447349141b6cc8748cfff37f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all values: called when a bank change causes all values to (possibly) change, or when the entire range is reset to zero.  <a href="../../de/d07/structSimpleNoteCCValueCallback.html#a2310f38447349141b6cc8748cfff37f2">More...</a><br /></td></tr>
 <tr class="separator:a2310f38447349141b6cc8748cfff37f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -350,7 +355,7 @@ template&lt;class ColorMapper &gt; </div>
           <td class="memname">void <a class="el" href="../../d8/d80/classNoteCCFastLEDCallback.html">NoteCCFastLEDCallback</a>&lt; ColorMapper &gt;::begin </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -360,6 +365,8 @@ template&lt;class ColorMapper &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initialize: called once. </p>
 
 <p>Reimplemented from <a class="el" href="../../de/d07/structSimpleNoteCCValueCallback.html#a05fdead6b4eff50a45f77148e96efd36">SimpleNoteCCValueCallback</a>.</p>
 
@@ -382,7 +389,7 @@ template&lt;class ColorMapper &gt; </div>
           <td class="memname">void <a class="el" href="../../d8/d80/classNoteCCFastLEDCallback.html">NoteCCFastLEDCallback</a>&lt; ColorMapper &gt;::update </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/dab/classINoteCCValue.html">INoteCCValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
+          <td class="paramname"><em>noteccval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -403,7 +410,9 @@ template&lt;class ColorMapper &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="../../de/d07/structSimpleNoteCCValueCallback.html#a60e082710fcf48d52b25628d90dce3ac">SimpleNoteCCValueCallback</a>.</p>
+<p>Update the given index: called when a new message is received for this index. </p>
+
+<p>Implements <a class="el" href="../../de/d07/structSimpleNoteCCValueCallback.html#abaff46f7b847a3859ead60b07990f9ff">SimpleNoteCCValueCallback</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d9b/FastLED_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d7/d9b/FastLED_8hpp_source.html">FastLED.hpp</a>.</p>
 
@@ -463,7 +472,9 @@ template&lt;class ColorMapper &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
+<p>Update all values: called when a bank change causes all values to (possibly) change, or when the entire range is reset to zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d6/dbb/NoteCCRange_8hpp_source.html">NoteCCRange.hpp</a>.</p>
 
 </div>
 </div>
