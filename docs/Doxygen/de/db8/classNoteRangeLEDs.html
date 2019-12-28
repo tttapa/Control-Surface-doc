@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>MIDI Input Element that listens for MIDI Note messages in a given range, and displays their values by turning on/off LEDs depending on whether the MIDI note velocity is above or below a certain threshold.  
+ <a href="../../de/db8/classNoteRangeLEDs.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for NoteRangeLEDs&lt; RangeLen &gt;:</div>
@@ -100,6 +103,7 @@ Collaboration diagram for NoteRangeLEDs&lt; RangeLen &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3264fda0c72fb220722824766b86914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db8/classNoteRangeLEDs.html#ad3264fda0c72fb220722824766b86914">NoteRangeLEDs</a> (const PinList&lt; RangeLen &gt; &amp;ledPins, <a class="el" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> <a class="el" href="../../d9/db1/classMIDIInputElement.html#a38d9872489fd94dee25077c16073e8cf">address</a>)</td></tr>
+<tr class="memdesc:ad3264fda0c72fb220722824766b86914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../de/db8/classNoteRangeLEDs.html" title="MIDI Input Element that listens for MIDI Note messages in a given range, and displays their values by...">NoteRangeLEDs</a> object.  <a href="../../de/db8/classNoteRangeLEDs.html#ad3264fda0c72fb220722824766b86914">More...</a><br /></td></tr>
 <tr class="separator:ad3264fda0c72fb220722824766b86914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1028dbb3e097cc09d9e8d40196b4828b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/classNoteCCRange.html#a1028dbb3e097cc09d9e8d40196b4828b">getValue</a> (uint8_t index) const override</td></tr>
 <tr class="separator:a1028dbb3e097cc09d9e8d40196b4828b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,10 +202,17 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;uint8_t RangeLen&gt;<br />
 class NoteRangeLEDs&lt; RangeLen &gt;</h3>
 
+<p>MIDI Input Element that listens for MIDI Note messages in a given range, and displays their values by turning on/off LEDs depending on whether the MIDI note velocity is above or below a certain threshold. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RangeLen</td><td>The length of the range of MIDI note numbers to listen for. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d90/2_8Note-Range-LEDs_8ino-example.html#_a1">2.Note-Range-LEDs.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00082">82</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad3264fda0c72fb220722824766b86914"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3264fda0c72fb220722824766b86914">&#9670;&nbsp;</a></span>NoteRangeLEDs()</h2>
@@ -239,7 +250,17 @@ template&lt;uint8_t RangeLen&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00040">40</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
+<p>Construct a new <a class="el" href="../../de/db8/classNoteRangeLEDs.html" title="MIDI Input Element that listens for MIDI Note messages in a given range, and displays their values by...">NoteRangeLEDs</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ledPins</td><td>A list of pin numbers with the LEDs connected. </td></tr>
+    <tr><td class="paramname">address</td><td>The first address in the range. The entire range is defined by this address and the <code>RangeLen</code> template parameter. <br  />
+ For example, if <code>address = 10</code> and <code>RangeLen = 4</code>, the this object will listen to addresses 10, 11, 12, 13. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
 
 </div>
 </div>

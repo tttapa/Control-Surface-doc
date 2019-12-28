@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>MIDI Input Element that listens for MIDI Control Change messages in a given range, and displays their values by turning on/off LEDs depending on whether the controller value is above or below a certain threshold.  
+ <a href="../../d0/d8d/classCCRangeLEDs.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CCRangeLEDs&lt; RangeLen &gt;:</div>
@@ -100,6 +103,7 @@ Collaboration diagram for CCRangeLEDs&lt; RangeLen &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adf41da8e9511f41381c42f78ca5084ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8d/classCCRangeLEDs.html#adf41da8e9511f41381c42f78ca5084ba">CCRangeLEDs</a> (const PinList&lt; RangeLen &gt; &amp;ledPins, <a class="el" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> <a class="el" href="../../d9/db1/classMIDIInputElement.html#a38d9872489fd94dee25077c16073e8cf">address</a>)</td></tr>
+<tr class="memdesc:adf41da8e9511f41381c42f78ca5084ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d0/d8d/classCCRangeLEDs.html" title="MIDI Input Element that listens for MIDI Control Change messages in a given range,...">CCRangeLEDs</a> object.  <a href="../../d0/d8d/classCCRangeLEDs.html#adf41da8e9511f41381c42f78ca5084ba">More...</a><br /></td></tr>
 <tr class="separator:adf41da8e9511f41381c42f78ca5084ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1028dbb3e097cc09d9e8d40196b4828b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/classNoteCCRange.html#a1028dbb3e097cc09d9e8d40196b4828b">getValue</a> (uint8_t index) const override</td></tr>
 <tr class="separator:a1028dbb3e097cc09d9e8d40196b4828b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,8 +202,15 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;uint8_t RangeLen&gt;<br />
 class CCRangeLEDs&lt; RangeLen &gt;</h3>
 
+<p>MIDI Input Element that listens for MIDI Control Change messages in a given range, and displays their values by turning on/off LEDs depending on whether the controller value is above or below a certain threshold. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RangeLen</td><td>The length of the range of MIDI controllers to listen for. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00143">143</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adf41da8e9511f41381c42f78ca5084ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf41da8e9511f41381c42f78ca5084ba">&#9670;&nbsp;</a></span>CCRangeLEDs()</h2>
@@ -237,7 +248,17 @@ template&lt;uint8_t RangeLen&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
+<p>Construct a new <a class="el" href="../../d0/d8d/classCCRangeLEDs.html" title="MIDI Input Element that listens for MIDI Control Change messages in a given range,...">CCRangeLEDs</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ledPins</td><td>A list of pin numbers with the LEDs connected. </td></tr>
+    <tr><td class="paramname">address</td><td>The first address in the range. The entire range is defined by this address and the <code>RangeLen</code> template parameter. <br  />
+ For example, if <code>address = 10</code> and <code>RangeLen = 4</code>, the this object will listen to addresses 10, 11, 12, 13. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
 
 </div>
 </div>

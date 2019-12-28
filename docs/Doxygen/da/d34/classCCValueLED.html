@@ -85,6 +85,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>MIDI Input Element that listens for MIDI Control Change messages for the given controller, and displays its value by turning on/off an LED depending on whether the MIDI controller value is above or below a certain threshold.  
+ <a href="../../da/d34/classCCValueLED.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CCValueLED:</div>
@@ -100,6 +103,7 @@ Collaboration diagram for CCValueLED:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d4ed28508873e3f2d5a557dc3326a22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classCCValueLED.html#a4d4ed28508873e3f2d5a557dc3326a22">CCValueLED</a> (pin_t ledPin, <a class="el" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> <a class="el" href="../../d9/db1/classMIDIInputElement.html#a38d9872489fd94dee25077c16073e8cf">address</a>)</td></tr>
+<tr class="memdesc:a4d4ed28508873e3f2d5a557dc3326a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../da/d34/classCCValueLED.html" title="MIDI Input Element that listens for MIDI Control Change messages for the given controller,...">CCValueLED</a> object.  <a href="../../da/d34/classCCValueLED.html#a4d4ed28508873e3f2d5a557dc3326a22">More...</a><br /></td></tr>
 <tr class="separator:a4d4ed28508873e3f2d5a557dc3326a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1028dbb3e097cc09d9e8d40196b4828b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/classNoteCCRange.html#a1028dbb3e097cc09d9e8d40196b4828b">getValue</a> (uint8_t index) const override</td></tr>
 <tr class="separator:a1028dbb3e097cc09d9e8d40196b4828b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,8 +199,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:abb45298f2fb5603360f5e30a807f6c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00072">72</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
+<div class="textblock"><p>MIDI Input Element that listens for MIDI Control Change messages for the given controller, and displays its value by turning on/off an LED depending on whether the MIDI controller value is above or below a certain threshold. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00170">170</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4d4ed28508873e3f2d5a557dc3326a22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d4ed28508873e3f2d5a557dc3326a22">&#9670;&nbsp;</a></span>CCValueLED()</h2>
@@ -232,7 +237,16 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
+<p>Construct a new <a class="el" href="../../da/d34/classCCValueLED.html" title="MIDI Input Element that listens for MIDI Control Change messages for the given controller,...">CCValueLED</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ledPin</td><td>The pin number with the LED connected. </td></tr>
+    <tr><td class="paramname">address</td><td>The MIDI address to listen to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../d4/d33/NoteCCRangeLEDs_8hpp_source.html">NoteCCRangeLEDs.hpp</a>.</p>
 
 </div>
 </div>
