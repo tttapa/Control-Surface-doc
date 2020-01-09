@@ -88,15 +88,15 @@ Collaboration diagram for Math Utilities:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga3f1575fa40efb919ec8ff730eb6a87cf"><td class="memTemplParams" colspan="2">template&lt;size_t Bits_out, size_t Bits_in, class T_out , class T_in &gt; </td></tr>
-<tr class="memitem:ga3f1575fa40efb919ec8ff730eb6a87cf"><td class="memTemplItemLeft" align="right" valign="top">T_out&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">AH::increaseBitDepth</a> (T_in in)</td></tr>
+<tr class="memitem:ga3f1575fa40efb919ec8ff730eb6a87cf"><td class="memTemplItemLeft" align="right" valign="top">T_out&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">increaseBitDepth</a> (T_in in)</td></tr>
 <tr class="memdesc:ga3f1575fa40efb919ec8ff730eb6a87cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the bit depth of the given value from <code>Bits_in</code> bits wide to <code>Bits_out</code> bits wide, evenly distributing the error across the entire range, such that the error for each element is between -0.5 and +0.5.  <a href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">More...</a><br /></td></tr>
 <tr class="separator:ga3f1575fa40efb919ec8ff730eb6a87cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e07739c1fd7a29e6b2840237af7f1bc"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:ga5e07739c1fd7a29e6b2840237af7f1bc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga5e07739c1fd7a29e6b2840237af7f1bc">AH::min</a> (const T &amp;a, const U &amp;b) -&gt; decltype(b&lt; a ? b :a)</td></tr>
+<tr class="memitem:ga5e07739c1fd7a29e6b2840237af7f1bc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga5e07739c1fd7a29e6b2840237af7f1bc">min</a> (const T &amp;a, const U &amp;b) -&gt; decltype(b&lt; a ? b :a)</td></tr>
 <tr class="memdesc:ga5e07739c1fd7a29e6b2840237af7f1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the smaller of two numbers/objects.  <a href="../../dd/d5e/group__AH__Math.html#ga5e07739c1fd7a29e6b2840237af7f1bc">More...</a><br /></td></tr>
 <tr class="separator:ga5e07739c1fd7a29e6b2840237af7f1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c976cf1a12d963c960d12808675e8a9"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:ga9c976cf1a12d963c960d12808675e8a9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga9c976cf1a12d963c960d12808675e8a9">AH::max</a> (const T &amp;a, const U &amp;b) -&gt; decltype(a&lt; b ? b :a)</td></tr>
+<tr class="memitem:ga9c976cf1a12d963c960d12808675e8a9"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga9c976cf1a12d963c960d12808675e8a9">max</a> (const T &amp;a, const U &amp;b) -&gt; decltype(a&lt; b ? b :a)</td></tr>
 <tr class="memdesc:ga9c976cf1a12d963c960d12808675e8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the larger of two numbers/objects.  <a href="../../dd/d5e/group__AH__Math.html#ga9c976cf1a12d963c960d12808675e8a9">More...</a><br /></td></tr>
 <tr class="separator:ga9c976cf1a12d963c960d12808675e8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -108,8 +108,6 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;size_t Bits_out, size_t Bits_in, class T_out , class T_in &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">T_out AH::increaseBitDepth </td>
@@ -169,8 +167,6 @@ template&lt;size_t Bits_out, size_t Bits_in, class T_out , class T_in &gt; </div
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class U &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -201,6 +197,8 @@ template&lt;class T , class U &gt; </div>
 </div><div class="memdoc">
 
 <p>Return the smaller of two numbers/objects. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../db/df8/Blink-Frequency-Buttons_8ino-example.html#a5">Blink-Frequency-Buttons.ino</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d79/MinMaxFix_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d7/d79/MinMaxFix_8hpp_source.html">MinMaxFix.hpp</a>.</p>
 
@@ -211,8 +209,6 @@ template&lt;class T , class U &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class U &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -243,6 +239,8 @@ template&lt;class T , class U &gt; </div>
 </div><div class="memdoc">
 
 <p>Return the larger of two numbers/objects. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../db/df8/Blink-Frequency-Buttons_8ino-example.html#a4">Blink-Frequency-Buttons.ino</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d79/MinMaxFix_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../d7/d79/MinMaxFix_8hpp_source.html">MinMaxFix.hpp</a>.</p>
 

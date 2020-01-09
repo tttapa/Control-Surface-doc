@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['longpress_4373',['LongPress',['../d7/d83/classAH_1_1IncrementButton.html#ad35811cbf5b37cfddc24aa2e6bf5ef85a16c8fcbe753a550fa82a93c73cb950bb',1,'AH::IncrementButton::LongPress()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#a62b847db1fef32e00ae0b16ce5ed2102a5bc62b7b0d2afbe88f0259a6416cbbba',1,'AH::IncrementDecrementButtons::LongPress()']]],
-  ['lowercase_4374',['LOWERCASE',['../da/d69/PrintStream_8cpp.html#a6674af4819a4f85e8c40be5971746668af8ee0dcc4d45543df8763035c19ef2fc',1,'PrintStream.cpp']]]
+  ['longpress_4381',['LongPress',['../d7/d83/classAH_1_1IncrementButton.html#a06fc87d81c62e9abb8790b6e5713c55bade879c91413c9c7b60f9ca1fb92eb234',1,'AH::IncrementButton::LongPress()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#adf764cbdea00d65edcd07bb9953ad2b7ade879c91413c9c7b60f9ca1fb92eb234',1,'AH::IncrementDecrementButtons::LongPress()']]],
+  ['lowercase_4382',['LOWERCASE',['../da/d69/PrintStream_8cpp.html#a6674af4819a4f85e8c40be5971746668af8ee0dcc4d45543df8763035c19ef2fc',1,'PrintStream.cpp']]]
 ];

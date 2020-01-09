@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zerobasedchannel_2100',['zeroBasedChannel',['../d2/d48/classChannel.html#a24d2a68843c2f0bef5b0dff547a28e50',1,'Channel']]],
-  ['zoom_2101',['ZOOM',['../d7/dc7/namespaceMCU.html#ad61d455d82c79f123371aacebc2180a7',1,'MCU']]]
+  ['zerobasedchannel_2104',['zeroBasedChannel',['../d2/d48/classChannel.html#a366293a9562994e9a9d4cf21af7b5e16',1,'Channel']]],
+  ['zoom_2105',['ZOOM',['../d7/dc7/namespaceMCU.html#a0cc1ca4d997676529271801221890f2b',1,'MCU']]]
 ];

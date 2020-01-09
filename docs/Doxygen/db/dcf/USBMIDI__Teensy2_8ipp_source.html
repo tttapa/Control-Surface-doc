@@ -89,7 +89,7 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d2/d84/namespaceUSBMIDI.html">USBMIDI</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a1ace3f33eaa9b9998ac2b722098d36ae">MIDIUSBPacket_t</a> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a22052906e889afb0b1f411a1a18c5e5c">read</a>() {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="code" href="../../d2/d84/namespaceUSBMIDI.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a059a6594006afe3d6c7cc278eadd9008">read</a>() {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// https://github.com/PaulStoffregen/cores/blob/73ea157600a7082686d9cc48786a73caa7567da9/usb_midi/usb_api.cpp#L195</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    uint8_t c, intr_state;</div>
@@ -98,7 +98,7 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    cli();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (!usb_configuration) {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        SREG = intr_state;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a1ace3f33eaa9b9998ac2b722098d36ae">MIDIUSBPacket_t</a>{0};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>{0};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    UENUM = MIDI_RX_ENDPOINT;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;retry:</div>
@@ -109,9 +109,9 @@ $(function() {
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">goto</span> retry;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        SREG = intr_state;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a1ace3f33eaa9b9998ac2b722098d36ae">MIDIUSBPacket_t</a>{0};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>{0};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a1ace3f33eaa9b9998ac2b722098d36ae">MIDIUSBPacket_t</a> packet;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a> packet;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    packet.data[0] = UEDATX;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    packet.data[1] = UEDATX;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    packet.data[2] = UEDATX;</div>
@@ -123,7 +123,7 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> packet;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a0b307fdc34ef3c28bd98c1c509a4d719">write</a>(uint8_t cn, uint8_t cin, uint8_t d0, uint8_t d1, uint8_t d2) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a4be70dae61ecedf933a0a0a98881957f">write</a>(uint8_t cn, uint8_t cin, uint8_t d0, uint8_t d1, uint8_t d2) {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    uint8_t intr_state, timeout;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (!usb_configuration)</div>
@@ -154,7 +154,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    SREG = intr_state;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#a8f2b8b096ceaf4f4ec922991ad4cab12">flush</a>() {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d84/namespaceUSBMIDI.html#adac116554b543b7c4228c018a85882f5">flush</a>() {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// TODO: I think the UEINTX = 0x3A actually sends/flushes the data, but I&#39;m</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//       not sure, and I don&#39;t have the right hardware to test it.</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
@@ -169,11 +169,11 @@ $(function() {
 <div class="ttc" id="aUSBMIDI_8hpp_html"><div class="ttname"><a href="../../d1/d93/USBMIDI_8hpp.html">USBMIDI.hpp</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9432e3744c64fcf8e711ef91eff6a5cd"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div><div class="ttdeci">#define BEGIN_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00009">Settings/NamespaceSettings.hpp:9</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9305dd4bad1398506431b42a5a100f8d"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div><div class="ttdeci">#define END_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00010">Settings/NamespaceSettings.hpp:10</a></div></div>
-<div class="ttc" id="anamespaceUSBMIDI_html_a8f2b8b096ceaf4f4ec922991ad4cab12"><div class="ttname"><a href="../../d2/d84/namespaceUSBMIDI.html#a8f2b8b096ceaf4f4ec922991ad4cab12">USBMIDI::flush</a></div><div class="ttdeci">void flush()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dfa/USBMIDI__MIDIUSB_8ipp_source.html#l00024">USBMIDI_MIDIUSB.ipp:24</a></div></div>
 <div class="ttc" id="aTeensyUSBTypes_8hpp_html"><div class="ttname"><a href="../../d9/d98/TeensyUSBTypes_8hpp.html">TeensyUSBTypes.hpp</a></div></div>
-<div class="ttc" id="anamespaceUSBMIDI_html_a1ace3f33eaa9b9998ac2b722098d36ae"><div class="ttname"><a href="../../d2/d84/namespaceUSBMIDI.html#a1ace3f33eaa9b9998ac2b722098d36ae">USBMIDI::MIDIUSBPacket_t</a></div><div class="ttdeci">AH::Array&lt; uint8_t, 4 &gt; MIDIUSBPacket_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d93/USBMIDI_8hpp_source.html#l00008">USBMIDI.hpp:8</a></div></div>
-<div class="ttc" id="anamespaceUSBMIDI_html_a0b307fdc34ef3c28bd98c1c509a4d719"><div class="ttname"><a href="../../d2/d84/namespaceUSBMIDI.html#a0b307fdc34ef3c28bd98c1c509a4d719">USBMIDI::write</a></div><div class="ttdeci">void write(uint8_t cn, uint8_t cin, uint8_t d0, uint8_t d1, uint8_t d2)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dfa/USBMIDI__MIDIUSB_8ipp_source.html#l00014">USBMIDI_MIDIUSB.ipp:14</a></div></div>
-<div class="ttc" id="anamespaceUSBMIDI_html_a22052906e889afb0b1f411a1a18c5e5c"><div class="ttname"><a href="../../d2/d84/namespaceUSBMIDI.html#a22052906e889afb0b1f411a1a18c5e5c">USBMIDI::read</a></div><div class="ttdeci">MIDIUSBPacket_t read()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dfa/USBMIDI__MIDIUSB_8ipp_source.html#l00008">USBMIDI_MIDIUSB.ipp:8</a></div></div>
+<div class="ttc" id="anamespaceUSBMIDI_html_adac116554b543b7c4228c018a85882f5"><div class="ttname"><a href="../../d2/d84/namespaceUSBMIDI.html#adac116554b543b7c4228c018a85882f5">USBMIDI::flush</a></div><div class="ttdeci">void flush()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dfa/USBMIDI__MIDIUSB_8ipp_source.html#l00024">USBMIDI_MIDIUSB.ipp:24</a></div></div>
+<div class="ttc" id="anamespaceUSBMIDI_html_afa563722058cf859e56af41c9b9392d1"><div class="ttname"><a href="../../d2/d84/namespaceUSBMIDI.html#afa563722058cf859e56af41c9b9392d1">USBMIDI::MIDIUSBPacket_t</a></div><div class="ttdeci">AH::Array&lt; uint8_t, 4 &gt; MIDIUSBPacket_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d93/USBMIDI_8hpp_source.html#l00008">USBMIDI.hpp:8</a></div></div>
+<div class="ttc" id="anamespaceUSBMIDI_html_a059a6594006afe3d6c7cc278eadd9008"><div class="ttname"><a href="../../d2/d84/namespaceUSBMIDI.html#a059a6594006afe3d6c7cc278eadd9008">USBMIDI::read</a></div><div class="ttdeci">MIDIUSBPacket_t read()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dfa/USBMIDI__MIDIUSB_8ipp_source.html#l00008">USBMIDI_MIDIUSB.ipp:8</a></div></div>
+<div class="ttc" id="anamespaceUSBMIDI_html_a4be70dae61ecedf933a0a0a98881957f"><div class="ttname"><a href="../../d2/d84/namespaceUSBMIDI.html#a4be70dae61ecedf933a0a0a98881957f">USBMIDI::write</a></div><div class="ttdeci">void write(uint8_t cn, uint8_t cin, uint8_t d0, uint8_t d1, uint8_t d2)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dfa/USBMIDI__MIDIUSB_8ipp_source.html#l00014">USBMIDI_MIDIUSB.ipp:14</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

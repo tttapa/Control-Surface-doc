@@ -74,12 +74,12 @@ $(function() {
 <div class="title">4.VULEDs.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md117"></a>
+<h1><a class="anchor" id="autotoc_md121"></a>
 4.VULEDs</h1>
 <p>This example demonstrates the use of the VULEDs class that displays the VU or level meters from your DAW as an LED bar graph.</p>
 <p>Shift registers are used to drive the LEDs.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano 33, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md118"></a>
+<h2><a class="anchor" id="autotoc_md122"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -90,11 +90,11 @@ Connections</h2>
 <p>Connect an LED (and series resistor) between each of the first 12 outputs of the shift registers and ground.</p>
 <p>Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md119"></a>
+<h2><a class="anchor" id="autotoc_md123"></a>
 Behavior</h2>
 <p>The LEDs display the level of the first track in your DAW. <br  />
  When the push button is pressed, the VU meter switches from bar mode to dot mode and back.</p>
-<h2><a class="anchor" id="autotoc_md120"></a>
+<h2><a class="anchor" id="autotoc_md124"></a>
 Mapping</h2>
 <p>Map the Arduino as a Mackie Control Universal in your DAW.</p>
 <p>Written by PieterP, 2019-12-09 <br  />
@@ -149,7 +149,7 @@ Mapping</h2>
 <div class="line"><a name="_a1"></a><a class="code" href="../../df/d36/classMCU_1_1VULEDs.html">MCU::VULEDs&lt;12&gt;</a> vu = {</div>
 <div class="line">  sreg.pins().slice&lt;0, 11&gt;(), <span class="comment">// first 12 pins of the shift registers</span></div>
 <div class="line">  1,                          <span class="comment">// track number [1, 8]</span></div>
-<div class="line">  <a name="a2"></a><a class="code" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#acddb03c75a0930c4e17a4b070f6e24a6">MCU::VUDecay::Default</a>,      <span class="comment">// how long does it take for the meter to decay</span></div>
+<div class="line">  <a name="a2"></a><a class="code" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ab8e20bc4798982b19f31c569b8dbb7db">MCU::VUDecay::Default</a>,      <span class="comment">// how long does it take for the meter to decay</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// If you don&#39;t want to use shift registers, you can just specify a list of pin</span></div>
@@ -170,24 +170,24 @@ Mapping</h2>
 <div class="line">Button dotBarModeButton = A0;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a3"></a><a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a4"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#a1fda63983d83a8be20302e9fef48f63e">begin</a>();</div>
+<div class="line">  <a name="a3"></a><a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a4"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">  dotBarModeButton.begin();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a5"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#a69fd0ae13604c39d6dc0da12fc94a18f">loop</a>();</div>
+<div class="line">  <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a5"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">  <span class="keywordflow">if</span> (dotBarModeButton.update() == Button::Falling) <span class="comment">// when button is pressed</span></div>
-<div class="line">    vu.<a name="a6"></a><a class="code" href="../../df/d36/classMCU_1_1VULEDs.html#a5acfa6d3ce14b770b528c4d7ba0b2d5e">toggleMode</a>(); <span class="comment">// toggle between dot and bar mode</span></div>
+<div class="line">    vu.<a name="a6"></a><a class="code" href="../../df/d36/classMCU_1_1VULEDs.html#a2ffa1ba1cd260f6e8ffd484452c3bab7">toggleMode</a>(); <span class="comment">// toggle between dot and bar mode</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00035">USBMIDI_Interface.hpp:35</a></div></div>
-<div class="ttc" id="anamespaceMCU_1_1VUDecay_html_acddb03c75a0930c4e17a4b070f6e24a6"><div class="ttname"><a href="../../d6/d98/namespaceMCU_1_1VUDecay.html#acddb03c75a0930c4e17a4b070f6e24a6">MCU::VUDecay::Default</a></div><div class="ttdeci">constexpr unsigned int Default</div><div class="ttdoc">Decay one segment/block every 150 ms if no new values are received.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dda/VU_8hpp_source.html#l00043">VU.hpp:43</a></div></div>
+<div class="ttc" id="anamespaceMCU_1_1VUDecay_html_ab8e20bc4798982b19f31c569b8dbb7db"><div class="ttname"><a href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ab8e20bc4798982b19f31c569b8dbb7db">MCU::VUDecay::Default</a></div><div class="ttdeci">constexpr unsigned int Default</div><div class="ttdoc">Decay one segment/block every 150 ms if no new values are received.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dda/VU_8hpp_source.html#l00043">VU.hpp:43</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aclassMCU_1_1VULEDs_html"><div class="ttname"><a href="../../df/d36/classMCU_1_1VULEDs.html">MCU::VULEDs</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3d/VULEDs_8hpp_source.html#l00046">VULEDs.hpp:46</a></div></div>
+<div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00048">Control_Surface_Class.cpp:48</a></div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00174">Control_Surface_Class.cpp:174</a></div></div>
-<div class="ttc" id="aclassControl__Surface___html_a1fda63983d83a8be20302e9fef48f63e"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#a1fda63983d83a8be20302e9fef48f63e">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00025">Control_Surface_Class.cpp:25</a></div></div>
-<div class="ttc" id="aclassMCU_1_1VULEDs_html_a5acfa6d3ce14b770b528c4d7ba0b2d5e"><div class="ttname"><a href="../../df/d36/classMCU_1_1VULEDs.html#a5acfa6d3ce14b770b528c4d7ba0b2d5e">MCU::VULEDs::toggleMode</a></div><div class="ttdeci">void toggleMode()</div><div class="ttdoc">Toggle the dot/bar mode.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3d/VULEDs_8hpp_source.html#l00075">VULEDs.hpp:75</a></div></div>
-<div class="ttc" id="aclassControl__Surface___html_a69fd0ae13604c39d6dc0da12fc94a18f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#a69fd0ae13604c39d6dc0da12fc94a18f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00048">Control_Surface_Class.cpp:48</a></div></div>
+<div class="ttc" id="aclassMCU_1_1VULEDs_html_a2ffa1ba1cd260f6e8ffd484452c3bab7"><div class="ttname"><a href="../../df/d36/classMCU_1_1VULEDs.html#a2ffa1ba1cd260f6e8ffd484452c3bab7">MCU::VULEDs::toggleMode</a></div><div class="ttdeci">void toggleMode()</div><div class="ttdoc">Toggle the dot/bar mode.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3d/VULEDs_8hpp_source.html#l00075">VULEDs.hpp:75</a></div></div>
+<div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00025">Control_Surface_Class.cpp:25</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
