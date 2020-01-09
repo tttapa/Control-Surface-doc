@@ -130,10 +130,7 @@ var searchData=
   ['midiincrementdecrementbuttons_2ehpp_127',['MIDIIncrementDecrementButtons.hpp',['../db/d20/Abstract_2MIDIIncrementDecrementButtons_8hpp.html',1,'']]],
   ['midirotaryencoder_2ecpp_128',['MIDIRotaryEncoder.cpp',['../d0/d56/Abstract_2MIDIRotaryEncoder_8cpp.html',1,'']]],
   ['midirotaryencoder_2ehpp_129',['MIDIRotaryEncoder.hpp',['../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html',1,'']]],
-  ['namespacesettings_2ecpp_130',['NamespaceSettings.cpp',['../da/dda/AH_2Settings_2NamespaceSettings_8cpp.html',1,'']]],
-  ['namespacesettings_2ehpp_131',['NamespaceSettings.hpp',['../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html',1,'']]],
-  ['settings_2ecpp_132',['Settings.cpp',['../d2/da0/AH_2Settings_2Settings_8cpp.html',1,'']]],
-  ['settings_2ehpp_133',['Settings.hpp',['../d5/d4f/AH_2Settings_2Settings_8hpp.html',1,'']]],
-  ['settingswrapper_2ecpp_134',['SettingsWrapper.cpp',['../d8/dbb/AH_2Settings_2SettingsWrapper_8cpp.html',1,'']]],
-  ['settingswrapper_2ehpp_135',['SettingsWrapper.hpp',['../de/dd1/AH_2Settings_2SettingsWrapper_8hpp.html',1,'']]]
+  ['namespacesettings_2ehpp_130',['NamespaceSettings.hpp',['../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html',1,'']]],
+  ['settings_2ehpp_131',['Settings.hpp',['../d5/d4f/AH_2Settings_2Settings_8hpp.html',1,'']]],
+  ['settingswrapper_2ehpp_132',['SettingsWrapper.hpp',['../de/dd1/AH_2Settings_2SettingsWrapper_8hpp.html',1,'']]]
 ];
