@@ -85,22 +85,10 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d1/d41/MIDIOutputElement_8hpp.html">MIDI_Outputs/Abstract/MIDIOutputElement.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * @brief   An abstract class for momentary push buttons that send MIDI events.</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * The buttons are debounced.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @see     Button</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Sender, u<span class="keywordtype">int</span>8_t NUMBER_OF_BUTTONS&gt;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d2/d87/classMIDIButtons.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/d87/classMIDIButtons.html">MIDIButtons</a> : <span class="keyword">public</span> <a class="code" href="../../d1/d55/classAH_1_1Updatable.html">MIDIOutputElement</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">protected</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">     * @brief   Construct a new MIDIButtons.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">     * @todo    Documentation</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d2/d87/classMIDIButtons.html#adfc78d78cac4b5d1b2780f6ef1cc2062">   24</a></span>&#160;    <a class="code" href="../../d2/d87/classMIDIButtons.html#adfc78d78cac4b5d1b2780f6ef1cc2062">MIDIButtons</a>(<span class="keyword">const</span> <a class="code" href="../../d0/d32/structAH_1_1Array.html">Array&lt;AH::Button, NUMBER_OF_BUTTONS&gt;</a> &amp;<a class="code" href="../../d2/d87/classMIDIButtons.html#a5d532533422250ac1f787d754f4c868a">buttons</a>,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> &amp;<a class="code" href="../../d2/d87/classMIDIButtons.html#a2fadfb19bd939dbba27daa004f3dcb70">baseAddress</a>,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../da/dc7/classRelativeMIDICNChannelAddress.html">RelativeMIDICNChannelAddress</a> &amp;<a class="code" href="../../d2/d87/classMIDIButtons.html#a6a06d9e2bcdf84a36e4e7580e6b19523">incrementAddress</a>,</div>

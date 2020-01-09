@@ -92,66 +92,40 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @brief   Class for objects that listen for incoming MIDI Controller Change</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *          events.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * All instances are added to a linked list that can be traversed to update</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * all of them when a new MIDI CC event is received.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a> : <span class="keyword">public</span> <a class="code" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>,</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                           <span class="keyword">public</span> <a class="code" href="../../d4/d23/classDoublyLinkable.html">DoublyLinkable</a>&lt;MIDIInputElementCC&gt; {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * @brief   Create a new MIDIInputElementCC that listens on the given</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     *          address.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     * Add the element to the linked list.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * @param   address</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *          The MIDI address to listen to. (Controller number [0, 119],</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     *          Channel [1, 16], Cable Number [0, 15].)</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a5093587869562cd26e1256d87b68179d">   36</a></span>&#160;    <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a5093587869562cd26e1256d87b68179d">MIDIInputElementCC</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> &amp;<a class="code" href="../../d9/db1/classMIDIInputElement.html#aaf337b870a6dd13e71567f9aefd2f039">address</a>)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        : <a class="code" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>{<a class="code" href="../../d9/db1/classMIDIInputElement.html#aaf337b870a6dd13e71567f9aefd2f039">address</a>} {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="../../df/de0/MIDIInputElementCC_8hpp.html#a46cf1332de99737106450bdfcdca9073">GUARD_LIST_LOCK</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#ac7f64e693a5a2c37e2cc355524d18221">elements</a>.<a class="code" href="../../dd/d16/classDoublyLinkedList.html#a368e48ecd7bac79f14a42a0669574e38">append</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    /// Destructor: delete from the linked list.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a39e230c2e8929c4fe36e2ee6a0d7340f">   43</a></span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a39e230c2e8929c4fe36e2ee6a0d7340f">~MIDIInputElementCC</a>() {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a39e230c2e8929c4fe36e2ee6a0d7340f">   43</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a39e230c2e8929c4fe36e2ee6a0d7340f">~MIDIInputElementCC</a>() {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../df/de0/MIDIInputElementCC_8hpp.html#a46cf1332de99737106450bdfcdca9073">GUARD_LIST_LOCK</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#ac7f64e693a5a2c37e2cc355524d18221">elements</a>.<a class="code" href="../../dd/d16/classDoublyLinkedList.html#a52e238d5c44ec02f6ce5b981d324ed4c">remove</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    /// Initialize all MIDIInputElementCC elements.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    /// @see     MIDIInputElementCC#begin</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a4f7077a56ec41a07f5a54dd8b3828984">   50</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a>() {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a4f7077a56ec41a07f5a54dd8b3828984">   50</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a>() {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="../../df/de0/MIDIInputElementCC_8hpp.html#a46cf1332de99737106450bdfcdca9073">GUARD_LIST_LOCK</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a> &amp;e : <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#ac7f64e693a5a2c37e2cc355524d18221">elements</a>)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            e.begin();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    /// Update all MIDIInputElementCC elements.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">    /// @see     MIDIInputElementCC#update</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a44e05f733dace05adcf585b5a17be292">   58</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a44e05f733dace05adcf585b5a17be292">updateAll</a>() {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a44e05f733dace05adcf585b5a17be292">   58</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a44e05f733dace05adcf585b5a17be292">updateAll</a>() {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="../../df/de0/MIDIInputElementCC_8hpp.html#a46cf1332de99737106450bdfcdca9073">GUARD_LIST_LOCK</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a> &amp;e : <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#ac7f64e693a5a2c37e2cc355524d18221">elements</a>)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            e.update();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">    /// Reset all MIDIInputElementCC elements to their initial state.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">    /// @see    MIDIInputElementCC::reset</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#aef9a22e0ad427812e1089edcf3bb85e1">   66</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#aef9a22e0ad427812e1089edcf3bb85e1">resetAll</a>() {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#aef9a22e0ad427812e1089edcf3bb85e1">   66</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#aef9a22e0ad427812e1089edcf3bb85e1">resetAll</a>() {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="../../df/de0/MIDIInputElementCC_8hpp.html#a46cf1332de99737106450bdfcdca9073">GUARD_LIST_LOCK</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a> &amp;e : <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#ac7f64e693a5a2c37e2cc355524d18221">elements</a>)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            e.reset();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">    /// Update all MIDIInputElementCC elements with a new MIDI message.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    /// @see     MIDIInputElementCC#updateWith</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a810cf3cea64a67fcac8fffbf03499fdd">   74</a></span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a810cf3cea64a67fcac8fffbf03499fdd">updateAllWith</a>(<span class="keyword">const</span> <a class="code" href="../../df/d8f/structChannelMessageMatcher.html">ChannelMessageMatcher</a> &amp;midimsg) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a810cf3cea64a67fcac8fffbf03499fdd">   74</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a810cf3cea64a67fcac8fffbf03499fdd">updateAllWith</a>(<span class="keyword">const</span> <a class="code" href="../../df/d8f/structChannelMessageMatcher.html">ChannelMessageMatcher</a> &amp;midimsg) {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../d3/d96/classMIDIInputElementCC.html">MIDIInputElementCC</a> &amp;e : <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#ac7f64e693a5a2c37e2cc355524d18221">elements</a>)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (e.updateWith(midimsg)) {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                e.moveDown();</div>
@@ -162,13 +136,7 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// and we stop iterating, so it doesn&#39;t matter.</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">     * @brief   Move down this element in the linked list of elements.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">     * This means that the element will be checked earlier on the next</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">     * iteration.</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../d3/d96/classMIDIInputElementCC.html#a486267210dfc8118e23e6b1bc6090286">   92</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#a486267210dfc8118e23e6b1bc6090286">moveDown</a>() {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="../../df/de0/MIDIInputElementCC_8hpp.html#a46cf1332de99737106450bdfcdca9073">GUARD_LIST_LOCK</a>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="../../d3/d96/classMIDIInputElementCC.html#ac7f64e693a5a2c37e2cc355524d18221">elements</a>.<a class="code" href="../../dd/d16/classDoublyLinkedList.html#a9750fc672c95b807b56b12b0a65542f8">moveDown</a>(<span class="keyword">this</span>);</div>

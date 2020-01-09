@@ -85,21 +85,12 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d1/d41/MIDIOutputElement_8hpp.html">MIDI_Outputs/Abstract/MIDIOutputElement.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * @brief   MIDIButtonMatrix</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * @todo    Documentation.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * @see     AH::ButtonMatrix</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Sender, u<span class="keywordtype">int</span>8_t nb_rows, u<span class="keywordtype">int</span>8_t nb_cols&gt;</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d0/d54/classMIDIButtonMatrix.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/d54/classMIDIButtonMatrix.html">MIDIButtonMatrix</a> : <span class="keyword">public</span> <a class="code" href="../../d1/d55/classAH_1_1Updatable.html">MIDIOutputElement</a>,</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                         <span class="keyword">public</span> <a class="code" href="../../dd/d29/classAH_1_1ButtonMatrix.html">AH::ButtonMatrix</a>&lt;nb_rows, nb_cols&gt; {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">protected</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">     * @brief</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">     * @todo    Documentation</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d0/d54/classMIDIButtonMatrix.html#a149ce62c67b98f60a8e9594e7d41e381">   23</a></span>&#160;    <a class="code" href="../../d0/d54/classMIDIButtonMatrix.html#a149ce62c67b98f60a8e9594e7d41e381">MIDIButtonMatrix</a>(<span class="keyword">const</span> PinList&lt;nb_rows&gt; &amp;<a class="code" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a78f102fabc50104bd885ea077bcf8f8c">rowPins</a>,</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                     <span class="keyword">const</span> PinList&lt;nb_cols&gt; &amp;<a class="code" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a9ac5156794b322950acdc745de570aac">colPins</a>,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                     <span class="keyword">const</span> <a class="code" href="../../d0/d4e/Def_8hpp.html#a2ec0e7ee27237f387cd0030ac76a37b9">AddressMatrix&lt;nb_rows, nb_cols&gt;</a> &amp;<a class="code" href="../../d0/d54/classMIDIButtonMatrix.html#a54ffa911bcac2af79b4cd7847aae97c5">addresses</a>,</div>

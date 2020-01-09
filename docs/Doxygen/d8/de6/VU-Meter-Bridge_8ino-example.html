@@ -74,12 +74,12 @@ $(function() {
 <div class="title">VU-Meter-Bridge.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md162"></a>
+<h1><a class="anchor" id="autotoc_md166"></a>
 VU-Meter-Bridge</h1>
 <p>This is an example on how to use an OLED display to display the VU meters and mute/solo states of the eight first tracks, by using the Arduino as a Mackie Control Universal. This is an example modified to work with the ESP32 only, using MIDI over Bluetooth Low Energy. <br  />
 </p>
 <dl class="section user"><dt>Boards:</dt><dd>ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md163"></a>
+<h2><a class="anchor" id="autotoc_md167"></a>
 Connections</h2>
 <p>This example drives two SSD1306 OLED displays over SPI</p><ul>
 <li>SCK: SSD1306 D0</li>
@@ -90,15 +90,15 @@ Connections</h2>
 <p>Add a capacitor between the reset pin of the display and ground, and a resistor from reset to 3.3V. The values are not critical, 0.1µF and 10kΩ work fine. <br  />
  You do need some way to reset the display, without it, it won't work. <br  />
  Alternatively, you could use an IO pin from the ESP32 to reset the display, but this just "wastes" a pin.</p>
-<h2><a class="anchor" id="autotoc_md164"></a>
+<h2><a class="anchor" id="autotoc_md168"></a>
 Behavior</h2>
 <p>The first display should now display the level meters and mute/solo states of the first 8 tracks.</p>
-<h2><a class="anchor" id="autotoc_md165"></a>
+<h2><a class="anchor" id="autotoc_md169"></a>
 Mapping</h2>
 <p>Map "Control Surface" as a Mackie Control Universal unit in your DAW.</p>
 <dl class="section note"><dt>Note</dt><dd>There seem to be some differences in the way some applications handle VU meters: some expect the hardware to decay automatically, some don't. <br  />
  If you notice that the meters behave strangely, try both <a class="el" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da" title="Don&#39;t decay automatically, hold the latest value until a new one is received.">MCU::VUDecay::Hold</a> and <a class="el" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ab8e20bc4798982b19f31c569b8dbb7db" title="Decay one segment/block every 150 ms if no new values are received.">MCU::VUDecay::Default</a>, or try a different decay time.</dd></dl>
-<h2><a class="anchor" id="autotoc_md166"></a>
+<h2><a class="anchor" id="autotoc_md170"></a>
 Demo</h2>
 <p> 
 <iframe width="560" height="315"
@@ -108,62 +108,7 @@ picture-in-picture" allowfullscreen></iframe>
 </p>
 <p>Written by PieterP, 2019-08-09 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
-<div class="fragment"><div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * This is an example on how to use an OLED display to display the VU meters and</span></div>
-<div class="line"><span class="comment"> * mute/solo states of the eight first tracks, by using the Arduino as a Mackie</span></div>
-<div class="line"><span class="comment"> * Control Universal. This is an example modified to work with the ESP32 only, </span></div>
-<div class="line"><span class="comment"> * using MIDI over Bluetooth Low Energy.  </span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * @boards  ESP32</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connections</span></div>
-<div class="line"><span class="comment"> * -----------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * This example drives two SSD1306 OLED displays over SPI</span></div>
-<div class="line"><span class="comment"> *  - SCK:  SSD1306 D0</span></div>
-<div class="line"><span class="comment"> *  - MOSI: SSD1306 D1</span></div>
-<div class="line"><span class="comment"> *  - 15:   SSD1306 DC</span></div>
-<div class="line"><span class="comment"> *  - 2:    SSD1306 CS</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Add a capacitor between the reset pin of the display and ground, and a </span></div>
-<div class="line"><span class="comment"> * resistor from reset to 3.3V. The values are not critical, 0.1µF and 10kΩ </span></div>
-<div class="line"><span class="comment"> * work fine.  </span></div>
-<div class="line"><span class="comment"> * You do need some way to reset the display, without it, it won&#39;t work.  </span></div>
-<div class="line"><span class="comment"> * Alternatively, you could use an IO pin from the ESP32 to reset the </span></div>
-<div class="line"><span class="comment"> * display, but this just &quot;wastes&quot; a pin.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Behavior</span></div>
-<div class="line"><span class="comment"> * --------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * The first display should now display the level meters and mute/solo states</span></div>
-<div class="line"><span class="comment"> * of the first 8 tracks.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Mapping</span></div>
-<div class="line"><span class="comment"> * -------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Map &quot;Control Surface&quot; as a Mackie Control Universal unit in your DAW.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * @note    There seem to be some differences in the way some applications </span></div>
-<div class="line"><span class="comment"> *          handle VU meters: some expect the hardware to decay automatically,</span></div>
-<div class="line"><span class="comment"> *          some don&#39;t.  </span></div>
-<div class="line"><span class="comment"> *          If you notice that the meters behave strangely, try both </span></div>
-<div class="line"><span class="comment"> *          MCU::VUDecay::Hold and MCU::VUDecay::Default, or try a different </span></div>
-<div class="line"><span class="comment"> *          decay time.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Demo</span></div>
-<div class="line"><span class="comment"> * ----</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * @htmlonly</span></div>
-<div class="line"><span class="comment"> * &lt;iframe width=&quot;560&quot; height=&quot;315&quot;</span></div>
-<div class="line"><span class="comment"> * src=&quot;https://www.youtube.com/embed/_NJh6LyJjU8?start=25&quot; frameborder=&quot;0&quot;</span></div>
-<div class="line"><span class="comment"> * allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;</span></div>
-<div class="line"><span class="comment"> * picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</span></div>
-<div class="line"><span class="comment"> * @endhtmlonly</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Written by PieterP, 2019-08-09  </span></div>
-<div class="line"><span class="comment"> * https://github.com/tttapa/Control-Surface</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"> </div>
+<div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"><span class="comment">// Include the display interface you&#39;d like to use</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d3/d62/DisplayInterfaceSSD1306_8hpp.html">Display/DisplayInterfaces/DisplayInterfaceSSD1306.hpp</a>&gt;</span></div>

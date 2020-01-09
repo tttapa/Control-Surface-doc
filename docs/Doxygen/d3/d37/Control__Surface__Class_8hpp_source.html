@@ -96,105 +96,46 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d7/dbc/structAH_1_1NormalUpdatable.html">AH::NormalUpdatable</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d2/de5/classAH_1_1Timer.html">AH::Timer</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d1/d55/classAH_1_1Updatable.html">AH::Updatable</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/** </span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * @brief   This class ensures initialization, updating, and interaction between</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *          all other classes, it&#39;s the glue that holds everything together.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * @ingroup ControlSurfaceModule</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/d45/classControl__Surface__.html">Control_Surface_</a> : <span class="keyword">public</span> <a class="code" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Copying is not allowed</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../dc/d45/classControl__Surface__.html#a62fdea11ae4a775c5f1574c33ce35c44">Control_Surface_</a>(<a class="code" href="../../dc/d45/classControl__Surface__.html">Control_Surface_</a> <span class="keyword">const</span> &amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a274f7550e02190d1ad09832d81a34e3f">operator=</a>(<a class="code" href="../../dc/d45/classControl__Surface__.html">Control_Surface_</a> <span class="keyword">const</span> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     * @brief   Return the static Control_Surface_ instance.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     *          (Control_Surface_ is a singleton.)</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dc/d45/classControl__Surface__.html">Control_Surface_</a> &amp;<a class="code" href="../../dc/d45/classControl__Surface__.html#a73db0fbab1b92d45146d296092a390ea">getInstance</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     * @brief   Initialize the Control_Surface.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     * @brief   Update all MIDI elements, send MIDI events and read MIDI input.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     * @brief   Get the MIDI interface of the Control Surface.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">     * @return  A reference to the Control Surface&#39;s MIDI interface.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     * @todo    This violate&#39;s the Law of Demeter.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interface</a> &amp;<a class="code" href="../../dc/d45/classControl__Surface__.html#ac86e7674af1b7f7db7e3f49cde4f7836">MIDI</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">    /** </span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     * @brief   Update all MIDI interfaces to receive new MIDI events.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a7a04299fcc79d15b4fd3bee7b07e7091">updateMidiInput</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">     * @brief   Update all MIDIInputElement%s.</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a2a98d5b3a3895d2186aa04024da8fd72">updateInputs</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">    /** </span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     * @brief   Clear, draw and display all displays.</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a01abf882f8654c6673a56399b5d47eb9">updateDisplays</a>();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">     * @brief   Control_Surface_ is a singleton, so the constructor is private.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../dc/d45/classControl__Surface__.html#a62fdea11ae4a775c5f1574c33ce35c44">Control_Surface_</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">    /** </span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">     * @brief   The callback to be called when a MIDI channel message is</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">     *          received.</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a7852c2bfb20eb66120af601922020328">onChannelMessage</a>(<a class="code" href="../../de/d76/classParsing__MIDI__Interface.html">Parsing_MIDI_Interface</a> &amp;midi) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">    /** </span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">     * @brief   The callback to be called when a MIDI System Exclusive message</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">     *          is received.</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a3076656a09d10116bdadcc45c38b5f2e">onSysExMessage</a>(<a class="code" href="../../de/d76/classParsing__MIDI__Interface.html">Parsing_MIDI_Interface</a> &amp;midi) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">    /** </span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">     * @brief   The callback to be called when a MIDI Real-Time message is </span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">     *          received.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a916beec97610466de7f2b07e327c6cb5">onRealtimeMessage</a>(<a class="code" href="../../de/d76/classParsing__MIDI__Interface.html">Parsing_MIDI_Interface</a> &amp;midi,</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                           uint8_t message) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">    /// A timer to know when to update the analog inputs.</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a16cc8fcdc84d4d217905f78242e9df90">   98</a></span>&#160;<span class="comment"></span>    <a class="code" href="../../d2/de5/classAH_1_1Timer.html">Timer&lt;micros&gt;</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#a16cc8fcdc84d4d217905f78242e9df90">potentiometerTimer</a> = {<a class="code" href="../../dc/d69/namespaceAH.html#a888fcdd0f365245e3e32bb1144eb5fc8">AH::FILTERED_INPUT_UPDATE_INTERVAL</a>};<span class="comment"></span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">    /// A timer to know when to refresh the displays.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a099c3a269b4cf121609ea613cb84fba3">  100</a></span>&#160;<span class="comment"></span>    <a class="code" href="../../d2/de5/classAH_1_1Timer.html">Timer&lt;micros&gt;</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#a099c3a269b4cf121609ea613cb84fba3">displayTimer</a> = {1000000UL / <a class="code" href="../../dc/d4f/Settings_2Settings_8hpp.html#ab44cfa307e19c5688403a9506ea0555e">MAX_FPS</a>};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a16cc8fcdc84d4d217905f78242e9df90">   98</a></span>&#160;    <a class="code" href="../../d2/de5/classAH_1_1Timer.html">Timer&lt;micros&gt;</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#a16cc8fcdc84d4d217905f78242e9df90">potentiometerTimer</a> = {<a class="code" href="../../dc/d69/namespaceAH.html#a888fcdd0f365245e3e32bb1144eb5fc8">AH::FILTERED_INPUT_UPDATE_INTERVAL</a>};</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a099c3a269b4cf121609ea613cb84fba3">  100</a></span>&#160;    <a class="code" href="../../d2/de5/classAH_1_1Timer.html">Timer&lt;micros&gt;</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#a099c3a269b4cf121609ea613cb84fba3">displayTimer</a> = {1000000UL / <a class="code" href="../../dc/d4f/Settings_2Settings_8hpp.html#ab44cfa307e19c5688403a9506ea0555e">MAX_FPS</a>};</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">    /// Callback function type for channel messages. Return true if handling is</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">    /// done in the user-provided callback, false if `Control_Surface`</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">    /// should handle the message.</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a63312ad9f5f487e71fb1504718b1f8c0">  106</a></span>&#160;<span class="comment"></span>    <span class="keyword">using</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a63312ad9f5f487e71fb1504718b1f8c0">ChannelMessageCallback</a> = bool (*)(<a class="code" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>);<span class="comment"></span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">    /// Callback function type for SysEx messages. Return true if handling is</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    /// done in the user-provided callback, false if `Control_Surface`</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">    /// should handle the message.</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5">  110</a></span>&#160;<span class="comment"></span>    <span class="keyword">using</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5">SysExMessageCallback</a> = bool (*)(<a class="code" href="../../db/d45/structSysExMessage.html">SysExMessage</a>);<span class="comment"></span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">    /// Callback function type for Real-Time messages. Return true if handling</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">    /// is done in the user-provided callback, false if `Control_Surface`</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">    /// should handle the message.</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a65169ea1d6451a127b4c27a855d0c875">  114</a></span>&#160;<span class="comment"></span>    <span class="keyword">using</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a65169ea1d6451a127b4c27a855d0c875">RealTimeMessageCallback</a> = bool (*)(<a class="code" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a>);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">    /// Set the MIDI input callbacks.</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a63312ad9f5f487e71fb1504718b1f8c0">  106</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a63312ad9f5f487e71fb1504718b1f8c0">ChannelMessageCallback</a> = bool (*)(<a class="code" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5">  110</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5">SysExMessageCallback</a> = bool (*)(<a class="code" href="../../db/d45/structSysExMessage.html">SysExMessage</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#a65169ea1d6451a127b4c27a855d0c875">  114</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dc/d45/classControl__Surface__.html#a65169ea1d6451a127b4c27a855d0c875">RealTimeMessageCallback</a> = bool (*)(<a class="code" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#ac35254ede8304ff456f60f0250226c11">  118</a></span>&#160;    <a class="code" href="../../dc/d45/classControl__Surface__.html#ac35254ede8304ff456f60f0250226c11">setMIDIInputCallbacks</a>(<a class="code" href="../../dc/d45/classControl__Surface__.html#a63312ad9f5f487e71fb1504718b1f8c0">ChannelMessageCallback</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#a434abb7977c4a7d49997610329c47a1c">channelMessageCallback</a>,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                          <a class="code" href="../../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5">SysExMessageCallback</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#ad43a6370fb958fa2246451f165490965">sysExMessageCallback</a>,</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                          <a class="code" href="../../dc/d45/classControl__Surface__.html#a65169ea1d6451a127b4c27a855d0c875">RealTimeMessageCallback</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#ac08d07cd99caf3a07b65da5f200c052a">realTimeMessageCallback</a>) {</div>
@@ -208,9 +149,8 @@ $(function() {
 <div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#ad43a6370fb958fa2246451f165490965">  128</a></span>&#160;    <a class="code" href="../../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5">SysExMessageCallback</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#ad43a6370fb958fa2246451f165490965">sysExMessageCallback</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="../../dc/d45/classControl__Surface__.html#ac08d07cd99caf3a07b65da5f200c052a">  129</a></span>&#160;    <a class="code" href="../../dc/d45/classControl__Surface__.html#a65169ea1d6451a127b4c27a855d0c875">RealTimeMessageCallback</a> <a class="code" href="../../dc/d45/classControl__Surface__.html#ac08d07cd99caf3a07b65da5f200c052a">realTimeMessageCallback</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">/// A predefined instance of the Control Surface to use in the Arduino sketches.</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"></span><span class="keyword">extern</span> <a class="code" href="../../dc/d45/classControl__Surface__.html">Control_Surface_</a> &amp;<a class="code" href="../../d3/d37/Control__Surface__Class_8hpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../dc/d45/classControl__Surface__.html">Control_Surface_</a> &amp;<a class="code" href="../../d3/d37/Control__Surface__Class_8hpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 </div><!-- fragment --></div><!-- contents -->

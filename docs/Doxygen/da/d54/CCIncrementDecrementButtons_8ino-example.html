@@ -100,51 +100,7 @@ Behavior</h2>
 <p>Map the Arduino as a Mackie Control Universal (<a class="el" href="../../d7/dc7/namespaceMCU.html" title="Names and note and controller numbers for the Mackie Control Universal (MCU) protocol.">MCU</a>) or equivalent in your audio software.</p>
 <p>Written by PieterP, 2019-01-26 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
-<div class="fragment"><div class="line"><span class="comment">/** </span></div>
-<div class="line"><span class="comment"> * This is an example that demonstrates the use of Increment and </span></div>
-<div class="line"><span class="comment"> * Decrement buttons that can be used for scrolling through a song</span></div>
-<div class="line"><span class="comment"> * list, tuning effects, etc.  </span></div>
-<div class="line"><span class="comment"> * You can compare it to a rotary encoder, but with two buttons instead of an </span></div>
-<div class="line"><span class="comment"> * encoder.</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @boards  AVR, AVR USB, Due, Nano 33, Teensy 3.x, ESP32</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * Connections</span></div>
-<div class="line"><span class="comment"> * -----------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - 5: momentary push button (to ground)</span></div>
-<div class="line"><span class="comment"> * - 6: momentary push button (to ground)</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * The internal pull-up resistors for the buttons will be enabled automatically.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Behavior</span></div>
-<div class="line"><span class="comment"> * --------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - If the button on pin 5 is pressed, a MIDI CC increment message is sent.</span></div>
-<div class="line"><span class="comment"> * - If the button on pin 6 is pressed, a MIDI CC decrement message is sent.</span></div>
-<div class="line"><span class="comment"> * - The controller number `MCU::V_POT_1` will be used.</span></div>
-<div class="line"><span class="comment"> * - If either of the buttons is pressed down for a longer time, it will keep on</span></div>
-<div class="line"><span class="comment"> *   sending increment/decrement messages quickly until you release it (like a </span></div>
-<div class="line"><span class="comment"> *   key on a computer keyboard).</span></div>
-<div class="line"><span class="comment"> *   This is to make it easier to scroll a large amount, for example.</span></div>
-<div class="line"><span class="comment"> *   The timing can be changed by tweaking @ref AH::LONG_PRESS_DELAY and </span></div>
-<div class="line"><span class="comment"> *   @ref AH::LONG_PRESS_REPEAT_DELAY in @ref AH/Settings/Settings.hpp.</span></div>
-<div class="line"><span class="comment"> * - If both buttons are pressed simultaneously, a MIDI Note On event is sent on</span></div>
-<div class="line"><span class="comment"> *   note `MCU::V_POT_SELECT_1`.  </span></div>
-<div class="line"><span class="comment"> *   (This is optional, you can just leave out the final argument to the </span></div>
-<div class="line"><span class="comment"> *   constructor, and it won&#39;t send anything when you press both buttons at </span></div>
-<div class="line"><span class="comment"> *   once).</span></div>
-<div class="line"><span class="comment"> * - The multiplier can be used to increment multiple ticks per each time you </span></div>
-<div class="line"><span class="comment"> *   press a button. This is useful if you have to press the button for a very</span></div>
-<div class="line"><span class="comment"> *   long time to get a substantial change.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Map the Arduino as a Mackie Control Universal (MCU) or equivalent in your</span></div>
-<div class="line"><span class="comment"> * audio software.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Written by PieterP, 2019-01-26  </span></div>
-<div class="line"><span class="comment"> * https://github.com/tttapa/Control-Surface</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"> </div>
+<div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI over USB interface.</span></div>

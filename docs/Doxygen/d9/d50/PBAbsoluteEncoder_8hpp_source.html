@@ -84,48 +84,9 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../de/daf/PitchBendSender_8hpp.html">MIDI_Senders/PitchBendSender.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * @brief   A class of MIDIOutputElement%s that read the input of a **quadrature</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *          (rotary) encoder** and send out absolute MIDI **Pitch Bend**</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *          events.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This version cannot be banked.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @note    To use this class, include the [PJRC Encoder library]</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *          (https://github.com/PaulStoffregen/Encoder) before the</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *          Control-Surface library.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * @ingroup MIDIOutputElements</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d7/d70/classPBAbsoluteEncoder.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d70/classPBAbsoluteEncoder.html">PBAbsoluteEncoder</a> : <span class="keyword">public</span> <a class="code" href="../../dd/dcc/classMIDIAbsoluteEncoder.html">MIDIAbsoluteEncoder</a>&lt;PitchBendSender&lt;14&gt;&gt; {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * @brief   Construct a new PBAbsoluteEncoder object with the given pins, </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     *          address, channel, speed factor, and number of pulses per step.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * @param   pins</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     *          A list of the two pins connected to the A and B outputs of the</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     *          encoder.  </span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     *          The internal pull-up resistors will be enabled by the Encoder</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     *          library.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * @param   address</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *          The MIDI channel [CHANNEL_1, CHANNEL_16] and optional Cable</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     *          Number [0, 15].</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * @param   multiplier</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     *          A constant factor to increase the speed of the rotary encoder.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     *          The position will just be multiplied by this factor. </span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * @param   pulsesPerStep</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     *          The number of pulses per physical click of the encoder.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     *          For a normal encoder, this is 4. If you want to increase the</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     *          resolution, for the use of Jog wheels, for example, you can go</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     *          as 1.  </span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     *          Whereas a greater speedMultiplier factor will increase the </span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     *          speed, increasing the number of pulsesPerStep will result in a </span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     *          lower speed.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     * @param   sender</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     *          The MIDI sender to use.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d7/d70/classPBAbsoluteEncoder.html#a17373c55d4712975ed67f4ca1dfc855b">   49</a></span>&#160;    <a class="code" href="../../d7/d70/classPBAbsoluteEncoder.html#a17373c55d4712975ed67f4ca1dfc855b">PBAbsoluteEncoder</a>(<span class="keyword">const</span> <a class="code" href="../../dc/d81/structEncoderPinList.html">EncoderPinList</a> &amp;pins, <span class="keyword">const</span> <a class="code" href="../../df/d9b/classMIDICNChannel.html">MIDICNChannel</a> &amp;<a class="code" href="../../dd/dcc/classMIDIAbsoluteEncoder.html#aaf337b870a6dd13e71567f9aefd2f039">address</a>,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                      int16_t <a class="code" href="../../dd/dcc/classMIDIAbsoluteEncoder.html#a12f93e7b64875888a59259abb9dda39f">multiplier</a> = 1, uint8_t <a class="code" href="../../dd/dcc/classMIDIAbsoluteEncoder.html#a28fc8fa192b5881dd8692f0cca3c4ca8">pulsesPerStep</a> = 4,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                      <span class="keyword">const</span> <a class="code" href="../../de/d46/classPitchBendSender.html">PitchBendSender&lt;14&gt;</a> &amp;<a class="code" href="../../dd/dcc/classMIDIAbsoluteEncoder.html#a3296e2217dd530ddb922f24a450fec82">sender</a> = {})</div>

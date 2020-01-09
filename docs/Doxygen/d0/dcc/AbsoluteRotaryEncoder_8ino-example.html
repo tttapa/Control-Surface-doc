@@ -98,46 +98,7 @@ Mapping</h2>
 <p>Select the Arduino as a custom MIDI controller in your DAW, and map it like a normal CC controller (not a relative one).</p>
 <p>Written by PieterP, 2019-12-18 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
-<div class="fragment"><div class="line"><span class="comment">/** </span></div>
-<div class="line"><span class="comment"> * This example demonstrates the use of absolute MIDI CC rotary encoders that</span></div>
-<div class="line"><span class="comment"> * can be used for changing effect parameters, volumes, pan and balance</span></div>
-<div class="line"><span class="comment"> * controls, etc.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * The absolute here means that the Arduino keeps track of the position of the </span></div>
-<div class="line"><span class="comment"> * encoder, and it sends this absolute position over MIDI.  </span></div>
-<div class="line"><span class="comment"> * Usually, encoders send relative messages (&quot;5 ticks to the left&quot;, </span></div>
-<div class="line"><span class="comment"> * &quot;1 tick to the right&quot;).</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Similar to the CCAbsoluteEncoder, there&#39;s also PBAbsoluteEncoder that sends</span></div>
-<div class="line"><span class="comment"> * absolute MIDI Pitch Bend messages.</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @boards  AVR, AVR USB, Due, Nano 33, Teensy 3.x</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connections</span></div>
-<div class="line"><span class="comment"> * -----------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - 2: pin A of the encoder</span></div>
-<div class="line"><span class="comment"> * - 3: pin B of the encoder</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connect the common terminal of the encoder to ground. The built-in pullup</span></div>
-<div class="line"><span class="comment"> * resistors will be enabled.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Behavior</span></div>
-<div class="line"><span class="comment"> * --------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - When you turn the encoder, you should receive absolute MIDI Control Change</span></div>
-<div class="line"><span class="comment"> *   messages with the absolute position of the encoder.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Mapping</span></div>
-<div class="line"><span class="comment"> * -------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Select the Arduino as a custom MIDI controller in your DAW, and map it like </span></div>
-<div class="line"><span class="comment"> * a normal CC controller (not a relative one).</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Written by PieterP, 2019-12-18  </span></div>
-<div class="line"><span class="comment"> * https://github.com/tttapa/Control-Surface</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"> </div>
+<div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;Encoder.h&gt;</span> <span class="comment">// Include the Encoder library.</span></div>
 <div class="line"><span class="comment">// This must be done before the Control Surface library.</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>

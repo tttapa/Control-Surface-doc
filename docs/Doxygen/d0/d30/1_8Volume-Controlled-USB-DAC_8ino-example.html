@@ -74,11 +74,11 @@ $(function() {
 <div class="title">1.Volume-Controlled-USB-DAC.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md153"></a>
+<h1><a class="anchor" id="autotoc_md157"></a>
 1.Volume-Controlled-USB-DAC</h1>
 <p>This is an example of the <a class="el" href="../../d4/de3/classVolumeControl.html" title="A class for controlling the volume of AudioMixer4 objects using a potentiometer.">VolumeControl</a> class of the Control Surface library. It acts as a USB Audio DAC (Digital-to-Analog Converter).</p>
 <dl class="section user"><dt>Boards:</dt><dd>Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md154"></a>
+<h2><a class="anchor" id="autotoc_md158"></a>
 Connections</h2>
 <p>This specific example uses an I²S DAC, but you can use other interfaces of the Teensy Audio library as well. For testing, I'm using a PCM5102a.</p>
 <ul>
@@ -90,55 +90,16 @@ Connections</h2>
 </ul>
 <p>Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>.</p>
 <p>Select a USB audio option from the Tools menu in the IDE.</p>
-<h2><a class="anchor" id="autotoc_md155"></a>
+<h2><a class="anchor" id="autotoc_md159"></a>
 Behavior</h2>
 <p>Upload the sketch, and select the Control Surface as the audio output of your computer. Connect the output of the DAC to a pair of headphones or powered speakers, and play some music. <br  />
  You can now adjust the volume using the potentiometer.</p>
-<h2><a class="anchor" id="autotoc_md156"></a>
+<h2><a class="anchor" id="autotoc_md160"></a>
 Mapping</h2>
 <p>None.</p>
 <p>Written by PieterP, 2019-08-09 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
-<div class="fragment"><div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * This is an example of the VolumeControl class of the Control Surface library.</span></div>
-<div class="line"><span class="comment"> * It acts as a USB Audio DAC (Digital-to-Analog Converter).</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * @boards Teensy 3.x</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connections</span></div>
-<div class="line"><span class="comment"> * -----------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * This specific example uses an I²S DAC, but you can use other interfaces of </span></div>
-<div class="line"><span class="comment"> * the Teensy Audio library as well. For testing, I&#39;m using a PCM5102a.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - A0: wiper of a potentiometer to change the output volume</span></div>
-<div class="line"><span class="comment"> * - 9:  DAC BCK (I²S)</span></div>
-<div class="line"><span class="comment"> * - 11: DAC SCK (I²S)</span></div>
-<div class="line"><span class="comment"> * - 22: DAC DIN (I²S)</span></div>
-<div class="line"><span class="comment"> * - 23: DAC LRCK (I²S)</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connect the left terminal of the potentiometer to ground, and the right one</span></div>
-<div class="line"><span class="comment"> * to V&lt;sub&gt;CC&lt;/sub&gt;.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Select a USB audio option from the Tools menu in the IDE.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Behavior</span></div>
-<div class="line"><span class="comment"> * --------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Upload the sketch, and select the Control Surface as the audio output of your</span></div>
-<div class="line"><span class="comment"> * computer. Connect the output of the DAC to a pair of headphones or powered</span></div>
-<div class="line"><span class="comment"> * speakers, and play some music.  </span></div>
-<div class="line"><span class="comment"> * You can now adjust the volume using the potentiometer.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Mapping</span></div>
-<div class="line"><span class="comment"> * -------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * None.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Written by PieterP, 2019-08-09  </span></div>
-<div class="line"><span class="comment"> * https://github.com/tttapa/Control-Surface </span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"> </div>
+<div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line">AudioInputUSB audioInputUSB; <span class="comment">// The audio input from the USB connection</span></div>

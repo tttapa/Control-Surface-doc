@@ -86,36 +86,9 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d4/dd7/DigitalCCSender_8hpp.html">MIDI_Senders/DigitalCCSender.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * @brief   A class of MIDIOutputElement%s that read the input of a **momentary</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *          push button or toggle switch**, and send out MIDI **Controller </span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *          Change** events.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * It latches the input, so press once to enable, press again to </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * disable (toggle).</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * The switch is debounced in software.  </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This version cannot be banked.  </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * @ingroup MIDIOutputElements</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d5/da6/classCCButtonLatched.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/da6/classCCButtonLatched.html">CCButtonLatched</a> : <span class="keyword">public</span> <a class="code" href="../../d3/d88/classMIDIButtonLatched.html">MIDIButtonLatched</a>&lt;DigitalCCSender&gt; {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     * @brief   Create a new CCButtonLatched object on the given pin and with </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     *          address.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     * @param   pin</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     *          The digital input pin to read from.  </span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     *          The internal pull-up resistor will be enabled.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * @param   address</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *          The MIDI address containing the controller number [0, 119], </span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     *          channel [CHANNEL_1, CHANNEL_16], and optional cable number </span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     *          [0, 15].</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * @param   sender</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     *          The MIDI sender to use.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d5/da6/classCCButtonLatched.html#ab2f467cd3ec20f444f9ed9787968ae4f">   39</a></span>&#160;    <a class="code" href="../../d5/da6/classCCButtonLatched.html#ab2f467cd3ec20f444f9ed9787968ae4f">CCButtonLatched</a>(<a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <span class="keyword">const</span> <a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> &amp;<a class="code" href="../../d3/d88/classMIDIButtonLatched.html#aaf337b870a6dd13e71567f9aefd2f039">address</a>,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    <span class="keyword">const</span> <a class="code" href="../../d5/db5/classDigitalCCSender.html">DigitalCCSender</a> &amp;<a class="code" href="../../d3/d88/classMIDIButtonLatched.html#a3296e2217dd530ddb922f24a450fec82">sender</a> = {})</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        : <a class="code" href="../../d3/d88/classMIDIButtonLatched.html">MIDIButtonLatched</a>{pin, <a class="code" href="../../d3/d88/classMIDIButtonLatched.html#aaf337b870a6dd13e71567f9aefd2f039">address</a>, <a class="code" href="../../d3/d88/classMIDIButtonLatched.html#a3296e2217dd530ddb922f24a450fec82">sender</a>} {}</div>

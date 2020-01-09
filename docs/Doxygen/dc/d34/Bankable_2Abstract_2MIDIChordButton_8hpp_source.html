@@ -90,36 +90,10 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/dd0/namespaceBankable.html">Bankable</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @brief   An abstract class for momentary push buttons that send multiple MIDI</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *          events.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * The button is debounced.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * @see     AH::Button</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Sender&gt;</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../da/d96/classBankable_1_1MIDIChordButton.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d96/classBankable_1_1MIDIChordButton.html">MIDIChordButton</a> : <span class="keyword">public</span> <a class="code" href="../../d1/d55/classAH_1_1Updatable.html">MIDIOutputElement</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     * @brief   Construct a new bankable MIDIChordButton.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     * @param   config</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     *          The bank configuration to use: the bank to add this element to,</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     *          and whether to change the address, channel or cable number.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     * @param   pin</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     *          The digital input pin with the button connected.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *          The internal pull-up resistor will be enabled.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * @param   address</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     *          The address of the base note, containing the note number </span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     *          [0, 127], the MIDI channel [CHANNEL_1, CHANNEL_16] and Cable </span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     *          Number [0, 15].</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * @param   chord</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     *          The chord to play on top of the base notes.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * @param   sender</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     *          The MIDI sender to use.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t N&gt;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../da/d96/classBankable_1_1MIDIChordButton.html#a736febabb2f1f18b588a102df8b290bd">   44</a></span>&#160;    <a class="code" href="../../da/d96/classBankable_1_1MIDIChordButton.html#a736febabb2f1f18b588a102df8b290bd">MIDIChordButton</a>(<span class="keyword">const</span> <a class="code" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a> &amp;config, <a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <span class="keyword">const</span> <a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> &amp;<a class="code" href="../../da/d96/classBankable_1_1MIDIChordButton.html#aca2429c738109ec5bdc556bbd192ae06">address</a>, <span class="keyword">const</span> <a class="code" href="../../d5/dc0/classChord.html">Chord&lt;N&gt;</a> &amp;<a class="code" href="../../da/d96/classBankable_1_1MIDIChordButton.html#aeec4d34de5bfae8f8f4e3446ba5a0dd1">chord</a>,</div>

@@ -93,128 +93,47 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d6e/classBankableMIDIInput.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d6e/classBankableMIDIInput.html">BankableMIDIInput</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d43/classBankableMIDIOutput.html">BankableMIDIOutput</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * @brief   A class for changing the address of BankableMIDIOutput%s.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d9/d36/classOutputBank.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d36/classOutputBank.html">OutputBank</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * @brief   Create a new OutputBank object.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     * @param   tracksPerBank</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     *          The number of addresses/tracks to skip for each bank setting.  </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     *          Must be strictly positive.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     * @param   initialSelection</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     *          The initial bank setting.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d9/d36/classOutputBank.html#a714358b949943213fffe732ecc73a1b0">   31</a></span>&#160;    <a class="code" href="../../d9/d36/classOutputBank.html#a714358b949943213fffe732ecc73a1b0">OutputBank</a>(uint8_t <a class="code" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">tracksPerBank</a> = 1, <a class="code" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> initialSelection = 0)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        : <a class="code" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">tracksPerBank</a>(<a class="code" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">tracksPerBank</a>), <a class="code" href="../../d9/d36/classOutputBank.html#ac8d5beeb5e18454924020fa6b2106a11">bankSetting</a>(initialSelection) {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">tracksPerBank</a> == 0)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a>(<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#a782ecf472467d5b568ea62a533489807">F</a>(<span class="stringliteral">&quot;A Bank must have a non-zero number of tracks.&quot;</span>),</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        0x4573);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     * @brief   Select the given bank setting.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     * @param   setting</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     *          The new setting to select.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d9/d36/classOutputBank.html#ab30607bc32f2bb4788136c6a13a30aac">   44</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d36/classOutputBank.html#ab30607bc32f2bb4788136c6a13a30aac">select</a>(<a class="code" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> setting) { <a class="code" href="../../d9/d36/classOutputBank.html#ac8d5beeb5e18454924020fa6b2106a11">bankSetting</a> = setting; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     * @brief   Get the current bank setting.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d9/d36/classOutputBank.html#a883bbbd61bff47fdc24105ba663d622b">   49</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> <a class="code" href="../../d9/d36/classOutputBank.html#a883bbbd61bff47fdc24105ba663d622b">getSelection</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="../../d9/d36/classOutputBank.html#ac8d5beeb5e18454924020fa6b2106a11">bankSetting</a>; }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     * @brief   Get the number of tracks per bank.</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     * This is the number of addresses/tracks to skip for each bank setting.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d9/d36/classOutputBank.html#a02a09d18fb678175d47edad6c23a25a4">   55</a></span>&#160;    uint8_t <a class="code" href="../../d9/d36/classOutputBank.html#a02a09d18fb678175d47edad6c23a25a4">getTracksPerBank</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">tracksPerBank</a>; }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     * @brief   Get the offset (number of banks times the index of the selected </span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     *          bank)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d9/d36/classOutputBank.html#afa543bfb53a3bf0e35e750c93c109804">   61</a></span>&#160;    uint8_t <a class="code" href="../../d9/d36/classOutputBank.html#afa543bfb53a3bf0e35e750c93c109804">getOffset</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="../../d9/d36/classOutputBank.html#a883bbbd61bff47fdc24105ba663d622b">getSelection</a>() * <a class="code" href="../../d9/d36/classOutputBank.html#a02a09d18fb678175d47edad6c23a25a4">getTracksPerBank</a>(); }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">   64</a></span>&#160;    uint8_t <a class="code" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">tracksPerBank</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d9/d36/classOutputBank.html#ac8d5beeb5e18454924020fa6b2106a11">   65</a></span>&#160;    <a class="code" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> <a class="code" href="../../d9/d36/classOutputBank.html#ac8d5beeb5e18454924020fa6b2106a11">bankSetting</a>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * @brief   A class that groups Bankable BankableMIDIOutput%s and </span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *          BankableMIDIInput%s, and allows the user to change the addresses </span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *          of these elements.</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * @tparam  N </span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> *          The number of banks.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span> &lt;setting_t N&gt;</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../db/dbd/classBank.html">   77</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/dbd/classBank.html">Bank</a> : <span class="keyword">public</span> <a class="code" href="../../de/de7/classSelectable.html">Selectable</a>&lt;N&gt;, <span class="keyword">public</span> <a class="code" href="../../d9/d36/classOutputBank.html">OutputBank</a> {</div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../db/dbd/classBank.html#a378cc37ef4111c4b88ecaf1d23afc480">   78</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../db/d6e/classBankableMIDIInput.html">BankableMIDIInput</a>&lt;N&gt;;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     * @brief   Construct a new Bank object.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">     * @param   tracksPerBank</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">     *          The number of addresses/tracks to skip for each bank setting.  </span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">     *          Must be strictly positive.</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">     * @param   initialSelection</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">     *          The initial bank setting.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../db/dbd/classBank.html#a750e6fbf069fe569896a4c1af53b1fac">   90</a></span>&#160;    <a class="code" href="../../db/dbd/classBank.html#a750e6fbf069fe569896a4c1af53b1fac">Bank</a>(uint8_t <a class="code" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">tracksPerBank</a> = 1, <a class="code" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> <a class="code" href="../../de/de7/classSelectable.html#a26aceed3b6dca909adbde6b4a6257240">initialSelection</a> = 0)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        : <a class="code" href="../../de/de7/classSelectable.html">Selectable</a>&lt;N&gt;(<a class="code" href="../../de/de7/classSelectable.html#a26aceed3b6dca909adbde6b4a6257240">initialSelection</a>),</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          <a class="code" href="../../d9/d36/classOutputBank.html">OutputBank</a>(<a class="code" href="../../d9/d36/classOutputBank.html#a5affd582f4c2ab87706c98c4b1b3bd03">tracksPerBank</a>, <a class="code" href="../../de/de7/classSelectable.html#a26aceed3b6dca909adbde6b4a6257240">initialSelection</a>) {}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">     * @brief   Select the given bank setting.</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">     * All BankableMIDIInput%s will be updated.</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">     * @param   bankSetting</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">     *          The new setting to select.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/dbd/classBank.html#a801ab5dedea8200f1cdb26533cb6f78b">select</a>(<a class="code" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> <a class="code" href="../../d9/d36/classOutputBank.html#ac8d5beeb5e18454924020fa6b2106a11">bankSetting</a>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">     * @brief   Get the number of Banks.</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../db/dbd/classBank.html#a41f19b593adce8398d8e0ee60e11b4c0">  107</a></span>&#160;    constexpr <span class="keyword">static</span> uint8_t <a class="code" href="../../db/dbd/classBank.html#a41f19b593adce8398d8e0ee60e11b4c0">getNumberOfBanks</a>() { <span class="keywordflow">return</span> N; }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     * @brief   Add a BankableMIDIInput to the bank.</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">     * This method is called in the BankableMIDIInput constructor.</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">     * @param   bankable</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">     *          The BankableMIDIInput to be added.</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/dbd/classBank.html#a83318aefa7708d3e09c7003dfca14a8d">add</a>(<a class="code" href="../../db/d6e/classBankableMIDIInput.html">BankableMIDIInput&lt;N&gt;</a> *bankable);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">     * @brief   Remove a BankableMIDIInput from the bank.</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">     * This method is called in the BankableMIDIInput destructor.</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">     * @param   bankable</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">     *          The BankableMIDIInput to be removed.</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../db/dbd/classBank.html#a33f0ba5ba504479ef26d8ab9573a6ea6">remove</a>(<a class="code" href="../../db/d6e/classBankableMIDIInput.html">BankableMIDIInput&lt;N&gt;</a> *bankable);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">     * @brief   A linked list of all BankableMIDIInput elements that have been</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">     *          added to this bank, and that should be updated when the bank</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">     *          setting changes.</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">     * The list is updated automatically when BankableMIDIInput elements are</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">     * created or destroyed.</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="../../db/dbd/classBank.html#a93fc2dbbcf7440bdcfa9e6ee3338bdce">  138</a></span>&#160;    <a class="code" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList&lt;BankableMIDIInput&lt;N&gt;</a>&gt; <a class="code" href="../../db/dbd/classBank.html#a93fc2dbbcf7440bdcfa9e6ee3338bdce">inputBankables</a>;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>

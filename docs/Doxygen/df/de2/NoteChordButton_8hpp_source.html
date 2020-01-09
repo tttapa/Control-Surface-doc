@@ -84,39 +84,9 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d1/daa/DigitalNoteSender_8hpp.html">MIDI_Senders/DigitalNoteSender.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * @brief   A class of MIDIOutputElement%s that read the input of a **momentary</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *          push button or switch**, and send out MIDI **Note** events.</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * A Note On event is sent when the button is pressed, and a Note Off</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * event is sent when the button is released.  </span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * The button is debounced in software.  </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * This version cannot be banked.  </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @ingroup MIDIOutputElements</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d3/d3b/classNoteChordButton.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d3b/classNoteChordButton.html">NoteChordButton</a> : <span class="keyword">public</span> <a class="code" href="../../dd/d29/classMIDIChordButton.html">MIDIChordButton</a>&lt;DigitalNoteSender&gt; {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">     * @brief   Create a new Bankable NoteChordButton object with the given pin, </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     *          address and chord.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     * @param   pin</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     *          The digital input pin with the button connected.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     *          The internal pull-up resistor will be enabled.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     * @param   address</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     *          The MIDI address of the base note, containing the note</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     *          number [0, 127], channel [CHANNEL_1, CHANNEL_16], and optional </span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     *          cable number [0, 15].</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * @param   chord</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *          The chord containing the intervals of the other notes to play.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * @param   velocity</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     *          The velocity of the MIDI Note events.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * @tparam  N</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     *          The number of notes in the chord.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t N&gt;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d3/d3b/classNoteChordButton.html#a6e576aaa90179bfca1f116fcd4ae600e">   41</a></span>&#160;    <a class="code" href="../../d3/d3b/classNoteChordButton.html#a6e576aaa90179bfca1f116fcd4ae600e">NoteChordButton</a>(<a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <span class="keyword">const</span> <a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> &amp;<a class="code" href="../../dd/d29/classMIDIChordButton.html#aaf337b870a6dd13e71567f9aefd2f039">address</a>,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keyword">const</span> <a class="code" href="../../d5/dc0/classChord.html">Chord&lt;N&gt;</a> &amp;<a class="code" href="../../dd/d29/classMIDIChordButton.html#aeec4d34de5bfae8f8f4e3446ba5a0dd1">chord</a>, uint8_t velocity = 0x7F)</div>
@@ -126,11 +96,9 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;              <a class="code" href="../../dd/d29/classMIDIChordButton.html#aeec4d34de5bfae8f8f4e3446ba5a0dd1">chord</a>,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;              {velocity},</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          } {}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">    /// Set the velocity of the MIDI Note events.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d3/d3b/classNoteChordButton.html#a1bd7c42ec152adde0cacef9486418c40">   51</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d3/d3b/classNoteChordButton.html#a1bd7c42ec152adde0cacef9486418c40">setVelocity</a>(uint8_t velocity) { this-&gt;<a class="code" href="../../dd/d29/classMIDIChordButton.html#a3296e2217dd530ddb922f24a450fec82">sender</a>.<a class="code" href="../../dc/dd4/classDigitalNoteSender.html#a1bd7c42ec152adde0cacef9486418c40">setVelocity</a>(velocity); }<span class="comment"></span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    /// Get the velocity of the MIDI Note events.</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d3/d3b/classNoteChordButton.html#a25a179d18e629da90c89aab707d518ed">   53</a></span>&#160;<span class="comment"></span>    uint8_t <a class="code" href="../../d3/d3b/classNoteChordButton.html#a25a179d18e629da90c89aab707d518ed">getVelocity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../dd/d29/classMIDIChordButton.html#a3296e2217dd530ddb922f24a450fec82">sender</a>.<a class="code" href="../../dc/dd4/classDigitalNoteSender.html#a25a179d18e629da90c89aab707d518ed">getVelocity</a>(); }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d3/d3b/classNoteChordButton.html#a1bd7c42ec152adde0cacef9486418c40">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/d3b/classNoteChordButton.html#a1bd7c42ec152adde0cacef9486418c40">setVelocity</a>(uint8_t velocity) { this-&gt;<a class="code" href="../../dd/d29/classMIDIChordButton.html#a3296e2217dd530ddb922f24a450fec82">sender</a>.<a class="code" href="../../dc/dd4/classDigitalNoteSender.html#a1bd7c42ec152adde0cacef9486418c40">setVelocity</a>(velocity); }</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d3/d3b/classNoteChordButton.html#a25a179d18e629da90c89aab707d518ed">   53</a></span>&#160;    uint8_t <a class="code" href="../../d3/d3b/classNoteChordButton.html#a25a179d18e629da90c89aab707d518ed">getVelocity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../dd/d29/classMIDIChordButton.html#a3296e2217dd530ddb922f24a450fec82">sender</a>.<a class="code" href="../../dc/dd4/classDigitalNoteSender.html#a25a179d18e629da90c89aab707d518ed">getVelocity</a>(); }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>

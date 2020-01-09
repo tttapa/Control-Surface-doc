@@ -98,44 +98,7 @@ Mapping</h2>
 <p>Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the potentiometers to a function.</p>
 <p>Written by PieterP, 2019-08-13 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
-<div class="fragment"><div class="line"><span class="comment">/** </span></div>
-<div class="line"><span class="comment"> * This example demonstrates the use of MIDI Control Change potentiometers that</span></div>
-<div class="line"><span class="comment"> * can be used for changing effect parameters, volumes, pan and balance</span></div>
-<div class="line"><span class="comment"> * controls, etc. It can control almost any knob in your DAW software. </span></div>
-<div class="line"><span class="comment"> * This example shows how to define multiple potentiometers using an array.</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @boards  AVR, AVR USB, Due, Nano 33, Teensy 3.x</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connections</span></div>
-<div class="line"><span class="comment"> * -----------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - A0: wiper of the first potentiometer</span></div>
-<div class="line"><span class="comment"> * - A1: wiper of the second potentiometer</span></div>
-<div class="line"><span class="comment"> * - ...</span></div>
-<div class="line"><span class="comment"> * - A5: wiper of the sixth potentiometer</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connect the left terminal of the potentiometers to ground, and the right one</span></div>
-<div class="line"><span class="comment"> * to V&lt;sub&gt;CC&lt;/sub&gt;.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Behavior</span></div>
-<div class="line"><span class="comment"> * --------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - When you turn a potentiometer, you should receive MIDI Control Change</span></div>
-<div class="line"><span class="comment"> *   events, with a value between 0 and 127.</span></div>
-<div class="line"><span class="comment"> * - The analog inputs are filtered, so there shouldn&#39;t be any noise on the </span></div>
-<div class="line"><span class="comment"> *   position. If there is, check your wiring, and make sure that the resistance</span></div>
-<div class="line"><span class="comment"> *   of the potentiometers isn&#39;t too high (10 kΩ is ideal).</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Mapping</span></div>
-<div class="line"><span class="comment"> * -------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Select the Arduino as a custom MIDI controller in your DAW, and use the </span></div>
-<div class="line"><span class="comment"> * MIDI learn option to assign the potentiometers to a function.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Written by PieterP, 2019-08-13  </span></div>
-<div class="line"><span class="comment"> * https://github.com/tttapa/Control-Surface</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"> </div>
+<div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI over USB interface.</span></div>

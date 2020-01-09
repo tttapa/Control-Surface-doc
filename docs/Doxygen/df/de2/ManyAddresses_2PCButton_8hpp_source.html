@@ -88,42 +88,11 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/dd0/namespaceBankable.html">Bankable</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>ManyAddresses {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @brief   A class of MIDIOutputElement%s that read the input of a **momentary</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *          push button or switch**, and send out MIDI **Program Change** </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *          events.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * A Program Change event is sent when the button is pressed.  </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * The button is debounced in software.  </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This version can be banked using an arbitrary list of alternative</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * addresses.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *          </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * @tparam  N</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *          The number of variants/alternative addresses the element has.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * @ingroup ManyAddressesMIDIOutputElements</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;setting_t N&gt;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">PCButton</a></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    : <span class="keyword">public</span> <a class="code" href="../../d9/df9/classBankable_1_1MIDIButton.html">Bankable::MIDIButton</a>&lt;ManyAddresses&lt;N&gt;, ProgramChangeSender&gt; {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * @brief   Create a new PCButton object with the given pin, program number</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *          and channel.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * @param   bank</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     *          The bank that selects the address to use.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * @param   pin</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     *          The digital input pin to read from.  </span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     *          The internal pull-up resistor will be enabled.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * @param   addresses</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     *          The list of MIDI addresses containing the program number </span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     *          [0, 127], channel [CHANNEL_1, CHANNEL_16], and optional cable </span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     *          number [0, 15].</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     * @param   sender</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     *          The MIDI sender to use.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html#a9a5800637db0a1de7c63c025b6d88d80">   47</a></span>&#160;    <a class="code" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html#a9a5800637db0a1de7c63c025b6d88d80">PCButton</a>(<span class="keyword">const</span> <a class="code" href="../../db/dbd/classBank.html">Bank&lt;N&gt;</a> &amp;bank, <a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;             <span class="keyword">const</span> <a class="code" href="../../d0/d32/structAH_1_1Array.html">Array&lt;MIDICNChannelAddress, N&gt;</a> &amp;addresses,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             <span class="keyword">const</span> <a class="code" href="../../db/d8b/classProgramChangeSender.html">ProgramChangeSender</a> &amp;<a class="code" href="../../d9/df9/classBankable_1_1MIDIButton.html#a3296e2217dd530ddb922f24a450fec82">sender</a> = {})</div>

@@ -86,47 +86,10 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/dd0/namespaceBankable.html">Bankable</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * @brief   A class of MIDIOutputElement%s that read the input of a **collection </span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *          of momentary push buttons or switches**, and send out MIDI **Note** </span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *          events.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * A Note On event is sent when a button is pressed, and a Note Off</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * event is sent when a button is released.  </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * The buttons are debounced in software.  </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * This version can be banked.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * @tparam  NUMBER_OF_BUTTONS</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *          The number of buttons in the collection.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * @ingroup BankableMIDIOutputElements</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t NUMBER_OF_BUTTONS&gt;</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d6/d5b/classBankable_1_1NoteButtons.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/d5b/classBankable_1_1NoteButtons.html">NoteButtons</a> : <span class="keyword">public</span> <a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html">MIDIButtons</a>&lt;DigitalNoteSender, NUMBER_OF_BUTTONS&gt; {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     * @brief   Create a new Bankable NoteButtons object with the given pins,</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     *          the given controller number and channel.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * @param   config</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *          The bank configuration to use: the bank to add this element to,</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     *          and whether to change the address, channel or cable number.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * @param   buttons</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     *          An list of digital input pins with the buttons connected.  </span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     *          The internal pull-up resistors will be enabled.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * @param   baseAddress</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     *          The MIDI address of the first button, containing the note</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     *          number [0, 127], channel [CHANNEL_1, CHANNEL_16], and optional </span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     *          cable number [0, 15].</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     * @param   incrementAddress</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     *          The number of addresses to increment for each next button.  </span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     *          E.g. if `baseAddress` is 8, and `incrementAddress` is 2,</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     *          then the first button will send on address 8, the second</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     *          button will send on address 10, button three on address 12, etc.</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     * @param   velocity</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     *          The velocity of the MIDI Note events.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a9d0a0062ec1c47d5add46de43a1f0949">   50</a></span>&#160;    <a class="code" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a9d0a0062ec1c47d5add46de43a1f0949">NoteButtons</a>(<span class="keyword">const</span> <a class="code" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a> &amp;config,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../d0/d32/structAH_1_1Array.html">Array&lt;AH::Button, NUMBER_OF_BUTTONS&gt;</a> &amp;<a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a5d532533422250ac1f787d754f4c868a">buttons</a>,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> &amp;<a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a2fadfb19bd939dbba27daa004f3dcb70">baseAddress</a>,</div>
@@ -135,11 +98,9 @@ $(function() {
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        : <a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html">MIDIButtons</a>&lt;<a class="code" href="../../dc/dd4/classDigitalNoteSender.html">DigitalNoteSender</a>, NUMBER_OF_BUTTONS&gt;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;              config, <a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a5d532533422250ac1f787d754f4c868a">buttons</a>, <a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a2fadfb19bd939dbba27daa004f3dcb70">baseAddress</a>, <a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a6a06d9e2bcdf84a36e4e7580e6b19523">incrementAddress</a>, {velocity},</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          } {}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    /// Set the velocity of the MIDI Note events.</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a1bd7c42ec152adde0cacef9486418c40">   60</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a1bd7c42ec152adde0cacef9486418c40">setVelocity</a>(uint8_t velocity) { this-&gt;<a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a3296e2217dd530ddb922f24a450fec82">sender</a>.setVelocity(velocity); }<span class="comment"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    /// Get the velocity of the MIDI Note events.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a25a179d18e629da90c89aab707d518ed">   62</a></span>&#160;<span class="comment"></span>    uint8_t <a class="code" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a25a179d18e629da90c89aab707d518ed">getVelocity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a3296e2217dd530ddb922f24a450fec82">sender</a>.getVelocity(); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a1bd7c42ec152adde0cacef9486418c40">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a1bd7c42ec152adde0cacef9486418c40">setVelocity</a>(uint8_t velocity) { this-&gt;<a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a3296e2217dd530ddb922f24a450fec82">sender</a>.setVelocity(velocity); }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a25a179d18e629da90c89aab707d518ed">   62</a></span>&#160;    uint8_t <a class="code" href="../../d6/d5b/classBankable_1_1NoteButtons.html#a25a179d18e629da90c89aab707d518ed">getVelocity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a3296e2217dd530ddb922f24a450fec82">sender</a>.getVelocity(); }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// namespace Bankable</span></div>

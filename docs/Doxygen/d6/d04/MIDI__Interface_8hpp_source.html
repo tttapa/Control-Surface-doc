@@ -89,210 +89,74 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">    9</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI_BAUD</a> = 31250;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @brief   An abstract class for MIDI interfaces.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d9/d73/classMIDI__Interface.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interface</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">protected</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">     * @brief   Constructor.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d9/d73/classMIDI__Interface.html#acec5a52edf28c87828052b7f17c8c7d9">MIDI_Interface</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     * @brief   Destructor.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a52f3a4250975b2af6458b31173c0434b">~MIDI_Interface</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     * @brief   Initialize the MIDI Interface.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d9/d73/classMIDI__Interface.html#a2d8ec6ac27419ce65e20d415ebfe1495">   32</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a>() {}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * @brief   Send a 3-byte MIDI packet.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * @param   m</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     *          MIDI message type. [0x80, 0xE0]</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     * @param   c</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     *          The MIDI channel. [1, 16]</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     * @param   d1</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     *          The first data byte. [0, 127]</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     * @param   d2</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     *          The second data byte. [0, 127]</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab28cf6f95d7726e991ea93d3edfe424e">send</a>(uint8_t m, uint8_t c, uint8_t d1, uint8_t d2);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     * @brief   Send a 2-byte MIDI packet.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">     * @param   m</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     *          MIDI message type. [0x80, 0xE0]</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     * @param   c</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">     *          The MIDI channel. [1, 16]</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">     * @param   d1</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">     *          The first data byte. [0, 127]</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab28cf6f95d7726e991ea93d3edfe424e">send</a>(uint8_t m, uint8_t c, uint8_t d1);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">     * @brief   Send a 3-byte MIDI packet with cable number.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">     * @param   m</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     *          MIDI message type. [0x80, 0xE0]</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">     * @param   c</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">     *          The MIDI channel. [1, 16]</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">     * @param   d1</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     *          The first data byte. [0, 127]</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     * @param   d2</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     *          The second data byte. [0, 127]</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">     * @param   cn</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">     *          The MIDI Cable Number. [0, 15]</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a6a9f7568ce8df67673bb75f6e269d9ca">sendOnCable</a>(uint8_t m, uint8_t c, uint8_t d1, uint8_t d2, uint8_t cn);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">     * @brief   Send a 2-byte MIDI packet with cable number.</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">     * @param   m</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">     *          MIDI message type. [0x80, 0xE0]</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">     * @param   c</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     *          The MIDI channel. [1, 16]</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     * @param   d1</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">     *          The first data byte. [0, 127]</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">     * @param   cn</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">     *          The MIDI Cable Number. [0, 15]</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a6a9f7568ce8df67673bb75f6e269d9ca">sendOnCable</a>(uint8_t m, uint8_t c, uint8_t d1, uint8_t cn);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">     * @brief   Send a single-byte MIDI packet with cable number.</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">     * @param   r</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">     *          The MIDI byte to send.</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">     * @param   cn</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">     *          The MIDI Cable Number. [0, 15]</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a6a9f7568ce8df67673bb75f6e269d9ca">sendOnCable</a>(uint8_t r, uint8_t cn);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">    /// Send a MIDI Note On event.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a4a59a7676f08a477c7de37cdcaec10c7">sendNoteOn</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address, uint8_t velocity);<span class="comment"></span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">    /// Send a MIDI Note Off event.</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a9cf6b14061deb42bea89c4310d2d6a13">sendNoteOff</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address, uint8_t velocity);<span class="comment"></span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">    /// Send a MIDI Key Pressure event.</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a62895e3a76f373d35a11be2e864be63a">sendKP</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address, uint8_t pressure);<span class="comment"></span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">    /// Send a MIDI Control Change event.</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab3dc2131d46e1e8032564c1754d70273">sendCC</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address, uint8_t value);<span class="comment"></span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    /// Send a MIDI Program Change event.</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#add5b910739f199850f5e222bb27f618e">sendPC</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address);<span class="comment"></span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">    /// Send a MIDI Program Change event.</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#add5b910739f199850f5e222bb27f618e">sendPC</a>(<a class="code" href="../../df/d9b/classMIDICNChannel.html">MIDICNChannel</a> address, uint8_t value);<span class="comment"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">    /// Send a MIDI Channel Pressure event.</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a84d16a04f5f42611b35dd6ef0223715d">sendCP</a>(<a class="code" href="../../df/d9b/classMIDICNChannel.html">MIDICNChannel</a> address, uint8_t pressure);<span class="comment"></span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">    /// Send a MIDI Pitch Bend event.</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#aabde12af39e614c9297230c7769d67c2">sendPB</a>(<a class="code" href="../../df/d9b/classMIDICNChannel.html">MIDICNChannel</a> address, uint16_t value);<span class="comment"></span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">    /// Send a MIDI System Exclusive message.</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab28cf6f95d7726e991ea93d3edfe424e">send</a>(<a class="code" href="../../db/d45/structSysExMessage.html">SysExMessage</a> message);<span class="comment"></span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">    /// Send a MIDI System Exclusive message.</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a4a59a7676f08a477c7de37cdcaec10c7">sendNoteOn</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address, uint8_t velocity);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a9cf6b14061deb42bea89c4310d2d6a13">sendNoteOff</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address, uint8_t velocity);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a62895e3a76f373d35a11be2e864be63a">sendKP</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address, uint8_t pressure);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab3dc2131d46e1e8032564c1754d70273">sendCC</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address, uint8_t value);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#add5b910739f199850f5e222bb27f618e">sendPC</a>(<a class="code" href="../../d3/d10/classMIDICNChannelAddress.html">MIDICNChannelAddress</a> address);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#add5b910739f199850f5e222bb27f618e">sendPC</a>(<a class="code" href="../../df/d9b/classMIDICNChannel.html">MIDICNChannel</a> address, uint8_t value);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a84d16a04f5f42611b35dd6ef0223715d">sendCP</a>(<a class="code" href="../../df/d9b/classMIDICNChannel.html">MIDICNChannel</a> address, uint8_t pressure);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#aabde12af39e614c9297230c7769d67c2">sendPB</a>(<a class="code" href="../../df/d9b/classMIDICNChannel.html">MIDICNChannel</a> address, uint16_t value);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab28cf6f95d7726e991ea93d3edfe424e">send</a>(<a class="code" href="../../db/d45/structSysExMessage.html">SysExMessage</a> message);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
 <div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="../../d9/d73/classMIDI__Interface.html#a672472efed11b086edd99539108c6cff">  120</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a672472efed11b086edd99539108c6cff">send</a>(<span class="keyword">const</span> uint8_t (&amp;sysexdata)[N], uint8_t cn = 0) {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab28cf6f95d7726e991ea93d3edfe424e">send</a>(<a class="code" href="../../db/d45/structSysExMessage.html">SysExMessage</a>{sysexdata, N, cn});</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }<span class="comment"></span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">    /// Send a single-byte MIDI message.</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab28cf6f95d7726e991ea93d3edfe424e">send</a>(uint8_t rt, uint8_t cn = 0);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">     * @brief   Read the MIDI interface and call the callback if a message is</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">     *          received.</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#ab28cf6f95d7726e991ea93d3edfe424e">send</a>(uint8_t rt, uint8_t cn = 0);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a99b02345a8a15d3c5ea2844a2253f510">update</a>() = 0;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">     * @brief   Return the default MIDI interface.</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interface</a> *<a class="code" href="../../d9/d73/classMIDI__Interface.html#aea39e2d359376a21ff1a490b2e0b5f22">getDefault</a>();</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">     * @brief   Set this MIDI interface as the default interface.</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">setAsDefault</a>();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">     * @brief   Set the callbacks that will be called when a MIDI message is </span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">     *          received.</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">     * @param   cb</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">     *          A pointer to an object that implements the MIDI_Callbacks class.</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#afe2d17d39dc60f9382e433e6be227ae9">setCallbacks</a>(<a class="code" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> *cb) = 0;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">     * @brief   Set the callbacks that will be called when a MIDI message is </span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">     *          received.</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">     * @param   cb</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">     *          A reference to an object that implements the MIDI_Callbacks </span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">     *          class.</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../d9/d73/classMIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">  159</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">setCallbacks</a>(<a class="code" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> &amp;cb) { <a class="code" href="../../d9/d73/classMIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">setCallbacks</a>(&amp;cb); }</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">     * @brief   Low-level function for sending a 3-byte MIDI message.</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a84cb04f0f9145dc20a1449c6ad3d8b3d">sendImpl</a>(uint8_t m, uint8_t c, uint8_t d1, uint8_t d2,</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                          uint8_t cn) = 0;<span class="comment"></span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">     * @brief   Low-level function for sending a 2-byte MIDI message.</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                          uint8_t cn) = 0;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a84cb04f0f9145dc20a1449c6ad3d8b3d">sendImpl</a>(uint8_t m, uint8_t c, uint8_t d1, uint8_t cn) = 0;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">     * @brief   Low-level function for sending a system exclusive MIDI message.</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a84cb04f0f9145dc20a1449c6ad3d8b3d">sendImpl</a>(<span class="keyword">const</span> uint8_t *data, <span class="keywordtype">size_t</span> length, uint8_t cn) = 0;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">    /** </span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">     * @brief   Low-level function for sending a single-byte MIDI message.</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html#a84cb04f0f9145dc20a1449c6ad3d8b3d">sendImpl</a>(uint8_t rt, uint8_t cn) = 0;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="../../d9/d73/classMIDI__Interface.html#abc56d3599aa1933cadad23de7e339bad">  182</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interface</a> *<a class="code" href="../../d9/d73/classMIDI__Interface.html#abc56d3599aa1933cadad23de7e339bad">DefaultMIDI_Interface</a>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;};</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> * @brief   An abstract class for MIDI interfaces.</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="../../de/d76/classParsing__MIDI__Interface.html">  188</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d76/classParsing__MIDI__Interface.html">Parsing_MIDI_Interface</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interface</a> {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">protected</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">     * @brief   Construct a MIDI interface with the given parser.</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">     *          Also set this interface as the default MIDI interface.</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">     * @param   parser</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">     *          The MIDI parser to use for the interface.</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a4039ad48831241830cb063cb56cceb84">Parsing_MIDI_Interface</a>(<a class="code" href="../../df/d0c/classMIDI__Parser.html">MIDI_Parser</a> &amp;<a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a6fe1f17feb0017bc10a48c7be41767bf">parser</a>);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="../../de/d76/classParsing__MIDI__Interface.html#ac56f005ff5d56006222c501a90b3e0f3">  201</a></span>&#160;    <a class="code" href="../../df/d0c/classMIDI__Parser.html">MIDI_Parser</a> &amp;<a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#ac56f005ff5d56006222c501a90b3e0f3">getParser</a>() { <span class="keywordflow">return</span> <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a6fe1f17feb0017bc10a48c7be41767bf">parser</a>; }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">     * @brief   Return the received channel message.</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a> <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a6d3d4a62a5a5eb5539cf26545f3f98e8">getChannelMessage</a>();</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">     * @brief   Return the received system exclusive message.</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="code" href="../../db/d45/structSysExMessage.html">SysExMessage</a> <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#ae3a623951f55462fb1a5925252ac1c55">getSysExMessage</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">     * @brief   Return the cable number of the received message.</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    uint8_t <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a9f9a8b6f1b9c41f185e63bc96c30cad8">getCN</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>() <span class="keyword">override</span>;</div>
@@ -303,10 +167,7 @@ $(function() {
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#ae43f6e0ae5f66091ffdbff5724515035">dispatchMIDIEvent</a>(<a class="code" href="../../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968">MIDI_read_t</a> event);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">     * @todo    Documentation</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968">MIDI_read_t</a> <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a3a2e87a22f6dd05ba2df1298de7f723b">read</a>() = 0;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#ad745c1058cb9cef7a9909b86ca75d4dc">onRealtimeMessage</a>(uint8_t message);</div>
@@ -320,11 +181,8 @@ $(function() {
 <div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="../../de/d76/classParsing__MIDI__Interface.html#ab0c1d38f76ef673cf91fd0352cca0790">  240</a></span>&#160;    <a class="code" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> *<a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#ab0c1d38f76ef673cf91fd0352cca0790">callbacks</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;};</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">// LCOV_EXCL_START</span><span class="comment"></span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"> * @brief   A class for callbacks from MIDI input.</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="../../de/d55/classMIDI__Callbacks.html">  247</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">// LCOV_EXCL_START</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="../../de/d55/classMIDI__Callbacks.html">  247</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="../../de/d55/classMIDI__Callbacks.html#ac5675df71b751d6c9b1a5b6c0a050da0">  249</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d55/classMIDI__Callbacks.html#ac5675df71b751d6c9b1a5b6c0a050da0">onChannelMessage</a>(<a class="code" href="../../de/d76/classParsing__MIDI__Interface.html">Parsing_MIDI_Interface</a> &amp;midi) { (void)midi; }</div>
 <div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="../../de/d55/classMIDI__Callbacks.html#af320cf99b1d8f553b7a7f3df1b6b0116">  250</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d55/classMIDI__Callbacks.html#af320cf99b1d8f553b7a7f3df1b6b0116">onSysExMessage</a>(<a class="code" href="../../de/d76/classParsing__MIDI__Interface.html">Parsing_MIDI_Interface</a> &amp;midi) { (void)midi; }</div>

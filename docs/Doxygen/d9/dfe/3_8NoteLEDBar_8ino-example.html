@@ -74,11 +74,11 @@ $(function() {
 <div class="title">3.NoteLEDBar.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md129"></a>
+<h1><a class="anchor" id="autotoc_md133"></a>
 3.NoteLEDBar</h1>
 <p>This example demonstrates the use of LED bar graphs that respond to incoming MIDI note events. The LEDs are driven by a 74HC595 (or equivalent) shift register.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md130"></a>
+<h2><a class="anchor" id="autotoc_md134"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -88,50 +88,15 @@ Connections</h2>
 <p>Connect eight LEDs (and series resistors) between the outputs of the shift register and ground.</p>
 <p>Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md131"></a>
+<h2><a class="anchor" id="autotoc_md135"></a>
 Behavior</h2>
 <p>If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the LED bar display is turned on, the higher the velocity (the harder you press the key), the more LEDs will turn on.</p>
-<h2><a class="anchor" id="autotoc_md132"></a>
+<h2><a class="anchor" id="autotoc_md136"></a>
 Mapping</h2>
 <p>Route the MIDI output of a MIDI keyboard or from an audio workstation to the Arduino's MIDI input.</p>
 <p>Written by PieterP, 2019-11-25 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
-<div class="fragment"><div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * This example demonstrates the use of LED bar graphs that respond to incoming </span></div>
-<div class="line"><span class="comment"> * MIDI note events. The LEDs are driven by a 74HC595 (or equivalent) shift register.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * @boards  AVR, AVR USB, Teensy 3.x, ESP32</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connections</span></div>
-<div class="line"><span class="comment"> * -----------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> *   - SS:   74HC595 ST_CP</span></div>
-<div class="line"><span class="comment"> *   - MOSI: 74HC595 DS</span></div>
-<div class="line"><span class="comment"> *   - SCK:  74HC595 SH_CP</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connect eight LEDs (and series resistors) between the outputs of the shift</span></div>
-<div class="line"><span class="comment"> * register and ground.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Remember to connect the enable pin of the shift register to ground and the </span></div>
-<div class="line"><span class="comment"> * master reset pin to Vcc in order to enable it.  </span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Behavior</span></div>
-<div class="line"><span class="comment"> * --------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the LED bar</span></div>
-<div class="line"><span class="comment"> * display is turned on, the higher the velocity (the harder you press the key),</span></div>
-<div class="line"><span class="comment"> * the more LEDs will turn on.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Mapping</span></div>
-<div class="line"><span class="comment"> * -------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Route the MIDI output of a MIDI keyboard or from an audio workstation to </span></div>
-<div class="line"><span class="comment"> * the Arduino&#39;s MIDI input.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Written by PieterP, 2019-11-25  </span></div>
-<div class="line"><span class="comment"> * https://github.com/tttapa/Control-Surface</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"> </div>
+<div class="fragment"><div class="line"> </div>
 <div class="line"><span class="comment">// Include the library</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>

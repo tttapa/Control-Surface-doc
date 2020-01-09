@@ -74,12 +74,12 @@ $(function() {
 <div class="title">4.VULEDs.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md121"></a>
+<h1><a class="anchor" id="autotoc_md125"></a>
 4.VULEDs</h1>
 <p>This example demonstrates the use of the VULEDs class that displays the VU or level meters from your DAW as an LED bar graph.</p>
 <p>Shift registers are used to drive the LEDs.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano 33, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md122"></a>
+<h2><a class="anchor" id="autotoc_md126"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -90,53 +90,16 @@ Connections</h2>
 <p>Connect an LED (and series resistor) between each of the first 12 outputs of the shift registers and ground.</p>
 <p>Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md123"></a>
+<h2><a class="anchor" id="autotoc_md127"></a>
 Behavior</h2>
 <p>The LEDs display the level of the first track in your DAW. <br  />
  When the push button is pressed, the VU meter switches from bar mode to dot mode and back.</p>
-<h2><a class="anchor" id="autotoc_md124"></a>
+<h2><a class="anchor" id="autotoc_md128"></a>
 Mapping</h2>
 <p>Map the Arduino as a Mackie Control Universal in your DAW.</p>
 <p>Written by PieterP, 2019-12-09 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
-<div class="fragment"><div class="line"><span class="comment">/**</span></div>
-<div class="line"><span class="comment"> * This example demonstrates the use of the VULEDs class that displays the VU or</span></div>
-<div class="line"><span class="comment"> * level meters from your DAW as an LED bar graph.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Shift registers are used to drive the LEDs.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * @boards  AVR, AVR USB, Nano 33, Due, Teensy 3.x, ESP8266, ESP32</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connections</span></div>
-<div class="line"><span class="comment"> * -----------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> *   - SS:   74HC595 ST_CP</span></div>
-<div class="line"><span class="comment"> *   - MOSI: 74HC595 DS</span></div>
-<div class="line"><span class="comment"> *   - SCK:  74HC595 SH_CP</span></div>
-<div class="line"><span class="comment"> *   - A0:   Push button (to ground, internal pull-up resistor will be used)</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connect an LED (and series resistor) between each of the first 12 outputs of </span></div>
-<div class="line"><span class="comment"> * the shift registers and ground.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Remember to connect the enable pin of the shift register to ground and the </span></div>
-<div class="line"><span class="comment"> * master reset pin to Vcc in order to enable it.  </span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Behavior</span></div>
-<div class="line"><span class="comment"> * --------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * The LEDs display the level of the first track in your DAW.  </span></div>
-<div class="line"><span class="comment"> * When the push button is pressed, the VU meter switches from bar mode to dot </span></div>
-<div class="line"><span class="comment"> * mode and back.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Mapping</span></div>
-<div class="line"><span class="comment"> * -------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Map the Arduino as a Mackie Control Universal in your DAW.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Written by PieterP, 2019-12-09  </span></div>
-<div class="line"><span class="comment"> * https://github.com/tttapa/Control-Surface</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"> </div>
+<div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><a name="_a0"></a><a class="code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>

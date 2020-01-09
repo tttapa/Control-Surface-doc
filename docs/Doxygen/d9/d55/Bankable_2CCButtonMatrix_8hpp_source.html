@@ -87,55 +87,12 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/dd0/namespaceBankable.html">Bankable</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * @brief   A class of MIDIOutputElement%s that read the input from a **matrix</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *          of momentary push buttons or switches**, and send out MIDI **Control</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *          Change** events.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * A value of 0x7F is sent when a button is pressed, and a value of 0x00 is sent</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * when a button is released.  </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Crude software debouncing is implemented by limiting the refresh rate.  </span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This version can be banked.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * @tparam  nb_rows</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *          The number of rows of the matrix.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * @tparam  nb_cols</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *          The number of columns of the matrix.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * @ingroup BankableMIDIOutputElements</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t nb_rows, u<span class="keywordtype">int</span>8_t nb_cols&gt;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../db/d2b/classBankable_1_1CCButtonMatrix.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d2b/classBankable_1_1CCButtonMatrix.html">CCButtonMatrix</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : <span class="keyword">public</span> <a class="code" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html">MIDIButtonMatrix</a>&lt;MatrixAddress&lt;nb_rows, nb_cols&gt;, DigitalCCSender,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                              nb_rows, nb_cols&gt; {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * @brief   Create a new Bankable CCButtonMatrix object with the given pins,</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     *          controller numbers and channel.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * </span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * @param   config</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     *          The bank configuration to use: the bank to add this element to,</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     *          and whether to change the address, channel or cable number.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * @param   rowPins</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     *          A list of pin numbers connected to the rows of the button</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     *          matrix.  </span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     *          **⚠** These pins will be driven LOW as outputs (Lo-Z).</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     * @param   colPins</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     *          A list of pin numbers connected to the columns of the button</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     *          matrix.  </span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     *          These pins will be used as inputs (Hi-Z), and the</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     *          internal pull-up resistor will be enabled.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     * @param   controllers</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     *          A 2-dimensional array of the same dimensions as the button</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">     *          matrix that contains the MIDI Controller number of each button.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     *          [0, 119]</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     * @param   channelCN</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">     *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">     *          [0, 15].</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">     * @param   sender</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">     *          The MIDI sender to use.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../db/d2b/classBankable_1_1CCButtonMatrix.html#a3e30687606b0fa1289f3489989136fce">   59</a></span>&#160;    <a class="code" href="../../db/d2b/classBankable_1_1CCButtonMatrix.html#a3e30687606b0fa1289f3489989136fce">CCButtonMatrix</a>(<span class="keyword">const</span> <a class="code" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a> &amp;config,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                   <span class="keyword">const</span> PinList&lt;nb_rows&gt; &amp;<a class="code" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a78f102fabc50104bd885ea077bcf8f8c">rowPins</a>,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                   <span class="keyword">const</span> PinList&lt;nb_cols&gt; &amp;<a class="code" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a9ac5156794b322950acdc745de570aac">colPins</a>,</div>

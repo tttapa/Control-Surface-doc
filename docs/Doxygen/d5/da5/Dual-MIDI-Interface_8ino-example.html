@@ -74,60 +74,30 @@ $(function() {
 <div class="title">Dual-MIDI-Interface.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md96"></a>
+<h1><a class="anchor" id="autotoc_md100"></a>
 Dual-MIDI-Interface</h1>
 <p>This example demonstrates how to group together two or more MIDI interfaces, so you can send the MIDI output over both MIDI USB and 5-pin DIN MIDI, for example. MIDI input is received from all interfaces as well.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR USB, Due, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md97"></a>
+<h2><a class="anchor" id="autotoc_md101"></a>
 Connections</h2>
 <ul>
 <li>A0: wiper of a potentiometer</li>
 </ul>
 <p>Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>.</p>
-<h2><a class="anchor" id="autotoc_md98"></a>
+<h2><a class="anchor" id="autotoc_md102"></a>
 Behavior</h2>
 <ul>
 <li>When you turn the potentiometer, you should receive MIDI Control Change events on both the Serial MIDI interface and the USB MIDI interface.</li>
 <li>When a MIDI Note event for middle C is received on either MIDI interface, the state of the built-in LED will change accordingly.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md99"></a>
+<h2><a class="anchor" id="autotoc_md103"></a>
 Mapping</h2>
 <ul>
 <li>None</li>
 </ul>
 <p>Written by PieterP, 2019-08-22 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
-<div class="fragment"><div class="line"><span class="comment">/** </span></div>
-<div class="line"><span class="comment"> * This example demonstrates how to group together two or more MIDI interfaces,</span></div>
-<div class="line"><span class="comment"> * so you can send the MIDI output over both MIDI USB and 5-pin DIN MIDI, for </span></div>
-<div class="line"><span class="comment"> * example. MIDI input is received from all interfaces as well.</span></div>
-<div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> * @boards  AVR USB, Due, Teensy 3.x</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connections</span></div>
-<div class="line"><span class="comment"> * -----------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - A0: wiper of a potentiometer</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Connect the left terminal of the potentiometer to ground, and the right one</span></div>
-<div class="line"><span class="comment"> * to V&lt;sub&gt;CC&lt;/sub&gt;.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Behavior</span></div>
-<div class="line"><span class="comment"> * --------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - When you turn the potentiometer, you should receive MIDI Control Change</span></div>
-<div class="line"><span class="comment"> *   events on both the Serial MIDI interface and the USB MIDI interface.</span></div>
-<div class="line"><span class="comment"> * - When a MIDI Note event for middle C is received on either MIDI interface,</span></div>
-<div class="line"><span class="comment"> *   the state of the built-in LED will change accordingly.</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Mapping</span></div>
-<div class="line"><span class="comment"> * -------</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * - None</span></div>
-<div class="line"><span class="comment"> * </span></div>
-<div class="line"><span class="comment"> * Written by PieterP, 2019-08-22  </span></div>
-<div class="line"><span class="comment"> * https://github.com/tttapa/Control-Surface</span></div>
-<div class="line"><span class="comment"> */</span></div>
+<div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create two MIDI interfaces</span></div>
