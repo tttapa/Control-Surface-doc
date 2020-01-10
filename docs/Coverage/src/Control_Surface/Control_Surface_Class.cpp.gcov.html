@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - a5fd64082b615276c35cc4e6a24e53310f6ee688 - src/Control_Surface/Control_Surface_Class.cpp</title>
+  <title>LCOV - 462686da57205eb3e6c586aeaeb6f49c6ad10209 - src/Control_Surface/Control_Surface_Class.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">a5fd64082b615276c35cc4e6a24e53310f6ee688</td>
+            <td class="headerValue">462686da57205eb3e6c586aeaeb6f49c6ad10209</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">9</td>
-            <td class="headerCovTableEntry">101</td>
-            <td class="headerCovTableEntryLo">8.9 %</td>
+            <td class="headerCovTableEntry">103</td>
+            <td class="headerCovTableEntryLo">8.7 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-01-09 23:28:12</td>
+            <td class="headerValue">2020-01-10 16:55:26</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -87,9 +87,9 @@
 <a name="17"><span class="lineNum">      17 </span>            : </a>
 <a name="18"><span class="lineNum">      18 </span>            : using AH::ExtendedIOElement;</a>
 <a name="19"><span class="lineNum">      19 </span>            : </a>
-<a name="20"><span class="lineNum">      20 </span><span class="lineCov">          1 : Control_Surface_ &amp;Control_Surface_::getInstance() {</span></a>
-<a name="21"><span class="lineNum">      21 </span><span class="lineCov">          1 :     static Control_Surface_ instance;</span></a>
-<a name="22"><span class="lineNum">      22 </span><span class="lineCov">          1 :     return instance;</span></a>
+<a name="20"><span class="lineNum">      20 </span><span class="lineCov">          2 : Control_Surface_ &amp;Control_Surface_::getInstance() {</span></a>
+<a name="21"><span class="lineNum">      21 </span><span class="lineCov">          2 :     static Control_Surface_ instance;</span></a>
+<a name="22"><span class="lineNum">      22 </span><span class="lineCov">          2 :     return instance;</span></a>
 <a name="23"><span class="lineNum">      23 </span><span class="lineNoCov">          0 : }</span></a>
 <a name="24"><span class="lineNum">      24 </span>            : </a>
 <a name="25"><span class="lineNum">      25 </span><span class="lineNoCov">          0 : void Control_Surface_::begin() {</span></a>
@@ -229,21 +229,23 @@
 <a name="159"><span class="lineNum">     159 </span><span class="lineNoCov">          0 :     DisplayInterface *previousDisplay = nullptr;</span></a>
 <a name="160"><span class="lineNum">     160 </span><span class="lineNoCov">          0 :     for (DisplayElement &amp;displayElement : DisplayElement::getAll()) {</span></a>
 <a name="161"><span class="lineNum">     161 </span><span class="lineNoCov">          0 :         DisplayInterface *thisDisplay = &amp;displayElement.getDisplay();</span></a>
-<a name="162"><span class="lineNum">     162 </span><span class="lineNoCov">          0 :         if (thisDisplay != previousDisplay) {</span></a>
-<a name="163"><span class="lineNum">     163 </span><span class="lineNoCov">          0 :             if (previousDisplay)</span></a>
-<a name="164"><span class="lineNum">     164 </span><span class="lineNoCov">          0 :                 previousDisplay-&gt;display();</span></a>
-<a name="165"><span class="lineNum">     165 </span><span class="lineNoCov">          0 :             thisDisplay-&gt;clearAndDrawBackground();</span></a>
-<a name="166"><span class="lineNum">     166 </span><span class="lineNoCov">          0 :         }</span></a>
-<a name="167"><span class="lineNum">     167 </span><span class="lineNoCov">          0 :         displayElement.draw();</span></a>
-<a name="168"><span class="lineNum">     168 </span><span class="lineNoCov">          0 :         previousDisplay = thisDisplay;</span></a>
-<a name="169"><span class="lineNum">     169 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="170"><span class="lineNum">     170 </span><span class="lineNoCov">          0 :     if (previousDisplay)</span></a>
-<a name="171"><span class="lineNum">     171 </span><span class="lineNoCov">          0 :         previousDisplay-&gt;display();</span></a>
-<a name="172"><span class="lineNum">     172 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="173"><span class="lineNum">     173 </span>            : </a>
-<a name="174"><span class="lineNum">     174 </span><span class="lineCov">          1 : Control_Surface_ &amp;Control_Surface = Control_Surface_::getInstance();</span></a>
+<a name="162"><span class="lineNum">     162 </span><span class="lineNoCov">          0 :         if (!thisDisplay-&gt;isEnabled())</span></a>
+<a name="163"><span class="lineNum">     163 </span><span class="lineNoCov">          0 :             continue;</span></a>
+<a name="164"><span class="lineNum">     164 </span><span class="lineNoCov">          0 :         if (thisDisplay != previousDisplay) {</span></a>
+<a name="165"><span class="lineNum">     165 </span><span class="lineNoCov">          0 :             if (previousDisplay)</span></a>
+<a name="166"><span class="lineNum">     166 </span><span class="lineNoCov">          0 :                 previousDisplay-&gt;display();</span></a>
+<a name="167"><span class="lineNum">     167 </span><span class="lineNoCov">          0 :             previousDisplay = thisDisplay;</span></a>
+<a name="168"><span class="lineNum">     168 </span><span class="lineNoCov">          0 :             thisDisplay-&gt;clearAndDrawBackground();</span></a>
+<a name="169"><span class="lineNum">     169 </span><span class="lineNoCov">          0 :         }</span></a>
+<a name="170"><span class="lineNum">     170 </span><span class="lineNoCov">          0 :         displayElement.draw();</span></a>
+<a name="171"><span class="lineNum">     171 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="172"><span class="lineNum">     172 </span><span class="lineNoCov">          0 :     if (previousDisplay)</span></a>
+<a name="173"><span class="lineNum">     173 </span><span class="lineNoCov">          0 :         previousDisplay-&gt;display();</span></a>
+<a name="174"><span class="lineNum">     174 </span><span class="lineNoCov">          0 : }</span></a>
 <a name="175"><span class="lineNum">     175 </span>            : </a>
-<a name="176"><span class="lineNum">     176 </span>            : END_CS_NAMESPACE</a>
+<a name="176"><span class="lineNum">     176 </span><span class="lineCov">          2 : Control_Surface_ &amp;Control_Surface = Control_Surface_::getInstance();</span></a>
+<a name="177"><span class="lineNum">     177 </span>            : </a>
+<a name="178"><span class="lineNum">     178 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>
