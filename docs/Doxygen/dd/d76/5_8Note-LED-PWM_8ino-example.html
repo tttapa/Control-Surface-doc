@@ -74,19 +74,19 @@ $(function() {
 <div class="title">5.Note-LED-PWM.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md144"></a>
+<h1><a class="anchor" id="autotoc_md145"></a>
 5.Note-LED-PWM</h1>
 <p>This example demonstrates the use of LEDs that respond to incoming MIDI note events by changing the brightness of an LED using PWM.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md145"></a>
+<h2><a class="anchor" id="autotoc_md146"></a>
 Connections</h2>
 <p>Connect an LED (+ current limiting resistor) to any PWM pin. Then change the pin number in the <code>ledPin</code> constant to match the pin with your LED connected.</p>
-<h2><a class="anchor" id="autotoc_md146"></a>
+<h2><a class="anchor" id="autotoc_md147"></a>
 Behavior</h2>
 <p>If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the LED will light up, with the brightness depending on the velocity. <br  />
  If a Note Off event for that note is sent, the LED will turn off. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="autotoc_md147"></a>
+<h2><a class="anchor" id="autotoc_md148"></a>
 Mapping</h2>
 <p>Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C on the keyboard.</p>
 <p>Written by PieterP, 2020-01-03 <br  />

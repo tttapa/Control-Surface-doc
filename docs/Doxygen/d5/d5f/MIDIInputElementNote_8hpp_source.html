@@ -85,7 +85,7 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if defined(ESP32)</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define GUARD_LIST_LOCK std::lock_guard&lt;std::mutex&gt; _guard(mutex)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define GUARD_LIST_LOCK std::lock_guard&lt;std::mutex&gt; guard_(mutex)</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d5/d5f/MIDIInputElementNote_8hpp.html#a46cf1332de99737106450bdfcdca9073">   10</a></span>&#160;<span class="preprocessor">#define GUARD_LIST_LOCK</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>

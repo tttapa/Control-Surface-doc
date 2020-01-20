@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 48927c115366fe8f71981adad913a1bde8bc82a3 - src/AH/Timing/MillisMicrosTimer.hpp</title>
+  <title>LCOV - fa2e4a49da50ffb0e7c659deff0420e2cfd288ae - src/AH/Timing/MillisMicrosTimer.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">48927c115366fe8f71981adad913a1bde8bc82a3</td>
+            <td class="headerValue">fa2e4a49da50ffb0e7c659deff0420e2cfd288ae</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">11</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-01-13 12:47:48</td>
+            <td class="headerValue">2020-01-21 00:36:30</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">6</td>
@@ -102,11 +102,11 @@
 <a name="32"><span class="lineNum">      32 </span>            :      * @param   interval</a>
 <a name="33"><span class="lineNum">      33 </span>            :      *          The interval between two events.</a>
 <a name="34"><span class="lineNum">      34 </span>            :      */</a>
-<a name="35"><span class="lineNum">      35 </span><span class="lineCov">          6 :     Timer(unsigned long interval) : interval(interval) {</span></a>
+<a name="35"><span class="lineNum">      35 </span><span class="lineCov">          4 :     Timer(unsigned long interval) : interval(interval) {</span></a>
 <a name="36"><span class="lineNum">      36 </span>            : #ifdef ARDUINO</a>
 <a name="37"><span class="lineNum">      37 </span>            :         begin();</a>
 <a name="38"><span class="lineNum">      38 </span>            : #endif</a>
-<a name="39"><span class="lineNum">      39 </span><span class="lineCov">          6 :     }</span></a>
+<a name="39"><span class="lineNum">      39 </span><span class="lineCov">          4 :     }</span></a>
 <a name="40"><span class="lineNum">      40 </span>            :     /// Initialize the timer.</a>
 <a name="41"><span class="lineNum">      41 </span><span class="lineCov">          2 :     void begin() { previous = time() - interval; }</span></a>
 <a name="42"><span class="lineNum">      42 </span>            :     /// Update the timer and return true if the event should fire.</a>
@@ -126,7 +126,7 @@
 <a name="56"><span class="lineNum">      56 </span>            : </a>
 <a name="57"><span class="lineNum">      57 </span>            :   private:</a>
 <a name="58"><span class="lineNum">      58 </span>            :     unsigned long interval;</a>
-<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          6 :     unsigned long previous = 0;</span></a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          4 :     unsigned long previous = 0;</span></a>
 <a name="60"><span class="lineNum">      60 </span>            : };</a>
 <a name="61"><span class="lineNum">      61 </span>            : </a>
 <a name="62"><span class="lineNum">      62 </span>            : /// @}</a>

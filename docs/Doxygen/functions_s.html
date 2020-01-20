@@ -154,7 +154,7 @@ $(function() {
 <li>sendImpl()
 : <a class="el" href="d0/d89/classBluetoothMIDI__Interface.html#adf9e905810b9a70abd693b19a13e5bf5">BluetoothMIDI_Interface</a>
 , <a class="el" href="d9/d73/classMIDI__Interface.html#a84cb04f0f9145dc20a1449c6ad3d8b3d">MIDI_Interface</a>
-, <a class="el" href="dd/d81/classMultiMIDI__Interface.html#a86e4b1603822f24007ac3c837fe0e6f7">MultiMIDI_Interface&lt; N &gt;</a>
+, <a class="el" href="dd/d81/classMultiMIDI__Interface.html#a1717dd2c4a884b1a3d5cdb58a40959d1">MultiMIDI_Interface&lt; N &gt;</a>
 , <a class="el" href="d8/d0b/classStreamDebugMIDI__Interface.html#adf9e905810b9a70abd693b19a13e5bf5">StreamDebugMIDI_Interface</a>
 , <a class="el" href="d3/dc3/classStreamMIDI__Interface.html#adf9e905810b9a70abd693b19a13e5bf5">StreamMIDI_Interface</a>
 , <a class="el" href="de/d05/classUSBMIDI__Interface.html#adf9e905810b9a70abd693b19a13e5bf5">USBMIDI_Interface</a>
@@ -195,7 +195,6 @@ $(function() {
 </li>
 <li>serial
 : <a class="el" href="db/dc4/classSerialDebugMIDI__Interface.html#a0719781400c3b390ceac26f97e467f44">SerialDebugMIDI_Interface&lt; T &gt;</a>
-, <a class="el" href="d9/db8/classSerialMIDI__Interface.html#a0719781400c3b390ceac26f97e467f44">SerialMIDI_Interface&lt; T &gt;</a>
 </li>
 <li>SerialDebugMIDI_Interface()
 : <a class="el" href="db/dc4/classSerialDebugMIDI__Interface.html#a3a78da9bb134da78b9eb961fb7e89d3e">SerialDebugMIDI_Interface&lt; T &gt;</a>
@@ -372,6 +371,17 @@ $(function() {
 <li>SingleAddress()
 : <a class="el" href="df/de5/classBankable_1_1SingleAddress.html#a920dfb6bbe5d0d926268e426eccea371">SingleAddress</a>
 </li>
+<li>sink
+: <a class="el" href="df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">MIDI_Pipe</a>
+</li>
+<li>sinkMIDIfromPipe()
+: <a class="el" href="d9/d73/classMIDI__Interface.html#a9702e4cd248b377a8cc33235c0938303">MIDI_Interface</a>
+, <a class="el" href="df/d72/classMIDI__Pipe.html#ac1817f61c829adf43f849d3a11a06cca">MIDI_Pipe</a>
+, <a class="el" href="d9/db6/classMIDI__Sink.html#aeb4d42816b088f0c8000037fd24c8a33">MIDI_Sink</a>
+</li>
+<li>sinkPipe
+: <a class="el" href="df/d5b/classMIDI__Source.html#a444269f0926ab3fb7aa668a95b45605d">MIDI_Source</a>
+</li>
 <li>size
 : <a class="el" href="d6/dc4/classBankDisplay.html#ae5dc6ffcd9b7605c7787791e40cc6bb0">BankDisplay</a>
 , <a class="el" href="d7/dae/classMCU_1_1LCDDisplay.html#ae5dc6ffcd9b7605c7787791e40cc6bb0">LCDDisplay</a>
@@ -379,7 +389,7 @@ $(function() {
 , <a class="el" href="d3/d51/classSelectorDisplay.html#ae5dc6ffcd9b7605c7787791e40cc6bb0">SelectorDisplay</a>
 </li>
 <li>slice()
-: <a class="el" href="d0/d32/structAH_1_1Array.html#aad6cd36f3664de3d3e4ede6bb480896d">Array&lt; T, N &gt;</a>
+: <a class="el" href="d0/d32/structAH_1_1Array.html#a6c08a0b8e3c45b3d12a27e558e4d6c50">Array&lt; T, N &gt;</a>
 , <a class="el" href="d2/dc9/classAH_1_1ArraySlice.html#aecaa84bf9fb556811f8c970d596e7b7f">ArraySlice&lt; T, N, Reverse, Const &gt;</a>
 </li>
 <li>SoftwareSerialDebugMIDI_Interface()
@@ -387,6 +397,15 @@ $(function() {
 </li>
 <li>SoftwareSerialMIDI_Interface()
 : <a class="el" href="d6/d6d/classSoftwareSerialMIDI__Interface.html#aa2f1f7558bc4b9227951ee52b5e0365d">SoftwareSerialMIDI_Interface</a>
+</li>
+<li>source
+: <a class="el" href="df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">MIDI_Pipe</a>
+</li>
+<li>sourceMIDItoPipe()
+: <a class="el" href="df/d5b/classMIDI__Source.html#aeaa61d6cae5dd966cf4720a4a586d565">MIDI_Source</a>
+</li>
+<li>sourcePipe
+: <a class="el" href="d9/db6/classMIDI__Sink.html#ad34288f0d49ed673d24387f5f6a600be">MIDI_Sink</a>
 </li>
 <li>spacing
 : <a class="el" href="d4/d42/classMCU_1_1VUDisplay.html#a079b9d1bddc3b383c59fc48c559ef212">VUDisplay</a>
@@ -425,15 +444,11 @@ $(function() {
 </li>
 <li>State
 : <a class="el" href="d7/d83/classAH_1_1IncrementButton.html#a5d74787dedbc4e11c1ab15bf487e61f8">IncrementButton</a>
+, <a class="el" href="df/dc6/classAH_1_1IncrementDecrementButtons.html#a5d74787dedbc4e11c1ab15bf487e61f8">IncrementDecrementButtons</a>
 </li>
 <li>state
 : <a class="el" href="df/dc6/classAH_1_1IncrementDecrementButtons.html#a876b486d3a5241a126bd5751c5f70f79">IncrementDecrementButtons</a>
-</li>
-<li>State
-: <a class="el" href="df/dc6/classAH_1_1IncrementDecrementButtons.html#a5d74787dedbc4e11c1ab15bf487e61f8">IncrementDecrementButtons</a>
-</li>
-<li>state
-: <a class="el" href="df/dca/classBankable_1_1MIDIButtonLatched.html#ab30ba07e2a0bd07a15e45a92c32db9c5">MIDIButtonLatched&lt; BankAddress, Sender &gt;</a>
+, <a class="el" href="df/dca/classBankable_1_1MIDIButtonLatched.html#ab30ba07e2a0bd07a15e45a92c32db9c5">MIDIButtonLatched&lt; BankAddress, Sender &gt;</a>
 , <a class="el" href="d3/d88/classMIDIButtonLatched.html#ab30ba07e2a0bd07a15e45a92c32db9c5">MIDIButtonLatched&lt; Sender &gt;</a>
 </li>
 <li>StaticSizeExtendedIOElement()
@@ -474,7 +489,7 @@ $(function() {
 : <a class="el" href="d1/db1/classSysExBuffer.html#a72beb2f023cdb99faf43dd83c0c58723">SysExBuffer</a>
 </li>
 <li>SysExMessage()
-: <a class="el" href="db/d45/structSysExMessage.html#a279a3e3c4d73645a8a19cfb1e866ba13">SysExMessage</a>
+: <a class="el" href="db/d45/structSysExMessage.html#ac559df9e3f29b65dbf17bc3f9a9b17af">SysExMessage</a>
 </li>
 <li>sysExMessageCallback
 : <a class="el" href="dc/d45/classControl__Surface__.html#ad43a6370fb958fa2246451f165490965">Control_Surface_</a>

@@ -79,22 +79,24 @@
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="../../db/d45/structSysExMessage.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="276,-270.5 276,-360.5 377,-360.5 377,-270.5 276,-270.5"/>
-<text text-anchor="middle" x="326.5" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">SysExMessage</text>
-<polyline fill="none" stroke="black" points="276,-341.5 377,-341.5 "/>
-<text text-anchor="start" x="284" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ data</text>
-<text text-anchor="start" x="284" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ length</text>
-<text text-anchor="start" x="284" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CN</text>
-<polyline fill="none" stroke="black" points="276,-300.5 377,-300.5 "/>
+<polygon fill="white" stroke="black" points="276,-259.5 276,-371.5 377,-371.5 377,-259.5 276,-259.5"/>
+<text text-anchor="middle" x="326.5" y="-359.5" font-family="Helvetica,sans-Serif" font-size="10.00">SysExMessage</text>
+<polyline fill="none" stroke="black" points="276,-352.5 377,-352.5 "/>
+<text text-anchor="start" x="284" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ data</text>
+<text text-anchor="start" x="284" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ length</text>
+<text text-anchor="start" x="284" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CN</text>
+<polyline fill="none" stroke="black" points="276,-311.5 377,-311.5 "/>
+<text text-anchor="start" x="284" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SysExMessage()</text>
 <text text-anchor="start" x="284" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SysExMessage()</text>
-<text text-anchor="start" x="284" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SysExMessage()</text>
+<text text-anchor="start" x="284" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator==()</text>
+<text text-anchor="start" x="284" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator!=()</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M326.5,-270.366C326.5,-253.457 326.5,-233.31 326.5,-212.921"/>
-<polygon fill="none" stroke="#404040" points="326.5,-212.911 322.5,-206.911 326.5,-200.911 330.5,-206.911 326.5,-212.911"/>
+<path fill="none" stroke="#404040" d="M326.5,-259.37C326.5,-245.029 326.5,-229.054 326.5,-212.928"/>
+<polygon fill="none" stroke="#404040" points="326.5,-212.591 322.5,-206.591 326.5,-200.591 330.5,-206.591 326.5,-212.591"/>
 <text text-anchor="middle" x="382.5" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;sysExMessageCallback</text>
 </g>
 <!-- Node5 -->
@@ -124,19 +126,20 @@
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="../../d6/d99/structRealTimeMessage.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="526.5,-281.5 526.5,-349.5 624.5,-349.5 624.5,-281.5 526.5,-281.5"/>
-<text text-anchor="middle" x="575.5" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">RealTimeMessage</text>
-<polyline fill="none" stroke="black" points="526.5,-330.5 624.5,-330.5 "/>
-<text text-anchor="start" x="534.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ message</text>
-<text text-anchor="start" x="534.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CN</text>
-<polyline fill="none" stroke="black" points="526.5,-300.5 624.5,-300.5 "/>
-<text text-anchor="middle" x="575.5" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="white" stroke="black" points="526.5,-276 526.5,-355 624.5,-355 624.5,-276 526.5,-276"/>
+<text text-anchor="middle" x="575.5" y="-343" font-family="Helvetica,sans-Serif" font-size="10.00">RealTimeMessage</text>
+<polyline fill="none" stroke="black" points="526.5,-336 624.5,-336 "/>
+<text text-anchor="start" x="534.5" y="-324" font-family="Helvetica,sans-Serif" font-size="10.00">+ message</text>
+<text text-anchor="start" x="534.5" y="-313" font-family="Helvetica,sans-Serif" font-size="10.00">+ CN</text>
+<polyline fill="none" stroke="black" points="526.5,-306 624.5,-306 "/>
+<text text-anchor="start" x="534.5" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator==()</text>
+<text text-anchor="start" x="534.5" y="-283" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator!=()</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node1 -->
 <g id="edge5" class="edge"><title>Node6&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M570.702,-281.424C566.394,-261.508 558.35,-236.67 543.5,-219 507.022,-175.597 450.269,-145.668 403.951,-126.881"/>
+<path fill="none" stroke="#404040" d="M569.432,-275.88C564.875,-257.051 557,-235.063 543.5,-219 507.022,-175.597 450.269,-145.668 403.951,-126.881"/>
 <polygon fill="none" stroke="#404040" points="403.889,-126.857 396.841,-128.38 392.724,-122.46 399.772,-120.937 403.889,-126.857"/>
 <text text-anchor="middle" x="618.5" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;realTimeMessageCallback</text>
 </g>
