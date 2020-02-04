@@ -97,16 +97,17 @@ Send-MIDI-Notes</h1>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  pushbutton.begin(); <span class="comment">// enables internal pull-up</span></div>
-<div class="line">  midi.<a name="a5"></a><a class="code" href="../../d9/d73/classMIDI__Interface.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a>();</div>
+<div class="line">  midi.<a name="a5"></a><a class="code" href="../../d9/d73/classMIDI__Interface.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a>();       <span class="comment">// initialize the MIDI interface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  midi.<a name="a6"></a><a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>();</div>
-<div class="line">  pushbutton.update();</div>
-<div class="line">  <span class="keywordflow">if</span> (pushbutton.getState() == Button::Falling)</div>
-<div class="line">    midi.<a name="a7"></a><a class="code" href="../../d9/d73/classMIDI__Interface.html#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a>(noteAddress, velocity);</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pushbutton.getState() == Button::Rising)</div>
-<div class="line">    midi.<a name="a8"></a><a class="code" href="../../d9/d73/classMIDI__Interface.html#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a>(noteAddress, velocity);</div>
+<div class="line">  midi.<a name="a6"></a><a class="code" href="../../de/d76/classParsing__MIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>(); <span class="comment">// read and handle or discard MIDI input</span></div>
+<div class="line"> </div>
+<div class="line">  pushbutton.update();                              <span class="comment">// read the button state</span></div>
+<div class="line">  <span class="keywordflow">if</span> (pushbutton.getState() == Button::Falling)     <span class="comment">// if the button is pressed</span></div>
+<div class="line">    midi.<a name="a7"></a><a class="code" href="../../d9/d73/classMIDI__Interface.html#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a>(noteAddress, velocity);         <span class="comment">// send a note on event</span></div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pushbutton.getState() == Button::Rising) <span class="comment">// if the button is released</span></div>
+<div class="line">    midi.<a name="a8"></a><a class="code" href="../../d9/d73/classMIDI__Interface.html#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a>(noteAddress, velocity);        <span class="comment">// send a note off event</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00035">USBMIDI_Interface.hpp:35</a></div></div>
