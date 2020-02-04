@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/Banks/BankableMIDIOutput.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/Banks/BankableMIDIOutput.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">21</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">9</td>
@@ -74,7 +74,7 @@
 <a name="4"><span class="lineNum">       4 </span>            : </a>
 <a name="5"><span class="lineNum">       5 </span>            : #include &quot;Bank.hpp&quot;</a>
 <a name="6"><span class="lineNum">       6 </span>            : #include &quot;BankConfig.hpp&quot;</a>
-<a name="7"><span class="lineNum">       7 </span>            : #include &lt;Def/MIDICNChannelAddress.hpp&gt;</a>
+<a name="7"><span class="lineNum">       7 </span>            : #include &lt;Def/MIDIAddress.hpp&gt;</a>
 <a name="8"><span class="lineNum">       8 </span>            : </a>
 <a name="9"><span class="lineNum">       9 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="10"><span class="lineNum">      10 </span>            : </a>
@@ -178,7 +178,7 @@
 <a name="108"><span class="lineNum">     108 </span>            :     /** </a>
 <a name="109"><span class="lineNum">     109 </span>            :      * @brief   Get the offset relative to the base address.</a>
 <a name="110"><span class="lineNum">     110 </span>            :      */</a>
-<a name="111"><span class="lineNum">     111 </span><span class="lineCov">         36 :     RelativeMIDICNChannelAddress getAddressOffset() const {</span></a>
+<a name="111"><span class="lineNum">     111 </span><span class="lineCov">         36 :     RelativeMIDIAddress getAddressOffset() const {</span></a>
 <a name="112"><span class="lineNum">     112 </span><span class="lineCov">         36 :         int8_t offset = getSelection() * bank.getTracksPerBank();</span></a>
 <a name="113"><span class="lineNum">     113 </span><span class="lineCov">         36 :         switch (type) {</span></a>
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">         36 :             case CHANGE_ADDRESS: return {offset, 0, 0};</span></a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">65</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">48</td>
@@ -152,7 +152,7 @@
 <a name="82"><span class="lineNum">      82 </span>            : template &lt;uint8_t NumValues, class Callback&gt;</a>
 <a name="83"><span class="lineNum">      83 </span><span class="lineCov">          5 : class VPotRing_Base : public MIDIInputElementCC, public IVPotRing {</span></a>
 <a name="84"><span class="lineNum">      84 </span>            :   protected:</a>
-<a name="85"><span class="lineNum">      85 </span><span class="lineCov">          5 :     VPotRing_Base(uint8_t track, const MIDICNChannel &amp;channelCN,</span></a>
+<a name="85"><span class="lineNum">      85 </span><span class="lineCov">          5 :     VPotRing_Base(uint8_t track, const MIDIChannelCN &amp;channelCN,</span></a>
 <a name="86"><span class="lineNum">      86 </span>            :                   const Callback &amp;callback)</a>
 <a name="87"><span class="lineNum">      87 </span><span class="lineCov">          5 :         : MIDIInputElementCC{{track + VPotRingAddress - 1, channelCN}},</span></a>
 <a name="88"><span class="lineNum">      88 </span><span class="lineCov">         20 :           callback(callback) {}</span></a>
@@ -178,7 +178,7 @@
 <a name="108"><span class="lineNum">     108 </span>            : </a>
 <a name="109"><span class="lineNum">     109 </span>            :   private:</a>
 <a name="110"><span class="lineNum">     110 </span><span class="lineCov">          6 :     bool updateImpl(const ChannelMessageMatcher &amp;midimsg,</span></a>
-<a name="111"><span class="lineNum">     111 </span>            :                     const MIDICNChannelAddress &amp;target) override {</a>
+<a name="111"><span class="lineNum">     111 </span>            :                     const MIDIAddress &amp;target) override {</a>
 <a name="112"><span class="lineNum">     112 </span><span class="lineCov">          6 :         uint8_t index = getBankIndex(target);</span></a>
 <a name="113"><span class="lineNum">     113 </span><span class="lineCov">          6 :         uint8_t value = sanitizeValue(midimsg.data2);</span></a>
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">          6 :         values[index] = value;</span></a>
@@ -191,7 +191,7 @@
 <a name="121"><span class="lineNum">     121 </span><span class="lineCov">          6 :     virtual uint8_t getSelection() const { return 0; }</span></a>
 <a name="122"><span class="lineNum">     122 </span>            : </a>
 <a name="123"><span class="lineNum">     123 </span>            :     /// Get the bank index from a MIDI address</a>
-<a name="124"><span class="lineNum">     124 </span><span class="lineCov">          2 :     virtual setting_t getBankIndex(const MIDICNChannelAddress &amp;target) const {</span></a>
+<a name="124"><span class="lineNum">     124 </span><span class="lineCov">          2 :     virtual setting_t getBankIndex(const MIDIAddress &amp;target) const {</span></a>
 <a name="125"><span class="lineNum">     125 </span><span class="lineCov">          2 :         (void)target;</span></a>
 <a name="126"><span class="lineNum">     126 </span><span class="lineCov">          2 :         return 0;</span></a>
 <a name="127"><span class="lineNum">     127 </span>            :     }</a>
@@ -213,7 +213,7 @@
 <a name="143"><span class="lineNum">     143 </span>            : template &lt;class Callback = VPotEmptyCallback&gt;</a>
 <a name="144"><span class="lineNum">     144 </span><span class="lineCov">          1 : class GenericVPotRing : public VPotRing_Base&lt;1, Callback&gt; {</span></a>
 <a name="145"><span class="lineNum">     145 </span>            :   public:</a>
-<a name="146"><span class="lineNum">     146 </span><span class="lineCov">          1 :     GenericVPotRing(uint8_t track, const MIDICNChannel &amp;channelCN,</span></a>
+<a name="146"><span class="lineNum">     146 </span><span class="lineCov">          1 :     GenericVPotRing(uint8_t track, const MIDIChannelCN &amp;channelCN,</span></a>
 <a name="147"><span class="lineNum">     147 </span>            :                     const Callback &amp;callback)</a>
 <a name="148"><span class="lineNum">     148 </span><span class="lineCov">          1 :         : VPotRing_Base&lt;1, Callback&gt;{track, channelCN, callback} {}</span></a>
 <a name="149"><span class="lineNum">     149 </span>            : };</a>
@@ -226,7 +226,7 @@
 <a name="156"><span class="lineNum">     156 </span>            :  */</a>
 <a name="157"><span class="lineNum">     157 </span><span class="lineCov">          1 : class VPotRing : public GenericVPotRing&lt;&gt; {</span></a>
 <a name="158"><span class="lineNum">     158 </span>            :   public:</a>
-<a name="159"><span class="lineNum">     159 </span><span class="lineCov">          1 :     VPotRing(uint8_t track, const MIDICNChannel &amp;channelCN = CHANNEL_1)</span></a>
+<a name="159"><span class="lineNum">     159 </span><span class="lineCov">          1 :     VPotRing(uint8_t track, const MIDIChannelCN &amp;channelCN = CHANNEL_1)</span></a>
 <a name="160"><span class="lineNum">     160 </span><span class="lineCov">          1 :         : GenericVPotRing{track, channelCN, {}} {}</span></a>
 <a name="161"><span class="lineNum">     161 </span>            : };</a>
 <a name="162"><span class="lineNum">     162 </span>            : </a>
@@ -248,7 +248,7 @@
 <a name="178"><span class="lineNum">     178 </span>            :                         public BankableMIDIInput&lt;NumBanks&gt; {</a>
 <a name="179"><span class="lineNum">     179 </span>            :   public:</a>
 <a name="180"><span class="lineNum">     180 </span><span class="lineCov">          4 :     GenericVPotRing(const BankConfig&lt;NumBanks&gt; &amp;config, uint8_t track,</span></a>
-<a name="181"><span class="lineNum">     181 </span>            :                     const MIDICNChannel &amp;channelCN, const Callback &amp;callback)</a>
+<a name="181"><span class="lineNum">     181 </span>            :                     const MIDIChannelCN &amp;channelCN, const Callback &amp;callback)</a>
 <a name="182"><span class="lineNum">     182 </span><span class="lineCov">          4 :         : VPotRing_Base&lt;NumBanks, Callback&gt;{track, channelCN, callback},</span></a>
 <a name="183"><span class="lineNum">     183 </span><span class="lineCov">          8 :           BankableMIDIInput&lt;NumBanks&gt;{config} {}</span></a>
 <a name="184"><span class="lineNum">     184 </span>            : </a>
@@ -257,13 +257,13 @@
 <a name="187"><span class="lineNum">     187 </span><span class="lineCov">         28 :         return BankableMIDIInput&lt;NumBanks&gt;::getSelection();</span></a>
 <a name="188"><span class="lineNum">     188 </span>            :     };</a>
 <a name="189"><span class="lineNum">     189 </span>            : </a>
-<a name="190"><span class="lineNum">     190 </span><span class="lineCov">          4 :     uint8_t getBankIndex(const MIDICNChannelAddress &amp;target) const override {</span></a>
+<a name="190"><span class="lineNum">     190 </span><span class="lineCov">          4 :     uint8_t getBankIndex(const MIDIAddress &amp;target) const override {</span></a>
 <a name="191"><span class="lineNum">     191 </span><span class="lineCov">          4 :         return BankableMIDIInput&lt;NumBanks&gt;::getBankIndex(target, this-&gt;address);</span></a>
 <a name="192"><span class="lineNum">     192 </span>            :     }</a>
 <a name="193"><span class="lineNum">     193 </span>            : </a>
 <a name="194"><span class="lineNum">     194 </span>            :     /// Check if the address of the incoming MIDI message is in one of the banks</a>
 <a name="195"><span class="lineNum">     195 </span>            :     /// of this element.</a>
-<a name="196"><span class="lineNum">     196 </span><span class="lineCov">          4 :     bool match(const MIDICNChannelAddress &amp;target) const override {</span></a>
+<a name="196"><span class="lineNum">     196 </span><span class="lineCov">          4 :     bool match(const MIDIAddress &amp;target) const override {</span></a>
 <a name="197"><span class="lineNum">     197 </span><span class="lineCov">          8 :         return BankableMIDIInput&lt;NumBanks&gt;::matchBankable(target,</span></a>
 <a name="198"><span class="lineNum">     198 </span><span class="lineCov">          4 :                                                           this-&gt;address);</span></a>
 <a name="199"><span class="lineNum">     199 </span>            :     }</a>
@@ -283,7 +283,7 @@
 <a name="213"><span class="lineNum">     213 </span><span class="lineCov">          3 : class VPotRing : public GenericVPotRing&lt;NumBanks&gt; {</span></a>
 <a name="214"><span class="lineNum">     214 </span>            :   public:</a>
 <a name="215"><span class="lineNum">     215 </span><span class="lineCov">          3 :     VPotRing(BankConfig&lt;NumBanks&gt; config, uint8_t track,</span></a>
-<a name="216"><span class="lineNum">     216 </span>            :              MIDICNChannel channelCN = CHANNEL_1)</a>
+<a name="216"><span class="lineNum">     216 </span>            :              MIDIChannelCN channelCN = CHANNEL_1)</a>
 <a name="217"><span class="lineNum">     217 </span><span class="lineCov">          3 :         : GenericVPotRing&lt;NumBanks&gt;{config, track, channelCN, {}} {}</span></a>
 <a name="218"><span class="lineNum">     218 </span>            : };</a>
 <a name="219"><span class="lineNum">     219 </span>            : </a>

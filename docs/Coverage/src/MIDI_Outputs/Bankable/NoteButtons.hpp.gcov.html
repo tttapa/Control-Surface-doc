@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Outputs/Bankable/NoteButtons.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Outputs/Bankable/NoteButtons.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">5</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -119,8 +119,8 @@
 <a name="49"><span class="lineNum">      49 </span>            :      */</a>
 <a name="50"><span class="lineNum">      50 </span><span class="lineCov">          1 :     NoteButtons(const OutputBankConfig &amp;config,</span></a>
 <a name="51"><span class="lineNum">      51 </span>            :                 const Array&lt;AH::Button, NUMBER_OF_BUTTONS&gt; &amp;buttons,</a>
-<a name="52"><span class="lineNum">      52 </span>            :                 const MIDICNChannelAddress &amp;baseAddress,</a>
-<a name="53"><span class="lineNum">      53 </span>            :                 const RelativeMIDICNChannelAddress &amp;incrementAddress,</a>
+<a name="52"><span class="lineNum">      52 </span>            :                 const MIDIAddress &amp;baseAddress,</a>
+<a name="53"><span class="lineNum">      53 </span>            :                 const RelativeMIDIAddress &amp;incrementAddress,</a>
 <a name="54"><span class="lineNum">      54 </span>            :                 uint8_t velocity = 0x7F)</a>
 <a name="55"><span class="lineNum">      55 </span><span class="lineCov">          1 :         : MIDIButtons&lt;DigitalNoteSender, NUMBER_OF_BUTTONS&gt;{</span></a>
 <a name="56"><span class="lineNum">      56 </span><span class="lineCov">          1 :               config, buttons, baseAddress, incrementAddress, {velocity},</span></a>

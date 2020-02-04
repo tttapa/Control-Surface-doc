@@ -45,7 +45,7 @@ var searchData=
   ['noteccrange_3c_20midiinputelementnote_2c_20rangelen_2c_20numbanks_2c_20noteccledpwm_3c_20rangelen_20_3e_20_3e_2511',['NoteCCRange&lt; MIDIInputElementNote, RangeLen, NumBanks, NoteCCLEDPWM&lt; RangeLen &gt; &gt;',['../d2/df4/classNoteCCRange.html',1,'']]],
   ['noteccrangeemptycallback_2512',['NoteCCRangeEmptyCallback',['../da/dcc/classNoteCCRangeEmptyCallback.html',1,'']]],
   ['notechordbutton_2513',['NoteChordButton',['../d8/d9d/classBankable_1_1NoteChordButton.html',1,'NoteChordButton'],['../d3/d3b/classNoteChordButton.html',1,'NoteChordButton']]],
-  ['noteledbar_2514',['NoteLEDBar',['../d8/d99/classBankable_1_1NoteLEDBar.html',1,'NoteLEDBar&lt; BankSize, NumLEDs &gt;'],['../d9/dac/classNoteLEDBar.html',1,'NoteLEDBar&lt; NumLEDs &gt;']]],
+  ['noteledbar_2514',['NoteLEDBar',['../d9/dac/classNoteLEDBar.html',1,'NoteLEDBar&lt; NumLEDs &gt;'],['../d8/d99/classBankable_1_1NoteLEDBar.html',1,'NoteLEDBar&lt; BankSize, NumLEDs &gt;']]],
   ['noterange_2515',['NoteRange',['../d5/d10/classNoteRange.html',1,'NoteRange&lt; RangeLen &gt;'],['../d2/d68/classBankable_1_1NoteRange.html',1,'NoteRange&lt; RangeLen, NumBanks &gt;']]],
   ['noterangefastled_2516',['NoteRangeFastLED',['../d8/d73/classNoteRangeFastLED.html',1,'NoteRangeFastLED&lt; RangeLen, ColorMapper &gt;'],['../d5/d2a/classBankable_1_1NoteRangeFastLED.html',1,'NoteRangeFastLED&lt; RangeLen, BankSize, ColorMapper &gt;']]],
   ['noterangeleds_2517',['NoteRangeLEDs',['../de/db8/classNoteRangeLEDs.html',1,'NoteRangeLEDs&lt; RangeLen &gt;'],['../d0/d61/classBankable_1_1NoteRangeLEDs.html',1,'NoteRangeLEDs&lt; RangeLen, BankSize &gt;']]],

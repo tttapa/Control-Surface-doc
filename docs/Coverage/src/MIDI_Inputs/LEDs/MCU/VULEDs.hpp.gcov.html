@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Inputs/LEDs/MCU/VULEDs.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Inputs/LEDs/MCU/VULEDs.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">14</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">6</td>
@@ -125,7 +125,7 @@
 <a name="55"><span class="lineNum">      55 </span>            :           } {}</a>
 <a name="56"><span class="lineNum">      56 </span>            : </a>
 <a name="57"><span class="lineNum">      57 </span>            :     VULEDs(const PinList&lt;NumLEDs&gt; &amp;ledPins, uint8_t track,</a>
-<a name="58"><span class="lineNum">      58 </span>            :            MIDICNChannel channelCN, unsigned int decayTime = VUDecay::Default)</a>
+<a name="58"><span class="lineNum">      58 </span>            :            MIDIChannelCN channelCN, unsigned int decayTime = VUDecay::Default)</a>
 <a name="59"><span class="lineNum">      59 </span>            :         : GenericVU&lt;VULEDsCallback&lt;NumLEDs&gt;&gt;{</a>
 <a name="60"><span class="lineNum">      60 </span>            :               track,</a>
 <a name="61"><span class="lineNum">      61 </span>            :               channelCN,</a>
@@ -157,7 +157,7 @@
 <a name="87"><span class="lineNum">      87 </span>            :           } {}</a>
 <a name="88"><span class="lineNum">      88 </span>            : </a>
 <a name="89"><span class="lineNum">      89 </span><span class="lineCov">          1 :     VULEDs(BankConfig&lt;NumBanks&gt; config, const PinList&lt;NumLEDs&gt; &amp;ledPins,</span></a>
-<a name="90"><span class="lineNum">      90 </span>            :            uint8_t track, MIDICNChannel channelCN,</a>
+<a name="90"><span class="lineNum">      90 </span>            :            uint8_t track, MIDIChannelCN channelCN,</a>
 <a name="91"><span class="lineNum">      91 </span>            :            unsigned int decayTime = VUDecay::Default)</a>
 <a name="92"><span class="lineNum">      92 </span><span class="lineCov">          1 :         : GenericVU&lt;NumBanks, VULEDsCallback&lt;NumLEDs&gt;&gt;{</span></a>
 <a name="93"><span class="lineNum">      93 </span><span class="lineCov">          1 :               config, track, channelCN, decayTime, {ledPins},</span></a>

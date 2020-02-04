@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Inputs/MIDIInputElementChannelPressure.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Inputs/MIDIInputElementChannelPressure.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">25</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">6</td>
@@ -90,7 +90,7 @@
 <a name="20"><span class="lineNum">      20 </span>            :      * @brief   Constructor.</a>
 <a name="21"><span class="lineNum">      21 </span>            :      * @todo    Documentation.</a>
 <a name="22"><span class="lineNum">      22 </span>            :      */</a>
-<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         12 :     MIDIInputElementChannelPressure(const MIDICNChannelAddress &amp;address)</span></a>
+<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         12 :     MIDIInputElementChannelPressure(const MIDIAddress &amp;address)</span></a>
 <a name="24"><span class="lineNum">      24 </span><span class="lineCov">         24 :         : MIDIInputElement(address) {</span></a>
 <a name="25"><span class="lineNum">      25 </span>            :         GUARD_LIST_LOCK;</a>
 <a name="26"><span class="lineNum">      26 </span><span class="lineCov">         12 :         elements.append(this);</span></a>
@@ -152,7 +152,7 @@
 <a name="82"><span class="lineNum">      82 </span>            :   private:</a>
 <a name="83"><span class="lineNum">      83 </span>            :     /// Channel Pressure doesn't have an address, so the target consists of just</a>
 <a name="84"><span class="lineNum">      84 </span>            :     /// the channel and the cable number.</a>
-<a name="85"><span class="lineNum">      85 </span>            :     MIDICNChannelAddress</a>
+<a name="85"><span class="lineNum">      85 </span>            :     MIDIAddress</a>
 <a name="86"><span class="lineNum">      86 </span><span class="lineNoCov">          0 :     getTarget(const ChannelMessageMatcher &amp;midimsg) const override {</span></a>
 <a name="87"><span class="lineNum">      87 </span><span class="lineNoCov">          0 :         return {0, Channel(midimsg.channel), midimsg.CN};</span></a>
 <a name="88"><span class="lineNum">      88 </span>            :     }</a>

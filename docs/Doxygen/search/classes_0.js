@@ -12,7 +12,7 @@ var searchData=
   ['array_3c_20int8_5ft_2c_20n_20_3e_2196',['Array&lt; int8_t, N &gt;',['../d0/d32/structAH_1_1Array.html',1,'AH']]],
   ['array_3c_20midiaddress_2c_202_20_3e_2197',['Array&lt; MIDIAddress, 2 &gt;',['../d0/d32/structAH_1_1Array.html',1,'AH']]],
   ['array_3c_20midiaddress_2c_20numbanks_20_3e_2198',['Array&lt; MIDIAddress, NumBanks &gt;',['../d0/d32/structAH_1_1Array.html',1,'AH']]],
-  ['array_3c_20midicnchannel_2c_20numbanks_20_3e_2199',['Array&lt; MIDICNChannel, NumBanks &gt;',['../d0/d32/structAH_1_1Array.html',1,'AH']]],
+  ['array_3c_20midichannelcn_2c_20numbanks_20_3e_2199',['Array&lt; MIDIChannelCN, NumBanks &gt;',['../d0/d32/structAH_1_1Array.html',1,'AH']]],
   ['array_3c_20n_20_3e_2200',['Array&lt; N &gt;',['../d0/d32/structAH_1_1Array.html',1,'AH']]],
   ['array_3c_20nb_5fcols_20_3e_2201',['Array&lt; nb_cols &gt;',['../d0/d32/structAH_1_1Array.html',1,'AH']]],
   ['array_3c_20nb_5frows_20_3e_2202',['Array&lt; nb_rows &gt;',['../d0/d32/structAH_1_1Array.html',1,'AH']]],

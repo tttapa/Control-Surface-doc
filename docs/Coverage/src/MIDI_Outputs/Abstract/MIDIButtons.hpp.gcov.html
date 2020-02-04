@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Outputs/Abstract/MIDIButtons.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Outputs/Abstract/MIDIButtons.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">20</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
@@ -92,8 +92,8 @@
 <a name="22"><span class="lineNum">      22 </span>            :      * @todo    Documentation</a>
 <a name="23"><span class="lineNum">      23 </span>            :      */</a>
 <a name="24"><span class="lineNum">      24 </span><span class="lineCov">          3 :     MIDIButtons(const Array&lt;AH::Button, NUMBER_OF_BUTTONS&gt; &amp;buttons,</span></a>
-<a name="25"><span class="lineNum">      25 </span>            :                 const MIDICNChannelAddress &amp;baseAddress,</a>
-<a name="26"><span class="lineNum">      26 </span>            :                 const RelativeMIDICNChannelAddress &amp;incrementAddress,</a>
+<a name="25"><span class="lineNum">      25 </span>            :                 const MIDIAddress &amp;baseAddress,</a>
+<a name="26"><span class="lineNum">      26 </span>            :                 const RelativeMIDIAddress &amp;incrementAddress,</a>
 <a name="27"><span class="lineNum">      27 </span>            :                 const Sender &amp;sender)</a>
 <a name="28"><span class="lineNum">      28 </span><span class="lineCov">          3 :         : buttons{buttons}, baseAddress(baseAddress),</span></a>
 <a name="29"><span class="lineNum">      29 </span><span class="lineCov">          9 :           incrementAddress(incrementAddress), sender{sender} {}</span></a>
@@ -104,7 +104,7 @@
 <a name="34"><span class="lineNum">      34 </span><span class="lineCov">          2 :             button.begin();</span></a>
 <a name="35"><span class="lineNum">      35 </span><span class="lineCov">          1 :     }</span></a>
 <a name="36"><span class="lineNum">      36 </span><span class="lineCov">          7 :     void update() final override {</span></a>
-<a name="37"><span class="lineNum">      37 </span><span class="lineCov">          7 :         MIDICNChannelAddress address = baseAddress;</span></a>
+<a name="37"><span class="lineNum">      37 </span><span class="lineCov">          7 :         MIDIAddress address = baseAddress;</span></a>
 <a name="38"><span class="lineNum">      38 </span><span class="lineCov">         21 :         for (auto &amp;button : buttons) {</span></a>
 <a name="39"><span class="lineNum">      39 </span><span class="lineCov">         14 :             AH::Button::State state = button.update();</span></a>
 <a name="40"><span class="lineNum">      40 </span><span class="lineCov">         14 :             if (state == AH::Button::Falling) {</span></a>
@@ -129,8 +129,8 @@
 <a name="59"><span class="lineNum">      59 </span>            : </a>
 <a name="60"><span class="lineNum">      60 </span>            :   private:</a>
 <a name="61"><span class="lineNum">      61 </span>            :     Array&lt;AH::Button, NUMBER_OF_BUTTONS&gt; buttons;</a>
-<a name="62"><span class="lineNum">      62 </span>            :     const MIDICNChannelAddress baseAddress;</a>
-<a name="63"><span class="lineNum">      63 </span>            :     const RelativeMIDICNChannelAddress incrementAddress;</a>
+<a name="62"><span class="lineNum">      62 </span>            :     const MIDIAddress baseAddress;</a>
+<a name="63"><span class="lineNum">      63 </span>            :     const RelativeMIDIAddress incrementAddress;</a>
 <a name="64"><span class="lineNum">      64 </span>            : </a>
 <a name="65"><span class="lineNum">      65 </span>            :   public:</a>
 <a name="66"><span class="lineNum">      66 </span>            :     Sender sender;</a>

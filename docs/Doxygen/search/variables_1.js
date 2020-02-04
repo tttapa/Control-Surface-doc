@@ -14,7 +14,7 @@ var searchData=
   ['banksetting_3682',['bankSetting',['../d9/d36/classOutputBank.html#ac8d5beeb5e18454924020fa6b2106a11',1,'OutputBank']]],
   ['baritone_5fsax_3683',['Baritone_Sax',['../da/da6/namespaceMIDI__PC.html#ac2472b026708d007ec0a8e7de91fadb9',1,'MIDI_PC']]],
   ['baseaddress_3684',['baseAddress',['../d2/d87/classMIDIButtons.html#ad3440d37decbc5e862d417419f60af20',1,'MIDIButtons::baseAddress()'],['../dc/d22/classBankable_1_1MIDIButtons.html#ad3440d37decbc5e862d417419f60af20',1,'Bankable::MIDIButtons::baseAddress()']]],
-  ['basechannelcn_3685',['baseChannelCN',['../d0/d54/classMIDIButtonMatrix.html#aa6edfd835e592b5515af35f607b35f59',1,'MIDIButtonMatrix']]],
+  ['basechannelcn_3685',['baseChannelCN',['../d0/d54/classMIDIButtonMatrix.html#abb897cd862446f665ecd135e5d8bfc21',1,'MIDIButtonMatrix']]],
   ['bassoon_3686',['Bassoon',['../da/da6/namespaceMIDI__PC.html#afff55e9fb36cb0b71cd569fbaab6eb09',1,'MIDI_PC']]],
   ['baud_3687',['baud',['../db/dc4/classSerialDebugMIDI__Interface.html#a56470accdb95c419d4acf4be0846ed50',1,'SerialDebugMIDI_Interface::baud()'],['../d9/db8/classSerialMIDI__Interface.html#a56470accdb95c419d4acf4be0846ed50',1,'SerialMIDI_Interface::baud()']]],
   ['bb_3688',['Bb',['../d7/d78/namespaceMIDI__Notes.html#a993bf1b6f4e1c4e1bae9cd1a5990057a',1,'MIDI_Notes']]],

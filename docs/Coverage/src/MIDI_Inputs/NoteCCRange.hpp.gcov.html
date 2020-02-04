@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Inputs/NoteCCRange.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Inputs/NoteCCRange.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">70</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">89</td>
@@ -142,7 +142,7 @@
 <a name="72"><span class="lineNum">      72 </span>            : template &lt;class MIDIInput_t, uint8_t RangeLen, uint8_t NumBanks, class Callback&gt;</a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">         12 : class NoteCCRange : public MIDIInput_t, public INoteCCValue {</span></a>
 <a name="74"><span class="lineNum">      74 </span>            :   public:</a>
-<a name="75"><span class="lineNum">      75 </span><span class="lineCov">         12 :     NoteCCRange(MIDICNChannelAddress address, const Callback &amp;callback)</span></a>
+<a name="75"><span class="lineNum">      75 </span><span class="lineCov">         12 :     NoteCCRange(MIDIAddress address, const Callback &amp;callback)</span></a>
 <a name="76"><span class="lineNum">      76 </span><span class="lineCov">         24 :         : MIDIInput_t{address}, INoteCCValue{RangeLen}, callback(callback) {}</span></a>
 <a name="77"><span class="lineNum">      77 </span>            : </a>
 <a name="78"><span class="lineNum">      78 </span>            :     /// @todo   check index bounds</a>
@@ -163,7 +163,7 @@
 <a name="93"><span class="lineNum">      93 </span>            :     // Called when a MIDI message comes in, and if that message has been matched</a>
 <a name="94"><span class="lineNum">      94 </span>            :     // by the `match` method.</a>
 <a name="95"><span class="lineNum">      95 </span><span class="lineCov">         24 :     bool updateImpl(const ChannelMessageMatcher &amp;midimsg,</span></a>
-<a name="96"><span class="lineNum">      96 </span>            :                     const MIDICNChannelAddress &amp;target) override {</a>
+<a name="96"><span class="lineNum">      96 </span>            :                     const MIDIAddress &amp;target) override {</a>
 <a name="97"><span class="lineNum">      97 </span>            :         // Compute the offsets/indices in the range and the bank.</a>
 <a name="98"><span class="lineNum">      98 </span>            :         // E.g. if the start address of the range is 10 and the incoming message</a>
 <a name="99"><span class="lineNum">      99 </span>            :         // is on address 15, the range index will be 5 = 15 - 10.</a>
@@ -195,14 +195,14 @@
 <a name="125"><span class="lineNum">     125 </span><span class="lineCov">         46 :     virtual uint8_t getSelection() const { return 0; }</span></a>
 <a name="126"><span class="lineNum">     126 </span>            : </a>
 <a name="127"><span class="lineNum">     127 </span>            :     /// Get the bank index from a MIDI address.</a>
-<a name="128"><span class="lineNum">     128 </span><span class="lineCov">         16 :     virtual setting_t getBankIndex(MIDICNChannelAddress target) const {</span></a>
+<a name="128"><span class="lineNum">     128 </span><span class="lineCov">         16 :     virtual setting_t getBankIndex(MIDIAddress target) const {</span></a>
 <a name="129"><span class="lineNum">     129 </span>            :         // Default implementation for non-bankable version (bank is always 0)</a>
 <a name="130"><span class="lineNum">     130 </span>            :         (void)target;</a>
 <a name="131"><span class="lineNum">     131 </span><span class="lineCov">         16 :         return 0;</span></a>
 <a name="132"><span class="lineNum">     132 </span>            :     }</a>
 <a name="133"><span class="lineNum">     133 </span>            : </a>
 <a name="134"><span class="lineNum">     134 </span>            :     /// Get the index of the given MIDI address in the range</a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineCov">         16 :     virtual uint8_t getRangeIndex(MIDICNChannelAddress target) const {</span></a>
+<a name="135"><span class="lineNum">     135 </span><span class="lineCov">         16 :     virtual uint8_t getRangeIndex(MIDIAddress target) const {</span></a>
 <a name="136"><span class="lineNum">     136 </span>            :         // Default implementation for non-bankable version (base address of the </a>
 <a name="137"><span class="lineNum">     137 </span>            :         // range is fixed)</a>
 <a name="138"><span class="lineNum">     138 </span><span class="lineCov">         16 :         return target.getAddress() - this-&gt;address.getAddress();</span></a>
@@ -225,14 +225,14 @@
 <a name="155"><span class="lineNum">     155 </span><span class="lineCov">          8 : class GenericNoteCCRange</span></a>
 <a name="156"><span class="lineNum">     156 </span>            :     : public NoteCCRange&lt;MIDIInput_t, RangeLen, 1, Callback&gt; {</a>
 <a name="157"><span class="lineNum">     157 </span>            :   public:</a>
-<a name="158"><span class="lineNum">     158 </span><span class="lineCov">          8 :     GenericNoteCCRange(MIDICNChannelAddress address, const Callback &amp;callback)</span></a>
+<a name="158"><span class="lineNum">     158 </span><span class="lineCov">          8 :     GenericNoteCCRange(MIDIAddress address, const Callback &amp;callback)</span></a>
 <a name="159"><span class="lineNum">     159 </span><span class="lineCov">          8 :         : NoteCCRange&lt;MIDIInput_t, RangeLen, 1, Callback&gt;{address, callback} {}</span></a>
 <a name="160"><span class="lineNum">     160 </span>            : </a>
 <a name="161"><span class="lineNum">     161 </span>            :   private:</a>
 <a name="162"><span class="lineNum">     162 </span>            :     /// Check if the address of the incoming MIDI message is within the range</a>
 <a name="163"><span class="lineNum">     163 </span>            :     /// of addresses of this element.</a>
-<a name="164"><span class="lineNum">     164 </span><span class="lineCov">         16 :     bool match(const MIDICNChannelAddress &amp;target) const override {</span></a>
-<a name="165"><span class="lineNum">     165 </span><span class="lineCov">         16 :         return MIDICNChannelAddress::matchAddressInRange( //</span></a>
+<a name="164"><span class="lineNum">     164 </span><span class="lineCov">         16 :     bool match(const MIDIAddress &amp;target) const override {</span></a>
+<a name="165"><span class="lineNum">     165 </span><span class="lineCov">         16 :         return MIDIAddress::matchAddressInRange( //</span></a>
 <a name="166"><span class="lineNum">     166 </span><span class="lineCov">         16 :             target, this-&gt;address, RangeLen);</span></a>
 <a name="167"><span class="lineNum">     167 </span>            :     }</a>
 <a name="168"><span class="lineNum">     168 </span>            : };</a>
@@ -262,7 +262,7 @@
 <a name="192"><span class="lineNum">     192 </span>            : template &lt;uint8_t RangeLen&gt;</a>
 <a name="193"><span class="lineNum">     193 </span><span class="lineCov">          1 : class NoteRange : public GenericNoteRange&lt;RangeLen&gt; {</span></a>
 <a name="194"><span class="lineNum">     194 </span>            :   public:</a>
-<a name="195"><span class="lineNum">     195 </span><span class="lineCov">          1 :     NoteRange(MIDICNChannelAddress address)</span></a>
+<a name="195"><span class="lineNum">     195 </span><span class="lineCov">          1 :     NoteRange(MIDIAddress address)</span></a>
 <a name="196"><span class="lineNum">     196 </span><span class="lineCov">          1 :         : GenericNoteRange&lt;RangeLen&gt;{address, {}} {}</span></a>
 <a name="197"><span class="lineNum">     197 </span>            : };</a>
 <a name="198"><span class="lineNum">     198 </span>            : </a>
@@ -274,7 +274,7 @@
 <a name="204"><span class="lineNum">     204 </span>            :  */</a>
 <a name="205"><span class="lineNum">     205 </span><span class="lineCov">          4 : class NoteValue : public GenericNoteValue&lt;&gt; {</span></a>
 <a name="206"><span class="lineNum">     206 </span>            :   public:</a>
-<a name="207"><span class="lineNum">     207 </span><span class="lineCov">          4 :     NoteValue(MIDICNChannelAddress address) : GenericNoteValue&lt;&gt;{address, {}} {}</span></a>
+<a name="207"><span class="lineNum">     207 </span><span class="lineCov">          4 :     NoteValue(MIDIAddress address) : GenericNoteValue&lt;&gt;{address, {}} {}</span></a>
 <a name="208"><span class="lineNum">     208 </span>            : };</a>
 <a name="209"><span class="lineNum">     209 </span>            : using MIDINote[[deprecated(&quot;Use NoteValue instead&quot;)]] = NoteValue;</a>
 <a name="210"><span class="lineNum">     210 </span>            : </a>
@@ -289,7 +289,7 @@
 <a name="219"><span class="lineNum">     219 </span>            : template &lt;uint8_t RangeLen&gt;</a>
 <a name="220"><span class="lineNum">     220 </span>            : class CCRange : public GenericCCRange&lt;RangeLen&gt; {</a>
 <a name="221"><span class="lineNum">     221 </span>            :   public:</a>
-<a name="222"><span class="lineNum">     222 </span>            :     CCRange(MIDICNChannelAddress address)</a>
+<a name="222"><span class="lineNum">     222 </span>            :     CCRange(MIDIAddress address)</a>
 <a name="223"><span class="lineNum">     223 </span>            :         : GenericCCRange&lt;RangeLen&gt;{address, {}} {}</a>
 <a name="224"><span class="lineNum">     224 </span>            : };</a>
 <a name="225"><span class="lineNum">     225 </span>            : </a>
@@ -301,7 +301,7 @@
 <a name="231"><span class="lineNum">     231 </span>            :  */</a>
 <a name="232"><span class="lineNum">     232 </span>            : class CCValue : public GenericCCValue&lt;&gt; {</a>
 <a name="233"><span class="lineNum">     233 </span>            :   public:</a>
-<a name="234"><span class="lineNum">     234 </span>            :     CCValue(MIDICNChannelAddress address) : GenericCCValue&lt;&gt;{address, {}} {}</a>
+<a name="234"><span class="lineNum">     234 </span>            :     CCValue(MIDIAddress address) : GenericCCValue&lt;&gt;{address, {}} {}</a>
 <a name="235"><span class="lineNum">     235 </span>            : };</a>
 <a name="236"><span class="lineNum">     236 </span>            : </a>
 <a name="237"><span class="lineNum">     237 </span>            : // -------------------------------------------------------------------------- //</a>
@@ -319,7 +319,7 @@
 <a name="249"><span class="lineNum">     249 </span>            :       public BankableMIDIInput&lt;NumBanks&gt; {</a>
 <a name="250"><span class="lineNum">     250 </span>            :   public:</a>
 <a name="251"><span class="lineNum">     251 </span><span class="lineCov">          4 :     GenericNoteCCRange(BankConfig&lt;NumBanks&gt; config,</span></a>
-<a name="252"><span class="lineNum">     252 </span>            :                        MIDICNChannelAddress address,</a>
+<a name="252"><span class="lineNum">     252 </span>            :                        MIDIAddress address,</a>
 <a name="253"><span class="lineNum">     253 </span>            :                        const Callback &amp;callback)</a>
 <a name="254"><span class="lineNum">     254 </span><span class="lineCov">          4 :         : NoteCCRange&lt;MIDIInput_t, RangeLen, NumBanks, Callback&gt;{</span></a>
 <a name="255"><span class="lineNum">     255 </span><span class="lineCov">          4 :             address,</span></a>
@@ -329,7 +329,7 @@
 <a name="259"><span class="lineNum">     259 </span>            :   private:</a>
 <a name="260"><span class="lineNum">     260 </span>            :     /// Check if the address of the incoming MIDI message is within the range</a>
 <a name="261"><span class="lineNum">     261 </span>            :     /// of addresses and in one of the banks of this element.</a>
-<a name="262"><span class="lineNum">     262 </span><span class="lineCov">         20 :     bool match(const MIDICNChannelAddress &amp;target) const override {</span></a>
+<a name="262"><span class="lineNum">     262 </span><span class="lineCov">         20 :     bool match(const MIDIAddress &amp;target) const override {</span></a>
 <a name="263"><span class="lineNum">     263 </span><span class="lineCov">         40 :         return BankableMIDIInput&lt;NumBanks&gt;::matchBankableAddressInRange(</span></a>
 <a name="264"><span class="lineNum">     264 </span><span class="lineCov">         20 :             target, this-&gt;address, RangeLen);</span></a>
 <a name="265"><span class="lineNum">     265 </span>            :     }</a>
@@ -338,11 +338,11 @@
 <a name="268"><span class="lineNum">     268 </span><span class="lineCov">        116 :         return BankableMIDIInput&lt;NumBanks&gt;::getSelection();</span></a>
 <a name="269"><span class="lineNum">     269 </span>            :     };</a>
 <a name="270"><span class="lineNum">     270 </span>            : </a>
-<a name="271"><span class="lineNum">     271 </span><span class="lineCov">          8 :     uint8_t getBankIndex(MIDICNChannelAddress target) const override {</span></a>
+<a name="271"><span class="lineNum">     271 </span><span class="lineCov">          8 :     uint8_t getBankIndex(MIDIAddress target) const override {</span></a>
 <a name="272"><span class="lineNum">     272 </span><span class="lineCov">          8 :         return BankableMIDIInput&lt;NumBanks&gt;::getBankIndex(target, this-&gt;address);</span></a>
 <a name="273"><span class="lineNum">     273 </span>            :     }</a>
 <a name="274"><span class="lineNum">     274 </span>            : </a>
-<a name="275"><span class="lineNum">     275 </span><span class="lineCov">          8 :     uint8_t getRangeIndex(MIDICNChannelAddress target) const override {</span></a>
+<a name="275"><span class="lineNum">     275 </span><span class="lineCov">          8 :     uint8_t getRangeIndex(MIDIAddress target) const override {</span></a>
 <a name="276"><span class="lineNum">     276 </span><span class="lineCov">         16 :         return BankableMIDIInput&lt;NumBanks&gt;::getRangeIndex(target,</span></a>
 <a name="277"><span class="lineNum">     277 </span><span class="lineCov">          8 :                                                           this-&gt;address);</span></a>
 <a name="278"><span class="lineNum">     278 </span>            :     }</a>
@@ -381,7 +381,7 @@
 <a name="311"><span class="lineNum">     311 </span>            : template &lt;uint8_t RangeLen, uint8_t NumBanks&gt;</a>
 <a name="312"><span class="lineNum">     312 </span><span class="lineCov">          4 : class NoteRange : public GenericNoteRange&lt;RangeLen, NumBanks&gt; {</span></a>
 <a name="313"><span class="lineNum">     313 </span>            :   public:</a>
-<a name="314"><span class="lineNum">     314 </span><span class="lineCov">          4 :     NoteRange(BankConfig&lt;NumBanks&gt; config, MIDICNChannelAddress address)</span></a>
+<a name="314"><span class="lineNum">     314 </span><span class="lineCov">          4 :     NoteRange(BankConfig&lt;NumBanks&gt; config, MIDIAddress address)</span></a>
 <a name="315"><span class="lineNum">     315 </span><span class="lineCov">          4 :         : GenericNoteRange&lt;RangeLen, NumBanks&gt;{config, address, {}} {}</span></a>
 <a name="316"><span class="lineNum">     316 </span>            : };</a>
 <a name="317"><span class="lineNum">     317 </span>            : </a>
@@ -396,7 +396,7 @@
 <a name="326"><span class="lineNum">     326 </span>            : template &lt;uint8_t NumBanks&gt;</a>
 <a name="327"><span class="lineNum">     327 </span>            : class NoteValue : public GenericNoteValue&lt;NumBanks&gt; {</a>
 <a name="328"><span class="lineNum">     328 </span>            :   public:</a>
-<a name="329"><span class="lineNum">     329 </span>            :     NoteValue(BankConfig&lt;NumBanks&gt; config, MIDICNChannelAddress address)</a>
+<a name="329"><span class="lineNum">     329 </span>            :     NoteValue(BankConfig&lt;NumBanks&gt; config, MIDIAddress address)</a>
 <a name="330"><span class="lineNum">     330 </span>            :         : GenericNoteValue&lt;NumBanks&gt;{config, address, {}} {}</a>
 <a name="331"><span class="lineNum">     331 </span>            : };</a>
 <a name="332"><span class="lineNum">     332 </span>            : </a>
@@ -418,7 +418,7 @@
 <a name="348"><span class="lineNum">     348 </span>            : template &lt;uint8_t RangeLen, uint8_t NumBanks&gt;</a>
 <a name="349"><span class="lineNum">     349 </span>            : class CCRange : public GenericCCRange&lt;RangeLen, NumBanks&gt; {</a>
 <a name="350"><span class="lineNum">     350 </span>            :   public:</a>
-<a name="351"><span class="lineNum">     351 </span>            :     CCRange(BankConfig&lt;NumBanks&gt; config, MIDICNChannelAddress address)</a>
+<a name="351"><span class="lineNum">     351 </span>            :     CCRange(BankConfig&lt;NumBanks&gt; config, MIDIAddress address)</a>
 <a name="352"><span class="lineNum">     352 </span>            :         : GenericCCRange&lt;RangeLen, NumBanks&gt;{config, address, {}} {}</a>
 <a name="353"><span class="lineNum">     353 </span>            : };</a>
 <a name="354"><span class="lineNum">     354 </span>            : </a>
@@ -433,7 +433,7 @@
 <a name="363"><span class="lineNum">     363 </span>            : template &lt;uint8_t NumBanks&gt;</a>
 <a name="364"><span class="lineNum">     364 </span>            : class CCValue : public GenericCCValue&lt;NumBanks&gt; {</a>
 <a name="365"><span class="lineNum">     365 </span>            :   public:</a>
-<a name="366"><span class="lineNum">     366 </span>            :     CCValue(BankConfig&lt;NumBanks&gt; config, MIDICNChannelAddress address)</a>
+<a name="366"><span class="lineNum">     366 </span>            :     CCValue(BankConfig&lt;NumBanks&gt; config, MIDIAddress address)</a>
 <a name="367"><span class="lineNum">     367 </span>            :         : GenericCCValue&lt;NumBanks&gt;{config, address, {}} {}</a>
 <a name="368"><span class="lineNum">     368 </span>            : };</a>
 <a name="369"><span class="lineNum">     369 </span>            : </a>

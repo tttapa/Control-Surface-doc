@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/Banks/BankableMIDIInput.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/Banks/BankableMIDIInput.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">61</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">20</td>
@@ -72,7 +72,7 @@
 <a name="2"><span class="lineNum">       2 </span>            : </a>
 <a name="3"><span class="lineNum">       3 </span>            : #include &quot;Bank.hpp&quot;</a>
 <a name="4"><span class="lineNum">       4 </span>            : #include &quot;BankConfig.hpp&quot;</a>
-<a name="5"><span class="lineNum">       5 </span>            : #include &lt;Def/MIDICNChannelAddress.hpp&gt;</a>
+<a name="5"><span class="lineNum">       5 </span>            : #include &lt;Def/MIDIAddress.hpp&gt;</a>
 <a name="6"><span class="lineNum">       6 </span>            : #include &lt;AH/Debug/Debug.hpp&gt;</a>
 <a name="7"><span class="lineNum">       7 </span>            : #include &lt;AH/Containers/LinkedList.hpp&gt;</a>
 <a name="8"><span class="lineNum">       8 </span>            : </a>
@@ -138,8 +138,8 @@
 <a name="68"><span class="lineNum">      68 </span>            :      *          The base address to compare it to (the address of bank setting </a>
 <a name="69"><span class="lineNum">      69 </span>            :      *          0).</a>
 <a name="70"><span class="lineNum">      70 </span>            :      */</a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">         21 :     uint8_t getBankIndex(const MIDICNChannelAddress &amp;target,</span></a>
-<a name="72"><span class="lineNum">      72 </span>            :                          const MIDICNChannelAddress &amp;base) const {</a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">         21 :     uint8_t getBankIndex(const MIDIAddress &amp;target,</span></a>
+<a name="72"><span class="lineNum">      72 </span>            :                          const MIDIAddress &amp;base) const {</a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">         21 :         switch (type) {</span></a>
 <a name="74"><span class="lineNum">      74 </span>            :             case CHANGE_ADDRESS:</a>
 <a name="75"><span class="lineNum">      75 </span><span class="lineCov">         22 :                 return (target.getAddress() - base.getAddress()) /</span></a>
@@ -210,8 +210,8 @@
 <a name="140"><span class="lineNum">     140 </span>            :      * @brief   If matchBankableAddressInRange returned true, get the index of</a>
 <a name="141"><span class="lineNum">     141 </span>            :      *          the message in the range.</a>
 <a name="142"><span class="lineNum">     142 </span>            :      */</a>
-<a name="143"><span class="lineNum">     143 </span><span class="lineCov">          8 :     uint8_t getRangeIndex(MIDICNChannelAddress target,</span></a>
-<a name="144"><span class="lineNum">     144 </span>            :                           MIDICNChannelAddress base) const {</a>
+<a name="143"><span class="lineNum">     143 </span><span class="lineCov">          8 :     uint8_t getRangeIndex(MIDIAddress target,</span></a>
+<a name="144"><span class="lineNum">     144 </span>            :                           MIDIAddress base) const {</a>
 <a name="145"><span class="lineNum">     145 </span><span class="lineCov">          8 :         uint8_t diff = target.getAddress() - base.getAddress();</span></a>
 <a name="146"><span class="lineNum">     146 </span><span class="lineCov">          8 :         if (type == CHANGE_ADDRESS)</span></a>
 <a name="147"><span class="lineNum">     147 </span><span class="lineCov">          4 :             diff %= bank.getTracksPerBank();</span></a>
@@ -242,8 +242,8 @@
 <a name="172"><span class="lineNum">     172 </span>            :      * @param   base</a>
 <a name="173"><span class="lineNum">     173 </span>            :      *          The base address (the address of bank setting 0).</a>
 <a name="174"><span class="lineNum">     174 </span>            :      */</a>
-<a name="175"><span class="lineNum">     175 </span><span class="lineCov">         19 :     bool matchBankable(const MIDICNChannelAddress &amp;toMatch,</span></a>
-<a name="176"><span class="lineNum">     176 </span>            :                        const MIDICNChannelAddress &amp;base) const {</a>
+<a name="175"><span class="lineNum">     175 </span><span class="lineCov">         19 :     bool matchBankable(const MIDIAddress &amp;toMatch,</span></a>
+<a name="176"><span class="lineNum">     176 </span>            :                        const MIDIAddress &amp;base) const {</a>
 <a name="177"><span class="lineNum">     177 </span><span class="lineCov">         19 :         if (!toMatch.isValid() || !base.isValid())</span></a>
 <a name="178"><span class="lineNum">     178 </span><span class="lineNoCov">          0 :             return false;</span></a>
 <a name="179"><span class="lineNum">     179 </span><span class="lineCov">         19 :         switch (type) {</span></a>
@@ -279,8 +279,8 @@
 <a name="209"><span class="lineNum">     209 </span>            :      * @param   length</a>
 <a name="210"><span class="lineNum">     210 </span>            :      *          The length of the range.</a>
 <a name="211"><span class="lineNum">     211 </span>            :      */</a>
-<a name="212"><span class="lineNum">     212 </span><span class="lineCov">         20 :     bool matchBankableAddressInRange(const MIDICNChannelAddress &amp;toMatch,</span></a>
-<a name="213"><span class="lineNum">     213 </span>            :                                      const MIDICNChannelAddress &amp;base,</a>
+<a name="212"><span class="lineNum">     212 </span><span class="lineCov">         20 :     bool matchBankableAddressInRange(const MIDIAddress &amp;toMatch,</span></a>
+<a name="213"><span class="lineNum">     213 </span>            :                                      const MIDIAddress &amp;base,</a>
 <a name="214"><span class="lineNum">     214 </span>            :                                      uint8_t length) const {</a>
 <a name="215"><span class="lineNum">     215 </span><span class="lineCov">         20 :         if (!toMatch.isValid() || !base.isValid())</span></a>
 <a name="216"><span class="lineNum">     216 </span><span class="lineNoCov">          0 :             return false;</span></a>

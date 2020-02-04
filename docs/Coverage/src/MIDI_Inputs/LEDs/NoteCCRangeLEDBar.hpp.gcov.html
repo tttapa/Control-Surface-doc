@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Inputs/LEDs/NoteCCRangeLEDBar.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Inputs/LEDs/NoteCCRangeLEDBar.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">17</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">6</td>
@@ -123,7 +123,7 @@
 <a name="53"><span class="lineNum">      53 </span>            :                                              NoteCCLEDBarCallback&lt;NumLEDs&gt;&gt; {</a>
 <a name="54"><span class="lineNum">      54 </span>            :   public:</a>
 <a name="55"><span class="lineNum">      55 </span><span class="lineCov">          1 :     NoteLEDBar(const AH::DotBarDisplayLEDs&lt;NumLEDs&gt; &amp;leds,</span></a>
-<a name="56"><span class="lineNum">      56 </span>            :                MIDICNChannelAddress address)</a>
+<a name="56"><span class="lineNum">      56 </span>            :                MIDIAddress address)</a>
 <a name="57"><span class="lineNum">      57 </span><span class="lineCov">          1 :         : GenericNoteCCRange&lt;MIDIInputElementNote, 1,</span></a>
 <a name="58"><span class="lineNum">      58 </span>            :                              NoteCCLEDBarCallback&lt;NumLEDs&gt;&gt;{</a>
 <a name="59"><span class="lineNum">      59 </span><span class="lineCov">          1 :               address,</span></a>
@@ -153,7 +153,7 @@
 <a name="83"><span class="lineNum">      83 </span>            :                                            NoteCCLEDBarCallback&lt;NumLEDs&gt;&gt; {</a>
 <a name="84"><span class="lineNum">      84 </span>            :   public:</a>
 <a name="85"><span class="lineNum">      85 </span>            :     CCLEDBar(const AH::DotBarDisplayLEDs&lt;NumLEDs&gt; &amp;leds,</a>
-<a name="86"><span class="lineNum">      86 </span>            :              MIDICNChannelAddress address)</a>
+<a name="86"><span class="lineNum">      86 </span>            :              MIDIAddress address)</a>
 <a name="87"><span class="lineNum">      87 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementCC, 1,</a>
 <a name="88"><span class="lineNum">      88 </span>            :                              NoteCCLEDBarCallback&lt;NumLEDs&gt;&gt;{</a>
 <a name="89"><span class="lineNum">      89 </span>            :               address,</a>
@@ -190,7 +190,7 @@
 <a name="120"><span class="lineNum">     120 </span>            :   public:</a>
 <a name="121"><span class="lineNum">     121 </span>            :     NoteLEDBar(const BankConfig&lt;BankSize&gt; &amp;config,</a>
 <a name="122"><span class="lineNum">     122 </span>            :                const AH::DotBarDisplayLEDs&lt;NumLEDs&gt; &amp;leds,</a>
-<a name="123"><span class="lineNum">     123 </span>            :                const MIDICNChannelAddress &amp;address)</a>
+<a name="123"><span class="lineNum">     123 </span>            :                const MIDIAddress &amp;address)</a>
 <a name="124"><span class="lineNum">     124 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementNote, 1, BankSize,</a>
 <a name="125"><span class="lineNum">     125 </span>            :                              NoteCCLEDBarCallback&lt;NumLEDs&gt;&gt;{</a>
 <a name="126"><span class="lineNum">     126 </span>            :               config,</a>
@@ -224,7 +224,7 @@
 <a name="154"><span class="lineNum">     154 </span>            :   public:</a>
 <a name="155"><span class="lineNum">     155 </span>            :     CCLEDBar(const BankConfig&lt;BankSize&gt; &amp;config,</a>
 <a name="156"><span class="lineNum">     156 </span>            :              const AH::DotBarDisplayLEDs&lt;NumLEDs&gt; &amp;leds,</a>
-<a name="157"><span class="lineNum">     157 </span>            :              const MIDICNChannelAddress &amp;address)</a>
+<a name="157"><span class="lineNum">     157 </span>            :              const MIDIAddress &amp;address)</a>
 <a name="158"><span class="lineNum">     158 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementCC, 1, BankSize,</a>
 <a name="159"><span class="lineNum">     159 </span>            :                              NoteCCLEDBarCallback&lt;NumLEDs&gt;&gt;{</a>
 <a name="160"><span class="lineNum">     160 </span>            :               config,</a>

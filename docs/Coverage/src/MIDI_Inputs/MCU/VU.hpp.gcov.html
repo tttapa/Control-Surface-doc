@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Inputs/MCU/VU.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Inputs/MCU/VU.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">93</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">76</td>
@@ -147,7 +147,7 @@
 <a name="77"><span class="lineNum">      77 </span>            : template &lt;uint8_t NumValues, class Callback&gt;</a>
 <a name="78"><span class="lineNum">      78 </span><span class="lineCov">         12 : class VU_Base : public MIDIInputElementChannelPressure, public IVU {</span></a>
 <a name="79"><span class="lineNum">      79 </span>            :   protected:</a>
-<a name="80"><span class="lineNum">      80 </span><span class="lineCov">         12 :     VU_Base(uint8_t track, const MIDICNChannel &amp;channelCN,</span></a>
+<a name="80"><span class="lineNum">      80 </span><span class="lineCov">         12 :     VU_Base(uint8_t track, const MIDIChannelCN &amp;channelCN,</span></a>
 <a name="81"><span class="lineNum">      81 </span>            :             unsigned int decayTime, const Callback &amp;callback)</a>
 <a name="82"><span class="lineNum">      82 </span><span class="lineCov">         24 :         : MIDIInputElementChannelPressure{{track - 1, channelCN}}, IVU(12),</span></a>
 <a name="83"><span class="lineNum">      83 </span><span class="lineCov">         48 :           decayTime(decayTime), callback(callback) {}</span></a>
@@ -178,7 +178,7 @@
 <a name="108"><span class="lineNum">     108 </span>            :   private:</a>
 <a name="109"><span class="lineNum">     109 </span>            :     /// Called when an incoming MIDI message matches this element</a>
 <a name="110"><span class="lineNum">     110 </span><span class="lineCov">         19 :     bool updateImpl(const ChannelMessageMatcher &amp;midimsg,</span></a>
-<a name="111"><span class="lineNum">     111 </span>            :                     const MIDICNChannelAddress &amp;target) override {</a>
+<a name="111"><span class="lineNum">     111 </span>            :                     const MIDIAddress &amp;target) override {</a>
 <a name="112"><span class="lineNum">     112 </span><span class="lineCov">         19 :         uint8_t data = midimsg.data1 &amp; 0x0F;</span></a>
 <a name="113"><span class="lineNum">     113 </span><span class="lineCov">         19 :         uint8_t index = getBankIndex(target);</span></a>
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">         19 :         switch (data) {</span></a>
@@ -193,7 +193,7 @@
 <a name="123"><span class="lineNum">     123 </span>            : </a>
 <a name="124"><span class="lineNum">     124 </span>            :     /// The address of the VU meter is the high nibble of the first (and only)</a>
 <a name="125"><span class="lineNum">     125 </span>            :     /// data byte.</a>
-<a name="126"><span class="lineNum">     126 </span>            :     MIDICNChannelAddress</a>
+<a name="126"><span class="lineNum">     126 </span>            :     MIDIAddress</a>
 <a name="127"><span class="lineNum">     127 </span><span class="lineCov">         19 :     getTarget(const ChannelMessageMatcher &amp;midimsg) const override {</span></a>
 <a name="128"><span class="lineNum">     128 </span><span class="lineCov">         19 :         return {</span></a>
 <a name="129"><span class="lineNum">     129 </span><span class="lineCov">         19 :             int8_t(midimsg.data1 &gt;&gt; 4),</span></a>
@@ -212,7 +212,7 @@
 <a name="142"><span class="lineNum">     142 </span><span class="lineCov">         14 :     virtual uint8_t getSelection() const { return 0; }</span></a>
 <a name="143"><span class="lineNum">     143 </span>            : </a>
 <a name="144"><span class="lineNum">     144 </span>            :     /// Get the bank index from a MIDI address</a>
-<a name="145"><span class="lineNum">     145 </span><span class="lineCov">         10 :     virtual setting_t getBankIndex(const MIDICNChannelAddress &amp;target) const {</span></a>
+<a name="145"><span class="lineNum">     145 </span><span class="lineCov">         10 :     virtual setting_t getBankIndex(const MIDIAddress &amp;target) const {</span></a>
 <a name="146"><span class="lineNum">     146 </span><span class="lineCov">         10 :         (void)target;</span></a>
 <a name="147"><span class="lineNum">     147 </span><span class="lineCov">         10 :         return 0;</span></a>
 <a name="148"><span class="lineNum">     148 </span>            :     }</a>
@@ -272,7 +272,7 @@
 <a name="202"><span class="lineNum">     202 </span>            :      *          The callback object that is update when the value changes.</a>
 <a name="203"><span class="lineNum">     203 </span>            :      *          Used for displaying the value on a range of LEDs etc.</a>
 <a name="204"><span class="lineNum">     204 </span>            :      */</a>
-<a name="205"><span class="lineNum">     205 </span><span class="lineCov">          7 :     GenericVU(uint8_t track, const MIDICNChannel &amp;channelCN,</span></a>
+<a name="205"><span class="lineNum">     205 </span><span class="lineCov">          7 :     GenericVU(uint8_t track, const MIDIChannelCN &amp;channelCN,</span></a>
 <a name="206"><span class="lineNum">     206 </span>            :               unsigned int decayTime, const Callback &amp;callback)</a>
 <a name="207"><span class="lineNum">     207 </span><span class="lineCov">          7 :         : VU_Base&lt;1, Callback&gt;{</span></a>
 <a name="208"><span class="lineNum">     208 </span><span class="lineCov">          7 :               track,</span></a>
@@ -308,7 +308,7 @@
 <a name="238"><span class="lineNum">     238 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
 <a name="239"><span class="lineNum">     239 </span>            :      *          the decay.</a>
 <a name="240"><span class="lineNum">     240 </span>            :      */</a>
-<a name="241"><span class="lineNum">     241 </span><span class="lineCov">          7 :     VU(uint8_t track, const MIDICNChannel &amp;channelCN,</span></a>
+<a name="241"><span class="lineNum">     241 </span><span class="lineCov">          7 :     VU(uint8_t track, const MIDIChannelCN &amp;channelCN,</span></a>
 <a name="242"><span class="lineNum">     242 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
 <a name="243"><span class="lineNum">     243 </span><span class="lineCov">          7 :         : GenericVU&lt;&gt;{</span></a>
 <a name="244"><span class="lineNum">     244 </span><span class="lineCov">          7 :               track,</span></a>
@@ -381,7 +381,7 @@
 <a name="311"><span class="lineNum">     311 </span>            :      *          Used for displaying the value on a range of LEDs etc.</a>
 <a name="312"><span class="lineNum">     312 </span>            :      */</a>
 <a name="313"><span class="lineNum">     313 </span><span class="lineCov">          5 :     GenericVU(const BankConfig&lt;NumBanks&gt; &amp;config, uint8_t track,</span></a>
-<a name="314"><span class="lineNum">     314 </span>            :               const MIDICNChannel &amp;channelCN, unsigned int decayTime,</a>
+<a name="314"><span class="lineNum">     314 </span>            :               const MIDIChannelCN &amp;channelCN, unsigned int decayTime,</a>
 <a name="315"><span class="lineNum">     315 </span>            :               const Callback &amp;callback)</a>
 <a name="316"><span class="lineNum">     316 </span><span class="lineCov">          5 :         : VU_Base&lt;NumBanks, Callback&gt;{</span></a>
 <a name="317"><span class="lineNum">     317 </span><span class="lineCov">          5 :             track, </span></a>
@@ -396,13 +396,13 @@
 <a name="326"><span class="lineNum">     326 </span><span class="lineCov">         20 :         return BankableMIDIInput&lt;NumBanks&gt;::getSelection();</span></a>
 <a name="327"><span class="lineNum">     327 </span>            :     };</a>
 <a name="328"><span class="lineNum">     328 </span>            : </a>
-<a name="329"><span class="lineNum">     329 </span><span class="lineCov">          9 :     uint8_t getBankIndex(const MIDICNChannelAddress &amp;target) const override {</span></a>
+<a name="329"><span class="lineNum">     329 </span><span class="lineCov">          9 :     uint8_t getBankIndex(const MIDIAddress &amp;target) const override {</span></a>
 <a name="330"><span class="lineNum">     330 </span><span class="lineCov">          9 :         return BankableMIDIInput&lt;NumBanks&gt;::getBankIndex(target, this-&gt;address);</span></a>
 <a name="331"><span class="lineNum">     331 </span>            :     }</a>
 <a name="332"><span class="lineNum">     332 </span>            : </a>
 <a name="333"><span class="lineNum">     333 </span>            :     /// Check if the address of the incoming MIDI message is in one of the banks</a>
 <a name="334"><span class="lineNum">     334 </span>            :     /// of this element.</a>
-<a name="335"><span class="lineNum">     335 </span><span class="lineCov">          9 :     bool match(const MIDICNChannelAddress &amp;target) const override {</span></a>
+<a name="335"><span class="lineNum">     335 </span><span class="lineCov">          9 :     bool match(const MIDIAddress &amp;target) const override {</span></a>
 <a name="336"><span class="lineNum">     336 </span><span class="lineCov">         18 :         return BankableMIDIInput&lt;NumBanks&gt;::matchBankable(target,</span></a>
 <a name="337"><span class="lineNum">     337 </span><span class="lineCov">          9 :                                                           this-&gt;address);</span></a>
 <a name="338"><span class="lineNum">     338 </span>            :     }</a>
@@ -442,7 +442,7 @@
 <a name="372"><span class="lineNum">     372 </span>            :      *          the decay.</a>
 <a name="373"><span class="lineNum">     373 </span>            :      */</a>
 <a name="374"><span class="lineNum">     374 </span><span class="lineCov">          4 :     VU(const BankConfig&lt;NumBanks&gt; &amp;config, uint8_t track,</span></a>
-<a name="375"><span class="lineNum">     375 </span>            :        const MIDICNChannel &amp;channelCN,</a>
+<a name="375"><span class="lineNum">     375 </span>            :        const MIDIChannelCN &amp;channelCN,</a>
 <a name="376"><span class="lineNum">     376 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
 <a name="377"><span class="lineNum">     377 </span><span class="lineCov">          4 :         : GenericVU&lt;NumBanks&gt;{</span></a>
 <a name="378"><span class="lineNum">     378 </span><span class="lineCov">          4 :               config, track, channelCN, decayTime, {},</span></a>

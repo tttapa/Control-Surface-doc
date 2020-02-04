@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/Selectors/ProgramChangeSelector.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/Selectors/ProgramChangeSelector.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">7</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">6</td>
@@ -81,7 +81,7 @@
 <a name="11"><span class="lineNum">      11 </span>            :   public:</a>
 <a name="12"><span class="lineNum">      12 </span><span class="lineCov">          2 :     GenericProgramChangeSelector(Selectable&lt;N&gt; &amp;selectable,</span></a>
 <a name="13"><span class="lineNum">      13 </span>            :                                  const Callback &amp;callback,</a>
-<a name="14"><span class="lineNum">      14 </span>            :                                  const MIDICNChannel &amp;address)</a>
+<a name="14"><span class="lineNum">      14 </span>            :                                  const MIDIChannelCN &amp;address)</a>
 <a name="15"><span class="lineNum">      15 </span><span class="lineCov">          2 :         : GenericSelector&lt;N, Callback&gt;{selectable, callback},</span></a>
 <a name="16"><span class="lineNum">      16 </span><span class="lineCov">          4 :           MIDIInputElementPC{address} {}</span></a>
 <a name="17"><span class="lineNum">      17 </span>            : </a>
@@ -93,7 +93,7 @@
 <a name="23"><span class="lineNum">      23 </span><span class="lineNoCov">          0 :     void reset() override { GenericSelector&lt;N, Callback&gt;::reset(); }</span></a>
 <a name="24"><span class="lineNum">      24 </span>            : </a>
 <a name="25"><span class="lineNum">      25 </span><span class="lineNoCov">          0 :     bool updateImpl(const ChannelMessageMatcher &amp;midimsg,</span></a>
-<a name="26"><span class="lineNum">      26 </span>            :                     const MIDICNChannelAddress &amp;target) override {</a>
+<a name="26"><span class="lineNum">      26 </span>            :                     const MIDIAddress &amp;target) override {</a>
 <a name="27"><span class="lineNum">      27 </span><span class="lineNoCov">          0 :         (void)target;</span></a>
 <a name="28"><span class="lineNum">      28 </span><span class="lineNoCov">          0 :         uint8_t program = midimsg.data1;</span></a>
 <a name="29"><span class="lineNum">      29 </span><span class="lineNoCov">          0 :         if (program &lt; N) {</span></a>
@@ -120,7 +120,7 @@
 <a name="50"><span class="lineNum">      50 </span><span class="lineCov">          1 : class ProgramChangeSelector : public GenericProgramChangeSelector&lt;N&gt; {</span></a>
 <a name="51"><span class="lineNum">      51 </span>            :   public:</a>
 <a name="52"><span class="lineNum">      52 </span><span class="lineCov">          1 :     ProgramChangeSelector(Selectable&lt;N&gt; &amp;selectable,</span></a>
-<a name="53"><span class="lineNum">      53 </span>            :                           const MIDICNChannel &amp;address)</a>
+<a name="53"><span class="lineNum">      53 </span>            :                           const MIDIChannelCN &amp;address)</a>
 <a name="54"><span class="lineNum">      54 </span><span class="lineCov">          1 :         : GenericProgramChangeSelector&lt;N&gt;{selectable, {}, address} {}</span></a>
 <a name="55"><span class="lineNum">      55 </span>            : };</a>
 <a name="56"><span class="lineNum">      56 </span>            : </a>

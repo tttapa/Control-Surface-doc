@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/MIDI_Inputs/MCU/SevenSegmentDisplay.hpp</title>
+  <title>LCOV - c2232d31690620e4aef51e63c2de5ee6191f50bf - src/MIDI_Inputs/MCU/SevenSegmentDisplay.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
+            <td class="headerValue">c2232d31690620e4aef51e63c2de5ee6191f50bf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">32</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-04 11:29:05</td>
+            <td class="headerValue">2020-02-04 13:52:18</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
@@ -85,7 +85,7 @@
 <a name="15"><span class="lineNum">      15 </span>            :     * @brief     Constructor.</a>
 <a name="16"><span class="lineNum">      16 </span>            :     * @todo      Documentation.</a>
 <a name="17"><span class="lineNum">      17 </span>            :     */</a>
-<a name="18"><span class="lineNum">      18 </span><span class="lineCov">         13 :     SevenSegmentDisplay(const MIDICNChannelAddress &amp;address)</span></a>
+<a name="18"><span class="lineNum">      18 </span><span class="lineCov">         13 :     SevenSegmentDisplay(const MIDIAddress &amp;address)</span></a>
 <a name="19"><span class="lineNum">      19 </span><span class="lineCov">         26 :         : MIDIInputElementCC{address} {</span></a>
 <a name="20"><span class="lineNum">      20 </span><span class="lineCov">         13 :         fillWithSpaces();</span></a>
 <a name="21"><span class="lineNum">      21 </span><span class="lineCov">         13 :     }</span></a>
@@ -106,7 +106,7 @@
 <a name="36"><span class="lineNum">      36 </span>            :      * @brief   Update a character.</a>
 <a name="37"><span class="lineNum">      37 </span>            :      */</a>
 <a name="38"><span class="lineNum">      38 </span><span class="lineCov">         67 :     virtual bool updateImpl(const ChannelMessageMatcher &amp;midimsg,</span></a>
-<a name="39"><span class="lineNum">      39 </span>            :                             const MIDICNChannelAddress &amp;target) override {</a>
+<a name="39"><span class="lineNum">      39 </span>            :                             const MIDIAddress &amp;target) override {</a>
 <a name="40"><span class="lineNum">      40 </span><span class="lineCov">         67 :         uint8_t index = LENGTH - 1 - getRangeIndex(target);</span></a>
 <a name="41"><span class="lineNum">      41 </span>            :         // MIDI msg: character data → bits 0-5</a>
 <a name="42"><span class="lineNum">      42 </span>            :         // MIDI msg: decimal point → bit 6 set, no decimal point → bit 6 not set</a>
@@ -121,13 +121,13 @@
 <a name="51"><span class="lineNum">      51 </span>            : </a>
 <a name="52"><span class="lineNum">      52 </span>            :     /// Check if the address of the incoming MIDI message is within the range</a>
 <a name="53"><span class="lineNum">      53 </span>            :     /// of addresses of this element.</a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         67 :     bool match(const MIDICNChannelAddress &amp;target) const override {</span></a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">         67 :         return MIDICNChannelAddress::matchAddressInRange(target, address,</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         67 :     bool match(const MIDIAddress &amp;target) const override {</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">         67 :         return MIDIAddress::matchAddressInRange(target, address,</span></a>
 <a name="56"><span class="lineNum">      56 </span>            :                                                          LENGTH);</a>
 <a name="57"><span class="lineNum">      57 </span>            :     }</a>
 <a name="58"><span class="lineNum">      58 </span>            : </a>
 <a name="59"><span class="lineNum">      59 </span>            :     /// @todo</a>
-<a name="60"><span class="lineNum">      60 </span><span class="lineCov">         67 :     uint8_t getRangeIndex(const MIDICNChannelAddress &amp;target) const {</span></a>
+<a name="60"><span class="lineNum">      60 </span><span class="lineCov">         67 :     uint8_t getRangeIndex(const MIDIAddress &amp;target) const {</span></a>
 <a name="61"><span class="lineNum">      61 </span><span class="lineCov">         67 :         return target.getAddress() - this-&gt;address.getAddress();</span></a>
 <a name="62"><span class="lineNum">      62 </span>            :     }</a>
 <a name="63"><span class="lineNum">      63 </span>            : </a>
