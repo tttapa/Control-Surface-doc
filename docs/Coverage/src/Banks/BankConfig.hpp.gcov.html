@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 914b3628d050f718e71e0275be0fe2780d83c4a3 - src/Banks/BankConfig.hpp</title>
+  <title>LCOV - 6d201c8481b4d2c86f65f79a89644ac53531ff86 - src/Banks/BankConfig.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,20 +28,20 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">914b3628d050f718e71e0275be0fe2780d83c4a3</td>
+            <td class="headerValue">6d201c8481b4d2c86f65f79a89644ac53531ff86</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">4</td>
-            <td class="headerCovTableEntry">4</td>
+            <td class="headerCovTableEntry">6</td>
+            <td class="headerCovTableEntry">6</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-03 19:17:56</td>
+            <td class="headerValue">2020-02-04 11:29:05</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">3</td>
-            <td class="headerCovTableEntry">3</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntry">5</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
@@ -107,8 +107,8 @@
 <a name="37"><span class="lineNum">      37 </span>            :  */</a>
 <a name="38"><span class="lineNum">      38 </span>            : template &lt;setting_t N&gt;</a>
 <a name="39"><span class="lineNum">      39 </span>            : struct BankConfig {</a>
-<a name="40"><span class="lineNum">      40 </span><span class="lineCov">         13 :     BankConfig(Bank&lt;N&gt; &amp;bank, BankType type = CHANGE_ADDRESS)</span></a>
-<a name="41"><span class="lineNum">      41 </span><span class="lineCov">         13 :         : bank(bank), type(type) {}</span></a>
+<a name="40"><span class="lineNum">      40 </span><span class="lineCov">         15 :     BankConfig(Bank&lt;N&gt; &amp;bank, BankType type = CHANGE_ADDRESS)</span></a>
+<a name="41"><span class="lineNum">      41 </span><span class="lineCov">         15 :         : bank(bank), type(type) {}</span></a>
 <a name="42"><span class="lineNum">      42 </span>            :     Bank&lt;N&gt; &amp;bank;</a>
 <a name="43"><span class="lineNum">      43 </span>            :     const BankType type;</a>
 <a name="44"><span class="lineNum">      44 </span>            : };</a>
@@ -118,13 +118,16 @@
 <a name="48"><span class="lineNum">      48 </span>            :  *          bank type.</a>
 <a name="49"><span class="lineNum">      49 </span>            :  */</a>
 <a name="50"><span class="lineNum">      50 </span>            : struct OutputBankConfig {</a>
-<a name="51"><span class="lineNum">      51 </span><span class="lineCov">         32 :     OutputBankConfig(OutputBank &amp;bank, BankType type = CHANGE_ADDRESS)</span></a>
-<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         32 :         : bank(bank), type(type) {}</span></a>
-<a name="53"><span class="lineNum">      53 </span>            :     OutputBank &amp;bank;</a>
-<a name="54"><span class="lineNum">      54 </span>            :     const BankType type;</a>
-<a name="55"><span class="lineNum">      55 </span>            : };</a>
-<a name="56"><span class="lineNum">      56 </span>            : </a>
-<a name="57"><span class="lineNum">      57 </span>            : END_CS_NAMESPACE</a>
+<a name="51"><span class="lineNum">      51 </span>            :     template &lt;setting_t N&gt;</a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">          2 :     OutputBankConfig(const BankConfig&lt;N&gt; &amp;bankconfig)</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">          2 :         : bank(bankconfig.bank), type(bankconfig.type) {}</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         30 :     OutputBankConfig(OutputBank &amp;bank, BankType type = CHANGE_ADDRESS)</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">         30 :         : bank(bank), type(type) {}</span></a>
+<a name="56"><span class="lineNum">      56 </span>            :     OutputBank &amp;bank;</a>
+<a name="57"><span class="lineNum">      57 </span>            :     const BankType type;</a>
+<a name="58"><span class="lineNum">      58 </span>            : };</a>
+<a name="59"><span class="lineNum">      59 </span>            : </a>
+<a name="60"><span class="lineNum">      60 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['getting_20started_4600',['Getting Started',['../d5/d7d/md_pages_Getting-Started.html',1,'']]]
+  ['deprecated_20list_4606',['Deprecated List',['../da/d58/deprecated.html',1,'']]],
+  ['debug_4607',['Debug',['../de/daf/md_pages_Debug.html',1,'']]]
 ];
