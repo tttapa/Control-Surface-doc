@@ -182,12 +182,12 @@ Enabling and disabling updatables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class of MIDIOutputElements that read the analog input from a <b>potentiometer or fader</b>, and send out 14-bit MIDI <b>Pitch Bend</b> events. </p>
 <p>The analog input is filtered and hysteresis is applied for maximum stability. <br  />
- The actual precision is "only" 8 bits, because the built-in ADC is pretty noisy. <br  />
+ The actual precision is "only" 10 bits, because this is the resolution of the built-in ADC, and this is the default resolution used by the Mackie Control Universal protocol. <br  />
  This version cannot be banked. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d3/d4e/Pitch-Bend-Potentiometer_8ino-example.html#_a1">Pitch-Bend-Potentiometer.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d74/PBPotentiometer_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d3/d74/PBPotentiometer_8hpp_source.html">PBPotentiometer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d74/PBPotentiometer_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../d3/d74/PBPotentiometer_8hpp_source.html">PBPotentiometer.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a064f86379a69f5ddd85ac31097bfe88a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a064f86379a69f5ddd85ac31097bfe88a">&#9670;&nbsp;</a></span>PBPotentiometer()</h2>
@@ -239,7 +239,7 @@ Enabling and disabling updatables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d74/PBPotentiometer_8hpp_source.html#l00038">38</a> of file <a class="el" href="../../d3/d74/PBPotentiometer_8hpp_source.html">PBPotentiometer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d74/PBPotentiometer_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d3/d74/PBPotentiometer_8hpp_source.html">PBPotentiometer.hpp</a>.</p>
 
 </div>
 </div>
