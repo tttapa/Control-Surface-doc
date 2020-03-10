@@ -130,7 +130,7 @@ var searchData=
   ['getlast_955',['getLast',['../dd/d16/classDoublyLinkedList.html#a38ba5fe2a35b8052bdba6c2bd624c6c9',1,'DoublyLinkedList']]],
   ['getlength_956',['getLength',['../d2/dda/classAH_1_1ExtendedIOElement.html#a3df029350e2baa2e3fefd90ccf0432cd',1,'AH::ExtendedIOElement::getLength()'],['../d1/db1/classSysExBuffer.html#a2b6d58f963410c52b1e972b849617ff3',1,'SysExBuffer::getLength()']]],
   ['getmax_957',['getMax',['../d2/de9/classIVU.html#a854db3237e4bc264f47e6590b42801ec',1,'IVU']]],
-  ['getmcunamefromnotenumber_958',['getMCUNameFromNoteNumber',['../d7/dc7/namespaceMCU.html#af4f8e563fd7e93cb30b67f979a90a7fd',1,'MCU']]],
+  ['getmcunamefromnotenumber_958',['getMCUNameFromNoteNumber',['../d7/dc7/namespaceMCU.html#af88b8bb23e0990b4cc5b95de4431acc0',1,'MCU']]],
   ['getmode_959',['getMode',['../d9/d89/classAH_1_1DotBarDisplayLEDs.html#add03bf21030c26bfffd733237b69411a',1,'AH::DotBarDisplayLEDs::getMode()'],['../d1/d72/classMCU_1_1VULEDsCallback.html#a773f688eff37e46b78e729c99ecd14c0',1,'MCU::VULEDsCallback::getMode()'],['../df/d36/classMCU_1_1VULEDs.html#a773f688eff37e46b78e729c99ecd14c0',1,'MCU::VULEDs::getMode()'],['../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#a773f688eff37e46b78e729c99ecd14c0',1,'MCU::Bankable::VULEDs::getMode()'],['../da/d50/classMCU_1_1IVPotRing.html#abc98e60d5dd2ca3668436a224af1ec2d',1,'MCU::IVPotRing::getMode() const'],['../da/d50/classMCU_1_1IVPotRing.html#af5d5cb921b18630f43bea39ce20b969a',1,'MCU::IVPotRing::getMode(uint8_t value)']]],
   ['getname_960',['getName',['../de/d0d/classAH_1_1Button.html#a91e5a22cc59426bda8af5ff7f359c8d0',1,'AH::Button']]],
   ['getnext_961',['getNext',['../d3/da5/structMIDI__PipeFactory.html#ab794aac3d4e4d626ea42f1dcd25389a3',1,'MIDI_PipeFactory']]],

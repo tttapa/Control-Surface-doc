@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 512ba03cbc04b285875480ec657395a5e86e0692 - src/MIDI_Inputs/LEDs/NoteCCRangeLEDs.hpp</title>
+  <title>LCOV - ab2533f000d89d50ae973b8b246642bb868bedaf - src/MIDI_Inputs/LEDs/NoteCCRangeLEDs.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">512ba03cbc04b285875480ec657395a5e86e0692</td>
+            <td class="headerValue">ab2533f000d89d50ae973b8b246642bb868bedaf</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">36</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-03-07 01:44:15</td>
+            <td class="headerValue">2020-03-10 23:53:04</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">12</td>
@@ -98,7 +98,7 @@
 <a name="28"><span class="lineNum">      28 </span><span class="lineCov">          3 :     void update(const INoteCCValue &amp;t, uint8_t index) override {</span></a>
 <a name="29"><span class="lineNum">      29 </span><span class="lineCov">          3 :         uint8_t value = t.getValue(index);</span></a>
 <a name="30"><span class="lineNum">      30 </span><span class="lineCov">          3 :         bool state = value &gt; threshold;</span></a>
-<a name="31"><span class="lineNum">      31 </span><span class="lineCov">          3 :         AH::ExtIO::digitalWrite(ledPins[index], state);</span></a>
+<a name="31"><span class="lineNum">      31 </span><span class="lineCov">          3 :         AH::ExtIO::digitalWrite(ledPins[index], state ? HIGH : LOW);</span></a>
 <a name="32"><span class="lineNum">      32 </span><span class="lineCov">          3 :     }</span></a>
 <a name="33"><span class="lineNum">      33 </span>            : </a>
 <a name="34"><span class="lineNum">      34 </span>            :   private:</a>
