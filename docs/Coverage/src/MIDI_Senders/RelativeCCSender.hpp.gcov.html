@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 30254f65de4a8ec4f766c51d5cd6d20bde380ba1 - src/MIDI_Senders/RelativeCCSender.hpp</title>
+  <title>LCOV - 512ba03cbc04b285875480ec657395a5e86e0692 - src/MIDI_Senders/RelativeCCSender.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">30254f65de4a8ec4f766c51d5cd6d20bde380ba1</td>
+            <td class="headerValue">512ba03cbc04b285875480ec657395a5e86e0692</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">23</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-07 11:45:49</td>
+            <td class="headerValue">2020-03-07 01:44:15</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">6</td>
@@ -167,7 +167,7 @@
 <a name="97"><span class="lineNum">      97 </span><span class="lineCov">         18 :             long thisDelta = constrain(delta, -15, 15);</span></a>
 <a name="98"><span class="lineNum">      98 </span><span class="lineCov">         18 :             uint8_t msgVal = mapRelativeCC(thisDelta);</span></a>
 <a name="99"><span class="lineNum">      99 </span>            :             // send a Control Change MIDI event</a>
-<a name="100"><span class="lineNum">     100 </span><span class="lineCov">         18 :             Control_Surface.MIDI().sendCC(address, msgVal);</span></a>
+<a name="100"><span class="lineNum">     100 </span><span class="lineCov">         18 :             Control_Surface.sendCC(address, msgVal);</span></a>
 <a name="101"><span class="lineNum">     101 </span><span class="lineCov">         18 :             delta -= thisDelta;</span></a>
 <a name="102"><span class="lineNum">     102 </span><span class="lineCov">         18 :         }</span></a>
 <a name="103"><span class="lineNum">     103 </span><span class="lineCov">         10 :     }</span></a>

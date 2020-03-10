@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 30254f65de4a8ec4f766c51d5cd6d20bde380ba1 - src/MIDI_Interfaces/USBMIDI_Interface.hpp</title>
+  <title>LCOV - 512ba03cbc04b285875480ec657395a5e86e0692 - src/MIDI_Interfaces/USBMIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">30254f65de4a8ec4f766c51d5cd6d20bde380ba1</td>
+            <td class="headerValue">512ba03cbc04b285875480ec657395a5e86e0692</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">41</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-07 11:45:49</td>
+            <td class="headerValue">2020-03-07 01:44:15</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">12</td>
@@ -120,7 +120,7 @@
 <a name="50"><span class="lineNum">      50 </span>            : </a>
 <a name="51"><span class="lineNum">      51 </span><span class="lineCov">         42 :     MOCK_METHOD5(writeUSBPacket,</span></a>
 <a name="52"><span class="lineNum">      52 </span>            :                  void(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t));</a>
-<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         27 :     MOCK_METHOD0(readUSBPacket, MIDIUSBPacket_t(void));</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         33 :     MOCK_METHOD0(readUSBPacket, MIDIUSBPacket_t(void));</span></a>
 <a name="54"><span class="lineNum">      54 </span><span class="lineCov">         12 :     void flushUSB() {}</span></a>
 <a name="55"><span class="lineNum">      55 </span>            : </a>
 <a name="56"><span class="lineNum">      56 </span>            :     W_SUGGEST_OVERRIDE_ON</a>
@@ -172,19 +172,19 @@
 <a name="102"><span class="lineNum">     102 </span><span class="lineCov">          1 :     }</span></a>
 <a name="103"><span class="lineNum">     103 </span>            : </a>
 <a name="104"><span class="lineNum">     104 </span>            :   public:</a>
-<a name="105"><span class="lineNum">     105 </span><span class="lineCov">         10 :     MIDI_read_t read() override {</span></a>
-<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         28 :         for (uint8_t i = 0; i &lt; (SYSEX_BUFFER_SIZE + 2) / 3; ++i) {</span></a>
-<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         18 :             MIDIUSBPacket_t midi_packet = readUSBPacket();</span></a>
-<a name="108"><span class="lineNum">     108 </span><span class="lineCov">         18 :             if (midi_packet.data[0] == 0)</span></a>
-<a name="109"><span class="lineNum">     109 </span><span class="lineCov">          1 :                 return NO_MESSAGE;</span></a>
+<a name="105"><span class="lineNum">     105 </span><span class="lineCov">         16 :     MIDI_read_t read() override {</span></a>
+<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         40 :         for (uint8_t i = 0; i &lt; (SYSEX_BUFFER_SIZE + 2) / 3; ++i) {</span></a>
+<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         24 :             MIDIUSBPacket_t midi_packet = readUSBPacket();</span></a>
+<a name="108"><span class="lineNum">     108 </span><span class="lineCov">         24 :             if (midi_packet.data[0] == 0)</span></a>
+<a name="109"><span class="lineNum">     109 </span><span class="lineCov">          7 :                 return NO_MESSAGE;</span></a>
 <a name="110"><span class="lineNum">     110 </span>            : </a>
 <a name="111"><span class="lineNum">     111 </span><span class="lineCov">         17 :             MIDI_read_t parseResult = parser.parse(midi_packet.data);</span></a>
 <a name="112"><span class="lineNum">     112 </span>            : </a>
 <a name="113"><span class="lineNum">     113 </span><span class="lineCov">         17 :             if (parseResult != NO_MESSAGE)</span></a>
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">          9 :                 return parseResult;</span></a>
-<a name="115"><span class="lineNum">     115 </span><span class="lineCov">         18 :         }</span></a>
+<a name="115"><span class="lineNum">     115 </span><span class="lineCov">         24 :         }</span></a>
 <a name="116"><span class="lineNum">     116 </span><span class="lineNoCov">          0 :         return NO_MESSAGE;</span></a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineCov">         10 :     }</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineCov">         16 :     }</span></a>
 <a name="118"><span class="lineNum">     118 </span>            : };</a>
 <a name="119"><span class="lineNum">     119 </span>            : </a>
 <a name="120"><span class="lineNum">     120 </span>            : END_CS_NAMESPACE</a>

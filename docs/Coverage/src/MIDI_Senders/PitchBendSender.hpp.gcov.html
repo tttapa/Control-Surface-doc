@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 30254f65de4a8ec4f766c51d5cd6d20bde380ba1 - src/MIDI_Senders/PitchBendSender.hpp</title>
+  <title>LCOV - 512ba03cbc04b285875480ec657395a5e86e0692 - src/MIDI_Senders/PitchBendSender.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">30254f65de4a8ec4f766c51d5cd6d20bde380ba1</td>
+            <td class="headerValue">512ba03cbc04b285875480ec657395a5e86e0692</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">7</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-07 11:45:49</td>
+            <td class="headerValue">2020-03-07 01:44:15</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -84,7 +84,7 @@
 <a name="14"><span class="lineNum">      14 </span>            :         // ignore address byte, just use channel and cable numbers</a>
 <a name="15"><span class="lineNum">      15 </span><span class="lineCov">         18 :         MIDIChannelCN channelCN = {address.getChannel(),</span></a>
 <a name="16"><span class="lineNum">      16 </span><span class="lineCov">          9 :                                    address.getCableNumber()};</span></a>
-<a name="17"><span class="lineNum">      17 </span><span class="lineCov">          9 :         Control_Surface.MIDI().sendPB(channelCN, value);</span></a>
+<a name="17"><span class="lineNum">      17 </span><span class="lineCov">          9 :         Control_Surface.sendPB(channelCN, value);</span></a>
 <a name="18"><span class="lineNum">      18 </span><span class="lineCov">          9 :     }</span></a>
 <a name="19"><span class="lineNum">      19 </span>            : </a>
 <a name="20"><span class="lineNum">      20 </span>            :     constexpr static uint8_t precision() {</a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 30254f65de4a8ec4f766c51d5cd6d20bde380ba1 - src/AH/Containers/LinkedList.hpp</title>
+  <title>LCOV - 512ba03cbc04b285875480ec657395a5e86e0692 - src/AH/Containers/LinkedList.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">30254f65de4a8ec4f766c51d5cd6d20bde380ba1</td>
+            <td class="headerValue">512ba03cbc04b285875480ec657395a5e86e0692</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">96</td>
@@ -37,12 +37,12 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-02-07 11:45:49</td>
+            <td class="headerValue">2020-03-07 01:44:15</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">150</td>
-            <td class="headerCovTableEntry">214</td>
-            <td class="headerCovTableEntryLo">70.1 %</td>
+            <td class="headerCovTableEntry">156</td>
+            <td class="headerCovTableEntry">228</td>
+            <td class="headerCovTableEntryLo">68.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -184,15 +184,15 @@
 <a name="114"><span class="lineNum">     114 </span>            :      * @param   node</a>
 <a name="115"><span class="lineNum">     115 </span>            :      *          A pointer to the node to be appended.</a>
 <a name="116"><span class="lineNum">     116 </span>            :      */</a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineCov">        275 :     void append(Node *node) {</span></a>
-<a name="118"><span class="lineNum">     118 </span><span class="lineCov">        275 :         if (first == nullptr)</span></a>
-<a name="119"><span class="lineNum">     119 </span><span class="lineCov">        197 :             first = node;</span></a>
-<a name="120"><span class="lineNum">     120 </span><span class="lineCov">        275 :         node-&gt;previous = last;</span></a>
-<a name="121"><span class="lineNum">     121 </span><span class="lineCov">        275 :         if (node-&gt;previous != nullptr)</span></a>
-<a name="122"><span class="lineNum">     122 </span><span class="lineCov">         78 :             node-&gt;previous-&gt;next = node;</span></a>
-<a name="123"><span class="lineNum">     123 </span><span class="lineCov">        275 :         last = node;</span></a>
-<a name="124"><span class="lineNum">     124 </span><span class="lineCov">        275 :         node-&gt;next = nullptr;</span></a>
-<a name="125"><span class="lineNum">     125 </span><span class="lineCov">        275 :     }</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineCov">        368 :     void append(Node *node) {</span></a>
+<a name="118"><span class="lineNum">     118 </span><span class="lineCov">        368 :         if (first == nullptr)</span></a>
+<a name="119"><span class="lineNum">     119 </span><span class="lineCov">        278 :             first = node;</span></a>
+<a name="120"><span class="lineNum">     120 </span><span class="lineCov">        368 :         node-&gt;previous = last;</span></a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineCov">        368 :         if (node-&gt;previous != nullptr)</span></a>
+<a name="122"><span class="lineNum">     122 </span><span class="lineCov">         90 :             node-&gt;previous-&gt;next = node;</span></a>
+<a name="123"><span class="lineNum">     123 </span><span class="lineCov">        368 :         last = node;</span></a>
+<a name="124"><span class="lineNum">     124 </span><span class="lineCov">        368 :         node-&gt;next = nullptr;</span></a>
+<a name="125"><span class="lineNum">     125 </span><span class="lineCov">        368 :     }</span></a>
 <a name="126"><span class="lineNum">     126 </span>            : </a>
 <a name="127"><span class="lineNum">     127 </span>            :     /**</a>
 <a name="128"><span class="lineNum">     128 </span>            :      * @brief   Append a node to a linked list.</a>
@@ -267,18 +267,18 @@
 <a name="197"><span class="lineNum">     197 </span>            :      * @param   node</a>
 <a name="198"><span class="lineNum">     198 </span>            :      *          A pointer to the node to be removed.</a>
 <a name="199"><span class="lineNum">     199 </span>            :      */</a>
-<a name="200"><span class="lineNum">     200 </span><span class="lineCov">        193 :     void remove(Node *node) {</span></a>
-<a name="201"><span class="lineNum">     201 </span><span class="lineCov">        193 :         if (node-&gt;previous != nullptr)</span></a>
-<a name="202"><span class="lineNum">     202 </span><span class="lineCov">         16 :             node-&gt;previous-&gt;next = node-&gt;next;</span></a>
-<a name="203"><span class="lineNum">     203 </span><span class="lineCov">        193 :         if (node == last)</span></a>
-<a name="204"><span class="lineNum">     204 </span><span class="lineCov">        189 :             last = node-&gt;previous;</span></a>
-<a name="205"><span class="lineNum">     205 </span><span class="lineCov">        193 :         if (node-&gt;next != nullptr)</span></a>
+<a name="200"><span class="lineNum">     200 </span><span class="lineCov">        286 :     void remove(Node *node) {</span></a>
+<a name="201"><span class="lineNum">     201 </span><span class="lineCov">        286 :         if (node-&gt;previous != nullptr)</span></a>
+<a name="202"><span class="lineNum">     202 </span><span class="lineCov">         28 :             node-&gt;previous-&gt;next = node-&gt;next;</span></a>
+<a name="203"><span class="lineNum">     203 </span><span class="lineCov">        286 :         if (node == last)</span></a>
+<a name="204"><span class="lineNum">     204 </span><span class="lineCov">        282 :             last = node-&gt;previous;</span></a>
+<a name="205"><span class="lineNum">     205 </span><span class="lineCov">        286 :         if (node-&gt;next != nullptr)</span></a>
 <a name="206"><span class="lineNum">     206 </span><span class="lineCov">          4 :             node-&gt;next-&gt;previous = node-&gt;previous;</span></a>
-<a name="207"><span class="lineNum">     207 </span><span class="lineCov">        193 :         if (node == first)</span></a>
-<a name="208"><span class="lineNum">     208 </span><span class="lineCov">        177 :             first = node-&gt;next;</span></a>
-<a name="209"><span class="lineNum">     209 </span><span class="lineCov">        193 :         node-&gt;previous = nullptr;</span></a>
-<a name="210"><span class="lineNum">     210 </span><span class="lineCov">        193 :         node-&gt;next = nullptr;</span></a>
-<a name="211"><span class="lineNum">     211 </span><span class="lineCov">        193 :     }</span></a>
+<a name="207"><span class="lineNum">     207 </span><span class="lineCov">        286 :         if (node == first)</span></a>
+<a name="208"><span class="lineNum">     208 </span><span class="lineCov">        258 :             first = node-&gt;next;</span></a>
+<a name="209"><span class="lineNum">     209 </span><span class="lineCov">        286 :         node-&gt;previous = nullptr;</span></a>
+<a name="210"><span class="lineNum">     210 </span><span class="lineCov">        286 :         node-&gt;next = nullptr;</span></a>
+<a name="211"><span class="lineNum">     211 </span><span class="lineCov">        286 :     }</span></a>
 <a name="212"><span class="lineNum">     212 </span>            : </a>
 <a name="213"><span class="lineNum">     213 </span>            :     /**</a>
 <a name="214"><span class="lineNum">     214 </span>            :      * @brief   Remove a node from the linked list.</a>
@@ -335,9 +335,9 @@
 <a name="265"><span class="lineNum">     265 </span>            :      *          The given node is not part of any linked list, or it is the </a>
 <a name="266"><span class="lineNum">     266 </span>            :      *          only element of a different linked list.</a>
 <a name="267"><span class="lineNum">     267 </span>            :      */</a>
-<a name="268"><span class="lineNum">     268 </span><span class="lineCov">        105 :     bool couldContain(Node *node) {</span></a>
-<a name="269"><span class="lineNum">     269 </span><span class="lineCov">        210 :         return node &amp;&amp; (node == first || node-&gt;next != nullptr ||</span></a>
-<a name="270"><span class="lineNum">     270 </span><span class="lineCov">         11 :                         node-&gt;previous != nullptr);</span></a>
+<a name="268"><span class="lineNum">     268 </span><span class="lineCov">        198 :     bool couldContain(Node *node) {</span></a>
+<a name="269"><span class="lineNum">     269 </span><span class="lineCov">        396 :         return node &amp;&amp; (node == first || node-&gt;next != nullptr ||</span></a>
+<a name="270"><span class="lineNum">     270 </span><span class="lineCov">         23 :                         node-&gt;previous != nullptr);</span></a>
 <a name="271"><span class="lineNum">     271 </span>            :     }</a>
 <a name="272"><span class="lineNum">     272 </span>            : </a>
 <a name="273"><span class="lineNum">     273 </span><span class="lineCov">        344 :     iterator begin() { return {first}; }</span></a>
@@ -355,7 +355,7 @@
 <a name="285"><span class="lineNum">     285 </span>            :     /// Get a pointer to the first node.</a>
 <a name="286"><span class="lineNum">     286 </span><span class="lineCov">         13 :     Node *getFirst() const { return first; }</span></a>
 <a name="287"><span class="lineNum">     287 </span>            :     /// Get a pointer to the last node.</a>
-<a name="288"><span class="lineNum">     288 </span><span class="lineCov">         12 :     Node *getLast() const { return last; }</span></a>
+<a name="288"><span class="lineNum">     288 </span><span class="lineCov">        137 :     Node *getLast() const { return last; }</span></a>
 <a name="289"><span class="lineNum">     289 </span>            : </a>
 <a name="290"><span class="lineNum">     290 </span>            :   private:</a>
 <a name="291"><span class="lineNum">     291 </span><span class="lineCov">         43 :     Node *first = nullptr;</span></a>
@@ -369,12 +369,12 @@
 <a name="299"><span class="lineNum">     299 </span>            :  *          The type of the nodes of the list.</a>
 <a name="300"><span class="lineNum">     300 </span>            :  */</a>
 <a name="301"><span class="lineNum">     301 </span>            : template &lt;class Node&gt;</a>
-<a name="302"><span class="lineNum">     302 </span><span class="lineCov">        600 : class DoublyLinkable {</span></a>
+<a name="302"><span class="lineNum">     302 </span><span class="lineCov">        786 : class DoublyLinkable {</span></a>
 <a name="303"><span class="lineNum">     303 </span>            :   protected:</a>
 <a name="304"><span class="lineNum">     304 </span>            :     friend class DoublyLinkedList&lt;Node&gt;;</a>
-<a name="305"><span class="lineNum">     305 </span><span class="lineCov">        300 :     Node *next = nullptr;</span></a>
-<a name="306"><span class="lineNum">     306 </span><span class="lineCov">        300 :     Node *previous = nullptr;</span></a>
-<a name="307"><span class="lineNum">     307 </span><span class="lineCov">        300 :     virtual ~DoublyLinkable() = default;</span></a>
+<a name="305"><span class="lineNum">     305 </span><span class="lineCov">        393 :     Node *next = nullptr;</span></a>
+<a name="306"><span class="lineNum">     306 </span><span class="lineCov">        393 :     Node *previous = nullptr;</span></a>
+<a name="307"><span class="lineNum">     307 </span><span class="lineCov">        393 :     virtual ~DoublyLinkable() = default;</span></a>
 <a name="308"><span class="lineNum">     308 </span>            : };</a>
 <a name="309"><span class="lineNum">     309 </span>            : </a>
 <a name="310"><span class="lineNum">     310 </span>            : /// @}</a>
