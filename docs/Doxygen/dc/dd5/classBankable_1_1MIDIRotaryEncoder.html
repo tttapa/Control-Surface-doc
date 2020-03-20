@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Control Surface: MIDIRotaryEncoder&lt; Sender &gt; Class Template Reference</title>
+<title>Control Surface: MIDIRotaryEncoder&lt; BankAddress, Sender &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -82,10 +82,9 @@ $(function() {
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="../../d4/dc6/classBankable_1_1MIDIRotaryEncoder-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MIDIRotaryEncoder&lt; Sender &gt; Class Template Reference</div>  </div>
+<div class="title">MIDIRotaryEncoder&lt; BankAddress, Sender &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -94,14 +93,16 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">MIDI_Outputs/Bankable/Abstract/MIDIRotaryEncoder.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for MIDIRotaryEncoder&lt; Sender &gt;:</div>
+Inheritance diagram for MIDIRotaryEncoder&lt; BankAddress, Sender &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d4c/classBankable_1_1MIDIRotaryEncoder__inherit__graph.svg" width="419" height="750"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d4c/classBankable_1_1MIDIRotaryEncoder__inherit__graph.svg" width="194" height="691"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
-Collaboration diagram for MIDIRotaryEncoder&lt; Sender &gt;:</div>
+Collaboration diagram for MIDIRotaryEncoder&lt; BankAddress, Sender &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d0e/classBankable_1_1MIDIRotaryEncoder__coll__graph.svg" width="554" height="1559"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d0e/classBankable_1_1MIDIRotaryEncoder__coll__graph.svg" width="351" height="1487"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -112,21 +113,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#af7d7ae0df8d1dfd74402446af1e6ef60">update</a> () final override</td></tr>
 <tr class="memdesc:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this updatable.  <a href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#af7d7ae0df8d1dfd74402446af1e6ef60">More...</a><br /></td></tr>
 <tr class="separator:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d3d1934a5f7a658ac0bfbb5a4712505"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d0e/classRelativeMIDIAddress.html">RelativeMIDIAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d43/classBankableMIDIOutput.html#a3d3d1934a5f7a658ac0bfbb5a4712505">getAddressOffset</a> () const</td></tr>
-<tr class="memdesc:a3d3d1934a5f7a658ac0bfbb5a4712505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the offset relative to the base address.  <a href="../../d3/d43/classBankableMIDIOutput.html#a3d3d1934a5f7a658ac0bfbb5a4712505">More...</a><br /></td></tr>
-<tr class="separator:a3d3d1934a5f7a658ac0bfbb5a4712505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90a1f5b698ae2d2875e633575a4c2f7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#a90a1f5b698ae2d2875e633575a4c2f7d">getRawBankSetting</a> () const</td></tr>
-<tr class="memdesc:a90a1f5b698ae2d2875e633575a4c2f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the actual bank setting (no matter whether the element is locked or not).  <a href="../../d4/d6e/classBankableMIDIOutput__Base.html#a90a1f5b698ae2d2875e633575a4c2f7d">More...</a><br /></td></tr>
-<tr class="separator:a90a1f5b698ae2d2875e633575a4c2f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18abc6b96728c56b1b4260c507afda7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#a18abc6b96728c56b1b4260c507afda7a">getSelection</a> () const</td></tr>
-<tr class="memdesc:a18abc6b96728c56b1b4260c507afda7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bank setting.  <a href="../../d4/d6e/classBankableMIDIOutput__Base.html#a18abc6b96728c56b1b4260c507afda7a">More...</a><br /></td></tr>
-<tr class="separator:a18abc6b96728c56b1b4260c507afda7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa81aed607133209dade63a226818224d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#aa81aed607133209dade63a226818224d">lock</a> ()</td></tr>
-<tr class="memdesc:aa81aed607133209dade63a226818224d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the bank setting.  <a href="../../d4/d6e/classBankableMIDIOutput__Base.html#aa81aed607133209dade63a226818224d">More...</a><br /></td></tr>
-<tr class="separator:aa81aed607133209dade63a226818224d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9278be8203e1c42e2619179882ae4403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#a9278be8203e1c42e2619179882ae4403">unlock</a> ()</td></tr>
-<tr class="memdesc:a9278be8203e1c42e2619179882ae4403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the bank setting.  <a href="../../d4/d6e/classBankableMIDIOutput__Base.html#a9278be8203e1c42e2619179882ae4403">More...</a><br /></td></tr>
-<tr class="separator:a9278be8203e1c42e2619179882ae4403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -135,14 +121,12 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:adc5c207147c37273525e318a4c1ee95d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#adc5c207147c37273525e318a4c1ee95d">MIDIRotaryEncoder</a> (const <a class="el" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a> &amp;config, const <a class="el" href="../../dc/d81/structEncoderPinList.html">EncoderPinList</a> &amp;pins, const <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> &amp;<a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a1945beb5da88cac9c15dca5ece9e5cd3">address</a>, uint8_t <a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#aecdde89d9e220160ca36304c318ba045">speedMultiply</a>, uint8_t <a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a28fc8fa192b5881dd8692f0cca3c4ca8">pulsesPerStep</a>, const Sender &amp;<a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a3296e2217dd530ddb922f24a450fec82">sender</a>)</td></tr>
-<tr class="memdesc:adc5c207147c37273525e318a4c1ee95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html" title="An abstract class for rotary encoders that send MIDI events and that can be added to a Bank.">MIDIRotaryEncoder</a>.  <a href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#adc5c207147c37273525e318a4c1ee95d">More...</a><br /></td></tr>
-<tr class="separator:adc5c207147c37273525e318a4c1ee95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d66a98fb2a50464688966eabfdc780f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a9d66a98fb2a50464688966eabfdc780f">MIDIRotaryEncoder</a> (const BankAddress &amp;bankAddress, const <a class="el" href="../../dc/d81/structEncoderPinList.html">EncoderPinList</a> &amp;pins, uint8_t <a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#aecdde89d9e220160ca36304c318ba045">speedMultiply</a>, uint8_t <a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a28fc8fa192b5881dd8692f0cca3c4ca8">pulsesPerStep</a>, const Sender &amp;<a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a3296e2217dd530ddb922f24a450fec82">sender</a>)</td></tr>
+<tr class="memdesc:a9d66a98fb2a50464688966eabfdc780f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html" title="An abstract class for rotary encoders that send MIDI events and that can be added to a Bank.">MIDIRotaryEncoder</a>.  <a href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a9d66a98fb2a50464688966eabfdc780f">More...</a><br /></td></tr>
+<tr class="separator:a9d66a98fb2a50464688966eabfdc780f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a3595f794359f719d3b16b41f2a0c39d8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d36/classOutputBank.html">OutputBank</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#a3595f794359f719d3b16b41f2a0c39d8">bank</a></td></tr>
-<tr class="separator:a3595f794359f719d3b16b41f2a0c39d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a87d2727bbd24a3064948a29b5e3bc79e">Updatable</a>&lt; NormalUpdatable &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
 <tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a87d2727bbd24a3064948a29b5e3bc79e">Updatable</a>&lt; NormalUpdatable &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
@@ -155,25 +139,16 @@ Static Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a189d1968f3d80eb94f17563376e2c9fe"><td class="memItemLeft" align="right" valign="top">BankAddress&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a189d1968f3d80eb94f17563376e2c9fe">address</a></td></tr>
+<tr class="separator:a189d1968f3d80eb94f17563376e2c9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133a3017d675be921d0d7586eec7bb7c"><td class="memItemLeft" align="right" valign="top">Encoder&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a133a3017d675be921d0d7586eec7bb7c">encoder</a></td></tr>
 <tr class="separator:a133a3017d675be921d0d7586eec7bb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1945beb5da88cac9c15dca5ece9e5cd3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a1945beb5da88cac9c15dca5ece9e5cd3">address</a></td></tr>
-<tr class="separator:a1945beb5da88cac9c15dca5ece9e5cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecdde89d9e220160ca36304c318ba045"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#aecdde89d9e220160ca36304c318ba045">speedMultiply</a></td></tr>
 <tr class="separator:aecdde89d9e220160ca36304c318ba045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28fc8fa192b5881dd8692f0cca3c4ca8"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a28fc8fa192b5881dd8692f0cca3c4ca8">pulsesPerStep</a></td></tr>
 <tr class="separator:a28fc8fa192b5881dd8692f0cca3c4ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b628d81dd2917e3effdbe144b4d22ad"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a0b628d81dd2917e3effdbe144b4d22ad">previousPosition</a> = 0</td></tr>
 <tr class="separator:a0b628d81dd2917e3effdbe144b4d22ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaef3e94f43dc46f739ad180a9404a45"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1">BankType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d43/classBankableMIDIOutput.html#abaef3e94f43dc46f739ad180a9404a45">type</a></td></tr>
-<tr class="separator:abaef3e94f43dc46f739ad180a9404a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92093f236e55f998d5b7a40bacd6dc98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#a92093f236e55f998d5b7a40bacd6dc98">lockedSetting</a> = <a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#a32d523986f90ac9f9aeea28f493e7ff9">UNLOCKED</a></td></tr>
-<tr class="separator:a92093f236e55f998d5b7a40bacd6dc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a32d523986f90ac9f9aeea28f493e7ff9"><td class="memItemLeft" align="right" valign="top">constexpr static <a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#a32d523986f90ac9f9aeea28f493e7ff9">UNLOCKED</a> = <a class="el" href="../../d0/d4e/Def_8hpp.html#a4e7b1c05c3cca4ac7ef52e5faa9d4178">NO_SETTING</a></td></tr>
-<tr class="separator:a32d523986f90ac9f9aeea28f493e7ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Enabling and disabling updatables</h2></td></tr>
@@ -200,15 +175,15 @@ Enabling and disabling updatables</h2></td></tr>
 <tr class="separator:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Sender&gt;<br />
-class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
+<div class="textblock"><h3>template&lt;class BankAddress, class Sender&gt;<br />
+class Bankable::MIDIRotaryEncoder&lt; BankAddress, Sender &gt;</h3>
 
 <p>An abstract class for rotary encoders that send MIDI events and that can be added to a <a class="el" href="../../db/dbd/classBank.html" title="A class that groups Bankable BankableMIDIOutputs and BankableMIDIInputs, and allows the user to chang...">Bank</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adc5c207147c37273525e318a4c1ee95d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc5c207147c37273525e318a4c1ee95d">&#9670;&nbsp;</a></span>MIDIRotaryEncoder()</h2>
+<a id="a9d66a98fb2a50464688966eabfdc780f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d66a98fb2a50464688966eabfdc780f">&#9670;&nbsp;</a></span>MIDIRotaryEncoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,20 +194,14 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
         <tr>
           <td class="memname"><a class="el" href="../../dc/dd5/classBankable_1_1MIDIRotaryEncoder.html">MIDIRotaryEncoder</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a> &amp;&#160;</td>
-          <td class="paramname"><em>config</em>, </td>
+          <td class="paramtype">const BankAddress &amp;&#160;</td>
+          <td class="paramname"><em>bankAddress</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="../../dc/d81/structEncoderPinList.html">EncoderPinList</a> &amp;&#160;</td>
           <td class="paramname"><em>pins</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> &amp;&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -300,7 +269,7 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
 
 <p>Implements <a class="el" href="../../d1/d55/classAH_1_1Updatable.html#aaf893c33f3c041e289a12c153dcc9789">Updatable&lt;&gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00051">51</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00049">49</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -331,155 +300,7 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
 
 <p>Implements <a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a99b02345a8a15d3c5ea2844a2253f510">Updatable&lt;&gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a3d3d1934a5f7a658ac0bfbb5a4712505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d3d1934a5f7a658ac0bfbb5a4712505">&#9670;&nbsp;</a></span>getAddressOffset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/d0e/classRelativeMIDIAddress.html">RelativeMIDIAddress</a> getAddressOffset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the offset relative to the base address. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a90a1f5b698ae2d2875e633575a4c2f7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90a1f5b698ae2d2875e633575a4c2f7d">&#9670;&nbsp;</a></span>getRawBankSetting()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> getRawBankSetting </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the actual bank setting (no matter whether the element is locked or not). </p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00026">26</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a18abc6b96728c56b1b4260c507afda7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18abc6b96728c56b1b4260c507afda7a">&#9670;&nbsp;</a></span>getSelection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> getSelection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the bank setting. </p>
-<p>If the element is locked, the bank setting from the moment it was locked is returned. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
-
-</div>
-</div>
-<a id="aa81aed607133209dade63a226818224d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa81aed607133209dade63a226818224d">&#9670;&nbsp;</a></span>lock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void lock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Lock the bank setting. </p>
-<p>As long as it's locked, <code>getSelection</code> will return the current setting, independent from the actual bank setting. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a9278be8203e1c42e2619179882ae4403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9278be8203e1c42e2619179882ae4403">&#9670;&nbsp;</a></span>unlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unlock the bank setting. </p>
-<p>After unlocking, <code>getSelection</code> will return the actual bank setting again. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00050">50</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -800,6 +621,30 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a189d1968f3d80eb94f17563376e2c9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189d1968f3d80eb94f17563376e2c9fe">&#9670;&nbsp;</a></span>address</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BankAddress address</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a133a3017d675be921d0d7586eec7bb7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a133a3017d675be921d0d7586eec7bb7c">&#9670;&nbsp;</a></span>encoder</h2>
 
@@ -820,31 +665,7 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a1945beb5da88cac9c15dca5ece9e5cd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1945beb5da88cac9c15dca5ece9e5cd3">&#9670;&nbsp;</a></span>address</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -868,7 +689,7 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -892,7 +713,7 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -916,7 +737,7 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -932,103 +753,7 @@ class Bankable::MIDIRotaryEncoder&lt; Sender &gt;</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
-
-</div>
-</div>
-<a id="abaef3e94f43dc46f739ad180a9404a45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaef3e94f43dc46f739ad180a9404a45">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1">BankType</a> type</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00122">122</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a3595f794359f719d3b16b41f2a0c39d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3595f794359f719d3b16b41f2a0c39d8">&#9670;&nbsp;</a></span>bank</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../d9/d36/classOutputBank.html">OutputBank</a>&amp; bank</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a32d523986f90ac9f9aeea28f493e7ff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32d523986f90ac9f9aeea28f493e7ff9">&#9670;&nbsp;</a></span>UNLOCKED</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr static <a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> UNLOCKED = <a class="el" href="../../d0/d4e/Def_8hpp.html#a4e7b1c05c3cca4ac7ef52e5faa9d4178">NO_SETTING</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a92093f236e55f998d5b7a40bacd6dc98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92093f236e55f998d5b7a40bacd6dc98">&#9670;&nbsp;</a></span>lockedSetting</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> lockedSetting = <a class="el" href="../../d4/d6e/classBankableMIDIOutput__Base.html#a32d523986f90ac9f9aeea28f493e7ff9">UNLOCKED</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../db/df2/BankableMIDIOutput_8hpp_source.html">BankableMIDIOutput.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../da/dd5/Bankable_2Abstract_2MIDIRotaryEncoder_8hpp_source.html">Bankable/Abstract/MIDIRotaryEncoder.hpp</a>.</p>
 
 </div>
 </div>

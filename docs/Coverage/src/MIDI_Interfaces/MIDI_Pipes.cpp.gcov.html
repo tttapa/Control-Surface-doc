@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ab2533f000d89d50ae973b8b246642bb868bedaf - src/MIDI_Interfaces/MIDI_Pipes.cpp</title>
+  <title>LCOV - 43584804065ed9b0be7fef71042c56283679c842 - src/MIDI_Interfaces/MIDI_Pipes.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ab2533f000d89d50ae973b8b246642bb868bedaf</td>
+            <td class="headerValue">43584804065ed9b0be7fef71042c56283679c842</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">144</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-03-10 23:53:04</td>
+            <td class="headerValue">2020-03-21 00:10:26</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">26</td>
@@ -91,13 +91,13 @@
 <a name="21"><span class="lineNum">      21 </span>            :     }</a>
 <a name="22"><span class="lineNum">      22 </span><span class="lineCov">        261 : }</span></a>
 <a name="23"><span class="lineNum">      23 </span>            : </a>
-<a name="24"><span class="lineNum">      24 </span><span class="lineCov">        371 : void MIDI_Sink::disconnectSourcePipes() {</span></a>
-<a name="25"><span class="lineNum">      25 </span><span class="lineCov">        371 :     if (sourcePipe != nullptr) {</span></a>
+<a name="24"><span class="lineNum">      24 </span><span class="lineCov">        374 : void MIDI_Sink::disconnectSourcePipes() {</span></a>
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">        374 :     if (sourcePipe != nullptr) {</span></a>
 <a name="26"><span class="lineNum">      26 </span><span class="lineCov">         61 :         sourcePipe-&gt;disconnectSourcePipes();</span></a>
 <a name="27"><span class="lineNum">      27 </span><span class="lineCov">         61 :         sourcePipe-&gt;disconnect();</span></a>
 <a name="28"><span class="lineNum">      28 </span><span class="lineCov">         61 :         sourcePipe = nullptr;</span></a>
 <a name="29"><span class="lineNum">      29 </span><span class="lineCov">         61 :     }</span></a>
-<a name="30"><span class="lineNum">      30 </span><span class="lineCov">        371 : }</span></a>
+<a name="30"><span class="lineNum">      30 </span><span class="lineCov">        374 : }</span></a>
 <a name="31"><span class="lineNum">      31 </span>            : </a>
 <a name="32"><span class="lineNum">      32 </span><span class="lineCov">        210 : void MIDI_Sink::disconnectSourcePipesShallow() {</span></a>
 <a name="33"><span class="lineNum">      33 </span><span class="lineCov">        210 :     if (sourcePipe != nullptr) {</span></a>
@@ -112,7 +112,7 @@
 <a name="42"><span class="lineNum">      42 </span><span class="lineCov">         10 :     return sourcePipe-&gt;disconnect(source);</span></a>
 <a name="43"><span class="lineNum">      43 </span><span class="lineCov">         13 : }</span></a>
 <a name="44"><span class="lineNum">      44 </span>            : </a>
-<a name="45"><span class="lineNum">      45 </span><span class="lineCov">        309 : MIDI_Sink::~MIDI_Sink() { disconnectSourcePipes(); }</span></a>
+<a name="45"><span class="lineNum">      45 </span><span class="lineCov">        312 : MIDI_Sink::~MIDI_Sink() { disconnectSourcePipes(); }</span></a>
 <a name="46"><span class="lineNum">      46 </span>            : </a>
 <a name="47"><span class="lineNum">      47 </span><span class="lineCov">          5 : MIDI_Sink::MIDI_Sink(MIDI_Sink &amp;&amp;other)</span></a>
 <a name="48"><span class="lineNum">      48 </span><span class="lineCov">          5 :     : sourcePipe(std::exchange(other.sourcePipe, nullptr)) {</span></a>
@@ -146,13 +146,13 @@
 <a name="76"><span class="lineNum">      76 </span>            :     }</a>
 <a name="77"><span class="lineNum">      77 </span><span class="lineCov">        254 : }</span></a>
 <a name="78"><span class="lineNum">      78 </span>            : </a>
-<a name="79"><span class="lineNum">      79 </span><span class="lineCov">        400 : void MIDI_Source::disconnectSinkPipes() {</span></a>
-<a name="80"><span class="lineNum">      80 </span><span class="lineCov">        400 :     if (sinkPipe != nullptr) {</span></a>
+<a name="79"><span class="lineNum">      79 </span><span class="lineCov">        403 : void MIDI_Source::disconnectSinkPipes() {</span></a>
+<a name="80"><span class="lineNum">      80 </span><span class="lineCov">        403 :     if (sinkPipe != nullptr) {</span></a>
 <a name="81"><span class="lineNum">      81 </span><span class="lineCov">         91 :         sinkPipe-&gt;disconnectSinkPipes();</span></a>
 <a name="82"><span class="lineNum">      82 </span><span class="lineCov">         91 :         sinkPipe-&gt;disconnect();</span></a>
 <a name="83"><span class="lineNum">      83 </span><span class="lineCov">         91 :         sinkPipe = nullptr;</span></a>
 <a name="84"><span class="lineNum">      84 </span><span class="lineCov">         91 :     }</span></a>
-<a name="85"><span class="lineNum">      85 </span><span class="lineCov">        400 : }</span></a>
+<a name="85"><span class="lineNum">      85 </span><span class="lineCov">        403 : }</span></a>
 <a name="86"><span class="lineNum">      86 </span>            : </a>
 <a name="87"><span class="lineNum">      87 </span><span class="lineCov">        206 : void MIDI_Source::disconnectSinkPipesShallow() {</span></a>
 <a name="88"><span class="lineNum">      88 </span><span class="lineCov">        206 :     if (sinkPipe != nullptr) {</span></a>
@@ -188,7 +188,7 @@
 <a name="118"><span class="lineNum">     118 </span><span class="lineCov">          2 :     return *this;</span></a>
 <a name="119"><span class="lineNum">     119 </span>            : }</a>
 <a name="120"><span class="lineNum">     120 </span>            : </a>
-<a name="121"><span class="lineNum">     121 </span><span class="lineCov">        308 : MIDI_Source::~MIDI_Source() { disconnectSinkPipes(); }</span></a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineCov">        311 : MIDI_Source::~MIDI_Source() { disconnectSinkPipes(); }</span></a>
 <a name="122"><span class="lineNum">     122 </span>            : </a>
 <a name="123"><span class="lineNum">     123 </span><span class="lineCov">         14 : void MIDI_Source::exclusive(cn_t cn, bool exclusive) {</span></a>
 <a name="124"><span class="lineNum">     124 </span><span class="lineCov">         14 :     if (hasSinkPipe())</span></a>
@@ -237,32 +237,32 @@
 <a name="167"><span class="lineNum">     167 </span>            : </a>
 <a name="168"><span class="lineNum">     168 </span><span class="lineCov">        213 : void MIDI_Pipe::disconnectSource() { this-&gt;source = nullptr; }</span></a>
 <a name="169"><span class="lineNum">     169 </span>            : </a>
-<a name="170"><span class="lineNum">     170 </span><span class="lineCov">        306 : void MIDI_Pipe::disconnect() {</span></a>
-<a name="171"><span class="lineNum">     171 </span><span class="lineCov">        306 :     if (hasSink() &amp;&amp; hasThroughIn()) {</span></a>
+<a name="170"><span class="lineNum">     170 </span><span class="lineCov">        308 : void MIDI_Pipe::disconnect() {</span></a>
+<a name="171"><span class="lineNum">     171 </span><span class="lineCov">        308 :     if (hasSink() &amp;&amp; hasThroughIn()) {</span></a>
 <a name="172"><span class="lineNum">     172 </span><span class="lineCov">         16 :         auto oldSink = sink;</span></a>
 <a name="173"><span class="lineNum">     173 </span><span class="lineCov">         16 :         auto oldThroughIn = throughIn;</span></a>
 <a name="174"><span class="lineNum">     174 </span><span class="lineCov">         16 :         sink-&gt;disconnectSourcePipesShallow();</span></a>
 <a name="175"><span class="lineNum">     175 </span><span class="lineCov">         16 :         this-&gt;disconnectSourcePipesShallow(); // disconnect throughIn</span></a>
 <a name="176"><span class="lineNum">     176 </span><span class="lineCov">         16 :         oldSink-&gt;connectSourcePipe(oldThroughIn);</span></a>
 <a name="177"><span class="lineNum">     177 </span><span class="lineCov">         16 :     }</span></a>
-<a name="178"><span class="lineNum">     178 </span><span class="lineCov">        306 :     if (hasSource() &amp;&amp; hasThroughOut()) {</span></a>
+<a name="178"><span class="lineNum">     178 </span><span class="lineCov">        308 :     if (hasSource() &amp;&amp; hasThroughOut()) {</span></a>
 <a name="179"><span class="lineNum">     179 </span><span class="lineCov">         14 :         auto oldSource = source;</span></a>
 <a name="180"><span class="lineNum">     180 </span><span class="lineCov">         14 :         auto oldThroughOut = throughOut;</span></a>
 <a name="181"><span class="lineNum">     181 </span><span class="lineCov">         14 :         source-&gt;disconnectSinkPipesShallow();</span></a>
 <a name="182"><span class="lineNum">     182 </span><span class="lineCov">         14 :         this-&gt;disconnectSinkPipesShallow(); // disconnect throughOut</span></a>
 <a name="183"><span class="lineNum">     183 </span><span class="lineCov">         14 :         oldSource-&gt;connectSinkPipe(oldThroughOut);</span></a>
 <a name="184"><span class="lineNum">     184 </span><span class="lineCov">         14 :     }</span></a>
-<a name="185"><span class="lineNum">     185 </span><span class="lineCov">        306 :     if (hasSink())</span></a>
+<a name="185"><span class="lineNum">     185 </span><span class="lineCov">        308 :     if (hasSink())</span></a>
 <a name="186"><span class="lineNum">     186 </span><span class="lineCov">        178 :         sink-&gt;disconnectSourcePipesShallow();</span></a>
 <a name="187"><span class="lineNum">     187 </span>            : </a>
-<a name="188"><span class="lineNum">     188 </span><span class="lineCov">        306 :     if (hasSource())</span></a>
+<a name="188"><span class="lineNum">     188 </span><span class="lineCov">        308 :     if (hasSource())</span></a>
 <a name="189"><span class="lineNum">     189 </span><span class="lineCov">        178 :         source-&gt;disconnectSinkPipesShallow();</span></a>
 <a name="190"><span class="lineNum">     190 </span>            : </a>
-<a name="191"><span class="lineNum">     191 </span><span class="lineCov">        306 :     if (hasThroughIn() || hasThroughOut())</span></a>
+<a name="191"><span class="lineNum">     191 </span><span class="lineCov">        308 :     if (hasThroughIn() || hasThroughOut())</span></a>
 <a name="192"><span class="lineNum">     192 </span>            :         FATAL_ERROR(F(&quot;Invalid state&quot;), 0x9147); // LCOV_EXCL_LINE</a>
-<a name="193"><span class="lineNum">     193 </span><span class="lineCov">        306 : }</span></a>
+<a name="193"><span class="lineNum">     193 </span><span class="lineCov">        308 : }</span></a>
 <a name="194"><span class="lineNum">     194 </span>            : </a>
-<a name="195"><span class="lineNum">     195 </span><span class="lineCov">        136 : MIDI_Pipe::~MIDI_Pipe() { disconnect(); }</span></a>
+<a name="195"><span class="lineNum">     195 </span><span class="lineCov">        138 : MIDI_Pipe::~MIDI_Pipe() { disconnect(); }</span></a>
 <a name="196"><span class="lineNum">     196 </span>            : </a>
 <a name="197"><span class="lineNum">     197 </span>            : #if defined(ESP32) || !defined(ARDUINO)</a>
 <a name="198"><span class="lineNum">     198 </span>            : static std::mutex pipe_exclusive_mutex;</a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ab2533f000d89d50ae973b8b246642bb868bedaf - src/Control_Surface/Control_Surface_Class.hpp</title>
+  <title>LCOV - 43584804065ed9b0be7fef71042c56283679c842 - src/Control_Surface/Control_Surface_Class.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ab2533f000d89d50ae973b8b246642bb868bedaf</td>
+            <td class="headerValue">43584804065ed9b0be7fef71042c56283679c842</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">7</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-03-10 23:53:04</td>
+            <td class="headerValue">2020-03-21 00:10:26</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -93,7 +93,7 @@
 <a name="23"><span class="lineNum">      23 </span>            :  * </a>
 <a name="24"><span class="lineNum">      24 </span>            :  * @ingroup ControlSurfaceModule</a>
 <a name="25"><span class="lineNum">      25 </span>            :  */</a>
-<a name="26"><span class="lineNum">      26 </span><span class="lineCov">          1 : class Control_Surface_ : public MIDI_Sender&lt;Control_Surface_&gt;,</span></a>
+<a name="26"><span class="lineNum">      26 </span><span class="lineCov">          2 : class Control_Surface_ : public MIDI_Sender&lt;Control_Surface_&gt;,</span></a>
 <a name="27"><span class="lineNum">      27 </span>            :                          public TrueMIDI_SinkSource {</a>
 <a name="28"><span class="lineNum">      28 </span>            : </a>
 <a name="29"><span class="lineNum">      29 </span>            :     friend class MIDI_Sender&lt;Control_Surface_&gt;;</a>
@@ -174,12 +174,12 @@
 <a name="104"><span class="lineNum">     104 </span>            :     /**</a>
 <a name="105"><span class="lineNum">     105 </span>            :      * @brief   Control_Surface_ is a singleton, so the constructor is private.</a>
 <a name="106"><span class="lineNum">     106 </span>            :      */</a>
-<a name="107"><span class="lineNum">     107 </span><span class="lineCov">          2 :     Control_Surface_() = default;</span></a>
+<a name="107"><span class="lineNum">     107 </span><span class="lineCov">          4 :     Control_Surface_() = default;</span></a>
 <a name="108"><span class="lineNum">     108 </span>            : </a>
 <a name="109"><span class="lineNum">     109 </span>            :     /// A timer to know when to update the analog inputs.</a>
-<a name="110"><span class="lineNum">     110 </span><span class="lineCov">          1 :     Timer&lt;micros&gt; potentiometerTimer = {AH::FILTERED_INPUT_UPDATE_INTERVAL};</span></a>
+<a name="110"><span class="lineNum">     110 </span><span class="lineCov">          2 :     Timer&lt;micros&gt; potentiometerTimer = {AH::FILTERED_INPUT_UPDATE_INTERVAL};</span></a>
 <a name="111"><span class="lineNum">     111 </span>            :     /// A timer to know when to refresh the displays.</a>
-<a name="112"><span class="lineNum">     112 </span><span class="lineCov">          1 :     Timer&lt;micros&gt; displayTimer = {1000000UL / MAX_FPS};</span></a>
+<a name="112"><span class="lineNum">     112 </span><span class="lineCov">          2 :     Timer&lt;micros&gt; displayTimer = {1000000UL / MAX_FPS};</span></a>
 <a name="113"><span class="lineNum">     113 </span>            : </a>
 <a name="114"><span class="lineNum">     114 </span>            :   public:</a>
 <a name="115"><span class="lineNum">     115 </span>            :     /// Callback function type for channel messages. Return true if handling is</a>
@@ -206,9 +206,9 @@
 <a name="136"><span class="lineNum">     136 </span>            :     }</a>
 <a name="137"><span class="lineNum">     137 </span>            : </a>
 <a name="138"><span class="lineNum">     138 </span>            :   private:</a>
-<a name="139"><span class="lineNum">     139 </span><span class="lineCov">          1 :     ChannelMessageCallback channelMessageCallback = nullptr;</span></a>
-<a name="140"><span class="lineNum">     140 </span><span class="lineCov">          1 :     SysExMessageCallback sysExMessageCallback = nullptr;</span></a>
-<a name="141"><span class="lineNum">     141 </span><span class="lineCov">          1 :     RealTimeMessageCallback realTimeMessageCallback = nullptr;</span></a>
+<a name="139"><span class="lineNum">     139 </span><span class="lineCov">          2 :     ChannelMessageCallback channelMessageCallback = nullptr;</span></a>
+<a name="140"><span class="lineNum">     140 </span><span class="lineCov">          2 :     SysExMessageCallback sysExMessageCallback = nullptr;</span></a>
+<a name="141"><span class="lineNum">     141 </span><span class="lineCov">          2 :     RealTimeMessageCallback realTimeMessageCallback = nullptr;</span></a>
 <a name="142"><span class="lineNum">     142 </span>            :     MIDI_Pipe inpipe, outpipe;</a>
 <a name="143"><span class="lineNum">     143 </span>            : };</a>
 <a name="144"><span class="lineNum">     144 </span>            : </a>
