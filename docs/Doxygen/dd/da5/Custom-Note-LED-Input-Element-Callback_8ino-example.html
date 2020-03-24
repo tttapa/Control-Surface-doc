@@ -75,20 +75,20 @@ $(function() {
 <div class="title">Custom-Note-LED-Input-Element-Callback.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md153"></a>
+<h1><a class="anchor" id="autotoc_md157"></a>
 Custom-Note-LED-Input-Element-Callback</h1>
 <p>This example demonstrates how to attach custom callbacks to Note or Control Change MIDI Input Elements.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md154"></a>
+<h2><a class="anchor" id="autotoc_md158"></a>
 Connections</h2>
 <ul>
 <li>Pin 3 (PWM pin): An LED (with current-limiting resistor) to ground.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md155"></a>
+<h2><a class="anchor" id="autotoc_md159"></a>
 Behavior</h2>
 <p>If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the built-in LED will light up at full brightness, if a Note Off event for that note is sent, the LED will light dimly. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="autotoc_md156"></a>
+<h2><a class="anchor" id="autotoc_md160"></a>
 Mapping</h2>
 <p>Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C on the keyboard.</p>
 <p>Written by PieterP, 2020-03-10 <br  />
@@ -143,7 +143,7 @@ Mapping</h2>
 <div class="line"> <span class="keyword">private</span>:</div>
 <div class="line">  <a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin;</div>
 <div class="line">  uint8_t lowBrightness;</div>
-<div class="line">  <span class="keyword">const</span> <span class="keyword">static</span> uint8_t threshold = 0x3F;</div>
+<div class="line">  <span class="keyword">const</span> <span class="keyword">static</span> uint8_t threshold = 0x00;</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a type alias fore      the MIDI Note Input Element that uses</span></div>
