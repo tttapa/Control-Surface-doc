@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 43584804065ed9b0be7fef71042c56283679c842 - src/MIDI_Outputs/Bankable/CCIncrementDecrementButtons.hpp</title>
+  <title>LCOV - b573c90c722227b4af20904a881a55862d040035 - src/MIDI_Outputs/Bankable/CCIncrementDecrementButtons.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">43584804065ed9b0be7fef71042c56283679c842</td>
+            <td class="headerValue">b573c90c722227b4af20904a881a55862d040035</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">5</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-03-21 00:10:26</td>
+            <td class="headerValue">2020-03-24 20:43:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -89,7 +89,7 @@
 <a name="19"><span class="lineNum">      19 </span>            :  * @ingroup BankableMIDIOutputElements</a>
 <a name="20"><span class="lineNum">      20 </span>            :  */</a>
 <a name="21"><span class="lineNum">      21 </span><span class="lineCov">          1 : class CCIncrementDecrementButtons</span></a>
-<a name="22"><span class="lineNum">      22 </span>            :     : public MIDIIncrementDecrementButtons&lt;TwoSingleAddresses, RelativeCCSender,</a>
+<a name="22"><span class="lineNum">      22 </span>            :     : public MIDIIncrementDecrementButtons&lt;DualAddresses, RelativeCCSender,</a>
 <a name="23"><span class="lineNum">      23 </span>            :                                            DigitalNoteSender&gt; {</a>
 <a name="24"><span class="lineNum">      24 </span>            :   public:</a>
 <a name="25"><span class="lineNum">      25 </span>            :     /**</a>
@@ -125,7 +125,7 @@
 <a name="55"><span class="lineNum">      55 </span>            :                                 const MIDIAddress &amp;resetNote = {},</a>
 <a name="56"><span class="lineNum">      56 </span>            :                                 const RelativeCCSender &amp;relativeSender = {},</a>
 <a name="57"><span class="lineNum">      57 </span>            :                                 const DigitalNoteSender &amp;resetSender = {})</a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">          1 :         : MIDIIncrementDecrementButtons&lt;TwoSingleAddresses, RelativeCCSender,</span></a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">          1 :         : MIDIIncrementDecrementButtons&lt;DualAddresses, RelativeCCSender,</span></a>
 <a name="59"><span class="lineNum">      59 </span>            :                                         DigitalNoteSender&gt;(</a>
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">          1 :               {config, {address, resetNote}}, buttons, multiplier,</span></a>
 <a name="61"><span class="lineNum">      61 </span><span class="lineCov">          3 :               relativeSender, resetSender) {}</span></a>

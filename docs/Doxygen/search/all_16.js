@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['x_2180',['x',['../d0/d49/classMovingCoilBallistics.html#ad0da36b2558901e21e7a30f6c227a45e',1,'MovingCoilBallistics::x()'],['../dc/dd2/structPixelLocation.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'PixelLocation::x()'],['../d4/d38/structBresenhamLine_1_1Pixel.html#aa257b76928a5cedfc636e730cde53556',1,'BresenhamLine::Pixel::x()'],['../d7/dae/classMCU_1_1LCDDisplay.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'MCU::LCDDisplay::x()'],['../d1/dc8/classMCU_1_1TimeDisplayDisplay.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'MCU::TimeDisplayDisplay::x()'],['../d3/d98/classMCU_1_1VPotDisplay.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'MCU::VPotDisplay::x()'],['../d4/d42/classMCU_1_1VUDisplay.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'MCU::VUDisplay::x()'],['../dc/d95/classMCU_1_1AnalogVUDisplay.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'MCU::AnalogVUDisplay::x()'],['../de/dc5/classNoteBitmapDisplay.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'NoteBitmapDisplay::x()'],['../d3/d51/classSelectorDisplay.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'SelectorDisplay::x()'],['../d6/dc4/classBankDisplay.html#ae1c2d516777e6b42af0d281c9ecc7375',1,'BankDisplay::x()']]],
-  ['x_5fdot_2181',['x_dot',['../d0/d49/classMovingCoilBallistics.html#a38d8e53c6312ba2a03e2a42334430fb4',1,'MovingCoilBallistics']]],
-  ['xbitmap_2182',['XBitmap',['../d2/df6/structXBitmap.html',1,'XBitmap'],['../d2/df6/structXBitmap.html#a57c41075fe85d5da0e40ea084838d6e4',1,'XBitmap::XBitmap()']]],
-  ['xbitmaps_2ecpp_2183',['XBitmaps.cpp',['../df/d53/XBitmaps_8cpp.html',1,'']]],
-  ['xbitmaps_2ehpp_2184',['XBitmaps.hpp',['../dd/d33/XBitmaps_8hpp.html',1,'']]],
-  ['xbm_2185',['XBM',['../dd/d93/namespaceXBM.html',1,'XBM'],['../de/dc5/classNoteBitmapDisplay.html#add733166d46fcc6af0d775306f8b40ef',1,'NoteBitmapDisplay::xbm()']]],
-  ['xbm_2emd_2186',['xbm.md',['../d6/d94/xbm_8md.html',1,'']]],
-  ['xinc_2187',['xinc',['../d6/d99/classBresenhamLine.html#a6bde9a3f5f4915ef8fa87465dc36857a',1,'BresenhamLine']]],
-  ['xylophone_2188',['Xylophone',['../da/da6/namespaceMIDI__PC.html#ab387ebc4e7eb21ae8d3f35391ae8de52',1,'MIDI_PC']]]
+  ['w_2199',['w',['../da/d32/structAH_1_1Quaternion.html#a56eca241e2896b9f57a79589e76fd24b',1,'AH::Quaternion']]],
+  ['warnings_2ehpp_2200',['Warnings.hpp',['../d1/d65/Warnings_8hpp.html',1,'']]],
+  ['whistle_2201',['Whistle',['../da/da6/namespaceMIDI__PC.html#a9313f2ce9973758e5eb617ccbc7e01fc',1,'MIDI_PC']]],
+  ['width_2202',['width',['../d2/df6/structXBitmap.html#ad0eab1042455a2067c812ab8071d5376',1,'XBitmap::width()'],['../d4/d42/classMCU_1_1VUDisplay.html#ad0eab1042455a2067c812ab8071d5376',1,'MCU::VUDisplay::width()']]],
+  ['woodblock_2203',['Woodblock',['../da/da6/namespaceMIDI__PC.html#a0306792561d1b88f5651112acfbdf580',1,'MIDI_PC']]],
+  ['wrap_2204',['wrap',['../da/dbf/classGenericEncoderSelector.html#a68b5470ece4f0a492cc1d2057c9bd5e0',1,'GenericEncoderSelector::wrap()'],['../d3/d78/classGenericIncrementDecrementSelector.html#a68b5470ece4f0a492cc1d2057c9bd5e0',1,'GenericIncrementDecrementSelector::wrap()'],['../d1/d94/classGenericIncrementSelector.html#a68b5470ece4f0a492cc1d2057c9bd5e0',1,'GenericIncrementSelector::wrap()'],['../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5',1,'Wrap():&#160;Selector.hpp'],['../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d',1,'Wrap():&#160;Selector.hpp']]],
+  ['write_2205',['write',['../df/d42/classDisplayInterface.html#aaa51aac3b99dc87ec0fa2fbf50a259dc',1,'DisplayInterface::write()'],['../dc/ddd/classSSD1306__DisplayInterface.html#a1e40195a444e7f20508961cfeacc9b04',1,'SSD1306_DisplayInterface::write()'],['../d2/d84/namespaceUSBMIDI.html#a4be70dae61ecedf933a0a0a98881957f',1,'USBMIDI::write()']]],
+  ['writeusbpacket_2206',['writeUSBPacket',['../de/d05/classUSBMIDI__Interface.html#a3cc887669fefd4069ebbff8e69e6eaed',1,'USBMIDI_Interface']]]
 ];

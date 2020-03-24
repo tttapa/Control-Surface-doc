@@ -72,6 +72,8 @@ $(function() {
 
 <div class="header">
   <div class="summary">
+<a href="#groups">Modules</a> &#124;
+<a href="#files">Files</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Math Utilities<div class="ingroups"><a class="el" href="../../d7/d07/group__AH__group.html">Arduino Helpers</a></div></div>  </div>
@@ -83,11 +85,31 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for Math Utilities:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d5e/group__AH__Math.svg" width="272" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d5e/group__AH__Math.svg" width="411" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+Modules</h2></td></tr>
+<tr class="memitem:d5/d99/group__math-types"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d99/group__math-types.html">Math Types</a></td></tr>
+<tr class="memdesc:d5/d99/group__math-types"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector and <a class="el" href="../../da/d32/structAH_1_1Quaternion.html" title="Type for quaternions of floating point numbers.">Quaternion</a> types with the necessary operators and functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
+Files</h2></td></tr>
+<tr class="memitem:de/d79/Degrees_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/Degrees_8hpp.html">Degrees.hpp</a></td></tr>
+<tr class="memdesc:de/d79/Degrees_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversions between radians and degrees. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga2db130ad457637bf290d358b438f1787"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga2db130ad457637bf290d358b438f1787"><td class="memTemplItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga2db130ad457637bf290d358b438f1787">rad2deg</a> (T r)</td></tr>
+<tr class="memdesc:ga2db130ad457637bf290d358b438f1787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert radians to degrees.  <a href="../../dd/d5e/group__AH__Math.html#ga2db130ad457637bf290d358b438f1787">More...</a><br /></td></tr>
+<tr class="separator:ga2db130ad457637bf290d358b438f1787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f4223c8d51206448bd524ebd2e8ef13"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga3f4223c8d51206448bd524ebd2e8ef13"><td class="memTemplItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga3f4223c8d51206448bd524ebd2e8ef13">deg2rad</a> (T d)</td></tr>
+<tr class="memdesc:ga3f4223c8d51206448bd524ebd2e8ef13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert degrees to radians.  <a href="../../dd/d5e/group__AH__Math.html#ga3f4223c8d51206448bd524ebd2e8ef13">More...</a><br /></td></tr>
+<tr class="separator:ga3f4223c8d51206448bd524ebd2e8ef13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3f1575fa40efb919ec8ff730eb6a87cf"><td class="memTemplParams" colspan="2">template&lt;size_t Bits_out, size_t Bits_in, class T_out , class T_in &gt; </td></tr>
 <tr class="memitem:ga3f1575fa40efb919ec8ff730eb6a87cf"><td class="memTemplItemLeft" align="right" valign="top">T_out&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">increaseBitDepth</a> (T_in in)</td></tr>
 <tr class="memdesc:ga3f1575fa40efb919ec8ff730eb6a87cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the bit depth of the given value from <code>Bits_in</code> bits wide to <code>Bits_out</code> bits wide, evenly distributing the error across the entire range, such that the error for each element is between -0.5 and +0.5.  <a href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">More...</a><br /></td></tr>
@@ -104,6 +126,66 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Mathematics helper functions. Min/max functions, functions to uniformly increase the effective bid depth, etc. </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga2db130ad457637bf290d358b438f1787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2db130ad457637bf290d358b438f1787">&#9670;&nbsp;</a></span>rad2deg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double AH::rad2deg </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert radians to degrees. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d79/Degrees_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../de/d79/Degrees_8hpp_source.html">Degrees.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ga3f4223c8d51206448bd524ebd2e8ef13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f4223c8d51206448bd524ebd2e8ef13">&#9670;&nbsp;</a></span>deg2rad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double AH::deg2rad </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert degrees to radians. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d79/Degrees_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../de/d79/Degrees_8hpp_source.html">Degrees.hpp</a>.</p>
+
+</div>
+</div>
 <a id="ga3f1575fa40efb919ec8ff730eb6a87cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3f1575fa40efb919ec8ff730eb6a87cf">&#9670;&nbsp;</a></span>increaseBitDepth()</h2>
 

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 43584804065ed9b0be7fef71042c56283679c842 - src/AH/Containers/Array.hpp</title>
+  <title>LCOV - b573c90c722227b4af20904a881a55862d040035 - src/AH/Containers/Array.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">43584804065ed9b0be7fef71042c56283679c842</td>
+            <td class="headerValue">b573c90c722227b4af20904a881a55862d040035</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">140</td>
@@ -37,12 +37,12 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-03-21 00:10:26</td>
+            <td class="headerValue">2020-03-24 20:43:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">176</td>
+            <td class="headerCovTableEntry">178</td>
             <td class="headerCovTableEntry">195</td>
-            <td class="headerCovTableEntryHi">90.3 %</td>
+            <td class="headerCovTableEntryHi">91.3 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -134,12 +134,12 @@
 <a name="64"><span class="lineNum">      64 </span>            :      * @param   index</a>
 <a name="65"><span class="lineNum">      65 </span>            :      *          The (zero-based) index of the element to return.</a>
 <a name="66"><span class="lineNum">      66 </span>            :      */</a>
-<a name="67"><span class="lineNum">      67 </span><span class="lineCov">       1004 :     const T &amp;operator[](size_t index) const {</span></a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">       1004 :         if (index &gt;= N) { // TODO</span></a>
+<a name="67"><span class="lineNum">      67 </span><span class="lineCov">       1008 :     const T &amp;operator[](size_t index) const {</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">       1008 :         if (index &gt;= N) { // TODO</span></a>
 <a name="69"><span class="lineNum">      69 </span><span class="lineCov">          1 :             ERROR(F(&quot;Index out of bounds: &quot;) &lt;&lt; index &lt;&lt; F(&quot; ≥ &quot;) &lt;&lt; N, 0xEDED);</span></a>
 <a name="70"><span class="lineNum">      70 </span>            :             index = N - 1; // LCOV_EXCL_LINE</a>
 <a name="71"><span class="lineNum">      71 </span>            :         }                  // LCOV_EXCL_LINE</a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">       1003 :         return data[index];</span></a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">       1007 :         return data[index];</span></a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">          1 :     }</span></a>
 <a name="74"><span class="lineNum">      74 </span>            : </a>
 <a name="75"><span class="lineNum">      75 </span>            :     /**</a>

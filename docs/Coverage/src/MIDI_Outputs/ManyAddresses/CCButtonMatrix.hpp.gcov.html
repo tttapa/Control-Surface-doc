@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 43584804065ed9b0be7fef71042c56283679c842 - src/MIDI_Outputs/ManyAddresses/CCButtonMatrix.hpp</title>
+  <title>LCOV - b573c90c722227b4af20904a881a55862d040035 - src/MIDI_Outputs/ManyAddresses/CCButtonMatrix.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">43584804065ed9b0be7fef71042c56283679c842</td>
+            <td class="headerValue">b573c90c722227b4af20904a881a55862d040035</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">4</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-03-21 00:10:26</td>
+            <td class="headerValue">2020-03-24 20:43:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -109,44 +109,43 @@
 <a name="39"><span class="lineNum">      39 </span>            :      * @brief   Create a new Bankable CCButtonMatrix object with the given pins,</a>
 <a name="40"><span class="lineNum">      40 </span>            :      *          controller numbers and channel.</a>
 <a name="41"><span class="lineNum">      41 </span>            :      * </a>
-<a name="42"><span class="lineNum">      42 </span>            :      * @param   config</a>
-<a name="43"><span class="lineNum">      43 </span>            :      *          The bank configuration to use: the bank to add this element to,</a>
-<a name="44"><span class="lineNum">      44 </span>            :      *          and whether to change the address, channel or cable number.</a>
-<a name="45"><span class="lineNum">      45 </span>            :      * @param   rowPins</a>
-<a name="46"><span class="lineNum">      46 </span>            :      *          A list of pin numbers connected to the rows of the button</a>
-<a name="47"><span class="lineNum">      47 </span>            :      *          matrix.  </a>
-<a name="48"><span class="lineNum">      48 </span>            :      *          **⚠** These pins will be driven LOW as outputs (Lo-Z).</a>
-<a name="49"><span class="lineNum">      49 </span>            :      * @param   colPins</a>
-<a name="50"><span class="lineNum">      50 </span>            :      *          A list of pin numbers connected to the columns of the button</a>
-<a name="51"><span class="lineNum">      51 </span>            :      *          matrix.  </a>
-<a name="52"><span class="lineNum">      52 </span>            :      *          These pins will be used as inputs (Hi-Z), and the</a>
-<a name="53"><span class="lineNum">      53 </span>            :      *          internal pull-up resistor will be enabled.</a>
-<a name="54"><span class="lineNum">      54 </span>            :      * @param   controllers</a>
-<a name="55"><span class="lineNum">      55 </span>            :      *          A list of 2-dimensional arrays of the same dimensions as the </a>
-<a name="56"><span class="lineNum">      56 </span>            :      *          button matrix that contains the MIDI Controller number of each </a>
-<a name="57"><span class="lineNum">      57 </span>            :      *          button.</a>
-<a name="58"><span class="lineNum">      58 </span>            :      *          [0, 119]</a>
-<a name="59"><span class="lineNum">      59 </span>            :      * @param   channelCNs</a>
-<a name="60"><span class="lineNum">      60 </span>            :      *          The a list containing the MIDI channels [CHANNEL_1, CHANNEL_16] </a>
-<a name="61"><span class="lineNum">      61 </span>            :      *          and Cable Numbers [0, 15].</a>
-<a name="62"><span class="lineNum">      62 </span>            :      * @param   sender</a>
-<a name="63"><span class="lineNum">      63 </span>            :      *          The MIDI sender to use.</a>
-<a name="64"><span class="lineNum">      64 </span>            :      */</a>
-<a name="65"><span class="lineNum">      65 </span><span class="lineCov">          1 :     CCButtonMatrix(</span></a>
-<a name="66"><span class="lineNum">      66 </span>            :         const OutputBankConfig &amp;config, const PinList&lt;nb_rows&gt; &amp;rowPins,</a>
-<a name="67"><span class="lineNum">      67 </span>            :         const PinList&lt;nb_cols&gt; &amp;colPins,</a>
-<a name="68"><span class="lineNum">      68 </span>            :         const Array&lt;AddressMatrix&lt;nb_rows, nb_cols&gt;, NumBanks&gt; &amp;controllers,</a>
-<a name="69"><span class="lineNum">      69 </span>            :         const Array&lt;MIDIChannelCN, NumBanks&gt; &amp;channelCNs,</a>
-<a name="70"><span class="lineNum">      70 </span>            :         const DigitalCCSender &amp;sender = {})</a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          1 :         : MIDIButtonMatrix&lt;ManyMatrixAddresses&lt;NumBanks, nb_rows, nb_cols&gt;,</span></a>
-<a name="72"><span class="lineNum">      72 </span>            :                            DigitalCCSender, nb_rows, nb_cols&gt;{</a>
-<a name="73"><span class="lineNum">      73 </span><span class="lineCov">          2 :               {config, controllers, channelCNs}, rowPins, colPins, sender} {}</span></a>
-<a name="74"><span class="lineNum">      74 </span>            : };</a>
-<a name="75"><span class="lineNum">      75 </span>            : </a>
-<a name="76"><span class="lineNum">      76 </span>            : } // namespace ManyAddresses</a>
-<a name="77"><span class="lineNum">      77 </span>            : } // namespace Bankable</a>
-<a name="78"><span class="lineNum">      78 </span>            : </a>
-<a name="79"><span class="lineNum">      79 </span>            : END_CS_NAMESPACE</a>
+<a name="42"><span class="lineNum">      42 </span>            :      * @param   bank</a>
+<a name="43"><span class="lineNum">      43 </span>            :      *          The bank to add this element to.</a>
+<a name="44"><span class="lineNum">      44 </span>            :      * @param   rowPins</a>
+<a name="45"><span class="lineNum">      45 </span>            :      *          A list of pin numbers connected to the rows of the button</a>
+<a name="46"><span class="lineNum">      46 </span>            :      *          matrix.  </a>
+<a name="47"><span class="lineNum">      47 </span>            :      *          **⚠** These pins will be driven LOW as outputs (Lo-Z).</a>
+<a name="48"><span class="lineNum">      48 </span>            :      * @param   colPins</a>
+<a name="49"><span class="lineNum">      49 </span>            :      *          A list of pin numbers connected to the columns of the button</a>
+<a name="50"><span class="lineNum">      50 </span>            :      *          matrix.  </a>
+<a name="51"><span class="lineNum">      51 </span>            :      *          These pins will be used as inputs (Hi-Z), and the</a>
+<a name="52"><span class="lineNum">      52 </span>            :      *          internal pull-up resistor will be enabled.</a>
+<a name="53"><span class="lineNum">      53 </span>            :      * @param   controllers</a>
+<a name="54"><span class="lineNum">      54 </span>            :      *          A list of 2-dimensional arrays of the same dimensions as the </a>
+<a name="55"><span class="lineNum">      55 </span>            :      *          button matrix that contains the MIDI Controller number of each </a>
+<a name="56"><span class="lineNum">      56 </span>            :      *          button.</a>
+<a name="57"><span class="lineNum">      57 </span>            :      *          [0, 119]</a>
+<a name="58"><span class="lineNum">      58 </span>            :      * @param   channelCNs</a>
+<a name="59"><span class="lineNum">      59 </span>            :      *          The a list containing the MIDI channels [CHANNEL_1, CHANNEL_16] </a>
+<a name="60"><span class="lineNum">      60 </span>            :      *          and Cable Numbers [0, 15].</a>
+<a name="61"><span class="lineNum">      61 </span>            :      * @param   sender</a>
+<a name="62"><span class="lineNum">      62 </span>            :      *          The MIDI sender to use.</a>
+<a name="63"><span class="lineNum">      63 </span>            :      */</a>
+<a name="64"><span class="lineNum">      64 </span><span class="lineCov">          1 :     CCButtonMatrix(</span></a>
+<a name="65"><span class="lineNum">      65 </span>            :         const Bank&lt;NumBanks&gt; &amp;bank, const PinList&lt;nb_rows&gt; &amp;rowPins,</a>
+<a name="66"><span class="lineNum">      66 </span>            :         const PinList&lt;nb_cols&gt; &amp;colPins,</a>
+<a name="67"><span class="lineNum">      67 </span>            :         const Array&lt;AddressMatrix&lt;nb_rows, nb_cols&gt;, NumBanks&gt; &amp;controllers,</a>
+<a name="68"><span class="lineNum">      68 </span>            :         const Array&lt;MIDIChannelCN, NumBanks&gt; &amp;channelCNs,</a>
+<a name="69"><span class="lineNum">      69 </span>            :         const DigitalCCSender &amp;sender = {})</a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          1 :         : MIDIButtonMatrix&lt;ManyMatrixAddresses&lt;NumBanks, nb_rows, nb_cols&gt;,</span></a>
+<a name="71"><span class="lineNum">      71 </span>            :                            DigitalCCSender, nb_rows, nb_cols&gt;{</a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">          2 :               {bank, controllers, channelCNs}, rowPins, colPins, sender} {}</span></a>
+<a name="73"><span class="lineNum">      73 </span>            : };</a>
+<a name="74"><span class="lineNum">      74 </span>            : </a>
+<a name="75"><span class="lineNum">      75 </span>            : } // namespace ManyAddresses</a>
+<a name="76"><span class="lineNum">      76 </span>            : } // namespace Bankable</a>
+<a name="77"><span class="lineNum">      77 </span>            : </a>
+<a name="78"><span class="lineNum">      78 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

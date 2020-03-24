@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['vector_2ecpp_3067',['vector.cpp',['../d4/d1b/vector_8cpp.html',1,'']]],
-  ['volumecontrol_2ecpp_3068',['VolumeControl.cpp',['../dc/d55/VolumeControl_8cpp.html',1,'']]],
-  ['volumecontrol_2ehpp_3069',['VolumeControl.hpp',['../da/d51/VolumeControl_8hpp.html',1,'']]],
-  ['vpotdisplay_2ecpp_3070',['VPotDisplay.cpp',['../d7/db9/VPotDisplay_8cpp.html',1,'']]],
-  ['vpotdisplay_2ehpp_3071',['VPotDisplay.hpp',['../d0/dbf/VPotDisplay_8hpp.html',1,'']]],
-  ['vpotring_2ecpp_3072',['VPotRing.cpp',['../d6/d6d/VPotRing_8cpp.html',1,'']]],
-  ['vpotring_2ehpp_3073',['VPotRing.hpp',['../d7/d81/VPotRing_8hpp.html',1,'']]],
-  ['vpotringleds_2ecpp_3074',['VPotRingLEDs.cpp',['../d4/de6/VPotRingLEDs_8cpp.html',1,'']]],
-  ['vpotringleds_2ehpp_3075',['VPotRingLEDs.hpp',['../dc/d48/VPotRingLEDs_8hpp.html',1,'']]],
-  ['vu_2ecpp_3076',['VU.cpp',['../d6/d26/VU_8cpp.html',1,'']]],
-  ['vu_2ehpp_3077',['VU.hpp',['../db/dda/VU_8hpp.html',1,'']]],
-  ['vudisplay_2ecpp_3078',['VUDisplay.cpp',['../db/dcf/VUDisplay_8cpp.html',1,'']]],
-  ['vudisplay_2ehpp_3079',['VUDisplay.hpp',['../d0/db9/VUDisplay_8hpp.html',1,'']]],
-  ['vuleds_2ecpp_3080',['VULEDs.cpp',['../dd/d0f/VULEDs_8cpp.html',1,'']]],
-  ['vuleds_2ehpp_3081',['VULEDs.hpp',['../de/d3d/VULEDs_8hpp.html',1,'']]]
+  ['uniqueptr_2ecpp_3088',['UniquePtr.cpp',['../de/d47/UniquePtr_8cpp.html',1,'']]],
+  ['uniqueptr_2ehpp_3089',['UniquePtr.hpp',['../de/d7e/UniquePtr_8hpp.html',1,'']]],
+  ['updatable_2ecpp_3090',['Updatable.cpp',['../d6/dea/Updatable_8cpp.html',1,'']]],
+  ['updatable_2ehpp_3091',['Updatable.hpp',['../d4/d93/Updatable_8hpp.html',1,'']]],
+  ['usbmidi_2ecpp_3092',['USBMIDI.cpp',['../d6/dad/USBMIDI_8cpp.html',1,'']]],
+  ['usbmidi_2ehpp_3093',['USBMIDI.hpp',['../d1/d93/USBMIDI_8hpp.html',1,'']]],
+  ['usbmidi_5finterface_2ecpp_3094',['USBMIDI_Interface.cpp',['../d5/de7/USBMIDI__Interface_8cpp.html',1,'']]],
+  ['usbmidi_5finterface_2ehpp_3095',['USBMIDI_Interface.hpp',['../d1/d64/USBMIDI__Interface_8hpp.html',1,'']]],
+  ['usbmidi_5fmidiusb_2eipp_3096',['USBMIDI_MIDIUSB.ipp',['../df/dfa/USBMIDI__MIDIUSB_8ipp.html',1,'']]],
+  ['usbmidi_5fparser_2ecpp_3097',['USBMIDI_Parser.cpp',['../d8/dd8/USBMIDI__Parser_8cpp.html',1,'']]],
+  ['usbmidi_5fparser_2ehpp_3098',['USBMIDI_Parser.hpp',['../d8/d21/USBMIDI__Parser_8hpp.html',1,'']]],
+  ['usbmidi_5fteensy2_2eipp_3099',['USBMIDI_Teensy2.ipp',['../db/dcf/USBMIDI__Teensy2_8ipp.html',1,'']]],
+  ['usbmidi_5fteensy3_2eipp_3100',['USBMIDI_Teensy3.ipp',['../d9/dd5/USBMIDI__Teensy3_8ipp.html',1,'']]],
+  ['usbmidi_5fteensy4_2eipp_3101',['USBMIDI_Teensy4.ipp',['../db/d79/USBMIDI__Teensy4_8ipp.html',1,'']]],
+  ['usbmidi_5fteensylc_2eipp_3102',['USBMIDI_TeensyLC.ipp',['../db/dd1/USBMIDI__TeensyLC_8ipp.html',1,'']]]
 ];
