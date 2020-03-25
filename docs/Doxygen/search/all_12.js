@@ -234,6 +234,6 @@ var searchData=
   ['sysexend_1993',['SysExEnd',['../d7/d2d/MIDI__Parser_8hpp.html#a5a4104fa1a57bf95247549f946599922',1,'MIDI_Parser.hpp']]],
   ['sysexlength_1994',['SysExLength',['../d1/db1/classSysExBuffer.html#a72beb2f023cdb99faf43dd83c0c58723',1,'SysExBuffer']]],
   ['sysexmessage_1995',['SysExMessage',['../db/d45/structSysExMessage.html',1,'SysExMessage'],['../db/d45/structSysExMessage.html#a279a3e3c4d73645a8a19cfb1e866ba13',1,'SysExMessage::SysExMessage()'],['../db/d45/structSysExMessage.html#ac559df9e3f29b65dbf17bc3f9a9b17af',1,'SysExMessage::SysExMessage(const uint8_t *data, size_t length, uint8_t CN=0)']]],
-  ['sysexmessagecallback_1996',['SysExMessageCallback',['../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5',1,'Control_Surface_::SysExMessageCallback()'],['../dc/d45/classControl__Surface__.html#ad43a6370fb958fa2246451f165490965',1,'Control_Surface_::sysExMessageCallback()']]],
+  ['sysexmessagecallback_1996',['sysExMessageCallback',['../dc/d45/classControl__Surface__.html#ad43a6370fb958fa2246451f165490965',1,'Control_Surface_::sysExMessageCallback()'],['../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5',1,'Control_Surface_::SysExMessageCallback()']]],
   ['sysexstart_1997',['SysExStart',['../d7/d2d/MIDI__Parser_8hpp.html#ad96073d2c4c439d53d73520e2f94c87d',1,'MIDI_Parser.hpp']]]
 ];
