@@ -118,7 +118,7 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
 <li><code><a class="el" href="../../de/d2d/classUSBDebugMIDI__Interface.html" title="A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...">USBDebugMIDI_Interface</a></code>: Debugging MIDI Controllers can be very cumbersome. There are MIDI monitors available, but you have to reconnect every time you upload a new sketch, and sending MIDI to the Arduino is not always easy. <br  />
  This interface is designed to help you with that. It prints outgoing MIDI messages to the Serial port in a readable format, and it allows you to enter hexadecimal MIDI messages (as text) in the Serial monitor (e.g. <code>90 3C 7F</code> to turn on middle C).</li>
 </ul>
-<p>A complete overview of the available MIDI interfaces can be found <a href="https://tttapa.github.io/Control-Surface/Doc/Doxygen/dc/df0/group__MIDIInterfaces.html">here</a>.</p>
+<p>A complete overview of the available MIDI interfaces can be found in the <a class="el" href="../../dc/df0/group__MIDIInterfaces.html">MIDI Interfaces</a> module.</p>
 <p>For now, we'll use the <code><a class="el" href="../../de/d05/classUSBMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.">USBMIDI_Interface</a></code> because it's probably the one you'll use in your final program.</p>
 <p>You can give the interface any name you want, here, I'll be very original and choose <code>midi</code>. It doesn't matter, and you don't need to use it afterwards, just defining the interface is enough, the Control Surface library will automatically detect and use it.</p>
 <div class="fragment"><div class="line"><a class="code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
@@ -131,7 +131,7 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
 3. Add Extended Input/Output elements (optional)</h2>
 <p>If your MIDI Controller requires many in- or outputs, you'll run out of IO pins really quickly. A solution is to use multiplexers or shift registers. <br  />
  The Control Surface Library supports both of these options, and makes it easy to support other types of IO expanders in the future.</p>
-<p>An overview of Extended Input/Output elements can be found <a href="https://tttapa.github.io/Control-Surface/Doc/Doxygen/d1/d8e/group__ExtIO.html">here</a>.</p>
+<p>An overview of Extended Input/Output elements can be found in the <a class="el" href="../../db/dd3/group__AH__ExtIO.html">Extended Input/Output</a> module.</p>
 <p>In this example, we'll use an 8-channel CD74HC4051 analog multiplexer. This allows us to read eight analog inputs using just one analog pin on the Arduino, at the cost of only three digital output pins.</p>
 <p>Each of the eight analog inputs of the multiplexer can be connected to the wiper of one potentiometer.</p>
 <p>We'll connect the three address lines of the multiplexer (<code>S0</code>, <code>S1</code> and <code>S2</code>) to digital pins <code>3</code>, <code>4</code> and <code>5</code>. The output of the multiplexer goes to analog pin <code>A0</code>. Connect the enable pin (<code>Ē</code>) to ground.</p>
@@ -139,13 +139,13 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md212"></a>
 4. Add MIDI Control Elements</h2>
 <p>Now, we can specify the objects that read the input of the potentiometers and send out MIDI events accordingly.</p>
-<p>Again, I'll refer to the overview of MIDI Output Elements <a href="https://tttapa.github.io/Control-Surface/Doc/Doxygen/d7/dcd/group__MIDIOutputElements.html">here</a>.</p>
+<p>Again, I'll refer to the overview of <a class="el" href="../../d7/dcd/group__MIDIOutputElements.html">MIDI Output Elements</a>.</p>
 <p>Let's define a single potentiometer on pin <code>A1</code> that sends out MIDI Control Change events. <br  />
- In the <a href="https://tttapa.github.io/Control-Surface/Doc/Doxygen/db/d32/classCCPotentiometer.html">documentation</a>, you'll find that the first argument for the <code><a class="el" href="../../db/d32/classCCPotentiometer.html" title="A class of MIDIOutputElements that read the analog input from a potentiometer or fader,...">CCPotentiometer</a></code> constructor is the analog pin number, and the second is the MIDI address. <br  />
+ In the <a class="el" href="../../db/d32/classCCPotentiometer.html#acddf498ce3b8611d048f0f03f8c71eef">documentation</a>, you'll find that the first argument for the <code><a class="el" href="../../db/d32/classCCPotentiometer.html" title="A class of MIDIOutputElements that read the analog input from a potentiometer or fader,...">CCPotentiometer</a></code> constructor is the analog pin number, and the second is the MIDI address. <br  />
  The MIDI address is a structure that consists of an address number, the MIDI channel, and the cable number. <br  />
  In this case, the address number is the controller number, which is a number from 0 to 119. The MIDI channel is a channel from <code>CHANNEL_1</code> until <code>CHANNEL_16</code>. We'll ignore the cable number for now, if you don't specifically set it, it'll just use the default cable. <br  />
-</p>
-<p>For the MIDI controller numbers, you can use the <a href="https://tttapa.github.io/Control-Surface/Doc/Doxygen/d4/dbe/namespaceMIDI__CC.html">predefined constants</a>, or you can just use a number.</p>
+ You can find more information about MIDI addresses <a class="el" href="../../d6/dc6/md_pages_Basics.html">here</a>.</p>
+<p>For the MIDI controller numbers, you can use the <a class="el" href="../../d4/dbe/namespaceMIDI__CC.html">predefined constants</a>, or you can just use a number.</p>
 <div class="fragment"><div class="line"><a class="code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> potentiometer = { A1, {<a class="code" href="../../d4/dbe/namespaceMIDI__CC.html#ac73258d1263f61f65fc27976b6aa9a64">MIDI_CC::Channel_Volume</a>, <a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>} };</div>
 </div><!-- fragment --><p>In our case, we don't want a single potentiometer, we want eight. It's much easier to define them in an array. <br  />
  Also note how we state that it should use the pins of the multiplexer we defined in the previous step.</p>
@@ -177,7 +177,7 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
 </div><!-- fragment --><blockquote class="doxtable">
 <p><b>Note</b>: If you didn't define a MIDI interface, <code>Control_Surface.begin()</code> will raise an error and the on-board LED will start blinking. <br  />
  Other errors will also be indicated this way. <br  />
- If you don't know why this happens, you should enable debug information in the <code>Control_Surface/src/Settings/Settings.h</code> file, and inspect the output in the Serial Monitor. <br  />
+ If you don't know why this happens, you should enable debug information in the <code>Control_Surface/src/AH/Settings/Settings.h</code> file, and inspect the output in the Serial Monitor. <br  />
  Someday, I will add a "Troubleshooting" page. For now, if you have any problems, just <a href="https://github.com/tttapa/Control-Surface/issues/new">open an issue on GitHub</a> to remind me. </p>
 </blockquote>
 <h2><a class="anchor" id="first-output-loop"></a>
@@ -263,13 +263,13 @@ picture-in-picture" allowfullscreen></iframe>
 <h2><a class="anchor" id="autotoc_md217"></a>
 4. Add MIDI Control Elements</h2>
 <p>Now, we can specify the objects that listen for MIDI input, and update the status of the LEDs accordingly.</p>
-<p>I'll refer to the overview of MIDI Input Elements <a href="https://tttapa.github.io/Control-Surface/Doc/Doxygen/d7/dcd/group__MIDIInputElements.html">here</a>.</p>
+<p>I'll refer to the overview of <a class="el" href="../../df/d8b/group__MIDIInputElements.html">MIDI Input Elements</a>.</p>
 <p>Let's define a single LED on pin <code>13</code> that listens for MIDI Note events for a middle C on channel 1. <br  />
- In the <a href="https://tttapa.github.io/Control-Surface/Doc/Doxygen/d3/dd5/classNoteValueLED.html">documentation</a>, you'll find that the first argument for the <code><a class="el" href="../../d3/dd5/classNoteValueLED.html" title="MIDI Input Element that listens for MIDI Note messages for the given note, and displays its value by ...">NoteValueLED</a></code> constructor is the number of the pin with the LED connected, and the second is the MIDI address. <br  />
+ In the <a class="el" href="../../d3/dd5/classNoteValueLED.html">documentation</a>, you'll find that the first argument for the <code><a class="el" href="../../d3/dd5/classNoteValueLED.html" title="MIDI Input Element that listens for MIDI Note messages for the given note, and displays its value by ...">NoteValueLED</a></code> constructor is the number of the pin with the LED connected, and the second is the MIDI address. <br  />
  The MIDI address is a structure that consists of an address number, the MIDI channel, and the cable number. <br  />
  In this case, the address number is the note number, which is a number from 0 to 127. The MIDI channel is a channel from <code>CHANNEL_1</code> until <code>CHANNEL_16</code>. We'll ignore the cable number for now, if you don't specifically set it, it'll just use the default cable. <br  />
 </p>
-<p>For the MIDI note numbers, you can use the note constants and the <code>note</code> function in the <a href="https://tttapa.github.io/Control-Surface/Doc/Doxygen/d7/d78/namespaceMIDI__Notes.html"><code>MIDI_Notes</code> namespace</a>, or you can just use a number.</p>
+<p>For the MIDI note numbers, you can use the note constants and the <code>note</code> function in the <a class="el" href="../../d7/d78/namespaceMIDI__Notes.html">MIDI_Notes</a> namespace, or you can just use a number.</p>
 <div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="../../d7/d78/namespaceMIDI__Notes.html">MIDI_Notes</a>;</div>
 <div class="line"><a class="code" href="../../d3/dd5/classNoteValueLED.html">NoteValueLED</a> noteLed = { 13, {<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#a559f01ec7251fdc9c5a5bc0e26b97372">note</a>(<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#aa62045215ec21ab7da02f2f1868ea7b0">C</a>, 4), <a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>} };  <span class="comment">// C4 = middle C</span></div>
 </div><!-- fragment --><p>In our case, we don't want a single LED, we want eight. It's much easier to define them in an array. <br  />
