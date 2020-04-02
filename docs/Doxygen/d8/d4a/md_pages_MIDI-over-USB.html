@@ -132,8 +132,17 @@ Boards with a single-purpose USB-to-TTL chip</h1>
  These chips include FTDI chips (Nano and Duemilanove) and the CH340G or CP2102 (both popular on Chinese "Arduino" clones). <br  />
  While MIDI over USB is not supported on these boards, you can still use Hairless. Just instantiate a <code><a class="el" href="../../dc/dff/classHairlessMIDI__Interface.html" title="A class for MIDI Interfaces sending and receiving data over the USB Serial CDC connection for the use...">HairlessMIDI_Interface</a></code> at the top of your sketch. <br  />
 </p>
-<hr  />
 <h1><a class="anchor" id="autotoc_md236"></a>
+Espressif boards</h1>
+<p><em>ESP8266, ESP32</em></p>
+<hr  />
+<p> The ESP8266 and ESP32 microcontrollers don't have native USB support, and all development boards I've come across use a single-purpose USB-to-TTL chip, which means that they fall into the same category as the Arduino Nano when it comes to MIDI over USB.</p>
+<p>That being said, both the ESP8266 and the ESP32 have built-in WiFi, so you can use rtpMIDI, using the <a href="https://github.com/lathoub/Arduino-AppleMIDI-Library">AppleMIDI library</a>, for example. <br  />
+ An alternative is to use Open Sound Control (OSC). This is not MIDI, it's an entirely different protocol, built on top of UDP. It can be used for bidirectional communication between audio software and control surfaces. I've successfully used this to build a control surface for Reaper. <br  />
+ OSC and rtpMIDI are not directly supported by the Control Surface library, but they can be integrated relatively easily.</p>
+<p>The ESP32 also has Bluetooth support, so you can use MIDI over BLE. This is supported by the Control Surface library using the <a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a>.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md237"></a>
 Conclusion</h1>
 <p>I strongly recommend getting a Teensy 3.x for building a Control Surface. MIDI over USB is supported right of the box, and it's the only platform that currently supports USB audio output. On top of that, it has plenty of memory to create large MIDI Controllers, and drive lots of displays.</p>
 <p>If you just want a very small MIDI Controller, the Arduino Leonardo/Micro are good choices as well, just keep in mind that they don't have a lot of RAM.</p>
