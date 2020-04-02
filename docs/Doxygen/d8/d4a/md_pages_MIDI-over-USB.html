@@ -75,7 +75,7 @@ $(function() {
 <div class="title">MIDI over USB </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>There are some differences in MIDI over USB implementation between different types of Arduino-compatible boards.</p>
+<div class="textblock"><p>There are some differences in MIDI over USB implementation between different types of Arduino-compatible boards. This page provides an overview and some board recommendations if you're planning to build an Arduino MIDI device with MIDI over USB support.</p>
 <h1><a class="anchor" id="autotoc_md232"></a>
 Arduino boards with native USB support</h1>
 <p><em>Arduino Due, Arduino Zero, Arduino Leonardo, Arduino Micro, Arduino LilyPad USB ...</em> <br  />
@@ -97,7 +97,7 @@ Arduino boards with an ATmega16U2 (ATmega8U2)</h1>
 <p><em>Arduino Uno, Arduino Mega</em></p>
 <hr  />
 <p> Some Arduino's that don't have native USB support can still be used as a USB MIDI device. <br  />
- This is because they have a second, smaller microcontroller on board, an ATmega16U2 (ATmega8U2 on older boards), that communicates with the main <a class="el" href="../../d7/dc7/namespaceMCU.html" title="Names and note and controller numbers for the Mackie Control Universal (MCU) protocol.">MCU</a> over TTL UART (serial, TX and RX on pins 0 and 1), and also acts as a USB COM port, to communicate with the computer (for programming and for using the Serial Monitor). During normal operation, the ATmega16U2 is just a USB-to-Serial bridge, but you can also program it to be a USB MIDI-to-Serial bridge. <br  />
+ This is because they have a second, smaller microcontroller on board, an ATmega16U2 (ATmega8U2 on older boards). This small USB-capable <a class="el" href="../../d7/dc7/namespaceMCU.html" title="Names and note and controller numbers for the Mackie Control Universal (MCU) protocol.">MCU</a> communicates with the main <a class="el" href="../../d7/dc7/namespaceMCU.html" title="Names and note and controller numbers for the Mackie Control Universal (MCU) protocol.">MCU</a> over TTL UART (serial, TX and RX on pins 0 and 1), and also acts as a USB COM port, to communicate with the computer (for programming and for using the Serial Monitor). During normal operation, the ATmega16U2 is just a USB-to-Serial bridge, but you can also program it to be a USB MIDI-to-Serial bridge. <br  />
 </p>
 <p>You can use the <a href="https://github.com/ddiakopoulos/hiduino">HIDUINO</a> firmware by <a href="http://www.dimitridiakopoulos.com/hiduino">Dimitri Diakopoulos</a>. This flashing process is called a Device Firmware Upgrade (DFU). On Windows, you can use the Atmel Flip tool, on Linux or Mac, you can use <code>dfu-programmer</code>. Everything is explained <a href="https://github.com/tttapa/MIDI_controller#arduino-uno-or-mega">here</a>. <br  />
  Because you need the ATmega16U2 for uploading new programs to the Arduino, you have to upload your program first, and then flash the MIDI firmware. If you want to change your program, you have to flash the default Serial firmware again, then upload your new program, and finally flash the MIDI firmware. <br  />
@@ -121,6 +121,9 @@ Arduino boards with an ATmega16U2 (ATmega8U2)</h1>
 <p>Finally, when you know that everything is working the way you want it, you can change the baud rate to the official MIDI baud rate of 31250, by using the <code><a class="el" href="../../de/d05/classUSBMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.">USBMIDI_Interface</a></code>, uploading the sketch, and flashing the HIDUINO MIDI firmware using Flip or dfu-programmer. <br  />
  You can now just plug it into your computer, and it will be recognized as a MIDI device, you don't need to run Hairless anymore. <br  />
 </p>
+<h3>USBMidiKliK</h3>
+<p>The HIDUINO firmware is rather old, and there's a newer alternative that combines the MIDI USB and Serial USB modes in a single firmware: <a href="https://github.com/TheKikGen/USBMidiKliK">USBMidiKliK</a>. This means that you should be able to program the Arduino and use MIDI over USB without swapping firmwares all the time. <br  />
+ I haven't tried this myself, but it looks promising.</p>
 <h1><a class="anchor" id="autotoc_md235"></a>
 Boards with a single-purpose USB-to-TTL chip</h1>
 <p><em>Arduino Nano, Arduino Duemilanove, Chinese Uno &amp; Mega clones ...</em></p>

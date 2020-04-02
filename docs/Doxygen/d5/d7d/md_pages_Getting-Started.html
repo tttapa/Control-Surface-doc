@@ -120,7 +120,7 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
 </ul>
 <p>A complete overview of the available MIDI interfaces can be found in the <a class="el" href="../../dc/df0/group__MIDIInterfaces.html">MIDI Interfaces</a> module.</p>
 <p>For now, we'll use the <code><a class="el" href="../../de/d05/classUSBMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.">USBMIDI_Interface</a></code> because it's probably the one you'll use in your final program.</p>
-<p>You can give the interface any name you want, here, I'll be very original and choose <code>midi</code>. It doesn't matter, and you don't need to use it afterwards, just defining the interface is enough, the Control Surface library will automatically detect and use it.</p>
+<p>You can give the interface any name you want. I'll be very original and choose <code>midi</code>. It doesn't matter, and you don't need to use it afterwards, just defining the interface is enough, the Control Surface library will automatically detect and use it.</p>
 <div class="fragment"><div class="line"><a class="code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 </div><!-- fragment --><blockquote class="doxtable">
 <p><b>Note</b>: some interfaces require additional parameters, for example, the <code><a class="el" href="../../de/d2d/classUSBDebugMIDI__Interface.html" title="A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...">USBDebugMIDI_Interface</a></code> needs to know the baud rate. <br  />
@@ -147,10 +147,13 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
  You can find more information about MIDI addresses <a class="el" href="../../d6/dc6/md_pages_Basics.html">here</a>.</p>
 <p>For the MIDI controller numbers, you can use the <a class="el" href="../../d4/dbe/namespaceMIDI__CC.html">predefined constants</a>, or you can just use a number.</p>
 <div class="fragment"><div class="line"><a class="code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> potentiometer = { A1, {<a class="code" href="../../d4/dbe/namespaceMIDI__CC.html#ac73258d1263f61f65fc27976b6aa9a64">MIDI_CC::Channel_Volume</a>, <a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>} };</div>
+</div><!-- fragment --><div class="fragment"><div class="line"><a class="code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> potentiometer = { A1, {7, <a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>} };</div>
 </div><!-- fragment --><p>In our case, we don't want a single potentiometer, we want eight. It's much easier to define them in an array. <br  />
- Also note how we state that it should use the pins of the multiplexer we defined in the previous step.</p>
+ Also note how we declare that the potentiometers are connected to the the pins of the multiplexer we defined in the previous step.</p>
+<p>To go from the initialization of a single potentiometer to the initialization of an array of potentiometers, we just create a comma-separated list of initializers for single elements, and then we add another pair of curly braces around it. <br  />
+ Compare this to the initialization of an array of integers: to initialize a single integer, you use <code>int i = 42;</code> and to initialize an array of integers, you use <code>int ii[] = {42, 43, ...};</code>. Analogously, to initialize a single potentiometer object, you use <code><a class="el" href="../../db/d32/classCCPotentiometer.html" title="A class of MIDIOutputElements that read the analog input from a potentiometer or fader,...">CCPotentiometer</a> pot = {pin, address};</code> and to initialize an array of potentiometers, you use <code><a class="el" href="../../db/d32/classCCPotentiometer.html" title="A class of MIDIOutputElements that read the analog input from a potentiometer or fader,...">CCPotentiometer</a> pots[] = { {pin, address}, {pin, address}, ... };</code>.</p>
 <blockquote class="doxtable">
-<p><b>Note</b>: The first pin is <code>pin(0)</code>, not <code>pin(1)</code>. </p>
+<p><b>Note</b>: The first pin is of the multiplexer is <code>pin(0)</code>, not <code>pin(1)</code>. </p>
 </blockquote>
 <div class="fragment"><div class="line"><a class="code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> volumePotentiometers[] = {</div>
 <div class="line">    { mux.pin(0), {<a class="code" href="../../d4/dbe/namespaceMIDI__CC.html#ac73258d1263f61f65fc27976b6aa9a64">MIDI_CC::Channel_Volume</a>, <a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>} },</div>
@@ -175,7 +178,7 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
 <div class="line">    <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 </div><!-- fragment --><blockquote class="doxtable">
-<p><b>Note</b>: If you didn't define a MIDI interface, <code>Control_Surface.begin()</code> will raise an error and the on-board LED will start blinking. <br  />
+<p><b>Note</b>: If you forget to define a MIDI interface, <code>Control_Surface.begin()</code> will raise an error and the on-board LED will start blinking. <br  />
  Other errors will also be indicated this way. <br  />
  If you don't know why this happens, you should enable debug information in the <code>Control_Surface/src/AH/Settings/Settings.h</code> file, and inspect the output in the Serial Monitor. <br  />
  Someday, I will add a "Troubleshooting" page. For now, if you have any problems, just <a href="https://github.com/tttapa/Control-Surface/issues/new">open an issue on GitHub</a> to remind me. </p>
