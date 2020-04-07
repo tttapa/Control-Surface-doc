@@ -144,8 +144,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d72/classAH_1_1MAX7219SevenSegmentDisplay.html">MAX7219SevenSegmentDisplay</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for 8-digit 7-segment displays with a <a class="el" href="../../de/de9/classAH_1_1MAX7219.html" title="A class for LED outputs using the MAX7219 LED display driver.">MAX7219</a> driver.  <a href="../../d9/d72/classAH_1_1MAX7219SevenSegmentDisplay.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbc/structAH_1_1NormalUpdatable.html">NormalUpdatable</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html">MCP23017Encoders</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for reading 8 rotary encoders using a MCP23017 I²C port expander.  <a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d7/dbc/structAH_1_1NormalUpdatable"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/namespaceAH.html#d7/dbc/structAH_1_1NormalUpdatable">NormalUpdatable</a></td></tr>
+<tr class="separator:d7/dbc/structAH_1_1NormalUpdatable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d32/structAH_1_1Quaternion.html">Quaternion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for quaternions of floating point numbers.  <a href="../../da/d32/structAH_1_1Quaternion.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,6 +423,8 @@ Variables</h2></td></tr>
 <tr class="separator:a421add2f41548ad816d5d9bb028cfa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22aef2ea85e50ea5193e012410dfb4b0"><td class="memItemLeft" align="right" valign="top">static constexpr const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/namespaceAH.html#a22aef2ea85e50ea5193e012410dfb4b0">NumericChars</a> = &amp;<a class="el" href="../../dc/d69/namespaceAH.html#a5a6ac1773492df06f2083501ada5e692">SevenSegmentCharacters</a>[0x30]</td></tr>
 <tr class="separator:a22aef2ea85e50ea5193e012410dfb4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4232768a06465fd80247d5521039102"><td class="memItemLeft" align="right" valign="top">constexpr static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/namespaceAH.html#ae4232768a06465fd80247d5521039102">MCP23017Encoders_lut</a> [16]</td></tr>
+<tr class="separator:ae4232768a06465fd80247d5521039102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1052a84bab455c13aac40a30d8cb4ba"><td class="memItemLeft" align="right" valign="top">constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/namespaceAH.html#ac1052a84bab455c13aac40a30d8cb4ba">defaultBaudRate</a> = 115200</td></tr>
 <tr class="memdesc:ac1052a84bab455c13aac40a30d8cb4ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default baud rate for debug output.  <a href="../../dc/d69/namespaceAH.html#ac1052a84bab455c13aac40a30d8cb4ba">More...</a><br /></td></tr>
 <tr class="separator:ac1052a84bab455c13aac40a30d8cb4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,6 +450,29 @@ Variables</h2></td></tr>
 <tr class="memitem:a5b86686a1a39f3bd4c50998dc17706e6"><td class="memItemLeft" align="right" valign="top">constexpr static <a class="el" href="../../df/d4d/classAH_1_1Frequency.html">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/namespaceAH.html#a5b86686a1a39f3bd4c50998dc17706e6">SPI_MAX_SPEED</a> = 8_MHz</td></tr>
 <tr class="separator:a5b86686a1a39f3bd4c50998dc17706e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="d7/dbc/structAH_1_1NormalUpdatable" id="d7/dbc/structAH_1_1NormalUpdatable"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d7/dbc/structAH_1_1NormalUpdatable">&#9670;&nbsp;</a></span>AH::NormalUpdatable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct AH::NormalUpdatable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
+</div><div class="dynheader">
+Collaboration diagram for NormalUpdatable:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dd3/structAH_1_1NormalUpdatable__coll__graph.svg" width="134" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a30fffbcff933a72fdd7bfc161d386bef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30fffbcff933a72fdd7bfc161d386bef">&#9670;&nbsp;</a></span>analog_t</h2>
@@ -1255,6 +1283,48 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d0c/MAX7219SevenSegmentDisplay_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d5/d0c/MAX7219SevenSegmentDisplay_8hpp_source.html">MAX7219SevenSegmentDisplay.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae4232768a06465fd80247d5521039102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4232768a06465fd80247d5521039102">&#9670;&nbsp;</a></span>MCP23017Encoders_lut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static int8_t MCP23017Encoders_lut[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0,  </div>
+<div class="line">    +1, </div>
+<div class="line">    -1, </div>
+<div class="line">    +2, </div>
+<div class="line">    -1, </div>
+<div class="line">    0,  </div>
+<div class="line">    -2, </div>
+<div class="line">    +1, </div>
+<div class="line">    +1, </div>
+<div class="line">    -2, </div>
+<div class="line">    0,  </div>
+<div class="line">    -1, </div>
+<div class="line">    +2, </div>
+<div class="line">    -1, </div>
+<div class="line">    +1, </div>
+<div class="line">    0,  </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>

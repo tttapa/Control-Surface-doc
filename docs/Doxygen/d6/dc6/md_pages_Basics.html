@@ -76,17 +76,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md242">MIDI Addresses</a><ul><li class="level2"><a href="#autotoc_md243">Address fields</a></li>
-<li class="level2"><a href="#autotoc_md244">Creating a MIDI address variable</a></li>
-<li class="level2"><a href="#autotoc_md245">Passing MIDI Addresses to MIDI Elements</a></li>
+<ul><li class="level1"><a href="#autotoc_md249">MIDI Addresses</a><ul><li class="level2"><a href="#autotoc_md250">Address fields</a></li>
+<li class="level2"><a href="#autotoc_md251">Creating a MIDI address variable</a></li>
+<li class="level2"><a href="#autotoc_md252">Passing MIDI Addresses to MIDI Elements</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md242"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md249"></a>
 MIDI Addresses</h1>
 <p>All MIDI Input and Output Elements use MIDI addresses that determine the addresses of the MIDI messages they listen for, and the addresses of the messages they send.</p>
-<h2><a class="anchor" id="autotoc_md243"></a>
+<h2><a class="anchor" id="autotoc_md250"></a>
 Address fields</h2>
 <p>The MIDI addresses used by the library have three different fields:</p>
 <ul>
@@ -96,7 +96,7 @@ Address fields</h2>
 </ul>
 <p>The MIDI USB Cable Number is only used on boards that have support for multiple virtual MIDI cables over a single USB connection. As far as I know, only Teensies support this. USB-capable boards that use the MIDIUSB library do not support multiple MIDI cables. <br  />
  Serial (5-pin DIN) MIDI and MIDI over Bluetooth LE have no notion of cables.</p>
-<h2><a class="anchor" id="autotoc_md244"></a>
+<h2><a class="anchor" id="autotoc_md251"></a>
 Creating a MIDI address variable</h2>
 <p>The data type for MIDI addresses is <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>. Click the link in the previous sentence, and have a look at the documentation. If you scroll down to the <em>Constructors</em> section, you'll see that there are different ways to create a <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>. <br  />
  This is the most important one:</p>
@@ -122,7 +122,7 @@ Creating a MIDI address variable</h2>
 <div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="../../d7/d78/namespaceMIDI__Notes.html">MIDI_Notes</a>;</div>
 <div class="line"><span class="comment">// MIDI Note middle C (C in the fourth octave) on MIDI Channel 16:</span></div>
 <div class="line"><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = {<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#a559f01ec7251fdc9c5a5bc0e26b97372">note</a>(<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#aa62045215ec21ab7da02f2f1868ea7b0">C</a>, 4), <a class="code" href="../../d7/d42/Channel_8hpp.html#ae585d21b73ab00128a688bc2ea5cb9be">CHANNEL_16</a>};</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md245"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md252"></a>
 Passing MIDI Addresses to MIDI Elements</h2>
 <p>Almost all <a class="el" href="../../d7/dcd/group__MIDIOutputElements.html">MIDI Output Elements</a> and <a class="el" href="../../df/d8b/group__MIDIInputElements.html">MIDI Input Elements</a> take a <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> as a parameter. Initializing the address is very similar to the initialization introduced in the previous section: if you only want to specify the address, just pass it as a parameter, if you want to specify the channel or cable number as well, add a pair of curly braces around it.</p>
 <p>For example: </p><div class="fragment"><div class="line"><span class="comment">// Controller 16 on channel 1 and cable 0:</span></div>
@@ -145,7 +145,7 @@ Passing MIDI Addresses to MIDI Elements</h2>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <div class="ttc" id="aclassChannel_html"><div class="ttname"><a href="../../d2/d48/classChannel.html">Channel</a></div><div class="ttdoc">A type-safe class for MIDI channels.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00013">Channel.hpp:13</a></div></div>
-<div class="ttc" id="aclassMIDIAddress_html"><div class="ttname"><a href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></div><div class="ttdoc">A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd6/MIDIAddress_8hpp_source.html#l00089">MIDIAddress.hpp:89</a></div></div>
+<div class="ttc" id="aclassMIDIAddress_html"><div class="ttname"><a href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></div><div class="ttdoc">A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd6/MIDIAddress_8hpp_source.html#l00088">MIDIAddress.hpp:88</a></div></div>
 <div class="ttc" id="aChannel_8hpp_html_ae585d21b73ab00128a688bc2ea5cb9be"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#ae585d21b73ab00128a688bc2ea5cb9be">CHANNEL_16</a></div><div class="ttdeci">constexpr Channel CHANNEL_16</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00126">Channel.hpp:126</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_a559f01ec7251fdc9c5a5bc0e26b97372"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#a559f01ec7251fdc9c5a5bc0e26b97372">MIDI_Notes::note</a></div><div class="ttdeci">constexpr int8_t note(int8_t note, int8_t numOctave)</div><div class="ttdoc">Get the MIDI note in the given octave.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00035">Notes.hpp:35</a></div></div>
 <div class="ttc" id="anamespaceMIDI__CC_html_a6eb9900d522be13f07efce201817046d"><div class="ttname"><a href="../../d4/dbe/namespaceMIDI__CC.html#a6eb9900d522be13f07efce201817046d">MIDI_CC::General_Purpose_Controller_1</a></div><div class="ttdeci">constexpr uint8_t General_Purpose_Controller_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d43/Control__Change_8hpp_source.html#l00032">Control_Change.hpp:32</a></div></div>

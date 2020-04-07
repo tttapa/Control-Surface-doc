@@ -98,7 +98,9 @@ Behavior</h2>
 <div class="line"><span class="keyword">using namespace </span>ExtIO; <span class="comment">// Bring the ExtIO pin functions into your sketch</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MAX7219 with the SPI slave select pin as latch pin</span></div>
-<div class="line">MAX7219 max7219 = SS;</div>
+<div class="line"><span class="comment">// There&#39;s just 1 MAX7219 in the chain, if you have more of them daisy-chained</span></div>
+<div class="line"><span class="comment">// together, you can increase the template argument (between angled brackets)</span></div>
+<div class="line">MAX7219&lt;1&gt; max7219 = SS;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">const</span> <a name="a0"></a><a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin1 = max7219.pin(0);  <span class="comment">// first LED of the MAX7219</span></div>
 <div class="line"><span class="keyword">const</span> <a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin2 = max7219.pin(63); <span class="comment">// last LED of the MAX7219</span></div>
