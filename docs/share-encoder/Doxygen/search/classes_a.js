@@ -75,6 +75,6 @@ var searchData=
   ['midiinputelementnote_2577',['MIDIInputElementNote',['../db/d4b/classMIDIInputElementNote.html',1,'']]],
   ['midiinputelementpc_2578',['MIDIInputElementPC',['../db/d1d/classMIDIInputElementPC.html',1,'']]],
   ['midiinputelementsysex_2579',['MIDIInputElementSysEx',['../dc/def/classMIDIInputElementSysEx.html',1,'']]],
-  ['motorfader_2580',['MotorFader',['../d1/d0f/structMotorFader.html',1,'']]],
+  ['motorfader_2580',['MotorFader',['../d0/d4e/Def_8hpp.html#d1/d0f/structMotorFader',1,'']]],
   ['movingcoilballistics_2581',['MovingCoilBallistics',['../d0/d49/classMovingCoilBallistics.html',1,'']]]
 ];

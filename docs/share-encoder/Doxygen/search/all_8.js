@@ -28,7 +28,7 @@ var searchData=
   ['incrementselectorleds_1108',['IncrementSelectorLEDs',['../dc/df8/classIncrementSelectorLEDs.html',1,'IncrementSelectorLEDs&lt; N &gt;'],['../dc/df8/classIncrementSelectorLEDs.html#abfba73321e3f10c458abd4a8e1a1a67e',1,'IncrementSelectorLEDs::IncrementSelectorLEDs()']]],
   ['index_1109',['index',['../d0/d89/classBluetoothMIDI__Interface.html#a3f42f10d93f6edb91d7d3f6edad25921',1,'BluetoothMIDI_Interface::index()'],['../d3/da5/structMIDI__PipeFactory.html#a3f42f10d93f6edb91d7d3f6edad25921',1,'MIDI_PipeFactory::index()']]],
   ['index_5fpermuter_5ff_1110',['index_permuter_f',['../d7/d9b/FastLED_8hpp.html#ab738b6e901f219f0f3b35e24378333a3',1,'FastLED.hpp']]],
-  ['indexmask_1111',['IndexMask',['../db/dc2/structAH_1_1MAX7219_1_1IndexMask.html',1,'AH::MAX7219']]],
+  ['indexmask_1111',['IndexMask',['../de/de9/classAH_1_1MAX7219.html#db/dc2/structAH_1_1MAX7219_1_1IndexMask',1,'AH::MAX7219']]],
   ['init_1112',['init',['../dd/de5/classAH_1_1MAX7219__Base.html#a02fd73d861ef2e4aabb38c0c9ff82947',1,'AH::MAX7219_Base']]],
   ['initial_1113',['Initial',['../d7/d83/classAH_1_1IncrementButton.html#a06fc87d81c62e9abb8790b6e5713c55ba3392b59c8aa0ec56670fbcd5638cbfde',1,'AH::IncrementButton::Initial()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#adf764cbdea00d65edcd07bb9953ad2b7a3392b59c8aa0ec56670fbcd5638cbfde',1,'AH::IncrementDecrementButtons::Initial()']]],
   ['initialselection_1114',['initialSelection',['../de/de7/classSelectable.html#a26aceed3b6dca909adbde6b4a6257240',1,'Selectable']]],

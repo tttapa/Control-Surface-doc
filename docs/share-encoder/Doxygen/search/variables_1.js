@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b_3856',['B',['../d7/dc2/structEncoderSwitchPinList.html#a7c7fb36d372d349a62c14f1e6c7337ea',1,'EncoderSwitchPinList::B()'],['../dc/d81/structEncoderPinList.html#a7c7fb36d372d349a62c14f1e6c7337ea',1,'EncoderPinList::B()'],['../d0/da2/structColor.html#a4313c9563516f94387762ab05763456b',1,'Color::b()'],['../d7/d78/namespaceMIDI__Notes.html#a3c6b95dc53a090d25397a58fb92766b0',1,'MIDI_Notes::B()']]],
+  ['b_3856',['B',['../d7/dc2/structEncoderSwitchPinList.html#a7c7fb36d372d349a62c14f1e6c7337ea',1,'EncoderSwitchPinList::B()'],['../d0/d4e/Def_8hpp.html#a7c7fb36d372d349a62c14f1e6c7337ea',1,'EncoderPinList::B()'],['../d0/da2/structColor.html#a4313c9563516f94387762ab05763456b',1,'Color::b()'],['../d7/d78/namespaceMIDI__Notes.html#a3c6b95dc53a090d25397a58fb92766b0',1,'MIDI_Notes::B()']]],
   ['bag_5fpipe_3857',['Bag_Pipe',['../da/da6/namespaceMIDI__PC.html#ae07861edb5a396387b320b50b52b954e',1,'MIDI_PC']]],
   ['balance_3858',['Balance',['../d4/dbe/namespaceMIDI__CC.html#af48fd994da6e0c33d6b880c0ea209316',1,'MIDI_CC']]],
   ['balance_5flsb_3859',['Balance_LSB',['../d4/dbe/namespaceMIDI__CC.html#aaef3f2cbe83e07bc8a74e1744e3875f9',1,'MIDI_CC']]],

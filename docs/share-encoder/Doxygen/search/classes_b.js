@@ -2,7 +2,7 @@ var searchData=
 [
   ['node_5fiterator_2582',['node_iterator',['../dd/d02/classDoublyLinkedList_1_1node__iterator.html',1,'DoublyLinkedList']]],
   ['node_5fiterator_5fbase_2583',['node_iterator_base',['../db/d52/classDoublyLinkedList_1_1node__iterator__base.html',1,'DoublyLinkedList']]],
-  ['normalupdatable_2584',['NormalUpdatable',['../d7/dbc/structAH_1_1NormalUpdatable.html',1,'AH']]],
+  ['normalupdatable_2584',['NormalUpdatable',['../dc/d69/namespaceAH.html#d7/dbc/structAH_1_1NormalUpdatable',1,'AH']]],
   ['notebitmapdisplay_2585',['NoteBitmapDisplay',['../de/dc5/classNoteBitmapDisplay.html',1,'']]],
   ['notebutton_2586',['NoteButton',['../de/d36/classBankable_1_1NoteButton.html',1,'NoteButton'],['../d1/d9f/classNoteButton.html',1,'NoteButton'],['../d2/d33/classBankable_1_1ManyAddresses_1_1NoteButton.html',1,'NoteButton&lt; NumBanks &gt;']]],
   ['notebuttonlatched_2587',['NoteButtonLatched',['../d2/dbf/classBankable_1_1NoteButtonLatched.html',1,'NoteButtonLatched&lt; NumBanks &gt;'],['../de/def/classNoteButtonLatched.html',1,'NoteButtonLatched']]],

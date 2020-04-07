@@ -3,7 +3,7 @@ var searchData=
   ['defaultcolormapper_2364',['DefaultColorMapper',['../d8/dc6/structDefaultColorMapper.html',1,'']]],
   ['digitalccsender_2365',['DigitalCCSender',['../d5/db5/classDigitalCCSender.html',1,'']]],
   ['digitalnotesender_2366',['DigitalNoteSender',['../dc/dd4/classDigitalNoteSender.html',1,'']]],
-  ['display_2367',['Display',['../d9/d11/structDisplay.html',1,'']]],
+  ['display_2367',['Display',['../d0/d4e/Def_8hpp.html#d9/d11/structDisplay',1,'']]],
   ['displayelement_2368',['DisplayElement',['../d8/d43/classDisplayElement.html',1,'']]],
   ['displayinterface_2369',['DisplayInterface',['../df/d42/classDisplayInterface.html',1,'']]],
   ['dotbardisplayleds_2370',['DotBarDisplayLEDs',['../d9/d89/classAH_1_1DotBarDisplayLEDs.html',1,'AH']]],

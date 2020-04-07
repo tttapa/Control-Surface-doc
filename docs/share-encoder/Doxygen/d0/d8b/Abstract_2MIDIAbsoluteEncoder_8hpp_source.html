@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html#a84c884a340af4203f30e8dded67db478">Enc_t</a> encval = encoder.read();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// If Enc_t is an unsigned type, integer overflow is well-defined, which</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// is what we want when Enc_t is small and expected to overflow.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// However, we need it to be signed because we&#39;re interrested  in the</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// However, we need it to be signed because we&#39;re interested  in the</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// delta.</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        int16_t delta = <a class="code" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html#acd66cbb5100f17bc2fa8a48f111ea747">SignedEnc_t</a>(<a class="code" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html#a84c884a340af4203f30e8dded67db478">Enc_t</a>(encval - deltaOffset));</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        delta = delta * multiplier / pulsesPerStep;</div>
@@ -158,7 +158,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassMIDIAddress_html"><div class="ttname"><a href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></div><div class="ttdoc">A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd6/MIDIAddress_8hpp_source.html#l00089">MIDIAddress.hpp:89</a></div></div>
+<div class="ttc" id="aclassMIDIAddress_html"><div class="ttname"><a href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></div><div class="ttdoc">A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd6/MIDIAddress_8hpp_source.html#l00088">MIDIAddress.hpp:88</a></div></div>
 <div class="ttc" id="aclassAH_1_1Updatable_html"><div class="ttname"><a href="../../d1/d55/classAH_1_1Updatable.html">AH::Updatable&lt;&gt;</a></div></div>
 <div class="ttc" id="aMIDIOutputElement_8hpp_html"><div class="ttname"><a href="../../d1/d41/MIDIOutputElement_8hpp.html">MIDIOutputElement.hpp</a></div></div>
 <div class="ttc" id="aDef_8hpp_html"><div class="ttname"><a href="../../d0/d4e/Def_8hpp.html">Def.hpp</a></div></div>
