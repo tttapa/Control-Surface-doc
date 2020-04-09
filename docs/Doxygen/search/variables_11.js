@@ -47,7 +47,7 @@ var searchData=
   ['solo_5f4_4483',['SOLO_4',['../de/d44/group__MCU__Notes.html#gaa6caf8dd7e520deb577ab5e942a9f0e8',1,'MCU']]],
   ['solo_5f5_4484',['SOLO_5',['../de/d44/group__MCU__Notes.html#gaa9970b0ad33ebfb4ecd38b35075f34c4',1,'MCU']]],
   ['solo_5f6_4485',['SOLO_6',['../de/d44/group__MCU__Notes.html#ga5de1fc19ade67972e902bbfd6ab4c556',1,'MCU']]],
-  ['solo_5f7_4486',['SOLO_7',['../de/d44/group__MCU__Notes.html#gab97ad947f9917958613e319da2b04aba',1,'MCU::SOLO_7()'],['../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63',1,'XBM::solo_7()']]],
+  ['solo_5f7_4486',['solo_7',['../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63',1,'XBM::solo_7()'],['../de/d44/group__MCU__Notes.html#gab97ad947f9917958613e319da2b04aba',1,'MCU::SOLO_7()']]],
   ['solo_5f8_4487',['SOLO_8',['../de/d44/group__MCU__Notes.html#gaa0e5027ceb7ad42ea4de1def2747291a',1,'MCU']]],
   ['soprano_5fsax_4488',['Soprano_Sax',['../da/da6/namespaceMIDI__PC.html#aa19d0bf6cde94164038eee1b21b7fbcb',1,'MIDI_PC']]],
   ['sostenuto_4489',['Sostenuto',['../d4/dbe/namespaceMIDI__CC.html#a1a2de89480ae964811489376a65045af',1,'MIDI_CC']]],

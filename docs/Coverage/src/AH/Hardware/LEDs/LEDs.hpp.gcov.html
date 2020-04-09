@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 07bcc04eb9c8738484881b6d57b9aa4c81550000 - src/AH/Hardware/LEDs/LEDs.hpp</title>
+  <title>LCOV - d9f3e6454d2725ef2ecd55e36f16c1016e0834ad - src/AH/Hardware/LEDs/LEDs.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">07bcc04eb9c8738484881b6d57b9aa4c81550000</td>
+            <td class="headerValue">d9f3e6454d2725ef2ecd55e36f16c1016e0834ad</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">23</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-03-25 02:29:58</td>
+            <td class="headerValue">2020-04-09 13:13:38</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">16</td>
@@ -115,26 +115,26 @@
 <a name="45"><span class="lineNum">      45 </span>            :      * @param   startOff</a>
 <a name="46"><span class="lineNum">      46 </span>            :      *          The first LED after the range to turn off.</a>
 <a name="47"><span class="lineNum">      47 </span>            :      */</a>
-<a name="48"><span class="lineNum">      48 </span><span class="lineCov">          7 :     void displayRange(uint8_t startOn, uint8_t startOff) const {</span></a>
-<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         12 :         for (uint8_t pin = 0; pin &lt; startOn; pin++)</span></a>
-<a name="50"><span class="lineNum">      50 </span><span class="lineCov">          5 :             clear(pin);</span></a>
-<a name="51"><span class="lineNum">      51 </span><span class="lineCov">         27 :         for (uint8_t pin = startOn; pin &lt; startOff; pin++)</span></a>
-<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         20 :             set(pin);</span></a>
-<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         17 :         for (uint8_t pin = startOff; pin &lt; N; pin++)</span></a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         10 :             clear(pin);</span></a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">          7 :     }</span></a>
+<a name="48"><span class="lineNum">      48 </span><span class="lineCov">          8 :     void displayRange(uint8_t startOn, uint8_t startOff) const {</span></a>
+<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         14 :         for (uint8_t pin = 0; pin &lt; startOn; pin++)</span></a>
+<a name="50"><span class="lineNum">      50 </span><span class="lineCov">          6 :             clear(pin);</span></a>
+<a name="51"><span class="lineNum">      51 </span><span class="lineCov">         33 :         for (uint8_t pin = startOn; pin &lt; startOff; pin++)</span></a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         25 :             set(pin);</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         23 :         for (uint8_t pin = startOff; pin &lt; N; pin++)</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         15 :             clear(pin);</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">          8 :     }</span></a>
 <a name="56"><span class="lineNum">      56 </span>            : </a>
 <a name="57"><span class="lineNum">      57 </span>            :     /// Turn on the given LED.</a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         20 :     void set(uint8_t index) const {</span></a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         25 :     void set(uint8_t index) const {</span></a>
 <a name="59"><span class="lineNum">      59 </span>            :         // TODO: bounds check?</a>
-<a name="60"><span class="lineNum">      60 </span><span class="lineCov">         20 :         ExtIO::digitalWrite(ledPins[index], HIGH);</span></a>
-<a name="61"><span class="lineNum">      61 </span><span class="lineCov">         20 :     }</span></a>
+<a name="60"><span class="lineNum">      60 </span><span class="lineCov">         25 :         ExtIO::digitalWrite(ledPins[index], HIGH);</span></a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">         25 :     }</span></a>
 <a name="62"><span class="lineNum">      62 </span>            : </a>
 <a name="63"><span class="lineNum">      63 </span>            :     /// Turn off the given LED.</a>
-<a name="64"><span class="lineNum">      64 </span><span class="lineCov">         15 :     void clear(uint8_t index) const {</span></a>
+<a name="64"><span class="lineNum">      64 </span><span class="lineCov">         21 :     void clear(uint8_t index) const {</span></a>
 <a name="65"><span class="lineNum">      65 </span>            :         // TODO: bounds check?</a>
-<a name="66"><span class="lineNum">      66 </span><span class="lineCov">         15 :         ExtIO::digitalWrite(ledPins[index], LOW);</span></a>
-<a name="67"><span class="lineNum">      67 </span><span class="lineCov">         15 :     }</span></a>
+<a name="66"><span class="lineNum">      66 </span><span class="lineCov">         21 :         ExtIO::digitalWrite(ledPins[index], LOW);</span></a>
+<a name="67"><span class="lineNum">      67 </span><span class="lineCov">         21 :     }</span></a>
 <a name="68"><span class="lineNum">      68 </span>            : </a>
 <a name="69"><span class="lineNum">      69 </span>            :     /**</a>
 <a name="70"><span class="lineNum">      70 </span>            :      * @brief   Turn on a single LED, and turn off all others.</a>

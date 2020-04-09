@@ -74,7 +74,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
@@ -91,15 +90,19 @@ $(function() {
  <a href="../../de/d05/classUSBMIDI__Interface.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">MIDI_Interfaces/USBMIDI_Interface.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for USBMIDI_Interface:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for USBMIDI_Interface:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d49/classUSBMIDI__Interface__inherit__graph.svg" width="780" height="1932"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div class="dynheader">
-Collaboration diagram for USBMIDI_Interface:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for USBMIDI_Interface:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d88/classUSBMIDI__Interface__coll__graph.svg" width="1706" height="2879"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -115,18 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aafe7efc7a3a32a0e72c67e9afdc1155c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../de/d05/classUSBMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.">USBMIDI_Interface</a>.  <a href="../../de/d05/classUSBMIDI__Interface.html#aafe7efc7a3a32a0e72c67e9afdc1155c">More...</a><br /></td></tr>
 <tr class="separator:aafe7efc7a3a32a0e72c67e9afdc1155c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affcc427b9bb13e071af32bc8764e02c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968">MIDI_read_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d05/classUSBMIDI__Interface.html#affcc427b9bb13e071af32bc8764e02c9">read</a> () override</td></tr>
+<tr class="memdesc:affcc427b9bb13e071af32bc8764e02c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try reading and parsing a single incoming MIDI message.  <a href="../../de/d05/classUSBMIDI__Interface.html#affcc427b9bb13e071af32bc8764e02c9">More...</a><br /></td></tr>
 <tr class="separator:affcc427b9bb13e071af32bc8764e02c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac56f005ff5d56006222c501a90b3e0f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d0c/classMIDI__Parser.html">MIDI_Parser</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#ac56f005ff5d56006222c501a90b3e0f3">getParser</a> ()</td></tr>
-<tr class="separator:ac56f005ff5d56006222c501a90b3e0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d3d4a62a5a5eb5539cf26545f3f98e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#a6d3d4a62a5a5eb5539cf26545f3f98e8">getChannelMessage</a> ()</td></tr>
-<tr class="memdesc:a6d3d4a62a5a5eb5539cf26545f3f98e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the received channel message.  <a href="../../de/d76/classParsing__MIDI__Interface.html#a6d3d4a62a5a5eb5539cf26545f3f98e8">More...</a><br /></td></tr>
-<tr class="separator:a6d3d4a62a5a5eb5539cf26545f3f98e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a623951f55462fb1a5925252ac1c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#ae3a623951f55462fb1a5925252ac1c55">getSysExMessage</a> () const</td></tr>
-<tr class="memdesc:ae3a623951f55462fb1a5925252ac1c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the received system exclusive message.  <a href="../../de/d76/classParsing__MIDI__Interface.html#ae3a623951f55462fb1a5925252ac1c55">More...</a><br /></td></tr>
-<tr class="separator:ae3a623951f55462fb1a5925252ac1c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f9a8b6f1b9c41f185e63bc96c30cad8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#a9f9a8b6f1b9c41f185e63bc96c30cad8">getCN</a> () const</td></tr>
-<tr class="memdesc:a9f9a8b6f1b9c41f185e63bc96c30cad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the cable number of the received message.  <a href="../../de/d76/classParsing__MIDI__Interface.html#a9f9a8b6f1b9c41f185e63bc96c30cad8">More...</a><br /></td></tr>
-<tr class="separator:a9f9a8b6f1b9c41f185e63bc96c30cad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
 <tr class="memdesc:a44137bb65de2396875934e48a6ee5099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the MIDI interface and call the callback if a message is received.  <a href="../../de/d76/classParsing__MIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">More...</a><br /></td></tr>
 <tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,21 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90b1f0aca693974947f35d75360a1c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">setCallbacks</a> (<a class="el" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> &amp;cb)</td></tr>
 <tr class="memdesc:a90b1f0aca693974947f35d75360a1c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks that will be called when a MIDI message is received.  <a href="../../de/d76/classParsing__MIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">More...</a><br /></td></tr>
 <tr class="separator:a90b1f0aca693974947f35d75360a1c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90b1f0aca693974947f35d75360a1c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">setCallbacks</a> (<a class="el" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> &amp;cb)</td></tr>
-<tr class="memdesc:a90b1f0aca693974947f35d75360a1c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks that will be called when a MIDI message is received.  <a href="../../d9/d73/classMIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">More...</a><br /></td></tr>
-<tr class="separator:a90b1f0aca693974947f35d75360a1c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
 <tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the MIDI Interface.  <a href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">More...</a><br /></td></tr>
 <tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a922dd87d272bb2be2771c43ac974481a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">setAsDefault</a> ()</td></tr>
-<tr class="memdesc:a922dd87d272bb2be2771c43ac974481a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this MIDI interface as the default interface.  <a href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">More...</a><br /></td></tr>
-<tr class="separator:a922dd87d272bb2be2771c43ac974481a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aea39e2d359376a21ff1a490b2e0b5f22"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#aea39e2d359376a21ff1a490b2e0b5f22">getDefault</a> ()</td></tr>
-<tr class="memdesc:aea39e2d359376a21ff1a490b2e0b5f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default MIDI interface.  <a href="../../d9/d73/classMIDI__Interface.html#aea39e2d359376a21ff1a490b2e0b5f22">More...</a><br /></td></tr>
-<tr class="separator:aea39e2d359376a21ff1a490b2e0b5f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -337,6 +318,35 @@ Sending MIDI</h2></td></tr>
 <tr class="separator:aa63ceff76120b727638f3f85e7cdc416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Default MIDI Interfaces</h2></td></tr>
+<tr class="memitem:a922dd87d272bb2be2771c43ac974481a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">setAsDefault</a> ()</td></tr>
+<tr class="memdesc:a922dd87d272bb2be2771c43ac974481a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this MIDI interface as the default interface.  <a href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">More...</a><br /></td></tr>
+<tr class="separator:a922dd87d272bb2be2771c43ac974481a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea39e2d359376a21ff1a490b2e0b5f22"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#aea39e2d359376a21ff1a490b2e0b5f22">getDefault</a> ()</td></tr>
+<tr class="memdesc:aea39e2d359376a21ff1a490b2e0b5f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default MIDI interface.  <a href="../../d9/d73/classMIDI__Interface.html#aea39e2d359376a21ff1a490b2e0b5f22">More...</a><br /></td></tr>
+<tr class="separator:aea39e2d359376a21ff1a490b2e0b5f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+MIDI Input Callbacks</h2></td></tr>
+<tr class="memitem:a90b1f0aca693974947f35d75360a1c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">setCallbacks</a> (<a class="el" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> &amp;cb)</td></tr>
+<tr class="memdesc:a90b1f0aca693974947f35d75360a1c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks that will be called when a MIDI message is received.  <a href="../../d9/d73/classMIDI__Interface.html#a90b1f0aca693974947f35d75360a1c08">More...</a><br /></td></tr>
+<tr class="separator:a90b1f0aca693974947f35d75360a1c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Parsing MIDI Input</h2></td></tr>
+<tr class="memitem:ac56f005ff5d56006222c501a90b3e0f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d0c/classMIDI__Parser.html">MIDI_Parser</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#ac56f005ff5d56006222c501a90b3e0f3">getParser</a> ()</td></tr>
+<tr class="separator:ac56f005ff5d56006222c501a90b3e0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d3d4a62a5a5eb5539cf26545f3f98e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#a6d3d4a62a5a5eb5539cf26545f3f98e8">getChannelMessage</a> ()</td></tr>
+<tr class="memdesc:a6d3d4a62a5a5eb5539cf26545f3f98e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the received channel message.  <a href="../../de/d76/classParsing__MIDI__Interface.html#a6d3d4a62a5a5eb5539cf26545f3f98e8">More...</a><br /></td></tr>
+<tr class="separator:a6d3d4a62a5a5eb5539cf26545f3f98e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a623951f55462fb1a5925252ac1c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#ae3a623951f55462fb1a5925252ac1c55">getSysExMessage</a> () const</td></tr>
+<tr class="memdesc:ae3a623951f55462fb1a5925252ac1c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the received system exclusive message.  <a href="../../de/d76/classParsing__MIDI__Interface.html#ae3a623951f55462fb1a5925252ac1c55">More...</a><br /></td></tr>
+<tr class="separator:ae3a623951f55462fb1a5925252ac1c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9a8b6f1b9c41f185e63bc96c30cad8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#a9f9a8b6f1b9c41f185e63bc96c30cad8">getCN</a> () const</td></tr>
+<tr class="memdesc:a9f9a8b6f1b9c41f185e63bc96c30cad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the cable number of the received message.  <a href="../../de/d76/classParsing__MIDI__Interface.html#a9f9a8b6f1b9c41f185e63bc96c30cad8">More...</a><br /></td></tr>
+<tr class="separator:a9f9a8b6f1b9c41f185e63bc96c30cad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Connecting and disconnecting MIDI Pipes</h2></td></tr>
 <tr class="memitem:a094b2e4e26d211243f5f44a66fdb8648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/classMIDI__Sink.html#a094b2e4e26d211243f5f44a66fdb8648">connectSourcePipe</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *source)</td></tr>
 <tr class="memdesc:a094b2e4e26d211243f5f44a66fdb8648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fully connect a source pipe to this sink.  <a href="../../d9/db6/classMIDI__Sink.html#a094b2e4e26d211243f5f44a66fdb8648">More...</a><br /></td></tr>
@@ -386,11 +396,13 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for MIDI interfaces sending MIDI messages over a USB MIDI connection. </p>
-<dl class="section note"><dt>Note</dt><dd>See the <a href="https://github.com/tttapa/MIDI_controller/wiki/MIDI-over-USB">MIDI over USB Wiki</a> for more information. </dd></dl>
+<p>On boards that support it, this will create a native MIDI over USB interface using the platform-specific libraries (e.g. MIDIUSB for Arduino Leonardo, or the Core usbMIDI library for Teensy). <br  />
+ On boards without native USB support, it'll fall back to a serial MIDI interface at the default <a class="el" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI baud rate</a> on the UART connected to the Serial to USB chip. This can be used with custom MIDI over USB firmware for the Serial to USB chip.</p>
+<dl class="section note"><dt>Note</dt><dd>See md_pages_MIDI_over_USB for more information. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d8/d59/1_8First-Output_8ino-example.html#_a0">1.First-Output.ino</a>, <a class="el" href="../../d8/d92/1_8Note-LED_8ino-example.html#_a0">1.Note-LED.ino</a>, <a class="el" href="../../d9/d6d/10_8Note-FastLED-ColorMapper_8ino-example.html#_a0">10.Note-FastLED-ColorMapper.ino</a>, <a class="el" href="../../d9/dcf/2_8First-Input_8ino-example.html#_a0">2.First-Input.ino</a>, <a class="el" href="../../dc/d90/2_8Note-Range-LEDs_8ino-example.html#_a0">2.Note-Range-LEDs.ino</a>, <a class="el" href="../../d9/df2/4_8VULEDs_8ino-example.html#_a0">4.VULEDs.ino</a>, <a class="el" href="../../dd/d76/5_8Note-LED-PWM_8ino-example.html#_a0">5.Note-LED-PWM.ino</a>, <a class="el" href="../../d6/d49/6_8MAX7219-NoteLED_8ino-example.html#_a0">6.MAX7219-NoteLED.ino</a>, <a class="el" href="../../d8/dd2/9_8Note-FastLED_8ino-example.html#_a0">9.Note-FastLED.ino</a>, <a class="el" href="../../d0/dcc/AbsoluteRotaryEncoder_8ino-example.html#_a0">AbsoluteRotaryEncoder.ino</a>, <a class="el" href="../../d0/d41/Bank-Button-Matrix_8ino-example.html#_a0">Bank-Button-Matrix.ino</a>, <a class="el" href="../../d0/d74/Bank_8ino-example.html#_a0">Bank.ino</a>, <a class="el" href="../../d9/d2e/CCButton_8ino-example.html#_a0">CCButton.ino</a>, <a class="el" href="../../da/d54/CCIncrementDecrementButtons_8ino-example.html#_a0">CCIncrementDecrementButtons.ino</a>, <a class="el" href="../../d3/d26/CCPotentiometer-Map_8ino-example.html#_a0">CCPotentiometer-Map.ino</a>, <a class="el" href="../../de/de4/Control-Change-Potentiometer_8ino-example.html#_a0">Control-Change-Potentiometer.ino</a>, <a class="el" href="../../d4/d3b/Custom-MIDI-Output-Element_8ino-example.html#_a13">Custom-MIDI-Output-Element.ino</a>, <a class="el" href="../../d2/d85/Custom-Note-LED-Input-Element-Callback-FastLED_8ino-example.html#_a0">Custom-Note-LED-Input-Element-Callback-FastLED.ino</a>, <a class="el" href="../../dd/da5/Custom-Note-LED-Input-Element-Callback_8ino-example.html#_a0">Custom-Note-LED-Input-Element-Callback.ino</a>, <a class="el" href="../../d8/d4b/Custom-Selector-Callback_8ino-example.html#_a6">Custom-Selector-Callback.ino</a>, <a class="el" href="../../d5/da5/Dual-MIDI-Interface_8ino-example.html#_a0">Dual-MIDI-Interface.ino</a>, <a class="el" href="../../d1/da6/Encoder-Selector-Bank_8ino-example.html#_a0">Encoder-Selector-Bank.ino</a>, <a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#_a0">Mackie-Control-Universal-Reverse-Engineering.ino</a>, <a class="el" href="../../dc/db4/ManyAddressesPCButton_8ino-example.html#_a0">ManyAddressesPCButton.ino</a>, <a class="el" href="../../dc/d86/MCU-OLED-SSD1306-MEGA_8ino-example.html#_a0">MCU-OLED-SSD1306-MEGA.ino</a>, <a class="el" href="../../d0/d84/MCU-OLED-SSD1306-x2_8ino-example.html#_a0">MCU-OLED-SSD1306-x2.ino</a>, <a class="el" href="../../dd/d42/MCU-OLED-SSD1306_8ino-example.html#_a0">MCU-OLED-SSD1306.ino</a>, <a class="el" href="../../d9/d9d/MIDI-Controller-Finished-Example_8ino-example.html#_a0">MIDI-Controller-Finished-Example.ino</a>, <a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#_a0">MIDI-Input-Callback.ino</a>, <a class="el" href="../../dc/d3b/MIDI-Note-Callback-IR_8ino-example.html#_a0">MIDI-Note-Callback-IR.ino</a>, <a class="el" href="../../de/d26/MIDI_controller-97_8ino-example.html#_a0">MIDI_controller-97.ino</a>, <a class="el" href="../../d0/dc4/MIDI_Pipes-Routing_8ino-example.html#_a0">MIDI_Pipes-Routing.ino</a>, <a class="el" href="../../d3/d8d/Multiple-Control-Change-Potentiometers_8ino-example.html#_a0">Multiple-Control-Change-Potentiometers.ino</a>, <a class="el" href="../../de/dcc/NoteButton_8ino-example.html#_a0">NoteButton.ino</a>, <a class="el" href="../../d4/d53/NoteButtonMatrix_8ino-example.html#_a0">NoteButtonMatrix.ino</a>, <a class="el" href="../../da/d61/PCButton_8ino-example.html#_a0">PCButton.ino</a>, <a class="el" href="../../d3/d4e/Pitch-Bend-Potentiometer_8ino-example.html#_a0">Pitch-Bend-Potentiometer.ino</a>, <a class="el" href="../../d9/d7f/Program-Changer_8ino-example.html#_a0">Program-Changer.ino</a>, <a class="el" href="../../d2/d1f/RotaryEncoder_8ino-example.html#_a0">RotaryEncoder.ino</a>, <a class="el" href="../../d7/d8d/Send-MIDI-Notes_8ino-example.html#_a0">Send-MIDI-Notes.ino</a>, <a class="el" href="../../d2/d93/SysEx-Send-Receive_8ino-example.html#_a0">SysEx-Send-Receive.ino</a>, <a class="el" href="../../db/d5c/Transpose-Octave-NC-Button_8ino-example.html#_a0">Transpose-Octave-NC-Button.ino</a>, and <a class="el" href="../../da/d2d/Transposer_8ino-example.html#_a0">Transposer.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a8353b3c401b43a9977c8d88aed620c68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8353b3c401b43a9977c8d88aed620c68">&#9670;&nbsp;</a></span>MIDIUSBPacket_t</h2>
@@ -404,7 +416,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -434,7 +446,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 
 <p>Construct a new <a class="el" href="../../de/d05/classUSBMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.">USBMIDI_Interface</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00040">40</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00046">46</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -491,7 +503,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -518,7 +530,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +557,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -605,7 +617,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a84cb04f0f9145dc20a1449c6ad3d8b3d">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -659,7 +671,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#aa88f1734a5204be80207ce868a7408dc">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -707,7 +719,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#aeefaf12006508ab2024e84dabc3a09ad">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -749,7 +761,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a5ac73c9ee94437d16385110e250cf0a4">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -775,11 +787,13 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000030">Todo:</a></b></dt><dd>Documentation </dd></dl>
+
+<p>Try reading and parsing a single incoming MIDI message. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the type of the read message, or <a class="el" href="../../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968afcfbf42d4adcad6219734d45c640804e">NO_MESSAGE</a> if no MIDI message was available. </dd></dl>
 
 <p>Implements <a class="el" href="../../de/d76/classParsing__MIDI__Interface.html#a3a2e87a22f6dd05ba2df1298de7f723b">Parsing_MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -806,7 +820,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00231">231</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00241">241</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -968,7 +982,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d2/d93/SysEx-Send-Receive_8ino-example.html#a14">SysEx-Send-Receive.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00250">250</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00261">261</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1044,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00186">186</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1080,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00186">186</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -3099,7 +3113,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00051">51</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -3123,7 +3137,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00270">270</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00281">281</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -3147,7 +3161,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00271">271</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00282">282</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -3171,7 +3185,7 @@ Connecting and disconnecting MIDI Pipes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00212">212</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00220">220</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>

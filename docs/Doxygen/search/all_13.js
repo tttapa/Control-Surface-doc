@@ -14,7 +14,7 @@ var searchData=
   ['threshold_2046',['threshold',['../d5/ddd/classNoteCCLED.html#acebd8775c10986a082360135a65f7efe',1,'NoteCCLED']]],
   ['throughin_2047',['throughIn',['../df/d72/classMIDI__Pipe.html#ab1d2e016d842eb19ef4b1425db9cd9c8',1,'MIDI_Pipe']]],
   ['throughout_2048',['throughOut',['../df/d72/classMIDI__Pipe.html#a7d8956b13f7137c530afe7b8e39e1701',1,'MIDI_Pipe']]],
-  ['timedisplay_2049',['TimeDisplay',['../df/d69/classMCU_1_1TimeDisplay.html',1,'TimeDisplay'],['../d1/dc8/classMCU_1_1TimeDisplayDisplay.html#a5f931ddb31dc0e8066674582ffae29f5',1,'MCU::TimeDisplayDisplay::timedisplay()'],['../df/d69/classMCU_1_1TimeDisplay.html#ab6a607b1abfe4a4ac7853c9973aba444',1,'MCU::TimeDisplay::TimeDisplay()']]],
+  ['timedisplay_2049',['TimeDisplay',['../df/d69/classMCU_1_1TimeDisplay.html',1,'TimeDisplay'],['../df/d69/classMCU_1_1TimeDisplay.html#ab6a607b1abfe4a4ac7853c9973aba444',1,'MCU::TimeDisplay::TimeDisplay()'],['../d1/dc8/classMCU_1_1TimeDisplayDisplay.html#a5f931ddb31dc0e8066674582ffae29f5',1,'MCU::TimeDisplayDisplay::timedisplay()']]],
   ['timedisplay_2ecpp_2050',['TimeDisplay.cpp',['../d1/d55/TimeDisplay_8cpp.html',1,'']]],
   ['timedisplay_2ehpp_2051',['TimeDisplay.hpp',['../d9/dc9/TimeDisplay_8hpp.html',1,'']]],
   ['timedisplayaddress_2052',['TimeDisplayAddress',['../d7/dc7/namespaceMCU.html#ae6e49dac6064179ca993b88ea2b6100c',1,'MCU']]],
