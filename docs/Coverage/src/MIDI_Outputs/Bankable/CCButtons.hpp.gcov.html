@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d98773f64484d294454ed07bbe5ef9971a176a1a - src/MIDI_Outputs/Bankable/CCButtons.hpp</title>
+  <title>LCOV - ac372918071bd18f243ff77dd180a30d5a105fd2 - src/MIDI_Outputs/Bankable/CCButtons.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d98773f64484d294454ed07bbe5ef9971a176a1a</td>
+            <td class="headerValue">ac372918071bd18f243ff77dd180a30d5a105fd2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">4</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-09 13:20:37</td>
+            <td class="headerValue">2020-04-10 10:55:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -119,18 +119,17 @@
 <a name="49"><span class="lineNum">      49 </span>            :      * @param   sender</a>
 <a name="50"><span class="lineNum">      50 </span>            :      *          The MIDI sender to use.</a>
 <a name="51"><span class="lineNum">      51 </span>            :      */</a>
-<a name="52"><span class="lineNum">      52 </span><span class="lineCov">          3 :     CCButtons(const OutputBankConfig &amp;config,</span></a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">          3 :     CCButtons(OutputBankConfig&lt;&gt; config,</span></a>
 <a name="53"><span class="lineNum">      53 </span>            :               const Array&lt;AH::Button, NumButtons&gt; &amp;buttons,</a>
-<a name="54"><span class="lineNum">      54 </span>            :               const MIDIAddress &amp;baseAddress,</a>
-<a name="55"><span class="lineNum">      55 </span>            :               const RelativeMIDIAddress &amp;incrementAddress,</a>
-<a name="56"><span class="lineNum">      56 </span>            :               const DigitalCCSender &amp;sender = {})</a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">          3 :         : MIDIButtons&lt;SingleAddress, DigitalCCSender, NumButtons&gt;(</span></a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">          6 :               {config, baseAddress}, buttons, incrementAddress, sender) {}</span></a>
-<a name="59"><span class="lineNum">      59 </span>            : };</a>
-<a name="60"><span class="lineNum">      60 </span>            : </a>
-<a name="61"><span class="lineNum">      61 </span>            : } // namespace Bankable</a>
-<a name="62"><span class="lineNum">      62 </span>            : </a>
-<a name="63"><span class="lineNum">      63 </span>            : END_CS_NAMESPACE</a>
+<a name="54"><span class="lineNum">      54 </span>            :               MIDIAddress baseAddress, RelativeMIDIAddress incrementAddress,</a>
+<a name="55"><span class="lineNum">      55 </span>            :               const DigitalCCSender &amp;sender = {})</a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineCov">          3 :         : MIDIButtons&lt;SingleAddress, DigitalCCSender, NumButtons&gt;(</span></a>
+<a name="57"><span class="lineNum">      57 </span><span class="lineCov">          6 :               {config, baseAddress}, buttons, incrementAddress, sender) {}</span></a>
+<a name="58"><span class="lineNum">      58 </span>            : };</a>
+<a name="59"><span class="lineNum">      59 </span>            : </a>
+<a name="60"><span class="lineNum">      60 </span>            : } // namespace Bankable</a>
+<a name="61"><span class="lineNum">      61 </span>            : </a>
+<a name="62"><span class="lineNum">      62 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

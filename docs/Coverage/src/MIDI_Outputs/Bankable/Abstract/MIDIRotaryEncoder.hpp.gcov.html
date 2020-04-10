@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d98773f64484d294454ed07bbe5ef9971a176a1a - src/MIDI_Outputs/Bankable/Abstract/MIDIRotaryEncoder.hpp</title>
+  <title>LCOV - ac372918071bd18f243ff77dd180a30d5a105fd2 - src/MIDI_Outputs/Bankable/Abstract/MIDIRotaryEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d98773f64484d294454ed07bbe5ef9971a176a1a</td>
+            <td class="headerValue">ac372918071bd18f243ff77dd180a30d5a105fd2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">18</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-09 13:20:37</td>
+            <td class="headerValue">2020-04-10 10:55:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -97,7 +97,7 @@
 <a name="27"><span class="lineNum">      27 </span>            :      *</a>
 <a name="28"><span class="lineNum">      28 </span>            :      * @todo    Documentation</a>
 <a name="29"><span class="lineNum">      29 </span>            :      */</a>
-<a name="30"><span class="lineNum">      30 </span><span class="lineCov">          1 :     MIDIRotaryEncoder(const BankAddress &amp;bankAddress,</span></a>
+<a name="30"><span class="lineNum">      30 </span><span class="lineCov">          1 :     MIDIRotaryEncoder(BankAddress bankAddress,</span></a>
 <a name="31"><span class="lineNum">      31 </span>            :                       const EncoderPinList &amp;pins,</a>
 <a name="32"><span class="lineNum">      32 </span>            :                       uint8_t speedMultiply, uint8_t pulsesPerStep,</a>
 <a name="33"><span class="lineNum">      33 </span>            :                       const Sender &amp;sender)</a>
@@ -107,7 +107,7 @@
 <a name="37"><span class="lineNum">      37 </span>            : </a>
 <a name="38"><span class="lineNum">      38 </span>            : // For tests only</a>
 <a name="39"><span class="lineNum">      39 </span>            : #ifndef ARDUINO</a>
-<a name="40"><span class="lineNum">      40 </span><span class="lineCov">          1 :     MIDIRotaryEncoder(const BankAddress &amp;bankAddress, const Encoder &amp;encoder,</span></a>
+<a name="40"><span class="lineNum">      40 </span><span class="lineCov">          1 :     MIDIRotaryEncoder(BankAddress bankAddress, const Encoder &amp;encoder,</span></a>
 <a name="41"><span class="lineNum">      41 </span>            :                       uint8_t speedMultiply, uint8_t pulsesPerStep,</a>
 <a name="42"><span class="lineNum">      42 </span>            :                       const Sender &amp;sender)</a>
 <a name="43"><span class="lineNum">      43 </span><span class="lineCov">          1 :         : address(bankAddress), encoder{encoder}, </span></a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d98773f64484d294454ed07bbe5ef9971a176a1a - src/MIDI_Outputs/Bankable/CCButtonMatrix.hpp</title>
+  <title>LCOV - ac372918071bd18f243ff77dd180a30d5a105fd2 - src/MIDI_Outputs/Bankable/CCButtonMatrix.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d98773f64484d294454ed07bbe5ef9971a176a1a</td>
+            <td class="headerValue">ac372918071bd18f243ff77dd180a30d5a105fd2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">4</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-09 13:20:37</td>
+            <td class="headerValue">2020-04-10 10:55:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -126,19 +126,18 @@
 <a name="56"><span class="lineNum">      56 </span>            :      * @param   sender</a>
 <a name="57"><span class="lineNum">      57 </span>            :      *          The MIDI sender to use.</a>
 <a name="58"><span class="lineNum">      58 </span>            :      */</a>
-<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          1 :     CCButtonMatrix(const OutputBankConfig &amp;config,</span></a>
-<a name="60"><span class="lineNum">      60 </span>            :                    const PinList&lt;nb_rows&gt; &amp;rowPins,</a>
-<a name="61"><span class="lineNum">      61 </span>            :                    const PinList&lt;nb_cols&gt; &amp;colPins,</a>
-<a name="62"><span class="lineNum">      62 </span>            :                    const AddressMatrix&lt;nb_rows, nb_cols&gt; &amp;controllers,</a>
-<a name="63"><span class="lineNum">      63 </span>            :                    MIDIChannelCN channelCN, const DigitalCCSender &amp;sender = {})</a>
-<a name="64"><span class="lineNum">      64 </span><span class="lineCov">          1 :         : MIDIButtonMatrix&lt;MatrixAddress&lt;nb_rows, nb_cols&gt;, DigitalCCSender,</span></a>
-<a name="65"><span class="lineNum">      65 </span>            :                            nb_rows, nb_cols&gt;{</a>
-<a name="66"><span class="lineNum">      66 </span><span class="lineCov">          2 :               {config, controllers, channelCN}, rowPins, colPins, sender} {}</span></a>
-<a name="67"><span class="lineNum">      67 </span>            : };</a>
-<a name="68"><span class="lineNum">      68 </span>            : </a>
-<a name="69"><span class="lineNum">      69 </span>            : } // namespace Bankable</a>
-<a name="70"><span class="lineNum">      70 </span>            : </a>
-<a name="71"><span class="lineNum">      71 </span>            : END_CS_NAMESPACE</a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          1 :     CCButtonMatrix(OutputBankConfig&lt;&gt; config, const PinList&lt;nb_rows&gt; &amp;rowPins,</span></a>
+<a name="60"><span class="lineNum">      60 </span>            :                    const PinList&lt;nb_cols&gt; &amp;colPins,</a>
+<a name="61"><span class="lineNum">      61 </span>            :                    const AddressMatrix&lt;nb_rows, nb_cols&gt; &amp;controllers,</a>
+<a name="62"><span class="lineNum">      62 </span>            :                    MIDIChannelCN channelCN, const DigitalCCSender &amp;sender = {})</a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">          1 :         : MIDIButtonMatrix&lt;MatrixAddress&lt;nb_rows, nb_cols&gt;, DigitalCCSender,</span></a>
+<a name="64"><span class="lineNum">      64 </span>            :                            nb_rows, nb_cols&gt;{</a>
+<a name="65"><span class="lineNum">      65 </span><span class="lineCov">          2 :               {config, controllers, channelCN}, rowPins, colPins, sender} {}</span></a>
+<a name="66"><span class="lineNum">      66 </span>            : };</a>
+<a name="67"><span class="lineNum">      67 </span>            : </a>
+<a name="68"><span class="lineNum">      68 </span>            : } // namespace Bankable</a>
+<a name="69"><span class="lineNum">      69 </span>            : </a>
+<a name="70"><span class="lineNum">      70 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

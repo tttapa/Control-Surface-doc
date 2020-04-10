@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d98773f64484d294454ed07bbe5ef9971a176a1a - src/MIDI_Outputs/Bankable/CCRotaryEncoder.hpp</title>
+  <title>LCOV - ac372918071bd18f243ff77dd180a30d5a105fd2 - src/MIDI_Outputs/Bankable/CCRotaryEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d98773f64484d294454ed07bbe5ef9971a176a1a</td>
+            <td class="headerValue">ac372918071bd18f243ff77dd180a30d5a105fd2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">7</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-09 13:20:37</td>
+            <td class="headerValue">2020-04-10 10:55:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -124,16 +124,16 @@
 <a name="54"><span class="lineNum">      54 </span>            :      *          speed, increasing the number of pulsesPerStep will result in a </a>
 <a name="55"><span class="lineNum">      55 </span>            :      *          lower speed.</a>
 <a name="56"><span class="lineNum">      56 </span>            :      */</a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">          1 :     CCRotaryEncoder(const OutputBankConfig &amp;config, const EncoderPinList &amp;pins,</span></a>
-<a name="58"><span class="lineNum">      58 </span>            :                     const MIDIAddress &amp;address, int8_t speedMultiply = 1,</a>
+<a name="57"><span class="lineNum">      57 </span><span class="lineCov">          1 :     CCRotaryEncoder(OutputBankConfig&lt;&gt; config, EncoderPinList pins,</span></a>
+<a name="58"><span class="lineNum">      58 </span>            :                     MIDIAddress address, int8_t speedMultiply = 1,</a>
 <a name="59"><span class="lineNum">      59 </span>            :                     uint8_t pulsesPerStep = 4)</a>
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">          2 :         : MIDIRotaryEncoder({config, address}, pins, speedMultiply,</span></a>
 <a name="61"><span class="lineNum">      61 </span><span class="lineCov">          3 :                             pulsesPerStep, {}) {}</span></a>
 <a name="62"><span class="lineNum">      62 </span>            : </a>
 <a name="63"><span class="lineNum">      63 </span>            : // For tests only (PJRC Encoder library's copy constructor doesn't work)</a>
 <a name="64"><span class="lineNum">      64 </span>            : #ifndef ARDUINO</a>
-<a name="65"><span class="lineNum">      65 </span><span class="lineCov">          1 :     CCRotaryEncoder(const OutputBankConfig &amp;config, const Encoder &amp;encoder,</span></a>
-<a name="66"><span class="lineNum">      66 </span>            :                     const MIDIAddress &amp;address, int8_t speedMultiply = 1,</a>
+<a name="65"><span class="lineNum">      65 </span><span class="lineCov">          1 :     CCRotaryEncoder(OutputBankConfig&lt;&gt; config, const Encoder &amp;encoder,</span></a>
+<a name="66"><span class="lineNum">      66 </span>            :                     MIDIAddress address, int8_t speedMultiply = 1,</a>
 <a name="67"><span class="lineNum">      67 </span>            :                     uint8_t pulsesPerStep = 4)</a>
 <a name="68"><span class="lineNum">      68 </span><span class="lineCov">          2 :         : MIDIRotaryEncoder({config, address}, encoder, speedMultiply,</span></a>
 <a name="69"><span class="lineNum">      69 </span><span class="lineCov">          3 :                             pulsesPerStep, {}) {}</span></a>

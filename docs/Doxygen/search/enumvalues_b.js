@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['sign_5fmagnitude_4721',['SIGN_MAGNITUDE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dab7ad87adda84e60b671dc61f369c8c5b',1,'RelativeCCSender.hpp']]],
-  ['start_5fmessage_4722',['START_MESSAGE',['../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968ab68fa4468567bc96f5cb4b7eb698a143',1,'MIDI_Parser.hpp']]],
-  ['stop_5fmessage_4723',['STOP_MESSAGE',['../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968a84b9b62db0a142c2599cfa64a5f3d61a',1,'MIDI_Parser.hpp']]],
-  ['sysex_5fmessage_4724',['SYSEX_MESSAGE',['../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968a585a70372e512ecc3f281e40a8093836',1,'MIDI_Parser.hpp']]]
+  ['reaper_5frelative_5f1_4758',['REAPER_RELATIVE_1',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da8354c1de53d672e7e4394453e785b1c1',1,'RelativeCCSender.hpp']]],
+  ['reaper_5frelative_5f2_4759',['REAPER_RELATIVE_2',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da64b30001175dc43751e63e3480e8fab8',1,'RelativeCCSender.hpp']]],
+  ['reaper_5frelative_5f3_4760',['REAPER_RELATIVE_3',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dad151cd0e3eac5b4d845f061669e131e3',1,'RelativeCCSender.hpp']]],
+  ['released_4761',['Released',['../de/d0d/classAH_1_1Button.html#a5d74787dedbc4e11c1ab15bf487e61f8ad9417ac74f0134b9577d1d85cf422c25',1,'AH::Button']]],
+  ['reset_4762',['Reset',['../df/dc6/classAH_1_1IncrementDecrementButtons.html#a5d74787dedbc4e11c1ab15bf487e61f8a92793663441ced378f4676b8a6524385',1,'AH::IncrementDecrementButtons']]],
+  ['reset_5fmessage_4763',['RESET_MESSAGE',['../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968aab702620bb9567ba6ea5282adc5b5d39',1,'MIDI_Parser.hpp']]],
+  ['rising_4764',['Rising',['../de/d0d/classAH_1_1Button.html#a5d74787dedbc4e11c1ab15bf487e61f8a6e520e0e7f14dd669c193c4f966da30c',1,'AH::Button']]],
+  ['rms_4765',['RMS',['../d0/d18/classAudioVU_1_1Analyzer.html#abc6126af1d45847bc59afa0aa3216b04a4c50a519d2b5f41ab0babdc524a09c57',1,'AudioVU::Analyzer']]]
 ];

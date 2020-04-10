@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d98773f64484d294454ed07bbe5ef9971a176a1a - src/MIDI_Outputs/Bankable/CCPotentiometer.hpp</title>
+  <title>LCOV - ac372918071bd18f243ff77dd180a30d5a105fd2 - src/MIDI_Outputs/Bankable/CCPotentiometer.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d98773f64484d294454ed07bbe5ef9971a176a1a</td>
+            <td class="headerValue">ac372918071bd18f243ff77dd180a30d5a105fd2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">4</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-09 13:20:37</td>
+            <td class="headerValue">2020-04-10 10:55:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -106,8 +106,8 @@
 <a name="36"><span class="lineNum">      36 </span>            :      *          channel [CHANNEL_1, CHANNEL_16], and optional cable number </a>
 <a name="37"><span class="lineNum">      37 </span>            :      *          [0, 15].</a>
 <a name="38"><span class="lineNum">      38 </span>            :      */</a>
-<a name="39"><span class="lineNum">      39 </span><span class="lineCov">          1 :     CCPotentiometer(const OutputBankConfig &amp;config, pin_t analogPin,</span></a>
-<a name="40"><span class="lineNum">      40 </span>            :                     const MIDIAddress &amp;address)</a>
+<a name="39"><span class="lineNum">      39 </span><span class="lineCov">          1 :     CCPotentiometer(OutputBankConfig&lt;&gt; config, pin_t analogPin,</span></a>
+<a name="40"><span class="lineNum">      40 </span>            :                     MIDIAddress address)</a>
 <a name="41"><span class="lineNum">      41 </span><span class="lineCov">          2 :         : MIDIFilteredAnalogAddressable(SingleAddress{config, address},</span></a>
 <a name="42"><span class="lineNum">      42 </span><span class="lineCov">          3 :                                         analogPin, {}) {}</span></a>
 <a name="43"><span class="lineNum">      43 </span>            : };</a>

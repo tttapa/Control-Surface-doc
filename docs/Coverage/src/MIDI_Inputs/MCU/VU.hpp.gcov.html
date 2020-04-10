@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d98773f64484d294454ed07bbe5ef9971a176a1a - src/MIDI_Inputs/MCU/VU.hpp</title>
+  <title>LCOV - ac372918071bd18f243ff77dd180a30d5a105fd2 - src/MIDI_Inputs/MCU/VU.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d98773f64484d294454ed07bbe5ef9971a176a1a</td>
+            <td class="headerValue">ac372918071bd18f243ff77dd180a30d5a105fd2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">93</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-09 13:20:37</td>
+            <td class="headerValue">2020-04-10 10:55:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">76</td>
@@ -380,7 +380,7 @@
 <a name="310"><span class="lineNum">     310 </span>            :      *          changes.  </a>
 <a name="311"><span class="lineNum">     311 </span>            :      *          Used for displaying the value on a range of LEDs etc.</a>
 <a name="312"><span class="lineNum">     312 </span>            :      */</a>
-<a name="313"><span class="lineNum">     313 </span><span class="lineCov">          5 :     GenericVU(const BankConfig&lt;NumBanks&gt; &amp;config, uint8_t track,</span></a>
+<a name="313"><span class="lineNum">     313 </span><span class="lineCov">          5 :     GenericVU(BankConfig&lt;NumBanks&gt; config, uint8_t track,</span></a>
 <a name="314"><span class="lineNum">     314 </span>            :               const MIDIChannelCN &amp;channelCN, unsigned int decayTime,</a>
 <a name="315"><span class="lineNum">     315 </span>            :               const Callback &amp;callback)</a>
 <a name="316"><span class="lineNum">     316 </span><span class="lineCov">          5 :         : VU_Base&lt;NumBanks, Callback&gt;{</span></a>
@@ -441,7 +441,7 @@
 <a name="371"><span class="lineNum">     371 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
 <a name="372"><span class="lineNum">     372 </span>            :      *          the decay.</a>
 <a name="373"><span class="lineNum">     373 </span>            :      */</a>
-<a name="374"><span class="lineNum">     374 </span><span class="lineCov">          4 :     VU(const BankConfig&lt;NumBanks&gt; &amp;config, uint8_t track,</span></a>
+<a name="374"><span class="lineNum">     374 </span><span class="lineCov">          4 :     VU(BankConfig&lt;NumBanks&gt; config, uint8_t track,</span></a>
 <a name="375"><span class="lineNum">     375 </span>            :        const MIDIChannelCN &amp;channelCN,</a>
 <a name="376"><span class="lineNum">     376 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
 <a name="377"><span class="lineNum">     377 </span><span class="lineCov">          4 :         : GenericVU&lt;NumBanks&gt;{</span></a>
@@ -464,7 +464,7 @@
 <a name="394"><span class="lineNum">     394 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
 <a name="395"><span class="lineNum">     395 </span>            :      *          the decay.</a>
 <a name="396"><span class="lineNum">     396 </span>            :      */</a>
-<a name="397"><span class="lineNum">     397 </span>            :     VU(const BankConfig&lt;NumBanks&gt; &amp;config, uint8_t track,</a>
+<a name="397"><span class="lineNum">     397 </span>            :     VU(BankConfig&lt;NumBanks&gt; config, uint8_t track,</a>
 <a name="398"><span class="lineNum">     398 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
 <a name="399"><span class="lineNum">     399 </span>            :         : GenericVU&lt;NumBanks&gt;{</a>
 <a name="400"><span class="lineNum">     400 </span>            :               config, track, CHANNEL_1, decayTime, {},</a>

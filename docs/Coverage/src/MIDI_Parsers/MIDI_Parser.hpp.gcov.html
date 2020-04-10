@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d98773f64484d294454ed07bbe5ef9971a176a1a - src/MIDI_Parsers/MIDI_Parser.hpp</title>
+  <title>LCOV - ac372918071bd18f243ff77dd180a30d5a105fd2 - src/MIDI_Parsers/MIDI_Parser.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d98773f64484d294454ed07bbe5ef9971a176a1a</td>
+            <td class="headerValue">ac372918071bd18f243ff77dd180a30d5a105fd2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">5</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-09 13:20:37</td>
+            <td class="headerValue">2020-04-10 10:55:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -130,7 +130,7 @@
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">          4 :     virtual uint8_t getCN() const { return 0; };</span></a>
 <a name="61"><span class="lineNum">      61 </span>            : </a>
 <a name="62"><span class="lineNum">      62 </span>            :   protected:</a>
-<a name="63"><span class="lineNum">      63 </span><span class="lineCov">         94 :     ChannelMessage midimsg = {};</span></a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">         94 :     ChannelMessage midimsg = {0xFF, 0x00, 0x00, 0x0};</span></a>
 <a name="64"><span class="lineNum">      64 </span>            : </a>
 <a name="65"><span class="lineNum">      65 </span>            :   public:</a>
 <a name="66"><span class="lineNum">      66 </span>            :     /** Check if the given byte is a MIDI header byte. */</a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d98773f64484d294454ed07bbe5ef9971a176a1a - src/MIDI_Inputs/LEDs/NoteCCRangeLEDs.hpp</title>
+  <title>LCOV - ac372918071bd18f243ff77dd180a30d5a105fd2 - src/MIDI_Inputs/LEDs/NoteCCRangeLEDs.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d98773f64484d294454ed07bbe5ef9971a176a1a</td>
+            <td class="headerValue">ac372918071bd18f243ff77dd180a30d5a105fd2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">36</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-09 13:20:37</td>
+            <td class="headerValue">2020-04-10 10:55:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">12</td>
@@ -269,7 +269,7 @@
 <a name="199"><span class="lineNum">     199 </span>            : class NoteRangeLEDs : public GenericNoteCCRange&lt;MIDIInputElementNote, RangeLen,</a>
 <a name="200"><span class="lineNum">     200 </span>            :                                                 BankSize, NoteCCLED&lt;RangeLen&gt;&gt; {</a>
 <a name="201"><span class="lineNum">     201 </span>            :   public:</a>
-<a name="202"><span class="lineNum">     202 </span>            :     NoteRangeLEDs(const BankConfig&lt;BankSize&gt; &amp;config,</a>
+<a name="202"><span class="lineNum">     202 </span>            :     NoteRangeLEDs(BankConfig&lt;BankSize&gt; config,</a>
 <a name="203"><span class="lineNum">     203 </span>            :                   const PinList&lt;RangeLen&gt; &amp;ledPins,</a>
 <a name="204"><span class="lineNum">     204 </span>            :                   const MIDIAddress &amp;address)</a>
 <a name="205"><span class="lineNum">     205 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementNote, RangeLen, BankSize,</a>
@@ -284,7 +284,7 @@
 <a name="214"><span class="lineNum">     214 </span>            : class NoteValueLED : public GenericNoteCCRange&lt;MIDIInputElementNote, 1,</a>
 <a name="215"><span class="lineNum">     215 </span>            :                                                BankSize, NoteCCLED&lt;1&gt;&gt; {</a>
 <a name="216"><span class="lineNum">     216 </span>            :   public:</a>
-<a name="217"><span class="lineNum">     217 </span>            :     NoteValueLED(const BankConfig&lt;BankSize&gt; &amp;config, pin_t ledPin,</a>
+<a name="217"><span class="lineNum">     217 </span>            :     NoteValueLED(BankConfig&lt;BankSize&gt; config, pin_t ledPin,</a>
 <a name="218"><span class="lineNum">     218 </span>            :                  const MIDIAddress &amp;address)</a>
 <a name="219"><span class="lineNum">     219 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementNote, 1, BankSize, NoteCCLED&lt;1&gt;&gt;{</a>
 <a name="220"><span class="lineNum">     220 </span>            :               config,</a>
@@ -303,7 +303,7 @@
 <a name="233"><span class="lineNum">     233 </span>            : class CCRangeLEDs : public GenericNoteCCRange&lt;MIDIInputElementCC, RangeLen,</a>
 <a name="234"><span class="lineNum">     234 </span>            :                                               BankSize, NoteCCLED&lt;RangeLen&gt;&gt; {</a>
 <a name="235"><span class="lineNum">     235 </span>            :   public:</a>
-<a name="236"><span class="lineNum">     236 </span>            :     CCRangeLEDs(const BankConfig&lt;BankSize&gt; &amp;config,</a>
+<a name="236"><span class="lineNum">     236 </span>            :     CCRangeLEDs(BankConfig&lt;BankSize&gt; config,</a>
 <a name="237"><span class="lineNum">     237 </span>            :                 const PinList&lt;RangeLen&gt; &amp;ledPins,</a>
 <a name="238"><span class="lineNum">     238 </span>            :                 const MIDIAddress &amp;address)</a>
 <a name="239"><span class="lineNum">     239 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementCC, RangeLen, BankSize,</a>
@@ -318,7 +318,7 @@
 <a name="248"><span class="lineNum">     248 </span>            : class CCValueLED</a>
 <a name="249"><span class="lineNum">     249 </span>            :     : public GenericNoteCCRange&lt;MIDIInputElementCC, 1, BankSize, NoteCCLED&lt;1&gt;&gt; {</a>
 <a name="250"><span class="lineNum">     250 </span>            :   public:</a>
-<a name="251"><span class="lineNum">     251 </span>            :     CCValueLED(const BankConfig&lt;BankSize&gt; &amp;config, pin_t ledPin,</a>
+<a name="251"><span class="lineNum">     251 </span>            :     CCValueLED(BankConfig&lt;BankSize&gt; config, pin_t ledPin,</a>
 <a name="252"><span class="lineNum">     252 </span>            :                const MIDIAddress &amp;address)</a>
 <a name="253"><span class="lineNum">     253 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementCC, 1, BankSize, NoteCCLED&lt;1&gt;&gt;{</a>
 <a name="254"><span class="lineNum">     254 </span>            :               config,</a>
@@ -455,7 +455,7 @@
 <a name="385"><span class="lineNum">     385 </span>            : class NoteRangeLEDsPWM : public GenericNoteCCRange&lt;MIDIInputElementNote, RangeLen,</a>
 <a name="386"><span class="lineNum">     386 </span>            :                                                 BankSize, NoteCCLEDPWM&lt;RangeLen&gt;&gt; {</a>
 <a name="387"><span class="lineNum">     387 </span>            :   public:</a>
-<a name="388"><span class="lineNum">     388 </span>            :     NoteRangeLEDsPWM(const BankConfig&lt;BankSize&gt; &amp;config,</a>
+<a name="388"><span class="lineNum">     388 </span>            :     NoteRangeLEDsPWM(BankConfig&lt;BankSize&gt; config,</a>
 <a name="389"><span class="lineNum">     389 </span>            :                   const PinList&lt;RangeLen&gt; &amp;ledPins,</a>
 <a name="390"><span class="lineNum">     390 </span>            :                   const MIDIAddress &amp;address)</a>
 <a name="391"><span class="lineNum">     391 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementNote, RangeLen, BankSize,</a>
@@ -470,7 +470,7 @@
 <a name="400"><span class="lineNum">     400 </span>            : class NoteValueLEDPWM : public GenericNoteCCRange&lt;MIDIInputElementNote, 1,</a>
 <a name="401"><span class="lineNum">     401 </span>            :                                                BankSize, NoteCCLEDPWM&lt;1&gt;&gt; {</a>
 <a name="402"><span class="lineNum">     402 </span>            :   public:</a>
-<a name="403"><span class="lineNum">     403 </span>            :     NoteValueLEDPWM(const BankConfig&lt;BankSize&gt; &amp;config, pin_t ledPin,</a>
+<a name="403"><span class="lineNum">     403 </span>            :     NoteValueLEDPWM(BankConfig&lt;BankSize&gt; config, pin_t ledPin,</a>
 <a name="404"><span class="lineNum">     404 </span>            :                  const MIDIAddress &amp;address)</a>
 <a name="405"><span class="lineNum">     405 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementNote, 1, BankSize, NoteCCLEDPWM&lt;1&gt;&gt;{</a>
 <a name="406"><span class="lineNum">     406 </span>            :               config,</a>
@@ -483,7 +483,7 @@
 <a name="413"><span class="lineNum">     413 </span>            : class CCRangeLEDsPWM : public GenericNoteCCRange&lt;MIDIInputElementCC, RangeLen,</a>
 <a name="414"><span class="lineNum">     414 </span>            :                                               BankSize, NoteCCLEDPWM&lt;RangeLen&gt;&gt; {</a>
 <a name="415"><span class="lineNum">     415 </span>            :   public:</a>
-<a name="416"><span class="lineNum">     416 </span>            :     CCRangeLEDsPWM(const BankConfig&lt;BankSize&gt; &amp;config,</a>
+<a name="416"><span class="lineNum">     416 </span>            :     CCRangeLEDsPWM(BankConfig&lt;BankSize&gt; config,</a>
 <a name="417"><span class="lineNum">     417 </span>            :                 const PinList&lt;RangeLen&gt; &amp;ledPins,</a>
 <a name="418"><span class="lineNum">     418 </span>            :                 const MIDIAddress &amp;address)</a>
 <a name="419"><span class="lineNum">     419 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementCC, RangeLen, BankSize,</a>
@@ -498,7 +498,7 @@
 <a name="428"><span class="lineNum">     428 </span>            : class CCValueLEDPWM</a>
 <a name="429"><span class="lineNum">     429 </span>            :     : public GenericNoteCCRange&lt;MIDIInputElementCC, 1, BankSize, NoteCCLEDPWM&lt;1&gt;&gt; {</a>
 <a name="430"><span class="lineNum">     430 </span>            :   public:</a>
-<a name="431"><span class="lineNum">     431 </span>            :     CCValueLEDPWM(const BankConfig&lt;BankSize&gt; &amp;config, pin_t ledPin,</a>
+<a name="431"><span class="lineNum">     431 </span>            :     CCValueLEDPWM(BankConfig&lt;BankSize&gt; config, pin_t ledPin,</a>
 <a name="432"><span class="lineNum">     432 </span>            :                const MIDIAddress &amp;address)</a>
 <a name="433"><span class="lineNum">     433 </span>            :         : GenericNoteCCRange&lt;MIDIInputElementCC, 1, BankSize, NoteCCLEDPWM&lt;1&gt;&gt;{</a>
 <a name="434"><span class="lineNum">     434 </span>            :               config,</a>

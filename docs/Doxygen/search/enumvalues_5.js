@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['increment_4703',['Increment',['../d7/d83/classAH_1_1IncrementButton.html#a5d74787dedbc4e11c1ab15bf487e61f8a0da20ccab743c7169b305055013d9bf3',1,'AH::IncrementButton::Increment()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#a5d74787dedbc4e11c1ab15bf487e61f8a0da20ccab743c7169b305055013d9bf3',1,'AH::IncrementDecrementButtons::Increment()']]],
-  ['initial_4704',['Initial',['../d7/d83/classAH_1_1IncrementButton.html#a06fc87d81c62e9abb8790b6e5713c55ba3392b59c8aa0ec56670fbcd5638cbfde',1,'AH::IncrementButton::Initial()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#adf764cbdea00d65edcd07bb9953ad2b7a3392b59c8aa0ec56670fbcd5638cbfde',1,'AH::IncrementDecrementButtons::Initial()']]]
+  ['higher_4746',['Higher',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a5d74787dedbc4e11c1ab15bf487e61f8a3c4101b3390b8e2bb6e7663645f5f0b5',1,'Bankable::SmartMIDIFilteredAnalog']]]
 ];

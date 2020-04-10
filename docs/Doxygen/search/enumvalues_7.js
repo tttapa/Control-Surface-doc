@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['mackie_5fcontrol_5frelative_4707',['MACKIE_CONTROL_RELATIVE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dafb57df7f09c11569e6325f0250664288',1,'RelativeCCSender.hpp']]]
+  ['longpress_4749',['LongPress',['../d7/d83/classAH_1_1IncrementButton.html#a06fc87d81c62e9abb8790b6e5713c55bade879c91413c9c7b60f9ca1fb92eb234',1,'AH::IncrementButton::LongPress()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#adf764cbdea00d65edcd07bb9953ad2b7ade879c91413c9c7b60f9ca1fb92eb234',1,'AH::IncrementDecrementButtons::LongPress()']]],
+  ['lower_4750',['Lower',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a5d74787dedbc4e11c1ab15bf487e61f8af886b397626076218462d53d50eb96bc',1,'Bankable::SmartMIDIFilteredAnalog']]],
+  ['lowercase_4751',['LOWERCASE',['../da/d69/PrintStream_8cpp.html#a6674af4819a4f85e8c40be5971746668af8ee0dcc4d45543df8763035c19ef2fc',1,'PrintStream.cpp']]]
 ];
