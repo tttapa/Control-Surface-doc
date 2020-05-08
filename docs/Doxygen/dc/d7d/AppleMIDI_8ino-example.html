@@ -78,6 +78,7 @@ $(function() {
 <h1><a class="anchor" id="autotoc_md65"></a>
 AppleMIDI</h1>
 <p>This example demonstrates how to use the AppleMIDI library to use Control Surface over the network.</p>
+<p>This example requires the <a href="https://github.com/lathoub/Arduino-AppleMIDI-Library">AppleMIDI</a> and <a href="https://github.com/FortySevenEffects/arduino_midi_library">MIDI</a> libraries.</p>
 <dl class="section user"><dt>Boards:</dt><dd>ESP32</dd></dl>
 <h2><a class="anchor" id="autotoc_md66"></a>
 Connections</h2>
@@ -93,6 +94,10 @@ Behavior</h2>
 <div class="line">IP address: 192.168.1.35</div>
 <div class="line">mDNS responder started (ESP32.local)</div>
 </div><!-- fragment --><p>Next, connect to the device using your DAW or other MIDI software. If the software supports mDNS (Apple Bonjour), you can use <code>ESP32.local</code>, otherwise, you'll have to use the IP address.</p>
+<p>When the connection is successful, you'll see the following message in the Serial monitor:</p>
+<div class="fragment"><div class="line">Connected to session Your Session Name</div>
+</div><!-- fragment --><p>When the button is pushed, a MIDI note on message for note C4 (middle C) is sent. <br  />
+ When the ESP32 receives a MIDI note message for that note, it turn on/off the LED accordingly.</p>
 <h2><a class="anchor" id="autotoc_md69"></a>
 RTP MIDI Bridge (Linux)</h2>
 <p>If you're on Linux, you can use the rtpmidi-bridge application in the example folder. You'll need to install Node.js and NPM.</p>
@@ -109,14 +114,15 @@ RTP MIDI Bridge (Linux)</h2>
 <div class="fragment"><div class="line">Connected to session Node RTPMidi</div>
 </div><!-- fragment --><div class="fragment"><div class="line">2020-05-06T15:50:42.956Z info:  Invitation accepted by ESP32</div>
 <div class="line">2020-05-06T15:50:42.962Z info:  Data channel to ESP32 established</div>
-</div><!-- fragment --><p>When the button is pushed, a MIDI note on message for note C4 (middle C) is sent. <br  />
- When the ESP32 receives a MIDI note message for that note, it turn on/off the LED accordingly.</p>
-<h2><a class="anchor" id="autotoc_md70"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md70"></a>
 Mapping</h2>
 <p>Connect the virtual MIDI ports or the AppleMIDI connection to a device or application that can send and receive MIDI notes.</p>
 <p>Written by PieterP, 2020-05-06 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;AppleMIDI.h&gt;</span></div>
+<div class="line">USING_NAMESPACE_APPLEMIDI</div>
+<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d6/ded/FortySevenEffects_8hpp.html">MIDI_Interfaces/Wrappers/FortySevenEffects.hpp</a>&gt;</span></div>
 <div class="line"> </div>
@@ -125,9 +131,6 @@ Mapping</h2>
 <div class="line"><span class="preprocessor">#include &lt;WiFiUdp.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;WiFi-Credentials.h&quot;</span> <span class="comment">// See instructions above</span></div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;AppleMIDI.h&gt;</span></div>
-<div class="line">USING_NAMESPACE_APPLEMIDI</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ----------------------------- MIDI Interface ----------------------------- //</span></div>
 <div class="line"> </div>
@@ -157,11 +160,9 @@ Mapping</h2>
 <div class="line"><span class="keywordtype">void</span> onAppleMidiConnected(<span class="keyword">const</span> ssrc_t &amp;ssrc, <span class="keyword">const</span> <span class="keywordtype">char</span> *name) {</div>
 <div class="line">  Serial &lt;&lt; <a name="a5"></a><a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#a782ecf472467d5b568ea62a533489807">F</a>(<span class="stringliteral">&quot;Connected to session &quot;</span>) &lt;&lt; name &lt;&lt; <a name="a6"></a><a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
 <div class="line">}</div>
-<div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> onAppleMidiDisconnected(<span class="keyword">const</span> ssrc_t &amp;ssrc) {</div>
 <div class="line">  Serial &lt;&lt; <a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#a782ecf472467d5b568ea62a533489807">F</a>(<span class="stringliteral">&quot;Disconnected&quot;</span>) &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
 <div class="line">}</div>
-<div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> onAppleMidiError(<span class="keyword">const</span> ssrc_t &amp;ssrc, int32_t err) {</div>
 <div class="line">  Serial &lt;&lt; <a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#a782ecf472467d5b568ea62a533489807">F</a>(<span class="stringliteral">&quot;Exception &quot;</span>) &lt;&lt; err &lt;&lt; <a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#a782ecf472467d5b568ea62a533489807">F</a>(<span class="stringliteral">&quot; from ssrc 0x&quot;</span>) &lt;&lt; <a name="a7"></a><a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">hex</a> &lt;&lt; ssrc &lt;&lt; <a name="a8"></a><a class="code" href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">dec</a></div>
 <div class="line">         &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
