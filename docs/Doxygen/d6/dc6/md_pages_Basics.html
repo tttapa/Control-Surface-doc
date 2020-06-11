@@ -76,17 +76,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md266">MIDI Addresses</a><ul><li class="level2"><a href="#autotoc_md267">Address fields</a></li>
-<li class="level2"><a href="#autotoc_md268">Creating a MIDI address variable</a></li>
-<li class="level2"><a href="#autotoc_md269">Passing MIDI Addresses to MIDI Elements</a></li>
+<ul><li class="level1"><a href="#autotoc_md270">MIDI Addresses</a><ul><li class="level2"><a href="#autotoc_md271">Address fields</a></li>
+<li class="level2"><a href="#autotoc_md272">Creating a MIDI address variable</a></li>
+<li class="level2"><a href="#autotoc_md273">Passing MIDI Addresses to MIDI Elements</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md266"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md270"></a>
 MIDI Addresses</h1>
 <p>All MIDI Input and Output Elements use MIDI addresses that determine the addresses of the MIDI messages they listen for, and the addresses of the messages they send.</p>
-<h2><a class="anchor" id="autotoc_md267"></a>
+<h2><a class="anchor" id="autotoc_md271"></a>
 Address fields</h2>
 <p>The MIDI addresses used by the library have three different fields:</p>
 <ul>
@@ -96,7 +96,7 @@ Address fields</h2>
 </ul>
 <p>The MIDI USB Cable Number is only used on boards that have support for multiple virtual MIDI cables over a single USB connection. As far as I know, only Teensies support this. USB-capable boards that use the MIDIUSB library do not support multiple MIDI cables. <br  />
  Serial (5-pin DIN) MIDI and MIDI over Bluetooth LE have no notion of cables.</p>
-<h2><a class="anchor" id="autotoc_md268"></a>
+<h2><a class="anchor" id="autotoc_md272"></a>
 Creating a MIDI address variable</h2>
 <p>The data type for MIDI addresses is <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>. Click the link in the previous sentence, and have a look at the documentation. If you scroll down to the <em>Constructors</em> section, you'll see that there are different ways to create a <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>. <br  />
  This is the most important one:</p>
@@ -122,7 +122,7 @@ Creating a MIDI address variable</h2>
 <div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="../../d7/d78/namespaceMIDI__Notes.html">MIDI_Notes</a>;</div>
 <div class="line"><span class="comment">// MIDI Note middle C (C in the fourth octave) on MIDI Channel 16:</span></div>
 <div class="line"><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = {<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#a559f01ec7251fdc9c5a5bc0e26b97372">note</a>(<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#aa62045215ec21ab7da02f2f1868ea7b0">C</a>, 4), <a class="code" href="../../d7/d42/Channel_8hpp.html#ae585d21b73ab00128a688bc2ea5cb9be">CHANNEL_16</a>};</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md269"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md273"></a>
 Passing MIDI Addresses to MIDI Elements</h2>
 <p>Almost all <a class="el" href="../../d7/dcd/group__MIDIOutputElements.html">MIDI Output Elements</a> and <a class="el" href="../../df/d8b/group__MIDIInputElements.html">MIDI Input Elements</a> take a <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> as a parameter. Initializing the address is very similar to the initialization introduced in the previous section: if you only want to specify the address, just pass it as a parameter, if you want to specify the channel or cable number as well, add a pair of curly braces around it.</p>
 <p>For example: </p><div class="fragment"><div class="line"><span class="comment">// Controller 16 on channel 1 and cable 0:</span></div>
