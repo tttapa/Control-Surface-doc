@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>There are some differences in MIDI over USB implementation between different types of Arduino-compatible boards. This page provides an overview and some board recommendations if you're planning to build an Arduino MIDI device with MIDI over USB support.</p>
-<h1><a class="anchor" id="autotoc_md260"></a>
+<h1><a class="anchor" id="autotoc_md264"></a>
 Arduino boards with native USB support</h1>
 <p><em>Arduino Due, Arduino Zero, Arduino Leonardo, Arduino Micro, Arduino LilyPad USB ...</em> <br  />
 </p>
@@ -84,7 +84,7 @@ Arduino boards with native USB support</h1>
 <p> Some of the newer boards have native USB support (i.e. the USB connection goes directly to the main <a class="el" href="../../d7/dc7/namespaceMCU.html">MCU</a>) this means that they can pretend to be a USB MIDI device. This is based on PluggableUSB, using the <a href="https://github.com/arduino-libraries/MIDIUSB">MIDIUSB</a> library. <br  />
  You just have to <a class="el" href="../../d8/da8/md_pages_Installation.html">install the MIDIUSB library</a>, and upload a Control Surface sketch with a <a class="el" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a>. <br  />
  The computer will then automatically detect the Arduino as a MIDI device.</p>
-<h1><a class="anchor" id="autotoc_md261"></a>
+<h1><a class="anchor" id="autotoc_md265"></a>
 Teensy</h1>
 <p><em>Teensy 2.0, Teensy++ 2.0, Teensy LC, Teensy 3.0, Teensy 3.1, Teensy 3.2, Teensy 3.5, Teensy 3.6</em> <br  />
 </p>
@@ -92,7 +92,7 @@ Teensy</h1>
 <p> Teensy boards have native USB support as well. You don't even need to install anything, because MIDI over USB is implemented in the Teensy Core. <br  />
  You just need to select the 'MIDI' USB type from Tools &gt; USB Type &gt; MIDI. Other USB types that include MIDI can be used as well.</p>
 <p>You can use up to 16 USB MIDI cables over a single USB connection, they will show up as 16 different MIDI devices on your computer. (On a Teensy 2, this number is limited to 4 USB MIDI cables).</p>
-<h1><a class="anchor" id="autotoc_md262"></a>
+<h1><a class="anchor" id="autotoc_md266"></a>
 Arduino boards with an ATmega16U2 (ATmega8U2)</h1>
 <p><em>Arduino Uno, Arduino Mega</em></p>
 <hr  />
@@ -124,7 +124,7 @@ Arduino boards with an ATmega16U2 (ATmega8U2)</h1>
 <h3>USBMidiKliK</h3>
 <p>The HIDUINO firmware is rather old, and there's a newer alternative that combines the MIDI USB and Serial USB modes in a single firmware: <a href="https://github.com/TheKikGen/USBMidiKliK">USBMidiKliK</a>. This means that you should be able to program the Arduino and use MIDI over USB without swapping firmwares all the time. <br  />
  I haven't tried this myself, but it looks promising.</p>
-<h1><a class="anchor" id="autotoc_md263"></a>
+<h1><a class="anchor" id="autotoc_md267"></a>
 Boards with a single-purpose USB-to-TTL chip</h1>
 <p><em>Arduino Nano, Arduino Duemilanove, Chinese Uno &amp; Mega clones ...</em></p>
 <hr  />
@@ -132,7 +132,7 @@ Boards with a single-purpose USB-to-TTL chip</h1>
  These chips include FTDI chips (Nano and Duemilanove) and the CH340G or CP2102 (both popular on Chinese "Arduino" clones). <br  />
  While MIDI over USB is not supported on these boards, you can still use Hairless. Just instantiate a <code><a class="el" href="../../dc/dff/classHairlessMIDI__Interface.html" title="A class for MIDI Interfaces sending and receiving data over the USB Serial CDC connection for the use...">HairlessMIDI_Interface</a></code> at the top of your sketch. <br  />
 </p>
-<h1><a class="anchor" id="autotoc_md264"></a>
+<h1><a class="anchor" id="autotoc_md268"></a>
 Espressif boards</h1>
 <p><em>ESP8266, ESP32</em></p>
 <hr  />
@@ -142,7 +142,7 @@ Espressif boards</h1>
  OSC and rtpMIDI are not directly supported by the Control Surface library, but they can be integrated relatively easily.</p>
 <p>The ESP32 also has Bluetooth support, so you can use MIDI over BLE. This is supported by the Control Surface library using the <a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a>.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md265"></a>
+<h1><a class="anchor" id="autotoc_md269"></a>
 Conclusion</h1>
 <p>I strongly recommend getting a Teensy 3.x for building a Control Surface. MIDI over USB is supported right of the box, and it's the only platform that currently supports USB audio output. On top of that, it has plenty of memory to create large MIDI Controllers, and drive lots of displays.</p>
 <p>If you just want a very small MIDI Controller, the Arduino Leonardo/Micro are good choices as well, just keep in mind that they don't have a lot of RAM.</p>
