@@ -54,7 +54,7 @@ var searchData=
   ['change_5faddress_346',['CHANGE_ADDRESS',['../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a8e818986f5a41a491dde170eeeb4fd29',1,'BankConfig.hpp']]],
   ['change_5fcablenb_347',['CHANGE_CABLENB',['../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a1699078e885a4bfa2d7d55a3b94dfe0d',1,'BankConfig.hpp']]],
   ['change_5fchannel_348',['CHANGE_CHANNEL',['../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a1020529b55d78c3ec8a38703c1a79b23',1,'BankConfig.hpp']]],
-  ['channel_349',['Channel',['../d2/d48/classChannel.html',1,'Channel'],['../d2/d48/classChannel.html#a2260267947b83d2d1c938e0406f662ef',1,'Channel::Channel()'],['../df/d8f/structChannelMessageMatcher.html#a715f5cb061d11eb75981741eda4dafcd',1,'ChannelMessageMatcher::channel()']]],
+  ['channel_349',['Channel',['../d2/d48/classChannel.html',1,'Channel'],['../df/d8f/structChannelMessageMatcher.html#a715f5cb061d11eb75981741eda4dafcd',1,'ChannelMessageMatcher::channel()'],['../d2/d48/classChannel.html#a2260267947b83d2d1c938e0406f662ef',1,'Channel::Channel()']]],
   ['channel_2ecpp_350',['Channel.cpp',['../d1/dc4/Channel_8cpp.html',1,'']]],
   ['channel_2ehpp_351',['Channel.hpp',['../d7/d42/Channel_8hpp.html',1,'']]],
   ['channel_5f1_352',['CHANNEL_1',['../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17',1,'Channel.hpp']]],
