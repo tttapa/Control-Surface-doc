@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['parent_4752',['Parent',['../da/dbf/classGenericEncoderSelector.html#ae21c65ae6ecabc7fa8195516c7d25ea5',1,'GenericEncoderSelector::Parent()'],['../d3/d78/classGenericIncrementDecrementSelector.html#ae21c65ae6ecabc7fa8195516c7d25ea5',1,'GenericIncrementDecrementSelector::Parent()'],['../d1/d94/classGenericIncrementSelector.html#ae21c65ae6ecabc7fa8195516c7d25ea5',1,'GenericIncrementSelector::Parent()'],['../de/d1e/classGenericManyButtonsSelector.html#ae21c65ae6ecabc7fa8195516c7d25ea5',1,'GenericManyButtonsSelector::Parent()'],['../d2/d1c/classGenericSwitchSelector.html#afe35d3626e1d453289c76b32e109ad15',1,'GenericSwitchSelector::Parent()']]],
-  ['pin_5ft_4753',['pin_t',['../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b',1,'AH']]],
-  ['pinlist_4754',['PinList',['../dc/d69/namespaceAH.html#a2cad4766e2eb5bb24649f97d53635b73',1,'AH']]],
-  ['pinmode_5ft_4755',['PinMode_t',['../dd/ddf/ExtendedInputOutput_8hpp.html#afeedc392af4451c66ba1b66bdd6965b2',1,'ExtendedInputOutput.hpp']]],
-  ['pinstatus_5ft_4756',['PinStatus_t',['../dd/ddf/ExtendedInputOutput_8hpp.html#a819db182182c1ca2a6487ff7163a757d',1,'ExtendedInputOutput.hpp']]],
-  ['pint_4757',['pint',['../d6/d99/classBresenhamLine.html#a2a619335fd6291aec4c6dea0a6899326',1,'BresenhamLine']]],
-  ['pointer_4758',['pointer',['../df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#a10ebe0a2b5f7dceda6f042beb2ef2198',1,'AH::ArraySlice::Iterator::pointer()'],['../dd/d02/classDoublyLinkedList_1_1node__iterator.html#a0b42c2b115077f26456b0086207dc114',1,'DoublyLinkedList::node_iterator::pointer()'],['../d1/d4c/classDoublyLinkedList_1_1reverse__node__iterator.html#a0b42c2b115077f26456b0086207dc114',1,'DoublyLinkedList::reverse_node_iterator::pointer()']]]
+  ['manipulator_4762',['manipulator',['../d8/d4b/group__AH__PrintStream.html#gab82cf12919f956954b9bba423b696205',1,'AH']]],
+  ['mappingfunction_4763',['MappingFunction',['../d3/d6e/classAH_1_1FilteredAnalog.html#acebdd7d5e342b3080a731e8dd0a0738f',1,'AH::FilteredAnalog::MappingFunction()'],['../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6',1,'MappingFunction():&#160;Def.hpp']]],
+  ['midicnchannel_4764',['MIDICNChannel',['../db/dd6/MIDIAddress_8hpp.html#a8f7a1254500a7aeb87dc017b4b5c4260',1,'MIDIAddress.hpp']]],
+  ['midicnchanneladdress_4765',['MIDICNChannelAddress',['../db/dd6/MIDIAddress_8hpp.html#af50a72a61e6d4f8f1b5007c4045c9f5a',1,'MIDIAddress.hpp']]],
+  ['midinote_4766',['MIDINote',['../d6/dbb/NoteCCRange_8hpp.html#a61df835b176a68297c50afa97f31c96b',1,'MIDINote():&#160;NoteCCRange.hpp'],['../d1/dd0/namespaceBankable.html#a319e458f422da3892d86cea8c1c0fdd3',1,'Bankable::MIDINote()']]],
+  ['midinoteled_4767',['MIDINoteLED',['../d7/de4/group__midi-input-elements-leds.html#ga6176287dcf4c5ee8ae321a2c0bc4a4a8',1,'MIDINoteLED():&#160;NoteCCRangeLEDs.hpp'],['../d7/de4/group__midi-input-elements-leds.html#ga396d4c2730f2357fdd2ff35a45afd263',1,'Bankable::MIDINoteLED()']]],
+  ['midioutputelement_4768',['MIDIOutputElement',['../d1/d41/MIDIOutputElement_8hpp.html#a42e54a3ce5a3ac2d4c99d22b246fed53',1,'MIDIOutputElement.hpp']]],
+  ['midioutputelementpotentiometer_4769',['MIDIOutputElementPotentiometer',['../d1/d41/MIDIOutputElement_8hpp.html#a9f1e57346f96f69505fe7f72806d5287',1,'MIDIOutputElement.hpp']]],
+  ['midiusbpacket_5ft_4770',['MIDIUSBPacket_t',['../de/d05/classUSBMIDI__Interface.html#a8353b3c401b43a9977c8d88aed620c68',1,'USBMIDI_Interface::MIDIUSBPacket_t()'],['../d2/d84/namespaceUSBMIDI.html#afa563722058cf859e56af41c9b9392d1',1,'USBMIDI::MIDIUSBPacket_t()']]],
+  ['mutex_4771',['Mutex',['../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4',1,'AH::UpdatableCRTP']]]
 ];

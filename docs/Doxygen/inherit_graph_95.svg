@@ -54,7 +54,7 @@
 <g id="a_node4"><a xlink:href="d4/d23/classDoublyLinkable.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-298.5 0,-328.5 153,-328.5 153,-298.5 0,-298.5"/>
 <text text-anchor="start" x="8" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoublyLinkable&lt; Updatable</text>
-<text text-anchor="middle" x="76.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; MIDI_Interface &gt; &gt;</text>
+<text text-anchor="middle" x="76.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; MIDI_Interface, false &gt; &gt;</text>
 </a>
 </g>
 </g>
@@ -62,9 +62,10 @@
 <g id="node5" class="node">
 <title>Node459</title>
 <g id="a_node5"><a xlink:href="d8/d1a/classAH_1_1UpdatableCRTP.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="189,-298.5 189,-328.5 342,-328.5 342,-298.5 189,-298.5"/>
-<text text-anchor="start" x="197" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00">UpdatableCRTP&lt; Updatable</text>
-<text text-anchor="middle" x="265.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; MIDI_Interface &gt; &gt;</text>
+<polygon fill="white" stroke="black" points="189,-293 189,-334 342,-334 342,-293 189,-293"/>
+<text text-anchor="start" x="197" y="-322" font-family="Helvetica,sans-Serif" font-size="10.00">UpdatableCRTP&lt; Updatable</text>
+<text text-anchor="start" x="197" y="-311" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; MIDI_Interface, false</text>
+<text text-anchor="middle" x="265.5" y="-300" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt;, false &gt;</text>
 </a>
 </g>
 </g>
@@ -465,8 +466,8 @@
 <g id="node31" class="node">
 <title>Node270</title>
 <g id="a_node31"><a xlink:href="d9/db6/classMIDI__Sink.html" target="_top" xlink:title="Class that can receive MIDI messages from a MIDI pipe.">
-<polygon fill="white" stroke="black" points="44,-251 44,-270 109,-270 109,-251 44,-251"/>
-<text text-anchor="middle" x="76.5" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Sink</text>
+<polygon fill="white" stroke="black" points="44,-223 44,-242 109,-242 109,-223 44,-223"/>
+<text text-anchor="middle" x="76.5" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Sink</text>
 </a>
 </g>
 </g>
@@ -474,31 +475,31 @@
 <g id="node32" class="node">
 <title>Node1</title>
 <g id="a_node32"><a xlink:href="df/d72/classMIDI__Pipe.html" target="_top" xlink:title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">
-<polygon fill="white" stroke="black" points="233,-218 233,-237 298,-237 298,-218 233,-218"/>
-<text text-anchor="middle" x="265.5" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Pipe</text>
+<polygon fill="white" stroke="black" points="233,-204 233,-223 298,-223 298,-204 233,-204"/>
+<text text-anchor="middle" x="265.5" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Pipe</text>
 </a>
 </g>
 </g>
 <!-- Node270&#45;&gt;Node1 -->
 <g id="edge29" class="edge">
 <title>Node270&#45;&gt;Node1</title>
-<path fill="none" stroke="#8b1a1a" d="M119.42,-253.1C153.81,-247.03 201.73,-238.58 232.93,-233.07"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="118.46,-249.72 109.22,-254.9 119.68,-256.61 118.46,-249.72"/>
+<path fill="none" stroke="#8b1a1a" d="M119.42,-228.24C153.81,-224.75 201.73,-219.88 232.93,-216.71"/>
+<polygon fill="#8b1a1a" stroke="#8b1a1a" points="118.82,-224.78 109.22,-229.28 119.52,-231.75 118.82,-224.78"/>
 </g>
 <!-- Node271 -->
 <g id="node33" class="node">
 <title>Node271</title>
 <g id="a_node33"><a xlink:href="d5/dc1/structTrueMIDI__Sink.html" target="_top" xlink:title="A MIDI_Sink that is not a MIDI_Pipe.">
-<polygon fill="white" stroke="black" points="222.5,-256 222.5,-275 308.5,-275 308.5,-256 222.5,-256"/>
-<text text-anchor="middle" x="265.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">TrueMIDI_Sink</text>
+<polygon fill="white" stroke="black" points="222.5,-242 222.5,-261 308.5,-261 308.5,-242 222.5,-242"/>
+<text text-anchor="middle" x="265.5" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00">TrueMIDI_Sink</text>
 </a>
 </g>
 </g>
 <!-- Node270&#45;&gt;Node271 -->
 <g id="edge30" class="edge">
 <title>Node270&#45;&gt;Node271</title>
-<path fill="none" stroke="midnightblue" d="M119.6,-261.63C150.3,-262.45 191.72,-263.55 222.42,-264.37"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="119.31,-258.12 109.22,-261.35 119.12,-265.11 119.31,-258.12"/>
+<path fill="none" stroke="midnightblue" d="M119.2,-236.74C149.93,-239.86 191.59,-244.09 222.42,-247.22"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="119.52,-233.25 109.22,-235.72 118.82,-240.22 119.52,-233.25"/>
 </g>
 <!-- Node3 -->
 <g id="node34" class="node">
@@ -512,8 +513,8 @@
 <!-- Node271&#45;&gt;Node3 -->
 <g id="edge31" class="edge">
 <title>Node271&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M318.79,-258.05C345.07,-254.3 377.01,-249.75 404.14,-245.89"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="318.06,-254.62 308.65,-259.49 319.05,-261.55 318.06,-254.62"/>
+<path fill="none" stroke="midnightblue" d="M318.79,-247.77C345.07,-245.9 377.01,-243.63 404.14,-241.69"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="318.38,-244.29 308.65,-248.5 318.88,-251.28 318.38,-244.29"/>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
 <g id="edge33" class="edge">
@@ -531,37 +532,37 @@
 <g id="node35" class="node">
 <title>Node0</title>
 <g id="a_node35"><a xlink:href="df/d5b/classMIDI__Source.html" target="_top" xlink:title="Class that can send MIDI messages to a MIDI pipe.">
-<polygon fill="white" stroke="black" points="38,-194 38,-213 115,-213 115,-194 38,-194"/>
-<text text-anchor="middle" x="76.5" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Source</text>
+<polygon fill="white" stroke="black" points="38,-176 38,-195 115,-195 115,-176 38,-176"/>
+<text text-anchor="middle" x="76.5" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Source</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node1 -->
 <g id="edge34" class="edge">
 <title>Node0&#45;&gt;Node1</title>
-<path fill="none" stroke="#8b1a1a" d="M125.46,-209.66C159.24,-213.99 203.51,-219.67 232.92,-223.45"/>
-<polygon fill="#8b1a1a" stroke="#8b1a1a" points="125.71,-206.16 115.34,-208.36 124.82,-213.1 125.71,-206.16"/>
+<path fill="none" stroke="#8b1a1a" d="M125.46,-192.68C159.24,-197.74 203.51,-204.37 232.92,-208.77"/>
+<polygon fill="#8b1a1a" stroke="#8b1a1a" points="125.75,-189.19 115.34,-191.17 124.71,-196.11 125.75,-189.19"/>
 </g>
 <!-- Node2 -->
 <g id="node36" class="node">
 <title>Node2</title>
 <g id="a_node36"><a xlink:href="d2/dcd/structTrueMIDI__Source.html" target="_top" xlink:title="A MIDI_Source that is not a MIDI_Pipe.">
-<polygon fill="white" stroke="black" points="216.5,-180 216.5,-199 314.5,-199 314.5,-180 216.5,-180"/>
-<text text-anchor="middle" x="265.5" y="-187" font-family="Helvetica,sans-Serif" font-size="10.00">TrueMIDI_Source</text>
+<polygon fill="white" stroke="black" points="216.5,-166 216.5,-185 314.5,-185 314.5,-166 216.5,-166"/>
+<text text-anchor="middle" x="265.5" y="-173" font-family="Helvetica,sans-Serif" font-size="10.00">TrueMIDI_Source</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node2 -->
 <g id="edge35" class="edge">
 <title>Node0&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M125.65,-199.9C153.53,-197.81 188.51,-195.19 216.38,-193.1"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="125.05,-196.43 115.34,-200.67 125.58,-203.41 125.05,-196.43"/>
+<path fill="none" stroke="midnightblue" d="M125.65,-182.93C153.53,-181.43 188.51,-179.56 216.38,-178.07"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="125.14,-179.45 115.34,-183.48 125.51,-186.44 125.14,-179.45"/>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge36" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M314.16,-201.5C341.44,-208.37 371.52,-215.92 378,-217.5 392.29,-220.97 407.95,-224.69 421.9,-227.96"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="314.83,-198.06 304.28,-199.02 313.12,-204.85 314.83,-198.06"/>
+<path fill="none" stroke="midnightblue" d="M324.06,-187.91C330.21,-189.85 336.3,-192.04 342,-194.5 359.43,-202.03 360.51,-210.11 378,-217.5 388.05,-221.75 399.18,-225.19 409.97,-227.94"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="324.98,-184.53 314.4,-185.08 323.01,-191.25 324.98,-184.53"/>
 </g>
 </g>
 </svg>

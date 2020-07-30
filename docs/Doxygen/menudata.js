@@ -184,6 +184,7 @@ var menudata={children:[
 {text:"d",url:"functions_type.html#index_d"},
 {text:"e",url:"functions_type.html#index_e"},
 {text:"i",url:"functions_type.html#index_i"},
+{text:"l",url:"functions_type.html#index_l"},
 {text:"m",url:"functions_type.html#index_m"},
 {text:"p",url:"functions_type.html#index_p"},
 {text:"r",url:"functions_type.html#index_r"},

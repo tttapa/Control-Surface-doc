@@ -79,26 +79,33 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Lock guard that doesn't lock it's mutex, used on single-core systems.  
+ <a href="../../d7/d8e/structEmptyLockGuard.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d4/d84/Mutex_8hpp_source.html">AH/Containers/Mutex.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for EmptyLockGuard&lt; Mutex &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d6c/structEmptyLockGuard__coll__graph.svg" width="215" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d6c/structEmptyLockGuard__coll__graph.svg" width="215" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae16a0d0241d39fc9cc6d37588b80df2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8e/structEmptyLockGuard.html#ae16a0d0241d39fc9cc6d37588b80df2e">EmptyLockGuard</a> (Mutex &amp;)</td></tr>
 <tr class="separator:ae16a0d0241d39fc9cc6d37588b80df2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0421c0e3f4a8e41421417d2598b8bd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8e/structEmptyLockGuard.html#af0421c0e3f4a8e41421417d2598b8bd3">~EmptyLockGuard</a> ()</td></tr>
+<tr class="separator:af0421c0e3f4a8e41421417d2598b8bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Mutex&gt;<br />
 struct EmptyLockGuard&lt; Mutex &gt;</h3>
 
+<p>Lock guard that doesn't lock it's mutex, used on single-core systems. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d84/Mutex_8hpp_source.html#l00009">9</a> of file <a class="el" href="../../d4/d84/Mutex_8hpp_source.html">Mutex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/Mutex_8hpp_source.html#l00011">11</a> of file <a class="el" href="../../d4/d84/Mutex_8hpp_source.html">Mutex.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae16a0d0241d39fc9cc6d37588b80df2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae16a0d0241d39fc9cc6d37588b80df2e">&#9670;&nbsp;</a></span>EmptyLockGuard()</h2>
@@ -124,7 +131,34 @@ struct EmptyLockGuard&lt; Mutex &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d84/Mutex_8hpp_source.html#l00010">10</a> of file <a class="el" href="../../d4/d84/Mutex_8hpp_source.html">Mutex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/Mutex_8hpp_source.html#l00012">12</a> of file <a class="el" href="../../d4/d84/Mutex_8hpp_source.html">Mutex.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af0421c0e3f4a8e41421417d2598b8bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0421c0e3f4a8e41421417d2598b8bd3">&#9670;&nbsp;</a></span>~EmptyLockGuard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d84/Mutex_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d4/d84/Mutex_8hpp_source.html">Mutex.hpp</a>.</p>
 
 </div>
 </div>

@@ -123,11 +123,15 @@ Behavior</h2>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// read the buttons, and change interval accordingly</span></div>
 <div class="line">  <span class="keywordflow">switch</span> (buttons.update()) {</div>
-<div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::Increment:</div>
+<div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::IncrementShort:</div>
+<div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::IncrementLong:</div>
+<div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::IncrementHold:</div>
 <div class="line">      timer.setInterval(</div>
 <div class="line">        <a name="a6"></a><a class="code" href="../../dd/d5e/group__AH__Math.html#ga9c976cf1a12d963c960d12808675e8a9">AH::max</a>(timer.getInterval() - intervalDelta, minInterval));</div>
 <div class="line">      <span class="keywordflow">break</span>;</div>
-<div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::Decrement:</div>
+<div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::DecrementShort:</div>
+<div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::DecrementLong:</div>
+<div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::DecrementHold:</div>
 <div class="line">      timer.setInterval(</div>
 <div class="line">        <a name="a7"></a><a class="code" href="../../dd/d5e/group__AH__Math.html#ga5e07739c1fd7a29e6b2840237af7f1bc">AH::min</a>(timer.getInterval() + intervalDelta, maxInterval));</div>
 <div class="line">      <span class="keywordflow">break</span>;</div>

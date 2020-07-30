@@ -93,7 +93,8 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dc8/classAH_1_1Timer__coll__graph.svg" width="128" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dc8/classAH_1_1Timer__coll__graph.svg" width="166" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -102,8 +103,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a601e4fc3c3d5fa54634192a88819ad5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="../../d2/de5/classAH_1_1Timer.html#a601e4fc3c3d5fa54634192a88819ad5a">More...</a><br /></td></tr>
 <tr class="separator:a601e4fc3c3d5fa54634192a88819ad5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0bdf5cca484fb2ba637c39384b27fb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de5/classAH_1_1Timer.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a> ()</td></tr>
-<tr class="memdesc:ab0bdf5cca484fb2ba637c39384b27fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the timer.  <a href="../../d2/de5/classAH_1_1Timer.html#ab0bdf5cca484fb2ba637c39384b27fb2">More...</a><br /></td></tr>
+<tr class="memdesc:ab0bdf5cca484fb2ba637c39384b27fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize or reset the timer. The timer will fire immediately.  <a href="../../d2/de5/classAH_1_1Timer.html#ab0bdf5cca484fb2ba637c39384b27fb2">More...</a><br /></td></tr>
 <tr class="separator:ab0bdf5cca484fb2ba637c39384b27fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d971f133963cf39fa3b4ea260f66a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de5/classAH_1_1Timer.html#aa0d971f133963cf39fa3b4ea260f66a9">beginNextPeriod</a> ()</td></tr>
+<tr class="memdesc:aa0d971f133963cf39fa3b4ea260f66a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize or reset the timer. The timer will fire after one period.  <a href="../../d2/de5/classAH_1_1Timer.html#aa0d971f133963cf39fa3b4ea260f66a9">More...</a><br /></td></tr>
+<tr class="separator:aa0d971f133963cf39fa3b4ea260f66a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b3baad8c612d81b96e46f84d7e97580"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de5/classAH_1_1Timer.html#a9b3baad8c612d81b96e46f84d7e97580">operator bool</a> ()</td></tr>
 <tr class="memdesc:a9b3baad8c612d81b96e46f84d7e97580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the timer and return true if the event should fire.  <a href="../../d2/de5/classAH_1_1Timer.html#a9b3baad8c612d81b96e46f84d7e97580">More...</a><br /></td></tr>
 <tr class="separator:a9b3baad8c612d81b96e46f84d7e97580"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,9 +201,38 @@ class AH::Timer&lt; time &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize the timer. </p>
+<p>Initialize or reset the timer. The timer will fire immediately. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa0d971f133963cf39fa3b4ea260f66a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d971f133963cf39fa3b4ea260f66a9">&#9670;&nbsp;</a></span>beginNextPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void beginNextPeriod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize or reset the timer. The timer will fire after one period. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +261,7 @@ class AH::Timer&lt; time &gt;</h3>
 
 <p>Update the timer and return true if the event should fire. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +290,7 @@ class AH::Timer&lt; time &gt;</h3>
 
 <p>Get the interval of the timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
 
 </div>
 </div>
@@ -287,7 +320,7 @@ class AH::Timer&lt; time &gt;</h3>
 
 <p>Set the interval of the timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
 
 </div>
 </div>
@@ -312,7 +345,7 @@ class AH::Timer&lt; time &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +369,7 @@ class AH::Timer&lt; time &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00059">59</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d1/dd0/MillisMicrosTimer_8hpp_source.html">MillisMicrosTimer.hpp</a>.</p>
 
 </div>
 </div>

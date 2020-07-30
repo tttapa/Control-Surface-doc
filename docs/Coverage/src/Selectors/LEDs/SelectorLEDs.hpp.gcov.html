@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - f8d78bd33524e67608cff1f0e2b5c29a109e25d0 - src/Selectors/LEDs/SelectorLEDs.hpp</title>
+  <title>LCOV - 547d5f224c8ccdbe557fb92367edd6fb891e55a7 - src/Selectors/LEDs/SelectorLEDs.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">f8d78bd33524e67608cff1f0e2b5c29a109e25d0</td>
+            <td class="headerValue">547d5f224c8ccdbe557fb92367edd6fb891e55a7</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">44</td>
-            <td class="headerCovTableEntry">60</td>
-            <td class="headerCovTableEntryLo">73.3 %</td>
+            <td class="headerCovTableEntry">40</td>
+            <td class="headerCovTableEntry">56</td>
+            <td class="headerCovTableEntryLo">71.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-27 14:35:35</td>
+            <td class="headerValue">2020-07-30 16:18:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">14</td>
@@ -200,98 +200,94 @@
 <a name="130"><span class="lineNum">     130 </span>            :     : public GenericIncrementSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
 <a name="131"><span class="lineNum">     131 </span>            :   public:</a>
 <a name="132"><span class="lineNum">     132 </span><span class="lineCov">          1 :     IncrementSelectorLEDs(Selectable&lt;N&gt; &amp;selectable, const AH::Button &amp;button,</span></a>
-<a name="133"><span class="lineNum">     133 </span>            :                           const PinList&lt;N&gt; &amp;ledPins, Wrap wrap = Wrap::Wrap)</a>
+<a name="133"><span class="lineNum">     133 </span>            :                           const PinList&lt;N&gt; &amp;ledPins)</a>
 <a name="134"><span class="lineNum">     134 </span><span class="lineCov">          1 :         : GenericIncrementSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt;{</span></a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineCov">          1 :               selectable,</span></a>
-<a name="136"><span class="lineNum">     136 </span><span class="lineCov">          1 :               {ledPins},</span></a>
-<a name="137"><span class="lineNum">     137 </span><span class="lineCov">          1 :               button,</span></a>
-<a name="138"><span class="lineNum">     138 </span><span class="lineCov">          1 :               wrap,</span></a>
-<a name="139"><span class="lineNum">     139 </span><span class="lineCov">          2 :           } {}</span></a>
-<a name="140"><span class="lineNum">     140 </span>            : };</a>
+<a name="135"><span class="lineNum">     135 </span><span class="lineCov">          2 :               selectable, {ledPins}, button} {}</span></a>
+<a name="136"><span class="lineNum">     136 </span>            : };</a>
+<a name="137"><span class="lineNum">     137 </span>            : </a>
+<a name="138"><span class="lineNum">     138 </span>            : END_CS_NAMESPACE</a>
+<a name="139"><span class="lineNum">     139 </span>            : </a>
+<a name="140"><span class="lineNum">     140 </span>            : // -------------------------------------------------------------------------- //</a>
 <a name="141"><span class="lineNum">     141 </span>            : </a>
-<a name="142"><span class="lineNum">     142 </span>            : END_CS_NAMESPACE</a>
+<a name="142"><span class="lineNum">     142 </span>            : #include &lt;Selectors/ManyButtonsSelector.hpp&gt;</a>
 <a name="143"><span class="lineNum">     143 </span>            : </a>
-<a name="144"><span class="lineNum">     144 </span>            : // -------------------------------------------------------------------------- //</a>
+<a name="144"><span class="lineNum">     144 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="145"><span class="lineNum">     145 </span>            : </a>
-<a name="146"><span class="lineNum">     146 </span>            : #include &lt;Selectors/ManyButtonsSelector.hpp&gt;</a>
-<a name="147"><span class="lineNum">     147 </span>            : </a>
-<a name="148"><span class="lineNum">     148 </span>            : BEGIN_CS_NAMESPACE</a>
-<a name="149"><span class="lineNum">     149 </span>            : </a>
-<a name="150"><span class="lineNum">     150 </span>            : /**</a>
-<a name="151"><span class="lineNum">     151 </span>            :  * @brief   @copybrief ManyButtonsSelector</a>
-<a name="152"><span class="lineNum">     152 </span>            :  *          This version displays the setting using LEDs.</a>
-<a name="153"><span class="lineNum">     153 </span>            :  * @details @copydetails ManyButtonsSelector</a>
-<a name="154"><span class="lineNum">     154 </span>            :  * @ingroup SelectorsLEDs</a>
-<a name="155"><span class="lineNum">     155 </span>            :  */</a>
-<a name="156"><span class="lineNum">     156 </span>            : template &lt;setting_t N&gt;</a>
-<a name="157"><span class="lineNum">     157 </span><span class="lineCov">          1 : class ManyButtonsSelectorLEDs</span></a>
-<a name="158"><span class="lineNum">     158 </span>            :     : public GenericManyButtonsSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
-<a name="159"><span class="lineNum">     159 </span>            :   public:</a>
-<a name="160"><span class="lineNum">     160 </span><span class="lineCov">          1 :     ManyButtonsSelectorLEDs(Selectable&lt;N&gt; &amp;selectable,</span></a>
-<a name="161"><span class="lineNum">     161 </span>            :                             const PinList&lt;N&gt; &amp;buttonPins,</a>
-<a name="162"><span class="lineNum">     162 </span>            :                             const PinList&lt;N&gt; &amp;ledPins)</a>
-<a name="163"><span class="lineNum">     163 </span><span class="lineCov">          1 :         : GenericManyButtonsSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt;{</span></a>
-<a name="164"><span class="lineNum">     164 </span><span class="lineCov">          1 :               selectable,</span></a>
-<a name="165"><span class="lineNum">     165 </span><span class="lineCov">          1 :               {ledPins},</span></a>
-<a name="166"><span class="lineNum">     166 </span><span class="lineCov">          1 :               buttonPins,</span></a>
-<a name="167"><span class="lineNum">     167 </span><span class="lineCov">          2 :           } {}</span></a>
-<a name="168"><span class="lineNum">     168 </span>            : };</a>
+<a name="146"><span class="lineNum">     146 </span>            : /**</a>
+<a name="147"><span class="lineNum">     147 </span>            :  * @brief   @copybrief ManyButtonsSelector</a>
+<a name="148"><span class="lineNum">     148 </span>            :  *          This version displays the setting using LEDs.</a>
+<a name="149"><span class="lineNum">     149 </span>            :  * @details @copydetails ManyButtonsSelector</a>
+<a name="150"><span class="lineNum">     150 </span>            :  * @ingroup SelectorsLEDs</a>
+<a name="151"><span class="lineNum">     151 </span>            :  */</a>
+<a name="152"><span class="lineNum">     152 </span>            : template &lt;setting_t N&gt;</a>
+<a name="153"><span class="lineNum">     153 </span><span class="lineCov">          1 : class ManyButtonsSelectorLEDs</span></a>
+<a name="154"><span class="lineNum">     154 </span>            :     : public GenericManyButtonsSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
+<a name="155"><span class="lineNum">     155 </span>            :   public:</a>
+<a name="156"><span class="lineNum">     156 </span><span class="lineCov">          1 :     ManyButtonsSelectorLEDs(Selectable&lt;N&gt; &amp;selectable,</span></a>
+<a name="157"><span class="lineNum">     157 </span>            :                             const PinList&lt;N&gt; &amp;buttonPins,</a>
+<a name="158"><span class="lineNum">     158 </span>            :                             const PinList&lt;N&gt; &amp;ledPins)</a>
+<a name="159"><span class="lineNum">     159 </span><span class="lineCov">          1 :         : GenericManyButtonsSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt;{</span></a>
+<a name="160"><span class="lineNum">     160 </span><span class="lineCov">          1 :               selectable,</span></a>
+<a name="161"><span class="lineNum">     161 </span><span class="lineCov">          1 :               {ledPins},</span></a>
+<a name="162"><span class="lineNum">     162 </span><span class="lineCov">          1 :               buttonPins,</span></a>
+<a name="163"><span class="lineNum">     163 </span><span class="lineCov">          2 :           } {}</span></a>
+<a name="164"><span class="lineNum">     164 </span>            : };</a>
+<a name="165"><span class="lineNum">     165 </span>            : </a>
+<a name="166"><span class="lineNum">     166 </span>            : END_CS_NAMESPACE</a>
+<a name="167"><span class="lineNum">     167 </span>            : </a>
+<a name="168"><span class="lineNum">     168 </span>            : // -------------------------------------------------------------------------- //</a>
 <a name="169"><span class="lineNum">     169 </span>            : </a>
-<a name="170"><span class="lineNum">     170 </span>            : END_CS_NAMESPACE</a>
+<a name="170"><span class="lineNum">     170 </span>            : #include &lt;Selectors/ProgramChangeSelector.hpp&gt;</a>
 <a name="171"><span class="lineNum">     171 </span>            : </a>
-<a name="172"><span class="lineNum">     172 </span>            : // -------------------------------------------------------------------------- //</a>
+<a name="172"><span class="lineNum">     172 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="173"><span class="lineNum">     173 </span>            : </a>
-<a name="174"><span class="lineNum">     174 </span>            : #include &lt;Selectors/ProgramChangeSelector.hpp&gt;</a>
-<a name="175"><span class="lineNum">     175 </span>            : </a>
-<a name="176"><span class="lineNum">     176 </span>            : BEGIN_CS_NAMESPACE</a>
-<a name="177"><span class="lineNum">     177 </span>            : </a>
-<a name="178"><span class="lineNum">     178 </span>            : /**</a>
-<a name="179"><span class="lineNum">     179 </span>            :  * @brief   @copybrief ProgramChangeSelector</a>
-<a name="180"><span class="lineNum">     180 </span>            :  *          This version displays the setting using LEDs.</a>
-<a name="181"><span class="lineNum">     181 </span>            :  * @details @copydetails ProgramChangeSelector</a>
-<a name="182"><span class="lineNum">     182 </span>            :  * @ingroup SelectorsLEDs</a>
-<a name="183"><span class="lineNum">     183 </span>            :  */</a>
-<a name="184"><span class="lineNum">     184 </span>            : template &lt;setting_t N&gt;</a>
-<a name="185"><span class="lineNum">     185 </span><span class="lineCov">          1 : class ProgramChangeSelectorLEDs</span></a>
-<a name="186"><span class="lineNum">     186 </span>            :     : public GenericProgramChangeSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
-<a name="187"><span class="lineNum">     187 </span>            :   public:</a>
-<a name="188"><span class="lineNum">     188 </span><span class="lineCov">          1 :     ProgramChangeSelectorLEDs(Selectable&lt;N&gt; &amp;selectable,</span></a>
-<a name="189"><span class="lineNum">     189 </span>            :                               const MIDIChannelCN &amp;address,</a>
-<a name="190"><span class="lineNum">     190 </span>            :                               const PinList&lt;N&gt; &amp;ledPins)</a>
-<a name="191"><span class="lineNum">     191 </span><span class="lineCov">          1 :         : GenericProgramChangeSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt;{</span></a>
-<a name="192"><span class="lineNum">     192 </span><span class="lineCov">          1 :               selectable,</span></a>
-<a name="193"><span class="lineNum">     193 </span><span class="lineCov">          1 :               {ledPins},</span></a>
-<a name="194"><span class="lineNum">     194 </span><span class="lineCov">          1 :               address,</span></a>
-<a name="195"><span class="lineNum">     195 </span><span class="lineCov">          2 :           } {}</span></a>
-<a name="196"><span class="lineNum">     196 </span>            : };</a>
+<a name="174"><span class="lineNum">     174 </span>            : /**</a>
+<a name="175"><span class="lineNum">     175 </span>            :  * @brief   @copybrief ProgramChangeSelector</a>
+<a name="176"><span class="lineNum">     176 </span>            :  *          This version displays the setting using LEDs.</a>
+<a name="177"><span class="lineNum">     177 </span>            :  * @details @copydetails ProgramChangeSelector</a>
+<a name="178"><span class="lineNum">     178 </span>            :  * @ingroup SelectorsLEDs</a>
+<a name="179"><span class="lineNum">     179 </span>            :  */</a>
+<a name="180"><span class="lineNum">     180 </span>            : template &lt;setting_t N&gt;</a>
+<a name="181"><span class="lineNum">     181 </span><span class="lineCov">          1 : class ProgramChangeSelectorLEDs</span></a>
+<a name="182"><span class="lineNum">     182 </span>            :     : public GenericProgramChangeSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
+<a name="183"><span class="lineNum">     183 </span>            :   public:</a>
+<a name="184"><span class="lineNum">     184 </span><span class="lineCov">          1 :     ProgramChangeSelectorLEDs(Selectable&lt;N&gt; &amp;selectable,</span></a>
+<a name="185"><span class="lineNum">     185 </span>            :                               const MIDIChannelCN &amp;address,</a>
+<a name="186"><span class="lineNum">     186 </span>            :                               const PinList&lt;N&gt; &amp;ledPins)</a>
+<a name="187"><span class="lineNum">     187 </span><span class="lineCov">          1 :         : GenericProgramChangeSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt;{</span></a>
+<a name="188"><span class="lineNum">     188 </span><span class="lineCov">          1 :               selectable,</span></a>
+<a name="189"><span class="lineNum">     189 </span><span class="lineCov">          1 :               {ledPins},</span></a>
+<a name="190"><span class="lineNum">     190 </span><span class="lineCov">          1 :               address,</span></a>
+<a name="191"><span class="lineNum">     191 </span><span class="lineCov">          2 :           } {}</span></a>
+<a name="192"><span class="lineNum">     192 </span>            : };</a>
+<a name="193"><span class="lineNum">     193 </span>            : </a>
+<a name="194"><span class="lineNum">     194 </span>            : END_CS_NAMESPACE</a>
+<a name="195"><span class="lineNum">     195 </span>            : </a>
+<a name="196"><span class="lineNum">     196 </span>            : // -------------------------------------------------------------------------- //</a>
 <a name="197"><span class="lineNum">     197 </span>            : </a>
-<a name="198"><span class="lineNum">     198 </span>            : END_CS_NAMESPACE</a>
+<a name="198"><span class="lineNum">     198 </span>            : #include &lt;Selectors/SwitchSelector.hpp&gt;</a>
 <a name="199"><span class="lineNum">     199 </span>            : </a>
-<a name="200"><span class="lineNum">     200 </span>            : // -------------------------------------------------------------------------- //</a>
+<a name="200"><span class="lineNum">     200 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="201"><span class="lineNum">     201 </span>            : </a>
-<a name="202"><span class="lineNum">     202 </span>            : #include &lt;Selectors/SwitchSelector.hpp&gt;</a>
-<a name="203"><span class="lineNum">     203 </span>            : </a>
-<a name="204"><span class="lineNum">     204 </span>            : BEGIN_CS_NAMESPACE</a>
-<a name="205"><span class="lineNum">     205 </span>            : </a>
-<a name="206"><span class="lineNum">     206 </span>            : /**</a>
-<a name="207"><span class="lineNum">     207 </span>            :  * @brief   @copybrief SwitchSelector</a>
-<a name="208"><span class="lineNum">     208 </span>            :  *          This version displays the setting using LEDs.</a>
-<a name="209"><span class="lineNum">     209 </span>            :  * @details @copydetails SwitchSelector</a>
-<a name="210"><span class="lineNum">     210 </span>            :  * @ingroup SelectorsLEDs</a>
-<a name="211"><span class="lineNum">     211 </span>            :  */</a>
-<a name="212"><span class="lineNum">     212 </span><span class="lineCov">          1 : class SwitchSelectorLED</span></a>
-<a name="213"><span class="lineNum">     213 </span>            :     : public GenericSwitchSelector&lt;SelectorSingleLEDCallback&gt; {</a>
-<a name="214"><span class="lineNum">     214 </span>            :   public:</a>
-<a name="215"><span class="lineNum">     215 </span><span class="lineCov">          1 :     SwitchSelectorLED(Selectable&lt;2&gt; &amp;selectable, const AH::Button &amp;button,</span></a>
-<a name="216"><span class="lineNum">     216 </span>            :                       pin_t ledPin)</a>
-<a name="217"><span class="lineNum">     217 </span><span class="lineCov">          1 :         : GenericSwitchSelector&lt;SelectorSingleLEDCallback&gt;{</span></a>
-<a name="218"><span class="lineNum">     218 </span><span class="lineCov">          1 :               selectable,</span></a>
-<a name="219"><span class="lineNum">     219 </span><span class="lineCov">          1 :               {ledPin},</span></a>
-<a name="220"><span class="lineNum">     220 </span><span class="lineCov">          1 :               button,</span></a>
-<a name="221"><span class="lineNum">     221 </span><span class="lineCov">          2 :           } {}</span></a>
-<a name="222"><span class="lineNum">     222 </span>            : };</a>
-<a name="223"><span class="lineNum">     223 </span>            : </a>
-<a name="224"><span class="lineNum">     224 </span>            : END_CS_NAMESPACE</a>
+<a name="202"><span class="lineNum">     202 </span>            : /**</a>
+<a name="203"><span class="lineNum">     203 </span>            :  * @brief   @copybrief SwitchSelector</a>
+<a name="204"><span class="lineNum">     204 </span>            :  *          This version displays the setting using LEDs.</a>
+<a name="205"><span class="lineNum">     205 </span>            :  * @details @copydetails SwitchSelector</a>
+<a name="206"><span class="lineNum">     206 </span>            :  * @ingroup SelectorsLEDs</a>
+<a name="207"><span class="lineNum">     207 </span>            :  */</a>
+<a name="208"><span class="lineNum">     208 </span><span class="lineCov">          1 : class SwitchSelectorLED</span></a>
+<a name="209"><span class="lineNum">     209 </span>            :     : public GenericSwitchSelector&lt;SelectorSingleLEDCallback&gt; {</a>
+<a name="210"><span class="lineNum">     210 </span>            :   public:</a>
+<a name="211"><span class="lineNum">     211 </span><span class="lineCov">          1 :     SwitchSelectorLED(Selectable&lt;2&gt; &amp;selectable, const AH::Button &amp;button,</span></a>
+<a name="212"><span class="lineNum">     212 </span>            :                       pin_t ledPin)</a>
+<a name="213"><span class="lineNum">     213 </span><span class="lineCov">          1 :         : GenericSwitchSelector&lt;SelectorSingleLEDCallback&gt;{</span></a>
+<a name="214"><span class="lineNum">     214 </span><span class="lineCov">          1 :               selectable,</span></a>
+<a name="215"><span class="lineNum">     215 </span><span class="lineCov">          1 :               {ledPin},</span></a>
+<a name="216"><span class="lineNum">     216 </span><span class="lineCov">          1 :               button,</span></a>
+<a name="217"><span class="lineNum">     217 </span><span class="lineCov">          2 :           } {}</span></a>
+<a name="218"><span class="lineNum">     218 </span>            : };</a>
+<a name="219"><span class="lineNum">     219 </span>            : </a>
+<a name="220"><span class="lineNum">     220 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

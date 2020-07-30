@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - f8d78bd33524e67608cff1f0e2b5c29a109e25d0 - src/MIDI_Outputs/CCRotaryEncoder.hpp</title>
+  <title>LCOV - 547d5f224c8ccdbe557fb92367edd6fb891e55a7 - src/MIDI_Outputs/CCRotaryEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">f8d78bd33524e67608cff1f0e2b5c29a109e25d0</td>
+            <td class="headerValue">547d5f224c8ccdbe557fb92367edd6fb891e55a7</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">5</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-27 14:35:35</td>
+            <td class="headerValue">2020-07-30 16:18:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -88,7 +88,7 @@
 <a name="18"><span class="lineNum">      18 </span>            :  *</a>
 <a name="19"><span class="lineNum">      19 </span>            :  * @ingroup MIDIOutputElements</a>
 <a name="20"><span class="lineNum">      20 </span>            :  */</a>
-<a name="21"><span class="lineNum">      21 </span><span class="lineCov">          8 : class CCRotaryEncoder : public MIDIRotaryEncoder&lt;RelativeCCSender&gt; {</span></a>
+<a name="21"><span class="lineNum">      21 </span><span class="lineCov">         11 : class CCRotaryEncoder : public MIDIRotaryEncoder&lt;RelativeCCSender&gt; {</span></a>
 <a name="22"><span class="lineNum">      22 </span>            :   public:</a>
 <a name="23"><span class="lineNum">      23 </span>            :     /**</a>
 <a name="24"><span class="lineNum">      24 </span>            :      * @brief   Construct a new CCRotaryEncoder object with the given pins, </a>
@@ -122,9 +122,9 @@
 <a name="52"><span class="lineNum">      52 </span>            : </a>
 <a name="53"><span class="lineNum">      53 </span>            : // For tests only (PJRC Encoder library's copy constructor doesn't work)</a>
 <a name="54"><span class="lineNum">      54 </span>            : #ifndef ARDUINO</a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">          7 :     CCRotaryEncoder(const Encoder &amp;enc, const MIDIAddress &amp;address,</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">         10 :     CCRotaryEncoder(const Encoder &amp;enc, const MIDIAddress &amp;address,</span></a>
 <a name="56"><span class="lineNum">      56 </span>            :                     int8_t speedMultiply, uint8_t pulsesPerStep)</a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">          7 :         : MIDIRotaryEncoder(enc, address, speedMultiply, pulsesPerStep, {}) {}</span></a>
+<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         10 :         : MIDIRotaryEncoder(enc, address, speedMultiply, pulsesPerStep, {}) {}</span></a>
 <a name="58"><span class="lineNum">      58 </span>            : #endif</a>
 <a name="59"><span class="lineNum">      59 </span>            : };</a>
 <a name="60"><span class="lineNum">      60 </span>            : </a>

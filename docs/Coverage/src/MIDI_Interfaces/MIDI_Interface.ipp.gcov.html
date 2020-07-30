@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - f8d78bd33524e67608cff1f0e2b5c29a109e25d0 - src/MIDI_Interfaces/MIDI_Interface.ipp</title>
+  <title>LCOV - 547d5f224c8ccdbe557fb92367edd6fb891e55a7 - src/MIDI_Interfaces/MIDI_Interface.ipp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">f8d78bd33524e67608cff1f0e2b5c29a109e25d0</td>
+            <td class="headerValue">547d5f224c8ccdbe557fb92367edd6fb891e55a7</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">91</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-04-27 14:35:35</td>
+            <td class="headerValue">2020-07-30 16:18:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">20</td>
@@ -137,12 +137,12 @@
 <a name="67"><span class="lineNum">      67 </span><span class="lineCov">          2 :                                address.getCableNumber());</span></a>
 <a name="68"><span class="lineNum">      68 </span><span class="lineCov">          2 : }</span></a>
 <a name="69"><span class="lineNum">      69 </span>            : template &lt;class Derived&gt;</a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">         51 : void MIDI_Sender&lt;Derived&gt;::sendCC(MIDIAddress address, uint8_t value) {</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">         51 :     if (address)</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">        102 :         CRTP(Derived).sendImpl(CC, address.getRawChannel(),</span></a>
-<a name="73"><span class="lineNum">      73 </span><span class="lineCov">         51 :                                address.getAddress(), value,</span></a>
-<a name="74"><span class="lineNum">      74 </span><span class="lineCov">         51 :                                address.getCableNumber());</span></a>
-<a name="75"><span class="lineNum">      75 </span><span class="lineCov">         51 : }</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">         60 : void MIDI_Sender&lt;Derived&gt;::sendCC(MIDIAddress address, uint8_t value) {</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">         60 :     if (address)</span></a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">        120 :         CRTP(Derived).sendImpl(CC, address.getRawChannel(),</span></a>
+<a name="73"><span class="lineNum">      73 </span><span class="lineCov">         60 :                                address.getAddress(), value,</span></a>
+<a name="74"><span class="lineNum">      74 </span><span class="lineCov">         60 :                                address.getCableNumber());</span></a>
+<a name="75"><span class="lineNum">      75 </span><span class="lineCov">         60 : }</span></a>
 <a name="76"><span class="lineNum">      76 </span>            : template &lt;class Derived&gt;</a>
 <a name="77"><span class="lineNum">      77 </span><span class="lineCov">          3 : void MIDI_Sender&lt;Derived&gt;::sendPC(MIDIChannelCN address, uint8_t value) {</span></a>
 <a name="78"><span class="lineNum">      78 </span><span class="lineCov">          3 :     if (address)</span></a>
@@ -191,15 +191,15 @@
 <a name="121"><span class="lineNum">     121 </span><span class="lineCov">          2 : }</span></a>
 <a name="122"><span class="lineNum">     122 </span>            : </a>
 <a name="123"><span class="lineNum">     123 </span>            : template &lt;class Derived&gt;</a>
-<a name="124"><span class="lineNum">     124 </span><span class="lineCov">         97 : void MIDI_Sender&lt;Derived&gt;::send(ChannelMessage message) {</span></a>
-<a name="125"><span class="lineNum">     125 </span><span class="lineCov">         97 :     uint8_t m = message.header &amp; 0xF0; // message type</span></a>
-<a name="126"><span class="lineNum">     126 </span><span class="lineCov">         97 :     uint8_t c = message.header &amp; 0x0F; // channel</span></a>
+<a name="124"><span class="lineNum">     124 </span><span class="lineCov">        106 : void MIDI_Sender&lt;Derived&gt;::send(ChannelMessage message) {</span></a>
+<a name="125"><span class="lineNum">     125 </span><span class="lineCov">        106 :     uint8_t m = message.header &amp; 0xF0; // message type</span></a>
+<a name="126"><span class="lineNum">     126 </span><span class="lineCov">        106 :     uint8_t c = message.header &amp; 0x0F; // channel</span></a>
 <a name="127"><span class="lineNum">     127 </span>            :     // TODO: optimize header?</a>
-<a name="128"><span class="lineNum">     128 </span><span class="lineCov">         97 :     if (m != PROGRAM_CHANGE &amp;&amp; m != CHANNEL_PRESSURE)</span></a>
-<a name="129"><span class="lineNum">     129 </span><span class="lineCov">         97 :         CRTP(Derived).sendImpl(m, c, message.data1, message.data2, message.CN);</span></a>
+<a name="128"><span class="lineNum">     128 </span><span class="lineCov">        106 :     if (m != PROGRAM_CHANGE &amp;&amp; m != CHANNEL_PRESSURE)</span></a>
+<a name="129"><span class="lineNum">     129 </span><span class="lineCov">        106 :         CRTP(Derived).sendImpl(m, c, message.data1, message.data2, message.CN);</span></a>
 <a name="130"><span class="lineNum">     130 </span>            :     else</a>
 <a name="131"><span class="lineNum">     131 </span><span class="lineNoCov">          0 :         CRTP(Derived).sendImpl(m, c, message.data1, message.CN);</span></a>
-<a name="132"><span class="lineNum">     132 </span><span class="lineCov">         97 : }</span></a>
+<a name="132"><span class="lineNum">     132 </span><span class="lineCov">        106 : }</span></a>
 <a name="133"><span class="lineNum">     133 </span>            : </a>
 <a name="134"><span class="lineNum">     134 </span>            : END_CS_NAMESPACE</a>
 </pre>
