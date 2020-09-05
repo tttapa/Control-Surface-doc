@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2ee89167b5b8a6de7240c219f1f64b23838fe812 - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
+  <title>LCOV - b5bd95f9dbad780dbfd8203fe655b6457d513e70 - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2ee89167b5b8a6de7240c219f1f64b23838fe812</td>
+            <td class="headerValue">b5bd95f9dbad780dbfd8203fe655b6457d513e70</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">123</td>
-            <td class="headerCovTableEntry">123</td>
+            <td class="headerCovTableEntry">141</td>
+            <td class="headerCovTableEntry">141</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-07-30 21:26:33</td>
+            <td class="headerValue">2020-09-06 01:18:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">63</td>
-            <td class="headerCovTableEntry">66</td>
-            <td class="headerCovTableEntryHi">95.5 %</td>
+            <td class="headerCovTableEntry">69</td>
+            <td class="headerCovTableEntry">72</td>
+            <td class="headerCovTableEntryHi">95.8 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -121,7 +121,7 @@
 <a name="51"><span class="lineNum">      51 </span>            : class MIDI_Sink {</a>
 <a name="52"><span class="lineNum">      52 </span>            :   public:</a>
 <a name="53"><span class="lineNum">      53 </span>            :     /// Default constructor.</a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">        307 :     MIDI_Sink() = default;</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">        315 :     MIDI_Sink() = default;</span></a>
 <a name="55"><span class="lineNum">      55 </span>            : </a>
 <a name="56"><span class="lineNum">      56 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="57"><span class="lineNum">      57 </span>            :     MIDI_Sink(const MIDI_Sink &amp;) = delete;</a>
@@ -184,7 +184,7 @@
 <a name="114"><span class="lineNum">     114 </span>            :     void disconnectSourcePipesShallow();</a>
 <a name="115"><span class="lineNum">     115 </span>            : </a>
 <a name="116"><span class="lineNum">     116 </span>            :   protected:</a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineCov">        307 :     MIDI_Pipe *sourcePipe = nullptr;</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineCov">        315 :     MIDI_Pipe *sourcePipe = nullptr;</span></a>
 <a name="118"><span class="lineNum">     118 </span>            : </a>
 <a name="119"><span class="lineNum">     119 </span>            :     friend class MIDI_Pipe;</a>
 <a name="120"><span class="lineNum">     120 </span>            : };</a>
@@ -228,7 +228,7 @@
 <a name="158"><span class="lineNum">     158 </span>            :     /// @}</a>
 <a name="159"><span class="lineNum">     159 </span>            : </a>
 <a name="160"><span class="lineNum">     160 </span>            :     /// Default constructor.</a>
-<a name="161"><span class="lineNum">     161 </span><span class="lineCov">        306 :     MIDI_Source() = default;</span></a>
+<a name="161"><span class="lineNum">     161 </span><span class="lineCov">        312 :     MIDI_Source() = default;</span></a>
 <a name="162"><span class="lineNum">     162 </span>            : </a>
 <a name="163"><span class="lineNum">     163 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="164"><span class="lineNum">     164 </span>            :     MIDI_Source(const MIDI_Source &amp;) = delete;</a>
@@ -276,7 +276,7 @@
 <a name="206"><span class="lineNum">     206 </span>            :     void disconnectSinkPipesShallow();</a>
 <a name="207"><span class="lineNum">     207 </span>            : </a>
 <a name="208"><span class="lineNum">     208 </span>            :   protected:</a>
-<a name="209"><span class="lineNum">     209 </span><span class="lineCov">        306 :     MIDI_Pipe *sinkPipe = nullptr;</span></a>
+<a name="209"><span class="lineNum">     209 </span><span class="lineCov">        312 :     MIDI_Pipe *sinkPipe = nullptr;</span></a>
 <a name="210"><span class="lineNum">     210 </span>            : </a>
 <a name="211"><span class="lineNum">     211 </span>            :     friend class MIDI_Pipe;</a>
 <a name="212"><span class="lineNum">     212 </span>            : };</a>
@@ -284,9 +284,9 @@
 <a name="214"><span class="lineNum">     214 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
 <a name="215"><span class="lineNum">     215 </span>            : </a>
 <a name="216"><span class="lineNum">     216 </span>            : /// A MIDI_Sink that is not a MIDI_Pipe.</a>
-<a name="217"><span class="lineNum">     217 </span><span class="lineCov">        354 : struct TrueMIDI_Sink : MIDI_Sink {};</span></a>
+<a name="217"><span class="lineNum">     217 </span><span class="lineCov">        362 : struct TrueMIDI_Sink : MIDI_Sink {};</span></a>
 <a name="218"><span class="lineNum">     218 </span>            : /// A MIDI_Source that is not a MIDI_Pipe.</a>
-<a name="219"><span class="lineNum">     219 </span><span class="lineCov">        352 : struct TrueMIDI_Source : MIDI_Source {};</span></a>
+<a name="219"><span class="lineNum">     219 </span><span class="lineCov">        356 : struct TrueMIDI_Source : MIDI_Source {};</span></a>
 <a name="220"><span class="lineNum">     220 </span>            : </a>
 <a name="221"><span class="lineNum">     221 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
 <a name="222"><span class="lineNum">     222 </span>            : </a>
@@ -340,7 +340,7 @@
 <a name="270"><span class="lineNum">     270 </span>            : class MIDI_Pipe : private MIDI_Sink, private MIDI_Source {</a>
 <a name="271"><span class="lineNum">     271 </span>            :   public:</a>
 <a name="272"><span class="lineNum">     272 </span>            :     /// Default constructor</a>
-<a name="273"><span class="lineNum">     273 </span><span class="lineCov">        136 :     MIDI_Pipe() = default;</span></a>
+<a name="273"><span class="lineNum">     273 </span><span class="lineCov">        140 :     MIDI_Pipe() = default;</span></a>
 <a name="274"><span class="lineNum">     274 </span>            : </a>
 <a name="275"><span class="lineNum">     275 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="276"><span class="lineNum">     276 </span>            :     MIDI_Pipe(const MIDI_Pipe &amp;) = delete;</a>
@@ -373,277 +373,317 @@
 <a name="303"><span class="lineNum">     303 </span>            : </a>
 <a name="304"><span class="lineNum">     304 </span>            :   public:</a>
 <a name="305"><span class="lineNum">     305 </span>            :     /// Check if this pipe is connected to a sink.</a>
-<a name="306"><span class="lineNum">     306 </span><span class="lineCov">        936 :     bool hasSink() const { return sink != nullptr; }</span></a>
+<a name="306"><span class="lineNum">     306 </span><span class="lineCov">        961 :     bool hasSink() const { return sink != nullptr; }</span></a>
 <a name="307"><span class="lineNum">     307 </span>            :     /// Check if this pipe is connected to a source.</a>
-<a name="308"><span class="lineNum">     308 </span><span class="lineCov">        773 :     bool hasSource() const { return source != nullptr; }</span></a>
+<a name="308"><span class="lineNum">     308 </span><span class="lineCov">        785 :     bool hasSource() const { return source != nullptr; }</span></a>
 <a name="309"><span class="lineNum">     309 </span>            :     /// Check if this pipe has a &quot;through&quot; output that sends all incoming</a>
 <a name="310"><span class="lineNum">     310 </span>            :     /// messages from the input (source) to another pipe.</a>
-<a name="311"><span class="lineNum">     311 </span><span class="lineCov">        744 :     bool hasThroughOut() const { return throughOut != nullptr; }</span></a>
+<a name="311"><span class="lineNum">     311 </span><span class="lineCov">        768 :     bool hasThroughOut() const { return throughOut != nullptr; }</span></a>
 <a name="312"><span class="lineNum">     312 </span>            :     /// Check if this pipe has a &quot;through&quot; input that merges all messages from</a>
 <a name="313"><span class="lineNum">     313 </span>            :     /// another pipe into the output (sink).</a>
-<a name="314"><span class="lineNum">     314 </span><span class="lineCov">        594 :     bool hasThroughIn() const { return throughIn != nullptr; }</span></a>
+<a name="314"><span class="lineNum">     314 </span><span class="lineCov">        604 :     bool hasThroughIn() const { return throughIn != nullptr; }</span></a>
 <a name="315"><span class="lineNum">     315 </span>            : </a>
 <a name="316"><span class="lineNum">     316 </span>            :   protected:</a>
 <a name="317"><span class="lineNum">     317 </span>            :     /// Accept a MIDI message from the source, forward it to the &quot;through&quot;</a>
 <a name="318"><span class="lineNum">     318 </span>            :     /// output if necessary, map or filter the MIDI message if necessary,</a>
 <a name="319"><span class="lineNum">     319 </span>            :     /// and send it to the sink.</a>
-<a name="320"><span class="lineNum">     320 </span><span class="lineCov">        109 :     virtual void pipeMIDI(ChannelMessage msg) {</span></a>
-<a name="321"><span class="lineNum">     321 </span><span class="lineCov">        109 :         if (hasThroughOut())</span></a>
-<a name="322"><span class="lineNum">     322 </span><span class="lineCov">          2 :             throughOut-&gt;pipeMIDI(msg);</span></a>
-<a name="323"><span class="lineNum">     323 </span>            :         // map(msg)</a>
-<a name="324"><span class="lineNum">     324 </span><span class="lineCov">        109 :         sinkMIDIfromPipe(msg);</span></a>
-<a name="325"><span class="lineNum">     325 </span><span class="lineCov">        109 :     }</span></a>
+<a name="320"><span class="lineNum">     320 </span><span class="lineCov">        115 :     void pipeMIDI(ChannelMessage msg) {</span></a>
+<a name="321"><span class="lineNum">     321 </span>            :         // Forward </a>
+<a name="322"><span class="lineNum">     322 </span><span class="lineCov">        115 :         if (hasThroughOut())</span></a>
+<a name="323"><span class="lineNum">     323 </span><span class="lineCov">          5 :             throughOut-&gt;pipeMIDI(msg);</span></a>
+<a name="324"><span class="lineNum">     324 </span><span class="lineCov">        115 :         mapForwardMIDI(msg);</span></a>
+<a name="325"><span class="lineNum">     325 </span><span class="lineCov">        115 :     }</span></a>
 <a name="326"><span class="lineNum">     326 </span>            :     /// @copydoc pipeMIDI</a>
-<a name="327"><span class="lineNum">     327 </span><span class="lineCov">          8 :     virtual void pipeMIDI(SysExMessage msg) {</span></a>
-<a name="328"><span class="lineNum">     328 </span><span class="lineCov">          8 :         if (hasThroughOut())</span></a>
-<a name="329"><span class="lineNum">     329 </span><span class="lineCov">          3 :             throughOut-&gt;pipeMIDI(msg);</span></a>
-<a name="330"><span class="lineNum">     330 </span>            :         // map(msg)</a>
-<a name="331"><span class="lineNum">     331 </span><span class="lineCov">          8 :         sinkMIDIfromPipe(msg);</span></a>
-<a name="332"><span class="lineNum">     332 </span><span class="lineCov">          8 :     }</span></a>
-<a name="333"><span class="lineNum">     333 </span>            :     /// @copydoc pipeMIDI</a>
-<a name="334"><span class="lineNum">     334 </span><span class="lineCov">         17 :     virtual void pipeMIDI(RealTimeMessage msg) {</span></a>
-<a name="335"><span class="lineNum">     335 </span><span class="lineCov">         17 :         if (hasThroughOut())</span></a>
-<a name="336"><span class="lineNum">     336 </span><span class="lineCov">          4 :             throughOut-&gt;pipeMIDI(msg);</span></a>
-<a name="337"><span class="lineNum">     337 </span>            :         // map(msg)</a>
-<a name="338"><span class="lineNum">     338 </span><span class="lineCov">         17 :         sinkMIDIfromPipe(msg);</span></a>
-<a name="339"><span class="lineNum">     339 </span><span class="lineCov">         17 :     }</span></a>
-<a name="340"><span class="lineNum">     340 </span>            : </a>
-<a name="341"><span class="lineNum">     341 </span>            :   private:</a>
-<a name="342"><span class="lineNum">     342 </span><span class="lineCov">        110 :     void sinkMIDIfromPipe(ChannelMessage msg) final override {</span></a>
-<a name="343"><span class="lineNum">     343 </span><span class="lineCov">        110 :         if (hasSink())</span></a>
-<a name="344"><span class="lineNum">     344 </span><span class="lineCov">        110 :             sink-&gt;sinkMIDIfromPipe(msg);</span></a>
-<a name="345"><span class="lineNum">     345 </span><span class="lineCov">        110 :     }</span></a>
-<a name="346"><span class="lineNum">     346 </span><span class="lineCov">         10 :     void sinkMIDIfromPipe(SysExMessage msg) final override {</span></a>
-<a name="347"><span class="lineNum">     347 </span><span class="lineCov">         10 :         if (hasSink())</span></a>
-<a name="348"><span class="lineNum">     348 </span><span class="lineCov">         10 :             sink-&gt;sinkMIDIfromPipe(msg);</span></a>
-<a name="349"><span class="lineNum">     349 </span><span class="lineCov">         10 :     }</span></a>
-<a name="350"><span class="lineNum">     350 </span><span class="lineCov">         21 :     void sinkMIDIfromPipe(RealTimeMessage msg) final override {</span></a>
-<a name="351"><span class="lineNum">     351 </span><span class="lineCov">         21 :         if (hasSink())</span></a>
-<a name="352"><span class="lineNum">     352 </span><span class="lineCov">         21 :             sink-&gt;sinkMIDIfromPipe(msg);</span></a>
-<a name="353"><span class="lineNum">     353 </span><span class="lineCov">         21 :     }</span></a>
-<a name="354"><span class="lineNum">     354 </span>            : </a>
-<a name="355"><span class="lineNum">     355 </span>            :     /// Lock this pipe and all other pipes further downstream (following the</a>
-<a name="356"><span class="lineNum">     356 </span>            :     /// path of the sink). Operates recursively until the end of the</a>
-<a name="357"><span class="lineNum">     357 </span>            :     /// chain is reached.</a>
-<a name="358"><span class="lineNum">     358 </span><span class="lineCov">          8 :     void lockDownstream(cn_t cn, bool lock) override {</span></a>
-<a name="359"><span class="lineNum">     359 </span><span class="lineCov">          8 :         lockSelf(cn, lock);</span></a>
-<a name="360"><span class="lineNum">     360 </span><span class="lineCov">          8 :         if (hasSink())</span></a>
-<a name="361"><span class="lineNum">     361 </span><span class="lineCov">          8 :             sink-&gt;lockDownstream(cn, lock);</span></a>
-<a name="362"><span class="lineNum">     362 </span><span class="lineCov">          8 :     }</span></a>
-<a name="363"><span class="lineNum">     363 </span>            : </a>
-<a name="364"><span class="lineNum">     364 </span>            :     /// Lock this pipe and all other pipes further upstream (following the</a>
-<a name="365"><span class="lineNum">     365 </span>            :     /// path of the &quot;trough&quot; input). Operates recursively until the end of the</a>
-<a name="366"><span class="lineNum">     366 </span>            :     /// chain is reached.</a>
-<a name="367"><span class="lineNum">     367 </span><span class="lineCov">         12 :     void lockUpstream(cn_t cn, bool lock) {</span></a>
-<a name="368"><span class="lineNum">     368 </span><span class="lineCov">         12 :         lockSelf(cn, lock);</span></a>
-<a name="369"><span class="lineNum">     369 </span><span class="lineCov">         12 :         if (hasThroughIn())</span></a>
-<a name="370"><span class="lineNum">     370 </span><span class="lineCov">          2 :             throughIn-&gt;lockUpstream(cn, lock);</span></a>
-<a name="371"><span class="lineNum">     371 </span><span class="lineCov">         12 :     }</span></a>
-<a name="372"><span class="lineNum">     372 </span>            : </a>
-<a name="373"><span class="lineNum">     373 </span>            :     /// Lock this pipe, so sources cannot send messages through it.</a>
-<a name="374"><span class="lineNum">     374 </span><span class="lineCov">         20 :     void lockSelf(cn_t cn, bool lock) { locks.set(cn, lock); }</span></a>
-<a name="375"><span class="lineNum">     375 </span>            : </a>
-<a name="376"><span class="lineNum">     376 </span>            :   public:</a>
-<a name="377"><span class="lineNum">     377 </span>            :     /// Disconnect this pipe from all other pipes, sources and sinks. If the</a>
-<a name="378"><span class="lineNum">     378 </span>            :     /// &quot;through&quot; input and/or output were in use, they are reconnected to the</a>
-<a name="379"><span class="lineNum">     379 </span>            :     /// original sink and/or source respectively.</a>
-<a name="380"><span class="lineNum">     380 </span>            :     void disconnect();</a>
-<a name="381"><span class="lineNum">     381 </span>            : </a>
-<a name="382"><span class="lineNum">     382 </span>            :     /// Get the sink this pipe eventually sinks to, following the chain</a>
-<a name="383"><span class="lineNum">     383 </span>            :     /// recursively.</a>
-<a name="384"><span class="lineNum">     384 </span><span class="lineCov">         93 :     MIDI_Sink *getFinalSink() override {</span></a>
-<a name="385"><span class="lineNum">     385 </span><span class="lineCov">         93 :         return hasSink() ? sink-&gt;getFinalSink() : nullptr;</span></a>
-<a name="386"><span class="lineNum">     386 </span>            :     }</a>
-<a name="387"><span class="lineNum">     387 </span>            :     /// Get the original source that sources to this pipe, following the chain</a>
-<a name="388"><span class="lineNum">     388 </span>            :     /// recursively.</a>
-<a name="389"><span class="lineNum">     389 </span><span class="lineCov">         93 :     MIDI_Source *getInitialSource() override {</span></a>
-<a name="390"><span class="lineNum">     390 </span><span class="lineCov">         93 :         return hasSource() ? source-&gt;getInitialSource() : nullptr;</span></a>
-<a name="391"><span class="lineNum">     391 </span>            :     }</a>
-<a name="392"><span class="lineNum">     392 </span>            : </a>
-<a name="393"><span class="lineNum">     393 </span>            :     /// Disconnect the given sink from this pipe. The sink can be connected</a>
-<a name="394"><span class="lineNum">     394 </span>            :     /// directly, or via the &quot;through&quot; output.</a>
-<a name="395"><span class="lineNum">     395 </span>            :     /// Returns true if the sink was found and disconnected, false if the given</a>
-<a name="396"><span class="lineNum">     396 </span>            :     /// sink was not a direct or indirect sink of this pipe.</a>
-<a name="397"><span class="lineNum">     397 </span><span class="lineCov">         11 :     bool disconnect(TrueMIDI_Sink &amp;sink) {</span></a>
-<a name="398"><span class="lineNum">     398 </span><span class="lineCov">         11 :         if (getFinalSink() == &amp;sink) {</span></a>
-<a name="399"><span class="lineNum">     399 </span><span class="lineCov">          5 :             disconnect();</span></a>
-<a name="400"><span class="lineNum">     400 </span><span class="lineCov">          5 :             return true;</span></a>
-<a name="401"><span class="lineNum">     401 </span>            :         }</a>
-<a name="402"><span class="lineNum">     402 </span><span class="lineCov">          6 :         if (hasThroughOut()) {</span></a>
-<a name="403"><span class="lineNum">     403 </span><span class="lineCov">          1 :             return throughOut-&gt;disconnect(sink);</span></a>
-<a name="404"><span class="lineNum">     404 </span>            :         }</a>
-<a name="405"><span class="lineNum">     405 </span><span class="lineCov">          5 :         return false;</span></a>
-<a name="406"><span class="lineNum">     406 </span><span class="lineCov">         11 :     }</span></a>
-<a name="407"><span class="lineNum">     407 </span>            : </a>
-<a name="408"><span class="lineNum">     408 </span>            :     /// Disconnect the given source from this pipe. The source can be connected</a>
-<a name="409"><span class="lineNum">     409 </span>            :     /// directly, or via the &quot;through&quot; input.</a>
-<a name="410"><span class="lineNum">     410 </span>            :     /// Returns true if the source was found and disconnected, false if the</a>
-<a name="411"><span class="lineNum">     411 </span>            :     /// given source was not a direct or indirect source to this pipe.</a>
-<a name="412"><span class="lineNum">     412 </span><span class="lineCov">         11 :     bool disconnect(TrueMIDI_Source &amp;source) {</span></a>
-<a name="413"><span class="lineNum">     413 </span><span class="lineCov">         11 :         if (getInitialSource() == &amp;source) {</span></a>
-<a name="414"><span class="lineNum">     414 </span><span class="lineCov">          5 :             disconnect();</span></a>
-<a name="415"><span class="lineNum">     415 </span><span class="lineCov">          5 :             return true;</span></a>
-<a name="416"><span class="lineNum">     416 </span>            :         }</a>
-<a name="417"><span class="lineNum">     417 </span><span class="lineCov">          6 :         if (hasThroughIn()) {</span></a>
-<a name="418"><span class="lineNum">     418 </span><span class="lineCov">          1 :             return throughIn-&gt;disconnect(source);</span></a>
-<a name="419"><span class="lineNum">     419 </span>            :         }</a>
-<a name="420"><span class="lineNum">     420 </span><span class="lineCov">          5 :         return false;</span></a>
-<a name="421"><span class="lineNum">     421 </span><span class="lineCov">         11 :     }</span></a>
-<a name="422"><span class="lineNum">     422 </span>            : </a>
-<a name="423"><span class="lineNum">     423 </span>            : #ifndef ARDUINO</a>
-<a name="424"><span class="lineNum">     424 </span><span class="lineCov">          8 :     MIDI_Pipe *getThroughOut() { return throughOut; }</span></a>
-<a name="425"><span class="lineNum">     425 </span><span class="lineCov">          8 :     MIDI_Pipe *getThroughIn() { return throughIn; }</span></a>
-<a name="426"><span class="lineNum">     426 </span><span class="lineCov">          4 :     MIDI_Source *getSource() { return source; }</span></a>
-<a name="427"><span class="lineNum">     427 </span><span class="lineCov">          4 :     MIDI_Sink *getSink() { return sink; }</span></a>
-<a name="428"><span class="lineNum">     428 </span>            : #endif</a>
-<a name="429"><span class="lineNum">     429 </span>            : </a>
-<a name="430"><span class="lineNum">     430 </span>            :     /// @copydoc    MIDI_Source::exclusive</a>
-<a name="431"><span class="lineNum">     431 </span>            :     void exclusive(cn_t cn, bool exclusive = true);</a>
-<a name="432"><span class="lineNum">     432 </span>            : </a>
-<a name="433"><span class="lineNum">     433 </span>            :     /// Check if this pipe is locked for a given cable number.</a>
-<a name="434"><span class="lineNum">     434 </span><span class="lineCov">         53 :     bool isLocked(cn_t cn) const { return locks.get(cn); }</span></a>
-<a name="435"><span class="lineNum">     435 </span>            : </a>
-<a name="436"><span class="lineNum">     436 </span>            :     /** </a>
-<a name="437"><span class="lineNum">     437 </span>            :      * @brief   Check if any of the sinks or outputs of this chain of pipes are</a>
-<a name="438"><span class="lineNum">     438 </span>            :      *          locked for the given cable number.</a>
-<a name="439"><span class="lineNum">     439 </span>            :      * @param   cn</a>
-<a name="440"><span class="lineNum">     440 </span>            :      *          The cable number to check.</a>
-<a name="441"><span class="lineNum">     441 </span>            :      */</a>
-<a name="442"><span class="lineNum">     442 </span><span class="lineCov">         53 :     bool isAvailableForWrite(cn_t cn) const {</span></a>
-<a name="443"><span class="lineNum">     443 </span><span class="lineCov">         97 :         return !isLocked(cn) &amp;&amp;</span></a>
-<a name="444"><span class="lineNum">     444 </span><span class="lineCov">         44 :                (!hasThroughOut() || throughOut-&gt;isAvailableForWrite(cn));</span></a>
-<a name="445"><span class="lineNum">     445 </span>            :     }</a>
-<a name="446"><span class="lineNum">     446 </span>            : </a>
-<a name="447"><span class="lineNum">     447 </span>            :   private:</a>
-<a name="448"><span class="lineNum">     448 </span><span class="lineCov">        136 :     MIDI_Sink *sink = nullptr;</span></a>
-<a name="449"><span class="lineNum">     449 </span><span class="lineCov">        136 :     MIDI_Source *source = nullptr;</span></a>
-<a name="450"><span class="lineNum">     450 </span><span class="lineCov">        136 :     MIDI_Pipe *&amp;throughOut = MIDI_Source::sinkPipe;</span></a>
-<a name="451"><span class="lineNum">     451 </span><span class="lineCov">        136 :     MIDI_Pipe *&amp;throughIn = MIDI_Sink::sourcePipe;</span></a>
-<a name="452"><span class="lineNum">     452 </span>            :     AH::BitArray&lt;16&gt; locks;</a>
-<a name="453"><span class="lineNum">     453 </span>            : </a>
-<a name="454"><span class="lineNum">     454 </span>            :     friend class MIDI_Sink;</a>
-<a name="455"><span class="lineNum">     455 </span>            :     friend class MIDI_Source;</a>
-<a name="456"><span class="lineNum">     456 </span>            : };</a>
-<a name="457"><span class="lineNum">     457 </span>            : </a>
-<a name="458"><span class="lineNum">     458 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
-<a name="459"><span class="lineNum">     459 </span>            : </a>
-<a name="460"><span class="lineNum">     460 </span>            : /// A struct that is both a TrueMIDI_Sink and a TrueMIDI_Source.</a>
-<a name="461"><span class="lineNum">     461 </span><span class="lineCov">        198 : struct TrueMIDI_SinkSource : TrueMIDI_Sink, TrueMIDI_Source {};</span></a>
-<a name="462"><span class="lineNum">     462 </span>            : </a>
-<a name="463"><span class="lineNum">     463 </span>            : /// A bidirectional pipe consists of two unidirectional pipes.</a>
-<a name="464"><span class="lineNum">     464 </span>            : using BidirectionalMIDI_Pipe = std::pair&lt;MIDI_Pipe, MIDI_Pipe&gt;;</a>
-<a name="465"><span class="lineNum">     465 </span>            : </a>
-<a name="466"><span class="lineNum">     466 </span>            : /// Connect a source to a pipe (`source &gt;&gt; pipe`).</a>
-<a name="467"><span class="lineNum">     467 </span><span class="lineCov">        121 : inline MIDI_Pipe &amp;operator&gt;&gt;(TrueMIDI_Source &amp;source, MIDI_Pipe &amp;pipe) {</span></a>
-<a name="468"><span class="lineNum">     468 </span><span class="lineCov">        121 :     source.connectSinkPipe(&amp;pipe);</span></a>
-<a name="469"><span class="lineNum">     469 </span><span class="lineCov">        121 :     return pipe;</span></a>
-<a name="470"><span class="lineNum">     470 </span>            : }</a>
-<a name="471"><span class="lineNum">     471 </span>            : </a>
-<a name="472"><span class="lineNum">     472 </span>            : /// Connect a pipe to a sink (`pipe &gt;&gt; sink`).</a>
-<a name="473"><span class="lineNum">     473 </span><span class="lineCov">        123 : inline TrueMIDI_Sink &amp;operator&gt;&gt;(MIDI_Pipe &amp;pipe, TrueMIDI_Sink &amp;sink) {</span></a>
-<a name="474"><span class="lineNum">     474 </span><span class="lineCov">        123 :     sink.connectSourcePipe(&amp;pipe);</span></a>
-<a name="475"><span class="lineNum">     475 </span><span class="lineCov">        123 :     return sink;</span></a>
-<a name="476"><span class="lineNum">     476 </span>            : }</a>
-<a name="477"><span class="lineNum">     477 </span>            : </a>
-<a name="478"><span class="lineNum">     478 </span>            : /// Connect a sink to a pipe (`sink &lt;&lt; pipe`).</a>
-<a name="479"><span class="lineNum">     479 </span><span class="lineCov">         68 : inline MIDI_Pipe &amp;operator&lt;&lt;(TrueMIDI_Sink &amp;sink, MIDI_Pipe &amp;pipe) {</span></a>
-<a name="480"><span class="lineNum">     480 </span><span class="lineCov">         68 :     sink.connectSourcePipe(&amp;pipe);</span></a>
-<a name="481"><span class="lineNum">     481 </span><span class="lineCov">         68 :     return pipe;</span></a>
-<a name="482"><span class="lineNum">     482 </span>            : }</a>
-<a name="483"><span class="lineNum">     483 </span>            : </a>
-<a name="484"><span class="lineNum">     484 </span>            : /// Connect a pipe to a source (`pipe &lt;&lt; source`).</a>
-<a name="485"><span class="lineNum">     485 </span><span class="lineCov">         68 : inline TrueMIDI_Source &amp;operator&lt;&lt;(MIDI_Pipe &amp;pipe, TrueMIDI_Source &amp;source) {</span></a>
-<a name="486"><span class="lineNum">     486 </span><span class="lineCov">         68 :     source.connectSinkPipe(&amp;pipe);</span></a>
-<a name="487"><span class="lineNum">     487 </span><span class="lineCov">         68 :     return source;</span></a>
-<a name="488"><span class="lineNum">     488 </span>            : }</a>
-<a name="489"><span class="lineNum">     489 </span>            : </a>
-<a name="490"><span class="lineNum">     490 </span>            : /// Connect a pipe to a sink+source (`pipe | source+sink`).</a>
-<a name="491"><span class="lineNum">     491 </span><span class="lineCov">          5 : inline TrueMIDI_SinkSource &amp;operator|(BidirectionalMIDI_Pipe &amp;pipe,</span></a>
-<a name="492"><span class="lineNum">     492 </span>            :                                       TrueMIDI_SinkSource &amp;sinksource) {</a>
-<a name="493"><span class="lineNum">     493 </span><span class="lineCov">          5 :     sinksource.connectSinkPipe(&amp;pipe.first);</span></a>
-<a name="494"><span class="lineNum">     494 </span><span class="lineCov">          5 :     sinksource.connectSourcePipe(&amp;pipe.second);</span></a>
-<a name="495"><span class="lineNum">     495 </span><span class="lineCov">          5 :     return sinksource;</span></a>
-<a name="496"><span class="lineNum">     496 </span>            : }</a>
+<a name="327"><span class="lineNum">     327 </span><span class="lineCov">         12 :     void pipeMIDI(SysExMessage msg) {</span></a>
+<a name="328"><span class="lineNum">     328 </span><span class="lineCov">         12 :         if (hasThroughOut())</span></a>
+<a name="329"><span class="lineNum">     329 </span><span class="lineCov">          5 :             throughOut-&gt;pipeMIDI(msg);</span></a>
+<a name="330"><span class="lineNum">     330 </span><span class="lineCov">         12 :         mapForwardMIDI(msg);</span></a>
+<a name="331"><span class="lineNum">     331 </span><span class="lineCov">         12 :     }</span></a>
+<a name="332"><span class="lineNum">     332 </span>            :     /// @copydoc pipeMIDI</a>
+<a name="333"><span class="lineNum">     333 </span><span class="lineCov">         21 :     void pipeMIDI(RealTimeMessage msg) {</span></a>
+<a name="334"><span class="lineNum">     334 </span><span class="lineCov">         21 :         if (hasThroughOut())</span></a>
+<a name="335"><span class="lineNum">     335 </span><span class="lineCov">          6 :             throughOut-&gt;pipeMIDI(msg);</span></a>
+<a name="336"><span class="lineNum">     336 </span><span class="lineCov">         21 :         mapForwardMIDI(msg);</span></a>
+<a name="337"><span class="lineNum">     337 </span><span class="lineCov">         21 :     }</span></a>
+<a name="338"><span class="lineNum">     338 </span>            : </a>
+<a name="339"><span class="lineNum">     339 </span>            :   protected:</a>
+<a name="340"><span class="lineNum">     340 </span>            :     /// Send the given MIDI message to the sink of this pipe.</a>
+<a name="341"><span class="lineNum">     341 </span><span class="lineCov">        115 :     void sourceMIDItoSink(ChannelMessage msg) {</span></a>
+<a name="342"><span class="lineNum">     342 </span><span class="lineCov">        115 :         if (hasSink())</span></a>
+<a name="343"><span class="lineNum">     343 </span><span class="lineCov">        115 :             sink-&gt;sinkMIDIfromPipe(msg);</span></a>
+<a name="344"><span class="lineNum">     344 </span><span class="lineCov">        115 :     }</span></a>
+<a name="345"><span class="lineNum">     345 </span>            : </a>
+<a name="346"><span class="lineNum">     346 </span>            :     /// @copydoc sourceMIDItoSink</a>
+<a name="347"><span class="lineNum">     347 </span><span class="lineCov">         14 :     void sourceMIDItoSink(SysExMessage msg) {</span></a>
+<a name="348"><span class="lineNum">     348 </span><span class="lineCov">         14 :         if (hasSink())</span></a>
+<a name="349"><span class="lineNum">     349 </span><span class="lineCov">         14 :             sink-&gt;sinkMIDIfromPipe(msg);</span></a>
+<a name="350"><span class="lineNum">     350 </span><span class="lineCov">         14 :     }</span></a>
+<a name="351"><span class="lineNum">     351 </span>            : </a>
+<a name="352"><span class="lineNum">     352 </span>            :     /// @copydoc sourceMIDItoSink</a>
+<a name="353"><span class="lineNum">     353 </span><span class="lineCov">         25 :     void sourceMIDItoSink(RealTimeMessage msg) {</span></a>
+<a name="354"><span class="lineNum">     354 </span><span class="lineCov">         25 :         if (hasSink())</span></a>
+<a name="355"><span class="lineNum">     355 </span><span class="lineCov">         25 :             sink-&gt;sinkMIDIfromPipe(msg);</span></a>
+<a name="356"><span class="lineNum">     356 </span><span class="lineCov">         25 :     }</span></a>
+<a name="357"><span class="lineNum">     357 </span>            : </a>
+<a name="358"><span class="lineNum">     358 </span>            :   private:</a>
+<a name="359"><span class="lineNum">     359 </span>            :     /// Function that maps, edits or filters MIDI messages, and then forwards </a>
+<a name="360"><span class="lineNum">     360 </span>            :     /// them to the sink of the pipe.</a>
+<a name="361"><span class="lineNum">     361 </span><span class="lineCov">        112 :     virtual void mapForwardMIDI(ChannelMessage msg) { </span></a>
+<a name="362"><span class="lineNum">     362 </span>            :         // Optionally edit the message before passing it on</a>
+<a name="363"><span class="lineNum">     363 </span><span class="lineCov">        112 :         sourceMIDItoSink(msg); </span></a>
+<a name="364"><span class="lineNum">     364 </span><span class="lineCov">        112 :     }</span></a>
+<a name="365"><span class="lineNum">     365 </span>            : </a>
+<a name="366"><span class="lineNum">     366 </span>            :     /// @copydoc    mapForwardMIDI</a>
+<a name="367"><span class="lineNum">     367 </span><span class="lineCov">         12 :     virtual void mapForwardMIDI(SysExMessage msg) { </span></a>
+<a name="368"><span class="lineNum">     368 </span>            :         // Optionally edit the message before passing it on</a>
+<a name="369"><span class="lineNum">     369 </span><span class="lineCov">         12 :         sourceMIDItoSink(msg); </span></a>
+<a name="370"><span class="lineNum">     370 </span><span class="lineCov">         12 :     }</span></a>
+<a name="371"><span class="lineNum">     371 </span>            : </a>
+<a name="372"><span class="lineNum">     372 </span>            :     /// @copydoc    mapForwardMIDI</a>
+<a name="373"><span class="lineNum">     373 </span><span class="lineCov">         21 :     virtual void mapForwardMIDI(RealTimeMessage msg) { </span></a>
+<a name="374"><span class="lineNum">     374 </span>            :         // Optionally edit the message before passing it on</a>
+<a name="375"><span class="lineNum">     375 </span><span class="lineCov">         21 :         sourceMIDItoSink(msg); </span></a>
+<a name="376"><span class="lineNum">     376 </span><span class="lineCov">         21 :     }</span></a>
+<a name="377"><span class="lineNum">     377 </span>            : </a>
+<a name="378"><span class="lineNum">     378 </span>            :   private:</a>
+<a name="379"><span class="lineNum">     379 </span><span class="lineCov">          1 :     void sinkMIDIfromPipe(ChannelMessage msg) override {</span></a>
+<a name="380"><span class="lineNum">     380 </span>            :         // Called when data from Through In arrives, forward it to the sink</a>
+<a name="381"><span class="lineNum">     381 </span><span class="lineCov">          1 :         sourceMIDItoSink(msg);</span></a>
+<a name="382"><span class="lineNum">     382 </span><span class="lineCov">          1 :     }</span></a>
+<a name="383"><span class="lineNum">     383 </span><span class="lineCov">          2 :     void sinkMIDIfromPipe(SysExMessage msg) override {</span></a>
+<a name="384"><span class="lineNum">     384 </span>            :         // Called when data from Through In arrives, forward it to the sink</a>
+<a name="385"><span class="lineNum">     385 </span><span class="lineCov">          2 :         sourceMIDItoSink(msg);</span></a>
+<a name="386"><span class="lineNum">     386 </span><span class="lineCov">          2 :     }</span></a>
+<a name="387"><span class="lineNum">     387 </span><span class="lineCov">          4 :     void sinkMIDIfromPipe(RealTimeMessage msg) override {</span></a>
+<a name="388"><span class="lineNum">     388 </span>            :         // Called when data from Through In arrives, forward it to the sink</a>
+<a name="389"><span class="lineNum">     389 </span><span class="lineCov">          4 :         sourceMIDItoSink(msg);</span></a>
+<a name="390"><span class="lineNum">     390 </span><span class="lineCov">          4 :     }</span></a>
+<a name="391"><span class="lineNum">     391 </span>            : </a>
+<a name="392"><span class="lineNum">     392 </span>            :   private:</a>
+<a name="393"><span class="lineNum">     393 </span>            :     /// Lock this pipe and all other pipes further downstream (following the</a>
+<a name="394"><span class="lineNum">     394 </span>            :     /// path of the sink). Operates recursively until the end of the</a>
+<a name="395"><span class="lineNum">     395 </span>            :     /// chain is reached.</a>
+<a name="396"><span class="lineNum">     396 </span><span class="lineCov">          8 :     void lockDownstream(cn_t cn, bool lock) override {</span></a>
+<a name="397"><span class="lineNum">     397 </span><span class="lineCov">          8 :         lockSelf(cn, lock);</span></a>
+<a name="398"><span class="lineNum">     398 </span><span class="lineCov">          8 :         if (hasSink())</span></a>
+<a name="399"><span class="lineNum">     399 </span><span class="lineCov">          8 :             sink-&gt;lockDownstream(cn, lock);</span></a>
+<a name="400"><span class="lineNum">     400 </span><span class="lineCov">          8 :     }</span></a>
+<a name="401"><span class="lineNum">     401 </span>            : </a>
+<a name="402"><span class="lineNum">     402 </span>            :     /// Lock this pipe and all other pipes further upstream (following the</a>
+<a name="403"><span class="lineNum">     403 </span>            :     /// path of the &quot;trough&quot; input). Operates recursively until the end of the</a>
+<a name="404"><span class="lineNum">     404 </span>            :     /// chain is reached.</a>
+<a name="405"><span class="lineNum">     405 </span><span class="lineCov">         12 :     void lockUpstream(cn_t cn, bool lock) {</span></a>
+<a name="406"><span class="lineNum">     406 </span><span class="lineCov">         12 :         lockSelf(cn, lock);</span></a>
+<a name="407"><span class="lineNum">     407 </span><span class="lineCov">         12 :         if (hasThroughIn())</span></a>
+<a name="408"><span class="lineNum">     408 </span><span class="lineCov">          2 :             throughIn-&gt;lockUpstream(cn, lock);</span></a>
+<a name="409"><span class="lineNum">     409 </span><span class="lineCov">         12 :     }</span></a>
+<a name="410"><span class="lineNum">     410 </span>            : </a>
+<a name="411"><span class="lineNum">     411 </span>            :     /// Lock this pipe, so sources cannot send messages through it.</a>
+<a name="412"><span class="lineNum">     412 </span><span class="lineCov">         20 :     void lockSelf(cn_t cn, bool lock) { locks.set(cn, lock); }</span></a>
+<a name="413"><span class="lineNum">     413 </span>            : </a>
+<a name="414"><span class="lineNum">     414 </span>            :   public:</a>
+<a name="415"><span class="lineNum">     415 </span>            :     /// Disconnect this pipe from all other pipes, sources and sinks. If the</a>
+<a name="416"><span class="lineNum">     416 </span>            :     /// &quot;through&quot; input and/or output were in use, they are reconnected to the</a>
+<a name="417"><span class="lineNum">     417 </span>            :     /// original sink and/or source respectively.</a>
+<a name="418"><span class="lineNum">     418 </span>            :     void disconnect();</a>
+<a name="419"><span class="lineNum">     419 </span>            : </a>
+<a name="420"><span class="lineNum">     420 </span>            :     /// Get the sink this pipe eventually sinks to, following the chain</a>
+<a name="421"><span class="lineNum">     421 </span>            :     /// recursively.</a>
+<a name="422"><span class="lineNum">     422 </span><span class="lineCov">         93 :     MIDI_Sink *getFinalSink() override {</span></a>
+<a name="423"><span class="lineNum">     423 </span><span class="lineCov">         93 :         return hasSink() ? sink-&gt;getFinalSink() : nullptr;</span></a>
+<a name="424"><span class="lineNum">     424 </span>            :     }</a>
+<a name="425"><span class="lineNum">     425 </span>            :     /// Get the original source that sources to this pipe, following the chain</a>
+<a name="426"><span class="lineNum">     426 </span>            :     /// recursively.</a>
+<a name="427"><span class="lineNum">     427 </span><span class="lineCov">         93 :     MIDI_Source *getInitialSource() override {</span></a>
+<a name="428"><span class="lineNum">     428 </span><span class="lineCov">         93 :         return hasSource() ? source-&gt;getInitialSource() : nullptr;</span></a>
+<a name="429"><span class="lineNum">     429 </span>            :     }</a>
+<a name="430"><span class="lineNum">     430 </span>            : </a>
+<a name="431"><span class="lineNum">     431 </span>            :     /// Disconnect the given sink from this pipe. The sink can be connected</a>
+<a name="432"><span class="lineNum">     432 </span>            :     /// directly, or via the &quot;through&quot; output.</a>
+<a name="433"><span class="lineNum">     433 </span>            :     /// Returns true if the sink was found and disconnected, false if the given</a>
+<a name="434"><span class="lineNum">     434 </span>            :     /// sink was not a direct or indirect sink of this pipe.</a>
+<a name="435"><span class="lineNum">     435 </span><span class="lineCov">         11 :     bool disconnect(TrueMIDI_Sink &amp;sink) {</span></a>
+<a name="436"><span class="lineNum">     436 </span><span class="lineCov">         11 :         if (getFinalSink() == &amp;sink) {</span></a>
+<a name="437"><span class="lineNum">     437 </span><span class="lineCov">          5 :             disconnect();</span></a>
+<a name="438"><span class="lineNum">     438 </span><span class="lineCov">          5 :             return true;</span></a>
+<a name="439"><span class="lineNum">     439 </span>            :         }</a>
+<a name="440"><span class="lineNum">     440 </span><span class="lineCov">          6 :         if (hasThroughOut()) {</span></a>
+<a name="441"><span class="lineNum">     441 </span><span class="lineCov">          1 :             return throughOut-&gt;disconnect(sink);</span></a>
+<a name="442"><span class="lineNum">     442 </span>            :         }</a>
+<a name="443"><span class="lineNum">     443 </span><span class="lineCov">          5 :         return false;</span></a>
+<a name="444"><span class="lineNum">     444 </span><span class="lineCov">         11 :     }</span></a>
+<a name="445"><span class="lineNum">     445 </span>            : </a>
+<a name="446"><span class="lineNum">     446 </span>            :     /// Disconnect the given source from this pipe. The source can be connected</a>
+<a name="447"><span class="lineNum">     447 </span>            :     /// directly, or via the &quot;through&quot; input.</a>
+<a name="448"><span class="lineNum">     448 </span>            :     /// Returns true if the source was found and disconnected, false if the</a>
+<a name="449"><span class="lineNum">     449 </span>            :     /// given source was not a direct or indirect source to this pipe.</a>
+<a name="450"><span class="lineNum">     450 </span><span class="lineCov">         11 :     bool disconnect(TrueMIDI_Source &amp;source) {</span></a>
+<a name="451"><span class="lineNum">     451 </span><span class="lineCov">         11 :         if (getInitialSource() == &amp;source) {</span></a>
+<a name="452"><span class="lineNum">     452 </span><span class="lineCov">          5 :             disconnect();</span></a>
+<a name="453"><span class="lineNum">     453 </span><span class="lineCov">          5 :             return true;</span></a>
+<a name="454"><span class="lineNum">     454 </span>            :         }</a>
+<a name="455"><span class="lineNum">     455 </span><span class="lineCov">          6 :         if (hasThroughIn()) {</span></a>
+<a name="456"><span class="lineNum">     456 </span><span class="lineCov">          1 :             return throughIn-&gt;disconnect(source);</span></a>
+<a name="457"><span class="lineNum">     457 </span>            :         }</a>
+<a name="458"><span class="lineNum">     458 </span><span class="lineCov">          5 :         return false;</span></a>
+<a name="459"><span class="lineNum">     459 </span><span class="lineCov">         11 :     }</span></a>
+<a name="460"><span class="lineNum">     460 </span>            : </a>
+<a name="461"><span class="lineNum">     461 </span>            : #ifdef ARDUINO</a>
+<a name="462"><span class="lineNum">     462 </span>            :   protected:</a>
+<a name="463"><span class="lineNum">     463 </span>            : #endif</a>
+<a name="464"><span class="lineNum">     464 </span><span class="lineCov">          8 :     MIDI_Pipe *getThroughOut() { return throughOut; }</span></a>
+<a name="465"><span class="lineNum">     465 </span><span class="lineCov">          8 :     MIDI_Pipe *getThroughIn() { return throughIn; }</span></a>
+<a name="466"><span class="lineNum">     466 </span><span class="lineCov">          4 :     MIDI_Source *getSource() { return source; }</span></a>
+<a name="467"><span class="lineNum">     467 </span><span class="lineCov">          4 :     MIDI_Sink *getSink() { return sink; }</span></a>
+<a name="468"><span class="lineNum">     468 </span>            : </a>
+<a name="469"><span class="lineNum">     469 </span>            :   public:</a>
+<a name="470"><span class="lineNum">     470 </span>            :     /// @copydoc    MIDI_Source::exclusive</a>
+<a name="471"><span class="lineNum">     471 </span>            :     void exclusive(cn_t cn, bool exclusive = true);</a>
+<a name="472"><span class="lineNum">     472 </span>            : </a>
+<a name="473"><span class="lineNum">     473 </span>            :     /// Check if this pipe is locked for a given cable number.</a>
+<a name="474"><span class="lineNum">     474 </span><span class="lineCov">         53 :     bool isLocked(cn_t cn) const { return locks.get(cn); }</span></a>
+<a name="475"><span class="lineNum">     475 </span>            : </a>
+<a name="476"><span class="lineNum">     476 </span>            :     /** </a>
+<a name="477"><span class="lineNum">     477 </span>            :      * @brief   Check if any of the sinks or outputs of this chain of pipes are</a>
+<a name="478"><span class="lineNum">     478 </span>            :      *          locked for the given cable number.</a>
+<a name="479"><span class="lineNum">     479 </span>            :      * @param   cn</a>
+<a name="480"><span class="lineNum">     480 </span>            :      *          The cable number to check.</a>
+<a name="481"><span class="lineNum">     481 </span>            :      */</a>
+<a name="482"><span class="lineNum">     482 </span><span class="lineCov">         53 :     bool isAvailableForWrite(cn_t cn) const {</span></a>
+<a name="483"><span class="lineNum">     483 </span><span class="lineCov">         97 :         return !isLocked(cn) &amp;&amp;</span></a>
+<a name="484"><span class="lineNum">     484 </span><span class="lineCov">         44 :                (!hasThroughOut() || throughOut-&gt;isAvailableForWrite(cn));</span></a>
+<a name="485"><span class="lineNum">     485 </span>            :     }</a>
+<a name="486"><span class="lineNum">     486 </span>            : </a>
+<a name="487"><span class="lineNum">     487 </span>            :   private:</a>
+<a name="488"><span class="lineNum">     488 </span><span class="lineCov">        140 :     MIDI_Sink *sink = nullptr;</span></a>
+<a name="489"><span class="lineNum">     489 </span><span class="lineCov">        140 :     MIDI_Source *source = nullptr;</span></a>
+<a name="490"><span class="lineNum">     490 </span><span class="lineCov">        140 :     MIDI_Pipe *&amp;throughOut = MIDI_Source::sinkPipe;</span></a>
+<a name="491"><span class="lineNum">     491 </span><span class="lineCov">        140 :     MIDI_Pipe *&amp;throughIn = MIDI_Sink::sourcePipe;</span></a>
+<a name="492"><span class="lineNum">     492 </span>            :     AH::BitArray&lt;16&gt; locks;</a>
+<a name="493"><span class="lineNum">     493 </span>            : </a>
+<a name="494"><span class="lineNum">     494 </span>            :     friend class MIDI_Sink;</a>
+<a name="495"><span class="lineNum">     495 </span>            :     friend class MIDI_Source;</a>
+<a name="496"><span class="lineNum">     496 </span>            : };</a>
 <a name="497"><span class="lineNum">     497 </span>            : </a>
-<a name="498"><span class="lineNum">     498 </span>            : /// Connect a sink+source to a pipe (`source+sink | pipe`).</a>
-<a name="499"><span class="lineNum">     499 </span><span class="lineCov">          5 : inline BidirectionalMIDI_Pipe &amp;operator|(TrueMIDI_SinkSource &amp;sinksource,</span></a>
-<a name="500"><span class="lineNum">     500 </span>            :                                          BidirectionalMIDI_Pipe &amp;pipe) {</a>
-<a name="501"><span class="lineNum">     501 </span><span class="lineCov">          5 :     sinksource.connectSinkPipe(&amp;pipe.second);</span></a>
-<a name="502"><span class="lineNum">     502 </span><span class="lineCov">          5 :     sinksource.connectSourcePipe(&amp;pipe.first);</span></a>
-<a name="503"><span class="lineNum">     503 </span><span class="lineCov">          5 :     return pipe;</span></a>
-<a name="504"><span class="lineNum">     504 </span>            : }</a>
+<a name="498"><span class="lineNum">     498 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
+<a name="499"><span class="lineNum">     499 </span>            : </a>
+<a name="500"><span class="lineNum">     500 </span>            : /// A struct that is both a TrueMIDI_Sink and a TrueMIDI_Source.</a>
+<a name="501"><span class="lineNum">     501 </span><span class="lineCov">        198 : struct TrueMIDI_SinkSource : TrueMIDI_Sink, TrueMIDI_Source {};</span></a>
+<a name="502"><span class="lineNum">     502 </span>            : </a>
+<a name="503"><span class="lineNum">     503 </span>            : /// A bidirectional pipe consists of two unidirectional pipes.</a>
+<a name="504"><span class="lineNum">     504 </span>            : using BidirectionalMIDI_Pipe = std::pair&lt;MIDI_Pipe, MIDI_Pipe&gt;;</a>
 <a name="505"><span class="lineNum">     505 </span>            : </a>
-<a name="506"><span class="lineNum">     506 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
-<a name="507"><span class="lineNum">     507 </span>            : </a>
-<a name="508"><span class="lineNum">     508 </span>            : /**</a>
-<a name="509"><span class="lineNum">     509 </span>            :  * @brief   Class that produces multiple MIDI_Pipe%s.</a>
-<a name="510"><span class="lineNum">     510 </span>            :  * </a>
-<a name="511"><span class="lineNum">     511 </span>            :  * @tparam  N </a>
-<a name="512"><span class="lineNum">     512 </span>            :  *          The maximum number of pipes it can produce.</a>
-<a name="513"><span class="lineNum">     513 </span>            :  * @tparam  Pipe </a>
-<a name="514"><span class="lineNum">     514 </span>            :  *          The type of pipes to produce.</a>
-<a name="515"><span class="lineNum">     515 </span>            :  */</a>
-<a name="516"><span class="lineNum">     516 </span>            : template &lt;size_t N, class Pipe = MIDI_Pipe&gt;</a>
-<a name="517"><span class="lineNum">     517 </span><span class="lineCov">        116 : struct MIDI_PipeFactory {</span></a>
-<a name="518"><span class="lineNum">     518 </span>            :     Pipe pipes[N];</a>
-<a name="519"><span class="lineNum">     519 </span><span class="lineCov">         12 :     size_t index = 0;</span></a>
-<a name="520"><span class="lineNum">     520 </span>            : </a>
-<a name="521"><span class="lineNum">     521 </span><span class="lineCov">         58 :     Pipe &amp;getNext() {</span></a>
-<a name="522"><span class="lineNum">     522 </span><span class="lineCov">         58 :         if (index &gt;= N)</span></a>
-<a name="523"><span class="lineNum">     523 </span><span class="lineCov">          1 :             FATAL_ERROR(F(&quot;Not enough pipes available&quot;), 0x2459);</span></a>
-<a name="524"><span class="lineNum">     524 </span><span class="lineCov">         57 :         return pipes[index++];</span></a>
-<a name="525"><span class="lineNum">     525 </span><span class="lineCov">          1 :     }</span></a>
-<a name="526"><span class="lineNum">     526 </span><span class="lineCov">         10 :     Pipe &amp;operator[](size_t i) { return pipes[i]; }</span></a>
-<a name="527"><span class="lineNum">     527 </span>            :     const Pipe &amp;operator[](size_t i) const { return pipes[i]; }</a>
-<a name="528"><span class="lineNum">     528 </span>            : };</a>
+<a name="506"><span class="lineNum">     506 </span>            : /// Connect a source to a pipe (`source &gt;&gt; pipe`).</a>
+<a name="507"><span class="lineNum">     507 </span><span class="lineCov">        125 : inline MIDI_Pipe &amp;operator&gt;&gt;(TrueMIDI_Source &amp;source, MIDI_Pipe &amp;pipe) {</span></a>
+<a name="508"><span class="lineNum">     508 </span><span class="lineCov">        125 :     source.connectSinkPipe(&amp;pipe);</span></a>
+<a name="509"><span class="lineNum">     509 </span><span class="lineCov">        125 :     return pipe;</span></a>
+<a name="510"><span class="lineNum">     510 </span>            : }</a>
+<a name="511"><span class="lineNum">     511 </span>            : </a>
+<a name="512"><span class="lineNum">     512 </span>            : /// Connect a pipe to a sink (`pipe &gt;&gt; sink`).</a>
+<a name="513"><span class="lineNum">     513 </span><span class="lineCov">        127 : inline TrueMIDI_Sink &amp;operator&gt;&gt;(MIDI_Pipe &amp;pipe, TrueMIDI_Sink &amp;sink) {</span></a>
+<a name="514"><span class="lineNum">     514 </span><span class="lineCov">        127 :     sink.connectSourcePipe(&amp;pipe);</span></a>
+<a name="515"><span class="lineNum">     515 </span><span class="lineCov">        127 :     return sink;</span></a>
+<a name="516"><span class="lineNum">     516 </span>            : }</a>
+<a name="517"><span class="lineNum">     517 </span>            : </a>
+<a name="518"><span class="lineNum">     518 </span>            : /// Connect a sink to a pipe (`sink &lt;&lt; pipe`).</a>
+<a name="519"><span class="lineNum">     519 </span><span class="lineCov">         68 : inline MIDI_Pipe &amp;operator&lt;&lt;(TrueMIDI_Sink &amp;sink, MIDI_Pipe &amp;pipe) {</span></a>
+<a name="520"><span class="lineNum">     520 </span><span class="lineCov">         68 :     sink.connectSourcePipe(&amp;pipe);</span></a>
+<a name="521"><span class="lineNum">     521 </span><span class="lineCov">         68 :     return pipe;</span></a>
+<a name="522"><span class="lineNum">     522 </span>            : }</a>
+<a name="523"><span class="lineNum">     523 </span>            : </a>
+<a name="524"><span class="lineNum">     524 </span>            : /// Connect a pipe to a source (`pipe &lt;&lt; source`).</a>
+<a name="525"><span class="lineNum">     525 </span><span class="lineCov">         68 : inline TrueMIDI_Source &amp;operator&lt;&lt;(MIDI_Pipe &amp;pipe, TrueMIDI_Source &amp;source) {</span></a>
+<a name="526"><span class="lineNum">     526 </span><span class="lineCov">         68 :     source.connectSinkPipe(&amp;pipe);</span></a>
+<a name="527"><span class="lineNum">     527 </span><span class="lineCov">         68 :     return source;</span></a>
+<a name="528"><span class="lineNum">     528 </span>            : }</a>
 <a name="529"><span class="lineNum">     529 </span>            : </a>
-<a name="530"><span class="lineNum">     530 </span>            : template &lt;size_t N&gt;</a>
-<a name="531"><span class="lineNum">     531 </span>            : using BidirectionalMIDI_PipeFactory =</a>
-<a name="532"><span class="lineNum">     532 </span>            :     MIDI_PipeFactory&lt;N, BidirectionalMIDI_Pipe&gt;;</a>
-<a name="533"><span class="lineNum">     533 </span>            : </a>
-<a name="534"><span class="lineNum">     534 </span>            : template &lt;size_t N, class Pipe&gt;</a>
-<a name="535"><span class="lineNum">     535 </span><span class="lineCov">         30 : inline MIDI_Pipe &amp;operator&gt;&gt;(TrueMIDI_Source &amp;source,</span></a>
-<a name="536"><span class="lineNum">     536 </span>            :                              MIDI_PipeFactory&lt;N, Pipe&gt; &amp;pipe_fact) {</a>
-<a name="537"><span class="lineNum">     537 </span><span class="lineCov">         30 :     return source &gt;&gt; pipe_fact.getNext();</span></a>
-<a name="538"><span class="lineNum">     538 </span>            : }</a>
-<a name="539"><span class="lineNum">     539 </span>            : </a>
-<a name="540"><span class="lineNum">     540 </span>            : template &lt;size_t N, class Pipe&gt;</a>
-<a name="541"><span class="lineNum">     541 </span><span class="lineCov">          3 : inline TrueMIDI_Sink &amp;operator&gt;&gt;(MIDI_PipeFactory&lt;N, Pipe&gt; &amp;pipe_fact,</span></a>
-<a name="542"><span class="lineNum">     542 </span>            :                                  TrueMIDI_Sink &amp;sink) {</a>
-<a name="543"><span class="lineNum">     543 </span><span class="lineCov">          3 :     return pipe_fact.getNext() &gt;&gt; sink;</span></a>
+<a name="530"><span class="lineNum">     530 </span>            : /// Connect a pipe to a sink+source (`pipe | source+sink`).</a>
+<a name="531"><span class="lineNum">     531 </span><span class="lineCov">          5 : inline TrueMIDI_SinkSource &amp;operator|(BidirectionalMIDI_Pipe &amp;pipe,</span></a>
+<a name="532"><span class="lineNum">     532 </span>            :                                       TrueMIDI_SinkSource &amp;sinksource) {</a>
+<a name="533"><span class="lineNum">     533 </span><span class="lineCov">          5 :     sinksource.connectSinkPipe(&amp;pipe.first);</span></a>
+<a name="534"><span class="lineNum">     534 </span><span class="lineCov">          5 :     sinksource.connectSourcePipe(&amp;pipe.second);</span></a>
+<a name="535"><span class="lineNum">     535 </span><span class="lineCov">          5 :     return sinksource;</span></a>
+<a name="536"><span class="lineNum">     536 </span>            : }</a>
+<a name="537"><span class="lineNum">     537 </span>            : </a>
+<a name="538"><span class="lineNum">     538 </span>            : /// Connect a sink+source to a pipe (`source+sink | pipe`).</a>
+<a name="539"><span class="lineNum">     539 </span><span class="lineCov">          5 : inline BidirectionalMIDI_Pipe &amp;operator|(TrueMIDI_SinkSource &amp;sinksource,</span></a>
+<a name="540"><span class="lineNum">     540 </span>            :                                          BidirectionalMIDI_Pipe &amp;pipe) {</a>
+<a name="541"><span class="lineNum">     541 </span><span class="lineCov">          5 :     sinksource.connectSinkPipe(&amp;pipe.second);</span></a>
+<a name="542"><span class="lineNum">     542 </span><span class="lineCov">          5 :     sinksource.connectSourcePipe(&amp;pipe.first);</span></a>
+<a name="543"><span class="lineNum">     543 </span><span class="lineCov">          5 :     return pipe;</span></a>
 <a name="544"><span class="lineNum">     544 </span>            : }</a>
 <a name="545"><span class="lineNum">     545 </span>            : </a>
-<a name="546"><span class="lineNum">     546 </span>            : template &lt;size_t N, class Pipe&gt;</a>
-<a name="547"><span class="lineNum">     547 </span><span class="lineCov">         25 : inline MIDI_Pipe &amp;operator&lt;&lt;(TrueMIDI_Sink &amp;sink,</span></a>
-<a name="548"><span class="lineNum">     548 </span>            :                              MIDI_PipeFactory&lt;N, Pipe&gt; &amp;pipe_fact) {</a>
-<a name="549"><span class="lineNum">     549 </span><span class="lineCov">         25 :     return sink &lt;&lt; pipe_fact.getNext();</span></a>
-<a name="550"><span class="lineNum">     550 </span>            : }</a>
-<a name="551"><span class="lineNum">     551 </span>            : </a>
-<a name="552"><span class="lineNum">     552 </span>            : template &lt;size_t N, class Pipe&gt;</a>
-<a name="553"><span class="lineNum">     553 </span>            : inline TrueMIDI_Source &amp;operator&lt;&lt;(MIDI_PipeFactory&lt;N, Pipe&gt; &amp;pipe_fact,</a>
-<a name="554"><span class="lineNum">     554 </span>            :                                    TrueMIDI_Source &amp;source) {</a>
-<a name="555"><span class="lineNum">     555 </span>            :     return pipe_fact.getNext() &lt;&lt; source;</a>
-<a name="556"><span class="lineNum">     556 </span>            : }</a>
-<a name="557"><span class="lineNum">     557 </span>            : </a>
-<a name="558"><span class="lineNum">     558 </span>            : template &lt;size_t N&gt;</a>
-<a name="559"><span class="lineNum">     559 </span>            : inline TrueMIDI_SinkSource &amp;</a>
-<a name="560"><span class="lineNum">     560 </span>            : operator|(BidirectionalMIDI_PipeFactory&lt;N&gt; &amp;pipe_fact,</a>
-<a name="561"><span class="lineNum">     561 </span>            :           TrueMIDI_SinkSource &amp;sinksource) {</a>
-<a name="562"><span class="lineNum">     562 </span>            :     return pipe_fact.getNext() | sinksource;</a>
-<a name="563"><span class="lineNum">     563 </span>            : }</a>
-<a name="564"><span class="lineNum">     564 </span>            : </a>
-<a name="565"><span class="lineNum">     565 </span>            : template &lt;size_t N&gt;</a>
-<a name="566"><span class="lineNum">     566 </span>            : inline BidirectionalMIDI_Pipe &amp;</a>
-<a name="567"><span class="lineNum">     567 </span>            : operator|(TrueMIDI_SinkSource &amp;sinksource,</a>
-<a name="568"><span class="lineNum">     568 </span>            :           BidirectionalMIDI_PipeFactory&lt;N&gt; &amp;pipe_fact) {</a>
-<a name="569"><span class="lineNum">     569 </span>            :     return sinksource | pipe_fact.getNext();</a>
-<a name="570"><span class="lineNum">     570 </span>            : }</a>
-<a name="571"><span class="lineNum">     571 </span>            : </a>
-<a name="572"><span class="lineNum">     572 </span>            : /// @}</a>
+<a name="546"><span class="lineNum">     546 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
+<a name="547"><span class="lineNum">     547 </span>            : </a>
+<a name="548"><span class="lineNum">     548 </span>            : /**</a>
+<a name="549"><span class="lineNum">     549 </span>            :  * @brief   Class that produces multiple MIDI_Pipe%s.</a>
+<a name="550"><span class="lineNum">     550 </span>            :  * </a>
+<a name="551"><span class="lineNum">     551 </span>            :  * @tparam  N </a>
+<a name="552"><span class="lineNum">     552 </span>            :  *          The maximum number of pipes it can produce.</a>
+<a name="553"><span class="lineNum">     553 </span>            :  * @tparam  Pipe </a>
+<a name="554"><span class="lineNum">     554 </span>            :  *          The type of pipes to produce.</a>
+<a name="555"><span class="lineNum">     555 </span>            :  */</a>
+<a name="556"><span class="lineNum">     556 </span>            : template &lt;size_t N, class Pipe = MIDI_Pipe&gt;</a>
+<a name="557"><span class="lineNum">     557 </span><span class="lineCov">        116 : struct MIDI_PipeFactory {</span></a>
+<a name="558"><span class="lineNum">     558 </span>            :     Pipe pipes[N];</a>
+<a name="559"><span class="lineNum">     559 </span><span class="lineCov">         12 :     size_t index = 0;</span></a>
+<a name="560"><span class="lineNum">     560 </span>            : </a>
+<a name="561"><span class="lineNum">     561 </span><span class="lineCov">         58 :     Pipe &amp;getNext() {</span></a>
+<a name="562"><span class="lineNum">     562 </span><span class="lineCov">         58 :         if (index &gt;= N)</span></a>
+<a name="563"><span class="lineNum">     563 </span><span class="lineCov">          1 :             FATAL_ERROR(F(&quot;Not enough pipes available&quot;), 0x2459);</span></a>
+<a name="564"><span class="lineNum">     564 </span><span class="lineCov">         57 :         return pipes[index++];</span></a>
+<a name="565"><span class="lineNum">     565 </span><span class="lineCov">          1 :     }</span></a>
+<a name="566"><span class="lineNum">     566 </span><span class="lineCov">         10 :     Pipe &amp;operator[](size_t i) { return pipes[i]; }</span></a>
+<a name="567"><span class="lineNum">     567 </span>            :     const Pipe &amp;operator[](size_t i) const { return pipes[i]; }</a>
+<a name="568"><span class="lineNum">     568 </span>            : };</a>
+<a name="569"><span class="lineNum">     569 </span>            : </a>
+<a name="570"><span class="lineNum">     570 </span>            : template &lt;size_t N&gt;</a>
+<a name="571"><span class="lineNum">     571 </span>            : using BidirectionalMIDI_PipeFactory =</a>
+<a name="572"><span class="lineNum">     572 </span>            :     MIDI_PipeFactory&lt;N, BidirectionalMIDI_Pipe&gt;;</a>
 <a name="573"><span class="lineNum">     573 </span>            : </a>
-<a name="574"><span class="lineNum">     574 </span>            : END_CS_NAMESPACE</a>
-<a name="575"><span class="lineNum">     575 </span>            : </a>
-<a name="576"><span class="lineNum">     576 </span>            : AH_DIAGNOSTIC_POP()</a>
+<a name="574"><span class="lineNum">     574 </span>            : template &lt;size_t N, class Pipe&gt;</a>
+<a name="575"><span class="lineNum">     575 </span><span class="lineCov">         30 : inline MIDI_Pipe &amp;operator&gt;&gt;(TrueMIDI_Source &amp;source,</span></a>
+<a name="576"><span class="lineNum">     576 </span>            :                              MIDI_PipeFactory&lt;N, Pipe&gt; &amp;pipe_fact) {</a>
+<a name="577"><span class="lineNum">     577 </span><span class="lineCov">         30 :     return source &gt;&gt; pipe_fact.getNext();</span></a>
+<a name="578"><span class="lineNum">     578 </span>            : }</a>
+<a name="579"><span class="lineNum">     579 </span>            : </a>
+<a name="580"><span class="lineNum">     580 </span>            : template &lt;size_t N, class Pipe&gt;</a>
+<a name="581"><span class="lineNum">     581 </span><span class="lineCov">          3 : inline TrueMIDI_Sink &amp;operator&gt;&gt;(MIDI_PipeFactory&lt;N, Pipe&gt; &amp;pipe_fact,</span></a>
+<a name="582"><span class="lineNum">     582 </span>            :                                  TrueMIDI_Sink &amp;sink) {</a>
+<a name="583"><span class="lineNum">     583 </span><span class="lineCov">          3 :     return pipe_fact.getNext() &gt;&gt; sink;</span></a>
+<a name="584"><span class="lineNum">     584 </span>            : }</a>
+<a name="585"><span class="lineNum">     585 </span>            : </a>
+<a name="586"><span class="lineNum">     586 </span>            : template &lt;size_t N, class Pipe&gt;</a>
+<a name="587"><span class="lineNum">     587 </span><span class="lineCov">         25 : inline MIDI_Pipe &amp;operator&lt;&lt;(TrueMIDI_Sink &amp;sink,</span></a>
+<a name="588"><span class="lineNum">     588 </span>            :                              MIDI_PipeFactory&lt;N, Pipe&gt; &amp;pipe_fact) {</a>
+<a name="589"><span class="lineNum">     589 </span><span class="lineCov">         25 :     return sink &lt;&lt; pipe_fact.getNext();</span></a>
+<a name="590"><span class="lineNum">     590 </span>            : }</a>
+<a name="591"><span class="lineNum">     591 </span>            : </a>
+<a name="592"><span class="lineNum">     592 </span>            : template &lt;size_t N, class Pipe&gt;</a>
+<a name="593"><span class="lineNum">     593 </span>            : inline TrueMIDI_Source &amp;operator&lt;&lt;(MIDI_PipeFactory&lt;N, Pipe&gt; &amp;pipe_fact,</a>
+<a name="594"><span class="lineNum">     594 </span>            :                                    TrueMIDI_Source &amp;source) {</a>
+<a name="595"><span class="lineNum">     595 </span>            :     return pipe_fact.getNext() &lt;&lt; source;</a>
+<a name="596"><span class="lineNum">     596 </span>            : }</a>
+<a name="597"><span class="lineNum">     597 </span>            : </a>
+<a name="598"><span class="lineNum">     598 </span>            : template &lt;size_t N&gt;</a>
+<a name="599"><span class="lineNum">     599 </span>            : inline TrueMIDI_SinkSource &amp;</a>
+<a name="600"><span class="lineNum">     600 </span>            : operator|(BidirectionalMIDI_PipeFactory&lt;N&gt; &amp;pipe_fact,</a>
+<a name="601"><span class="lineNum">     601 </span>            :           TrueMIDI_SinkSource &amp;sinksource) {</a>
+<a name="602"><span class="lineNum">     602 </span>            :     return pipe_fact.getNext() | sinksource;</a>
+<a name="603"><span class="lineNum">     603 </span>            : }</a>
+<a name="604"><span class="lineNum">     604 </span>            : </a>
+<a name="605"><span class="lineNum">     605 </span>            : template &lt;size_t N&gt;</a>
+<a name="606"><span class="lineNum">     606 </span>            : inline BidirectionalMIDI_Pipe &amp;</a>
+<a name="607"><span class="lineNum">     607 </span>            : operator|(TrueMIDI_SinkSource &amp;sinksource,</a>
+<a name="608"><span class="lineNum">     608 </span>            :           BidirectionalMIDI_PipeFactory&lt;N&gt; &amp;pipe_fact) {</a>
+<a name="609"><span class="lineNum">     609 </span>            :     return sinksource | pipe_fact.getNext();</a>
+<a name="610"><span class="lineNum">     610 </span>            : }</a>
+<a name="611"><span class="lineNum">     611 </span>            : </a>
+<a name="612"><span class="lineNum">     612 </span>            : /// @}</a>
+<a name="613"><span class="lineNum">     613 </span>            : </a>
+<a name="614"><span class="lineNum">     614 </span>            : END_CS_NAMESPACE</a>
+<a name="615"><span class="lineNum">     615 </span>            : </a>
+<a name="616"><span class="lineNum">     616 </span>            : AH_DIAGNOSTIC_POP()</a>
 </pre>
       </td>
     </tr>

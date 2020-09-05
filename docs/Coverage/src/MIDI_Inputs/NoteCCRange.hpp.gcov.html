@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2ee89167b5b8a6de7240c219f1f64b23838fe812 - src/MIDI_Inputs/NoteCCRange.hpp</title>
+  <title>LCOV - b5bd95f9dbad780dbfd8203fe655b6457d513e70 - src/MIDI_Inputs/NoteCCRange.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2ee89167b5b8a6de7240c219f1f64b23838fe812</td>
+            <td class="headerValue">b5bd95f9dbad780dbfd8203fe655b6457d513e70</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">70</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-07-30 21:26:33</td>
+            <td class="headerValue">2020-09-06 01:18:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">89</td>
@@ -188,7 +188,7 @@
 <a name="118"><span class="lineNum">     118 </span>            :     /// for Note Off, it's zero.</a>
 <a name="119"><span class="lineNum">     119 </span>            :     static uint8_t</a>
 <a name="120"><span class="lineNum">     120 </span><span class="lineCov">         24 :     getValueFromMIDIMessage(const ChannelMessageMatcher &amp;midimsg) {</span></a>
-<a name="121"><span class="lineNum">     121 </span><span class="lineCov">         24 :         return midimsg.type == NOTE_OFF ? 0 : midimsg.data2;</span></a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineCov">         24 :         return midimsg.type == MIDIMessageType::NOTE_OFF ? 0 : midimsg.data2;</span></a>
 <a name="122"><span class="lineNum">     122 </span>            :     }</a>
 <a name="123"><span class="lineNum">     123 </span>            : </a>
 <a name="124"><span class="lineNum">     124 </span>            :     /// Get the active bank selection.</a>
@@ -294,7 +294,7 @@
 <a name="224"><span class="lineNum">     224 </span>            : };</a>
 <a name="225"><span class="lineNum">     225 </span>            : </a>
 <a name="226"><span class="lineNum">     226 </span>            : /**</a>
-<a name="227"><span class="lineNum">     227 </span>            :  * @brief   MIDI Input Element that listens to a single controller and saves its </a>
+<a name="227"><span class="lineNum">     227 </span>            :  * @brief   MIDI Input Element that listens to a single controller and saves its</a>
 <a name="228"><span class="lineNum">     228 </span>            :  *          value.</a>
 <a name="229"><span class="lineNum">     229 </span>            :  * </a>
 <a name="230"><span class="lineNum">     230 </span>            :  * @ingroup MIDIInputElements</a>

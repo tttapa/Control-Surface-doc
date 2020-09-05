@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['timing_5fclock_5fmessage_4842',['TIMING_CLOCK_MESSAGE',['../d7/d2d/MIDI__Parser_8hpp.html#a483a274bc01f8f1209e4af86d135e968acba9fd1ff1f2ab08cc6c785b8b00898b',1,'MIDI_Parser.hpp']]],
-  ['tracktion_5frelative_4843',['TRACKTION_RELATIVE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da6ee78ca6dc2affda5d76bf4ea7bd5b2e',1,'RelativeCCSender.hpp']]],
-  ['twos_5fcomplement_4844',['TWOS_COMPLEMENT',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da9aa2a35d92976c7de970506c4d19a96c',1,'RelativeCCSender.hpp']]]
+  ['timing_5fclock_4936',['TIMING_CLOCK',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a0d24717929d875f4bd2ec4d23769c7d0',1,'MIDI_MessageTypes.hpp']]],
+  ['tracktion_5frelative_4937',['TRACKTION_RELATIVE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da6ee78ca6dc2affda5d76bf4ea7bd5b2e',1,'RelativeCCSender.hpp']]],
+  ['tune_5frequest_4938',['TUNE_REQUEST',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5af36f7dc41a9100c5e421c15ef83ba071',1,'MIDI_MessageTypes.hpp']]],
+  ['twos_5fcomplement_4939',['TWOS_COMPLEMENT',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da9aa2a35d92976c7de970506c4d19a96c',1,'RelativeCCSender.hpp']]]
 ];

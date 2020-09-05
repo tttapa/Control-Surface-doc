@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2ee89167b5b8a6de7240c219f1f64b23838fe812 - src/MIDI_Outputs/Bankable/CCIncrementDecrementButtons.hpp</title>
+  <title>LCOV - b5bd95f9dbad780dbfd8203fe655b6457d513e70 - src/MIDI_Outputs/Bankable/CCIncrementDecrementButtons.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2ee89167b5b8a6de7240c219f1f64b23838fe812</td>
+            <td class="headerValue">b5bd95f9dbad780dbfd8203fe655b6457d513e70</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">5</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-07-30 21:26:33</td>
+            <td class="headerValue">2020-09-06 01:18:41</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -104,35 +104,36 @@
 <a name="34"><span class="lineNum">      34 </span>            :      * @param   address</a>
 <a name="35"><span class="lineNum">      35 </span>            :      *          The address to use for the relative events, containing the </a>
 <a name="36"><span class="lineNum">      36 </span>            :      *          controller number [0, 119], channel [CHANNEL_1, CHANNEL_16], and</a>
-<a name="37"><span class="lineNum">      37 </span>            :      *          optional cable number [0, 15].</a>
+<a name="37"><span class="lineNum">      37 </span>            :      *          optional cable number [CABLE_1, CABLE_16].</a>
 <a name="38"><span class="lineNum">      38 </span>            :      * @param   multiplier</a>
 <a name="39"><span class="lineNum">      39 </span>            :      *          The multiplier for the relative events. When setting it to 2,</a>
 <a name="40"><span class="lineNum">      40 </span>            :      *          it will scroll twice as fast, for example.</a>
 <a name="41"><span class="lineNum">      41 </span>            :      * @param   resetNote</a>
 <a name="42"><span class="lineNum">      42 </span>            :      *          The MIDI address to use to reset the setting, containing the </a>
 <a name="43"><span class="lineNum">      43 </span>            :      *          note number [0, 119], channel [CHANNEL_1, CHANNEL_16], and </a>
-<a name="44"><span class="lineNum">      44 </span>            :      *          optional cable number [0, 15]. It will be triggered when the </a>
-<a name="45"><span class="lineNum">      45 </span>            :      *          increment and decrement buttons are pressed simultaneously.</a>
-<a name="46"><span class="lineNum">      46 </span>            :      * @param   relativeSender</a>
-<a name="47"><span class="lineNum">      47 </span>            :      *          The MIDI sender to use for the relative events.</a>
-<a name="48"><span class="lineNum">      48 </span>            :      * @param   resetSender</a>
-<a name="49"><span class="lineNum">      49 </span>            :      *          The MIDI sender to use for reset events.</a>
-<a name="50"><span class="lineNum">      50 </span>            :      */</a>
-<a name="51"><span class="lineNum">      51 </span><span class="lineCov">          1 :     CCIncrementDecrementButtons(OutputBankConfig&lt;&gt; config,</span></a>
-<a name="52"><span class="lineNum">      52 </span>            :                                 AH::IncrementDecrementButtons buttons,</a>
-<a name="53"><span class="lineNum">      53 </span>            :                                 MIDIAddress address, uint8_t multiplier = 1,</a>
-<a name="54"><span class="lineNum">      54 </span>            :                                 MIDIAddress resetNote = {},</a>
-<a name="55"><span class="lineNum">      55 </span>            :                                 const RelativeCCSender &amp;relativeSender = {},</a>
-<a name="56"><span class="lineNum">      56 </span>            :                                 const DigitalNoteSender &amp;resetSender = {})</a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">          1 :         : MIDIIncrementDecrementButtons&lt;DualAddresses, RelativeCCSender,</span></a>
-<a name="58"><span class="lineNum">      58 </span>            :                                         DigitalNoteSender&gt;(</a>
-<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          1 :               {config, {address, resetNote}}, buttons, multiplier,</span></a>
-<a name="60"><span class="lineNum">      60 </span><span class="lineCov">          3 :               relativeSender, resetSender) {}</span></a>
-<a name="61"><span class="lineNum">      61 </span>            : };</a>
-<a name="62"><span class="lineNum">      62 </span>            : </a>
-<a name="63"><span class="lineNum">      63 </span>            : } // namespace Bankable</a>
-<a name="64"><span class="lineNum">      64 </span>            : </a>
-<a name="65"><span class="lineNum">      65 </span>            : END_CS_NAMESPACE</a>
+<a name="44"><span class="lineNum">      44 </span>            :      *          optional cable number [CABLE_1, CABLE_16].</a>
+<a name="45"><span class="lineNum">      45 </span>            :      *          It will be triggered when the increment and decrement buttons</a>
+<a name="46"><span class="lineNum">      46 </span>            :      *          are pressed simultaneously.</a>
+<a name="47"><span class="lineNum">      47 </span>            :      * @param   relativeSender</a>
+<a name="48"><span class="lineNum">      48 </span>            :      *          The MIDI sender to use for the relative events.</a>
+<a name="49"><span class="lineNum">      49 </span>            :      * @param   resetSender</a>
+<a name="50"><span class="lineNum">      50 </span>            :      *          The MIDI sender to use for reset events.</a>
+<a name="51"><span class="lineNum">      51 </span>            :      */</a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">          1 :     CCIncrementDecrementButtons(OutputBankConfig&lt;&gt; config,</span></a>
+<a name="53"><span class="lineNum">      53 </span>            :                                 AH::IncrementDecrementButtons buttons,</a>
+<a name="54"><span class="lineNum">      54 </span>            :                                 MIDIAddress address, uint8_t multiplier = 1,</a>
+<a name="55"><span class="lineNum">      55 </span>            :                                 MIDIAddress resetNote = {},</a>
+<a name="56"><span class="lineNum">      56 </span>            :                                 const RelativeCCSender &amp;relativeSender = {},</a>
+<a name="57"><span class="lineNum">      57 </span>            :                                 const DigitalNoteSender &amp;resetSender = {})</a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">          1 :         : MIDIIncrementDecrementButtons&lt;DualAddresses, RelativeCCSender,</span></a>
+<a name="59"><span class="lineNum">      59 </span>            :                                         DigitalNoteSender&gt;(</a>
+<a name="60"><span class="lineNum">      60 </span><span class="lineCov">          1 :               {config, {address, resetNote}}, buttons, multiplier,</span></a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">          3 :               relativeSender, resetSender) {}</span></a>
+<a name="62"><span class="lineNum">      62 </span>            : };</a>
+<a name="63"><span class="lineNum">      63 </span>            : </a>
+<a name="64"><span class="lineNum">      64 </span>            : } // namespace Bankable</a>
+<a name="65"><span class="lineNum">      65 </span>            : </a>
+<a name="66"><span class="lineNum">      66 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

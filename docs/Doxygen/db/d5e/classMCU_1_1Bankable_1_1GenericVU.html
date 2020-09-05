@@ -100,14 +100,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d46/classMCU_1_1Bankable_1_1GenericVU__inherit__graph.svg" width="682" height="1066"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d46/classMCU_1_1Bankable_1_1GenericVU__inherit__graph.svg" width="682" height="1066"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for GenericVU&lt; NumBanks, Callback &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d5d/classMCU_1_1Bankable_1_1GenericVU__coll__graph.svg" width="986" height="1604"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d5d/classMCU_1_1Bankable_1_1GenericVU__coll__graph.svg" width="986" height="1634"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -272,7 +274,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00287">287</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00286">286</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad20112bfbadc2c276fec732628a1e08e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad20112bfbadc2c276fec732628a1e08e">&#9670;&nbsp;</a></span>GenericVU()</h2>
@@ -331,7 +333,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
   <table class="params">
     <tr><td class="paramname">config</td><td>The bank configuration to use. </td></tr>
     <tr><td class="paramname">track</td><td>The track of the <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html" title="A class for MIDI input elements that represent Mackie Control Universal VU meters.">VU</a> meter. [1, 8] </td></tr>
-    <tr><td class="paramname">channelCN</td><td>The MIDI channel [CHANNEL_1, CHANNEL_16] and optional Cable Number [0, 15]. </td></tr>
+    <tr><td class="paramname">channelCN</td><td>The MIDI channel [CHANNEL_1, CHANNEL_16] and optional <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> Number [CABLE_1, CABLE_16]. </td></tr>
     <tr><td class="paramname">decayTime</td><td>The time in milliseconds it takes for the value to decay one step. <br  />
  The <a class="el" href="../../d7/dc7/namespaceMCU.html">MCU</a> protocol uses 300 ms per division, and two steps per division, so the default is 150 ms per step. <br  />
  Some software doesn't work if the <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html" title="A class for MIDI input elements that represent Mackie Control Universal VU meters.">VU</a> meter decays automatically, in that case, you can set the decay time to zero to disable the decay. </td></tr>
@@ -341,7 +343,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00313">313</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00312">312</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +371,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00325">325</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00324">324</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +403,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Reimplemented from <a class="el" href="../../d4/d71/classMCU_1_1VU__Base.html#ab4b58d686b8a25f5569825abfbf57544">VU_Base&lt; NumBanks, VUEmptyCallback &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00329">329</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00328">328</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -433,7 +435,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Reimplemented from <a class="el" href="../../d9/db1/classMIDIInputElement.html#a3a997fc67fa99169e9ce6788afb1b50b">MIDIInputElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00335">335</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00334">334</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +468,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Reimplemented from <a class="el" href="../../db/d6e/classBankableMIDIInput.html#a8c677435985f2889d7d824ab27855597">BankableMIDIInput&lt; NumBanks &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00340">340</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00339">339</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -580,7 +582,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Get the <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html" title="A class for MIDI input elements that represent Mackie Control Universal VU meters.">VU</a> meter value from the raw value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00161">161</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00160">160</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -638,7 +640,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Get the overload status value from the raw value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00163">163</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00162">162</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -740,7 +742,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Reimplemented from <a class="el" href="../../d1/df7/classMIDIInputElementChannelPressure.html#afdfdb27cc11e91b229d59e31af1a2223">MIDIInputElementChannelPressure</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00126">126</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -764,7 +766,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00135">135</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00134">134</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -804,7 +806,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Set the <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html" title="A class for MIDI input elements that represent Mackie Control Universal VU meters.">VU</a> meter value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00151">151</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -834,7 +836,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Set the overload status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00156">156</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -864,7 +866,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 
 <p>Clear the overload status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00159">159</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00158">158</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1013,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 <p>Move down this element in the linked list of elements. </p>
 <p>This means that the element will be checked earlier on the next iteration. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html">MIDIInputElementChannelPressure.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html">MIDIInputElementChannelPressure.hpp</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1282,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html#l00175">175</a> of file <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html">BankableMIDIInput.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html#l00174">174</a> of file <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html">BankableMIDIInput.hpp</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1431,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html#l00162">162</a> of file <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html">BankableMIDIInput.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html#l00161">161</a> of file <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html">BankableMIDIInput.hpp</a>.</p>
 
 </div>
 </div>
@@ -1483,7 +1485,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html#l00212">212</a> of file <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html">BankableMIDIInput.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html#l00211">211</a> of file <a class="el" href="../../de/d6e/BankableMIDIInput_8hpp_source.html">BankableMIDIInput.hpp</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1510,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00166">166</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00165">165</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1532,7 +1534,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00166">166</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1556,7 +1558,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00168">168</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1580,7 +1582,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00171">171</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00170">170</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1604,7 +1606,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html">MIDIInputElementChannelPressure.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html">MIDIInputElementChannelPressure.hpp</a>.</p>
 
 </div>
 </div>
@@ -1628,7 +1630,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -1759,9 +1761,7 @@ class MCU::Bankable::GenericVU&lt; NumBanks, Callback &gt;</h3>
 <div class="ttc" id="anamespaceMIDI__Notes_html_a782ecf472467d5b568ea62a533489807"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#a782ecf472467d5b568ea62a533489807">MIDI_Notes::F</a></div><div class="ttdeci">constexpr int8_t F</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00023">Notes.hpp:23</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="../../doxygen.png" alt="doxygen"/>
-</a> 1.8.19
+Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.19
 </small></address>
 </body>
 </html>

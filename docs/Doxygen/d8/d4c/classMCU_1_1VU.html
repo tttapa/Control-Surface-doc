@@ -98,14 +98,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d76/classMCU_1_1VU__inherit__graph.svg" width="502" height="1118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d76/classMCU_1_1VU__inherit__graph.svg" width="502" height="1118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for VU:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dce/classMCU_1_1VU__coll__graph.svg" width="960" height="1672"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dce/classMCU_1_1VU__coll__graph.svg" width="960" height="1702"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -230,7 +232,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d8/de6/VU-Meter-Bridge_8ino-example.html#_a25">VU-Meter-Bridge.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00222">222</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00221">221</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afc7a929d7d01a93ba5777ad85b3d7d15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc7a929d7d01a93ba5777ad85b3d7d15">&#9670;&nbsp;</a></span>VU() <span class="overload">[1/2]</span></h2>
@@ -276,7 +278,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">track</td><td>The track of the <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A class for MIDI input elements that represent Mackie Control Universal VU meters.">VU</a> meter. [1, 8] </td></tr>
-    <tr><td class="paramname">channelCN</td><td>The MIDI channel [CHANNEL_1, CHANNEL_16] and optional Cable Number [0, 15]. </td></tr>
+    <tr><td class="paramname">channelCN</td><td>The MIDI channel [CHANNEL_1, CHANNEL_16] and optional <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> Number [CABLE_1, CABLE_16]. </td></tr>
     <tr><td class="paramname">decayTime</td><td>The time in milliseconds it takes for the value to decay one step. <br  />
  The <a class="el" href="../../d7/dc7/namespaceMCU.html">MCU</a> protocol uses 300 ms per division, and two steps per division, so the default is 150 ms per step. <br  />
  Some software doesn't work if the <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A class for MIDI input elements that represent Mackie Control Universal VU meters.">VU</a> meter decays automatically, in that case, you can set the decay time to zero to disable the decay. </td></tr>
@@ -284,7 +286,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00241">241</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00240">240</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +335,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00264">264</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00263">263</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +459,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Get the <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A class for MIDI input elements that represent Mackie Control Universal VU meters.">VU</a> meter value from the raw value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00161">161</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00160">160</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -518,7 +520,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Get the overload status value from the raw value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00163">163</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00162">162</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -623,7 +625,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d1/df7/classMIDIInputElementChannelPressure.html#afdfdb27cc11e91b229d59e31af1a2223">MIDIInputElementChannelPressure</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00126">126</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -650,7 +652,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00135">135</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00134">134</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -679,7 +681,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Get the active bank selection. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00142">142</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00141">141</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -709,7 +711,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Get the bank index from a MIDI address. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00145">145</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00144">144</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -749,7 +751,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Set the <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A class for MIDI input elements that represent Mackie Control Universal VU meters.">VU</a> meter value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00151">151</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -779,7 +781,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Set the overload status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00156">156</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -809,7 +811,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Clear the overload status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00159">159</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00158">158</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -956,7 +958,7 @@ Static Private Attributes</h2></td></tr>
 <p>Move down this element in the linked list of elements. </p>
 <p>This means that the element will be checked earlier on the next iteration. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html">MIDIInputElementChannelPressure.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html">MIDIInputElementChannelPressure.hpp</a>.</p>
 
 </div>
 </div>
@@ -1017,9 +1019,9 @@ Static Private Attributes</h2></td></tr>
 <p>Check if the address of the incoming MIDI message matches an address of this element. </p>
 <dl class="section note"><dt>Note</dt><dd>This base version of the function is only valid for non-Bankable MIDI input elements, it only matches if the address is equal to the address of this element. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, BankSize, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, BankSize, NoteCCLEDPWM&lt; 1 &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, BankSize, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, BankSize, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, BankSize, NoteCCLED&lt; 1 &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, BankSize, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, BankSize, NoteCCLEDPWM&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, BankSize, NoteCCLED&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, BankSize, NoteCCLEDBarCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, BankSize, NoteCCLEDPWM&lt; 1 &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, BankSize, NoteCCLEDPWM&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, BankSize, NoteCCLED&lt; 1 &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, BankSize, NoteCCLEDBarCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, BankSize, NoteCCLED&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, NoteCCLED&lt; 1 &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, NoteCCLED&lt; 1 &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, NoteCCLED&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, NoteCCLEDPWM&lt; 1 &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, NoteCCLEDPWM&lt; 1 &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, NoteCCLED&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, NoteCCLEDBarCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, NoteCCLEDPWM&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, NoteCCLEDBarCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, NoteCCLEDPWM&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../db/d5e/classMCU_1_1Bankable_1_1GenericVU.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVU&lt; NumBanks, Callback &gt;</a>, <a class="el" href="../../db/d5e/classMCU_1_1Bankable_1_1GenericVU.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVU&lt; NumBanks &gt;</a>, <a class="el" href="../../db/d5e/classMCU_1_1Bankable_1_1GenericVU.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVU&lt; NumBanks, VULEDsCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../d5/d07/classMCU_1_1Bankable_1_1GenericVPotRing.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVPotRing&lt; NumBanks, Callback &gt;</a>, <a class="el" href="../../d5/d07/classMCU_1_1Bankable_1_1GenericVPotRing.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVPotRing&lt; NumBanks &gt;</a>, <a class="el" href="../../d5/d07/classMCU_1_1Bankable_1_1GenericVPotRing.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVPotRing&lt; NumBanks, VPotRingLEDsCallback &gt;</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a88dfe1b7d165243a2fd2e65551b76091">SevenSegmentDisplay&lt; LENGTH &gt;</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a88dfe1b7d165243a2fd2e65551b76091">SevenSegmentDisplay&lt; AssignmentDisplayLength &gt;</a>, and <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a88dfe1b7d165243a2fd2e65551b76091">SevenSegmentDisplay&lt; TimeDisplayLength &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, BankSize, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, BankSize, NoteCCLEDPWM&lt; 1 &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, BankSize, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, BankSize, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, BankSize, NoteCCLED&lt; 1 &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, BankSize, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, BankSize, NoteCCLEDPWM&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, BankSize, NoteCCLED&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, BankSize, NoteCCLEDBarCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, BankSize, NoteCCLEDPWM&lt; 1 &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, BankSize, NoteCCLEDPWM&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, BankSize, NoteCCLED&lt; 1 &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, BankSize, NoteCCLEDBarCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../da/df0/classBankable_1_1GenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, BankSize, NoteCCLED&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, NoteCCLED&lt; 1 &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, NoteCCLED&lt; 1 &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, NoteCCLED&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, NoteCCLEDPWM&lt; 1 &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, NoteCCLEDPWM&lt; 1 &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, NoteCCLED&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, 1, NoteCCLEDBarCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, RangeLen, NoteCCLEDPWM&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementNote, 1, NoteCCLEDBarCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, NoteCCLEDPWM&lt; RangeLen &gt; &gt;</a>, <a class="el" href="../../d5/d80/classGenericNoteCCRange.html#a88dfe1b7d165243a2fd2e65551b76091">GenericNoteCCRange&lt; MIDIInputElementCC, RangeLen, NoteCCFastLEDCallback&lt; DefaultColorMapper &gt; &gt;</a>, <a class="el" href="../../db/d5e/classMCU_1_1Bankable_1_1GenericVU.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVU&lt; NumBanks, Callback &gt;</a>, <a class="el" href="../../db/d5e/classMCU_1_1Bankable_1_1GenericVU.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVU&lt; NumBanks &gt;</a>, <a class="el" href="../../db/d5e/classMCU_1_1Bankable_1_1GenericVU.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVU&lt; NumBanks, VULEDsCallback&lt; NumLEDs &gt; &gt;</a>, <a class="el" href="../../d5/d07/classMCU_1_1Bankable_1_1GenericVPotRing.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVPotRing&lt; NumBanks, Callback &gt;</a>, <a class="el" href="../../d5/d07/classMCU_1_1Bankable_1_1GenericVPotRing.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVPotRing&lt; NumBanks &gt;</a>, <a class="el" href="../../d5/d07/classMCU_1_1Bankable_1_1GenericVPotRing.html#a88dfe1b7d165243a2fd2e65551b76091">GenericVPotRing&lt; NumBanks, VPotRingLEDsCallback &gt;</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a88dfe1b7d165243a2fd2e65551b76091">SevenSegmentDisplay&lt; LENGTH &gt;</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a88dfe1b7d165243a2fd2e65551b76091">SevenSegmentDisplay&lt; AssignmentDisplayLength &gt;</a>, and <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a88dfe1b7d165243a2fd2e65551b76091">SevenSegmentDisplay&lt; TimeDisplayLength &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1106,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00166">166</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00165">165</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1128,7 +1130,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00166">166</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1154,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00168">168</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1178,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00171">171</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00170">170</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1202,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html">MIDIInputElementChannelPressure.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../d8/d4f/MIDIInputElementChannelPressure_8hpp_source.html">MIDIInputElementChannelPressure.hpp</a>.</p>
 
 </div>
 </div>
@@ -1224,7 +1226,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -1306,9 +1308,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="../../doxygen.png" alt="doxygen"/>
-</a> 1.8.19
+Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.19
 </small></address>
 </body>
 </html>
