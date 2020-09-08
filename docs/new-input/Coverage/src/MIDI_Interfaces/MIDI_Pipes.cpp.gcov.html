@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - f430df86a7acd25e11906fa265f5fc41c2998ce3 - src/MIDI_Interfaces/MIDI_Pipes.cpp</title>
+  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/MIDI_Interfaces/MIDI_Pipes.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">f430df86a7acd25e11906fa265f5fc41c2998ce3</td>
+            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">144</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-06 01:23:33</td>
+            <td class="headerValue">2020-09-08 19:59:05</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">26</td>
@@ -199,11 +199,11 @@
 <a name="129"><span class="lineNum">     129 </span><span class="lineCov">         61 :     return !hasSinkPipe() || sinkPipe-&gt;isAvailableForWrite(cn);</span></a>
 <a name="130"><span class="lineNum">     130 </span>            : }</a>
 <a name="131"><span class="lineNum">     131 </span>            : </a>
-<a name="132"><span class="lineNum">     132 </span><span class="lineCov">        123 : void MIDI_Source::sourceMIDItoPipe(ChannelMessage msg) {</span></a>
-<a name="133"><span class="lineNum">     133 </span><span class="lineCov">        123 :     if (sinkPipe != nullptr) {</span></a>
-<a name="134"><span class="lineNum">     134 </span><span class="lineCov">        110 :         sinkPipe-&gt;pipeMIDI(msg);</span></a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineCov">        110 :     }</span></a>
-<a name="136"><span class="lineNum">     136 </span><span class="lineCov">        123 : }</span></a>
+<a name="132"><span class="lineNum">     132 </span><span class="lineCov">        125 : void MIDI_Source::sourceMIDItoPipe(ChannelMessage msg) {</span></a>
+<a name="133"><span class="lineNum">     133 </span><span class="lineCov">        125 :     if (sinkPipe != nullptr) {</span></a>
+<a name="134"><span class="lineNum">     134 </span><span class="lineCov">        112 :         sinkPipe-&gt;pipeMIDI(msg);</span></a>
+<a name="135"><span class="lineNum">     135 </span><span class="lineCov">        112 :     }</span></a>
+<a name="136"><span class="lineNum">     136 </span><span class="lineCov">        125 : }</span></a>
 <a name="137"><span class="lineNum">     137 </span><span class="lineCov">         12 : void MIDI_Source::sourceMIDItoPipe(SysExMessage msg) {</span></a>
 <a name="138"><span class="lineNum">     138 </span><span class="lineCov">         12 :     if (sinkPipe != nullptr) {</span></a>
 <a name="139"><span class="lineNum">     139 </span><span class="lineCov">          7 :         sinkPipe-&gt;pipeMIDI(msg);</span></a>

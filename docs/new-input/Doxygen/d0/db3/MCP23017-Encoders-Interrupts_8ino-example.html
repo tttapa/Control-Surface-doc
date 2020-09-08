@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.19-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,6 +21,7 @@
 </script>
 <script type="text/javascript" async="async" src="/MathJax/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="../../custom_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -30,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Control Surface
-   &#160;<span id="projectnumber">new-input</span>
+   &#160;<span id="projectnumber"><code>new-input</code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -75,7 +77,7 @@ $(function() {
 <div class="title">MCP23017-Encoders-Interrupts.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md228"></a>
+<h1><a class="anchor" id="autotoc_md237"></a>
 MCP23017-Encoders-Interrupts</h1>
 <p>This example demonstrates the use of MCP23017 I²C port expanders with rotary encoders, using hardware interrupts so you don't miss any pulses.</p>
 <dl class="section user"><dt>Boards:</dt><dd>Teensy 3.x</dd></dl>
@@ -83,7 +85,7 @@ MCP23017-Encoders-Interrupts</h1>
  I've tested it using a Teensy 3.2 and a Teensy 4.0.</p>
 <p>AVR boards (Arduino Uno, Mega, etc.) don't support I²C inside of interrupt service routines, so there's no way to read the state of the MCP23017 inside of an ISR. <br  />
  The same goes for ESP32 and ESP8266, although there may be ways around this by using alternative I²C drivers or by using FreeRTOS features.</p>
-<h2><a class="anchor" id="autotoc_md229"></a>
+<h2><a class="anchor" id="autotoc_md238"></a>
 Connections</h2>
 <ul>
 <li>SDA: MCP23017 SDA</li>
@@ -95,7 +97,7 @@ Connections</h2>
  The built-in pull-up resistors of the MCP23017 will be enabled.</p>
 <p>Make sure that the reset and address pins are all configured correctly (reset to Vcc; A0, A1 and A2 to ground).</p>
 <p>If you need more than one MCP23017 with encoders, you can connect their interrupt pins together. This does result in higher latency, because on average, half of the total number of MCP23017s have to be polled, which is relatively slow, and might lead to missed pulses when using a large number of encoders.</p>
-<h2><a class="anchor" id="autotoc_md230"></a>
+<h2><a class="anchor" id="autotoc_md239"></a>
 Behavior</h2>
 <p>When the position of one of the encoders changes, it is printed to the Serial monitor.</p>
 <p>The interrupt pin of the MCP23017 triggers a hardware interrupt on the Arduino. This means that you don't have to manually poll the encoders all the time.</p>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - f430df86a7acd25e11906fa265f5fc41c2998ce3 - src/MIDI_Parsers/MIDI_MessageTypes.hpp</title>
+  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/MIDI_Parsers/MIDI_MessageTypes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">f430df86a7acd25e11906fa265f5fc41c2998ce3</td>
+            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">45</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-06 01:23:33</td>
+            <td class="headerValue">2020-09-08 19:59:05</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">19</td>
@@ -70,10 +70,10 @@
 <pre class="source">
 <a name="1"><span class="lineNum">       1 </span>            : #pragma once</a>
 <a name="2"><span class="lineNum">       2 </span>            : </a>
-<a name="3"><span class="lineNum">       3 </span>            : #include &lt;AH/Settings/Warnings.hpp&gt;</a>
-<a name="4"><span class="lineNum">       4 </span>            : #include &lt;Settings/NamespaceSettings.hpp&gt;</a>
-<a name="5"><span class="lineNum">       5 </span>            : #include &lt;stddef.h&gt; // size_t</a>
-<a name="6"><span class="lineNum">       6 </span>            : #include &lt;stdint.h&gt; // uint8_t</a>
+<a name="3"><span class="lineNum">       3 </span>            : #include &lt;AH/STL/cstddef&gt; // size_t</a>
+<a name="4"><span class="lineNum">       4 </span>            : #include &lt;AH/STL/cstdint&gt; // uint8_t</a>
+<a name="5"><span class="lineNum">       5 </span>            : #include &lt;AH/Settings/Warnings.hpp&gt;</a>
+<a name="6"><span class="lineNum">       6 </span>            : #include &lt;Settings/NamespaceSettings.hpp&gt;</a>
 <a name="7"><span class="lineNum">       7 </span>            : </a>
 <a name="8"><span class="lineNum">       8 </span>            : #ifndef ARDUINO</a>
 <a name="9"><span class="lineNum">       9 </span>            : #include &lt;vector&gt;</a>
@@ -81,8 +81,8 @@
 <a name="11"><span class="lineNum">      11 </span>            : </a>
 <a name="12"><span class="lineNum">      12 </span>            : AH_DIAGNOSTIC_WERROR()</a>
 <a name="13"><span class="lineNum">      13 </span>            : </a>
-<a name="14"><span class="lineNum">      14 </span>            : #include &lt;Def/Channel.hpp&gt;</a>
-<a name="15"><span class="lineNum">      15 </span>            : #include &lt;Def/Cable.hpp&gt;</a>
+<a name="14"><span class="lineNum">      14 </span>            : #include &lt;Def/Cable.hpp&gt;</a>
+<a name="15"><span class="lineNum">      15 </span>            : #include &lt;Def/Channel.hpp&gt;</a>
 <a name="16"><span class="lineNum">      16 </span>            : </a>
 <a name="17"><span class="lineNum">      17 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="18"><span class="lineNum">      18 </span>            : </a>
@@ -141,8 +141,8 @@
 <a name="71"><span class="lineNum">      71 </span>            : </a>
 <a name="72"><span class="lineNum">      72 </span>            : struct ChannelMessage {</a>
 <a name="73"><span class="lineNum">      73 </span>            :     /// Constructor.</a>
-<a name="74"><span class="lineNum">      74 </span><span class="lineCov">        223 :     ChannelMessage(uint8_t header, uint8_t data1, uint8_t data2, uint8_t CN)</span></a>
-<a name="75"><span class="lineNum">      75 </span><span class="lineCov">        223 :         : header(header), data1(data1), data2(data2), CN(CN) {}</span></a>
+<a name="74"><span class="lineNum">      74 </span><span class="lineCov">        225 :     ChannelMessage(uint8_t header, uint8_t data1, uint8_t data2, uint8_t CN)</span></a>
+<a name="75"><span class="lineNum">      75 </span><span class="lineCov">        225 :         : header(header), data1(data1), data2(data2), CN(CN) {}</span></a>
 <a name="76"><span class="lineNum">      76 </span>            : </a>
 <a name="77"><span class="lineNum">      77 </span>            :     /// Constructor.</a>
 <a name="78"><span class="lineNum">      78 </span><span class="lineCov">          1 :     ChannelMessage(MIDIMessageType type, Channel channel, uint8_t data1,</span></a>
@@ -178,8 +178,8 @@
 <a name="108"><span class="lineNum">     108 </span>            :     void setCable(Cable cable) { CN = cable.getRaw(); }</a>
 <a name="109"><span class="lineNum">     109 </span>            : </a>
 <a name="110"><span class="lineNum">     110 </span>            :     /// Get the MIDI message type.</a>
-<a name="111"><span class="lineNum">     111 </span><span class="lineCov">        774 :     MIDIMessageType getMessageType() const {</span></a>
-<a name="112"><span class="lineNum">     112 </span><span class="lineCov">        774 :         return static_cast&lt;MIDIMessageType&gt;(header &amp; 0xF0);</span></a>
+<a name="111"><span class="lineNum">     111 </span><span class="lineCov">        776 :     MIDIMessageType getMessageType() const {</span></a>
+<a name="112"><span class="lineNum">     112 </span><span class="lineCov">        776 :         return static_cast&lt;MIDIMessageType&gt;(header &amp; 0xF0);</span></a>
 <a name="113"><span class="lineNum">     113 </span>            :     }</a>
 <a name="114"><span class="lineNum">     114 </span>            :     /// Set the MIDI message type.</a>
 <a name="115"><span class="lineNum">     115 </span>            :     void setMessageType(MIDIMessageType type) {</a>
@@ -191,11 +191,11 @@
 <a name="121"><span class="lineNum">     121 </span>            :     ///</a>
 <a name="122"><span class="lineNum">     122 </span>            :     /// - 2 data bytes: Note On/Off, Aftertouch, Control Change or Pitch Bend</a>
 <a name="123"><span class="lineNum">     123 </span>            :     /// - 1 data byte: Program Change or Channel Pressure</a>
-<a name="124"><span class="lineNum">     124 </span><span class="lineCov">        451 :     bool hasTwoDataBytes() const {</span></a>
-<a name="125"><span class="lineNum">     125 </span><span class="lineCov">        451 :         auto type = getMessageType();</span></a>
-<a name="126"><span class="lineNum">     126 </span><span class="lineCov">        451 :         return type &lt;= MIDIMessageType::CONTROL_CHANGE ||</span></a>
+<a name="124"><span class="lineNum">     124 </span><span class="lineCov">        453 :     bool hasTwoDataBytes() const {</span></a>
+<a name="125"><span class="lineNum">     125 </span><span class="lineCov">        453 :         auto type = getMessageType();</span></a>
+<a name="126"><span class="lineNum">     126 </span><span class="lineCov">        453 :         return type &lt;= MIDIMessageType::CONTROL_CHANGE ||</span></a>
 <a name="127"><span class="lineNum">     127 </span><span class="lineCov">        332 :                type == MIDIMessageType::PITCH_BEND;</span></a>
-<a name="128"><span class="lineNum">     128 </span><span class="lineCov">        451 :     }</span></a>
+<a name="128"><span class="lineNum">     128 </span><span class="lineCov">        453 :     }</span></a>
 <a name="129"><span class="lineNum">     129 </span>            : </a>
 <a name="130"><span class="lineNum">     130 </span>            :     /// Check whether the header is a valid header for a channel message.</a>
 <a name="131"><span class="lineNum">     131 </span><span class="lineCov">        322 :     bool hasValidHeader() const {</span></a>

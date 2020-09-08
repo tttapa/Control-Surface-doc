@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - f430df86a7acd25e11906fa265f5fc41c2998ce3 - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
+  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">f430df86a7acd25e11906fa265f5fc41c2998ce3</td>
+            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">141</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-06 01:23:33</td>
+            <td class="headerValue">2020-09-08 19:59:05</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">69</td>
@@ -373,12 +373,12 @@
 <a name="303"><span class="lineNum">     303 </span>            : </a>
 <a name="304"><span class="lineNum">     304 </span>            :   public:</a>
 <a name="305"><span class="lineNum">     305 </span>            :     /// Check if this pipe is connected to a sink.</a>
-<a name="306"><span class="lineNum">     306 </span><span class="lineCov">        961 :     bool hasSink() const { return sink != nullptr; }</span></a>
+<a name="306"><span class="lineNum">     306 </span><span class="lineCov">        963 :     bool hasSink() const { return sink != nullptr; }</span></a>
 <a name="307"><span class="lineNum">     307 </span>            :     /// Check if this pipe is connected to a source.</a>
 <a name="308"><span class="lineNum">     308 </span><span class="lineCov">        785 :     bool hasSource() const { return source != nullptr; }</span></a>
 <a name="309"><span class="lineNum">     309 </span>            :     /// Check if this pipe has a &quot;through&quot; output that sends all incoming</a>
 <a name="310"><span class="lineNum">     310 </span>            :     /// messages from the input (source) to another pipe.</a>
-<a name="311"><span class="lineNum">     311 </span><span class="lineCov">        768 :     bool hasThroughOut() const { return throughOut != nullptr; }</span></a>
+<a name="311"><span class="lineNum">     311 </span><span class="lineCov">        770 :     bool hasThroughOut() const { return throughOut != nullptr; }</span></a>
 <a name="312"><span class="lineNum">     312 </span>            :     /// Check if this pipe has a &quot;through&quot; input that merges all messages from</a>
 <a name="313"><span class="lineNum">     313 </span>            :     /// another pipe into the output (sink).</a>
 <a name="314"><span class="lineNum">     314 </span><span class="lineCov">        604 :     bool hasThroughIn() const { return throughIn != nullptr; }</span></a>
@@ -387,12 +387,12 @@
 <a name="317"><span class="lineNum">     317 </span>            :     /// Accept a MIDI message from the source, forward it to the &quot;through&quot;</a>
 <a name="318"><span class="lineNum">     318 </span>            :     /// output if necessary, map or filter the MIDI message if necessary,</a>
 <a name="319"><span class="lineNum">     319 </span>            :     /// and send it to the sink.</a>
-<a name="320"><span class="lineNum">     320 </span><span class="lineCov">        115 :     void pipeMIDI(ChannelMessage msg) {</span></a>
+<a name="320"><span class="lineNum">     320 </span><span class="lineCov">        117 :     void pipeMIDI(ChannelMessage msg) {</span></a>
 <a name="321"><span class="lineNum">     321 </span>            :         // Forward </a>
-<a name="322"><span class="lineNum">     322 </span><span class="lineCov">        115 :         if (hasThroughOut())</span></a>
+<a name="322"><span class="lineNum">     322 </span><span class="lineCov">        117 :         if (hasThroughOut())</span></a>
 <a name="323"><span class="lineNum">     323 </span><span class="lineCov">          5 :             throughOut-&gt;pipeMIDI(msg);</span></a>
-<a name="324"><span class="lineNum">     324 </span><span class="lineCov">        115 :         mapForwardMIDI(msg);</span></a>
-<a name="325"><span class="lineNum">     325 </span><span class="lineCov">        115 :     }</span></a>
+<a name="324"><span class="lineNum">     324 </span><span class="lineCov">        117 :         mapForwardMIDI(msg);</span></a>
+<a name="325"><span class="lineNum">     325 </span><span class="lineCov">        117 :     }</span></a>
 <a name="326"><span class="lineNum">     326 </span>            :     /// @copydoc pipeMIDI</a>
 <a name="327"><span class="lineNum">     327 </span><span class="lineCov">         12 :     void pipeMIDI(SysExMessage msg) {</span></a>
 <a name="328"><span class="lineNum">     328 </span><span class="lineCov">         12 :         if (hasThroughOut())</span></a>
@@ -408,10 +408,10 @@
 <a name="338"><span class="lineNum">     338 </span>            : </a>
 <a name="339"><span class="lineNum">     339 </span>            :   protected:</a>
 <a name="340"><span class="lineNum">     340 </span>            :     /// Send the given MIDI message to the sink of this pipe.</a>
-<a name="341"><span class="lineNum">     341 </span><span class="lineCov">        115 :     void sourceMIDItoSink(ChannelMessage msg) {</span></a>
-<a name="342"><span class="lineNum">     342 </span><span class="lineCov">        115 :         if (hasSink())</span></a>
-<a name="343"><span class="lineNum">     343 </span><span class="lineCov">        115 :             sink-&gt;sinkMIDIfromPipe(msg);</span></a>
-<a name="344"><span class="lineNum">     344 </span><span class="lineCov">        115 :     }</span></a>
+<a name="341"><span class="lineNum">     341 </span><span class="lineCov">        117 :     void sourceMIDItoSink(ChannelMessage msg) {</span></a>
+<a name="342"><span class="lineNum">     342 </span><span class="lineCov">        117 :         if (hasSink())</span></a>
+<a name="343"><span class="lineNum">     343 </span><span class="lineCov">        117 :             sink-&gt;sinkMIDIfromPipe(msg);</span></a>
+<a name="344"><span class="lineNum">     344 </span><span class="lineCov">        117 :     }</span></a>
 <a name="345"><span class="lineNum">     345 </span>            : </a>
 <a name="346"><span class="lineNum">     346 </span>            :     /// @copydoc sourceMIDItoSink</a>
 <a name="347"><span class="lineNum">     347 </span><span class="lineCov">         14 :     void sourceMIDItoSink(SysExMessage msg) {</span></a>
@@ -428,10 +428,10 @@
 <a name="358"><span class="lineNum">     358 </span>            :   private:</a>
 <a name="359"><span class="lineNum">     359 </span>            :     /// Function that maps, edits or filters MIDI messages, and then forwards </a>
 <a name="360"><span class="lineNum">     360 </span>            :     /// them to the sink of the pipe.</a>
-<a name="361"><span class="lineNum">     361 </span><span class="lineCov">        112 :     virtual void mapForwardMIDI(ChannelMessage msg) { </span></a>
+<a name="361"><span class="lineNum">     361 </span><span class="lineCov">        114 :     virtual void mapForwardMIDI(ChannelMessage msg) { </span></a>
 <a name="362"><span class="lineNum">     362 </span>            :         // Optionally edit the message before passing it on</a>
-<a name="363"><span class="lineNum">     363 </span><span class="lineCov">        112 :         sourceMIDItoSink(msg); </span></a>
-<a name="364"><span class="lineNum">     364 </span><span class="lineCov">        112 :     }</span></a>
+<a name="363"><span class="lineNum">     363 </span><span class="lineCov">        114 :         sourceMIDItoSink(msg); </span></a>
+<a name="364"><span class="lineNum">     364 </span><span class="lineCov">        114 :     }</span></a>
 <a name="365"><span class="lineNum">     365 </span>            : </a>
 <a name="366"><span class="lineNum">     366 </span>            :     /// @copydoc    mapForwardMIDI</a>
 <a name="367"><span class="lineNum">     367 </span><span class="lineCov">         12 :     virtual void mapForwardMIDI(SysExMessage msg) { </span></a>

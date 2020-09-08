@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.19-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,6 +21,7 @@
 </script>
 <script type="text/javascript" async="async" src="/MathJax/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="../../custom_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -30,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Control Surface
-   &#160;<span id="projectnumber">new-input</span>
+   &#160;<span id="projectnumber"><code>new-input</code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -75,11 +77,11 @@ $(function() {
 <div class="title">MCP23017-Encoders-No-Interrupts.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md224"></a>
+<h1><a class="anchor" id="autotoc_md233"></a>
 MCP23017-Encoders-No-Interrupts</h1>
 <p>This example demonstrates the use of MCP23017 I²C port expanders with rotary encoders.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md225"></a>
+<h2><a class="anchor" id="autotoc_md234"></a>
 Connections</h2>
 <ul>
 <li>SDA: MCP23017 SDA</li>
@@ -91,10 +93,10 @@ Connections</h2>
  The built-in pull-up resistors of the MCP23017 will be enabled.</p>
 <p>Make sure that the reset and address pins are all configured correctly (reset to Vcc; A0, A1 and A2 to ground).</p>
 <p>If you need more than one MCP23017 with encoders, you can connect their interrupt pins together. This does result in higher latency, because on average, half of the total number of MCP23017s have to be polled, which is relatively slow, and might lead to missed pulses when using a large number of encoders.</p>
-<h2><a class="anchor" id="autotoc_md226"></a>
+<h2><a class="anchor" id="autotoc_md235"></a>
 Behavior</h2>
 <p>When the position of one of the encoders changes, it is printed to the Serial monitor.</p>
-<h2><a class="anchor" id="autotoc_md227"></a>
+<h2><a class="anchor" id="autotoc_md236"></a>
 Cautions</h2>
 <p>The interrupt pin of the MCP23017 doesn't trigger a hardware interrupt on the Arduino. It's used only to determine whether the Arduino should read the GPIO registers from the MCP23017. <br  />
  If the update function isn't called often enough, you will miss encoder pulses, and the position will be incorrect. <br  />

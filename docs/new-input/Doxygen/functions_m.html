@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.19-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,6 +21,7 @@
 </script>
 <script type="text/javascript" async="async" src="/MathJax/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -30,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Control Surface
-   &#160;<span id="projectnumber">new-input</span>
+   &#160;<span id="projectnumber"><code>new-input</code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -127,11 +129,13 @@ $(function() {
 </li>
 <li>match
 : <a class="el" href="de/d12/structBankableOneByteMIDIMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">BankableOneByteMIDIMatcher&lt; BankSize &gt;::Result</a>
+, <a class="el" href="d5/d2c/structBankablePitchBendMIDIMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">BankablePitchBendMIDIMatcher&lt; BankSize &gt;::Result</a>
 , <a class="el" href="d3/d28/structBankableTwoByteMIDIMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">BankableTwoByteMIDIMatcher&lt; BankSize &gt;::Result</a>
 , <a class="el" href="d5/d9e/structBankableTwoByteRangeMIDIMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">BankableTwoByteRangeMIDIMatcher&lt; BankSize &gt;::Result</a>
 , <a class="el" href="dc/d84/structMCU_1_1BankableVUMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">BankableVUMatcher&lt; BankSize &gt;::Result</a>
 , <a class="el" href="db/d84/structMCU_1_1VUMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">VUMatcher::Result</a>
 , <a class="el" href="dc/dd7/structOneByteMIDIMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">OneByteMIDIMatcher::Result</a>
+, <a class="el" href="d7/d37/structPitchBendMIDIMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">PitchBendMIDIMatcher::Result</a>
 , <a class="el" href="d8/d6b/structTwoByteMIDIMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">TwoByteMIDIMatcher::Result</a>
 , <a class="el" href="d1/d7a/structTwoByteRangeMIDIMatcher.html#a467b3ec69d303c890cfc29d46a739f8c">TwoByteRangeMIDIMatcher::Result</a>
 </li>
@@ -155,6 +159,7 @@ $(function() {
 , <a class="el" href="d9/dd1/classBankable_1_1NoteCCKPRange.html#a0617d6f6982f17830031df65871f0f51">NoteCCKPRange&lt; Type, BankSize, RangeLen &gt;</a>
 , <a class="el" href="d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#a32d69ede6e2788827185e9b65008905e">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>
 , <a class="el" href="d5/dcd/classBankable_1_1NoteCCKPValue.html#abe0cfef1635461e50326459d2cf1dd14">NoteCCKPValue&lt; Type, BankSize &gt;</a>
+, <a class="el" href="d1/d78/classBankable_1_1PBValue.html#ab735c8d050fdd499ea41b950fe228d4a">PBValue&lt; BankSize &gt;</a>
 </li>
 <li>matcher
 : <a class="el" href="d5/dae/classMatchingMIDIInputElement.html#a7f52a0feef56b1a62fad5b548525fb86">MatchingMIDIInputElement&lt; Type, Matcher &gt;</a>
@@ -196,6 +201,10 @@ $(function() {
 <li>maxGain
 : <a class="el" href="d4/de3/classVolumeControl.html#acd5aad994fa90708c6b75e7015d577ab">VolumeControl&lt; N &gt;</a>
 </li>
+<li>maxValue
+: <a class="el" href="df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a590d1b076d6c46be478b4bb319b0755f">GenericMIDIAbsoluteEncoder&lt; Enc, NumBanks, BankAddress, Sender &gt;</a>
+, <a class="el" href="df/d5d/classGenericMIDIAbsoluteEncoder.html#a590d1b076d6c46be478b4bb319b0755f">GenericMIDIAbsoluteEncoder&lt; Enc, Sender &gt;</a>
+</li>
 <li>MCP23017Encoder()
 : <a class="el" href="de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#ab932998ee2800d45fef7d9450c15b8f1">MCP23017Encoders&lt; WireType, EncoderPositionType, InterruptSafe &gt;::MCP23017Encoder</a>
 </li>
@@ -208,6 +217,9 @@ $(function() {
 <li>MessageMatcherType
 : <a class="el" href="d5/dae/classMatchingMIDIInputElement.html#a0b6dba0f1fb8d2e6ed9ebfeeb7840456">MatchingMIDIInputElement&lt; Type, Matcher &gt;</a>
 , <a class="el" href="d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MIDIInputElement&lt; Type &gt;</a>
+</li>
+<li>MessageType
+: <a class="el" href="d1/d78/classBankable_1_1PBValue.html#a9464e730af4a97bd23be352c0f4a3125">PBValue&lt; BankSize &gt;</a>
 </li>
 <li>MIDI()
 : <a class="el" href="dc/d45/classControl__Surface__.html#a8dcddd0e3d7d54daf230dce87ebe4cfa">Control_Surface_</a>
@@ -222,16 +234,13 @@ $(function() {
 : <a class="el" href="df/d72/classMIDI__Pipe.html#ae26ab01535aa8f27a84d0ff10a3c2477">MIDI_Pipe</a>
 </li>
 <li>MIDI_Sink()
-: <a class="el" href="d9/db6/classMIDI__Sink.html#a34286249632856886f262f3cc89304d5">MIDI_Sink</a>
+: <a class="el" href="d9/db6/classMIDI__Sink.html#a743dfcb080f13144b34b4cb086e691d2">MIDI_Sink</a>
 </li>
 <li>MIDI_Source()
 : <a class="el" href="df/d5b/classMIDI__Source.html#a33216a2b64b4ee518eb73cfe11bea5ec">MIDI_Source</a>
 </li>
-<li>MIDIAbsoluteEncoder()
-: <a class="el" href="dd/dcc/classMIDIAbsoluteEncoder.html#aff11aa8abe5fd6ffc7528292b1737ccc">MIDIAbsoluteEncoder&lt; Sender &gt;</a>
-</li>
 <li>MIDIAddress()
-: <a class="el" href="d7/d0f/classMIDIAddress.html#af1ebf563fa185eccec5456a363e420f0">MIDIAddress</a>
+: <a class="el" href="d7/d0f/classMIDIAddress.html#af3fc0b6cb993941e5068632b156eee04">MIDIAddress</a>
 </li>
 <li>MIDIButton()
 : <a class="el" href="d9/df9/classBankable_1_1MIDIButton.html#a11bfb9912eabf0fda12ae95eb1010865">MIDIButton&lt; BankAddress, Sender &gt;</a>
@@ -254,7 +263,7 @@ $(function() {
 , <a class="el" href="d2/d87/classMIDIButtons.html#ad2421db3b4aa42e2a4e8f175fca5feb3">MIDIButtons&lt; Sender, NumButtons &gt;</a>
 </li>
 <li>MIDIChannelCN()
-: <a class="el" href="df/d2c/classMIDIChannelCN.html#a9e35f52bf79a723d35f69465afa94477">MIDIChannelCN</a>
+: <a class="el" href="df/d2c/classMIDIChannelCN.html#a66aa6a7dd30863181d5baf440f6059bc">MIDIChannelCN</a>
 </li>
 <li>MIDIChordButton()
 : <a class="el" href="da/d96/classBankable_1_1MIDIChordButton.html#a4765e8ee77221d0fbab7c0ea15b97487">MIDIChordButton&lt; Sender &gt;</a>
@@ -277,10 +286,6 @@ $(function() {
 <li>midimsg
 : <a class="el" href="df/d0c/classMIDI__Parser.html#a7249aa0f3e04e870968286f09efc25b7">MIDI_Parser</a>
 </li>
-<li>MIDIRotaryEncoder()
-: <a class="el" href="dc/dd5/classBankable_1_1MIDIRotaryEncoder.html#a0aca43b6ca73837b8f735317cd134225">MIDIRotaryEncoder&lt; BankAddress, Sender &gt;</a>
-, <a class="el" href="d8/d20/classMIDIRotaryEncoder.html#a50e6f4c3e398a04b10bd4afbfc391075">MIDIRotaryEncoder&lt; Sender &gt;</a>
-</li>
 <li>MIDIUSBPacket_t
 : <a class="el" href="de/d05/classUSBMIDI__Interface.html#a8353b3c401b43a9977c8d88aed620c68">USBMIDI_Interface</a>
 </li>
@@ -297,23 +302,24 @@ $(function() {
 : <a class="el" href="d3/dd0/classRelativeCCSender.html#a08e1a18a96dc8978462995c7e96b7ad6">RelativeCCSender</a>
 </li>
 <li>moveDown()
-: <a class="el" href="d8/d1a/classAH_1_1UpdatableCRTP.html#af530dde4c3c60b0a6ec77fe9724651c9">UpdatableCRTP&lt; Derived, ThreadSafe &gt;</a>
-, <a class="el" href="dd/d16/classDoublyLinkedList.html#a9750fc672c95b807b56b12b0a65542f8">DoublyLinkedList&lt; Node &gt;</a>
+: <a class="el" href="d8/d1a/classAH_1_1UpdatableCRTP.html#a486267210dfc8118e23e6b1bc6090286">UpdatableCRTP&lt; Derived, ThreadSafe &gt;</a>
+, <a class="el" href="dd/d16/classDoublyLinkedList.html#a5cb5c2c2b4c82d47ae670a15b78fe6b3">DoublyLinkedList&lt; Node &gt;</a>
 </li>
 <li>MovingCoilBallistics()
 : <a class="el" href="d0/d49/classMovingCoilBallistics.html#aa37251f37f75113996c1f7d2ef21ef28">MovingCoilBallistics</a>
 </li>
 <li>multiplier
-: <a class="el" href="d1/d2f/classBankable_1_1MIDIIncrementDecrementButtons.html#a469f722a9aee355cda27293598de9f75">MIDIIncrementDecrementButtons&lt; BankAddress, RelativeSender, ResetSender &gt;</a>
-, <a class="el" href="dd/dcc/classMIDIAbsoluteEncoder.html#a12f93e7b64875888a59259abb9dda39f">MIDIAbsoluteEncoder&lt; Sender &gt;</a>
+: <a class="el" href="df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a3b6affddfe426e29d8e6f98049e8a9f2">GenericMIDIAbsoluteEncoder&lt; Enc, NumBanks, BankAddress, Sender &gt;</a>
+, <a class="el" href="d1/d2f/classBankable_1_1MIDIIncrementDecrementButtons.html#a469f722a9aee355cda27293598de9f75">MIDIIncrementDecrementButtons&lt; BankAddress, RelativeSender, ResetSender &gt;</a>
+, <a class="el" href="df/d5d/classGenericMIDIAbsoluteEncoder.html#a3b6affddfe426e29d8e6f98049e8a9f2">GenericMIDIAbsoluteEncoder&lt; Enc, Sender &gt;</a>
 , <a class="el" href="dc/dc2/classMIDIIncrementDecrementButtons.html#a469f722a9aee355cda27293598de9f75">MIDIIncrementDecrementButtons&lt; RelativeSender, ResetSender &gt;</a>
 , <a class="el" href="d3/d51/classSelectorDisplay.html#a3b6affddfe426e29d8e6f98049e8a9f2">SelectorDisplay</a>
 </li>
-<li>Mutex
-: <a class="el" href="d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">UpdatableCRTP&lt; Derived, ThreadSafe &gt;</a>
-</li>
 <li>mutex
 : <a class="el" href="d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">UpdatableCRTP&lt; Derived, ThreadSafe &gt;</a>
+</li>
+<li>Mutex
+: <a class="el" href="d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">UpdatableCRTP&lt; Derived, ThreadSafe &gt;</a>
 </li>
 <li>MUX_DISABLED
 : <a class="el" href="d2/d94/classAH_1_1AnalogMultiplex.html#ad627362c29fb6b80417dce9a01c3ee9a">AnalogMultiplex&lt; N &gt;</a>

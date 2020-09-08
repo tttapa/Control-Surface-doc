@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.19-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,6 +21,7 @@
 </script>
 <script type="text/javascript" async="async" src="/MathJax/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="../../custom_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -30,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Control Surface
-   &#160;<span id="projectnumber">new-input</span>
+   &#160;<span id="projectnumber"><code>new-input</code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -137,7 +139,7 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d0/d89/classBluetoothMIDI__Interface.html#a91553b72c9b4759ddb48feffd7f2ffb1">   62</a></span>&#160;    uint8_t <a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#a91553b72c9b4759ddb48feffd7f2ffb1">connected</a> = 0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d0/d89/classBluetoothMIDI__Interface.html#a07057d22fcb5ab4b324dfa0252567a91">   64</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#a07057d22fcb5ab4b324dfa0252567a91">hasSpaceFor</a>(<span class="keywordtype">size_t</span> bytes) { <span class="keywordflow">return</span> <a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> + bytes &lt; <a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#ae6be8300488b51c8f48276e4546f6e02">BUFFER_LENGTH</a>; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d0/d89/classBluetoothMIDI__Interface.html#a07057d22fcb5ab4b324dfa0252567a91">   64</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#a07057d22fcb5ab4b324dfa0252567a91">hasSpaceFor</a>(<span class="keywordtype">size_t</span> bytes) { <span class="keywordflow">return</span> bytes &lt;= <a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#ae6be8300488b51c8f48276e4546f6e02">BUFFER_LENGTH</a> - <a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>; }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d0/d89/classBluetoothMIDI__Interface.html#af9ea0cd366ae2df479fe058f385b9f2f">   67</a></span>&#160;    <a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#af9ea0cd366ae2df479fe058f385b9f2f">BluetoothMIDI_Interface</a>() : <a class="code" href="../../de/d76/classParsing__MIDI__Interface.html">Parsing_MIDI_Interface</a>(<a class="code" href="../../d0/d89/classBluetoothMIDI__Interface.html#afcb1a2d039abd7b9058d2d224936a901">parser</a>) {}</div>

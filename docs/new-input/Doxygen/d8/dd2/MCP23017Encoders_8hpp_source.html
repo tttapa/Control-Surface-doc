@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.19-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,6 +21,7 @@
 </script>
 <script type="text/javascript" async="async" src="/MathJax/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="../../custom_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -30,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Control Surface
-   &#160;<span id="projectnumber">new-input</span>
+   &#160;<span id="projectnumber"><code>new-input</code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -329,18 +331,24 @@ $(function() {
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                *position = pos;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            }</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        }</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    };</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">  374</a></span>&#160;    <a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">operator[]</a>(uint8_t index) {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">if</span> (index &gt;= 8)</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            index = 7;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">return</span> &amp;positions[index];</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    }</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;};</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor">        #if defined(__GNUC__) &amp;&amp; !defined(__clang__) &amp;&amp; __GNUC__ &lt; 5</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="comment">// begin_if_possible doesn&#39;t work on GCC 4.x and earlier, so provide a</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="comment">// dummy begin method instead.</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordtype">void</span> begin() {}</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    };</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">  380</a></span>&#160;    <a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">operator[]</a>(uint8_t index) {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">if</span> (index &gt;= 8)</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            index = 7;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">return</span> &amp;positions[index];</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;};</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassAH_1_1MCP23017Encoders_html_ad2559a2771277e53396bdcd088ac2d0f"><div class="ttname"><a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad2559a2771277e53396bdcd088ac2d0f">AH::MCP23017Encoders::interrupt_pin</a></div><div class="ttdeci">pin_t interrupt_pin</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00071">MCP23017Encoders.hpp:71</a></div></div>
 <div class="ttc" id="aWarnings_8hpp_html"><div class="ttname"><a href="../../d1/d65/Warnings_8hpp.html">Warnings.hpp</a></div></div>
@@ -358,7 +366,7 @@ $(function() {
 <div class="ttc" id="aclassAH_1_1MCP23017Encoders_html_a046a4c660f75a59c62e31e1786e79cef"><div class="ttname"><a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a046a4c660f75a59c62e31e1786e79cef">AH::MCP23017Encoders::MCP23017Encoders</a></div><div class="ttdeci">MCP23017Encoders(WireType &amp;wire, uint8_t addr_offset=0, pin_t interrupt_pin=NO_PIN)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00136">MCP23017Encoders.hpp:136</a></div></div>
 <div class="ttc" id="aExtendedInputOutput_8hpp_html_a1a23a9c76c68c1dab0655f95291a75af"><div class="ttname"><a href="../../dd/ddf/ExtendedInputOutput_8hpp.html#a1a23a9c76c68c1dab0655f95291a75af">HIGH</a></div><div class="ttdeci">const PinStatus_t HIGH</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/ExtendedInputOutput_8hpp_source.html#l00056">ExtendedInputOutput.hpp:56</a></div></div>
 <div class="ttc" id="aclassAH_1_1MCP23017Encoders_html_af79deb139fa4983e4e2767f1320a0145"><div class="ttname"><a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af79deb139fa4983e4e2767f1320a0145">AH::MCP23017Encoders::writeI2C</a></div><div class="ttdeci">void writeI2C(const uint8_t(&amp;values)[N])</div><div class="ttdoc">Write any data to the MCP23017.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00079">MCP23017Encoders.hpp:79</a></div></div>
-<div class="ttc" id="aclassAH_1_1MCP23017Encoders_html_abd99700425989059986af7fae84c3a86"><div class="ttname"><a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">AH::MCP23017Encoders::operator[]</a></div><div class="ttdeci">MCP23017Encoder operator[](uint8_t index)</div><div class="ttdoc">Get a proxy to one of the encoders managed by this MCP23017.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00374">MCP23017Encoders.hpp:374</a></div></div>
+<div class="ttc" id="aclassAH_1_1MCP23017Encoders_html_abd99700425989059986af7fae84c3a86"><div class="ttname"><a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">AH::MCP23017Encoders::operator[]</a></div><div class="ttdeci">MCP23017Encoder operator[](uint8_t index)</div><div class="ttdoc">Get a proxy to one of the encoders managed by this MCP23017.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00380">MCP23017Encoders.hpp:380</a></div></div>
 <div class="ttc" id="aclassAH_1_1MCP23017Encoders_1_1MCP23017Encoder_html_a2285b41549d3cd0213b4187c2de98140"><div class="ttname"><a href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a2285b41549d3cd0213b4187c2de98140">AH::MCP23017Encoders::MCP23017Encoder::position</a></div><div class="ttdeci">EncoderPositionStorageType * position</div><div class="ttdoc">A pointer to the position value inside of the MCP23017Encoders class.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00319">MCP23017Encoders.hpp:319</a></div></div>
 <div class="ttc" id="aclassAH_1_1MCP23017Encoders_html_ac5c54df7ed3b930268c8d7752c101725"><div class="ttname"><a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac5c54df7ed3b930268c8d7752c101725">AH::MCP23017Encoders::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">If the state of the MCP23017's GPIO changed, read the new state and update the encoder positions.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00209">MCP23017Encoders.hpp:209</a></div></div>
 <div class="ttc" id="aclassAH_1_1MCP23017Encoders_1_1MCP23017Encoder_html_a7418cfcd5012bdf284afc80943eb831a"><div class="ttname"><a href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7418cfcd5012bdf284afc80943eb831a">AH::MCP23017Encoders::MCP23017Encoder::read</a></div><div class="ttdeci">EncoderPositionType read() const</div><div class="ttdoc">Read the position of the encoder.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00327">MCP23017Encoders.hpp:327</a></div></div>

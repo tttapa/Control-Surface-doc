@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['adding_20custom_20bitmaps_20to_20display_4946',['Adding custom bitmaps to display',['../d8/dad/md__home_pieter_GitHub_Control-Surface_src_Display_Bitmaps_README.html',1,'']]],
-  ['adding_20custom_20bitmaps_20to_20display_4947',['Adding custom bitmaps to display',['../d1/de7/md_pages_xbm.html',1,'']]]
+  ['adding_20custom_20bitmaps_20to_20display_5039',['Adding custom bitmaps to display',['../d8/dad/md__home_pieter_GitHub_Control-Surface_src_Display_Bitmaps_README.html',1,'']]],
+  ['adding_20custom_20bitmaps_20to_20display_5040',['Adding custom bitmaps to display',['../d1/de7/md_pages_xbm.html',1,'']]]
 ];

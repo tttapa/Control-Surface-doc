@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getting_20started_4951',['Getting Started',['../d5/d7d/md_pages_Getting-Started.html',1,'']]]
+  ['encoder_20library_5044',['Encoder Library',['../d7/d9b/md__home_pieter_GitHub_Control-Surface_src_Submodules_Encoder_README.html',1,'']]]
 ];

@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.19-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,6 +21,7 @@
 </script>
 <script type="text/javascript" async="async" src="/MathJax/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="../../custom_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -30,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Control Surface
-   &#160;<span id="projectnumber">new-input</span>
+   &#160;<span id="projectnumber"><code>new-input</code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -75,11 +77,11 @@ $(function() {
 <div class="title">Custom-Selector-Callback.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md61"></a>
+<h1><a class="anchor" id="autotoc_md70"></a>
 Custom-Selector-Callback</h1>
 <p>This example demonstrates how to use custom callbacks to display the value of a selector.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano 33, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md71"></a>
 Connections</h2>
 <ul>
 <li>10: Red pin of an RGB LED (+ series resistor)</li>
@@ -89,14 +91,14 @@ Connections</h2>
 <li>3: Push button (to ground, internal pull-up resistor will be used)</li>
 </ul>
 <p>Connect the common cathode of the RGB LED to ground.</p>
-<h2><a class="anchor" id="autotoc_md63"></a>
+<h2><a class="anchor" id="autotoc_md72"></a>
 Behavior</h2>
 <p>The LEDs display the current setting of the bank. Red is the first bank (0), yellow is the second bank (1), green is the third bank (2), cyan is the fourth bank (3), blue is the fifth bank (4), and purple is the sixth bank (5).</p>
 <p>Use the two push buttons to change the setting. The one on on pin 2 increments the setting, the one on pin 3 decrements the setting. <br  />
  Keeping one of the buttons pressed will keep on cycling through the settings until you let go of it. <br  />
  Pressing both buttons simultaneously resets the setting to its initial value.</p>
 <p><b>Note</b>: this example doesn't send any MIDI, but you could use it as a template for a MIDI controller with banks.</p>
-<h2><a class="anchor" id="autotoc_md64"></a>
+<h2><a class="anchor" id="autotoc_md73"></a>
 Mapping</h2>
 <p>None.</p>
 <p>Written by PieterP, 2020-02-03 <br  />
@@ -191,7 +193,7 @@ Mapping</h2>
 <div class="ttc" id="aExtendedInputOutput_8hpp_html_a1a23a9c76c68c1dab0655f95291a75af"><div class="ttname"><a href="../../dd/ddf/ExtendedInputOutput_8hpp.html#a1a23a9c76c68c1dab0655f95291a75af">HIGH</a></div><div class="ttdeci">const PinStatus_t HIGH</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/ExtendedInputOutput_8hpp_source.html#l00056">ExtendedInputOutput.hpp:56</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00066">Control_Surface_Class.cpp:66</a></div></div>
-<div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00233">Control_Surface_Class.cpp:233</a></div></div>
+<div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00247">Control_Surface_Class.cpp:247</a></div></div>
 <div class="ttc" id="aExtendedInputOutput_8hpp_html_a0120d38256091ba61693f24e3fb05adb"><div class="ttname"><a href="../../dd/ddf/ExtendedInputOutput_8hpp.html#a0120d38256091ba61693f24e3fb05adb">OUTPUT</a></div><div class="ttdeci">const PinMode_t OUTPUT</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/ExtendedInputOutput_8hpp_source.html#l00060">ExtendedInputOutput.hpp:60</a></div></div>
 <div class="ttc" id="aDef_8hpp_html_a51d33bc7af1fb6a6705f272add970db0"><div class="ttname"><a href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a></div><div class="ttdeci">uint8_t setting_t</div><div class="ttdoc">The type used for Selectors.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4e/Def_8hpp_source.html#l00050">Def.hpp:50</a></div></div>
 <div class="ttc" id="aSelector_8hpp_html_aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d"><div class="ttname"><a href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d">Wrap::Wrap</a></div><div class="ttdeci">@ Wrap</div><div class="ttdoc">When the maximum (minimum) setting is reached, wrap around to the minimum (maximum) setting.</div></div>

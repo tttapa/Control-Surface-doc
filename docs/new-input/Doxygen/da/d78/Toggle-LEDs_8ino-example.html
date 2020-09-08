@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.19-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,6 +21,7 @@
 </script>
 <script type="text/javascript" async="async" src="/MathJax/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="../../custom_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -30,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Control Surface
-   &#160;<span id="projectnumber">new-input</span>
+   &#160;<span id="projectnumber"><code>new-input</code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -75,11 +77,11 @@ $(function() {
 <div class="title">Toggle-LEDs.ino</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md199"></a>
+<h1><a class="anchor" id="autotoc_md208"></a>
 Toggle-LEDs</h1>
 <p>This example demonstrates the use of push buttons and LEDs and how to use shift registers and analog multiplexers to save pins.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md200"></a>
+<h2><a class="anchor" id="autotoc_md209"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -96,7 +98,7 @@ Connections</h2>
 <p>Connect 16 LEDs (and series resistors) between the eight outputs of the two shift registers and ground.</p>
 <p>Remember to connect the enable pins of both the multiplexer and the shift registers to ground in order to enable them. Also connect the master reset pin of the shift registers to Vcc. <br  />
  Connect the serial data output of the first shift register (QH' or Q7S) to the serial input of the second shift register.</p>
-<h2><a class="anchor" id="autotoc_md201"></a>
+<h2><a class="anchor" id="autotoc_md210"></a>
 Behavior</h2>
 <p>Pressing the first button will turn on the first LED. Pressing it again will turn it off again. Pressing the second button will turn on the second LED. Pressing it again will turn it off again, and so on.</p>
 <p>Written by PieterP, 2018-08-28 <br  />
