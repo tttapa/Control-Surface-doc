@@ -98,7 +98,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/classUSBMIDI__Parser__coll__graph.svg" width="564" height="794"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dce/classUSBMIDI__Parser__coll__graph.svg" width="564" height="882"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -132,14 +132,14 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:adc179ff96ec984af848237974e670475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classUSBMIDI__Parser.html#adc179ff96ec984af848237974e670475">startSysEx</a> (uint8_t CN)</td></tr>
-<tr class="separator:adc179ff96ec984af848237974e670475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b8adaf94b1b446dab0aa3f263f2cb7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classUSBMIDI__Parser.html#a2b8adaf94b1b446dab0aa3f263f2cb7c">endSysEx</a> (uint8_t CN)</td></tr>
-<tr class="separator:a2b8adaf94b1b446dab0aa3f263f2cb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450610524abc4358c2f17a96b0082dcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classUSBMIDI__Parser.html#a450610524abc4358c2f17a96b0082dcd">addSysExByte</a> (uint8_t CN, uint8_t data)</td></tr>
-<tr class="separator:a450610524abc4358c2f17a96b0082dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2556c73e121b062002a62d31c7f10c43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classUSBMIDI__Parser.html#a2556c73e121b062002a62d31c7f10c43">receivingSysEx</a> (uint8_t CN) const</td></tr>
-<tr class="separator:a2556c73e121b062002a62d31c7f10c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6109694d5d494148aeb1e98b4ba3001c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classUSBMIDI__Parser.html#a6109694d5d494148aeb1e98b4ba3001c">startSysEx</a> (uint8_t cable)</td></tr>
+<tr class="separator:a6109694d5d494148aeb1e98b4ba3001c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3954f32308b211cfb41b7f5dd8161d04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classUSBMIDI__Parser.html#a3954f32308b211cfb41b7f5dd8161d04">endSysEx</a> (uint8_t cable)</td></tr>
+<tr class="separator:a3954f32308b211cfb41b7f5dd8161d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac643c328e15fbd0dc2257d2e5ac17f56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classUSBMIDI__Parser.html#ac643c328e15fbd0dc2257d2e5ac17f56">addSysExByte</a> (uint8_t cable, uint8_t data)</td></tr>
+<tr class="separator:ac643c328e15fbd0dc2257d2e5ac17f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d71a4a1c72c4b244861f801f02f22e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classUSBMIDI__Parser.html#a7d71a4a1c72c4b244861f801f02f22e2">receivingSysEx</a> (uint8_t cable) const</td></tr>
+<tr class="separator:a7d71a4a1c72c4b244861f801f02f22e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -210,8 +210,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adc179ff96ec984af848237974e670475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc179ff96ec984af848237974e670475">&#9670;&nbsp;</a></span>startSysEx()</h2>
+<a id="a6109694d5d494148aeb1e98b4ba3001c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6109694d5d494148aeb1e98b4ba3001c">&#9670;&nbsp;</a></span>startSysEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +223,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void startSysEx </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>CN</em></td><td>)</td>
+          <td class="paramname"><em>cable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -238,8 +238,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b8adaf94b1b446dab0aa3f263f2cb7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b8adaf94b1b446dab0aa3f263f2cb7c">&#9670;&nbsp;</a></span>endSysEx()</h2>
+<a id="a3954f32308b211cfb41b7f5dd8161d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3954f32308b211cfb41b7f5dd8161d04">&#9670;&nbsp;</a></span>endSysEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +251,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void endSysEx </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>CN</em></td><td>)</td>
+          <td class="paramname"><em>cable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -266,8 +266,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a450610524abc4358c2f17a96b0082dcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a450610524abc4358c2f17a96b0082dcd">&#9670;&nbsp;</a></span>addSysExByte()</h2>
+<a id="ac643c328e15fbd0dc2257d2e5ac17f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac643c328e15fbd0dc2257d2e5ac17f56">&#9670;&nbsp;</a></span>addSysExByte()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +279,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">bool addSysExByte </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>CN</em>, </td>
+          <td class="paramname"><em>cable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -304,8 +304,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2556c73e121b062002a62d31c7f10c43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2556c73e121b062002a62d31c7f10c43">&#9670;&nbsp;</a></span>receivingSysEx()</h2>
+<a id="a7d71a4a1c72c4b244861f801f02f22e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d71a4a1c72c4b244861f801f02f22e2">&#9670;&nbsp;</a></span>receivingSysEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +317,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">bool receivingSysEx </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>CN</em></td><td>)</td>
+          <td class="paramname"><em>cable</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

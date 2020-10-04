@@ -34,28 +34,29 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../d9/dd1/classBankable_1_1NoteCCKPRange.html" target="_top" xlink:title="Generic base class for classes that listen for MIDI Note, Control Change and Key Pressure events on a...">
-<polygon fill="white" stroke="black" points="302.5,-210 302.5,-355 445.5,-355 445.5,-210 302.5,-210"/>
-<text text-anchor="start" x="310.5" y="-343" font-family="Helvetica,sans-Serif" font-size="10.00">NoteCCKPRange&lt; Type,</text>
-<text text-anchor="middle" x="374" y="-332" font-family="Helvetica,sans-Serif" font-size="10.00"> BankSize, RangeLen &gt;</text>
-<polyline fill="none" stroke="black" points="302.5,-325 445.5,-325 "/>
-<text text-anchor="start" x="310.5" y="-313" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dirty</text>
-<polyline fill="none" stroke="black" points="302.5,-306 445.5,-306 "/>
-<text text-anchor="start" x="310.5" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00">+ NoteCCKPRange()</text>
-<text text-anchor="start" x="310.5" y="-283" font-family="Helvetica,sans-Serif" font-size="10.00">+ reset()</text>
-<text text-anchor="start" x="310.5" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00"># handleUpdate()</text>
-<text text-anchor="start" x="310.5" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00"># onBankSettingChange()</text>
-<text text-anchor="start" x="310.5" y="-250" font-family="Helvetica,sans-Serif" font-size="10.00">* getValue()</text>
-<text text-anchor="start" x="310.5" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">* getValue()</text>
-<text text-anchor="start" x="310.5" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">* getDirty()</text>
-<text text-anchor="start" x="310.5" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00">* clearDirty()</text>
+<polygon fill="white" stroke="black" points="302.5,-204.5 302.5,-360.5 445.5,-360.5 445.5,-204.5 302.5,-204.5"/>
+<text text-anchor="start" x="310.5" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">NoteCCKPRange&lt; Type,</text>
+<text text-anchor="middle" x="374" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BankSize, RangeLen &gt;</text>
+<polyline fill="none" stroke="black" points="302.5,-330.5 445.5,-330.5 "/>
+<text text-anchor="start" x="310.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dirty</text>
+<polyline fill="none" stroke="black" points="302.5,-311.5 445.5,-311.5 "/>
+<text text-anchor="start" x="310.5" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ NoteCCKPRange()</text>
+<text text-anchor="start" x="310.5" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ reset()</text>
+<text text-anchor="start" x="310.5" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00"># handleUpdateImpl()</text>
+<text text-anchor="start" x="310.5" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00"># handleUpdate()</text>
+<text text-anchor="start" x="310.5" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onBankSettingChange()</text>
+<text text-anchor="start" x="310.5" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getValue()</text>
+<text text-anchor="start" x="310.5" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getValue()</text>
+<text text-anchor="start" x="310.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getDirty()</text>
+<text text-anchor="start" x="310.5" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">* clearDirty()</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M402.69,-199.96C408.99,-182.04 415.62,-163.2 421.77,-145.7"/>
-<polygon fill="none" stroke="midnightblue" points="399.24,-199.2 399.22,-209.8 405.85,-201.53 399.24,-199.2"/>
+<path fill="none" stroke="midnightblue" d="M404.53,-194.73C410.25,-178.45 416.18,-161.6 421.73,-145.84"/>
+<polygon fill="none" stroke="midnightblue" points="401.2,-193.64 401.18,-204.23 407.8,-195.96 401.2,-193.64"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -79,7 +80,7 @@
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M247.26,-444.2C269.46,-416.05 295.15,-383.48 317.57,-355.05"/>
+<path fill="none" stroke="midnightblue" d="M247.15,-444.34C267.97,-417.94 291.86,-387.64 313.26,-360.51"/>
 <polygon fill="none" stroke="midnightblue" points="244.24,-442.38 240.79,-452.4 249.73,-446.72 244.24,-442.38"/>
 </g>
 <!-- Node4 -->
@@ -310,8 +311,8 @@
 <!-- Node11&#45;&gt;Node2 -->
 <g id="edge11" class="edge">
 <title>Node11&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M484.85,-423.28C469.5,-403.92 453.36,-383.57 438.28,-364.56"/>
-<polygon fill="none" stroke="#404040" points="438.2,-364.46 431.34,-362.24 430.75,-355.06 437.61,-357.27 438.2,-364.46"/>
+<path fill="none" stroke="#404040" d="M484.85,-423.28C470.97,-405.78 456.44,-387.46 442.65,-370.06"/>
+<polygon fill="none" stroke="#404040" points="442.52,-369.91 435.66,-367.69 435.07,-360.5 441.93,-362.72 442.52,-369.91"/>
 <text text-anchor="middle" x="484.5" y="-393" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;values</text>
 </g>
 <!-- Node12 -->

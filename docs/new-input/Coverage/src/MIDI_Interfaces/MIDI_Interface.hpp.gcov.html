@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/MIDI_Interfaces/MIDI_Interface.hpp</title>
+  <title>LCOV - 78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10 - src/MIDI_Interfaces/MIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
+            <td class="headerValue">78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">16</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-08 19:59:05</td>
+            <td class="headerValue">2020-10-05 01:03:31</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">18</td>
@@ -174,11 +174,11 @@
 <a name="104"><span class="lineNum">     104 </span>            :     /// Send a MIDI Program Change event.</a>
 <a name="105"><span class="lineNum">     105 </span>            :     void sendPC(MIDIAddress address);</a>
 <a name="106"><span class="lineNum">     106 </span>            :     /// Send a MIDI Program Change event.</a>
-<a name="107"><span class="lineNum">     107 </span>            :     void sendPC(MIDIChannelCN address, uint8_t value);</a>
+<a name="107"><span class="lineNum">     107 </span>            :     void sendPC(MIDIChannelCable address, uint8_t value);</a>
 <a name="108"><span class="lineNum">     108 </span>            :     /// Send a MIDI Channel Pressure event.</a>
-<a name="109"><span class="lineNum">     109 </span>            :     void sendCP(MIDIChannelCN address, uint8_t pressure);</a>
+<a name="109"><span class="lineNum">     109 </span>            :     void sendCP(MIDIChannelCable address, uint8_t pressure);</a>
 <a name="110"><span class="lineNum">     110 </span>            :     /// Send a MIDI Pitch Bend event.</a>
-<a name="111"><span class="lineNum">     111 </span>            :     void sendPB(MIDIChannelCN address, uint16_t value);</a>
+<a name="111"><span class="lineNum">     111 </span>            :     void sendPB(MIDIChannelCable address, uint16_t value);</a>
 <a name="112"><span class="lineNum">     112 </span>            :     /// Send a MIDI Channel Message</a>
 <a name="113"><span class="lineNum">     113 </span>            :     void send(ChannelMessage message);</a>
 <a name="114"><span class="lineNum">     114 </span>            :     /// Send a MIDI System Exclusive message.</a>

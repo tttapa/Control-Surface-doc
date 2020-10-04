@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
+  <title>LCOV - 78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10 - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
+            <td class="headerValue">78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">66</td>
-            <td class="headerCovTableEntry">95</td>
-            <td class="headerCovTableEntryLo">69.5 %</td>
+            <td class="headerCovTableEntry">68</td>
+            <td class="headerCovTableEntry">97</td>
+            <td class="headerCovTableEntryLo">70.1 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-08 19:59:05</td>
+            <td class="headerValue">2020-10-05 01:03:31</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">28</td>
-            <td class="headerCovTableEntry">38</td>
-            <td class="headerCovTableEntryLo">73.7 %</td>
+            <td class="headerCovTableEntry">30</td>
+            <td class="headerCovTableEntry">40</td>
+            <td class="headerCovTableEntryMed">75.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -185,7 +185,7 @@
 <a name="115"><span class="lineNum">     115 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
 <a name="116"><span class="lineNum">     116 </span>            :      *          [CABLE_1, CABLE_16].</a>
 <a name="117"><span class="lineNum">     117 </span>            :      */</a>
-<a name="118"><span class="lineNum">     118 </span><span class="lineCov">          1 :     VPotMatcher(uint8_t track, MIDIChannelCN channelCN)</span></a>
+<a name="118"><span class="lineNum">     118 </span><span class="lineCov">          1 :     VPotMatcher(uint8_t track, MIDIChannelCable channelCN)</span></a>
 <a name="119"><span class="lineNum">     119 </span><span class="lineCov">          1 :         : TwoByteMIDIMatcher({track + 0x30 - 1, channelCN}) {}</span></a>
 <a name="120"><span class="lineNum">     120 </span>            : };</a>
 <a name="121"><span class="lineNum">     121 </span>            : </a>
@@ -208,7 +208,7 @@
 <a name="138"><span class="lineNum">     138 </span>            :      *          [CABLE_1, CABLE_16].</a>
 <a name="139"><span class="lineNum">     139 </span>            :      */</a>
 <a name="140"><span class="lineNum">     140 </span><span class="lineCov">          4 :     BankableVPotMatcher(BankConfig&lt;BankSize&gt; config, uint8_t track,</span></a>
-<a name="141"><span class="lineNum">     141 </span>            :                         MIDIChannelCN channelCN)</a>
+<a name="141"><span class="lineNum">     141 </span>            :                         MIDIChannelCable channelCN)</a>
 <a name="142"><span class="lineNum">     142 </span><span class="lineCov">          8 :         : BankableTwoByteMIDIMatcher&lt;BankSize&gt;(config,</span></a>
 <a name="143"><span class="lineNum">     143 </span><span class="lineCov">         12 :                                                {track + 0x30 - 1, channelCN}) {}</span></a>
 <a name="144"><span class="lineNum">     144 </span>            : };</a>
@@ -226,196 +226,208 @@
 <a name="156"><span class="lineNum">     156 </span>            :                                       VPotMatcher&gt;,</a>
 <a name="157"><span class="lineNum">     157 </span>            :       public Interfaces::MCU::IVPot {</a>
 <a name="158"><span class="lineNum">     158 </span>            :   public:</a>
-<a name="159"><span class="lineNum">     159 </span>            :     /**</a>
-<a name="160"><span class="lineNum">     160 </span>            :      * @brief   Constructor.</a>
-<a name="161"><span class="lineNum">     161 </span>            :      * </a>
-<a name="162"><span class="lineNum">     162 </span>            :      * @param   track</a>
-<a name="163"><span class="lineNum">     163 </span>            :      *          The track of the VPot [1, 8].</a>
-<a name="164"><span class="lineNum">     164 </span>            :      * @param   channelCN</a>
-<a name="165"><span class="lineNum">     165 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
-<a name="166"><span class="lineNum">     166 </span>            :      *          [CABLE_1, CABLE_16].</a>
-<a name="167"><span class="lineNum">     167 </span>            :      */</a>
-<a name="168"><span class="lineNum">     168 </span><span class="lineCov">          1 :     VPotRing(uint8_t track, MIDIChannelCN channelCN = CHANNEL_1)</span></a>
-<a name="169"><span class="lineNum">     169 </span><span class="lineCov">          1 :         : MatchingMIDIInputElement&lt;MIDIMessageType::CONTROL_CHANGE,</span></a>
-<a name="170"><span class="lineNum">     170 </span><span class="lineCov">          3 :                                    VPotMatcher&gt;({track, channelCN}) {}</span></a>
-<a name="171"><span class="lineNum">     171 </span>            : </a>
-<a name="172"><span class="lineNum">     172 </span>            :   protected:</a>
-<a name="173"><span class="lineNum">     173 </span><span class="lineCov">          2 :     void handleUpdate(VPotMatcher::Result match) override {</span></a>
-<a name="174"><span class="lineNum">     174 </span><span class="lineCov">          2 :         dirty |= state.update(match.value);</span></a>
-<a name="175"><span class="lineNum">     175 </span><span class="lineCov">          2 :     }</span></a>
-<a name="176"><span class="lineNum">     176 </span>            : </a>
-<a name="177"><span class="lineNum">     177 </span>            :   public:</a>
-<a name="178"><span class="lineNum">     178 </span>            :     /// @name Data access</a>
-<a name="179"><span class="lineNum">     179 </span>            :     /// @{</a>
-<a name="180"><span class="lineNum">     180 </span>            : </a>
-<a name="181"><span class="lineNum">     181 </span>            :     /// Get the full state of the VPot ring.</a>
-<a name="182"><span class="lineNum">     182 </span>            :     VPotState getState() const { return state; }</a>
+<a name="159"><span class="lineNum">     159 </span>            :     using Matcher = VPotMatcher;</a>
+<a name="160"><span class="lineNum">     160 </span>            :     using Parent </a>
+<a name="161"><span class="lineNum">     161 </span>            :         = MatchingMIDIInputElement&lt;MIDIMessageType::CONTROL_CHANGE, Matcher&gt;;</a>
+<a name="162"><span class="lineNum">     162 </span>            : </a>
+<a name="163"><span class="lineNum">     163 </span>            :     /**</a>
+<a name="164"><span class="lineNum">     164 </span>            :      * @brief   Constructor.</a>
+<a name="165"><span class="lineNum">     165 </span>            :      * </a>
+<a name="166"><span class="lineNum">     166 </span>            :      * @param   track</a>
+<a name="167"><span class="lineNum">     167 </span>            :      *          The track of the VPot [1, 8].</a>
+<a name="168"><span class="lineNum">     168 </span>            :      * @param   channelCN</a>
+<a name="169"><span class="lineNum">     169 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
+<a name="170"><span class="lineNum">     170 </span>            :      *          [CABLE_1, CABLE_16].</a>
+<a name="171"><span class="lineNum">     171 </span>            :      */</a>
+<a name="172"><span class="lineNum">     172 </span><span class="lineCov">          1 :     VPotRing(uint8_t track, MIDIChannelCable channelCN = CHANNEL_1)</span></a>
+<a name="173"><span class="lineNum">     173 </span><span class="lineCov">          2 :         : Parent({track, channelCN}) {}</span></a>
+<a name="174"><span class="lineNum">     174 </span>            : </a>
+<a name="175"><span class="lineNum">     175 </span>            :   protected:</a>
+<a name="176"><span class="lineNum">     176 </span><span class="lineCov">          2 :     bool handleUpdateImpl(typename Matcher::Result match) {</span></a>
+<a name="177"><span class="lineNum">     177 </span><span class="lineCov">          2 :         return state.update(match.value);</span></a>
+<a name="178"><span class="lineNum">     178 </span>            :     }</a>
+<a name="179"><span class="lineNum">     179 </span>            : </a>
+<a name="180"><span class="lineNum">     180 </span><span class="lineCov">          2 :     void handleUpdate(typename Matcher::Result match) override {</span></a>
+<a name="181"><span class="lineNum">     181 </span><span class="lineCov">          2 :         dirty |= handleUpdateImpl(match);</span></a>
+<a name="182"><span class="lineNum">     182 </span><span class="lineCov">          2 :     }</span></a>
 <a name="183"><span class="lineNum">     183 </span>            : </a>
-<a name="184"><span class="lineNum">     184 </span>            :     /// @copydoc    VPotState::getPosition</a>
-<a name="185"><span class="lineNum">     185 </span><span class="lineCov">          2 :     uint8_t getPosition() const { return state.getPosition(); }</span></a>
-<a name="186"><span class="lineNum">     186 </span>            :     /// @copydoc    VPotState::getCenterLed</a>
-<a name="187"><span class="lineNum">     187 </span><span class="lineCov">          2 :     bool getCenterLed() const override { return state.getCenterLed(); }</span></a>
-<a name="188"><span class="lineNum">     188 </span>            :     /// @copydoc    VPotState::getMode</a>
-<a name="189"><span class="lineNum">     189 </span><span class="lineCov">          2 :     VPotState::Mode getMode() const { return state.getMode(); }</span></a>
+<a name="184"><span class="lineNum">     184 </span>            :   public:</a>
+<a name="185"><span class="lineNum">     185 </span>            :     /// @name Data access</a>
+<a name="186"><span class="lineNum">     186 </span>            :     /// @{</a>
+<a name="187"><span class="lineNum">     187 </span>            : </a>
+<a name="188"><span class="lineNum">     188 </span>            :     /// Get the full state of the VPot ring.</a>
+<a name="189"><span class="lineNum">     189 </span>            :     VPotState getState() const { return state; }</a>
 <a name="190"><span class="lineNum">     190 </span>            : </a>
-<a name="191"><span class="lineNum">     191 </span>            :     /// @copydoc    VPotState::getStartOn</a>
-<a name="192"><span class="lineNum">     192 </span><span class="lineNoCov">          0 :     uint8_t getStartOn() const override { return state.getStartOn(); }</span></a>
-<a name="193"><span class="lineNum">     193 </span>            :     /// @copydoc    VPotState::getStartOff</a>
-<a name="194"><span class="lineNum">     194 </span><span class="lineNoCov">          0 :     uint8_t getStartOff() const override { return state.getStartOff(); }</span></a>
-<a name="195"><span class="lineNum">     195 </span>            : </a>
-<a name="196"><span class="lineNum">     196 </span>            :     /// @}</a>
+<a name="191"><span class="lineNum">     191 </span>            :     /// @copydoc    VPotState::getPosition</a>
+<a name="192"><span class="lineNum">     192 </span><span class="lineCov">          2 :     uint8_t getPosition() const { return state.getPosition(); }</span></a>
+<a name="193"><span class="lineNum">     193 </span>            :     /// @copydoc    VPotState::getCenterLed</a>
+<a name="194"><span class="lineNum">     194 </span><span class="lineCov">          2 :     bool getCenterLed() const override { return state.getCenterLed(); }</span></a>
+<a name="195"><span class="lineNum">     195 </span>            :     /// @copydoc    VPotState::getMode</a>
+<a name="196"><span class="lineNum">     196 </span><span class="lineCov">          2 :     VPotState::Mode getMode() const { return state.getMode(); }</span></a>
 <a name="197"><span class="lineNum">     197 </span>            : </a>
-<a name="198"><span class="lineNum">     198 </span>            :     /// Reset the state to zero.</a>
-<a name="199"><span class="lineNum">     199 </span><span class="lineNoCov">          0 :     void reset() override {</span></a>
-<a name="200"><span class="lineNum">     200 </span><span class="lineNoCov">          0 :         if (!ignoreReset) {</span></a>
-<a name="201"><span class="lineNum">     201 </span><span class="lineNoCov">          0 :             state = {};</span></a>
-<a name="202"><span class="lineNum">     202 </span><span class="lineNoCov">          0 :             dirty = true;</span></a>
-<a name="203"><span class="lineNum">     203 </span><span class="lineNoCov">          0 :         }</span></a>
-<a name="204"><span class="lineNum">     204 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="205"><span class="lineNum">     205 </span>            : </a>
-<a name="206"><span class="lineNum">     206 </span>            :   private:</a>
-<a name="207"><span class="lineNum">     207 </span><span class="lineCov">          1 :     VPotState state = {};</span></a>
-<a name="208"><span class="lineNum">     208 </span>            : </a>
-<a name="209"><span class="lineNum">     209 </span>            :   public:</a>
-<a name="210"><span class="lineNum">     210 </span>            :     /// Don't reset the state when calling the `reset` method. This is the</a>
-<a name="211"><span class="lineNum">     211 </span>            :     /// default, because in the original MCU, VPots don't get reset when a</a>
-<a name="212"><span class="lineNum">     212 </span>            :     /// Reset All Controllers message is received.</a>
-<a name="213"><span class="lineNum">     213 </span><span class="lineCov">          1 :     bool ignoreReset = true;</span></a>
-<a name="214"><span class="lineNum">     214 </span>            : };</a>
+<a name="198"><span class="lineNum">     198 </span>            :     /// @copydoc    VPotState::getStartOn</a>
+<a name="199"><span class="lineNum">     199 </span><span class="lineNoCov">          0 :     uint8_t getStartOn() const override { return state.getStartOn(); }</span></a>
+<a name="200"><span class="lineNum">     200 </span>            :     /// @copydoc    VPotState::getStartOff</a>
+<a name="201"><span class="lineNum">     201 </span><span class="lineNoCov">          0 :     uint8_t getStartOff() const override { return state.getStartOff(); }</span></a>
+<a name="202"><span class="lineNum">     202 </span>            : </a>
+<a name="203"><span class="lineNum">     203 </span>            :     /// @}</a>
+<a name="204"><span class="lineNum">     204 </span>            : </a>
+<a name="205"><span class="lineNum">     205 </span>            :     /// Reset the state to zero.</a>
+<a name="206"><span class="lineNum">     206 </span><span class="lineNoCov">          0 :     void reset() override {</span></a>
+<a name="207"><span class="lineNum">     207 </span><span class="lineNoCov">          0 :         if (!ignoreReset) {</span></a>
+<a name="208"><span class="lineNum">     208 </span><span class="lineNoCov">          0 :             state = {};</span></a>
+<a name="209"><span class="lineNum">     209 </span><span class="lineNoCov">          0 :             dirty = true;</span></a>
+<a name="210"><span class="lineNum">     210 </span><span class="lineNoCov">          0 :         }</span></a>
+<a name="211"><span class="lineNum">     211 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="212"><span class="lineNum">     212 </span>            : </a>
+<a name="213"><span class="lineNum">     213 </span>            :   private:</a>
+<a name="214"><span class="lineNum">     214 </span><span class="lineCov">          1 :     VPotState state = {};</span></a>
 <a name="215"><span class="lineNum">     215 </span>            : </a>
-<a name="216"><span class="lineNum">     216 </span>            : // -------------------------------------------------------------------------- //</a>
-<a name="217"><span class="lineNum">     217 </span>            : </a>
-<a name="218"><span class="lineNum">     218 </span>            : namespace Bankable {</a>
-<a name="219"><span class="lineNum">     219 </span>            : </a>
-<a name="220"><span class="lineNum">     220 </span>            : /** </a>
-<a name="221"><span class="lineNum">     221 </span>            :  * @brief   A MIDI input element that represents a Mackie Control Universal VPot</a>
-<a name="222"><span class="lineNum">     222 </span>            :  *          ring. This version can be banked.</a>
-<a name="223"><span class="lineNum">     223 </span>            :  *</a>
-<a name="224"><span class="lineNum">     224 </span>            :  * @tparam  BankSize</a>
-<a name="225"><span class="lineNum">     225 </span>            :  *          The number of banks.</a>
-<a name="226"><span class="lineNum">     226 </span>            :  * </a>
-<a name="227"><span class="lineNum">     227 </span>            :  * @ingroup BankableMIDIInputElements</a>
-<a name="228"><span class="lineNum">     228 </span>            :  */</a>
-<a name="229"><span class="lineNum">     229 </span>            : template &lt;uint8_t BankSize&gt;</a>
-<a name="230"><span class="lineNum">     230 </span><span class="lineCov">          4 : class VPotRing</span></a>
-<a name="231"><span class="lineNum">     231 </span>            :     : public BankableMatchingMIDIInputElement&lt;MIDIMessageType::CONTROL_CHANGE,</a>
-<a name="232"><span class="lineNum">     232 </span>            :                                               BankableVPotMatcher&lt;BankSize&gt;&gt;,</a>
-<a name="233"><span class="lineNum">     233 </span>            :       public Interfaces::MCU::IVPot {</a>
-<a name="234"><span class="lineNum">     234 </span>            :   public:</a>
-<a name="235"><span class="lineNum">     235 </span>            :     /**</a>
-<a name="236"><span class="lineNum">     236 </span>            :      * @brief   Constructor.</a>
-<a name="237"><span class="lineNum">     237 </span>            :      * </a>
-<a name="238"><span class="lineNum">     238 </span>            :      * @param   config</a>
-<a name="239"><span class="lineNum">     239 </span>            :      *          The bank configuration to use: the bank to add this element to,</a>
-<a name="240"><span class="lineNum">     240 </span>            :      *          and whether to change the address, channel or cable number.</a>
-<a name="241"><span class="lineNum">     241 </span>            :      * @param   track</a>
-<a name="242"><span class="lineNum">     242 </span>            :      *          The track of the VPot [1, 8].</a>
-<a name="243"><span class="lineNum">     243 </span>            :      * @param   channelCN</a>
-<a name="244"><span class="lineNum">     244 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
-<a name="245"><span class="lineNum">     245 </span>            :      *          [CABLE_1, CABLE_16].</a>
-<a name="246"><span class="lineNum">     246 </span>            :      */</a>
-<a name="247"><span class="lineNum">     247 </span><span class="lineCov">          4 :     VPotRing(BankConfig&lt;BankSize&gt; config, uint8_t track,</span></a>
-<a name="248"><span class="lineNum">     248 </span>            :              MIDIChannelCN channelCN = CHANNEL_1)</a>
-<a name="249"><span class="lineNum">     249 </span><span class="lineCov">          4 :         : BankableMatchingMIDIInputElement&lt;MIDIMessageType::CONTROL_CHANGE,</span></a>
-<a name="250"><span class="lineNum">     250 </span>            :                                            BankableVPotMatcher&lt;BankSize&gt;&gt;(</a>
-<a name="251"><span class="lineNum">     251 </span><span class="lineCov">         16 :               {config, track, channelCN}) {}</span></a>
-<a name="252"><span class="lineNum">     252 </span>            : </a>
-<a name="253"><span class="lineNum">     253 </span>            :   protected:</a>
-<a name="254"><span class="lineNum">     254 </span><span class="lineCov">          5 :     void handleUpdate(</span></a>
-<a name="255"><span class="lineNum">     255 </span>            :         typename BankableVPotMatcher&lt;BankSize&gt;::Result match) override {</a>
-<a name="256"><span class="lineNum">     256 </span><span class="lineCov">         10 :         dirty |= states[match.bankIndex].update(match.value) &amp;&amp;</span></a>
-<a name="257"><span class="lineNum">     257 </span><span class="lineCov">          5 :                  match.bankIndex == this-&gt;getActiveBank();</span></a>
-<a name="258"><span class="lineNum">     258 </span>            :         // Only mark dirty if the value of the active bank changed</a>
-<a name="259"><span class="lineNum">     259 </span><span class="lineCov">          5 :     }</span></a>
-<a name="260"><span class="lineNum">     260 </span>            : </a>
-<a name="261"><span class="lineNum">     261 </span>            :   public:</a>
-<a name="262"><span class="lineNum">     262 </span>            :     /// @name Data access</a>
-<a name="263"><span class="lineNum">     263 </span>            :     /// @{</a>
-<a name="264"><span class="lineNum">     264 </span>            : </a>
-<a name="265"><span class="lineNum">     265 </span>            :     /// Get the full state of the VPot ring. (For the given bank.)</a>
-<a name="266"><span class="lineNum">     266 </span><span class="lineCov">         30 :     VPotState getState(uint8_t bank) const { return states[bank]; }</span></a>
-<a name="267"><span class="lineNum">     267 </span>            : </a>
-<a name="268"><span class="lineNum">     268 </span>            :     /// @copydoc    VPotState::getPosition</a>
-<a name="269"><span class="lineNum">     269 </span>            :     /// (For the given bank.)</a>
-<a name="270"><span class="lineNum">     270 </span><span class="lineCov">          9 :     uint8_t getPosition(uint8_t bank) const {</span></a>
-<a name="271"><span class="lineNum">     271 </span><span class="lineCov">          9 :         return getState(bank).getPosition();</span></a>
-<a name="272"><span class="lineNum">     272 </span>            :     }</a>
-<a name="273"><span class="lineNum">     273 </span>            :     /// @copydoc    VPotState::getCenterLed</a>
-<a name="274"><span class="lineNum">     274 </span>            :     /// (For the given bank.)</a>
-<a name="275"><span class="lineNum">     275 </span><span class="lineCov">          9 :     bool getCenterLed(uint8_t bank) const {</span></a>
-<a name="276"><span class="lineNum">     276 </span><span class="lineCov">          9 :         return getState(bank).getCenterLed();</span></a>
-<a name="277"><span class="lineNum">     277 </span>            :     }</a>
-<a name="278"><span class="lineNum">     278 </span>            :     /// @copydoc    VPotState::getMode</a>
-<a name="279"><span class="lineNum">     279 </span>            :     /// (For the given bank.)</a>
-<a name="280"><span class="lineNum">     280 </span><span class="lineCov">          9 :     VPotState::Mode getMode(uint8_t bank) const {</span></a>
-<a name="281"><span class="lineNum">     281 </span><span class="lineCov">          9 :         return getState(bank).getMode();</span></a>
-<a name="282"><span class="lineNum">     282 </span>            :     }</a>
-<a name="283"><span class="lineNum">     283 </span>            : </a>
-<a name="284"><span class="lineNum">     284 </span>            :     /// @copydoc    VPotState::getStartOn</a>
-<a name="285"><span class="lineNum">     285 </span>            :     /// (For the given bank.)</a>
-<a name="286"><span class="lineNum">     286 </span><span class="lineNoCov">          0 :     uint8_t getStartOn(uint8_t bank) const {</span></a>
-<a name="287"><span class="lineNum">     287 </span><span class="lineNoCov">          0 :         return getState(bank).getStartOn();</span></a>
-<a name="288"><span class="lineNum">     288 </span>            :     }</a>
-<a name="289"><span class="lineNum">     289 </span>            :     /// @copydoc    VPotState::getStartOff</a>
-<a name="290"><span class="lineNum">     290 </span>            :     /// (For the given bank.)</a>
-<a name="291"><span class="lineNum">     291 </span><span class="lineNoCov">          0 :     uint8_t getStartOff(uint8_t bank) const {</span></a>
-<a name="292"><span class="lineNum">     292 </span><span class="lineNoCov">          0 :         return getState(bank).getStartOff();</span></a>
-<a name="293"><span class="lineNum">     293 </span>            :     }</a>
-<a name="294"><span class="lineNum">     294 </span>            : </a>
-<a name="295"><span class="lineNum">     295 </span>            :     /// Get the full state of the VPot ring. (For the active bank.)</a>
-<a name="296"><span class="lineNum">     296 </span><span class="lineCov">          3 :     VPotState getState() const { return getState(this-&gt;getActiveBank()); }</span></a>
-<a name="297"><span class="lineNum">     297 </span>            : </a>
-<a name="298"><span class="lineNum">     298 </span>            :     /// @copydoc    VPotState::getPosition</a>
-<a name="299"><span class="lineNum">     299 </span>            :     /// (For the active bank.)</a>
-<a name="300"><span class="lineNum">     300 </span><span class="lineCov">          9 :     uint8_t getPosition() const { return getPosition(this-&gt;getActiveBank()); }</span></a>
-<a name="301"><span class="lineNum">     301 </span>            :     /// @copydoc    VPotState::getCenterLed</a>
-<a name="302"><span class="lineNum">     302 </span>            :     /// (For the active bank.)</a>
-<a name="303"><span class="lineNum">     303 </span><span class="lineCov">          9 :     bool getCenterLed() const override {</span></a>
-<a name="304"><span class="lineNum">     304 </span><span class="lineCov">          9 :         return getCenterLed(this-&gt;getActiveBank());</span></a>
+<a name="216"><span class="lineNum">     216 </span>            :   public:</a>
+<a name="217"><span class="lineNum">     217 </span>            :     /// Don't reset the state when calling the `reset` method. This is the</a>
+<a name="218"><span class="lineNum">     218 </span>            :     /// default, because in the original MCU, VPots don't get reset when a</a>
+<a name="219"><span class="lineNum">     219 </span>            :     /// Reset All Controllers message is received.</a>
+<a name="220"><span class="lineNum">     220 </span><span class="lineCov">          1 :     bool ignoreReset = true;</span></a>
+<a name="221"><span class="lineNum">     221 </span>            : };</a>
+<a name="222"><span class="lineNum">     222 </span>            : </a>
+<a name="223"><span class="lineNum">     223 </span>            : // -------------------------------------------------------------------------- //</a>
+<a name="224"><span class="lineNum">     224 </span>            : </a>
+<a name="225"><span class="lineNum">     225 </span>            : namespace Bankable {</a>
+<a name="226"><span class="lineNum">     226 </span>            : </a>
+<a name="227"><span class="lineNum">     227 </span>            : /** </a>
+<a name="228"><span class="lineNum">     228 </span>            :  * @brief   A MIDI input element that represents a Mackie Control Universal VPot</a>
+<a name="229"><span class="lineNum">     229 </span>            :  *          ring. This version can be banked.</a>
+<a name="230"><span class="lineNum">     230 </span>            :  *</a>
+<a name="231"><span class="lineNum">     231 </span>            :  * @tparam  BankSize</a>
+<a name="232"><span class="lineNum">     232 </span>            :  *          The number of banks.</a>
+<a name="233"><span class="lineNum">     233 </span>            :  * </a>
+<a name="234"><span class="lineNum">     234 </span>            :  * @ingroup BankableMIDIInputElements</a>
+<a name="235"><span class="lineNum">     235 </span>            :  */</a>
+<a name="236"><span class="lineNum">     236 </span>            : template &lt;uint8_t BankSize&gt;</a>
+<a name="237"><span class="lineNum">     237 </span><span class="lineCov">          4 : class VPotRing</span></a>
+<a name="238"><span class="lineNum">     238 </span>            :     : public BankableMatchingMIDIInputElement&lt;MIDIMessageType::CONTROL_CHANGE,</a>
+<a name="239"><span class="lineNum">     239 </span>            :                                               BankableVPotMatcher&lt;BankSize&gt;&gt;,</a>
+<a name="240"><span class="lineNum">     240 </span>            :       public Interfaces::MCU::IVPot {</a>
+<a name="241"><span class="lineNum">     241 </span>            :   public:</a>
+<a name="242"><span class="lineNum">     242 </span>            :     using Matcher = BankableVPotMatcher&lt;BankSize&gt;;</a>
+<a name="243"><span class="lineNum">     243 </span>            :     using Parent </a>
+<a name="244"><span class="lineNum">     244 </span>            :         = BankableMatchingMIDIInputElement&lt;MIDIMessageType::CONTROL_CHANGE,</a>
+<a name="245"><span class="lineNum">     245 </span>            :                                            Matcher&gt;;</a>
+<a name="246"><span class="lineNum">     246 </span>            :     /**</a>
+<a name="247"><span class="lineNum">     247 </span>            :      * @brief   Constructor.</a>
+<a name="248"><span class="lineNum">     248 </span>            :      * </a>
+<a name="249"><span class="lineNum">     249 </span>            :      * @param   config</a>
+<a name="250"><span class="lineNum">     250 </span>            :      *          The bank configuration to use: the bank to add this element to,</a>
+<a name="251"><span class="lineNum">     251 </span>            :      *          and whether to change the address, channel or cable number.</a>
+<a name="252"><span class="lineNum">     252 </span>            :      * @param   track</a>
+<a name="253"><span class="lineNum">     253 </span>            :      *          The track of the VPot [1, 8].</a>
+<a name="254"><span class="lineNum">     254 </span>            :      * @param   channelCN</a>
+<a name="255"><span class="lineNum">     255 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
+<a name="256"><span class="lineNum">     256 </span>            :      *          [CABLE_1, CABLE_16].</a>
+<a name="257"><span class="lineNum">     257 </span>            :      */</a>
+<a name="258"><span class="lineNum">     258 </span><span class="lineCov">          4 :     VPotRing(BankConfig&lt;BankSize&gt; config, uint8_t track,</span></a>
+<a name="259"><span class="lineNum">     259 </span>            :              MIDIChannelCable channelCN = CHANNEL_1)</a>
+<a name="260"><span class="lineNum">     260 </span><span class="lineCov">         12 :         : Parent({config, track, channelCN}) {}</span></a>
+<a name="261"><span class="lineNum">     261 </span>            : </a>
+<a name="262"><span class="lineNum">     262 </span>            :   protected:</a>
+<a name="263"><span class="lineNum">     263 </span><span class="lineCov">          5 :     bool handleUpdateImpl(typename Matcher::Result match) {</span></a>
+<a name="264"><span class="lineNum">     264 </span><span class="lineCov">         10 :         return states[match.bankIndex].update(match.value) &amp;&amp;</span></a>
+<a name="265"><span class="lineNum">     265 </span><span class="lineCov">          5 :                match.bankIndex == this-&gt;getActiveBank();</span></a>
+<a name="266"><span class="lineNum">     266 </span>            :         // Only mark dirty if the value of the active bank changed</a>
+<a name="267"><span class="lineNum">     267 </span>            :     }</a>
+<a name="268"><span class="lineNum">     268 </span>            :     </a>
+<a name="269"><span class="lineNum">     269 </span><span class="lineCov">          3 :     void handleUpdate(typename Matcher::Result match) override {</span></a>
+<a name="270"><span class="lineNum">     270 </span><span class="lineCov">          3 :         dirty |= handleUpdateImpl(match);</span></a>
+<a name="271"><span class="lineNum">     271 </span><span class="lineCov">          3 :     }</span></a>
+<a name="272"><span class="lineNum">     272 </span>            : </a>
+<a name="273"><span class="lineNum">     273 </span>            :   public:</a>
+<a name="274"><span class="lineNum">     274 </span>            :     /// @name Data access</a>
+<a name="275"><span class="lineNum">     275 </span>            :     /// @{</a>
+<a name="276"><span class="lineNum">     276 </span>            : </a>
+<a name="277"><span class="lineNum">     277 </span>            :     /// Get the full state of the VPot ring. (For the given bank.)</a>
+<a name="278"><span class="lineNum">     278 </span><span class="lineCov">         30 :     VPotState getState(uint8_t bank) const { return states[bank]; }</span></a>
+<a name="279"><span class="lineNum">     279 </span>            : </a>
+<a name="280"><span class="lineNum">     280 </span>            :     /// @copydoc    VPotState::getPosition</a>
+<a name="281"><span class="lineNum">     281 </span>            :     /// (For the given bank.)</a>
+<a name="282"><span class="lineNum">     282 </span><span class="lineCov">          9 :     uint8_t getPosition(uint8_t bank) const {</span></a>
+<a name="283"><span class="lineNum">     283 </span><span class="lineCov">          9 :         return getState(bank).getPosition();</span></a>
+<a name="284"><span class="lineNum">     284 </span>            :     }</a>
+<a name="285"><span class="lineNum">     285 </span>            :     /// @copydoc    VPotState::getCenterLed</a>
+<a name="286"><span class="lineNum">     286 </span>            :     /// (For the given bank.)</a>
+<a name="287"><span class="lineNum">     287 </span><span class="lineCov">          9 :     bool getCenterLed(uint8_t bank) const {</span></a>
+<a name="288"><span class="lineNum">     288 </span><span class="lineCov">          9 :         return getState(bank).getCenterLed();</span></a>
+<a name="289"><span class="lineNum">     289 </span>            :     }</a>
+<a name="290"><span class="lineNum">     290 </span>            :     /// @copydoc    VPotState::getMode</a>
+<a name="291"><span class="lineNum">     291 </span>            :     /// (For the given bank.)</a>
+<a name="292"><span class="lineNum">     292 </span><span class="lineCov">          9 :     VPotState::Mode getMode(uint8_t bank) const {</span></a>
+<a name="293"><span class="lineNum">     293 </span><span class="lineCov">          9 :         return getState(bank).getMode();</span></a>
+<a name="294"><span class="lineNum">     294 </span>            :     }</a>
+<a name="295"><span class="lineNum">     295 </span>            : </a>
+<a name="296"><span class="lineNum">     296 </span>            :     /// @copydoc    VPotState::getStartOn</a>
+<a name="297"><span class="lineNum">     297 </span>            :     /// (For the given bank.)</a>
+<a name="298"><span class="lineNum">     298 </span><span class="lineNoCov">          0 :     uint8_t getStartOn(uint8_t bank) const {</span></a>
+<a name="299"><span class="lineNum">     299 </span><span class="lineNoCov">          0 :         return getState(bank).getStartOn();</span></a>
+<a name="300"><span class="lineNum">     300 </span>            :     }</a>
+<a name="301"><span class="lineNum">     301 </span>            :     /// @copydoc    VPotState::getStartOff</a>
+<a name="302"><span class="lineNum">     302 </span>            :     /// (For the given bank.)</a>
+<a name="303"><span class="lineNum">     303 </span><span class="lineNoCov">          0 :     uint8_t getStartOff(uint8_t bank) const {</span></a>
+<a name="304"><span class="lineNum">     304 </span><span class="lineNoCov">          0 :         return getState(bank).getStartOff();</span></a>
 <a name="305"><span class="lineNum">     305 </span>            :     }</a>
-<a name="306"><span class="lineNum">     306 </span>            :     /// @copydoc    VPotState::getMode</a>
-<a name="307"><span class="lineNum">     307 </span>            :     /// (For the active bank.)</a>
-<a name="308"><span class="lineNum">     308 </span><span class="lineCov">          9 :     VPotState::Mode getMode() const { return getMode(this-&gt;getActiveBank()); }</span></a>
+<a name="306"><span class="lineNum">     306 </span>            : </a>
+<a name="307"><span class="lineNum">     307 </span>            :     /// Get the full state of the VPot ring. (For the active bank.)</a>
+<a name="308"><span class="lineNum">     308 </span><span class="lineCov">          3 :     VPotState getState() const { return getState(this-&gt;getActiveBank()); }</span></a>
 <a name="309"><span class="lineNum">     309 </span>            : </a>
-<a name="310"><span class="lineNum">     310 </span>            :     /// @copydoc    VPotState::getStartOn</a>
+<a name="310"><span class="lineNum">     310 </span>            :     /// @copydoc    VPotState::getPosition</a>
 <a name="311"><span class="lineNum">     311 </span>            :     /// (For the active bank.)</a>
-<a name="312"><span class="lineNum">     312 </span><span class="lineNoCov">          0 :     uint8_t getStartOn() const override {</span></a>
-<a name="313"><span class="lineNum">     313 </span><span class="lineNoCov">          0 :         return getStartOn(this-&gt;getActiveBank());</span></a>
-<a name="314"><span class="lineNum">     314 </span>            :     }</a>
-<a name="315"><span class="lineNum">     315 </span>            :     /// @copydoc    VPotState::getStartOff</a>
-<a name="316"><span class="lineNum">     316 </span>            :     /// (For the active bank.)</a>
-<a name="317"><span class="lineNum">     317 </span><span class="lineNoCov">          0 :     uint8_t getStartOff() const override {</span></a>
-<a name="318"><span class="lineNum">     318 </span><span class="lineNoCov">          0 :         return getStartOff(this-&gt;getActiveBank());</span></a>
-<a name="319"><span class="lineNum">     319 </span>            :     }</a>
-<a name="320"><span class="lineNum">     320 </span>            : </a>
-<a name="321"><span class="lineNum">     321 </span>            :     /// @}</a>
-<a name="322"><span class="lineNum">     322 </span>            : </a>
-<a name="323"><span class="lineNum">     323 </span>            :     /// Reset all states to zero.</a>
-<a name="324"><span class="lineNum">     324 </span><span class="lineNoCov">          0 :     void reset() override {</span></a>
-<a name="325"><span class="lineNum">     325 </span><span class="lineNoCov">          0 :         if (!ignoreReset) {</span></a>
-<a name="326"><span class="lineNum">     326 </span><span class="lineNoCov">          0 :             states = {{}};</span></a>
-<a name="327"><span class="lineNum">     327 </span><span class="lineNoCov">          0 :             dirty = true;</span></a>
-<a name="328"><span class="lineNum">     328 </span><span class="lineNoCov">          0 :         }</span></a>
-<a name="329"><span class="lineNum">     329 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="330"><span class="lineNum">     330 </span>            : </a>
-<a name="331"><span class="lineNum">     331 </span>            :   protected:</a>
-<a name="332"><span class="lineNum">     332 </span><span class="lineCov">          4 :     void onBankSettingChange() override { dirty = true; }</span></a>
-<a name="333"><span class="lineNum">     333 </span>            : </a>
-<a name="334"><span class="lineNum">     334 </span>            :   private:</a>
-<a name="335"><span class="lineNum">     335 </span><span class="lineCov">          8 :     AH::Array&lt;VPotState, BankSize&gt; states = {{}};</span></a>
-<a name="336"><span class="lineNum">     336 </span>            : </a>
-<a name="337"><span class="lineNum">     337 </span>            :   public:</a>
-<a name="338"><span class="lineNum">     338 </span>            :     /// Don't reset the state when calling the `reset` method. This is the</a>
-<a name="339"><span class="lineNum">     339 </span>            :     /// default, because in the original MCU, VPots don't get reset when a</a>
-<a name="340"><span class="lineNum">     340 </span>            :     /// Reset All Controllers message is received.</a>
-<a name="341"><span class="lineNum">     341 </span><span class="lineCov">          4 :     bool ignoreReset = true;</span></a>
-<a name="342"><span class="lineNum">     342 </span>            : };</a>
-<a name="343"><span class="lineNum">     343 </span>            : </a>
-<a name="344"><span class="lineNum">     344 </span>            : } // namespace Bankable</a>
+<a name="312"><span class="lineNum">     312 </span><span class="lineCov">          9 :     uint8_t getPosition() const { return getPosition(this-&gt;getActiveBank()); }</span></a>
+<a name="313"><span class="lineNum">     313 </span>            :     /// @copydoc    VPotState::getCenterLed</a>
+<a name="314"><span class="lineNum">     314 </span>            :     /// (For the active bank.)</a>
+<a name="315"><span class="lineNum">     315 </span><span class="lineCov">          9 :     bool getCenterLed() const override {</span></a>
+<a name="316"><span class="lineNum">     316 </span><span class="lineCov">          9 :         return getCenterLed(this-&gt;getActiveBank());</span></a>
+<a name="317"><span class="lineNum">     317 </span>            :     }</a>
+<a name="318"><span class="lineNum">     318 </span>            :     /// @copydoc    VPotState::getMode</a>
+<a name="319"><span class="lineNum">     319 </span>            :     /// (For the active bank.)</a>
+<a name="320"><span class="lineNum">     320 </span><span class="lineCov">          9 :     VPotState::Mode getMode() const { return getMode(this-&gt;getActiveBank()); }</span></a>
+<a name="321"><span class="lineNum">     321 </span>            : </a>
+<a name="322"><span class="lineNum">     322 </span>            :     /// @copydoc    VPotState::getStartOn</a>
+<a name="323"><span class="lineNum">     323 </span>            :     /// (For the active bank.)</a>
+<a name="324"><span class="lineNum">     324 </span><span class="lineNoCov">          0 :     uint8_t getStartOn() const override {</span></a>
+<a name="325"><span class="lineNum">     325 </span><span class="lineNoCov">          0 :         return getStartOn(this-&gt;getActiveBank());</span></a>
+<a name="326"><span class="lineNum">     326 </span>            :     }</a>
+<a name="327"><span class="lineNum">     327 </span>            :     /// @copydoc    VPotState::getStartOff</a>
+<a name="328"><span class="lineNum">     328 </span>            :     /// (For the active bank.)</a>
+<a name="329"><span class="lineNum">     329 </span><span class="lineNoCov">          0 :     uint8_t getStartOff() const override {</span></a>
+<a name="330"><span class="lineNum">     330 </span><span class="lineNoCov">          0 :         return getStartOff(this-&gt;getActiveBank());</span></a>
+<a name="331"><span class="lineNum">     331 </span>            :     }</a>
+<a name="332"><span class="lineNum">     332 </span>            : </a>
+<a name="333"><span class="lineNum">     333 </span>            :     /// @}</a>
+<a name="334"><span class="lineNum">     334 </span>            : </a>
+<a name="335"><span class="lineNum">     335 </span>            :     /// Reset all states to zero.</a>
+<a name="336"><span class="lineNum">     336 </span><span class="lineNoCov">          0 :     void reset() override {</span></a>
+<a name="337"><span class="lineNum">     337 </span><span class="lineNoCov">          0 :         if (!ignoreReset) {</span></a>
+<a name="338"><span class="lineNum">     338 </span><span class="lineNoCov">          0 :             states = {{}};</span></a>
+<a name="339"><span class="lineNum">     339 </span><span class="lineNoCov">          0 :             dirty = true;</span></a>
+<a name="340"><span class="lineNum">     340 </span><span class="lineNoCov">          0 :         }</span></a>
+<a name="341"><span class="lineNum">     341 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="342"><span class="lineNum">     342 </span>            : </a>
+<a name="343"><span class="lineNum">     343 </span>            :   protected:</a>
+<a name="344"><span class="lineNum">     344 </span><span class="lineCov">          4 :     void onBankSettingChange() override { dirty = true; }</span></a>
 <a name="345"><span class="lineNum">     345 </span>            : </a>
-<a name="346"><span class="lineNum">     346 </span>            : } // namespace MCU</a>
-<a name="347"><span class="lineNum">     347 </span>            : </a>
-<a name="348"><span class="lineNum">     348 </span>            : END_CS_NAMESPACE</a>
+<a name="346"><span class="lineNum">     346 </span>            :   private:</a>
+<a name="347"><span class="lineNum">     347 </span><span class="lineCov">          8 :     AH::Array&lt;VPotState, BankSize&gt; states = {{}};</span></a>
+<a name="348"><span class="lineNum">     348 </span>            : </a>
+<a name="349"><span class="lineNum">     349 </span>            :   public:</a>
+<a name="350"><span class="lineNum">     350 </span>            :     /// Don't reset the state when calling the `reset` method. This is the</a>
+<a name="351"><span class="lineNum">     351 </span>            :     /// default, because in the original MCU, VPots don't get reset when a</a>
+<a name="352"><span class="lineNum">     352 </span>            :     /// Reset All Controllers message is received.</a>
+<a name="353"><span class="lineNum">     353 </span><span class="lineCov">          4 :     bool ignoreReset = true;</span></a>
+<a name="354"><span class="lineNum">     354 </span>            : };</a>
+<a name="355"><span class="lineNum">     355 </span>            : </a>
+<a name="356"><span class="lineNum">     356 </span>            : } // namespace Bankable</a>
+<a name="357"><span class="lineNum">     357 </span>            : </a>
+<a name="358"><span class="lineNum">     358 </span>            : } // namespace MCU</a>
+<a name="359"><span class="lineNum">     359 </span>            : </a>
+<a name="360"><span class="lineNum">     360 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

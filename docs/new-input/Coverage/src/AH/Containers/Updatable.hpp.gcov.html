@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/AH/Containers/Updatable.hpp</title>
+  <title>LCOV - 78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10 - src/AH/Containers/Updatable.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
+            <td class="headerValue">78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">44</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-08 19:59:05</td>
+            <td class="headerValue">2020-10-05 01:03:31</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">55</td>
@@ -128,42 +128,42 @@
 <a name="58"><span class="lineNum">      58 </span>            :   protected:</a>
 <a name="59"><span class="lineNum">      59 </span>            :     /// Constructor: create an Updatable and add it to the linked list of</a>
 <a name="60"><span class="lineNum">      60 </span>            :     /// instances.</a>
-<a name="61"><span class="lineNum">      61 </span><span class="lineCov">        315 :     UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
-<a name="62"><span class="lineNum">      62 </span><span class="lineCov">        315 :         LockGuard lock(mutex);</span></a>
-<a name="63"><span class="lineNum">      63 </span><span class="lineCov">        315 :         updatables.append(CRTP(Derived));</span></a>
-<a name="64"><span class="lineNum">      64 </span><span class="lineCov">        315 :     }</span></a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">        317 :     UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">        317 :         LockGuard lock(mutex);</span></a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">        317 :         updatables.append(CRTP(Derived));</span></a>
+<a name="64"><span class="lineNum">      64 </span><span class="lineCov">        317 :     }</span></a>
 <a name="65"><span class="lineNum">      65 </span>            : </a>
 <a name="66"><span class="lineNum">      66 </span>            :   public:</a>
 <a name="67"><span class="lineNum">      67 </span>            :     /// Destructor: remove the updatable from the linked list of instances.</a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        315 :     virtual ~UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
-<a name="69"><span class="lineNum">      69 </span><span class="lineCov">        315 :         LockGuard lock(mutex);</span></a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">        315 :         if (updatables.couldContain(CRTP(Derived)))</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        315 :             updatables.remove(CRTP(Derived));</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">        315 :     }</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        317 :     virtual ~UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
+<a name="69"><span class="lineNum">      69 </span><span class="lineCov">        317 :         LockGuard lock(mutex);</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">        317 :         if (updatables.couldContain(CRTP(Derived)))</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        317 :             updatables.remove(CRTP(Derived));</span></a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">        317 :     }</span></a>
 <a name="73"><span class="lineNum">      73 </span>            : </a>
 <a name="74"><span class="lineNum">      74 </span>            : #if defined(__GNUC__) &amp;&amp; !defined(__clang__)</a>
 <a name="75"><span class="lineNum">      75 </span>            : #pragma GCC diagnostic pop</a>
 <a name="76"><span class="lineNum">      76 </span>            : #endif</a>
 <a name="77"><span class="lineNum">      77 </span>            : </a>
 <a name="78"><span class="lineNum">      78 </span>            :   public:</a>
-<a name="79"><span class="lineNum">      79 </span><span class="lineCov">         63 :     static Mutex &amp;getMutex() { return mutex; }</span></a>
+<a name="79"><span class="lineNum">      79 </span><span class="lineCov">         71 :     static Mutex &amp;getMutex() { return mutex; }</span></a>
 <a name="80"><span class="lineNum">      80 </span>            : </a>
 <a name="81"><span class="lineNum">      81 </span>            :     /// @name Main initialization and updating methods</a>
 <a name="82"><span class="lineNum">      82 </span>            :     /// @{</a>
 <a name="83"><span class="lineNum">      83 </span>            : </a>
 <a name="84"><span class="lineNum">      84 </span>            :     template &lt;class... Args&gt;</a>
-<a name="85"><span class="lineNum">      85 </span><span class="lineCov">         52 :     static void applyToAll(const LockGuard &amp;,</span></a>
+<a name="85"><span class="lineNum">      85 </span><span class="lineCov">         54 :     static void applyToAll(const LockGuard &amp;,</span></a>
 <a name="86"><span class="lineNum">      86 </span>            :                            void (Derived::*method)(Args &amp;&amp;...),</a>
 <a name="87"><span class="lineNum">      87 </span>            :                            Args &amp;&amp;... args) {</a>
-<a name="88"><span class="lineNum">      88 </span><span class="lineCov">        106 :         for (auto &amp;el : updatables)</span></a>
-<a name="89"><span class="lineNum">      89 </span><span class="lineCov">         54 :             (el.*method)(std::forward&lt;Args&gt;(args)...);</span></a>
-<a name="90"><span class="lineNum">      90 </span><span class="lineCov">         52 :     }</span></a>
+<a name="88"><span class="lineNum">      88 </span><span class="lineCov">        110 :         for (auto &amp;el : updatables)</span></a>
+<a name="89"><span class="lineNum">      89 </span><span class="lineCov">         56 :             (el.*method)(std::forward&lt;Args&gt;(args)...);</span></a>
+<a name="90"><span class="lineNum">      90 </span><span class="lineCov">         54 :     }</span></a>
 <a name="91"><span class="lineNum">      91 </span>            : </a>
 <a name="92"><span class="lineNum">      92 </span>            :     template &lt;class... Args&gt;</a>
-<a name="93"><span class="lineNum">      93 </span><span class="lineCov">         52 :     static void applyToAll(void (Derived::*method)(Args &amp;&amp;...),</span></a>
+<a name="93"><span class="lineNum">      93 </span><span class="lineCov">         54 :     static void applyToAll(void (Derived::*method)(Args &amp;&amp;...),</span></a>
 <a name="94"><span class="lineNum">      94 </span>            :                            Args &amp;&amp;... args) {</a>
-<a name="95"><span class="lineNum">      95 </span><span class="lineCov">         52 :         applyToAll(LockGuard(mutex), method, std::forward&lt;Args&gt;(args)...);</span></a>
-<a name="96"><span class="lineNum">      96 </span><span class="lineCov">         52 :     }</span></a>
+<a name="95"><span class="lineNum">      95 </span><span class="lineCov">         54 :         applyToAll(LockGuard(mutex), method, std::forward&lt;Args&gt;(args)...);</span></a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">         54 :     }</span></a>
 <a name="97"><span class="lineNum">      97 </span>            : </a>
 <a name="98"><span class="lineNum">      98 </span>            :     /// @}</a>
 <a name="99"><span class="lineNum">      99 </span>            : </a>
@@ -233,9 +233,9 @@
 <a name="163"><span class="lineNum">     163 </span><span class="lineCov">          1 :     }</span></a>
 <a name="164"><span class="lineNum">     164 </span>            : </a>
 <a name="165"><span class="lineNum">     165 </span>            :     /// Move down this element in the list.</a>
-<a name="166"><span class="lineNum">     166 </span><span class="lineCov">    1048634 :     void moveDown(const LockGuard &amp;) { updatables.moveDown(CRTP(Derived)); }</span></a>
+<a name="166"><span class="lineNum">     166 </span><span class="lineCov">    1048642 :     void moveDown(const LockGuard &amp;) { updatables.moveDown(CRTP(Derived)); }</span></a>
 <a name="167"><span class="lineNum">     167 </span>            :     /// Move down this element in the list.</a>
-<a name="168"><span class="lineNum">     168 </span><span class="lineCov">    1032120 :     void moveDown() { moveDown(LockGuard(mutex)); }</span></a>
+<a name="168"><span class="lineNum">     168 </span><span class="lineCov">    1036685 :     void moveDown() { moveDown(LockGuard(mutex)); }</span></a>
 <a name="169"><span class="lineNum">     169 </span>            : </a>
 <a name="170"><span class="lineNum">     170 </span>            :     /// @}</a>
 <a name="171"><span class="lineNum">     171 </span>            : </a>

@@ -77,10 +77,12 @@ $(function() {
 <div class="title">Encoder Library </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Encoder counts pulses from quadrature encoded signals, which are commonly available from rotary knobs, motor or shaft sensors and other position sensors.</p>
-<p><a href="http://www.pjrc.com/teensy/td_libs_Encoder.html">http://www.pjrc.com/teensy/td_libs_Encoder.html</a></p>
-<p><a href="http://www.youtube.com/watch?v=2puhIong-cs">http://www.youtube.com/watch?v=2puhIong-cs</a></p>
-<p><img src="http://www.pjrc.com/teensy/td_libs_Encoder_1.jpg" alt="Encoder Knobs Demo" class="inline"/> </p>
+<div class="textblock"><p>This library is a fork of PJRC's popular Encoder library (<a href="http://www.pjrc.com/teensy/td_libs_Encoder.html">http://www.pjrc.com/teensy/td_libs_Encoder.html</a>).</p>
+<p>I applied the following changes:</p><ul>
+<li>Delete the copy constructor and copy assignment operator: in the original library, the default copy constructor doesn't work, and leaves dangling pointers to the interrupt contexts when used accidentally.</li>
+<li>Implement the move constructor and move assignment operator: this solves the dangling pointers problem mentioned earlier, and allows passing encoders to other classes without having to construct it in-place. This requires functions that can detach and re-attach the interrupts correctly, updating the ISR context pointers.</li>
+<li>Add a code generator to automatically generate the many repetitive ISRs: a Python script generates a huge switch statement that returns the right lambda function to be called in the ISR. </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

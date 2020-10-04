@@ -110,8 +110,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0b6dba0f1fb8d2e6ed9ebfeeb7840456"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a0b6dba0f1fb8d2e6ed9ebfeeb7840456">MessageMatcherType</a> = typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a></td></tr>
-<tr class="separator:a0b6dba0f1fb8d2e6ed9ebfeeb7840456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed765553dc6bf5a24ba76df2edf627c4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aed765553dc6bf5a24ba76df2edf627c4">Matcher</a> = <a class="el" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html">TwoByteRangeMIDIMatcher</a></td></tr>
+<tr class="separator:aed765553dc6bf5a24ba76df2edf627c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e5a605c8ecc683284206bd1b54fccd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#ac9e5a605c8ecc683284206bd1b54fccd">Parent</a> = <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a>&lt; MIDIMessageType::CONTROL_CHANGE, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aed765553dc6bf5a24ba76df2edf627c4">Matcher</a> &gt;</td></tr>
+<tr class="separator:ac9e5a605c8ecc683284206bd1b54fccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa732e43eeb1ed1c03893ef1bfd0dce5c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> = typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a></td></tr>
+<tr class="separator:aa732e43eeb1ed1c03893ef1bfd0dce5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
 <tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
@@ -126,11 +130,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aebfcdbbd0fe4efbff10b180be50ca6bc">reset</a> () override</td></tr>
 <tr class="memdesc:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the input element to its initial state.  <a href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aebfcdbbd0fe4efbff10b180be50ca6bc">More...</a><br /></td></tr>
 <tr class="separator:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8b3295e878d374fe9af277f6983204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a> (typename Matcher::Result match)=0</td></tr>
+<tr class="memitem:a7d8b3295e878d374fe9af277f6983204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a> (typename <a class="el" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result">Matcher::Result</a> match)=0</td></tr>
 <tr class="separator:a7d8b3295e878d374fe9af277f6983204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a44b7b3c480d77e9715bcde68bbafd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7a44b7b3c480d77e9715bcde68bbafd6">updateWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a> midimsg) override</td></tr>
-<tr class="memdesc:a7a44b7b3c480d77e9715bcde68bbafd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a new MIDI message and update the internal state.  <a href="../../d5/dae/classMatchingMIDIInputElement.html#a7a44b7b3c480d77e9715bcde68bbafd6">More...</a><br /></td></tr>
-<tr class="separator:a7a44b7b3c480d77e9715bcde68bbafd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">updateWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg) override</td></tr>
+<tr class="memdesc:a5573c8032407bdf439730a1cf7b6a5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a new MIDI message and update the internal state.  <a href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">More...</a><br /></td></tr>
+<tr class="separator:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a> ()</td></tr>
 <tr class="memdesc:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input element.  <a href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">More...</a><br /></td></tr>
 <tr class="separator:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,9 +144,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5d2ac2ab827cbcdba949cbabbd5c4dd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ad5d2ac2ab827cbcdba949cbabbd5c4dd">updateAllWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a> midimsg)</td></tr>
-<tr class="memdesc:ad5d2ac2ab827cbcdba949cbabbd5c4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#ad5d2ac2ab827cbcdba949cbabbd5c4dd">More...</a><br /></td></tr>
-<tr class="separator:ad5d2ac2ab827cbcdba949cbabbd5c4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e83e6344db343c94b3730d55ff029a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">updateAllWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg)</td></tr>
+<tr class="memdesc:af8e83e6344db343c94b3730d55ff029a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">More...</a><br /></td></tr>
+<tr class="separator:af8e83e6344db343c94b3730d55ff029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
 <tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">More...</a><br /></td></tr>
 <tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,9 +167,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7ea7867ea23c256aba060599cc810a22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a7ea7867ea23c256aba060599cc810a22">handleUpdate</a> (<a class="el" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result">TwoByteRangeMIDIMatcher::Result</a> match) override</td></tr>
-<tr class="memdesc:a7ea7867ea23c256aba060599cc810a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a single character.  <a href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a7ea7867ea23c256aba060599cc810a22">More...</a><br /></td></tr>
-<tr class="separator:a7ea7867ea23c256aba060599cc810a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad253a3eefdc42722ead170e31e21a150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#ad253a3eefdc42722ead170e31e21a150">handleUpdate</a> (typename <a class="el" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result">Matcher::Result</a> match) override</td></tr>
+<tr class="memdesc:ad253a3eefdc42722ead170e31e21a150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a single character.  <a href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#ad253a3eefdc42722ead170e31e21a150">More...</a><br /></td></tr>
+<tr class="separator:ad253a3eefdc42722ead170e31e21a150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -276,8 +280,8 @@ Detecting changes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../de/d83/AssignmentDisplay_8hpp_source.html#l00012">12</a> of file <a class="el" href="../../de/d83/AssignmentDisplay_8hpp_source.html">AssignmentDisplay.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a0b6dba0f1fb8d2e6ed9ebfeeb7840456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b6dba0f1fb8d2e6ed9ebfeeb7840456">&#9670;&nbsp;</a></span>MessageMatcherType</h2>
+<a id="aed765553dc6bf5a24ba76df2edf627c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed765553dc6bf5a24ba76df2edf627c4">&#9670;&nbsp;</a></span>Matcher</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +290,55 @@ Detecting changes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a> =  typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt;Type&gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a></td>
+          <td class="memname">using <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aed765553dc6bf5a24ba76df2edf627c4">Matcher</a> =  <a class="el" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html">TwoByteRangeMIDIMatcher</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac9e5a605c8ecc683284206bd1b54fccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e5a605c8ecc683284206bd1b54fccd">&#9670;&nbsp;</a></span>Parent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#ac9e5a605c8ecc683284206bd1b54fccd">Parent</a> =  <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a>&lt;MIDIMessageType::CONTROL_CHANGE, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aed765553dc6bf5a24ba76df2edf627c4">Matcher</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa732e43eeb1ed1c03893ef1bfd0dce5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa732e43eeb1ed1c03893ef1bfd0dce5c">&#9670;&nbsp;</a></span>MessageType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> =  typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt;Type&gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a></td>
         </tr>
       </table>
   </td>
@@ -398,7 +450,7 @@ Detecting changes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00028">28</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -426,12 +478,12 @@ Detecting changes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d9/db1/classMIDIInputElement.html#a7b0e029102ad38f4b814c6523aedb53d">MIDIInputElement&lt; Type &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a7ea7867ea23c256aba060599cc810a22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ea7867ea23c256aba060599cc810a22">&#9670;&nbsp;</a></span>handleUpdate() <span class="overload">[1/2]</span></h2>
+<a id="ad253a3eefdc42722ead170e31e21a150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad253a3eefdc42722ead170e31e21a150">&#9670;&nbsp;</a></span>handleUpdate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +494,7 @@ Detecting changes</h2></td></tr>
         <tr>
           <td class="memname">void handleUpdate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result">TwoByteRangeMIDIMatcher::Result</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result">Matcher::Result</a>&#160;</td>
           <td class="paramname"><em>match</em></td><td>)</td>
           <td></td>
         </tr>
@@ -456,7 +508,7 @@ Detecting changes</h2></td></tr>
 
 <p>Update a single character. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -536,7 +588,7 @@ Detecting changes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00072">72</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -567,7 +619,7 @@ Detecting changes</h2></td></tr>
 <p>Get the character at the given index. </p>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000021">Todo:</a></b></dt><dd>Documentation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -603,7 +655,7 @@ Detecting changes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00098">98</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -634,7 +686,7 @@ Detecting changes</h2></td></tr>
 <p>Get the decimal point state at the given index. </p>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000022">Todo:</a></b></dt><dd>Documentation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -664,7 +716,7 @@ Detecting changes</h2></td></tr>
 
 <p>Print out the text of the display to the given Print. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00113">113</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -690,7 +742,7 @@ Detecting changes</h2></td></tr>
 
 <p>Check if the value was updated since the last time the dirty flag was cleared. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00130">130</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00132">132</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -716,12 +768,12 @@ Detecting changes</h2></td></tr>
 
 <p>Clear the dirty flag. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00132">132</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00134">134</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a7a44b7b3c480d77e9715bcde68bbafd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a44b7b3c480d77e9715bcde68bbafd6">&#9670;&nbsp;</a></span>updateWith()</h2>
+<a id="a5573c8032407bdf439730a1cf7b6a5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5573c8032407bdf439730a1cf7b6a5e3">&#9670;&nbsp;</a></span>updateWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -732,7 +784,7 @@ Detecting changes</h2></td></tr>
         <tr>
           <td class="memname">bool updateWith </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a>&#160;</td>
           <td class="paramname"><em>midimsg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -746,9 +798,9 @@ Detecting changes</h2></td></tr>
 
 <p>Receive a new MIDI message and update the internal state. </p>
 
-<p>Implements <a class="el" href="../../d9/db1/classMIDIInputElement.html#ae58fd61c2d0908075918fe9a945412df">MIDIInputElement&lt; Type &gt;</a>.</p>
+<p>Implements <a class="el" href="../../d9/db1/classMIDIInputElement.html#ae967727a5d21c3e07459f2cebdcc214c">MIDIInputElement&lt; Type &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -777,7 +829,7 @@ Detecting changes</h2></td></tr>
 
 <p>Initialize the input element. </p>
 
-<p>Reimplemented in <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../d7/d5f/classNoteCCKPRangeLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeLEDs&lt; Type, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d3/d99/classNoteCCKPLEDPWM.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDPWM&lt; Type &gt;</a>, <a class="el" href="../../dc/d7f/classBankable_1_1NoteCCKPValueBar.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPValueBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../de/d87/classNoteCCKPValueBar.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPValueBar&lt; Type, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLED&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d9/d55/classNoteCCKPLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLED&lt; Type &gt;</a>, <a class="el" href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VULEDs&lt; BankSize, NumLEDs &gt;</a>, <a class="el" href="../../df/d36/classMCU_1_1VULEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VULEDs&lt; NumLEDs &gt;</a>, <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VPotRingLEDs&lt; BankSize &gt;</a>, <a class="el" href="../../d6/d0d/classMCU_1_1VPotRingLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VPotRingLEDs</a>, and <a class="el" href="../../d3/d98/classNoteCCKPRangeFastLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../d7/d5f/classNoteCCKPRangeLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeLEDs&lt; Type, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d3/d99/classNoteCCKPLEDPWM.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDPWM&lt; Type &gt;</a>, <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDBar&lt; Type, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLED&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d9/d55/classNoteCCKPLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLED&lt; Type &gt;</a>, <a class="el" href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VULEDs&lt; BankSize, NumLEDs &gt;</a>, <a class="el" href="../../df/d36/classMCU_1_1VULEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VULEDs&lt; NumLEDs &gt;</a>, <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VPotRingLEDs&lt; BankSize &gt;</a>, <a class="el" href="../../d6/d0d/classMCU_1_1VPotRingLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VPotRingLEDs</a>, and <a class="el" href="../../d3/d98/classNoteCCKPRangeFastLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
@@ -814,8 +866,8 @@ Detecting changes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5d2ac2ab827cbcdba949cbabbd5c4dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5d2ac2ab827cbcdba949cbabbd5c4dd">&#9670;&nbsp;</a></span>updateAllWith()</h2>
+<a id="af8e83e6344db343c94b3730d55ff029a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e83e6344db343c94b3730d55ff029a">&#9670;&nbsp;</a></span>updateAllWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -826,7 +878,7 @@ Detecting changes</h2></td></tr>
         <tr>
           <td class="memname">static bool updateAllWith </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a>&#160;</td>
           <td class="paramname"><em>midimsg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1479,7 +1531,7 @@ Detecting changes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00137">137</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00139">139</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -1503,7 +1555,7 @@ Detecting changes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00138">138</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00140">140</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +1582,7 @@ Detecting changes</h2></td></tr>
 <p>Don't reset the state when calling the <code>reset</code> method. </p>
 <p>This is the default, because in the original <a class="el" href="../../d7/dc7/namespaceMCU.html">MCU</a>, displays don't get reset when a Reset All Controllers message is received. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00144">144</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html#l00146">146</a> of file <a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">SevenSegmentDisplay.hpp</a>.</p>
 
 </div>
 </div>
@@ -1554,7 +1606,7 @@ Detecting changes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00098">98</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00097">97</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>

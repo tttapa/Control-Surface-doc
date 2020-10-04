@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/Def/Cable.hpp</title>
+  <title>LCOV - 78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10 - src/Def/Cable.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
+            <td class="headerValue">78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">7</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-08 19:59:05</td>
+            <td class="headerValue">2020-10-05 01:03:31</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -72,8 +72,8 @@
 <a name="2"><span class="lineNum">       2 </span>            : </a>
 <a name="3"><span class="lineNum">       3 </span>            : #pragma once</a>
 <a name="4"><span class="lineNum">       4 </span>            : </a>
-<a name="5"><span class="lineNum">       5 </span>            : #include &lt;stdint.h&gt; // uint8_t</a>
-<a name="6"><span class="lineNum">       6 </span>            : #include &lt;Settings/NamespaceSettings.hpp&gt;</a>
+<a name="5"><span class="lineNum">       5 </span>            : #include &lt;Settings/NamespaceSettings.hpp&gt;</a>
+<a name="6"><span class="lineNum">       6 </span>            : #include &lt;stdint.h&gt; // uint8_t</a>
 <a name="7"><span class="lineNum">       7 </span>            : </a>
 <a name="8"><span class="lineNum">       8 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="9"><span class="lineNum">       9 </span>            : </a>
@@ -88,15 +88,15 @@
 <a name="18"><span class="lineNum">      18 </span>            :      * @param   zeroBasedCable</a>
 <a name="19"><span class="lineNum">      19 </span>            :      *          The zero-based cable (0 is the first cable).</a>
 <a name="20"><span class="lineNum">      20 </span>            :      */</a>
-<a name="21"><span class="lineNum">      21 </span><span class="lineCov">        214 :     explicit constexpr Cable(uint8_t zeroBasedCable)</span></a>
-<a name="22"><span class="lineNum">      22 </span><span class="lineCov">        214 :         : zeroBasedCable(zeroBasedCable) {}</span></a>
+<a name="21"><span class="lineNum">      21 </span><span class="lineCov">        412 :     explicit constexpr Cable(uint8_t zeroBasedCable)</span></a>
+<a name="22"><span class="lineNum">      22 </span><span class="lineCov">        412 :         : zeroBasedCable(zeroBasedCable) {}</span></a>
 <a name="23"><span class="lineNum">      23 </span>            : </a>
 <a name="24"><span class="lineNum">      24 </span>            :     /**</a>
 <a name="25"><span class="lineNum">      25 </span>            :      * @brief   Get the cable as an integer.</a>
 <a name="26"><span class="lineNum">      26 </span>            :      * </a>
 <a name="27"><span class="lineNum">      27 </span>            :      * @return  The zero-based cable (0 is the first cable).</a>
 <a name="28"><span class="lineNum">      28 </span>            :      */</a>
-<a name="29"><span class="lineNum">      29 </span><span class="lineCov">        471 :     constexpr uint8_t getRaw() const { return zeroBasedCable; }</span></a>
+<a name="29"><span class="lineNum">      29 </span><span class="lineCov">        649 :     constexpr uint8_t getRaw() const { return zeroBasedCable; }</span></a>
 <a name="30"><span class="lineNum">      30 </span>            : </a>
 <a name="31"><span class="lineNum">      31 </span>            :     /**</a>
 <a name="32"><span class="lineNum">      32 </span>            :      * @brief   Create a cable.</a>
@@ -114,8 +114,8 @@
 <a name="44"><span class="lineNum">      44 </span>            :      * @param   rhs</a>
 <a name="45"><span class="lineNum">      45 </span>            :      *          The other cable to compare this cable to.</a>
 <a name="46"><span class="lineNum">      46 </span>            :      */</a>
-<a name="47"><span class="lineNum">      47 </span><span class="lineCov">         38 :     constexpr bool operator==(const Cable &amp;rhs) const {</span></a>
-<a name="48"><span class="lineNum">      48 </span><span class="lineCov">         38 :         return this-&gt;zeroBasedCable == rhs.zeroBasedCable;</span></a>
+<a name="47"><span class="lineNum">      47 </span><span class="lineCov">         40 :     constexpr bool operator==(const Cable &amp;rhs) const {</span></a>
+<a name="48"><span class="lineNum">      48 </span><span class="lineCov">         40 :         return this-&gt;zeroBasedCable == rhs.zeroBasedCable;</span></a>
 <a name="49"><span class="lineNum">      49 </span>            :     }</a>
 <a name="50"><span class="lineNum">      50 </span>            : </a>
 <a name="51"><span class="lineNum">      51 </span>            :     /**</a>
@@ -178,34 +178,24 @@
 <a name="108"><span class="lineNum">     108 </span>            :     uint8_t zeroBasedCable : 4;</a>
 <a name="109"><span class="lineNum">     109 </span>            : };</a>
 <a name="110"><span class="lineNum">     110 </span>            : </a>
-<a name="111"><span class="lineNum">     111 </span>            : /** </a>
-<a name="112"><span class="lineNum">     112 </span>            :  * @brief   A literal operator to create MIDI Cables.</a>
-<a name="113"><span class="lineNum">     113 </span>            :  * </a>
-<a name="114"><span class="lineNum">     114 </span>            :  * @param   cb</a>
-<a name="115"><span class="lineNum">     115 </span>            :  *          The (one-based) MIDI cable (1 is the first cable).</a>
-<a name="116"><span class="lineNum">     116 </span>            :  */</a>
-<a name="117"><span class="lineNum">     117 </span>            : constexpr Cable operator&quot;&quot; _cb(unsigned long long cb) {</a>
-<a name="118"><span class="lineNum">     118 </span>            :     return Cable::createCable(cb);</a>
-<a name="119"><span class="lineNum">     119 </span>            : }</a>
-<a name="120"><span class="lineNum">     120 </span>            : </a>
-<a name="121"><span class="lineNum">     121 </span>            : constexpr Cable CABLE_1 = 1_cb;</a>
-<a name="122"><span class="lineNum">     122 </span>            : constexpr Cable CABLE_2 = 2_cb;</a>
-<a name="123"><span class="lineNum">     123 </span>            : constexpr Cable CABLE_3 = 3_cb;</a>
-<a name="124"><span class="lineNum">     124 </span>            : constexpr Cable CABLE_4 = 4_cb;</a>
-<a name="125"><span class="lineNum">     125 </span>            : constexpr Cable CABLE_5 = 5_cb;</a>
-<a name="126"><span class="lineNum">     126 </span>            : constexpr Cable CABLE_6 = 6_cb;</a>
-<a name="127"><span class="lineNum">     127 </span>            : constexpr Cable CABLE_7 = 7_cb;</a>
-<a name="128"><span class="lineNum">     128 </span>            : constexpr Cable CABLE_8 = 8_cb;</a>
-<a name="129"><span class="lineNum">     129 </span>            : constexpr Cable CABLE_9 = 9_cb;</a>
-<a name="130"><span class="lineNum">     130 </span>            : constexpr Cable CABLE_10 = 10_cb;</a>
-<a name="131"><span class="lineNum">     131 </span>            : constexpr Cable CABLE_11 = 11_cb;</a>
-<a name="132"><span class="lineNum">     132 </span>            : constexpr Cable CABLE_12 = 12_cb;</a>
-<a name="133"><span class="lineNum">     133 </span>            : constexpr Cable CABLE_13 = 13_cb;</a>
-<a name="134"><span class="lineNum">     134 </span>            : constexpr Cable CABLE_14 = 14_cb;</a>
-<a name="135"><span class="lineNum">     135 </span>            : constexpr Cable CABLE_15 = 15_cb;</a>
-<a name="136"><span class="lineNum">     136 </span>            : constexpr Cable CABLE_16 = 16_cb;</a>
-<a name="137"><span class="lineNum">     137 </span>            : </a>
-<a name="138"><span class="lineNum">     138 </span>            : END_CS_NAMESPACE</a>
+<a name="111"><span class="lineNum">     111 </span>            : constexpr Cable CABLE_1 = Cable::createCable(1);</a>
+<a name="112"><span class="lineNum">     112 </span>            : constexpr Cable CABLE_2 = Cable::createCable(2);</a>
+<a name="113"><span class="lineNum">     113 </span>            : constexpr Cable CABLE_3 = Cable::createCable(3);</a>
+<a name="114"><span class="lineNum">     114 </span>            : constexpr Cable CABLE_4 = Cable::createCable(4);</a>
+<a name="115"><span class="lineNum">     115 </span>            : constexpr Cable CABLE_5 = Cable::createCable(5);</a>
+<a name="116"><span class="lineNum">     116 </span>            : constexpr Cable CABLE_6 = Cable::createCable(6);</a>
+<a name="117"><span class="lineNum">     117 </span>            : constexpr Cable CABLE_7 = Cable::createCable(7);</a>
+<a name="118"><span class="lineNum">     118 </span>            : constexpr Cable CABLE_8 = Cable::createCable(8);</a>
+<a name="119"><span class="lineNum">     119 </span>            : constexpr Cable CABLE_9 = Cable::createCable(9);</a>
+<a name="120"><span class="lineNum">     120 </span>            : constexpr Cable CABLE_10 = Cable::createCable(10);</a>
+<a name="121"><span class="lineNum">     121 </span>            : constexpr Cable CABLE_11 = Cable::createCable(11);</a>
+<a name="122"><span class="lineNum">     122 </span>            : constexpr Cable CABLE_12 = Cable::createCable(12);</a>
+<a name="123"><span class="lineNum">     123 </span>            : constexpr Cable CABLE_13 = Cable::createCable(13);</a>
+<a name="124"><span class="lineNum">     124 </span>            : constexpr Cable CABLE_14 = Cable::createCable(14);</a>
+<a name="125"><span class="lineNum">     125 </span>            : constexpr Cable CABLE_15 = Cable::createCable(15);</a>
+<a name="126"><span class="lineNum">     126 </span>            : constexpr Cable CABLE_16 = Cable::createCable(16);</a>
+<a name="127"><span class="lineNum">     127 </span>            : </a>
+<a name="128"><span class="lineNum">     128 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

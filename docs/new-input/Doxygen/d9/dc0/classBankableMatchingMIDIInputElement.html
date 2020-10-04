@@ -105,8 +105,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0b6dba0f1fb8d2e6ed9ebfeeb7840456"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a0b6dba0f1fb8d2e6ed9ebfeeb7840456">MessageMatcherType</a> = typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a></td></tr>
-<tr class="separator:a0b6dba0f1fb8d2e6ed9ebfeeb7840456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa732e43eeb1ed1c03893ef1bfd0dce5c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> = typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a></td></tr>
+<tr class="separator:aa732e43eeb1ed1c03893ef1bfd0dce5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
 <tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a251ad9912950f29f49b3652eb836a8f9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html#a251ad9912950f29f49b3652eb836a8f9">~BankableMatchingMIDIInputElement</a> ()</td></tr>
 <tr class="memdesc:a251ad9912950f29f49b3652eb836a8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor: remove element from the bank.  <a href="../../d9/dc0/classBankableMatchingMIDIInputElement.html#a251ad9912950f29f49b3652eb836a8f9">More...</a><br /></td></tr>
 <tr class="separator:a251ad9912950f29f49b3652eb836a8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a44b7b3c480d77e9715bcde68bbafd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7a44b7b3c480d77e9715bcde68bbafd6">updateWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a> midimsg) override</td></tr>
-<tr class="memdesc:a7a44b7b3c480d77e9715bcde68bbafd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a new MIDI message and update the internal state.  <a href="../../d5/dae/classMatchingMIDIInputElement.html#a7a44b7b3c480d77e9715bcde68bbafd6">More...</a><br /></td></tr>
-<tr class="separator:a7a44b7b3c480d77e9715bcde68bbafd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">updateWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg) override</td></tr>
+<tr class="memdesc:a5573c8032407bdf439730a1cf7b6a5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a new MIDI message and update the internal state.  <a href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">More...</a><br /></td></tr>
+<tr class="separator:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d8b3295e878d374fe9af277f6983204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a> (typename Matcher::Result match)=0</td></tr>
 <tr class="separator:a7d8b3295e878d374fe9af277f6983204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a> ()</td></tr>
@@ -134,9 +134,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5d2ac2ab827cbcdba949cbabbd5c4dd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ad5d2ac2ab827cbcdba949cbabbd5c4dd">updateAllWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a> midimsg)</td></tr>
-<tr class="memdesc:ad5d2ac2ab827cbcdba949cbabbd5c4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#ad5d2ac2ab827cbcdba949cbabbd5c4dd">More...</a><br /></td></tr>
-<tr class="separator:ad5d2ac2ab827cbcdba949cbabbd5c4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e83e6344db343c94b3730d55ff029a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">updateAllWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg)</td></tr>
+<tr class="memdesc:af8e83e6344db343c94b3730d55ff029a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">More...</a><br /></td></tr>
+<tr class="separator:af8e83e6344db343c94b3730d55ff029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
 <tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">More...</a><br /></td></tr>
 <tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,10 +240,10 @@ Enabling and disabling updatables</h2></td></tr>
 class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00104">104</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00103">103</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a0b6dba0f1fb8d2e6ed9ebfeeb7840456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b6dba0f1fb8d2e6ed9ebfeeb7840456">&#9670;&nbsp;</a></span>MessageMatcherType</h2>
+<a id="aa732e43eeb1ed1c03893ef1bfd0dce5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa732e43eeb1ed1c03893ef1bfd0dce5c">&#9670;&nbsp;</a></span>MessageType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +252,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a> =  typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt;Type&gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a></td>
+          <td class="memname">using <a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> =  typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt;Type&gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a></td>
         </tr>
       </table>
   </td>
@@ -341,7 +341,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 
 <p>Create a new <a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html">BankableMatchingMIDIInputElement</a> object, and add it to the bank. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 
 <p>Destructor: remove element from the bank. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00121">121</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00120">120</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -398,12 +398,12 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a7a44b7b3c480d77e9715bcde68bbafd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a44b7b3c480d77e9715bcde68bbafd6">&#9670;&nbsp;</a></span>updateWith()</h2>
+<a id="a5573c8032407bdf439730a1cf7b6a5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5573c8032407bdf439730a1cf7b6a5e3">&#9670;&nbsp;</a></span>updateWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -414,7 +414,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
         <tr>
           <td class="memname">bool updateWith </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a>&#160;</td>
           <td class="paramname"><em>midimsg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -428,9 +428,9 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 
 <p>Receive a new MIDI message and update the internal state. </p>
 
-<p>Implements <a class="el" href="../../d9/db1/classMIDIInputElement.html#ae58fd61c2d0908075918fe9a945412df">MIDIInputElement&lt; Type &gt;</a>.</p>
+<p>Implements <a class="el" href="../../d9/db1/classMIDIInputElement.html#ae967727a5d21c3e07459f2cebdcc214c">MIDIInputElement&lt; Type &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -458,7 +458,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#ad253a3eefdc42722ead170e31e21a150">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#ad253a3eefdc42722ead170e31e21a150">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, and <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#ad253a3eefdc42722ead170e31e21a150">NoteCCKPLED&lt; Type, BankSize &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#ad253a3eefdc42722ead170e31e21a150">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#ad253a3eefdc42722ead170e31e21a150">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html#ad253a3eefdc42722ead170e31e21a150">NoteCCKPLEDBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#ad253a3eefdc42722ead170e31e21a150">NoteCCKPLED&lt; Type, BankSize &gt;</a>, <a class="el" href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#ad253a3eefdc42722ead170e31e21a150">VULEDs&lt; BankSize, NumLEDs &gt;</a>, <a class="el" href="../../df/d36/classMCU_1_1VULEDs.html#ad253a3eefdc42722ead170e31e21a150">VULEDs&lt; NumLEDs &gt;</a>, and <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#ad253a3eefdc42722ead170e31e21a150">VPotRingLEDs&lt; BankSize &gt;</a>.</p>
 
 </div>
 </div>
@@ -487,7 +487,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 
 <p>Initialize the input element. </p>
 
-<p>Reimplemented in <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../d7/d5f/classNoteCCKPRangeLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeLEDs&lt; Type, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d3/d99/classNoteCCKPLEDPWM.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDPWM&lt; Type &gt;</a>, <a class="el" href="../../dc/d7f/classBankable_1_1NoteCCKPValueBar.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPValueBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../de/d87/classNoteCCKPValueBar.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPValueBar&lt; Type, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLED&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d9/d55/classNoteCCKPLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLED&lt; Type &gt;</a>, <a class="el" href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VULEDs&lt; BankSize, NumLEDs &gt;</a>, <a class="el" href="../../df/d36/classMCU_1_1VULEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VULEDs&lt; NumLEDs &gt;</a>, <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VPotRingLEDs&lt; BankSize &gt;</a>, <a class="el" href="../../d6/d0d/classMCU_1_1VPotRingLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VPotRingLEDs</a>, and <a class="el" href="../../d3/d98/classNoteCCKPRangeFastLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericProgramChangeSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../d7/d5f/classNoteCCKPRangeLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeLEDs&lt; Type, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d3/d99/classNoteCCKPLEDPWM.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDPWM&lt; Type &gt;</a>, <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLEDBar&lt; Type, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLED&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d9/d55/classNoteCCKPLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPLED&lt; Type &gt;</a>, <a class="el" href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VULEDs&lt; BankSize, NumLEDs &gt;</a>, <a class="el" href="../../df/d36/classMCU_1_1VULEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VULEDs&lt; NumLEDs &gt;</a>, <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VPotRingLEDs&lt; BankSize &gt;</a>, <a class="el" href="../../d6/d0d/classMCU_1_1VPotRingLEDs.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">VPotRingLEDs</a>, and <a class="el" href="../../d3/d98/classNoteCCKPRangeFastLED.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
@@ -518,7 +518,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 
 <p>Reset the input element to its initial state. </p>
 
-<p>Reimplemented in <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#aebfcdbbd0fe4efbff10b180be50ca6bc">GenericProgramChangeSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#aebfcdbbd0fe4efbff10b180be50ca6bc">GenericProgramChangeSelector&lt; N &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#aebfcdbbd0fe4efbff10b180be50ca6bc">GenericProgramChangeSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d1/d78/classBankable_1_1PBValue.html#aebfcdbbd0fe4efbff10b180be50ca6bc">PBValue&lt; BankSize &gt;</a>, <a class="el" href="../../d2/d47/classPBValue.html#aebfcdbbd0fe4efbff10b180be50ca6bc">PBValue</a>, <a class="el" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPValue&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d6/d45/classNoteCCKPValue.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPValue&lt; Type &gt;</a>, <a class="el" href="../../d9/dd1/classBankable_1_1NoteCCKPRange.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRange&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../da/def/classNoteCCKPRange.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRange&lt; Type, RangeLen &gt;</a>, <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VU&lt; BankSize &gt;</a>, <a class="el" href="../../d8/d4c/classMCU_1_1VU.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VU</a>, <a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VPotRing&lt; BankSize &gt;</a>, <a class="el" href="../../d5/ddb/classMCU_1_1VPotRing.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VPotRing</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aebfcdbbd0fe4efbff10b180be50ca6bc">SevenSegmentDisplay&lt; LENGTH &gt;</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aebfcdbbd0fe4efbff10b180be50ca6bc">SevenSegmentDisplay&lt; AssignmentDisplayLength &gt;</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aebfcdbbd0fe4efbff10b180be50ca6bc">SevenSegmentDisplay&lt; TimeDisplayLength &gt;</a>, <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../d7/d5f/classNoteCCKPRangeLEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRangeLEDs&lt; Type, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d3/d99/classNoteCCKPLEDPWM.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLEDPWM&lt; Type &gt;</a>, <a class="el" href="../../dc/d7f/classBankable_1_1NoteCCKPValueBar.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPValueBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../de/d87/classNoteCCKPValueBar.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPValueBar&lt; Type, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLED&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d9/d55/classNoteCCKPLED.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLED&lt; Type &gt;</a>, <a class="el" href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VULEDs&lt; BankSize, NumLEDs &gt;</a>, <a class="el" href="../../df/d36/classMCU_1_1VULEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VULEDs&lt; NumLEDs &gt;</a>, <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VPotRingLEDs&lt; BankSize &gt;</a>, <a class="el" href="../../d6/d0d/classMCU_1_1VPotRingLEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VPotRingLEDs</a>, and <a class="el" href="../../d3/d98/classNoteCCKPRangeFastLED.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#aebfcdbbd0fe4efbff10b180be50ca6bc">GenericProgramChangeSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#aebfcdbbd0fe4efbff10b180be50ca6bc">GenericProgramChangeSelector&lt; N &gt;</a>, <a class="el" href="../../d1/d0b/classGenericProgramChangeSelector.html#aebfcdbbd0fe4efbff10b180be50ca6bc">GenericProgramChangeSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d1/d78/classBankable_1_1PBValue.html#aebfcdbbd0fe4efbff10b180be50ca6bc">PBValue&lt; BankSize &gt;</a>, <a class="el" href="../../d2/d47/classPBValue.html#aebfcdbbd0fe4efbff10b180be50ca6bc">PBValue</a>, <a class="el" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPValue&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d6/d45/classNoteCCKPValue.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPValue&lt; Type &gt;</a>, <a class="el" href="../../d9/dd1/classBankable_1_1NoteCCKPRange.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRange&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../da/def/classNoteCCKPRange.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRange&lt; Type, RangeLen &gt;</a>, <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VU&lt; BankSize &gt;</a>, <a class="el" href="../../d8/d4c/classMCU_1_1VU.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VU</a>, <a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VPotRing&lt; BankSize &gt;</a>, <a class="el" href="../../d5/ddb/classMCU_1_1VPotRing.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VPotRing</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aebfcdbbd0fe4efbff10b180be50ca6bc">SevenSegmentDisplay&lt; LENGTH &gt;</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aebfcdbbd0fe4efbff10b180be50ca6bc">SevenSegmentDisplay&lt; AssignmentDisplayLength &gt;</a>, <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aebfcdbbd0fe4efbff10b180be50ca6bc">SevenSegmentDisplay&lt; TimeDisplayLength &gt;</a>, <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../d7/d5f/classNoteCCKPRangeLEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRangeLEDs&lt; Type, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d3/d99/classNoteCCKPLEDPWM.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLEDPWM&lt; Type &gt;</a>, <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLEDBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLEDBar&lt; Type, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLED&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d9/d55/classNoteCCKPLED.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPLED&lt; Type &gt;</a>, <a class="el" href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VULEDs&lt; BankSize, NumLEDs &gt;</a>, <a class="el" href="../../df/d36/classMCU_1_1VULEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VULEDs&lt; NumLEDs &gt;</a>, <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VPotRingLEDs&lt; BankSize &gt;</a>, <a class="el" href="../../d6/d0d/classMCU_1_1VPotRingLEDs.html#aebfcdbbd0fe4efbff10b180be50ca6bc">VPotRingLEDs</a>, and <a class="el" href="../../d3/d98/classNoteCCKPRangeFastLED.html#aebfcdbbd0fe4efbff10b180be50ca6bc">NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00038">38</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
@@ -555,8 +555,8 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 
 </div>
 </div>
-<a id="ad5d2ac2ab827cbcdba949cbabbd5c4dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5d2ac2ab827cbcdba949cbabbd5c4dd">&#9670;&nbsp;</a></span>updateAllWith()</h2>
+<a id="af8e83e6344db343c94b3730d55ff029a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e83e6344db343c94b3730d55ff029a">&#9670;&nbsp;</a></span>updateAllWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,7 +567,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
         <tr>
           <td class="memname">static bool updateAllWith </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a4d9e4cbd4ebf7c10ef91f034bc41cfde">MessageMatcherType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a>&#160;</td>
           <td class="paramname"><em>midimsg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1211,7 +1211,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 <p>Think of an LED that indicates whether a track is muted or not. If this LED is bankable, let's say with 4 tracks per bank, 2 banks, and a base address of 3, then this LED object keeps the state of tracks 3 and 7. When the bank setting is 0, the LED displays the state of track 3, when the bank setting is 1, the LED displays the state of track 7. <br  />
  To know when to update the LED, this callback is used. </p>
 
-<p>Reimplemented in <a class="el" href="../../d1/d78/classBankable_1_1PBValue.html#a6ac6640153d56b6858943d51607973d4">PBValue&lt; BankSize &gt;</a>, <a class="el" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPValue&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d9/dd1/classBankable_1_1NoteCCKPRange.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPRange&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html#a6ac6640153d56b6858943d51607973d4">VU&lt; BankSize &gt;</a>, <a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a6ac6640153d56b6858943d51607973d4">VPotRing&lt; BankSize &gt;</a>, <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../dc/d7f/classBankable_1_1NoteCCKPValueBar.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPValueBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPLED&lt; Type, BankSize &gt;</a>, and <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#a6ac6640153d56b6858943d51607973d4">VPotRingLEDs&lt; BankSize &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d1/d78/classBankable_1_1PBValue.html#a6ac6640153d56b6858943d51607973d4">PBValue&lt; BankSize &gt;</a>, <a class="el" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPValue&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d9/dd1/classBankable_1_1NoteCCKPRange.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPRange&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html#a6ac6640153d56b6858943d51607973d4">VU&lt; BankSize &gt;</a>, <a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a6ac6640153d56b6858943d51607973d4">VPotRing&lt; BankSize &gt;</a>, <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPRangeLEDs&lt; Type, BankSize, RangeLen &gt;</a>, <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPLEDPWM&lt; Type, BankSize &gt;</a>, <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPLEDBar&lt; Type, BankSize, NumLEDs &gt;</a>, <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html#a6ac6640153d56b6858943d51607973d4">NoteCCKPLED&lt; Type, BankSize &gt;</a>, <a class="el" href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#a6ac6640153d56b6858943d51607973d4">VULEDs&lt; BankSize, NumLEDs &gt;</a>, and <a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#a6ac6640153d56b6858943d51607973d4">VPotRingLEDs&lt; BankSize &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d57/Bank_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d4/d57/Bank_8hpp_source.html">Bank.hpp</a>.</p>
 
@@ -1238,7 +1238,7 @@ class BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00098">98</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00097">97</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>

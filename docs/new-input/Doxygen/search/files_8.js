@@ -18,6 +18,5 @@ var searchData=
   ['intervals_2ecpp_3055',['Intervals.cpp',['../da/dc6/Intervals_8cpp.html',1,'']]],
   ['intervals_2ehpp_3056',['Intervals.hpp',['../d1/d12/Intervals_8hpp.html',1,'']]],
   ['isrs_2ddecl_2eipp_3057',['ISRs-decl.ipp',['../d4/df1/ISRs-decl_8ipp.html',1,'']]],
-  ['isrs_2ddef_2eipp_3058',['ISRs-def.ipp',['../d0/db6/ISRs-def_8ipp.html',1,'']]],
-  ['issue_5ftemplate_2emd_3059',['issue_template.md',['../d9/dd3/issue__template_8md.html',1,'']]]
+  ['isrs_2ddef_2eipp_3058',['ISRs-def.ipp',['../d0/db6/ISRs-def_8ipp.html',1,'']]]
 ];

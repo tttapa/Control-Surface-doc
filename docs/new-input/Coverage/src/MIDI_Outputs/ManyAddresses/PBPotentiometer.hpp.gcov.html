@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/MIDI_Outputs/ManyAddresses/PBPotentiometer.hpp</title>
+  <title>LCOV - 78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10 - src/MIDI_Outputs/ManyAddresses/PBPotentiometer.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
+            <td class="headerValue">78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">4</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-08 19:59:05</td>
+            <td class="headerValue">2020-10-05 01:03:31</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -119,7 +119,7 @@
 <a name="49"><span class="lineNum">      49 </span>            :      *          Cable Numbers [CABLE_1, CABLE_16].</a>
 <a name="50"><span class="lineNum">      50 </span>            :      */</a>
 <a name="51"><span class="lineNum">      51 </span><span class="lineCov">          1 :     PBPotentiometer(const Bank&lt;NumBanks&gt; &amp;bank, pin_t analogPin,</span></a>
-<a name="52"><span class="lineNum">      52 </span>            :                     const Array&lt;MIDIChannelCN, NumBanks&gt; &amp;addresses)</a>
+<a name="52"><span class="lineNum">      52 </span>            :                     const Array&lt;MIDIChannelCable, NumBanks&gt; &amp;addresses)</a>
 <a name="53"><span class="lineNum">      53 </span><span class="lineCov">          1 :         : MIDIFilteredAnalog&lt;ManyAddresses&lt;NumBanks&gt;, PitchBendSender&lt;10&gt;&gt;{</span></a>
 <a name="54"><span class="lineNum">      54 </span><span class="lineCov">          2 :               {bank, AH::copyAs&lt;MIDIAddress&gt;(addresses)}, analogPin, {}} {}</span></a>
 <a name="55"><span class="lineNum">      55 </span>            : };</a>
