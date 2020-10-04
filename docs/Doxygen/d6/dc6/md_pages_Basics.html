@@ -92,7 +92,7 @@ Address fields</h2>
 <ul>
 <li>The actual address, like the MIDI note number or the MIDI Control Change controller number, a number between 0 and 127</li>
 <li>The MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a>, between channel 1 and channel 16</li>
-<li>The MIDI USB <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> Number, a number between 0 and 15</li>
+<li>The MIDI USB <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> Number, between cable 1 and cable 16</li>
 </ul>
 <p>The MIDI USB <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> Number is only used on boards that have support for multiple virtual MIDI cables over a single USB connection. As far as I know, only Teensies support this. USB-capable boards that use the MIDIUSB library do not support multiple MIDI cables. <br  />
  Serial (5-pin DIN) MIDI and MIDI over Bluetooth LE have no notion of cables.</p>
@@ -102,16 +102,16 @@ Creating a MIDI address variable</h2>
  This is the most important one:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>(<span class="keywordtype">int</span> address, </div>
 <div class="line">            <a class="code" href="../../d2/d48/classChannel.html">Channel</a> channel = <a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>,</div>
-<div class="line">            <span class="keywordtype">int</span> cableNumber = 0x0)</div>
+<div class="line">            <a class="code" href="../../d2/d75/classCable.html">Cable</a> cableNumber = <a class="code" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</div>
 </div><!-- fragment --><p>It allows you to specify all three of the fields explained above. The channel and the cable number have default values, so these parameters are optional. If you don't specify the channel and the cable number, it will use the first channel on the first cable.</p>
-<p>For example: </p><div class="fragment"><div class="line"><span class="comment">// Address 16 on channel 1 and cable 0:</span></div>
+<p>For example: </p><div class="fragment"><div class="line"><span class="comment">// Address 16 on channel 1 and cable 1:</span></div>
 <div class="line"><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = 16;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Address 42 on channel 2 and cable 0:</span></div>
+<div class="line"><span class="comment">// Address 42 on channel 2 and cable 1:</span></div>
 <div class="line"><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = {42, <a class="code" href="../../d7/d42/Channel_8hpp.html#a120503340a038407793ee160e549dc54">CHANNEL_2</a>};</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Address 111 on channel 2 and cable 1:</span></div>
-<div class="line"><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = {111, <a class="code" href="../../d7/d42/Channel_8hpp.html#a120503340a038407793ee160e549dc54">CHANNEL_2</a>, 1};</div>
+<div class="line"><span class="comment">// Address 111 on channel 2 and cable 3:</span></div>
+<div class="line"><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = {111, <a class="code" href="../../d7/d42/Channel_8hpp.html#a120503340a038407793ee160e549dc54">CHANNEL_2</a>, <a class="code" href="../../d2/dbc/Cable_8hpp.html#a6a8d45d9352f45142dbd2b2d2812b140">CABLE_3</a>};</div>
 </div><!-- fragment --><p>If you specify just a single argument, as in the first example, you don't have to use curly braces (<code>{}</code>). If you specify more than one argument, you need curly braces.</p>
 <h3>MIDI Control Change constants</h3>
 <p>Instead of specifying the controller number (address) as a number, you can also use the predefined constants in the <a class="el" href="../../d4/dbe/namespaceMIDI__CC.html">MIDI_CC</a> namespace:</p>
@@ -125,27 +125,30 @@ Creating a MIDI address variable</h2>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md283"></a>
 Passing MIDI Addresses to MIDI Elements</h2>
 <p>Almost all <a class="el" href="../../d7/dcd/group__MIDIOutputElements.html">MIDI Output Elements</a> and <a class="el" href="../../df/d8b/group__MIDIInputElements.html">MIDI Input Elements</a> take a <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> as a parameter. Initializing the address is very similar to the initialization introduced in the previous section: if you only want to specify the address, just pass it as a parameter, if you want to specify the channel or cable number as well, add a pair of curly braces around it.</p>
-<p>For example: </p><div class="fragment"><div class="line"><span class="comment">// Controller 16 on channel 1 and cable 0:</span></div>
+<p>For example: </p><div class="fragment"><div class="line"><span class="comment">// Controller 16 on channel 1 and cable 1:</span></div>
 <div class="line"><a class="code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> myPotentiometer = {</div>
 <div class="line">    A0, <span class="comment">// pin number</span></div>
 <div class="line">    16, <span class="comment">// MIDI address</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Controller 42 on channel 2 and cable 0:</span></div>
+<div class="line"><span class="comment">// Controller 42 on channel 2 and cable 1:</span></div>
 <div class="line"><a class="code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> myPotentiometer = {</div>
 <div class="line">    A0,              <span class="comment">// pin number</span></div>
 <div class="line">    {42, <a class="code" href="../../d7/d42/Channel_8hpp.html#a120503340a038407793ee160e549dc54">CHANNEL_2</a>}, <span class="comment">// MIDI address</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Controller 111 on channel 2 and cable 1:</span></div>
+<div class="line"><span class="comment">// Controller 111 on channel 2 and cable 3:</span></div>
 <div class="line"><a class="code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> myPotentiometer = {</div>
-<div class="line">    A0,                  <span class="comment">// pin number</span></div>
-<div class="line">    {111, <a class="code" href="../../d7/d42/Channel_8hpp.html#a120503340a038407793ee160e549dc54">CHANNEL_2</a>, 1}, <span class="comment">// MIDI address</span></div>
+<div class="line">    A0,                        <span class="comment">// pin number</span></div>
+<div class="line">    {111, <a class="code" href="../../d7/d42/Channel_8hpp.html#a120503340a038407793ee160e549dc54">CHANNEL_2</a>, <a class="code" href="../../d2/dbc/Cable_8hpp.html#a6a8d45d9352f45142dbd2b2d2812b140">CABLE_3</a>}, <span class="comment">// MIDI address</span></div>
 <div class="line">};</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <div class="ttc" id="aclassChannel_html"><div class="ttname"><a href="../../d2/d48/classChannel.html">Channel</a></div><div class="ttdoc">A type-safe class for MIDI channels.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00013">Channel.hpp:13</a></div></div>
+<div class="ttc" id="aCable_8hpp_html_a8e81dda7ce1ca5f85588ab5bb0dcb2cd"><div class="ttname"><a href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a></div><div class="ttdeci">constexpr Cable CABLE_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbc/Cable_8hpp_source.html#l00111">Cable.hpp:111</a></div></div>
 <div class="ttc" id="aclassMIDIAddress_html"><div class="ttname"><a href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></div><div class="ttdoc">A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd6/MIDIAddress_8hpp_source.html#l00091">MIDIAddress.hpp:91</a></div></div>
+<div class="ttc" id="aclassCable_html"><div class="ttname"><a href="../../d2/d75/classCable.html">Cable</a></div><div class="ttdoc">A type-safe class for MIDI USB Cable numbers.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbc/Cable_8hpp_source.html#l00013">Cable.hpp:13</a></div></div>
+<div class="ttc" id="aCable_8hpp_html_a6a8d45d9352f45142dbd2b2d2812b140"><div class="ttname"><a href="../../d2/dbc/Cable_8hpp.html#a6a8d45d9352f45142dbd2b2d2812b140">CABLE_3</a></div><div class="ttdeci">constexpr Cable CABLE_3</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbc/Cable_8hpp_source.html#l00113">Cable.hpp:113</a></div></div>
 <div class="ttc" id="aChannel_8hpp_html_ae585d21b73ab00128a688bc2ea5cb9be"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#ae585d21b73ab00128a688bc2ea5cb9be">CHANNEL_16</a></div><div class="ttdeci">constexpr Channel CHANNEL_16</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00126">Channel.hpp:126</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_a559f01ec7251fdc9c5a5bc0e26b97372"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#a559f01ec7251fdc9c5a5bc0e26b97372">MIDI_Notes::note</a></div><div class="ttdeci">constexpr int8_t note(int8_t note, int8_t numOctave)</div><div class="ttdoc">Get the MIDI note in the given octave.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00035">Notes.hpp:35</a></div></div>
 <div class="ttc" id="anamespaceMIDI__CC_html_a6eb9900d522be13f07efce201817046d"><div class="ttname"><a href="../../d4/dbe/namespaceMIDI__CC.html#a6eb9900d522be13f07efce201817046d">MIDI_CC::General_Purpose_Controller_1</a></div><div class="ttdeci">constexpr uint8_t General_Purpose_Controller_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d43/Control__Change_8hpp_source.html#l00032">Control_Change.hpp:32</a></div></div>
