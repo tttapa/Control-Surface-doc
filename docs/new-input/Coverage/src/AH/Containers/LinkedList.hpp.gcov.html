@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10 - src/AH/Containers/LinkedList.hpp</title>
+  <title>LCOV - 23235c3ca6d832e0119e7e30eb67ea430ff1bb49 - src/AH/Containers/LinkedList.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">78f7f1c0cfe002d1ee9a7a30213d23102c7a1d10</td>
+            <td class="headerValue">23235c3ca6d832e0119e7e30eb67ea430ff1bb49</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">99</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-05 01:03:31</td>
+            <td class="headerValue">2020-10-05 17:31:50</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">185</td>
@@ -272,13 +272,13 @@
 <a name="202"><span class="lineNum">     202 </span>            :      */</a>
 <a name="203"><span class="lineNum">     203 </span><span class="lineCov">        357 :     void remove(Node *node) {</span></a>
 <a name="204"><span class="lineNum">     204 </span><span class="lineCov">        357 :         if (node-&gt;previous != nullptr)</span></a>
-<a name="205"><span class="lineNum">     205 </span><span class="lineCov">         57 :             node-&gt;previous-&gt;next = node-&gt;next;</span></a>
+<a name="205"><span class="lineNum">     205 </span><span class="lineCov">         58 :             node-&gt;previous-&gt;next = node-&gt;next;</span></a>
 <a name="206"><span class="lineNum">     206 </span><span class="lineCov">        357 :         if (node == last)</span></a>
-<a name="207"><span class="lineNum">     207 </span><span class="lineCov">        327 :             last = node-&gt;previous;</span></a>
+<a name="207"><span class="lineNum">     207 </span><span class="lineCov">        328 :             last = node-&gt;previous;</span></a>
 <a name="208"><span class="lineNum">     208 </span><span class="lineCov">        357 :         if (node-&gt;next != nullptr)</span></a>
-<a name="209"><span class="lineNum">     209 </span><span class="lineCov">         30 :             node-&gt;next-&gt;previous = node-&gt;previous;</span></a>
+<a name="209"><span class="lineNum">     209 </span><span class="lineCov">         29 :             node-&gt;next-&gt;previous = node-&gt;previous;</span></a>
 <a name="210"><span class="lineNum">     210 </span><span class="lineCov">        357 :         if (node == first)</span></a>
-<a name="211"><span class="lineNum">     211 </span><span class="lineCov">        300 :             first = node-&gt;next;</span></a>
+<a name="211"><span class="lineNum">     211 </span><span class="lineCov">        299 :             first = node-&gt;next;</span></a>
 <a name="212"><span class="lineNum">     212 </span><span class="lineCov">        357 :         node-&gt;previous = nullptr;</span></a>
 <a name="213"><span class="lineNum">     213 </span><span class="lineCov">        357 :         node-&gt;next = nullptr;</span></a>
 <a name="214"><span class="lineNum">     214 </span><span class="lineCov">        357 :     }</span></a>
@@ -305,22 +305,22 @@
 <a name="235"><span class="lineNum">     235 </span><span class="lineCov">    1048647 :     void moveDown(Node *node) {</span></a>
 <a name="236"><span class="lineNum">     236 </span><span class="lineCov">    1048647 :         Node *nodeB = node-&gt;previous;</span></a>
 <a name="237"><span class="lineNum">     237 </span><span class="lineCov">    1048647 :         if (nodeB == nullptr) // Can't move first node further down</span></a>
-<a name="238"><span class="lineNum">     238 </span><span class="lineCov">      66230 :             return;</span></a>
-<a name="239"><span class="lineNum">     239 </span><span class="lineCov">     982417 :         Node *nodeA = nodeB-&gt;previous;</span></a>
-<a name="240"><span class="lineNum">     240 </span><span class="lineCov">     982417 :         Node *nodeD = node-&gt;next;</span></a>
+<a name="238"><span class="lineNum">     238 </span><span class="lineCov">      65241 :             return;</span></a>
+<a name="239"><span class="lineNum">     239 </span><span class="lineCov">     983406 :         Node *nodeA = nodeB-&gt;previous;</span></a>
+<a name="240"><span class="lineNum">     240 </span><span class="lineCov">     983406 :         Node *nodeD = node-&gt;next;</span></a>
 <a name="241"><span class="lineNum">     241 </span>            : </a>
-<a name="242"><span class="lineNum">     242 </span><span class="lineCov">     982417 :         if (nodeA != nullptr)</span></a>
-<a name="243"><span class="lineNum">     243 </span><span class="lineCov">     916687 :             nodeA-&gt;next = node;</span></a>
+<a name="242"><span class="lineNum">     242 </span><span class="lineCov">     983406 :         if (nodeA != nullptr)</span></a>
+<a name="243"><span class="lineNum">     243 </span><span class="lineCov">     917805 :             nodeA-&gt;next = node;</span></a>
 <a name="244"><span class="lineNum">     244 </span>            :         else</a>
-<a name="245"><span class="lineNum">     245 </span><span class="lineCov">      65730 :             first = node;</span></a>
-<a name="246"><span class="lineNum">     246 </span><span class="lineCov">     982417 :         nodeB-&gt;next = nodeD;</span></a>
-<a name="247"><span class="lineNum">     247 </span><span class="lineCov">     982417 :         nodeB-&gt;previous = node;</span></a>
-<a name="248"><span class="lineNum">     248 </span><span class="lineCov">     982417 :         node-&gt;next = nodeB;</span></a>
-<a name="249"><span class="lineNum">     249 </span><span class="lineCov">     982417 :         node-&gt;previous = nodeA;</span></a>
-<a name="250"><span class="lineNum">     250 </span><span class="lineCov">     982417 :         if (nodeD != nullptr)</span></a>
-<a name="251"><span class="lineNum">     251 </span><span class="lineCov">     916802 :             nodeD-&gt;previous = nodeB;</span></a>
+<a name="245"><span class="lineNum">     245 </span><span class="lineCov">      65601 :             first = node;</span></a>
+<a name="246"><span class="lineNum">     246 </span><span class="lineCov">     983406 :         nodeB-&gt;next = nodeD;</span></a>
+<a name="247"><span class="lineNum">     247 </span><span class="lineCov">     983406 :         nodeB-&gt;previous = node;</span></a>
+<a name="248"><span class="lineNum">     248 </span><span class="lineCov">     983406 :         node-&gt;next = nodeB;</span></a>
+<a name="249"><span class="lineNum">     249 </span><span class="lineCov">     983406 :         node-&gt;previous = nodeA;</span></a>
+<a name="250"><span class="lineNum">     250 </span><span class="lineCov">     983406 :         if (nodeD != nullptr)</span></a>
+<a name="251"><span class="lineNum">     251 </span><span class="lineCov">     917986 :             nodeD-&gt;previous = nodeB;</span></a>
 <a name="252"><span class="lineNum">     252 </span>            :         else</a>
-<a name="253"><span class="lineNum">     253 </span><span class="lineCov">      65615 :             last = nodeB;</span></a>
+<a name="253"><span class="lineNum">     253 </span><span class="lineCov">      65420 :             last = nodeB;</span></a>
 <a name="254"><span class="lineNum">     254 </span><span class="lineCov">    1048647 :     }</span></a>
 <a name="255"><span class="lineNum">     255 </span>            : </a>
 <a name="256"><span class="lineNum">     256 </span>            :     /**</a>
@@ -353,7 +353,7 @@
 <a name="283"><span class="lineNum">     283 </span>            :      */</a>
 <a name="284"><span class="lineNum">     284 </span><span class="lineCov">        364 :     bool couldContain(const Node *node) const {</span></a>
 <a name="285"><span class="lineNum">     285 </span><span class="lineCov">        728 :         return node &amp;&amp; (node == first || node-&gt;next != nullptr ||</span></a>
-<a name="286"><span class="lineNum">     286 </span><span class="lineCov">         70 :                         node-&gt;previous != nullptr);</span></a>
+<a name="286"><span class="lineNum">     286 </span><span class="lineCov">         71 :                         node-&gt;previous != nullptr);</span></a>
 <a name="287"><span class="lineNum">     287 </span>            :     }</a>
 <a name="288"><span class="lineNum">     288 </span>            : </a>
 <a name="289"><span class="lineNum">     289 </span>            :     /// @copydoc couldContain(const Node *) const</a>

@@ -127,12 +127,14 @@ Behavior</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  Serial.begin(115200);</div>
-<div class="line">  <span class="keywordflow">while</span> (!Serial)</div>
-<div class="line">    ;</div>
+<div class="line">  <span class="keywordflow">while</span> (!Serial);</div>
 <div class="line">  <span class="comment">// Select the correct ADC resolution</span></div>
 <div class="line">  FilteredAnalog&lt;&gt;::setupADC();</div>
 <div class="line">  <span class="comment">// If you want, you can add mapping functions to invert the input, for example</span></div>
 <div class="line">  analog.invert();</div>
+<div class="line">  <span class="comment">// Initialize the filter to whatever the value on the input is right now</span></div>
+<div class="line">  <span class="comment">// (otherwise, the filter is initialized to zero and you get transients)</span></div>
+<div class="line">  analog.resetToCurrentValue();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
