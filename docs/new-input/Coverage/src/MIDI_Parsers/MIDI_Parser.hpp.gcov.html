@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2577c6123c35288e7ba5328db4b9bc5eff58c0b1 - src/MIDI_Parsers/MIDI_Parser.hpp</title>
+  <title>LCOV - 0fef7e17a3eb9ae207a2bbbadba1575e6947e8ed - src/MIDI_Parsers/MIDI_Parser.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2577c6123c35288e7ba5328db4b9bc5eff58c0b1</td>
+            <td class="headerValue">0fef7e17a3eb9ae207a2bbbadba1575e6947e8ed</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">9</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-05 18:00:45</td>
+            <td class="headerValue">2020-10-06 02:56:32</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">7</td>
@@ -89,7 +89,7 @@
 <a name="19"><span class="lineNum">      19 </span>            :     REALTIME_MESSAGE = 3, ///&lt; A MIDI Real-Time message was received.</a>
 <a name="20"><span class="lineNum">      20 </span>            : };</a>
 <a name="21"><span class="lineNum">      21 </span>            : </a>
-<a name="22"><span class="lineNum">      22 </span><span class="lineCov">        192 : class MIDI_Parser {</span></a>
+<a name="22"><span class="lineNum">      22 </span><span class="lineCov">        198 : class MIDI_Parser {</span></a>
 <a name="23"><span class="lineNum">      23 </span>            :   public:</a>
 <a name="24"><span class="lineNum">      24 </span>            :     /** Get the latest MIDI channel message. */</a>
 <a name="25"><span class="lineNum">      25 </span><span class="lineCov">         49 :     ChannelMessage getChannelMessage() { return midimsg; }</span></a>
@@ -107,8 +107,8 @@
 <a name="37"><span class="lineNum">      37 </span><span class="lineCov">         24 :     size_t getSysExLength() const { return getSysExMessage().length; }</span></a>
 <a name="38"><span class="lineNum">      38 </span>            : </a>
 <a name="39"><span class="lineNum">      39 </span>            :   protected:</a>
-<a name="40"><span class="lineNum">      40 </span><span class="lineCov">         96 :     ChannelMessage midimsg = {0xFF, 0x00, 0x00, 0x0};</span></a>
-<a name="41"><span class="lineNum">      41 </span><span class="lineCov">         96 :     RealTimeMessage rtmsg = {0xFF, 0x0};</span></a>
+<a name="40"><span class="lineNum">      40 </span><span class="lineCov">         99 :     ChannelMessage midimsg = {0xFF, 0x00, 0x00, 0x0};</span></a>
+<a name="41"><span class="lineNum">      41 </span><span class="lineCov">         99 :     RealTimeMessage rtmsg = {0xFF, 0x0};</span></a>
 <a name="42"><span class="lineNum">      42 </span>            : </a>
 <a name="43"><span class="lineNum">      43 </span>            :   public:</a>
 <a name="44"><span class="lineNum">      44 </span>            :     /** Check if the given byte is a MIDI header byte. */</a>

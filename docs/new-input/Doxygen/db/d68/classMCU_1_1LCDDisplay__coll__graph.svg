@@ -13,22 +13,23 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Displays the text of the Mackie Control Universal LCD screen for a single track.">
-<polygon fill="#bfbfbf" stroke="black" points="683,-66.5 683,-233.5 792,-233.5 792,-66.5 683,-66.5"/>
-<text text-anchor="middle" x="737.5" y="-221.5" font-family="Helvetica,sans-Serif" font-size="10.00">LCDDisplay</text>
-<polyline fill="none" stroke="black" points="683,-214.5 792,-214.5 "/>
-<text text-anchor="start" x="691" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; offset</text>
-<text text-anchor="start" x="691" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; line</text>
-<text text-anchor="start" x="691" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; x</text>
-<text text-anchor="start" x="691" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; y</text>
-<text text-anchor="start" x="691" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; size</text>
-<text text-anchor="start" x="691" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; color</text>
-<polyline fill="none" stroke="black" points="683,-140.5 792,-140.5 "/>
-<text text-anchor="start" x="691" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LCDDisplay()</text>
-<text text-anchor="start" x="691" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LCDDisplay()</text>
-<text text-anchor="start" x="691" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ draw()</text>
-<text text-anchor="start" x="691" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getDirty()</text>
-<text text-anchor="start" x="691" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ separateTracks()</text>
-<text text-anchor="start" x="691" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setLine()</text>
+<polygon fill="#bfbfbf" stroke="black" points="683,-61 683,-239 792,-239 792,-61 683,-61"/>
+<text text-anchor="middle" x="737.5" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">LCDDisplay</text>
+<polyline fill="none" stroke="black" points="683,-220 792,-220 "/>
+<text text-anchor="start" x="691" y="-208" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; track</text>
+<text text-anchor="start" x="691" y="-197" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; line</text>
+<text text-anchor="start" x="691" y="-186" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; x</text>
+<text text-anchor="start" x="691" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; y</text>
+<text text-anchor="start" x="691" y="-164" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; size</text>
+<text text-anchor="start" x="691" y="-153" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; color</text>
+<polyline fill="none" stroke="black" points="683,-146 792,-146 "/>
+<text text-anchor="start" x="691" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00">+ LCDDisplay()</text>
+<text text-anchor="start" x="691" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00">+ LCDDisplay()</text>
+<text text-anchor="start" x="691" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">+ LCDDisplay()</text>
+<text text-anchor="start" x="691" y="-101" font-family="Helvetica,sans-Serif" font-size="10.00">+ draw()</text>
+<text text-anchor="start" x="691" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">+ getDirty()</text>
+<text text-anchor="start" x="691" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">+ separateTracks()</text>
+<text text-anchor="start" x="691" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ setLine()</text>
 </a>
 </g>
 </g>
@@ -293,8 +294,8 @@
 <!-- Node9&#45;&gt;Node1 -->
 <g id="edge12" class="edge">
 <title>Node9&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M737.5,-451.77C737.5,-396.79 737.5,-311.36 737.5,-245.57"/>
-<polygon fill="none" stroke="#404040" points="737.5,-245.53 733.5,-239.53 737.5,-233.53 741.5,-239.53 737.5,-245.53"/>
+<path fill="none" stroke="#404040" d="M737.5,-451.77C737.5,-398.47 737.5,-316.53 737.5,-251.64"/>
+<polygon fill="none" stroke="#404040" points="737.5,-251.31 733.5,-245.31 737.5,-239.31 741.5,-245.31 737.5,-251.31"/>
 <text text-anchor="middle" x="748.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;lcd</text>
 </g>
 <!-- Node10 -->
@@ -528,8 +529,8 @@
 <!-- Node17&#45;&gt;Node1 -->
 <g id="edge20" class="edge">
 <title>Node17&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M849.86,-451.77C829.28,-396.68 797.28,-311.01 772.68,-245.16"/>
-<polygon fill="none" stroke="#404040" points="772.53,-244.77 766.69,-240.55 768.33,-233.53 774.18,-237.75 772.53,-244.77"/>
+<path fill="none" stroke="#404040" d="M849.86,-451.77C829.87,-398.24 799.09,-315.85 774.79,-250.83"/>
+<polygon fill="none" stroke="#404040" points="774.69,-250.55 768.85,-246.33 770.49,-239.31 776.34,-243.53 774.69,-250.55"/>
 <text text-anchor="middle" x="824" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;bank</text>
 </g>
 </g>
