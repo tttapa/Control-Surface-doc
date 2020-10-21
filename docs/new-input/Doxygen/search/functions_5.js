@@ -7,7 +7,7 @@ var searchData=
   ['fillrect_3615',['fillRect',['../df/d42/classDisplayInterface.html#a782a6ae0beeb0de459e9f7cd5a1ec28e',1,'DisplayInterface']]],
   ['fillwithspaces_3616',['fillWithSpaces',['../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a6c0f6f0631895398131e61583a3671c2',1,'MCU::SevenSegmentDisplay']]],
   ['filter_3617',['filter',['../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b',1,'EMA::filter()'],['../db/d6f/classEMA__f.html#aacf6a331433a053f5e70f4f71aa87836',1,'EMA_f::filter()']]],
-  ['filteredanalog_3618',['FilteredAnalog',['../d3/d6e/classAH_1_1FilteredAnalog.html#a0459a10210592e772ba44fa25498e90c',1,'AH::FilteredAnalog']]],
+  ['filteredanalog_3618',['FilteredAnalog',['../d3/d6e/classAH_1_1FilteredAnalog.html#a0459a10210592e772ba44fa25498e90c',1,'AH::FilteredAnalog::FilteredAnalog(pin_t analogPin, AnalogType initial=0)'],['../d3/d6e/classAH_1_1FilteredAnalog.html#a56f5fb38190719d73ab935497b1fa999',1,'AH::FilteredAnalog::FilteredAnalog()']]],
   ['flush_3619',['flush',['../d0/d89/classBluetoothMIDI__Interface.html#adac116554b543b7c4228c018a85882f5',1,'BluetoothMIDI_Interface::flush()'],['../d8/d4b/group__AH__PrintStream.html#ga4da32dae7f0c3d0d4726a478ee6815a9',1,'AH::flush()']]],
   ['flushimpl_3620',['flushImpl',['../d0/d89/classBluetoothMIDI__Interface.html#a774b1cce4553aa2fe13aa42cc1cad3a1',1,'BluetoothMIDI_Interface']]],
   ['forceminmtu_3621',['forceMinMTU',['../d0/d89/classBluetoothMIDI__Interface.html#a3e2e81eeb421a671b7444665f87a1068',1,'BluetoothMIDI_Interface']]],

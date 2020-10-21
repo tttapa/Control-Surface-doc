@@ -102,8 +102,7 @@ Behavior</h2>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d7/def/AnalogMultiplex_8hpp.html">AH/Hardware/ExtendedInputOutput/AnalogMultiplex.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d8/df3/FilteredAnalog_8hpp.html">AH/Hardware/FilteredAnalog.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;AH/STL/iterator&gt;</span> <span class="comment">// std::back_inserter</span></div>
-<div class="line"><span class="preprocessor">#include &lt;AH/STL/vector&gt;</span>   <span class="comment">// std::vector</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d5/db6/ArrayHelpers_8hpp.html">AH/Containers/ArrayHelpers.hpp</a>&gt;</span> <span class="comment">// copyAs&lt;&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a multiplexer</span></div>
 <div class="line"><a name="a0"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga76abe1cbb481b44875fb5e08da186ad0">CD74HC4067</a> mux = {</div>
@@ -119,15 +118,9 @@ Behavior</h2>
 <div class="line"><span class="comment">//   // 7, // Optional</span></div>
 <div class="line"><span class="comment">// };</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Convert the list of pins of the multiplexer to an array/vector</span></div>
+<div class="line"><span class="comment">// Convert the list of pins of the multiplexer to an array</span></div>
 <div class="line"><span class="comment">// of FilteredAnalog objects.</span></div>
-<div class="line"><span class="keyword">auto</span> filteredAnalogs = [] {</div>
-<div class="line">  <span class="keyword">auto</span> pins = mux.pins();</div>
-<div class="line">  std::vector&lt;FilteredAnalog&lt;&gt;&gt; v;</div>
-<div class="line">  v.reserve(pins.length);</div>
-<div class="line">  std::copy(std::begin(pins), std::end(pins), std::back_inserter(v));</div>
-<div class="line">  <span class="keywordflow">return</span> v;</div>
-<div class="line">}(); <span class="comment">// This is an immediately invoked lambda expression</span></div>
+<div class="line"><span class="keyword">auto</span> filteredAnalogs = copyAs&lt;FilteredAnalog&lt;&gt;&gt;(mux.pins());</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  Serial.begin(115200);</div>
@@ -135,7 +128,7 @@ Behavior</h2>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <span class="comment">// Loop over all FilteredAnalog objects in the vector</span></div>
+<div class="line">  <span class="comment">// Loop over all FilteredAnalog objects in the array</span></div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;analog : filteredAnalogs) {</div>
 <div class="line">    analog.update(); <span class="comment">// actually read the analog value and filter it</span></div>
 <div class="line">    Serial.print(analog.getValue());</div>
@@ -145,6 +138,7 @@ Behavior</h2>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aAnalogMultiplex_8hpp_html"><div class="ttname"><a href="../../d7/def/AnalogMultiplex_8hpp.html">AnalogMultiplex.hpp</a></div></div>
+<div class="ttc" id="aArrayHelpers_8hpp_html"><div class="ttname"><a href="../../d5/db6/ArrayHelpers_8hpp.html">ArrayHelpers.hpp</a></div></div>
 <div class="ttc" id="aArduino__Helpers_8h_html"><div class="ttname"><a href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a></div><div class="ttdoc">Dummy header file for Arduino builder.</div></div>
 <div class="ttc" id="agroup__AH__ExtIO_html_ga76abe1cbb481b44875fb5e08da186ad0"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#ga76abe1cbb481b44875fb5e08da186ad0">AH::CD74HC4067</a></div><div class="ttdeci">AnalogMultiplex&lt; 4 &gt; CD74HC4067</div><div class="ttdoc">An alias for AnalogMultiplex&lt;4&gt; to use with CD74HC4067 analog multiplexers.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00179">AnalogMultiplex.hpp:179</a></div></div>
 <div class="ttc" id="aFilteredAnalog_8hpp_html"><div class="ttname"><a href="../../d8/df3/FilteredAnalog_8hpp.html">FilteredAnalog.hpp</a></div></div>
