@@ -85,41 +85,35 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d9a/MIDI__Sender_8hpp_source.html">MIDI_Sender.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d53/MIDI__Staller_8hpp_source.html">MIDI_Staller.hpp</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="../../d4/d93/Updatable_8hpp_source.html">AH/Containers/Updatable.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d0/d4e/Def_8hpp_source.html">Def/Def.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html">Def/MIDIAddress.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/d2d/MIDI__Parser_8hpp_source.html">MIDI_Parsers/MIDI_Parser.hpp</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d38/MIDI__Interface_8ipp_source.html">MIDI_Interface.ipp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for MIDI_Interface.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d7d/MIDI__Interface_8hpp__incl.svg" width="2536" height="1187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d7d/MIDI__Interface_8hpp__incl.svg" width="3090" height="1187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d7c/MIDI__Interface_8hpp__dep__incl.svg" width="8143" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d7c/MIDI__Interface_8hpp__dep__incl.svg" width="8619" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../d6/d04/MIDI__Interface_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender&lt; Derived &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statically polymorphic template for classes that send MIDI messages.  <a href="../../d6/d72/classMIDI__Sender.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract class for MIDI interfaces.  <a href="../../d9/d73/classMIDI__Interface.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classParsing__MIDI__Interface.html">Parsing_MIDI_Interface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract class for MIDI interfaces.  <a href="../../de/d76/classParsing__MIDI__Interface.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for callbacks from MIDI input.  <a href="../../de/d55/classMIDI__Callbacks.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -150,7 +144,7 @@ Variables</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d5/da5/Dual-MIDI-Interface_8ino-example.html#a2">Dual-MIDI-Interface.ino</a>, and <a class="el" href="../../dd/ddd/Serial-Interface_8ino-example.html#a1">Serial-Interface.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00011">11</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>

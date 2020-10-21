@@ -86,78 +86,39 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class for controlling the volume of AudioMixer4 objects using a potentiometer.  
- <a href="../../d4/de3/classVolumeControl.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../da/d51/VolumeControl_8hpp_source.html">Audio/VolumeControl.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;uint8_t N&gt;<br />
+class VolumeControl&lt; N &gt;</h3>
+
+<p>A class for controlling the volume of AudioMixer4 objects using a potentiometer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>The number of mixers. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d30/1_8Volume-Controlled-USB-DAC_8ino-example.html#_a0">1.Volume-Controlled-USB-DAC.ino</a>, and <a class="el" href="../../d9/d3a/2_8VU-Meter-OLED-USB-DAC_8ino-example.html#_a6">2.VU-Meter-OLED-USB-DAC.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d51/VolumeControl_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../da/d51/VolumeControl_8hpp_source.html">VolumeControl.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for VolumeControl&lt; N &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/da7/classVolumeControl__inherit__graph.svg" width="223" height="934"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/da7/classVolumeControl__inherit__graph.svg" width="223" height="934"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for VolumeControl&lt; N &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dc1/classVolumeControl__coll__graph.svg" width="899" height="1559"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dc1/classVolumeControl__coll__graph.svg" width="899" height="1559"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
-<tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
-<tr class="separator:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a02e083faa5c525f880ceb8433812bd27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a02e083faa5c525f880ceb8433812bd27">VolumeControl</a> (const <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; AudioMixer4 *, N &gt; &amp;<a class="el" href="../../d4/de3/classVolumeControl.html#a20abcad849bdda04caa5d8c8cb84aecd">mixers</a>, pin_t analogPin, float <a class="el" href="../../d4/de3/classVolumeControl.html#acd5aad994fa90708c6b75e7015d577ab">maxGain</a>=1.0)</td></tr>
-<tr class="memdesc:a02e083faa5c525f880ceb8433812bd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d4/de3/classVolumeControl.html" title="A class for controlling the volume of AudioMixer4 objects using a potentiometer.">VolumeControl</a> object.  <a href="../../d4/de3/classVolumeControl.html#a02e083faa5c525f880ceb8433812bd27">More...</a><br /></td></tr>
-<tr class="separator:a02e083faa5c525f880ceb8433812bd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
-<tr class="memdesc:a44137bb65de2396875934e48a6ee5099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the potentiometer value, and adjust the gain of the mixers.  <a href="../../d4/de3/classVolumeControl.html#a44137bb65de2396875934e48a6ee5099">More...</a><br /></td></tr>
-<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
-<tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize.  <a href="../../d4/de3/classVolumeControl.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">More...</a><br /></td></tr>
-<tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55537d6de64435f495f9eaac3985d7e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a55537d6de64435f495f9eaac3985d7e8">map</a> (<a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> fn)</td></tr>
-<tr class="memdesc:a55537d6de64435f495f9eaac3985d7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a mapping function that is applied to the raw analog value before setting the volume.  <a href="../../d4/de3/classVolumeControl.html#a55537d6de64435f495f9eaac3985d7e8">More...</a><br /></td></tr>
-<tr class="separator:a55537d6de64435f495f9eaac3985d7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a7fa1616cc61c19a5efcc863c950f7f30">invert</a> ()</td></tr>
-<tr class="memdesc:a7fa1616cc61c19a5efcc863c950f7f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert the analog value.  <a href="../../d4/de3/classVolumeControl.html#a7fa1616cc61c19a5efcc863c950f7f30">More...</a><br /></td></tr>
-<tr class="separator:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a5e1d8290397ae14e2be6eb56e1d1c1fb">getMutex</a> ()</td></tr>
-<tr class="separator:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top">Updatable&lt; <a class="el" href="../../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer">Potentiometer</a>, false &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
-<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top">Updatable&lt; <a class="el" href="../../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer">Potentiometer</a>, false &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
-<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; Updatable&lt; <a class="el" href="../../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer">Potentiometer</a>, false &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
-<tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
-<tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a20abcad849bdda04caa5d8c8cb84aecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; AudioMixer4 *, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a20abcad849bdda04caa5d8c8cb84aecd">mixers</a></td></tr>
-<tr class="separator:a20abcad849bdda04caa5d8c8cb84aecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33281be85c7204cb67b11677df047bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AH::FilteredAnalog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#aa33281be85c7204cb67b11677df047bd">filteredAnalog</a></td></tr>
-<tr class="separator:aa33281be85c7204cb67b11677df047bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd5aad994fa90708c6b75e7015d577ab"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#acd5aad994fa90708c6b75e7015d577ab">maxGain</a></td></tr>
-<tr class="separator:acd5aad994fa90708c6b75e7015d577ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Main initialization and updating methods</h2></td></tr>
 <tr class="memitem:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2c7c502f8ebf20ac04d25bb29cc0f2aa">applyToAll</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;, void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
@@ -218,23 +179,61 @@ Main initialization and updating methods</h2></td></tr>
 <tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
 <tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all enabled instances of this class.  <a href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">More...</a><br /></td></tr>
 <tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
+<tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
+<tr class="separator:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a02e083faa5c525f880ceb8433812bd27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a02e083faa5c525f880ceb8433812bd27">VolumeControl</a> (const <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; AudioMixer4 *, N &gt; &amp;<a class="el" href="../../d4/de3/classVolumeControl.html#a20abcad849bdda04caa5d8c8cb84aecd">mixers</a>, pin_t analogPin, float <a class="el" href="../../d4/de3/classVolumeControl.html#acd5aad994fa90708c6b75e7015d577ab">maxGain</a>=1.0)</td></tr>
+<tr class="memdesc:a02e083faa5c525f880ceb8433812bd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d4/de3/classVolumeControl.html" title="A class for controlling the volume of AudioMixer4 objects using a potentiometer.">VolumeControl</a> object.  <a href="../../d4/de3/classVolumeControl.html#a02e083faa5c525f880ceb8433812bd27">More...</a><br /></td></tr>
+<tr class="separator:a02e083faa5c525f880ceb8433812bd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="memdesc:a44137bb65de2396875934e48a6ee5099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the potentiometer value, and adjust the gain of the mixers.  <a href="../../d4/de3/classVolumeControl.html#a44137bb65de2396875934e48a6ee5099">More...</a><br /></td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
+<tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize.  <a href="../../d4/de3/classVolumeControl.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">More...</a><br /></td></tr>
+<tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55537d6de64435f495f9eaac3985d7e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a55537d6de64435f495f9eaac3985d7e8">map</a> (<a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> fn)</td></tr>
+<tr class="memdesc:a55537d6de64435f495f9eaac3985d7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a mapping function that is applied to the raw analog value before setting the volume.  <a href="../../d4/de3/classVolumeControl.html#a55537d6de64435f495f9eaac3985d7e8">More...</a><br /></td></tr>
+<tr class="separator:a55537d6de64435f495f9eaac3985d7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a7fa1616cc61c19a5efcc863c950f7f30">invert</a> ()</td></tr>
+<tr class="memdesc:a7fa1616cc61c19a5efcc863c950f7f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert the analog value.  <a href="../../d4/de3/classVolumeControl.html#a7fa1616cc61c19a5efcc863c950f7f30">More...</a><br /></td></tr>
+<tr class="separator:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a5e1d8290397ae14e2be6eb56e1d1c1fb">getMutex</a> ()</td></tr>
+<tr class="separator:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top">Updatable&lt; <a class="el" href="../../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer">Potentiometer</a>, false &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
+<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top">Updatable&lt; <a class="el" href="../../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer">Potentiometer</a>, false &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
+<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; Updatable&lt; <a class="el" href="../../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer">Potentiometer</a>, false &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
+<tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
+<tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a20abcad849bdda04caa5d8c8cb84aecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; AudioMixer4 *, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#a20abcad849bdda04caa5d8c8cb84aecd">mixers</a></td></tr>
+<tr class="separator:a20abcad849bdda04caa5d8c8cb84aecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33281be85c7204cb67b11677df047bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AH::FilteredAnalog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#aa33281be85c7204cb67b11677df047bd">filteredAnalog</a></td></tr>
+<tr class="separator:aa33281be85c7204cb67b11677df047bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5aad994fa90708c6b75e7015d577ab"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classVolumeControl.html#acd5aad994fa90708c6b75e7015d577ab">maxGain</a></td></tr>
+<tr class="separator:acd5aad994fa90708c6b75e7015d577ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;uint8_t N&gt;<br />
-class VolumeControl&lt; N &gt;</h3>
-
-<p>A class for controlling the volume of AudioMixer4 objects using a potentiometer. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">N</td><td>The number of mixers. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d30/1_8Volume-Controlled-USB-DAC_8ino-example.html#_a0">1.Volume-Controlled-USB-DAC.ino</a>, and <a class="el" href="../../d9/d3a/2_8VU-Meter-OLED-USB-DAC_8ino-example.html#_a6">2.VU-Meter-OLED-USB-DAC.ino</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../da/d51/VolumeControl_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../da/d51/VolumeControl_8hpp_source.html">VolumeControl.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="adb6674b573bf7610072c9e8d3abb2ff4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb6674b573bf7610072c9e8d3abb2ff4">&#9670;&nbsp;</a></span>Mutex</h2>
 

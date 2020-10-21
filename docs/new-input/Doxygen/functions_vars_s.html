@@ -83,14 +83,14 @@ $(function() {
 : <a class="el" href="dc/d06/classBankable_1_1DualAddresses.html#a43218090cc3260b8495f7c4574e838c8">DualAddresses</a>
 , <a class="el" href="d1/da6/classBankable_1_1ManyAddresses_1_1DualManyAddresses.html#af9173f58f6d897974586e0aa8b4f0437">DualManyAddresses&lt; NumBanks &gt;</a>
 </li>
-<li>secondChar
-: <a class="el" href="d8/d0b/classStreamDebugMIDI__Interface.html#a8ee381d551c1676fed3c3833c8e78b25">StreamDebugMIDI_Interface</a>
-</li>
 <li>selectable
 : <a class="el" href="d0/d04/classGenericSelector.html#a5acdc1d2891c5c3a6f38cc2808ff93bd">GenericSelector&lt; N, Callback &gt;</a>
 </li>
 <li>selector
 : <a class="el" href="d3/d51/classSelectorDisplay.html#aa5431f1330fed84bcdf888ceff588a5e">SelectorDisplay</a>
+</li>
+<li>send_thread
+: <a class="el" href="d0/d89/classBluetoothMIDI__Interface.html#ac0b97c3d43e512fc8118c01b655f2636">BluetoothMIDI_Interface</a>
 </li>
 <li>sender
 : <a class="el" href="df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a3296e2217dd530ddb922f24a450fec82">GenericMIDIAbsoluteEncoder&lt; Enc, NumBanks, BankAddress, Sender &gt;</a>
@@ -113,9 +113,6 @@ $(function() {
 , <a class="el" href="dd/d29/classMIDIChordButton.html#a3296e2217dd530ddb922f24a450fec82">MIDIChordButton&lt; Sender &gt;</a>
 , <a class="el" href="d5/d8e/classMIDIFilteredAnalog.html#a3296e2217dd530ddb922f24a450fec82">MIDIFilteredAnalog&lt; Sender &gt;</a>
 </li>
-<li>serial
-: <a class="el" href="db/dc4/classSerialDebugMIDI__Interface.html#a0719781400c3b390ceac26f97e467f44">SerialDebugMIDI_Interface&lt; T &gt;</a>
-</li>
 <li>setting
 : <a class="el" href="dc/d77/classSelectorBase.html#a701f37e4ed620dfd891221e876b29065">SelectorBase</a>
 </li>
@@ -127,6 +124,9 @@ $(function() {
 </li>
 <li>sink
 : <a class="el" href="df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">MIDI_Pipe</a>
+</li>
+<li>sink_staller
+: <a class="el" href="df/d72/classMIDI__Pipe.html#a874c8ee7e86682209c4b717515c85c1d">MIDI_Pipe</a>
 </li>
 <li>sinkPipe
 : <a class="el" href="df/d5b/classMIDI__Source.html#a444269f0926ab3fb7aa668a95b45605d">MIDI_Source</a>
@@ -156,9 +156,6 @@ $(function() {
 <li>start
 : <a class="el" href="d2/dda/classAH_1_1ExtendedIOElement.html#a72d639edb9fa3781645cab09c2ee3dd3">ExtendedIOElement</a>
 </li>
-<li>startTime
-: <a class="el" href="d0/d89/classBluetoothMIDI__Interface.html#a0e06ecdad9f318fafbb0b28370c3cfef">BluetoothMIDI_Interface</a>
-</li>
 <li>state
 : <a class="el" href="d7/d83/classAH_1_1IncrementButton.html#a876b486d3a5241a126bd5751c5f70f79">IncrementButton</a>
 , <a class="el" href="df/dc6/classAH_1_1IncrementDecrementButtons.html#a876b486d3a5241a126bd5751c5f70f79">IncrementDecrementButtons</a>
@@ -177,12 +174,34 @@ $(function() {
 <li>steep
 : <a class="el" href="d6/d99/classBresenhamLine.html#a38386c0650a0004bb7b8679a00801a20">BresenhamLine</a>
 </li>
+<li>stop_sending
+: <a class="el" href="d0/d89/classBluetoothMIDI__Interface.html#ae0090fc21e6e632fc4510f57e29b5dea">BluetoothMIDI_Interface</a>
+</li>
+<li>storage
+: <a class="el" href="d6/d71/classMIDIMessageQueue.html#a59d4b705843702c7c2d2ad89bed06163">MIDIMessageQueue</a>
+</li>
+<li>storedByte
+: <a class="el" href="d0/d0d/classSerialMIDI__Parser.html#acc6b824f3850959314d6b5e1409355e1">SerialMIDI_Parser</a>
+</li>
+<li>storedPacket
+: <a class="el" href="db/db0/classUSBMIDI__Parser.html#a75fea98fda887d38367fe0ae582656e8">USBMIDI_Parser</a>
+</li>
+<li>storedSysExData
+: <a class="el" href="de/d05/classUSBMIDI__Interface.html#ae10d5051554b27db69cdb6c8ac933a63">USBMIDI_Interface</a>
+</li>
+<li>storedSysExLength
+: <a class="el" href="de/d05/classUSBMIDI__Interface.html#adbfc32c67ece87aefb244d98747fd667">USBMIDI_Interface</a>
+</li>
 <li>stream
 : <a class="el" href="d3/dc3/classStreamMIDI__Interface.html#a4fd8238062529440b3dc25c755b2d08c">StreamMIDI_Interface</a>
+, <a class="el" href="de/ded/classStreamPuller.html#a4fd8238062529440b3dc25c755b2d08c">StreamPuller</a>
 </li>
 <li>switchPin
 : <a class="el" href="d7/dc2/structEncoderSwitchPinList.html#a0602794c19a77e1246dc5b0bf6e7e445">EncoderSwitchPinList</a>
 , <a class="el" href="da/dbf/classGenericEncoderSelector.html#a0602794c19a77e1246dc5b0bf6e7e445">GenericEncoderSelector&lt; N, Callback &gt;</a>
+</li>
+<li>syscommonmessage
+: <a class="el" href="dc/d44/unionMIDIMessageQueueElement_1_1Message.html#a9b71af9a038fbd69b126cbaa374b2ed4">MIDIMessageQueueElement::Message</a>
 </li>
 <li>sysex
 : <a class="el" href="d3/ded/classFortySevenEffectsMIDI__Parser.html#ad56fb9065244ff7887ffb6d49e42f351">FortySevenEffectsMIDI_Parser</a>
@@ -190,17 +209,14 @@ $(function() {
 <li>sysexbuffer
 : <a class="el" href="d0/d0d/classSerialMIDI__Parser.html#a348594ec9cf7c900d3df79b6a543330e">SerialMIDI_Parser</a>
 </li>
-<li>SysExBuffer
-: <a class="el" href="d1/db1/classSysExBuffer.html#aa90528c81b1b96cce02235f548117f66">SysExBuffer</a>
-</li>
 <li>sysexbuffers
-: <a class="el" href="db/db0/classUSBMIDI__Parser.html#a6149618964480bec74dda624df597006">USBMIDI_Parser</a>
+: <a class="el" href="db/db0/classUSBMIDI__Parser.html#a1838045abc2d7a80b0137fe17a41cbc9">USBMIDI_Parser</a>
 </li>
 <li>SysExEnd
 : <a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#a056ca9a99ae51038f01c4f22852c56c6">BLEMIDIPacketBuilder</a>
 </li>
-<li>SysExLength
-: <a class="el" href="d1/db1/classSysExBuffer.html#a72beb2f023cdb99faf43dd83c0c58723">SysExBuffer</a>
+<li>sysexmessage
+: <a class="el" href="dc/d44/unionMIDIMessageQueueElement_1_1Message.html#ac3130b4646bb682acc184d6fac12671a">MIDIMessageQueueElement::Message</a>
 </li>
 <li>sysExMessageCallback
 : <a class="el" href="dc/d45/classControl__Surface__.html#ad43a6370fb958fa2246451f165490965">Control_Surface_</a>

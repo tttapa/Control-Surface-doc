@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 0fef7e17a3eb9ae207a2bbbadba1575e6947e8ed - src/MIDI_Interfaces/USBMIDI_Interface.hpp</title>
+  <title>LCOV - 534de08af849f9963d0317baf788aa48789e69fe - src/MIDI_Interfaces/USBMIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">0fef7e17a3eb9ae207a2bbbadba1575e6947e8ed</td>
+            <td class="headerValue">534de08af849f9963d0317baf788aa48789e69fe</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">41</td>
-            <td class="headerCovTableEntry">43</td>
-            <td class="headerCovTableEntryHi">95.3 %</td>
+            <td class="headerCovTableEntry">9</td>
+            <td class="headerCovTableEntry">11</td>
+            <td class="headerCovTableEntryMed">81.8 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-06 02:56:32</td>
+            <td class="headerValue">2020-10-21 16:21:31</td>
             <td></td>
             <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">9</td>
             <td class="headerCovTableEntry">12</td>
-            <td class="headerCovTableEntry">13</td>
-            <td class="headerCovTableEntryHi">92.3 %</td>
+            <td class="headerCovTableEntryMed">75.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -108,118 +108,153 @@
 <a name="38"><span class="lineNum">      38 </span>            :  * </a>
 <a name="39"><span class="lineNum">      39 </span>            :  * @ingroup MIDIInterfaces</a>
 <a name="40"><span class="lineNum">      40 </span>            :  */</a>
-<a name="41"><span class="lineNum">      41 </span><span class="lineCov">         25 : class USBMIDI_Interface : public Parsing_MIDI_Interface {</span></a>
+<a name="41"><span class="lineNum">      41 </span><span class="lineCov">         26 : class USBMIDI_Interface : public MIDI_Interface {</span></a>
 <a name="42"><span class="lineNum">      42 </span>            :   public:</a>
 <a name="43"><span class="lineNum">      43 </span>            :     /**</a>
 <a name="44"><span class="lineNum">      44 </span>            :      * @brief   Construct a new USBMIDI_Interface.</a>
 <a name="45"><span class="lineNum">      45 </span>            :      */</a>
-<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         25 :     USBMIDI_Interface() : Parsing_MIDI_Interface(parser) {}</span></a>
+<a name="46"><span class="lineNum">      46 </span>            :     USBMIDI_Interface();</a>
 <a name="47"><span class="lineNum">      47 </span>            : </a>
-<a name="48"><span class="lineNum">      48 </span>            :     using MIDIUSBPacket_t = USBMIDI::MIDIUSBPacket_t;</a>
-<a name="49"><span class="lineNum">      49 </span>            : </a>
-<a name="50"><span class="lineNum">      50 </span>            :   private:</a>
-<a name="51"><span class="lineNum">      51 </span>            :     USBMIDI_Parser parser;</a>
-<a name="52"><span class="lineNum">      52 </span>            : </a>
-<a name="53"><span class="lineNum">      53 </span>            : #ifndef ARDUINO</a>
-<a name="54"><span class="lineNum">      54 </span>            :   public:</a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">         42 :     MOCK_METHOD(void, writeUSBPacket,</span></a>
-<a name="56"><span class="lineNum">      56 </span>            :                 (uint8_t, uint8_t, uint8_t, uint8_t, uint8_t));</a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         33 :     MOCK_METHOD(MIDIUSBPacket_t, readUSBPacket, ());</span></a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         12 :     void flushUSB() {}</span></a>
-<a name="59"><span class="lineNum">      59 </span>            : </a>
-<a name="60"><span class="lineNum">      60 </span>            :   private:</a>
-<a name="61"><span class="lineNum">      61 </span>            : #else</a>
-<a name="62"><span class="lineNum">      62 </span>            :     void writeUSBPacket(uint8_t cn, uint8_t cin, uint8_t d0, uint8_t d1,</a>
-<a name="63"><span class="lineNum">      63 </span>            :                         uint8_t d2) {</a>
-<a name="64"><span class="lineNum">      64 </span>            :         USBMIDI::write(cn, cin, d0, d1, d2);</a>
-<a name="65"><span class="lineNum">      65 </span>            :     }</a>
-<a name="66"><span class="lineNum">      66 </span>            :     MIDIUSBPacket_t readUSBPacket() { return USBMIDI::read(); }</a>
-<a name="67"><span class="lineNum">      67 </span>            :     void flushUSB() { USBMIDI::flush(); }</a>
-<a name="68"><span class="lineNum">      68 </span>            : #endif</a>
-<a name="69"><span class="lineNum">      69 </span>            : </a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          3 :     void sendImpl(uint8_t header, uint8_t d1, uint8_t d2, uint8_t cn) override {</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          6 :         writeUSBPacket(cn, header &gt;&gt; 4, // CN|CIN</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">          3 :                        header,          // status</span></a>
-<a name="73"><span class="lineNum">      73 </span><span class="lineCov">          3 :                        d1,              // data 1</span></a>
-<a name="74"><span class="lineNum">      74 </span><span class="lineCov">          3 :                        d2);             // data 2</span></a>
-<a name="75"><span class="lineNum">      75 </span><span class="lineCov">          3 :         flushUSB();</span></a>
-<a name="76"><span class="lineNum">      76 </span><span class="lineCov">          3 :     }</span></a>
-<a name="77"><span class="lineNum">      77 </span>            : </a>
-<a name="78"><span class="lineNum">      78 </span><span class="lineCov">          1 :     void sendImpl(uint8_t header, uint8_t d1, uint8_t cn) override {</span></a>
-<a name="79"><span class="lineNum">      79 </span><span class="lineCov">          1 :         sendImpl(header, d1, 0, cn);</span></a>
-<a name="80"><span class="lineNum">      80 </span><span class="lineCov">          1 :     }</span></a>
-<a name="81"><span class="lineNum">      81 </span>            : </a>
-<a name="82"><span class="lineNum">      82 </span><span class="lineCov">          8 :     void sendImpl(const uint8_t *data, size_t length, uint8_t cn) override {</span></a>
-<a name="83"><span class="lineNum">      83 </span><span class="lineCov">         17 :         while (length &gt; 3) {</span></a>
-<a name="84"><span class="lineNum">      84 </span><span class="lineCov">          9 :             writeUSBPacket(cn, 0x4, data[0], data[1], data[2]);</span></a>
-<a name="85"><span class="lineNum">      85 </span><span class="lineCov">          9 :             data += 3;</span></a>
-<a name="86"><span class="lineNum">      86 </span><span class="lineCov">          9 :             length -= 3;</span></a>
-<a name="87"><span class="lineNum">      87 </span>            :         }</a>
-<a name="88"><span class="lineNum">      88 </span><span class="lineCov">          8 :         switch (length) {</span></a>
-<a name="89"><span class="lineNum">      89 </span><span class="lineCov">          3 :             case 3: writeUSBPacket(cn, 0x7, data[0], data[1], data[2]); break;</span></a>
-<a name="90"><span class="lineNum">      90 </span><span class="lineCov">          3 :             case 2: writeUSBPacket(cn, 0x6, data[0], data[1], 0); break;</span></a>
-<a name="91"><span class="lineNum">      91 </span><span class="lineCov">          2 :             case 1: writeUSBPacket(cn, 0x5, data[0], 0, 0); break;</span></a>
-<a name="92"><span class="lineNum">      92 </span><span class="lineNoCov">          0 :             default: break;</span></a>
-<a name="93"><span class="lineNum">      93 </span>            :         }</a>
-<a name="94"><span class="lineNum">      94 </span><span class="lineCov">          8 :         flushUSB();</span></a>
-<a name="95"><span class="lineNum">      95 </span><span class="lineCov">          8 :     }</span></a>
-<a name="96"><span class="lineNum">      96 </span>            : </a>
-<a name="97"><span class="lineNum">      97 </span><span class="lineCov">          1 :     void sendImpl(uint8_t rt, uint8_t cn) override {</span></a>
-<a name="98"><span class="lineNum">      98 </span><span class="lineCov">          2 :         writeUSBPacket(cn, 0xF, // CN|CIN</span></a>
-<a name="99"><span class="lineNum">      99 </span><span class="lineCov">          1 :                        rt,      // single byte</span></a>
-<a name="100"><span class="lineNum">     100 </span>            :                        0,       // no data</a>
-<a name="101"><span class="lineNum">     101 </span>            :                        0);      // no data</a>
-<a name="102"><span class="lineNum">     102 </span><span class="lineCov">          1 :         flushUSB();</span></a>
-<a name="103"><span class="lineNum">     103 </span><span class="lineCov">          1 :     }</span></a>
-<a name="104"><span class="lineNum">     104 </span>            : </a>
-<a name="105"><span class="lineNum">     105 </span>            :   public:</a>
-<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         16 :     MIDIReadEvent read() override {</span></a>
-<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         40 :         for (uint8_t i = 0; i &lt; (SYSEX_BUFFER_SIZE + 2) / 3; ++i) {</span></a>
-<a name="108"><span class="lineNum">     108 </span><span class="lineCov">         24 :             MIDIUSBPacket_t midi_packet = readUSBPacket();</span></a>
-<a name="109"><span class="lineNum">     109 </span><span class="lineCov">         24 :             if (midi_packet.data[0] == 0)</span></a>
-<a name="110"><span class="lineNum">     110 </span><span class="lineCov">          7 :                 return MIDIReadEvent::NO_MESSAGE;</span></a>
+<a name="48"><span class="lineNum">      48 </span>            :   private:</a>
+<a name="49"><span class="lineNum">      49 </span>            :     // MIDI send implementations</a>
+<a name="50"><span class="lineNum">      50 </span>            :     void sendChannelMessageImpl(ChannelMessage) override;</a>
+<a name="51"><span class="lineNum">      51 </span><span class="lineNoCov">          0 :     void sendSysCommonImpl(SysCommonMessage) override { /* TODO */ }</span></a>
+<a name="52"><span class="lineNum">      52 </span>            :     void sendSysExImpl(SysExMessage) override;</a>
+<a name="53"><span class="lineNum">      53 </span>            :     void sendRealTimeImpl(RealTimeMessage) override;</a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineNoCov">          0 :     void sendNowImpl() override { sendUSBNow(); }</span></a>
+<a name="55"><span class="lineNum">      55 </span>            : </a>
+<a name="56"><span class="lineNum">      56 </span>            :     /// Send a single SysEx starts or continues USB packet. Exactly 3 bytes are</a>
+<a name="57"><span class="lineNum">      57 </span>            :     /// sent. The `data` pointer is not incremented.</a>
+<a name="58"><span class="lineNum">      58 </span>            :     void sendSysExStartCont1(const uint8_t *data, Cable cable);</a>
+<a name="59"><span class="lineNum">      59 </span>            :     /// Send as many SysEx starts or continues USB packets, such that the</a>
+<a name="60"><span class="lineNum">      60 </span>            :     /// remaining length is 3, 2 or 1 byte. The `data` pointer is incremented,</a>
+<a name="61"><span class="lineNum">      61 </span>            :     /// and the `length` is decremented.</a>
+<a name="62"><span class="lineNum">      62 </span>            :     /// The reason for leaving 3, 2 or 1 bytes remaining is so the message can</a>
+<a name="63"><span class="lineNum">      63 </span>            :     /// be finished using a SysExEnd USB packet, which has to have 3, 2 or 1</a>
+<a name="64"><span class="lineNum">      64 </span>            :     /// bytes.</a>
+<a name="65"><span class="lineNum">      65 </span>            :     void sendSysExStartCont(const uint8_t *&amp;data, uint16_t &amp;length,</a>
+<a name="66"><span class="lineNum">      66 </span>            :                             Cable cable);</a>
+<a name="67"><span class="lineNum">      67 </span>            :     /// Send a SysExEnd USB packet. The `length` should be either 3, 2 or 1</a>
+<a name="68"><span class="lineNum">      68 </span>            :     /// bytes, and the last byte of `data` should be a SysExEnd byte.</a>
+<a name="69"><span class="lineNum">      69 </span>            :     void sendSysExEnd(const uint8_t *data, uint16_t length, Cable cable);</a>
+<a name="70"><span class="lineNum">      70 </span>            : </a>
+<a name="71"><span class="lineNum">      71 </span>            :   private:</a>
+<a name="72"><span class="lineNum">      72 </span>            :     void handleStall() override;</a>
+<a name="73"><span class="lineNum">      73 </span>            : </a>
+<a name="74"><span class="lineNum">      74 </span>            :   public:</a>
+<a name="75"><span class="lineNum">      75 </span>            :     void update() override;</a>
+<a name="76"><span class="lineNum">      76 </span>            : </a>
+<a name="77"><span class="lineNum">      77 </span>            :   public:</a>
+<a name="78"><span class="lineNum">      78 </span>            :     /// @name   Reading incoming MIDI messages</a>
+<a name="79"><span class="lineNum">      79 </span>            :     /// @{</a>
+<a name="80"><span class="lineNum">      80 </span>            : </a>
+<a name="81"><span class="lineNum">      81 </span>            :     /// Try reading and parsing a single incoming MIDI message.</a>
+<a name="82"><span class="lineNum">      82 </span>            :     /// @return Returns the type of the read message, or</a>
+<a name="83"><span class="lineNum">      83 </span>            :     ///         `MIDIReadEvent::NO_MESSAGE` if no MIDI message was available.</a>
+<a name="84"><span class="lineNum">      84 </span>            :     MIDIReadEvent read();</a>
+<a name="85"><span class="lineNum">      85 </span>            :     </a>
+<a name="86"><span class="lineNum">      86 </span>            :     /// Return the received channel voice message.</a>
+<a name="87"><span class="lineNum">      87 </span><span class="lineCov">          3 :     ChannelMessage getChannelMessage() const {</span></a>
+<a name="88"><span class="lineNum">      88 </span><span class="lineCov">          3 :         return parser.getChannelMessage();</span></a>
+<a name="89"><span class="lineNum">      89 </span>            :     }</a>
+<a name="90"><span class="lineNum">      90 </span>            :     /// Return the received system common message.</a>
+<a name="91"><span class="lineNum">      91 </span>            :     SysCommonMessage getSysCommonMessage() const {</a>
+<a name="92"><span class="lineNum">      92 </span>            :         return parser.getSysCommonMessage();</a>
+<a name="93"><span class="lineNum">      93 </span>            :     }</a>
+<a name="94"><span class="lineNum">      94 </span>            :     /// Return the received real-time message.</a>
+<a name="95"><span class="lineNum">      95 </span><span class="lineCov">          2 :     RealTimeMessage getRealTimeMessage() const {</span></a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">          2 :         return parser.getRealTimeMessage();</span></a>
+<a name="97"><span class="lineNum">      97 </span>            :     }</a>
+<a name="98"><span class="lineNum">      98 </span>            :     /// Return the received system exclusive message.</a>
+<a name="99"><span class="lineNum">      99 </span><span class="lineCov">          4 :     SysExMessage getSysExMessage() const { return parser.getSysExMessage(); }</span></a>
+<a name="100"><span class="lineNum">     100 </span>            : </a>
+<a name="101"><span class="lineNum">     101 </span>            :     /// @}</a>
+<a name="102"><span class="lineNum">     102 </span>            : </a>
+<a name="103"><span class="lineNum">     103 </span>            :   private:</a>
+<a name="104"><span class="lineNum">     104 </span>            :     USBMIDI_Parser parser;</a>
+<a name="105"><span class="lineNum">     105 </span>            :     uint8_t storedSysExData[3];</a>
+<a name="106"><span class="lineNum">     106 </span>            :     uint8_t storedSysExLength = 0;</a>
+<a name="107"><span class="lineNum">     107 </span>            :     bool alwaysSendImmediately_ = true;</a>
+<a name="108"><span class="lineNum">     108 </span>            : </a>
+<a name="109"><span class="lineNum">     109 </span>            :   public:</a>
+<a name="110"><span class="lineNum">     110 </span>            :     /// @name   Buffering USB packets</a>
 <a name="111"><span class="lineNum">     111 </span>            : </a>
-<a name="112"><span class="lineNum">     112 </span><span class="lineCov">         17 :             MIDIReadEvent parseResult = parser.parse(midi_packet.data);</span></a>
-<a name="113"><span class="lineNum">     113 </span>            : </a>
-<a name="114"><span class="lineNum">     114 </span><span class="lineCov">         17 :             if (parseResult != MIDIReadEvent::NO_MESSAGE)</span></a>
-<a name="115"><span class="lineNum">     115 </span><span class="lineCov">          9 :                 return parseResult;</span></a>
-<a name="116"><span class="lineNum">     116 </span><span class="lineCov">         24 :         }</span></a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineNoCov">          0 :         return MIDIReadEvent::NO_MESSAGE;</span></a>
-<a name="118"><span class="lineNum">     118 </span><span class="lineCov">         16 :     }</span></a>
-<a name="119"><span class="lineNum">     119 </span>            : };</a>
-<a name="120"><span class="lineNum">     120 </span>            : </a>
-<a name="121"><span class="lineNum">     121 </span>            : END_CS_NAMESPACE</a>
-<a name="122"><span class="lineNum">     122 </span>            : </a>
-<a name="123"><span class="lineNum">     123 </span>            : // If the main MCU doesn't have a USB connection:</a>
-<a name="124"><span class="lineNum">     124 </span>            : // Fall back on Serial connection at the hardware MIDI baud rate.</a>
-<a name="125"><span class="lineNum">     125 </span>            : // (Can be used with HIDUINO or USBMidiKliK.)</a>
-<a name="126"><span class="lineNum">     126 </span>            : #else</a>
+<a name="112"><span class="lineNum">     112 </span>            :     /// Check if this USB interface always sends its USB packets immediately</a>
+<a name="113"><span class="lineNum">     113 </span>            :     /// after sending a MIDI message. The default value depends on the MIDI USB</a>
+<a name="114"><span class="lineNum">     114 </span>            :     /// backend being used: `true` for the `MIDIUSB` library, and `false` for </a>
+<a name="115"><span class="lineNum">     115 </span>            :     /// the Teensy Core USB MIDI functions (because they have a short timeout).</a>
+<a name="116"><span class="lineNum">     116 </span>            :     bool alwaysSendsImmediately() const { return alwaysSendImmediately_; }</a>
+<a name="117"><span class="lineNum">     117 </span>            :     /// Don't send the USB packets immediately after sending a MIDI message.</a>
+<a name="118"><span class="lineNum">     118 </span>            :     /// By disabling immediate transmission, packets are buffered until you</a>
+<a name="119"><span class="lineNum">     119 </span>            :     /// call @ref sendNow() or until a timeout is reached, so multiple MIDI</a>
+<a name="120"><span class="lineNum">     120 </span>            :     /// messages can be transmitted in a single USB packet. This is more </a>
+<a name="121"><span class="lineNum">     121 </span>            :     /// efficient and results in a higher maximum bandwidth, but it could </a>
+<a name="122"><span class="lineNum">     122 </span>            :     /// increase latency when used incorrectly.</a>
+<a name="123"><span class="lineNum">     123 </span>            :     void neverSendImmediately() { alwaysSendImmediately_ = false; }</a>
+<a name="124"><span class="lineNum">     124 </span>            :     /// Send the USB packets immediately after sending a MIDI message.</a>
+<a name="125"><span class="lineNum">     125 </span>            :     /// @see disableSendImmediately</a>
+<a name="126"><span class="lineNum">     126 </span>            :     void alwaysSendImmediately() { alwaysSendImmediately_ = true; }</a>
 <a name="127"><span class="lineNum">     127 </span>            : </a>
-<a name="128"><span class="lineNum">     128 </span>            : #include &quot;SerialMIDI_Interface.hpp&quot;</a>
+<a name="128"><span class="lineNum">     128 </span>            :     /// @}</a>
 <a name="129"><span class="lineNum">     129 </span>            : </a>
-<a name="130"><span class="lineNum">     130 </span>            : BEGIN_CS_NAMESPACE</a>
-<a name="131"><span class="lineNum">     131 </span>            : </a>
-<a name="132"><span class="lineNum">     132 </span>            : /**</a>
-<a name="133"><span class="lineNum">     133 </span>            :  * @brief   A class for MIDI interfaces sending MIDI messages over a USB MIDI</a>
-<a name="134"><span class="lineNum">     134 </span>            :  *          connection.</a>
-<a name="135"><span class="lineNum">     135 </span>            :  * </a>
-<a name="136"><span class="lineNum">     136 </span>            :  * @note    See @ref md_pages_MIDI-over-USB for more information.</a>
-<a name="137"><span class="lineNum">     137 </span>            :  * </a>
-<a name="138"><span class="lineNum">     138 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="139"><span class="lineNum">     139 </span>            :  */</a>
-<a name="140"><span class="lineNum">     140 </span>            : class USBMIDI_Interface : public USBSerialMIDI_Interface {</a>
-<a name="141"><span class="lineNum">     141 </span>            :   public:</a>
-<a name="142"><span class="lineNum">     142 </span>            :     /**</a>
-<a name="143"><span class="lineNum">     143 </span>            :      * @brief   Construct a new USBMIDI_Interface.</a>
-<a name="144"><span class="lineNum">     144 </span>            :      */</a>
-<a name="145"><span class="lineNum">     145 </span>            :     USBMIDI_Interface() : USBSerialMIDI_Interface(MIDI_BAUD) {}</a>
-<a name="146"><span class="lineNum">     146 </span>            : };</a>
-<a name="147"><span class="lineNum">     147 </span>            : </a>
-<a name="148"><span class="lineNum">     148 </span>            : END_CS_NAMESPACE</a>
-<a name="149"><span class="lineNum">     149 </span>            : </a>
-<a name="150"><span class="lineNum">     150 </span>            : #endif</a>
-<a name="151"><span class="lineNum">     151 </span>            : </a>
-<a name="152"><span class="lineNum">     152 </span>            : AH_DIAGNOSTIC_POP()</a>
+<a name="130"><span class="lineNum">     130 </span>            :   public:</a>
+<a name="131"><span class="lineNum">     131 </span>            :     /// @name Underlying USB communication</a>
+<a name="132"><span class="lineNum">     132 </span>            :     /// @{</a>
+<a name="133"><span class="lineNum">     133 </span>            : </a>
+<a name="134"><span class="lineNum">     134 </span>            :     using MIDIUSBPacket_t = USBMIDI::MIDIUSBPacket_t;</a>
+<a name="135"><span class="lineNum">     135 </span>            : </a>
+<a name="136"><span class="lineNum">     136 </span>            : #ifndef ARDUINO</a>
+<a name="137"><span class="lineNum">     137 </span>            :   public:</a>
+<a name="138"><span class="lineNum">     138 </span><span class="lineCov">         56 :     MOCK_METHOD(void, writeUSBPacket,</span></a>
+<a name="139"><span class="lineNum">     139 </span>            :                 (Cable, uint8_t, uint8_t, uint8_t, uint8_t));</a>
+<a name="140"><span class="lineNum">     140 </span><span class="lineCov">         32 :     MOCK_METHOD(MIDIUSBPacket_t, readUSBPacket, ());</span></a>
+<a name="141"><span class="lineNum">     141 </span><span class="lineCov">         23 :     void sendUSBNow() {}</span></a>
+<a name="142"><span class="lineNum">     142 </span>            : </a>
+<a name="143"><span class="lineNum">     143 </span>            : #else</a>
+<a name="144"><span class="lineNum">     144 </span>            :   private:</a>
+<a name="145"><span class="lineNum">     145 </span>            :     void writeUSBPacket(Cable cn, uint8_t cin, uint8_t d0, uint8_t d1,</a>
+<a name="146"><span class="lineNum">     146 </span>            :                         uint8_t d2) {</a>
+<a name="147"><span class="lineNum">     147 </span>            :         USBMIDI::write(cn.getRaw(), cin, d0, d1, d2);</a>
+<a name="148"><span class="lineNum">     148 </span>            :     }</a>
+<a name="149"><span class="lineNum">     149 </span>            :     MIDIUSBPacket_t readUSBPacket() { return USBMIDI::read(); }</a>
+<a name="150"><span class="lineNum">     150 </span>            :     void sendUSBNow() { USBMIDI::sendNow(); }</a>
+<a name="151"><span class="lineNum">     151 </span>            : #endif</a>
+<a name="152"><span class="lineNum">     152 </span>            : </a>
+<a name="153"><span class="lineNum">     153 </span>            :     /// @}</a>
+<a name="154"><span class="lineNum">     154 </span>            : };</a>
+<a name="155"><span class="lineNum">     155 </span>            : </a>
+<a name="156"><span class="lineNum">     156 </span>            : END_CS_NAMESPACE</a>
+<a name="157"><span class="lineNum">     157 </span>            : </a>
+<a name="158"><span class="lineNum">     158 </span>            : // If the main MCU doesn't have a USB connection:</a>
+<a name="159"><span class="lineNum">     159 </span>            : // Fall back on Serial connection at the hardware MIDI baud rate.</a>
+<a name="160"><span class="lineNum">     160 </span>            : // (Can be used with HIDUINO or USBMidiKliK.)</a>
+<a name="161"><span class="lineNum">     161 </span>            : #else</a>
+<a name="162"><span class="lineNum">     162 </span>            : </a>
+<a name="163"><span class="lineNum">     163 </span>            : #include &quot;SerialMIDI_Interface.hpp&quot;</a>
+<a name="164"><span class="lineNum">     164 </span>            : </a>
+<a name="165"><span class="lineNum">     165 </span>            : BEGIN_CS_NAMESPACE</a>
+<a name="166"><span class="lineNum">     166 </span>            : </a>
+<a name="167"><span class="lineNum">     167 </span>            : /**</a>
+<a name="168"><span class="lineNum">     168 </span>            :  * @brief   A class for MIDI interfaces sending MIDI messages over a USB MIDI</a>
+<a name="169"><span class="lineNum">     169 </span>            :  *          connection.</a>
+<a name="170"><span class="lineNum">     170 </span>            :  * </a>
+<a name="171"><span class="lineNum">     171 </span>            :  * @note    See @ref md_pages_MIDI-over-USB for more information.</a>
+<a name="172"><span class="lineNum">     172 </span>            :  * </a>
+<a name="173"><span class="lineNum">     173 </span>            :  * @ingroup MIDIInterfaces</a>
+<a name="174"><span class="lineNum">     174 </span>            :  */</a>
+<a name="175"><span class="lineNum">     175 </span>            : class USBMIDI_Interface : public USBSerialMIDI_Interface {</a>
+<a name="176"><span class="lineNum">     176 </span>            :   public:</a>
+<a name="177"><span class="lineNum">     177 </span>            :     /**</a>
+<a name="178"><span class="lineNum">     178 </span>            :      * @brief   Construct a new USBMIDI_Interface.</a>
+<a name="179"><span class="lineNum">     179 </span>            :      */</a>
+<a name="180"><span class="lineNum">     180 </span>            :     USBMIDI_Interface() : USBSerialMIDI_Interface(MIDI_BAUD) {}</a>
+<a name="181"><span class="lineNum">     181 </span>            : };</a>
+<a name="182"><span class="lineNum">     182 </span>            : </a>
+<a name="183"><span class="lineNum">     183 </span>            : END_CS_NAMESPACE</a>
+<a name="184"><span class="lineNum">     184 </span>            : </a>
+<a name="185"><span class="lineNum">     185 </span>            : #endif</a>
+<a name="186"><span class="lineNum">     186 </span>            : </a>
+<a name="187"><span class="lineNum">     187 </span>            : AH_DIAGNOSTIC_POP()</a>
 </pre>
       </td>
     </tr>
@@ -228,7 +263,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.14-6-g40580cd</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
   </table>
   <br>
 

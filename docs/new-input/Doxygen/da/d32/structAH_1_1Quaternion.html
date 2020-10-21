@@ -88,16 +88,26 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Type for quaternions of floating point numbers.  
- <a href="../../da/d32/structAH_1_1Quaternion.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">AH/Math/Quaternion.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Type for quaternions of floating point numbers. </p>
+<p>Quaternions can be multiplied (Hamiltonian product), normalized and can perform rotations of vectors. <a class="el" href="../../da/d32/structAH_1_1Quaternion.html" title="Type for quaternions of floating point numbers.">Quaternion</a> also has an implementation of the following operators:</p>
+<ul>
+<li><code>-</code> (conjugate)</li>
+<li><code>+</code>, <code>+=</code>, <code>-</code>, <code>-=</code> (Hamiltonian product of quaternions, adds and subtracts angles)</li>
+<li><code>*</code>, <code>*=</code>, <code>/</code>, <code>/=</code> (multiplication and division by scalars)</li>
+<li><code>==</code>, <code>!=</code> (equality)</li>
+<li><code>&lt;&lt;</code> (printing) </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for Quaternion:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/de2/structAH_1_1Quaternion__coll__graph.svg" width="186" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/de2/structAH_1_1Quaternion__coll__graph.svg" width="186" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -201,19 +211,7 @@ Related Functions</h2></td></tr>
 <tr class="memdesc:gab105894bea5e13f3b60cf4283ffe4f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Printing.  <a href="../../d5/d99/group__math-types.html#gab105894bea5e13f3b60cf4283ffe4f81">More...</a><br /></td></tr>
 <tr class="separator:gab105894bea5e13f3b60cf4283ffe4f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Type for quaternions of floating point numbers. </p>
-<p>Quaternions can be multiplied (Hamiltonian product), normalized and can perform rotations of vectors. <a class="el" href="../../da/d32/structAH_1_1Quaternion.html" title="Type for quaternions of floating point numbers.">Quaternion</a> also has an implementation of the following operators:</p>
-<ul>
-<li><code>-</code> (conjugate)</li>
-<li><code>+</code>, <code>+=</code>, <code>-</code>, <code>-=</code> (Hamiltonian product of quaternions, adds and subtracts angles)</li>
-<li><code>*</code>, <code>*=</code>, <code>/</code>, <code>/=</code> (multiplication and division by scalars)</li>
-<li><code>==</code>, <code>!=</code> (equality)</li>
-<li><code>&lt;&lt;</code> (printing) </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa6b3a49c0418a7fff323e09d0ec6c3b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6b3a49c0418a7fff323e09d0ec6c3b9">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[1/2]</span></h2>
 
@@ -289,7 +287,7 @@ Related Functions</h2></td></tr>
 
 <p>Create a quaterion with the given values for w, x, y and z. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -321,7 +319,7 @@ Related Functions</h2></td></tr>
 <p>Sum of two quaterions uses quaternion multiplication. </p>
 <p>(Composition of the two rotations.) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00073">73</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -352,7 +350,7 @@ Related Functions</h2></td></tr>
 <p>Sum of two quaternions uses quaternion multiplication. </p>
 <p>(Composition of the two rotations.) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -381,7 +379,7 @@ Related Functions</h2></td></tr>
 
 <p>Complex conjugate (doesn't change the original quaternion). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -410,7 +408,7 @@ Related Functions</h2></td></tr>
 
 <p>Negated quaternion is its conjugate. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00086">86</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -441,7 +439,7 @@ Related Functions</h2></td></tr>
 <p>Difference of two quaternions <code>a</code> and <code>b</code> is the quaternion multiplication of <code>a</code> and the conjugate of <code>b</code>. </p>
 <p>(Composition of the rotation of <code>a</code> and the inverse rotation of <code>b</code>.) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00091">91</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00090">90</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -472,7 +470,7 @@ Related Functions</h2></td></tr>
 <p>Difference of two quaternions <code>a</code> and <code>b</code> is the quaternion multiplication of <code>a</code> and the conjugate of <code>b</code>. </p>
 <p>(Composition of the rotation of <code>a</code> and the inverse rotation of <code>b</code>.) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00095">95</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -502,7 +500,7 @@ Related Functions</h2></td></tr>
 
 <p>Scalar multiplication. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -532,7 +530,7 @@ Related Functions</h2></td></tr>
 
 <p>Scalar multiplication. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -562,7 +560,7 @@ Related Functions</h2></td></tr>
 
 <p>Scalar division. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -592,7 +590,7 @@ Related Functions</h2></td></tr>
 
 <p>Scalar division. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -621,7 +619,7 @@ Related Functions</h2></td></tr>
 
 <p>Norm squared. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00132">132</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00131">131</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -650,7 +648,7 @@ Related Functions</h2></td></tr>
 
 <p>Norm. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00134">134</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00133">133</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -679,7 +677,7 @@ Related Functions</h2></td></tr>
 
 <p>Normalize this quaternion. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00136">136</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00135">135</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -708,7 +706,7 @@ Related Functions</h2></td></tr>
 
 <p>Normalize a copy of this quaternion (doesn't change the original quaternion). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00139">139</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00138">138</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -740,7 +738,7 @@ Related Functions</h2></td></tr>
 <p>This function uses the normalized version of this quaternion.</p>
 <dl class="section note"><dt>Note</dt><dd>This function is not the same as <code>quatrotate</code> in MATLAB! MATLAB rotates by the conjugate of the quaternion, while this function rotates by the quaternion itself. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00149">149</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -770,7 +768,7 @@ Related Functions</h2></td></tr>
 
 <p>Equality check. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00180">180</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00179">179</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -800,7 +798,7 @@ Related Functions</h2></td></tr>
 
 <p>Inequality check. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00185">185</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00184">184</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -829,7 +827,7 @@ Related Functions</h2></td></tr>
 
 <p>Identity quaternion (1,0,0,0). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00188">188</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00187">187</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -859,7 +857,7 @@ Related Functions</h2></td></tr>
 
 <p>Calculate the quaternion that satisfies the following: <code>result.rotate(<a class="el" href="../../d2/d04/structAH_1_1Vec3f.html" title="Type for 3D vectors of floating point numbers.">Vec3f</a>{0, 0, 1}) == v.normalized()</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00194">194</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00193">193</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -907,7 +905,7 @@ Related Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A quaternion from the vector {tan(yAngle), -tan(xAngle), 1}. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00257">257</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00256">256</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -947,7 +945,7 @@ Related Functions</h2></td></tr>
 
 <p><a class="el" href="../../da/d32/structAH_1_1Quaternion.html" title="Type for quaternions of floating point numbers.">Quaternion</a> multiplication. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00267">267</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00266">266</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -966,7 +964,7 @@ Related Functions</h2></td></tr>
 
 <p>Scalar (real) component. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -984,7 +982,7 @@ Related Functions</h2></td></tr>
 
 <p>First vector (imaginary) component \( \mathbf{i} \). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1000,7 @@ Related Functions</h2></td></tr>
 
 <p>Second vector (imaginary) component \( \mathbf{j} \). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1018,7 @@ Related Functions</h2></td></tr>
 
 <p>Third vector (imaginary) component \( \mathbf{k} \). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d3/d1f/Quaternion_8hpp_source.html">Quaternion.hpp</a>.</p>
 
 </div>
 </div>

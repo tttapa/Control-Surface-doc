@@ -90,63 +90,35 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A super class for object that have to be updated regularly.  
- <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d4/d93/Updatable_8hpp_source.html">AH/Containers/Updatable.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class Derived, bool ThreadSafe = false&gt;<br />
+class AH::UpdatableCRTP&lt; Derived, ThreadSafe &gt;</h3>
+
+<p>A super class for object that have to be updated regularly. </p>
+<p>All instances of this class are kept in a linked list, so it's easy to iterate over all of them to update them. <br  />
+</p>
+<p>This version uses static polymorphism using the Curiously Recurring Template Pattern. This requires less virtual function calls. <br  />
+ (Only the destructor is virtual.) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for UpdatableCRTP&lt; Derived, ThreadSafe &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d62/classAH_1_1UpdatableCRTP__inherit__graph.svg" width="214" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d62/classAH_1_1UpdatableCRTP__inherit__graph.svg" width="214" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for UpdatableCRTP&lt; Derived, ThreadSafe &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/ddc/classAH_1_1UpdatableCRTP__coll__graph.svg" width="454" height="830"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/ddc/classAH_1_1UpdatableCRTP__coll__graph.svg" width="454" height="830"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
-<tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
-<tr class="separator:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c6961fd0771eb386881f1e8fcbbb205"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8c6961fd0771eb386881f1e8fcbbb205">~UpdatableCRTP</a> () __attribute__((no_sanitize(&quot;undefined&quot;)))</td></tr>
-<tr class="memdesc:a8c6961fd0771eb386881f1e8fcbbb205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor: remove the updatable from the linked list of instances.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8c6961fd0771eb386881f1e8fcbbb205">More...</a><br /></td></tr>
-<tr class="separator:a8c6961fd0771eb386881f1e8fcbbb205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a5e1d8290397ae14e2be6eb56e1d1c1fb">getMutex</a> ()</td></tr>
-<tr class="separator:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a408b85d80080c72dd9283e58f5862951"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> () __attribute__((no_sanitize(&quot;undefined&quot;)))</td></tr>
-<tr class="memdesc:a408b85d80080c72dd9283e58f5862951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: create an <a class="el" href="../../d1/d55/classAH_1_1Updatable.html" title="A super class for object that have to be updated regularly.">Updatable</a> and add it to the linked list of instances.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">More...</a><br /></td></tr>
-<tr class="separator:a408b85d80080c72dd9283e58f5862951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
-<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
-<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; Derived &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
-<tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
-<tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Main initialization and updating methods</h2></td></tr>
 <tr class="memitem:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
@@ -202,19 +174,46 @@ Enabling and disabling updatables</h2></td></tr>
 <tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac05c991ba1ef6cb7363a44e2232119f0">disable</a> (U(&amp;array)[N])</td></tr>
 <tr class="memdesc:ac05c991ba1ef6cb7363a44e2232119f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac05c991ba1ef6cb7363a44e2232119f0">More...</a><br /></td></tr>
 <tr class="separator:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
+<tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
+<tr class="separator:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8c6961fd0771eb386881f1e8fcbbb205"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8c6961fd0771eb386881f1e8fcbbb205">~UpdatableCRTP</a> () __attribute__((no_sanitize(&quot;undefined&quot;)))</td></tr>
+<tr class="memdesc:a8c6961fd0771eb386881f1e8fcbbb205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor: remove the updatable from the linked list of instances.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8c6961fd0771eb386881f1e8fcbbb205">More...</a><br /></td></tr>
+<tr class="separator:a8c6961fd0771eb386881f1e8fcbbb205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a5e1d8290397ae14e2be6eb56e1d1c1fb">getMutex</a> ()</td></tr>
+<tr class="separator:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a408b85d80080c72dd9283e58f5862951"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> () __attribute__((no_sanitize(&quot;undefined&quot;)))</td></tr>
+<tr class="memdesc:a408b85d80080c72dd9283e58f5862951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: create an <a class="el" href="../../d1/d55/classAH_1_1Updatable.html" title="A super class for object that have to be updated regularly.">Updatable</a> and add it to the linked list of instances.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">More...</a><br /></td></tr>
+<tr class="separator:a408b85d80080c72dd9283e58f5862951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
+<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
+<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; Derived &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
+<tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
+<tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Derived, bool ThreadSafe = false&gt;<br />
-class AH::UpdatableCRTP&lt; Derived, ThreadSafe &gt;</h3>
-
-<p>A super class for object that have to be updated regularly. </p>
-<p>All instances of this class are kept in a linked list, so it's easy to iterate over all of them to update them. <br  />
-</p>
-<p>This version uses static polymorphism using the Curiously Recurring Template Pattern. This requires less virtual function calls. <br  />
- (Only the destructor is virtual.) </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="adb6674b573bf7610072c9e8d3abb2ff4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb6674b573bf7610072c9e8d3abb2ff4">&#9670;&nbsp;</a></span>Mutex</h2>
 

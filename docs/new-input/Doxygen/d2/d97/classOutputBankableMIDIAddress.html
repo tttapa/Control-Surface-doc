@@ -84,23 +84,31 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A base class for all MIDIOutputElements that can be banked.  
- <a href="../../d2/d97/classOutputBankableMIDIAddress.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d0/dd4/BankableAddresses_8hpp_source.html">Banks/BankableAddresses.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A base class for all MIDIOutputElements that can be banked. </p>
+<dl class="section note"><dt>Note</dt><dd>These elements don't have to be updated when the bank setting is changed, because they poll the bank setting each time they send a MIDI event. <br  />
+ They are not added to the bank, they just keep a reference to the bank they're a part of. <br  />
+</dd>
+<dd>
+To prevent 'sticky' notes (i.e. a button is pressed, a note on is sent, the bank is changed, the button is released, and the note off is sent to a different address, causing the first note to keep on playing indefinitely), there must be a way to lock the bank setting while a note is playing. Then when it is no longer playing, the bank setting is unlocked. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dd4/BankableAddresses_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../d0/dd4/BankableAddresses_8hpp_source.html">BankableAddresses.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for OutputBankableMIDIAddress:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/ddf/classOutputBankableMIDIAddress__inherit__graph.svg" width="619" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/ddf/classOutputBankableMIDIAddress__inherit__graph.svg" width="619" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for OutputBankableMIDIAddress:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d74/classOutputBankableMIDIAddress__coll__graph.svg" width="283" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d74/classOutputBankableMIDIAddress__coll__graph.svg" width="283" height="531"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -144,16 +152,7 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a32d523986f90ac9f9aeea28f493e7ff9"><td class="memItemLeft" align="right" valign="top">constexpr static <a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4e/classOutputBankableMIDIAddress__Base.html#a32d523986f90ac9f9aeea28f493e7ff9">UNLOCKED</a> = <a class="el" href="../../d0/d4e/Def_8hpp.html#a4e7b1c05c3cca4ac7ef52e5faa9d4178">NO_SETTING</a></td></tr>
 <tr class="separator:a32d523986f90ac9f9aeea28f493e7ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A base class for all MIDIOutputElements that can be banked. </p>
-<dl class="section note"><dt>Note</dt><dd>These elements don't have to be updated when the bank setting is changed, because they poll the bank setting each time they send a MIDI event. <br  />
- They are not added to the bank, they just keep a reference to the bank they're a part of. <br  />
-</dd>
-<dd>
-To prevent 'sticky' notes (i.e. a button is pressed, a note on is sent, the bank is changed, the button is released, and the note off is sent to a different address, causing the first note to keep on playing indefinitely), there must be a way to lock the bank setting while a note is playing. Then when it is no longer playing, the bank setting is unlocked. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d0/dd4/BankableAddresses_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../d0/dd4/BankableAddresses_8hpp_source.html">BankableAddresses.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3685f8b7d48404222db6b9c4f0a30c2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3685f8b7d48404222db6b9c4f0a30c2d">&#9670;&nbsp;</a></span>OutputBankableMIDIAddress() <span class="overload">[1/2]</span></h2>
 

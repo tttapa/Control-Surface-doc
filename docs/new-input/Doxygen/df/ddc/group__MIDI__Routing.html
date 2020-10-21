@@ -81,82 +81,6 @@ $(function() {
 <div class="title">MIDI Routing</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Operators and utilities for MIDI routing.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that can receive MIDI messages from a MIDI pipe.  <a href="../../d9/db6/classMIDI__Sink.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that can send MIDI messages to a MIDI pipe.  <a href="../../df/d5b/classMIDI__Source.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="../../d9/db6/classMIDI__Sink.html" title="Class that can receive MIDI messages from a MIDI pipe.">MIDI_Sink</a> that is not a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>.  <a href="../../d5/dc1/structTrueMIDI__Sink.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="../../df/d5b/classMIDI__Source.html" title="Class that can send MIDI messages to a MIDI pipe.">MIDI_Source</a> that is not a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>.  <a href="../../d2/dcd/structTrueMIDI__Source.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that routes MIDI messages from a <a class="el" href="../../df/d5b/classMIDI__Source.html" title="Class that can send MIDI messages to a MIDI pipe.">MIDI_Source</a> to a <a class="el" href="../../d9/db6/classMIDI__Sink.html" title="Class that can receive MIDI messages from a MIDI pipe.">MIDI_Sink</a>.  <a href="../../df/d72/classMIDI__Pipe.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that is both a <a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html" title="A MIDI_Sink that is not a MIDI_Pipe.">TrueMIDI_Sink</a> and a <a class="el" href="../../d2/dcd/structTrueMIDI__Source.html" title="A MIDI_Source that is not a MIDI_Pipe.">TrueMIDI_Source</a>.  <a href="../../d0/dc3/structTrueMIDI__SinkSource.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory&lt; N, Pipe &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that produces multiple <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>s.  <a href="../../d3/da5/structMIDI__PipeFactory.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga987286a8b6dfd1b157a8fde75c203627"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> = std::pair&lt; <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>, <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &gt;</td></tr>
-<tr class="memdesc:ga987286a8b6dfd1b157a8fde75c203627"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bidirectional pipe consists of two unidirectional pipes.  <a href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">More...</a><br /></td></tr>
-<tr class="separator:ga987286a8b6dfd1b157a8fde75c203627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1901f6fc0f19b8c05c5639ab0a0b2ab"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:gab1901f6fc0f19b8c05c5639ab0a0b2ab"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab1901f6fc0f19b8c05c5639ab0a0b2ab">BidirectionalMIDI_PipeFactory</a> = <a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &gt;</td></tr>
-<tr class="separator:gab1901f6fc0f19b8c05c5639ab0a0b2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga5fb86a8dca73f5719b5dc17f8c21dc0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga5fb86a8dca73f5719b5dc17f8c21dc0a">operator&gt;&gt;</a> (<a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;source, <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;pipe)</td></tr>
-<tr class="memdesc:ga5fb86a8dca73f5719b5dc17f8c21dc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a source to a pipe (<code>source &gt;&gt; pipe</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#ga5fb86a8dca73f5719b5dc17f8c21dc0a">More...</a><br /></td></tr>
-<tr class="separator:ga5fb86a8dca73f5719b5dc17f8c21dc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03ae4d361bfa4327a69c6a03fa8ec5bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga03ae4d361bfa4327a69c6a03fa8ec5bd">operator&gt;&gt;</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;pipe, <a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;sink)</td></tr>
-<tr class="memdesc:ga03ae4d361bfa4327a69c6a03fa8ec5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a pipe to a sink (<code>pipe &gt;&gt; sink</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#ga03ae4d361bfa4327a69c6a03fa8ec5bd">More...</a><br /></td></tr>
-<tr class="separator:ga03ae4d361bfa4327a69c6a03fa8ec5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaefcd48a9c71246a908e661f69f74cf3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gaefcd48a9c71246a908e661f69f74cf3f">operator&lt;&lt;</a> (<a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;sink, <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;pipe)</td></tr>
-<tr class="memdesc:gaefcd48a9c71246a908e661f69f74cf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a sink to a pipe (<code>sink &lt;&lt; pipe</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#gaefcd48a9c71246a908e661f69f74cf3f">More...</a><br /></td></tr>
-<tr class="separator:gaefcd48a9c71246a908e661f69f74cf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa85f15231ba7991de9aee5a6ccc322e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gaa85f15231ba7991de9aee5a6ccc322e5">operator&lt;&lt;</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;pipe, <a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;source)</td></tr>
-<tr class="memdesc:gaa85f15231ba7991de9aee5a6ccc322e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a pipe to a source (<code>pipe &lt;&lt; source</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#gaa85f15231ba7991de9aee5a6ccc322e5">More...</a><br /></td></tr>
-<tr class="separator:gaa85f15231ba7991de9aee5a6ccc322e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga40eb63fee9070b0de24f336bbc97d048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga40eb63fee9070b0de24f336bbc97d048">operator|</a> (<a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &amp;pipe, <a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;sinksource)</td></tr>
-<tr class="memdesc:ga40eb63fee9070b0de24f336bbc97d048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a pipe to a sink+source (<code>pipe | source+sink</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#ga40eb63fee9070b0de24f336bbc97d048">More...</a><br /></td></tr>
-<tr class="separator:ga40eb63fee9070b0de24f336bbc97d048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga680cba030b59ffbeb399e6900da1d67d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga680cba030b59ffbeb399e6900da1d67d">operator|</a> (<a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;sinksource, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &amp;pipe)</td></tr>
-<tr class="memdesc:ga680cba030b59ffbeb399e6900da1d67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a sink+source to a pipe (<code>source+sink | pipe</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#ga680cba030b59ffbeb399e6900da1d67d">More...</a><br /></td></tr>
-<tr class="separator:ga680cba030b59ffbeb399e6900da1d67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0695faab4e34e1f2198a6270b2c20138"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
-<tr class="memitem:ga0695faab4e34e1f2198a6270b2c20138"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga0695faab4e34e1f2198a6270b2c20138">operator&gt;&gt;</a> (<a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;source, <a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;pipe_fact)</td></tr>
-<tr class="separator:ga0695faab4e34e1f2198a6270b2c20138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b161c997b842c9de702b1f9bfeae8b0"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
-<tr class="memitem:ga3b161c997b842c9de702b1f9bfeae8b0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga3b161c997b842c9de702b1f9bfeae8b0">operator&gt;&gt;</a> (<a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;pipe_fact, <a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;sink)</td></tr>
-<tr class="separator:ga3b161c997b842c9de702b1f9bfeae8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ba4f1c8d6bddc383ed7d7b6d3640085"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
-<tr class="memitem:ga4ba4f1c8d6bddc383ed7d7b6d3640085"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga4ba4f1c8d6bddc383ed7d7b6d3640085">operator&lt;&lt;</a> (<a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;sink, <a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;pipe_fact)</td></tr>
-<tr class="separator:ga4ba4f1c8d6bddc383ed7d7b6d3640085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae82da6e56996b2b9328f33654134d51f"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
-<tr class="memitem:gae82da6e56996b2b9328f33654134d51f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gae82da6e56996b2b9328f33654134d51f">operator&lt;&lt;</a> (<a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;pipe_fact, <a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;source)</td></tr>
-<tr class="separator:gae82da6e56996b2b9328f33654134d51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea08e8a3351078a2ddb6cabee814455e"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:gaea08e8a3351078a2ddb6cabee814455e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gaea08e8a3351078a2ddb6cabee814455e">operator|</a> (<a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab1901f6fc0f19b8c05c5639ab0a0b2ab">BidirectionalMIDI_PipeFactory</a>&lt; N &gt; &amp;pipe_fact, <a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;sinksource)</td></tr>
-<tr class="separator:gaea08e8a3351078a2ddb6cabee814455e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8d092b52a557287ab50e78dc3fd5ad7"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:gab8d092b52a557287ab50e78dc3fd5ad7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab8d092b52a557287ab50e78dc3fd5ad7">operator|</a> (<a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;sinksource, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab1901f6fc0f19b8c05c5639ab0a0b2ab">BidirectionalMIDI_PipeFactory</a>&lt; N &gt; &amp;pipe_fact)</td></tr>
-<tr class="separator:gab8d092b52a557287ab50e78dc3fd5ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Operators and utilities for MIDI routing. </p>
 <p>Allows you to use syntax like:</p>
@@ -174,7 +98,125 @@ Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line">midiA | pipes | midiB;</div>
 <div class="line">midiA | pipes | midiC;</div>
-</div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
+</div><!-- fragment --> <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives MIDI messages from a MIDI pipe.  <a href="../../d9/db6/classMIDI__Sink.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that can send MIDI messages to a MIDI pipe.  <a href="../../df/d5b/classMIDI__Source.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that routes MIDI messages from a <a class="el" href="../../df/d5b/classMIDI__Source.html" title="Class that can send MIDI messages to a MIDI pipe.">MIDI_Source</a> to a <a class="el" href="../../d9/db6/classMIDI__Sink.html" title="Receives MIDI messages from a MIDI pipe.">MIDI_Sink</a>.  <a href="../../df/d72/classMIDI__Pipe.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that is both a TrueMIDI_Sink and a TrueMIDI_Source.  <a href="../../d0/dc3/structTrueMIDI__SinkSource.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory&lt; N, Pipe &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that produces multiple <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>s.  <a href="../../d3/da5/structMIDI__PipeFactory.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gac27c6c6f4caf743452f13595ca1c410d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> = <a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a></td></tr>
+<tr class="memdesc:gac27c6c6f4caf743452f13595ca1c410d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="../../d9/db6/classMIDI__Sink.html" title="Receives MIDI messages from a MIDI pipe.">MIDI_Sink</a> that is not a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>.  <a href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">More...</a><br /></td></tr>
+<tr class="separator:gac27c6c6f4caf743452f13595ca1c410d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37ee55cff00d01fb133cb817c19ddc47"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> = <a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a></td></tr>
+<tr class="memdesc:ga37ee55cff00d01fb133cb817c19ddc47"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="../../df/d5b/classMIDI__Source.html" title="Class that can send MIDI messages to a MIDI pipe.">MIDI_Source</a> that is not a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>.  <a href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">More...</a><br /></td></tr>
+<tr class="separator:ga37ee55cff00d01fb133cb817c19ddc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga987286a8b6dfd1b157a8fde75c203627"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> = std::pair&lt; <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>, <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &gt;</td></tr>
+<tr class="memdesc:ga987286a8b6dfd1b157a8fde75c203627"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bidirectional pipe consists of two unidirectional pipes.  <a href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">More...</a><br /></td></tr>
+<tr class="separator:ga987286a8b6dfd1b157a8fde75c203627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1901f6fc0f19b8c05c5639ab0a0b2ab"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:gab1901f6fc0f19b8c05c5639ab0a0b2ab"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab1901f6fc0f19b8c05c5639ab0a0b2ab">BidirectionalMIDI_PipeFactory</a> = <a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &gt;</td></tr>
+<tr class="separator:gab1901f6fc0f19b8c05c5639ab0a0b2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga5fb86a8dca73f5719b5dc17f8c21dc0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga5fb86a8dca73f5719b5dc17f8c21dc0a">operator&gt;&gt;</a> (<a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;source, <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;pipe)</td></tr>
+<tr class="memdesc:ga5fb86a8dca73f5719b5dc17f8c21dc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a source to a pipe (<code>source &gt;&gt; pipe</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#ga5fb86a8dca73f5719b5dc17f8c21dc0a">More...</a><br /></td></tr>
+<tr class="separator:ga5fb86a8dca73f5719b5dc17f8c21dc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03ae4d361bfa4327a69c6a03fa8ec5bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga03ae4d361bfa4327a69c6a03fa8ec5bd">operator&gt;&gt;</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;pipe, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;sink)</td></tr>
+<tr class="memdesc:ga03ae4d361bfa4327a69c6a03fa8ec5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a pipe to a sink (<code>pipe &gt;&gt; sink</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#ga03ae4d361bfa4327a69c6a03fa8ec5bd">More...</a><br /></td></tr>
+<tr class="separator:ga03ae4d361bfa4327a69c6a03fa8ec5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefcd48a9c71246a908e661f69f74cf3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gaefcd48a9c71246a908e661f69f74cf3f">operator&lt;&lt;</a> (<a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;sink, <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;pipe)</td></tr>
+<tr class="memdesc:gaefcd48a9c71246a908e661f69f74cf3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a sink to a pipe (<code>sink &lt;&lt; pipe</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#gaefcd48a9c71246a908e661f69f74cf3f">More...</a><br /></td></tr>
+<tr class="separator:gaefcd48a9c71246a908e661f69f74cf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa85f15231ba7991de9aee5a6ccc322e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gaa85f15231ba7991de9aee5a6ccc322e5">operator&lt;&lt;</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;pipe, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;source)</td></tr>
+<tr class="memdesc:gaa85f15231ba7991de9aee5a6ccc322e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a pipe to a source (<code>pipe &lt;&lt; source</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#gaa85f15231ba7991de9aee5a6ccc322e5">More...</a><br /></td></tr>
+<tr class="separator:gaa85f15231ba7991de9aee5a6ccc322e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa719d3092e3dc184f71d088ffb22da28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gaa719d3092e3dc184f71d088ffb22da28">operator&lt;&lt;</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;, <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;)=delete</td></tr>
+<tr class="memdesc:gaa719d3092e3dc184f71d088ffb22da28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Don't connect two pipes to eachother.  <a href="../../df/ddc/group__MIDI__Routing.html#gaa719d3092e3dc184f71d088ffb22da28">More...</a><br /></td></tr>
+<tr class="separator:gaa719d3092e3dc184f71d088ffb22da28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40eb63fee9070b0de24f336bbc97d048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga40eb63fee9070b0de24f336bbc97d048">operator|</a> (<a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &amp;pipe, <a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;sinksource)</td></tr>
+<tr class="memdesc:ga40eb63fee9070b0de24f336bbc97d048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a pipe to a sink+source (<code>pipe | source+sink</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#ga40eb63fee9070b0de24f336bbc97d048">More...</a><br /></td></tr>
+<tr class="separator:ga40eb63fee9070b0de24f336bbc97d048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga680cba030b59ffbeb399e6900da1d67d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga680cba030b59ffbeb399e6900da1d67d">operator|</a> (<a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;sinksource, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &amp;pipe)</td></tr>
+<tr class="memdesc:ga680cba030b59ffbeb399e6900da1d67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a sink+source to a pipe (<code>source+sink | pipe</code>).  <a href="../../df/ddc/group__MIDI__Routing.html#ga680cba030b59ffbeb399e6900da1d67d">More...</a><br /></td></tr>
+<tr class="separator:ga680cba030b59ffbeb399e6900da1d67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0695faab4e34e1f2198a6270b2c20138"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
+<tr class="memitem:ga0695faab4e34e1f2198a6270b2c20138"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga0695faab4e34e1f2198a6270b2c20138">operator&gt;&gt;</a> (<a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;source, <a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;pipe_fact)</td></tr>
+<tr class="separator:ga0695faab4e34e1f2198a6270b2c20138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga777d6bd3375a4704878fa8bee385c72e"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
+<tr class="memitem:ga777d6bd3375a4704878fa8bee385c72e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga777d6bd3375a4704878fa8bee385c72e">operator&gt;&gt;</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;, <a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;)=delete</td></tr>
+<tr class="separator:ga777d6bd3375a4704878fa8bee385c72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b161c997b842c9de702b1f9bfeae8b0"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
+<tr class="memitem:ga3b161c997b842c9de702b1f9bfeae8b0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga3b161c997b842c9de702b1f9bfeae8b0">operator&gt;&gt;</a> (<a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;pipe_fact, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;sink)</td></tr>
+<tr class="separator:ga3b161c997b842c9de702b1f9bfeae8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe9f37fe2a2d28e770e96cc7c04e2e1a"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
+<tr class="memitem:gafe9f37fe2a2d28e770e96cc7c04e2e1a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gafe9f37fe2a2d28e770e96cc7c04e2e1a">operator&gt;&gt;</a> (<a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;, <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;)=delete</td></tr>
+<tr class="separator:gafe9f37fe2a2d28e770e96cc7c04e2e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ba4f1c8d6bddc383ed7d7b6d3640085"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
+<tr class="memitem:ga4ba4f1c8d6bddc383ed7d7b6d3640085"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga4ba4f1c8d6bddc383ed7d7b6d3640085">operator&lt;&lt;</a> (<a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;sink, <a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;pipe_fact)</td></tr>
+<tr class="separator:ga4ba4f1c8d6bddc383ed7d7b6d3640085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae82da6e56996b2b9328f33654134d51f"><td class="memTemplParams" colspan="2">template&lt;size_t N, class Pipe &gt; </td></tr>
+<tr class="memitem:gae82da6e56996b2b9328f33654134d51f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gae82da6e56996b2b9328f33654134d51f">operator&lt;&lt;</a> (<a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;pipe_fact, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;source)</td></tr>
+<tr class="separator:gae82da6e56996b2b9328f33654134d51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea08e8a3351078a2ddb6cabee814455e"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:gaea08e8a3351078a2ddb6cabee814455e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gaea08e8a3351078a2ddb6cabee814455e">operator|</a> (<a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab1901f6fc0f19b8c05c5639ab0a0b2ab">BidirectionalMIDI_PipeFactory</a>&lt; N &gt; &amp;pipe_fact, <a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;sinksource)</td></tr>
+<tr class="separator:gaea08e8a3351078a2ddb6cabee814455e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8d092b52a557287ab50e78dc3fd5ad7"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:gab8d092b52a557287ab50e78dc3fd5ad7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab8d092b52a557287ab50e78dc3fd5ad7">operator|</a> (<a class="el" href="../../d0/dc3/structTrueMIDI__SinkSource.html">TrueMIDI_SinkSource</a> &amp;sinksource, <a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab1901f6fc0f19b8c05c5639ab0a0b2ab">BidirectionalMIDI_PipeFactory</a>&lt; N &gt; &amp;pipe_fact)</td></tr>
+<tr class="separator:gab8d092b52a557287ab50e78dc3fd5ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gac27c6c6f4caf743452f13595ca1c410d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac27c6c6f4caf743452f13595ca1c410d">&#9670;&nbsp;</a></span>TrueMIDI_Sink</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> =  <a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A <a class="el" href="../../d9/db6/classMIDI__Sink.html" title="Receives MIDI messages from a MIDI pipe.">MIDI_Sink</a> that is not a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ga37ee55cff00d01fb133cb817c19ddc47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37ee55cff00d01fb133cb817c19ddc47">&#9670;&nbsp;</a></span>TrueMIDI_Source</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> =  <a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A <a class="el" href="../../df/d5b/classMIDI__Source.html" title="Class that can send MIDI messages to a MIDI pipe.">MIDI_Source</a> that is not a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+
+</div>
+</div>
 <a id="ga987286a8b6dfd1b157a8fde75c203627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga987286a8b6dfd1b157a8fde75c203627">&#9670;&nbsp;</a></span>BidirectionalMIDI_Pipe</h2>
 
@@ -189,7 +231,7 @@ Functions</h2></td></tr>
 
 <p>A bidirectional pipe consists of two unidirectional pipes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00504">504</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00555">555</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,13 +247,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00571">571</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00625">625</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga5fb86a8dca73f5719b5dc17f8c21dc0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5fb86a8dca73f5719b5dc17f8c21dc0a">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5fb86a8dca73f5719b5dc17f8c21dc0a">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +264,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator&gt;&gt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
@@ -246,12 +288,12 @@ Functions</h2></td></tr>
 
 <p>Connect a source to a pipe (<code>source &gt;&gt; pipe</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00507">507</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00558">558</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
 <a id="ga03ae4d361bfa4327a69c6a03fa8ec5bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga03ae4d361bfa4327a69c6a03fa8ec5bd">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03ae4d361bfa4327a69c6a03fa8ec5bd">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +302,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a>&amp; operator&gt;&gt; </td>
+          <td class="memname"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a>&amp; operator&gt;&gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td>
           <td class="paramname"><em>pipe</em>, </td>
@@ -268,7 +310,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;&#160;</td>
           <td class="paramname"><em>sink</em>&#160;</td>
         </tr>
         <tr>
@@ -286,12 +328,12 @@ Functions</h2></td></tr>
 
 <p>Connect a pipe to a sink (<code>pipe &gt;&gt; sink</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00513">513</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00564">564</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
 <a id="gaefcd48a9c71246a908e661f69f74cf3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaefcd48a9c71246a908e661f69f74cf3f">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefcd48a9c71246a908e661f69f74cf3f">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +344,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;&#160;</td>
           <td class="paramname"><em>sink</em>, </td>
         </tr>
         <tr>
@@ -326,12 +368,12 @@ Functions</h2></td></tr>
 
 <p>Connect a sink to a pipe (<code>sink &lt;&lt; pipe</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00519">519</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00570">570</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
 <a id="gaa85f15231ba7991de9aee5a6ccc322e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa85f15231ba7991de9aee5a6ccc322e5">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa85f15231ba7991de9aee5a6ccc322e5">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +382,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a>&amp; operator&lt;&lt; </td>
+          <td class="memname"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a>&amp; operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td>
           <td class="paramname"><em>pipe</em>, </td>
@@ -348,7 +390,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;&#160;</td>
           <td class="paramname"><em>source</em>&#160;</td>
         </tr>
         <tr>
@@ -366,7 +408,45 @@ Functions</h2></td></tr>
 
 <p>Connect a pipe to a source (<code>pipe &lt;&lt; source</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00525">525</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00576">576</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="gaa719d3092e3dc184f71d088ffb22da28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa719d3092e3dc184f71d088ffb22da28">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Don't connect two pipes to eachother. </p>
 
 </div>
 </div>
@@ -406,7 +486,7 @@ Functions</h2></td></tr>
 
 <p>Connect a pipe to a sink+source (<code>pipe | source+sink</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00531">531</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00585">585</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -446,12 +526,12 @@ Functions</h2></td></tr>
 
 <p>Connect a sink+source to a pipe (<code>source+sink | pipe</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00539">539</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00593">593</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
 <a id="ga0695faab4e34e1f2198a6270b2c20138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0695faab4e34e1f2198a6270b2c20138">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0695faab4e34e1f2198a6270b2c20138">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +542,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator&gt;&gt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
@@ -484,12 +564,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00575">575</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00629">629</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ga3b161c997b842c9de702b1f9bfeae8b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3b161c997b842c9de702b1f9bfeae8b0">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[4/4]</span></h2>
+<a id="ga777d6bd3375a4704878fa8bee385c72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga777d6bd3375a4704878fa8bee385c72e">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +578,43 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a>&amp; operator&gt;&gt; </td>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3b161c997b842c9de702b1f9bfeae8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b161c997b842c9de702b1f9bfeae8b0">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a>&amp; operator&gt;&gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;&#160;</td>
           <td class="paramname"><em>pipe_fact</em>, </td>
@@ -506,7 +622,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;&#160;</td>
           <td class="paramname"><em>sink</em>&#160;</td>
         </tr>
         <tr>
@@ -522,12 +638,48 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00581">581</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00638">638</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="gafe9f37fe2a2d28e770e96cc7c04e2e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe9f37fe2a2d28e770e96cc7c04e2e1a">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <a id="ga4ba4f1c8d6bddc383ed7d7b6d3640085"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4ba4f1c8d6bddc383ed7d7b6d3640085">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ba4f1c8d6bddc383ed7d7b6d3640085">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -538,7 +690,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/dc1/structTrueMIDI__Sink.html">TrueMIDI_Sink</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#gac27c6c6f4caf743452f13595ca1c410d">TrueMIDI_Sink</a> &amp;&#160;</td>
           <td class="paramname"><em>sink</em>, </td>
         </tr>
         <tr>
@@ -560,12 +712,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00587">587</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00647">647</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
 <a id="gae82da6e56996b2b9328f33654134d51f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae82da6e56996b2b9328f33654134d51f">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae82da6e56996b2b9328f33654134d51f">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -574,7 +726,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a>&amp; operator&lt;&lt; </td>
+          <td class="memname"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a>&amp; operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a>&lt; N, Pipe &gt; &amp;&#160;</td>
           <td class="paramname"><em>pipe_fact</em>, </td>
@@ -582,7 +734,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/dcd/structTrueMIDI__Source.html">TrueMIDI_Source</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/ddc/group__MIDI__Routing.html#ga37ee55cff00d01fb133cb817c19ddc47">TrueMIDI_Source</a> &amp;&#160;</td>
           <td class="paramname"><em>source</em>&#160;</td>
         </tr>
         <tr>
@@ -598,7 +750,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00593">593</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00653">653</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -636,7 +788,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00600">600</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00660">660</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -674,13 +826,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00607">607</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00667">667</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="astructMIDI__PipeFactory_html"><div class="ttname"><a href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a></div><div class="ttdoc">Class that produces multiple MIDI_Pipes.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00557">MIDI_Pipes.hpp:557</a></div></div>
-<div class="ttc" id="aclassHardwareSerialMIDI__Interface_html"><div class="ttname"><a href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending and receiving MIDI messages over a Hardware Serial port.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d23/SerialMIDI__Interface_8hpp_source.html#l00133">SerialMIDI_Interface.hpp:134</a></div></div>
+<div class="ttc" id="astructMIDI__PipeFactory_html"><div class="ttname"><a href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a></div><div class="ttdoc">Class that produces multiple MIDI_Pipes.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00611">MIDI_Pipes.hpp:611</a></div></div>
+<div class="ttc" id="aclassHardwareSerialMIDI__Interface_html"><div class="ttname"><a href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending and receiving MIDI messages over a Hardware Serial port.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d23/SerialMIDI__Interface_8hpp_source.html#l00110">SerialMIDI_Interface.hpp:111</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.19

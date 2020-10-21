@@ -88,25 +88,100 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d1/d54/classSelector.html" title="A Selector with an empty callback.">Selector</a> that reads from a rotary encoder.  
- <a href="../../d3/dc5/classEncoderSelector.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d7/de4/EncoderSelector_8hpp_source.html">Selectors/EncoderSelector.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;setting_t N&gt;<br />
+class EncoderSelector&lt; N &gt;</h3>
+
+<p><a class="el" href="../../d1/d54/classSelector.html" title="A Selector with an empty callback.">Selector</a> that reads from a rotary encoder. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>The number of settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d1/da6/Encoder-Selector-Bank_8ino-example.html#_a2">Encoder-Selector-Bank.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/de4/EncoderSelector_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d7/de4/EncoderSelector_8hpp_source.html">EncoderSelector.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for EncoderSelector&lt; N &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d6d/classEncoderSelector__inherit__graph.svg" width="334" height="1316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d6d/classEncoderSelector__inherit__graph.svg" width="334" height="1316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for EncoderSelector&lt; N &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dad/classEncoderSelector__coll__graph.svg" width="499" height="1627"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dad/classEncoderSelector__coll__graph.svg" width="499" height="1627"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Main initialization and updating methods</h2></td></tr>
+<tr class="memitem:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2c7c502f8ebf20ac04d25bb29cc0f2aa">applyToAll</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;, void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc854bd51713ad44a652f9e3b3a18ea0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adc854bd51713ad44a652f9e3b3a18ea0">applyToAll</a> (void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
+<tr class="separator:adc854bd51713ad44a652f9e3b3a18ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Enabling and disabling updatables</h2></td></tr>
+<tr class="memitem:ae1119eadaf5b60c97be0e754361dc309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ae1119eadaf5b60c97be0e754361dc309">enable</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;lock)</td></tr>
+<tr class="memdesc:ae1119eadaf5b60c97be0e754361dc309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ae1119eadaf5b60c97be0e754361dc309">More...</a><br /></td></tr>
+<tr class="separator:ae1119eadaf5b60c97be0e754361dc309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486f22824bd83c5308a0d70ffac6f758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486f22824bd83c5308a0d70ffac6f758">enable</a> ()</td></tr>
+<tr class="memdesc:a486f22824bd83c5308a0d70ffac6f758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486f22824bd83c5308a0d70ffac6f758">More...</a><br /></td></tr>
+<tr class="separator:a486f22824bd83c5308a0d70ffac6f758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3814727208494681f78619215f1afd3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a3814727208494681f78619215f1afd3f">disable</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;lock)</td></tr>
+<tr class="memdesc:a3814727208494681f78619215f1afd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a3814727208494681f78619215f1afd3f">More...</a><br /></td></tr>
+<tr class="separator:a3814727208494681f78619215f1afd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8cfbbe53c1cf6e3054736daea3044c0f">disable</a> ()</td></tr>
+<tr class="memdesc:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8cfbbe53c1cf6e3054736daea3044c0f">More...</a><br /></td></tr>
+<tr class="separator:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7dbd4aea54422b27493166f0f27c08e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad7dbd4aea54422b27493166f0f27c08e">isEnabled</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;) const</td></tr>
+<tr class="memdesc:ad7dbd4aea54422b27493166f0f27c08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this updatable is enabled.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad7dbd4aea54422b27493166f0f27c08e">More...</a><br /></td></tr>
+<tr class="separator:ad7dbd4aea54422b27493166f0f27c08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56722b6f1c22da04885bc9853148bb71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a56722b6f1c22da04885bc9853148bb71">isEnabled</a> ()</td></tr>
+<tr class="memdesc:a56722b6f1c22da04885bc9853148bb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this updatable is enabled.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a56722b6f1c22da04885bc9853148bb71">More...</a><br /></td></tr>
+<tr class="separator:a56722b6f1c22da04885bc9853148bb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af530dde4c3c60b0a6ec77fe9724651c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#af530dde4c3c60b0a6ec77fe9724651c9">moveDown</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;)</td></tr>
+<tr class="memdesc:af530dde4c3c60b0a6ec77fe9724651c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move down this element in the list.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#af530dde4c3c60b0a6ec77fe9724651c9">More...</a><br /></td></tr>
+<tr class="separator:af530dde4c3c60b0a6ec77fe9724651c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486267210dfc8118e23e6b1bc6090286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486267210dfc8118e23e6b1bc6090286">moveDown</a> ()</td></tr>
+<tr class="memdesc:a486267210dfc8118e23e6b1bc6090286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move down this element in the list.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486267210dfc8118e23e6b1bc6090286">More...</a><br /></td></tr>
+<tr class="separator:a486267210dfc8118e23e6b1bc6090286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12acee2ce11483080385d904cee97bd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad12acee2ce11483080385d904cee97bd">enable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> *element)</td></tr>
+<tr class="memdesc:ad12acee2ce11483080385d904cee97bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad12acee2ce11483080385d904cee97bd">More...</a><br /></td></tr>
+<tr class="separator:ad12acee2ce11483080385d904cee97bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da0232ed3b2839c53832dde4f72b8dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a0da0232ed3b2839c53832dde4f72b8dc">enable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> &amp;element)</td></tr>
+<tr class="memdesc:a0da0232ed3b2839c53832dde4f72b8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a0da0232ed3b2839c53832dde4f72b8dc">More...</a><br /></td></tr>
+<tr class="separator:a0da0232ed3b2839c53832dde4f72b8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2f775da7b162931d468d6d6b6950dfcf">enable</a> (U(&amp;array)[N])</td></tr>
+<tr class="memdesc:a2f775da7b162931d468d6d6b6950dfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2f775da7b162931d468d6d6b6950dfcf">More...</a><br /></td></tr>
+<tr class="separator:a2f775da7b162931d468d6d6b6950dfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbfe5d6ba589f29a195bd0a54f35772"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#aacbfe5d6ba589f29a195bd0a54f35772">disable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> *element)</td></tr>
+<tr class="memdesc:aacbfe5d6ba589f29a195bd0a54f35772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#aacbfe5d6ba589f29a195bd0a54f35772">More...</a><br /></td></tr>
+<tr class="separator:aacbfe5d6ba589f29a195bd0a54f35772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67781608cee470244316e2302f6290d6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a67781608cee470244316e2302f6290d6">disable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> &amp;element)</td></tr>
+<tr class="memdesc:a67781608cee470244316e2302f6290d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a67781608cee470244316e2302f6290d6">More...</a><br /></td></tr>
+<tr class="separator:a67781608cee470244316e2302f6290d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac05c991ba1ef6cb7363a44e2232119f0">disable</a> (U(&amp;array)[N])</td></tr>
+<tr class="memdesc:ac05c991ba1ef6cb7363a44e2232119f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac05c991ba1ef6cb7363a44e2232119f0">More...</a><br /></td></tr>
+<tr class="separator:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Main initialization and updating methods</h2></td></tr>
+<tr class="memitem:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a> ()</td></tr>
+<tr class="memdesc:a4f7077a56ec41a07f5a54dd8b3828984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin all enabled instances of this class.  <a href="../../d1/d55/classAH_1_1Updatable.html#a4f7077a56ec41a07f5a54dd8b3828984">More...</a><br /></td></tr>
+<tr class="separator:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
+<tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all enabled instances of this class.  <a href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">More...</a><br /></td></tr>
+<tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
@@ -188,84 +263,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a43a4ae4bde11db50691d1bea9691d554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5acdc1d2891c5c3a6f38cc2808ff93bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/de7/classSelectable.html">Selectable</a>&lt; N &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d04/classGenericSelector.html#a5acdc1d2891c5c3a6f38cc2808ff93bd">selectable</a></td></tr>
 <tr class="separator:a5acdc1d2891c5c3a6f38cc2808ff93bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-Main initialization and updating methods</h2></td></tr>
-<tr class="memitem:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2c7c502f8ebf20ac04d25bb29cc0f2aa">applyToAll</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;, void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc854bd51713ad44a652f9e3b3a18ea0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adc854bd51713ad44a652f9e3b3a18ea0">applyToAll</a> (void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
-<tr class="separator:adc854bd51713ad44a652f9e3b3a18ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-Enabling and disabling updatables</h2></td></tr>
-<tr class="memitem:ae1119eadaf5b60c97be0e754361dc309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ae1119eadaf5b60c97be0e754361dc309">enable</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;lock)</td></tr>
-<tr class="memdesc:ae1119eadaf5b60c97be0e754361dc309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ae1119eadaf5b60c97be0e754361dc309">More...</a><br /></td></tr>
-<tr class="separator:ae1119eadaf5b60c97be0e754361dc309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486f22824bd83c5308a0d70ffac6f758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486f22824bd83c5308a0d70ffac6f758">enable</a> ()</td></tr>
-<tr class="memdesc:a486f22824bd83c5308a0d70ffac6f758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486f22824bd83c5308a0d70ffac6f758">More...</a><br /></td></tr>
-<tr class="separator:a486f22824bd83c5308a0d70ffac6f758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3814727208494681f78619215f1afd3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a3814727208494681f78619215f1afd3f">disable</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;lock)</td></tr>
-<tr class="memdesc:a3814727208494681f78619215f1afd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a3814727208494681f78619215f1afd3f">More...</a><br /></td></tr>
-<tr class="separator:a3814727208494681f78619215f1afd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8cfbbe53c1cf6e3054736daea3044c0f">disable</a> ()</td></tr>
-<tr class="memdesc:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8cfbbe53c1cf6e3054736daea3044c0f">More...</a><br /></td></tr>
-<tr class="separator:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7dbd4aea54422b27493166f0f27c08e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad7dbd4aea54422b27493166f0f27c08e">isEnabled</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;) const</td></tr>
-<tr class="memdesc:ad7dbd4aea54422b27493166f0f27c08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this updatable is enabled.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad7dbd4aea54422b27493166f0f27c08e">More...</a><br /></td></tr>
-<tr class="separator:ad7dbd4aea54422b27493166f0f27c08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56722b6f1c22da04885bc9853148bb71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a56722b6f1c22da04885bc9853148bb71">isEnabled</a> ()</td></tr>
-<tr class="memdesc:a56722b6f1c22da04885bc9853148bb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this updatable is enabled.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a56722b6f1c22da04885bc9853148bb71">More...</a><br /></td></tr>
-<tr class="separator:a56722b6f1c22da04885bc9853148bb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af530dde4c3c60b0a6ec77fe9724651c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#af530dde4c3c60b0a6ec77fe9724651c9">moveDown</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;)</td></tr>
-<tr class="memdesc:af530dde4c3c60b0a6ec77fe9724651c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move down this element in the list.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#af530dde4c3c60b0a6ec77fe9724651c9">More...</a><br /></td></tr>
-<tr class="separator:af530dde4c3c60b0a6ec77fe9724651c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486267210dfc8118e23e6b1bc6090286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486267210dfc8118e23e6b1bc6090286">moveDown</a> ()</td></tr>
-<tr class="memdesc:a486267210dfc8118e23e6b1bc6090286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move down this element in the list.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486267210dfc8118e23e6b1bc6090286">More...</a><br /></td></tr>
-<tr class="separator:a486267210dfc8118e23e6b1bc6090286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12acee2ce11483080385d904cee97bd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad12acee2ce11483080385d904cee97bd">enable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> *element)</td></tr>
-<tr class="memdesc:ad12acee2ce11483080385d904cee97bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad12acee2ce11483080385d904cee97bd">More...</a><br /></td></tr>
-<tr class="separator:ad12acee2ce11483080385d904cee97bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da0232ed3b2839c53832dde4f72b8dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a0da0232ed3b2839c53832dde4f72b8dc">enable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> &amp;element)</td></tr>
-<tr class="memdesc:a0da0232ed3b2839c53832dde4f72b8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a0da0232ed3b2839c53832dde4f72b8dc">More...</a><br /></td></tr>
-<tr class="separator:a0da0232ed3b2839c53832dde4f72b8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2f775da7b162931d468d6d6b6950dfcf">enable</a> (U(&amp;array)[N])</td></tr>
-<tr class="memdesc:a2f775da7b162931d468d6d6b6950dfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2f775da7b162931d468d6d6b6950dfcf">More...</a><br /></td></tr>
-<tr class="separator:a2f775da7b162931d468d6d6b6950dfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacbfe5d6ba589f29a195bd0a54f35772"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#aacbfe5d6ba589f29a195bd0a54f35772">disable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> *element)</td></tr>
-<tr class="memdesc:aacbfe5d6ba589f29a195bd0a54f35772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#aacbfe5d6ba589f29a195bd0a54f35772">More...</a><br /></td></tr>
-<tr class="separator:aacbfe5d6ba589f29a195bd0a54f35772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67781608cee470244316e2302f6290d6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a67781608cee470244316e2302f6290d6">disable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a408b85d80080c72dd9283e58f5862951">UpdatableCRTP</a> &amp;element)</td></tr>
-<tr class="memdesc:a67781608cee470244316e2302f6290d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a67781608cee470244316e2302f6290d6">More...</a><br /></td></tr>
-<tr class="separator:a67781608cee470244316e2302f6290d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac05c991ba1ef6cb7363a44e2232119f0">disable</a> (U(&amp;array)[N])</td></tr>
-<tr class="memdesc:ac05c991ba1ef6cb7363a44e2232119f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <a href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac05c991ba1ef6cb7363a44e2232119f0">More...</a><br /></td></tr>
-<tr class="separator:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-Main initialization and updating methods</h2></td></tr>
-<tr class="memitem:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a> ()</td></tr>
-<tr class="memdesc:a4f7077a56ec41a07f5a54dd8b3828984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin all enabled instances of this class.  <a href="../../d1/d55/classAH_1_1Updatable.html#a4f7077a56ec41a07f5a54dd8b3828984">More...</a><br /></td></tr>
-<tr class="separator:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
-<tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all enabled instances of this class.  <a href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">More...</a><br /></td></tr>
-<tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;setting_t N&gt;<br />
-class EncoderSelector&lt; N &gt;</h3>
-
-<p><a class="el" href="../../d1/d54/classSelector.html" title="A Selector with an empty callback.">Selector</a> that reads from a rotary encoder. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">N</td><td>The number of settings. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d1/da6/Encoder-Selector-Bank_8ino-example.html#_a2">Encoder-Selector-Bank.ino</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/de4/EncoderSelector_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d7/de4/EncoderSelector_8hpp_source.html">EncoderSelector.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae21c65ae6ecabc7fa8195516c7d25ea5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae21c65ae6ecabc7fa8195516c7d25ea5">&#9670;&nbsp;</a></span>Parent</h2>
 

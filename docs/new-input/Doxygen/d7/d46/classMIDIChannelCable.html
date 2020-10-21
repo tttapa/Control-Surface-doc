@@ -81,23 +81,22 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class for saving a MIDI channel and cable number.  
- <a href="../../d7/d46/classMIDIChannelCable.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html">Def/MIDIAddress.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class for saving a MIDI channel and cable number. </p>
+<p><br  />
+ A MIDI channel and cable number can be marked "invalid". The MIDI sending functions (<a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a>) will never send messages addressed to invalid channels or cables. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html">MIDIAddress.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for MIDIChannelCable:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d28/classMIDIChannelCable__coll__graph.svg" width="192" height="250"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d28/classMIDIChannelCable__coll__graph.svg" width="192" height="250"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2c27c684fb42cbc7e7e7a6cf88475642"><td class="memItemLeft" align="right" valign="top">RawMIDIAddress&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d46/classMIDIChannelCable.html#a2c27c684fb42cbc7e7e7a6cf88475642">addresses</a></td></tr>
-<tr class="separator:a2c27c684fb42cbc7e7e7a6cf88475642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Constructors</h2></td></tr>
 <tr class="memitem:aca01919e0cfab2c384680886d51adb97"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d46/classMIDIChannelCable.html#aca01919e0cfab2c384680886d51adb97">MIDIChannelCable</a> ()</td></tr>
@@ -142,14 +141,13 @@ Base functions for address pattern matching.</h2></td></tr>
 <tr class="memitem:a4a6e971a07e8c8d450319698aa1a83da"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d46/classMIDIChannelCable.html#a4a6e971a07e8c8d450319698aa1a83da">matchSingle</a> (const <a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> &amp;toMatch, const <a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> &amp;base)</td></tr>
 <tr class="memdesc:a4a6e971a07e8c8d450319698aa1a83da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two addresses match (are equal).  <a href="../../d7/d46/classMIDIChannelCable.html#a4a6e971a07e8c8d450319698aa1a83da">More...</a><br /></td></tr>
 <tr class="separator:a4a6e971a07e8c8d450319698aa1a83da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2c27c684fb42cbc7e7e7a6cf88475642"><td class="memItemLeft" align="right" valign="top">RawMIDIAddress&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d46/classMIDIChannelCable.html#a2c27c684fb42cbc7e7e7a6cf88475642">addresses</a></td></tr>
+<tr class="separator:a2c27c684fb42cbc7e7e7a6cf88475642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for saving a MIDI channel and cable number. </p>
-<p><br  />
- A MIDI channel and cable number can be marked "invalid". The MIDI sending functions (<a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a>) will never send messages addressed to invalid channels or cables. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html">MIDIAddress.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aca01919e0cfab2c384680886d51adb97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca01919e0cfab2c384680886d51adb97">&#9670;&nbsp;</a></span>MIDIChannelCable() <span class="overload">[1/2]</span></h2>
 

@@ -83,16 +83,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A type-safe class for MIDI channels.  
- <a href="../../d2/d48/classChannel.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d7/d42/Channel_8hpp_source.html">Def/Channel.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A type-safe class for MIDI channels. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d05/Keyboard-Matrix-BCD_8ino-example.html#_a1">Keyboard-Matrix-BCD.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for Channel:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d17/classChannel__coll__graph.svg" width="163" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d17/classChannel__coll__graph.svg" width="163" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -103,6 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e0be461ad363cb6179c144e82b1421b"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classChannel.html#a9e0be461ad363cb6179c144e82b1421b">getRaw</a> () const</td></tr>
 <tr class="memdesc:a9e0be461ad363cb6179c144e82b1421b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the channel as an integer.  <a href="../../d2/d48/classChannel.html#a9e0be461ad363cb6179c144e82b1421b">More...</a><br /></td></tr>
 <tr class="separator:a9e0be461ad363cb6179c144e82b1421b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3578ee58408eb7f1e264cd9a6a7423"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classChannel.html#a8d3578ee58408eb7f1e264cd9a6a7423">getOneBased</a> () const</td></tr>
+<tr class="memdesc:a8d3578ee58408eb7f1e264cd9a6a7423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the channel as an integer.  <a href="../../d2/d48/classChannel.html#a8d3578ee58408eb7f1e264cd9a6a7423">More...</a><br /></td></tr>
+<tr class="separator:a8d3578ee58408eb7f1e264cd9a6a7423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeec67e44ee2d0daea183b56544ce145"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classChannel.html#adeec67e44ee2d0daea183b56544ce145">operator==</a> (const <a class="el" href="../../d2/d48/classChannel.html">Channel</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:adeec67e44ee2d0daea183b56544ce145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two channels are the same.  <a href="../../d2/d48/classChannel.html#adeec67e44ee2d0daea183b56544ce145">More...</a><br /></td></tr>
 <tr class="separator:adeec67e44ee2d0daea183b56544ce145"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,13 +140,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0ee239110d86e13a4eedb549a9e205c6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classChannel.html#a0ee239110d86e13a4eedb549a9e205c6">zeroBasedChannel</a>: 4</td></tr>
 <tr class="separator:a0ee239110d86e13a4eedb549a9e205c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A type-safe class for MIDI channels. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d05/Keyboard-Matrix-BCD_8ino-example.html#_a1">Keyboard-Matrix-BCD.ino</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b9549b568c5030a3241e32fff2acdca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b9549b568c5030a3241e32fff2acdca">&#9670;&nbsp;</a></span>Channel()</h2>
 
@@ -207,6 +208,36 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8d3578ee58408eb7f1e264cd9a6a7423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3578ee58408eb7f1e264cd9a6a7423">&#9670;&nbsp;</a></span>getOneBased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t getOneBased </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the channel as an integer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The one-based channel (1 is the first channel). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a69a09435c6239fc134d052b7f1dd0eb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69a09435c6239fc134d052b7f1dd0eb1">&#9670;&nbsp;</a></span>createChannel()</h2>
 
@@ -239,7 +270,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
 
 </div>
 </div>
@@ -275,7 +306,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
 
 </div>
 </div>
@@ -311,7 +342,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
 
 </div>
 </div>
@@ -347,7 +378,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +414,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
 
 </div>
 </div>
@@ -419,7 +450,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00090">90</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00097">97</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
 
 </div>
 </div>
@@ -455,7 +486,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
 
 </div>
 </div>
@@ -480,7 +511,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/Channel_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d7/d42/Channel_8hpp_source.html">Channel.hpp</a>.</p>
 
 </div>
 </div>

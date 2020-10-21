@@ -92,120 +92,40 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A MIDI input element that represents a Mackie Control Universal VPot ring.  
- <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d7/d81/VPotRing_8hpp_source.html">MIDI_Inputs/MCU/VPotRing.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;uint8_t BankSize&gt;<br />
+class MCU::Bankable::VPotRing&lt; BankSize &gt;</h3>
+
+<p>A MIDI input element that represents a Mackie Control Universal VPot ring. </p>
+<p>This version can be banked.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">BankSize</td><td>The number of banks. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d84/MCU-OLED-SSD1306-x2_8ino-example.html#_a30">MCU-OLED-SSD1306-x2.ino</a>, and <a class="el" href="../../dd/d42/MCU-OLED-SSD1306_8ino-example.html#_a24">MCU-OLED-SSD1306.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d81/VPotRing_8hpp_source.html#l00237">237</a> of file <a class="el" href="../../d7/d81/VPotRing_8hpp_source.html">VPotRing.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for VPotRing&lt; BankSize &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d3b/classMCU_1_1Bankable_1_1VPotRing__inherit__graph.svg" width="556" height="1779"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d3b/classMCU_1_1Bankable_1_1VPotRing__inherit__graph.svg" width="556" height="1779"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for VPotRing&lt; BankSize &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d22/classMCU_1_1Bankable_1_1VPotRing__coll__graph.svg" width="1014" height="2023"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d22/classMCU_1_1Bankable_1_1VPotRing__coll__graph.svg" width="1014" height="2023"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a53cce250a259e9942056f745401a2bb3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a53cce250a259e9942056f745401a2bb3">Matcher</a> = <a class="el" href="../../d2/d5a/structMCU_1_1BankableVPotMatcher.html">BankableVPotMatcher</a>&lt; BankSize &gt;</td></tr>
-<tr class="separator:a53cce250a259e9942056f745401a2bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e39db670442970b8c4ed7363d49a172"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a5e39db670442970b8c4ed7363d49a172">Parent</a> = <a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html">BankableMatchingMIDIInputElement</a>&lt; MIDIMessageType::CONTROL_CHANGE, <a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a53cce250a259e9942056f745401a2bb3">Matcher</a> &gt;</td></tr>
-<tr class="separator:a5e39db670442970b8c4ed7363d49a172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa732e43eeb1ed1c03893ef1bfd0dce5c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> = typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a></td></tr>
-<tr class="separator:aa732e43eeb1ed1c03893ef1bfd0dce5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
-<tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
-<tr class="separator:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a0738f7260babc68cb78ddfbec63de41e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a0738f7260babc68cb78ddfbec63de41e">VPotRing</a> (<a class="el" href="../../dc/d17/structBankConfig.html">BankConfig</a>&lt; BankSize &gt; config, uint8_t track, <a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> channelCN=<a class="el" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>)</td></tr>
-<tr class="memdesc:a0738f7260babc68cb78ddfbec63de41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a0738f7260babc68cb78ddfbec63de41e">More...</a><br /></td></tr>
-<tr class="separator:a0738f7260babc68cb78ddfbec63de41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#aebfcdbbd0fe4efbff10b180be50ca6bc">reset</a> () override</td></tr>
-<tr class="memdesc:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all states to zero.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#aebfcdbbd0fe4efbff10b180be50ca6bc">More...</a><br /></td></tr>
-<tr class="separator:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">updateWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg) override</td></tr>
-<tr class="memdesc:a5573c8032407bdf439730a1cf7b6a5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a new MIDI message and update the internal state.  <a href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">More...</a><br /></td></tr>
-<tr class="separator:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8b3295e878d374fe9af277f6983204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a> (typename <a class="el" href="../../d3/d28/structBankableTwoByteMIDIMatcher.html#df/d1f/structBankableTwoByteMIDIMatcher_1_1Result">Matcher::Result</a> match)=0</td></tr>
-<tr class="separator:a7d8b3295e878d374fe9af277f6983204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a> ()</td></tr>
-<tr class="memdesc:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input element.  <a href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">More...</a><br /></td></tr>
-<tr class="separator:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> ()</td></tr>
-<tr class="memdesc:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the value of the input element. Used for decaying VU meters etc.  <a href="../../d9/db1/classMIDIInputElement.html#acd36d7881ea8503d5c5824e7a5ad6c7e">More...</a><br /></td></tr>
-<tr class="separator:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af8e83e6344db343c94b3730d55ff029a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">updateAllWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg)</td></tr>
-<tr class="memdesc:af8e83e6344db343c94b3730d55ff029a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">More...</a><br /></td></tr>
-<tr class="separator:af8e83e6344db343c94b3730d55ff029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
-<tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">More...</a><br /></td></tr>
-<tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a> ()</td></tr>
-<tr class="memdesc:a4f7077a56ec41a07f5a54dd8b3828984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin all.  <a href="../../d9/db1/classMIDIInputElement.html#a4f7077a56ec41a07f5a54dd8b3828984">More...</a><br /></td></tr>
-<tr class="separator:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef9a22e0ad427812e1089edcf3bb85e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#aef9a22e0ad427812e1089edcf3bb85e1">resetAll</a> ()</td></tr>
-<tr class="memdesc:aef9a22e0ad427812e1089edcf3bb85e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all.  <a href="../../d9/db1/classMIDIInputElement.html#aef9a22e0ad427812e1089edcf3bb85e1">More...</a><br /></td></tr>
-<tr class="separator:aef9a22e0ad427812e1089edcf3bb85e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a5e1d8290397ae14e2be6eb56e1d1c1fb">getMutex</a> ()</td></tr>
-<tr class="separator:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a4b690716d97aa8466cf22a87bd7ddcd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a4b690716d97aa8466cf22a87bd7ddcd4">ignoreReset</a> = true</td></tr>
-<tr class="memdesc:a4b690716d97aa8466cf22a87bd7ddcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Don't reset the state when calling the <code>reset</code> method.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a4b690716d97aa8466cf22a87bd7ddcd4">More...</a><br /></td></tr>
-<tr class="separator:a4b690716d97aa8466cf22a87bd7ddcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a905c05048c84bed30a16249a221e8be2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a905c05048c84bed30a16249a221e8be2">handleUpdateImpl</a> (typename <a class="el" href="../../d3/d28/structBankableTwoByteMIDIMatcher.html#df/d1f/structBankableTwoByteMIDIMatcher_1_1Result">Matcher::Result</a> match)</td></tr>
-<tr class="separator:a905c05048c84bed30a16249a221e8be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad253a3eefdc42722ead170e31e21a150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#ad253a3eefdc42722ead170e31e21a150">handleUpdate</a> (typename <a class="el" href="../../d3/d28/structBankableTwoByteMIDIMatcher.html#df/d1f/structBankableTwoByteMIDIMatcher_1_1Result">Matcher::Result</a> match) override</td></tr>
-<tr class="separator:ad253a3eefdc42722ead170e31e21a150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ac6640153d56b6858943d51607973d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a6ac6640153d56b6858943d51607973d4">onBankSettingChange</a> () override</td></tr>
-<tr class="memdesc:a6ac6640153d56b6858943d51607973d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to be executed each time the bank setting changes.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a6ac6640153d56b6858943d51607973d4">More...</a><br /></td></tr>
-<tr class="separator:a6ac6640153d56b6858943d51607973d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ababd417b912ff8f2e52cba11a836094d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html#ababd417b912ff8f2e52cba11a836094d">getActiveBank</a> () const</td></tr>
-<tr class="separator:ababd417b912ff8f2e52cba11a836094d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a7f52a0feef56b1a62fad5b548525fb86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d5a/structMCU_1_1BankableVPotMatcher.html">BankableVPotMatcher</a>&lt; BankSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7f52a0feef56b1a62fad5b548525fb86">matcher</a></td></tr>
-<tr class="separator:a7f52a0feef56b1a62fad5b548525fb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
-<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbf/classBankSettingChangeCallback.html">BankSettingChangeCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
-<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
-<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbf/classBankSettingChangeCallback.html">BankSettingChangeCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
-<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad25edacba00e4d0666a9959053b7cc10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dde/classInterfaces_1_1MCU_1_1IVPot.html#ad25edacba00e4d0666a9959053b7cc10">dirty</a> = true</td></tr>
-<tr class="separator:ad25edacba00e4d0666a9959053b7cc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
-<tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
-<tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:acdc2dbdc130794d0134385f634746c60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt; <a class="el" href="../../d4/de4/structMCU_1_1VPotState.html">VPotState</a>, BankSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#acdc2dbdc130794d0134385f634746c60">states</a> = {{}}</td></tr>
-<tr class="separator:acdc2dbdc130794d0134385f634746c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Main initialization and updating methods</h2></td></tr>
 <tr class="memitem:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2c7c502f8ebf20ac04d25bb29cc0f2aa">applyToAll</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;, void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
@@ -305,24 +225,103 @@ Data access</h2></td></tr>
 <tr class="memitem:a584cf3b9306974b3935de5678b3abb67"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a584cf3b9306974b3935de5678b3abb67">getStartOff</a> () const override</td></tr>
 <tr class="memdesc:a584cf3b9306974b3935de5678b3abb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first segment that should be off.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a584cf3b9306974b3935de5678b3abb67">More...</a><br /></td></tr>
 <tr class="separator:a584cf3b9306974b3935de5678b3abb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a53cce250a259e9942056f745401a2bb3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a53cce250a259e9942056f745401a2bb3">Matcher</a> = <a class="el" href="../../d2/d5a/structMCU_1_1BankableVPotMatcher.html">BankableVPotMatcher</a>&lt; BankSize &gt;</td></tr>
+<tr class="separator:a53cce250a259e9942056f745401a2bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e39db670442970b8c4ed7363d49a172"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a5e39db670442970b8c4ed7363d49a172">Parent</a> = <a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html">BankableMatchingMIDIInputElement</a>&lt; MIDIMessageType::CONTROL_CHANGE, <a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a53cce250a259e9942056f745401a2bb3">Matcher</a> &gt;</td></tr>
+<tr class="separator:a5e39db670442970b8c4ed7363d49a172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa732e43eeb1ed1c03893ef1bfd0dce5c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> = typename <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt;::<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a></td></tr>
+<tr class="separator:aa732e43eeb1ed1c03893ef1bfd0dce5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
+<tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
+<tr class="separator:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0738f7260babc68cb78ddfbec63de41e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a0738f7260babc68cb78ddfbec63de41e">VPotRing</a> (<a class="el" href="../../dc/d17/structBankConfig.html">BankConfig</a>&lt; BankSize &gt; config, uint8_t track, <a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> channelCN=<a class="el" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>)</td></tr>
+<tr class="memdesc:a0738f7260babc68cb78ddfbec63de41e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a0738f7260babc68cb78ddfbec63de41e">More...</a><br /></td></tr>
+<tr class="separator:a0738f7260babc68cb78ddfbec63de41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#aebfcdbbd0fe4efbff10b180be50ca6bc">reset</a> () override</td></tr>
+<tr class="memdesc:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all states to zero.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#aebfcdbbd0fe4efbff10b180be50ca6bc">More...</a><br /></td></tr>
+<tr class="separator:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">updateWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg) override</td></tr>
+<tr class="memdesc:a5573c8032407bdf439730a1cf7b6a5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a new MIDI message and update the internal state.  <a href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">More...</a><br /></td></tr>
+<tr class="separator:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8b3295e878d374fe9af277f6983204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a> (typename <a class="el" href="../../d3/d28/structBankableTwoByteMIDIMatcher.html#df/d1f/structBankableTwoByteMIDIMatcher_1_1Result">Matcher::Result</a> match)=0</td></tr>
+<tr class="separator:a7d8b3295e878d374fe9af277f6983204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a> ()</td></tr>
+<tr class="memdesc:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input element.  <a href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">More...</a><br /></td></tr>
+<tr class="separator:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> ()</td></tr>
+<tr class="memdesc:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the value of the input element. Used for decaying VU meters etc.  <a href="../../d9/db1/classMIDIInputElement.html#acd36d7881ea8503d5c5824e7a5ad6c7e">More...</a><br /></td></tr>
+<tr class="separator:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af8e83e6344db343c94b3730d55ff029a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">updateAllWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg)</td></tr>
+<tr class="memdesc:af8e83e6344db343c94b3730d55ff029a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">More...</a><br /></td></tr>
+<tr class="separator:af8e83e6344db343c94b3730d55ff029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
+<tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">More...</a><br /></td></tr>
+<tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a> ()</td></tr>
+<tr class="memdesc:a4f7077a56ec41a07f5a54dd8b3828984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin all.  <a href="../../d9/db1/classMIDIInputElement.html#a4f7077a56ec41a07f5a54dd8b3828984">More...</a><br /></td></tr>
+<tr class="separator:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9a22e0ad427812e1089edcf3bb85e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#aef9a22e0ad427812e1089edcf3bb85e1">resetAll</a> ()</td></tr>
+<tr class="memdesc:aef9a22e0ad427812e1089edcf3bb85e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all.  <a href="../../d9/db1/classMIDIInputElement.html#aef9a22e0ad427812e1089edcf3bb85e1">More...</a><br /></td></tr>
+<tr class="separator:aef9a22e0ad427812e1089edcf3bb85e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a5e1d8290397ae14e2be6eb56e1d1c1fb">getMutex</a> ()</td></tr>
+<tr class="separator:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4b690716d97aa8466cf22a87bd7ddcd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a4b690716d97aa8466cf22a87bd7ddcd4">ignoreReset</a> = true</td></tr>
+<tr class="memdesc:a4b690716d97aa8466cf22a87bd7ddcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Don't reset the state when calling the <code>reset</code> method.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a4b690716d97aa8466cf22a87bd7ddcd4">More...</a><br /></td></tr>
+<tr class="separator:a4b690716d97aa8466cf22a87bd7ddcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a905c05048c84bed30a16249a221e8be2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a905c05048c84bed30a16249a221e8be2">handleUpdateImpl</a> (typename <a class="el" href="../../d3/d28/structBankableTwoByteMIDIMatcher.html#df/d1f/structBankableTwoByteMIDIMatcher_1_1Result">Matcher::Result</a> match)</td></tr>
+<tr class="separator:a905c05048c84bed30a16249a221e8be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad253a3eefdc42722ead170e31e21a150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#ad253a3eefdc42722ead170e31e21a150">handleUpdate</a> (typename <a class="el" href="../../d3/d28/structBankableTwoByteMIDIMatcher.html#df/d1f/structBankableTwoByteMIDIMatcher_1_1Result">Matcher::Result</a> match) override</td></tr>
+<tr class="separator:ad253a3eefdc42722ead170e31e21a150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac6640153d56b6858943d51607973d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a6ac6640153d56b6858943d51607973d4">onBankSettingChange</a> () override</td></tr>
+<tr class="memdesc:a6ac6640153d56b6858943d51607973d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to be executed each time the bank setting changes.  <a href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a6ac6640153d56b6858943d51607973d4">More...</a><br /></td></tr>
+<tr class="separator:a6ac6640153d56b6858943d51607973d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ababd417b912ff8f2e52cba11a836094d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html#ababd417b912ff8f2e52cba11a836094d">getActiveBank</a> () const</td></tr>
+<tr class="separator:ababd417b912ff8f2e52cba11a836094d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a7f52a0feef56b1a62fad5b548525fb86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d5a/structMCU_1_1BankableVPotMatcher.html">BankableVPotMatcher</a>&lt; BankSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7f52a0feef56b1a62fad5b548525fb86">matcher</a></td></tr>
+<tr class="separator:a7f52a0feef56b1a62fad5b548525fb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
+<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbf/classBankSettingChangeCallback.html">BankSettingChangeCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
+<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
+<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dbf/classBankSettingChangeCallback.html">BankSettingChangeCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
+<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25edacba00e4d0666a9959053b7cc10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dde/classInterfaces_1_1MCU_1_1IVPot.html#ad25edacba00e4d0666a9959053b7cc10">dirty</a> = true</td></tr>
+<tr class="separator:ad25edacba00e4d0666a9959053b7cc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; Type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
+<tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
+<tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acdc2dbdc130794d0134385f634746c60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt; <a class="el" href="../../d4/de4/structMCU_1_1VPotState.html">VPotState</a>, BankSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#acdc2dbdc130794d0134385f634746c60">states</a> = {{}}</td></tr>
+<tr class="separator:acdc2dbdc130794d0134385f634746c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;uint8_t BankSize&gt;<br />
-class MCU::Bankable::VPotRing&lt; BankSize &gt;</h3>
-
-<p>A MIDI input element that represents a Mackie Control Universal VPot ring. </p>
-<p>This version can be banked.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">BankSize</td><td>The number of banks. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d84/MCU-OLED-SSD1306-x2_8ino-example.html#_a30">MCU-OLED-SSD1306-x2.ino</a>, and <a class="el" href="../../dd/d42/MCU-OLED-SSD1306_8ino-example.html#_a24">MCU-OLED-SSD1306.ino</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d81/VPotRing_8hpp_source.html#l00237">237</a> of file <a class="el" href="../../d7/d81/VPotRing_8hpp_source.html">VPotRing.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a53cce250a259e9942056f745401a2bb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53cce250a259e9942056f745401a2bb3">&#9670;&nbsp;</a></span>Matcher</h2>
 

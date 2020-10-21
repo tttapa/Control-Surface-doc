@@ -88,18 +88,38 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Struct that keeps track of the value and overload indicator of a Mackie Control Universal VPot LED ring.  
- <a href="../../d4/de4/structMCU_1_1VPotState.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d7/d81/VPotRing_8hpp_source.html">MIDI_Inputs/MCU/VPotRing.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Struct that keeps track of the value and overload indicator of a Mackie Control Universal VPot LED ring. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d81/VPotRing_8hpp_source.html#l00014">14</a> of file <a class="el" href="../../d7/d81/VPotRing_8hpp_source.html">VPotRing.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for VPotState:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/df3/structMCU_1_1VPotState__coll__graph.svg" width="142" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/df3/structMCU_1_1VPotState__coll__graph.svg" width="142" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Data access</h2></td></tr>
+<tr class="memitem:a76b64156640ab02b9676fc19f3427d82"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a76b64156640ab02b9676fc19f3427d82">getPosition</a> () const</td></tr>
+<tr class="memdesc:a76b64156640ab02b9676fc19f3427d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the V-Pot ring. [0, 11].  <a href="../../d4/de4/structMCU_1_1VPotState.html#a76b64156640ab02b9676fc19f3427d82">More...</a><br /></td></tr>
+<tr class="separator:a76b64156640ab02b9676fc19f3427d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17866e5832ac9acedcf39bc5c15e60d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a17866e5832ac9acedcf39bc5c15e60d7">getCenterLed</a> () const</td></tr>
+<tr class="memdesc:a17866e5832ac9acedcf39bc5c15e60d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the center LED of the V-Pot ring.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a17866e5832ac9acedcf39bc5c15e60d7">More...</a><br /></td></tr>
+<tr class="separator:a17866e5832ac9acedcf39bc5c15e60d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0150f9d1e81de8a7ed78628398691f35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a0150f9d1e81de8a7ed78628398691f35">getMode</a> () const</td></tr>
+<tr class="memdesc:a0150f9d1e81de8a7ed78628398691f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the mode of the V-Pot ring.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a0150f9d1e81de8a7ed78628398691f35">More...</a><br /></td></tr>
+<tr class="separator:a0150f9d1e81de8a7ed78628398691f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f928ea18553a76bf59707ea62960403"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a0f928ea18553a76bf59707ea62960403">getStartOn</a> () const</td></tr>
+<tr class="memdesc:a0f928ea18553a76bf59707ea62960403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first segment that should be on.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a0f928ea18553a76bf59707ea62960403">More...</a><br /></td></tr>
+<tr class="separator:a0f928ea18553a76bf59707ea62960403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5ce026bd64dd9a4e265fc19913395d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a0e5ce026bd64dd9a4e265fc19913395d">getStartOff</a> () const</td></tr>
+<tr class="memdesc:a0e5ce026bd64dd9a4e265fc19913395d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first segment that should be off.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a0e5ce026bd64dd9a4e265fc19913395d">More...</a><br /></td></tr>
+<tr class="separator:a0e5ce026bd64dd9a4e265fc19913395d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a46c8a310cf4c094f8c80e1cb8dc1f911"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> { <a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7f53e1644278277cf1421eb432a25d79">SingleDot</a> = 0, 
@@ -129,30 +149,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a638e4503e0ae6ce655b7ad2e17e8f0ad"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">value</a></td></tr>
 <tr class="memdesc:a638e4503e0ae6ce655b7ad2e17e8f0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value representing the VPot position, mode and LED.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">More...</a><br /></td></tr>
 <tr class="separator:a638e4503e0ae6ce655b7ad2e17e8f0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-Data access</h2></td></tr>
-<tr class="memitem:a76b64156640ab02b9676fc19f3427d82"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a76b64156640ab02b9676fc19f3427d82">getPosition</a> () const</td></tr>
-<tr class="memdesc:a76b64156640ab02b9676fc19f3427d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the V-Pot ring. [0, 11].  <a href="../../d4/de4/structMCU_1_1VPotState.html#a76b64156640ab02b9676fc19f3427d82">More...</a><br /></td></tr>
-<tr class="separator:a76b64156640ab02b9676fc19f3427d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17866e5832ac9acedcf39bc5c15e60d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a17866e5832ac9acedcf39bc5c15e60d7">getCenterLed</a> () const</td></tr>
-<tr class="memdesc:a17866e5832ac9acedcf39bc5c15e60d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the center LED of the V-Pot ring.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a17866e5832ac9acedcf39bc5c15e60d7">More...</a><br /></td></tr>
-<tr class="separator:a17866e5832ac9acedcf39bc5c15e60d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0150f9d1e81de8a7ed78628398691f35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a0150f9d1e81de8a7ed78628398691f35">getMode</a> () const</td></tr>
-<tr class="memdesc:a0150f9d1e81de8a7ed78628398691f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the mode of the V-Pot ring.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a0150f9d1e81de8a7ed78628398691f35">More...</a><br /></td></tr>
-<tr class="separator:a0150f9d1e81de8a7ed78628398691f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f928ea18553a76bf59707ea62960403"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a0f928ea18553a76bf59707ea62960403">getStartOn</a> () const</td></tr>
-<tr class="memdesc:a0f928ea18553a76bf59707ea62960403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first segment that should be on.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a0f928ea18553a76bf59707ea62960403">More...</a><br /></td></tr>
-<tr class="separator:a0f928ea18553a76bf59707ea62960403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e5ce026bd64dd9a4e265fc19913395d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/structMCU_1_1VPotState.html#a0e5ce026bd64dd9a4e265fc19913395d">getStartOff</a> () const</td></tr>
-<tr class="memdesc:a0e5ce026bd64dd9a4e265fc19913395d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first segment that should be off.  <a href="../../d4/de4/structMCU_1_1VPotState.html#a0e5ce026bd64dd9a4e265fc19913395d">More...</a><br /></td></tr>
-<tr class="separator:a0e5ce026bd64dd9a4e265fc19913395d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Struct that keeps track of the value and overload indicator of a Mackie Control Universal VPot LED ring. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d81/VPotRing_8hpp_source.html#l00014">14</a> of file <a class="el" href="../../d7/d81/VPotRing_8hpp_source.html">VPotRing.hpp</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a46c8a310cf4c094f8c80e1cb8dc1f911"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46c8a310cf4c094f8c80e1cb8dc1f911">&#9670;&nbsp;</a></span>Mode</h2>
 

@@ -80,6 +80,9 @@ $(function() {
 : <a class="el" href="d0/d4e/Def_8hpp.html#aa99de428bd3e7715b73b335a5af9e900">EncoderPinList</a>
 , <a class="el" href="d7/dc2/structEncoderSwitchPinList.html#aa99de428bd3e7715b73b335a5af9e900">EncoderSwitchPinList</a>
 </li>
+<li>acceptMIDIfromSource()
+: <a class="el" href="df/d72/classMIDI__Pipe.html#a07f10bea080a7c320d8ff88ef554a282">MIDI_Pipe</a>
+</li>
 <li>activate()
 : <a class="el" href="d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a8011fcbeb5efeda20bd2dbffbbb70165">SmartMIDIFilteredAnalog&lt; NumBanks, BankAddress, Sender &gt;</a>
 </li>
@@ -90,12 +93,12 @@ $(function() {
 : <a class="el" href="d3/d65/classBankable_1_1MIDIButtonMatrix.html#a2643a90bc676680033bc6b8b08ac8ccc">MIDIButtonMatrix&lt; BankAddress, Sender, nb_rows, nb_cols &gt;</a>
 , <a class="el" href="dc/d22/classBankable_1_1MIDIButtons.html#a634a7b67351a9235d932b28bb7a1d5c7">MIDIButtons&lt; BankAddress, Sender, NumButtons &gt;</a>
 </li>
-<li>activeSysExCN
-: <a class="el" href="db/db0/classUSBMIDI__Parser.html#a9d3870e5a3faa2b0a41c16185a6ab911">USBMIDI_Parser</a>
+<li>activeCable
+: <a class="el" href="db/db0/classUSBMIDI__Parser.html#aa6f9c42d85c6acfc193e561b0bdd4fd5">USBMIDI_Parser</a>
 </li>
 <li>add()
 : <a class="el" href="db/dbd/classBank.html#a4209c482266982a22fd76bd1b4f7dc04">Bank&lt; N &gt;</a>
-, <a class="el" href="d1/db1/classSysExBuffer.html#a49e5f7ecdcebb6d82f9809fd35a99de6">SysExBuffer</a>
+, <a class="el" href="d1/db1/classSysExBuffer.html#aade66e493f2671bbe212727b87c2d9f8">SysExBuffer</a>
 </li>
 <li>add2B()
 : <a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#a72e819256a3236668ca21796feebdb70">BLEMIDIPacketBuilder</a>
@@ -156,11 +159,14 @@ $(function() {
 : <a class="el" href="d2/d94/classAH_1_1AnalogMultiplex.html#a1944405e0abd4d8f5b8bc34c392d2338">AnalogMultiplex&lt; N &gt;</a>
 </li>
 <li>addSysEx()
-: <a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#a50f89d9936baba4bfb9a71717ca14c86">BLEMIDIPacketBuilder</a>
+: <a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">BLEMIDIPacketBuilder</a>
 </li>
 <li>addSysExByte()
-: <a class="el" href="d0/d0d/classSerialMIDI__Parser.html#aaa9678fdaf74ccabe277bc365af68a1d">SerialMIDI_Parser</a>
-, <a class="el" href="db/db0/classUSBMIDI__Parser.html#ac643c328e15fbd0dc2257d2e5ac17f56">USBMIDI_Parser</a>
+: <a class="el" href="d0/d0d/classSerialMIDI__Parser.html#af90ff3c8af630628b7ebd04f70125c41">SerialMIDI_Parser</a>
+, <a class="el" href="db/db0/classUSBMIDI__Parser.html#aa3d847dfde171d8bbaaca2fb0469b1f2">USBMIDI_Parser</a>
+</li>
+<li>addSysExBytes()
+: <a class="el" href="db/db0/classUSBMIDI__Parser.html#aafeb07dec560a546ac8fd0d75cee24ed">USBMIDI_Parser</a>
 </li>
 <li>adx
 : <a class="el" href="d6/d99/classBresenhamLine.html#a1656b0509e8eccea3d88cf5b1c810932">BresenhamLine</a>
@@ -179,6 +185,15 @@ $(function() {
 </li>
 <li>alwaysDirty
 : <a class="el" href="dc/d25/classInterfaces_1_1MCU_1_1IVU.html#a8796e23a9c190581d7c7c952f18fd67c">IVU</a>
+</li>
+<li>alwaysSendImmediately()
+: <a class="el" href="de/d05/classUSBMIDI__Interface.html#a31ada757af49a5dd1a6466b69ce54461">USBMIDI_Interface</a>
+</li>
+<li>alwaysSendImmediately_
+: <a class="el" href="de/d05/classUSBMIDI__Interface.html#aa439687769f1a07895252cb853a58951">USBMIDI_Interface</a>
+</li>
+<li>alwaysSendsImmediately()
+: <a class="el" href="de/d05/classUSBMIDI__Interface.html#ab01e7a4208f44f8d50be8e94f52a4b64">USBMIDI_Interface</a>
 </li>
 <li>AnalogMultiplex()
 : <a class="el" href="d2/d94/classAH_1_1AnalogMultiplex.html#a0a2d2327d5aa0996c8a1009ce63a4737">AnalogMultiplex&lt; N &gt;</a>
@@ -218,7 +233,7 @@ $(function() {
 : <a class="el" href="d0/d18/classAudioVU_1_1Analyzer.html#a7e5696d18c629e3962b0f4057007f03c">AudioVU::Analyzer</a>
 </li>
 <li>Analyzer()
-: <a class="el" href="d0/d18/classAudioVU_1_1Analyzer.html#aa968d7f9316846412e087da8df059632">AudioVU::Analyzer</a>
+: <a class="el" href="d0/d18/classAudioVU_1_1Analyzer.html#acd1eaf515214662d4b5ab252bcbe8bb1">AudioVU::Analyzer</a>
 </li>
 <li>angleSpacing
 : <a class="el" href="d3/d98/classMCU_1_1VPotDisplay.html#a9d5d7485a4ceab3c8901c64fa1dae30d">VPotDisplay&lt; VPot_t &gt;</a>

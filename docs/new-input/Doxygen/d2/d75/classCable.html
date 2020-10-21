@@ -83,16 +83,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A type-safe class for MIDI USB <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> numbers.  
- <a href="../../d2/d75/classCable.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Def/Cable.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A type-safe class for MIDI USB <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> numbers. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for Cable:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d2b/classCable__coll__graph.svg" width="147" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d2b/classCable__coll__graph.svg" width="147" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -103,6 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e0be461ad363cb6179c144e82b1421b"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d75/classCable.html#a9e0be461ad363cb6179c144e82b1421b">getRaw</a> () const</td></tr>
 <tr class="memdesc:a9e0be461ad363cb6179c144e82b1421b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cable as an integer.  <a href="../../d2/d75/classCable.html#a9e0be461ad363cb6179c144e82b1421b">More...</a><br /></td></tr>
 <tr class="separator:a9e0be461ad363cb6179c144e82b1421b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3578ee58408eb7f1e264cd9a6a7423"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d75/classCable.html#a8d3578ee58408eb7f1e264cd9a6a7423">getOneBased</a> () const</td></tr>
+<tr class="memdesc:a8d3578ee58408eb7f1e264cd9a6a7423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cable as an integer.  <a href="../../d2/d75/classCable.html#a8d3578ee58408eb7f1e264cd9a6a7423">More...</a><br /></td></tr>
+<tr class="separator:a8d3578ee58408eb7f1e264cd9a6a7423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288abb9c03e757c1f43876793c7c251e"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d75/classCable.html#a288abb9c03e757c1f43876793c7c251e">operator==</a> (const <a class="el" href="../../d2/d75/classCable.html">Cable</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:a288abb9c03e757c1f43876793c7c251e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two cables are the same.  <a href="../../d2/d75/classCable.html#a288abb9c03e757c1f43876793c7c251e">More...</a><br /></td></tr>
 <tr class="separator:a288abb9c03e757c1f43876793c7c251e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,11 +138,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a284fd880ce7d08f337bd8529cafc883c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d75/classCable.html#a284fd880ce7d08f337bd8529cafc883c">zeroBasedCable</a>: 4</td></tr>
 <tr class="separator:a284fd880ce7d08f337bd8529cafc883c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A type-safe class for MIDI USB <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> numbers. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9096f2fcbe0dd4b64375eb46c3bf5d1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9096f2fcbe0dd4b64375eb46c3bf5d1b">&#9670;&nbsp;</a></span>Cable()</h2>
 
@@ -205,6 +206,38 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8d3578ee58408eb7f1e264cd9a6a7423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3578ee58408eb7f1e264cd9a6a7423">&#9670;&nbsp;</a></span>getOneBased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t getOneBased </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the cable as an integer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The one-based cable (1 is the first cable). </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#a11">Mackie-Control-Universal-Reverse-Engineering.ino</a>, <a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#a9">MIDI-Input-Callback.ino</a>, <a class="el" href="../../d1/d5d/MIDI-Input_8ino-example.html#a12">MIDI-Input.ino</a>, and <a class="el" href="../../d2/d93/SysEx-Send-Receive_8ino-example.html#a10">SysEx-Send-Receive.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a1a2dcfeb7b035cd962554158fc3fd3b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a2dcfeb7b035cd962554158fc3fd3b6">&#9670;&nbsp;</a></span>createCable()</h2>
 
@@ -237,7 +270,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,7 +306,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
 
 </div>
 </div>
@@ -309,7 +342,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +378,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
 
 </div>
 </div>
@@ -381,7 +414,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +450,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00090">90</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00097">97</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
 
 </div>
 </div>
@@ -453,7 +486,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +511,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dbc/Cable_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d2/dbc/Cable_8hpp_source.html">Cable.hpp</a>.</p>
 
 </div>
 </div>

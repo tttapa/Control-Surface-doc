@@ -90,23 +90,44 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class that reads and filters an analog input.  
- <a href="../../d3/d6e/classAH_1_1FilteredAnalog.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">AH/Hardware/FilteredAnalog.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;uint8_t Precision = 10, uint8_t FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, class FilterType = ANALOG_FILTER_TYPE, class AnalogType = analog_t, uint8_t IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt;<br />
+class AH::FilteredAnalog&lt; Precision, FilterShiftFactor, FilterType, AnalogType, IncRes &gt;</h3>
+
+<p>A class that reads and filters an analog input. </p>
+<p>A map function can be applied to the analog value (e.g. to compensate for logarithmic taper potentiometers or to calibrate the range). The analog input value is filtered using an exponential moving average filter. The default settings for this filter can be changed in Settings.hpp. <br  />
+ After filtering, hysteresis is applied to prevent flipping back and forth between two values when the input is not changing.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Precision</td><td>The number of bits of precision the output should have. </td></tr>
+    <tr><td class="paramname">FilterShiftFactor</td><td>The number of bits used for the <a class="el" href="../../d7/d40/classEMA.html" title="Exponential moving average filter.">EMA</a> filter. The pole location is \( 1 - \left(\frac{1}{2}\right)^{\text{FilterShiftFactor}} \). <br  />
+ A lower shift factor means less filtering ( \(0\) is no filtering), and a higher shift factor means more filtering (and more latency). </td></tr>
+    <tr><td class="paramname">FilterType</td><td>The type to use for the intermediate types of the filter. <br  />
+ Should be at least \( \text{ADC_BITS} + \text{IncRes} + \text{FilterShiftFactor} \) bits wide. </td></tr>
+    <tr><td class="paramname">AnalogType</td><td>The type to use for the analog values. <br  />
+ Should be at least \( \text{ADC_BITS} + \text{IncRes} \) bits wide. </td></tr>
+    <tr><td class="paramname">IncRes</td><td>The number of bits to increase the resolution of the analog reading by. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00263">263</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for FilteredAnalog&lt; Precision, FilterShiftFactor, FilterType, AnalogType, IncRes &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/de6/classAH_1_1FilteredAnalog__inherit__graph.svg" width="319" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/de6/classAH_1_1FilteredAnalog__inherit__graph.svg" width="319" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for FilteredAnalog&lt; Precision, FilterShiftFactor, FilterType, AnalogType, IncRes &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dae/classAH_1_1FilteredAnalog__coll__graph.svg" width="403" height="1038"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dae/classAH_1_1FilteredAnalog__coll__graph.svg" width="403" height="1038"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -185,29 +206,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac59ad53f58c22dda10715b40fcf441dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dcb/classHysteresis.html">Hysteresis</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#a8db0fcdeeb644f813c9b29211ce0a1ae">ADC_BITS</a>+IncRes - Precision, <a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>, <a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d36/classAH_1_1GenericFilteredAnalog.html#ac59ad53f58c22dda10715b40fcf441dc">hysteresis</a></td></tr>
 <tr class="separator:ac59ad53f58c22dda10715b40fcf441dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;uint8_t Precision = 10, uint8_t FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, class FilterType = ANALOG_FILTER_TYPE, class AnalogType = analog_t, uint8_t IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt;<br />
-class AH::FilteredAnalog&lt; Precision, FilterShiftFactor, FilterType, AnalogType, IncRes &gt;</h3>
-
-<p>A class that reads and filters an analog input. </p>
-<p>A map function can be applied to the analog value (e.g. to compensate for logarithmic taper potentiometers or to calibrate the range). The analog input value is filtered using an exponential moving average filter. The default settings for this filter can be changed in Settings.hpp. <br  />
- After filtering, hysteresis is applied to prevent flipping back and forth between two values when the input is not changing.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Precision</td><td>The number of bits of precision the output should have. </td></tr>
-    <tr><td class="paramname">FilterShiftFactor</td><td>The number of bits used for the <a class="el" href="../../d7/d40/classEMA.html" title="Exponential moving average filter.">EMA</a> filter. The pole location is \( 1 - \left(\frac{1}{2}\right)^{\text{FilterShiftFactor}} \). <br  />
- A lower shift factor means less filtering ( \(0\) is no filtering), and a higher shift factor means more filtering (and more latency). </td></tr>
-    <tr><td class="paramname">FilterType</td><td>The type to use for the intermediate types of the filter. <br  />
- Should be at least \( \text{ADC_BITS} + \text{IncRes} + \text{FilterShiftFactor} \) bits wide. </td></tr>
-    <tr><td class="paramname">AnalogType</td><td>The type to use for the analog values. <br  />
- Should be at least \( \text{ADC_BITS} + \text{IncRes} \) bits wide. </td></tr>
-    <tr><td class="paramname">IncRes</td><td>The number of bits to increase the resolution of the analog reading by. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00263">263</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="acebdd7d5e342b3080a731e8dd0a0738f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acebdd7d5e342b3080a731e8dd0a0738f">&#9670;&nbsp;</a></span>MappingFunction</h2>
 

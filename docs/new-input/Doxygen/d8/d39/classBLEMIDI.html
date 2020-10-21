@@ -75,6 +75,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../de/dd2/classBLEMIDI-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -82,44 +83,47 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Handles the Bluetooth Low Energy BLE server, characteristics, callbacks etc., but not the actual MIDI stuff.  
- <a href="../../d8/d39/classBLEMIDI.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">MIDI_Interfaces/BLEMIDI/BLEMIDI.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles the Bluetooth Low Energy BLE server, characteristics, callbacks etc., but not the actual MIDI stuff. </p>
+<p><br  />
+ <a href="https://www.midi.org/specifications/item/bluetooth-le-midi">https://www.midi.org/specifications/item/bluetooth-le-midi</a> (MMA/AMEI RP-052) </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for BLEMIDI:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d7f/classBLEMIDI__coll__graph.svg" width="286" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d7f/classBLEMIDI__coll__graph.svg" width="280" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab228e7af8dc48d615ef133fd74b8a772"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#ab228e7af8dc48d615ef133fd74b8a772">MOCK_METHOD</a> (void, <a class="el" href="../../d8/d39/classBLEMIDI.html#a44627e82616271f3875d6cf49275c215">setServerCallbacks</a>,(<a class="el" href="../../dc/d71/classBLEServerCallbacks.html">BLEServerCallbacks</a> *))</td></tr>
-<tr class="separator:ab228e7af8dc48d615ef133fd74b8a772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6528ac085f44a754e9410e4a3058e4a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a6528ac085f44a754e9410e4a3058e4a9">MOCK_METHOD</a> (void, <a class="el" href="../../d8/d39/classBLEMIDI.html#ae8a00b17d86859f74d3330a390220b53">setCharacteristicsCallbacks</a>,(<a class="el" href="../../dd/d97/classBLECharacteristicCallbacks.html">BLECharacteristicCallbacks</a> *))</td></tr>
-<tr class="separator:a6528ac085f44a754e9410e4a3058e4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3e80b4a5377fc7829a365178b646ddd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#af3e80b4a5377fc7829a365178b646ddd">MOCK_METHOD</a> (void, <a class="el" href="../../d8/d39/classBLEMIDI.html#a79485f5f5be0a60a6ccd373609208272">begin</a>,(<a class="el" href="../../dc/d71/classBLEServerCallbacks.html">BLEServerCallbacks</a> *, <a class="el" href="../../dd/d97/classBLECharacteristicCallbacks.html">BLECharacteristicCallbacks</a> *))</td></tr>
-<tr class="separator:af3e80b4a5377fc7829a365178b646ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa8ecee1b2bd7070ae72cc54db7e70ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#aaa8ecee1b2bd7070ae72cc54db7e70ab">MOCK_METHOD</a> (void, <a class="el" href="../../d8/d39/classBLEMIDI.html#a83f33ffce791d9f95e6bd3f913d2deb3">notifyValue</a>,(std::vector&lt; uint8_t &gt;))</td></tr>
-<tr class="separator:aaa8ecee1b2bd7070ae72cc54db7e70ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2811d5015b34e1b1cc8a56a7f3a81fa9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a2811d5015b34e1b1cc8a56a7f3a81fa9">MOCK_METHOD</a> (std::string, <a class="el" href="../../d8/d39/classBLEMIDI.html#a4c052cb2622c580a250b2c783a436882">getValue</a>,())</td></tr>
-<tr class="separator:a2811d5015b34e1b1cc8a56a7f3a81fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f33ffce791d9f95e6bd3f913d2deb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a83f33ffce791d9f95e6bd3f913d2deb3">notifyValue</a> (const uint8_t *data, size_t len)</td></tr>
-<tr class="separator:a83f33ffce791d9f95e6bd3f913d2deb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d7eae423b7267baaa1da8d2c362ba81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a4d7eae423b7267baaa1da8d2c362ba81">~BLEMIDI</a> ()</td></tr>
-<tr class="separator:a4d7eae423b7267baaa1da8d2c362ba81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803df18b87458f346318f7784326ade2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a803df18b87458f346318f7784326ade2">~BLEMIDI</a> ()=default</td></tr>
+<tr class="separator:a803df18b87458f346318f7784326ade2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44627e82616271f3875d6cf49275c215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a44627e82616271f3875d6cf49275c215">setServerCallbacks</a> (<a class="el" href="../../dc/d71/classBLEServerCallbacks.html">BLEServerCallbacks</a> *cb)</td></tr>
 <tr class="separator:a44627e82616271f3875d6cf49275c215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8a00b17d86859f74d3330a390220b53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#ae8a00b17d86859f74d3330a390220b53">setCharacteristicsCallbacks</a> (<a class="el" href="../../dd/d97/classBLECharacteristicCallbacks.html">BLECharacteristicCallbacks</a> *cb)</td></tr>
 <tr class="separator:ae8a00b17d86859f74d3330a390220b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79485f5f5be0a60a6ccd373609208272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a79485f5f5be0a60a6ccd373609208272">begin</a> (<a class="el" href="../../dc/d71/classBLEServerCallbacks.html">BLEServerCallbacks</a> *serverCallbacks, <a class="el" href="../../dd/d97/classBLECharacteristicCallbacks.html">BLECharacteristicCallbacks</a> *midiCallbacks)</td></tr>
+<tr class="memdesc:a79485f5f5be0a60a6ccd373609208272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize.  <a href="../../d8/d39/classBLEMIDI.html#a79485f5f5be0a60a6ccd373609208272">More...</a><br /></td></tr>
 <tr class="separator:a79485f5f5be0a60a6ccd373609208272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bfc4829a753d42c2823739fff52f0d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a0bfc4829a753d42c2823739fff52f0d0">notifyValue</a> (uint8_t *data, size_t len)</td></tr>
-<tr class="separator:a0bfc4829a753d42c2823739fff52f0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c052cb2622c580a250b2c783a436882"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a4c052cb2622c580a250b2c783a436882">getValue</a> ()</td></tr>
-<tr class="separator:a4c052cb2622c580a250b2c783a436882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f33ffce791d9f95e6bd3f913d2deb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a83f33ffce791d9f95e6bd3f913d2deb3">notifyValue</a> (const uint8_t *data, size_t len)</td></tr>
+<tr class="memdesc:a83f33ffce791d9f95e6bd3f913d2deb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the given BLE MIDI packet.  <a href="../../d8/d39/classBLEMIDI.html#a83f33ffce791d9f95e6bd3f913d2deb3">More...</a><br /></td></tr>
+<tr class="separator:a83f33ffce791d9f95e6bd3f913d2deb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a03038d2e299f486e55dc72778f7086"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a2a03038d2e299f486e55dc72778f7086">getValue</a> () const</td></tr>
+<tr class="memdesc:a2a03038d2e299f486e55dc72778f7086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the received BLE MIDI packet.  <a href="../../d8/d39/classBLEMIDI.html#a2a03038d2e299f486e55dc72778f7086">More...</a><br /></td></tr>
+<tr class="separator:a2a03038d2e299f486e55dc72778f7086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131a83fe6743426006b849c9bb1aa2ea"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a131a83fe6743426006b849c9bb1aa2ea">getMinMTU</a> () const</td></tr>
+<tr class="memdesc:a131a83fe6743426006b849c9bb1aa2ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum MTU of all connected clients.  <a href="../../d8/d39/classBLEMIDI.html#a131a83fe6743426006b849c9bb1aa2ea">More...</a><br /></td></tr>
+<tr class="separator:a131a83fe6743426006b849c9bb1aa2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a4b66d5e31b5dc18b314c8a68163263bd">cleanup</a> ()</td></tr>
+<tr class="separator:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -132,15 +136,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a55f62ad8c2a83d0723993a96619817f0"><td class="memItemLeft" align="right" valign="top">BLE2902 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d39/classBLEMIDI.html#a55f62ad8c2a83d0723993a96619817f0">pDescriptor</a> = nullptr</td></tr>
 <tr class="separator:a55f62ad8c2a83d0723993a96619817f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles the Bluetooth Low Energy BLE server, characteristics, callbacks etc., but not the actual MIDI stuff. </p>
-<p><br  />
- </p>
-
-<p class="definition">Definition at line <a class="el" href="../../dd/df5/BLEMIDI-Mock_8ipp_source.html#l00034">34</a> of file <a class="el" href="../../dd/df5/BLEMIDI-Mock_8ipp_source.html">BLEMIDI-Mock.ipp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4d7eae423b7267baaa1da8d2c362ba81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d7eae423b7267baaa1da8d2c362ba81">&#9670;&nbsp;</a></span>~BLEMIDI()</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a803df18b87458f346318f7784326ade2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803df18b87458f346318f7784326ade2">&#9670;&nbsp;</a></span>~BLEMIDI()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,232 +155,19 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab228e7af8dc48d615ef133fd74b8a772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab228e7af8dc48d615ef133fd74b8a772">&#9670;&nbsp;</a></span>MOCK_METHOD() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MOCK_METHOD </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/d39/classBLEMIDI.html#a44627e82616271f3875d6cf49275c215">setServerCallbacks</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="../../dc/d71/classBLEServerCallbacks.html">BLEServerCallbacks</a> *)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6528ac085f44a754e9410e4a3058e4a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6528ac085f44a754e9410e4a3058e4a9">&#9670;&nbsp;</a></span>MOCK_METHOD() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MOCK_METHOD </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/d39/classBLEMIDI.html#ae8a00b17d86859f74d3330a390220b53">setCharacteristicsCallbacks</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="../../dd/d97/classBLECharacteristicCallbacks.html">BLECharacteristicCallbacks</a> *)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af3e80b4a5377fc7829a365178b646ddd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3e80b4a5377fc7829a365178b646ddd">&#9670;&nbsp;</a></span>MOCK_METHOD() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MOCK_METHOD </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/d39/classBLEMIDI.html#a79485f5f5be0a60a6ccd373609208272">begin</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="../../dc/d71/classBLEServerCallbacks.html">BLEServerCallbacks</a> *, <a class="el" href="../../dd/d97/classBLECharacteristicCallbacks.html">BLECharacteristicCallbacks</a> *)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa8ecee1b2bd7070ae72cc54db7e70ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa8ecee1b2bd7070ae72cc54db7e70ab">&#9670;&nbsp;</a></span>MOCK_METHOD() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MOCK_METHOD </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/d39/classBLEMIDI.html#a83f33ffce791d9f95e6bd3f913d2deb3">notifyValue</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(std::vector&lt; uint8_t &gt;)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2811d5015b34e1b1cc8a56a7f3a81fa9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2811d5015b34e1b1cc8a56a7f3a81fa9">&#9670;&nbsp;</a></span>MOCK_METHOD() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MOCK_METHOD </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/d39/classBLEMIDI.html#a4c052cb2622c580a250b2c783a436882">getValue</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">()&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a83f33ffce791d9f95e6bd3f913d2deb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f33ffce791d9f95e6bd3f913d2deb3">&#9670;&nbsp;</a></span>notifyValue() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void notifyValue </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dd/df5/BLEMIDI-Mock_8ipp_source.html#l00043">43</a> of file <a class="el" href="../../dd/df5/BLEMIDI-Mock_8ipp_source.html">BLEMIDI-Mock.ipp</a>.</p>
-
-</div>
-</div>
 <a id="a44627e82616271f3875d6cf49275c215"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44627e82616271f3875d6cf49275c215">&#9670;&nbsp;</a></span>setServerCallbacks()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void setServerCallbacks </td>
@@ -392,15 +177,8 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>Must be called after begin. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
 
 </div>
 </div>
@@ -409,9 +187,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void setCharacteristicsCallbacks </td>
@@ -421,15 +196,8 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>Must be called after begin. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
 
 </div>
 </div>
@@ -438,9 +206,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void begin </td>
@@ -460,30 +225,22 @@ Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
+<p>Initialize. </p>
 
 </div>
 </div>
-<a id="a0bfc4829a753d42c2823739fff52f0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bfc4829a753d42c2823739fff52f0d0">&#9670;&nbsp;</a></span>notifyValue() <span class="overload">[2/2]</span></h2>
+<a id="a83f33ffce791d9f95e6bd3f913d2deb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f33ffce791d9f95e6bd3f913d2deb3">&#9670;&nbsp;</a></span>notifyValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void notifyValue </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -498,19 +255,59 @@ Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
+<p>Send the given BLE MIDI packet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Pointer to the data. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of the data in bytes. Maximum length is the MTU minus three bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a4c052cb2622c580a250b2c783a436882"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c052cb2622c580a250b2c783a436882">&#9670;&nbsp;</a></span>getValue()</h2>
+<a id="a2a03038d2e299f486e55dc72778f7086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a03038d2e299f486e55dc72778f7086">&#9670;&nbsp;</a></span>getValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the received BLE MIDI packet. </p>
+
+</div>
+</div>
+<a id="a131a83fe6743426006b849c9bb1aa2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131a83fe6743426006b849c9bb1aa2ea">&#9670;&nbsp;</a></span>getMinMTU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t getMinMTU </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the minimum MTU of all connected clients. </p>
+
+</div>
+</div>
+<a id="a4b66d5e31b5dc18b314c8a68163263bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b66d5e31b5dc18b314c8a68163263bd">&#9670;&nbsp;</a></span>cleanup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,7 +316,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string getValue </td>
+          <td class="memname">void cleanup </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -527,12 +324,10 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
 
 </div>
 </div>
@@ -557,7 +352,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00120">120</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
 
 </div>
 </div>
@@ -581,7 +376,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00121">121</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
 
 </div>
 </div>
@@ -605,7 +400,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00122">122</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
 
 </div>
 </div>
@@ -629,12 +424,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00123">123</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="../../dd/df5/BLEMIDI-Mock_8ipp_source.html">BLEMIDI-Mock.ipp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="../../d0/dc9/BLEMIDI_8hpp_source.html">BLEMIDI.hpp</a></li>
 </ul>
 </div><!-- contents -->

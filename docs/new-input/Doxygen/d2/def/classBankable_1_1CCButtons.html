@@ -91,83 +91,41 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class of MIDIOutputElements that read the input of <b>a collection of momentary push buttons or switches</b>, and send out MIDI <b>Control Change</b> events.  
- <a href="../../d2/def/classBankable_1_1CCButtons.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d7/d16/Bankable_2CCButtons_8hpp_source.html">MIDI_Outputs/Bankable/CCButtons.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;uint8_t NumButtons&gt;<br />
+class Bankable::CCButtons&lt; NumButtons &gt;</h3>
+
+<p>A class of MIDIOutputElements that read the input of <b>a collection of momentary push buttons or switches</b>, and send out MIDI <b>Control Change</b> events. </p>
+<p>A value of 0x7F is sent when a button is pressed, and a value of 0x00 is sent when a button is released. <br  />
+ The buttons are debounced in software. <br  />
+ This version can be banked. <br  />
+</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">NumButtons</td><td>The number of buttons in the collection. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d16/Bankable_2CCButtons_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../d7/d16/Bankable_2CCButtons_8hpp_source.html">Bankable/CCButtons.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for CCButtons&lt; NumButtons &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/db0/classBankable_1_1CCButtons__inherit__graph.svg" width="247" height="1103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/db0/classBankable_1_1CCButtons__inherit__graph.svg" width="247" height="1103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for CCButtons&lt; NumButtons &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/df0/classBankable_1_1CCButtons__coll__graph.svg" width="1062" height="1728"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/df0/classBankable_1_1CCButtons__coll__graph.svg" width="1062" height="1728"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
-<tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
-<tr class="separator:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a70e31cad23bac9d4afa7a5c3d6f0024a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/def/classBankable_1_1CCButtons.html#a70e31cad23bac9d4afa7a5c3d6f0024a">CCButtons</a> (<a class="el" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a>&lt;&gt; config, const <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../de/d0d/classAH_1_1Button.html">AH::Button</a>, NumButtons &gt; &amp;<a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a8357d8ac83d7e8c4b628a200aed1a300">buttons</a>, <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> baseAddress, <a class="el" href="../../d5/d0e/classRelativeMIDIAddress.html">RelativeMIDIAddress</a> <a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a14d32b824b32507ecd5ebc22eea26fd9">incrementAddress</a>, const <a class="el" href="../../d5/db5/classDigitalCCSender.html">DigitalCCSender</a> &amp;<a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a3296e2217dd530ddb922f24a450fec82">sender</a>={})</td></tr>
-<tr class="memdesc:a70e31cad23bac9d4afa7a5c3d6f0024a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> <a class="el" href="../../d2/def/classBankable_1_1CCButtons.html" title="A class of MIDIOutputElements that read the input of a collection of momentary push buttons or switch...">CCButtons</a> object with the given pins, the given controller number and channel.  <a href="../../d2/def/classBankable_1_1CCButtons.html#a70e31cad23bac9d4afa7a5c3d6f0024a">More...</a><br /></td></tr>
-<tr class="separator:a70e31cad23bac9d4afa7a5c3d6f0024a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1889b9c94a840b266be9620a2f23559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#aa1889b9c94a840b266be9620a2f23559">begin</a> () final override</td></tr>
-<tr class="memdesc:aa1889b9c94a840b266be9620a2f23559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this updatable.  <a href="../../dc/d22/classBankable_1_1MIDIButtons.html#aa1889b9c94a840b266be9620a2f23559">More...</a><br /></td></tr>
-<tr class="separator:aa1889b9c94a840b266be9620a2f23559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">update</a> () final override</td></tr>
-<tr class="memdesc:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this updatable.  <a href="../../dc/d22/classBankable_1_1MIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">More...</a><br /></td></tr>
-<tr class="separator:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a7fa1616cc61c19a5efcc863c950f7f30">invert</a> ()</td></tr>
-<tr class="separator:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185640ccaae75c10425c730d4f2fe292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d0d/classAH_1_1Button.html#a5d74787dedbc4e11c1ab15bf487e61f8">AH::Button::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a185640ccaae75c10425c730d4f2fe292">getButtonState</a> (size_t index) const</td></tr>
-<tr class="separator:a185640ccaae75c10425c730d4f2fe292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a5e1d8290397ae14e2be6eb56e1d1c1fb">getMutex</a> ()</td></tr>
-<tr class="separator:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a3296e2217dd530ddb922f24a450fec82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db5/classDigitalCCSender.html">DigitalCCSender</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a3296e2217dd530ddb922f24a450fec82">sender</a></td></tr>
-<tr class="separator:a3296e2217dd530ddb922f24a450fec82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top">Updatable&lt; NormalUpdatable, false &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
-<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top">Updatable&lt; NormalUpdatable, false &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
-<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; Updatable&lt; NormalUpdatable, false &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
-<tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
-<tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a189d1968f3d80eb94f17563376e2c9fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/de5/classBankable_1_1SingleAddress.html">SingleAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a189d1968f3d80eb94f17563376e2c9fe">address</a></td></tr>
-<tr class="separator:a189d1968f3d80eb94f17563376e2c9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8357d8ac83d7e8c4b628a200aed1a300"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../de/d0d/classAH_1_1Button.html">AH::Button</a>, NumButtons &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a8357d8ac83d7e8c4b628a200aed1a300">buttons</a></td></tr>
-<tr class="separator:a8357d8ac83d7e8c4b628a200aed1a300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14d32b824b32507ecd5ebc22eea26fd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d0e/classRelativeMIDIAddress.html">RelativeMIDIAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a14d32b824b32507ecd5ebc22eea26fd9">incrementAddress</a></td></tr>
-<tr class="separator:a14d32b824b32507ecd5ebc22eea26fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a634a7b67351a9235d932b28bb7a1d5c7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a634a7b67351a9235d932b28bb7a1d5c7">activeButtons</a></td></tr>
-<tr class="separator:a634a7b67351a9235d932b28bb7a1d5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Main initialization and updating methods</h2></td></tr>
 <tr class="memitem:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2c7c502f8ebf20ac04d25bb29cc0f2aa">applyToAll</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;, void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
@@ -228,25 +186,66 @@ Main initialization and updating methods</h2></td></tr>
 <tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
 <tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all enabled instances of this class.  <a href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">More...</a><br /></td></tr>
 <tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#ac0d5c2d164b91456b8a776f0ad36dea8">DefaultMutEx</a>, <a class="el" href="../../d4/dbb/structEmptyMutex.html">EmptyMutex</a> &gt;::type</td></tr>
+<tr class="separator:adb6674b573bf7610072c9e8d3abb2ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> = typename std::conditional&lt; ThreadSafe, <a class="el" href="../../d4/d84/Mutex_8hpp.html#a14e344797692868012641df52167743e">DefaultLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt;, <a class="el" href="../../d7/d8e/structEmptyLockGuard.html">EmptyLockGuard</a>&lt; <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &gt; &gt;::type</td></tr>
+<tr class="separator:a65d4c4a857abe1431f68cb2c3247d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a70e31cad23bac9d4afa7a5c3d6f0024a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/def/classBankable_1_1CCButtons.html#a70e31cad23bac9d4afa7a5c3d6f0024a">CCButtons</a> (<a class="el" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a>&lt;&gt; config, const <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../de/d0d/classAH_1_1Button.html">AH::Button</a>, NumButtons &gt; &amp;<a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a8357d8ac83d7e8c4b628a200aed1a300">buttons</a>, <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> baseAddress, <a class="el" href="../../d5/d0e/classRelativeMIDIAddress.html">RelativeMIDIAddress</a> <a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a14d32b824b32507ecd5ebc22eea26fd9">incrementAddress</a>, const <a class="el" href="../../d5/db5/classDigitalCCSender.html">DigitalCCSender</a> &amp;<a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a3296e2217dd530ddb922f24a450fec82">sender</a>={})</td></tr>
+<tr class="memdesc:a70e31cad23bac9d4afa7a5c3d6f0024a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> <a class="el" href="../../d2/def/classBankable_1_1CCButtons.html" title="A class of MIDIOutputElements that read the input of a collection of momentary push buttons or switch...">CCButtons</a> object with the given pins, the given controller number and channel.  <a href="../../d2/def/classBankable_1_1CCButtons.html#a70e31cad23bac9d4afa7a5c3d6f0024a">More...</a><br /></td></tr>
+<tr class="separator:a70e31cad23bac9d4afa7a5c3d6f0024a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1889b9c94a840b266be9620a2f23559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#aa1889b9c94a840b266be9620a2f23559">begin</a> () final override</td></tr>
+<tr class="memdesc:aa1889b9c94a840b266be9620a2f23559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this updatable.  <a href="../../dc/d22/classBankable_1_1MIDIButtons.html#aa1889b9c94a840b266be9620a2f23559">More...</a><br /></td></tr>
+<tr class="separator:aa1889b9c94a840b266be9620a2f23559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">update</a> () final override</td></tr>
+<tr class="memdesc:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this updatable.  <a href="../../dc/d22/classBankable_1_1MIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">More...</a><br /></td></tr>
+<tr class="separator:af7d7ae0df8d1dfd74402446af1e6ef60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a7fa1616cc61c19a5efcc863c950f7f30">invert</a> ()</td></tr>
+<tr class="separator:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185640ccaae75c10425c730d4f2fe292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d0d/classAH_1_1Button.html#a5d74787dedbc4e11c1ab15bf487e61f8">AH::Button::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a185640ccaae75c10425c730d4f2fe292">getButtonState</a> (size_t index) const</td></tr>
+<tr class="separator:a185640ccaae75c10425c730d4f2fe292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a5e1d8290397ae14e2be6eb56e1d1c1fb">getMutex</a> ()</td></tr>
+<tr class="separator:a5e1d8290397ae14e2be6eb56e1d1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a3296e2217dd530ddb922f24a450fec82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db5/classDigitalCCSender.html">DigitalCCSender</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a3296e2217dd530ddb922f24a450fec82">sender</a></td></tr>
+<tr class="separator:a3296e2217dd530ddb922f24a450fec82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top">Updatable&lt; NormalUpdatable, false &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
+<tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top">Updatable&lt; NormalUpdatable, false &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
+<tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; Updatable&lt; NormalUpdatable, false &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
+<tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
+<tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a189d1968f3d80eb94f17563376e2c9fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/de5/classBankable_1_1SingleAddress.html">SingleAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a189d1968f3d80eb94f17563376e2c9fe">address</a></td></tr>
+<tr class="separator:a189d1968f3d80eb94f17563376e2c9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8357d8ac83d7e8c4b628a200aed1a300"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../de/d0d/classAH_1_1Button.html">AH::Button</a>, NumButtons &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a8357d8ac83d7e8c4b628a200aed1a300">buttons</a></td></tr>
+<tr class="separator:a8357d8ac83d7e8c4b628a200aed1a300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d32b824b32507ecd5ebc22eea26fd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d0e/classRelativeMIDIAddress.html">RelativeMIDIAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a14d32b824b32507ecd5ebc22eea26fd9">incrementAddress</a></td></tr>
+<tr class="separator:a14d32b824b32507ecd5ebc22eea26fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634a7b67351a9235d932b28bb7a1d5c7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a634a7b67351a9235d932b28bb7a1d5c7">activeButtons</a></td></tr>
+<tr class="separator:a634a7b67351a9235d932b28bb7a1d5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;uint8_t NumButtons&gt;<br />
-class Bankable::CCButtons&lt; NumButtons &gt;</h3>
-
-<p>A class of MIDIOutputElements that read the input of <b>a collection of momentary push buttons or switches</b>, and send out MIDI <b>Control Change</b> events. </p>
-<p>A value of 0x7F is sent when a button is pressed, and a value of 0x00 is sent when a button is released. <br  />
- The buttons are debounced in software. <br  />
- This version can be banked. <br  />
-</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">NumButtons</td><td>The number of buttons in the collection. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/d16/Bankable_2CCButtons_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../d7/d16/Bankable_2CCButtons_8hpp_source.html">Bankable/CCButtons.hpp</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="adb6674b573bf7610072c9e8d3abb2ff4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb6674b573bf7610072c9e8d3abb2ff4">&#9670;&nbsp;</a></span>Mutex</h2>
 

@@ -211,9 +211,6 @@ $(function() {
 <li>max_in
 : <a class="el" href="d2/dcb/classHysteresis.html#a32964102524c8f7f878be5daa02e1c47">Hysteresis&lt; BITS, T_in, T_out &gt;</a>
 </li>
-<li>MAX_MESSAGE_TIME
-: <a class="el" href="d0/d89/classBluetoothMIDI__Interface.html#a122a5071fd2ead4e3b967105ee98e9f2">BluetoothMIDI_Interface</a>
-</li>
 <li>max_out
 : <a class="el" href="d2/dcb/classHysteresis.html#a73cb90fdff9327a69c32e9e9c8e39d2a">Hysteresis&lt; BITS, T_in, T_out &gt;</a>
 </li>
@@ -232,6 +229,12 @@ $(function() {
 </li>
 <li>MCP23017Encoders()
 : <a class="el" href="dc/d42/classAH_1_1MCP23017Encoders.html#a046a4c660f75a59c62e31e1786e79cef">MCP23017Encoders&lt; WireType, EncoderPositionType, InterruptSafe &gt;</a>
+</li>
+<li>message
+: <a class="el" href="df/d59/structMIDIMessageQueueElement.html#a964ef59ef5e900389bd5f04d3b576122">MIDIMessageQueueElement</a>
+</li>
+<li>Message()
+: <a class="el" href="dc/d44/unionMIDIMessageQueueElement_1_1Message.html#ac27bcb0220ae61261ab76d98de5c5997">MIDIMessageQueueElement::Message</a>
 </li>
 <li>message
 : <a class="el" href="d6/d99/structRealTimeMessage.html#a70458cf1b28859e94ae35dfe6df1a497">RealTimeMessage</a>
@@ -254,7 +257,7 @@ $(function() {
 : <a class="el" href="df/d72/classMIDI__Pipe.html#ae26ab01535aa8f27a84d0ff10a3c2477">MIDI_Pipe</a>
 </li>
 <li>MIDI_Sink()
-: <a class="el" href="d9/db6/classMIDI__Sink.html#a34286249632856886f262f3cc89304d5">MIDI_Sink</a>
+: <a class="el" href="d9/db6/classMIDI__Sink.html#a743dfcb080f13144b34b4cb086e691d2">MIDI_Sink</a>
 </li>
 <li>MIDI_Source()
 : <a class="el" href="df/d5b/classMIDI__Source.html#ac00a95c5b4180c3a3b2b7b11daf277c7">MIDI_Source</a>
@@ -283,7 +286,7 @@ $(function() {
 , <a class="el" href="d2/d87/classMIDIButtons.html#ad2421db3b4aa42e2a4e8f175fca5feb3">MIDIButtons&lt; Sender, NumButtons &gt;</a>
 </li>
 <li>MIDIChannelCable()
-: <a class="el" href="d7/d46/classMIDIChannelCable.html#aca01919e0cfab2c384680886d51adb97">MIDIChannelCable</a>
+: <a class="el" href="d7/d46/classMIDIChannelCable.html#a71781498468d7dee7fda63a3de3a3f3b">MIDIChannelCable</a>
 </li>
 <li>MIDIChordButton()
 : <a class="el" href="da/d96/classBankable_1_1MIDIChordButton.html#a4765e8ee77221d0fbab7c0ea15b97487">MIDIChordButton&lt; Sender &gt;</a>
@@ -299,18 +302,30 @@ $(function() {
 <li>MIDIInputElement()
 : <a class="el" href="d9/db1/classMIDIInputElement.html#a16e181ab48df7bb29197b8df3119af51">MIDIInputElement&lt; Type &gt;</a>
 </li>
+<li>MIDIMessage()
+: <a class="el" href="d7/d3f/structChannelMessage.html#a31db88f17e9f073c32b8fec2aeabf2eb">ChannelMessage</a>
+, <a class="el" href="d4/d61/structMIDIMessage.html#a31db88f17e9f073c32b8fec2aeabf2eb">MIDIMessage</a>
+, <a class="el" href="d5/dad/structSysCommonMessage.html#ad5538c30d21b617cec3422b261fa2d45">SysCommonMessage</a>
+</li>
+<li>MIDIMessageQueueElement()
+: <a class="el" href="df/d59/structMIDIMessageQueueElement.html#aaab0ab2bf65b00ffdd0befd24bedf6e9">MIDIMessageQueueElement</a>
+</li>
 <li>midimsg
-: <a class="el" href="df/d0c/classMIDI__Parser.html#a7249aa0f3e04e870968286f09efc25b7">MIDI_Parser</a>
+: <a class="el" href="df/d0c/classMIDI__Parser.html#a99dfa63535038ee28e68f14a62c132cf">MIDI_Parser</a>
 </li>
 <li>MIDIUSBPacket_t
 : <a class="el" href="de/d05/classUSBMIDI__Interface.html#a8353b3c401b43a9977c8d88aed620c68">USBMIDI_Interface</a>
+, <a class="el" href="db/db0/classUSBMIDI__Parser.html#afa563722058cf859e56af41c9b9392d1">USBMIDI_Parser</a>
+</li>
+<li>min_mtu
+: <a class="el" href="d0/d89/classBluetoothMIDI__Interface.html#af9132080b7be05255873ea3c133c2748">BluetoothMIDI_Interface</a>
 </li>
 <li>mixers
 : <a class="el" href="d4/de3/classVolumeControl.html#a20abcad849bdda04caa5d8c8cb84aecd">VolumeControl&lt; N &gt;</a>
 </li>
 <li>MOCK_METHOD()
-: <a class="el" href="de/dfc/classBLECharacteristic.html#ab723aa869e7bba3f13a894b8c9b8fd8a">BLECharacteristic</a>
-, <a class="el" href="d8/d39/classBLEMIDI.html#a2811d5015b34e1b1cc8a56a7f3a81fa9">BLEMIDI</a>
+: <a class="el" href="de/dfc/classBLECharacteristic.html#a2811d5015b34e1b1cc8a56a7f3a81fa9">BLECharacteristic</a>
+, <a class="el" href="d7/d71/classBLEMIDI__Mock.html#aaa8ecee1b2bd7070ae72cc54db7e70ab">BLEMIDI_Mock</a>
 </li>
 <li>mode
 : <a class="el" href="d9/d89/classAH_1_1DotBarDisplayLEDs.html#a5238ef04e9caeb86f50f51d775e16127">DotBarDisplayLEDs&lt; N &gt;</a>
@@ -323,10 +338,13 @@ $(function() {
 </li>
 <li>moveDown()
 : <a class="el" href="d8/d1a/classAH_1_1UpdatableCRTP.html#af530dde4c3c60b0a6ec77fe9724651c9">UpdatableCRTP&lt; Derived, ThreadSafe &gt;</a>
-, <a class="el" href="dd/d16/classDoublyLinkedList.html#a9750fc672c95b807b56b12b0a65542f8">DoublyLinkedList&lt; Node &gt;</a>
+, <a class="el" href="dd/d16/classDoublyLinkedList.html#a5cb5c2c2b4c82d47ae670a15b78fe6b3">DoublyLinkedList&lt; Node &gt;</a>
 </li>
 <li>MovingCoilBallistics()
 : <a class="el" href="d0/d49/classMovingCoilBallistics.html#aa37251f37f75113996c1f7d2ef21ef28">MovingCoilBallistics</a>
+</li>
+<li>mtx
+: <a class="el" href="d0/d89/classBluetoothMIDI__Interface.html#ad5e0dbd36f0d71fce9b00b7f991b2f38">BluetoothMIDI_Interface</a>
 </li>
 <li>multiplier
 : <a class="el" href="df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a3b6affddfe426e29d8e6f98049e8a9f2">GenericMIDIAbsoluteEncoder&lt; Enc, NumBanks, BankAddress, Sender &gt;</a>

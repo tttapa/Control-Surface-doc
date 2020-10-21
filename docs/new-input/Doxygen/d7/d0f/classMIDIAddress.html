@@ -81,23 +81,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A type-safe utility class for saving a MIDI address consisting of a 7-bit address, a 4-bit channel, and a 4-bit cable number.  
- <a href="../../d7/d0f/classMIDIAddress.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html">Def/MIDIAddress.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A type-safe utility class for saving a MIDI address consisting of a 7-bit address, a 4-bit channel, and a 4-bit cable number. </p>
+<p><br  />
+ A MIDI address can be marked "invalid". The MIDI sending functions (<a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a>) will never send messages addressed to invalid addresses.</p>
+<p>See <a class="el" href="../../d6/dc6/md_pages_Basics.html">this page</a> for a tutorial on how to use MIDI addresses. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d6b/Custom-MIDI-Output-Element-Bankable_8ino-example.html#_a4">Custom-MIDI-Output-Element-Bankable.ino</a>, <a class="el" href="../../d4/d3b/Custom-MIDI-Output-Element_8ino-example.html#_a3">Custom-MIDI-Output-Element.ino</a>, <a class="el" href="../../d3/d08/Custom-MIDI-Sender_8ino-example.html#_a1">Custom-MIDI-Sender.ino</a>, <a class="el" href="../../d2/d85/Custom-Note-LED-Input-Element-Callback-FastLED_8ino-example.html#_a2">Custom-Note-LED-Input-Element-Callback-FastLED.ino</a>, <a class="el" href="../../dd/da5/Custom-Note-LED-Input-Element-Callback_8ino-example.html#_a3">Custom-Note-LED-Input-Element-Callback.ino</a>, <a class="el" href="../../dd/d56/MCP23017-RotaryEncoder-Interrupts_8ino-example.html#_a1">MCP23017-RotaryEncoder-Interrupts.ino</a>, <a class="el" href="../../d7/dac/MCP23017-RotaryEncoder-No-Interrupts_8ino-example.html#_a1">MCP23017-RotaryEncoder-No-Interrupts.ino</a>, <a class="el" href="../../d8/d9b/MIDI-Output_8ino-example.html#_a2">MIDI-Output.ino</a>, and <a class="el" href="../../d7/d8d/Send-MIDI-Notes_8ino-example.html#_a1">Send-MIDI-Notes.ino</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html">MIDIAddress.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for MIDIAddress:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/df5/classMIDIAddress__coll__graph.svg" width="200" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/df5/classMIDIAddress__coll__graph.svg" width="200" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2c27c684fb42cbc7e7e7a6cf88475642"><td class="memItemLeft" align="right" valign="top">RawMIDIAddress&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/classMIDIAddress.html#a2c27c684fb42cbc7e7e7a6cf88475642">addresses</a></td></tr>
-<tr class="separator:a2c27c684fb42cbc7e7e7a6cf88475642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Constructors</h2></td></tr>
 <tr class="memitem:af1ebf563fa185eccec5456a363e420f0"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/classMIDIAddress.html#af1ebf563fa185eccec5456a363e420f0">MIDIAddress</a> ()</td></tr>
@@ -178,17 +180,13 @@ Base functions for address pattern matching.</h2></td></tr>
 <tr class="memitem:ac9fb9998232d6b51c5e57f4d99d76f99"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/classMIDIAddress.html#ac9fb9998232d6b51c5e57f4d99d76f99">matchAddressInRange</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> toMatch, <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> base, uint8_t length)</td></tr>
 <tr class="memdesc:ac9fb9998232d6b51c5e57f4d99d76f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an address falls within a range of MIDI addresses, starting with address <code>base</code>, with a given length.  <a href="../../d7/d0f/classMIDIAddress.html#ac9fb9998232d6b51c5e57f4d99d76f99">More...</a><br /></td></tr>
 <tr class="separator:ac9fb9998232d6b51c5e57f4d99d76f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2c27c684fb42cbc7e7e7a6cf88475642"><td class="memItemLeft" align="right" valign="top">RawMIDIAddress&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0f/classMIDIAddress.html#a2c27c684fb42cbc7e7e7a6cf88475642">addresses</a></td></tr>
+<tr class="separator:a2c27c684fb42cbc7e7e7a6cf88475642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A type-safe utility class for saving a MIDI address consisting of a 7-bit address, a 4-bit channel, and a 4-bit cable number. </p>
-<p><br  />
- A MIDI address can be marked "invalid". The MIDI sending functions (<a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a>) will never send messages addressed to invalid addresses.</p>
-<p>See <a class="el" href="../../d6/dc6/md_pages_Basics.html">this page</a> for a tutorial on how to use MIDI addresses. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d6b/Custom-MIDI-Output-Element-Bankable_8ino-example.html#_a4">Custom-MIDI-Output-Element-Bankable.ino</a>, <a class="el" href="../../d4/d3b/Custom-MIDI-Output-Element_8ino-example.html#_a3">Custom-MIDI-Output-Element.ino</a>, <a class="el" href="../../d3/d08/Custom-MIDI-Sender_8ino-example.html#_a1">Custom-MIDI-Sender.ino</a>, <a class="el" href="../../d2/d85/Custom-Note-LED-Input-Element-Callback-FastLED_8ino-example.html#_a2">Custom-Note-LED-Input-Element-Callback-FastLED.ino</a>, <a class="el" href="../../dd/da5/Custom-Note-LED-Input-Element-Callback_8ino-example.html#_a3">Custom-Note-LED-Input-Element-Callback.ino</a>, <a class="el" href="../../dd/d56/MCP23017-RotaryEncoder-Interrupts_8ino-example.html#_a1">MCP23017-RotaryEncoder-Interrupts.ino</a>, <a class="el" href="../../d7/dac/MCP23017-RotaryEncoder-No-Interrupts_8ino-example.html#_a1">MCP23017-RotaryEncoder-No-Interrupts.ino</a>, <a class="el" href="../../d8/d9b/MIDI-Output_8ino-example.html#_a2">MIDI-Output.ino</a>, and <a class="el" href="../../d7/d8d/Send-MIDI-Notes_8ino-example.html#_a1">Send-MIDI-Notes.ino</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../db/dd6/MIDIAddress_8hpp_source.html">MIDIAddress.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af1ebf563fa185eccec5456a363e420f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1ebf563fa185eccec5456a363e420f0">&#9670;&nbsp;</a></span>MIDIAddress() <span class="overload">[1/6]</span></h2>
 

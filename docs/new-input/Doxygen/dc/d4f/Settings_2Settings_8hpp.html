@@ -92,7 +92,8 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/daa/Settings_2Settings_8hpp__incl.svg" width="386" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/daa/Settings_2Settings_8hpp__incl.svg" width="386" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../dc/d4f/Settings_2Settings_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -120,6 +121,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a3081f3937d694684489a38a344815b29"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#a3081f3937d694684489a38a344815b29">SYSEX_BUFFER_SIZE</a> = 128</td></tr>
 <tr class="memdesc:a3081f3937d694684489a38a344815b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the maximum System Exclusive message that can be received.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#a3081f3937d694684489a38a344815b29">More...</a><br /></td></tr>
 <tr class="separator:a3081f3937d694684489a38a344815b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41878747cdda1658fb70fd7e65cd1a7"><td class="memItemLeft" align="right" valign="top">constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#aa41878747cdda1658fb70fd7e65cd1a7">SYSEX_CHUNK_TIMEOUT</a> = 500</td></tr>
+<tr class="memdesc:aa41878747cdda1658fb70fd7e65cd1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout in milliseconds to wait for a SysEx chunk to complete.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#aa41878747cdda1658fb70fd7e65cd1a7">More...</a><br /></td></tr>
+<tr class="separator:aa41878747cdda1658fb70fd7e65cd1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee625974250707110fbe8686b37ae3a1"><td class="memItemLeft" align="right" valign="top">constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#aee625974250707110fbe8686b37ae3a1">HAIRLESS_BAUD</a> = 115200</td></tr>
 <tr class="memdesc:aee625974250707110fbe8686b37ae3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The baud rate to use for Hairless MIDI.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#aee625974250707110fbe8686b37ae3a1">More...</a><br /></td></tr>
 <tr class="separator:aee625974250707110fbe8686b37ae3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,6 +284,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa41878747cdda1658fb70fd7e65cd1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa41878747cdda1658fb70fd7e65cd1a7">&#9670;&nbsp;</a></span>SYSEX_CHUNK_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr unsigned long SYSEX_CHUNK_TIMEOUT = 500</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Timeout in milliseconds to wait for a SysEx chunk to complete. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html#l00051">51</a> of file <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html">Settings/Settings.hpp</a>.</p>
+
+</div>
+</div>
 <a id="aee625974250707110fbe8686b37ae3a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee625974250707110fbe8686b37ae3a1">&#9670;&nbsp;</a></span>HAIRLESS_BAUD</h2>
 
@@ -302,7 +332,7 @@ Variables</h2></td></tr>
 
 <p>The baud rate to use for Hairless MIDI. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html#l00051">51</a> of file <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html">Settings/Settings.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html">Settings/Settings.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +360,7 @@ Variables</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d9/d3a/2_8VU-Meter-OLED-USB-DAC_8ino-example.html#a12">2.VU-Meter-OLED-USB-DAC.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html">Settings/Settings.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html">Settings/Settings.hpp</a>.</p>
 
 </div>
 </div>

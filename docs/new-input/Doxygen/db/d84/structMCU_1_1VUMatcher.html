@@ -87,16 +87,35 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>MIDI Input matcher for Mackie Control Universal <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meters.  
- <a href="../../db/d84/structMCU_1_1VUMatcher.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../db/dda/VU_8hpp_source.html">MIDI_Inputs/MCU/VU.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>MIDI Input matcher for Mackie Control Universal <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meters. </p>
+<p>In the Mackie Control Universal protocol, <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meters are updated using <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure events. <br  />
+ Each device (cable number) has eight <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meters for the eight tracks. Only MIDI channel 1 is used in the original protocol.</p>
+<p>The format of the MIDI message is as follows: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">Status  </th><th class="markdownTableHeadCenter">Data 1   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><code>1101 cccc</code>  </td><td class="markdownTableBodyCenter"><code>0hhh llll</code>   </td></tr>
+</table>
+<ul>
+<li><code>1101</code> (or <code>0xD</code>) is the status for <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure events</li>
+<li><code>cccc</code> is the MIDI channel [0-15]</li>
+<li><code>hhh</code> is the track index [0-7]</li>
+<li><code>llll</code> is the level of the <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meter</li>
+</ul>
+<p>If the level is <code>0x0</code>, the meter is at 0%, if it's <code>0xC</code>, the meter is at 100%. <br  />
+ <code>0xD</code> is an invalid value. <br  />
+ <code>0xE</code> sets the overload indicator, and <code>0xF</code> clears the overload indicator. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for VUMatcher:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/df1/structMCU_1_1VUMatcher__coll__graph.svg" width="200" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/df1/structMCU_1_1VUMatcher__coll__graph.svg" width="200" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -120,28 +139,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a04261fc6c380a671d9910fbdedcd77ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI address to compare incoming messages with.  <a href="../../db/d84/structMCU_1_1VUMatcher.html#a04261fc6c380a671d9910fbdedcd77ea">More...</a><br /></td></tr>
 <tr class="separator:a04261fc6c380a671d9910fbdedcd77ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>MIDI Input matcher for Mackie Control Universal <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meters. </p>
-<p>In the Mackie Control Universal protocol, <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meters are updated using <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure events. <br  />
- Each device (cable number) has eight <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meters for the eight tracks. Only MIDI channel 1 is used in the original protocol.</p>
-<p>The format of the MIDI message is as follows: </p><table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter">Status  </th><th class="markdownTableHeadCenter">Data 1   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter"><code>1101 cccc</code>  </td><td class="markdownTableBodyCenter"><code>0hhh llll</code>   </td></tr>
-</table>
-<ul>
-<li><code>1101</code> (or <code>0xD</code>) is the status for <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure events</li>
-<li><code>cccc</code> is the MIDI channel [0-15]</li>
-<li><code>hhh</code> is the track index [0-7]</li>
-<li><code>llll</code> is the level of the <a class="el" href="../../d8/d4c/classMCU_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meter</li>
-</ul>
-<p>If the level is <code>0x0</code>, the meter is at 0%, if it's <code>0xC</code>, the meter is at 100%. <br  />
- <code>0xD</code> is an invalid value. <br  />
- <code>0xE</code> sets the overload indicator, and <code>0xF</code> clears the overload indicator. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
-</div><hr/><h2 class="groupheader">Class Documentation</h2>
+<hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="d6/d4b/structMCU_1_1VUMatcher_1_1Result" id="d6/d4b/structMCU_1_1VUMatcher_1_1Result"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#d6/d4b/structMCU_1_1VUMatcher_1_1Result">&#9670;&nbsp;</a></span>MCU::VUMatcher::Result</h2>
 
@@ -153,15 +151,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p>Output data of the matcher/parser. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../db/dda/VU_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../db/dda/VU_8hpp_source.html">VU.hpp</a>.</p>
-</div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for VUMatcher::Result:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db3/structMCU_1_1VUMatcher_1_1Result__coll__graph.svg" width="154" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db3/structMCU_1_1VUMatcher_1_1Result__coll__graph.svg" width="154" height="103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
