@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 534de08af849f9963d0317baf788aa48789e69fe - src/MIDI_Interfaces/DebugMIDI_Interface.cpp</title>
+  <title>LCOV - f8779dd4819ca21855a20e6def451753e4bc28c1 - src/MIDI_Interfaces/DebugMIDI_Interface.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">534de08af849f9963d0317baf788aa48789e69fe</td>
+            <td class="headerValue">f8779dd4819ca21855a20e6def451753e4bc28c1</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">24</td>
-            <td class="headerCovTableEntry">31</td>
-            <td class="headerCovTableEntryMed">77.4 %</td>
+            <td class="headerCovTableEntry">25</td>
+            <td class="headerCovTableEntry">32</td>
+            <td class="headerCovTableEntryMed">78.1 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-21 16:21:31</td>
+            <td class="headerValue">2020-10-28 15:45:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -124,30 +124,34 @@
 <a name="54"><span class="lineNum">      54 </span><span class="lineCov">         10 :     if (messageType &gt;= 7)</span></a>
 <a name="55"><span class="lineNum">      55 </span><span class="lineNoCov">          0 :         return;</span></a>
 <a name="56"><span class="lineNum">      56 </span>            : </a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         10 :     if (msg.hasTwoDataBytes())</span></a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         12 :         getStream() &lt;&lt; DebugMIDIMessageNames::MIDIStatusTypeNames[messageType]</span></a>
-<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          6 :                     &lt;&lt; F(&quot;\tChannel: &quot;) &lt;&lt; msg.getChannel().getOneBased()</span></a>
-<a name="60"><span class="lineNum">      60 </span><span class="lineCov">          6 :                     &lt;&lt; F(&quot;\tData 1: 0x&quot;) &lt;&lt; hex &lt;&lt; msg.getData1()</span></a>
-<a name="61"><span class="lineNum">      61 </span><span class="lineCov">          6 :                     &lt;&lt; F(&quot;\tData 2: 0x&quot;) &lt;&lt; msg.getData2() &lt;&lt; dec</span></a>
-<a name="62"><span class="lineNum">      62 </span><span class="lineCov">          6 :                     &lt;&lt; F(&quot;\tCable: &quot;) &lt;&lt; msg.getCable().getOneBased() &lt;&lt; endl;</span></a>
-<a name="63"><span class="lineNum">      63 </span>            :     else</a>
-<a name="64"><span class="lineNum">      64 </span><span class="lineCov">          8 :         getStream() &lt;&lt; DebugMIDIMessageNames::MIDIStatusTypeNames[messageType]</span></a>
-<a name="65"><span class="lineNum">      65 </span><span class="lineCov">          4 :                     &lt;&lt; F(&quot;\tChannel: &quot;) &lt;&lt; msg.getChannel().getOneBased()</span></a>
-<a name="66"><span class="lineNum">      66 </span><span class="lineCov">          4 :                     &lt;&lt; F(&quot;\tData 1: 0x&quot;) &lt;&lt; hex &lt;&lt; msg.getData1() &lt;&lt; dec</span></a>
-<a name="67"><span class="lineNum">      67 </span><span class="lineCov">          4 :                     &lt;&lt; F(&quot;\tCable: &quot;) &lt;&lt; msg.getCable().getOneBased() &lt;&lt; endl;</span></a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">         10 : }</span></a>
-<a name="69"><span class="lineNum">      69 </span>            : </a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          1 : void StreamDebugMIDI_Interface::sendSysExImpl(SysExMessage msg) {</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          2 :     getStream() &lt;&lt; F(&quot;SysEx           \t&quot;) &lt;&lt; AH::HexDump(msg.data, msg.length)</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">          1 :                 &lt;&lt; F(&quot;\tCable: &quot;) &lt;&lt; msg.getCable().getOneBased() &lt;&lt; &quot;\r\n&quot;;</span></a>
-<a name="73"><span class="lineNum">      73 </span><span class="lineCov">          1 : }</span></a>
-<a name="74"><span class="lineNum">      74 </span>            : </a>
-<a name="75"><span class="lineNum">      75 </span><span class="lineCov">          1 : void StreamDebugMIDI_Interface::sendRealTimeImpl(RealTimeMessage msg) {</span></a>
-<a name="76"><span class="lineNum">      76 </span><span class="lineCov">          2 :     getStream() &lt;&lt; F(&quot;Real-Time: 0x&quot;) &lt;&lt; hex &lt;&lt; uppercase &lt;&lt; msg.message &lt;&lt; dec</span></a>
-<a name="77"><span class="lineNum">      77 </span><span class="lineCov">          1 :                 &lt;&lt; F(&quot;\tCable: &quot;) &lt;&lt; msg.getCable().getOneBased() &lt;&lt; endl;</span></a>
-<a name="78"><span class="lineNum">      78 </span><span class="lineCov">          1 : }</span></a>
-<a name="79"><span class="lineNum">      79 </span>            : </a>
-<a name="80"><span class="lineNum">      80 </span>            : END_CS_NAMESPACE</a>
+<a name="57"><span class="lineNum">      57 </span>            :     DEBUG_LOCK_MUTEX</a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         10 :     if (msg.hasTwoDataBytes())</span></a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">         12 :         getStream() &lt;&lt; DebugMIDIMessageNames::MIDIStatusTypeNames[messageType]</span></a>
+<a name="60"><span class="lineNum">      60 </span><span class="lineCov">          6 :                     &lt;&lt; F(&quot;\tChannel: &quot;) &lt;&lt; msg.getChannel().getOneBased()</span></a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">          6 :                     &lt;&lt; F(&quot;\tData 1: 0x&quot;) &lt;&lt; hex &lt;&lt; msg.getData1()</span></a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">          6 :                     &lt;&lt; F(&quot;\tData 2: 0x&quot;) &lt;&lt; msg.getData2() &lt;&lt; dec</span></a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">          6 :                     &lt;&lt; F(&quot;\tCable: &quot;) &lt;&lt; msg.getCable().getOneBased() &lt;&lt; endl;</span></a>
+<a name="64"><span class="lineNum">      64 </span>            :     else</a>
+<a name="65"><span class="lineNum">      65 </span><span class="lineCov">          8 :         getStream() &lt;&lt; DebugMIDIMessageNames::MIDIStatusTypeNames[messageType]</span></a>
+<a name="66"><span class="lineNum">      66 </span><span class="lineCov">          4 :                     &lt;&lt; F(&quot;\tChannel: &quot;) &lt;&lt; msg.getChannel().getOneBased()</span></a>
+<a name="67"><span class="lineNum">      67 </span><span class="lineCov">          4 :                     &lt;&lt; F(&quot;\tData 1: 0x&quot;) &lt;&lt; hex &lt;&lt; msg.getData1() &lt;&lt; dec</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">          4 :                     &lt;&lt; F(&quot;\tCable: &quot;) &lt;&lt; msg.getCable().getOneBased() &lt;&lt; endl;</span></a>
+<a name="69"><span class="lineNum">      69 </span><span class="lineCov">         10 : }</span></a>
+<a name="70"><span class="lineNum">      70 </span>            : </a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          1 : void StreamDebugMIDI_Interface::sendSysExImpl(SysExMessage msg) {</span></a>
+<a name="72"><span class="lineNum">      72 </span>            :     DEBUG_LOCK_MUTEX</a>
+<a name="73"><span class="lineNum">      73 </span><span class="lineCov">          2 :     getStream() &lt;&lt; F(&quot;SysEx           \t[&quot;) &lt;&lt; msg.length &lt;&lt; &quot;] &quot;</span></a>
+<a name="74"><span class="lineNum">      74 </span><span class="lineCov">          1 :                 &lt;&lt; AH::HexDump(msg.data, msg.length) &lt;&lt; F(&quot;\tCable: &quot;)</span></a>
+<a name="75"><span class="lineNum">      75 </span><span class="lineCov">          1 :                 &lt;&lt; msg.getCable().getOneBased() &lt;&lt; &quot;\r\n&quot;;</span></a>
+<a name="76"><span class="lineNum">      76 </span><span class="lineCov">          1 : }</span></a>
+<a name="77"><span class="lineNum">      77 </span>            : </a>
+<a name="78"><span class="lineNum">      78 </span><span class="lineCov">          1 : void StreamDebugMIDI_Interface::sendRealTimeImpl(RealTimeMessage msg) {</span></a>
+<a name="79"><span class="lineNum">      79 </span>            :     DEBUG_LOCK_MUTEX</a>
+<a name="80"><span class="lineNum">      80 </span><span class="lineCov">          2 :     getStream() &lt;&lt; F(&quot;Real-Time: 0x&quot;) &lt;&lt; hex &lt;&lt; uppercase &lt;&lt; msg.message &lt;&lt; dec</span></a>
+<a name="81"><span class="lineNum">      81 </span><span class="lineCov">          1 :                 &lt;&lt; F(&quot;\tCable: &quot;) &lt;&lt; msg.getCable().getOneBased() &lt;&lt; endl;</span></a>
+<a name="82"><span class="lineNum">      82 </span><span class="lineCov">          1 : }</span></a>
+<a name="83"><span class="lineNum">      83 </span>            : </a>
+<a name="84"><span class="lineNum">      84 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

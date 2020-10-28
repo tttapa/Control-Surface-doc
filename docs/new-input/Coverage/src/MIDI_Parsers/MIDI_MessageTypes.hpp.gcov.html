@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 534de08af849f9963d0317baf788aa48789e69fe - src/MIDI_Parsers/MIDI_MessageTypes.hpp</title>
+  <title>LCOV - f8779dd4819ca21855a20e6def451753e4bc28c1 - src/MIDI_Parsers/MIDI_MessageTypes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">534de08af849f9963d0317baf788aa48789e69fe</td>
+            <td class="headerValue">f8779dd4819ca21855a20e6def451753e4bc28c1</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">71</td>
-            <td class="headerCovTableEntry">75</td>
-            <td class="headerCovTableEntryHi">94.7 %</td>
+            <td class="headerCovTableEntry">76</td>
+            <td class="headerCovTableEntryHi">93.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-21 16:21:31</td>
+            <td class="headerValue">2020-10-28 15:45:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">42</td>
-            <td class="headerCovTableEntry">43</td>
-            <td class="headerCovTableEntryHi">97.7 %</td>
+            <td class="headerCovTableEntry">44</td>
+            <td class="headerCovTableEntryHi">95.5 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -153,9 +153,9 @@
 <a name="83"><span class="lineNum">      83 </span>            : </a>
 <a name="84"><span class="lineNum">      84 </span>            : struct MIDIMessage {</a>
 <a name="85"><span class="lineNum">      85 </span>            :     /// Constructor.</a>
-<a name="86"><span class="lineNum">      86 </span><span class="lineCov">        550 :     MIDIMessage(uint8_t header, uint8_t data1, uint8_t data2,</span></a>
+<a name="86"><span class="lineNum">      86 </span><span class="lineCov">        562 :     MIDIMessage(uint8_t header, uint8_t data1, uint8_t data2,</span></a>
 <a name="87"><span class="lineNum">      87 </span>            :                 Cable cable = CABLE_1)</a>
-<a name="88"><span class="lineNum">      88 </span><span class="lineCov">        550 :         : header(header), data1(data1), data2(data2), cable(cable) {}</span></a>
+<a name="88"><span class="lineNum">      88 </span><span class="lineCov">        562 :         : header(header), data1(data1), data2(data2), cable(cable) {}</span></a>
 <a name="89"><span class="lineNum">      89 </span>            : </a>
 <a name="90"><span class="lineNum">      90 </span>            :     /// Constructor.</a>
 <a name="91"><span class="lineNum">      91 </span>            :     MIDIMessage(MIDIMessageType header, uint8_t data1, uint8_t data2,</a>
@@ -239,15 +239,15 @@
 <a name="169"><span class="lineNum">     169 </span><span class="lineCov">        125 :     using MIDIMessage::MIDIMessage;</span></a>
 <a name="170"><span class="lineNum">     170 </span>            : </a>
 <a name="171"><span class="lineNum">     171 </span>            :     /// Constructor.</a>
-<a name="172"><span class="lineNum">     172 </span><span class="lineCov">        302 :     ChannelMessage(MIDIMessageType type, Channel channel, uint8_t data1,</span></a>
+<a name="172"><span class="lineNum">     172 </span><span class="lineCov">        308 :     ChannelMessage(MIDIMessageType type, Channel channel, uint8_t data1,</span></a>
 <a name="173"><span class="lineNum">     173 </span>            :                    uint8_t data2 = 0x00, Cable cable = CABLE_1)</a>
-<a name="174"><span class="lineNum">     174 </span><span class="lineCov">        302 :         : MIDIMessage(uint8_t(type) | channel.getRaw(), data1, data2, cable) {}</span></a>
+<a name="174"><span class="lineNum">     174 </span><span class="lineCov">        308 :         : MIDIMessage(uint8_t(type) | channel.getRaw(), data1, data2, cable) {}</span></a>
 <a name="175"><span class="lineNum">     175 </span>            : </a>
 <a name="176"><span class="lineNum">     176 </span><span class="lineCov">         72 :     explicit ChannelMessage(const MIDIMessage &amp;msg) : MIDIMessage(msg) {}</span></a>
 <a name="177"><span class="lineNum">     177 </span>            : </a>
 <a name="178"><span class="lineNum">     178 </span>            :     /// Get the MIDI message type.</a>
-<a name="179"><span class="lineNum">     179 </span><span class="lineCov">        187 :     MIDIMessageType getMessageType() const {</span></a>
-<a name="180"><span class="lineNum">     180 </span><span class="lineCov">        187 :         return static_cast&lt;MIDIMessageType&gt;(header &amp; 0xF0);</span></a>
+<a name="179"><span class="lineNum">     179 </span><span class="lineCov">        193 :     MIDIMessageType getMessageType() const {</span></a>
+<a name="180"><span class="lineNum">     180 </span><span class="lineCov">        193 :         return static_cast&lt;MIDIMessageType&gt;(header &amp; 0xF0);</span></a>
 <a name="181"><span class="lineNum">     181 </span>            :     }</a>
 <a name="182"><span class="lineNum">     182 </span>            :     /// Set the MIDI message type.</a>
 <a name="183"><span class="lineNum">     183 </span>            :     void setMessageType(MIDIMessageType type) {</a>
@@ -278,15 +278,15 @@
 <a name="208"><span class="lineNum">     208 </span>            :     /// - 1 data byte: Program Change or Channel Pressure</a>
 <a name="209"><span class="lineNum">     209 </span>            :     ///</a>
 <a name="210"><span class="lineNum">     210 </span>            :     /// Returns false if the header is a SysEx, Real-Time or System Common byte.</a>
-<a name="211"><span class="lineNum">     211 </span><span class="lineCov">         58 :     bool hasTwoDataBytes() const {</span></a>
-<a name="212"><span class="lineNum">     212 </span><span class="lineCov">         58 :         auto type = getMessageType();</span></a>
-<a name="213"><span class="lineNum">     213 </span><span class="lineCov">         58 :         return type &lt;= MIDIMessageType::CONTROL_CHANGE ||</span></a>
-<a name="214"><span class="lineNum">     214 </span><span class="lineCov">         17 :                type == MIDIMessageType::PITCH_BEND;</span></a>
-<a name="215"><span class="lineNum">     215 </span><span class="lineCov">         58 :     }</span></a>
+<a name="211"><span class="lineNum">     211 </span><span class="lineCov">         64 :     bool hasTwoDataBytes() const {</span></a>
+<a name="212"><span class="lineNum">     212 </span><span class="lineCov">         64 :         auto type = getMessageType();</span></a>
+<a name="213"><span class="lineNum">     213 </span><span class="lineCov">         64 :         return type &lt;= MIDIMessageType::CONTROL_CHANGE ||</span></a>
+<a name="214"><span class="lineNum">     214 </span><span class="lineCov">         20 :                type == MIDIMessageType::PITCH_BEND;</span></a>
+<a name="215"><span class="lineNum">     215 </span><span class="lineCov">         64 :     }</span></a>
 <a name="216"><span class="lineNum">     216 </span>            : };</a>
 <a name="217"><span class="lineNum">     217 </span>            : </a>
 <a name="218"><span class="lineNum">     218 </span>            : struct SysCommonMessage : MIDIMessage {</a>
-<a name="219"><span class="lineNum">     219 </span>            :     using MIDIMessage::MIDIMessage;</a>
+<a name="219"><span class="lineNum">     219 </span><span class="lineNoCov">          0 :     using MIDIMessage::MIDIMessage;</span></a>
 <a name="220"><span class="lineNum">     220 </span>            : </a>
 <a name="221"><span class="lineNum">     221 </span>            :     /// Constructor.</a>
 <a name="222"><span class="lineNum">     222 </span>            :     SysCommonMessage(MIDIMessageType type, uint8_t data1 = 0x00,</a>
@@ -316,12 +316,12 @@
 <a name="246"><span class="lineNum">     246 </span><span class="lineCov">          2 :     SysExMessage() : data(nullptr), length(0), cable(CABLE_1) {}</span></a>
 <a name="247"><span class="lineNum">     247 </span>            : </a>
 <a name="248"><span class="lineNum">     248 </span>            :     /// Constructor.</a>
-<a name="249"><span class="lineNum">     249 </span><span class="lineCov">        152 :     SysExMessage(const uint8_t *data, uint16_t length, Cable cable = CABLE_1)</span></a>
-<a name="250"><span class="lineNum">     250 </span><span class="lineCov">        152 :         : data(data), length(length), cable(cable.getRaw()) {}</span></a>
+<a name="249"><span class="lineNum">     249 </span><span class="lineCov">        153 :     SysExMessage(const uint8_t *data, uint16_t length, Cable cable = CABLE_1)</span></a>
+<a name="250"><span class="lineNum">     250 </span><span class="lineCov">        153 :         : data(data), length(length), cable(cable.getRaw()) {}</span></a>
 <a name="251"><span class="lineNum">     251 </span>            : </a>
 <a name="252"><span class="lineNum">     252 </span>            :     /// Constructor.</a>
-<a name="253"><span class="lineNum">     253 </span><span class="lineCov">         27 :     SysExMessage(const std::vector&lt;uint8_t&gt; &amp;vec, Cable cable = CABLE_1)</span></a>
-<a name="254"><span class="lineNum">     254 </span><span class="lineCov">         27 :         : SysExMessage(vec.data(), vec.size(), cable) {}</span></a>
+<a name="253"><span class="lineNum">     253 </span><span class="lineCov">         28 :     SysExMessage(const std::vector&lt;uint8_t&gt; &amp;vec, Cable cable = CABLE_1)</span></a>
+<a name="254"><span class="lineNum">     254 </span><span class="lineCov">         28 :         : SysExMessage(vec.data(), vec.size(), cable) {}</span></a>
 <a name="255"><span class="lineNum">     255 </span>            : </a>
 <a name="256"><span class="lineNum">     256 </span>            :     /// Constructor.</a>
 <a name="257"><span class="lineNum">     257 </span>            :     template &lt;uint16_t N&gt;</a>
@@ -348,9 +348,9 @@
 <a name="278"><span class="lineNum">     278 </span><span class="lineCov">         32 :         return length &gt;= 1 &amp;&amp; data[0] == uint8_t(MIDIMessageType::SYSEX_START);</span></a>
 <a name="279"><span class="lineNum">     279 </span>            :     }</a>
 <a name="280"><span class="lineNum">     280 </span>            : </a>
-<a name="281"><span class="lineNum">     281 </span><span class="lineCov">         27 :     bool isLastChunk() const {</span></a>
-<a name="282"><span class="lineNum">     282 </span><span class="lineCov">         54 :         return length &gt;= 1 &amp;&amp;</span></a>
-<a name="283"><span class="lineNum">     283 </span><span class="lineCov">         27 :                data[length - 1] == uint8_t(MIDIMessageType::SYSEX_END);</span></a>
+<a name="281"><span class="lineNum">     281 </span><span class="lineCov">         31 :     bool isLastChunk() const {</span></a>
+<a name="282"><span class="lineNum">     282 </span><span class="lineCov">         62 :         return length &gt;= 1 &amp;&amp;</span></a>
+<a name="283"><span class="lineNum">     283 </span><span class="lineCov">         31 :                data[length - 1] == uint8_t(MIDIMessageType::SYSEX_END);</span></a>
 <a name="284"><span class="lineNum">     284 </span>            :     }</a>
 <a name="285"><span class="lineNum">     285 </span>            : </a>
 <a name="286"><span class="lineNum">     286 </span><span class="lineCov">          6 :     bool isCompleteMessage() const { return isFirstChunk() &amp;&amp; isLastChunk(); }</span></a>
@@ -358,8 +358,8 @@
 <a name="288"><span class="lineNum">     288 </span>            : </a>
 <a name="289"><span class="lineNum">     289 </span>            : struct RealTimeMessage {</a>
 <a name="290"><span class="lineNum">     290 </span>            :     /// Constructor.</a>
-<a name="291"><span class="lineNum">     291 </span><span class="lineCov">        137 :     RealTimeMessage(uint8_t message, Cable cable = CABLE_1)</span></a>
-<a name="292"><span class="lineNum">     292 </span><span class="lineCov">        137 :         : message(message), cable(cable.getRaw()) {}</span></a>
+<a name="291"><span class="lineNum">     291 </span><span class="lineCov">       1776 :     RealTimeMessage(uint8_t message, Cable cable = CABLE_1)</span></a>
+<a name="292"><span class="lineNum">     292 </span><span class="lineCov">       1776 :         : message(message), cable(cable.getRaw()) {}</span></a>
 <a name="293"><span class="lineNum">     293 </span>            : </a>
 <a name="294"><span class="lineNum">     294 </span>            :     /// Constructor.</a>
 <a name="295"><span class="lineNum">     295 </span><span class="lineCov">         10 :     RealTimeMessage(MIDIMessageType message, Cable cable = CABLE_1)</span></a>
@@ -388,7 +388,7 @@
 <a name="318"><span class="lineNum">     318 </span>            :     void setCable(Cable cable) { this-&gt;cable = cable; }</a>
 <a name="319"><span class="lineNum">     319 </span>            : </a>
 <a name="320"><span class="lineNum">     320 </span>            :     /// Check whether the header is a valid header for a Real-Time message.</a>
-<a name="321"><span class="lineNum">     321 </span><span class="lineCov">          5 :     bool isValid() const { return message &gt;= 0xF8; }</span></a>
+<a name="321"><span class="lineNum">     321 </span><span class="lineCov">          9 :     bool isValid() const { return message &gt;= 0xF8; }</span></a>
 <a name="322"><span class="lineNum">     322 </span>            : };</a>
 <a name="323"><span class="lineNum">     323 </span>            : </a>
 <a name="324"><span class="lineNum">     324 </span>            : #ifndef ARDUINO</a>
@@ -399,9 +399,15 @@
 <a name="329"><span class="lineNum">     329 </span>            : }</a>
 <a name="330"><span class="lineNum">     330 </span>            : #endif</a>
 <a name="331"><span class="lineNum">     331 </span>            : </a>
-<a name="332"><span class="lineNum">     332 </span>            : END_CS_NAMESPACE</a>
-<a name="333"><span class="lineNum">     333 </span>            : </a>
-<a name="334"><span class="lineNum">     334 </span>            : AH_DIAGNOSTIC_POP()</a>
+<a name="332"><span class="lineNum">     332 </span>            : inline Print &amp;operator&lt;&lt;(Print &amp;os, SysExMessage m) {</a>
+<a name="333"><span class="lineNum">     333 </span>            :     os &lt;&lt; &quot;SysExMessage [&quot; &lt;&lt; m.length &lt;&lt; &quot;] &quot; &lt;&lt; AH::HexDump(m.data, m.length)</a>
+<a name="334"><span class="lineNum">     334 </span>            :        &lt;&lt; &quot; (cable &quot; &lt;&lt; m.cable.getOneBased() &lt;&lt; &quot;)&quot;;</a>
+<a name="335"><span class="lineNum">     335 </span>            :     return os;</a>
+<a name="336"><span class="lineNum">     336 </span>            : }</a>
+<a name="337"><span class="lineNum">     337 </span>            : </a>
+<a name="338"><span class="lineNum">     338 </span>            : END_CS_NAMESPACE</a>
+<a name="339"><span class="lineNum">     339 </span>            : </a>
+<a name="340"><span class="lineNum">     340 </span>            : AH_DIAGNOSTIC_POP()</a>
 </pre>
       </td>
     </tr>

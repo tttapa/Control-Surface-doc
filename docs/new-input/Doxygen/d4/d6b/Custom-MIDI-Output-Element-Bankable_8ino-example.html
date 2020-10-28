@@ -135,7 +135,7 @@ Mapping</h2>
 <div class="line"><span class="comment">   */</span></div>
 <div class="line">  MyNoteButton(<a name="_a2"></a><a class="code" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig&lt;&gt;</a> bankConfig, <a name="a3"></a><a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, </div>
 <div class="line">               <a name="_a4"></a><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> baseAddress, uint8_t velocity)</div>
-<div class="line">    : address{bankConfig, baseAddress}, button{pin}, velocity{velocity} {}</div>
+<div class="line">    : address(bankConfig, baseAddress), button(pin), velocity(velocity) {}</div>
 <div class="line"> </div>
 <div class="line"> <span class="keyword">public</span>:</div>
 <div class="line">  <span class="comment">// Initialize: enable the pull-up resistor for the button.</span></div>

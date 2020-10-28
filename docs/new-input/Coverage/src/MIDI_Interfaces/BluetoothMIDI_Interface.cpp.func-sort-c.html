@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 534de08af849f9963d0317baf788aa48789e69fe - src/MIDI_Interfaces/BluetoothMIDI_Interface.cpp - functions</title>
+  <title>LCOV - f8779dd4819ca21855a20e6def451753e4bc28c1 - src/MIDI_Interfaces/BluetoothMIDI_Interface.cpp - functions</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">534de08af849f9963d0317baf788aa48789e69fe</td>
+            <td class="headerValue">f8779dd4819ca21855a20e6def451753e4bc28c1</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">75</td>
-            <td class="headerCovTableEntry">123</td>
-            <td class="headerCovTableEntryLo">61.0 %</td>
+            <td class="headerCovTableEntry">139</td>
+            <td class="headerCovTableEntry">162</td>
+            <td class="headerCovTableEntryMed">85.8 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-21 16:21:31</td>
+            <td class="headerValue">2020-10-28 15:45:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">13</td>
-            <td class="headerCovTableEntry">19</td>
-            <td class="headerCovTableEntryLo">68.4 %</td>
+            <td class="headerCovTableEntry">22</td>
+            <td class="headerCovTableEntry">25</td>
+            <td class="headerCovTableEntryMed">88.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -68,80 +68,104 @@
       <td width="20%" class="tableHead">Hit count <span class="tableHeadSort"><img src="../../glass.png" width=10 height=14 alt="Sort by hit count" title="Sort by hit count" border=0></span></td>
     </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#167">CS::BluetoothMIDI_Interface::onDisconnect(BLEServer*)</a></td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#258">BluetoothMIDI_Interface_midi_mtu_callback</a></td>
               <td class="coverFnLo">0</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#115">CS::BluetoothMIDI_Interface::sendRealTimeImpl(CS::RealTimeMessage)</a></td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#262">BluetoothMIDI_Interface_midi_write_callback</a></td>
               <td class="coverFnLo">0</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#102">CS::BluetoothMIDI_Interface::sendChannelMessageImpl2Bytes(CS::ChannelMessage)</a></td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#217">CS::BluetoothMIDI_Interface::getSysCommonMessage() const</a></td>
               <td class="coverFnLo">0</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#175">CS::BluetoothMIDI_Interface::onRead(BLECharacteristic*)</a></td>
-              <td class="coverFnLo">0</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#223">CS::BluetoothMIDI_Interface::getRealTimeMessage() const</a></td>
+              <td class="coverFnHi">2</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#182">CS::BluetoothMIDI_Interface::onWrite(BLECharacteristic*)</a></td>
-              <td class="coverFnLo">0</td>
-            </tr>
-    <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#159">CS::BluetoothMIDI_Interface::onConnect(BLEServer*)</a></td>
-              <td class="coverFnLo">0</td>
-            </tr>
-    <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#205">CS::BluetoothMIDI_Interface::forceMinMTU(unsigned short)</a></td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#114">CS::BluetoothMIDI_Interface::sendChannelMessageImpl2Bytes(CS::ChannelMessage)</a></td>
               <td class="coverFnHi">3</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#128">CS::BluetoothMIDI_Interface::sendSysExImpl(CS::SysExMessage)</a></td>
-              <td class="coverFnHi">3</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#140">CS::BluetoothMIDI_Interface::sendSysExImpl(CS::SysExMessage)</a></td>
+              <td class="coverFnHi">4</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#195">CS::BluetoothMIDI_Interface::updateMTU()</a></td>
-              <td class="coverFnHi">3</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#127">CS::BluetoothMIDI_Interface::sendRealTimeImpl(CS::RealTimeMessage)</a></td>
+              <td class="coverFnHi">4</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#79">CS::BluetoothMIDI_Interface::sendChannelMessageImpl(CS::ChannelMessage)</a></td>
-              <td class="coverFnHi">5</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#229">CS::BluetoothMIDI_Interface::getSysExMessage() const</a></td>
+              <td class="coverFnHi">4</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#84">CS::BluetoothMIDI_Interface::sendChannelMessageImpl3Bytes(CS::ChannelMessage)</a></td>
-              <td class="coverFnHi">5</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#251">CS::BluetoothMIDI_Interface::forceMinMTU(unsigned short)</a></td>
+              <td class="coverFnHi">7</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#44">CS::BluetoothMIDI_Interface::flushImpl(std::__1::unique_lock&lt;std::__1::mutex&gt;&amp;)</a></td>
-              <td class="coverFnHi">10</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#239">CS::BluetoothMIDI_Interface::updateMTU(unsigned short)</a></td>
+              <td class="coverFnHi">7</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#10">CS::BluetoothMIDI_Interface::startSendingThread()</a></td>
-              <td class="coverFnHi">18</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#96">CS::BluetoothMIDI_Interface::sendChannelMessageImpl3Bytes(CS::ChannelMessage)</a></td>
+              <td class="coverFnHi">8</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#12">CS::BluetoothMIDI_Interface::startSendingThread()::$_0::operator()() const</a></td>
-              <td class="coverFnHi">18</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#91">CS::BluetoothMIDI_Interface::sendChannelMessageImpl(CS::ChannelMessage)</a></td>
+              <td class="coverFnHi">11</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#60">CS::BluetoothMIDI_Interface::stopSendingThread()</a></td>
-              <td class="coverFnHi">19</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#172">CS::BluetoothMIDI_Interface::parse(unsigned char const*, unsigned long)</a></td>
+              <td class="coverFnHi">12</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#57">CS::BluetoothMIDI_Interface::flushImpl(std::__1::unique_lock&lt;std::__1::mutex&gt;&amp;)::$_3::operator()() const</a></td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#211">CS::BluetoothMIDI_Interface::getChannelMessage() const</a></td>
+              <td class="coverFnHi">13</td>
+            </tr>
+    <tr>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#46">CS::BluetoothMIDI_Interface::flushImpl(std::__1::unique_lock&lt;std::__1::mutex&gt;&amp;)</a></td>
               <td class="coverFnHi">20</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#22">CS::BluetoothMIDI_Interface::handleSendEvents()</a></td>
-              <td class="coverFnHi">29</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#11">CS::BluetoothMIDI_Interface::startSendingThread()</a></td>
+              <td class="coverFnHi">24</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#28">CS::BluetoothMIDI_Interface::handleSendEvents()::$_2::operator()() const</a></td>
-              <td class="coverFnHi">32</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#269">CS::BluetoothMIDI_Interface::begin()</a></td>
+              <td class="coverFnHi">24</td>
             </tr>
     <tr>
-              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#26">CS::BluetoothMIDI_Interface::handleSendEvents()::$_1::operator()() const</a></td>
-              <td class="coverFnHi">57</td>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#13">CS::BluetoothMIDI_Interface::startSendingThread()::$_0::operator()() const</a></td>
+              <td class="coverFnHi">24</td>
+            </tr>
+    <tr>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#63">CS::BluetoothMIDI_Interface::stopSendingThread()</a></td>
+              <td class="coverFnHi">25</td>
+            </tr>
+    <tr>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#282">CS::BluetoothMIDI_Interface::end()</a></td>
+              <td class="coverFnHi">25</td>
+            </tr>
+    <tr>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#204">CS::BluetoothMIDI_Interface::read()</a></td>
+              <td class="coverFnHi">30</td>
+            </tr>
+    <tr>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#59">CS::BluetoothMIDI_Interface::flushImpl(std::__1::unique_lock&lt;std::__1::mutex&gt;&amp;)::$_3::operator()() const</a></td>
+              <td class="coverFnHi">40</td>
+            </tr>
+    <tr>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#23">CS::BluetoothMIDI_Interface::handleSendEvents()</a></td>
+              <td class="coverFnHi">44</td>
+            </tr>
+    <tr>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#29">CS::BluetoothMIDI_Interface::handleSendEvents()::$_2::operator()() const</a></td>
+              <td class="coverFnHi">47</td>
+            </tr>
+    <tr>
+              <td class="coverFn"><a href="BluetoothMIDI_Interface.cpp.gcov.html#27">CS::BluetoothMIDI_Interface::handleSendEvents()::$_1::operator()() const</a></td>
+              <td class="coverFnHi">88</td>
             </tr>
   </table>
   <br>

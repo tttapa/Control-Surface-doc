@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 534de08af849f9963d0317baf788aa48789e69fe - src/MIDI_Outputs/Bankable/Abstract/MIDIButtonMatrix.hpp</title>
+  <title>LCOV - f8779dd4819ca21855a20e6def451753e4bc28c1 - src/MIDI_Outputs/Bankable/Abstract/MIDIButtonMatrix.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">534de08af849f9963d0317baf788aa48789e69fe</td>
+            <td class="headerValue">f8779dd4819ca21855a20e6def451753e4bc28c1</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">19</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-21 16:21:31</td>
+            <td class="headerValue">2020-10-28 15:45:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">18</td>
@@ -117,42 +117,41 @@
 <a name="47"><span class="lineNum">      47 </span>            :      * @param   sender</a>
 <a name="48"><span class="lineNum">      48 </span>            :      *          The MIDI sender to use.</a>
 <a name="49"><span class="lineNum">      49 </span>            :      */</a>
-<a name="50"><span class="lineNum">      50 </span><span class="lineCov">          6 :     MIDIButtonMatrix(BankAddress bankAddress,</span></a>
-<a name="51"><span class="lineNum">      51 </span>            :                      const PinList&lt;nb_rows&gt; &amp;rowPins,</a>
-<a name="52"><span class="lineNum">      52 </span>            :                      const PinList&lt;nb_cols&gt; &amp;colPins, const Sender &amp;sender)</a>
-<a name="53"><span class="lineNum">      53 </span><span class="lineCov">          6 :         : AH::ButtonMatrix&lt;nb_rows, nb_cols&gt;(rowPins, colPins),</span></a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         12 :           address{bankAddress}, sender{sender} {}</span></a>
-<a name="55"><span class="lineNum">      55 </span>            : </a>
-<a name="56"><span class="lineNum">      56 </span>            :   public:</a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">          2 :     void begin() override { AH::ButtonMatrix&lt;nb_rows, nb_cols&gt;::begin(); }</span></a>
-<a name="58"><span class="lineNum">      58 </span>            : </a>
-<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          8 :     void update() override { AH::ButtonMatrix&lt;nb_rows, nb_cols&gt;::update(); }</span></a>
-<a name="60"><span class="lineNum">      60 </span>            : </a>
-<a name="61"><span class="lineNum">      61 </span>            :   private:</a>
-<a name="62"><span class="lineNum">      62 </span><span class="lineCov">          8 :     void onButtonChanged(uint8_t row, uint8_t col, bool state) final override {</span></a>
-<a name="63"><span class="lineNum">      63 </span><span class="lineCov">          8 :         if (state == LOW) {</span></a>
-<a name="64"><span class="lineNum">      64 </span><span class="lineCov">          4 :             if (!activeButtons)</span></a>
-<a name="65"><span class="lineNum">      65 </span><span class="lineCov">          4 :                 address.lock(); // Don't allow changing of the bank setting</span></a>
-<a name="66"><span class="lineNum">      66 </span><span class="lineCov">          4 :             activeButtons++;</span></a>
-<a name="67"><span class="lineNum">      67 </span><span class="lineCov">          4 :             sender.sendOn(address.getActiveAddress(row, col));</span></a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">          4 :         } else {</span></a>
-<a name="69"><span class="lineNum">      69 </span><span class="lineCov">          4 :             sender.sendOff(address.getActiveAddress(row, col));</span></a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          4 :             activeButtons--;</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          4 :             if (!activeButtons)</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">          4 :                 address.unlock();</span></a>
-<a name="73"><span class="lineNum">      73 </span>            :         }</a>
-<a name="74"><span class="lineNum">      74 </span><span class="lineCov">          8 :     }</span></a>
-<a name="75"><span class="lineNum">      75 </span>            : </a>
-<a name="76"><span class="lineNum">      76 </span>            :     BankAddress address;</a>
-<a name="77"><span class="lineNum">      77 </span><span class="lineCov">          6 :     uint16_t activeButtons = 0;</span></a>
-<a name="78"><span class="lineNum">      78 </span>            : </a>
-<a name="79"><span class="lineNum">      79 </span>            :   public:</a>
-<a name="80"><span class="lineNum">      80 </span>            :     Sender sender;</a>
-<a name="81"><span class="lineNum">      81 </span>            : };</a>
-<a name="82"><span class="lineNum">      82 </span>            : </a>
-<a name="83"><span class="lineNum">      83 </span>            : } // namespace Bankable</a>
-<a name="84"><span class="lineNum">      84 </span>            : </a>
-<a name="85"><span class="lineNum">      85 </span>            : END_CS_NAMESPACE</a>
+<a name="50"><span class="lineNum">      50 </span><span class="lineCov">          6 :     MIDIButtonMatrix(BankAddress bankAddress, const PinList&lt;nb_rows&gt; &amp;rowPins,</span></a>
+<a name="51"><span class="lineNum">      51 </span>            :                      const PinList&lt;nb_cols&gt; &amp;colPins, const Sender &amp;sender)</a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">          6 :         : AH::ButtonMatrix&lt;nb_rows, nb_cols&gt;(rowPins, colPins),</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         12 :           address(bankAddress), sender(sender) {}</span></a>
+<a name="54"><span class="lineNum">      54 </span>            : </a>
+<a name="55"><span class="lineNum">      55 </span>            :   public:</a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineCov">          2 :     void begin() override { AH::ButtonMatrix&lt;nb_rows, nb_cols&gt;::begin(); }</span></a>
+<a name="57"><span class="lineNum">      57 </span>            : </a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">          8 :     void update() override { AH::ButtonMatrix&lt;nb_rows, nb_cols&gt;::update(); }</span></a>
+<a name="59"><span class="lineNum">      59 </span>            : </a>
+<a name="60"><span class="lineNum">      60 </span>            :   private:</a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">          8 :     void onButtonChanged(uint8_t row, uint8_t col, bool state) final override {</span></a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">          8 :         if (state == LOW) {</span></a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">          4 :             if (!activeButtons)</span></a>
+<a name="64"><span class="lineNum">      64 </span><span class="lineCov">          4 :                 address.lock(); // Don't allow changing of the bank setting</span></a>
+<a name="65"><span class="lineNum">      65 </span><span class="lineCov">          4 :             activeButtons++;</span></a>
+<a name="66"><span class="lineNum">      66 </span><span class="lineCov">          4 :             sender.sendOn(address.getActiveAddress(row, col));</span></a>
+<a name="67"><span class="lineNum">      67 </span><span class="lineCov">          4 :         } else {</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">          4 :             sender.sendOff(address.getActiveAddress(row, col));</span></a>
+<a name="69"><span class="lineNum">      69 </span><span class="lineCov">          4 :             activeButtons--;</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          4 :             if (!activeButtons)</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          4 :                 address.unlock();</span></a>
+<a name="72"><span class="lineNum">      72 </span>            :         }</a>
+<a name="73"><span class="lineNum">      73 </span><span class="lineCov">          8 :     }</span></a>
+<a name="74"><span class="lineNum">      74 </span>            : </a>
+<a name="75"><span class="lineNum">      75 </span>            :     BankAddress address;</a>
+<a name="76"><span class="lineNum">      76 </span><span class="lineCov">          6 :     uint16_t activeButtons = 0;</span></a>
+<a name="77"><span class="lineNum">      77 </span>            : </a>
+<a name="78"><span class="lineNum">      78 </span>            :   public:</a>
+<a name="79"><span class="lineNum">      79 </span>            :     Sender sender;</a>
+<a name="80"><span class="lineNum">      80 </span>            : };</a>
+<a name="81"><span class="lineNum">      81 </span>            : </a>
+<a name="82"><span class="lineNum">      82 </span>            : } // namespace Bankable</a>
+<a name="83"><span class="lineNum">      83 </span>            : </a>
+<a name="84"><span class="lineNum">      84 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

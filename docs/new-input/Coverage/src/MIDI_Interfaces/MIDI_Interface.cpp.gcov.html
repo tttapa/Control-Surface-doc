@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 534de08af849f9963d0317baf788aa48789e69fe - src/MIDI_Interfaces/MIDI_Interface.cpp</title>
+  <title>LCOV - f8779dd4819ca21855a20e6def451753e4bc28c1 - src/MIDI_Interfaces/MIDI_Interface.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">534de08af849f9963d0317baf788aa48789e69fe</td>
+            <td class="headerValue">f8779dd4819ca21855a20e6def451753e4bc28c1</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">22</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-21 16:21:31</td>
+            <td class="headerValue">2020-10-28 15:45:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">5</td>
@@ -77,10 +77,10 @@
 <a name="7"><span class="lineNum">       7 </span>            : </a>
 <a name="8"><span class="lineNum">       8 </span>            : // Managing the default MIDI interface</a>
 <a name="9"><span class="lineNum">       9 </span>            : </a>
-<a name="10"><span class="lineNum">      10 </span><span class="lineCov">        113 : MIDI_Interface::~MIDI_Interface() {</span></a>
-<a name="11"><span class="lineNum">      11 </span><span class="lineCov">        113 :     if (getDefault() == this)</span></a>
-<a name="12"><span class="lineNum">      12 </span><span class="lineCov">        113 :         DefaultMIDI_Interface = nullptr;</span></a>
-<a name="13"><span class="lineNum">      13 </span><span class="lineCov">        113 : }</span></a>
+<a name="10"><span class="lineNum">      10 </span><span class="lineCov">        119 : MIDI_Interface::~MIDI_Interface() {</span></a>
+<a name="11"><span class="lineNum">      11 </span><span class="lineCov">        119 :     if (getDefault() == this)</span></a>
+<a name="12"><span class="lineNum">      12 </span><span class="lineCov">        119 :         DefaultMIDI_Interface = nullptr;</span></a>
+<a name="13"><span class="lineNum">      13 </span><span class="lineCov">        119 : }</span></a>
 <a name="14"><span class="lineNum">      14 </span>            : </a>
 <a name="15"><span class="lineNum">      15 </span><span class="lineNoCov">          0 : void MIDI_Interface::setAsDefault() { DefaultMIDI_Interface = this; }</span></a>
 <a name="16"><span class="lineNum">      16 </span>            : </a>
@@ -90,9 +90,9 @@
 <a name="20"><span class="lineNum">      20 </span>            : #define DOWN_CAST static_cast</a>
 <a name="21"><span class="lineNum">      21 </span>            : #endif</a>
 <a name="22"><span class="lineNum">      22 </span>            : </a>
-<a name="23"><span class="lineNum">      23 </span><span class="lineCov">        148 : MIDI_Interface *MIDI_Interface::getDefault() {</span></a>
-<a name="24"><span class="lineNum">      24 </span><span class="lineCov">        296 :     return DefaultMIDI_Interface == nullptr</span></a>
-<a name="25"><span class="lineNum">      25 </span><span class="lineCov">        148 :                ? DOWN_CAST&lt;MIDI_Interface *&gt;(updatables.getLast())</span></a>
+<a name="23"><span class="lineNum">      23 </span><span class="lineCov">        154 : MIDI_Interface *MIDI_Interface::getDefault() {</span></a>
+<a name="24"><span class="lineNum">      24 </span><span class="lineCov">        308 :     return DefaultMIDI_Interface == nullptr</span></a>
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">        154 :                ? DOWN_CAST&lt;MIDI_Interface *&gt;(updatables.getLast())</span></a>
 <a name="26"><span class="lineNum">      26 </span><span class="lineNoCov">          0 :                : DefaultMIDI_Interface;</span></a>
 <a name="27"><span class="lineNum">      27 </span>            : }</a>
 <a name="28"><span class="lineNum">      28 </span>            : </a>

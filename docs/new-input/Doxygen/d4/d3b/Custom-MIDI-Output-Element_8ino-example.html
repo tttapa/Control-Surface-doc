@@ -126,7 +126,7 @@ Mapping</h2>
 <div class="line"><span class="comment">   *          The MIDI note velocity [0, 127].</span></div>
 <div class="line"><span class="comment">   */</span></div>
 <div class="line">  MyNoteButton(<a name="a2"></a><a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <span class="keyword">const</span> <a name="_a3"></a><a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> &amp;address, uint8_t velocity)</div>
-<div class="line">    : button{pin}, address{address}, velocity{velocity} {}</div>
+<div class="line">    : button(pin), address(address), velocity(velocity) {}</div>
 <div class="line"> </div>
 <div class="line"> <span class="keyword">public</span>:</div>
 <div class="line">  <span class="comment">// Initialize: enable the pull-up resistor for the button</span></div>

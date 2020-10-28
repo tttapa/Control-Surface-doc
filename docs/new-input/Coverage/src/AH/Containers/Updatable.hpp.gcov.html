@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 534de08af849f9963d0317baf788aa48789e69fe - src/AH/Containers/Updatable.hpp</title>
+  <title>LCOV - f8779dd4819ca21855a20e6def451753e4bc28c1 - src/AH/Containers/Updatable.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">534de08af849f9963d0317baf788aa48789e69fe</td>
+            <td class="headerValue">f8779dd4819ca21855a20e6def451753e4bc28c1</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">44</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-21 16:21:31</td>
+            <td class="headerValue">2020-10-28 15:45:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">55</td>
@@ -128,18 +128,18 @@
 <a name="58"><span class="lineNum">      58 </span>            :   protected:</a>
 <a name="59"><span class="lineNum">      59 </span>            :     /// Constructor: create an Updatable and add it to the linked list of</a>
 <a name="60"><span class="lineNum">      60 </span>            :     /// instances.</a>
-<a name="61"><span class="lineNum">      61 </span><span class="lineCov">        333 :     UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
-<a name="62"><span class="lineNum">      62 </span><span class="lineCov">        333 :         LockGuard lock(mutex);</span></a>
-<a name="63"><span class="lineNum">      63 </span><span class="lineCov">        333 :         updatables.append(CRTP(Derived));</span></a>
-<a name="64"><span class="lineNum">      64 </span><span class="lineCov">        333 :     }</span></a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">        339 :     UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">        339 :         LockGuard lock(mutex);</span></a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">        339 :         updatables.append(CRTP(Derived));</span></a>
+<a name="64"><span class="lineNum">      64 </span><span class="lineCov">        339 :     }</span></a>
 <a name="65"><span class="lineNum">      65 </span>            : </a>
 <a name="66"><span class="lineNum">      66 </span>            :   public:</a>
 <a name="67"><span class="lineNum">      67 </span>            :     /// Destructor: remove the updatable from the linked list of instances.</a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        333 :     virtual ~UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
-<a name="69"><span class="lineNum">      69 </span><span class="lineCov">        333 :         LockGuard lock(mutex);</span></a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">        333 :         if (updatables.couldContain(CRTP(Derived)))</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        333 :             updatables.remove(CRTP(Derived));</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">        333 :     }</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        339 :     virtual ~UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
+<a name="69"><span class="lineNum">      69 </span><span class="lineCov">        339 :         LockGuard lock(mutex);</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">        339 :         if (updatables.couldContain(CRTP(Derived)))</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        339 :             updatables.remove(CRTP(Derived));</span></a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">        339 :     }</span></a>
 <a name="73"><span class="lineNum">      73 </span>            : </a>
 <a name="74"><span class="lineNum">      74 </span>            : #if defined(__GNUC__) &amp;&amp; !defined(__clang__)</a>
 <a name="75"><span class="lineNum">      75 </span>            : #pragma GCC diagnostic pop</a>
@@ -235,7 +235,7 @@
 <a name="165"><span class="lineNum">     165 </span>            :     /// Move down this element in the list.</a>
 <a name="166"><span class="lineNum">     166 </span><span class="lineCov">    1048642 :     void moveDown(const LockGuard &amp;) { updatables.moveDown(CRTP(Derived)); }</span></a>
 <a name="167"><span class="lineNum">     167 </span>            :     /// Move down this element in the list.</a>
-<a name="168"><span class="lineNum">     168 </span><span class="lineCov">    1005041 :     void moveDown() { moveDown(LockGuard(mutex)); }</span></a>
+<a name="168"><span class="lineNum">     168 </span><span class="lineCov">    1011348 :     void moveDown() { moveDown(LockGuard(mutex)); }</span></a>
 <a name="169"><span class="lineNum">     169 </span>            : </a>
 <a name="170"><span class="lineNum">     170 </span>            :     /// @}</a>
 <a name="171"><span class="lineNum">     171 </span>            : </a>
@@ -262,7 +262,7 @@
 <a name="192"><span class="lineNum">     192 </span>            :  * @nosubgrouping</a>
 <a name="193"><span class="lineNum">     193 </span>            :  */</a>
 <a name="194"><span class="lineNum">     194 </span>            : template &lt;class T = NormalUpdatable, bool ThreadSafe = false&gt;</a>
-<a name="195"><span class="lineNum">     195 </span><span class="lineCov">        474 : class Updatable : public UpdatableCRTP&lt;Updatable&lt;T, ThreadSafe&gt;, ThreadSafe&gt; {</span></a>
+<a name="195"><span class="lineNum">     195 </span><span class="lineCov">        486 : class Updatable : public UpdatableCRTP&lt;Updatable&lt;T, ThreadSafe&gt;, ThreadSafe&gt; {</span></a>
 <a name="196"><span class="lineNum">     196 </span>            :   public:</a>
 <a name="197"><span class="lineNum">     197 </span>            :     /// @name Main initialization and updating methods</a>
 <a name="198"><span class="lineNum">     198 </span>            :     /// @{</a>

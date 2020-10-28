@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 534de08af849f9963d0317baf788aa48789e69fe - src/Banks/BankableAddresses.hpp</title>
+  <title>LCOV - f8779dd4819ca21855a20e6def451753e4bc28c1 - src/Banks/BankableAddresses.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">534de08af849f9963d0317baf788aa48789e69fe</td>
+            <td class="headerValue">f8779dd4819ca21855a20e6def451753e4bc28c1</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">21</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-21 16:21:31</td>
+            <td class="headerValue">2020-10-28 15:45:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">10</td>
@@ -159,7 +159,7 @@
 <a name="89"><span class="lineNum">      89 </span>            :      *          What address type to change (address, channel or cable number).</a>
 <a name="90"><span class="lineNum">      90 </span>            :      */</a>
 <a name="91"><span class="lineNum">      91 </span><span class="lineCov">         28 :     OutputBankableMIDIAddress(const OutputBank &amp;bank, BankType type)</span></a>
-<a name="92"><span class="lineNum">      92 </span><span class="lineCov">         28 :         : OutputBankableMIDIAddress_Base{bank}, type(type) {}</span></a>
+<a name="92"><span class="lineNum">      92 </span><span class="lineCov">         28 :         : OutputBankableMIDIAddress_Base(bank), type(type) {}</span></a>
 <a name="93"><span class="lineNum">      93 </span>            : </a>
 <a name="94"><span class="lineNum">      94 </span>            :     /**</a>
 <a name="95"><span class="lineNum">      95 </span>            :      * @brief   Create a new OutputBankableMIDIAddress object.</a>
@@ -219,7 +219,7 @@
 <a name="149"><span class="lineNum">     149 </span>            :      */</a>
 <a name="150"><span class="lineNum">     150 </span>            :     template &lt;uint8_t NumBanks&gt;</a>
 <a name="151"><span class="lineNum">     151 </span><span class="lineCov">          9 :     ManyAddresses_Base(const Bank&lt;NumBanks&gt; &amp;bank)</span></a>
-<a name="152"><span class="lineNum">     152 </span><span class="lineCov">          9 :         : OutputBankableMIDIAddress_Base{bank} {}</span></a>
+<a name="152"><span class="lineNum">     152 </span><span class="lineCov">          9 :         : OutputBankableMIDIAddress_Base(bank) {}</span></a>
 <a name="153"><span class="lineNum">     153 </span>            : };</a>
 <a name="154"><span class="lineNum">     154 </span>            : </a>
 <a name="155"><span class="lineNum">     155 </span>            : END_CS_NAMESPACE</a>
