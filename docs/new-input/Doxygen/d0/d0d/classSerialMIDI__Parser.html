@@ -95,14 +95,14 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d49/classSerialMIDI__Parser__inherit__graph.svg" width="219" height="507"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d49/classSerialMIDI__Parser__inherit__graph.svg" width="219" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for SerialMIDI_Parser:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d71/classSerialMIDI__Parser__coll__graph.svg" width="522" height="1227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d71/classSerialMIDI__Parser__coll__graph.svg" width="522" height="1242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -179,6 +179,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:af182b0809f3ca8ba55d9ff97b72167bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#af182b0809f3ca8ba55d9ff97b72167bc">thirdByte</a> = false</td></tr>
 <tr class="memdesc:af182b0809f3ca8ba55d9ff97b72167bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag that remembers that the next data byte will be the third byte of a message.  <a href="../../d0/d0d/classSerialMIDI__Parser.html#af182b0809f3ca8ba55d9ff97b72167bc">More...</a><br /></td></tr>
 <tr class="separator:af182b0809f3ca8ba55d9ff97b72167bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781d63a18a0948f09d5408cecfc0d098"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#a781d63a18a0948f09d5408cecfc0d098">runningHeader</a> = 0</td></tr>
+<tr class="memdesc:a781d63a18a0948f09d5408cecfc0d098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Running status header.  <a href="../../d0/d0d/classSerialMIDI__Parser.html#a781d63a18a0948f09d5408cecfc0d098">More...</a><br /></td></tr>
+<tr class="separator:a781d63a18a0948f09d5408cecfc0d098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc6b824f3850959314d6b5e1409355e1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#acc6b824f3850959314d6b5e1409355e1">storedByte</a> = 0xFF</td></tr>
 <tr class="separator:acc6b824f3850959314d6b5e1409355e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -216,7 +219,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The type of MIDI message available, or <code>MIDIReadEvent::NO_MESSAGE</code> if <code>puller</code> ran out of bytes before a complete message was parsed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>
@@ -246,7 +249,7 @@ Private Attributes</h2></td></tr>
 
 <p>Feed a new byte to the parser. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html#l00192">192</a> of file <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html">SerialMIDI_Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html">SerialMIDI_Parser.cpp</a>.</p>
 
 </div>
 </div>
@@ -275,7 +278,7 @@ Private Attributes</h2></td></tr>
 
 <p>Resume the parser with the previously stored and unhandled byte. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html#l00206">206</a> of file <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html">SerialMIDI_Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html#l00205">205</a> of file <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html">SerialMIDI_Parser.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +500,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html">SerialMIDI_Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d1/d49/SerialMIDI__Parser_8cpp_source.html">SerialMIDI_Parser.cpp</a>.</p>
 
 </div>
 </div>
@@ -789,6 +792,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a781d63a18a0948f09d5408cecfc0d098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a781d63a18a0948f09d5408cecfc0d098">&#9670;&nbsp;</a></span>runningHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t runningHeader = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Running status header. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00073">73</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+
+</div>
+</div>
 <a id="acc6b824f3850959314d6b5e1409355e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc6b824f3850959314d6b5e1409355e1">&#9670;&nbsp;</a></span>storedByte</h2>
 
@@ -810,7 +839,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#aca0aaaae03d4189261bb770ea30d1921">storeByte</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00073">73</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>

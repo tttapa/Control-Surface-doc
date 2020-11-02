@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - f8779dd4819ca21855a20e6def451753e4bc28c1 - src/AH/Containers/Updatable.hpp</title>
+  <title>LCOV - 2101c16d8161fbcee7b09394a468dee37c7a8d5c - src/AH/Containers/Updatable.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">f8779dd4819ca21855a20e6def451753e4bc28c1</td>
+            <td class="headerValue">2101c16d8161fbcee7b09394a468dee37c7a8d5c</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">44</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-28 15:45:42</td>
+            <td class="headerValue">2020-11-02 01:33:38</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">55</td>
@@ -152,16 +152,16 @@
 <a name="82"><span class="lineNum">      82 </span>            :     /// @{</a>
 <a name="83"><span class="lineNum">      83 </span>            : </a>
 <a name="84"><span class="lineNum">      84 </span>            :     template &lt;class... Args&gt;</a>
-<a name="85"><span class="lineNum">      85 </span><span class="lineCov">         54 :     static void applyToAll(const LockGuard &amp;,</span></a>
-<a name="86"><span class="lineNum">      86 </span>            :                            void (Derived::*method)(Args &amp;&amp;...),</a>
-<a name="87"><span class="lineNum">      87 </span>            :                            Args &amp;&amp;... args) {</a>
+<a name="85"><span class="lineNum">      85 </span>            :     static void __attribute__((always_inline))</a>
+<a name="86"><span class="lineNum">      86 </span><span class="lineCov">         54 :     applyToAll(const LockGuard &amp;, void (Derived::*method)(Args &amp;&amp;...),</span></a>
+<a name="87"><span class="lineNum">      87 </span>            :                Args &amp;&amp;... args) {</a>
 <a name="88"><span class="lineNum">      88 </span><span class="lineCov">        110 :         for (auto &amp;el : updatables)</span></a>
 <a name="89"><span class="lineNum">      89 </span><span class="lineCov">         56 :             (el.*method)(std::forward&lt;Args&gt;(args)...);</span></a>
 <a name="90"><span class="lineNum">      90 </span><span class="lineCov">         54 :     }</span></a>
 <a name="91"><span class="lineNum">      91 </span>            : </a>
 <a name="92"><span class="lineNum">      92 </span>            :     template &lt;class... Args&gt;</a>
-<a name="93"><span class="lineNum">      93 </span><span class="lineCov">         54 :     static void applyToAll(void (Derived::*method)(Args &amp;&amp;...),</span></a>
-<a name="94"><span class="lineNum">      94 </span>            :                            Args &amp;&amp;... args) {</a>
+<a name="93"><span class="lineNum">      93 </span>            :     static void __attribute__((always_inline))</a>
+<a name="94"><span class="lineNum">      94 </span><span class="lineCov">         54 :     applyToAll(void (Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args) {</span></a>
 <a name="95"><span class="lineNum">      95 </span><span class="lineCov">         54 :         applyToAll(LockGuard(mutex), method, std::forward&lt;Args&gt;(args)...);</span></a>
 <a name="96"><span class="lineNum">      96 </span><span class="lineCov">         54 :     }</span></a>
 <a name="97"><span class="lineNum">      97 </span>            : </a>
@@ -235,7 +235,7 @@
 <a name="165"><span class="lineNum">     165 </span>            :     /// Move down this element in the list.</a>
 <a name="166"><span class="lineNum">     166 </span><span class="lineCov">    1048642 :     void moveDown(const LockGuard &amp;) { updatables.moveDown(CRTP(Derived)); }</span></a>
 <a name="167"><span class="lineNum">     167 </span>            :     /// Move down this element in the list.</a>
-<a name="168"><span class="lineNum">     168 </span><span class="lineCov">    1011348 :     void moveDown() { moveDown(LockGuard(mutex)); }</span></a>
+<a name="168"><span class="lineNum">     168 </span><span class="lineCov">    1029824 :     void moveDown() { moveDown(LockGuard(mutex)); }</span></a>
 <a name="169"><span class="lineNum">     169 </span>            : </a>
 <a name="170"><span class="lineNum">     170 </span>            :     /// @}</a>
 <a name="171"><span class="lineNum">     171 </span>            : </a>

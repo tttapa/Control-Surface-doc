@@ -178,33 +178,32 @@
 <g id="node20" class="node">
 <title>Node20</title>
 <g id="a_node20"><a xlink:href="../../d3/dc3/classStreamMIDI__Interface.html" target="_top" xlink:title="A class for MIDI interfaces sending and receiving MIDI messages over a Stream.">
-<polygon fill="white" stroke="black" points="814,-480.5 814,-691.5 978,-691.5 978,-480.5 814,-480.5"/>
-<text text-anchor="middle" x="896" y="-679.5" font-family="Helvetica,sans-Serif" font-size="10.00">StreamMIDI_Interface</text>
-<polyline fill="none" stroke="black" points="814,-672.5 978,-672.5 "/>
-<text text-anchor="start" x="822" y="-660.5" font-family="Helvetica,sans-Serif" font-size="10.00"># stream</text>
-<text text-anchor="start" x="822" y="-649.5" font-family="Helvetica,sans-Serif" font-size="10.00"># parser</text>
-<polyline fill="none" stroke="black" points="814,-642.5 978,-642.5 "/>
-<text text-anchor="start" x="822" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ StreamMIDI_Interface()</text>
-<text text-anchor="start" x="822" y="-619.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ read()</text>
-<text text-anchor="start" x="822" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getChannelMessage()</text>
-<text text-anchor="start" x="822" y="-597.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysCommonMessage()</text>
-<text text-anchor="start" x="822" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRealTimeMessage()</text>
-<text text-anchor="start" x="822" y="-575.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysExMessage()</text>
-<text text-anchor="start" x="822" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
-<text text-anchor="start" x="822" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00"># dispatchMIDIEvent()</text>
-<text text-anchor="start" x="822" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendChannelMessageImpl()</text>
-<text text-anchor="start" x="822" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysCommonImpl()</text>
-<text text-anchor="start" x="822" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysExImpl()</text>
-<text text-anchor="start" x="822" y="-509.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendRealTimeImpl()</text>
-<text text-anchor="start" x="822" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendNowImpl()</text>
-<text text-anchor="start" x="822" y="-487.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
+<polygon fill="white" stroke="black" points="814,-486 814,-686 978,-686 978,-486 814,-486"/>
+<text text-anchor="middle" x="896" y="-674" font-family="Helvetica,sans-Serif" font-size="10.00">StreamMIDI_Interface</text>
+<polyline fill="none" stroke="black" points="814,-667 978,-667 "/>
+<text text-anchor="start" x="822" y="-655" font-family="Helvetica,sans-Serif" font-size="10.00"># stream</text>
+<text text-anchor="start" x="822" y="-644" font-family="Helvetica,sans-Serif" font-size="10.00"># parser</text>
+<polyline fill="none" stroke="black" points="814,-637 978,-637 "/>
+<text text-anchor="start" x="822" y="-625" font-family="Helvetica,sans-Serif" font-size="10.00">+ StreamMIDI_Interface()</text>
+<text text-anchor="start" x="822" y="-614" font-family="Helvetica,sans-Serif" font-size="10.00">+ read()</text>
+<text text-anchor="start" x="822" y="-603" font-family="Helvetica,sans-Serif" font-size="10.00">+ getChannelMessage()</text>
+<text text-anchor="start" x="822" y="-592" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysCommonMessage()</text>
+<text text-anchor="start" x="822" y="-581" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRealTimeMessage()</text>
+<text text-anchor="start" x="822" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysExMessage()</text>
+<text text-anchor="start" x="822" y="-559" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
+<text text-anchor="start" x="822" y="-548" font-family="Helvetica,sans-Serif" font-size="10.00"># sendChannelMessageImpl()</text>
+<text text-anchor="start" x="822" y="-537" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysCommonImpl()</text>
+<text text-anchor="start" x="822" y="-526" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysExImpl()</text>
+<text text-anchor="start" x="822" y="-515" font-family="Helvetica,sans-Serif" font-size="10.00"># sendRealTimeImpl()</text>
+<text text-anchor="start" x="822" y="-504" font-family="Helvetica,sans-Serif" font-size="10.00"># sendNowImpl()</text>
+<text text-anchor="start" x="822" y="-493" font-family="Helvetica,sans-Serif" font-size="10.00"># handleStall()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node20 -->
 <g id="edge19" class="edge">
 <title>Node1&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M641.33,-920.75C695.25,-850.08 763.66,-760.43 815.99,-691.85"/>
+<path fill="none" stroke="midnightblue" d="M641.49,-920.53C696.92,-847.9 767.58,-755.3 820.38,-686.11"/>
 <polygon fill="none" stroke="midnightblue" points="638.44,-918.76 635.16,-928.83 644.01,-923.01 638.44,-918.76"/>
 </g>
 <!-- Node29 -->
@@ -426,22 +425,22 @@
 <text text-anchor="start" x="577.5" y="-1748.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~UpdatableCRTP()</text>
 <text text-anchor="start" x="577.5" y="-1737.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getMutex()</text>
 <text text-anchor="start" x="577.5" y="-1726.5" font-family="Helvetica,sans-Serif" font-size="10.00"># UpdatableCRTP()</text>
-<text text-anchor="start" x="577.5" y="-1715.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
-<text text-anchor="start" x="577.5" y="-1704.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
-<text text-anchor="start" x="577.5" y="-1693.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
-<text text-anchor="start" x="577.5" y="-1682.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
-<text text-anchor="start" x="577.5" y="-1671.5" font-family="Helvetica,sans-Serif" font-size="10.00">* isEnabled()</text>
-<text text-anchor="start" x="577.5" y="-1660.5" font-family="Helvetica,sans-Serif" font-size="10.00">* isEnabled()</text>
-<text text-anchor="start" x="577.5" y="-1649.5" font-family="Helvetica,sans-Serif" font-size="10.00">* moveDown()</text>
-<text text-anchor="start" x="577.5" y="-1638.5" font-family="Helvetica,sans-Serif" font-size="10.00">* moveDown()</text>
-<text text-anchor="start" x="577.5" y="-1627.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
-<text text-anchor="start" x="577.5" y="-1616.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
+<text text-anchor="start" x="577.5" y="-1715.5" font-family="Helvetica,sans-Serif" font-size="10.00">* method</text>
+<text text-anchor="start" x="577.5" y="-1704.5" font-family="Helvetica,sans-Serif" font-size="10.00">* args</text>
+<text text-anchor="start" x="577.5" y="-1693.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
+<text text-anchor="start" x="577.5" y="-1682.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
+<text text-anchor="start" x="577.5" y="-1671.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
+<text text-anchor="start" x="577.5" y="-1660.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
+<text text-anchor="start" x="577.5" y="-1649.5" font-family="Helvetica,sans-Serif" font-size="10.00">* isEnabled()</text>
+<text text-anchor="start" x="577.5" y="-1638.5" font-family="Helvetica,sans-Serif" font-size="10.00">* isEnabled()</text>
+<text text-anchor="start" x="577.5" y="-1627.5" font-family="Helvetica,sans-Serif" font-size="10.00">* moveDown()</text>
+<text text-anchor="start" x="577.5" y="-1616.5" font-family="Helvetica,sans-Serif" font-size="10.00">* moveDown()</text>
 <text text-anchor="start" x="577.5" y="-1605.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
-<text text-anchor="start" x="577.5" y="-1594.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
-<text text-anchor="start" x="577.5" y="-1583.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
+<text text-anchor="start" x="577.5" y="-1594.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
+<text text-anchor="start" x="577.5" y="-1583.5" font-family="Helvetica,sans-Serif" font-size="10.00">* enable()</text>
 <text text-anchor="start" x="577.5" y="-1572.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
-<text text-anchor="start" x="577.5" y="-1561.5" font-family="Helvetica,sans-Serif" font-size="10.00">* applyToAll()</text>
-<text text-anchor="start" x="577.5" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">* applyToAll()</text>
+<text text-anchor="start" x="577.5" y="-1561.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
+<text text-anchor="start" x="577.5" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">* disable()</text>
 </a>
 </g>
 </g>
@@ -655,8 +654,8 @@
 <!-- Node20&#45;&gt;Node21 -->
 <g id="edge20" class="edge">
 <title>Node20&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M869.2,-470.24C853.88,-404.65 835.78,-327.12 825.72,-284.05"/>
-<polygon fill="none" stroke="midnightblue" points="865.85,-471.29 871.53,-480.24 872.67,-469.7 865.85,-471.29"/>
+<path fill="none" stroke="midnightblue" d="M870.53,-475.95C854.94,-409.19 836.06,-328.33 825.71,-284.02"/>
+<polygon fill="none" stroke="midnightblue" points="867.13,-476.75 872.81,-485.69 873.94,-475.16 867.13,-476.75"/>
 </g>
 <!-- Node22 -->
 <g id="node22" class="node">
@@ -676,8 +675,8 @@
 <!-- Node20&#45;&gt;Node22 -->
 <g id="edge21" class="edge">
 <title>Node20&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M923.14,-470.25C938.01,-407.4 955.47,-333.56 965.87,-289.62"/>
-<polygon fill="none" stroke="midnightblue" points="919.68,-469.7 920.78,-480.24 926.49,-471.31 919.68,-469.7"/>
+<path fill="none" stroke="midnightblue" d="M921.79,-475.95C936.93,-411.94 955.14,-334.98 965.85,-289.69"/>
+<polygon fill="none" stroke="midnightblue" points="918.38,-475.16 919.49,-485.69 925.2,-476.77 918.38,-475.16"/>
 </g>
 <!-- Node25 -->
 <g id="node25" class="node">
@@ -697,8 +696,8 @@
 <!-- Node20&#45;&gt;Node25 -->
 <g id="edge24" class="edge">
 <title>Node20&#45;&gt;Node25</title>
-<path fill="none" stroke="midnightblue" d="M917.38,-470.51C931.07,-421.71 953.06,-366.76 988,-326 990.86,-322.67 1025.61,-303.92 1059.64,-286"/>
-<polygon fill="none" stroke="midnightblue" points="914,-469.62 914.75,-480.18 920.75,-471.45 914,-469.62"/>
+<path fill="none" stroke="midnightblue" d="M915.88,-475.98C929.43,-425.85 951.75,-368.29 988,-326 990.86,-322.67 1025.61,-303.92 1059.64,-286"/>
+<polygon fill="none" stroke="midnightblue" points="912.43,-475.33 913.28,-485.89 919.2,-477.11 912.43,-475.33"/>
 </g>
 <!-- Node27 -->
 <g id="node27" class="node">
@@ -718,8 +717,8 @@
 <!-- Node20&#45;&gt;Node27 -->
 <g id="edge26" class="edge">
 <title>Node20&#45;&gt;Node27</title>
-<path fill="none" stroke="midnightblue" d="M910.09,-470.52C922.34,-419.01 945.23,-361.86 988,-326 1062.25,-263.76 1111.03,-320.48 1203,-290 1205.96,-289.02 1208.94,-287.94 1211.92,-286.78"/>
-<polygon fill="none" stroke="midnightblue" points="906.64,-469.88 907.85,-480.4 913.47,-471.42 906.64,-469.88"/>
+<path fill="none" stroke="midnightblue" d="M908.8,-476.1C920.7,-423.19 943.68,-363.16 988,-326 1062.25,-263.76 1111.03,-320.48 1203,-290 1205.96,-289.02 1208.94,-287.94 1211.92,-286.78"/>
+<polygon fill="none" stroke="midnightblue" points="905.37,-475.38 906.7,-485.89 912.21,-476.85 905.37,-475.38"/>
 </g>
 <!-- Node23 -->
 <g id="node23" class="node">

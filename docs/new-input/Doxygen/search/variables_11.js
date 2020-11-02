@@ -42,6 +42,6 @@ var searchData=
   ['rpn_5fmsb_4962',['RPN_MSB',['../d4/dbe/namespaceMIDI__CC.html#aae80df19e14858c4016d4879a0c1e3a7',1,'MIDI_CC']]],
   ['rtmsg_4963',['rtmsg',['../df/d0c/classMIDI__Parser.html#aa0df08165c1dbf698ed5ac55a55fa907',1,'MIDI_Parser']]],
   ['rude_5fsolo_4964',['RUDE_SOLO',['../de/d44/group__MCU__Notes.html#gae147a38ed616a3a525fe30fc0a05e436',1,'MCU']]],
-  ['runningheader_4965',['runningHeader',['../d7/d8e/classBLEMIDIPacketBuilder.html#a781d63a18a0948f09d5408cecfc0d098',1,'BLEMIDIPacketBuilder']]],
+  ['runningheader_4965',['runningHeader',['../d7/d8e/classBLEMIDIPacketBuilder.html#a781d63a18a0948f09d5408cecfc0d098',1,'BLEMIDIPacketBuilder::runningHeader()'],['../d0/d0d/classSerialMIDI__Parser.html#a781d63a18a0948f09d5408cecfc0d098',1,'SerialMIDI_Parser::runningHeader()']]],
   ['runningtimestamp_4966',['runningTimestamp',['../d7/d8e/classBLEMIDIPacketBuilder.html#afee415be6f330b7e450e39046752a1a6',1,'BLEMIDIPacketBuilder']]]
 ];

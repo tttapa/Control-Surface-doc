@@ -5,7 +5,7 @@ var searchData=
   ['_7ebluetoothmidi_5finterface_2581',['~BluetoothMIDI_Interface',['../d0/d89/classBluetoothMIDI__Interface.html#ab56e51a54a8cf2c39571ac15de0dc01e',1,'BluetoothMIDI_Interface']]],
   ['_7ebuttonmatrix_2582',['~ButtonMatrix',['../dd/d29/classAH_1_1ButtonMatrix.html#a40a59c4c8c858fa54fd6b65e3d6430fd',1,'AH::ButtonMatrix']]],
   ['_7edisplayelement_2583',['~DisplayElement',['../d8/d43/classDisplayElement.html#a833db5730fb9801d46dba24374ef0496',1,'DisplayElement']]],
-  ['_7edisplayinterface_2584',['~DisplayInterface',['../df/d42/classDisplayInterface.html#a03e27d7f4ede1fdd668f4e94e8e83ede',1,'DisplayInterface']]],
+  ['_7edisplayinterface_2584',['~DisplayInterface',['../df/d42/classDisplayInterface.html#ad0cb0f6298b92aabf7981a20e08b1300',1,'DisplayInterface']]],
   ['_7edoublylinkable_2585',['~DoublyLinkable',['../d4/d23/classDoublyLinkable.html#a52e45d1ee1c4822cf1f133920fbfab62',1,'DoublyLinkable']]],
   ['_7eemptylockguard_2586',['~EmptyLockGuard',['../d7/d8e/structEmptyLockGuard.html#af0421c0e3f4a8e41421417d2598b8bd3',1,'EmptyLockGuard']]],
   ['_7eichord_2587',['~IChord',['../db/dbe/classIChord.html#a2bef5942923c04a87121a3a3253cf6cd',1,'IChord']]],

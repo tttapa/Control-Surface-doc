@@ -54,34 +54,35 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="../../d0/d0d/classSerialMIDI__Parser.html" target="_top" xlink:title="Parser for Serial MIDI streams.">
-<polygon fill="white" stroke="black" points="173.5,-33.5 173.5,-255.5 297.5,-255.5 297.5,-33.5 173.5,-33.5"/>
-<text text-anchor="middle" x="235.5" y="-243.5" font-family="Helvetica,sans-Serif" font-size="10.00">SerialMIDI_Parser</text>
-<polyline fill="none" stroke="black" points="173.5,-236.5 297.5,-236.5 "/>
-<text text-anchor="start" x="181.5" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sysexbuffer</text>
-<text text-anchor="start" x="181.5" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; thirdByte</text>
-<text text-anchor="start" x="181.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedByte</text>
-<polyline fill="none" stroke="black" points="173.5,-195.5 297.5,-195.5 "/>
-<text text-anchor="start" x="181.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ pull()</text>
-<text text-anchor="start" x="181.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysExMessage()</text>
-<text text-anchor="start" x="181.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00"># feed()</text>
-<text text-anchor="start" x="181.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"># resume()</text>
-<text text-anchor="start" x="181.5" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00"># addSysExByte()</text>
-<text text-anchor="start" x="181.5" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00"># hasSysExSpace()</text>
-<text text-anchor="start" x="181.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00"># startSysEx()</text>
-<text text-anchor="start" x="181.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00"># endSysEx()</text>
-<text text-anchor="start" x="181.5" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00"># handleRealTime()</text>
-<text text-anchor="start" x="181.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00"># handleStatus()</text>
-<text text-anchor="start" x="181.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00"># handleData()</text>
-<text text-anchor="start" x="181.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00"># storeByte()</text>
-<text text-anchor="start" x="181.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00"># hasStoredByte()</text>
-<text text-anchor="start" x="181.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00"># popStoredByte()</text>
+<polygon fill="white" stroke="black" points="173.5,-28 173.5,-261 297.5,-261 297.5,-28 173.5,-28"/>
+<text text-anchor="middle" x="235.5" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00">SerialMIDI_Parser</text>
+<polyline fill="none" stroke="black" points="173.5,-242 297.5,-242 "/>
+<text text-anchor="start" x="181.5" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00"># sysexbuffer</text>
+<text text-anchor="start" x="181.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; thirdByte</text>
+<text text-anchor="start" x="181.5" y="-208" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; runningHeader</text>
+<text text-anchor="start" x="181.5" y="-197" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedByte</text>
+<polyline fill="none" stroke="black" points="173.5,-190 297.5,-190 "/>
+<text text-anchor="start" x="181.5" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">+ pull()</text>
+<text text-anchor="start" x="181.5" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysExMessage()</text>
+<text text-anchor="start" x="181.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00"># feed()</text>
+<text text-anchor="start" x="181.5" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00"># resume()</text>
+<text text-anchor="start" x="181.5" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00"># addSysExByte()</text>
+<text text-anchor="start" x="181.5" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00"># hasSysExSpace()</text>
+<text text-anchor="start" x="181.5" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00"># startSysEx()</text>
+<text text-anchor="start" x="181.5" y="-101" font-family="Helvetica,sans-Serif" font-size="10.00"># endSysEx()</text>
+<text text-anchor="start" x="181.5" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00"># handleRealTime()</text>
+<text text-anchor="start" x="181.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00"># handleStatus()</text>
+<text text-anchor="start" x="181.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00"># handleData()</text>
+<text text-anchor="start" x="181.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00"># storeByte()</text>
+<text text-anchor="start" x="181.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00"># hasStoredByte()</text>
+<text text-anchor="start" x="181.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00"># popStoredByte()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M235.5,-315.35C235.5,-296.83 235.5,-276.13 235.5,-255.72"/>
+<path fill="none" stroke="midnightblue" d="M235.5,-315.21C235.5,-298.44 235.5,-279.88 235.5,-261.38"/>
 <polygon fill="none" stroke="midnightblue" points="232,-315.4 235.5,-325.4 239,-315.4 232,-315.4"/>
 </g>
 <!-- Node4 -->

@@ -78,11 +78,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__home_pieter_GitHub_Control-Surface_README"></a><a href="https://github.com/tttapa/Control-Surface/actions"><img src="https://github.com/tttapa/Control-Surface/workflows/CI%20Tests/badge.svg" alt="Build Status" style="pointer-events: none;" class="inline"/></a> <a href="https://tttapa.github.io/Control-Surface-doc/Coverage/index.html"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/tttapa/Control-Surface-doc/master/docs/Coverage/shield.io.coverage.json" alt="Test Coverage" class="inline"/></a> <a href="https://travis-ci.org/tttapa/Control-Surface"><img src="https://travis-ci.org/tttapa/Control-Surface.svg?branch=master" alt="Build Status" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/tttapa/Control-Surface"><img src="https://img.shields.io/github/stars/tttapa/Control-Surface?label=GitHub&amp;logo=github" alt="GitHub" class="inline"/></a></p>
-<h1><a class="anchor" id="autotoc_md303"></a>
+<h1><a class="anchor" id="autotoc_md304"></a>
 Control Surface</h1>
 <p>An Arduino library for MIDI control surfaces (input and output). <br  />
  It includes a general-purpose MIDI abstraction layer as well, which can be useful for any MIDI-related project.</p>
-<h2><a class="anchor" id="autotoc_md304"></a>
+<h2><a class="anchor" id="autotoc_md305"></a>
 Overview</h2>
 <p>This library turns your Arduino-compatible board into a MIDI control surface. <br  />
 </p>
@@ -101,7 +101,7 @@ Overview</h2>
 <p>If you are using a Teensy 3.x, you can use it as a <b>USB audio interface</b>. Just add an I²S DAC (e.g. PCM5102) and 5 lines of code, and you can start playing audio through your Teensy. <br  />
  You can also add volume controls and VU meters for these audio connections.</p>
 <p>Thanks to the structure of the library, you can easily add your own MIDI or display elements, using some minimal, high level code. All low level stuff is completely <b>reusable</b> (e.g. all MIDI operations, debouncing switches, filtering analog inputs, and so on).</p>
-<h2><a class="anchor" id="autotoc_md305"></a>
+<h2><a class="anchor" id="autotoc_md306"></a>
 Example usage</h2>
 <p>A complete sketch for a MIDI controller with a potentiometer that sends out MIDI Control Change message can be written in just five lines of code:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
@@ -151,10 +151,10 @@ Example usage</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() { <a class="code" href="d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code" href="dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); }</div>
 <div class="line"><span class="keywordtype">void</span> loop() { <a class="code" href="d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code" href="dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); }</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md306"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md307"></a>
 Getting Started</h2>
 <p>See the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d5/d7d/md_pages_Getting-Started.html"><b>Getting Started</b></a> page to get started using the library.</p>
-<h2><a class="anchor" id="autotoc_md307"></a>
+<h2><a class="anchor" id="autotoc_md308"></a>
 Documentation</h2>
 <p>The automatically generated Doxygen documentation for this library can be found here: <br  />
  <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/index.html"><b>Documentation</b></a> <br  />
@@ -164,7 +164,7 @@ Documentation</h2>
  <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/examples.html"><b>Examples</b></a></p>
 <p>Have a look at the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/modules.html"><b>modules</b></a> for an overview of the features of the library, it's the best entry point for the documentation.</p>
 <p>You can find an answer to some frequently asked questions on the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/df/df5/md_pages_FAQ.html"><b>FAQ</b></a> page.</p>
-<h2><a class="anchor" id="autotoc_md308"></a>
+<h2><a class="anchor" id="autotoc_md309"></a>
 Work in progress</h2>
 <ul>
 <li>Adding support for motorized faders</li>
@@ -174,7 +174,7 @@ Work in progress</h2>
 <li>Adding more examples and adding comments to existing examples</li>
 <li>Finishing the documentation</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md309"></a>
+<h2><a class="anchor" id="autotoc_md310"></a>
 Supported boards</h2>
 <p>For each commit, the continuous integration tests compile the examples for the following boards:</p>
 <ul>
@@ -191,11 +191,11 @@ Supported boards</h2>
 <p>Note that MIDI over USB and MIDI over Bluetooth are not supported on all boards. <br  />
  For MIDI over USB support, check out the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d8/d4a/md_pages_MIDI-over-USB.html"><b>MIDI over USB</b></a> documentation page. As a general rule of thumb, if your board is supported by the <a href="https://github.com/arduino-libraries/MIDIUSB">MIDIUSB library</a> or if it's a Teensy, MIDI over USB should be supported. <br  />
  MIDI over BLE is currently only supported on ESP32.</p>
-<h2><a class="anchor" id="autotoc_md310"></a>
+<h2><a class="anchor" id="autotoc_md311"></a>
 Information for developers</h2>
 <p>Information for people that would like to help improve the Control Surface library can be found here: <a href="https://tttapa.github.io/Pages/Arduino/Control-Surface/Developers/index.html">https://tttapa.github.io/Pages/Arduino/Control-Surface/Developers/index.html</a> <br  />
  It covers installation instructions for developers, instructions for running the tests and generating documentation, a style guide, etc.</p>
-<h2><a class="anchor" id="autotoc_md311"></a>
+<h2><a class="anchor" id="autotoc_md312"></a>
 Recent Breaking Changes</h2>
 <ul>
 <li>1a21d1344f57066fa1eda3819eaf89cbbc79c14e <br  />
@@ -226,7 +226,7 @@ Recent Breaking Changes</h2>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="d9/d38/Control__Surface__Class_8cpp_source.html#l00066">Control_Surface_Class.cpp:66</a></div></div>
 <div class="ttc" id="aChannel_8hpp_html_aca248b81aca10e89d5241437d89d1953"><div class="ttname"><a href="d7/d42/Channel_8hpp.html#aca248b81aca10e89d5241437d89d1953">CHANNEL_7</a></div><div class="ttdeci">constexpr Channel CHANNEL_7</div><div class="ttdef"><b>Definition:</b> <a href="d7/d42/Channel_8hpp_source.html#l00124">Channel.hpp:124</a></div></div>
 <div class="ttc" id="anamespaceMIDI__CC_html_ac73258d1263f61f65fc27976b6aa9a64"><div class="ttname"><a href="d4/dbe/namespaceMIDI__CC.html#ac73258d1263f61f65fc27976b6aa9a64">MIDI_CC::Channel_Volume</a></div><div class="ttdeci">constexpr uint8_t Channel_Volume</div><div class="ttdef"><b>Definition:</b> <a href="d9/d43/Control__Change_8hpp_source.html#l00023">Control_Change.hpp:23</a></div></div>
-<div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="d9/d38/Control__Surface__Class_8cpp_source.html#l00251">Control_Surface_Class.cpp:251</a></div></div>
+<div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="d9/d38/Control__Surface__Class_8cpp_source.html#l00272">Control_Surface_Class.cpp:272</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_a559f01ec7251fdc9c5a5bc0e26b97372"><div class="ttname"><a href="d7/d78/namespaceMIDI__Notes.html#a559f01ec7251fdc9c5a5bc0e26b97372">MIDI_Notes::note</a></div><div class="ttdeci">constexpr int8_t note(int8_t note, int8_t numOctave)</div><div class="ttdoc">Get the MIDI note in the given octave.</div><div class="ttdef"><b>Definition:</b> <a href="d9/dc5/Notes_8hpp_source.html#l00033">Notes.hpp:33</a></div></div>
 <div class="ttc" id="aChannel_8hpp_html_a93a16af4056581203793a572cab8eada"><div class="ttname"><a href="d7/d42/Channel_8hpp.html#a93a16af4056581203793a572cab8eada">CHANNEL_5</a></div><div class="ttdeci">constexpr Channel CHANNEL_5</div><div class="ttdef"><b>Definition:</b> <a href="d7/d42/Channel_8hpp_source.html#l00122">Channel.hpp:122</a></div></div>
 <div class="ttc" id="aChannel_8hpp_html_a6eea0c5451c0ab3366e5385fbe560203"><div class="ttname"><a href="d7/d42/Channel_8hpp.html#a6eea0c5451c0ab3366e5385fbe560203">CHANNEL_4</a></div><div class="ttdeci">constexpr Channel CHANNEL_4</div><div class="ttdef"><b>Definition:</b> <a href="d7/d42/Channel_8hpp_source.html#l00121">Channel.hpp:121</a></div></div>

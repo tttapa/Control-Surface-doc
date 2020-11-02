@@ -96,7 +96,7 @@ $(function() {
 class MIDIButtonMatrix&lt; Sender, nb_rows, nb_cols &gt;</h3>
 
 <p><a class="el" href="../../d0/d54/classMIDIButtonMatrix.html" title="MIDIButtonMatrix.">MIDIButtonMatrix</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000029">Todo:</a></b></dt><dd>Documentation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000027">Todo:</a></b></dt><dd>Documentation. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html" title="A class that reads the states of a button matrix.">AH::ButtonMatrix</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d33/Abstract_2MIDIButtonMatrix_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d7/d33/Abstract_2MIDIButtonMatrix_8hpp_source.html">Abstract/MIDIButtonMatrix.hpp</a>.</p>
@@ -117,10 +117,10 @@ class MIDIButtonMatrix&lt; Sender, nb_rows, nb_cols &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Main initialization and updating methods</h2></td></tr>
-<tr class="memitem:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2c7c502f8ebf20ac04d25bb29cc0f2aa">applyToAll</a> (const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;, void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a2c7c502f8ebf20ac04d25bb29cc0f2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc854bd51713ad44a652f9e3b3a18ea0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adc854bd51713ad44a652f9e3b3a18ea0">applyToAll</a> (void(Derived::*method)(Args &amp;&amp;...), Args &amp;&amp;... args)</td></tr>
-<tr class="separator:adc854bd51713ad44a652f9e3b3a18ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889883313a3e17e3ceec6464aaf35d94"><td class="memItemLeft" align="right" valign="top">static void void(Derived::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a889883313a3e17e3ceec6464aaf35d94">method</a> )(Args &amp;&amp;...)</td></tr>
+<tr class="separator:a889883313a3e17e3ceec6464aaf35d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc56ca25372cc2b474a3cd8affbb562"><td class="memItemLeft" align="right" valign="top">static void void(Derived::*) Args &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a0cc56ca25372cc2b474a3cd8affbb562">args</a> )</td></tr>
+<tr class="separator:a0cc56ca25372cc2b474a3cd8affbb562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Enabling and disabling updatables</h2></td></tr>
@@ -580,88 +580,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a2c7c502f8ebf20ac04d25bb29cc0f2aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c7c502f8ebf20ac04d25bb29cc0f2aa">&#9670;&nbsp;</a></span>applyToAll() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void applyToAll </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a65d4c4a857abe1431f68cb2c3247d27a">LockGuard</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(Derived::*)(Args &amp;&amp;...)&#160;</td>
-          <td class="paramname"><em>method</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
-
-</div>
-</div>
-<a id="adc854bd51713ad44a652f9e3b3a18ea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc854bd51713ad44a652f9e3b3a18ea0">&#9670;&nbsp;</a></span>applyToAll() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void applyToAll </td>
-          <td>(</td>
-          <td class="paramtype">void(Derived::*)(Args &amp;&amp;...)&#160;</td>
-          <td class="paramname"><em>method</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00093">93</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
 
 </div>
 </div>
@@ -1324,6 +1242,54 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d33/Abstract_2MIDIButtonMatrix_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d7/d33/Abstract_2MIDIButtonMatrix_8hpp_source.html">Abstract/MIDIButtonMatrix.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a889883313a3e17e3ceec6464aaf35d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889883313a3e17e3ceec6464aaf35d94">&#9670;&nbsp;</a></span>method</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void void(Derived::* method) (Args &amp;&amp;...)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00086">86</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0cc56ca25372cc2b474a3cd8affbb562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc56ca25372cc2b474a3cd8affbb562">&#9670;&nbsp;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void void(Derived::*) Args&amp; args)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
 
 </div>
 </div>
