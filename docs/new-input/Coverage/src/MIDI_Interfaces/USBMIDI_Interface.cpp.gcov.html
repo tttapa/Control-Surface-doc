@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2101c16d8161fbcee7b09394a468dee37c7a8d5c - src/MIDI_Interfaces/USBMIDI_Interface.cpp</title>
+  <title>LCOV - f539ec3112b0649b3a8318cf191ba6e0cce0153e - src/MIDI_Interfaces/USBMIDI_Interface.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2101c16d8161fbcee7b09394a468dee37c7a8d5c</td>
+            <td class="headerValue">f539ec3112b0649b3a8318cf191ba6e0cce0153e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">80</td>
-            <td class="headerCovTableEntry">84</td>
-            <td class="headerCovTableEntryHi">95.2 %</td>
+            <td class="headerCovTableEntry">81</td>
+            <td class="headerCovTableEntry">85</td>
+            <td class="headerCovTableEntryHi">95.3 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-11-02 01:33:38</td>
+            <td class="headerValue">2020-11-19 20:43:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">13</td>
@@ -167,7 +167,7 @@
 <a name="97"><span class="lineNum">      97 </span><span class="lineCov">          3 :         data += 3;</span></a>
 <a name="98"><span class="lineNum">      98 </span><span class="lineCov">          3 :         length -= 3;</span></a>
 <a name="99"><span class="lineNum">      99 </span>            :     }</a>
-<a name="100"><span class="lineNum">     100 </span><span class="lineCov">         34 : }</span></a>
+<a name="100"><span class="lineNum">     100 </span><span class="lineCov">          8 : }</span></a>
 <a name="101"><span class="lineNum">     101 </span><span class="lineCov">         26 : </span></a>
 <a name="102"><span class="lineNum">     102 </span><span class="lineCov">          9 : void USBMIDI_Interface::sendSysExEnd(const uint8_t *data, uint16_t length,</span></a>
 <a name="103"><span class="lineNum">     103 </span>            :                                      Cable cable) {</a>
@@ -176,7 +176,7 @@
 <a name="106"><span class="lineNum">     106 </span><span class="lineCov">          3 :         case 2: writeUSBPacket(cable, 0x6, data[0], data[1], 0); break;</span></a>
 <a name="107"><span class="lineNum">     107 </span><span class="lineCov">          2 :         case 1: writeUSBPacket(cable, 0x5, data[0], 0, 0); break;</span></a>
 <a name="108"><span class="lineNum">     108 </span>            :         default: break; // LCOV_EXCL_LINE</a>
-<a name="109"><span class="lineNum">     109 </span>            :     }</a>
+<a name="109"><span class="lineNum">     109 </span><span class="lineCov">         26 :     }</span></a>
 <a name="110"><span class="lineNum">     110 </span><span class="lineCov">          9 : }</span></a>
 <a name="111"><span class="lineNum">     111 </span>            : </a>
 <a name="112"><span class="lineNum">     112 </span><span class="lineCov">         19 : void USBMIDI_Interface::sendSysExImpl(const SysExMessage msg) {</span></a>

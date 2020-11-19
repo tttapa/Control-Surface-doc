@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2101c16d8161fbcee7b09394a468dee37c7a8d5c - src/MIDI_Parsers/SerialMIDI_Parser.cpp</title>
+  <title>LCOV - f539ec3112b0649b3a8318cf191ba6e0cce0153e - src/MIDI_Parsers/SerialMIDI_Parser.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2101c16d8161fbcee7b09394a468dee37c7a8d5c</td>
+            <td class="headerValue">f539ec3112b0649b3a8318cf191ba6e0cce0153e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">96</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-11-02 01:33:38</td>
+            <td class="headerValue">2020-11-19 20:43:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">5</td>
@@ -278,19 +278,21 @@
 <a name="208"><span class="lineNum">     208 </span>            : </a>
 <a name="209"><span class="lineNum">     209 </span><span class="lineCov">          8 :     uint8_t midiByte = popStoredByte();</span></a>
 <a name="210"><span class="lineNum">     210 </span>            : </a>
-<a name="211"><span class="lineNum">     211 </span>            :     // If a SysEx message was in progress</a>
-<a name="212"><span class="lineNum">     212 </span><span class="lineCov">         16 :     bool receivingSysEx =</span></a>
-<a name="213"><span class="lineNum">     213 </span><span class="lineCov">          8 :         runningHeader == uint8_t(MIDIMessageType::SYSEX_START);</span></a>
-<a name="214"><span class="lineNum">     214 </span>            : </a>
-<a name="215"><span class="lineNum">     215 </span><span class="lineCov">          8 :     if (receivingSysEx) {</span></a>
-<a name="216"><span class="lineNum">     216 </span>            :         // Reset the buffer for the next chunk</a>
-<a name="217"><span class="lineNum">     217 </span><span class="lineCov">          4 :         startSysEx();</span></a>
-<a name="218"><span class="lineNum">     218 </span><span class="lineCov">          4 :     }</span></a>
-<a name="219"><span class="lineNum">     219 </span>            : </a>
-<a name="220"><span class="lineNum">     220 </span><span class="lineCov">          8 :     return feed(midiByte);</span></a>
-<a name="221"><span class="lineNum">     221 </span><span class="lineCov">        140 : }</span></a>
-<a name="222"><span class="lineNum">     222 </span>            : </a>
-<a name="223"><span class="lineNum">     223 </span>            : END_CS_NAMESPACE</a>
+<a name="211"><span class="lineNum">     211 </span>            : #if !IGNORE_SYSEX</a>
+<a name="212"><span class="lineNum">     212 </span>            :     // If a SysEx message was in progress</a>
+<a name="213"><span class="lineNum">     213 </span><span class="lineCov">         16 :     bool receivingSysEx =</span></a>
+<a name="214"><span class="lineNum">     214 </span><span class="lineCov">          8 :         runningHeader == uint8_t(MIDIMessageType::SYSEX_START);</span></a>
+<a name="215"><span class="lineNum">     215 </span>            : </a>
+<a name="216"><span class="lineNum">     216 </span><span class="lineCov">          8 :     if (receivingSysEx) {</span></a>
+<a name="217"><span class="lineNum">     217 </span>            :         // Reset the buffer for the next chunk</a>
+<a name="218"><span class="lineNum">     218 </span><span class="lineCov">          4 :         startSysEx();</span></a>
+<a name="219"><span class="lineNum">     219 </span><span class="lineCov">          4 :     }</span></a>
+<a name="220"><span class="lineNum">     220 </span>            : #endif</a>
+<a name="221"><span class="lineNum">     221 </span>            : </a>
+<a name="222"><span class="lineNum">     222 </span><span class="lineCov">          8 :     return feed(midiByte);</span></a>
+<a name="223"><span class="lineNum">     223 </span><span class="lineCov">        140 : }</span></a>
+<a name="224"><span class="lineNum">     224 </span>            : </a>
+<a name="225"><span class="lineNum">     225 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

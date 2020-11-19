@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2101c16d8161fbcee7b09394a468dee37c7a8d5c - src/MIDI_Outputs/CCIncrementDecrementButtons.hpp</title>
+  <title>LCOV - f539ec3112b0649b3a8318cf191ba6e0cce0153e - src/MIDI_Outputs/CCIncrementDecrementButtons.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2101c16d8161fbcee7b09394a468dee37c7a8d5c</td>
+            <td class="headerValue">f539ec3112b0649b3a8318cf191ba6e0cce0153e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">4</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-11-02 01:33:38</td>
+            <td class="headerValue">2020-11-19 20:43:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -115,16 +115,15 @@
 <a name="45"><span class="lineNum">      45 </span>            :      *          The MIDI sender to use for reset events.</a>
 <a name="46"><span class="lineNum">      46 </span>            :      */</a>
 <a name="47"><span class="lineNum">      47 </span><span class="lineCov">          1 :     CCIncrementDecrementButtons(const AH::IncrementDecrementButtons &amp;buttons,</span></a>
-<a name="48"><span class="lineNum">      48 </span>            :                                 const MIDIAddress &amp;address,</a>
-<a name="49"><span class="lineNum">      49 </span>            :                                 uint8_t multiplier = 1,</a>
-<a name="50"><span class="lineNum">      50 </span>            :                                 const MIDIAddress &amp;resetNote = {},</a>
-<a name="51"><span class="lineNum">      51 </span>            :                                 const RelativeCCSender &amp;relativeSender = {},</a>
-<a name="52"><span class="lineNum">      52 </span>            :                                 const DigitalNoteSender &amp;resetSender = {})</a>
-<a name="53"><span class="lineNum">      53 </span><span class="lineCov">          2 :         : MIDIIncrementDecrementButtons(buttons, address, multiplier, resetNote,</span></a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">          3 :                                         relativeSender, resetSender) {}</span></a>
-<a name="55"><span class="lineNum">      55 </span>            : };</a>
-<a name="56"><span class="lineNum">      56 </span>            : </a>
-<a name="57"><span class="lineNum">      57 </span>            : END_CS_NAMESPACE</a>
+<a name="48"><span class="lineNum">      48 </span>            :                                 MIDIAddress address, uint8_t multiplier = 1,</a>
+<a name="49"><span class="lineNum">      49 </span>            :                                 MIDIAddress resetNote = MIDIAddress::invalid(),</a>
+<a name="50"><span class="lineNum">      50 </span>            :                                 const RelativeCCSender &amp;relativeSender = {},</a>
+<a name="51"><span class="lineNum">      51 </span>            :                                 const DigitalNoteSender &amp;resetSender = {})</a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">          2 :         : MIDIIncrementDecrementButtons(buttons, address, multiplier, resetNote,</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">          3 :                                         relativeSender, resetSender) {}</span></a>
+<a name="54"><span class="lineNum">      54 </span>            : };</a>
+<a name="55"><span class="lineNum">      55 </span>            : </a>
+<a name="56"><span class="lineNum">      56 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

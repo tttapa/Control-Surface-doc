@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2101c16d8161fbcee7b09394a468dee37c7a8d5c - src/MIDI_Outputs/Bankable/NoteButtonMatrix.hpp</title>
+  <title>LCOV - f539ec3112b0649b3a8318cf191ba6e0cce0153e - src/MIDI_Outputs/Bankable/NoteButtonMatrix.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2101c16d8161fbcee7b09394a468dee37c7a8d5c</td>
+            <td class="headerValue">f539ec3112b0649b3a8318cf191ba6e0cce0153e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">8</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-11-02 01:33:38</td>
+            <td class="headerValue">2020-11-19 20:43:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -88,17 +88,17 @@
 <a name="18"><span class="lineNum">      18 </span>            :  * Crude software debouncing is implemented by limiting the refresh rate.  </a>
 <a name="19"><span class="lineNum">      19 </span>            :  * This version can be banked.  </a>
 <a name="20"><span class="lineNum">      20 </span>            :  * </a>
-<a name="21"><span class="lineNum">      21 </span>            :  * @tparam  nb_rows</a>
+<a name="21"><span class="lineNum">      21 </span>            :  * @tparam  NumRows</a>
 <a name="22"><span class="lineNum">      22 </span>            :  *          The number of rows of the matrix.</a>
-<a name="23"><span class="lineNum">      23 </span>            :  * @tparam  nb_cols</a>
+<a name="23"><span class="lineNum">      23 </span>            :  * @tparam  NumCols</a>
 <a name="24"><span class="lineNum">      24 </span>            :  *          The number of columns of the matrix.</a>
 <a name="25"><span class="lineNum">      25 </span>            :  *</a>
 <a name="26"><span class="lineNum">      26 </span>            :  * @ingroup BankableMIDIOutputElements</a>
 <a name="27"><span class="lineNum">      27 </span>            :  */</a>
-<a name="28"><span class="lineNum">      28 </span>            : template &lt;uint8_t nb_rows, uint8_t nb_cols&gt;</a>
+<a name="28"><span class="lineNum">      28 </span>            : template &lt;uint8_t NumRows, uint8_t NumCols&gt;</a>
 <a name="29"><span class="lineNum">      29 </span><span class="lineCov">          2 : class NoteButtonMatrix</span></a>
-<a name="30"><span class="lineNum">      30 </span>            :     : public MIDIButtonMatrix&lt;MatrixAddress&lt;nb_rows, nb_cols&gt;,</a>
-<a name="31"><span class="lineNum">      31 </span>            :                               DigitalNoteSender, nb_rows, nb_cols&gt; {</a>
+<a name="30"><span class="lineNum">      30 </span>            :     : public MIDIButtonMatrix&lt;MatrixAddress&lt;NumRows, NumCols&gt;,</a>
+<a name="31"><span class="lineNum">      31 </span>            :                               DigitalNoteSender, NumRows, NumCols&gt; {</a>
 <a name="32"><span class="lineNum">      32 </span>            :   public:</a>
 <a name="33"><span class="lineNum">      33 </span>            :     /**</a>
 <a name="34"><span class="lineNum">      34 </span>            :      * @brief   Create a new Bankable NoteButtonMatrix object with the given </a>
@@ -125,13 +125,13 @@
 <a name="55"><span class="lineNum">      55 </span>            :      * @param   velocity</a>
 <a name="56"><span class="lineNum">      56 </span>            :      *          The velocity of the MIDI Note events.</a>
 <a name="57"><span class="lineNum">      57 </span>            :      */</a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">          2 :     NoteButtonMatrix(OutputBankConfig&lt;&gt; config, const PinList&lt;nb_rows&gt; &amp;rowPins,</span></a>
-<a name="59"><span class="lineNum">      59 </span>            :                      const PinList&lt;nb_cols&gt; &amp;colPins,</a>
-<a name="60"><span class="lineNum">      60 </span>            :                      const AddressMatrix&lt;nb_rows, nb_cols&gt; &amp;notes,</a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">          2 :     NoteButtonMatrix(OutputBankConfig&lt;&gt; config, const PinList&lt;NumRows&gt; &amp;rowPins,</span></a>
+<a name="59"><span class="lineNum">      59 </span>            :                      const PinList&lt;NumCols&gt; &amp;colPins,</a>
+<a name="60"><span class="lineNum">      60 </span>            :                      const AddressMatrix&lt;NumRows, NumCols&gt; &amp;notes,</a>
 <a name="61"><span class="lineNum">      61 </span>            :                      MIDIChannelCable channelCN = {CHANNEL_1, CABLE_1},</a>
 <a name="62"><span class="lineNum">      62 </span>            :                      uint8_t velocity = 0x7F)</a>
-<a name="63"><span class="lineNum">      63 </span><span class="lineCov">          2 :         : MIDIButtonMatrix&lt;MatrixAddress&lt;nb_rows, nb_cols&gt;, DigitalNoteSender,</span></a>
-<a name="64"><span class="lineNum">      64 </span>            :                            nb_rows, nb_cols&gt;{</a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">          2 :         : MIDIButtonMatrix&lt;MatrixAddress&lt;NumRows, NumCols&gt;, DigitalNoteSender,</span></a>
+<a name="64"><span class="lineNum">      64 </span>            :                            NumRows, NumCols&gt;{</a>
 <a name="65"><span class="lineNum">      65 </span><span class="lineCov">          2 :               {config, notes, channelCN},</span></a>
 <a name="66"><span class="lineNum">      66 </span><span class="lineCov">          2 :               rowPins,</span></a>
 <a name="67"><span class="lineNum">      67 </span><span class="lineCov">          2 :               colPins,</span></a>

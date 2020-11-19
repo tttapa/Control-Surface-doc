@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.19"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Control Surface: CCButtonMatrix&lt; nb_rows, nb_cols &gt; Class Template Reference</title>
+<title>Control Surface: CCButtonMatrix&lt; NumRows, NumCols &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -84,19 +84,20 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../df/d22/classBankable_1_1CCButtonMatrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CCButtonMatrix&lt; nb_rows, nb_cols &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../d7/dcd/group__MIDIOutputElements.html">MIDI Output Elements</a> &raquo; <a class="el" href="../../d2/d00/group__BankableMIDIOutputElements.html">Bankable MIDI Output Elements</a></div></div>  </div>
+<div class="title">CCButtonMatrix&lt; NumRows, NumCols &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../d7/dcd/group__MIDIOutputElements.html">MIDI Output Elements</a> &raquo; <a class="el" href="../../d2/d00/group__BankableMIDIOutputElements.html">Bankable MIDI Output Elements</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="../../d9/d55/Bankable_2CCButtonMatrix_8hpp_source.html">MIDI_Outputs/Bankable/CCButtonMatrix.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;uint8_t nb_rows, uint8_t nb_cols&gt;<br />
-class Bankable::CCButtonMatrix&lt; nb_rows, nb_cols &gt;</h3>
+<div class="textblock"><h3>template&lt;uint8_t NumRows, uint8_t NumCols&gt;<br />
+class Bankable::CCButtonMatrix&lt; NumRows, NumCols &gt;</h3>
 
 <p>A class of MIDIOutputElements that read the input from a <b>matrix of momentary push buttons or switches</b>, and send out MIDI <b>Control Change</b> events. </p>
 <p>A value of 0x7F is sent when a button is pressed, and a value of 0x00 is sent when a button is released. <br  />
@@ -104,26 +105,28 @@ class Bankable::CCButtonMatrix&lt; nb_rows, nb_cols &gt;</h3>
  This version can be banked.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">nb_rows</td><td>The number of rows of the matrix. </td></tr>
-    <tr><td class="paramname">nb_cols</td><td>The number of columns of the matrix. </td></tr>
+    <tr><td class="paramname">NumRows</td><td>The number of rows of the matrix. </td></tr>
+    <tr><td class="paramname">NumCols</td><td>The number of columns of the matrix. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d55/Bankable_2CCButtonMatrix_8hpp_source.html#l00029">29</a> of file <a class="el" href="../../d9/d55/Bankable_2CCButtonMatrix_8hpp_source.html">Bankable/CCButtonMatrix.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for CCButtonMatrix&lt; nb_rows, nb_cols &gt;:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for CCButtonMatrix&lt; NumRows, NumCols &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d68/classBankable_1_1CCButtonMatrix__inherit__graph.svg" width="402" height="1250"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d68/classBankable_1_1CCButtonMatrix__inherit__graph.svg" width="554" height="1308"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for CCButtonMatrix&lt; nb_rows, nb_cols &gt;:</div>
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for CCButtonMatrix&lt; NumRows, NumCols &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/da9/classBankable_1_1CCButtonMatrix__coll__graph.svg" width="710" height="1544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/da9/classBankable_1_1CCButtonMatrix__coll__graph.svg" width="854" height="1603"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -196,9 +199,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a27c90dcb9546286bf96e91770f6e1d2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2b/classBankable_1_1CCButtonMatrix.html#a27c90dcb9546286bf96e91770f6e1d2c">CCButtonMatrix</a> (<a class="el" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a>&lt;&gt; config, const PinList&lt; nb_rows &gt; &amp;<a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a78f102fabc50104bd885ea077bcf8f8c">rowPins</a>, const PinList&lt; nb_cols &gt; &amp;<a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a9ac5156794b322950acdc745de570aac">colPins</a>, const <a class="el" href="../../d0/d4e/Def_8hpp.html#a2ec0e7ee27237f387cd0030ac76a37b9">AddressMatrix</a>&lt; nb_rows, nb_cols &gt; &amp;controllers, <a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> channelCN, const <a class="el" href="../../d5/db5/classDigitalCCSender.html">DigitalCCSender</a> &amp;<a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a3296e2217dd530ddb922f24a450fec82">sender</a>={})</td></tr>
-<tr class="memdesc:a27c90dcb9546286bf96e91770f6e1d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> <a class="el" href="../../db/d2b/classBankable_1_1CCButtonMatrix.html" title="A class of MIDIOutputElements that read the input from a matrix of momentary push buttons or switches...">CCButtonMatrix</a> object with the given pins, controller numbers and channel.  <a href="../../db/d2b/classBankable_1_1CCButtonMatrix.html#a27c90dcb9546286bf96e91770f6e1d2c">More...</a><br /></td></tr>
-<tr class="separator:a27c90dcb9546286bf96e91770f6e1d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3b67977bb031a39f579d2b9c7b97a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2b/classBankable_1_1CCButtonMatrix.html#acd3b67977bb031a39f579d2b9c7b97a0">CCButtonMatrix</a> (<a class="el" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a>&lt;&gt; config, const PinList&lt; NumRows &gt; &amp;<a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#ac7ed0433de02a6256a2cd71285e3fd6e">rowPins</a>, const PinList&lt; NumCols &gt; &amp;<a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#ad99f0b62bfe7649a17edeb4d9b357bce">colPins</a>, const <a class="el" href="../../d0/d4e/Def_8hpp.html#a8d19036d6e886e790453fe10ac9e98e4">AddressMatrix</a>&lt; NumRows, NumCols &gt; &amp;controllers, <a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> channelCN, const <a class="el" href="../../d5/db5/classDigitalCCSender.html">DigitalCCSender</a> &amp;<a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a3296e2217dd530ddb922f24a450fec82">sender</a>={})</td></tr>
+<tr class="memdesc:acd3b67977bb031a39f579d2b9c7b97a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> <a class="el" href="../../db/d2b/classBankable_1_1CCButtonMatrix.html" title="A class of MIDIOutputElements that read the input from a matrix of momentary push buttons or switches...">CCButtonMatrix</a> object with the given pins, controller numbers and channel.  <a href="../../db/d2b/classBankable_1_1CCButtonMatrix.html#acd3b67977bb031a39f579d2b9c7b97a0">More...</a><br /></td></tr>
+<tr class="separator:acd3b67977bb031a39f579d2b9c7b97a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
 <tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this updatable.  <a href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">More...</a><br /></td></tr>
 <tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +211,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62dac074b3767f9be91bc05f4e5a0638"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a62dac074b3767f9be91bc05f4e5a0638">getPrevState</a> (uint8_t col, uint8_t row)</td></tr>
 <tr class="memdesc:a62dac074b3767f9be91bc05f4e5a0638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state of the button in the given column and row.  <a href="../../dd/d29/classAH_1_1ButtonMatrix.html#a62dac074b3767f9be91bc05f4e5a0638">More...</a><br /></td></tr>
 <tr class="separator:a62dac074b3767f9be91bc05f4e5a0638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569306eb931b9878b5f07c736760a46e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a569306eb931b9878b5f07c736760a46e">setDebounceTime</a> (unsigned long <a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#afff06ce15647fe4cfea1c11dcc235858">debounceTime</a>)</td></tr>
+<tr class="memdesc:a569306eb931b9878b5f07c736760a46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the debounce time interval.  <a href="../../dd/d29/classAH_1_1ButtonMatrix.html#a569306eb931b9878b5f07c736760a46e">More...</a><br /></td></tr>
+<tr class="separator:a569306eb931b9878b5f07c736760a46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b481a6fa60ad9ae9e15166fe68cd658"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a7b481a6fa60ad9ae9e15166fe68cd658">getDebounceTime</a> () const</td></tr>
+<tr class="memdesc:a7b481a6fa60ad9ae9e15166fe68cd658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the debounce time.  <a href="../../dd/d29/classAH_1_1ButtonMatrix.html#a7b481a6fa60ad9ae9e15166fe68cd658">More...</a><br /></td></tr>
+<tr class="separator:a7b481a6fa60ad9ae9e15166fe68cd658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -233,11 +242,15 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#adb6674b573bf7610072c9e8d3abb2ff4">Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac2ac7fe12d43c3aa4e31e7f58cb9c176">mutex</a></td></tr>
 <tr class="separator:ac2ac7fe12d43c3aa4e31e7f58cb9c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:adf732fa3d05a45e32a2d832d4b045623"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#adf732fa3d05a45e32a2d832d4b045623">ButtonMatrix</a> = <a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html">AH::ButtonMatrix</a>&lt; <a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html">MIDIButtonMatrix</a>, NumRows, NumCols &gt;</td></tr>
+<tr class="separator:adf732fa3d05a45e32a2d832d4b045623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a30a33d6b0c7b4eb73864179d824838f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a30a33d6b0c7b4eb73864179d824838f8">onButtonChanged</a> (uint8_t row, uint8_t col, bool state) final override</td></tr>
-<tr class="memdesc:a30a33d6b0c7b4eb73864179d824838f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback function that is called whenever a button changes state.  <a href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a30a33d6b0c7b4eb73864179d824838f8">More...</a><br /></td></tr>
-<tr class="separator:a30a33d6b0c7b4eb73864179d824838f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6ea766631d8542685fe604b389e2c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a2f6ea766631d8542685fe604b389e2c4">onButtonChanged</a> (uint8_t row, uint8_t col, bool state)</td></tr>
+<tr class="separator:a2f6ea766631d8542685fe604b389e2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21e0b2a81e51dba7661ea7128d9ee78d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a21e0b2a81e51dba7661ea7128d9ee78d">setPrevState</a> (uint8_t col, uint8_t row, bool state)</td></tr>
 <tr class="separator:a21e0b2a81e51dba7661ea7128d9ee78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -252,20 +265,46 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a189d1968f3d80eb94f17563376e2c9fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/db5/classBankable_1_1MatrixAddress.html">MatrixAddress</a>&lt; nb_rows, nb_cols &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a189d1968f3d80eb94f17563376e2c9fe">address</a></td></tr>
+<tr class="memitem:a189d1968f3d80eb94f17563376e2c9fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/db5/classBankable_1_1MatrixAddress.html">MatrixAddress</a>&lt; NumRows, NumCols &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a189d1968f3d80eb94f17563376e2c9fe">address</a></td></tr>
 <tr class="separator:a189d1968f3d80eb94f17563376e2c9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2643a90bc676680033bc6b8b08ac8ccc"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a2643a90bc676680033bc6b8b08ac8ccc">activeButtons</a></td></tr>
 <tr class="separator:a2643a90bc676680033bc6b8b08ac8ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57103211dd8cea9970a10b6a99061331"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a57103211dd8cea9970a10b6a99061331">prevRefresh</a> = 0</td></tr>
+<tr class="memitem:afff06ce15647fe4cfea1c11dcc235858"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#afff06ce15647fe4cfea1c11dcc235858">debounceTime</a></td></tr>
+<tr class="separator:afff06ce15647fe4cfea1c11dcc235858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57103211dd8cea9970a10b6a99061331"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a57103211dd8cea9970a10b6a99061331">prevRefresh</a></td></tr>
 <tr class="separator:a57103211dd8cea9970a10b6a99061331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2400407b4bdaef76562435e88411ceae"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a2400407b4bdaef76562435e88411ceae">prevStates</a> [(nb_cols *nb_rows+7)/8]</td></tr>
-<tr class="separator:a2400407b4bdaef76562435e88411ceae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f102fabc50104bd885ea077bcf8f8c"><td class="memItemLeft" align="right" valign="top">const PinList&lt; nb_rows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a78f102fabc50104bd885ea077bcf8f8c">rowPins</a></td></tr>
-<tr class="separator:a78f102fabc50104bd885ea077bcf8f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ac5156794b322950acdc745de570aac"><td class="memItemLeft" align="right" valign="top">const PinList&lt; nb_cols &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a9ac5156794b322950acdc745de570aac">colPins</a></td></tr>
-<tr class="separator:a9ac5156794b322950acdc745de570aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ee75c7a33505f3b41fe009bb471eab"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a72ee75c7a33505f3b41fe009bb471eab">prevStates</a> [(NumCols *NumRows+7)/8]</td></tr>
+<tr class="separator:a72ee75c7a33505f3b41fe009bb471eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ed0433de02a6256a2cd71285e3fd6e"><td class="memItemLeft" align="right" valign="top">const PinList&lt; NumRows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#ac7ed0433de02a6256a2cd71285e3fd6e">rowPins</a></td></tr>
+<tr class="separator:ac7ed0433de02a6256a2cd71285e3fd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad99f0b62bfe7649a17edeb4d9b357bce"><td class="memItemLeft" align="right" valign="top">const PinList&lt; NumCols &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#ad99f0b62bfe7649a17edeb4d9b357bce">colPins</a></td></tr>
+<tr class="separator:ad99f0b62bfe7649a17edeb4d9b357bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="adf732fa3d05a45e32a2d832d4b045623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf732fa3d05a45e32a2d832d4b045623">&#9670;&nbsp;</a></span>ButtonMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#adf732fa3d05a45e32a2d832d4b045623">ButtonMatrix</a> =  <a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html">AH::ButtonMatrix</a>&lt;<a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html">MIDIButtonMatrix</a>, NumRows, NumCols&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
+
+</div>
+</div>
 <a id="adb6674b573bf7610072c9e8d3abb2ff4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb6674b573bf7610072c9e8d3abb2ff4">&#9670;&nbsp;</a></span>Mutex</h2>
 
@@ -315,8 +354,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a27c90dcb9546286bf96e91770f6e1d2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27c90dcb9546286bf96e91770f6e1d2c">&#9670;&nbsp;</a></span>CCButtonMatrix()</h2>
+<a id="acd3b67977bb031a39f579d2b9c7b97a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd3b67977bb031a39f579d2b9c7b97a0">&#9670;&nbsp;</a></span>CCButtonMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,19 +372,19 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const PinList&lt; nb_rows &gt; &amp;&#160;</td>
+          <td class="paramtype">const PinList&lt; NumRows &gt; &amp;&#160;</td>
           <td class="paramname"><em>rowPins</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const PinList&lt; nb_cols &gt; &amp;&#160;</td>
+          <td class="paramtype">const PinList&lt; NumCols &gt; &amp;&#160;</td>
           <td class="paramname"><em>colPins</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d0/d4e/Def_8hpp.html#a2ec0e7ee27237f387cd0030ac76a37b9">AddressMatrix</a>&lt; nb_rows, nb_cols &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d4e/Def_8hpp.html#a8d19036d6e886e790453fe10ac9e98e4">AddressMatrix</a>&lt; NumRows, NumCols &gt; &amp;&#160;</td>
           <td class="paramname"><em>controllers</em>, </td>
         </tr>
         <tr>
@@ -417,7 +456,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d55/classAH_1_1Updatable.html#aaf893c33f3c041e289a12c153dcc9789">Updatable&lt;&gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -445,12 +484,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d55/classAH_1_1Updatable.html#a99b02345a8a15d3c5ea2844a2253f510">Updatable&lt;&gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a30a33d6b0c7b4eb73864179d824838f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30a33d6b0c7b4eb73864179d824838f8">&#9670;&nbsp;</a></span>onButtonChanged()</h2>
+<a id="a2f6ea766631d8542685fe604b389e2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f6ea766631d8542685fe604b389e2c4">&#9670;&nbsp;</a></span>onButtonChanged()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,24 +523,12 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The callback function that is called whenever a button changes state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">row</td><td>The row of the button that changed state. </td></tr>
-    <tr><td class="paramname">col</td><td>The column of the button that changed state. </td></tr>
-    <tr><td class="paramname">state</td><td>The new state of the button. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../dd/d29/classAH_1_1ButtonMatrix.html#a2cadb550c55b9ee1f0362fc6ebf0ac8a">ButtonMatrix&lt; nb_rows, nb_cols &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1074,64 @@ Private Attributes</h2></td></tr>
 <p>Get the state of the button in the given column and row. </p>
 <dl class="section note"><dt>Note</dt><dd>No bounds checking is performed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00069">69</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00057">57</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
+
+</div>
+</div>
+<a id="a569306eb931b9878b5f07c736760a46e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569306eb931b9878b5f07c736760a46e">&#9670;&nbsp;</a></span>setDebounceTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDebounceTime </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>debounceTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configure the debounce time interval. </p>
+<p>Only one button can change in each debounce interval. Time in milliseconds. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b481a6fa60ad9ae9e15166fe68cd658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b481a6fa60ad9ae9e15166fe68cd658">&#9670;&nbsp;</a></span>getDebounceTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long getDebounceTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the debounce time. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -1085,7 +1169,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00052">52</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00082">82</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1197,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00059">59</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00083">83</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1225,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00064">64</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00084">84</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1269,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00075">75</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html#l00085">85</a> of file <a class="el" href="../../d5/d41/ButtonMatrix_8ipp_source.html">ButtonMatrix.ipp</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1284,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d7/db5/classBankable_1_1MatrixAddress.html">MatrixAddress</a>&lt; nb_rows, nb_cols &gt;  address</td>
+          <td class="memname"><a class="el" href="../../d7/db5/classBankable_1_1MatrixAddress.html">MatrixAddress</a>&lt; NumRows, NumCols &gt;  address</td>
         </tr>
       </table>
   </td>
@@ -1210,7 +1294,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1318,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00076">76</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -1258,7 +1342,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d5/d5e/Bankable_2Abstract_2MIDIButtonMatrix_8hpp_source.html">Bankable/Abstract/MIDIButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -1406,6 +1490,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afff06ce15647fe4cfea1c11dcc235858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff06ce15647fe4cfea1c11dcc235858">&#9670;&nbsp;</a></span>debounceTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long debounceTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a57103211dd8cea9970a10b6a99061331"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57103211dd8cea9970a10b6a99061331">&#9670;&nbsp;</a></span>prevRefresh</h2>
 
@@ -1416,7 +1524,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long prevRefresh = 0</td>
+          <td class="memname">unsigned long prevRefresh</td>
         </tr>
       </table>
   </td>
@@ -1426,12 +1534,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00082">82</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a2400407b4bdaef76562435e88411ceae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2400407b4bdaef76562435e88411ceae">&#9670;&nbsp;</a></span>prevStates</h2>
+<a id="a72ee75c7a33505f3b41fe009bb471eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ee75c7a33505f3b41fe009bb471eab">&#9670;&nbsp;</a></span>prevStates</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1440,7 +1548,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t prevStates[(nb_cols *nb_rows+7)/8]</td>
+          <td class="memname">uint8_t prevStates[(NumCols *NumRows+7)/8]</td>
         </tr>
       </table>
   </td>
@@ -1450,12 +1558,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a78f102fabc50104bd885ea077bcf8f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78f102fabc50104bd885ea077bcf8f8c">&#9670;&nbsp;</a></span>rowPins</h2>
+<a id="ac7ed0433de02a6256a2cd71285e3fd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7ed0433de02a6256a2cd71285e3fd6e">&#9670;&nbsp;</a></span>rowPins</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1464,7 +1572,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const PinList&lt;nb_rows&gt; rowPins</td>
+          <td class="memname">const PinList&lt;NumRows&gt; rowPins</td>
         </tr>
       </table>
   </td>
@@ -1474,12 +1582,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00091">91</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a9ac5156794b322950acdc745de570aac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ac5156794b322950acdc745de570aac">&#9670;&nbsp;</a></span>colPins</h2>
+<a id="ad99f0b62bfe7649a17edeb4d9b357bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad99f0b62bfe7649a17edeb4d9b357bce">&#9670;&nbsp;</a></span>colPins</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1488,7 +1596,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const PinList&lt;nb_cols&gt; colPins</td>
+          <td class="memname">const PinList&lt;NumCols&gt; colPins</td>
         </tr>
       </table>
   </td>
@@ -1498,7 +1606,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00086">86</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html#l00092">92</a> of file <a class="el" href="../../d9/d4b/ButtonMatrix_8hpp_source.html">ButtonMatrix.hpp</a>.</p>
 
 </div>
 </div>

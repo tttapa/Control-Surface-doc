@@ -93,14 +93,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d96/NoteCCKPLEDBar_8hpp__incl.svg" width="2655" height="1426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d96/NoteCCKPLEDBar_8hpp__incl.svg" width="2826" height="1351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/df2/NoteCCKPLEDBar_8hpp__dep__incl.svg" width="174" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/df2/NoteCCKPLEDBar_8hpp__dep__incl.svg" width="174" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -111,41 +113,43 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback class that drives a LED dot/bar display based on a note or control change value.  <a href="../../d6/d44/classNoteCCKPLEDBarDriver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteCCKPLEDBar&lt; Type, NumLEDs &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that turns on a different number of LEDs depending on the received MIDI velocity, key pressure or Control Change value.  <a href="../../d2/daa/classNoteCCKPLEDBar.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html">NoteCCKPLEDBar&lt; Type, BankSize, NumLEDs &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that turns on a different number of LEDs depending on the received MIDI velocity, key pressure or Control Change value.  <a href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d1/dd0/namespaceBankable"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html">Bankable</a></td></tr>
-<tr class="memdesc:d1/dd0/namespaceBankable"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for MIDI elements that can be added to a <a class="el" href="../../db/dbd/classBank.html" title="A class that groups Bankable BankableMIDIOutputs and BankableMIDIInputs, and allows the user to chang...">Bank</a>, to change their address or channel. <br /></td></tr>
+<tr class="memdesc:d1/dd0/namespaceBankable"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for MIDI elements that can be added to a <a class="el" href="../../db/dbd/classBank.html" title="A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...">Bank</a>, to change their address or channel. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gadb691a0c5c997c3d2ef8d5943782fee7"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:gadb691a0c5c997c3d2ef8d5943782fee7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/de4/group__midi-input-elements-leds.html#gadb691a0c5c997c3d2ef8d5943782fee7">NoteLEDBar</a> = <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::NOTE_ON, NumLEDs &gt;</td></tr>
-<tr class="memdesc:gadb691a0c5c997c3d2ef8d5943782fee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>.  <a href="../../d7/de4/group__midi-input-elements-leds.html#gadb691a0c5c997c3d2ef8d5943782fee7">More...</a><br /></td></tr>
+<tr class="memdesc:gadb691a0c5c997c3d2ef8d5943782fee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the velocity.  <a href="../../d7/de4/group__midi-input-elements-leds.html#gadb691a0c5c997c3d2ef8d5943782fee7">More...</a><br /></td></tr>
 <tr class="separator:gadb691a0c5c997c3d2ef8d5943782fee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabcbb90633ec0e4d82ad6e8248ebd7402"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:gabcbb90633ec0e4d82ad6e8248ebd7402"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/de4/group__midi-input-elements-leds.html#gabcbb90633ec0e4d82ad6e8248ebd7402">CCLEDBar</a> = <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::CONTROL_CHANGE, NumLEDs &gt;</td></tr>
-<tr class="memdesc:gabcbb90633ec0e4d82ad6e8248ebd7402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Control Change</b> events and displays the value on an <b>LED Bar Graph</b>.  <a href="../../d7/de4/group__midi-input-elements-leds.html#gabcbb90633ec0e4d82ad6e8248ebd7402">More...</a><br /></td></tr>
+<tr class="memdesc:gabcbb90633ec0e4d82ad6e8248ebd7402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Control Change</b> events and displays the value on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the value.  <a href="../../d7/de4/group__midi-input-elements-leds.html#gabcbb90633ec0e4d82ad6e8248ebd7402">More...</a><br /></td></tr>
 <tr class="separator:gabcbb90633ec0e4d82ad6e8248ebd7402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a200412d2b902f546967bfaaf0eb6ae"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:ga9a200412d2b902f546967bfaaf0eb6ae"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/de4/group__midi-input-elements-leds.html#ga9a200412d2b902f546967bfaaf0eb6ae">KPLEDBar</a> = <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::KEY_PRESSURE, NumLEDs &gt;</td></tr>
-<tr class="memdesc:ga9a200412d2b902f546967bfaaf0eb6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Key Pressure</b> events and displays the pressure on an <b>LED Bar Graph</b>.  <a href="../../d7/de4/group__midi-input-elements-leds.html#ga9a200412d2b902f546967bfaaf0eb6ae">More...</a><br /></td></tr>
+<tr class="memdesc:ga9a200412d2b902f546967bfaaf0eb6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Key Pressure</b> events and displays the pressure on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the value.  <a href="../../d7/de4/group__midi-input-elements-leds.html#ga9a200412d2b902f546967bfaaf0eb6ae">More...</a><br /></td></tr>
 <tr class="separator:ga9a200412d2b902f546967bfaaf0eb6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga99429f8364c1eaa0c9b02c1a814bfa5a">NoteLEDBar</a> = <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::NOTE_ON, BankSize, NumLEDs &gt;</td></tr>
-<tr class="memdesc:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga99429f8364c1eaa0c9b02c1a814bfa5a">More...</a><br /></td></tr>
+<tr class="memdesc:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the velocity.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga99429f8364c1eaa0c9b02c1a814bfa5a">More...</a><br /></td></tr>
 <tr class="separator:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad751641cb6a7e6501f7df5c94741bdea"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:gad751641cb6a7e6501f7df5c94741bdea"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad751641cb6a7e6501f7df5c94741bdea">CCLEDBar</a> = <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::CONTROL_CHANGE, BankSize, NumLEDs &gt;</td></tr>
-<tr class="memdesc:gad751641cb6a7e6501f7df5c94741bdea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Control Change</b> events and displays the value on an <b>LED Bar Graph</b>.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad751641cb6a7e6501f7df5c94741bdea">More...</a><br /></td></tr>
+<tr class="memdesc:gad751641cb6a7e6501f7df5c94741bdea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Control Change</b> events and displays the value on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the value.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad751641cb6a7e6501f7df5c94741bdea">More...</a><br /></td></tr>
 <tr class="separator:gad751641cb6a7e6501f7df5c94741bdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5cd2825175b45fbb6553af031eb1c34e"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:ga5cd2825175b45fbb6553af031eb1c34e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga5cd2825175b45fbb6553af031eb1c34e">KPLEDBar</a> = <a class="el" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::KEY_PRESSURE, BankSize, NumLEDs &gt;</td></tr>
-<tr class="memdesc:ga5cd2825175b45fbb6553af031eb1c34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Key Pressure</b> events and displays the pressure on an <b>LED Bar Graph</b>.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga5cd2825175b45fbb6553af031eb1c34e">More...</a><br /></td></tr>
+<tr class="memdesc:ga5cd2825175b45fbb6553af031eb1c34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Key Pressure</b> events and displays the pressure on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the value.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga5cd2825175b45fbb6553af031eb1c34e">More...</a><br /></td></tr>
 <tr class="separator:ga5cd2825175b45fbb6553af031eb1c34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

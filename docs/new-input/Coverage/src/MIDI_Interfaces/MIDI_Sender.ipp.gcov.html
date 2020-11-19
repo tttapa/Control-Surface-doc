@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2101c16d8161fbcee7b09394a468dee37c7a8d5c - src/MIDI_Interfaces/MIDI_Sender.ipp</title>
+  <title>LCOV - f539ec3112b0649b3a8318cf191ba6e0cce0153e - src/MIDI_Interfaces/MIDI_Sender.ipp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2101c16d8161fbcee7b09394a468dee37c7a8d5c</td>
+            <td class="headerValue">f539ec3112b0649b3a8318cf191ba6e0cce0153e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">93</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-11-02 01:33:38</td>
+            <td class="headerValue">2020-11-19 20:43:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">29</td>
@@ -69,7 +69,7 @@
 <pre class="sourceHeading">          Line data    Source code</pre>
 <pre class="source">
 <a name="1"><span class="lineNum">       1 </span>            : #include &quot;MIDI_Sender.hpp&quot;</a>
-<a name="2"><span class="lineNum">       2 </span>            : #include &lt;Def/CRTP.hpp&gt;</a>
+<a name="2"><span class="lineNum">       2 </span>            : #include &lt;AH/Containers/CRTP.hpp&gt;</a>
 <a name="3"><span class="lineNum">       3 </span>            : </a>
 <a name="4"><span class="lineNum">       4 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="5"><span class="lineNum">       5 </span>            : </a>
@@ -119,16 +119,16 @@
 <a name="49"><span class="lineNum">      49 </span>            :         });</a>
 <a name="50"><span class="lineNum">      50 </span><span class="lineCov">          2 : }</span></a>
 <a name="51"><span class="lineNum">      51 </span>            : template &lt;class Derived&gt;</a>
-<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         62 : void MIDI_Sender&lt;Derived&gt;::sendCC(MIDIAddress address, uint8_t value) {</span></a>
-<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         62 :     if (address)</span></a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">        124 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         80 : void MIDI_Sender&lt;Derived&gt;::sendCC(MIDIAddress address, uint8_t value) {</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         80 :     if (address)</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">        160 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="55"><span class="lineNum">      55 </span>            :             MIDIMessageType::CONTROL_CHANGE,</a>
-<a name="56"><span class="lineNum">      56 </span><span class="lineCov">         62 :             address.getChannel(),</span></a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         62 :             address.getAddress(),</span></a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         62 :             uint8_t(value &amp; 0x7F),</span></a>
-<a name="59"><span class="lineNum">      59 </span><span class="lineCov">         62 :             address.getCableNumber(),</span></a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineCov">         80 :             address.getChannel(),</span></a>
+<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         80 :             address.getAddress(),</span></a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         80 :             uint8_t(value &amp; 0x7F),</span></a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">         80 :             address.getCableNumber(),</span></a>
 <a name="60"><span class="lineNum">      60 </span>            :         });</a>
-<a name="61"><span class="lineNum">      61 </span><span class="lineCov">         62 : }</span></a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">         80 : }</span></a>
 <a name="62"><span class="lineNum">      62 </span>            : template &lt;class Derived&gt;</a>
 <a name="63"><span class="lineNum">      63 </span><span class="lineCov">          6 : void MIDI_Sender&lt;Derived&gt;::sendPC(MIDIChannelCable address, uint8_t value) {</span></a>
 <a name="64"><span class="lineNum">      64 </span><span class="lineCov">          6 :     if (address)</span></a>
@@ -186,12 +186,12 @@
 <a name="116"><span class="lineNum">     116 </span><span class="lineCov">          9 : }</span></a>
 <a name="117"><span class="lineNum">     117 </span>            : </a>
 <a name="118"><span class="lineNum">     118 </span>            : template &lt;class Derived&gt;</a>
-<a name="119"><span class="lineNum">     119 </span><span class="lineCov">        116 : void MIDI_Sender&lt;Derived&gt;::send(ChannelMessage message) {</span></a>
-<a name="120"><span class="lineNum">     120 </span><span class="lineCov">        116 :     if (message.hasValidChannelMessageHeader()) {</span></a>
-<a name="121"><span class="lineNum">     121 </span><span class="lineCov">        116 :         message.sanitize();</span></a>
-<a name="122"><span class="lineNum">     122 </span><span class="lineCov">        116 :         CRTP(Derived).sendChannelMessageImpl(message);</span></a>
-<a name="123"><span class="lineNum">     123 </span><span class="lineCov">        116 :     }</span></a>
-<a name="124"><span class="lineNum">     124 </span><span class="lineCov">        116 : }</span></a>
+<a name="119"><span class="lineNum">     119 </span><span class="lineCov">        134 : void MIDI_Sender&lt;Derived&gt;::send(ChannelMessage message) {</span></a>
+<a name="120"><span class="lineNum">     120 </span><span class="lineCov">        134 :     if (message.hasValidChannelMessageHeader()) {</span></a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineCov">        134 :         message.sanitize();</span></a>
+<a name="122"><span class="lineNum">     122 </span><span class="lineCov">        134 :         CRTP(Derived).sendChannelMessageImpl(message);</span></a>
+<a name="123"><span class="lineNum">     123 </span><span class="lineCov">        134 :     }</span></a>
+<a name="124"><span class="lineNum">     124 </span><span class="lineCov">        134 : }</span></a>
 <a name="125"><span class="lineNum">     125 </span>            : </a>
 <a name="126"><span class="lineNum">     126 </span>            : template &lt;class Derived&gt;</a>
 <a name="127"><span class="lineNum">     127 </span>            : void MIDI_Sender&lt;Derived&gt;::send(SysCommonMessage message) {</a>

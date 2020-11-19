@@ -87,21 +87,57 @@ Overview</h2>
 <p>This library turns your Arduino-compatible board into a MIDI control surface. <br  />
 </p>
 <p>Just connect up some push buttons, potentiometers, LEDs ... and declare them in your code.</p>
-<p>Multiple different MIDI interfaces are supported: <b>MIDI over USB</b>, Serial MIDI (e.g. <b>5-pin DIN MIDI</b>), <b>Debug MIDI</b> (prints out the messages in a readable format, and allows you to input text based messages), <b>AppleMIDI</b> over WiFi or Ethernet, <b>MIDI over Bluetooth LE</b> (experimental).</p>
-<p>For MIDI output, you can use <b>push buttons</b>, toggle switches, <b>potentiometers</b>, faders, <b>rotary encoders</b>, etc.</p>
-<p>All digital inputs are <b>debounced</b>, and all analog inputs are filtered using <b>digital filters and hysteresis</b>. This results in high accuracy without noise, without introducing latency.</p>
-<p>These can be used to send MIDI notes, Control Changes, Pitch Bends, Program/Patch changes, etc.</p>
-<p>For MIDI input, you can use <b>LEDs</b> to display the state of different settings, to display the audio level of each channel (<b>VU meters</b>), the positions of knobs (V-Pot <b>LED rings</b>), etc. <br  />
- You can also add an <b>OLED display</b> (e.g. SSD1306) to display a nice overview of which channels are set to mute or solo, display the time cursor, VU meters, etc. Bitmaps with play, mute, solo, record buttons, and others are included. <br  />
-</p>
-<p>A large portion of the <b>Mackie Control Universal</b> protocol is implemented.</p>
-<p>All controls can be arranged in <b>banks</b>: e.g. if you have only 4 physical volume faders, you can add them to a bank, and then you can control 8 channels (or more) by changing the bank setting.</p>
+<h3><a class="anchor" id="autotoc_md306"></a>
+MIDI Interfaces</h3>
+<ul>
+<li><b>MIDI over USB</b></li>
+<li><b>Serial MIDI</b> (e.g. 5-pin DIN MIDI)</li>
+<li><b>Debug MIDI</b> (prints out the messages in a readable format, and allows you to input text based messages, like a MIDI monitor)</li>
+<li><b>MIDI over Bluetooth LE</b></li>
+<li><b>AppleMIDI</b> over WiFi or Ethernet</li>
+</ul>
+<p><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/dc/df0/group__MIDIInterfaces.html"><em>MIDI Interfaces documentation</em></a></sub></p>
+<h3><a class="anchor" id="autotoc_md307"></a>
+MIDI Control Output</h3>
+<ul>
+<li><b>Push buttons</b> and <b>toggle switches</b></li>
+<li><b>Potentiometers</b>, <b>faders</b> and other analog sensors</li>
+<li><b>Rotary encoders</b></li>
+<li><b>Scanning keyboard matrices</b></li>
+</ul>
+<p>Digital inputs are <b>debounced</b>, and analog inputs are filtered using <b>digital filters and hysteresis</b>. This results in high accuracy without noise, without introducing latency.</p>
+<p>These MIDI control outputs can be used to send MIDI notes, Control Change, Pitch Bend, Program/Patch change, etc.</p>
+<p><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d7/dcd/group__MIDIOutputElements.html"><em>MIDI Output Elements documentation</em></a></sub></p>
+<h3><a class="anchor" id="autotoc_md308"></a>
+MIDI Control Input</h3>
+<ul>
+<li><b>LEDs</b> (e.g. to indicate whether a track is muted/armed/soloed)</li>
+<li><b>LED rings</b> (e.g. to indicate the position of a pan knob)</li>
+<li><b>LED strips</b> (using the <a href="https://github.com/FastLED/FastLED">FastLED</a> library)</li>
+<li><b>VU meters</b></li>
+<li><b>OLED displays</b></li>
+<li><b>7-segment displays</b></li>
+</ul>
+<p>A large portion of the <b>Mackie Control Universal</b> (<a class="el" href="d7/dc7/namespaceMCU.html">MCU</a>) protocol is implemented.</p>
+<p><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/df/d8b/group__MIDIInputElements.html"><em>MIDI Input Elements documentation</em></a></sub></p>
+<h3><a class="anchor" id="autotoc_md309"></a>
+Bank support</h3>
+<p>All controls can be arranged in <b>banks</b>: for example, if you have only 4 physical faders, you can make them bankable, so they can be used to control the volume of many different tracks, by selecting the corresponding bank.</p>
+<p>Selecting a bank can be done using push buttons, rotary encoders, etc.</p>
 <p>Apart from banks and bank selectors, you can also add <b>transposers</b> to change the key of your notes, for example.</p>
-<p>In order to save some IO pins, the library natively supports <b>Shift Registers</b> (e.g. 74HC595) and <b>multiplexers</b> (e.g. 74HC4051 or 74HC4067).</p>
-<p>If you are using a Teensy 3.x, you can use it as a <b>USB audio interface</b>. Just add an I²S DAC (e.g. PCM5102) and 5 lines of code, and you can start playing audio through your Teensy. <br  />
+<h3><a class="anchor" id="autotoc_md310"></a>
+Extended input/output</h3>
+<p>In order to save some IO pins, the library natively supports <b>multiplexers</b> (e.g. 74HC4051 or 74HC4067) to read many switches or potentiometers, <b>Shift Registers</b> (e.g. 74HC595) to drive many LEDs, <b>MAX7219 LED drivers</b>, etc.</p>
+<p><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/db/dd3/group__AH__ExtIO.html"><em>Extended IO documentation</em></a></sub></p>
+<h3><a class="anchor" id="autotoc_md311"></a>
+Audio</h3>
+<p>If you are using a Teensy 3.x or 4.x, you can use it as a <b>USB audio interface</b>. Just add an I²S DAC (e.g. PCM5102) and 5 lines of code, and you can start playing audio through your Teensy, by combining Control Surface with the Teensy Audio library. <br  />
  You can also add volume controls and VU meters for these audio connections.</p>
+<p><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d3/d5c/group__Audio.html"><em>Teensy Audio documentation</em></a></sub></p>
+<h3><a class="anchor" id="autotoc_md312"></a>
+Modular and extensible</h3>
 <p>Thanks to the structure of the library, you can easily add your own MIDI or display elements, using some minimal, high level code. All low level stuff is completely <b>reusable</b> (e.g. all MIDI operations, debouncing switches, filtering analog inputs, and so on).</p>
-<h2><a class="anchor" id="autotoc_md306"></a>
+<h2><a class="anchor" id="autotoc_md313"></a>
 Example usage</h2>
 <p>A complete sketch for a MIDI controller with a potentiometer that sends out MIDI Control Change message can be written in just five lines of code:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
@@ -151,10 +187,11 @@ Example usage</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() { <a class="code" href="d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code" href="dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); }</div>
 <div class="line"><span class="keywordtype">void</span> loop() { <a class="code" href="d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code" href="dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); }</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md307"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md314"></a>
 Getting Started</h2>
-<p>See the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d5/d7d/md_pages_Getting-Started.html"><b>Getting Started</b></a> page to get started using the library.</p>
-<h2><a class="anchor" id="autotoc_md308"></a>
+<p>See the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d5/d7d/md_pages_Getting-Started.html"><b>Getting Started</b></a> page to get started using the library. <br  />
+ It'll also point you to the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d8/da8/md_pages_Installation.html"><b>Installation Instructions</b></a>.</p>
+<h2><a class="anchor" id="autotoc_md315"></a>
 Documentation</h2>
 <p>The automatically generated Doxygen documentation for this library can be found here: <br  />
  <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/index.html"><b>Documentation</b></a> <br  />
@@ -164,17 +201,15 @@ Documentation</h2>
  <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/examples.html"><b>Examples</b></a></p>
 <p>Have a look at the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/modules.html"><b>modules</b></a> for an overview of the features of the library, it's the best entry point for the documentation.</p>
 <p>You can find an answer to some frequently asked questions on the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/df/df5/md_pages_FAQ.html"><b>FAQ</b></a> page.</p>
-<h2><a class="anchor" id="autotoc_md309"></a>
+<h2><a class="anchor" id="autotoc_md316"></a>
 Work in progress</h2>
 <ul>
 <li>Adding support for motorized faders</li>
-<li>Cleaning up the display code</li>
-<li>Cleaning up the MIDI over Bluetooth LE code</li>
 <li>Adding more tests (currently at over 525 unit tests)</li>
 <li>Adding more examples and adding comments to existing examples</li>
 <li>Finishing the documentation</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md310"></a>
+<h2><a class="anchor" id="autotoc_md317"></a>
 Supported boards</h2>
 <p>For each commit, the continuous integration tests compile the examples for the following boards:</p>
 <ul>
@@ -182,20 +217,21 @@ Supported boards</h2>
 <li>Arduino Leonardo</li>
 <li>Teensy 3.2</li>
 <li>Arduino Due</li>
+<li>Arduino Nano Every</li>
 <li>Arduino Nano 33 IoT</li>
 <li>ESP8266</li>
 <li>ESP32</li>
 </ul>
-<p>This covers a very large part of the Arduino platform, and similar boards will also work (e.g. Arduino Nano, Arduino Mega, etc.).</p>
+<p>This covers a very large part of the Arduino platform, and similar boards will also work. For example, the Arduino Nano, Mega, Micro, Pro Micro, Teensy 2.0, Teensy LC, Teensy 3.x, Teensy 4.x are all known to work.</p>
 <p>If you have a board that's not supported, please <a href="https://github.com/tttapa/Control-Surface/issues/new">open an issue</a> and let me know!</p>
 <p>Note that MIDI over USB and MIDI over Bluetooth are not supported on all boards. <br  />
  For MIDI over USB support, check out the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d8/d4a/md_pages_MIDI-over-USB.html"><b>MIDI over USB</b></a> documentation page. As a general rule of thumb, if your board is supported by the <a href="https://github.com/arduino-libraries/MIDIUSB">MIDIUSB library</a> or if it's a Teensy, MIDI over USB should be supported. <br  />
  MIDI over BLE is currently only supported on ESP32.</p>
-<h2><a class="anchor" id="autotoc_md311"></a>
+<h2><a class="anchor" id="autotoc_md318"></a>
 Information for developers</h2>
 <p>Information for people that would like to help improve the Control Surface library can be found here: <a href="https://tttapa.github.io/Pages/Arduino/Control-Surface/Developers/index.html">https://tttapa.github.io/Pages/Arduino/Control-Surface/Developers/index.html</a> <br  />
  It covers installation instructions for developers, instructions for running the tests and generating documentation, a style guide, etc.</p>
-<h2><a class="anchor" id="autotoc_md312"></a>
+<h2><a class="anchor" id="autotoc_md319"></a>
 Recent Breaking Changes</h2>
 <ul>
 <li>1a21d1344f57066fa1eda3819eaf89cbbc79c14e <br  />
@@ -212,8 +248,8 @@ Recent Breaking Changes</h2>
  You can change the default resolution to 10 bits in <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/dc/d69/namespaceAH.html#a4f2ec536d7413c6969f44d63ba14ce55"><code>src/AH/Settings/Settings.hpp</code></a> if you have to.</li>
 <li>31edaa6b76477fdf152c19fd34f7e4e8506561e6 <br  />
  The <b>mapping function</b> is now applied before applying hysteresis. <br  />
- This means that the input and output values of the function should be 16 - <code>ANALOG_FILTER_SHIFT_FACTOR</code> bits wide instead of 7. By default this is <b>14 bits</b>. <br  />
- The signature of the mapping function is now <code>analog_t f(analog_t raw)</code>, where the return value and raw are both numbers in [0, 16383]. </li>
+ This means that the input and output values of the function should be 16 - <code>ANALOG_FILTER_SHIFT_FACTOR</code> bits wide instead of 7. By default this is <b>14 bits</b>. You can get the maximum value in a portable way by using the <code>FilteredAnalog&lt;&gt;::getMaxRawValue()</code> function. <br  />
+ The signature of the mapping function is now <code>analog_t f(analog_t raw)</code>, where the return value and raw are both numbers in [0, 16383] by default. </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

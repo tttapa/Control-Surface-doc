@@ -87,7 +87,8 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d8b/group__BankableMIDIInputElementsLEDs.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d8b/group__BankableMIDIInputElementsLEDs.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -115,39 +116,39 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga9ca58e279e5fc41e94ce64e07980decf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga99429f8364c1eaa0c9b02c1a814bfa5a">NoteLEDBar</a> = <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::NOTE_ON, BankSize, NumLEDs &gt;</td></tr>
-<tr class="memdesc:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga99429f8364c1eaa0c9b02c1a814bfa5a">More...</a><br /></td></tr>
+<tr class="memdesc:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the velocity.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga99429f8364c1eaa0c9b02c1a814bfa5a">More...</a><br /></td></tr>
 <tr class="separator:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad751641cb6a7e6501f7df5c94741bdea"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:gad751641cb6a7e6501f7df5c94741bdea"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad751641cb6a7e6501f7df5c94741bdea">CCLEDBar</a> = <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::CONTROL_CHANGE, BankSize, NumLEDs &gt;</td></tr>
-<tr class="memdesc:gad751641cb6a7e6501f7df5c94741bdea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Control Change</b> events and displays the value on an <b>LED Bar Graph</b>.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad751641cb6a7e6501f7df5c94741bdea">More...</a><br /></td></tr>
+<tr class="memdesc:gad751641cb6a7e6501f7df5c94741bdea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Control Change</b> events and displays the value on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the value.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad751641cb6a7e6501f7df5c94741bdea">More...</a><br /></td></tr>
 <tr class="separator:gad751641cb6a7e6501f7df5c94741bdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5cd2825175b45fbb6553af031eb1c34e"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:ga5cd2825175b45fbb6553af031eb1c34e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga5cd2825175b45fbb6553af031eb1c34e">KPLEDBar</a> = <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; MIDIMessageType::KEY_PRESSURE, BankSize, NumLEDs &gt;</td></tr>
-<tr class="memdesc:ga5cd2825175b45fbb6553af031eb1c34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Key Pressure</b> events and displays the pressure on an <b>LED Bar Graph</b>.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga5cd2825175b45fbb6553af031eb1c34e">More...</a><br /></td></tr>
+<tr class="memdesc:ga5cd2825175b45fbb6553af031eb1c34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Key Pressure</b> events and displays the pressure on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the value.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga5cd2825175b45fbb6553af031eb1c34e">More...</a><br /></td></tr>
 <tr class="separator:ga5cd2825175b45fbb6553af031eb1c34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5bc8488998298f295842bae8a9312cd"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize&gt; </td></tr>
 <tr class="memitem:gac5bc8488998298f295842bae8a9312cd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gac5bc8488998298f295842bae8a9312cd">NoteLEDPWM</a> = <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html">NoteCCKPLEDPWM</a>&lt; MIDIMessageType::NOTE_ON, BankSize &gt;</td></tr>
-<tr class="memdesc:gac5bc8488998298f295842bae8a9312cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Note events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gac5bc8488998298f295842bae8a9312cd">More...</a><br /></td></tr>
+<tr class="memdesc:gac5bc8488998298f295842bae8a9312cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Note events on a single address and turns on an LED with a brightness/duty cycle proportional to the velocity.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gac5bc8488998298f295842bae8a9312cd">More...</a><br /></td></tr>
 <tr class="separator:gac5bc8488998298f295842bae8a9312cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2bca887674e86d8c7571084182c60aa2"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize&gt; </td></tr>
 <tr class="memitem:ga2bca887674e86d8c7571084182c60aa2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga2bca887674e86d8c7571084182c60aa2">CCLEDPWM</a> = <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html">NoteCCKPLEDPWM</a>&lt; MIDIMessageType::CONTROL_CHANGE, BankSize &gt;</td></tr>
-<tr class="memdesc:ga2bca887674e86d8c7571084182c60aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Control Change events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga2bca887674e86d8c7571084182c60aa2">More...</a><br /></td></tr>
+<tr class="memdesc:ga2bca887674e86d8c7571084182c60aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Control Change events on a single address and turns on an LED with a brightness/duty cycle proportional to the value.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga2bca887674e86d8c7571084182c60aa2">More...</a><br /></td></tr>
 <tr class="separator:ga2bca887674e86d8c7571084182c60aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad48c6dc8f805fc468c8a84785568b040"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize&gt; </td></tr>
 <tr class="memitem:gad48c6dc8f805fc468c8a84785568b040"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad48c6dc8f805fc468c8a84785568b040">KPLEDPWM</a> = <a class="el" href="../../df/d8a/classBankable_1_1NoteCCKPLEDPWM.html">NoteCCKPLEDPWM</a>&lt; MIDIMessageType::KEY_PRESSURE, BankSize &gt;</td></tr>
-<tr class="memdesc:gad48c6dc8f805fc468c8a84785568b040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Key Pressure events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad48c6dc8f805fc468c8a84785568b040">More...</a><br /></td></tr>
+<tr class="memdesc:gad48c6dc8f805fc468c8a84785568b040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Key Pressure events on a single address and turns on an LED with a brightness/duty cycle proportional to the pressure.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad48c6dc8f805fc468c8a84785568b040">More...</a><br /></td></tr>
 <tr class="separator:gad48c6dc8f805fc468c8a84785568b040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3480eff39fd10581c8af6cb3a8b021e6"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t RangeLen&gt; </td></tr>
 <tr class="memitem:ga3480eff39fd10581c8af6cb3a8b021e6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga3480eff39fd10581c8af6cb3a8b021e6">NoteRangeLEDs</a> = <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html">NoteCCKPRangeLEDs</a>&lt; MIDIMessageType::NOTE_ON, BankSize, RangeLen &gt;</td></tr>
-<tr class="memdesc:ga3480eff39fd10581c8af6cb3a8b021e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Note events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga3480eff39fd10581c8af6cb3a8b021e6">More...</a><br /></td></tr>
+<tr class="memdesc:ga3480eff39fd10581c8af6cb3a8b021e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Note events on a single address and turns on the corresponding LED when the velocity is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga3480eff39fd10581c8af6cb3a8b021e6">More...</a><br /></td></tr>
 <tr class="separator:ga3480eff39fd10581c8af6cb3a8b021e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac3b96fcf5525e19ade0624779dd744ac"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t RangeLen&gt; </td></tr>
 <tr class="memitem:gac3b96fcf5525e19ade0624779dd744ac"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gac3b96fcf5525e19ade0624779dd744ac">CCRangeLEDs</a> = <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html">NoteCCKPRangeLEDs</a>&lt; MIDIMessageType::CONTROL_CHANGE, BankSize, RangeLen &gt;</td></tr>
-<tr class="memdesc:gac3b96fcf5525e19ade0624779dd744ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Control Change events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gac3b96fcf5525e19ade0624779dd744ac">More...</a><br /></td></tr>
+<tr class="memdesc:gac3b96fcf5525e19ade0624779dd744ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Control Change events on a single address and turns on the corresponding LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gac3b96fcf5525e19ade0624779dd744ac">More...</a><br /></td></tr>
 <tr class="separator:gac3b96fcf5525e19ade0624779dd744ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51c7641f8a94226f8e3da66d3d146dd4"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t RangeLen&gt; </td></tr>
 <tr class="memitem:ga51c7641f8a94226f8e3da66d3d146dd4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga51c7641f8a94226f8e3da66d3d146dd4">KPRangeLEDs</a> = <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html">NoteCCKPRangeLEDs</a>&lt; MIDIMessageType::KEY_PRESSURE, BankSize, RangeLen &gt;</td></tr>
-<tr class="memdesc:ga51c7641f8a94226f8e3da66d3d146dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Key Pressure events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga51c7641f8a94226f8e3da66d3d146dd4">More...</a><br /></td></tr>
+<tr class="memdesc:ga51c7641f8a94226f8e3da66d3d146dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Key Pressure events on a single address and turns on the corresponding LED when the pressure is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga51c7641f8a94226f8e3da66d3d146dd4">More...</a><br /></td></tr>
 <tr class="separator:ga51c7641f8a94226f8e3da66d3d146dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -166,7 +167,7 @@ Typedefs</h2></td></tr>
 <p>Class that listens for MIDI Note events on a single address and turns on an LED when the value is higher than a threshold. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html#l00156">156</a> of file <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html">NoteCCKPLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html">NoteCCKPLED.hpp</a>.</p>
 
 </div>
 </div>
@@ -185,7 +186,7 @@ Typedefs</h2></td></tr>
 <p>Class that listens for MIDI Control Change events on a single address and turns on an LED when the value is higher than a threshold. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html#l00163">163</a> of file <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html">NoteCCKPLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html#l00159">159</a> of file <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html">NoteCCKPLED.hpp</a>.</p>
 
 </div>
 </div>
@@ -204,7 +205,7 @@ Typedefs</h2></td></tr>
 <p>Class that listens for MIDI Key Pressure events on a single address and turns on an LED when the value is higher than a threshold. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html#l00170">170</a> of file <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html">NoteCCKPLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html#l00166">166</a> of file <a class="el" href="../../d2/df7/NoteCCKPLED_8hpp_source.html">NoteCCKPLED.hpp</a>.</p>
 
 </div>
 </div>
@@ -220,8 +221,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>. </p>
-<p>This version can be banked. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the velocity. </p>
+<p>Similar to a digital LED VU meter. Can be configured in either bar or dot mode. This version can be banked. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">BankSize</td><td>The number of banks. </td></tr>
     <tr><td class="paramname">NumLEDs</td><td>The number of LEDs the display has. </td></tr>
@@ -229,7 +230,7 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html#l00133">133</a> of file <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html">NoteCCKPLEDBar.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html#l00158">158</a> of file <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html">NoteCCKPLEDBar.hpp</a>.</p>
 
 </div>
 </div>
@@ -245,8 +246,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for <b>Control Change</b> events and displays the value on an <b>LED Bar Graph</b>. </p>
-<p>This version can be banked. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Class that listens for <b>Control Change</b> events and displays the value on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the value. </p>
+<p>Similar to a digital LED VU meter. Can be configured in either bar or dot mode. This version can be banked. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">BankSize</td><td>The number of banks. </td></tr>
     <tr><td class="paramname">NumLEDs</td><td>The number of LEDs the display has. </td></tr>
@@ -254,7 +255,7 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html#l00145">145</a> of file <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html">NoteCCKPLEDBar.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html#l00171">171</a> of file <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html">NoteCCKPLEDBar.hpp</a>.</p>
 
 </div>
 </div>
@@ -270,8 +271,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for <b>Key Pressure</b> events and displays the pressure on an <b>LED Bar Graph</b>. </p>
-<p>This version can be banked. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Class that listens for <b>Key Pressure</b> events and displays the pressure on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the value. </p>
+<p>Similar to a digital LED VU meter. Can be configured in either bar or dot mode. This version can be banked. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">BankSize</td><td>The number of banks. </td></tr>
     <tr><td class="paramname">NumLEDs</td><td>The number of LEDs the display has. </td></tr>
@@ -279,7 +280,7 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html">NoteCCKPLEDBar.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html#l00185">185</a> of file <a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html">NoteCCKPLEDBar.hpp</a>.</p>
 
 </div>
 </div>
@@ -295,10 +296,10 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for MIDI Note events on a single address and turns on an LED when the value is higher than a threshold. </p>
+<p>Class that listens for MIDI Note events on a single address and turns on an LED with a brightness/duty cycle proportional to the velocity. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html#l00147">147</a> of file <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html">NoteCCKPLEDPWM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html#l00145">145</a> of file <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html">NoteCCKPLEDPWM.hpp</a>.</p>
 
 </div>
 </div>
@@ -314,10 +315,10 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for MIDI Control Change events on a single address and turns on an LED when the value is higher than a threshold. </p>
+<p>Class that listens for MIDI Control Change events on a single address and turns on an LED with a brightness/duty cycle proportional to the value. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html#l00154">154</a> of file <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html">NoteCCKPLEDPWM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html">NoteCCKPLEDPWM.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,10 +334,10 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for MIDI Key Pressure events on a single address and turns on an LED when the value is higher than a threshold. </p>
+<p>Class that listens for MIDI Key Pressure events on a single address and turns on an LED with a brightness/duty cycle proportional to the pressure. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html#l00161">161</a> of file <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html">NoteCCKPLEDPWM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html#l00159">159</a> of file <a class="el" href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html">NoteCCKPLEDPWM.hpp</a>.</p>
 
 </div>
 </div>
@@ -352,10 +353,10 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for MIDI Note events on a single address and turns on an LED when the value is higher than a threshold. </p>
+<p>Class that listens for MIDI Note events on a single address and turns on the corresponding LED when the velocity is higher than a threshold. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html#l00176">176</a> of file <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html">NoteCCKPRangeLEDs.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html#l00173">173</a> of file <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html">NoteCCKPRangeLEDs.hpp</a>.</p>
 
 </div>
 </div>
@@ -371,10 +372,10 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for MIDI Control Change events on a single address and turns on an LED when the value is higher than a threshold. </p>
+<p>Class that listens for MIDI Control Change events on a single address and turns on the corresponding LED when the value is higher than a threshold. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html#l00184">184</a> of file <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html">NoteCCKPRangeLEDs.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html">NoteCCKPRangeLEDs.hpp</a>.</p>
 
 </div>
 </div>
@@ -390,10 +391,10 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Class that listens for MIDI Key Pressure events on a single address and turns on an LED when the value is higher than a threshold. </p>
+<p>Class that listens for MIDI Key Pressure events on a single address and turns on the corresponding LED when the pressure is higher than a threshold. </p>
 <p>This version listens accross multiple banks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html#l00192">192</a> of file <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html">NoteCCKPRangeLEDs.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html#l00189">189</a> of file <a class="el" href="../../dd/da9/NoteCCKPRangeLEDs_8hpp_source.html">NoteCCKPRangeLEDs.hpp</a>.</p>
 
 </div>
 </div>

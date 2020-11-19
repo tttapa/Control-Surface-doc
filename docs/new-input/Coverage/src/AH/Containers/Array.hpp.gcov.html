@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2101c16d8161fbcee7b09394a468dee37c7a8d5c - src/AH/Containers/Array.hpp</title>
+  <title>LCOV - f539ec3112b0649b3a8318cf191ba6e0cce0153e - src/AH/Containers/Array.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2101c16d8161fbcee7b09394a468dee37c7a8d5c</td>
+            <td class="headerValue">f539ec3112b0649b3a8318cf191ba6e0cce0153e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">138</td>
-            <td class="headerCovTableEntry">146</td>
-            <td class="headerCovTableEntryHi">94.5 %</td>
+            <td class="headerCovTableEntry">139</td>
+            <td class="headerCovTableEntry">139</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-11-02 01:33:38</td>
+            <td class="headerValue">2020-11-19 20:43:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">173</td>
-            <td class="headerCovTableEntry">194</td>
-            <td class="headerCovTableEntryMed">89.2 %</td>
+            <td class="headerCovTableEntry">176</td>
+            <td class="headerCovTableEntry">191</td>
+            <td class="headerCovTableEntryHi">92.1 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -257,7 +257,7 @@
 <a name="187"><span class="lineNum">     187 </span>            : </a>
 <a name="188"><span class="lineNum">     188 </span>            :     class Iterator {</a>
 <a name="189"><span class="lineNum">     189 </span>            :       public:</a>
-<a name="190"><span class="lineNum">     190 </span><span class="lineCov">         20 :         Iterator(ElementPtrType ptr) : ptr(ptr) {}</span></a>
+<a name="190"><span class="lineNum">     190 </span><span class="lineCov">         18 :         Iterator(ElementPtrType ptr) : ptr(ptr) {}</span></a>
 <a name="191"><span class="lineNum">     191 </span>            : </a>
 <a name="192"><span class="lineNum">     192 </span>            :         using difference_type = std::ptrdiff_t;</a>
 <a name="193"><span class="lineNum">     193 </span>            :         using value_type = T;</a>
@@ -265,22 +265,22 @@
 <a name="195"><span class="lineNum">     195 </span>            :         using reference = ElementRefType;</a>
 <a name="196"><span class="lineNum">     196 </span>            :         using iterator_category = std::random_access_iterator_tag;</a>
 <a name="197"><span class="lineNum">     197 </span>            : </a>
-<a name="198"><span class="lineNum">     198 </span><span class="lineNoCov">          0 :         bool operator==(Iterator rhs) const { return ptr == rhs.ptr; }</span></a>
-<a name="199"><span class="lineNum">     199 </span><span class="lineCov">          1 :         bool operator!=(Iterator rhs) const { return ptr != rhs.ptr; }</span></a>
+<a name="198"><span class="lineNum">     198 </span><span class="lineCov">          3 :         bool operator==(Iterator rhs) const { return ptr == rhs.ptr; }</span></a>
+<a name="199"><span class="lineNum">     199 </span><span class="lineCov">         12 :         bool operator!=(Iterator rhs) const { return ptr != rhs.ptr; }</span></a>
 <a name="200"><span class="lineNum">     200 </span>            : </a>
-<a name="201"><span class="lineNum">     201 </span><span class="lineCov">         52 :         reference operator*() const { return *ptr; }</span></a>
+<a name="201"><span class="lineNum">     201 </span><span class="lineCov">         62 :         reference operator*() const { return *ptr; }</span></a>
 <a name="202"><span class="lineNum">     202 </span>            :         pointer operator-&gt;() const { return ptr; }</a>
 <a name="203"><span class="lineNum">     203 </span>            : </a>
 <a name="204"><span class="lineNum">     204 </span>            :         reference operator[](difference_type n) const { return ptr[n]; }</a>
 <a name="205"><span class="lineNum">     205 </span>            : </a>
-<a name="206"><span class="lineNum">     206 </span><span class="lineCov">          2 :         Iterator &amp;operator++() {</span></a>
-<a name="207"><span class="lineNum">     207 </span><span class="lineCov">          2 :             Reverse ? --ptr : ++ptr;</span></a>
-<a name="208"><span class="lineNum">     208 </span><span class="lineCov">          2 :             return *this;</span></a>
+<a name="206"><span class="lineNum">     206 </span><span class="lineCov">         10 :         Iterator &amp;operator++() {</span></a>
+<a name="207"><span class="lineNum">     207 </span><span class="lineCov">         10 :             Reverse ? --ptr : ++ptr;</span></a>
+<a name="208"><span class="lineNum">     208 </span><span class="lineCov">         10 :             return *this;</span></a>
 <a name="209"><span class="lineNum">     209 </span>            :         }</a>
 <a name="210"><span class="lineNum">     210 </span>            : </a>
-<a name="211"><span class="lineNum">     211 </span><span class="lineCov">          5 :         Iterator &amp;operator--() {</span></a>
-<a name="212"><span class="lineNum">     212 </span><span class="lineCov">          5 :             Reverse ? ++ptr : --ptr;</span></a>
-<a name="213"><span class="lineNum">     213 </span><span class="lineCov">          5 :             return *this;</span></a>
+<a name="211"><span class="lineNum">     211 </span><span class="lineCov">         25 :         Iterator &amp;operator--() {</span></a>
+<a name="212"><span class="lineNum">     212 </span><span class="lineCov">         25 :             Reverse ? ++ptr : --ptr;</span></a>
+<a name="213"><span class="lineNum">     213 </span><span class="lineCov">         25 :             return *this;</span></a>
 <a name="214"><span class="lineNum">     214 </span>            :         }</a>
 <a name="215"><span class="lineNum">     215 </span>            : </a>
 <a name="216"><span class="lineNum">     216 </span>            :         Iterator operator++(int) {</a>
@@ -295,9 +295,9 @@
 <a name="225"><span class="lineNum">     225 </span>            :             return ret;</a>
 <a name="226"><span class="lineNum">     226 </span>            :         }</a>
 <a name="227"><span class="lineNum">     227 </span>            : </a>
-<a name="228"><span class="lineNum">     228 </span><span class="lineNoCov">          0 :         Iterator &amp;operator+=(difference_type n) {</span></a>
-<a name="229"><span class="lineNum">     229 </span><span class="lineNoCov">          0 :             Reverse ? (ptr -= n) : (ptr += n);</span></a>
-<a name="230"><span class="lineNum">     230 </span><span class="lineNoCov">          0 :             return *this;</span></a>
+<a name="228"><span class="lineNum">     228 </span>            :         Iterator &amp;operator+=(difference_type n) {</a>
+<a name="229"><span class="lineNum">     229 </span>            :             Reverse ? (ptr -= n) : (ptr += n);</a>
+<a name="230"><span class="lineNum">     230 </span>            :             return *this;</a>
 <a name="231"><span class="lineNum">     231 </span>            :         }</a>
 <a name="232"><span class="lineNum">     232 </span>            : </a>
 <a name="233"><span class="lineNum">     233 </span>            :         Iterator &amp;operator-=(difference_type n) {</a>
@@ -305,12 +305,12 @@
 <a name="235"><span class="lineNum">     235 </span>            :             return *this;</a>
 <a name="236"><span class="lineNum">     236 </span>            :         }</a>
 <a name="237"><span class="lineNum">     237 </span>            : </a>
-<a name="238"><span class="lineNum">     238 </span><span class="lineCov">          2 :         difference_type operator-(Iterator rhs) const {</span></a>
-<a name="239"><span class="lineNum">     239 </span><span class="lineCov">          2 :             return Reverse ? rhs.ptr - ptr : ptr - rhs.ptr;</span></a>
+<a name="238"><span class="lineNum">     238 </span><span class="lineCov">          8 :         difference_type operator-(Iterator rhs) const {</span></a>
+<a name="239"><span class="lineNum">     239 </span><span class="lineCov">          8 :             return Reverse ? rhs.ptr - ptr : ptr - rhs.ptr;</span></a>
 <a name="240"><span class="lineNum">     240 </span>            :         }</a>
 <a name="241"><span class="lineNum">     241 </span>            : </a>
-<a name="242"><span class="lineNum">     242 </span><span class="lineCov">          6 :         Iterator operator+(difference_type rhs) const {</span></a>
-<a name="243"><span class="lineNum">     243 </span><span class="lineCov">          6 :             return Reverse ? ptr - rhs : ptr + rhs;</span></a>
+<a name="242"><span class="lineNum">     242 </span><span class="lineCov">          4 :         Iterator operator+(difference_type rhs) const {</span></a>
+<a name="243"><span class="lineNum">     243 </span><span class="lineCov">          4 :             return Reverse ? ptr - rhs : ptr + rhs;</span></a>
 <a name="244"><span class="lineNum">     244 </span>            :         }</a>
 <a name="245"><span class="lineNum">     245 </span>            : </a>
 <a name="246"><span class="lineNum">     246 </span><span class="lineCov">          4 :         Iterator operator-(difference_type rhs) const {</span></a>
@@ -321,16 +321,16 @@
 <a name="251"><span class="lineNum">     251 </span><span class="lineCov">          3 :             return Reverse ? rhs.ptr &lt; ptr : ptr &lt; rhs.ptr;</span></a>
 <a name="252"><span class="lineNum">     252 </span>            :         }</a>
 <a name="253"><span class="lineNum">     253 </span>            : </a>
-<a name="254"><span class="lineNum">     254 </span><span class="lineNoCov">          0 :         bool operator&gt;(Iterator rhs) const {</span></a>
-<a name="255"><span class="lineNum">     255 </span><span class="lineNoCov">          0 :             return rhs &lt; *this;</span></a>
+<a name="254"><span class="lineNum">     254 </span>            :         bool operator&gt;(Iterator rhs) const {</a>
+<a name="255"><span class="lineNum">     255 </span>            :             return rhs &lt; *this;</a>
 <a name="256"><span class="lineNum">     256 </span>            :         }</a>
 <a name="257"><span class="lineNum">     257 </span>            : </a>
 <a name="258"><span class="lineNum">     258 </span>            :         bool operator&lt;=(Iterator rhs) const {</a>
 <a name="259"><span class="lineNum">     259 </span>            :             return !(*this &gt; rhs);</a>
 <a name="260"><span class="lineNum">     260 </span>            :         }</a>
 <a name="261"><span class="lineNum">     261 </span>            : </a>
-<a name="262"><span class="lineNum">     262 </span><span class="lineNoCov">          0 :         bool operator&gt;=(Iterator rhs) const {</span></a>
-<a name="263"><span class="lineNum">     263 </span><span class="lineNoCov">          0 :             return !(*this &lt; rhs);</span></a>
+<a name="262"><span class="lineNum">     262 </span>            :         bool operator&gt;=(Iterator rhs) const {</a>
+<a name="263"><span class="lineNum">     263 </span>            :             return !(*this &lt; rhs);</a>
 <a name="264"><span class="lineNum">     264 </span>            :         }</a>
 <a name="265"><span class="lineNum">     265 </span>            : </a>
 <a name="266"><span class="lineNum">     266 </span>            :       private:</a>
@@ -678,8 +678,8 @@
 <a name="608"><span class="lineNum">     608 </span>            : // Type aliases ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</a>
 <a name="609"><span class="lineNum">     609 </span>            : </a>
 <a name="610"><span class="lineNum">     610 </span>            : /// An easy alias for two-dimensional Arrays.</a>
-<a name="611"><span class="lineNum">     611 </span>            : template &lt;class T, size_t nb_rows, size_t nb_cols&gt;</a>
-<a name="612"><span class="lineNum">     612 </span>            : using Array2D = Array&lt;Array&lt;T, nb_cols&gt;, nb_rows&gt;;</a>
+<a name="611"><span class="lineNum">     611 </span>            : template &lt;class T, size_t NumRows, size_t NumCols&gt;</a>
+<a name="612"><span class="lineNum">     612 </span>            : using Array2D = Array&lt;Array&lt;T, NumCols&gt;, NumRows&gt;;</a>
 <a name="613"><span class="lineNum">     613 </span>            : </a>
 <a name="614"><span class="lineNum">     614 </span>            : /// @}</a>
 <a name="615"><span class="lineNum">     615 </span>            : </a>

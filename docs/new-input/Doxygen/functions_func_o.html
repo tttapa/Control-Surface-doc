@@ -94,9 +94,9 @@ $(function() {
 , <a class="el" href="db/d17/classMCU_1_1Bankable_1_1VULEDs.html#a6ac6640153d56b6858943d51607973d4">VULEDs&lt; BankSize, NumLEDs &gt;</a>
 </li>
 <li>onButtonChanged()
-: <a class="el" href="dd/d29/classAH_1_1ButtonMatrix.html#a2cadb550c55b9ee1f0362fc6ebf0ac8a">ButtonMatrix&lt; nb_rows, nb_cols &gt;</a>
-, <a class="el" href="d3/d65/classBankable_1_1MIDIButtonMatrix.html#a30a33d6b0c7b4eb73864179d824838f8">MIDIButtonMatrix&lt; BankAddress, Sender, nb_rows, nb_cols &gt;</a>
-, <a class="el" href="d0/d54/classMIDIButtonMatrix.html#a30a33d6b0c7b4eb73864179d824838f8">MIDIButtonMatrix&lt; Sender, nb_rows, nb_cols &gt;</a>
+: <a class="el" href="dd/d29/classAH_1_1ButtonMatrix.html#a9d8efbcc279600bd90ce90a76d339856">ButtonMatrix&lt; Derived, NumRows, NumCols &gt;</a>
+, <a class="el" href="d3/d65/classBankable_1_1MIDIButtonMatrix.html#a2f6ea766631d8542685fe604b389e2c4">MIDIButtonMatrix&lt; BankAddress, Sender, NumRows, NumCols &gt;</a>
+, <a class="el" href="d0/d54/classMIDIButtonMatrix.html#a2f6ea766631d8542685fe604b389e2c4">MIDIButtonMatrix&lt; Sender, NumRows, NumCols &gt;</a>
 </li>
 <li>onChannelMessage()
 : <a class="el" href="de/d55/classMIDI__Callbacks.html#a15816a727c9ac6ca0893e3ca24637d9a">MIDI_Callbacks</a>
@@ -122,9 +122,6 @@ $(function() {
 , <a class="el" href="d7/d0f/classMIDIAddress.html#ad0ed9dded3dc4405713f0b9270930a92">MIDIAddress</a>
 , <a class="el" href="d7/d46/classMIDIChannelCable.html#ad0ed9dded3dc4405713f0b9270930a92">MIDIChannelCable</a>
 </li>
-<li>operator CRGB()
-: <a class="el" href="d0/da2/structColor.html#a60be96f3870b526cdeece57b85684f62">Color</a>
-</li>
 <li>operator Quaternion()
 : <a class="el" href="dd/dd2/structAH_1_1EulerAngles.html#acee60132373c9f08de3daf85e656d698">EulerAngles</a>
 </li>
@@ -142,8 +139,8 @@ $(function() {
 , <a class="el" href="d2/d75/classCable.html#a41e0e77380789b741a12d8188b4e948a">Cable</a>
 , <a class="el" href="d2/d48/classChannel.html#a9a6ab26266bf6a42d55a33d946d0bc55">Channel</a>
 , <a class="el" href="db/d52/classDoublyLinkedList_1_1node__iterator__base.html#a672679d3f579f46f12db24e2a9705e34">DoublyLinkedList&lt; Node &gt;::node_iterator_base&lt; INode &gt;</a>
-, <a class="el" href="d7/d0f/classMIDIAddress.html#afb80a75436b3cb5c7b1e12bc36c1f953">MIDIAddress</a>
-, <a class="el" href="d7/d46/classMIDIChannelCable.html#aa1883c7cd5c0ff2461d924e09445b295">MIDIChannelCable</a>
+, <a class="el" href="d7/d0f/classMIDIAddress.html#aebbdd1b09349ef60e6bf29b1f6eb3852">MIDIAddress</a>
+, <a class="el" href="d7/d46/classMIDIChannelCable.html#acfd000d1dd2300238cc7d8c8617eb689">MIDIChannelCable</a>
 , <a class="el" href="d4/d61/structMIDIMessage.html#ae98cd7e757a1b718192de8b665dc423c">MIDIMessage</a>
 , <a class="el" href="d6/d99/structRealTimeMessage.html#a601b71e4e035a1c848e140a4e5e75378">RealTimeMessage</a>
 , <a class="el" href="db/d45/structSysExMessage.html#a5da63c3f56bab3e50ef9d62aa398f555">SysExMessage</a>
@@ -154,7 +151,7 @@ $(function() {
 , <a class="el" href="d5/d2c/structBankablePitchBendMIDIMatcher.html#ab57c9795b91ca634679f900e355a645d">BankablePitchBendMIDIMatcher&lt; BankSize &gt;</a>
 , <a class="el" href="d3/d28/structBankableTwoByteMIDIMatcher.html#ab57c9795b91ca634679f900e355a645d">BankableTwoByteMIDIMatcher&lt; BankSize &gt;</a>
 , <a class="el" href="d5/d9e/structBankableTwoByteRangeMIDIMatcher.html#ab57c9795b91ca634679f900e355a645d">BankableTwoByteRangeMIDIMatcher&lt; BankSize &gt;</a>
-, <a class="el" href="d8/dc6/structDefaultColorMapper.html#a703633b3b1f1243d3a4afafb49d266ec">DefaultColorMapper</a>
+, <a class="el" href="d8/dc6/structDefaultColorMapper.html#a913c09db3a75c0b8be6347387d1d0dd2">DefaultColorMapper</a>
 , <a class="el" href="d7/d40/classEMA.html#ae6a3d2fc533ea2c64c1e0fe8b4600b3c">EMA&lt; K, input_t, state_t &gt;</a>
 , <a class="el" href="db/d6f/classEMA__f.html#a08c804ae887b09bc9c12a6814c9ec50e">EMA_f</a>
 , <a class="el" href="dc/d84/structMCU_1_1BankableVUMatcher.html#ab57c9795b91ca634679f900e355a645d">BankableVUMatcher&lt; BankSize &gt;</a>
@@ -192,7 +189,7 @@ $(function() {
 , <a class="el" href="d2/d75/classCable.html#af444f9ab02fd5a1ef9c2aecc44e56dbc">Cable</a>
 , <a class="el" href="d2/d48/classChannel.html#a42194793f06dcc712686fd8afb6d25f1">Channel</a>
 , <a class="el" href="d5/dc0/classChord.html#ac45dc3c48b73fa74719c597a5416628e">Chord&lt; N &gt;</a>
-, <a class="el" href="d7/d0f/classMIDIAddress.html#a37358242d87fd95eaa9a67dfea90840d">MIDIAddress</a>
+, <a class="el" href="d7/d0f/classMIDIAddress.html#a9a03244e1f311949a4ed83c2557b73cd">MIDIAddress</a>
 </li>
 <li>operator++()
 : <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#aef12ef33726bc591f569f822c7b5ac41">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
@@ -208,22 +205,22 @@ $(function() {
 , <a class="el" href="d2/d04/structAH_1_1Vec3f.html#a89a0dd6d29cc70db57e77c8b41c29bd8">Vec3f</a>
 , <a class="el" href="d2/d75/classCable.html#ad45839d4d80db5bb5345666078d5de13">Cable</a>
 , <a class="el" href="d2/d48/classChannel.html#aa1e34b394f3ceec8678413ea8eb3c7b2">Channel</a>
-, <a class="el" href="d7/d0f/classMIDIAddress.html#a459f808921a4990c11dbec3e6dedc318">MIDIAddress</a>
+, <a class="el" href="d7/d0f/classMIDIAddress.html#ad5d1c89ccf4d171cea57cf6cde730cb4">MIDIAddress</a>
 , <a class="el" href="d5/d0e/classRelativeMIDIAddress.html#aebecc4fdb8229a0bab4ce0b32a41141b">RelativeMIDIAddress</a>
 </li>
 <li>operator-()
 : <a class="el" href="da/de8/group__AH__Containers.html#gaeae8ce72efdec0617c6c6f7b81cb4355">Array&lt; T, N &gt;</a>
-, <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#a64f3c17479ea105b93954a61d5d851e6">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
+, <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#aa2aae37de5e7d1a04f186a6e36ccbb7e">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
 , <a class="el" href="da/de8/group__AH__Containers.html#ga8a160ff9f8272cb04701b51608664c0f">ArraySlice&lt; T, N, Reverse, Const &gt;</a>
 , <a class="el" href="da/d32/structAH_1_1Quaternion.html#a4e44d502db7bfa4e5bbdda12f673d47a">Quaternion</a>
-, <a class="el" href="d4/dec/structAH_1_1Vec2f.html#a09fe30a812f84627413aa34f31aabbd0">Vec2f</a>
+, <a class="el" href="d4/dec/structAH_1_1Vec2f.html#a6ff3b5c893e2a8ef0fecb029ffb7e3be">Vec2f</a>
 , <a class="el" href="d2/d04/structAH_1_1Vec3f.html#aca7e5413a3ec573474dbc7851e1367e6">Vec3f</a>
 , <a class="el" href="d2/d75/classCable.html#a5d7060d4cd28c27cb61a61b7b73338d6">Cable</a>
 , <a class="el" href="d2/d48/classChannel.html#ac6166a02eee1c33a920131b16cfa9180">Channel</a>
-, <a class="el" href="d7/d0f/classMIDIAddress.html#a28a8b0b45476ebf71a1af00a6704bd4c">MIDIAddress</a>
+, <a class="el" href="d7/d0f/classMIDIAddress.html#a1e89ae7761b6fbe52ea50364fe92f638">MIDIAddress</a>
 </li>
 <li>operator--()
-: <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#a826422223993becdf7c1e60aea56e9c0">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
+: <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#a34e5ed23ddc31b7d8d4bfb5bfacbaab6">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
 , <a class="el" href="dd/d02/classDoublyLinkedList_1_1node__iterator.html#a46069da106166b03d9fdbfa12d71029e">DoublyLinkedList&lt; Node &gt;::node_iterator&lt; INode &gt;</a>
 , <a class="el" href="d1/d4c/classDoublyLinkedList_1_1reverse__node__iterator.html#ac7c0a827ddd55f27d235112e026cc82a">DoublyLinkedList&lt; Node &gt;::reverse_node_iterator&lt; INode &gt;</a>
 </li>
@@ -236,7 +233,7 @@ $(function() {
 , <a class="el" href="d2/d04/structAH_1_1Vec3f.html#a3b1b45e0e561204458f7e2264be6e4c3">Vec3f</a>
 , <a class="el" href="d2/d75/classCable.html#ab03d256aee3840e8285425410e233f1d">Cable</a>
 , <a class="el" href="d2/d48/classChannel.html#afbe82e46aaa269ba08543463996452c4">Channel</a>
-, <a class="el" href="d7/d0f/classMIDIAddress.html#a841970fd6eac0049ff0c7a54642bf9e5">MIDIAddress</a>
+, <a class="el" href="d7/d0f/classMIDIAddress.html#a79bdd1f3a15d3970260841dc913a57db">MIDIAddress</a>
 </li>
 <li>operator-&gt;()
 : <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#aef4e7d4e0fa56e9f7509c555f73d24d2">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
@@ -264,24 +261,24 @@ $(function() {
 : <a class="el" href="d5/d99/group__math-types.html#gaa093f5a396b57efaeca673ce5c5cc1d6">EulerAngles</a>
 , <a class="el" href="d5/d99/group__math-types.html#gab105894bea5e13f3b60cf4283ffe4f81">Quaternion</a>
 , <a class="el" href="d4/dec/structAH_1_1Vec2f.html#aaa0fc7b49d9af4636dd312a892b7f595">Vec2f</a>
-, <a class="el" href="d5/d99/group__math-types.html#ga36efe881c9a5d4d7a2b2c5b7bed8f995">Vec3f</a>
+, <a class="el" href="d2/d04/structAH_1_1Vec3f.html#a36efe881c9a5d4d7a2b2c5b7bed8f995">Vec3f</a>
 </li>
 <li>operator&lt;=()
 : <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#a419d52e250fde2b6f147f2ff4169be8f">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
 </li>
 <li>operator=()
-: <a class="el" href="df/d0d/classAH_1_1UniquePtr.html#aef4436bd47b1118679bf1544876cb2b9">UniquePtr&lt; T &gt;</a>
+: <a class="el" href="df/d0d/classAH_1_1UniquePtr.html#adb39cd5bfc69f5090ca4e2615f74c4c2">UniquePtr&lt; T &gt;</a>
 , <a class="el" href="d2/d04/structAH_1_1Vec3f.html#a5920c49ce70c698a5b4ea7bffb5757ab">Vec3f</a>
 , <a class="el" href="dc/d45/classControl__Surface__.html#a96efa8eaf1dce16fa9e7786d60ed7d63">Control_Surface_</a>
-, <a class="el" href="df/d72/classMIDI__Pipe.html#a152fdca2c1aadbf6c751ffdb303140e5">MIDI_Pipe</a>
-, <a class="el" href="d9/db6/classMIDI__Sink.html#a240fac24b436717f01a85eaddf5f427e">MIDI_Sink</a>
-, <a class="el" href="df/d5b/classMIDI__Source.html#ace9b06275d16ad3274e987afe8559c35">MIDI_Source</a>
+, <a class="el" href="df/d72/classMIDI__Pipe.html#a869b2a8a3d2dbbbfba65cf61d0f1ffbc">MIDI_Pipe</a>
+, <a class="el" href="d9/db6/classMIDI__Sink.html#a2893578c0d96d2e2dd972e24e06a67bd">MIDI_Sink</a>
+, <a class="el" href="df/d5b/classMIDI__Source.html#a0c12b2d42653156deccc1575efb71c47">MIDI_Source</a>
 , <a class="el" href="d9/d4b/structMIDIMessageQueue_1_1MIDIMessageQueueElement.html#a793b3a9eda73dc58f2d5835739d3877f">MIDIMessageQueue::MIDIMessageQueueElement</a>
 </li>
 <li>operator==()
 : <a class="el" href="d0/d32/structAH_1_1Array.html#a3236075cc6f82b08fe9e78b564e4f68f">Array&lt; T, N &gt;</a>
 , <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#aa3af200fbb7ca45095328bb326695cd2">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
-, <a class="el" href="da/de8/group__AH__Containers.html#ga90ff893e214031a13911b6e4248f0ac8">ArraySlice&lt; T, N, Reverse, Const &gt;</a>
+, <a class="el" href="da/de8/group__AH__Containers.html#ga624f8cf5a37c4ff8ead18122e099f908">ArraySlice&lt; T, N, Reverse, Const &gt;</a>
 , <a class="el" href="dd/dd2/structAH_1_1EulerAngles.html#a0221cd5bdf10c7b66606bcf01f5dae1d">EulerAngles</a>
 , <a class="el" href="da/d32/structAH_1_1Quaternion.html#a691b220deb7791854238f61b60ffd190">Quaternion</a>
 , <a class="el" href="d4/dec/structAH_1_1Vec2f.html#a40cccd13371ea6a67d003c918ec359f9">Vec2f</a>
@@ -289,8 +286,8 @@ $(function() {
 , <a class="el" href="d2/d75/classCable.html#a288abb9c03e757c1f43876793c7c251e">Cable</a>
 , <a class="el" href="d2/d48/classChannel.html#adeec67e44ee2d0daea183b56544ce145">Channel</a>
 , <a class="el" href="db/d52/classDoublyLinkedList_1_1node__iterator__base.html#a19a817fc0385e6135232195e50a32218">DoublyLinkedList&lt; Node &gt;::node_iterator_base&lt; INode &gt;</a>
-, <a class="el" href="d7/d0f/classMIDIAddress.html#a17f843a808f78c00d14f2164f9605042">MIDIAddress</a>
-, <a class="el" href="d7/d46/classMIDIChannelCable.html#a649fec15d31eb3c3a1443524ecb40a84">MIDIChannelCable</a>
+, <a class="el" href="d7/d0f/classMIDIAddress.html#af239af1b305fc28c3400c18092319010">MIDIAddress</a>
+, <a class="el" href="d7/d46/classMIDIChannelCable.html#aa86584a28b2328995cbbc7917f199f6e">MIDIChannelCable</a>
 , <a class="el" href="d4/d61/structMIDIMessage.html#a49671039f159eeb73374b7b4f17d31c1">MIDIMessage</a>
 , <a class="el" href="d6/d99/structRealTimeMessage.html#af0ad82c5f991138b450947edde261820">RealTimeMessage</a>
 , <a class="el" href="db/d45/structSysExMessage.html#a7016744a326738650bfa9d8a4af2863a">SysExMessage</a>
@@ -302,7 +299,7 @@ $(function() {
 : <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#a543e33116f2a6d2d1966b13fd8f6db05">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
 </li>
 <li>operator[]()
-: <a class="el" href="d0/d32/structAH_1_1Array.html#a92afcec6ef2744a6362256565ca6055e">Array&lt; T, N &gt;</a>
+: <a class="el" href="d0/d32/structAH_1_1Array.html#a0decfd96492a17ed60a8a7af5145425f">Array&lt; T, N &gt;</a>
 , <a class="el" href="df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#a63cb79f90807943ec3a6968d8497e20f">ArraySlice&lt; T, N, Reverse, Const &gt;::Iterator</a>
 , <a class="el" href="d2/dc9/classAH_1_1ArraySlice.html#aa46b7e62e49cd65cb988608dcea404b5">ArraySlice&lt; T, N, Reverse, Const &gt;</a>
 , <a class="el" href="d2/dda/classAH_1_1ExtendedIOElement.html#a85777f53430635019f2ec07e76dbddbb">ExtendedIOElement</a>
@@ -313,7 +310,7 @@ $(function() {
 : <a class="el" href="d9/d36/classOutputBank.html#a714358b949943213fffe732ecc73a1b0">OutputBank</a>
 </li>
 <li>OutputBankableMIDIAddress()
-: <a class="el" href="d2/d97/classOutputBankableMIDIAddress.html#ab6815866f204f9158e37402fb8e2a43e">OutputBankableMIDIAddress</a>
+: <a class="el" href="d2/d97/classOutputBankableMIDIAddress.html#a3685f8b7d48404222db6b9c4f0a30c2d">OutputBankableMIDIAddress</a>
 </li>
 <li>OutputBankableMIDIAddress_Base()
 : <a class="el" href="d2/d4e/classOutputBankableMIDIAddress__Base.html#a6e9dce05ca9227882d2a82b699705471">OutputBankableMIDIAddress_Base</a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2101c16d8161fbcee7b09394a468dee37c7a8d5c - src/Banks/BankAddresses.hpp</title>
+  <title>LCOV - f539ec3112b0649b3a8318cf191ba6e0cce0153e - src/Banks/BankAddresses.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2101c16d8161fbcee7b09394a468dee37c7a8d5c</td>
+            <td class="headerValue">f539ec3112b0649b3a8318cf191ba6e0cce0153e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">27</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-11-02 01:33:38</td>
+            <td class="headerValue">2020-11-19 20:43:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">13</td>
@@ -143,11 +143,11 @@
 <a name="73"><span class="lineNum">      73 </span>            :     MIDIAddress first, second;</a>
 <a name="74"><span class="lineNum">      74 </span>            : };</a>
 <a name="75"><span class="lineNum">      75 </span>            : </a>
-<a name="76"><span class="lineNum">      76 </span>            : template &lt;uint8_t nb_rows, uint8_t nb_cols&gt;</a>
+<a name="76"><span class="lineNum">      76 </span>            : template &lt;uint8_t NumRows, uint8_t NumCols&gt;</a>
 <a name="77"><span class="lineNum">      77 </span>            : class MatrixAddress : public OutputBankableMIDIAddress {</a>
 <a name="78"><span class="lineNum">      78 </span>            :   public:</a>
 <a name="79"><span class="lineNum">      79 </span><span class="lineCov">          3 :     MatrixAddress(BaseOutputBankConfig config,</span></a>
-<a name="80"><span class="lineNum">      80 </span>            :                   const AddressMatrix&lt;nb_rows, nb_cols&gt; &amp;addresses,</a>
+<a name="80"><span class="lineNum">      80 </span>            :                   const AddressMatrix&lt;NumRows, NumCols&gt; &amp;addresses,</a>
 <a name="81"><span class="lineNum">      81 </span>            :                   MIDIChannelCable channelCN)</a>
 <a name="82"><span class="lineNum">      82 </span><span class="lineCov">          3 :         : OutputBankableMIDIAddress(config), addresses(addresses),</span></a>
 <a name="83"><span class="lineNum">      83 </span><span class="lineCov">          6 :           channelCN(channelCN) {}</span></a>
@@ -162,7 +162,7 @@
 <a name="92"><span class="lineNum">      92 </span><span class="lineCov">          4 :     }</span></a>
 <a name="93"><span class="lineNum">      93 </span>            : </a>
 <a name="94"><span class="lineNum">      94 </span>            :   private:</a>
-<a name="95"><span class="lineNum">      95 </span>            :     AddressMatrix&lt;nb_rows, nb_cols&gt; addresses;</a>
+<a name="95"><span class="lineNum">      95 </span>            :     AddressMatrix&lt;NumRows, NumCols&gt; addresses;</a>
 <a name="96"><span class="lineNum">      96 </span>            :     MIDIChannelCable channelCN;</a>
 <a name="97"><span class="lineNum">      97 </span>            : };</a>
 <a name="98"><span class="lineNum">      98 </span>            : </a>
@@ -213,12 +213,12 @@
 <a name="143"><span class="lineNum">     143 </span>            :     Array&lt;MIDIAddress, NumBanks&gt; first, second;</a>
 <a name="144"><span class="lineNum">     144 </span>            : };</a>
 <a name="145"><span class="lineNum">     145 </span>            : </a>
-<a name="146"><span class="lineNum">     146 </span>            : template &lt;uint8_t NumBanks, uint8_t nb_rows, uint8_t nb_cols&gt;</a>
+<a name="146"><span class="lineNum">     146 </span>            : template &lt;uint8_t NumBanks, uint8_t NumRows, uint8_t NumCols&gt;</a>
 <a name="147"><span class="lineNum">     147 </span>            : class ManyMatrixAddresses : public ManyAddresses_Base {</a>
 <a name="148"><span class="lineNum">     148 </span>            :   public:</a>
 <a name="149"><span class="lineNum">     149 </span><span class="lineCov">          3 :     ManyMatrixAddresses(</span></a>
 <a name="150"><span class="lineNum">     150 </span>            :         const Bank&lt;NumBanks&gt; &amp;bank,</a>
-<a name="151"><span class="lineNum">     151 </span>            :         const Array&lt;AddressMatrix&lt;nb_rows, nb_cols&gt;, NumBanks&gt; &amp;addresses,</a>
+<a name="151"><span class="lineNum">     151 </span>            :         const Array&lt;AddressMatrix&lt;NumRows, NumCols&gt;, NumBanks&gt; &amp;addresses,</a>
 <a name="152"><span class="lineNum">     152 </span>            :         const Array&lt;MIDIChannelCable, NumBanks&gt; &amp;channelCNs)</a>
 <a name="153"><span class="lineNum">     153 </span><span class="lineCov">          3 :         : ManyAddresses_Base(bank), addresses(addresses), </span></a>
 <a name="154"><span class="lineNum">     154 </span><span class="lineCov">          6 :           channelCNs(channelCNs) {}</span></a>
@@ -229,7 +229,7 @@
 <a name="159"><span class="lineNum">     159 </span>            :     }</a>
 <a name="160"><span class="lineNum">     160 </span>            : </a>
 <a name="161"><span class="lineNum">     161 </span>            :   private:</a>
-<a name="162"><span class="lineNum">     162 </span>            :     Array&lt;AddressMatrix&lt;nb_rows, nb_cols&gt;, NumBanks&gt; addresses;</a>
+<a name="162"><span class="lineNum">     162 </span>            :     Array&lt;AddressMatrix&lt;NumRows, NumCols&gt;, NumBanks&gt; addresses;</a>
 <a name="163"><span class="lineNum">     163 </span>            :     Array&lt;MIDIChannelCable, NumBanks&gt; channelCNs;</a>
 <a name="164"><span class="lineNum">     164 </span>            : };</a>
 <a name="165"><span class="lineNum">     165 </span>            : </a>

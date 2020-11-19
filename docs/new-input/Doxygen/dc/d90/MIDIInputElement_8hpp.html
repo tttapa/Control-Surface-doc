@@ -94,14 +94,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d9c/MIDIInputElement_8hpp__incl.svg" width="2370" height="1187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d9c/MIDIInputElement_8hpp__incl.svg" width="2626" height="1112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d21/MIDIInputElement_8hpp__dep__incl.svg" width="2152" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d21/MIDIInputElement_8hpp__dep__incl.svg" width="2232" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../dc/d90/MIDIInputElement_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -112,25 +114,34 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for objects that listen for incoming MIDI events.  <a href="../../d9/db1/classMIDIInputElement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement&lt; Type, Matcher &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a> base class is very general: you give it a MIDI message, and it calls the <code><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3" title="Receive a new MIDI message and update the internal state.">updateWith()</a></code> method with that message.  <a href="../../d5/dae/classMatchingMIDIInputElement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html">BankableMatchingMIDIInputElement&lt; Type, Matcher &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a>, but for <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> MIDI Input Elements.  <a href="../../d9/dc0/classBankableMatchingMIDIInputElement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a1aeedbdca9950db6b7042a431ce48657"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/MIDIInputElement_8hpp.html#a1aeedbdca9950db6b7042a431ce48657">MIDIInputElementNote</a> = <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; MIDIMessageType::NOTE_ON &gt;</td></tr>
+<tr class="memdesc:a1aeedbdca9950db6b7042a431ce48657"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI Input Element that listens for MIDI Note On/Off messages.  <a href="../../dc/d90/MIDIInputElement_8hpp.html#a1aeedbdca9950db6b7042a431ce48657">More...</a><br /></td></tr>
 <tr class="separator:a1aeedbdca9950db6b7042a431ce48657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7be97db1d41f4efd464cf6db28a2639"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/MIDIInputElement_8hpp.html#ab7be97db1d41f4efd464cf6db28a2639">MIDIInputElementKP</a> = <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; MIDIMessageType::KEY_PRESSURE &gt;</td></tr>
+<tr class="memdesc:ab7be97db1d41f4efd464cf6db28a2639"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI Input Element that listens for MIDI Key Pressure messages.  <a href="../../dc/d90/MIDIInputElement_8hpp.html#ab7be97db1d41f4efd464cf6db28a2639">More...</a><br /></td></tr>
 <tr class="separator:ab7be97db1d41f4efd464cf6db28a2639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac459fdb3d895cb51df01c3b38a55e2ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/MIDIInputElement_8hpp.html#ac459fdb3d895cb51df01c3b38a55e2ed">MIDIInputElementCC</a> = <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; MIDIMessageType::CONTROL_CHANGE &gt;</td></tr>
+<tr class="memdesc:ac459fdb3d895cb51df01c3b38a55e2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI Input Element that listens for MIDI Control Change messages.  <a href="../../dc/d90/MIDIInputElement_8hpp.html#ac459fdb3d895cb51df01c3b38a55e2ed">More...</a><br /></td></tr>
 <tr class="separator:ac459fdb3d895cb51df01c3b38a55e2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d88bea1bb084c5b65eff20f8c4b513"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/MIDIInputElement_8hpp.html#a28d88bea1bb084c5b65eff20f8c4b513">MIDIInputElementPC</a> = <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; MIDIMessageType::PROGRAM_CHANGE &gt;</td></tr>
+<tr class="memdesc:a28d88bea1bb084c5b65eff20f8c4b513"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI Input Element that listens for MIDI Program Change messages.  <a href="../../dc/d90/MIDIInputElement_8hpp.html#a28d88bea1bb084c5b65eff20f8c4b513">More...</a><br /></td></tr>
 <tr class="separator:a28d88bea1bb084c5b65eff20f8c4b513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b3a8c57de354c3472835267813e978"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/MIDIInputElement_8hpp.html#a58b3a8c57de354c3472835267813e978">MIDIInputElementCP</a> = <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; MIDIMessageType::CHANNEL_PRESSURE &gt;</td></tr>
+<tr class="memdesc:a58b3a8c57de354c3472835267813e978"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI Input Element that listens for MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure messages.  <a href="../../dc/d90/MIDIInputElement_8hpp.html#a58b3a8c57de354c3472835267813e978">More...</a><br /></td></tr>
 <tr class="separator:a58b3a8c57de354c3472835267813e978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd925945ed74bd2db0349c853ddbbdc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/MIDIInputElement_8hpp.html#a7cd925945ed74bd2db0349c853ddbbdc">MIDIInputElementPB</a> = <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; MIDIMessageType::PITCH_BEND &gt;</td></tr>
+<tr class="memdesc:a7cd925945ed74bd2db0349c853ddbbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI Input Element that listens for MIDI Pitch Bend messages.  <a href="../../dc/d90/MIDIInputElement_8hpp.html#a7cd925945ed74bd2db0349c853ddbbdc">More...</a><br /></td></tr>
 <tr class="separator:a7cd925945ed74bd2db0349c853ddbbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe8b074a892c3de863a460dc9bb1572"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/MIDIInputElement_8hpp.html#abfe8b074a892c3de863a460dc9bb1572">MIDIInputElementSysEx</a> = <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; MIDIMessageType::SYSEX_START &gt;</td></tr>
+<tr class="memdesc:abfe8b074a892c3de863a460dc9bb1572"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIDI Input Element that listens for MIDI System Exclusive messages.  <a href="../../dc/d90/MIDIInputElement_8hpp.html#abfe8b074a892c3de863a460dc9bb1572">More...</a><br /></td></tr>
 <tr class="separator:abfe8b074a892c3de863a460dc9bb1572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -146,7 +157,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p>MIDI Input Element that listens for MIDI Note On/Off messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00148">148</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -162,7 +175,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00128">128</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p>MIDI Input Element that listens for MIDI Key Pressure messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -178,7 +193,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00129">129</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p>MIDI Input Element that listens for MIDI Control Change messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -194,7 +211,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00130">130</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p>MIDI Input Element that listens for MIDI Program Change messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00154">154</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -210,7 +229,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00131">131</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p>MIDI Input Element that listens for MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00156">156</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -226,7 +247,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00132">132</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p>MIDI Input Element that listens for MIDI Pitch Bend messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00158">158</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
@@ -242,7 +265,9 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00133">133</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
+<p>MIDI Input Element that listens for MIDI System Exclusive messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00160">160</a> of file <a class="el" href="../../dc/d90/MIDIInputElement_8hpp_source.html">MIDIInputElement.hpp</a>.</p>
 
 </div>
 </div>
