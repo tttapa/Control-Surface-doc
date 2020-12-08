@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['undefined_5frealtime_5f1_5363',['UNDEFINED_REALTIME_1',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5afd74f6bffea1bde4b8250d3be9fb17da',1,'MIDI_MessageTypes.hpp']]],
-  ['undefined_5frealtime_5f2_5364',['UNDEFINED_REALTIME_2',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aada20d627395c47483bf4db796985244',1,'MIDI_MessageTypes.hpp']]],
-  ['undefined_5fsyscommon_5f1_5365',['UNDEFINED_SYSCOMMON_1',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aca4ee7c6dcbbc63464280954033e9277',1,'MIDI_MessageTypes.hpp']]],
-  ['undefined_5fsyscommon_5f2_5366',['UNDEFINED_SYSCOMMON_2',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6b7099a1ca116c9d70bfaab73cc65a57',1,'MIDI_MessageTypes.hpp']]],
-  ['uppercase_5367',['UPPERCASE',['../dc/d69/namespaceAH.html#a0c7d36d3bdf541208a94c83b3a25d239a19d6b87b851ddfd4fdc4f182e2ae0617',1,'AH']]]
+  ['timing_5fclock_5476',['TIMING_CLOCK',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a0d24717929d875f4bd2ec4d23769c7d0',1,'MIDI_MessageTypes.hpp']]],
+  ['tracktion_5frelative_5477',['TRACKTION_RELATIVE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da6ee78ca6dc2affda5d76bf4ea7bd5b2e',1,'RelativeCCSender.hpp']]],
+  ['tune_5frequest_5478',['TUNE_REQUEST',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5af36f7dc41a9100c5e421c15ef83ba071',1,'MIDI_MessageTypes.hpp']]],
+  ['twos_5fcomplement_5479',['TWOS_COMPLEMENT',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da9aa2a35d92976c7de970506c4d19a96c',1,'RelativeCCSender.hpp']]]
 ];

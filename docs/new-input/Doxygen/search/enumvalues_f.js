@@ -1,7 +1,23 @@
 var searchData=
 [
-  ['timing_5fclock_5359',['TIMING_CLOCK',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a0d24717929d875f4bd2ec4d23769c7d0',1,'MIDI_MessageTypes.hpp']]],
-  ['tracktion_5frelative_5360',['TRACKTION_RELATIVE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da6ee78ca6dc2affda5d76bf4ea7bd5b2e',1,'RelativeCCSender.hpp']]],
-  ['tune_5frequest_5361',['TUNE_REQUEST',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5af36f7dc41a9100c5e421c15ef83ba071',1,'MIDI_MessageTypes.hpp']]],
-  ['twos_5fcomplement_5362',['TWOS_COMPLEMENT',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da9aa2a35d92976c7de970506c4d19a96c',1,'RelativeCCSender.hpp']]]
+  ['sign_5fmagnitude_5456',['SIGN_MAGNITUDE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dab7ad87adda84e60b671dc61f369c8c5b',1,'RelativeCCSender.hpp']]],
+  ['single_5fbyte_5457',['SINGLE_BYTE',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a41406a1bccdde61a0508b5bd5daabb1d',1,'MIDI_MessageTypes.hpp']]],
+  ['singledot_5458',['SingleDot',['../d4/de4/structMCU_1_1VPotState.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7f53e1644278277cf1421eb432a25d79',1,'MCU::VPotState']]],
+  ['song_5fposition_5fpointer_5459',['SONG_POSITION_POINTER',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ae1a6326d567083168a736db772a5ec28',1,'MIDI_MessageTypes.hpp']]],
+  ['song_5fselect_5460',['SONG_SELECT',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a0e5be2905b9190e62d5918a41fa9e7d1',1,'MIDI_MessageTypes.hpp']]],
+  ['spread_5461',['Spread',['../d4/de4/structMCU_1_1VPotState.html#a46c8a310cf4c094f8c80e1cb8dc1f911ab60a18a4849bff26d7f8d2b1670a97f6',1,'MCU::VPotState']]],
+  ['start_5462',['START',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ab078ffd28db767c502ac367053f6e0ac',1,'MIDI_MessageTypes.hpp']]],
+  ['stop_5463',['STOP',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a615a46af313786fc4e349f34118be111',1,'MIDI_MessageTypes.hpp']]],
+  ['syscommon_5fmessage_5464',['SYSCOMMON_MESSAGE',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a350769b04fa8903e4e1a11c37c8303f3',1,'MIDIReadEvent.hpp']]],
+  ['sysex_5fchunk_5465',['SYSEX_CHUNK',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a2abfc861b1d858a222dd09c5fef5df4b',1,'MIDIReadEvent.hpp']]],
+  ['sysex_5fend_5466',['SYSEX_END',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aff27b6fbc23aa29b6dfc63c0f34d4e4f',1,'MIDI_MessageTypes.hpp']]],
+  ['sysex_5fend_5f1b_5467',['SYSEX_END_1B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8ac60f422b43a321d92eb4c6d36e2a770a',1,'MIDI_MessageTypes.hpp']]],
+  ['sysex_5fend_5f2b_5468',['SYSEX_END_2B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a2b99ac848095df53c4ad41f294ebd7a4',1,'MIDI_MessageTypes.hpp']]],
+  ['sysex_5fend_5f3b_5469',['SYSEX_END_3B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8ac414c8a689a46e1a5789724921050191',1,'MIDI_MessageTypes.hpp']]],
+  ['sysex_5fmessage_5470',['SYSEX_MESSAGE',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a8f1280ad8f91d7f5b430d906c1a272ef',1,'MIDIReadEvent.hpp']]],
+  ['sysex_5fstart_5471',['SYSEX_START',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6fa589806f029d47693026d61f69b201',1,'MIDI_MessageTypes.hpp']]],
+  ['sysex_5fstart_5fcont_5472',['SYSEX_START_CONT',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8afc35ff82a6116ed79a687cad964426b4',1,'MIDI_MessageTypes.hpp']]],
+  ['system_5fcommon_5f1b_5473',['SYSTEM_COMMON_1B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a3bb54d8b164775953db5d8d465f7f991',1,'MIDI_MessageTypes.hpp']]],
+  ['system_5fcommon_5f2b_5474',['SYSTEM_COMMON_2B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a6f0fff3e5ed7a0bac8be4a3e9c05bf7c',1,'MIDI_MessageTypes.hpp']]],
+  ['system_5fcommon_5f3b_5475',['SYSTEM_COMMON_3B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a9da54b5c3c4c05b853df07a711672951',1,'MIDI_MessageTypes.hpp']]]
 ];

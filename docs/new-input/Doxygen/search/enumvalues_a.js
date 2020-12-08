@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['next_5faddress_5317',['NEXT_ADDRESS',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da409327c43796e5df8d7c790ef99dfac2',1,'RelativeCCSender.hpp']]],
-  ['no_5fmessage_5318',['NO_MESSAGE',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a3b6e8876bb7ebb1a30be0d1611780f7a',1,'MIDIReadEvent.hpp']]],
-  ['note_5foff_5319',['NOTE_OFF',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a64c4eb278d5b288304f476ccbc70d958',1,'NOTE_OFF():&#160;MIDI_MessageTypes.hpp'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a64c4eb278d5b288304f476ccbc70d958',1,'NOTE_OFF():&#160;MIDI_MessageTypes.hpp']]],
-  ['note_5fon_5320',['NOTE_ON',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a42ab8d6057c68dc3ca7829a9173c24a4',1,'NOTE_ON():&#160;MIDI_MessageTypes.hpp'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a42ab8d6057c68dc3ca7829a9173c24a4',1,'NOTE_ON():&#160;MIDI_MessageTypes.hpp']]],
-  ['nothing_5321',['Nothing',['../d7/d83/classAH_1_1IncrementButton.html#a5d74787dedbc4e11c1ab15bf487e61f8a0b44d4e916221e52c4ba47a8efb5e2fc',1,'AH::IncrementButton::Nothing()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#a5d74787dedbc4e11c1ab15bf487e61f8a0b44d4e916221e52c4ba47a8efb5e2fc',1,'AH::IncrementDecrementButtons::Nothing()']]],
-  ['nothingchanged_5322',['NothingChanged',['../dc/d11/structMCU_1_1VUState.html#aa57b1a4e6a1c79233913139635169cf1aeb2ed5f0904a3a5934cfb7998022db5e',1,'MCU::VUState']]],
-  ['nowrap_5323',['NoWrap',['../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5a93ac740a98eb4cc45b853c780ed16c44',1,'Selector.hpp']]]
+  ['mackie_5fcontrol_5frelative_5429',['MACKIE_CONTROL_RELATIVE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dafb57df7f09c11569e6325f0250664288',1,'RelativeCCSender.hpp']]],
+  ['misc_5ffunction_5fcodes_5430',['MISC_FUNCTION_CODES',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a2d398458ffe46eeba0c0f51b3ed6d6bd',1,'MIDI_MessageTypes.hpp']]],
+  ['mtc_5fquarter_5fframe_5431',['MTC_QUARTER_FRAME',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a1956f105dbeecbe80e7f6b93f07ccf10',1,'MIDI_MessageTypes.hpp']]]
 ];

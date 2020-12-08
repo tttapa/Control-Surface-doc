@@ -1,23 +1,13 @@
 var searchData=
 [
-  ['sign_5fmagnitude_5339',['SIGN_MAGNITUDE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dab7ad87adda84e60b671dc61f369c8c5b',1,'RelativeCCSender.hpp']]],
-  ['single_5fbyte_5340',['SINGLE_BYTE',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a41406a1bccdde61a0508b5bd5daabb1d',1,'MIDI_MessageTypes.hpp']]],
-  ['singledot_5341',['SingleDot',['../d4/de4/structMCU_1_1VPotState.html#a46c8a310cf4c094f8c80e1cb8dc1f911a7f53e1644278277cf1421eb432a25d79',1,'MCU::VPotState']]],
-  ['song_5fposition_5fpointer_5342',['SONG_POSITION_POINTER',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ae1a6326d567083168a736db772a5ec28',1,'MIDI_MessageTypes.hpp']]],
-  ['song_5fselect_5343',['SONG_SELECT',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a0e5be2905b9190e62d5918a41fa9e7d1',1,'MIDI_MessageTypes.hpp']]],
-  ['spread_5344',['Spread',['../d4/de4/structMCU_1_1VPotState.html#a46c8a310cf4c094f8c80e1cb8dc1f911ab60a18a4849bff26d7f8d2b1670a97f6',1,'MCU::VPotState']]],
-  ['start_5345',['START',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ab078ffd28db767c502ac367053f6e0ac',1,'MIDI_MessageTypes.hpp']]],
-  ['stop_5346',['STOP',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a615a46af313786fc4e349f34118be111',1,'MIDI_MessageTypes.hpp']]],
-  ['syscommon_5fmessage_5347',['SYSCOMMON_MESSAGE',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a350769b04fa8903e4e1a11c37c8303f3',1,'MIDIReadEvent.hpp']]],
-  ['sysex_5fchunk_5348',['SYSEX_CHUNK',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a2abfc861b1d858a222dd09c5fef5df4b',1,'MIDIReadEvent.hpp']]],
-  ['sysex_5fend_5349',['SYSEX_END',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aff27b6fbc23aa29b6dfc63c0f34d4e4f',1,'MIDI_MessageTypes.hpp']]],
-  ['sysex_5fend_5f1b_5350',['SYSEX_END_1B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8ac60f422b43a321d92eb4c6d36e2a770a',1,'MIDI_MessageTypes.hpp']]],
-  ['sysex_5fend_5f2b_5351',['SYSEX_END_2B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a2b99ac848095df53c4ad41f294ebd7a4',1,'MIDI_MessageTypes.hpp']]],
-  ['sysex_5fend_5f3b_5352',['SYSEX_END_3B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8ac414c8a689a46e1a5789724921050191',1,'MIDI_MessageTypes.hpp']]],
-  ['sysex_5fmessage_5353',['SYSEX_MESSAGE',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a8f1280ad8f91d7f5b430d906c1a272ef',1,'MIDIReadEvent.hpp']]],
-  ['sysex_5fstart_5354',['SYSEX_START',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6fa589806f029d47693026d61f69b201',1,'MIDI_MessageTypes.hpp']]],
-  ['sysex_5fstart_5fcont_5355',['SYSEX_START_CONT',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8afc35ff82a6116ed79a687cad964426b4',1,'MIDI_MessageTypes.hpp']]],
-  ['system_5fcommon_5f1b_5356',['SYSTEM_COMMON_1B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a3bb54d8b164775953db5d8d465f7f991',1,'MIDI_MessageTypes.hpp']]],
-  ['system_5fcommon_5f2b_5357',['SYSTEM_COMMON_2B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a6f0fff3e5ed7a0bac8be4a3e9c05bf7c',1,'MIDI_MessageTypes.hpp']]],
-  ['system_5fcommon_5f3b_5358',['SYSTEM_COMMON_3B',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a9da54b5c3c4c05b853df07a711672951',1,'MIDI_MessageTypes.hpp']]]
+  ['realtime_5fmessage_5446',['REALTIME_MESSAGE',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a8f3bdd6b6cc8ea9bc4be3a5783055d20',1,'MIDIReadEvent.hpp']]],
+  ['reaper_5frelative_5f1_5447',['REAPER_RELATIVE_1',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da8354c1de53d672e7e4394453e785b1c1',1,'RelativeCCSender.hpp']]],
+  ['reaper_5frelative_5f2_5448',['REAPER_RELATIVE_2',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da64b30001175dc43751e63e3480e8fab8',1,'RelativeCCSender.hpp']]],
+  ['reaper_5frelative_5f3_5449',['REAPER_RELATIVE_3',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dad151cd0e3eac5b4d845f061669e131e3',1,'RelativeCCSender.hpp']]],
+  ['released_5450',['Released',['../de/d0d/classAH_1_1Button.html#a5d74787dedbc4e11c1ab15bf487e61f8ad9417ac74f0134b9577d1d85cf422c25',1,'AH::Button']]],
+  ['releasedlong_5451',['ReleasedLong',['../d7/d83/classAH_1_1IncrementButton.html#a5d74787dedbc4e11c1ab15bf487e61f8a7130089a9db2424a4c0a4dd4de732266',1,'AH::IncrementButton']]],
+  ['releasedshort_5452',['ReleasedShort',['../d7/d83/classAH_1_1IncrementButton.html#a5d74787dedbc4e11c1ab15bf487e61f8ae46c6dd3102bc0ef8a6dd119fc6f6cae',1,'AH::IncrementButton']]],
+  ['reset_5453',['Reset',['../df/dc6/classAH_1_1IncrementDecrementButtons.html#a5d74787dedbc4e11c1ab15bf487e61f8a92793663441ced378f4676b8a6524385',1,'AH::IncrementDecrementButtons::Reset()'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ab5859d8721cfdc0312b2838b9c985bc1',1,'RESET():&#160;MIDI_MessageTypes.hpp']]],
+  ['rising_5454',['Rising',['../de/d0d/classAH_1_1Button.html#a5d74787dedbc4e11c1ab15bf487e61f8a6e520e0e7f14dd669c193c4f966da30c',1,'AH::Button']]],
+  ['rms_5455',['RMS',['../d0/d18/classAudioVU_1_1Analyzer.html#a06fc87d81c62e9abb8790b6e5713c55ba4c50a519d2b5f41ab0babdc524a09c57',1,'AudioVU::Analyzer']]]
 ];
