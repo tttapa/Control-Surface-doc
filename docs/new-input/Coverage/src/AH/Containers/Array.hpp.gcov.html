@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2d790de1c4196509ee8b80817d217c9889c6ddf8 - src/AH/Containers/Array.hpp</title>
+  <title>LCOV - dca8ae8ca82d207256a8b4d6f82e07441e9dc48e - src/AH/Containers/Array.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2d790de1c4196509ee8b80817d217c9889c6ddf8</td>
+            <td class="headerValue">dca8ae8ca82d207256a8b4d6f82e07441e9dc48e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">139</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-12-08 13:44:55</td>
+            <td class="headerValue">2021-02-10 01:03:05</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">176</td>
@@ -117,12 +117,12 @@
 <a name="47"><span class="lineNum">      47 </span>            :      * @param   index</a>
 <a name="48"><span class="lineNum">      48 </span>            :      *          The (zero-based) index of the element to return.</a>
 <a name="49"><span class="lineNum">      49 </span>            :      */</a>
-<a name="50"><span class="lineNum">      50 </span><span class="lineCov">       1083 :     T &amp;operator[](size_t index) {</span></a>
-<a name="51"><span class="lineNum">      51 </span><span class="lineCov">       1083 :         if (index &gt;= N) { // TODO</span></a>
+<a name="50"><span class="lineNum">      50 </span><span class="lineCov">       1100 :     T &amp;operator[](size_t index) {</span></a>
+<a name="51"><span class="lineNum">      51 </span><span class="lineCov">       1100 :         if (index &gt;= N) { // TODO</span></a>
 <a name="52"><span class="lineNum">      52 </span><span class="lineCov">          1 :             ERROR(F(&quot;Index out of bounds: &quot;) &lt;&lt; index &lt;&lt; F(&quot; ≥ &quot;) &lt;&lt; N, 0xEDED);</span></a>
 <a name="53"><span class="lineNum">      53 </span>            :             index = N - 1; // LCOV_EXCL_LINE</a>
 <a name="54"><span class="lineNum">      54 </span>            :         }                  // LCOV_EXCL_LINE</a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">       1082 :         return data[index];</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">       1099 :         return data[index];</span></a>
 <a name="56"><span class="lineNum">      56 </span><span class="lineCov">          1 :     }</span></a>
 <a name="57"><span class="lineNum">      57 </span>            : </a>
 <a name="58"><span class="lineNum">      58 </span>            :     /**</a>
@@ -134,12 +134,12 @@
 <a name="64"><span class="lineNum">      64 </span>            :      * @param   index</a>
 <a name="65"><span class="lineNum">      65 </span>            :      *          The (zero-based) index of the element to return.</a>
 <a name="66"><span class="lineNum">      66 </span>            :      */</a>
-<a name="67"><span class="lineNum">      67 </span><span class="lineCov">       1324 :     const T &amp;operator[](size_t index) const {</span></a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">       1324 :         if (index &gt;= N) { // TODO</span></a>
+<a name="67"><span class="lineNum">      67 </span><span class="lineCov">       1327 :     const T &amp;operator[](size_t index) const {</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">       1327 :         if (index &gt;= N) { // TODO</span></a>
 <a name="69"><span class="lineNum">      69 </span><span class="lineCov">          1 :             ERROR(F(&quot;Index out of bounds: &quot;) &lt;&lt; index &lt;&lt; F(&quot; ≥ &quot;) &lt;&lt; N, 0xEDED);</span></a>
 <a name="70"><span class="lineNum">      70 </span>            :             index = N - 1; // LCOV_EXCL_LINE</a>
 <a name="71"><span class="lineNum">      71 </span>            :         }                  // LCOV_EXCL_LINE</a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">       1323 :         return data[index];</span></a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">       1326 :         return data[index];</span></a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">          1 :     }</span></a>
 <a name="74"><span class="lineNum">      74 </span>            : </a>
 <a name="75"><span class="lineNum">      75 </span>            :     /**</a>

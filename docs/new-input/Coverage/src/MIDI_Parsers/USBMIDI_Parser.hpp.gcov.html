@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2d790de1c4196509ee8b80817d217c9889c6ddf8 - src/MIDI_Parsers/USBMIDI_Parser.hpp</title>
+  <title>LCOV - dca8ae8ca82d207256a8b4d6f82e07441e9dc48e - src/MIDI_Parsers/USBMIDI_Parser.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2d790de1c4196509ee8b80817d217c9889c6ddf8</td>
+            <td class="headerValue">dca8ae8ca82d207256a8b4d6f82e07441e9dc48e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">42</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-12-08 13:44:55</td>
+            <td class="headerValue">2021-02-10 01:03:05</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">14</td>
@@ -93,7 +93,7 @@
 <a name="23"><span class="lineNum">      23 </span>            :  * </a>
 <a name="24"><span class="lineNum">      24 </span>            :  * @ingroup MIDIParsers</a>
 <a name="25"><span class="lineNum">      25 </span>            :  */</a>
-<a name="26"><span class="lineNum">      26 </span><span class="lineCov">         90 : class USBMIDI_Parser : public MIDI_Parser {</span></a>
+<a name="26"><span class="lineNum">      26 </span><span class="lineCov">         96 : class USBMIDI_Parser : public MIDI_Parser {</span></a>
 <a name="27"><span class="lineNum">      27 </span>            :   public:</a>
 <a name="28"><span class="lineNum">      28 </span>            :     using MIDIUSBPacket_t = AH::Array&lt;uint8_t, 4&gt;;</a>
 <a name="29"><span class="lineNum">      29 </span>            : </a>
@@ -157,40 +157,40 @@
 <a name="87"><span class="lineNum">      87 </span>            :     }</a>
 <a name="88"><span class="lineNum">      88 </span>            : </a>
 <a name="89"><span class="lineNum">      89 </span><span class="lineCov">          2 :     void storePacket(MIDIUSBPacket_t packet) { storedPacket = packet; }</span></a>
-<a name="90"><span class="lineNum">      90 </span><span class="lineCov">         36 :     bool hasStoredPacket() const { return storedPacket[0] != 0x00; }</span></a>
+<a name="90"><span class="lineNum">      90 </span><span class="lineCov">         39 :     bool hasStoredPacket() const { return storedPacket[0] != 0x00; }</span></a>
 <a name="91"><span class="lineNum">      91 </span><span class="lineCov">          2 :     MIDIUSBPacket_t popStoredPacket() {</span></a>
 <a name="92"><span class="lineNum">      92 </span><span class="lineCov">          2 :         MIDIUSBPacket_t t = storedPacket;</span></a>
 <a name="93"><span class="lineNum">      93 </span><span class="lineCov">          2 :         storedPacket[0] = 0x00;</span></a>
 <a name="94"><span class="lineNum">      94 </span><span class="lineCov">          2 :         return t;</span></a>
 <a name="95"><span class="lineNum">      95 </span>            :     }</a>
 <a name="96"><span class="lineNum">      96 </span>            : </a>
-<a name="97"><span class="lineNum">      97 </span><span class="lineCov">         45 :     Cable activeCable = CABLE_1;</span></a>
+<a name="97"><span class="lineNum">      97 </span><span class="lineCov">         48 :     Cable activeCable = CABLE_1;</span></a>
 <a name="98"><span class="lineNum">      98 </span>            : </a>
 <a name="99"><span class="lineNum">      99 </span>            :   private:</a>
-<a name="100"><span class="lineNum">     100 </span><span class="lineCov">        720 :     SysExBuffer sysexbuffers[USB_MIDI_NUMBER_OF_CABLES] = {};</span></a>
-<a name="101"><span class="lineNum">     101 </span><span class="lineCov">        135 :     MIDIUSBPacket_t storedPacket = {{0x00}};</span></a>
+<a name="100"><span class="lineNum">     100 </span><span class="lineCov">        768 :     SysExBuffer sysexbuffers[USB_MIDI_NUMBER_OF_CABLES] = {};</span></a>
+<a name="101"><span class="lineNum">     101 </span><span class="lineCov">        144 :     MIDIUSBPacket_t storedPacket = {{0x00}};</span></a>
 <a name="102"><span class="lineNum">     102 </span>            : #endif</a>
 <a name="103"><span class="lineNum">     103 </span>            : };</a>
 <a name="104"><span class="lineNum">     104 </span>            : </a>
 <a name="105"><span class="lineNum">     105 </span>            : template &lt;class BytePuller&gt;</a>
-<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         36 : inline MIDIReadEvent USBMIDI_Parser::pull(BytePuller &amp;&amp;puller) {</span></a>
+<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         39 : inline MIDIReadEvent USBMIDI_Parser::pull(BytePuller &amp;&amp;puller) {</span></a>
 <a name="107"><span class="lineNum">     107 </span>            :     // First try resuming the parser, we might have a stored packet that has to</a>
 <a name="108"><span class="lineNum">     108 </span>            :     // be parsed first.</a>
-<a name="109"><span class="lineNum">     109 </span><span class="lineCov">         36 :     MIDIReadEvent evt = resume();</span></a>
-<a name="110"><span class="lineNum">     110 </span><span class="lineCov">         36 :     if (evt != MIDIReadEvent::NO_MESSAGE)</span></a>
+<a name="109"><span class="lineNum">     109 </span><span class="lineCov">         39 :     MIDIReadEvent evt = resume();</span></a>
+<a name="110"><span class="lineNum">     110 </span><span class="lineCov">         39 :     if (evt != MIDIReadEvent::NO_MESSAGE)</span></a>
 <a name="111"><span class="lineNum">     111 </span><span class="lineCov">          1 :         return evt;</span></a>
 <a name="112"><span class="lineNum">     112 </span>            : </a>
 <a name="113"><span class="lineNum">     113 </span>            :     // If resumption didn't produce a message, read new packets from the input</a>
 <a name="114"><span class="lineNum">     114 </span>            :     // and parse them until either we get a message, or until the input runs out</a>
 <a name="115"><span class="lineNum">     115 </span>            :     // of new packets.</a>
-<a name="116"><span class="lineNum">     116 </span><span class="lineCov">         35 :     MIDIUSBPacket_t midiPacket;</span></a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineCov">        138 :     while (puller.pull(midiPacket)) {</span></a>
-<a name="118"><span class="lineNum">     118 </span><span class="lineCov">        128 :         evt = feed(midiPacket);</span></a>
-<a name="119"><span class="lineNum">     119 </span><span class="lineCov">        128 :         if (evt != MIDIReadEvent::NO_MESSAGE)</span></a>
-<a name="120"><span class="lineNum">     120 </span><span class="lineCov">         25 :             return evt;</span></a>
+<a name="116"><span class="lineNum">     116 </span><span class="lineCov">         38 :     MIDIUSBPacket_t midiPacket;</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineCov">        141 :     while (puller.pull(midiPacket)) {</span></a>
+<a name="118"><span class="lineNum">     118 </span><span class="lineCov">        131 :         evt = feed(midiPacket);</span></a>
+<a name="119"><span class="lineNum">     119 </span><span class="lineCov">        131 :         if (evt != MIDIReadEvent::NO_MESSAGE)</span></a>
+<a name="120"><span class="lineNum">     120 </span><span class="lineCov">         28 :             return evt;</span></a>
 <a name="121"><span class="lineNum">     121 </span>            :     }</a>
 <a name="122"><span class="lineNum">     122 </span><span class="lineCov">         10 :     return MIDIReadEvent::NO_MESSAGE;</span></a>
-<a name="123"><span class="lineNum">     123 </span><span class="lineCov">         36 : }</span></a>
+<a name="123"><span class="lineNum">     123 </span><span class="lineCov">         39 : }</span></a>
 <a name="124"><span class="lineNum">     124 </span>            : </a>
 <a name="125"><span class="lineNum">     125 </span>            : END_CS_NAMESPACE</a>
 </pre>

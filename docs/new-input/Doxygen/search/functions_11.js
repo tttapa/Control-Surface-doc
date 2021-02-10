@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['throughisunstalledorstalledby_4288',['throughIsUnstalledOrStalledBy',['../df/d72/classMIDI__Pipe.html#ae7b3fe26f4a4a7a3d52f559fb0a4eabd',1,'MIDI_Pipe']]],
-  ['timedisplay_4289',['TimeDisplay',['../df/d69/classMCU_1_1TimeDisplay.html#ab6a607b1abfe4a4ac7853c9973aba444',1,'MCU::TimeDisplay']]],
-  ['timedisplaydisplay_4290',['TimeDisplayDisplay',['../d1/dc8/classMCU_1_1TimeDisplayDisplay.html#a8ad23b9c139715c5eabc2ff1a5db18c1',1,'MCU::TimeDisplayDisplay']]],
-  ['timer_4291',['Timer',['../d2/de5/classAH_1_1Timer.html#a601e4fc3c3d5fa54634192a88819ad5a',1,'AH::Timer']]],
-  ['tobinaryoffset7bit_4292',['toBinaryOffset7bit',['../d3/dd0/classRelativeCCSender.html#a479b94b4b2b2db91c9496c11b7e53108',1,'RelativeCCSender']]],
-  ['togglemode_4293',['toggleMode',['../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a2ffa1ba1cd260f6e8ffd484452c3bab7',1,'AH::DotBarDisplayLEDs']]],
-  ['togglestate_4294',['toggleState',['../d3/d88/classMIDIButtonLatched.html#a7def7b10d27c522241dae74f6138f277',1,'MIDIButtonLatched::toggleState()'],['../df/dca/classBankable_1_1MIDIButtonLatched.html#a7def7b10d27c522241dae74f6138f277',1,'Bankable::MIDIButtonLatched::toggleState()']]],
-  ['tosignedmagnitude7bit_4295',['toSignedMagnitude7bit',['../d3/dd0/classRelativeCCSender.html#ab2236b813cb0119ec3a71928b0ccbd54',1,'RelativeCCSender']]],
-  ['totwoscomplement7bit_4296',['toTwosComplement7bit',['../d3/dd0/classRelativeCCSender.html#a2038628e7b5c5e4c53ea5c1ea4be6f29',1,'RelativeCCSender']]],
-  ['transposer_4297',['Transposer',['../da/db8/classTransposer.html#ac2f66d4849ef7ba03605bc8aaf95333e',1,'Transposer']]],
-  ['twobytemidimatcher_4298',['TwoByteMIDIMatcher',['../d8/d6b/structTwoByteMIDIMatcher.html#ac122245d3bb5b86495e13d7008f6f09f',1,'TwoByteMIDIMatcher']]],
-  ['twobyterangemidimatcher_4299',['TwoByteRangeMIDIMatcher',['../d1/d7a/structTwoByteRangeMIDIMatcher.html#a0d98b5e829eeae673d2906f047b897e8',1,'TwoByteRangeMIDIMatcher']]]
+  ['throughisunstalledorstalledby_4411',['throughIsUnstalledOrStalledBy',['../df/d72/classMIDI__Pipe.html#ae7b3fe26f4a4a7a3d52f559fb0a4eabd',1,'MIDI_Pipe']]],
+  ['timedisplay_4412',['TimeDisplay',['../df/d69/classMCU_1_1TimeDisplay.html#ab6a607b1abfe4a4ac7853c9973aba444',1,'MCU::TimeDisplay']]],
+  ['timedisplaydisplay_4413',['TimeDisplayDisplay',['../d1/dc8/classMCU_1_1TimeDisplayDisplay.html#a8ad23b9c139715c5eabc2ff1a5db18c1',1,'MCU::TimeDisplayDisplay']]],
+  ['timeout_5fcallback_4414',['timeout_callback',['../d1/dd4/classPluggableUSBMIDI.html#a41acc00ed84d7f5e7dbed71a7cfa57c2',1,'PluggableUSBMIDI']]],
+  ['timer_4415',['Timer',['../d2/de5/classAH_1_1Timer.html#a601e4fc3c3d5fa54634192a88819ad5a',1,'AH::Timer']]],
+  ['tobinaryoffset7bit_4416',['toBinaryOffset7bit',['../d3/dd0/classRelativeCCSender.html#a479b94b4b2b2db91c9496c11b7e53108',1,'RelativeCCSender']]],
+  ['togglemode_4417',['toggleMode',['../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a2ffa1ba1cd260f6e8ffd484452c3bab7',1,'AH::DotBarDisplayLEDs']]],
+  ['togglestate_4418',['toggleState',['../d3/d88/classMIDIButtonLatched.html#a7def7b10d27c522241dae74f6138f277',1,'MIDIButtonLatched::toggleState()'],['../df/dca/classBankable_1_1MIDIButtonLatched.html#a7def7b10d27c522241dae74f6138f277',1,'Bankable::MIDIButtonLatched::toggleState()']]],
+  ['tosignedmagnitude7bit_4419',['toSignedMagnitude7bit',['../d3/dd0/classRelativeCCSender.html#ab2236b813cb0119ec3a71928b0ccbd54',1,'RelativeCCSender']]],
+  ['totwoscomplement7bit_4420',['toTwosComplement7bit',['../d3/dd0/classRelativeCCSender.html#a2038628e7b5c5e4c53ea5c1ea4be6f29',1,'RelativeCCSender']]],
+  ['transposer_4421',['Transposer',['../da/db8/classTransposer.html#ac2f66d4849ef7ba03605bc8aaf95333e',1,'Transposer']]],
+  ['twobytemidimatcher_4422',['TwoByteMIDIMatcher',['../d8/d6b/structTwoByteMIDIMatcher.html#ac122245d3bb5b86495e13d7008f6f09f',1,'TwoByteMIDIMatcher']]],
+  ['twobyterangemidimatcher_4423',['TwoByteRangeMIDIMatcher',['../d1/d7a/structTwoByteRangeMIDIMatcher.html#a0d98b5e829eeae673d2906f047b897e8',1,'TwoByteRangeMIDIMatcher']]]
 ];

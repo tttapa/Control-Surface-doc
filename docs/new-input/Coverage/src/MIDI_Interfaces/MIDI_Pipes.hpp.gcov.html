@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 2d790de1c4196509ee8b80817d217c9889c6ddf8 - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
+  <title>LCOV - dca8ae8ca82d207256a8b4d6f82e07441e9dc48e - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">2d790de1c4196509ee8b80817d217c9889c6ddf8</td>
+            <td class="headerValue">dca8ae8ca82d207256a8b4d6f82e07441e9dc48e</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">112</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-12-08 13:44:55</td>
+            <td class="headerValue">2021-02-10 01:03:05</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">65</td>
@@ -140,7 +140,7 @@
 <a name="70"><span class="lineNum">      70 </span>            : class MIDI_Sink {</a>
 <a name="71"><span class="lineNum">      71 </span>            :   public:</a>
 <a name="72"><span class="lineNum">      72 </span>            :     /// Default constructor.</a>
-<a name="73"><span class="lineNum">      73 </span><span class="lineCov">        443 :     MIDI_Sink() = default;</span></a>
+<a name="73"><span class="lineNum">      73 </span><span class="lineCov">        446 :     MIDI_Sink() = default;</span></a>
 <a name="74"><span class="lineNum">      74 </span>            : </a>
 <a name="75"><span class="lineNum">      75 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="76"><span class="lineNum">      76 </span>            :     MIDI_Sink(const MIDI_Sink &amp;) = delete;</a>
@@ -206,7 +206,7 @@
 <a name="136"><span class="lineNum">     136 </span>            :     void disconnectSourcePipesShallow();</a>
 <a name="137"><span class="lineNum">     137 </span>            : </a>
 <a name="138"><span class="lineNum">     138 </span>            :   protected:</a>
-<a name="139"><span class="lineNum">     139 </span><span class="lineCov">        443 :     MIDI_Pipe *sourcePipe = nullptr;</span></a>
+<a name="139"><span class="lineNum">     139 </span><span class="lineCov">        446 :     MIDI_Pipe *sourcePipe = nullptr;</span></a>
 <a name="140"><span class="lineNum">     140 </span>            : </a>
 <a name="141"><span class="lineNum">     141 </span>            :     friend class MIDI_Pipe;</a>
 <a name="142"><span class="lineNum">     142 </span>            : </a>
@@ -221,7 +221,7 @@
 <a name="151"><span class="lineNum">     151 </span>            : class MIDI_Source {</a>
 <a name="152"><span class="lineNum">     152 </span>            :   public:</a>
 <a name="153"><span class="lineNum">     153 </span>            :     /// Default constructor.</a>
-<a name="154"><span class="lineNum">     154 </span><span class="lineCov">        459 :     MIDI_Source() = default;</span></a>
+<a name="154"><span class="lineNum">     154 </span><span class="lineCov">        462 :     MIDI_Source() = default;</span></a>
 <a name="155"><span class="lineNum">     155 </span>            : </a>
 <a name="156"><span class="lineNum">     156 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="157"><span class="lineNum">     157 </span>            :     MIDI_Source(const MIDI_Source &amp;) = delete;</a>
@@ -318,7 +318,7 @@
 <a name="248"><span class="lineNum">     248 </span>            :     void disconnectSinkPipesShallow();</a>
 <a name="249"><span class="lineNum">     249 </span>            : </a>
 <a name="250"><span class="lineNum">     250 </span>            :   protected:</a>
-<a name="251"><span class="lineNum">     251 </span><span class="lineCov">        459 :     MIDI_Pipe *sinkPipe = nullptr;</span></a>
+<a name="251"><span class="lineNum">     251 </span><span class="lineCov">        462 :     MIDI_Pipe *sinkPipe = nullptr;</span></a>
 <a name="252"><span class="lineNum">     252 </span>            : </a>
 <a name="253"><span class="lineNum">     253 </span>            :     friend class MIDI_Pipe;</a>
 <a name="254"><span class="lineNum">     254 </span>            : </a>
@@ -644,7 +644,7 @@
 <a name="574"><span class="lineNum">     574 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
 <a name="575"><span class="lineNum">     575 </span>            : </a>
 <a name="576"><span class="lineNum">     576 </span>            : /// A struct that is both a TrueMIDI_Sink and a TrueMIDI_Source.</a>
-<a name="577"><span class="lineNum">     577 </span><span class="lineCov">        248 : struct TrueMIDI_SinkSource : TrueMIDI_Sink, TrueMIDI_Source {};</span></a>
+<a name="577"><span class="lineNum">     577 </span><span class="lineCov">        254 : struct TrueMIDI_SinkSource : TrueMIDI_Sink, TrueMIDI_Source {};</span></a>
 <a name="578"><span class="lineNum">     578 </span>            : </a>
 <a name="579"><span class="lineNum">     579 </span>            : /// A bidirectional pipe consists of two unidirectional pipes.</a>
 <a name="580"><span class="lineNum">     580 </span>            : using BidirectionalMIDI_Pipe = std::pair&lt;MIDI_Pipe, MIDI_Pipe&gt;;</a>
