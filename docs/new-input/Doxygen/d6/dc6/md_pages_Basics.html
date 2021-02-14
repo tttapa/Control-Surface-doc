@@ -78,17 +78,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md297">MIDI Addresses</a><ul><li class="level2"><a href="#autotoc_md298">Address fields</a></li>
-<li class="level2"><a href="#autotoc_md299">Creating a MIDI address variable</a></li>
-<li class="level2"><a href="#autotoc_md300">Passing MIDI Addresses to MIDI Elements</a></li>
+<ul><li class="level1"><a href="#autotoc_md295">MIDI Addresses</a><ul><li class="level2"><a href="#autotoc_md296">Address fields</a></li>
+<li class="level2"><a href="#autotoc_md297">Creating a MIDI address variable</a></li>
+<li class="level2"><a href="#autotoc_md298">Passing MIDI Addresses to MIDI Elements</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md297"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md295"></a>
 MIDI Addresses</h1>
 <p>All MIDI Input and Output Elements use MIDI addresses that determine the addresses of the MIDI messages they listen for, and the addresses of the messages they send.</p>
-<h2><a class="anchor" id="autotoc_md298"></a>
+<h2><a class="anchor" id="autotoc_md296"></a>
 Address fields</h2>
 <p>The MIDI addresses used by the library have three different fields:</p>
 <ul>
@@ -98,7 +98,7 @@ Address fields</h2>
 </ul>
 <p>The MIDI USB <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> Number is only used on boards that have support for multiple virtual MIDI cables over a single USB connection. As far as I know, only Teensies support this. USB-capable boards that use the MIDIUSB library do not support multiple MIDI cables. <br  />
  Serial (5-pin DIN) MIDI and MIDI over Bluetooth LE have no notion of cables.</p>
-<h2><a class="anchor" id="autotoc_md299"></a>
+<h2><a class="anchor" id="autotoc_md297"></a>
 Creating a MIDI address variable</h2>
 <p>The data type for MIDI addresses is <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>. Click the link in the previous sentence, and have a look at the documentation. If you scroll down to the <em>Constructors</em> section, you'll see that there are different ways to create a <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>. <br  />
  This is the most important one:</p>
@@ -136,7 +136,7 @@ Creating a MIDI address variable</h2>
 <div class="ttc" id="anamespaceMIDI__Notes_html"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html">MIDI_Notes</a></div><div class="ttdoc">MIDI note names.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00014">Notes.hpp:14</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_a559f01ec7251fdc9c5a5bc0e26b97372"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#a559f01ec7251fdc9c5a5bc0e26b97372">MIDI_Notes::note</a></div><div class="ttdeci">constexpr int8_t note(int8_t note, int8_t numOctave)</div><div class="ttdoc">Get the MIDI note in the given octave.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00033">Notes.hpp:33</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_aa62045215ec21ab7da02f2f1868ea7b0"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#aa62045215ec21ab7da02f2f1868ea7b0">MIDI_Notes::C</a></div><div class="ttdeci">constexpr int8_t C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00016">Notes.hpp:16</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md300"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md298"></a>
 Passing MIDI Addresses to MIDI Elements</h2>
 <p>Almost all <a class="el" href="../../d7/dcd/group__MIDIOutputElements.html">MIDI Output Elements</a> and <a class="el" href="../../df/d8b/group__MIDIInputElements.html">MIDI Input Elements</a> take a <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> as a parameter. Initializing the address is very similar to the initialization introduced in the previous section: if you only want to specify the address, just pass it as a parameter, if you want to specify the channel or cable number as well, add a pair of curly braces around it.</p>
 <p>For example: </p><div class="fragment"><div class="line"><span class="comment">// Controller 16 on channel 1 and cable 1:</span></div>

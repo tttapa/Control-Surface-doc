@@ -95,11 +95,15 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifdef ESP32</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if defined(ESP32)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;std::mutex debugmutex;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#elif defined(ARDUINO_ARCH_MBED)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;rtos::Mutex debugmutex;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_a03ed68e9e3d1bbe9a28fd924cb7260c1"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div><div class="ttdeci">#define END_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00010">AH/Settings/NamespaceSettings.hpp:10</a></div></div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_abe0f0e505619b6899c38363f4e42a272"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div><div class="ttdeci">#define BEGIN_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00009">AH/Settings/NamespaceSettings.hpp:9</a></div></div>
 <div class="ttc" id="aDebug_8hpp_html"><div class="ttname"><a href="../../df/dee/Debug_8hpp.html">Debug.hpp</a></div></div>

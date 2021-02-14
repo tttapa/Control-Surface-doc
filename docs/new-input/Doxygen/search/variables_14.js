@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['undo_5361',['UNDO',['../de/d44/group__MCU__Notes.html#ga3d4fa452c126e6044dd7a121db038a8f',1,'MCU']]],
-  ['unlocked_5362',['UNLOCKED',['../d2/d4e/classOutputBankableMIDIAddress__Base.html#a32d523986f90ac9f9aeea28f493e7ff9',1,'OutputBankableMIDIAddress_Base']]],
-  ['up_5363',['UP',['../de/d44/group__MCU__Notes.html#gaf774c817f2988667ae8ec405056a891d',1,'MCU']]],
-  ['updatables_5364',['updatables',['../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08',1,'AH::UpdatableCRTP']]],
-  ['usb_5fconnected_5365',['usb_connected',['../d1/dd4/classPluggableUSBMIDI.html#a4856620b1642701bcfd3f0ad3a06a215',1,'PluggableUSBMIDI']]],
-  ['user_5fswitch_5fa_5366',['USER_SWITCH_A',['../de/d44/group__MCU__Notes.html#gaf8e4d50639dc24e966aeb9d2bbd4c87b',1,'MCU']]],
-  ['user_5fswitch_5fb_5367',['USER_SWITCH_B',['../de/d44/group__MCU__Notes.html#gabd96b3d4cbb9cbe5b52fe54310a0711e',1,'MCU']]],
-  ['using_5fah_5fnamespace_5368',['USING_AH_NAMESPACE',['../dc/de6/Arduino__Helpers_8h.html#acefb7f636631fc5f09ef995b53a5b743',1,'USING_AH_NAMESPACE():&#160;Arduino_Helpers.h'],['../db/dbf/Control__Surface_8h.html#acefb7f636631fc5f09ef995b53a5b743',1,'USING_AH_NAMESPACE():&#160;Control_Surface.h']]],
-  ['using_5fcs_5fnamespace_5369',['USING_CS_NAMESPACE',['../db/dbf/Control__Surface_8h.html#a0a2ff61c9dc56ec3e616104131d938ef',1,'Control_Surface.h']]]
+  ['undo_5397',['UNDO',['../de/d44/group__MCU__Notes.html#ga3d4fa452c126e6044dd7a121db038a8f',1,'MCU']]],
+  ['unlocked_5398',['UNLOCKED',['../d2/d4e/classOutputBankableMIDIAddress__Base.html#a32d523986f90ac9f9aeea28f493e7ff9',1,'OutputBankableMIDIAddress_Base']]],
+  ['up_5399',['UP',['../de/d44/group__MCU__Notes.html#gaf774c817f2988667ae8ec405056a891d',1,'MCU']]],
+  ['updatables_5400',['updatables',['../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08',1,'AH::UpdatableCRTP']]],
+  ['usb_5fconnected_5401',['usb_connected',['../d1/dd4/classPluggableUSBMIDI.html#a4856620b1642701bcfd3f0ad3a06a215',1,'PluggableUSBMIDI']]],
+  ['user_5fswitch_5fa_5402',['USER_SWITCH_A',['../de/d44/group__MCU__Notes.html#gaf8e4d50639dc24e966aeb9d2bbd4c87b',1,'MCU']]],
+  ['user_5fswitch_5fb_5403',['USER_SWITCH_B',['../de/d44/group__MCU__Notes.html#gabd96b3d4cbb9cbe5b52fe54310a0711e',1,'MCU']]],
+  ['using_5fah_5fnamespace_5404',['USING_AH_NAMESPACE',['../dc/de6/Arduino__Helpers_8h.html#acefb7f636631fc5f09ef995b53a5b743',1,'USING_AH_NAMESPACE():&#160;Arduino_Helpers.h'],['../db/dbf/Control__Surface_8h.html#acefb7f636631fc5f09ef995b53a5b743',1,'USING_AH_NAMESPACE():&#160;Control_Surface.h']]],
+  ['using_5fcs_5fnamespace_5405',['USING_CS_NAMESPACE',['../db/dbf/Control__Surface_8h.html#a0a2ff61c9dc56ec3e616104131d938ef',1,'Control_Surface.h']]]
 ];

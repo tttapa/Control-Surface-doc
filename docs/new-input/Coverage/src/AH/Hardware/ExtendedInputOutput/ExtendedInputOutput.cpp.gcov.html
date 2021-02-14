@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - dca8ae8ca82d207256a8b4d6f82e07441e9dc48e - src/AH/Hardware/ExtendedInputOutput/ExtendedInputOutput.cpp</title>
+  <title>LCOV - 4e9a1ccd869f877f4142dea677ef1df59b8d5c36 - src/AH/Hardware/ExtendedInputOutput/ExtendedInputOutput.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">dca8ae8ca82d207256a8b4d6f82e07441e9dc48e</td>
+            <td class="headerValue">4e9a1ccd869f877f4142dea677ef1df59b8d5c36</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">131</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-02-10 01:03:05</td>
+            <td class="headerValue">2021-02-15 00:00:27</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">22</td>
@@ -79,8 +79,8 @@
 <a name="9"><span class="lineNum">       9 </span>            : </a>
 <a name="10"><span class="lineNum">      10 </span>            : namespace ExtIO {</a>
 <a name="11"><span class="lineNum">      11 </span>            : </a>
-<a name="12"><span class="lineNum">      12 </span><span class="lineCov">        749 : bool isNativePin(pin_t pin) {</span></a>
-<a name="13"><span class="lineNum">      13 </span><span class="lineCov">        749 :     return pin &lt; NUM_DIGITAL_PINS + NUM_ANALOG_INPUTS;</span></a>
+<a name="12"><span class="lineNum">      12 </span><span class="lineCov">        614 : bool isNativePin(pin_t pin) {</span></a>
+<a name="13"><span class="lineNum">      13 </span><span class="lineCov">        614 :     return pin &lt; NUM_DIGITAL_PINS + NUM_ANALOG_INPUTS;</span></a>
 <a name="14"><span class="lineNum">      14 </span>            : }</a>
 <a name="15"><span class="lineNum">      15 </span>            : </a>
 <a name="16"><span class="lineNum">      16 </span>            : template &lt;class T&gt;</a>
@@ -106,16 +106,16 @@
 <a name="36"><span class="lineNum">      36 </span><span class="lineCov">          5 :     return static_cast&lt;ArduinoPin_t&gt;(t);</span></a>
 <a name="37"><span class="lineNum">      37 </span>            : }</a>
 <a name="38"><span class="lineNum">      38 </span>            : </a>
-<a name="39"><span class="lineNum">      39 </span><span class="lineCov">        198 : void pinMode(pin_t pin, PinMode_t mode) {</span></a>
-<a name="40"><span class="lineNum">      40 </span><span class="lineCov">        198 :     if (pin == NO_PIN)</span></a>
+<a name="39"><span class="lineNum">      39 </span><span class="lineCov">        123 : void pinMode(pin_t pin, PinMode_t mode) {</span></a>
+<a name="40"><span class="lineNum">      40 </span><span class="lineCov">        123 :     if (pin == NO_PIN)</span></a>
 <a name="41"><span class="lineNum">      41 </span>            :         return; // LCOV_EXCL_LINE</a>
-<a name="42"><span class="lineNum">      42 </span><span class="lineCov">        198 :     else if (isNativePin(pin)) {</span></a>
-<a name="43"><span class="lineNum">      43 </span><span class="lineCov">        192 :         ::pinMode(pin, mode);</span></a>
-<a name="44"><span class="lineNum">      44 </span><span class="lineCov">        192 :     } else {</span></a>
+<a name="42"><span class="lineNum">      42 </span><span class="lineCov">        123 :     else if (isNativePin(pin)) {</span></a>
+<a name="43"><span class="lineNum">      43 </span><span class="lineCov">        117 :         ::pinMode(pin, mode);</span></a>
+<a name="44"><span class="lineNum">      44 </span><span class="lineCov">        117 :     } else {</span></a>
 <a name="45"><span class="lineNum">      45 </span><span class="lineCov">          6 :         auto el = getIOElementOfPin(pin);</span></a>
 <a name="46"><span class="lineNum">      46 </span><span class="lineCov">          6 :         el-&gt;pinMode(pin - el-&gt;getStart(), mode);</span></a>
 <a name="47"><span class="lineNum">      47 </span><span class="lineCov">          6 :     }</span></a>
-<a name="48"><span class="lineNum">      48 </span><span class="lineCov">        198 : }</span></a>
+<a name="48"><span class="lineNum">      48 </span><span class="lineCov">        123 : }</span></a>
 <a name="49"><span class="lineNum">      49 </span><span class="lineCov">          1 : void pinMode(int pin, PinMode_t mode) {</span></a>
 <a name="50"><span class="lineNum">      50 </span><span class="lineCov">          1 :     ::pinMode(arduino_pin_cast(pin), mode);</span></a>
 <a name="51"><span class="lineNum">      51 </span><span class="lineCov">          1 : }</span></a>
@@ -134,16 +134,16 @@
 <a name="64"><span class="lineNum">      64 </span><span class="lineCov">          1 :     ::digitalWrite(arduino_pin_cast(pin), val);</span></a>
 <a name="65"><span class="lineNum">      65 </span><span class="lineCov">          1 : }</span></a>
 <a name="66"><span class="lineNum">      66 </span>            : </a>
-<a name="67"><span class="lineNum">      67 </span><span class="lineCov">        302 : PinStatus_t digitalRead(pin_t pin) {</span></a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        302 :     if (pin == NO_PIN)</span></a>
+<a name="67"><span class="lineNum">      67 </span><span class="lineCov">        242 : PinStatus_t digitalRead(pin_t pin) {</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        242 :     if (pin == NO_PIN)</span></a>
 <a name="69"><span class="lineNum">      69 </span>            :         return LOW; // LCOV_EXCL_LINE</a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">        302 :     else if (isNativePin(pin)) {</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        293 :         return ::digitalRead(pin);</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">        242 :     else if (isNativePin(pin)) {</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        233 :         return ::digitalRead(pin);</span></a>
 <a name="72"><span class="lineNum">      72 </span>            :     } else {</a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">          9 :         auto el = getIOElementOfPin(pin);</span></a>
 <a name="74"><span class="lineNum">      74 </span><span class="lineCov">          9 :         return el-&gt;digitalRead(pin - el-&gt;getStart());</span></a>
 <a name="75"><span class="lineNum">      75 </span><span class="lineCov">          9 :     }</span></a>
-<a name="76"><span class="lineNum">      76 </span><span class="lineCov">        300 : }</span></a>
+<a name="76"><span class="lineNum">      76 </span><span class="lineCov">        240 : }</span></a>
 <a name="77"><span class="lineNum">      77 </span><span class="lineCov">          1 : PinStatus_t digitalRead(int pin) {</span></a>
 <a name="78"><span class="lineNum">      78 </span><span class="lineCov">          1 :     return ::digitalRead(arduino_pin_cast(pin));</span></a>
 <a name="79"><span class="lineNum">      79 </span>            : }</a>

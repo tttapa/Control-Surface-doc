@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Control Surface: USBHostMIDIBackend&lt; MaxPacketSize, RXQueueSize &gt; Class Template Reference</title>
+<title>Control Surface: USBHostMIDIBackend&lt; MaxPacketSize &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -76,34 +76,27 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d0/df4/classUSBHostMIDIBackend-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">USBHostMIDIBackend&lt; MaxPacketSize, RXQueueSize &gt; Class Template Reference</div>  </div>
+<div class="title">USBHostMIDIBackend&lt; MaxPacketSize &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">MIDI_Interfaces/USBHostMIDI_Interface.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;size_t MaxPacketSize = 512, size_t RXQueueSize = 400&gt;<br />
-class USBHostMIDIBackend&lt; MaxPacketSize, RXQueueSize &gt;</h3>
+<div class="textblock"><h3>template&lt;size_t MaxPacketSize = 512&gt;<br />
+class USBHostMIDIBackend&lt; MaxPacketSize &gt;</h3>
 
 <p>MIDI over USB backend for the Teensy <a href="https://github.com/PaulStoffregen/USBHost_t36">USBHost_t36</a> library. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for USBHostMIDIBackend&lt; MaxPacketSize, RXQueueSize &gt;:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for USBHostMIDIBackend&lt; MaxPacketSize &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d60/classUSBHostMIDIBackend__inherit__graph.svg" width="255" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for USBHostMIDIBackend&lt; MaxPacketSize, RXQueueSize &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/dd8/classUSBHostMIDIBackend__coll__graph.svg" width="255" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/dd8/classUSBHostMIDIBackend__coll__graph.svg" width="447" height="1300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -124,16 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94e4bd8be37354a41541bb5d3237120f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">preferImmediateSend</a> ()</td></tr>
 <tr class="separator:a94e4bd8be37354a41541bb5d3237120f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a21bffc0105c29ccd07b5175be8dbd366"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a21bffc0105c29ccd07b5175be8dbd366">rx</a> [MaxPacketSize/4]</td></tr>
-<tr class="separator:a21bffc0105c29ccd07b5175be8dbd366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6435f2ad07f1a06661b193e6666993b2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a6435f2ad07f1a06661b193e6666993b2">tx1</a> [MaxPacketSize/4]</td></tr>
-<tr class="separator:a6435f2ad07f1a06661b193e6666993b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ee5450db33048216f846d519d2b6166"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a3ee5450db33048216f846d519d2b6166">tx2</a> [MaxPacketSize/4]</td></tr>
-<tr class="separator:a3ee5450db33048216f846d519d2b6166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c844a493e4373a6681d59d856879ae"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a19c844a493e4373a6681d59d856879ae">queue</a> [RXQueueSize]</td></tr>
-<tr class="separator:a19c844a493e4373a6681d59d856879ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae85fa6da805ecd16cb90584830862c12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d93/classTeensyHostMIDI.html">TeensyHostMIDI</a>&lt; MaxPacketSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#ae85fa6da805ecd16cb90584830862c12">backend</a></td></tr>
+<tr class="separator:ae85fa6da805ecd16cb90584830862c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="afa563722058cf859e56af41c9b9392d1"></a>
@@ -148,7 +135,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +192,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00021">21</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -255,7 +242,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -282,7 +269,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -309,104 +296,24 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00026">26</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a21bffc0105c29ccd07b5175be8dbd366"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21bffc0105c29ccd07b5175be8dbd366">&#9670;&nbsp;</a></span>rx</h2>
+<a id="ae85fa6da805ecd16cb90584830862c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85fa6da805ecd16cb90584830862c12">&#9670;&nbsp;</a></span>backend</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t rx[MaxPacketSize/4]</td>
+          <td class="memname"><a class="el" href="../../de/d93/classTeensyHostMIDI.html">TeensyHostMIDI</a>&lt;MaxPacketSize&gt; backend</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a6435f2ad07f1a06661b193e6666993b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6435f2ad07f1a06661b193e6666993b2">&#9670;&nbsp;</a></span>tx1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t tx1[MaxPacketSize/4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a3ee5450db33048216f846d519d2b6166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ee5450db33048216f846d519d2b6166">&#9670;&nbsp;</a></span>tx2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t tx2[MaxPacketSize/4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a19c844a493e4373a6681d59d856879ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c844a493e4373a6681d59d856879ae">&#9670;&nbsp;</a></span>queue</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t queue[RXQueueSize]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>

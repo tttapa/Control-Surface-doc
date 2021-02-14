@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - dca8ae8ca82d207256a8b4d6f82e07441e9dc48e - src/AH/PrintStream/PrintStream.hpp</title>
+  <title>LCOV - 4e9a1ccd869f877f4142dea677ef1df59b8d5c36 - src/AH/PrintStream/PrintStream.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">dca8ae8ca82d207256a8b4d6f82e07441e9dc48e</td>
+            <td class="headerValue">4e9a1ccd869f877f4142dea677ef1df59b8d5c36</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">6</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-02-10 01:03:05</td>
+            <td class="headerValue">2021-02-15 00:00:27</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -171,10 +171,10 @@
 <a name="101"><span class="lineNum">     101 </span>            : using std::showbase;</a>
 <a name="102"><span class="lineNum">     102 </span>            : using std::uppercase;</a>
 <a name="103"><span class="lineNum">     103 </span>            : </a>
-<a name="104"><span class="lineNum">     104 </span><span class="lineCov">          4 : inline std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os, uint8_t u) {</span></a>
+<a name="104"><span class="lineNum">     104 </span><span class="lineCov">          2 : inline std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os, uint8_t u) {</span></a>
 <a name="105"><span class="lineNum">     105 </span>            :     // I'm lazy, I should probably implement one for uint8_t to get the leading</a>
 <a name="106"><span class="lineNum">     106 </span>            :     // zeros right</a>
-<a name="107"><span class="lineNum">     107 </span><span class="lineCov">          4 :     return os &lt;&lt; static_cast&lt;unsigned short&gt;(u);</span></a>
+<a name="107"><span class="lineNum">     107 </span><span class="lineCov">          2 :     return os &lt;&lt; static_cast&lt;unsigned short&gt;(u);</span></a>
 <a name="108"><span class="lineNum">     108 </span>            : }</a>
 <a name="109"><span class="lineNum">     109 </span>            : </a>
 <a name="110"><span class="lineNum">     110 </span><span class="lineCov">         48 : inline std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os,</span></a>

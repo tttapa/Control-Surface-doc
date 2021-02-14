@@ -86,13 +86,13 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t N&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>16_t N&gt;</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a6775fabb44f42b7d1c6170233c87921c">    7</a></span>&#160;<a class="code" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html">ShiftRegisterOut&lt;N&gt;::ShiftRegisterOut</a>(<a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> dataPin, <a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> clockPin,</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                      <a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> latchPin, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a43d3c7f80d4a67d87c13e7222466fe28">BitOrder_t</a> bitOrder)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    : <a class="code" href="../../dc/d0e/classAH_1_1ShiftRegisterOutBase.html">ShiftRegisterOutBase</a>&lt;N&gt;(latchPin, bitOrder), dataPin(dataPin),</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      clockPin(clockPin) {}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t N&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>16_t N&gt;</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">ShiftRegisterOut&lt;N&gt;::begin</a>() {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">ExtIO::pinMode</a>(dataPin, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">ExtIO::pinMode</a>(clockPin, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    updateBufferedOutputs();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t N&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>16_t N&gt;</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a20a0229c188bb291fb7388ea74c31abf">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a20a0229c188bb291fb7388ea74c31abf">ShiftRegisterOut&lt;N&gt;::updateBufferedOutputs</a>() {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;dirty)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span>;</div>
