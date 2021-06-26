@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3358c43028712b4a5dd2ac08358a6206117b891f - src/Control_Surface/Control_Surface_Class.cpp</title>
+  <title>LCOV - ae57cf008f10368fa81c78d8a0abae5dffcf9a74 - src/Control_Surface/Control_Surface_Class.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3358c43028712b4a5dd2ac08358a6206117b891f</td>
+            <td class="headerValue">ae57cf008f10368fa81c78d8a0abae5dffcf9a74</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">15</td>
-            <td class="headerCovTableEntry">155</td>
-            <td class="headerCovTableEntryLo">9.7 %</td>
+            <td class="headerCovTableEntry">162</td>
+            <td class="headerCovTableEntryLo">9.3 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-02-28 13:03:43</td>
+            <td class="headerValue">2021-06-26 05:35:40</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
-            <td class="headerCovTableEntry">16</td>
-            <td class="headerCovTableEntryLo">25.0 %</td>
+            <td class="headerCovTableEntry">18</td>
+            <td class="headerCovTableEntryLo">22.2 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -155,193 +155,208 @@
 <a name="85"><span class="lineNum">      85 </span><span class="lineNoCov">          0 : void Control_Surface_::sendSysExImpl(SysExMessage msg) {</span></a>
 <a name="86"><span class="lineNum">      86 </span><span class="lineNoCov">          0 :     this-&gt;sourceMIDItoPipe(msg);</span></a>
 <a name="87"><span class="lineNum">      87 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="88"><span class="lineNum">      88 </span><span class="lineNoCov">          0 : void Control_Surface_::sendRealTimeImpl(RealTimeMessage msg) {</span></a>
+<a name="88"><span class="lineNum">      88 </span><span class="lineNoCov">          0 : void Control_Surface_::sendSysCommonImpl(SysCommonMessage msg) {</span></a>
 <a name="89"><span class="lineNum">      89 </span><span class="lineNoCov">          0 :     this-&gt;sourceMIDItoPipe(msg);</span></a>
 <a name="90"><span class="lineNum">      90 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="91"><span class="lineNum">      91 </span>            : </a>
-<a name="92"><span class="lineNum">      92 </span><span class="lineNoCov">          0 : void Control_Surface_::sinkMIDIfromPipe(ChannelMessage midimsg) {</span></a>
-<a name="93"><span class="lineNum">      93 </span>            : #ifdef DEBUG_MIDI_PACKETS</a>
-<a name="94"><span class="lineNum">      94 </span>            :     if (midimsg.hasTwoDataBytes())</a>
-<a name="95"><span class="lineNum">      95 </span>            :         DEBUG(&quot;&gt;&gt;&gt; &quot; &lt;&lt; hex &lt;&lt; midimsg.header &lt;&lt; ' ' &lt;&lt; midimsg.data1 &lt;&lt; ' '</a>
-<a name="96"><span class="lineNum">      96 </span>            :                      &lt;&lt; midimsg.data2 &lt;&lt; &quot; (&quot; &lt;&lt; midimsg.cable.getOneBased()</a>
-<a name="97"><span class="lineNum">      97 </span>            :                      &lt;&lt; ')' &lt;&lt; dec);</a>
-<a name="98"><span class="lineNum">      98 </span>            :     else</a>
-<a name="99"><span class="lineNum">      99 </span>            :         DEBUG(&quot;&gt;&gt;&gt; &quot; &lt;&lt; hex &lt;&lt; midimsg.header &lt;&lt; ' ' &lt;&lt; midimsg.data1 &lt;&lt; &quot; (&quot;</a>
-<a name="100"><span class="lineNum">     100 </span>            :                      &lt;&lt; midimsg.cable.getOneBased() &lt;&lt; ')' &lt;&lt; dec);</a>
-<a name="101"><span class="lineNum">     101 </span>            : #endif</a>
-<a name="102"><span class="lineNum">     102 </span>            : </a>
-<a name="103"><span class="lineNum">     103 </span>            :     // If the Channel Message callback exists, call it to see if we have to</a>
-<a name="104"><span class="lineNum">     104 </span>            :     // continue handling it.</a>
-<a name="105"><span class="lineNum">     105 </span><span class="lineNoCov">          0 :     if (channelMessageCallback &amp;&amp; channelMessageCallback(midimsg))</span></a>
-<a name="106"><span class="lineNum">     106 </span><span class="lineNoCov">          0 :         return;</span></a>
-<a name="107"><span class="lineNum">     107 </span>            : </a>
-<a name="108"><span class="lineNum">     108 </span><span class="lineNoCov">          0 :     if (midimsg.getMessageType() == MIDIMessageType::CONTROL_CHANGE &amp;&amp;</span></a>
-<a name="109"><span class="lineNum">     109 </span><span class="lineNoCov">          0 :         midimsg.getData1() == MIDI_CC::Reset_All_Controllers) {</span></a>
-<a name="110"><span class="lineNum">     110 </span>            :         // Reset All Controllers</a>
-<a name="111"><span class="lineNum">     111 </span><span class="lineNoCov">          0 :         DEBUG(F(&quot;Reset All Controllers&quot;));</span></a>
-<a name="112"><span class="lineNum">     112 </span><span class="lineNoCov">          0 :         MIDIInputElementCC::resetAll();</span></a>
-<a name="113"><span class="lineNum">     113 </span><span class="lineNoCov">          0 :         MIDIInputElementCP::resetAll();</span></a>
-<a name="114"><span class="lineNum">     114 </span><span class="lineNoCov">          0 :     } else if (midimsg.getMessageType() == MIDIMessageType::CONTROL_CHANGE &amp;&amp;</span></a>
-<a name="115"><span class="lineNum">     115 </span><span class="lineNoCov">          0 :                midimsg.getData1() == MIDI_CC::All_Notes_Off) {</span></a>
-<a name="116"><span class="lineNum">     116 </span>            :         // All Notes Off</a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineNoCov">          0 :         MIDIInputElementNote::resetAll();</span></a>
-<a name="118"><span class="lineNum">     118 </span><span class="lineNoCov">          0 :     } else {</span></a>
-<a name="119"><span class="lineNum">     119 </span><span class="lineNoCov">          0 :         switch (midimsg.getMessageType()) {</span></a>
-<a name="120"><span class="lineNum">     120 </span>            :             case MIDIMessageType::NOTE_OFF: // fallthrough</a>
-<a name="121"><span class="lineNum">     121 </span>            :             case MIDIMessageType::NOTE_ON:</a>
-<a name="122"><span class="lineNum">     122 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Note elements with new MIDI &quot;</span></a>
-<a name="123"><span class="lineNum">     123 </span>            :                           &quot;message.&quot;));</a>
-<a name="124"><span class="lineNum">     124 </span><span class="lineNoCov">          0 :                 MIDIInputElementNote::updateAllWith(midimsg);</span></a>
-<a name="125"><span class="lineNum">     125 </span><span class="lineNoCov">          0 :                 break;</span></a>
-<a name="126"><span class="lineNum">     126 </span>            :             case MIDIMessageType::KEY_PRESSURE:</a>
-<a name="127"><span class="lineNum">     127 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Key Pressure elements with new MIDI &quot;</span></a>
-<a name="128"><span class="lineNum">     128 </span>            :                           &quot;message.&quot;));</a>
-<a name="129"><span class="lineNum">     129 </span><span class="lineNoCov">          0 :                 MIDIInputElementKP::updateAllWith(midimsg);</span></a>
-<a name="130"><span class="lineNum">     130 </span><span class="lineNoCov">          0 :                 break;</span></a>
-<a name="131"><span class="lineNum">     131 </span>            :             case MIDIMessageType::CONTROL_CHANGE:</a>
-<a name="132"><span class="lineNum">     132 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating CC elements with new MIDI &quot;</span></a>
-<a name="133"><span class="lineNum">     133 </span>            :                           &quot;message.&quot;));</a>
-<a name="134"><span class="lineNum">     134 </span><span class="lineNoCov">          0 :                 MIDIInputElementCC::updateAllWith(midimsg);</span></a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineNoCov">          0 :                 break;</span></a>
-<a name="136"><span class="lineNum">     136 </span>            :             case MIDIMessageType::PROGRAM_CHANGE:</a>
-<a name="137"><span class="lineNum">     137 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Program Change elements with new MIDI &quot;</span></a>
-<a name="138"><span class="lineNum">     138 </span>            :                           &quot;message.&quot;));</a>
-<a name="139"><span class="lineNum">     139 </span><span class="lineNoCov">          0 :                 MIDIInputElementPC::updateAllWith(midimsg);</span></a>
-<a name="140"><span class="lineNum">     140 </span><span class="lineNoCov">          0 :                 break;</span></a>
-<a name="141"><span class="lineNum">     141 </span>            :             case MIDIMessageType::CHANNEL_PRESSURE:</a>
-<a name="142"><span class="lineNum">     142 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Channel Pressure elements with new MIDI &quot;</span></a>
-<a name="143"><span class="lineNum">     143 </span>            :                           &quot;message.&quot;));</a>
-<a name="144"><span class="lineNum">     144 </span><span class="lineNoCov">          0 :                 MIDIInputElementCP::updateAllWith(midimsg);</span></a>
-<a name="145"><span class="lineNum">     145 </span><span class="lineNoCov">          0 :                 break;</span></a>
-<a name="146"><span class="lineNum">     146 </span>            :             case MIDIMessageType::PITCH_BEND:</a>
-<a name="147"><span class="lineNum">     147 </span>            :                 // Channel Pressure</a>
-<a name="148"><span class="lineNum">     148 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Pitch Bend elements with new MIDI &quot;</span></a>
-<a name="149"><span class="lineNum">     149 </span>            :                           &quot;message.&quot;));</a>
-<a name="150"><span class="lineNum">     150 </span><span class="lineNoCov">          0 :                 MIDIInputElementPB::updateAllWith(midimsg);</span></a>
-<a name="151"><span class="lineNum">     151 </span><span class="lineNoCov">          0 :                 break;</span></a>
-<a name="152"><span class="lineNum">     152 </span>            : </a>
-<a name="153"><span class="lineNum">     153 </span>            :             // These MIDI types are not channel messages, so aren't handled here</a>
-<a name="154"><span class="lineNum">     154 </span>            :             // LCOV_EXCL_START</a>
-<a name="155"><span class="lineNum">     155 </span>            :             case MIDIMessageType::SYSEX_START: break;</a>
-<a name="156"><span class="lineNum">     156 </span>            :             case MIDIMessageType::MTC_QUARTER_FRAME: break;</a>
-<a name="157"><span class="lineNum">     157 </span>            :             case MIDIMessageType::SONG_POSITION_POINTER: break;</a>
-<a name="158"><span class="lineNum">     158 </span>            :             case MIDIMessageType::SONG_SELECT: break;</a>
-<a name="159"><span class="lineNum">     159 </span>            :             case MIDIMessageType::UNDEFINED_SYSCOMMON_1: break;</a>
-<a name="160"><span class="lineNum">     160 </span>            :             case MIDIMessageType::UNDEFINED_SYSCOMMON_2: break;</a>
-<a name="161"><span class="lineNum">     161 </span>            :             case MIDIMessageType::TUNE_REQUEST: break;</a>
-<a name="162"><span class="lineNum">     162 </span>            :             case MIDIMessageType::SYSEX_END: break;</a>
-<a name="163"><span class="lineNum">     163 </span>            :             case MIDIMessageType::TIMING_CLOCK: break;</a>
-<a name="164"><span class="lineNum">     164 </span>            :             case MIDIMessageType::UNDEFINED_REALTIME_1: break;</a>
-<a name="165"><span class="lineNum">     165 </span>            :             case MIDIMessageType::START: break;</a>
-<a name="166"><span class="lineNum">     166 </span>            :             case MIDIMessageType::CONTINUE: break;</a>
-<a name="167"><span class="lineNum">     167 </span>            :             case MIDIMessageType::STOP: break;</a>
-<a name="168"><span class="lineNum">     168 </span>            :             case MIDIMessageType::UNDEFINED_REALTIME_2: break;</a>
-<a name="169"><span class="lineNum">     169 </span>            :             case MIDIMessageType::ACTIVE_SENSING: break;</a>
-<a name="170"><span class="lineNum">     170 </span>            :             case MIDIMessageType::RESET: break;</a>
-<a name="171"><span class="lineNum">     171 </span>            :             default:</a>
-<a name="172"><span class="lineNum">     172 </span>            :                 break;</a>
-<a name="173"><span class="lineNum">     173 </span>            :                 // LCOV_EXCL_STOP</a>
-<a name="174"><span class="lineNum">     174 </span>            :         }</a>
-<a name="175"><span class="lineNum">     175 </span>            :     }</a>
-<a name="176"><span class="lineNum">     176 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="177"><span class="lineNum">     177 </span>            : </a>
-<a name="178"><span class="lineNum">     178 </span><span class="lineNoCov">          0 : void Control_Surface_::sinkMIDIfromPipe(SysExMessage msg) {</span></a>
-<a name="179"><span class="lineNum">     179 </span>            : #ifdef DEBUG_MIDI_PACKETS</a>
-<a name="180"><span class="lineNum">     180 </span>            :     const uint8_t *data = msg.data;</a>
-<a name="181"><span class="lineNum">     181 </span>            :     size_t len = msg.length;</a>
-<a name="182"><span class="lineNum">     182 </span>            :     DEBUG_OUT &lt;&lt; &quot;&gt;&gt;&gt; &quot; &lt;&lt; hex;</a>
-<a name="183"><span class="lineNum">     183 </span>            :     for (size_t i = 0; i &lt; len; i++)</a>
-<a name="184"><span class="lineNum">     184 </span>            :         DEBUG_OUT &lt;&lt; data[i] &lt;&lt; ' ';</a>
-<a name="185"><span class="lineNum">     185 </span>            :     DEBUG_OUT &lt;&lt; &quot; (&quot; &lt;&lt; msg.cable &lt;&lt; ')' &lt;&lt; dec &lt;&lt; endl;</a>
-<a name="186"><span class="lineNum">     186 </span>            : #endif</a>
-<a name="187"><span class="lineNum">     187 </span>            :     // If the SysEx Message callback exists, call it to see if we have to</a>
-<a name="188"><span class="lineNum">     188 </span>            :     // continue handling it.</a>
-<a name="189"><span class="lineNum">     189 </span><span class="lineNoCov">          0 :     if (sysExMessageCallback &amp;&amp; sysExMessageCallback(msg))</span></a>
-<a name="190"><span class="lineNum">     190 </span><span class="lineNoCov">          0 :         return;</span></a>
-<a name="191"><span class="lineNum">     191 </span><span class="lineNoCov">          0 :     MIDIInputElementSysEx::updateAllWith(msg);</span></a>
-<a name="192"><span class="lineNum">     192 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="193"><span class="lineNum">     193 </span>            : </a>
-<a name="194"><span class="lineNum">     194 </span><span class="lineNoCov">          0 : void Control_Surface_::sinkMIDIfromPipe(RealTimeMessage rtMessage) {</span></a>
-<a name="195"><span class="lineNum">     195 </span>            : #ifdef DEBUG_MIDI_PACKETS</a>
-<a name="196"><span class="lineNum">     196 </span>            :     DEBUG(&quot;&gt;&gt;&gt; &quot; &lt;&lt; hex &lt;&lt; rtMessage.message &lt;&lt; &quot; (&quot;</a>
-<a name="197"><span class="lineNum">     197 </span>            :                  &lt;&lt; rtMessage.cable.getOneBased() &lt;&lt; ')' &lt;&lt; dec);</a>
-<a name="198"><span class="lineNum">     198 </span>            : #endif</a>
-<a name="199"><span class="lineNum">     199 </span>            : </a>
-<a name="200"><span class="lineNum">     200 </span>            :     // If the Real-Time Message callback exists, call it to see if we have to</a>
-<a name="201"><span class="lineNum">     201 </span>            :     // continue handling it.</a>
-<a name="202"><span class="lineNum">     202 </span><span class="lineNoCov">          0 :     if (realTimeMessageCallback &amp;&amp; realTimeMessageCallback(rtMessage))</span></a>
-<a name="203"><span class="lineNum">     203 </span><span class="lineNoCov">          0 :         return;</span></a>
-<a name="204"><span class="lineNum">     204 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="205"><span class="lineNum">     205 </span>            : </a>
-<a name="206"><span class="lineNum">     206 </span><span class="lineNoCov">          0 : void Control_Surface_::updateInputs() {</span></a>
-<a name="207"><span class="lineNum">     207 </span><span class="lineNoCov">          0 :     MIDIInputElementNote::updateAll();</span></a>
-<a name="208"><span class="lineNum">     208 </span><span class="lineNoCov">          0 :     MIDIInputElementKP::updateAll();</span></a>
-<a name="209"><span class="lineNum">     209 </span><span class="lineNoCov">          0 :     MIDIInputElementCC::updateAll();</span></a>
-<a name="210"><span class="lineNum">     210 </span><span class="lineNoCov">          0 :     MIDIInputElementPC::updateAll();</span></a>
-<a name="211"><span class="lineNum">     211 </span><span class="lineNoCov">          0 :     MIDIInputElementCP::updateAll();</span></a>
-<a name="212"><span class="lineNum">     212 </span><span class="lineNoCov">          0 :     MIDIInputElementPB::updateAll();</span></a>
-<a name="213"><span class="lineNum">     213 </span><span class="lineNoCov">          0 :     MIDIInputElementSysEx::updateAll();</span></a>
-<a name="214"><span class="lineNum">     214 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="215"><span class="lineNum">     215 </span>            : </a>
-<a name="216"><span class="lineNum">     216 </span><span class="lineNoCov">          0 : void Control_Surface_::beginDisplays() {</span></a>
-<a name="217"><span class="lineNum">     217 </span><span class="lineNoCov">          0 :     auto &amp;allElements = DisplayElement::getAll();</span></a>
-<a name="218"><span class="lineNum">     218 </span><span class="lineNoCov">          0 :     auto it = allElements.begin();</span></a>
-<a name="219"><span class="lineNum">     219 </span><span class="lineNoCov">          0 :     auto end = allElements.end();</span></a>
-<a name="220"><span class="lineNum">     220 </span><span class="lineNoCov">          0 :     if (it == end)</span></a>
-<a name="221"><span class="lineNum">     221 </span><span class="lineNoCov">          0 :         return;</span></a>
-<a name="222"><span class="lineNum">     222 </span><span class="lineNoCov">          0 :     auto previousDisplay = &amp;it-&gt;getDisplay();</span></a>
-<a name="223"><span class="lineNum">     223 </span>            :     // Loop over all display elements</a>
-<a name="224"><span class="lineNum">     224 </span><span class="lineNoCov">          0 :     while (true) {</span></a>
-<a name="225"><span class="lineNum">     225 </span><span class="lineNoCov">          0 :         ++it;</span></a>
-<a name="226"><span class="lineNum">     226 </span>            :         // If this is the first element on another display</a>
-<a name="227"><span class="lineNum">     227 </span><span class="lineNoCov">          0 :         if (it == end || &amp;it-&gt;getDisplay() != previousDisplay) {</span></a>
-<a name="228"><span class="lineNum">     228 </span>            :             // Initialize the display</a>
-<a name="229"><span class="lineNum">     229 </span><span class="lineNoCov">          0 :             previousDisplay-&gt;begin();</span></a>
-<a name="230"><span class="lineNum">     230 </span><span class="lineNoCov">          0 :             if (it == end)</span></a>
-<a name="231"><span class="lineNum">     231 </span><span class="lineNoCov">          0 :                 break;</span></a>
-<a name="232"><span class="lineNum">     232 </span><span class="lineNoCov">          0 :             previousDisplay = &amp;it-&gt;getDisplay();</span></a>
-<a name="233"><span class="lineNum">     233 </span><span class="lineNoCov">          0 :         }</span></a>
-<a name="234"><span class="lineNum">     234 </span>            :     }</a>
-<a name="235"><span class="lineNum">     235 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="236"><span class="lineNum">     236 </span>            : </a>
-<a name="237"><span class="lineNum">     237 </span><span class="lineNoCov">          0 : void Control_Surface_::updateDisplays() {</span></a>
-<a name="238"><span class="lineNum">     238 </span><span class="lineNoCov">          0 :     auto &amp;allElements = DisplayElement::getAll();</span></a>
-<a name="239"><span class="lineNum">     239 </span><span class="lineNoCov">          0 :     auto it = allElements.begin();</span></a>
-<a name="240"><span class="lineNum">     240 </span><span class="lineNoCov">          0 :     auto end = allElements.end();</span></a>
-<a name="241"><span class="lineNum">     241 </span><span class="lineNoCov">          0 :     if (it == end)</span></a>
-<a name="242"><span class="lineNum">     242 </span><span class="lineNoCov">          0 :         return;</span></a>
-<a name="243"><span class="lineNum">     243 </span><span class="lineNoCov">          0 :     auto prevIt = it;</span></a>
-<a name="244"><span class="lineNum">     244 </span><span class="lineNoCov">          0 :     auto previousDisplay = &amp;prevIt-&gt;getDisplay();</span></a>
-<a name="245"><span class="lineNum">     245 </span><span class="lineNoCov">          0 :     bool dirty = false;</span></a>
-<a name="246"><span class="lineNum">     246 </span>            :     // Loop over all display elements</a>
-<a name="247"><span class="lineNum">     247 </span><span class="lineNoCov">          0 :     while (true) {</span></a>
-<a name="248"><span class="lineNum">     248 </span><span class="lineNoCov">          0 :         dirty |= it-&gt;getDirty();</span></a>
-<a name="249"><span class="lineNum">     249 </span><span class="lineNoCov">          0 :         ++it;</span></a>
-<a name="250"><span class="lineNum">     250 </span>            :         // If this is the first element on another display</a>
-<a name="251"><span class="lineNum">     251 </span><span class="lineNoCov">          0 :         if (it == end || &amp;it-&gt;getDisplay() != previousDisplay) {</span></a>
-<a name="252"><span class="lineNum">     252 </span>            :             // If there was at least one element on the previous display that</a>
-<a name="253"><span class="lineNum">     253 </span>            :             // has to be redrawn</a>
-<a name="254"><span class="lineNum">     254 </span><span class="lineNoCov">          0 :             if (dirty) {</span></a>
-<a name="255"><span class="lineNum">     255 </span>            :                 // Clear the display</a>
-<a name="256"><span class="lineNum">     256 </span><span class="lineNoCov">          0 :                 previousDisplay-&gt;clearAndDrawBackground();</span></a>
-<a name="257"><span class="lineNum">     257 </span>            :                 // Update all elements on that display</a>
-<a name="258"><span class="lineNum">     258 </span><span class="lineNoCov">          0 :                 for (auto drawIt = prevIt; drawIt != it; ++drawIt)</span></a>
-<a name="259"><span class="lineNum">     259 </span><span class="lineNoCov">          0 :                     drawIt-&gt;draw();</span></a>
-<a name="260"><span class="lineNum">     260 </span>            :                 // Write the buffer to the display</a>
-<a name="261"><span class="lineNum">     261 </span><span class="lineNoCov">          0 :                 previousDisplay-&gt;display();</span></a>
-<a name="262"><span class="lineNum">     262 </span><span class="lineNoCov">          0 :             }</span></a>
-<a name="263"><span class="lineNum">     263 </span><span class="lineNoCov">          0 :             if (it == end)</span></a>
-<a name="264"><span class="lineNum">     264 </span><span class="lineNoCov">          0 :                 break;</span></a>
-<a name="265"><span class="lineNum">     265 </span><span class="lineNoCov">          0 :             prevIt = it;</span></a>
-<a name="266"><span class="lineNum">     266 </span><span class="lineNoCov">          0 :             previousDisplay = &amp;it-&gt;getDisplay();</span></a>
-<a name="267"><span class="lineNum">     267 </span><span class="lineNoCov">          0 :             dirty = false;</span></a>
-<a name="268"><span class="lineNum">     268 </span><span class="lineNoCov">          0 :         }</span></a>
-<a name="269"><span class="lineNum">     269 </span>            :     }</a>
-<a name="270"><span class="lineNum">     270 </span><span class="lineNoCov">          0 : }</span></a>
-<a name="271"><span class="lineNum">     271 </span>            : </a>
-<a name="272"><span class="lineNum">     272 </span><span class="lineCov">          1 : Control_Surface_ &amp;Control_Surface = Control_Surface_::getInstance();</span></a>
-<a name="273"><span class="lineNum">     273 </span>            : </a>
-<a name="274"><span class="lineNum">     274 </span>            : END_CS_NAMESPACE</a>
+<a name="91"><span class="lineNum">      91 </span><span class="lineNoCov">          0 : void Control_Surface_::sendRealTimeImpl(RealTimeMessage msg) {</span></a>
+<a name="92"><span class="lineNum">      92 </span><span class="lineNoCov">          0 :     this-&gt;sourceMIDItoPipe(msg);</span></a>
+<a name="93"><span class="lineNum">      93 </span><span class="lineNoCov">          0 : }</span></a>
+<a name="94"><span class="lineNum">      94 </span>            : </a>
+<a name="95"><span class="lineNum">      95 </span><span class="lineNoCov">          0 : void Control_Surface_::sinkMIDIfromPipe(ChannelMessage midimsg) {</span></a>
+<a name="96"><span class="lineNum">      96 </span>            : #ifdef DEBUG_MIDI_PACKETS</a>
+<a name="97"><span class="lineNum">      97 </span>            :     if (midimsg.hasTwoDataBytes())</a>
+<a name="98"><span class="lineNum">      98 </span>            :         DEBUG(&quot;&gt;&gt;&gt; &quot; &lt;&lt; hex &lt;&lt; midimsg.header &lt;&lt; ' ' &lt;&lt; midimsg.data1 &lt;&lt; ' '</a>
+<a name="99"><span class="lineNum">      99 </span>            :                      &lt;&lt; midimsg.data2 &lt;&lt; &quot; (&quot; &lt;&lt; midimsg.cable.getOneBased()</a>
+<a name="100"><span class="lineNum">     100 </span>            :                      &lt;&lt; ')' &lt;&lt; dec);</a>
+<a name="101"><span class="lineNum">     101 </span>            :     else</a>
+<a name="102"><span class="lineNum">     102 </span>            :         DEBUG(&quot;&gt;&gt;&gt; &quot; &lt;&lt; hex &lt;&lt; midimsg.header &lt;&lt; ' ' &lt;&lt; midimsg.data1 &lt;&lt; &quot; (&quot;</a>
+<a name="103"><span class="lineNum">     103 </span>            :                      &lt;&lt; midimsg.cable.getOneBased() &lt;&lt; ')' &lt;&lt; dec);</a>
+<a name="104"><span class="lineNum">     104 </span>            : #endif</a>
+<a name="105"><span class="lineNum">     105 </span>            : </a>
+<a name="106"><span class="lineNum">     106 </span>            :     // If the Channel Message callback exists, call it to see if we have to</a>
+<a name="107"><span class="lineNum">     107 </span>            :     // continue handling it.</a>
+<a name="108"><span class="lineNum">     108 </span><span class="lineNoCov">          0 :     if (channelMessageCallback &amp;&amp; channelMessageCallback(midimsg))</span></a>
+<a name="109"><span class="lineNum">     109 </span><span class="lineNoCov">          0 :         return;</span></a>
+<a name="110"><span class="lineNum">     110 </span>            : </a>
+<a name="111"><span class="lineNum">     111 </span><span class="lineNoCov">          0 :     if (midimsg.getMessageType() == MIDIMessageType::CONTROL_CHANGE &amp;&amp;</span></a>
+<a name="112"><span class="lineNum">     112 </span><span class="lineNoCov">          0 :         midimsg.getData1() == MIDI_CC::Reset_All_Controllers) {</span></a>
+<a name="113"><span class="lineNum">     113 </span>            :         // Reset All Controllers</a>
+<a name="114"><span class="lineNum">     114 </span><span class="lineNoCov">          0 :         DEBUG(F(&quot;Reset All Controllers&quot;));</span></a>
+<a name="115"><span class="lineNum">     115 </span><span class="lineNoCov">          0 :         MIDIInputElementCC::resetAll();</span></a>
+<a name="116"><span class="lineNum">     116 </span><span class="lineNoCov">          0 :         MIDIInputElementCP::resetAll();</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineNoCov">          0 :     } else if (midimsg.getMessageType() == MIDIMessageType::CONTROL_CHANGE &amp;&amp;</span></a>
+<a name="118"><span class="lineNum">     118 </span><span class="lineNoCov">          0 :                midimsg.getData1() == MIDI_CC::All_Notes_Off) {</span></a>
+<a name="119"><span class="lineNum">     119 </span>            :         // All Notes Off</a>
+<a name="120"><span class="lineNum">     120 </span><span class="lineNoCov">          0 :         MIDIInputElementNote::resetAll();</span></a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineNoCov">          0 :     } else {</span></a>
+<a name="122"><span class="lineNum">     122 </span><span class="lineNoCov">          0 :         switch (midimsg.getMessageType()) {</span></a>
+<a name="123"><span class="lineNum">     123 </span>            :             case MIDIMessageType::NOTE_OFF: // fallthrough</a>
+<a name="124"><span class="lineNum">     124 </span>            :             case MIDIMessageType::NOTE_ON:</a>
+<a name="125"><span class="lineNum">     125 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Note elements with new MIDI &quot;</span></a>
+<a name="126"><span class="lineNum">     126 </span>            :                           &quot;message.&quot;));</a>
+<a name="127"><span class="lineNum">     127 </span><span class="lineNoCov">          0 :                 MIDIInputElementNote::updateAllWith(midimsg);</span></a>
+<a name="128"><span class="lineNum">     128 </span><span class="lineNoCov">          0 :                 break;</span></a>
+<a name="129"><span class="lineNum">     129 </span>            :             case MIDIMessageType::KEY_PRESSURE:</a>
+<a name="130"><span class="lineNum">     130 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Key Pressure elements with new MIDI &quot;</span></a>
+<a name="131"><span class="lineNum">     131 </span>            :                           &quot;message.&quot;));</a>
+<a name="132"><span class="lineNum">     132 </span><span class="lineNoCov">          0 :                 MIDIInputElementKP::updateAllWith(midimsg);</span></a>
+<a name="133"><span class="lineNum">     133 </span><span class="lineNoCov">          0 :                 break;</span></a>
+<a name="134"><span class="lineNum">     134 </span>            :             case MIDIMessageType::CONTROL_CHANGE:</a>
+<a name="135"><span class="lineNum">     135 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating CC elements with new MIDI &quot;</span></a>
+<a name="136"><span class="lineNum">     136 </span>            :                           &quot;message.&quot;));</a>
+<a name="137"><span class="lineNum">     137 </span><span class="lineNoCov">          0 :                 MIDIInputElementCC::updateAllWith(midimsg);</span></a>
+<a name="138"><span class="lineNum">     138 </span><span class="lineNoCov">          0 :                 break;</span></a>
+<a name="139"><span class="lineNum">     139 </span>            :             case MIDIMessageType::PROGRAM_CHANGE:</a>
+<a name="140"><span class="lineNum">     140 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Program Change elements with new MIDI &quot;</span></a>
+<a name="141"><span class="lineNum">     141 </span>            :                           &quot;message.&quot;));</a>
+<a name="142"><span class="lineNum">     142 </span><span class="lineNoCov">          0 :                 MIDIInputElementPC::updateAllWith(midimsg);</span></a>
+<a name="143"><span class="lineNum">     143 </span><span class="lineNoCov">          0 :                 break;</span></a>
+<a name="144"><span class="lineNum">     144 </span>            :             case MIDIMessageType::CHANNEL_PRESSURE:</a>
+<a name="145"><span class="lineNum">     145 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Channel Pressure elements with new MIDI &quot;</span></a>
+<a name="146"><span class="lineNum">     146 </span>            :                           &quot;message.&quot;));</a>
+<a name="147"><span class="lineNum">     147 </span><span class="lineNoCov">          0 :                 MIDIInputElementCP::updateAllWith(midimsg);</span></a>
+<a name="148"><span class="lineNum">     148 </span><span class="lineNoCov">          0 :                 break;</span></a>
+<a name="149"><span class="lineNum">     149 </span>            :             case MIDIMessageType::PITCH_BEND:</a>
+<a name="150"><span class="lineNum">     150 </span>            :                 // Channel Pressure</a>
+<a name="151"><span class="lineNum">     151 </span><span class="lineNoCov">          0 :                 DEBUGFN(F(&quot;Updating Pitch Bend elements with new MIDI &quot;</span></a>
+<a name="152"><span class="lineNum">     152 </span>            :                           &quot;message.&quot;));</a>
+<a name="153"><span class="lineNum">     153 </span><span class="lineNoCov">          0 :                 MIDIInputElementPB::updateAllWith(midimsg);</span></a>
+<a name="154"><span class="lineNum">     154 </span><span class="lineNoCov">          0 :                 break;</span></a>
+<a name="155"><span class="lineNum">     155 </span>            : </a>
+<a name="156"><span class="lineNum">     156 </span>            :             // These MIDI types are not channel messages, so aren't handled here</a>
+<a name="157"><span class="lineNum">     157 </span>            :             // LCOV_EXCL_START</a>
+<a name="158"><span class="lineNum">     158 </span>            :             case MIDIMessageType::SYSEX_START: break;</a>
+<a name="159"><span class="lineNum">     159 </span>            :             case MIDIMessageType::MTC_QUARTER_FRAME: break;</a>
+<a name="160"><span class="lineNum">     160 </span>            :             case MIDIMessageType::SONG_POSITION_POINTER: break;</a>
+<a name="161"><span class="lineNum">     161 </span>            :             case MIDIMessageType::SONG_SELECT: break;</a>
+<a name="162"><span class="lineNum">     162 </span>            :             case MIDIMessageType::UNDEFINED_SYSCOMMON_1: break;</a>
+<a name="163"><span class="lineNum">     163 </span>            :             case MIDIMessageType::UNDEFINED_SYSCOMMON_2: break;</a>
+<a name="164"><span class="lineNum">     164 </span>            :             case MIDIMessageType::TUNE_REQUEST: break;</a>
+<a name="165"><span class="lineNum">     165 </span>            :             case MIDIMessageType::SYSEX_END: break;</a>
+<a name="166"><span class="lineNum">     166 </span>            :             case MIDIMessageType::TIMING_CLOCK: break;</a>
+<a name="167"><span class="lineNum">     167 </span>            :             case MIDIMessageType::UNDEFINED_REALTIME_1: break;</a>
+<a name="168"><span class="lineNum">     168 </span>            :             case MIDIMessageType::START: break;</a>
+<a name="169"><span class="lineNum">     169 </span>            :             case MIDIMessageType::CONTINUE: break;</a>
+<a name="170"><span class="lineNum">     170 </span>            :             case MIDIMessageType::STOP: break;</a>
+<a name="171"><span class="lineNum">     171 </span>            :             case MIDIMessageType::UNDEFINED_REALTIME_2: break;</a>
+<a name="172"><span class="lineNum">     172 </span>            :             case MIDIMessageType::ACTIVE_SENSING: break;</a>
+<a name="173"><span class="lineNum">     173 </span>            :             case MIDIMessageType::RESET: break;</a>
+<a name="174"><span class="lineNum">     174 </span>            :             default:</a>
+<a name="175"><span class="lineNum">     175 </span>            :                 break;</a>
+<a name="176"><span class="lineNum">     176 </span>            :                 // LCOV_EXCL_STOP</a>
+<a name="177"><span class="lineNum">     177 </span>            :         }</a>
+<a name="178"><span class="lineNum">     178 </span>            :     }</a>
+<a name="179"><span class="lineNum">     179 </span><span class="lineNoCov">          0 : }</span></a>
+<a name="180"><span class="lineNum">     180 </span>            : </a>
+<a name="181"><span class="lineNum">     181 </span><span class="lineNoCov">          0 : void Control_Surface_::sinkMIDIfromPipe(SysExMessage msg) {</span></a>
+<a name="182"><span class="lineNum">     182 </span>            : #ifdef DEBUG_MIDI_PACKETS</a>
+<a name="183"><span class="lineNum">     183 </span>            :     const uint8_t *data = msg.data;</a>
+<a name="184"><span class="lineNum">     184 </span>            :     size_t len = msg.length;</a>
+<a name="185"><span class="lineNum">     185 </span>            :     DEBUG_OUT &lt;&lt; &quot;&gt;&gt;&gt; &quot; &lt;&lt; hex;</a>
+<a name="186"><span class="lineNum">     186 </span>            :     for (size_t i = 0; i &lt; len; i++)</a>
+<a name="187"><span class="lineNum">     187 </span>            :         DEBUG_OUT &lt;&lt; data[i] &lt;&lt; ' ';</a>
+<a name="188"><span class="lineNum">     188 </span>            :     DEBUG_OUT &lt;&lt; &quot; (&quot; &lt;&lt; msg.cable &lt;&lt; ')' &lt;&lt; dec &lt;&lt; endl;</a>
+<a name="189"><span class="lineNum">     189 </span>            : #endif</a>
+<a name="190"><span class="lineNum">     190 </span>            :     // If the SysEx Message callback exists, call it to see if we have to</a>
+<a name="191"><span class="lineNum">     191 </span>            :     // continue handling it.</a>
+<a name="192"><span class="lineNum">     192 </span><span class="lineNoCov">          0 :     if (sysExMessageCallback &amp;&amp; sysExMessageCallback(msg))</span></a>
+<a name="193"><span class="lineNum">     193 </span><span class="lineNoCov">          0 :         return;</span></a>
+<a name="194"><span class="lineNum">     194 </span><span class="lineNoCov">          0 :     MIDIInputElementSysEx::updateAllWith(msg);</span></a>
+<a name="195"><span class="lineNum">     195 </span><span class="lineNoCov">          0 : }</span></a>
+<a name="196"><span class="lineNum">     196 </span>            : </a>
+<a name="197"><span class="lineNum">     197 </span><span class="lineNoCov">          0 : void Control_Surface_::sinkMIDIfromPipe(SysCommonMessage msg) {</span></a>
+<a name="198"><span class="lineNum">     198 </span>            : #ifdef DEBUG_MIDI_PACKETS</a>
+<a name="199"><span class="lineNum">     199 </span>            :     DEBUG_OUT &lt;&lt; &quot;&gt;&gt;&gt; &quot; &lt;&lt; hex &lt;&lt; msg.getMessageType() &lt;&lt; ' ' &lt;&lt; msg.getData1()</a>
+<a name="200"><span class="lineNum">     200 </span>            :               &lt;&lt; ' ' &lt;&lt; msg.getData2() &lt;&lt; &quot; (&quot; &lt;&lt; msg.cable &lt;&lt; ')' &lt;&lt; dec</a>
+<a name="201"><span class="lineNum">     201 </span>            :               &lt;&lt; endl;</a>
+<a name="202"><span class="lineNum">     202 </span>            : #endif</a>
+<a name="203"><span class="lineNum">     203 </span>            :     // If the SysEx Message callback exists, call it to see if we have to</a>
+<a name="204"><span class="lineNum">     204 </span>            :     // continue handling it.</a>
+<a name="205"><span class="lineNum">     205 </span><span class="lineNoCov">          0 :     if (sysCommonMessageCallback &amp;&amp; sysCommonMessageCallback(msg))</span></a>
+<a name="206"><span class="lineNum">     206 </span><span class="lineNoCov">          0 :         return;</span></a>
+<a name="207"><span class="lineNum">     207 </span><span class="lineNoCov">          0 : }</span></a>
+<a name="208"><span class="lineNum">     208 </span>            : </a>
+<a name="209"><span class="lineNum">     209 </span><span class="lineNoCov">          0 : void Control_Surface_::sinkMIDIfromPipe(RealTimeMessage rtMessage) {</span></a>
+<a name="210"><span class="lineNum">     210 </span>            : #ifdef DEBUG_MIDI_PACKETS</a>
+<a name="211"><span class="lineNum">     211 </span>            :     DEBUG(&quot;&gt;&gt;&gt; &quot; &lt;&lt; hex &lt;&lt; rtMessage.message &lt;&lt; &quot; (&quot;</a>
+<a name="212"><span class="lineNum">     212 </span>            :                  &lt;&lt; rtMessage.cable.getOneBased() &lt;&lt; ')' &lt;&lt; dec);</a>
+<a name="213"><span class="lineNum">     213 </span>            : #endif</a>
+<a name="214"><span class="lineNum">     214 </span>            : </a>
+<a name="215"><span class="lineNum">     215 </span>            :     // If the Real-Time Message callback exists, call it to see if we have to</a>
+<a name="216"><span class="lineNum">     216 </span>            :     // continue handling it.</a>
+<a name="217"><span class="lineNum">     217 </span><span class="lineNoCov">          0 :     if (realTimeMessageCallback &amp;&amp; realTimeMessageCallback(rtMessage))</span></a>
+<a name="218"><span class="lineNum">     218 </span><span class="lineNoCov">          0 :         return;</span></a>
+<a name="219"><span class="lineNum">     219 </span><span class="lineNoCov">          0 : }</span></a>
+<a name="220"><span class="lineNum">     220 </span>            : </a>
+<a name="221"><span class="lineNum">     221 </span><span class="lineNoCov">          0 : void Control_Surface_::updateInputs() {</span></a>
+<a name="222"><span class="lineNum">     222 </span><span class="lineNoCov">          0 :     MIDIInputElementNote::updateAll();</span></a>
+<a name="223"><span class="lineNum">     223 </span><span class="lineNoCov">          0 :     MIDIInputElementKP::updateAll();</span></a>
+<a name="224"><span class="lineNum">     224 </span><span class="lineNoCov">          0 :     MIDIInputElementCC::updateAll();</span></a>
+<a name="225"><span class="lineNum">     225 </span><span class="lineNoCov">          0 :     MIDIInputElementPC::updateAll();</span></a>
+<a name="226"><span class="lineNum">     226 </span><span class="lineNoCov">          0 :     MIDIInputElementCP::updateAll();</span></a>
+<a name="227"><span class="lineNum">     227 </span><span class="lineNoCov">          0 :     MIDIInputElementPB::updateAll();</span></a>
+<a name="228"><span class="lineNum">     228 </span><span class="lineNoCov">          0 :     MIDIInputElementSysEx::updateAll();</span></a>
+<a name="229"><span class="lineNum">     229 </span><span class="lineNoCov">          0 : }</span></a>
+<a name="230"><span class="lineNum">     230 </span>            : </a>
+<a name="231"><span class="lineNum">     231 </span><span class="lineNoCov">          0 : void Control_Surface_::beginDisplays() {</span></a>
+<a name="232"><span class="lineNum">     232 </span><span class="lineNoCov">          0 :     auto &amp;allElements = DisplayElement::getAll();</span></a>
+<a name="233"><span class="lineNum">     233 </span><span class="lineNoCov">          0 :     auto it = allElements.begin();</span></a>
+<a name="234"><span class="lineNum">     234 </span><span class="lineNoCov">          0 :     auto end = allElements.end();</span></a>
+<a name="235"><span class="lineNum">     235 </span><span class="lineNoCov">          0 :     if (it == end)</span></a>
+<a name="236"><span class="lineNum">     236 </span><span class="lineNoCov">          0 :         return;</span></a>
+<a name="237"><span class="lineNum">     237 </span><span class="lineNoCov">          0 :     auto previousDisplay = &amp;it-&gt;getDisplay();</span></a>
+<a name="238"><span class="lineNum">     238 </span>            :     // Loop over all display elements</a>
+<a name="239"><span class="lineNum">     239 </span><span class="lineNoCov">          0 :     while (true) {</span></a>
+<a name="240"><span class="lineNum">     240 </span><span class="lineNoCov">          0 :         ++it;</span></a>
+<a name="241"><span class="lineNum">     241 </span>            :         // If this is the first element on another display</a>
+<a name="242"><span class="lineNum">     242 </span><span class="lineNoCov">          0 :         if (it == end || &amp;it-&gt;getDisplay() != previousDisplay) {</span></a>
+<a name="243"><span class="lineNum">     243 </span>            :             // Initialize the display</a>
+<a name="244"><span class="lineNum">     244 </span><span class="lineNoCov">          0 :             previousDisplay-&gt;begin();</span></a>
+<a name="245"><span class="lineNum">     245 </span><span class="lineNoCov">          0 :             if (it == end)</span></a>
+<a name="246"><span class="lineNum">     246 </span><span class="lineNoCov">          0 :                 break;</span></a>
+<a name="247"><span class="lineNum">     247 </span><span class="lineNoCov">          0 :             previousDisplay = &amp;it-&gt;getDisplay();</span></a>
+<a name="248"><span class="lineNum">     248 </span><span class="lineNoCov">          0 :         }</span></a>
+<a name="249"><span class="lineNum">     249 </span>            :     }</a>
+<a name="250"><span class="lineNum">     250 </span><span class="lineNoCov">          0 : }</span></a>
+<a name="251"><span class="lineNum">     251 </span>            : </a>
+<a name="252"><span class="lineNum">     252 </span><span class="lineNoCov">          0 : void Control_Surface_::updateDisplays() {</span></a>
+<a name="253"><span class="lineNum">     253 </span><span class="lineNoCov">          0 :     auto &amp;allElements = DisplayElement::getAll();</span></a>
+<a name="254"><span class="lineNum">     254 </span><span class="lineNoCov">          0 :     auto it = allElements.begin();</span></a>
+<a name="255"><span class="lineNum">     255 </span><span class="lineNoCov">          0 :     auto end = allElements.end();</span></a>
+<a name="256"><span class="lineNum">     256 </span><span class="lineNoCov">          0 :     if (it == end)</span></a>
+<a name="257"><span class="lineNum">     257 </span><span class="lineNoCov">          0 :         return;</span></a>
+<a name="258"><span class="lineNum">     258 </span><span class="lineNoCov">          0 :     auto prevIt = it;</span></a>
+<a name="259"><span class="lineNum">     259 </span><span class="lineNoCov">          0 :     auto previousDisplay = &amp;prevIt-&gt;getDisplay();</span></a>
+<a name="260"><span class="lineNum">     260 </span><span class="lineNoCov">          0 :     bool dirty = false;</span></a>
+<a name="261"><span class="lineNum">     261 </span>            :     // Loop over all display elements</a>
+<a name="262"><span class="lineNum">     262 </span><span class="lineNoCov">          0 :     while (true) {</span></a>
+<a name="263"><span class="lineNum">     263 </span><span class="lineNoCov">          0 :         dirty |= it-&gt;getDirty();</span></a>
+<a name="264"><span class="lineNum">     264 </span><span class="lineNoCov">          0 :         ++it;</span></a>
+<a name="265"><span class="lineNum">     265 </span>            :         // If this is the first element on another display</a>
+<a name="266"><span class="lineNum">     266 </span><span class="lineNoCov">          0 :         if (it == end || &amp;it-&gt;getDisplay() != previousDisplay) {</span></a>
+<a name="267"><span class="lineNum">     267 </span>            :             // If there was at least one element on the previous display that</a>
+<a name="268"><span class="lineNum">     268 </span>            :             // has to be redrawn</a>
+<a name="269"><span class="lineNum">     269 </span><span class="lineNoCov">          0 :             if (dirty) {</span></a>
+<a name="270"><span class="lineNum">     270 </span>            :                 // Clear the display</a>
+<a name="271"><span class="lineNum">     271 </span><span class="lineNoCov">          0 :                 previousDisplay-&gt;clearAndDrawBackground();</span></a>
+<a name="272"><span class="lineNum">     272 </span>            :                 // Update all elements on that display</a>
+<a name="273"><span class="lineNum">     273 </span><span class="lineNoCov">          0 :                 for (auto drawIt = prevIt; drawIt != it; ++drawIt)</span></a>
+<a name="274"><span class="lineNum">     274 </span><span class="lineNoCov">          0 :                     drawIt-&gt;draw();</span></a>
+<a name="275"><span class="lineNum">     275 </span>            :                 // Write the buffer to the display</a>
+<a name="276"><span class="lineNum">     276 </span><span class="lineNoCov">          0 :                 previousDisplay-&gt;display();</span></a>
+<a name="277"><span class="lineNum">     277 </span><span class="lineNoCov">          0 :             }</span></a>
+<a name="278"><span class="lineNum">     278 </span><span class="lineNoCov">          0 :             if (it == end)</span></a>
+<a name="279"><span class="lineNum">     279 </span><span class="lineNoCov">          0 :                 break;</span></a>
+<a name="280"><span class="lineNum">     280 </span><span class="lineNoCov">          0 :             prevIt = it;</span></a>
+<a name="281"><span class="lineNum">     281 </span><span class="lineNoCov">          0 :             previousDisplay = &amp;it-&gt;getDisplay();</span></a>
+<a name="282"><span class="lineNum">     282 </span><span class="lineNoCov">          0 :             dirty = false;</span></a>
+<a name="283"><span class="lineNum">     283 </span><span class="lineNoCov">          0 :         }</span></a>
+<a name="284"><span class="lineNum">     284 </span>            :     }</a>
+<a name="285"><span class="lineNum">     285 </span><span class="lineNoCov">          0 : }</span></a>
+<a name="286"><span class="lineNum">     286 </span>            : </a>
+<a name="287"><span class="lineNum">     287 </span><span class="lineCov">          1 : Control_Surface_ &amp;Control_Surface = Control_Surface_::getInstance();</span></a>
+<a name="288"><span class="lineNum">     288 </span>            : </a>
+<a name="289"><span class="lineNum">     289 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

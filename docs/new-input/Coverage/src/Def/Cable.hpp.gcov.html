@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3358c43028712b4a5dd2ac08358a6206117b891f - src/Def/Cable.hpp</title>
+  <title>LCOV - ae57cf008f10368fa81c78d8a0abae5dffcf9a74 - src/Def/Cable.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3358c43028712b4a5dd2ac08358a6206117b891f</td>
+            <td class="headerValue">ae57cf008f10368fa81c78d8a0abae5dffcf9a74</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">8</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-02-28 13:03:43</td>
+            <td class="headerValue">2021-06-26 05:35:40</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">5</td>
@@ -72,8 +72,8 @@
 <a name="2"><span class="lineNum">       2 </span>            : </a>
 <a name="3"><span class="lineNum">       3 </span>            : #pragma once</a>
 <a name="4"><span class="lineNum">       4 </span>            : </a>
-<a name="5"><span class="lineNum">       5 </span>            : #include &lt;Settings/NamespaceSettings.hpp&gt;</a>
-<a name="6"><span class="lineNum">       6 </span>            : #include &lt;stdint.h&gt; // uint8_t</a>
+<a name="5"><span class="lineNum">       5 </span>            : #include &lt;AH/Arduino-Wrapper.h&gt; // Print</a>
+<a name="6"><span class="lineNum">       6 </span>            : #include &lt;Settings/NamespaceSettings.hpp&gt;</a>
 <a name="7"><span class="lineNum">       7 </span>            : </a>
 <a name="8"><span class="lineNum">       8 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="9"><span class="lineNum">       9 </span>            : </a>
@@ -202,7 +202,9 @@
 <a name="132"><span class="lineNum">     132 </span>            : constexpr Cable CABLE_15 = Cable::createCable(15);</a>
 <a name="133"><span class="lineNum">     133 </span>            : constexpr Cable CABLE_16 = Cable::createCable(16);</a>
 <a name="134"><span class="lineNum">     134 </span>            : </a>
-<a name="135"><span class="lineNum">     135 </span>            : END_CS_NAMESPACE</a>
+<a name="135"><span class="lineNum">     135 </span>            : Print &amp;operator&lt;&lt;(Print &amp;, Cable);</a>
+<a name="136"><span class="lineNum">     136 </span>            : </a>
+<a name="137"><span class="lineNum">     137 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

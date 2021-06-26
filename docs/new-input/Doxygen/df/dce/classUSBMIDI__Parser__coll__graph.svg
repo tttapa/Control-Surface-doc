@@ -89,7 +89,7 @@
 <text text-anchor="start" x="70.23" y="-591.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setCable()</text>
 <text text-anchor="start" x="70.23" y="-580.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hasValidChannelMessageHeader()</text>
 <text text-anchor="start" x="70.23" y="-569.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hasValidSystemCommonHeader()</text>
-<text text-anchor="start" x="70.23" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getValue14bit()</text>
+<text text-anchor="start" x="70.23" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getData14bit()</text>
 <text text-anchor="start" x="70.23" y="-547.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sanitize()</text>
 </a>
 </g>
@@ -124,7 +124,7 @@
 </g>
 </g>
 <!-- Node4&#45;&gt;Node1 -->
-<g id="edge7" class="edge">
+<g id="edge6" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <path fill="none" stroke="#404040" d="M108.48,-865.77C86.87,-843.98 64.12,-815.73 52.73,-785 -20.09,-588.54 -20.06,-501.86 72.73,-314 96.14,-266.61 137.84,-225.7 176.77,-194.95"/>
 <polygon fill="none" stroke="#404040" points="177.11,-194.69 179.41,-187.85 186.6,-187.35 184.3,-194.18 177.11,-194.69"/>
@@ -141,36 +141,44 @@
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="../../d6/d99/structRealTimeMessage.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="275.23,-590 275.23,-735 400.23,-735 400.23,-590 275.23,-590"/>
-<text text-anchor="middle" x="337.73" y="-723" font-family="Helvetica,sans-Serif" font-size="10.00">RealTimeMessage</text>
-<polyline fill="none" stroke="black" points="275.23,-716 400.23,-716 "/>
-<text text-anchor="start" x="283.23" y="-704" font-family="Helvetica,sans-Serif" font-size="10.00">+ message</text>
-<polyline fill="none" stroke="black" points="275.23,-697 400.23,-697 "/>
-<text text-anchor="start" x="283.23" y="-685" font-family="Helvetica,sans-Serif" font-size="10.00">+ RealTimeMessage()</text>
-<text text-anchor="start" x="283.23" y="-674" font-family="Helvetica,sans-Serif" font-size="10.00">+ RealTimeMessage()</text>
-<text text-anchor="start" x="283.23" y="-663" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator==()</text>
-<text text-anchor="start" x="283.23" y="-652" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator!=()</text>
-<text text-anchor="start" x="283.23" y="-641" font-family="Helvetica,sans-Serif" font-size="10.00">+ setMessageType()</text>
-<text text-anchor="start" x="283.23" y="-630" font-family="Helvetica,sans-Serif" font-size="10.00">+ getMessageType()</text>
-<text text-anchor="start" x="283.23" y="-619" font-family="Helvetica,sans-Serif" font-size="10.00">+ getCable()</text>
-<text text-anchor="start" x="283.23" y="-608" font-family="Helvetica,sans-Serif" font-size="10.00">+ setCable()</text>
-<text text-anchor="start" x="283.23" y="-597" font-family="Helvetica,sans-Serif" font-size="10.00">+ isValid()</text>
+<polygon fill="white" stroke="black" points="275.23,-546 275.23,-779 426.23,-779 426.23,-546 275.23,-546"/>
+<text text-anchor="middle" x="350.73" y="-767" font-family="Helvetica,sans-Serif" font-size="10.00">RealTimeMessage</text>
+<polyline fill="none" stroke="black" points="275.23,-760 426.23,-760 "/>
+<text text-anchor="start" x="283.23" y="-748" font-family="Helvetica,sans-Serif" font-size="10.00">+ message</text>
+<text text-anchor="start" x="283.23" y="-737" font-family="Helvetica,sans-Serif" font-size="10.00">+ TIMING_CLOCK</text>
+<text text-anchor="start" x="283.23" y="-726" font-family="Helvetica,sans-Serif" font-size="10.00">+ UNDEFINED_REALTIME_1</text>
+<text text-anchor="start" x="283.23" y="-715" font-family="Helvetica,sans-Serif" font-size="10.00">+ START</text>
+<text text-anchor="start" x="283.23" y="-704" font-family="Helvetica,sans-Serif" font-size="10.00">+ CONTINUE</text>
+<text text-anchor="start" x="283.23" y="-693" font-family="Helvetica,sans-Serif" font-size="10.00">+ STOP</text>
+<text text-anchor="start" x="283.23" y="-682" font-family="Helvetica,sans-Serif" font-size="10.00">+ UNDEFINED_REALTIME_2</text>
+<text text-anchor="start" x="283.23" y="-671" font-family="Helvetica,sans-Serif" font-size="10.00">+ ACTIVE_SENSING</text>
+<text text-anchor="start" x="283.23" y="-660" font-family="Helvetica,sans-Serif" font-size="10.00">+ RESET</text>
+<polyline fill="none" stroke="black" points="275.23,-653 426.23,-653 "/>
+<text text-anchor="start" x="283.23" y="-641" font-family="Helvetica,sans-Serif" font-size="10.00">+ RealTimeMessage()</text>
+<text text-anchor="start" x="283.23" y="-630" font-family="Helvetica,sans-Serif" font-size="10.00">+ RealTimeMessage()</text>
+<text text-anchor="start" x="283.23" y="-619" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator==()</text>
+<text text-anchor="start" x="283.23" y="-608" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator!=()</text>
+<text text-anchor="start" x="283.23" y="-597" font-family="Helvetica,sans-Serif" font-size="10.00">+ setMessageType()</text>
+<text text-anchor="start" x="283.23" y="-586" font-family="Helvetica,sans-Serif" font-size="10.00">+ getMessageType()</text>
+<text text-anchor="start" x="283.23" y="-575" font-family="Helvetica,sans-Serif" font-size="10.00">+ getCable()</text>
+<text text-anchor="start" x="283.23" y="-564" font-family="Helvetica,sans-Serif" font-size="10.00">+ setCable()</text>
+<text text-anchor="start" x="283.23" y="-553" font-family="Helvetica,sans-Serif" font-size="10.00">+ isValid()</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#404040" d="M210.93,-853.51C229.05,-832.63 249.07,-808.33 265.73,-785 274.56,-772.64 283.33,-759.15 291.55,-745.8"/>
-<polygon fill="none" stroke="#404040" points="291.79,-745.4 291.49,-738.19 298.02,-735.14 298.33,-742.35 291.79,-745.4"/>
-<text text-anchor="middle" x="269.73" y="-806" font-family="Helvetica,sans-Serif" font-size="10.00"> +cable</text>
+<path fill="none" stroke="#404040" d="M210.78,-851.86C228.6,-831.13 248.46,-807.35 265.73,-785 266.31,-784.26 266.88,-783.51 267.46,-782.76"/>
+<polygon fill="none" stroke="#404040" points="267.74,-782.38 268.18,-775.19 274.99,-772.82 274.55,-780.02 267.74,-782.38"/>
+<text text-anchor="middle" x="268.73" y="-806" font-family="Helvetica,sans-Serif" font-size="10.00"> +cable</text>
 </g>
 <!-- Node5&#45;&gt;Node2 -->
 <g id="edge4" class="edge">
 <title>Node5&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M297.36,-589.87C287.42,-573.24 276.52,-555.79 265.73,-540 248.11,-514.21 227.19,-486.87 208.61,-463.56"/>
-<polygon fill="none" stroke="#404040" points="208.59,-463.53 201.72,-461.35 201.08,-454.17 207.96,-456.35 208.59,-463.53"/>
-<text text-anchor="middle" x="272.73" y="-514" font-family="Helvetica,sans-Serif" font-size="10.00"> #rtmsg</text>
+<path fill="none" stroke="#404040" d="M275.02,-552.66C271.9,-548.37 268.79,-544.14 265.73,-540 246.99,-514.68 225.7,-487.22 207.14,-463.69"/>
+<polygon fill="none" stroke="#404040" points="207.08,-463.62 200.22,-461.39 199.64,-454.2 206.5,-456.43 207.08,-463.62"/>
+<text text-anchor="middle" x="271.73" y="-514" font-family="Helvetica,sans-Serif" font-size="10.00"> #rtmsg</text>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
@@ -195,7 +203,7 @@
 </g>
 </g>
 <!-- Node6&#45;&gt;Node1 -->
-<g id="edge6" class="edge">
+<g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node1</title>
 <path fill="none" stroke="#404040" d="M295.08,-325.34C293.05,-310.68 290.88,-294.9 288.67,-278.92"/>
 <polygon fill="none" stroke="#404040" points="288.62,-278.57 283.84,-273.17 286.98,-266.68 291.76,-272.08 288.62,-278.57"/>

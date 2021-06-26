@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['midi_20over_20usb_5795',['MIDI over USB',['../d8/d4a/md_pages_MIDI-over-USB.html',1,'']]]
+  ['installation_5815',['Installation',['../d8/da8/md_pages_Installation.html',1,'']]]
 ];
