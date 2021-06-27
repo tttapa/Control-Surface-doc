@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 36e6a5c1eddb7004ed3c721579f171c03a7ce0d6 - /home/pieter/.local/include/gmock/gmock-spec-builders.h</title>
+  <title>LCOV - 7dc34088821c0a4524b9dce56d9f521406e56552 - /home/pieter/.local/include/gmock/gmock-spec-builders.h</title>
   <link rel="stylesheet" type="text/css" href="../../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">36e6a5c1eddb7004ed3c721579f171c03a7ce0d6</td>
+            <td class="headerValue">7dc34088821c0a4524b9dce56d9f521406e56552</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">232</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-26 19:39:27</td>
+            <td class="headerValue">2021-06-27 03:53:09</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">652</td>
@@ -706,10 +706,10 @@
 <a name="636"><span class="lineNum">     636 </span>            : // Sequence objects are used by a user to specify the relative order</a>
 <a name="637"><span class="lineNum">     637 </span>            : // in which the expectations should match.  They are copyable (we rely</a>
 <a name="638"><span class="lineNum">     638 </span>            : // on the compiler-defined copy constructor and assignment operator).</a>
-<a name="639"><span class="lineNum">     639 </span><span class="lineCov">         26 : class GTEST_API_ Sequence {</span></a>
+<a name="639"><span class="lineNum">     639 </span><span class="lineCov">         31 : class GTEST_API_ Sequence {</span></a>
 <a name="640"><span class="lineNum">     640 </span>            :  public:</a>
 <a name="641"><span class="lineNum">     641 </span>            :   // Constructs an empty sequence.</a>
-<a name="642"><span class="lineNum">     642 </span><span class="lineCov">         26 :   Sequence() : last_expectation_(new Expectation) {}</span></a>
+<a name="642"><span class="lineNum">     642 </span><span class="lineCov">         31 :   Sequence() : last_expectation_(new Expectation) {}</span></a>
 <a name="643"><span class="lineNum">     643 </span>            : </a>
 <a name="644"><span class="lineNum">     644 </span>            :   // Adds an expectation to this sequence.  The caller must ensure</a>
 <a name="645"><span class="lineNum">     645 </span>            :   // that no other thread is accessing this Sequence object.</a>

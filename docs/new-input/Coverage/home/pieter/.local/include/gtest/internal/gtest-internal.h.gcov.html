@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 36e6a5c1eddb7004ed3c721579f171c03a7ce0d6 - /home/pieter/.local/include/gtest/internal/gtest-internal.h</title>
+  <title>LCOV - 7dc34088821c0a4524b9dce56d9f521406e56552 - /home/pieter/.local/include/gtest/internal/gtest-internal.h</title>
   <link rel="stylesheet" type="text/css" href="../../../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">36e6a5c1eddb7004ed3c721579f171c03a7ce0d6</td>
+            <td class="headerValue">7dc34088821c0a4524b9dce56d9f521406e56552</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">60</td>
@@ -37,11 +37,11 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-26 19:39:27</td>
+            <td class="headerValue">2021-06-27 03:53:09</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">2169</td>
-            <td class="headerCovTableEntry">2171</td>
+            <td class="headerCovTableEntry">2213</td>
+            <td class="headerCovTableEntry">2215</td>
             <td class="headerCovTableEntryHi">99.9 %</td>
           </tr>
           <tr>
@@ -521,14 +521,14 @@
 <a name="451"><span class="lineNum">     451 </span>            : // of a Test object.</a>
 <a name="452"><span class="lineNum">     452 </span>            : class TestFactoryBase {</a>
 <a name="453"><span class="lineNum">     453 </span>            :  public:</a>
-<a name="454"><span class="lineNum">     454 </span><span class="lineCov">        537 :   virtual ~TestFactoryBase() {}</span></a>
+<a name="454"><span class="lineNum">     454 </span><span class="lineCov">        548 :   virtual ~TestFactoryBase() {}</span></a>
 <a name="455"><span class="lineNum">     455 </span>            : </a>
 <a name="456"><span class="lineNum">     456 </span>            :   // Creates a test instance to run. The instance is both created and destroyed</a>
 <a name="457"><span class="lineNum">     457 </span>            :   // within TestInfoImpl::Run()</a>
 <a name="458"><span class="lineNum">     458 </span>            :   virtual Test* CreateTest() = 0;</a>
 <a name="459"><span class="lineNum">     459 </span>            : </a>
 <a name="460"><span class="lineNum">     460 </span>            :  protected:</a>
-<a name="461"><span class="lineNum">     461 </span><span class="lineCov">        537 :   TestFactoryBase() {}</span></a>
+<a name="461"><span class="lineNum">     461 </span><span class="lineCov">        548 :   TestFactoryBase() {}</span></a>
 <a name="462"><span class="lineNum">     462 </span>            : </a>
 <a name="463"><span class="lineNum">     463 </span>            :  private:</a>
 <a name="464"><span class="lineNum">     464 </span>            :   GTEST_DISALLOW_COPY_AND_ASSIGN_(TestFactoryBase);</a>
@@ -537,9 +537,9 @@
 <a name="467"><span class="lineNum">     467 </span>            : // This class provides implementation of TeastFactoryBase interface.</a>
 <a name="468"><span class="lineNum">     468 </span>            : // It is used in TEST and TEST_F macros.</a>
 <a name="469"><span class="lineNum">     469 </span>            : template &lt;class TestClass&gt;</a>
-<a name="470"><span class="lineNum">     470 </span><span class="lineCov">       1611 : class TestFactoryImpl : public TestFactoryBase {</span></a>
+<a name="470"><span class="lineNum">     470 </span><span class="lineCov">       1644 : class TestFactoryImpl : public TestFactoryBase {</span></a>
 <a name="471"><span class="lineNum">     471 </span>            :  public:</a>
-<a name="472"><span class="lineNum">     472 </span><span class="lineCov">        537 :   Test* CreateTest() override { return new TestClass; }</span></a>
+<a name="472"><span class="lineNum">     472 </span><span class="lineCov">        548 :   Test* CreateTest() override { return new TestClass; }</span></a>
 <a name="473"><span class="lineNum">     473 </span>            : };</a>
 <a name="474"><span class="lineNum">     474 </span>            : </a>
 <a name="475"><span class="lineNum">     475 </span>            : #if GTEST_OS_WINDOWS</a>
@@ -559,9 +559,9 @@
 <a name="489"><span class="lineNum">     489 </span>            : using SetUpTestSuiteFunc = void (*)();</a>
 <a name="490"><span class="lineNum">     490 </span>            : using TearDownTestSuiteFunc = void (*)();</a>
 <a name="491"><span class="lineNum">     491 </span>            : </a>
-<a name="492"><span class="lineNum">     492 </span><span class="lineCov">        537 : struct CodeLocation {</span></a>
-<a name="493"><span class="lineNum">     493 </span><span class="lineCov">        537 :   CodeLocation(const std::string&amp; a_file, int a_line)</span></a>
-<a name="494"><span class="lineNum">     494 </span><span class="lineCov">        537 :       : file(a_file), line(a_line) {}</span></a>
+<a name="492"><span class="lineNum">     492 </span><span class="lineCov">        548 : struct CodeLocation {</span></a>
+<a name="493"><span class="lineNum">     493 </span><span class="lineCov">        548 :   CodeLocation(const std::string&amp; a_file, int a_line)</span></a>
+<a name="494"><span class="lineNum">     494 </span><span class="lineCov">        548 :       : file(a_file), line(a_line) {}</span></a>
 <a name="495"><span class="lineNum">     495 </span>            : </a>
 <a name="496"><span class="lineNum">     496 </span>            :   std::string file;</a>
 <a name="497"><span class="lineNum">     497 </span>            :   int line;</a>
@@ -573,9 +573,9 @@
 <a name="503"><span class="lineNum">     503 </span>            : // Utility functions to help SuiteApiResolver</a>
 <a name="504"><span class="lineNum">     504 </span>            : using SetUpTearDownSuiteFuncType = void (*)();</a>
 <a name="505"><span class="lineNum">     505 </span>            : </a>
-<a name="506"><span class="lineNum">     506 </span><span class="lineCov">       2148 : inline SetUpTearDownSuiteFuncType GetNotDefaultOrNull(</span></a>
+<a name="506"><span class="lineNum">     506 </span><span class="lineCov">       2192 : inline SetUpTearDownSuiteFuncType GetNotDefaultOrNull(</span></a>
 <a name="507"><span class="lineNum">     507 </span>            :     SetUpTearDownSuiteFuncType a, SetUpTearDownSuiteFuncType def) {</a>
-<a name="508"><span class="lineNum">     508 </span><span class="lineCov">       2148 :   return a == def ? nullptr : a;</span></a>
+<a name="508"><span class="lineNum">     508 </span><span class="lineCov">       2192 :   return a == def ? nullptr : a;</span></a>
 <a name="509"><span class="lineNum">     509 </span>            : }</a>
 <a name="510"><span class="lineNum">     510 </span>            : </a>
 <a name="511"><span class="lineNum">     511 </span>            : template &lt;typename T&gt;</a>
@@ -588,47 +588,47 @@
 <a name="518"><span class="lineNum">     518 </span>            :   using Test =</a>
 <a name="519"><span class="lineNum">     519 </span>            :       typename std::conditional&lt;sizeof(T) != 0, ::testing::Test, void&gt;::type;</a>
 <a name="520"><span class="lineNum">     520 </span>            : </a>
-<a name="521"><span class="lineNum">     521 </span><span class="lineCov">        537 :   static SetUpTearDownSuiteFuncType GetSetUpCaseOrSuite(const char* filename,</span></a>
+<a name="521"><span class="lineNum">     521 </span><span class="lineCov">        548 :   static SetUpTearDownSuiteFuncType GetSetUpCaseOrSuite(const char* filename,</span></a>
 <a name="522"><span class="lineNum">     522 </span>            :                                                         int line_num) {</a>
 <a name="523"><span class="lineNum">     523 </span>            : #ifndef GTEST_REMOVE_LEGACY_TEST_CASEAPI_</a>
-<a name="524"><span class="lineNum">     524 </span><span class="lineCov">       1074 :     SetUpTearDownSuiteFuncType test_case_fp =</span></a>
-<a name="525"><span class="lineNum">     525 </span><span class="lineCov">        537 :         GetNotDefaultOrNull(&amp;T::SetUpTestCase, &amp;Test::SetUpTestCase);</span></a>
-<a name="526"><span class="lineNum">     526 </span><span class="lineCov">       1074 :     SetUpTearDownSuiteFuncType test_suite_fp =</span></a>
-<a name="527"><span class="lineNum">     527 </span><span class="lineCov">        537 :         GetNotDefaultOrNull(&amp;T::SetUpTestSuite, &amp;Test::SetUpTestSuite);</span></a>
+<a name="524"><span class="lineNum">     524 </span><span class="lineCov">       1096 :     SetUpTearDownSuiteFuncType test_case_fp =</span></a>
+<a name="525"><span class="lineNum">     525 </span><span class="lineCov">        548 :         GetNotDefaultOrNull(&amp;T::SetUpTestCase, &amp;Test::SetUpTestCase);</span></a>
+<a name="526"><span class="lineNum">     526 </span><span class="lineCov">       1096 :     SetUpTearDownSuiteFuncType test_suite_fp =</span></a>
+<a name="527"><span class="lineNum">     527 </span><span class="lineCov">        548 :         GetNotDefaultOrNull(&amp;T::SetUpTestSuite, &amp;Test::SetUpTestSuite);</span></a>
 <a name="528"><span class="lineNum">     528 </span>            : </a>
-<a name="529"><span class="lineNum">     529 </span><span class="lineCov">        537 :     GTEST_CHECK_(!test_case_fp || !test_suite_fp)</span></a>
+<a name="529"><span class="lineNum">     529 </span><span class="lineCov">        548 :     GTEST_CHECK_(!test_case_fp || !test_suite_fp)</span></a>
 <a name="530"><span class="lineNum">     530 </span><span class="lineNoCov">          0 :         &lt;&lt; &quot;Test can not provide both SetUpTestSuite and SetUpTestCase, please &quot;</span></a>
 <a name="531"><span class="lineNum">     531 </span>            :            &quot;make sure there is only one present at &quot;</a>
 <a name="532"><span class="lineNum">     532 </span><span class="lineNoCov">          0 :         &lt;&lt; filename &lt;&lt; &quot;:&quot; &lt;&lt; line_num;</span></a>
 <a name="533"><span class="lineNum">     533 </span>            : </a>
-<a name="534"><span class="lineNum">     534 </span><span class="lineCov">        537 :     return test_case_fp != nullptr ? test_case_fp : test_suite_fp;</span></a>
+<a name="534"><span class="lineNum">     534 </span><span class="lineCov">        548 :     return test_case_fp != nullptr ? test_case_fp : test_suite_fp;</span></a>
 <a name="535"><span class="lineNum">     535 </span>            : #else</a>
 <a name="536"><span class="lineNum">     536 </span>            :     (void)(filename);</a>
 <a name="537"><span class="lineNum">     537 </span>            :     (void)(line_num);</a>
 <a name="538"><span class="lineNum">     538 </span>            :     return &amp;T::SetUpTestSuite;</a>
 <a name="539"><span class="lineNum">     539 </span>            : #endif</a>
-<a name="540"><span class="lineNum">     540 </span><span class="lineCov">        537 :   }</span></a>
+<a name="540"><span class="lineNum">     540 </span><span class="lineCov">        548 :   }</span></a>
 <a name="541"><span class="lineNum">     541 </span>            : </a>
-<a name="542"><span class="lineNum">     542 </span><span class="lineCov">        537 :   static SetUpTearDownSuiteFuncType GetTearDownCaseOrSuite(const char* filename,</span></a>
+<a name="542"><span class="lineNum">     542 </span><span class="lineCov">        548 :   static SetUpTearDownSuiteFuncType GetTearDownCaseOrSuite(const char* filename,</span></a>
 <a name="543"><span class="lineNum">     543 </span>            :                                                            int line_num) {</a>
 <a name="544"><span class="lineNum">     544 </span>            : #ifndef GTEST_REMOVE_LEGACY_TEST_CASEAPI_</a>
-<a name="545"><span class="lineNum">     545 </span><span class="lineCov">       1074 :     SetUpTearDownSuiteFuncType test_case_fp =</span></a>
-<a name="546"><span class="lineNum">     546 </span><span class="lineCov">        537 :         GetNotDefaultOrNull(&amp;T::TearDownTestCase, &amp;Test::TearDownTestCase);</span></a>
-<a name="547"><span class="lineNum">     547 </span><span class="lineCov">       1074 :     SetUpTearDownSuiteFuncType test_suite_fp =</span></a>
-<a name="548"><span class="lineNum">     548 </span><span class="lineCov">        537 :         GetNotDefaultOrNull(&amp;T::TearDownTestSuite, &amp;Test::TearDownTestSuite);</span></a>
+<a name="545"><span class="lineNum">     545 </span><span class="lineCov">       1096 :     SetUpTearDownSuiteFuncType test_case_fp =</span></a>
+<a name="546"><span class="lineNum">     546 </span><span class="lineCov">        548 :         GetNotDefaultOrNull(&amp;T::TearDownTestCase, &amp;Test::TearDownTestCase);</span></a>
+<a name="547"><span class="lineNum">     547 </span><span class="lineCov">       1096 :     SetUpTearDownSuiteFuncType test_suite_fp =</span></a>
+<a name="548"><span class="lineNum">     548 </span><span class="lineCov">        548 :         GetNotDefaultOrNull(&amp;T::TearDownTestSuite, &amp;Test::TearDownTestSuite);</span></a>
 <a name="549"><span class="lineNum">     549 </span>            : </a>
-<a name="550"><span class="lineNum">     550 </span><span class="lineCov">        537 :     GTEST_CHECK_(!test_case_fp || !test_suite_fp)</span></a>
+<a name="550"><span class="lineNum">     550 </span><span class="lineCov">        548 :     GTEST_CHECK_(!test_case_fp || !test_suite_fp)</span></a>
 <a name="551"><span class="lineNum">     551 </span><span class="lineNoCov">          0 :         &lt;&lt; &quot;Test can not provide both TearDownTestSuite and TearDownTestCase,&quot;</span></a>
 <a name="552"><span class="lineNum">     552 </span>            :            &quot; please make sure there is only one present at&quot;</a>
 <a name="553"><span class="lineNum">     553 </span><span class="lineNoCov">          0 :         &lt;&lt; filename &lt;&lt; &quot;:&quot; &lt;&lt; line_num;</span></a>
 <a name="554"><span class="lineNum">     554 </span>            : </a>
-<a name="555"><span class="lineNum">     555 </span><span class="lineCov">        537 :     return test_case_fp != nullptr ? test_case_fp : test_suite_fp;</span></a>
+<a name="555"><span class="lineNum">     555 </span><span class="lineCov">        548 :     return test_case_fp != nullptr ? test_case_fp : test_suite_fp;</span></a>
 <a name="556"><span class="lineNum">     556 </span>            : #else</a>
 <a name="557"><span class="lineNum">     557 </span>            :     (void)(filename);</a>
 <a name="558"><span class="lineNum">     558 </span>            :     (void)(line_num);</a>
 <a name="559"><span class="lineNum">     559 </span>            :     return &amp;T::TearDownTestSuite;</a>
 <a name="560"><span class="lineNum">     560 </span>            : #endif</a>
-<a name="561"><span class="lineNum">     561 </span><span class="lineCov">        537 :   }</span></a>
+<a name="561"><span class="lineNum">     561 </span><span class="lineCov">        548 :   }</span></a>
 <a name="562"><span class="lineNum">     562 </span>            : };</a>
 <a name="563"><span class="lineNum">     563 </span>            : </a>
 <a name="564"><span class="lineNum">     564 </span>            : // Creates a new TestInfo object and registers it with Google Test;</a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 36e6a5c1eddb7004ed3c721579f171c03a7ce0d6 - /home/pieter/.local/include/gtest/gtest.h</title>
+  <title>LCOV - 7dc34088821c0a4524b9dce56d9f521406e56552 - /home/pieter/.local/include/gtest/gtest.h</title>
   <link rel="stylesheet" type="text/css" href="../../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">36e6a5c1eddb7004ed3c721579f171c03a7ce0d6</td>
+            <td class="headerValue">7dc34088821c0a4524b9dce56d9f521406e56552</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">26</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-26 19:39:27</td>
+            <td class="headerValue">2021-06-27 03:53:09</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">153</td>
@@ -350,7 +350,7 @@
 <a name="280"><span class="lineNum">     280 </span>            : //   Expected: Foo() is even</a>
 <a name="281"><span class="lineNum">     281 </span>            : //     Actual: it's 5</a>
 <a name="282"><span class="lineNum">     282 </span>            : //</a>
-<a name="283"><span class="lineNum">     283 </span><span class="lineCov">    1005705 : class GTEST_API_ AssertionResult {</span></a>
+<a name="283"><span class="lineNum">     283 </span><span class="lineCov">    1005773 : class GTEST_API_ AssertionResult {</span></a>
 <a name="284"><span class="lineNum">     284 </span>            :  public:</a>
 <a name="285"><span class="lineNum">     285 </span>            :   // Copy constructor.</a>
 <a name="286"><span class="lineNum">     286 </span>            :   // Used in EXPECT_TRUE/FALSE(assertion_result).</a>
@@ -391,7 +391,7 @@
 <a name="321"><span class="lineNum">     321 </span>            :   }</a>
 <a name="322"><span class="lineNum">     322 </span>            : </a>
 <a name="323"><span class="lineNum">     323 </span>            :   // Returns true if and only if the assertion succeeded.</a>
-<a name="324"><span class="lineNum">     324 </span><span class="lineCov">    1005705 :   operator bool() const { return success_; }  // NOLINT</span></a>
+<a name="324"><span class="lineNum">     324 </span><span class="lineCov">    1005773 :   operator bool() const { return success_; }  // NOLINT</span></a>
 <a name="325"><span class="lineNum">     325 </span>            : </a>
 <a name="326"><span class="lineNum">     326 </span>            :   // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.</a>
 <a name="327"><span class="lineNum">     327 </span>            :   AssertionResult operator!() const;</a>
@@ -1608,16 +1608,16 @@
 <a name="1538"><span class="lineNum">    1538 </span>            : </a>
 <a name="1539"><span class="lineNum">    1539 </span>            : // The helper function for {ASSERT|EXPECT}_EQ.</a>
 <a name="1540"><span class="lineNum">    1540 </span>            : template &lt;typename T1, typename T2&gt;</a>
-<a name="1541"><span class="lineNum">    1541 </span><span class="lineCov">       2847 : AssertionResult CmpHelperEQ(const char* lhs_expression,</span></a>
+<a name="1541"><span class="lineNum">    1541 </span><span class="lineCov">       2915 : AssertionResult CmpHelperEQ(const char* lhs_expression,</span></a>
 <a name="1542"><span class="lineNum">    1542 </span>            :                             const char* rhs_expression,</a>
 <a name="1543"><span class="lineNum">    1543 </span>            :                             const T1&amp; lhs,</a>
 <a name="1544"><span class="lineNum">    1544 </span>            :                             const T2&amp; rhs) {</a>
-<a name="1545"><span class="lineNum">    1545 </span><span class="lineCov">       2847 :   if (lhs == rhs) {</span></a>
-<a name="1546"><span class="lineNum">    1546 </span><span class="lineCov">       2847 :     return AssertionSuccess();</span></a>
+<a name="1545"><span class="lineNum">    1545 </span><span class="lineCov">       2915 :   if (lhs == rhs) {</span></a>
+<a name="1546"><span class="lineNum">    1546 </span><span class="lineCov">       2915 :     return AssertionSuccess();</span></a>
 <a name="1547"><span class="lineNum">    1547 </span>            :   }</a>
 <a name="1548"><span class="lineNum">    1548 </span>            : </a>
 <a name="1549"><span class="lineNum">    1549 </span><span class="lineNoCov">          0 :   return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);</span></a>
-<a name="1550"><span class="lineNum">    1550 </span><span class="lineCov">       2847 : }</span></a>
+<a name="1550"><span class="lineNum">    1550 </span><span class="lineCov">       2915 : }</span></a>
 <a name="1551"><span class="lineNum">    1551 </span>            : </a>
 <a name="1552"><span class="lineNum">    1552 </span>            : class EqHelper {</a>
 <a name="1553"><span class="lineNum">    1553 </span>            :  public:</a>
@@ -1628,10 +1628,10 @@
 <a name="1558"><span class="lineNum">    1558 </span>            :       // and the other is the null pointer constant.</a>
 <a name="1559"><span class="lineNum">    1559 </span>            :       typename std::enable_if&lt;!std::is_integral&lt;T1&gt;::value ||</a>
 <a name="1560"><span class="lineNum">    1560 </span>            :                               !std::is_pointer&lt;T2&gt;::value&gt;::type* = nullptr&gt;</a>
-<a name="1561"><span class="lineNum">    1561 </span><span class="lineCov">       2847 :   static AssertionResult Compare(const char* lhs_expression,</span></a>
+<a name="1561"><span class="lineNum">    1561 </span><span class="lineCov">       2915 :   static AssertionResult Compare(const char* lhs_expression,</span></a>
 <a name="1562"><span class="lineNum">    1562 </span>            :                                  const char* rhs_expression, const T1&amp; lhs,</a>
 <a name="1563"><span class="lineNum">    1563 </span>            :                                  const T2&amp; rhs) {</a>
-<a name="1564"><span class="lineNum">    1564 </span><span class="lineCov">       2847 :     return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);</span></a>
+<a name="1564"><span class="lineNum">    1564 </span><span class="lineCov">       2915 :     return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);</span></a>
 <a name="1565"><span class="lineNum">    1565 </span>            :   }</a>
 <a name="1566"><span class="lineNum">    1566 </span>            : </a>
 <a name="1567"><span class="lineNum">    1567 </span>            :   // With this overloaded version, we allow anonymous enums to be used</a>

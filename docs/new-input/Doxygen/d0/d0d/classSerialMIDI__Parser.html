@@ -97,7 +97,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d49/classSerialMIDI__Parser__inherit__graph.svg" width="219" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d49/classSerialMIDI__Parser__inherit__graph.svg" width="268" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -105,12 +105,15 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d71/classSerialMIDI__Parser__coll__graph.svg" width="534" height="1242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d71/classSerialMIDI__Parser__coll__graph.svg" width="542" height="1300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a20b10ed583fe9e1b2bdd5b8be9b2ee5b"><td class="memItemLeft" align="right" valign="top"><a id="a20b10ed583fe9e1b2bdd5b8be9b2ee5b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SerialMIDI_Parser</b> (bool <a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#a225ffd2c82e8a9865ed72c058174cd86">sysCommonCancelsRunningStatus</a>=true)</td></tr>
+<tr class="separator:a20b10ed583fe9e1b2bdd5b8be9b2ee5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b4887f4c5b19d9b45134558804d3659"><td class="memTemplParams" colspan="2">template&lt;class BytePuller &gt; </td></tr>
 <tr class="memitem:a9b4887f4c5b19d9b45134558804d3659"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029">MIDIReadEvent</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#a9b4887f4c5b19d9b45134558804d3659">pull</a> (BytePuller &amp;&amp;puller)</td></tr>
 <tr class="memdesc:a9b4887f4c5b19d9b45134558804d3659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse one incoming MIDI message.  <a href="../../d0/d0d/classSerialMIDI__Parser.html#a9b4887f4c5b19d9b45134558804d3659">More...</a><br /></td></tr>
@@ -119,6 +122,10 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getSysExMessage</b> () const</td></tr>
 <tr class="memdesc:ae3a623951f55462fb1a5925252ac1c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest SysEx message. <br /></td></tr>
 <tr class="separator:ae3a623951f55462fb1a5925252ac1c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb292403c5cd393ca1499297e7a81cd5"><td class="memItemLeft" align="right" valign="top"><a id="afb292403c5cd393ca1499297e7a81cd5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cancelRunningStatus</b> ()</td></tr>
+<tr class="memdesc:afb292403c5cd393ca1499297e7a81cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the running status header for MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> messages. <br /></td></tr>
+<tr class="separator:afb292403c5cd393ca1499297e7a81cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c9d2d0564e73d40705476583ec8faa"><td class="memItemLeft" align="right" valign="top"><a id="a04c9d2d0564e73d40705476583ec8faa"></a>
 <a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getChannelMessage</b> () const</td></tr>
 <tr class="memdesc:a04c9d2d0564e73d40705476583ec8faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest MIDI channel voice message. <br /></td></tr>
@@ -191,18 +198,25 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="../../d1/db1/classSysExBuffer.html">SysExBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sysexbuffer</b></td></tr>
 <tr class="separator:a348594ec9cf7c900d3df79b6a543330e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99dfa63535038ee28e68f14a62c132cf"><td class="memItemLeft" align="right" valign="top"><a id="a99dfa63535038ee28e68f14a62c132cf"></a>
-<a class="el" href="../../d4/d61/structMIDIMessage.html">MIDIMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>midimsg</b> = {0xFF, 0x00, 0x00}</td></tr>
+<a class="el" href="../../d4/d61/structMIDIMessage.html">MIDIMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>midimsg</b> = {0x00, 0x00, 0x00}</td></tr>
 <tr class="separator:a99dfa63535038ee28e68f14a62c132cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0df08165c1dbf698ed5ac55a55fa907"><td class="memItemLeft" align="right" valign="top"><a id="aa0df08165c1dbf698ed5ac55a55fa907"></a>
-<a class="el" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rtmsg</b> = {0xFF}</td></tr>
+<a class="el" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rtmsg</b> = {0x00}</td></tr>
 <tr class="separator:aa0df08165c1dbf698ed5ac55a55fa907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a225ffd2c82e8a9865ed72c058174cd86"><td class="memItemLeft" align="right" valign="top"><a id="a225ffd2c82e8a9865ed72c058174cd86"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sysCommonCancelsRunningStatus</b></td></tr>
+<tr class="memdesc:a225ffd2c82e8a9865ed72c058174cd86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accounts for running status differences between MIDI 1.0 and MIDI BLE. <br /></td></tr>
+<tr class="separator:a225ffd2c82e8a9865ed72c058174cd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af182b0809f3ca8ba55d9ff97b72167bc"><td class="memItemLeft" align="right" valign="top"><a id="af182b0809f3ca8ba55d9ff97b72167bc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>thirdByte</b> = false</td></tr>
 <tr class="memdesc:af182b0809f3ca8ba55d9ff97b72167bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag that remembers that the next data byte will be the third byte of a message. <br /></td></tr>
 <tr class="separator:af182b0809f3ca8ba55d9ff97b72167bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c70c47bbf536a23037c954de35a174"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#a32c70c47bbf536a23037c954de35a174">currentHeader</a> = 0</td></tr>
+<tr class="memdesc:a32c70c47bbf536a23037c954de35a174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current header (not necessarily running), contains the header of the message that's currently being received.  <a href="../../d0/d0d/classSerialMIDI__Parser.html#a32c70c47bbf536a23037c954de35a174">More...</a><br /></td></tr>
+<tr class="separator:a32c70c47bbf536a23037c954de35a174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a781d63a18a0948f09d5408cecfc0d098"><td class="memItemLeft" align="right" valign="top"><a id="a781d63a18a0948f09d5408cecfc0d098"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> = 0</td></tr>
 <tr class="memdesc:a781d63a18a0948f09d5408cecfc0d098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Running status header. <br /></td></tr>
@@ -245,7 +259,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The type of MIDI message available, or <code><a class="el" href="../../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a3b6e8876bb7ebb1a30be0d1611780f7a" title="No new messages were received.">MIDIReadEvent::NO_MESSAGE</a></code> if <code>puller</code> ran out of bytes before a complete message was parsed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00092">92</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +290,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> 
 <p>Store a byte to parse later. </p>
 <p >This is used when the SysEx buffer is full, for example. The byte cannot be added to the buffer now, so store it to add it the next time the parser is updated. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>
@@ -306,11 +320,38 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> 
 <p>If a byte was been stored previously. </p>
 <p >If this is the case, you should parse this byte first before reading a new byte. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a32c70c47bbf536a23037c954de35a174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c70c47bbf536a23037c954de35a174">&#9670;&nbsp;</a></span>currentHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t currentHeader = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Current header (not necessarily running), contains the header of the message that's currently being received. </p>
+<p >As soon as the message is complete, it is set to zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+
+</div>
+</div>
 <a id="acc6b824f3850959314d6b5e1409355e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc6b824f3850959314d6b5e1409355e1">&#9670;&nbsp;</a></span>storedByte</h2>
 
@@ -332,7 +373,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> 
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#aca0aaaae03d4189261bb770ea30d1921">storeByte</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>

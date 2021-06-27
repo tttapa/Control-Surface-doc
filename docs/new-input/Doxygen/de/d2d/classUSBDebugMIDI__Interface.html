@@ -98,13 +98,13 @@ $(function() {
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d9/dfe/3_8NoteLEDBar_8ino-example.html#_a0">3.NoteLEDBar.ino</a>, <a class="el" href="../../d5/da4/Bankable-Smart-Control-Change-Potentiometer_8ino-example.html#_a0">Bankable-Smart-Control-Change-Potentiometer.ino</a>, <a class="el" href="../../d2/d81/Debug-MIDI-Interface_8ino-example.html#_a0">Debug-MIDI-Interface.ino</a>, <a class="el" href="../../dc/d05/Keyboard-Matrix-BCD_8ino-example.html#_a0">Keyboard-Matrix-BCD.ino</a>, <a class="el" href="../../dd/d56/MCP23017-RotaryEncoder-Interrupts_8ino-example.html#_a3">MCP23017-RotaryEncoder-Interrupts.ino</a>, <a class="el" href="../../d7/dac/MCP23017-RotaryEncoder-No-Interrupts_8ino-example.html#_a3">MCP23017-RotaryEncoder-No-Interrupts.ino</a>, and <a class="el" href="../../d4/d79/One-Pot-Both-PB-and-CC_8ino-example.html#_a0">One-Pot-Both-PB-and-CC.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00135">135</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00140">140</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for USBDebugMIDI_Interface:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d2d/classUSBDebugMIDI__Interface__inherit__graph.svg" width="1007" height="2175"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d2d/classUSBDebugMIDI__Interface__inherit__graph.svg" width="1007" height="2219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -112,7 +112,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d65/classUSBDebugMIDI__Interface__coll__graph.svg" width="1888" height="3007"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d65/classUSBDebugMIDI__Interface__coll__graph.svg" width="1888" height="3051"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -374,6 +374,13 @@ Stream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getStream</b>
 <tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0b/classStreamDebugMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
 <tr class="memdesc:a44137bb65de2396875934e48a6ee5099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the MIDI interface and call the callback if a message was received.  <a href="../../d8/d0b/classStreamDebugMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">More...</a><br /></td></tr>
 <tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9579e4e358ef9591cf317319ab4c5fd5"><td class="memItemLeft" align="right" valign="top"><a id="a9579e4e358ef9591cf317319ab4c5fd5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrefix</b> (const char *<a class="el" href="../../d8/d0b/classStreamDebugMIDI__Interface.html#a5b41c5ae4505891e6c53e26df197e02b">prefix</a>)</td></tr>
+<tr class="memdesc:a9579e4e358ef9591cf317319ab4c5fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the prefix to be printed before each message. <br /></td></tr>
+<tr class="separator:a9579e4e358ef9591cf317319ab4c5fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055376cd684afd4a5887ed1c811b32a6"><td class="memItemLeft" align="right" valign="top"><a id="a055376cd684afd4a5887ed1c811b32a6"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getPrefix</b> () const</td></tr>
+<tr class="separator:a055376cd684afd4a5887ed1c811b32a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -516,6 +523,9 @@ const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>baud</
 <tr class="memitem:afcb1a2d039abd7b9058d2d224936a901"><td class="memItemLeft" align="right" valign="top"><a id="afcb1a2d039abd7b9058d2d224936a901"></a>
 <a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html">SerialMIDI_Parser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parser</b></td></tr>
 <tr class="separator:afcb1a2d039abd7b9058d2d224936a901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b41c5ae4505891e6c53e26df197e02b"><td class="memItemLeft" align="right" valign="top"><a id="a5b41c5ae4505891e6c53e26df197e02b"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>prefix</b> = nullptr</td></tr>
+<tr class="separator:a5b41c5ae4505891e6c53e26df197e02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0c1d38f76ef673cf91fd0352cca0790"><td class="memItemLeft" align="right" valign="top"><a id="ab0c1d38f76ef673cf91fd0352cca0790"></a>
 <a class="el" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>callbacks</b> = nullptr</td></tr>
 <tr class="separator:ab0c1d38f76ef673cf91fd0352cca0790"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -559,7 +569,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00144">144</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00149">149</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -591,7 +601,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Reimplemented from <a class="el" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00097">97</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -707,7 +717,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -716,7 +726,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a0e8a15b5ac6910ba59bd3ec4ae0ac604">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html">DebugMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -748,7 +758,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a612e84a9231d6369595e35fa8d8eae1b">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html">DebugMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html">DebugMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -780,7 +790,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a413792576bc31a72efd77c099d5a7bc1">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html">DebugMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html">DebugMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -811,7 +821,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a4177b65d4aa39d17e01eb21c03fe3104">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">DebugMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
