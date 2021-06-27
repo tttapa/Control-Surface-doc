@@ -211,7 +211,7 @@ Example usage</h2>
 Getting Started</h2>
 <p >See the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d5/d7d/md_pages_Getting-Started.html"><b>Getting Started</b></a> page to get started using the library. <br  />
  It'll also point you to the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d8/da8/md_pages_Installation.html"><b>Installation Instructions</b></a>.</p>
-<p >If you want to use Control Surface as a regular MIDI library, for sending and receiving MIDI messages, have a look at the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d3/df7/midi-tutorial.html"><b>MIDI tutorial</b></a>.</p>
+<p >The <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d3/df7/midi-tutorial.html"><b>MIDI tutorial</b></a> might be useful if you want to use Control Surface as a regular MIDI library, for sending and receiving MIDI messages.</p>
 <h2><a class="anchor" id="autotoc_md318"></a>
 Documentation</h2>
 <p >The automatically generated Doxygen documentation for this library can be found here: <br  />
@@ -221,7 +221,7 @@ Documentation</h2>
  Arduino examples can be found here: <br  />
  <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/examples.html"><b>Examples</b></a></p>
 <p >Have a look at the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/modules.html"><b>modules</b></a> for an overview of the features of the library, it's the best entry point for the documentation.</p>
-<p >You can find an answer to some frequently asked questions on the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/df/df5/md_pages_FAQ.html"><b>FAQ</b></a> page.</p>
+<p >You can find an answer to some frequently asked questions on the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/da/dc1/FAQ.html"><b>FAQ</b></a> page.</p>
 <h2><a class="anchor" id="autotoc_md319"></a>
 Work in progress</h2>
 <ul>
@@ -258,37 +258,37 @@ Recent Breaking Changes</h2>
 <h3><a class="anchor" id="autotoc_md323"></a>
 2.0-alpha</h3>
 <ul>
-<li>cf32e7e72d81269e97f18ba51c42ba10715d1852 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/cf32e7e72d81269e97f18ba51c42ba10715d1852">cf32e7e</a>) <br  />
  <code>Control_Surface.setMIDIInputCallbacks()</code> now takes four arguments instead of three, because a System Common callback was added.</li>
-<li>b727931a44cb1e262ac32901f1e307583da90624 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/b727931a44cb1e262ac32901f1e307583da90624">b727931</a>) <br  />
  The MIDI note name for the note F has been changed from <code>F</code> to <code>F_</code> in order to avoid conflicts with the <code>F()</code> macro and its functional equivalent introduced here: <a href="https://github.com/arduino/ArduinoCore-mbed/blob/7a8d3ee46262d943f7cc1158f8bce06f61c3ddb2/cores/arduino/Arduino.h#L35-L41">https://github.com/arduino/ArduinoCore-mbed/blob/7a8d3ee46262d943f7cc1158f8bce06f61c3ddb2/cores/arduino/Arduino.h#L35-L41</a> <br  />
  It is now recommended to use <code>MIDI_Notes::C(4)</code> instead of <code>note(C, 4)</code>.</li>
-<li>a81bd1927298decc2ea3852fd2f00e8028c14b81 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/a81bd1927298decc2ea3852fd2f00e8028c14b81">a81bd19</a>) <br  />
  Classes that make use of the SPI interface now require you to pass the <code>SPI</code> object as a constructor argument. This allows you to use <code>SPI1</code> or <code>SPI2</code> (if available for your hardware).</li>
-<li>c6e35b960ac15bc1b5cf5c588139d437ccd9cb68 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/c6e35b960ac15bc1b5cf5c588139d437ccd9cb68">c6e35b9</a>) <br  />
  The <code>NoteBitmapDisplay</code> class has been renamed to <code><a class="el" href="da/dce/classBitmapDisplay.html" title="A class that displays a bitmap depending on the state of a MIDINote or any other object that has a ge...">BitmapDisplay</a></code>.</li>
-<li>37b6901cbe56babc47c297a132381d53deaa45e8 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/37b6901cbe56babc47c297a132381d53deaa45e8">37b6901</a>) <br  />
  The <code>NoteValueLED</code> and <code>CCValueLED</code> classes (and similar) have been replaced by <code>NoteLED</code> and <code>CCLED</code> respectively. <br  />
  The display elements <code><a class="el" href="da/dce/classBitmapDisplay.html" title="A class that displays a bitmap depending on the state of a MIDINote or any other object that has a ge...">BitmapDisplay</a></code>, <code>VPotDisplay</code>, <code>VUDisplay</code> etc. are now generic in the type of value that they display. In most cases, you should be able to update your sketch by adding <code>&lt;&gt;</code> after the type names, e.g. <code><a class="el" href="da/dce/classBitmapDisplay.html" title="A class that displays a bitmap depending on the state of a MIDINote or any other object that has a ge...">BitmapDisplay</a>&lt;&gt;</code>, <code>VPotDisplay&lt;&gt;</code>, etc.</li>
-<li>1a21d1344f57066fa1eda3819eaf89cbbc79c14e <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/1a21d1344f57066fa1eda3819eaf89cbbc79c14e">1a21d13</a>) <br  />
  The line numbers of <code>LCDDisplay</code> are now one-based: <code>1</code> is the first line and <code>2</code> is the second line. This is more consistent with the track parameter and the API of the rest of the library. (Before, the first line was <code>0</code> and the second line was <code>1</code>.)</li>
-<li>40e3d7a4377b281e58dd7725f1bb8c6198855ce6 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/40e3d7a4377b281e58dd7725f1bb8c6198855ce6">40e3d7a</a>) <br  />
  Control Surface now comes with an <a class="el" href="d0/d3b/classEncoder.html" title="Class for reading quadrature encoders, based on http://www.pjrc.com/teensy/td_libs_Encoder....">Encoder</a> library out of the box. You no longer have to install or include <code><a class="el" href="db/de4/Encoder_8h.html">Encoder.h</a></code> in your sketches.</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md324"></a>
 1.x</h3>
 <ul>
-<li>8a3b1b314cf5b4aedf3ad60cbbc492fbcbb25c73 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/8a3b1b314cf5b4aedf3ad60cbbc492fbcbb25c73">8a3b1b3</a>) <br  />
  Before, <code>Control_Surface.MIDI()</code> was used to get the MIDI interface used by Control Surface. This method was removed, because you can now connect multiple interfaces to Control Surface, using the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/df/d72/classMIDI__Pipe.html#details">MIDI Pipe routing system</a>. To send MIDI using Control Surface, you can now use <code>Control_Surface.sendCC(...)</code> and the other similar methods directly.</li>
-<li>8a3b1b314cf5b4aedf3ad60cbbc492fbcbb25c73 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/8a3b1b314cf5b4aedf3ad60cbbc492fbcbb25c73">8a3b1b3</a>) <br  />
  For the same reason as the bullet above, the <code>MultiMIDI_Interface</code> was removed, and has been replaced by the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/df/d72/classMIDI__Pipe.html#details">MIDI Pipe routing system</a>.</li>
-<li>bca6e11b2b3e02df5f600f65c81676708a81155b <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/bca6e11b2b3e02df5f600f65c81676708a81155b">bca6e11</a>) <br  />
  The color mapper for <code>NoteRangeFastLED</code> and the like now takes a second parameter that represents the index of the LED within the LED strip.</li>
-<li>3c01c7d5eb60e59720540d5a77095468e6984a58 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/3c01c7d5eb60e59720540d5a77095468e6984a58">3c01c7d</a>) <br  />
  The <b>maximum supported ADC resolution is now used by default</b> (e.g. 13 bits on Teensy 3.x, 12 bits on ESP32). <br  />
  This increases the accuracy of analog inputs and controls for the Control Surface library, but could cause problems if your code uses other libraries that expect the resolution to be 10 bits. <br  />
  You can change the default resolution to 10 bits in <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/dc/d69/namespaceAH.html#a4f2ec536d7413c6969f44d63ba14ce55"><code>src/AH/Settings/Settings.hpp</code></a> if you have to.</li>
-<li>31edaa6b76477fdf152c19fd34f7e4e8506561e6 <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/31edaa6b76477fdf152c19fd34f7e4e8506561e6">31edaa6</a>) <br  />
  The <b>mapping function</b> is now applied before applying hysteresis. <br  />
  This means that the input and output values of the function should be 16 - <code>ANALOG_FILTER_SHIFT_FACTOR</code> bits wide instead of 7. By default this is <b>14 bits</b>. You can get the maximum value in a portable way by using the <code>FilteredAnalog&lt;&gt;::getMaxRawValue()</code> function. <br  />
  The signature of the mapping function is now <code>analog_t f(analog_t raw)</code>, where the return value and raw are both numbers in [0, 16383] by default. </li>
