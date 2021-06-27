@@ -89,7 +89,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">MIDI_Parsers/SerialMIDI_Parser.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Parser for Serial MIDI streams. </p>
+<div class="textblock"><p >Parser for Serial MIDI streams (and BLE-MIDI). </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -122,9 +122,8 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getSysExMessage</b> () const</td></tr>
 <tr class="memdesc:ae3a623951f55462fb1a5925252ac1c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest SysEx message. <br /></td></tr>
 <tr class="separator:ae3a623951f55462fb1a5925252ac1c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb292403c5cd393ca1499297e7a81cd5"><td class="memItemLeft" align="right" valign="top"><a id="afb292403c5cd393ca1499297e7a81cd5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cancelRunningStatus</b> ()</td></tr>
-<tr class="memdesc:afb292403c5cd393ca1499297e7a81cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the running status header for MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> messages. <br /></td></tr>
+<tr class="memitem:afb292403c5cd393ca1499297e7a81cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#afb292403c5cd393ca1499297e7a81cd5">cancelRunningStatus</a> ()</td></tr>
+<tr class="memdesc:afb292403c5cd393ca1499297e7a81cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the running status header for MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> messages.  <a href="../../d0/d0d/classSerialMIDI__Parser.html#afb292403c5cd393ca1499297e7a81cd5">More...</a><br /></td></tr>
 <tr class="separator:afb292403c5cd393ca1499297e7a81cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c9d2d0564e73d40705476583ec8faa"><td class="memItemLeft" align="right" valign="top"><a id="a04c9d2d0564e73d40705476583ec8faa"></a>
 <a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getChannelMessage</b> () const</td></tr>
@@ -185,7 +184,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>endSysEx</b> ()</td><
 <tr class="memdesc:aca0aaaae03d4189261bb770ea30d1921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a byte to parse later.  <a href="../../d0/d0d/classSerialMIDI__Parser.html#aca0aaaae03d4189261bb770ea30d1921">More...</a><br /></td></tr>
 <tr class="separator:aca0aaaae03d4189261bb770ea30d1921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d28dea3799312855eee140e873caa0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#a7d28dea3799312855eee140e873caa0a">hasStoredByte</a> () const</td></tr>
-<tr class="memdesc:a7d28dea3799312855eee140e873caa0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a byte was been stored previously.  <a href="../../d0/d0d/classSerialMIDI__Parser.html#a7d28dea3799312855eee140e873caa0a">More...</a><br /></td></tr>
+<tr class="memdesc:a7d28dea3799312855eee140e873caa0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether there's a stored byte.  <a href="../../d0/d0d/classSerialMIDI__Parser.html#a7d28dea3799312855eee140e873caa0a">More...</a><br /></td></tr>
 <tr class="separator:a7d28dea3799312855eee140e873caa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8413ccf0dcbb413103038d08a1b37f32"><td class="memItemLeft" align="right" valign="top"><a id="a8413ccf0dcbb413103038d08a1b37f32"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>popStoredByte</b> ()</td></tr>
@@ -208,7 +207,7 @@ Protected Attributes</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a225ffd2c82e8a9865ed72c058174cd86"><td class="memItemLeft" align="right" valign="top"><a id="a225ffd2c82e8a9865ed72c058174cd86"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>sysCommonCancelsRunningStatus</b></td></tr>
-<tr class="memdesc:a225ffd2c82e8a9865ed72c058174cd86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accounts for running status differences between MIDI 1.0 and MIDI BLE. <br /></td></tr>
+<tr class="memdesc:a225ffd2c82e8a9865ed72c058174cd86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accounts for running status differences between MIDI 1.0 and BLE-MIDI. <br /></td></tr>
 <tr class="separator:a225ffd2c82e8a9865ed72c058174cd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af182b0809f3ca8ba55d9ff97b72167bc"><td class="memItemLeft" align="right" valign="top"><a id="af182b0809f3ca8ba55d9ff97b72167bc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>thirdByte</b> = false</td></tr>
@@ -259,7 +258,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The type of MIDI message available, or <code><a class="el" href="../../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a3b6e8876bb7ebb1a30be0d1611780f7a" title="No new messages were received.">MIDIReadEvent::NO_MESSAGE</a></code> if <code>puller</code> ran out of bytes before a complete message was parsed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00092">92</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00093">93</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>
@@ -317,10 +316,40 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> 
 </table>
 </div><div class="memdoc">
 
-<p>If a byte was been stored previously. </p>
-<p >If this is the case, you should parse this byte first before reading a new byte. </p>
+<p>Check whether there's a stored byte. </p>
+<p >If this is the case, this byte should be parsed before reading a new byte. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afb292403c5cd393ca1499297e7a81cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb292403c5cd393ca1499297e7a81cd5">&#9670;&nbsp;</a></span>cancelRunningStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cancelRunningStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear the running status header for MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> messages. </p>
+<p >Internal method. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>
@@ -348,7 +377,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> 
 <p>Current header (not necessarily running), contains the header of the message that's currently being received. </p>
 <p >As soon as the message is complete, it is set to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +402,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>runningHeader</b> 
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d0d/classSerialMIDI__Parser.html#aca0aaaae03d4189261bb770ea30d1921">storeByte</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">SerialMIDI_Parser.hpp</a>.</p>
 
 </div>
 </div>
