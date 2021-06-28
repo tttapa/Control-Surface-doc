@@ -90,20 +90,22 @@ $(function() {
 <div class="textblock"><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#_a15">MIDI-Input-Callback.ino</a>, and <a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#_a19">Mackie-Control-Universal-Reverse-Engineering.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00228">228</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00234">234</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for SysCommonMessage:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/ddf/structSysCommonMessage__inherit__graph.svg" width="271" height="654"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/ddf/structSysCommonMessage__inherit__graph.svg" width="271" height="668"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for SysCommonMessage:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d93/structSysCommonMessage__coll__graph.svg" width="271" height="912"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d93/structSysCommonMessage__coll__graph.svg" width="271" height="927"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -185,6 +187,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasValidChannelMessag
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>getData14bit</b> () const</td></tr>
 <tr class="memdesc:ab721aca5805dad5a0c3bd62c2f88c5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If Data 1 and Data 2 represent a single 14-bit number, you can use this method to retrieve that number. <br /></td></tr>
 <tr class="separator:ab721aca5805dad5a0c3bd62c2f88c5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d51dd45edfe11ef84fdbbfd88ad7f2a"><td class="memItemLeft" align="right" valign="top"><a id="a9d51dd45edfe11ef84fdbbfd88ad7f2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setData14bit</b> (uint16_t data)</td></tr>
+<tr class="memdesc:a9d51dd45edfe11ef84fdbbfd88ad7f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If Data 1 and Data 2 represent a single 14-bit number, you can use this method to set that number. <br /></td></tr>
+<tr class="separator:a9d51dd45edfe11ef84fdbbfd88ad7f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75094f933eb2dbc3c6d409bb09723f7e"><td class="memItemLeft" align="right" valign="top"><a id="a75094f933eb2dbc3c6d409bb09723f7e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sanitize</b> ()</td></tr>
 <tr class="memdesc:a75094f933eb2dbc3c6d409bb09723f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that the status byte has the most significant bit set and the data bytes have the most significant bits cleared. <br /></td></tr>
@@ -211,20 +217,20 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>data2</b></td></tr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5bcdac8df9587a6a8ea5e25077f6072f"><td class="memItemLeft" align="right" valign="top"><a id="a5bcdac8df9587a6a8ea5e25077f6072f"></a>
-constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_QUARTER_FRAME</b> = MIDIMessageType::MTC_QUARTER_FRAME</td></tr>
+<tr class="memitem:a5bcdac8df9587a6a8ea5e25077f6072f"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dad/structSysCommonMessage.html#a5bcdac8df9587a6a8ea5e25077f6072f">MTC_QUARTER_FRAME</a></td></tr>
+<tr class="memdesc:a5bcdac8df9587a6a8ea5e25077f6072f"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d5/dad/structSysCommonMessage.html#a5bcdac8df9587a6a8ea5e25077f6072f">More...</a><br /></td></tr>
 <tr class="separator:a5bcdac8df9587a6a8ea5e25077f6072f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f7cf083fd57e1622ce5bec5710c47a4"><td class="memItemLeft" align="right" valign="top"><a id="a2f7cf083fd57e1622ce5bec5710c47a4"></a>
-constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>SONG_POSITION_POINTER</b> = MIDIMessageType::SONG_POSITION_POINTER</td></tr>
+<tr class="memitem:a2f7cf083fd57e1622ce5bec5710c47a4"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dad/structSysCommonMessage.html#a2f7cf083fd57e1622ce5bec5710c47a4">SONG_POSITION_POINTER</a></td></tr>
+<tr class="memdesc:a2f7cf083fd57e1622ce5bec5710c47a4"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d5/dad/structSysCommonMessage.html#a2f7cf083fd57e1622ce5bec5710c47a4">More...</a><br /></td></tr>
 <tr class="separator:a2f7cf083fd57e1622ce5bec5710c47a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9081e743ab45641b398342e3f71f3ecb"><td class="memItemLeft" align="right" valign="top"><a id="a9081e743ab45641b398342e3f71f3ecb"></a>
 constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>SONG_SELECT</b> = MIDIMessageType::SONG_SELECT</td></tr>
 <tr class="separator:a9081e743ab45641b398342e3f71f3ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c3c57577aa0dc910a35ec69d2a6ddcf"><td class="memItemLeft" align="right" valign="top"><a id="a4c3c57577aa0dc910a35ec69d2a6ddcf"></a>
-constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>UNDEFINED_SYSCOMMON_1</b> = MIDIMessageType::UNDEFINED_SYSCOMMON_1</td></tr>
+<tr class="memitem:a4c3c57577aa0dc910a35ec69d2a6ddcf"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dad/structSysCommonMessage.html#a4c3c57577aa0dc910a35ec69d2a6ddcf">UNDEFINED_SYSCOMMON_1</a></td></tr>
+<tr class="memdesc:a4c3c57577aa0dc910a35ec69d2a6ddcf"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d5/dad/structSysCommonMessage.html#a4c3c57577aa0dc910a35ec69d2a6ddcf">More...</a><br /></td></tr>
 <tr class="separator:a4c3c57577aa0dc910a35ec69d2a6ddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ceaf363460263949ad364726a71a3b"><td class="memItemLeft" align="right" valign="top"><a id="ae6ceaf363460263949ad364726a71a3b"></a>
-constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>UNDEFINED_SYSCOMMON_2</b> = MIDIMessageType::UNDEFINED_SYSCOMMON_2</td></tr>
+<tr class="memitem:ae6ceaf363460263949ad364726a71a3b"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dad/structSysCommonMessage.html#ae6ceaf363460263949ad364726a71a3b">UNDEFINED_SYSCOMMON_2</a></td></tr>
+<tr class="memdesc:ae6ceaf363460263949ad364726a71a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d5/dad/structSysCommonMessage.html#ae6ceaf363460263949ad364726a71a3b">More...</a><br /></td></tr>
 <tr class="separator:ae6ceaf363460263949ad364726a71a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36dbf9ca2bf52b753f4e153dec3b4259"><td class="memItemLeft" align="right" valign="top"><a id="a36dbf9ca2bf52b753f4e153dec3b4259"></a>
 constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>TUNE_REQUEST</b> = MIDIMessageType::TUNE_REQUEST</td></tr>
@@ -291,6 +297,115 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>TUNE
 Reserved System Common messages are also considered valid System Common messages. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5bcdac8df9587a6a8ea5e25077f6072f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bcdac8df9587a6a8ea5e25077f6072f">&#9670;&nbsp;</a></span>MTC_QUARTER_FRAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto MTC_QUARTER_FRAME</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        <a class="code" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a1956f105dbeecbe80e7f6b93f07ccf10">MIDIMessageType::MTC_QUARTER_FRAME</a></div>
+<div class="ttc" id="aMIDI__MessageTypes_8hpp_html_a0f3f6ac1a61700bdea6873fdfe9248f5a1956f105dbeecbe80e7f6b93f07ccf10"><div class="ttname"><a href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a1956f105dbeecbe80e7f6b93f07ccf10">MIDIMessageType::MTC_QUARTER_FRAME</a></div><div class="ttdeci">@ MTC_QUARTER_FRAME</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00265">265</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2f7cf083fd57e1622ce5bec5710c47a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7cf083fd57e1622ce5bec5710c47a4">&#9670;&nbsp;</a></span>SONG_POSITION_POINTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto SONG_POSITION_POINTER</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        <a class="code" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ae1a6326d567083168a736db772a5ec28">MIDIMessageType::SONG_POSITION_POINTER</a></div>
+<div class="ttc" id="aMIDI__MessageTypes_8hpp_html_a0f3f6ac1a61700bdea6873fdfe9248f5ae1a6326d567083168a736db772a5ec28"><div class="ttname"><a href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ae1a6326d567083168a736db772a5ec28">MIDIMessageType::SONG_POSITION_POINTER</a></div><div class="ttdeci">@ SONG_POSITION_POINTER</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00267">267</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4c3c57577aa0dc910a35ec69d2a6ddcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3c57577aa0dc910a35ec69d2a6ddcf">&#9670;&nbsp;</a></span>UNDEFINED_SYSCOMMON_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto UNDEFINED_SYSCOMMON_1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        <a class="code" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aca4ee7c6dcbbc63464280954033e9277">MIDIMessageType::UNDEFINED_SYSCOMMON_1</a></div>
+<div class="ttc" id="aMIDI__MessageTypes_8hpp_html_a0f3f6ac1a61700bdea6873fdfe9248f5aca4ee7c6dcbbc63464280954033e9277"><div class="ttname"><a href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aca4ee7c6dcbbc63464280954033e9277">MIDIMessageType::UNDEFINED_SYSCOMMON_1</a></div><div class="ttdeci">@ UNDEFINED_SYSCOMMON_1</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00270">270</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6ceaf363460263949ad364726a71a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ceaf363460263949ad364726a71a3b">&#9670;&nbsp;</a></span>UNDEFINED_SYSCOMMON_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto UNDEFINED_SYSCOMMON_2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        <a class="code" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6b7099a1ca116c9d70bfaab73cc65a57">MIDIMessageType::UNDEFINED_SYSCOMMON_2</a></div>
+<div class="ttc" id="aMIDI__MessageTypes_8hpp_html_a0f3f6ac1a61700bdea6873fdfe9248f5a6b7099a1ca116c9d70bfaab73cc65a57"><div class="ttname"><a href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6b7099a1ca116c9d70bfaab73cc65a57">MIDIMessageType::UNDEFINED_SYSCOMMON_2</a></div><div class="ttdeci">@ UNDEFINED_SYSCOMMON_2</div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00272">272</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>

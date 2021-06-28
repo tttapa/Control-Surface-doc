@@ -90,20 +90,22 @@ $(function() {
 <div class="textblock"><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#_a1">MIDI-Input-Callback.ino</a>, <a class="el" href="../../d1/d5d/MIDI-Input_8ino-example.html#_a4">MIDI-Input.ino</a>, and <a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#_a1">Mackie-Control-Universal-Reverse-Engineering.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00169">169</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00175">175</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for ChannelMessage:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d2d/structChannelMessage__inherit__graph.svg" width="271" height="727"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d2d/structChannelMessage__inherit__graph.svg" width="271" height="742"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for ChannelMessage:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d10/structChannelMessage__coll__graph.svg" width="271" height="986"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d10/structChannelMessage__coll__graph.svg" width="271" height="1000"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -191,6 +193,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasValidChannelMessag
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>getData14bit</b> () const</td></tr>
 <tr class="memdesc:ab721aca5805dad5a0c3bd62c2f88c5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If Data 1 and Data 2 represent a single 14-bit number, you can use this method to retrieve that number. <br /></td></tr>
 <tr class="separator:ab721aca5805dad5a0c3bd62c2f88c5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d51dd45edfe11ef84fdbbfd88ad7f2a"><td class="memItemLeft" align="right" valign="top"><a id="a9d51dd45edfe11ef84fdbbfd88ad7f2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setData14bit</b> (uint16_t data)</td></tr>
+<tr class="memdesc:a9d51dd45edfe11ef84fdbbfd88ad7f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If Data 1 and Data 2 represent a single 14-bit number, you can use this method to set that number. <br /></td></tr>
+<tr class="separator:a9d51dd45edfe11ef84fdbbfd88ad7f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75094f933eb2dbc3c6d409bb09723f7e"><td class="memItemLeft" align="right" valign="top"><a id="a75094f933eb2dbc3c6d409bb09723f7e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sanitize</b> ()</td></tr>
 <tr class="memdesc:a75094f933eb2dbc3c6d409bb09723f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that the status byte has the most significant bit set and the data bytes have the most significant bits cleared. <br /></td></tr>
@@ -269,7 +275,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>PITC
 <p>Get the MIDI channel and cable number. </p>
 <dl class="section note"><dt>Note</dt><dd>Valid for all MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> messages, including <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure and Pitch Bend. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00200">200</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00206">206</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -299,7 +305,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>PITC
 <p>Get the MIDI address of this message, using <code>data1</code> as the address. </p>
 <dl class="section note"><dt>Note</dt><dd>Don't use this for <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure or Pitch Bend messages, as <code>data1</code> will have a different meaning in those cases. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00204">204</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00210">210</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +339,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>PITC
 </ul>
 <p >Returns false if the header is a SysEx, Real-Time or System Common byte. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00212">212</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00218">218</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>

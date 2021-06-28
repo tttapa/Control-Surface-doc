@@ -101,14 +101,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d55/classSoftwareSerialDebugMIDI__Interface__inherit__graph.svg" width="1007" height="2248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d55/classSoftwareSerialDebugMIDI__Interface__inherit__graph.svg" width="1007" height="2542"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for SoftwareSerialDebugMIDI_Interface:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d44/classSoftwareSerialDebugMIDI__Interface__coll__graph.svg" width="1888" height="3080"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d44/classSoftwareSerialDebugMIDI__Interface__coll__graph.svg" width="1888" height="3374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Default MIDI Interfaces</h2></td></tr>
@@ -216,29 +218,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>handleStallers</b> ()
 <tr class="memdesc:aa4f767c4835d61d81782599b10839d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give the code that is stalling the MIDI sink pipes the opportunity to do its job and un-stall the pipes. <br /></td></tr>
 <tr class="separator:aa4f767c4835d61d81782599b10839d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI</h2></td></tr>
-<tr class="memitem:ac6230d80813083a36e96b2d88dba3cd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#ac6230d80813083a36e96b2d88dba3cd1">send</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, <a class="el" href="../../d2/d48/classChannel.html">Channel</a> c, uint8_t d1, uint8_t d2, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
-<tr class="memdesc:ac6230d80813083a36e96b2d88dba3cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 3-byte MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Voice message.  <a href="../../d6/d72/classMIDI__Sender.html#ac6230d80813083a36e96b2d88dba3cd1">More...</a><br /></td></tr>
-<tr class="separator:ac6230d80813083a36e96b2d88dba3cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad192316626112a37747d295340258345"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#ad192316626112a37747d295340258345">send</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, <a class="el" href="../../d2/d48/classChannel.html">Channel</a> c, uint8_t d1, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
-<tr class="memdesc:ad192316626112a37747d295340258345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 2-byte MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Voice message.  <a href="../../d6/d72/classMIDI__Sender.html#ad192316626112a37747d295340258345">More...</a><br /></td></tr>
-<tr class="separator:ad192316626112a37747d295340258345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI Channel Voice messages</h2></td></tr>
 <tr class="memitem:a73a6527752f718e279d94348d82a76f5"><td class="memItemLeft" align="right" valign="top"><a id="a73a6527752f718e279d94348d82a76f5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a> message)</td></tr>
-<tr class="memdesc:a73a6527752f718e279d94348d82a76f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Voice message. <br /></td></tr>
+<tr class="memdesc:a73a6527752f718e279d94348d82a76f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Channel Voice message. <br /></td></tr>
 <tr class="separator:a73a6527752f718e279d94348d82a76f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a051c7228a56e8653ce9decf1eb75532b"><td class="memItemLeft" align="right" valign="top"><a id="a051c7228a56e8653ce9decf1eb75532b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="../../d5/dad/structSysCommonMessage.html">SysCommonMessage</a> message)</td></tr>
-<tr class="memdesc:a051c7228a56e8653ce9decf1eb75532b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message. <br /></td></tr>
-<tr class="separator:a051c7228a56e8653ce9decf1eb75532b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b036bfe699f4731ee56cef5ce297ef"><td class="memItemLeft" align="right" valign="top"><a id="a65b036bfe699f4731ee56cef5ce297ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a> message)</td></tr>
-<tr class="memdesc:a65b036bfe699f4731ee56cef5ce297ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Exclusive message. <br /></td></tr>
-<tr class="separator:a65b036bfe699f4731ee56cef5ce297ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df24a4d059579e81eedd12f9774985e"><td class="memItemLeft" align="right" valign="top"><a id="a2df24a4d059579e81eedd12f9774985e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a> message)</td></tr>
-<tr class="memdesc:a2df24a4d059579e81eedd12f9774985e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Real-Time message. <br /></td></tr>
-<tr class="separator:a2df24a4d059579e81eedd12f9774985e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220da619f810e1a74e6f4c899b223fef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#a220da619f810e1a74e6f4c899b223fef">sendChannelMessage</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, <a class="el" href="../../d2/d48/classChannel.html">Channel</a> c, uint8_t d1, uint8_t d2, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a220da619f810e1a74e6f4c899b223fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 3-byte MIDI Channel Voice message.  <a href="../../d6/d72/classMIDI__Sender.html#a220da619f810e1a74e6f4c899b223fef">More...</a><br /></td></tr>
+<tr class="separator:a220da619f810e1a74e6f4c899b223fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f870663dc0b0dc24957af6415bca65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#a97f870663dc0b0dc24957af6415bca65">sendChannelMessage</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, <a class="el" href="../../d2/d48/classChannel.html">Channel</a> c, uint8_t d1, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a97f870663dc0b0dc24957af6415bca65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 2-byte MIDI Channel Voice message.  <a href="../../d6/d72/classMIDI__Sender.html#a97f870663dc0b0dc24957af6415bca65">More...</a><br /></td></tr>
+<tr class="separator:a97f870663dc0b0dc24957af6415bca65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad487d041b8e9d10d58aba470a15e1fc6"><td class="memItemLeft" align="right" valign="top"><a id="ad487d041b8e9d10d58aba470a15e1fc6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sendNoteOn</b> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t velocity)</td></tr>
 <tr class="memdesc:ad487d041b8e9d10d58aba470a15e1fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Note On event. <br /></td></tr>
@@ -247,30 +237,74 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sendNoteOn</b> (<a cl
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sendNoteOff</b> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t velocity)</td></tr>
 <tr class="memdesc:ae5438982b69a41d7b4565328f5fd73c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Note Off event. <br /></td></tr>
 <tr class="separator:ae5438982b69a41d7b4565328f5fd73c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae95f4b370848150507245806455a50"><td class="memItemLeft" align="right" valign="top"><a id="a3ae95f4b370848150507245806455a50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendKP</b> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t pressure)</td></tr>
-<tr class="memdesc:a3ae95f4b370848150507245806455a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Key Pressure event. <br /></td></tr>
-<tr class="separator:a3ae95f4b370848150507245806455a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82b919f54a86238cc55ae5ed7eeac578"><td class="memItemLeft" align="right" valign="top"><a id="a82b919f54a86238cc55ae5ed7eeac578"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendCC</b> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t value)</td></tr>
-<tr class="memdesc:a82b919f54a86238cc55ae5ed7eeac578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Control Change event. <br /></td></tr>
-<tr class="separator:a82b919f54a86238cc55ae5ed7eeac578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac409060e87ff64e9a4c2525f1746b64d"><td class="memItemLeft" align="right" valign="top"><a id="ac409060e87ff64e9a4c2525f1746b64d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendPC</b> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address)</td></tr>
-<tr class="memdesc:ac409060e87ff64e9a4c2525f1746b64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event. <br /></td></tr>
-<tr class="separator:ac409060e87ff64e9a4c2525f1746b64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c9fca4660babdf1399254eacd9a91e"><td class="memItemLeft" align="right" valign="top"><a id="a73c9fca4660babdf1399254eacd9a91e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendPC</b> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t value)</td></tr>
-<tr class="memdesc:a73c9fca4660babdf1399254eacd9a91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event. <br /></td></tr>
-<tr class="separator:a73c9fca4660babdf1399254eacd9a91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a658b5ce998f761a47c620b7db009fd"><td class="memItemLeft" align="right" valign="top"><a id="a7a658b5ce998f761a47c620b7db009fd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendCP</b> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t pressure)</td></tr>
-<tr class="memdesc:a7a658b5ce998f761a47c620b7db009fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Pressure event. <br /></td></tr>
-<tr class="separator:a7a658b5ce998f761a47c620b7db009fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b54e3bee0d150883792d94b34995088"><td class="memItemLeft" align="right" valign="top"><a id="a0b54e3bee0d150883792d94b34995088"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendPB</b> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint16_t value)</td></tr>
-<tr class="memdesc:a0b54e3bee0d150883792d94b34995088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Pitch Bend event. <br /></td></tr>
-<tr class="separator:a0b54e3bee0d150883792d94b34995088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88982533de6f46173eccd7069425babe"><td class="memItemLeft" align="right" valign="top"><a id="a88982533de6f46173eccd7069425babe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendKeyPressure</b> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t pressure)</td></tr>
+<tr class="memdesc:a88982533de6f46173eccd7069425babe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Key Pressure event. <br /></td></tr>
+<tr class="separator:a88982533de6f46173eccd7069425babe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e05cc39766771989374c1dd26b77a4"><td class="memItemLeft" align="right" valign="top"><a id="aa0e05cc39766771989374c1dd26b77a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendControlChange</b> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t value)</td></tr>
+<tr class="memdesc:aa0e05cc39766771989374c1dd26b77a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Control Change event. <br /></td></tr>
+<tr class="separator:aa0e05cc39766771989374c1dd26b77a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f6d6afd79c73c67548e57bc4fa148a"><td class="memItemLeft" align="right" valign="top"><a id="a69f6d6afd79c73c67548e57bc4fa148a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendProgramChange</b> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address)</td></tr>
+<tr class="memdesc:a69f6d6afd79c73c67548e57bc4fa148a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event. <br /></td></tr>
+<tr class="separator:a69f6d6afd79c73c67548e57bc4fa148a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f98989f2f186ede97480c8b9c3b4c8f"><td class="memItemLeft" align="right" valign="top"><a id="a5f98989f2f186ede97480c8b9c3b4c8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendProgramChange</b> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t value)</td></tr>
+<tr class="memdesc:a5f98989f2f186ede97480c8b9c3b4c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event. <br /></td></tr>
+<tr class="separator:a5f98989f2f186ede97480c8b9c3b4c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0893df10734cfe6c5fc7e4a968715648"><td class="memItemLeft" align="right" valign="top"><a id="a0893df10734cfe6c5fc7e4a968715648"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendChannelPressure</b> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t pressure)</td></tr>
+<tr class="memdesc:a0893df10734cfe6c5fc7e4a968715648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Channel Pressure event. <br /></td></tr>
+<tr class="separator:a0893df10734cfe6c5fc7e4a968715648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bf7eb7560466dab452620fe2db223e"><td class="memItemLeft" align="right" valign="top"><a id="af9bf7eb7560466dab452620fe2db223e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendPitchBend</b> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint16_t value)</td></tr>
+<tr class="memdesc:af9bf7eb7560466dab452620fe2db223e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Pitch Bend event. <br /></td></tr>
+<tr class="separator:af9bf7eb7560466dab452620fe2db223e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI System Common messages</h2></td></tr>
+<tr class="memitem:a051c7228a56e8653ce9decf1eb75532b"><td class="memItemLeft" align="right" valign="top"><a id="a051c7228a56e8653ce9decf1eb75532b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="../../d5/dad/structSysCommonMessage.html">SysCommonMessage</a> message)</td></tr>
+<tr class="memdesc:a051c7228a56e8653ce9decf1eb75532b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message. <br /></td></tr>
+<tr class="separator:a051c7228a56e8653ce9decf1eb75532b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6668f5d9fec9c43f8b31ef1cea820880"><td class="memItemLeft" align="right" valign="top"><a id="a6668f5d9fec9c43f8b31ef1cea820880"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSysCommon</b> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a6668f5d9fec9c43f8b31ef1cea820880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message. <br /></td></tr>
+<tr class="separator:a6668f5d9fec9c43f8b31ef1cea820880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8db45ebb6893eb7def3407b77c3052"><td class="memItemLeft" align="right" valign="top"><a id="a9a8db45ebb6893eb7def3407b77c3052"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSysCommon</b> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, uint8_t data1, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a9a8db45ebb6893eb7def3407b77c3052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message. <br /></td></tr>
+<tr class="separator:a9a8db45ebb6893eb7def3407b77c3052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30224ae40aef84e403ab5d5f2304dd60"><td class="memItemLeft" align="right" valign="top"><a id="a30224ae40aef84e403ab5d5f2304dd60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSysCommon</b> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, uint8_t data1, uint8_t data2, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a30224ae40aef84e403ab5d5f2304dd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message. <br /></td></tr>
+<tr class="separator:a30224ae40aef84e403ab5d5f2304dd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6304285f826f4bde0f7182fa3cb6c20f"><td class="memItemLeft" align="right" valign="top"><a id="a6304285f826f4bde0f7182fa3cb6c20f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendMTCQuarterFrame</b> (uint8_t data, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a6304285f826f4bde0f7182fa3cb6c20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Time Code Quarter Frame. <br /></td></tr>
+<tr class="separator:a6304285f826f4bde0f7182fa3cb6c20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2898b25638c21b41b2cba1b656e73303"><td class="memItemLeft" align="right" valign="top"><a id="a2898b25638c21b41b2cba1b656e73303"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendMTCQuarterFrame</b> (uint8_t messageType, uint8_t values, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a2898b25638c21b41b2cba1b656e73303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Time Code Quarter Frame. <br /></td></tr>
+<tr class="separator:a2898b25638c21b41b2cba1b656e73303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2a101680e336bfaea6f5f3a2a26bb3"><td class="memItemLeft" align="right" valign="top"><a id="aab2a101680e336bfaea6f5f3a2a26bb3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSongPositionPointer</b> (uint16_t spp, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:aab2a101680e336bfaea6f5f3a2a26bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Song Position Pointer message. <br /></td></tr>
+<tr class="separator:aab2a101680e336bfaea6f5f3a2a26bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd76f0752db65be8ac4b3e4df77b375e"><td class="memItemLeft" align="right" valign="top"><a id="abd76f0752db65be8ac4b3e4df77b375e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSongSelect</b> (uint8_t song, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:abd76f0752db65be8ac4b3e4df77b375e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Song Select message. <br /></td></tr>
+<tr class="separator:abd76f0752db65be8ac4b3e4df77b375e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7f6d35c3c754fdf24aeefe73534735"><td class="memItemLeft" align="right" valign="top"><a id="aeb7f6d35c3c754fdf24aeefe73534735"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendTuneRequest</b> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:aeb7f6d35c3c754fdf24aeefe73534735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Tune Request. <br /></td></tr>
+<tr class="separator:aeb7f6d35c3c754fdf24aeefe73534735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI System Exclusive messages</h2></td></tr>
+<tr class="memitem:a65b036bfe699f4731ee56cef5ce297ef"><td class="memItemLeft" align="right" valign="top"><a id="a65b036bfe699f4731ee56cef5ce297ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a> message)</td></tr>
+<tr class="memdesc:a65b036bfe699f4731ee56cef5ce297ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Exclusive message. <br /></td></tr>
+<tr class="separator:a65b036bfe699f4731ee56cef5ce297ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05d665a5269aa6552fbbd9c6efda159d"><td class="memItemLeft" align="right" valign="top"><a id="a05d665a5269aa6552fbbd9c6efda159d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSysEx</b> (const uint8_t(&amp;sysexdata)[N], <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
 <tr class="memdesc:a05d665a5269aa6552fbbd9c6efda159d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Exclusive message. <br /></td></tr>
@@ -279,6 +313,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSysEx</b> (const 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSysEx</b> (const uint8_t *data, uint16_t length, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
 <tr class="memdesc:a0ec7247d0c9a496856da5f788d8623da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Exclusive message. <br /></td></tr>
 <tr class="separator:a0ec7247d0c9a496856da5f788d8623da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI Real-Time messages</h2></td></tr>
+<tr class="memitem:a2df24a4d059579e81eedd12f9774985e"><td class="memItemLeft" align="right" valign="top"><a id="a2df24a4d059579e81eedd12f9774985e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a> message)</td></tr>
+<tr class="memdesc:a2df24a4d059579e81eedd12f9774985e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Real-Time message. <br /></td></tr>
+<tr class="separator:a2df24a4d059579e81eedd12f9774985e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dfbfdbc57a180cc33c2132f3d70e7e0"><td class="memItemLeft" align="right" valign="top"><a id="a1dfbfdbc57a180cc33c2132f3d70e7e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sendRealTime</b> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> rt, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
 <tr class="memdesc:a1dfbfdbc57a180cc33c2132f3d70e7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Real-Time message. <br /></td></tr>
@@ -287,9 +327,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sendRealTime</b> (<a 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sendRealTime</b> (uint8_t rt, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
 <tr class="memdesc:ac3797b4544ca73a7cac74e6ba86a66a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Real-Time message. <br /></td></tr>
 <tr class="separator:ac3797b4544ca73a7cac74e6ba86a66a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ad7f0d0f11d42fa4dba96eeff03192"><td class="memItemLeft" align="right" valign="top"><a id="af8ad7f0d0f11d42fa4dba96eeff03192"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendTimingClock</b> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:af8ad7f0d0f11d42fa4dba96eeff03192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Timing Clock message. <br /></td></tr>
+<tr class="separator:af8ad7f0d0f11d42fa4dba96eeff03192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc27dd0d4213eb50ed11721ae7b0740"><td class="memItemLeft" align="right" valign="top"><a id="a1bc27dd0d4213eb50ed11721ae7b0740"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendStart</b> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a1bc27dd0d4213eb50ed11721ae7b0740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Start message. <br /></td></tr>
+<tr class="separator:a1bc27dd0d4213eb50ed11721ae7b0740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9dd0d27b38592a1f1018d2240c1ec60"><td class="memItemLeft" align="right" valign="top"><a id="af9dd0d27b38592a1f1018d2240c1ec60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendContinue</b> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:af9dd0d27b38592a1f1018d2240c1ec60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Continue message. <br /></td></tr>
+<tr class="separator:af9dd0d27b38592a1f1018d2240c1ec60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d382e6338cb4156c5e086abc15b332"><td class="memItemLeft" align="right" valign="top"><a id="a87d382e6338cb4156c5e086abc15b332"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendStop</b> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a87d382e6338cb4156c5e086abc15b332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Stop message. <br /></td></tr>
+<tr class="separator:a87d382e6338cb4156c5e086abc15b332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808b40418f1a559b8ab6897400ef54ef"><td class="memItemLeft" align="right" valign="top"><a id="a808b40418f1a559b8ab6897400ef54ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendActiveSensing</b> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a808b40418f1a559b8ab6897400ef54ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Active Sensing message. <br /></td></tr>
+<tr class="separator:a808b40418f1a559b8ab6897400ef54ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a3bd69a0c3dfa5b1948b8dc9130428"><td class="memItemLeft" align="right" valign="top"><a id="a70a3bd69a0c3dfa5b1948b8dc9130428"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSystemReset</b> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd">CABLE_1</a>)</td></tr>
+<tr class="memdesc:a70a3bd69a0c3dfa5b1948b8dc9130428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Reset message. <br /></td></tr>
+<tr class="separator:a70a3bd69a0c3dfa5b1948b8dc9130428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Flusing the MIDI send buffer</h2></td></tr>
 <tr class="memitem:a02c491257d08e16bd080823ec5cc5ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a> ()</td></tr>
 <tr class="memdesc:a02c491257d08e16bd080823ec5cc5ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes all buffered messages to be sent immediately.  <a href="../../d6/d72/classMIDI__Sender.html#a02c491257d08e16bd080823ec5cc5ce0">More...</a><br /></td></tr>
 <tr class="separator:a02c491257d08e16bd080823ec5cc5ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Deprecated</h2></td></tr>
+<tr class="memitem:a3ae95f4b370848150507245806455a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#a3ae95f4b370848150507245806455a50">sendKP</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t pressure)</td></tr>
+<tr class="memdesc:a3ae95f4b370848150507245806455a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Key Pressure event.  <a href="../../d6/d72/classMIDI__Sender.html#a3ae95f4b370848150507245806455a50">More...</a><br /></td></tr>
+<tr class="separator:a3ae95f4b370848150507245806455a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b919f54a86238cc55ae5ed7eeac578"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#a82b919f54a86238cc55ae5ed7eeac578">sendCC</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t value)</td></tr>
+<tr class="memdesc:a82b919f54a86238cc55ae5ed7eeac578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Control Change event.  <a href="../../d6/d72/classMIDI__Sender.html#a82b919f54a86238cc55ae5ed7eeac578">More...</a><br /></td></tr>
+<tr class="separator:a82b919f54a86238cc55ae5ed7eeac578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac409060e87ff64e9a4c2525f1746b64d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#ac409060e87ff64e9a4c2525f1746b64d">sendPC</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address)</td></tr>
+<tr class="memdesc:ac409060e87ff64e9a4c2525f1746b64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event.  <a href="../../d6/d72/classMIDI__Sender.html#ac409060e87ff64e9a4c2525f1746b64d">More...</a><br /></td></tr>
+<tr class="separator:ac409060e87ff64e9a4c2525f1746b64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c9fca4660babdf1399254eacd9a91e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#a73c9fca4660babdf1399254eacd9a91e">sendPC</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t value)</td></tr>
+<tr class="memdesc:a73c9fca4660babdf1399254eacd9a91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event.  <a href="../../d6/d72/classMIDI__Sender.html#a73c9fca4660babdf1399254eacd9a91e">More...</a><br /></td></tr>
+<tr class="separator:a73c9fca4660babdf1399254eacd9a91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a658b5ce998f761a47c620b7db009fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#a7a658b5ce998f761a47c620b7db009fd">sendCP</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t pressure)</td></tr>
+<tr class="memdesc:a7a658b5ce998f761a47c620b7db009fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Channel Pressure event.  <a href="../../d6/d72/classMIDI__Sender.html#a7a658b5ce998f761a47c620b7db009fd">More...</a><br /></td></tr>
+<tr class="separator:a7a658b5ce998f761a47c620b7db009fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b54e3bee0d150883792d94b34995088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d72/classMIDI__Sender.html#a0b54e3bee0d150883792d94b34995088">sendPB</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint16_t value)</td></tr>
+<tr class="memdesc:a0b54e3bee0d150883792d94b34995088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Pitch Bend event.  <a href="../../d6/d72/classMIDI__Sender.html#a0b54e3bee0d150883792d94b34995088">More...</a><br /></td></tr>
+<tr class="separator:a0b54e3bee0d150883792d94b34995088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Enabling and disabling updatables</h2></td></tr>
 <tr class="memitem:a486f22824bd83c5308a0d70ffac6f758"><td class="memItemLeft" align="right" valign="top"><a id="a486f22824bd83c5308a0d70ffac6f758"></a>
@@ -1615,8 +1701,8 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 </div>
 </div>
-<a id="ac6230d80813083a36e96b2d88dba3cd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6230d80813083a36e96b2d88dba3cd1">&#9670;&nbsp;</a></span>send() <span class="overload">[1/2]</span></h2>
+<a id="a220da619f810e1a74e6f4c899b223fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220da619f810e1a74e6f4c899b223fef">&#9670;&nbsp;</a></span>sendChannelMessage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1625,7 +1711,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void send </td>
+          <td class="memname">void sendChannelMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
@@ -1667,24 +1753,24 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 </table>
 </div><div class="memdoc">
 
-<p>Send a 3-byte MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Voice message. </p>
+<p>Send a 3-byte MIDI Channel Voice message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>MIDI message type. [0x80, 0xE0] </td></tr>
     <tr><td class="paramname">c</td><td>The MIDI channel. [1, 16] </td></tr>
     <tr><td class="paramname">d1</td><td>The first data byte. [0, 127] </td></tr>
     <tr><td class="paramname">d2</td><td>The second data byte. [0, 127] </td></tr>
-    <tr><td class="paramname">cable</td><td>The MIDI <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> Number. [1, 16] </td></tr>
+    <tr><td class="paramname">cable</td><td>The MIDI <a class="el" href="../../d2/d75/classCable.html" title="A type-safe class for MIDI USB Cable numbers.">Cable</a> Number. [CABLE_1, CABLE_16] </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00030">30</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00033">33</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
 
 </div>
 </div>
-<a id="ad192316626112a37747d295340258345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad192316626112a37747d295340258345">&#9670;&nbsp;</a></span>send() <span class="overload">[2/2]</span></h2>
+<a id="a97f870663dc0b0dc24957af6415bca65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f870663dc0b0dc24957af6415bca65">&#9670;&nbsp;</a></span>sendChannelMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1693,7 +1779,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void send </td>
+          <td class="memname">void sendChannelMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
@@ -1729,7 +1815,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 </table>
 </div><div class="memdoc">
 
-<p>Send a 2-byte MIDI <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Voice message. </p>
+<p>Send a 2-byte MIDI Channel Voice message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>MIDI message type. [0x80, 0xE0] </td></tr>
@@ -1740,7 +1826,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00045">45</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00048">48</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
 
 </div>
 </div>
@@ -1767,7 +1853,243 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 <p>Causes all buffered messages to be sent immediately. </p>
 <dl class="section note"><dt>Note</dt><dd>Doesn't necessarily wait until all data has been sent, it just triggers the transmission, so everything will be transmitted as soon as possible. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00085">85</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00142">142</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+
+</div>
+</div>
+<a id="a3ae95f4b370848150507245806455a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae95f4b370848150507245806455a50">&#9670;&nbsp;</a></span>sendKP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendKP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>pressure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a MIDI Key Pressure event. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d6/d72/classMIDI__Sender.html#a88982533de6f46173eccd7069425babe">sendKeyPressure(MIDIAddress,uint8_t)</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00152">152</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+
+</div>
+</div>
+<a id="a82b919f54a86238cc55ae5ed7eeac578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b919f54a86238cc55ae5ed7eeac578">&#9670;&nbsp;</a></span>sendCC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendCC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a MIDI Control Change event. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d6/d72/classMIDI__Sender.html#aa0e05cc39766771989374c1dd26b77a4">sendControlChange(MIDIAddress,uint8_t)</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00156">156</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+
+</div>
+</div>
+<a id="ac409060e87ff64e9a4c2525f1746b64d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac409060e87ff64e9a4c2525f1746b64d">&#9670;&nbsp;</a></span>sendPC() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendPC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a MIDI Program Change event. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d6/d72/classMIDI__Sender.html#a69f6d6afd79c73c67548e57bc4fa148a">sendProgramChange(MIDIAddress)</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00160">160</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+
+</div>
+</div>
+<a id="a73c9fca4660babdf1399254eacd9a91e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c9fca4660babdf1399254eacd9a91e">&#9670;&nbsp;</a></span>sendPC() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendPC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a MIDI Program Change event. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d6/d72/classMIDI__Sender.html#a5f98989f2f186ede97480c8b9c3b4c8f">sendProgramChange(MIDIChannelCable,uint8_t)</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00164">164</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+
+</div>
+</div>
+<a id="a7a658b5ce998f761a47c620b7db009fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a658b5ce998f761a47c620b7db009fd">&#9670;&nbsp;</a></span>sendCP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendCP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>pressure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a MIDI Channel Pressure event. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d6/d72/classMIDI__Sender.html#a0893df10734cfe6c5fc7e4a968715648">sendChannelPressure(MIDIChannelCable,uint8_t)</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00168">168</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
+
+</div>
+</div>
+<a id="a0b54e3bee0d150883792d94b34995088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b54e3bee0d150883792d94b34995088">&#9670;&nbsp;</a></span>sendPB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendPB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a MIDI Pitch Bend event. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d6/d72/classMIDI__Sender.html#af9bf7eb7560466dab452620fe2db223e">sendPitchBend(MIDIChannelCable,uint16_t)</a> instead </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00172">172</a> of file <a class="el" href="../../d5/d05/MIDI__Sender_8ipp_source.html">MIDI_Sender.ipp</a>.</p>
 
 </div>
 </div>
