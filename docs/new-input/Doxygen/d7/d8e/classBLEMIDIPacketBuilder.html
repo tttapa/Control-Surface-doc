@@ -97,8 +97,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d48/classBLEMIDIPacketBuilder__coll__graph.svg" width="200" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d48/classBLEMIDIPacketBuilder__coll__graph.svg" width="200" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -138,6 +137,9 @@ const std::vector&lt; uint8_t &gt; &amp;&#160;</td><td class="memItemRight" vali
 <tr class="memitem:aa66e5a45f2dbd33f6803a1dbbe4882ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#aa66e5a45f2dbd33f6803a1dbbe4882ba">addRealTime</a> (uint8_t rt, uint16_t timestamp)</td></tr>
 <tr class="memdesc:aa66e5a45f2dbd33f6803a1dbbe4882ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try adding a MIDI real-time message to the packet.  <a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#aa66e5a45f2dbd33f6803a1dbbe4882ba">More...</a><br /></td></tr>
 <tr class="separator:aa66e5a45f2dbd33f6803a1dbbe4882ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7921f58172823382a248ba3082c731ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a7921f58172823382a248ba3082c731ad">addSysCommon</a> (uint8_t num_data, uint8_t header, uint8_t data1, uint8_t data2, uint16_t timestamp)</td></tr>
+<tr class="memdesc:a7921f58172823382a248ba3082c731ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try adding a MIDI system common message to the packet.  <a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a7921f58172823382a248ba3082c731ad">More...</a><br /></td></tr>
+<tr class="separator:a7921f58172823382a248ba3082c731ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4355f549204eea18fdd652378fa92243"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">addSysEx</a> (const uint8_t *&amp;data, size_t &amp;length, uint16_t timestamp)</td></tr>
 <tr class="memdesc:a4355f549204eea18fdd652378fa92243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try adding (part of) a SysEx message to the packet.  <a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">More...</a><br /></td></tr>
 <tr class="separator:a4355f549204eea18fdd652378fa92243"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,6 +451,73 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7921f58172823382a248ba3082c731ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7921f58172823382a248ba3082c731ad">&#9670;&nbsp;</a></span>addSysCommon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool addSysCommon </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>num_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>data2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try adding a MIDI system common message to the packet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_data</td><td>The number of data bytes (0, 1 or 2). </td></tr>
+    <tr><td class="paramname">header</td><td>System common status byte. </td></tr>
+    <tr><td class="paramname">data1</td><td>MIDI data byte 1. </td></tr>
+    <tr><td class="paramname">data2</td><td>MIDI data byte 2. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>13-bit BLE-MIDI timestamp.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>Successfully added message to the packet. </td></tr>
+    <tr><td class="paramname">false</td><td>Buffer is too full, send the current packet, reset the packet builder, and try again. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html">BLEMIDIPacketBuilder.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a4355f549204eea18fdd652378fa92243"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4355f549204eea18fdd652378fa92243">&#9670;&nbsp;</a></span>addSysEx()</h2>
 
@@ -516,12 +585,12 @@ Static Private Attributes</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aclassBLEMIDIPacketBuilder_html"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html">BLEMIDIPacketBuilder</a></div><div class="ttdoc">Class for building MIDI over Bluetooth Low Energy packets.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html#l00010">BLEMIDIPacketBuilder.hpp:10</a></div></div>
 <div class="ttc" id="aclassBLEMIDIPacketBuilder_html_a2935e02624493a655bf6933d816202a1"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2935e02624493a655bf6933d816202a1">BLEMIDIPacketBuilder::getSize</a></div><div class="ttdeci">uint16_t getSize() const</div><div class="ttdoc">Get the size of the current packet.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html#l00079">BLEMIDIPacketBuilder.hpp:79</a></div></div>
-<div class="ttc" id="aclassBLEMIDIPacketBuilder_html_a2c7ed84a517b162234e17b06b11b66a1"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2c7ed84a517b162234e17b06b11b66a1">BLEMIDIPacketBuilder::continueSysEx</a></div><div class="ttdeci">void continueSysEx(const uint8_t *&amp;data, size_t &amp;length, uint16_t timestamp)</div><div class="ttdoc">Add a SysEx continuation to the packet.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00117">BLEMIDIPacketBuilder.cpp:117</a></div></div>
-<div class="ttc" id="aclassBLEMIDIPacketBuilder_html_a4355f549204eea18fdd652378fa92243"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">BLEMIDIPacketBuilder::addSysEx</a></div><div class="ttdeci">bool addSysEx(const uint8_t *&amp;data, size_t &amp;length, uint16_t timestamp)</div><div class="ttdoc">Try adding (part of) a SysEx message to the packet.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00085">BLEMIDIPacketBuilder.cpp:85</a></div></div>
+<div class="ttc" id="aclassBLEMIDIPacketBuilder_html_a2c7ed84a517b162234e17b06b11b66a1"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2c7ed84a517b162234e17b06b11b66a1">BLEMIDIPacketBuilder::continueSysEx</a></div><div class="ttdeci">void continueSysEx(const uint8_t *&amp;data, size_t &amp;length, uint16_t timestamp)</div><div class="ttdoc">Add a SysEx continuation to the packet.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00137">BLEMIDIPacketBuilder.cpp:137</a></div></div>
+<div class="ttc" id="aclassBLEMIDIPacketBuilder_html_a4355f549204eea18fdd652378fa92243"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">BLEMIDIPacketBuilder::addSysEx</a></div><div class="ttdeci">bool addSysEx(const uint8_t *&amp;data, size_t &amp;length, uint16_t timestamp)</div><div class="ttdoc">Try adding (part of) a SysEx message to the packet.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00105">BLEMIDIPacketBuilder.cpp:105</a></div></div>
 <div class="ttc" id="aclassBLEMIDIPacketBuilder_html_a82234c8797554eec8dcde8906c695ab2"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a82234c8797554eec8dcde8906c695ab2">BLEMIDIPacketBuilder::getBuffer</a></div><div class="ttdeci">const uint8_t * getBuffer() const</div><div class="ttdoc">Get a pointer to the packet data buffer.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html#l00081">BLEMIDIPacketBuilder.hpp:81</a></div></div>
 <div class="ttc" id="aclassBLEMIDIPacketBuilder_html_ad20897c5c8bd47f5d4005989bead0e55"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#ad20897c5c8bd47f5d4005989bead0e55">BLEMIDIPacketBuilder::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Reset the builder to start a new packet.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00048">BLEMIDIPacketBuilder.cpp:48</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00085">85</a> of file <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html">BLEMIDIPacketBuilder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html">BLEMIDIPacketBuilder.cpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +638,7 @@ Static Private Attributes</h2></td></tr>
 <p>If the message can be completed in a single packet, <code>length</code> is set to <code>0</code> (no remaining data bytes) and <code>data</code> is set to <code>nullptr</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">addSysEx()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html">BLEMIDIPacketBuilder.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../de/d48/BLEMIDIPacketBuilder_8cpp_source.html">BLEMIDIPacketBuilder.cpp</a>.</p>
 
 </div>
 </div>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - b30d70aa1c1575d2981ccb361998ba4ac0dd72a8 - src/MIDI_Parsers/USBMIDI_Parser.cpp</title>
+  <title>LCOV - b068f1979aa14464a8e0e3ac8c5a419ea29c2b18 - src/MIDI_Parsers/USBMIDI_Parser.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">b30d70aa1c1575d2981ccb361998ba4ac0dd72a8</td>
+            <td class="headerValue">b068f1979aa14464a8e0e3ac8c5a419ea29c2b18</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">80</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-28 03:04:43</td>
+            <td class="headerValue">2021-06-28 17:11:21</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">9</td>
@@ -222,52 +222,46 @@
 <a name="152"><span class="lineNum">     152 </span><span class="lineCov">        133 :     switch (CIN) {</span></a>
 <a name="153"><span class="lineNum">     153 </span>            :         case M::MISC_FUNCTION_CODES: break; // LCOV_EXCL_LINE</a>
 <a name="154"><span class="lineNum">     154 </span>            :         case M::CABLE_EVENTS: break;        // LCOV_EXCL_LINE</a>
-<a name="155"><span class="lineNum">     155 </span>            : </a>
-<a name="156"><span class="lineNum">     156 </span>            :         case M::SYSTEM_COMMON_2B: // fallthrough</a>
-<a name="157"><span class="lineNum">     157 </span><span class="lineCov">          4 :         case M::SYSTEM_COMMON_3B: return handleSysCommon(packet, cable);</span></a>
-<a name="158"><span class="lineNum">     158 </span>            : </a>
-<a name="159"><span class="lineNum">     159 </span><span class="lineCov">        102 :         case M::SYSEX_START_CONT: return handleSysExStartCont(packet, cable);</span></a>
-<a name="160"><span class="lineNum">     160 </span>            : </a>
-<a name="161"><span class="lineNum">     161 </span><span class="lineCov">          7 :         case M::SYSEX_END_1B: return handleSysExEnd&lt;1&gt;(packet, cable);</span></a>
-<a name="162"><span class="lineNum">     162 </span><span class="lineCov">          5 :         case M::SYSEX_END_2B: return handleSysExEnd&lt;2&gt;(packet, cable);</span></a>
-<a name="163"><span class="lineNum">     163 </span><span class="lineCov">          6 :         case M::SYSEX_END_3B: return handleSysExEnd&lt;3&gt;(packet, cable);</span></a>
-<a name="164"><span class="lineNum">     164 </span>            : </a>
-<a name="165"><span class="lineNum">     165 </span>            :         case M::NOTE_OFF:         // fallthrough</a>
-<a name="166"><span class="lineNum">     166 </span>            :         case M::NOTE_ON:          // fallthrough</a>
-<a name="167"><span class="lineNum">     167 </span>            :         case M::KEY_PRESSURE:     // fallthrough</a>
-<a name="168"><span class="lineNum">     168 </span>            :         case M::CONTROL_CHANGE:   // fallthrough</a>
-<a name="169"><span class="lineNum">     169 </span>            :         case M::PROGRAM_CHANGE:   // fallthrough</a>
-<a name="170"><span class="lineNum">     170 </span>            :         case M::CHANNEL_PRESSURE: // fallthrough</a>
-<a name="171"><span class="lineNum">     171 </span><span class="lineCov">          6 :         case M::PITCH_BEND: return handleChannelMessage(packet, cable);</span></a>
-<a name="172"><span class="lineNum">     172 </span>            : </a>
-<a name="173"><span class="lineNum">     173 </span><span class="lineCov">          3 :         case M::SINGLE_BYTE: return handleSingleByte(packet, cable);</span></a>
+<a name="155"><span class="lineNum">     155 </span>            :         case M::SYSTEM_COMMON_2B:           // fallthrough</a>
+<a name="156"><span class="lineNum">     156 </span><span class="lineCov">          4 :         case M::SYSTEM_COMMON_3B: return handleSysCommon(packet, cable);</span></a>
+<a name="157"><span class="lineNum">     157 </span><span class="lineCov">        102 :         case M::SYSEX_START_CONT: return handleSysExStartCont(packet, cable);</span></a>
+<a name="158"><span class="lineNum">     158 </span><span class="lineCov">          7 :         case M::SYSEX_END_1B: return handleSysExEnd&lt;1&gt;(packet, cable);</span></a>
+<a name="159"><span class="lineNum">     159 </span><span class="lineCov">          5 :         case M::SYSEX_END_2B: return handleSysExEnd&lt;2&gt;(packet, cable);</span></a>
+<a name="160"><span class="lineNum">     160 </span><span class="lineCov">          6 :         case M::SYSEX_END_3B: return handleSysExEnd&lt;3&gt;(packet, cable);</span></a>
+<a name="161"><span class="lineNum">     161 </span>            :         case M::NOTE_OFF:         // fallthrough</a>
+<a name="162"><span class="lineNum">     162 </span>            :         case M::NOTE_ON:          // fallthrough</a>
+<a name="163"><span class="lineNum">     163 </span>            :         case M::KEY_PRESSURE:     // fallthrough</a>
+<a name="164"><span class="lineNum">     164 </span>            :         case M::CONTROL_CHANGE:   // fallthrough</a>
+<a name="165"><span class="lineNum">     165 </span>            :         case M::PROGRAM_CHANGE:   // fallthrough</a>
+<a name="166"><span class="lineNum">     166 </span>            :         case M::CHANNEL_PRESSURE: // fallthrough</a>
+<a name="167"><span class="lineNum">     167 </span><span class="lineCov">          6 :         case M::PITCH_BEND: return handleChannelMessage(packet, cable);</span></a>
+<a name="168"><span class="lineNum">     168 </span><span class="lineCov">          3 :         case M::SINGLE_BYTE: return handleSingleByte(packet, cable);</span></a>
+<a name="169"><span class="lineNum">     169 </span>            :         default: break; // LCOV_EXCL_LINE</a>
+<a name="170"><span class="lineNum">     170 </span>            :     }</a>
+<a name="171"><span class="lineNum">     171 </span>            : </a>
+<a name="172"><span class="lineNum">     172 </span>            :     return MIDIReadEvent::NO_MESSAGE; // LCOV_EXCL_LINE</a>
+<a name="173"><span class="lineNum">     173 </span><span class="lineCov">        133 : }</span></a>
 <a name="174"><span class="lineNum">     174 </span>            : </a>
-<a name="175"><span class="lineNum">     175 </span>            :         default: break; // LCOV_EXCL_LINE</a>
-<a name="176"><span class="lineNum">     176 </span>            :     }</a>
-<a name="177"><span class="lineNum">     177 </span>            : </a>
-<a name="178"><span class="lineNum">     178 </span>            :     return MIDIReadEvent::NO_MESSAGE; // LCOV_EXCL_LINE</a>
-<a name="179"><span class="lineNum">     179 </span><span class="lineCov">        133 : }</span></a>
-<a name="180"><span class="lineNum">     180 </span>            : </a>
-<a name="181"><span class="lineNum">     181 </span><span class="lineCov">         39 : MIDIReadEvent USBMIDI_Parser::resume() {</span></a>
-<a name="182"><span class="lineNum">     182 </span>            : #if !IGNORE_SYSEX</a>
-<a name="183"><span class="lineNum">     183 </span><span class="lineCov">         39 :     if (!hasStoredPacket())</span></a>
-<a name="184"><span class="lineNum">     184 </span><span class="lineCov">         37 :         return MIDIReadEvent::NO_MESSAGE;</span></a>
-<a name="185"><span class="lineNum">     185 </span>            : </a>
-<a name="186"><span class="lineNum">     186 </span><span class="lineCov">          2 :     MIDIUSBPacket_t packet = popStoredPacket();</span></a>
+<a name="175"><span class="lineNum">     175 </span><span class="lineCov">         39 : MIDIReadEvent USBMIDI_Parser::resume() {</span></a>
+<a name="176"><span class="lineNum">     176 </span>            : #if !IGNORE_SYSEX</a>
+<a name="177"><span class="lineNum">     177 </span><span class="lineCov">         39 :     if (!hasStoredPacket())</span></a>
+<a name="178"><span class="lineNum">     178 </span><span class="lineCov">         37 :         return MIDIReadEvent::NO_MESSAGE;</span></a>
+<a name="179"><span class="lineNum">     179 </span>            : </a>
+<a name="180"><span class="lineNum">     180 </span><span class="lineCov">          2 :     MIDIUSBPacket_t packet = popStoredPacket();</span></a>
+<a name="181"><span class="lineNum">     181 </span>            : </a>
+<a name="182"><span class="lineNum">     182 </span>            :     // If a SysEx message was in progress</a>
+<a name="183"><span class="lineNum">     183 </span><span class="lineCov">          2 :     if (receivingSysEx(activeCable)) {</span></a>
+<a name="184"><span class="lineNum">     184 </span>            :         // Reset the buffer for the next chunk</a>
+<a name="185"><span class="lineNum">     185 </span><span class="lineCov">          2 :         startSysEx(activeCable);</span></a>
+<a name="186"><span class="lineNum">     186 </span><span class="lineCov">          2 :     }</span></a>
 <a name="187"><span class="lineNum">     187 </span>            : </a>
-<a name="188"><span class="lineNum">     188 </span>            :     // If a SysEx message was in progress</a>
-<a name="189"><span class="lineNum">     189 </span><span class="lineCov">          2 :     if (receivingSysEx(activeCable)) {</span></a>
-<a name="190"><span class="lineNum">     190 </span>            :         // Reset the buffer for the next chunk</a>
-<a name="191"><span class="lineNum">     191 </span><span class="lineCov">          2 :         startSysEx(activeCable);</span></a>
-<a name="192"><span class="lineNum">     192 </span><span class="lineCov">          2 :     }</span></a>
+<a name="188"><span class="lineNum">     188 </span><span class="lineCov">          2 :     return feed(packet);</span></a>
+<a name="189"><span class="lineNum">     189 </span>            : #else</a>
+<a name="190"><span class="lineNum">     190 </span>            :     return MIDIReadEvent::NO_MESSAGE;</a>
+<a name="191"><span class="lineNum">     191 </span>            : #endif</a>
+<a name="192"><span class="lineNum">     192 </span><span class="lineCov">         39 : }</span></a>
 <a name="193"><span class="lineNum">     193 </span>            : </a>
-<a name="194"><span class="lineNum">     194 </span><span class="lineCov">          2 :     return feed(packet);</span></a>
-<a name="195"><span class="lineNum">     195 </span>            : #else</a>
-<a name="196"><span class="lineNum">     196 </span>            :     return MIDIReadEvent::NO_MESSAGE;</a>
-<a name="197"><span class="lineNum">     197 </span>            : #endif</a>
-<a name="198"><span class="lineNum">     198 </span><span class="lineCov">         39 : }</span></a>
-<a name="199"><span class="lineNum">     199 </span>            : </a>
-<a name="200"><span class="lineNum">     200 </span>            : END_CS_NAMESPACE</a>
+<a name="194"><span class="lineNum">     194 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

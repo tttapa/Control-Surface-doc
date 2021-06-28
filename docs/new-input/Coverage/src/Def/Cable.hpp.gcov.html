@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - b30d70aa1c1575d2981ccb361998ba4ac0dd72a8 - src/Def/Cable.hpp</title>
+  <title>LCOV - b068f1979aa14464a8e0e3ac8c5a419ea29c2b18 - src/Def/Cable.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">b30d70aa1c1575d2981ccb361998ba4ac0dd72a8</td>
+            <td class="headerValue">b068f1979aa14464a8e0e3ac8c5a419ea29c2b18</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">8</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-28 03:04:43</td>
+            <td class="headerValue">2021-06-28 17:11:21</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">5</td>
@@ -88,15 +88,15 @@
 <a name="18"><span class="lineNum">      18 </span>            :      * @param   zeroBasedCable</a>
 <a name="19"><span class="lineNum">      19 </span>            :      *          The zero-based cable (0 is the first cable).</a>
 <a name="20"><span class="lineNum">      20 </span>            :      */</a>
-<a name="21"><span class="lineNum">      21 </span><span class="lineCov">       2322 :     explicit constexpr Cable(uint8_t zeroBasedCable)</span></a>
-<a name="22"><span class="lineNum">      22 </span><span class="lineCov">       2322 :         : zeroBasedCable(zeroBasedCable) {}</span></a>
+<a name="21"><span class="lineNum">      21 </span><span class="lineCov">       2520 :     explicit constexpr Cable(uint8_t zeroBasedCable)</span></a>
+<a name="22"><span class="lineNum">      22 </span><span class="lineCov">       2520 :         : zeroBasedCable(zeroBasedCable) {}</span></a>
 <a name="23"><span class="lineNum">      23 </span>            : </a>
 <a name="24"><span class="lineNum">      24 </span>            :     /**</a>
 <a name="25"><span class="lineNum">      25 </span>            :      * @brief   Get the cable as an integer.</a>
 <a name="26"><span class="lineNum">      26 </span>            :      * </a>
 <a name="27"><span class="lineNum">      27 </span>            :      * @return  The zero-based cable (0 is the first cable).</a>
 <a name="28"><span class="lineNum">      28 </span>            :      */</a>
-<a name="29"><span class="lineNum">      29 </span><span class="lineCov">       2889 :     constexpr uint8_t getRaw() const { return zeroBasedCable; }</span></a>
+<a name="29"><span class="lineNum">      29 </span><span class="lineCov">       3087 :     constexpr uint8_t getRaw() const { return zeroBasedCable; }</span></a>
 <a name="30"><span class="lineNum">      30 </span>            : </a>
 <a name="31"><span class="lineNum">      31 </span>            :     /**</a>
 <a name="32"><span class="lineNum">      32 </span>            :      * @brief   Get the cable as an integer.</a>
@@ -121,8 +121,8 @@
 <a name="51"><span class="lineNum">      51 </span>            :      * @param   rhs</a>
 <a name="52"><span class="lineNum">      52 </span>            :      *          The other cable to compare this cable to.</a>
 <a name="53"><span class="lineNum">      53 </span>            :      */</a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">        286 :     constexpr bool operator==(const Cable &amp;rhs) const {</span></a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">        286 :         return this-&gt;zeroBasedCable == rhs.zeroBasedCable;</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">        290 :     constexpr bool operator==(const Cable &amp;rhs) const {</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">        290 :         return this-&gt;zeroBasedCable == rhs.zeroBasedCable;</span></a>
 <a name="56"><span class="lineNum">      56 </span>            :     }</a>
 <a name="57"><span class="lineNum">      57 </span>            : </a>
 <a name="58"><span class="lineNum">      58 </span>            :     /**</a>

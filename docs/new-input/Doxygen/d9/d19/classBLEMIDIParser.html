@@ -78,8 +78,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d9/da1/classBLEMIDIParser-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">BLEMIDIParser Class Reference<div class="ingroups"><a class="el" href="../../d8/d0e/group__MIDIParsers.html">MIDI Parsers</a></div></div></div>
 </div><!--header-->
@@ -96,8 +96,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dab/classBLEMIDIParser__coll__graph.svg" width="178" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dab/classBLEMIDIParser__coll__graph.svg" width="172" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -108,9 +107,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a46132af31fab37d083eda24f9c72fd47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#a46132af31fab37d083eda24f9c72fd47">pull</a> (uint8_t &amp;output)</td></tr>
 <tr class="memdesc:a46132af31fab37d083eda24f9c72fd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next MIDI byte from the BLE packet (if available).  <a href="../../d9/d19/classBLEMIDIParser.html#a46132af31fab37d083eda24f9c72fd47">More...</a><br /></td></tr>
 <tr class="separator:a46132af31fab37d083eda24f9c72fd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddec30275f2b7973122ed748e1c6d2c"><td class="memItemLeft" align="right" valign="top"><a id="afddec30275f2b7973122ed748e1c6d2c"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>getTimestamp</b> () const</td></tr>
+<tr class="separator:afddec30275f2b7973122ed748e1c6d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3c82ac2f4d62e3dc105febcdff5c75cb"><td class="memItemLeft" align="right" valign="top"><a id="a3c82ac2f4d62e3dc105febcdff5c75cb"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isData</b> (uint8_t <a class="el" href="../../d9/d19/classBLEMIDIParser.html#a579f5164b5b16e18ddcdb0296ef81799">data</a>)</td></tr>
+<tr class="memdesc:a3c82ac2f4d62e3dc105febcdff5c75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given byte is a data byte (and not a header, timestamp or status byte). <br /></td></tr>
+<tr class="separator:a3c82ac2f4d62e3dc105febcdff5c75cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:a579f5164b5b16e18ddcdb0296ef81799"><td class="memItemLeft" align="right" valign="top"><a id="a579f5164b5b16e18ddcdb0296ef81799"></a>
 const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 <tr class="separator:a579f5164b5b16e18ddcdb0296ef81799"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,13 +129,9 @@ const uint8_t *const&#160;</td><td class="memItemRight" valign="bottom"><b>end</
 <tr class="memitem:acd1153a3ce3bcdaa04ecb5517355bc72"><td class="memItemLeft" align="right" valign="top"><a id="acd1153a3ce3bcdaa04ecb5517355bc72"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>prevWasTimestamp</b> = true</td></tr>
 <tr class="separator:acd1153a3ce3bcdaa04ecb5517355bc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a3c82ac2f4d62e3dc105febcdff5c75cb"><td class="memItemLeft" align="right" valign="top"><a id="a3c82ac2f4d62e3dc105febcdff5c75cb"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isData</b> (uint8_t <a class="el" href="../../d9/d19/classBLEMIDIParser.html#a579f5164b5b16e18ddcdb0296ef81799">data</a>)</td></tr>
-<tr class="memdesc:a3c82ac2f4d62e3dc105febcdff5c75cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given byte is a data byte (and not a header, timestamp or status byte). <br /></td></tr>
-<tr class="separator:a3c82ac2f4d62e3dc105febcdff5c75cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67bd8f6a86812860afe84df6c1cc94d"><td class="memItemLeft" align="right" valign="top"><a id="ad67bd8f6a86812860afe84df6c1cc94d"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>timestamp</b> = 0</td></tr>
+<tr class="separator:ad67bd8f6a86812860afe84df6c1cc94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a46132af31fab37d083eda24f9c72fd47"></a>
@@ -156,7 +161,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isData</b> (ui
 <p>Get the next MIDI byte from the BLE packet (if available). </p>
 <dl class="section return"><dt>Returns</dt><dd>True if a byte was available, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00050">50</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
 
 </div>
 </div>
