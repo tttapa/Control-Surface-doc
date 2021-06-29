@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['c_354',['C',['../d5/dc2/classMIDI__Notes_1_1Note.html#a48c89b1a4d47b85519eb020badb0075f',1,'MIDI_Notes::Note::C()'],['../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca',1,'MIDI_Notes::C()']]],
-  ['cable_355',['Cable',['../d2/d75/classCable.html',1,'Cable'],['../d2/d75/classCable.html#a9096f2fcbe0dd4b64375eb46c3bf5d1b',1,'Cable::Cable()']]],
-  ['cable_356',['cable',['../d6/d99/structRealTimeMessage.html#aa42ec551e3296a6dc29409c0d7f5a3ab',1,'RealTimeMessage::cable()'],['../db/d45/structSysExMessage.html#aa42ec551e3296a6dc29409c0d7f5a3ab',1,'SysExMessage::cable()'],['../d4/d61/structMIDIMessage.html#aa42ec551e3296a6dc29409c0d7f5a3ab',1,'MIDIMessage::cable()'],['../d5/d2e/classMCU_1_1LCD.html#aa42ec551e3296a6dc29409c0d7f5a3ab',1,'MCU::LCD::cable()']]],
+  ['c_353',['C',['../d5/dc2/classMIDI__Notes_1_1Note.html#a48c89b1a4d47b85519eb020badb0075f',1,'MIDI_Notes::Note::C()'],['../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca',1,'MIDI_Notes::C()']]],
+  ['cable_354',['Cable',['../d2/d75/classCable.html',1,'']]],
+  ['cable_355',['cable',['../d6/d99/structRealTimeMessage.html#aa42ec551e3296a6dc29409c0d7f5a3ab',1,'RealTimeMessage::cable()'],['../db/d45/structSysExMessage.html#aa42ec551e3296a6dc29409c0d7f5a3ab',1,'SysExMessage::cable()'],['../d4/d61/structMIDIMessage.html#aa42ec551e3296a6dc29409c0d7f5a3ab',1,'MIDIMessage::cable()'],['../d5/d2e/classMCU_1_1LCD.html#aa42ec551e3296a6dc29409c0d7f5a3ab',1,'MCU::LCD::cable()']]],
+  ['cable_356',['Cable',['../d2/d75/classCable.html#a9096f2fcbe0dd4b64375eb46c3bf5d1b',1,'Cable']]],
   ['cable_2ecpp_357',['Cable.cpp',['../d9/d18/Cable_8cpp.html',1,'']]],
   ['cable_2ehpp_358',['Cable.hpp',['../d2/dbc/Cable_8hpp.html',1,'']]],
   ['cable_5f1_359',['CABLE_1',['../d2/dbc/Cable_8hpp.html#a8e81dda7ce1ca5f85588ab5bb0dcb2cd',1,'Cable.hpp']]],
@@ -111,8 +112,8 @@ var searchData=
   ['channelmessage_462',['ChannelMessage',['../d7/d3f/structChannelMessage.html',1,'ChannelMessage'],['../d7/d3f/structChannelMessage.html#a9977949d53a7ba78ca5126442f0d5ab4',1,'ChannelMessage::ChannelMessage()']]],
   ['channelmessage_463',['channelmessage',['../db/d98/unionMIDIMessageQueue_1_1MIDIMessageQueueElement_1_1Message.html#a60a0af53c10ec0c1174ae9e9ec51facd',1,'MIDIMessageQueue::MIDIMessageQueueElement::Message']]],
   ['channelmessage_464',['ChannelMessage',['../d7/d3f/structChannelMessage.html#a79d83b976353357ce3e6317a64db5441',1,'ChannelMessage']]],
-  ['channelmessagecallback_465',['channelMessageCallback',['../dc/d45/classControl__Surface__.html#a434abb7977c4a7d49997610329c47a1c',1,'Control_Surface_']]],
-  ['channelmessagecallback_466',['ChannelMessageCallback',['../dc/d45/classControl__Surface__.html#a63312ad9f5f487e71fb1504718b1f8c0',1,'Control_Surface_']]],
+  ['channelmessagecallback_465',['ChannelMessageCallback',['../dc/d45/classControl__Surface__.html#a63312ad9f5f487e71fb1504718b1f8c0',1,'Control_Surface_']]],
+  ['channelmessagecallback_466',['channelMessageCallback',['../dc/d45/classControl__Surface__.html#a434abb7977c4a7d49997610329c47a1c',1,'Control_Surface_']]],
   ['channelpressure_467',['ChannelPressure',['../d2/d91/namespaceDebugMIDIMessageNames.html#a06d1b3c7df6151c7865bbda79bf8dc3e',1,'DebugMIDIMessageNames']]],
   ['char1_468',['char1',['../d5/d1f/classHexPuller.html#ab09d4b8fcaa133f4384c5da0e28e3555',1,'HexPuller']]],
   ['char2_469',['char2',['../d5/d1f/classHexPuller.html#a54f902d95ccf0e68a81df948de5f0be1',1,'HexPuller']]],

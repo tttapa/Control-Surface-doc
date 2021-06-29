@@ -109,7 +109,7 @@ class AH::AnalogMultiplex&lt; N &gt;</div><p >A class for reading multiplexed an
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d44/classAH_1_1AnalogMultiplex__inherit__graph.svg" width="226" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d44/classAH_1_1AnalogMultiplex__inherit__graph.svg" width="226" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -117,7 +117,7 @@ class AH::AnalogMultiplex&lt; N &gt;</div><p >A class for reading multiplexed an
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/da0/classAH_1_1AnalogMultiplex__coll__graph.svg" width="226" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/da0/classAH_1_1AnalogMultiplex__coll__graph.svg" width="226" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -170,6 +170,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateBufferedOutputs
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateBufferedInputs</b> () override</td></tr>
 <tr class="memdesc:a651e4e7a2bab28c5980e990b040dc4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">No periodic updating of the state is necessary, all actions are carried out when the user calls analogRead or digitalRead. <br /></td></tr>
 <tr class="separator:a651e4e7a2bab28c5980e990b040dc4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cf22445d2b12ed38d0e3138d4d6537"><td class="memItemLeft" align="right" valign="top"><a id="a06cf22445d2b12ed38d0e3138d4d6537"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>discardFirstReading</b> (bool <a class="el" href="../../d2/d94/classAH_1_1AnalogMultiplex.html#aa57df9fded18d752b37623379afed801">discardFirstReading_</a>)</td></tr>
+<tr class="memdesc:a06cf22445d2b12ed38d0e3138d4d6537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether to discard the first analog reading after changing the address lines (enabled by default). <br /></td></tr>
+<tr class="separator:a06cf22445d2b12ed38d0e3138d4d6537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -195,6 +199,9 @@ const <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a 
 <tr class="memitem:a559afa2d89a827ab58baad7f444ff69d"><td class="memItemLeft" align="right" valign="top"><a id="a559afa2d89a827ab58baad7f444ff69d"></a>
 const <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>enablePin</b></td></tr>
 <tr class="separator:a559afa2d89a827ab58baad7f444ff69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57df9fded18d752b37623379afed801"><td class="memItemLeft" align="right" valign="top"><a id="aa57df9fded18d752b37623379afed801"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>discardFirstReading_</b> = true</td></tr>
+<tr class="separator:aa57df9fded18d752b37623379afed801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -310,7 +317,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MUX_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00192">192</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00201">201</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
 
 </div>
 </div>
@@ -362,7 +369,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MUX_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00197">197</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00206">206</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
 
 </div>
 </div>
@@ -438,7 +445,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MUX_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00202">202</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00211">211</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
 
 </div>
 </div>
@@ -474,7 +481,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MUX_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00210">210</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00219">219</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,7 +517,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MUX_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00215">215</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00224">224</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
 
 </div>
 </div>
@@ -546,7 +553,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MUX_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00224">224</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00234">234</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
 
 </div>
 </div>
@@ -622,7 +629,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MUX_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00239">239</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00249">249</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
 
 </div>
 </div>
@@ -658,7 +665,7 @@ constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>MUX_
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00251">251</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00261">261</a> of file <a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AnalogMultiplex.hpp</a>.</p>
 
 </div>
 </div>
