@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -86,18 +86,18 @@ $(function() {
 <a href="../../d1/d93/Error_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d1/d65/Warnings_8hpp.html">AH/Settings/Warnings.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>() <span class="comment">// Enable errors on warnings</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d1/d65/Warnings_8hpp.html">AH/Settings/Warnings.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>() <span class="comment">// Enable errors on warnings</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;AH/Debug/Debug.hpp&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef ARDUINO </span><span class="comment">// ------------------------------------------------------ ARDUINO</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/d69/namespaceAH.html#a7ff220c57636b72ec9d8df676f72ef0e">fatalErrorExit</a>() __attribute__((noreturn));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a7ff220c57636b72ec9d8df676f72ef0e">fatalErrorExit</a>() __attribute__((noreturn));</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef FATAL_ERRORS</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
@@ -132,12 +132,12 @@ $(function() {
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">class </span>ErrorException : <span class="keyword">public</span> std::exception {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ErrorException(<span class="keyword">const</span> std::string message, <span class="keywordtype">int</span> errorCode)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        : message(<a class="code" href="../../d0/d81/namespaceenc__util.html#a56c06450b5896018c186e8cd94349002">std::move</a>(message)), errorCode(errorCode) {}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        : message(<a class="highlightmember code" href="../../d0/d81/namespaceenc__util.html#a56c06450b5896018c186e8cd94349002">std::move</a>(message)), errorCode(errorCode) {}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *what() <span class="keyword">const</span> <span class="keywordflow">throw</span>() <span class="keyword">override</span> { <span class="keywordflow">return</span> message.c_str(); }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">int</span> getErrorCode()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> errorCode; }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
@@ -146,7 +146,7 @@ $(function() {
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> errorCode;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#define ERROR(msg, errc)                                                       \</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
@@ -166,7 +166,7 @@ $(function() {
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_a03ed68e9e3d1bbe9a28fd924cb7260c1"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div><div class="ttdeci">#define END_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00010">AH/Settings/NamespaceSettings.hpp:10</a></div></div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_abe0f0e505619b6899c38363f4e42a272"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div><div class="ttdeci">#define BEGIN_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00009">AH/Settings/NamespaceSettings.hpp:9</a></div></div>
 <div class="ttc" id="aWarnings_8hpp_html"><div class="ttname"><a href="../../d1/d65/Warnings_8hpp.html">Warnings.hpp</a></div></div>

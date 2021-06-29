@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">Dual-MIDI-Interface.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md90"></a>
+<h1><a class="anchor" id="autotoc_md91"></a>
 Dual-MIDI-Interface</h1>
 <p >This example demonstrates how to group together two or more MIDI interfaces, so you can send the MIDI output over both MIDI USB and 5-pin DIN MIDI, for example. MIDI input is received from all interfaces as well.</p>
 <p >Also have a look at the <a class="el" href="../../d0/dc4/MIDI_Pipes-Routing_8ino-example.html">MIDI_Pipes-Routing.ino</a> example, the <a class="el" href="../../df/ddc/group__MIDI__Routing.html">MIDI Routing</a> module and the <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> documentation for more information about MIDI routing. <br  />
@@ -87,19 +87,19 @@ Dual-MIDI-Interface</h1>
 <p >When you call <code>Control_Surface.begin()</code>, it automatically connects itself to the default MIDI interface (<a class="el" href="../../d9/d73/classMIDI__Interface.html#aea39e2d359376a21ff1a490b2e0b5f22">MIDI_Interface::getDefault()</a>). <br  />
  If you want to route everything manually, you have to connect it before calling <code>Control_Surface.begin()</code>, or you have to disconnect the default pipes before connecting your own, using <a class="el" href="../../dc/d45/classControl__Surface__.html#a1c2b4dbd39e9279eef247ad25f7109dd">Control_Surface_::disconnectMIDI_Interfaces()</a>.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR USB, Nano Every, Due, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md91"></a>
+<h2><a class="anchor" id="autotoc_md92"></a>
 Connections</h2>
 <ul>
 <li>A0: wiper of a potentiometer</li>
 </ul>
 <p >Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>.</p>
-<h2><a class="anchor" id="autotoc_md92"></a>
+<h2><a class="anchor" id="autotoc_md93"></a>
 Behavior</h2>
 <ul>
 <li>When you turn the potentiometer, you should receive MIDI Control Change events on both the Serial MIDI interface and the USB MIDI interface.</li>
 <li>When a MIDI Note event for middle C is received on either MIDI interface, the state of the built-in LED will change accordingly.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md93"></a>
+<h2><a class="anchor" id="autotoc_md94"></a>
 Mapping</h2>
 <ul>
 <li>None</li>
@@ -107,29 +107,29 @@ Mapping</h2>
 <p >Written by PieterP, 2019-08-22 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create two MIDI interfaces</span></div>
-<div class="line"><a name="_a0"></a><a class="code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> usbmidi;</div>
-<div class="line"><a name="_a1"></a><a class="code" href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a> serialmidi {Serial1, <a name="a2"></a><a class="code" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI_BAUD</a>};</div>
+<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> usbmidi;</div>
+<div class="line"><a name="_a1"></a><a class="highlightclass code" href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a> serialmidi {Serial1, <a name="a2"></a><a class="highlightmember code" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI_BAUD</a>};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a MIDI pipe factory to connect the MIDI interfaces to Control Surface</span></div>
-<div class="line"><a name="_a3"></a><a class="code" href="../../d3/da5/structMIDI__PipeFactory.html">BidirectionalMIDI_PipeFactory&lt;2&gt;</a> pipes;</div>
+<div class="line"><a name="_a3"></a><a class="highlightclass code" href="../../d3/da5/structMIDI__PipeFactory.html">BidirectionalMIDI_PipeFactory&lt;2&gt;</a> pipes;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Add some MIDI elements to show that the MIDI interfaces actually work</span></div>
-<div class="line"><a name="_a4"></a><a class="code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> pot {A0, <a name="a5"></a><a class="code" href="../../d4/dbe/namespaceMIDI__CC.html#a6eb9900d522be13f07efce201817046d">MIDI_CC::General_Purpose_Controller_1</a>};</div>
-<div class="line"><a name="_a6"></a><a class="code" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {LED_BUILTIN, 0x3C};</div>
+<div class="line"><a name="_a4"></a><a class="highlightclass code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> pot {A0, <a name="a5"></a><a class="highlightmember code" href="../../d4/dbe/namespaceMIDI__CC.html#a6eb9900d522be13f07efce201817046d">MIDI_CC::General_Purpose_Controller_1</a>};</div>
+<div class="line"><a name="_a6"></a><a class="highlightclass code" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {LED_BUILTIN, 0x3C};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <span class="comment">// Manually connect the MIDI interfaces to Control Surface</span></div>
-<div class="line">  <a name="a7"></a><a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a> | pipes | usbmidi;</div>
-<div class="line">  <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a> | pipes | serialmidi;</div>
+<div class="line">  <a name="a7"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a> | pipes | usbmidi;</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a> | pipes | serialmidi;</div>
 <div class="line">  <span class="comment">// Initialize Control Surface _after_ connecting the interfaces</span></div>
-<div class="line">  <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a8"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a9"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>

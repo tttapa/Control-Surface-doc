@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">MCP23017.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md229"></a>
+<h1><a class="anchor" id="autotoc_md231"></a>
 MCP23017</h1>
 <p >This example demonstrates the use of MCP23017 IO expanders as if they were just normal IO pins.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md230"></a>
+<h2><a class="anchor" id="autotoc_md232"></a>
 Connections</h2>
 <ul>
 <li>SDA: MCP23017 SDA</li>
@@ -92,14 +92,14 @@ Connections</h2>
 </ul>
 <p >Connect an LED (and series resistor) between pin GPA0 of the MCP and ground. Connect a push button between pin GPB0 of the MCP and ground. The internal pull-up resistor will be used.</p>
 <p >Tie the three address lines of the MCP to ground.</p>
-<h2><a class="anchor" id="autotoc_md231"></a>
+<h2><a class="anchor" id="autotoc_md233"></a>
 Behavior</h2>
 <p >When the push button is pressed, the LED turns on.</p>
 <p >Written by PieterP, 2020-11-20 <br  />
  <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d7/dca/MCP23017_8hpp.html">AH/Hardware/ExtendedInputOutput/MCP23017.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d7/dca/MCP23017_8hpp.html">AH/Hardware/ExtendedInputOutput/MCP23017.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;Wire.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span>ExtIO; <span class="comment">// Use the extended input/output functions</span></div>
@@ -111,21 +111,21 @@ Behavior</h2>
 <div class="line">  2,    <span class="comment">// Optional: interrupt pin to detect input changes </span></div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><a name="a0"></a><a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin = mcp.pinA(0);    <span class="comment">// GPIOA0</span></div>
-<div class="line"><a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> buttonPin = mcp.pinB(0); <span class="comment">// GPIOB0</span></div>
+<div class="line"><a name="a0"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin = mcp.pinA(0);    <span class="comment">// GPIOA0</span></div>
+<div class="line"><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> buttonPin = mcp.pinB(0); <span class="comment">// GPIOB0</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  Wire.begin();          <span class="comment">// Initialize the I²C interface</span></div>
 <div class="line">  Wire.setClock(800000); <span class="comment">// Faster I²C clock</span></div>
 <div class="line">  mcp.begin();           <span class="comment">// Initialize the MCP23017</span></div>
 <div class="line"> </div>
-<div class="line">  <a name="a1"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(ledPin, <a name="a2"></a><a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
-<div class="line">  <a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(buttonPin, <a name="a3"></a><a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ab3a208d63371a2819ec768bfe8fa2531">INPUT_PULLUP</a>);</div>
+<div class="line">  <a name="a1"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(ledPin, <a name="a2"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
+<div class="line">  <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(buttonPin, <a name="a3"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ab3a208d63371a2819ec768bfe8fa2531">INPUT_PULLUP</a>);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <span class="keyword">auto</span> buttonState = <a name="a4"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(buttonPin);</div>
-<div class="line">  <a name="a5"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(ledPin, buttonState ? <a name="a6"></a><a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a> : <a name="a7"></a><a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
+<div class="line">  <span class="keyword">auto</span> buttonState = <a name="a4"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(buttonPin);</div>
+<div class="line">  <a name="a5"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(ledPin, buttonState ? <a name="a6"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a> : <a name="a7"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Note: </span></div>

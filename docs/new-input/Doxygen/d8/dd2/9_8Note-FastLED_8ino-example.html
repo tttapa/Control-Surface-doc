@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,23 +79,23 @@ $(function() {
   <div class="headertitle"><div class="title">9.Note-FastLED.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md144"></a>
+<h1><a class="anchor" id="autotoc_md146"></a>
 9.Note-FastLED</h1>
 <p >This example demonstrates the use of addressable LEDs that respond to incoming MIDI note events.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Teensy 3.x, ESP32</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>You might lose incoming MIDI data while the LED strip is being updated. To avoid this, don't use an Arduino UNO. <br  />
  See <a href="https://github.com/FastLED/FastLED/wiki/Interrupt-problems">https://github.com/FastLED/FastLED/wiki/Interrupt-problems</a></dd></dl>
-<h2><a class="anchor" id="autotoc_md145"></a>
+<h2><a class="anchor" id="autotoc_md147"></a>
 Connections</h2>
 <ul>
 <li>2: Data pin of NeoPixel LED strip with at least 8 pixels.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md146"></a>
+<h2><a class="anchor" id="autotoc_md148"></a>
 Behavior</h2>
 <p >If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the first LED will light up, if a Note Off event for that note is sent, the LED will turn off. <br  />
  If a MIDI Note On event for note 0x3D (C#4) is sent, the second LED will light up, etc. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="autotoc_md147"></a>
+<h2><a class="anchor" id="autotoc_md149"></a>
 Mapping</h2>
 <p >Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C and some notes above it on the keyboard.</p>
 <p >Written by PieterP, 2019-10-15 <br  />
@@ -103,29 +103,29 @@ Mapping</h2>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;FastLED.h&gt;</span></div>
 <div class="line"><span class="comment">// Must be before Control Surface to enable FastLED features of Control Surface</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Define the array of leds.</span></div>
 <div class="line">Array&lt;CRGB, 8&gt; leds {};</div>
 <div class="line"><span class="comment">// The data pin with the strip connected.</span></div>
 <div class="line">constexpr uint8_t ledpin = 2;</div>
 <div class="line"> </div>
-<div class="line"><a name="_a0"></a><a class="code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a MIDI input element that listens to all notes in the range C4 - G4</span></div>
 <div class="line"><span class="comment">// (the range starts at C4 and has a length equal to `leds.length` == 8).</span></div>
-<div class="line"><a name="_a1"></a><a class="code" href="../../d3/d98/classNoteCCKPRangeFastLED.html">NoteRangeFastLED</a>&lt;leds.length&gt; midiled {leds, <a name="a2"></a><a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
+<div class="line"><a name="_a1"></a><a class="highlightclass code" href="../../d3/d98/classNoteCCKPRangeFastLED.html">NoteRangeFastLED</a>&lt;leds.length&gt; midiled {leds, <a name="a2"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <span class="comment">// See FastLED examples and documentation for more information.</span></div>
 <div class="line">  FastLED.addLeds&lt;NEOPIXEL, ledpin&gt;(leds.data, leds.length);</div>
 <div class="line">  FastLED.setCorrection(TypicalPixelString);</div>
 <div class="line">  midiled.setBrightness(128);</div>
-<div class="line">  <a name="a3"></a><a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a4"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a name="a3"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a4"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a5"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a5"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">  <span class="keywordflow">if</span> (midiled.getDirty()) { <span class="comment">// If the colors changed</span></div>
 <div class="line">    FastLED.show();         <span class="comment">// Update the LEDs with the new colors</span></div>
 <div class="line">    midiled.clearDirty();   <span class="comment">// Clear the dirty flag</span></div>

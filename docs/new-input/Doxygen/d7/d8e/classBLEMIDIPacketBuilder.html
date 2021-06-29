@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -97,7 +97,8 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d48/classBLEMIDIPacketBuilder__coll__graph.svg" width="200" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d48/classBLEMIDIPacketBuilder__coll__graph.svg" width="200" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -567,21 +568,21 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>If the message fits in a single packet, <code>length</code> is set to <code>0</code> (no remaining data bytes) and <code>data</code> is set to <code>nullptr</code>.</p>
-<p >For example: </p><div class="fragment"><div class="line"><a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html">BLEMIDIPacketBuilder</a> packetbuilder;</div>
+<p >For example: </p><div class="fragment"><div class="line"><a class="highlightclass code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html">BLEMIDIPacketBuilder</a> packetbuilder;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">const</span> uint8_t *data = (...);</div>
 <div class="line"><span class="keywordtype">size_t</span> length = (...);</div>
 <div class="line">uint16_t timestamp = (...);</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (!packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">addSysEx</a>(data, length, timestamp)) {</div>
-<div class="line">    sendnow(packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a82234c8797554eec8dcde8906c695ab2">getBuffer</a>(), packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2935e02624493a655bf6933d816202a1">getSize</a>());</div>
-<div class="line">    packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
-<div class="line">    packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">addSysEx</a>(data, length, timestamp)</div>
+<div class="line"><span class="keywordflow">if</span> (!packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">addSysEx</a>(data, length, timestamp)) {</div>
+<div class="line">    sendnow(packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a82234c8797554eec8dcde8906c695ab2">getBuffer</a>(), packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2935e02624493a655bf6933d816202a1">getSize</a>());</div>
+<div class="line">    packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
+<div class="line">    packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a4355f549204eea18fdd652378fa92243">addSysEx</a>(data, length, timestamp)</div>
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">while</span> (data) {</div>
-<div class="line">    sendnow(packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a82234c8797554eec8dcde8906c695ab2">getBuffer</a>(), packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2935e02624493a655bf6933d816202a1">getSize</a>());</div>
-<div class="line">    packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
-<div class="line">    packetbuilder.<a class="code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2c7ed84a517b162234e17b06b11b66a1">continueSysEx</a>(data, length, timestamp);</div>
+<div class="line">    sendnow(packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a82234c8797554eec8dcde8906c695ab2">getBuffer</a>(), packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2935e02624493a655bf6933d816202a1">getSize</a>());</div>
+<div class="line">    packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
+<div class="line">    packetbuilder.<a class="highlightmember code" href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2c7ed84a517b162234e17b06b11b66a1">continueSysEx</a>(data, length, timestamp);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassBLEMIDIPacketBuilder_html"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html">BLEMIDIPacketBuilder</a></div><div class="ttdoc">Class for building MIDI over Bluetooth Low Energy packets.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html#l00010">BLEMIDIPacketBuilder.hpp:10</a></div></div>
 <div class="ttc" id="aclassBLEMIDIPacketBuilder_html_a2935e02624493a655bf6933d816202a1"><div class="ttname"><a href="../../d7/d8e/classBLEMIDIPacketBuilder.html#a2935e02624493a655bf6933d816202a1">BLEMIDIPacketBuilder::getSize</a></div><div class="ttdeci">uint16_t getSize() const</div><div class="ttdoc">Get the size of the current packet.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html#l00079">BLEMIDIPacketBuilder.hpp:79</a></div></div>
@@ -663,7 +664,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6fa589806f029d47693026d61f69b201">MIDIMessageType::SYSEX_START</a>)</div>
+<div class="line">        <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="highlightmember code" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6fa589806f029d47693026d61f69b201">MIDIMessageType::SYSEX_START</a>)</div>
 <div class="ttc" id="aMIDI__MessageTypes_8hpp_html_a0f3f6ac1a61700bdea6873fdfe9248f5a6fa589806f029d47693026d61f69b201"><div class="ttname"><a href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6fa589806f029d47693026d61f69b201">MIDIMessageType::SYSEX_START</a></div><div class="ttdeci">@ SYSEX_START</div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html#l00016">16</a> of file <a class="el" href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html">BLEMIDIPacketBuilder.hpp</a>.</p>
@@ -690,7 +691,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aff27b6fbc23aa29b6dfc63c0f34d4e4f">MIDIMessageType::SYSEX_END</a>)</div>
+<div class="line">        <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="highlightmember code" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aff27b6fbc23aa29b6dfc63c0f34d4e4f">MIDIMessageType::SYSEX_END</a>)</div>
 <div class="ttc" id="aMIDI__MessageTypes_8hpp_html_a0f3f6ac1a61700bdea6873fdfe9248f5aff27b6fbc23aa29b6dfc63c0f34d4e4f"><div class="ttname"><a href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aff27b6fbc23aa29b6dfc63c0f34d4e4f">MIDIMessageType::SYSEX_END</a></div><div class="ttdeci">@ SYSEX_END</div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html">BLEMIDIPacketBuilder.hpp</a>.</p>

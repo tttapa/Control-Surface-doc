@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -104,14 +104,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d81/classBluetoothMIDI__Interface__inherit__graph.svg" width="1007" height="2614"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d81/classBluetoothMIDI__Interface__inherit__graph.svg" width="1007" height="2614"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for BluetoothMIDI_Interface:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classBluetoothMIDI__Interface__coll__graph.svg" width="2466" height="3726"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d9a/classBluetoothMIDI__Interface__coll__graph.svg" width="2466" height="3726"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Default MIDI Interfaces</h2></td></tr>
@@ -612,9 +614,9 @@ Private Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>startSendingThread</b> ()</td></tr>
 <tr class="memdesc:aa6576f35a669d710636e2242432a1130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch a thread that sends the BLE packets in the background. <br /></td></tr>
 <tr class="separator:aa6576f35a669d710636e2242432a1130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6987415b7f83920cd43f1f34dd593ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html#ab6987415b7f83920cd43f1f34dd593ae">handleSendEvents</a> ()</td></tr>
-<tr class="memdesc:ab6987415b7f83920cd43f1f34dd593ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that waits for BLE packets and sends them in the background.  <a href="../../d0/d89/classBluetoothMIDI__Interface.html#ab6987415b7f83920cd43f1f34dd593ae">More...</a><br /></td></tr>
-<tr class="separator:ab6987415b7f83920cd43f1f34dd593ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1e186d84f215f1c8bffb69be3ab574"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html#a2d1e186d84f215f1c8bffb69be3ab574">handleSendEvents</a> ()</td></tr>
+<tr class="memdesc:a2d1e186d84f215f1c8bffb69be3ab574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that waits for BLE packets and sends them in the background.  <a href="../../d0/d89/classBluetoothMIDI__Interface.html#a2d1e186d84f215f1c8bffb69be3ab574">More...</a><br /></td></tr>
+<tr class="separator:a2d1e186d84f215f1c8bffb69be3ab574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a774b1cce4553aa2fe13aa42cc1cad3a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html#a774b1cce4553aa2fe13aa42cc1cad3a1">flushImpl</a> (<a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html#a1bf98c5cdd61db16f9ec0c30881d6588">lock_t</a> &amp;lock)</td></tr>
 <tr class="memdesc:a774b1cce4553aa2fe13aa42cc1cad3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell the background BLE sender thread to send the current packet.  <a href="../../d0/d89/classBluetoothMIDI__Interface.html#a774b1cce4553aa2fe13aa42cc1cad3a1">More...</a><br /></td></tr>
 <tr class="separator:a774b1cce4553aa2fe13aa42cc1cad3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -771,7 +773,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d1/d55/classAH_1_1Updatable.html#aaf893c33f3c041e289a12c153dcc9789">Updatable&lt; MIDI_Interface &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00295">295</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -855,7 +857,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 <p>Get the BLE-MIDI timestamp of the latest MIDI message. </p>
 <dl class="section note"><dt>Note</dt><dd>Invalid for SysEx chunks (except the last chunk of a message). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00259">259</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00261">261</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -887,7 +889,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a599c8e28425367b286f5ec9d57f93c41">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00093">93</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -919,7 +921,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a0e8a15b5ac6910ba59bd3ec4ae0ac604">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00142">142</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00144">144</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -951,7 +953,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a612e84a9231d6369595e35fa8d8eae1b">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -983,7 +985,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#a413792576bc31a72efd77c099d5a7bc1">MIDI_Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -1045,12 +1047,12 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 <p>Set the maximum transmission unit of the Bluetooth link. </p>
 <p >Used to compute the MIDI BLE packet size. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00267">267</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab6987415b7f83920cd43f1f34dd593ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6987415b7f83920cd43f1f34dd593ae">&#9670;&nbsp;</a></span>handleSendEvents()</h2>
+<a id="a2d1e186d84f215f1c8bffb69be3ab574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1e186d84f215f1c8bffb69be3ab574">&#9670;&nbsp;</a></span>handleSendEvents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1059,7 +1061,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void handleSendEvents </td>
+          <td class="memname">bool handleSendEvents </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1112,7 +1114,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d8/d2c/BluetoothMIDI__Interface_8cpp_source.html">BluetoothMIDI_Interface.cpp</a>.</p>
 
 </div>
 </div>
@@ -2286,6 +2288,8 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Begin all enabled instances of this class. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2" title="Initialize this updatable.">begin()</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d0b/MIDI-Monitor_8ino-example.html#a2">MIDI-Monitor.ino</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00186">186</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
 
@@ -2316,6 +2320,8 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
 
 <p>Update all enabled instances of this class. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099" title="Read the MIDI interface and call the callback if a message was received.">update()</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d0b/MIDI-Monitor_8ino-example.html#a3">MIDI-Monitor.ino</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00190">190</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
 

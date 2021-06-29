@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,21 +79,21 @@ $(function() {
   <div class="headertitle"><div class="title">Debug.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md264"></a>
+<h1><a class="anchor" id="autotoc_md266"></a>
 Debug</h1>
 <p >This examples shows how use the debug macros for printing different kinds of debugging information</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md265"></a>
+<h2><a class="anchor" id="autotoc_md267"></a>
 Behavior</h2>
 <ul>
 <li>Enable debugging in <code>src/AH/Settings/Settings.hpp</code>.</li>
 <li>Upload the sketch to the Arduino, and open the Serial Monitor (<code>CTRL+Shift+M</code>)</li>
 <li>Every five seconds, debugging information is printed, for example:</li>
 </ul>
-<div class="fragment"><div class="line">This is the result of `<a name="a0"></a><a class="code" href="../../d4/da5/group__AH__Debug.html#ga3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>`</div>
-<div class="line">[/home/pieter/GitHub/Arduino-Debugging/Example/Example.ino:12]: This is the result of `<a name="a1"></a><a class="code" href="../../d4/da5/group__AH__Debug.html#gafedb5ed0c0a4ef76c6b968368af014c7">DEBUGREF</a>`</div>
-<div class="line">[<span class="keywordtype">void</span> loop() @ line 13]:    This is the result of `<a name="a2"></a><a class="code" href="../../d4/da5/group__AH__Debug.html#ga5e1b7520df0706433ae295a78471fb3c">DEBUGFN</a>`</div>
-<div class="line">[0:2:11.085]:   This is the result of `<a name="a3"></a><a class="code" href="../../d4/da5/group__AH__Debug.html#ga95d4440a4127650cdd221322b1780833">DEBUGTIME</a>`</div>
+<div class="fragment"><div class="line">This is the result of `<a name="a0"></a><a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>`</div>
+<div class="line">[/home/pieter/GitHub/Arduino-Debugging/Example/Example.ino:12]: This is the result of `<a name="a1"></a><a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#gafedb5ed0c0a4ef76c6b968368af014c7">DEBUGREF</a>`</div>
+<div class="line">[<span class="keywordtype">void</span> loop() @ line 13]:    This is the result of `<a name="a2"></a><a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga5e1b7520df0706433ae295a78471fb3c">DEBUGFN</a>`</div>
+<div class="line">[0:2:11.085]:   This is the result of `<a name="a3"></a><a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga95d4440a4127650cdd221322b1780833">DEBUGTIME</a>`</div>
 <div class="line">a = 1, b = 2, c = 3</div>
 <div class="line">log10(1000) - 2 = 1.00</div>
 <div class="line">millis() = 131085</div>
@@ -107,9 +107,9 @@ Behavior</h2>
 <p>Written by PieterP, 2018-07-31 <br  />
  <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../df/dee/Debug_8hpp.html">AH/Debug/Debug.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../df/dee/Debug_8hpp.html">AH/Debug/Debug.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  Serial.begin(115200);</div>
@@ -118,22 +118,22 @@ Behavior</h2>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#ga3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>(<span class="stringliteral">&quot;This is the result of `DEBUG`&quot;</span>);</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#gafedb5ed0c0a4ef76c6b968368af014c7">DEBUGREF</a>(<span class="stringliteral">&quot;This is the result of `DEBUGREF`&quot;</span>);</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#ga5e1b7520df0706433ae295a78471fb3c">DEBUGFN</a>(<span class="stringliteral">&quot;This is the result of `DEBUGFN`&quot;</span>);</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#ga95d4440a4127650cdd221322b1780833">DEBUGTIME</a>(<span class="stringliteral">&quot;This is the result of `DEBUGTIME`&quot;</span>);</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>(<span class="stringliteral">&quot;This is the result of `DEBUG`&quot;</span>);</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#gafedb5ed0c0a4ef76c6b968368af014c7">DEBUGREF</a>(<span class="stringliteral">&quot;This is the result of `DEBUGREF`&quot;</span>);</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga5e1b7520df0706433ae295a78471fb3c">DEBUGFN</a>(<span class="stringliteral">&quot;This is the result of `DEBUGFN`&quot;</span>);</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga95d4440a4127650cdd221322b1780833">DEBUGTIME</a>(<span class="stringliteral">&quot;This is the result of `DEBUGTIME`&quot;</span>);</div>
 <div class="line">  <span class="keywordtype">int</span> a = 1, b = 2, c = 3;</div>
-<div class="line">  <a name="a0"></a><a class="code" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">DEBUGVAL</a>(a, b, c);</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">DEBUGVAL</a>(log10(1000) - 2);</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">DEBUGVAL</a>(millis());</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">DEBUGVAL</a>(Serial.read());</div>
+<div class="line">  <a name="a0"></a><a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">DEBUGVAL</a>(a, b, c);</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">DEBUGVAL</a>(log10(1000) - 2);</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">DEBUGVAL</a>(millis());</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">DEBUGVAL</a>(Serial.read());</div>
 <div class="line">  someFunction(42);</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#ga3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line">  delay(5000);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> someFunction(<span class="keywordtype">int</span> parameter) {</div>
-<div class="line">  <a class="code" href="../../d4/da5/group__AH__Debug.html#ga5e1b7520df0706433ae295a78471fb3c">DEBUGFN</a>(<a name="a1"></a><a class="code" href="../../d4/da5/group__AH__Debug.html#ga35654913b4a1f9d9300f847fab14b3d3">NAMEDVALUE</a>(parameter));</div>
+<div class="line">  <a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga5e1b7520df0706433ae295a78471fb3c">DEBUGFN</a>(<a name="a1"></a><a class="highlightmember code" href="../../d4/da5/group__AH__Debug.html#ga35654913b4a1f9d9300f847fab14b3d3">NAMEDVALUE</a>(parameter));</div>
 <div class="line">  <span class="keywordflow">return</span> parameter;</div>
 <div class="line">}</div>
 <div class="ttc" id="aArduino__Helpers_8h_html"><div class="ttname"><a href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a></div><div class="ttdoc">Dummy header file for Arduino builder.</div></div>

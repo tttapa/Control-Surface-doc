@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,12 +79,12 @@ $(function() {
   <div class="headertitle"><div class="title">4.VULEDs.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md160"></a>
+<h1><a class="anchor" id="autotoc_md162"></a>
 4.VULEDs</h1>
 <p >This example demonstrates the use of the VULEDs class that displays the VU or level meters from your DAW as an LED bar graph.</p>
 <p >Shift registers are used to drive the LEDs.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md161"></a>
+<h2><a class="anchor" id="autotoc_md163"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -95,29 +95,29 @@ Connections</h2>
 <p >Connect an LED (and series resistor) between each of the first 12 outputs of the shift registers and ground.</p>
 <p >Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md162"></a>
+<h2><a class="anchor" id="autotoc_md164"></a>
 Behavior</h2>
 <p >The LEDs display the level of the first track in your DAW. <br  />
  When the push button is pressed, the VU meter switches from bar mode to dot mode and back.</p>
-<h2><a class="anchor" id="autotoc_md163"></a>
+<h2><a class="anchor" id="autotoc_md165"></a>
 Mapping</h2>
 <p >Map the Arduino as a Mackie Control Universal in your DAW.</p>
 <p >Written by PieterP, 2019-12-09 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><a name="_a0"></a><a class="code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate two daisy-chained shift register with the SPI slave select pin as</span></div>
 <div class="line"><span class="comment">// latch pin, most significant bit first, and a total of 16 outputs.</span></div>
 <div class="line">SPIShiftRegisterOut&lt;16&gt; sreg {SPI, SS, MSBFIRST};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a VULEDs object with 12 LEDs.</span></div>
-<div class="line"><a name="_a1"></a><a class="code" href="../../df/d36/classMCU_1_1VULEDs.html">MCU::VULEDs&lt;12&gt;</a> vu {</div>
+<div class="line"><a name="_a1"></a><a class="highlightclass code" href="../../df/d36/classMCU_1_1VULEDs.html">MCU::VULEDs&lt;12&gt;</a> vu {</div>
 <div class="line">  sreg.pins().slice&lt;0, 11&gt;(), <span class="comment">// first 12 pins of the shift registers</span></div>
 <div class="line">  1,                          <span class="comment">// track number [1, 8]</span></div>
-<div class="line">  <a name="a2"></a><a class="code" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ab8e20bc4798982b19f31c569b8dbb7db">MCU::VUDecay::Default</a>,      <span class="comment">// how long does it take for the meter to decay</span></div>
+<div class="line">  <a name="a2"></a><a class="highlightmember code" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ab8e20bc4798982b19f31c569b8dbb7db">MCU::VUDecay::Default</a>,      <span class="comment">// how long does it take for the meter to decay</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// If you don&#39;t want to use shift registers, you can just specify a list of pin</span></div>
@@ -138,12 +138,12 @@ Mapping</h2>
 <div class="line">Button dotBarModeButton = A0;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a3"></a><a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a4"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a name="a3"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a4"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">  dotBarModeButton.begin();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a5"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a5"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">  <span class="keywordflow">if</span> (dotBarModeButton.update() == Button::Falling) <span class="comment">// when button is pressed</span></div>
 <div class="line">    vu.toggleMode(); <span class="comment">// toggle between dot and bar mode</span></div>
 <div class="line">}</div>

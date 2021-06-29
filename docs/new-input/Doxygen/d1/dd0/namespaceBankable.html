@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -230,6 +230,14 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga9ca58e279e5fc41e94ce64e07980decf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga9ca58e279e5fc41e94ce64e07980decf">KPLED</a> = <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html">NoteCCKPLED</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6ce935e284d90c79bb241ed2e75c308a">MIDIMessageType::KEY_PRESSURE</a>, BankSize &gt;</td></tr>
 <tr class="memdesc:ga9ca58e279e5fc41e94ce64e07980decf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Key Pressure events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga9ca58e279e5fc41e94ce64e07980decf">More...</a><br /></td></tr>
 <tr class="separator:ga9ca58e279e5fc41e94ce64e07980decf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee660b7aac9f7e66cc437f2d3a12374"><td class="memTemplParams" colspan="2"><a id="abee660b7aac9f7e66cc437f2d3a12374"></a>
+template&lt;uint8_t BankSize&gt; </td></tr>
+<tr class="memitem:abee660b7aac9f7e66cc437f2d3a12374"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>NoteValueLED</b> = <a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga4599d49332d2cd30170feaa1cd0e0952">NoteLED</a>&lt; BankSize &gt;</td></tr>
+<tr class="separator:abee660b7aac9f7e66cc437f2d3a12374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a9d60a08209ddb549d211a0436a1a8"><td class="memTemplParams" colspan="2"><a id="a49a9d60a08209ddb549d211a0436a1a8"></a>
+template&lt;uint8_t BankSize&gt; </td></tr>
+<tr class="memitem:a49a9d60a08209ddb549d211a0436a1a8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CCValueLED</b> = <a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gafa8349c822f23d52e0e8f216b64de032">CCLED</a>&lt; BankSize &gt;</td></tr>
+<tr class="separator:a49a9d60a08209ddb549d211a0436a1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t NumLEDs&gt; </td></tr>
 <tr class="memitem:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga99429f8364c1eaa0c9b02c1a814bfa5a">NoteLEDBar</a> = <a class="el" href="../../d2/d0a/classBankable_1_1NoteCCKPLEDBar.html">NoteCCKPLEDBar</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a42ab8d6057c68dc3ca7829a9173c24a4">MIDIMessageType::NOTE_ON</a>, BankSize, NumLEDs &gt;</td></tr>
 <tr class="memdesc:ga99429f8364c1eaa0c9b02c1a814bfa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for <b>Note</b> events and displays the velocity on an <b>LED Bar Graph</b>, turning on a different number of LEDs depending on the velocity.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga99429f8364c1eaa0c9b02c1a814bfa5a">More...</a><br /></td></tr>

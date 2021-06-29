@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -97,7 +97,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../db/d69/LCD_8hpp_source.html">MIDI_Inputs/MCU/LCD.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;uint8_t BufferSize = 120&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;uint8_t BufferSize = 112&gt;<br />
 class MCU::LCD&lt; BufferSize &gt;</div><p >A class that represents the Mackie Control Universal <a class="el" href="../../d5/d2e/classMCU_1_1LCD.html" title="A class that represents the Mackie Control Universal LCD display and saves the text it receives.">LCD</a> display and saves the text it receives. </p>
 <p >The format of the MIDI message is as follows (hex): </p><table class="markdownTable">
 <tr class="markdownTableHead">
@@ -121,14 +121,16 @@ class MCU::LCD&lt; BufferSize &gt;</div><p >A class that represents the Mackie C
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/classMCU_1_1LCD__inherit__graph.svg" width="360" height="1022"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d27/classMCU_1_1LCD__inherit__graph.svg" width="360" height="1022"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for LCD&lt; BufferSize &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dbf/classMCU_1_1LCD__coll__graph.svg" width="520" height="1024"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dbf/classMCU_1_1LCD__coll__graph.svg" width="520" height="1024"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Data access</h2></td></tr>
@@ -309,7 +311,7 @@ static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>instances</
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offset</td><td>The text sent over MIDI is 120 characters long, by changing the offset within this text and the length of the text, we can listen to just a section of the text. E.g. <code>offset = 60</code> and <code>BufferSize = 60</code> will listen to just the second line of the <a class="el" href="../../d5/d2e/classMCU_1_1LCD.html" title="A class that represents the Mackie Control Universal LCD display and saves the text it receives.">LCD</a> display. The default is <code>offset = 0</code> and <code>BufferSize = 120</code>, i.e. listening to the entire display. </td></tr>
+    <tr><td class="paramname">offset</td><td>The text sent over MIDI is 112 characters long, by changing the offset within this text and the length of the text, we can listen to just a section of the text. E.g. <code>offset = 56</code> and <code>BufferSize = 56</code> will listen to just the second line of the <a class="el" href="../../d5/d2e/classMCU_1_1LCD.html" title="A class that represents the Mackie Control Universal LCD display and saves the text it receives.">LCD</a> display. The default is <code>offset = 0</code> and <code>BufferSize = 112</code>, i.e. listening to the entire display. </td></tr>
     <tr><td class="paramname">cable</td><td>The MIDI USB cable number to listen for. </td></tr>
   </table>
   </dd>

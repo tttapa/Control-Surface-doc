@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - b068f1979aa14464a8e0e3ac8c5a419ea29c2b18 - src/MIDI_Parsers/MIDI_MessageTypes.hpp</title>
+  <title>LCOV - c71de6d23dfda08f3b0fec995ec876991cffa25c - src/MIDI_Parsers/MIDI_MessageTypes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">b068f1979aa14464a8e0e3ac8c5a419ea29c2b18</td>
+            <td class="headerValue">c71de6d23dfda08f3b0fec995ec876991cffa25c</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">87</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-28 17:11:21</td>
+            <td class="headerValue">2021-06-29 17:22:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">50</td>
@@ -154,9 +154,9 @@
 <a name="84"><span class="lineNum">      84 </span>            : </a>
 <a name="85"><span class="lineNum">      85 </span>            : struct MIDIMessage {</a>
 <a name="86"><span class="lineNum">      86 </span>            :     /// Constructor.</a>
-<a name="87"><span class="lineNum">      87 </span><span class="lineCov">        624 :     MIDIMessage(uint8_t header, uint8_t data1, uint8_t data2,</span></a>
+<a name="87"><span class="lineNum">      87 </span><span class="lineCov">        634 :     MIDIMessage(uint8_t header, uint8_t data1, uint8_t data2,</span></a>
 <a name="88"><span class="lineNum">      88 </span>            :                 Cable cable = CABLE_1)</a>
-<a name="89"><span class="lineNum">      89 </span><span class="lineCov">        624 :         : header(header), data1(data1), data2(data2), cable(cable) {}</span></a>
+<a name="89"><span class="lineNum">      89 </span><span class="lineCov">        634 :         : header(header), data1(data1), data2(data2), cable(cable) {}</span></a>
 <a name="90"><span class="lineNum">      90 </span>            : </a>
 <a name="91"><span class="lineNum">      91 </span>            :     /// Constructor.</a>
 <a name="92"><span class="lineNum">      92 </span><span class="lineCov">          7 :     MIDIMessage(MIDIMessageType header, uint8_t data1, uint8_t data2,</span></a>
@@ -195,14 +195,14 @@
 <a name="125"><span class="lineNum">     125 </span>            :     /// Get the first data byte.</a>
 <a name="126"><span class="lineNum">     126 </span><span class="lineCov">        107 :     uint8_t getData1() const { return data1; }</span></a>
 <a name="127"><span class="lineNum">     127 </span>            :     /// Get the second data byte.</a>
-<a name="128"><span class="lineNum">     128 </span><span class="lineCov">        128 :     uint8_t getData2() const { return data2; }</span></a>
+<a name="128"><span class="lineNum">     128 </span><span class="lineCov">        132 :     uint8_t getData2() const { return data2; }</span></a>
 <a name="129"><span class="lineNum">     129 </span>            :     /// Set the first data byte.</a>
 <a name="130"><span class="lineNum">     130 </span>            :     void setData1(uint8_t data) { data1 = data; }</a>
 <a name="131"><span class="lineNum">     131 </span>            :     /// Set the second data byte.</a>
 <a name="132"><span class="lineNum">     132 </span>            :     void setData2(uint8_t data) { data2 = data; }</a>
 <a name="133"><span class="lineNum">     133 </span>            : </a>
 <a name="134"><span class="lineNum">     134 </span>            :     /// Get the MIDI USB cable number of the message.</a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineCov">         14 :     Cable getCable() const { return cable; }</span></a>
+<a name="135"><span class="lineNum">     135 </span><span class="lineCov">         28 :     Cable getCable() const { return cable; }</span></a>
 <a name="136"><span class="lineNum">     136 </span>            :     /// Set the MIDI USB cable number of the message.</a>
 <a name="137"><span class="lineNum">     137 </span>            :     void setCable(Cable cable) { this-&gt;cable = cable; }</a>
 <a name="138"><span class="lineNum">     138 </span>            : </a>
@@ -246,15 +246,15 @@
 <a name="176"><span class="lineNum">     176 </span><span class="lineCov">        146 :     using MIDIMessage::MIDIMessage;</span></a>
 <a name="177"><span class="lineNum">     177 </span>            : </a>
 <a name="178"><span class="lineNum">     178 </span>            :     /// Constructor.</a>
-<a name="179"><span class="lineNum">     179 </span><span class="lineCov">        326 :     ChannelMessage(MIDIMessageType type, Channel channel, uint8_t data1,</span></a>
+<a name="179"><span class="lineNum">     179 </span><span class="lineCov">        336 :     ChannelMessage(MIDIMessageType type, Channel channel, uint8_t data1,</span></a>
 <a name="180"><span class="lineNum">     180 </span>            :                    uint8_t data2 = 0x00, Cable cable = CABLE_1)</a>
-<a name="181"><span class="lineNum">     181 </span><span class="lineCov">        326 :         : MIDIMessage(uint8_t(type) | channel.getRaw(), data1, data2, cable) {}</span></a>
+<a name="181"><span class="lineNum">     181 </span><span class="lineCov">        336 :         : MIDIMessage(uint8_t(type) | channel.getRaw(), data1, data2, cable) {}</span></a>
 <a name="182"><span class="lineNum">     182 </span>            : </a>
 <a name="183"><span class="lineNum">     183 </span><span class="lineCov">         96 :     explicit ChannelMessage(const MIDIMessage &amp;msg) : MIDIMessage(msg) {}</span></a>
 <a name="184"><span class="lineNum">     184 </span>            : </a>
 <a name="185"><span class="lineNum">     185 </span>            :     /// Get the MIDI message type.</a>
-<a name="186"><span class="lineNum">     186 </span><span class="lineCov">        215 :     MIDIMessageType getMessageType() const {</span></a>
-<a name="187"><span class="lineNum">     187 </span><span class="lineCov">        215 :         return static_cast&lt;MIDIMessageType&gt;(header &amp; 0xF0);</span></a>
+<a name="186"><span class="lineNum">     186 </span><span class="lineCov">        219 :     MIDIMessageType getMessageType() const {</span></a>
+<a name="187"><span class="lineNum">     187 </span><span class="lineCov">        219 :         return static_cast&lt;MIDIMessageType&gt;(header &amp; 0xF0);</span></a>
 <a name="188"><span class="lineNum">     188 </span>            :     }</a>
 <a name="189"><span class="lineNum">     189 </span>            :     /// Set the MIDI message type.</a>
 <a name="190"><span class="lineNum">     190 </span>            :     void setMessageType(MIDIMessageType type) {</a>
@@ -263,7 +263,7 @@
 <a name="193"><span class="lineNum">     193 </span>            :     }</a>
 <a name="194"><span class="lineNum">     194 </span>            : </a>
 <a name="195"><span class="lineNum">     195 </span>            :     /// Get the MIDI channel of the message.</a>
-<a name="196"><span class="lineNum">     196 </span><span class="lineCov">        205 :     Channel getChannel() const { return Channel(header &amp; 0x0F); }</span></a>
+<a name="196"><span class="lineNum">     196 </span><span class="lineCov">        223 :     Channel getChannel() const { return Channel(header &amp; 0x0F); }</span></a>
 <a name="197"><span class="lineNum">     197 </span>            :     /// Set the MIDI channel of the message.</a>
 <a name="198"><span class="lineNum">     198 </span><span class="lineCov">          1 :     void setChannel(Channel channel) {</span></a>
 <a name="199"><span class="lineNum">     199 </span><span class="lineCov">          1 :         header &amp;= 0xF0;</span></a>
@@ -273,11 +273,11 @@
 <a name="203"><span class="lineNum">     203 </span>            :     /// Get the MIDI channel and cable number.</a>
 <a name="204"><span class="lineNum">     204 </span>            :     /// @note   Valid for all MIDI Channel messages, including Channel Pressure</a>
 <a name="205"><span class="lineNum">     205 </span>            :     ///         and Pitch Bend.</a>
-<a name="206"><span class="lineNum">     206 </span><span class="lineCov">        193 :     MIDIChannelCable getChannelCable() const { return {getChannel(), cable}; }</span></a>
+<a name="206"><span class="lineNum">     206 </span><span class="lineCov">        211 :     MIDIChannelCable getChannelCable() const { return {getChannel(), cable}; }</span></a>
 <a name="207"><span class="lineNum">     207 </span>            :     /// Get the MIDI address of this message, using `data1` as the address.</a>
 <a name="208"><span class="lineNum">     208 </span>            :     /// @note   Don't use this for Channel Pressure or Pitch Bend messages,</a>
 <a name="209"><span class="lineNum">     209 </span>            :     ///         as `data1` will have a different meaning in those cases.</a>
-<a name="210"><span class="lineNum">     210 </span><span class="lineCov">        170 :     MIDIAddress getAddress() const { return {data1, getChannelCable()}; }</span></a>
+<a name="210"><span class="lineNum">     210 </span><span class="lineCov">        188 :     MIDIAddress getAddress() const { return {data1, getChannelCable()}; }</span></a>
 <a name="211"><span class="lineNum">     211 </span>            : </a>
 <a name="212"><span class="lineNum">     212 </span>            :     /// Check whether this message has one or two data bytes.</a>
 <a name="213"><span class="lineNum">     213 </span>            :     ///</a>
@@ -374,7 +374,7 @@
 <a name="304"><span class="lineNum">     304 </span>            :     bool operator!=(SysExMessage other) const { return !(*this == other); }</a>
 <a name="305"><span class="lineNum">     305 </span>            : </a>
 <a name="306"><span class="lineNum">     306 </span>            :     /// Get the MIDI USB cable number of the message.</a>
-<a name="307"><span class="lineNum">     307 </span><span class="lineCov">         16 :     Cable getCable() const { return cable; }</span></a>
+<a name="307"><span class="lineNum">     307 </span><span class="lineCov">         17 :     Cable getCable() const { return cable; }</span></a>
 <a name="308"><span class="lineNum">     308 </span>            :     /// Set the MIDI USB cable number of the message.</a>
 <a name="309"><span class="lineNum">     309 </span>            :     void setCable(Cable cable) { this-&gt;cable = cable; }</a>
 <a name="310"><span class="lineNum">     310 </span>            : </a>
@@ -382,9 +382,9 @@
 <a name="312"><span class="lineNum">     312 </span><span class="lineCov">         47 :         return length &gt;= 1 &amp;&amp; data[0] == uint8_t(MIDIMessageType::SYSEX_START);</span></a>
 <a name="313"><span class="lineNum">     313 </span>            :     }</a>
 <a name="314"><span class="lineNum">     314 </span>            : </a>
-<a name="315"><span class="lineNum">     315 </span><span class="lineCov">         46 :     bool isLastChunk() const {</span></a>
-<a name="316"><span class="lineNum">     316 </span><span class="lineCov">         92 :         return length &gt;= 1 &amp;&amp;</span></a>
-<a name="317"><span class="lineNum">     317 </span><span class="lineCov">         46 :                data[length - 1] == uint8_t(MIDIMessageType::SYSEX_END);</span></a>
+<a name="315"><span class="lineNum">     315 </span><span class="lineCov">         47 :     bool isLastChunk() const {</span></a>
+<a name="316"><span class="lineNum">     316 </span><span class="lineCov">         94 :         return length &gt;= 1 &amp;&amp;</span></a>
+<a name="317"><span class="lineNum">     317 </span><span class="lineCov">         47 :                data[length - 1] == uint8_t(MIDIMessageType::SYSEX_END);</span></a>
 <a name="318"><span class="lineNum">     318 </span>            :     }</a>
 <a name="319"><span class="lineNum">     319 </span>            : </a>
 <a name="320"><span class="lineNum">     320 </span><span class="lineCov">         21 :     bool isCompleteMessage() const { return isFirstChunk() &amp;&amp; isLastChunk(); }</span></a>
@@ -420,7 +420,7 @@
 <a name="350"><span class="lineNum">     350 </span>            :     }</a>
 <a name="351"><span class="lineNum">     351 </span>            : </a>
 <a name="352"><span class="lineNum">     352 </span>            :     /// Get the MIDI USB cable number of the message.</a>
-<a name="353"><span class="lineNum">     353 </span><span class="lineCov">          2 :     Cable getCable() const { return cable; }</span></a>
+<a name="353"><span class="lineNum">     353 </span><span class="lineCov">          4 :     Cable getCable() const { return cable; }</span></a>
 <a name="354"><span class="lineNum">     354 </span>            :     /// Set the MIDI USB cable number of the message.</a>
 <a name="355"><span class="lineNum">     355 </span>            :     void setCable(Cable cable) { this-&gt;cable = cable; }</a>
 <a name="356"><span class="lineNum">     356 </span>            : </a>

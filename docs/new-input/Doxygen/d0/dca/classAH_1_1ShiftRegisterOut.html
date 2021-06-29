@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -103,14 +103,16 @@ class AH::ShiftRegisterOut&lt; N &gt;</div><p >A class for serial-in/parallel-ou
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d10/classAH_1_1ShiftRegisterOut__inherit__graph.svg" width="292" height="1815"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d10/classAH_1_1ShiftRegisterOut__inherit__graph.svg" width="292" height="1815"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for ShiftRegisterOut&lt; N &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d28/classAH_1_1ShiftRegisterOut__coll__graph.svg" width="292" height="1815"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d28/classAH_1_1ShiftRegisterOut__coll__graph.svg" width="292" height="1815"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Enabling and disabling updatables</h2></td></tr>
@@ -345,13 +347,13 @@ static <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff
 </div><div class="memdoc">
 
 <p>Create a new <a class="el" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html" title="A class for serial-in/parallel-out shift registers, like the 74HC595.">ShiftRegisterOut</a> object with a shift register connected to the given pins, with a given bit order, and a given number of outputs. </p>
-<p >Multiple shift registers can be cascaded by connecting the serial output of the first one to the input of the second one: </p><div class="fragment"><div class="line"><a class="code" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a3ca3c75ca8158615f33839b0e154c15d">clockPin</a> &gt;───────────┬──────────────────────┬───────── ⋯</div>
+<p >Multiple shift registers can be cascaded by connecting the serial output of the first one to the input of the second one: </p><div class="fragment"><div class="line"><a class="highlightmember code" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a3ca3c75ca8158615f33839b0e154c15d">clockPin</a> &gt;───────────┬──────────────────────┬───────── ⋯</div>
 <div class="line">             ┏━━━━━━━┷━━━━━━━┓      ┏━━━━━━━┷━━━━━━━┓ </div>
 <div class="line">             ┃     SH_CP     ┃      ┃     SH_CP     ┃ </div>
-<div class="line"><a class="code" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a5a57853673d4bc52ccaa55936237fa1c">dataPin</a>  &gt;───┨ DS        Q7S ┠──────┨ DS        Q7S ┠─ ⋯</div>
+<div class="line"><a class="highlightmember code" href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a5a57853673d4bc52ccaa55936237fa1c">dataPin</a>  &gt;───┨ DS        Q7S ┠──────┨ DS        Q7S ┠─ ⋯</div>
 <div class="line">             ┃     ST_CP     ┃      ┃     ST_CP     ┃ </div>
 <div class="line">             ┗━━━━━━━┯━━━━━━━┛      ┗━━━━━━━┯━━━━━━━┛ </div>
-<div class="line"><a class="code" href="../../dc/d0e/classAH_1_1ShiftRegisterOutBase.html#a7d9f8a9622e636bd5a43af7babab0dee">latchPin</a> &gt;───────────┴──────────────────────┴───────── ⋯</div>
+<div class="line"><a class="highlightmember code" href="../../dc/d0e/classAH_1_1ShiftRegisterOutBase.html#a7d9f8a9622e636bd5a43af7babab0dee">latchPin</a> &gt;───────────┴──────────────────────┴───────── ⋯</div>
 <div class="ttc" id="aclassAH_1_1ShiftRegisterOutBase_html_a7d9f8a9622e636bd5a43af7babab0dee"><div class="ttname"><a href="../../dc/d0e/classAH_1_1ShiftRegisterOutBase.html#a7d9f8a9622e636bd5a43af7babab0dee">AH::ShiftRegisterOutBase::latchPin</a></div><div class="ttdeci">const pin_t latchPin</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d93/ShiftRegisterOutBase_8hpp_source.html#l00189">ShiftRegisterOutBase.hpp:189</a></div></div>
 <div class="ttc" id="aclassAH_1_1ShiftRegisterOut_html_a3ca3c75ca8158615f33839b0e154c15d"><div class="ttname"><a href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a3ca3c75ca8158615f33839b0e154c15d">AH::ShiftRegisterOut::clockPin</a></div><div class="ttdeci">const pin_t clockPin</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/db4/ShiftRegisterOut_8hpp_source.html#l00072">ShiftRegisterOut.hpp:72</a></div></div>
 <div class="ttc" id="aclassAH_1_1ShiftRegisterOut_html_a5a57853673d4bc52ccaa55936237fa1c"><div class="ttname"><a href="../../d0/dca/classAH_1_1ShiftRegisterOut.html#a5a57853673d4bc52ccaa55936237fa1c">AH::ShiftRegisterOut::dataPin</a></div><div class="ttdeci">const pin_t dataPin</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/db4/ShiftRegisterOut_8hpp_source.html#l00071">ShiftRegisterOut.hpp:71</a></div></div>

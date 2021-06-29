@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - b068f1979aa14464a8e0e3ac8c5a419ea29c2b18 - src/MIDI_Inputs/MCU/LCD.hpp</title>
+  <title>LCOV - c71de6d23dfda08f3b0fec995ec876991cffa25c - src/MIDI_Inputs/MCU/LCD.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">b068f1979aa14464a8e0e3ac8c5a419ea29c2b18</td>
+            <td class="headerValue">c71de6d23dfda08f3b0fec995ec876991cffa25c</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">36</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-28 17:11:21</td>
+            <td class="headerValue">2021-06-29 17:22:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">11</td>
@@ -117,15 +117,15 @@
 <a name="47"><span class="lineNum">      47 </span>            :  * </a>
 <a name="48"><span class="lineNum">      48 </span>            :  * @ingroup MIDIInputElements</a>
 <a name="49"><span class="lineNum">      49 </span>            :  */</a>
-<a name="50"><span class="lineNum">      50 </span>            : template &lt;uint8_t BufferSize = 120&gt;</a>
+<a name="50"><span class="lineNum">      50 </span>            : template &lt;uint8_t BufferSize = 112&gt;</a>
 <a name="51"><span class="lineNum">      51 </span><span class="lineCov">         12 : class LCD : public MIDIInputElementSysEx, private LCDCounter {</span></a>
 <a name="52"><span class="lineNum">      52 </span>            :   public:</a>
 <a name="53"><span class="lineNum">      53 </span>            :     /// @param  offset</a>
-<a name="54"><span class="lineNum">      54 </span>            :     ///         The text sent over MIDI is 120 characters long, by changing the</a>
+<a name="54"><span class="lineNum">      54 </span>            :     ///         The text sent over MIDI is 112 characters long, by changing the</a>
 <a name="55"><span class="lineNum">      55 </span>            :     ///         offset within this text and the length of the text, we can </a>
-<a name="56"><span class="lineNum">      56 </span>            :     ///         listen to just a section of the text. E.g. `offset = 60` and </a>
-<a name="57"><span class="lineNum">      57 </span>            :     ///         `BufferSize = 60` will listen to just the second line of the </a>
-<a name="58"><span class="lineNum">      58 </span>            :     ///         LCD display. The default is `offset = 0` and `BufferSize = 120`,</a>
+<a name="56"><span class="lineNum">      56 </span>            :     ///         listen to just a section of the text. E.g. `offset = 56` and </a>
+<a name="57"><span class="lineNum">      57 </span>            :     ///         `BufferSize = 56` will listen to just the second line of the </a>
+<a name="58"><span class="lineNum">      58 </span>            :     ///         LCD display. The default is `offset = 0` and `BufferSize = 112`,</a>
 <a name="59"><span class="lineNum">      59 </span>            :     ///         i.e. listening to the entire display.</a>
 <a name="60"><span class="lineNum">      60 </span>            :     /// @param  cable</a>
 <a name="61"><span class="lineNum">      61 </span>            :     ///         The MIDI USB cable number to listen for.</a>

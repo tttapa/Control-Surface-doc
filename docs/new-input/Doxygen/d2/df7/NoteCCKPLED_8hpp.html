@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -94,14 +94,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dfb/NoteCCKPLED_8hpp__incl.svg" width="2804" height="1366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dfb/NoteCCKPLED_8hpp__incl.svg" width="2974" height="1366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d49/NoteCCKPLED_8hpp__dep__incl.svg" width="152" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d49/NoteCCKPLED_8hpp__dep__incl.svg" width="152" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../d2/df7/NoteCCKPLED_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -135,6 +137,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>CCLED</b> = <a class
 using&#160;</td><td class="memItemRight" valign="bottom"><b>KPLED</b> = <a class="el" href="../../d9/d55/classNoteCCKPLED.html">NoteCCKPLED</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6ce935e284d90c79bb241ed2e75c308a">MIDIMessageType::KEY_PRESSURE</a> &gt;</td></tr>
 <tr class="memdesc:ga7140b9353ff11995aa402384c7d0d166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Key Pressure events on a single address and turns on an LED when the value is higher than a threshold. <br /></td></tr>
 <tr class="separator:ga7140b9353ff11995aa402384c7d0d166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708023989e73e099fa28af490a03883d"><td class="memItemLeft" align="right" valign="top"><a id="a708023989e73e099fa28af490a03883d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NoteValueLED</b> = <a class="el" href="../../d7/de4/group__midi-input-elements-leds.html#ga07cc4e7d46065d55d2f3f814d0c80528">NoteLED</a></td></tr>
+<tr class="separator:a708023989e73e099fa28af490a03883d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1188ed900cada1668e91ab982c98e2"><td class="memItemLeft" align="right" valign="top"><a id="abe1188ed900cada1668e91ab982c98e2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CCValueLED</b> = <a class="el" href="../../d7/de4/group__midi-input-elements-leds.html#ga05aea78c34fd229c8ded69f4e3a824b8">CCLED</a></td></tr>
+<tr class="separator:abe1188ed900cada1668e91ab982c98e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4599d49332d2cd30170feaa1cd0e0952"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize&gt; </td></tr>
 <tr class="memitem:ga4599d49332d2cd30170feaa1cd0e0952"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga4599d49332d2cd30170feaa1cd0e0952">NoteLED</a> = <a class="el" href="../../d9/d55/classNoteCCKPLED.html">NoteCCKPLED</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a42ab8d6057c68dc3ca7829a9173c24a4">MIDIMessageType::NOTE_ON</a>, BankSize &gt;</td></tr>
 <tr class="memdesc:ga4599d49332d2cd30170feaa1cd0e0952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Note events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga4599d49332d2cd30170feaa1cd0e0952">More...</a><br /></td></tr>
@@ -147,6 +155,14 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>KPLED</b> = <a class
 <tr class="memitem:ga9ca58e279e5fc41e94ce64e07980decf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga9ca58e279e5fc41e94ce64e07980decf">KPLED</a> = <a class="el" href="../../d9/d55/classNoteCCKPLED.html">NoteCCKPLED</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6ce935e284d90c79bb241ed2e75c308a">MIDIMessageType::KEY_PRESSURE</a>, BankSize &gt;</td></tr>
 <tr class="memdesc:ga9ca58e279e5fc41e94ce64e07980decf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that listens for MIDI Key Pressure events on a single address and turns on an LED when the value is higher than a threshold.  <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga9ca58e279e5fc41e94ce64e07980decf">More...</a><br /></td></tr>
 <tr class="separator:ga9ca58e279e5fc41e94ce64e07980decf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee660b7aac9f7e66cc437f2d3a12374"><td class="memTemplParams" colspan="2"><a id="abee660b7aac9f7e66cc437f2d3a12374"></a>
+template&lt;uint8_t BankSize&gt; </td></tr>
+<tr class="memitem:abee660b7aac9f7e66cc437f2d3a12374"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>NoteValueLED</b> = <a class="el" href="../../d7/de4/group__midi-input-elements-leds.html#ga07cc4e7d46065d55d2f3f814d0c80528">NoteLED</a>&lt; BankSize &gt;</td></tr>
+<tr class="separator:abee660b7aac9f7e66cc437f2d3a12374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a9d60a08209ddb549d211a0436a1a8"><td class="memTemplParams" colspan="2"><a id="a49a9d60a08209ddb549d211a0436a1a8"></a>
+template&lt;uint8_t BankSize&gt; </td></tr>
+<tr class="memitem:a49a9d60a08209ddb549d211a0436a1a8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CCValueLED</b> = <a class="el" href="../../d7/de4/group__midi-input-elements-leds.html#ga05aea78c34fd229c8ded69f4e3a824b8">CCLED</a>&lt; BankSize &gt;</td></tr>
+<tr class="separator:a49a9d60a08209ddb549d211a0436a1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

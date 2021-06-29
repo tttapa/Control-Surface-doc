@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -85,24 +85,24 @@ $(function() {
 <div class="contents">
 <a href="../../d6/df4/Exit_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifdef ARDUINO</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d1/d65/Warnings_8hpp.html">AH/Settings/Warnings.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>() <span class="comment">// Enable errors on warnings</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d1/d65/Warnings_8hpp.html">AH/Settings/Warnings.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>() <span class="comment">// Enable errors on warnings</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Error.hpp&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../dc/d69/namespaceAH.html#a7ff220c57636b72ec9d8df676f72ef0e">   10</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dc/d69/namespaceAH.html#a7ff220c57636b72ec9d8df676f72ef0e">fatalErrorExit</a>() {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../dc/d69/namespaceAH.html#a7ff220c57636b72ec9d8df676f72ef0e">   10</a></span>&#160;<span class="keywordtype">void</span> <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a7ff220c57636b72ec9d8df676f72ef0e">fatalErrorExit</a>() {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#if defined(LED_BUILTIN) || (defined(ESP32) &amp;&amp; defined(BUILTIN_LED))</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(LED_BUILTIN, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(LED_BUILTIN, <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">while</span> (1) {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        delay(50);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        delay(50);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        delay(50);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        delay(850);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#else</span></div>
@@ -113,9 +113,9 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_a03ed68e9e3d1bbe9a28fd924cb7260c1"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div><div class="ttdeci">#define END_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00010">AH/Settings/NamespaceSettings.hpp:10</a></div></div>

@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -115,7 +115,8 @@ class EMA&lt; K, input_t, state_t &gt;</div><p >Exponential moving average filte
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d23/classEMA__coll__graph.svg" width="207" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d23/classEMA__coll__graph.svg" width="207" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -308,13 +309,13 @@ state_t&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr
 </div><div class="memdoc">
 
 <p>Verify the input range to make sure it's compatible with the shift factor and the width of the state type. </p>
-<p >Examples: </p><div class="fragment"><div class="line"><a class="code" href="../../d7/d40/classEMA.html">EMA&lt;5, int_fast16_t, uint_fast16_t&gt;</a> <a class="code" href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">filter</a>;</div>
-<div class="line">static_assert(<a class="code" href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">filter</a>.supports_range(-1024, 1023),</div>
+<p >Examples: </p><div class="fragment"><div class="line"><a class="highlightclass code" href="../../d7/d40/classEMA.html">EMA&lt;5, int_fast16_t, uint_fast16_t&gt;</a> <a class="highlightmember code" href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">filter</a>;</div>
+<div class="line">static_assert(<a class="highlightmember code" href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">filter</a>.supports_range(-1024, 1023),</div>
 <div class="line">              <span class="stringliteral">&quot;use a wider state or input type, or a smaller shift factor&quot;</span>);</div>
 <div class="ttc" id="aclassEMA_html"><div class="ttname"><a href="../../d7/d40/classEMA.html">EMA</a></div><div class="ttdoc">Exponential moving average filter.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df0/EMA_8hpp_source.html#l00058">EMA.hpp:58</a></div></div>
 <div class="ttc" id="aclassEMA_html_a63ca38c243cb2fc6bde72193001b7d2b"><div class="ttname"><a href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">EMA::filter</a></div><div class="ttdeci">input_t filter(input_t input)</div><div class="ttdoc">Filter the input: Given , calculate .</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df0/EMA_8hpp_source.html#l00081">EMA.hpp:81</a></div></div>
-</div><!-- fragment --> <div class="fragment"><div class="line"><a class="code" href="../../d7/d40/classEMA.html">EMA&lt;5, uint_fast16_t, uint_fast16_t&gt;</a> <a class="code" href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">filter</a>;</div>
-<div class="line">static_assert(<a class="code" href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">filter</a>.supports_range(0u, 2047u),</div>
+</div><!-- fragment --> <div class="fragment"><div class="line"><a class="highlightclass code" href="../../d7/d40/classEMA.html">EMA&lt;5, uint_fast16_t, uint_fast16_t&gt;</a> <a class="highlightmember code" href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">filter</a>;</div>
+<div class="line">static_assert(<a class="highlightmember code" href="../../d7/d40/classEMA.html#a63ca38c243cb2fc6bde72193001b7d2b">filter</a>.supports_range(0u, 2047u),</div>
 <div class="line">              <span class="stringliteral">&quot;use a wider state or input type, or a smaller shift factor&quot;</span>);</div>
 </div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="../../d3/df0/EMA_8hpp_source.html#l00121">121</a> of file <a class="el" href="../../d3/df0/EMA_8hpp_source.html">EMA.hpp</a>.</p>

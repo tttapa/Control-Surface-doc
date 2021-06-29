@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">Numeric.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md214"></a>
+<h1><a class="anchor" id="autotoc_md216"></a>
 Numeric</h1>
 <p >Example of using the standard library numeric functions.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
@@ -90,10 +90,10 @@ Numeric</h1>
 </div><!-- fragment --><p >Written by PieterP, 2019-11-18 <br  />
  <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../de/d76/Array_8hpp.html">AH/Containers/Array.hpp</a>&gt;</span>        <span class="comment">// Array</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d5/db6/ArrayHelpers_8hpp.html">AH/Containers/ArrayHelpers.hpp</a>&gt;</span> <span class="comment">// For printing the array</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../de/d76/Array_8hpp.html">AH/Containers/Array.hpp</a>&gt;</span>        <span class="comment">// Array</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d5/db6/ArrayHelpers_8hpp.html">AH/Containers/ArrayHelpers.hpp</a>&gt;</span> <span class="comment">// For printing the array</span></div>
 <div class="line"><span class="preprocessor">#include &lt;AH/STL/cmath&gt;</span>                   <span class="comment">// std::sqrt</span></div>
 <div class="line"><span class="preprocessor">#include &lt;AH/STL/numeric&gt;</span>                 <span class="comment">// std::iota, std::inner_product</span></div>
 <div class="line"> </div>
@@ -105,16 +105,16 @@ Numeric</h1>
 <div class="line">  <span class="comment">// Create an array with the elements [1, 2 ... 9, 10]</span></div>
 <div class="line">  Array&lt;int, 10&gt; vector;</div>
 <div class="line">  std::iota(std::begin(vector), std::end(vector), 1);</div>
-<div class="line">  Serial &lt;&lt; <span class="stringliteral">&quot;v      = [&quot;</span> &lt;&lt; vector &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; <a name="a0"></a><a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
+<div class="line">  Serial &lt;&lt; <span class="stringliteral">&quot;v      = [&quot;</span> &lt;&lt; vector &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; <a name="a0"></a><a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Compute the inner product of vector with itself, with an initial sum of 0</span></div>
 <div class="line">  <span class="keywordtype">int</span> sum_sq = std::inner_product(std::begin(vector), std::end(vector),</div>
 <div class="line">                                  std::begin(vector), 0);</div>
-<div class="line">  Serial &lt;&lt; <span class="stringliteral">&quot;〈v, v〉 = &quot;</span> &lt;&lt; sum_sq &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
+<div class="line">  Serial &lt;&lt; <span class="stringliteral">&quot;〈v, v〉 = &quot;</span> &lt;&lt; sum_sq &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// The 2-norm of a vector is the squareroot of the inner product with itself</span></div>
 <div class="line">  <span class="keywordtype">double</span> norm = std::sqrt(sum_sq);</div>
-<div class="line">  Serial &lt;&lt; <span class="stringliteral">&quot;‖v‖    = &quot;</span> &lt;&lt; <a name="a1"></a><a class="code" href="../../d8/d4b/group__AH__PrintStream.html#gaf7cf4b0e6244f6fab7b1e15c2523e4e7">setprecision</a>(7) &lt;&lt; norm &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
+<div class="line">  Serial &lt;&lt; <span class="stringliteral">&quot;‖v‖    = &quot;</span> &lt;&lt; <a name="a1"></a><a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#gaf7cf4b0e6244f6fab7b1e15c2523e4e7">setprecision</a>(7) &lt;&lt; norm &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {}</div>

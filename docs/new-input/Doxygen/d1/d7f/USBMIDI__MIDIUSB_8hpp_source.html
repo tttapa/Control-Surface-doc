@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -83,29 +83,29 @@ $(function() {
   <div class="headertitle"><div class="title">USBMIDI_MIDIUSB.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d1/d7f/USBMIDI__MIDIUSB_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../de/d76/Array_8hpp.html">AH/Containers/Array.hpp</a>&gt;</span></div>
+<a href="../../d1/d7f/USBMIDI__MIDIUSB_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../de/d76/Array_8hpp.html">AH/Containers/Array.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;Settings/NamespaceSettings.hpp&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;MIDIUSB.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d1/d22/structUSBDeviceMIDIBackend.html">USBDeviceMIDIBackend</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">    9</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d0/d32/structAH_1_1Array.html">MIDIUSBPacket_t</a> = <a class="code" href="../../d0/d32/structAH_1_1Array.html">AH::Array&lt;uint8_t, 4&gt;</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">   10</a></span>&#160;    <a class="code" href="../../d0/d32/structAH_1_1Array.html">MIDIUSBPacket_t</a> <a class="code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">read</a>() {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">struct </span><a class="highlightclass code" href="../../d1/d22/structUSBDeviceMIDIBackend.html">USBDeviceMIDIBackend</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">    9</a></span>&#160;    <span class="keyword">using</span> <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">MIDIUSBPacket_t</a> = <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">AH::Array&lt;uint8_t, 4&gt;</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">   10</a></span>&#160;    <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">MIDIUSBPacket_t</a> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">read</a>() {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        midiEventPacket_t midipacket = MidiUSB.read();</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordflow">return</span> {{midipacket.header, midipacket.byte1, midipacket.byte2,</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                 midipacket.byte3}};</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">   15</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">write</a>(uint8_t cn_cin, uint8_t midi_0, uint8_t midi_1, uint8_t midi_2) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">   15</a></span>&#160;    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">write</a>(uint8_t cn_cin, uint8_t midi_0, uint8_t midi_1, uint8_t midi_2) {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        midiEventPacket_t msg{cn_cin, midi_0, midi_1, midi_2};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        MidiUSB.sendMIDI(msg);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a>() { MidiUSB.flush(); }</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">   20</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">preferImmediateSend</a>() { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a>() { MidiUSB.flush(); }</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">   20</a></span>&#160;    <span class="keywordtype">bool</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">preferImmediateSend</a>() { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 <div class="ttc" id="aArray_8hpp_html"><div class="ttname"><a href="../../de/d76/Array_8hpp.html">Array.hpp</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9305dd4bad1398506431b42a5a100f8d"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div><div class="ttdeci">#define END_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00010">Settings/NamespaceSettings.hpp:10</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9432e3744c64fcf8e711ef91eff6a5cd"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div><div class="ttdeci">#define BEGIN_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00009">Settings/NamespaceSettings.hpp:9</a></div></div>

@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -85,13 +85,13 @@ $(function() {
 <div class="contents">
 <a href="../../d1/d93/USBMIDI_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../de/d76/Array_8hpp.html">AH/Containers/Array.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../de/d76/Array_8hpp.html">AH/Containers/Array.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;AH/STL/cstdint&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Settings/NamespaceSettings.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d1/d93/USBMIDI_8hpp.html#a3690175938e2a45442a90c7a4f14c907">    9</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="../../d0/d32/structAH_1_1Array.html">AH::Array&lt;uint8_t, 4&gt;</a> <a class="code" href="../../d1/d93/USBMIDI_8hpp.html#a3690175938e2a45442a90c7a4f14c907">u32_to_bytes</a>(uint32_t u) {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d1/d93/USBMIDI_8hpp.html#a3690175938e2a45442a90c7a4f14c907">    9</a></span>&#160;<span class="keyword">inline</span> <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">AH::Array&lt;uint8_t, 4&gt;</a> <a class="highlightmember code" href="../../d1/d93/USBMIDI_8hpp.html#a3690175938e2a45442a90c7a4f14c907">u32_to_bytes</a>(uint32_t u) {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> {{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        uint8_t((u &gt;&gt; 0) &amp; 0xFF),</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        uint8_t((u &gt;&gt; 8) &amp; 0xFF),</div>
@@ -100,50 +100,50 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }};</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d1/d93/USBMIDI_8hpp.html#a8b351037b21721bdbc083384d9a5a6f2">   18</a></span>&#160;<span class="keyword">inline</span> uint32_t <a class="code" href="../../d1/d93/USBMIDI_8hpp.html#a8b351037b21721bdbc083384d9a5a6f2">bytes_to_u32</a>(uint8_t b0, uint8_t b1, uint8_t b2, uint8_t b3) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d1/d93/USBMIDI_8hpp.html#a8b351037b21721bdbc083384d9a5a6f2">   18</a></span>&#160;<span class="keyword">inline</span> uint32_t <a class="highlightmember code" href="../../d1/d93/USBMIDI_8hpp.html#a8b351037b21721bdbc083384d9a5a6f2">bytes_to_u32</a>(uint8_t b0, uint8_t b1, uint8_t b2, uint8_t b3) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> (uint32_t(b0) &lt;&lt; 0) |  <span class="comment">//</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;           (uint32_t(b1) &lt;&lt; 8) |  <span class="comment">//</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;           (uint32_t(b2) &lt;&lt; 16) | <span class="comment">//</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;           (uint32_t(b3) &lt;&lt; 24);  <span class="comment">//</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifdef ARDUINO</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if defined(TEENSYDUINO)</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#if defined(__AVR__) </span><span class="comment">/* Teensy 2.x */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/db6/USBMIDI__Teensy2_8hpp.html">USBMIDI_Teensy2.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../d4/db6/USBMIDI__Teensy2_8hpp.html">USBMIDI_Teensy2.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#elif defined(__MK20DX128__)  </span><span class="comment">/* Teensy 3.0 */</span><span class="preprocessor">                                 \</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    || defined(__MK20DX256__) </span><span class="comment">/* Teensy 3.1/3.2 */</span><span class="preprocessor">                             \</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">    || defined(__MK64FX512__) </span><span class="comment">/* Teensy 3.5 */</span><span class="preprocessor">                                 \</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">    || defined(__MK66FX1M0__) </span><span class="comment">/* Teensy 3.6 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d0f/USBMIDI__Teensy3_8hpp.html">USBMIDI_Teensy3.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../d6/d0f/USBMIDI__Teensy3_8hpp.html">USBMIDI_Teensy3.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#elif defined(__IMXRT1062__) || defined(__IMXRT1052__) </span><span class="comment">/* Teensy 4.0 */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/db8/USBMIDI__Teensy4_8hpp.html">USBMIDI_Teensy4.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../db/db8/USBMIDI__Teensy4_8hpp.html">USBMIDI_Teensy4.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#elif defined(__MKL26Z64__) </span><span class="comment">/* Teensy LC */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/db3/USBMIDI__TeensyLC_8hpp.html">USBMIDI_TeensyLC.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../dd/db3/USBMIDI__TeensyLC_8hpp.html">USBMIDI_TeensyLC.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#warning &quot;Unknown Teensy board, please open an issue on GitHub&quot;</span> \</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;         &quot;https://github.com/tttapa/Arduino-Helpers&quot;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// Fall back to the MIDIUSB library and hope for the best</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d7f/USBMIDI__MIDIUSB_8hpp.html">USBMIDI_MIDIUSB.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../d1/d7f/USBMIDI__MIDIUSB_8hpp.html">USBMIDI_MIDIUSB.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#elif defined(ARDUINO_ARCH_MBED)</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d22/USBMIDI__Arduino__mbed_8hpp.html">USBMIDI_Arduino_mbed.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../d5/d22/USBMIDI__Arduino__mbed_8hpp.html">USBMIDI_Arduino_mbed.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d6/ddf/Arduino-Wrapper_8h.html">AH/Arduino-Wrapper.h</a>&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d6/ddf/Arduino-Wrapper_8h.html">AH/Arduino-Wrapper.h</a>&gt;</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifdef USBCON</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d7f/USBMIDI__MIDIUSB_8hpp.html">USBMIDI_MIDIUSB.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../d1/d7f/USBMIDI__MIDIUSB_8hpp.html">USBMIDI_MIDIUSB.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define CS_USB_MIDI_NOT_SUPPORTED</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -152,7 +152,7 @@ $(function() {
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d37/USBMIDI__Mock_8hpp.html">USBMIDI_Mock.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../d6/d37/USBMIDI__Mock_8hpp.html">USBMIDI_Mock.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aArduino-Wrapper_8h_html"><div class="ttname"><a href="../../d6/ddf/Arduino-Wrapper_8h.html">Arduino-Wrapper.h</a></div></div>

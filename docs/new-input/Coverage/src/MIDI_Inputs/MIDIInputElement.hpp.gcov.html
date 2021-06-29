@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - b068f1979aa14464a8e0e3ac8c5a419ea29c2b18 - src/MIDI_Inputs/MIDIInputElement.hpp</title>
+  <title>LCOV - c71de6d23dfda08f3b0fec995ec876991cffa25c - src/MIDI_Inputs/MIDIInputElement.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">b068f1979aa14464a8e0e3ac8c5a419ea29c2b18</td>
+            <td class="headerValue">c71de6d23dfda08f3b0fec995ec876991cffa25c</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">35</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-28 17:11:21</td>
+            <td class="headerValue">2021-06-29 17:22:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">76</td>
@@ -90,10 +90,10 @@
 <a name="20"><span class="lineNum">      20 </span>            : template &lt;MIDIMessageType Type&gt;</a>
 <a name="21"><span class="lineNum">      21 </span>            : class MIDIInputElement : public AH::UpdatableCRTP&lt;MIDIInputElement&lt;Type&gt;&gt; {</a>
 <a name="22"><span class="lineNum">      22 </span>            :   protected:</a>
-<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         61 :     MIDIInputElement() = default;</span></a>
+<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         63 :     MIDIInputElement() = default;</span></a>
 <a name="24"><span class="lineNum">      24 </span>            : </a>
 <a name="25"><span class="lineNum">      25 </span>            :   public:</a>
-<a name="26"><span class="lineNum">      26 </span><span class="lineCov">         61 :     virtual ~MIDIInputElement() = default;</span></a>
+<a name="26"><span class="lineNum">      26 </span><span class="lineCov">         63 :     virtual ~MIDIInputElement() = default;</span></a>
 <a name="27"><span class="lineNum">      27 </span>            : </a>
 <a name="28"><span class="lineNum">      28 </span>            :   public:</a>
 <a name="29"><span class="lineNum">      29 </span>            :     using MessageType =</a>
@@ -155,19 +155,19 @@
 <a name="85"><span class="lineNum">      85 </span>            : ///</a>
 <a name="86"><span class="lineNum">      86 </span>            : /// @todo   Pass the MIDI message to the @ref handleUpdate() method.</a>
 <a name="87"><span class="lineNum">      87 </span>            : template &lt;MIDIMessageType Type, class Matcher&gt;</a>
-<a name="88"><span class="lineNum">      88 </span><span class="lineCov">         49 : class MatchingMIDIInputElement : public MIDIInputElement&lt;Type&gt; {</span></a>
+<a name="88"><span class="lineNum">      88 </span><span class="lineCov">         51 : class MatchingMIDIInputElement : public MIDIInputElement&lt;Type&gt; {</span></a>
 <a name="89"><span class="lineNum">      89 </span>            :   protected:</a>
-<a name="90"><span class="lineNum">      90 </span><span class="lineCov">         49 :     MatchingMIDIInputElement(const Matcher &amp;matcher) : matcher(matcher) {}</span></a>
+<a name="90"><span class="lineNum">      90 </span><span class="lineCov">         51 :     MatchingMIDIInputElement(const Matcher &amp;matcher) : matcher(matcher) {}</span></a>
 <a name="91"><span class="lineNum">      91 </span>            : </a>
 <a name="92"><span class="lineNum">      92 </span>            :   public:</a>
 <a name="93"><span class="lineNum">      93 </span>            :     using MessageType = typename MIDIInputElement&lt;Type&gt;::MessageType;</a>
 <a name="94"><span class="lineNum">      94 </span>            : </a>
-<a name="95"><span class="lineNum">      95 </span><span class="lineCov">        166 :     bool updateWith(MessageType midimsg) override {</span></a>
-<a name="96"><span class="lineNum">      96 </span><span class="lineCov">        166 :         auto match = matcher(midimsg);</span></a>
-<a name="97"><span class="lineNum">      97 </span><span class="lineCov">        166 :         if (match.match)</span></a>
-<a name="98"><span class="lineNum">      98 </span><span class="lineCov">        150 :             handleUpdate(match);</span></a>
-<a name="99"><span class="lineNum">      99 </span><span class="lineCov">        332 :         return match.match;</span></a>
-<a name="100"><span class="lineNum">     100 </span><span class="lineCov">        166 :     }</span></a>
+<a name="95"><span class="lineNum">      95 </span><span class="lineCov">        176 :     bool updateWith(MessageType midimsg) override {</span></a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">        176 :         auto match = matcher(midimsg);</span></a>
+<a name="97"><span class="lineNum">      97 </span><span class="lineCov">        176 :         if (match.match)</span></a>
+<a name="98"><span class="lineNum">      98 </span><span class="lineCov">        154 :             handleUpdate(match);</span></a>
+<a name="99"><span class="lineNum">      99 </span><span class="lineCov">        352 :         return match.match;</span></a>
+<a name="100"><span class="lineNum">     100 </span><span class="lineCov">        176 :     }</span></a>
 <a name="101"><span class="lineNum">     101 </span>            : </a>
 <a name="102"><span class="lineNum">     102 </span>            :     virtual void handleUpdate(typename Matcher::Result match) = 0;</a>
 <a name="103"><span class="lineNum">     103 </span>            : </a>
@@ -188,18 +188,18 @@
 <a name="118"><span class="lineNum">     118 </span>            :   protected:</a>
 <a name="119"><span class="lineNum">     119 </span>            :     /// Create a new BankableMatchingMIDIInputElement object, and add it to the</a>
 <a name="120"><span class="lineNum">     120 </span>            :     /// bank.</a>
-<a name="121"><span class="lineNum">     121 </span><span class="lineCov">         15 :     BankableMatchingMIDIInputElement(const Matcher &amp;matcher)</span></a>
-<a name="122"><span class="lineNum">     122 </span><span class="lineCov">         30 :         : MatchingMIDIInputElement&lt;Type, Matcher&gt;(matcher) {</span></a>
-<a name="123"><span class="lineNum">     123 </span><span class="lineCov">         15 :         this-&gt;matcher.getBank().add(this);</span></a>
-<a name="124"><span class="lineNum">     124 </span><span class="lineCov">         15 :     }</span></a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineCov">         17 :     BankableMatchingMIDIInputElement(const Matcher &amp;matcher)</span></a>
+<a name="122"><span class="lineNum">     122 </span><span class="lineCov">         34 :         : MatchingMIDIInputElement&lt;Type, Matcher&gt;(matcher) {</span></a>
+<a name="123"><span class="lineNum">     123 </span><span class="lineCov">         17 :         this-&gt;matcher.getBank().add(this);</span></a>
+<a name="124"><span class="lineNum">     124 </span><span class="lineCov">         17 :     }</span></a>
 <a name="125"><span class="lineNum">     125 </span>            : </a>
-<a name="126"><span class="lineNum">     126 </span><span class="lineCov">        211 :     uint8_t getActiveBank() const { return this-&gt;matcher.getSelection(); }</span></a>
+<a name="126"><span class="lineNum">     126 </span><span class="lineCov">        272 :     uint8_t getActiveBank() const { return this-&gt;matcher.getSelection(); }</span></a>
 <a name="127"><span class="lineNum">     127 </span>            : </a>
 <a name="128"><span class="lineNum">     128 </span>            :   public:</a>
 <a name="129"><span class="lineNum">     129 </span>            :     /// Destructor: remove element from the bank.</a>
-<a name="130"><span class="lineNum">     130 </span><span class="lineCov">         15 :     virtual ~BankableMatchingMIDIInputElement() {</span></a>
-<a name="131"><span class="lineNum">     131 </span><span class="lineCov">         15 :         this-&gt;matcher.getBank().remove(this);</span></a>
-<a name="132"><span class="lineNum">     132 </span><span class="lineCov">         15 :     }</span></a>
+<a name="130"><span class="lineNum">     130 </span><span class="lineCov">         17 :     virtual ~BankableMatchingMIDIInputElement() {</span></a>
+<a name="131"><span class="lineNum">     131 </span><span class="lineCov">         17 :         this-&gt;matcher.getBank().remove(this);</span></a>
+<a name="132"><span class="lineNum">     132 </span><span class="lineCov">         17 :     }</span></a>
 <a name="133"><span class="lineNum">     133 </span>            : };</a>
 <a name="134"><span class="lineNum">     134 </span>            : </a>
 <a name="135"><span class="lineNum">     135 </span>            : // -------------------------------------------------------------------------- //</a>

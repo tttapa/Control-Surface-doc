@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -88,7 +88,8 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/df7/group__AH__Error.svg" width="239" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/df7/group__AH__Error.svg" width="239" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -127,8 +128,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        DEBUGFN(msg &lt;&lt; <span class="stringliteral">&quot; (0x&quot;</span> &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">hex</a> &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">uppercase</a> &lt;&lt; errc &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">dec</a>               \</div>
-<div class="line">                    &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">nouppercase</a> &lt;&lt; <span class="charliteral">&#39;)&#39;</span>);                                    \</div>
+<div class="line">        DEBUGFN(msg &lt;&lt; <span class="stringliteral">&quot; (0x&quot;</span> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">hex</a> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">uppercase</a> &lt;&lt; errc &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">dec</a>               \</div>
+<div class="line">                    &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">nouppercase</a> &lt;&lt; <span class="charliteral">&#39;)&#39;</span>);                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="agroup__AH__PrintStream_html_ga173884f5f11dfa9d228c36522d207e28"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">AH::hex</a></div><div class="ttdeci">Print &amp; hex(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00062">PrintStream.cpp:62</a></div></div>
 <div class="ttc" id="agroup__AH__PrintStream_html_ga37f5b21cf4655f13c367bed9a7dad2f2"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">AH::nouppercase</a></div><div class="ttdeci">Print &amp; nouppercase(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00040">PrintStream.cpp:40</a></div></div>
@@ -176,8 +177,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">        USING_AH_NAMESPACE;                                                    \</div>
-<div class="line">        DEBUGFN(F(<span class="stringliteral">&quot;Fatal Error: &quot;</span>) &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot; (0x&quot;</span> &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">hex</a> &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">uppercase</a>        \</div>
-<div class="line">                                   &lt;&lt; errc &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">dec</a> &lt;&lt; <a class="code" href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">nouppercase</a> &lt;&lt; <span class="charliteral">&#39;)&#39;</span>);      \</div>
+<div class="line">        DEBUGFN(F(<span class="stringliteral">&quot;Fatal Error: &quot;</span>) &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot; (0x&quot;</span> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">hex</a> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">uppercase</a>        \</div>
+<div class="line">                                   &lt;&lt; errc &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">dec</a> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">nouppercase</a> &lt;&lt; <span class="charliteral">&#39;)&#39;</span>);      \</div>
 <div class="line">        fatalErrorExit();                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->

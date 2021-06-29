@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">2.DigitalReadSerial.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md235"></a>
+<h1><a class="anchor" id="autotoc_md237"></a>
 2.DigitalReadSerial</h1>
 <p >This is an example of the AnalogMultiplex class. It prints the states of all 16 switches connected to a multiplexers to the serial monitor.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md236"></a>
+<h2><a class="anchor" id="autotoc_md238"></a>
 Connections</h2>
 <ul>
 <li>2: CD74HC4067 signal pin ("common input/output")</li>
@@ -95,17 +95,17 @@ Connections</h2>
 <p >Optionally you can connect the enable pin as well, this is useful if you want to use multiple multiplexers with the same address lines and the same analog input. Otherwise, just connect the enable pin to ground.</p>
 <p >If you are using a 3-bit multiplexer, like the CD74HC4051, you can uncomment the code specific to this multiplexer, and use only three address pins.</p>
 <p >Connect a switch or push button between each input pin of the multiplexer and ground. A pull-up resistor is not necessary, because we'll use the internal one.</p>
-<h2><a class="anchor" id="autotoc_md237"></a>
+<h2><a class="anchor" id="autotoc_md239"></a>
 Behavior</h2>
 <p >Open the serial monitor (CTRL+SHIFT+M) or the serial plotter (CTRL+SHIFT+L), and press some buttons, you should see all 16 signals printed or plotted.</p>
 <p >Written by Pieter P, 2019-08-08 <br  />
  <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span> <span class="comment">// Include the Arduino Helpers library</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d7/def/AnalogMultiplex_8hpp.html">AH/Hardware/ExtendedInputOutput/AnalogMultiplex.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span> <span class="comment">// Include the Arduino Helpers library</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d7/def/AnalogMultiplex_8hpp.html">AH/Hardware/ExtendedInputOutput/AnalogMultiplex.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a multiplexer</span></div>
-<div class="line"><a name="a0"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga76abe1cbb481b44875fb5e08da186ad0">CD74HC4067</a> mux {</div>
+<div class="line"><a name="a0"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga76abe1cbb481b44875fb5e08da186ad0">CD74HC4067</a> mux {</div>
 <div class="line">  2,               <span class="comment">// input pin</span></div>
 <div class="line">  {3, 4, 5, 6}, <span class="comment">// Address pins S0, S1, S2, S3</span></div>
 <div class="line">  <span class="comment">// 7, // Optionally, specify the enable pin</span></div>
@@ -121,12 +121,12 @@ Behavior</h2>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  Serial.begin(115200);</div>
 <div class="line">  mux.begin();                  <span class="comment">// Initialize multiplexer</span></div>
-<div class="line">  mux.pinMode(0, <a name="a1"></a><a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ab3a208d63371a2819ec768bfe8fa2531">INPUT_PULLUP</a>); <span class="comment">// Set the pin mode (setting it for one pin of</span></div>
+<div class="line">  mux.pinMode(0, <a name="a1"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ab3a208d63371a2819ec768bfe8fa2531">INPUT_PULLUP</a>); <span class="comment">// Set the pin mode (setting it for one pin of</span></div>
 <div class="line">                                <span class="comment">// the multiplexers sets it for all of them)</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <span class="keywordflow">for</span> (<a name="a2"></a><a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin = 0; pin &lt; mux.getLength(); ++pin) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<a name="a2"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin = 0; pin &lt; mux.getLength(); ++pin) {</div>
 <div class="line">    Serial.print(mux.digitalRead(pin));</div>
 <div class="line">    Serial.print(<span class="charliteral">&#39;\t&#39;</span>);</div>
 <div class="line">  }</div>
@@ -135,8 +135,8 @@ Behavior</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Or if you&#39;re a cool kid, use a range-based for loop</span></div>
 <div class="line"><span class="keywordtype">void</span> loop2() {</div>
-<div class="line">  <span class="keywordflow">for</span> (<a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin : mux.pins()) {</div>
-<div class="line">    Serial.print(<a name="a3"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(pin));</div>
+<div class="line">  <span class="keywordflow">for</span> (<a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin : mux.pins()) {</div>
+<div class="line">    Serial.print(<a name="a3"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(pin));</div>
 <div class="line">    Serial.print(<span class="charliteral">&#39;\t&#39;</span>);</div>
 <div class="line">  }</div>
 <div class="line">  Serial.println();</div>

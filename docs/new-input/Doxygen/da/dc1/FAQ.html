@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -117,19 +117,19 @@ Can I use Control Surface as a general purpose MIDI library?</h1>
 <h2><a class="anchor" id="faq-send-midi"></a>
 Sending MIDI</h2>
 <p >You can use the functions defined by the <a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a> class to send all kinds of MIDI messages. These functions can be used on all <a class="el" href="../../dc/df0/group__MIDIInterfaces.html">MIDI interfaces</a> and on the main <code>Control_Surface</code> class.</p>
-<p >Here's a basic MIDI output example: </p><div class="fragment"><div class="line"><a class="code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi; <span class="comment">// Instantiate the MIDI over USB interface</span></div>
+<p >Here's a basic MIDI output example: </p><div class="fragment"><div class="line"><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi; <span class="comment">// Instantiate the MIDI over USB interface</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">const</span> <a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> noteAddress = {<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>};</div>
+<div class="line"><span class="keyword">const</span> <a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> noteAddress = {<a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>};</div>
 <div class="line"><span class="keyword">const</span> uint8_t velocity = 0x7F;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  midi.<a class="code" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();       <span class="comment">// initialize the MIDI interface</span></div>
+<div class="line">  midi.<a class="highlightmember code" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();       <span class="comment">// initialize the MIDI interface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  midi.<a class="code" href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a>(noteAddress, velocity);         <span class="comment">// send a note on event</span></div>
+<div class="line">  midi.<a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a>(noteAddress, velocity);         <span class="comment">// send a note on event</span></div>
 <div class="line">  delay(1000);</div>
-<div class="line">  midi.<a class="code" href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a>(noteAddress, velocity);        <span class="comment">// send a note off event</span></div>
+<div class="line">  midi.<a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a>(noteAddress, velocity);        <span class="comment">// send a note off event</span></div>
 <div class="line">  delay(1000);</div>
 <div class="line">}</div>
 <div class="ttc" id="aChannel_8hpp_html_a166aafd26c8b912f9e8bc7acb8b1cd17"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a></div><div class="ttdeci">constexpr Channel CHANNEL_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
@@ -191,15 +191,15 @@ Normal banks</h2>
 <p > 
 <object type="image/svg+xml" data="../../bank-bankable.svg" style="margin: 0 auto; display: block"></object>
 </p>
-<div class="fragment"><div class="line"><a class="code" href="../../db/dbd/classBank.html">Bank&lt;3&gt;</a> bank(4); <span class="comment">// 3 banks with an offset of 4 tracks per bank (a = 4)</span></div>
+<div class="fragment"><div class="line"><a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;3&gt;</a> bank(4); <span class="comment">// 3 banks with an offset of 4 tracks per bank (a = 4)</span></div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="../../de/d36/classBankable_1_1NoteButton.html">Bankable::NoteButton</a> muteButtons[] {</div>
+<div class="line"><a class="highlightclass code" href="../../de/d36/classBankable_1_1NoteButton.html">Bankable::NoteButton</a> muteButtons[] {</div>
 <div class="line">    {bank, pin1, 1}, <span class="comment">// base address 1 (b = 1)</span></div>
 <div class="line">    {bank, pin2, 2}, <span class="comment">// base address 2 (b = 2)</span></div>
 <div class="line">    {bank, pin3, 3}, <span class="comment">// base address 3 (b = 3)</span></div>
 <div class="line">    {bank, pin4, 4}, <span class="comment">// base address 4 (b = 4)</span></div>
 <div class="line">};</div>
-<div class="ttc" id="aclassBank_html"><div class="ttname"><a href="../../db/dbd/classBank.html">Bank</a></div><div class="ttdoc">A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d57/Bank_8hpp_source.html#l00096">Bank.hpp:96</a></div></div>
+<div class="ttc" id="aclassBank_html"><div class="ttname"><a href="../../db/dbd/classBank.html">Bank</a></div><div class="ttdoc">A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d57/Bank_8hpp_source.html#l00091">Bank.hpp:91</a></div></div>
 <div class="ttc" id="aclassBankable_1_1NoteButton_html"><div class="ttname"><a href="../../de/d36/classBankable_1_1NoteButton.html">Bankable::NoteButton</a></div><div class="ttdoc">A class of MIDIOutputElements that read the input of a momentary push button or switch,...</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d8e/Bankable_2NoteButton_8hpp_source.html#l00022">Bankable/NoteButton.hpp:22</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="faq-banks-many-addresses"></a>
 Many addresses</h2>

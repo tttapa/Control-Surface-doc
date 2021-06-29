@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -85,25 +85,25 @@ $(function() {
 <div class="contents">
 <a href="../../d3/d80/NoteButton_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../dd/d47/Abstract_2MIDIButton_8hpp.html">MIDI_Outputs/Abstract/MIDIButton.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d1/daa/DigitalNoteSender_8hpp.html">MIDI_Senders/DigitalNoteSender.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dd/d47/Abstract_2MIDIButton_8hpp.html">MIDI_Outputs/Abstract/MIDIButton.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d1/daa/DigitalNoteSender_8hpp.html">MIDI_Senders/DigitalNoteSender.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d1/d9f/classNoteButton.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/d9f/classNoteButton.html">NoteButton</a> : <span class="keyword">public</span> <a class="code" href="../../d6/d72/classMIDIButton.html">MIDIButton</a>&lt;DigitalNoteSender&gt; {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d1/d9f/classNoteButton.html">   19</a></span>&#160;<span class="keyword">class </span><a class="highlightclass code" href="../../d1/d9f/classNoteButton.html">NoteButton</a> : <span class="keyword">public</span> <a class="highlightclass code" href="../../d6/d72/classMIDIButton.html">MIDIButton</a>&lt;DigitalNoteSender&gt; {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d1/d9f/classNoteButton.html#aa5118184dda04641c9ca82185af850eb">   35</a></span>&#160;    <a class="code" href="../../d1/d9f/classNoteButton.html#aa5118184dda04641c9ca82185af850eb">NoteButton</a>(<a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <a class="code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> <a class="code" href="../../d6/d72/classMIDIButton.html#a1945beb5da88cac9c15dca5ece9e5cd3">address</a>, uint8_t velocity = 0x7F)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        : <a class="code" href="../../d6/d72/classMIDIButton.html">MIDIButton</a>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d1/d9f/classNoteButton.html#aa5118184dda04641c9ca82185af850eb">   35</a></span>&#160;    <a class="highlightmember code" href="../../d1/d9f/classNoteButton.html#aa5118184dda04641c9ca82185af850eb">NoteButton</a>(<a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> <a class="highlightmember code" href="../../d6/d72/classMIDIButton.html#a1945beb5da88cac9c15dca5ece9e5cd3">address</a>, uint8_t velocity = 0x7F)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        : <a class="highlightclass code" href="../../d6/d72/classMIDIButton.html">MIDIButton</a>{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;              pin,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;              <a class="code" href="../../d6/d72/classMIDIButton.html#a1945beb5da88cac9c15dca5ece9e5cd3">address</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;              <a class="highlightmember code" href="../../d6/d72/classMIDIButton.html#a1945beb5da88cac9c15dca5ece9e5cd3">address</a>,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;              {velocity},</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          } {}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d1/d9f/classNoteButton.html#a1bd7c42ec152adde0cacef9486418c40">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/d9f/classNoteButton.html#a1bd7c42ec152adde0cacef9486418c40">setVelocity</a>(uint8_t velocity) { this-&gt;sender.setVelocity(velocity); }</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d1/d9f/classNoteButton.html#a25a179d18e629da90c89aab707d518ed">   45</a></span>&#160;    uint8_t <a class="code" href="../../d1/d9f/classNoteButton.html#a25a179d18e629da90c89aab707d518ed">getVelocity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;sender.getVelocity(); }</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d1/d9f/classNoteButton.html#a1bd7c42ec152adde0cacef9486418c40">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../d1/d9f/classNoteButton.html#a1bd7c42ec152adde0cacef9486418c40">setVelocity</a>(uint8_t velocity) { this-&gt;sender.setVelocity(velocity); }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d1/d9f/classNoteButton.html#a25a179d18e629da90c89aab707d518ed">   45</a></span>&#160;    uint8_t <a class="highlightmember code" href="../../d1/d9f/classNoteButton.html#a25a179d18e629da90c89aab707d518ed">getVelocity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;sender.getVelocity(); }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 <div class="ttc" id="aAbstract_2MIDIButton_8hpp_html"><div class="ttname"><a href="../../dd/d47/Abstract_2MIDIButton_8hpp.html">MIDIButton.hpp</a></div></div>
 <div class="ttc" id="aDigitalNoteSender_8hpp_html"><div class="ttname"><a href="../../d1/daa/DigitalNoteSender_8hpp.html">DigitalNoteSender.hpp</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9305dd4bad1398506431b42a5a100f8d"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div><div class="ttdeci">#define END_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00010">Settings/NamespaceSettings.hpp:10</a></div></div>

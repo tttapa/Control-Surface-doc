@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - b068f1979aa14464a8e0e3ac8c5a419ea29c2b18 - src/Banks/BankableAddresses.hpp</title>
+  <title>LCOV - c71de6d23dfda08f3b0fec995ec876991cffa25c - src/Banks/BankableAddresses.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">b068f1979aa14464a8e0e3ac8c5a419ea29c2b18</td>
+            <td class="headerValue">c71de6d23dfda08f3b0fec995ec876991cffa25c</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">21</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-28 17:11:21</td>
+            <td class="headerValue">2021-06-29 17:22:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">10</td>
@@ -180,7 +180,7 @@
 <a name="110"><span class="lineNum">     110 </span>            :      * @brief   Get the offset relative to the base address.</a>
 <a name="111"><span class="lineNum">     111 </span>            :      */</a>
 <a name="112"><span class="lineNum">     112 </span><span class="lineCov">         36 :     RelativeMIDIAddress getAddressOffset() const {</span></a>
-<a name="113"><span class="lineNum">     113 </span><span class="lineCov">         36 :         int8_t offset = getSelection() * bank.getTracksPerBank();</span></a>
+<a name="113"><span class="lineNum">     113 </span><span class="lineCov">         36 :         int8_t offset = bank.getOffsetOfSetting(getSelection());</span></a>
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">         36 :         switch (type) {</span></a>
 <a name="115"><span class="lineNum">     115 </span><span class="lineCov">         36 :             case CHANGE_ADDRESS: return {offset, 0, 0};</span></a>
 <a name="116"><span class="lineNum">     116 </span><span class="lineNoCov">          0 :             case CHANGE_CHANNEL: return {0, offset, 0};</span></a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - b068f1979aa14464a8e0e3ac8c5a419ea29c2b18 - src/MIDI_Interfaces/BluetoothMIDI_Interface.hpp</title>
+  <title>LCOV - c71de6d23dfda08f3b0fec995ec876991cffa25c - src/MIDI_Interfaces/BluetoothMIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">b068f1979aa14464a8e0e3ac8c5a419ea29c2b18</td>
+            <td class="headerValue">c71de6d23dfda08f3b0fec995ec876991cffa25c</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">26</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-28 17:11:21</td>
+            <td class="headerValue">2021-06-29 17:22:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
@@ -225,7 +225,7 @@
 <a name="155"><span class="lineNum">     155 </span>            :     /// It either sends them after a timeout (a given number of milliseconds</a>
 <a name="156"><span class="lineNum">     156 </span>            :     /// after the first data was added to the packet), or immediately when it</a>
 <a name="157"><span class="lineNum">     157 </span>            :     /// receives a flush signal from the main thread.</a>
-<a name="158"><span class="lineNum">     158 </span>            :     void handleSendEvents();</a>
+<a name="158"><span class="lineNum">     158 </span>            :     bool handleSendEvents();</a>
 <a name="159"><span class="lineNum">     159 </span>            : </a>
 <a name="160"><span class="lineNum">     160 </span>            :     /// Tell the background BLE sender thread to send the current packet.</a>
 <a name="161"><span class="lineNum">     161 </span>            :     /// Blocks until the packet is sent.</a>
@@ -234,30 +234,33 @@
 <a name="164"><span class="lineNum">     164 </span>            :     ///         Lock should be locked at entry, will still be locked on exit.</a>
 <a name="165"><span class="lineNum">     165 </span>            :     void flushImpl(lock_t &amp;lock);</a>
 <a name="166"><span class="lineNum">     166 </span>            : </a>
-<a name="167"><span class="lineNum">     167 </span>            :     /// Tell the background BLE sender thread to stop gracefully, and join it.</a>
-<a name="168"><span class="lineNum">     168 </span>            :     void stopSendingThread();</a>
-<a name="169"><span class="lineNum">     169 </span>            : </a>
-<a name="170"><span class="lineNum">     170 </span>            :   public:</a>
-<a name="171"><span class="lineNum">     171 </span><span class="lineNoCov">          0 :     static void midi_write_callback(const uint8_t *data, size_t length) {</span></a>
-<a name="172"><span class="lineNum">     172 </span><span class="lineNoCov">          0 :         if (instance)</span></a>
-<a name="173"><span class="lineNum">     173 </span><span class="lineNoCov">          0 :             instance-&gt;parse(data, length);</span></a>
-<a name="174"><span class="lineNum">     174 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="175"><span class="lineNum">     175 </span>            : </a>
-<a name="176"><span class="lineNum">     176 </span><span class="lineNoCov">          0 :     static void midi_mtu_callback(uint16_t mtu) {</span></a>
-<a name="177"><span class="lineNum">     177 </span><span class="lineNoCov">          0 :         if (instance)</span></a>
-<a name="178"><span class="lineNum">     178 </span><span class="lineNoCov">          0 :             instance-&gt;updateMTU(mtu);</span></a>
-<a name="179"><span class="lineNum">     179 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="180"><span class="lineNum">     180 </span>            : </a>
-<a name="181"><span class="lineNum">     181 </span>            : #ifdef ARDUINO</a>
-<a name="182"><span class="lineNum">     182 </span>            :   private:</a>
-<a name="183"><span class="lineNum">     183 </span>            :     void notifyMIDIBLE(const std::vector&lt;uint8_t&gt; &amp;packet);</a>
-<a name="184"><span class="lineNum">     184 </span>            : #else</a>
-<a name="185"><span class="lineNum">     185 </span>            :   public:</a>
-<a name="186"><span class="lineNum">     186 </span><span class="lineCov">         50 :     MOCK_METHOD(void, notifyMIDIBLE, (const std::vector&lt;uint8_t&gt; &amp;), ());</span></a>
-<a name="187"><span class="lineNum">     187 </span>            : #endif</a>
-<a name="188"><span class="lineNum">     188 </span>            : };</a>
-<a name="189"><span class="lineNum">     189 </span>            : </a>
-<a name="190"><span class="lineNum">     190 </span>            : END_CS_NAMESPACE</a>
+<a name="167"><span class="lineNum">     167 </span>            : #if !defined(ARDUINO) &amp;&amp; !defined(DOXYGEN)</a>
+<a name="168"><span class="lineNum">     168 </span>            :     public:</a>
+<a name="169"><span class="lineNum">     169 </span>            : #endif</a>
+<a name="170"><span class="lineNum">     170 </span>            :     /// Tell the background BLE sender thread to stop gracefully, and join it.</a>
+<a name="171"><span class="lineNum">     171 </span>            :     void stopSendingThread();</a>
+<a name="172"><span class="lineNum">     172 </span>            : </a>
+<a name="173"><span class="lineNum">     173 </span>            :   public:</a>
+<a name="174"><span class="lineNum">     174 </span><span class="lineNoCov">          0 :     static void midi_write_callback(const uint8_t *data, size_t length) {</span></a>
+<a name="175"><span class="lineNum">     175 </span><span class="lineNoCov">          0 :         if (instance)</span></a>
+<a name="176"><span class="lineNum">     176 </span><span class="lineNoCov">          0 :             instance-&gt;parse(data, length);</span></a>
+<a name="177"><span class="lineNum">     177 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="178"><span class="lineNum">     178 </span>            : </a>
+<a name="179"><span class="lineNum">     179 </span><span class="lineNoCov">          0 :     static void midi_mtu_callback(uint16_t mtu) {</span></a>
+<a name="180"><span class="lineNum">     180 </span><span class="lineNoCov">          0 :         if (instance)</span></a>
+<a name="181"><span class="lineNum">     181 </span><span class="lineNoCov">          0 :             instance-&gt;updateMTU(mtu);</span></a>
+<a name="182"><span class="lineNum">     182 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="183"><span class="lineNum">     183 </span>            : </a>
+<a name="184"><span class="lineNum">     184 </span>            : #ifdef ARDUINO</a>
+<a name="185"><span class="lineNum">     185 </span>            :   private:</a>
+<a name="186"><span class="lineNum">     186 </span>            :     void notifyMIDIBLE(const std::vector&lt;uint8_t&gt; &amp;packet);</a>
+<a name="187"><span class="lineNum">     187 </span>            : #else</a>
+<a name="188"><span class="lineNum">     188 </span>            :   public:</a>
+<a name="189"><span class="lineNum">     189 </span><span class="lineCov">         50 :     MOCK_METHOD(void, notifyMIDIBLE, (const std::vector&lt;uint8_t&gt; &amp;), ());</span></a>
+<a name="190"><span class="lineNum">     190 </span>            : #endif</a>
+<a name="191"><span class="lineNum">     191 </span>            : };</a>
+<a name="192"><span class="lineNum">     192 </span>            : </a>
+<a name="193"><span class="lineNum">     193 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

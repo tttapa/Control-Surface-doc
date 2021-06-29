@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -85,21 +85,21 @@ $(function() {
 <div class="contents">
 <a href="../../d8/dd2/MCP23017Encoders_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html">AH/Settings/NamespaceSettings.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d1/d65/Warnings_8hpp.html">AH/Settings/Warnings.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html">AH/Settings/NamespaceSettings.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d1/d65/Warnings_8hpp.html">AH/Settings/Warnings.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>() <span class="comment">// Enable errors on warnings</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>() <span class="comment">// Enable errors on warnings</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a44dd04a1d1f97866e5b01c548f35fe5e">AH_DIAGNOSTIC_EXTERNAL_HEADER</a>()</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a44dd04a1d1f97866e5b01c548f35fe5e">AH_DIAGNOSTIC_EXTERNAL_HEADER</a>()</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;AH/Arduino-Wrapper.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;AH/Hardware/ExtendedInputOutput/ExtendedInputOutput.hpp&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;AH/STL/type_traits&gt;</span> <span class="comment">// std::conditional</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dc/d69/namespaceAH.html#ae4232768a06465fd80247d5521039102">   17</a></span>&#160;constexpr <span class="keyword">static</span> int8_t <a class="code" href="../../dc/d69/namespaceAH.html#ae4232768a06465fd80247d5521039102">MCP23017Encoders_lut</a>[16] = {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dc/d69/namespaceAH.html#ae4232768a06465fd80247d5521039102">   17</a></span>&#160;constexpr <span class="keyword">static</span> int8_t <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae4232768a06465fd80247d5521039102">MCP23017Encoders_lut</a>[16] = {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    0,  <span class="comment">// 0 0 0 0</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    +1, <span class="comment">// 0 0 0 1</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    -1, <span class="comment">// 0 0 1 0</span></div>
@@ -120,39 +120,39 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>WireType, <span class="keyword">class </span>EncoderPositionType = int32_t,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          <span class="keywordtype">bool</span> InterruptSafe = <span class="keyword">false</span>&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html">MCP23017Encoders</a> {</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html">   58</a></span>&#160;<span class="keyword">class </span><a class="highlightclass code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html">MCP23017Encoders</a> {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">   60</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a> =</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">   60</a></span>&#160;    <span class="keyword">using</span> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a> =</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">typename</span> std::conditional&lt;InterruptSafe, <span class="keyword">volatile</span> EncoderPositionType,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                  EncoderPositionType&gt;::type;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1aafee5164e94dd1c930007725c37cee">   63</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1aafee5164e94dd1c930007725c37cee">StateStorageType</a> =</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1aafee5164e94dd1c930007725c37cee">   63</a></span>&#160;    <span class="keyword">using</span> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1aafee5164e94dd1c930007725c37cee">StateStorageType</a> =</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">typename</span> std::conditional&lt;InterruptSafe, <span class="keyword">volatile</span> uint16_t,</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                  uint16_t&gt;::type;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad2e3215389df28e097d7a75624763616">   67</a></span>&#160;    constexpr <span class="keyword">static</span> uint8_t I2C_BASE_ADDRESS = 0x20;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abb22f0995af28df02733c1b64c7e8239">   69</a></span>&#160;    WireType *<a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abb22f0995af28df02733c1b64c7e8239">wire</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af3f726014b044194def151079f1f2d89">   70</a></span>&#160;    uint8_t <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af3f726014b044194def151079f1f2d89">address</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad2559a2771277e53396bdcd088ac2d0f">   71</a></span>&#160;    <a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad2559a2771277e53396bdcd088ac2d0f">interrupt_pin</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abb22f0995af28df02733c1b64c7e8239">   69</a></span>&#160;    WireType *<a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abb22f0995af28df02733c1b64c7e8239">wire</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af3f726014b044194def151079f1f2d89">   70</a></span>&#160;    uint8_t <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af3f726014b044194def151079f1f2d89">address</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad2559a2771277e53396bdcd088ac2d0f">   71</a></span>&#160;    <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad2559a2771277e53396bdcd088ac2d0f">interrupt_pin</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1a77dd35884068a18dc5de0f8ad2ff9c">   73</a></span>&#160;    <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1aafee5164e94dd1c930007725c37cee">StateStorageType</a> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1a77dd35884068a18dc5de0f8ad2ff9c">state</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a8241446b37d41e08817a257b3107bea3">   74</a></span>&#160;    <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a> positions[8];</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1a77dd35884068a18dc5de0f8ad2ff9c">   73</a></span>&#160;    <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1aafee5164e94dd1c930007725c37cee">StateStorageType</a> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1a77dd35884068a18dc5de0f8ad2ff9c">state</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a8241446b37d41e08817a257b3107bea3">   74</a></span>&#160;    <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a> positions[8];</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af79deb139fa4983e4e2767f1320a0145">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af79deb139fa4983e4e2767f1320a0145">writeI2C</a>(<span class="keyword">const</span> uint8_t (&amp;values)[N]) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af79deb139fa4983e4e2767f1320a0145">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#af79deb139fa4983e4e2767f1320a0145">writeI2C</a>(<span class="keyword">const</span> uint8_t (&amp;values)[N]) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        this-&gt;wire-&gt;beginTransmission(address);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        this-&gt;wire-&gt;write(values, N);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        this-&gt;wire-&gt;endTransmission();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad27f2277ab2f22b85c947ee6bda46a7e">   94</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad27f2277ab2f22b85c947ee6bda46a7e">writeI2C</a>(uint8_t addr, Args... values) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad27f2277ab2f22b85c947ee6bda46a7e">   94</a></span>&#160;    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ad27f2277ab2f22b85c947ee6bda46a7e">writeI2C</a>(uint8_t addr, Args... values) {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">const</span> uint8_t v[] = {addr, <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(values)...};</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        writeI2C(v);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a99ce0b38752b71d2c5edf0d6056b8bcc">  100</a></span>&#160;    uint16_t <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a99ce0b38752b71d2c5edf0d6056b8bcc">readGPIO</a>() {</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a99ce0b38752b71d2c5edf0d6056b8bcc">  100</a></span>&#160;    uint16_t <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a99ce0b38752b71d2c5edf0d6056b8bcc">readGPIO</a>() {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// No need to specify the register address, since this was done in the</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// begin method, and the MCP23017 mode was set to Byte mode with</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">// IOCON.BANK = 0 (see §3.2.1 in the datasheet).</span></div>
@@ -170,12 +170,12 @@ $(function() {
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a046a4c660f75a59c62e31e1786e79cef">  136</a></span>&#160;    <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a046a4c660f75a59c62e31e1786e79cef">MCP23017Encoders</a>(WireType &amp;wire, uint8_t addr_offset = 0,</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                     <a class="code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> interrupt_pin = <a class="code" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a>)</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a046a4c660f75a59c62e31e1786e79cef">  136</a></span>&#160;    <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a046a4c660f75a59c62e31e1786e79cef">MCP23017Encoders</a>(WireType &amp;wire, uint8_t addr_offset = 0,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                     <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> interrupt_pin = <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a>)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        : wire(&amp;wire), address(I2C_BASE_ADDRESS | addr_offset),</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;          interrupt_pin(interrupt_pin) {}</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ab0bdf5cca484fb2ba637c39384b27fb2">  155</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>() {</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ab0bdf5cca484fb2ba637c39384b27fb2">  155</a></span>&#160;    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>() {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="comment">// Set the IOCON register (configuration register)</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        writeI2C(0x0A, <span class="comment">// IOCON register for BANK=0</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                 0b01100100);</div>
@@ -206,8 +206,8 @@ $(function() {
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="comment">// Interrupts are configured in open-drain mode, so enable</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="comment">// the internal pullup resistor on the Arduino pin that</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="comment">// reads the interrupt pin.</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">if</span> (interrupt_pin != <a class="code" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a>)</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">ExtIO::pinMode</a>(interrupt_pin, <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ab3a208d63371a2819ec768bfe8fa2531">INPUT_PULLUP</a>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">if</span> (interrupt_pin != <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a>)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">ExtIO::pinMode</a>(interrupt_pin, <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ab3a208d63371a2819ec768bfe8fa2531">INPUT_PULLUP</a>);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="comment">// Set the address pointer to the GPIOA register.</span></div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="comment">// This means that subsequent reads will all toggle between the</span></div>
@@ -218,10 +218,10 @@ $(function() {
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        state = readGPIO();</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac5c54df7ed3b930268c8d7752c101725">  209</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac5c54df7ed3b930268c8d7752c101725">update</a>() {</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac5c54df7ed3b930268c8d7752c101725">  209</a></span>&#160;    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac5c54df7ed3b930268c8d7752c101725">update</a>() {</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="comment">// Only update if a pin change interrupt happened</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">if</span> (interrupt_pin != <a class="code" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a> &amp;&amp;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">ExtIO::digitalRead</a>(interrupt_pin) == <a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">if</span> (interrupt_pin != <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a> &amp;&amp;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">ExtIO::digitalRead</a>(interrupt_pin) == <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>)</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="comment">// Read both GPIO A and B</span></div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        uint16_t newstate = readGPIO();</div>
@@ -245,7 +245,7 @@ $(function() {
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            change |=</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                uint8_t(oldstate) &amp; 0b11; <span class="comment">// Bottom two bits are old pin states</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keyword">auto</span> delta =</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <span class="keyword">static_cast&lt;</span>EncoderPositionType<span class="keyword">&gt;</span>(<a class="code" href="../../dc/d69/namespaceAH.html#ae4232768a06465fd80247d5521039102">MCP23017Encoders_lut</a>[change]);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <span class="keyword">static_cast&lt;</span>EncoderPositionType<span class="keyword">&gt;</span>(<a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae4232768a06465fd80247d5521039102">MCP23017Encoders_lut</a>[change]);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">if</span> (delta != 0) { <span class="comment">// small speedup on AVR</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                positions[i] += delta;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            }</div>
@@ -254,7 +254,7 @@ $(function() {
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a6db8e54b71ae7a3f328414a86cae6717">  255</a></span>&#160;    EncoderPositionType <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a6db8e54b71ae7a3f328414a86cae6717">read</a>(uint8_t idx)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a6db8e54b71ae7a3f328414a86cae6717">  255</a></span>&#160;    EncoderPositionType <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a6db8e54b71ae7a3f328414a86cae6717">read</a>(uint8_t idx)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">if</span> (InterruptSafe) {</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            noInterrupts();</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            EncoderPositionType ret = positions[idx];</div>
@@ -265,7 +265,7 @@ $(function() {
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac3fb22aa61f8554521927328279bcba8">  276</a></span>&#160;    EncoderPositionType <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac3fb22aa61f8554521927328279bcba8">readAndReset</a>(uint8_t idx) {</div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac3fb22aa61f8554521927328279bcba8">  276</a></span>&#160;    EncoderPositionType <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ac3fb22aa61f8554521927328279bcba8">readAndReset</a>(uint8_t idx) {</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">if</span> (InterruptSafe) {</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            noInterrupts();</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            EncoderPositionType ret = positions[idx];</div>
@@ -279,7 +279,7 @@ $(function() {
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ae35e3b5e9f9bdf4aa569607f10cd42a4">  300</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ae35e3b5e9f9bdf4aa569607f10cd42a4">write</a>(uint8_t idx, EncoderPositionType pos) {</div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ae35e3b5e9f9bdf4aa569607f10cd42a4">  300</a></span>&#160;    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ae35e3b5e9f9bdf4aa569607f10cd42a4">write</a>(uint8_t idx, EncoderPositionType pos) {</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">if</span> (InterruptSafe) {</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            noInterrupts();</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            positions[idx] = pos;</div>
@@ -289,17 +289,17 @@ $(function() {
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        }</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">  314</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a> {</div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">  314</a></span>&#160;    <span class="keyword">class </span><a class="highlightclass code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a> {</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#ad6cf69e5f975926a610ed51d692ff4bd">  316</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html">MCP23017Encoders</a>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#ad6cf69e5f975926a610ed51d692ff4bd">  316</a></span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="highlightclass code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html">MCP23017Encoders</a>;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a2285b41549d3cd0213b4187c2de98140">  319</a></span>&#160;        <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a> *<a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a2285b41549d3cd0213b4187c2de98140">position</a>;</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a2285b41549d3cd0213b4187c2de98140">  319</a></span>&#160;        <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a> *<a class="highlightmember code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a2285b41549d3cd0213b4187c2de98140">position</a>;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#ab932998ee2800d45fef7d9450c15b8f1">  321</a></span>&#160;        <a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#ab932998ee2800d45fef7d9450c15b8f1">MCP23017Encoder</a>(<a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a> *position)</div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#ab932998ee2800d45fef7d9450c15b8f1">  321</a></span>&#160;        <a class="highlightmember code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#ab932998ee2800d45fef7d9450c15b8f1">MCP23017Encoder</a>(<a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a> *position)</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            : position(position) {}</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7418cfcd5012bdf284afc80943eb831a">  327</a></span>&#160;        EncoderPositionType <a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7418cfcd5012bdf284afc80943eb831a">read</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7418cfcd5012bdf284afc80943eb831a">  327</a></span>&#160;        EncoderPositionType <a class="highlightmember code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7418cfcd5012bdf284afc80943eb831a">read</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordflow">if</span> (InterruptSafe) {</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                noInterrupts();</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                EncoderPositionType ret = *position;</div>
@@ -310,7 +310,7 @@ $(function() {
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            }</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        }</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7b130283bf329af0ad4989bfed57b997">  340</a></span>&#160;        EncoderPositionType <a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7b130283bf329af0ad4989bfed57b997">readAndReset</a>() {</div>
+<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7b130283bf329af0ad4989bfed57b997">  340</a></span>&#160;        EncoderPositionType <a class="highlightmember code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a7b130283bf329af0ad4989bfed57b997">readAndReset</a>() {</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span> (InterruptSafe) {</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                noInterrupts();</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                EncoderPositionType ret = *position;</div>
@@ -324,7 +324,7 @@ $(function() {
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        }</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a52c3639ab0739ad403c4d24b4107520b">  356</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a52c3639ab0739ad403c4d24b4107520b">write</a>(EncoderPositionType pos) {</div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a52c3639ab0739ad403c4d24b4107520b">  356</a></span>&#160;        <span class="keywordtype">void</span> <a class="highlightmember code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#a52c3639ab0739ad403c4d24b4107520b">write</a>(EncoderPositionType pos) {</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="keywordflow">if</span> (InterruptSafe) {</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                noInterrupts();</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                *position = pos;</div>
@@ -341,16 +341,16 @@ $(function() {
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor">        #endif</span></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    };</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">  380</a></span>&#160;    <a class="code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a> <a class="code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">operator[]</a>(uint8_t index) {</div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">  380</a></span>&#160;    <a class="highlightclass code" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a> <a class="highlightmember code" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">operator[]</a>(uint8_t index) {</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">if</span> (index &gt;= 8)</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            index = 7;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">return</span> &amp;positions[index];</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;};</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<a class="code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<a class="code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html">NamespaceSettings.hpp</a></div></div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_a03ed68e9e3d1bbe9a28fd924cb7260c1"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div><div class="ttdeci">#define END_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00010">AH/Settings/NamespaceSettings.hpp:10</a></div></div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_abe0f0e505619b6899c38363f4e42a272"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div><div class="ttdeci">#define BEGIN_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00009">AH/Settings/NamespaceSettings.hpp:9</a></div></div>

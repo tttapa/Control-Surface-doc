@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -97,22 +97,22 @@ $(function() {
 <p ><b>Pipe model</b></p>
 <div class="fragment"><div class="line">                 ╭────────────────&gt;  through out</div>
 <div class="line">                 │ ┌────────┐</div>
-<div class="line">    <a class="code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a>  &gt;━━━━┷━┥ filter ┝━┯━━━&gt;  <a class="code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a></div>
+<div class="line">    <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a>  &gt;━━━━┷━┥ filter ┝━┯━━━&gt;  <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a></div>
 <div class="line">                   └────────┘ │</div>
 <div class="line">through in  &gt;─────────────────╯</div>
 <div class="ttc" id="aclassMIDI__Pipe_html_a2ec4ed41308da2aa5481ab73a5a7a2d4"><div class="ttname"><a href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">MIDI_Pipe::source</a></div><div class="ttdeci">MIDI_Source * source</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00573">MIDI_Pipes.hpp:573</a></div></div>
 <div class="ttc" id="aclassMIDI__Pipe_html_a3efac1b3dab8ab97fff25669d972912d"><div class="ttname"><a href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">MIDI_Pipe::sink</a></div><div class="ttdeci">MIDI_Sink * sink</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00572">MIDI_Pipes.hpp:572</a></div></div>
 </div><!-- fragment --><p >For example, if you have one source that should connect to two sinks, the configuration is as follows:</p>
 <div class="fragment"><div class="line">                 through out         × ┌────────┐</div>
-<div class="line">             ╭────────────────&gt; &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt;  <a class="code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a> 2</div>
+<div class="line">             ╭────────────────&gt; &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt;  <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a> 2</div>
 <div class="line">             │ ┌────────┐              └────────┘ ×</div>
-<div class="line"><a class="code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a>  &gt;━━━━┷━┥ pipe 1 ┝━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━&gt;  <a class="code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a> 1</div>
+<div class="line"><a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a>  &gt;━━━━┷━┥ pipe 1 ┝━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━&gt;  <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a> 1</div>
 <div class="line">               └────────┘ ×</div>
 </div><!-- fragment --><p >If you have two sources that should connect to the same sink, a possible configuration is:</p>
 <div class="fragment"><div class="line">                                       × ┌────────┐</div>
-<div class="line"><a class="code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 1  &gt;━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━┥ pipe 1 ┝━┯━━━&gt;  <a class="code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a></div>
+<div class="line"><a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 1  &gt;━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━┥ pipe 1 ┝━┯━━━&gt;  <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a></div>
 <div class="line">               × ┌────────┐              └────────┘ │</div>
-<div class="line"><a class="code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 2  &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt; &gt;─────────────────╯</div>
+<div class="line"><a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 2  &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt; &gt;─────────────────╯</div>
 <div class="line">                 └────────┘ ×</div>
 </div><!-- fragment --><p >Each connection between a source and a sink has its own pipe, and no two pipes are connected in series (only through the “through“ inputs/outputs). </p>
 
@@ -122,14 +122,16 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d10/classMIDI__Pipe__inherit__graph.svg" width="502" height="1358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d10/classMIDI__Pipe__inherit__graph.svg" width="502" height="1358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for MIDI_Pipe:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d4e/classMIDI__Pipe__coll__graph.svg" width="502" height="1498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d4e/classMIDI__Pipe__coll__graph.svg" width="502" height="1498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Dealing with stalled pipes</h2></td></tr>
@@ -446,7 +448,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Move constructor. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000024">Todo:</a></b></dt><dd>Add move constructor. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000023">Todo:</a></b></dt><dd>Add move constructor. </dd></dl>
 
 </div>
 </div>
@@ -476,7 +478,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Move assignment. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000025">Todo:</a></b></dt><dd>Add move assignment. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000024">Todo:</a></b></dt><dd>Add move assignment. </dd></dl>
 
 </div>
 </div>

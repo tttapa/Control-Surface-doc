@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -83,37 +83,37 @@ $(function() {
   <div class="headertitle"><div class="title">DisplayInterface.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../da/ddf/DisplayInterface_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d77/DisplayInterface_8hpp.html">DisplayInterface.hpp</a>&quot;</span></div>
+<a href="../../da/ddf/DisplayInterface_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../dc/d77/DisplayInterface_8hpp.html">DisplayInterface.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">    5</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">DisplayInterface::begin</a>() {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="../../df/d42/classDisplayInterface.html#a5eeb94d22b8366d1b68d0614384802fe">clear</a>();</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="../../df/d42/classDisplayInterface.html#affe3e6e91ca6c54231590fe176903c97">drawBackground</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../df/d42/classDisplayInterface.html#a9294a1e8ac78696203cfa288329cd056">display</a>();</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">    5</a></span>&#160;<span class="keywordtype">void</span> <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">DisplayInterface::begin</a>() {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a5eeb94d22b8366d1b68d0614384802fe">clear</a>();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#affe3e6e91ca6c54231590fe176903c97">drawBackground</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a9294a1e8ac78696203cfa288329cd056">display</a>();</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../df/d42/classDisplayInterface.html#a782a6ae0beeb0de459e9f7cd5a1ec28e">   11</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d42/classDisplayInterface.html#a782a6ae0beeb0de459e9f7cd5a1ec28e">DisplayInterface::fillRect</a>(int16_t x, int16_t y, int16_t w, int16_t h,</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../df/d42/classDisplayInterface.html#a782a6ae0beeb0de459e9f7cd5a1ec28e">   11</a></span>&#160;<span class="keywordtype">void</span> <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a782a6ae0beeb0de459e9f7cd5a1ec28e">DisplayInterface::fillRect</a>(int16_t x, int16_t y, int16_t w, int16_t h,</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                uint16_t color) {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">for</span> (int16_t r = y; r &lt; y + h; r++)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x, r, w, color);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x, r, w, color);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../df/d42/classDisplayInterface.html#ac5d83da7e0038f46138d6f6fb4eacb17">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d42/classDisplayInterface.html#ac5d83da7e0038f46138d6f6fb4eacb17">DisplayInterface::drawCircle</a>(int16_t x0, int16_t y0, int16_t r,</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../df/d42/classDisplayInterface.html#ac5d83da7e0038f46138d6f6fb4eacb17">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ac5d83da7e0038f46138d6f6fb4eacb17">DisplayInterface::drawCircle</a>(int16_t x0, int16_t y0, int16_t r,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                  uint16_t color) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> x = r;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> y = 0;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> err = 0;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">while</span> (x &gt;= y) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 + x, y0 + y, color);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 + y, y0 + x, color);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 - y, y0 + x, color);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 - x, y0 + y, color);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 - x, y0 - y, color);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 - y, y0 - x, color);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 + y, y0 - x, color);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 + x, y0 - y, color);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 + x, y0 + y, color);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 + y, y0 + x, color);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 - y, y0 + x, color);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 - x, y0 + y, color);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 - x, y0 - y, color);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 - y, y0 - x, color);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 + y, y0 - x, color);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a109b291dd33ce142087d6c9e57b3b21f">drawPixel</a>(x0 + x, y0 - y, color);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (err &lt;= 0)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            err += 2 * ++y + 1;</div>
@@ -122,17 +122,17 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../df/d42/classDisplayInterface.html#a7804918953c21c0aeb53aae1c1e3a2b0">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d42/classDisplayInterface.html#a7804918953c21c0aeb53aae1c1e3a2b0">DisplayInterface::fillCircle</a>(int16_t x0, int16_t y0, int16_t r,</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../df/d42/classDisplayInterface.html#a7804918953c21c0aeb53aae1c1e3a2b0">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a7804918953c21c0aeb53aae1c1e3a2b0">DisplayInterface::fillCircle</a>(int16_t x0, int16_t y0, int16_t r,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                  uint16_t color) {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> x = r;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> y = 0;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> err = 0;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">while</span> (x &gt;= y) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x0 - x, y0 + y, 2 * x, color);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x0 - y, y0 + x, 2 * y, color);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x0 - y, y0 - x, 2 * y, color);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x0 - x, y0 - y, 2 * x, color);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x0 - x, y0 + y, 2 * x, color);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x0 - y, y0 + x, 2 * y, color);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x0 - y, y0 - x, 2 * y, color);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#a019b52e4d0f1b6ec1dd05dc035b2b5ce">drawFastHLine</a>(x0 - x, y0 - y, 2 * x, color);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (err &lt;= 0)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            err += 2 * ++y + 1;</div>
@@ -141,7 +141,7 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 <div class="ttc" id="aDisplayInterface_8hpp_html"><div class="ttname"><a href="../../dc/d77/DisplayInterface_8hpp.html">DisplayInterface.hpp</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9305dd4bad1398506431b42a5a100f8d"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div><div class="ttdeci">#define END_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00010">Settings/NamespaceSettings.hpp:10</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9432e3744c64fcf8e711ef91eff6a5cd"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div><div class="ttdeci">#define BEGIN_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00009">Settings/NamespaceSettings.hpp:9</a></div></div>

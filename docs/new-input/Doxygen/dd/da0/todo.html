@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -94,12 +94,10 @@ $(function() {
 <dd><a class="anchor" id="_todo000011"></a>Implement.  </dd>
 <dt>Member <a class="el" href="../../d7/de4/group__midi-input-elements-leds.html#gaaf24bc199229e59e2c1190b785fe9063">Bankable::NoteValueFastLED</a>  </dt>
 <dd><a class="anchor" id="_todo000012"></a>Implement.  </dd>
-<dt>Member <a class="el" href="../../d5/d9e/structBankableTwoByteRangeMIDIMatcher.html#a92a634523a88e81e883eac91bb3b61f7">BankableTwoByteRangeMIDIMatcher&lt; BankSize &gt;::matchBankableInRange</a>  (uint8_t toMatch, uint8_t base, uint8_t length) const</dt>
-<dd><a class="anchor" id="_todo000021"></a>This is very hard to explain without a specific example ... </dd>
 <dt>Member <a class="el" href="../../dc/d84/structMCU_1_1BankableVUMatcher.html#a7f277ed30fad9f7d2c5ff07e90d988ca">BankableVUMatcher&lt; BankSize &gt;::getBank</a>  ()</dt>
 <dd><a class="anchor" id="_todo000019"></a>Remove unnecessary methods.  </dd>
 <dt>File <a class="el" href="../../db/ded/ble2902_8h.html">ble2902.h</a>  </dt>
-<dd><a class="anchor" id="_todo000022"></a>According to the spec, this value should persist for bonded devices. This is currently not implemented, and would require storing a database of bonded devices with their CCCD values in NVS. Maybe there's a way to let Bluedroid handle this, since it already keeps track of bonded devices?  </dd>
+<dd><a class="anchor" id="_todo000021"></a>According to the spec, this value should persist for bonded devices. This is currently not implemented, and would require storing a database of bonded devices with their CCCD values in NVS. Maybe there's a way to let Bluedroid handle this, since it already keeps track of bonded devices?  </dd>
 <dt>Member <a class="el" href="../../dc/d45/classControl__Surface__.html#a1e47227a16a34689cf8e83e8e5df1d29">Control_Surface_::sendNowImpl</a>  ()</dt>
 <dd><a class="anchor" id="_todo000009"></a>Implement this in <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>  </dd>
 <dt>Member <a class="el" href="../../df/dee/Debug_8hpp.html#a7ff58a0631676f068e4db329a2ca8d28">FLUSH_ON_EVERY_DEBUG_STATEMENT</a>  </dt>
@@ -107,9 +105,9 @@ $(function() {
 <dt>Member <a class="el" href="../../da/d36/classAH_1_1GenericFilteredAnalog.html#a674927f3c54db0ef2b817c89c569231d">GenericFilteredAnalog&lt; MappingFunction, Precision, FilterShiftFactor, FilterType, AnalogType, IncRes &gt;::reset</a>  (AnalogType value=0)</dt>
 <dd><a class="anchor" id="_todo000004"></a>Should the filter be initialized to the first value that is read instead of to zero? This would require adding a <code>begin</code> method.  </dd>
 <dt>Member <a class="el" href="../../d6/dcd/classBankable_1_1GenericMIDIRotaryEncoder.html#afeb7767a58ae90ce47946858b0150abb">GenericMIDIRotaryEncoder&lt; Enc, BankAddress, Sender &gt;::GenericMIDIRotaryEncoder</a>  (BankAddress bankAddress, Enc &amp;&amp;encoder, int16_t speedMultiply, uint8_t pulsesPerStep, const Sender &amp;sender)</dt>
-<dd><a class="anchor" id="_todo000038"></a>Documentation  </dd>
+<dd><a class="anchor" id="_todo000037"></a>Documentation  </dd>
 <dt>Member <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html#abc0d27c0838f2efcdf9cda4a6b0aac25">GenericMIDIRotaryEncoder&lt; Enc, Sender &gt;::GenericMIDIRotaryEncoder</a>  (Enc &amp;&amp;encoder, <a class="el" href="../../d7/d0f/classMIDIAddress.html" title="A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...">MIDIAddress</a> address, int16_t speedMultiply, uint8_t pulsesPerStep, const Sender &amp;sender)</dt>
-<dd><a class="anchor" id="_todo000032"></a>Documentation  </dd>
+<dd><a class="anchor" id="_todo000031"></a>Documentation  </dd>
 <dt>Member <a class="el" href="../../d7/d83/classAH_1_1IncrementButton.html#a5d74787dedbc4e11c1ab15bf487e61f8">IncrementButton::State</a>  </dt>
 <dd><a class="anchor" id="_todo000005"></a>Add states for initial press.  </dd>
 <dt>Member <a class="el" href="../../df/dc6/classAH_1_1IncrementDecrementButtons.html#a5d74787dedbc4e11c1ab15bf487e61f8">IncrementDecrementButtons::State</a>  </dt>
@@ -121,41 +119,39 @@ $(function() {
 <dt>Class <a class="el" href="../../dd/de5/classAH_1_1MAX7219__Base.html">MAX7219_Base&lt; SPIDriver &gt;</a>  </dt>
 <dd><a class="anchor" id="_todo000007"></a>Wiring diagram for SPI connection.  </dd>
 <dt>Member <a class="el" href="../../dc/dc7/midi_8h.html#a25cd3ab0c944e5cb12316b79cb1e3566">midi_deinit</a>  ()</dt>
-<dd><a class="anchor" id="_todo000023"></a>Implement (currently throws an assertion error).  </dd>
+<dd><a class="anchor" id="_todo000022"></a>Implement (currently throws an assertion error).  </dd>
 <dt>Member <a class="el" href="../../df/d72/classMIDI__Pipe.html#a287abca31a3878cf47e8884d43c27888">MIDI_Pipe::MIDI_Pipe</a>  (<a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a> &amp;&amp;)=delete</dt>
-<dd><a class="anchor" id="_todo000024"></a>Add move constructor.  </dd>
+<dd><a class="anchor" id="_todo000023"></a>Add move constructor.  </dd>
 <dt>Member <a class="el" href="../../df/d72/classMIDI__Pipe.html#a152fdca2c1aadbf6c751ffdb303140e5">MIDI_Pipe::operator=</a>  (<a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a> &amp;&amp;)=delete</dt>
-<dd><a class="anchor" id="_todo000025"></a>Add move assignment.  </dd>
+<dd><a class="anchor" id="_todo000024"></a>Add move assignment.  </dd>
 <dt>Class <a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html">MIDIButtonMatrix&lt; BankAddress, Sender, NumRows, NumCols &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000033"></a>Documentation  </dd>
+<dd><a class="anchor" id="_todo000032"></a>Documentation  </dd>
 <dt>Class <a class="el" href="../../d0/d54/classMIDIButtonMatrix.html">MIDIButtonMatrix&lt; Sender, NumRows, NumCols &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000029"></a>Documentation. </dd>
+<dd><a class="anchor" id="_todo000028"></a>Documentation. </dd>
 <dt>Class <a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html">MIDIButtons&lt; BankAddress, Sender, NumButtons &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000034"></a>Use BankAddresses? </dd>
+<dd><a class="anchor" id="_todo000033"></a>Use BankAddresses? </dd>
 <dt>Member <a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#a7545c362985054dfb1e9556d42655d17">MIDIButtons&lt; BankAddress, Sender, NumButtons &gt;::MIDIButtons</a>  (BankAddress bankAddress, const Array&lt; AH::Button, NumButtons &gt; &amp;buttons, <a class="el" href="../../d5/d0e/classRelativeMIDIAddress.html" title="A class for saving an offset to a MIDI address.">RelativeMIDIAddress</a> incrementAddress, const Sender &amp;sender)</dt>
-<dd><a class="anchor" id="_todo000035"></a>Documentation  </dd>
+<dd><a class="anchor" id="_todo000034"></a>Documentation  </dd>
 <dt>Member <a class="el" href="../../d2/d87/classMIDIButtons.html#ac24da0933da063a128a73d7548fe0326">MIDIButtons&lt; Sender, NumButtons &gt;::MIDIButtons</a>  (const Array&lt; AH::Button, NumButtons &gt; &amp;buttons, <a class="el" href="../../d7/d0f/classMIDIAddress.html" title="A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...">MIDIAddress</a> baseAddress, <a class="el" href="../../d5/d0e/classRelativeMIDIAddress.html" title="A class for saving an offset to a MIDI address.">RelativeMIDIAddress</a> incrementAddress, const Sender &amp;sender)</dt>
-<dd><a class="anchor" id="_todo000030"></a>Documentation  </dd>
+<dd><a class="anchor" id="_todo000029"></a>Documentation  </dd>
 <dt>Class <a class="el" href="../../d1/d2f/classBankable_1_1MIDIIncrementDecrementButtons.html">MIDIIncrementDecrementButtons&lt; BankAddress, RelativeSender, ResetSender &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000036"></a>Combine RelativeSender and ResetSender?  </dd>
+<dd><a class="anchor" id="_todo000035"></a>Combine RelativeSender and ResetSender?  </dd>
 <dt>Member <a class="el" href="../../d1/d2f/classBankable_1_1MIDIIncrementDecrementButtons.html#aa1ead4ba6a44c3f70e18fc6c21980dba">MIDIIncrementDecrementButtons&lt; BankAddress, RelativeSender, ResetSender &gt;::MIDIIncrementDecrementButtons</a>  (BankAddress addresses, const <a class="el" href="../../df/dc6/classAH_1_1IncrementDecrementButtons.html" title="A class for buttons that increment and decrement some counter or setting.">AH::IncrementDecrementButtons</a> &amp;buttons, uint8_t multiplier, const RelativeSender &amp;relativeSender, const ResetSender &amp;resetSender)</dt>
-<dd><a class="anchor" id="_todo000037"></a>Documentation  </dd>
+<dd><a class="anchor" id="_todo000036"></a>Documentation  </dd>
 <dt>Member <a class="el" href="../../dc/dc2/classMIDIIncrementDecrementButtons.html#a60ef46b5270ff6e0a20a43b416e4d603">MIDIIncrementDecrementButtons&lt; RelativeSender, ResetSender &gt;::MIDIIncrementDecrementButtons</a>  (const <a class="el" href="../../df/dc6/classAH_1_1IncrementDecrementButtons.html" title="A class for buttons that increment and decrement some counter or setting.">AH::IncrementDecrementButtons</a> &amp;buttons, <a class="el" href="../../d7/d0f/classMIDIAddress.html" title="A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...">MIDIAddress</a> address, uint8_t multiplier, <a class="el" href="../../d7/d0f/classMIDIAddress.html" title="A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...">MIDIAddress</a> resetAddress, const RelativeSender &amp;relativeSender, const ResetSender &amp;resetSender)</dt>
-<dd><a class="anchor" id="_todo000031"></a>Documentation  </dd>
+<dd><a class="anchor" id="_todo000030"></a>Documentation  </dd>
 <dt>Member <a class="el" href="../../d0/d49/classMovingCoilBallistics.html#a1aad14b16ccfdc6a5fcc6a2f17b739c1">MovingCoilBallistics::operator()</a>  (float input)</dt>
 <dd><a class="anchor" id="_todo000008"></a>Uses forward Euler integration, altering the step response: Replace it with zero-order-hold discretization. </dd>
 <dt>Member <a class="el" href="../../d1/dd4/classPluggableUSBMIDI.html#a18bfd805d3010177c33003fbfd58baa5">PluggableUSBMIDI::PacketSize</a>  </dt>
-<dd><a class="anchor" id="_todo000027"></a>Why does increasing the packet size beyond 64 not work?  </dd>
+<dd><a class="anchor" id="_todo000026"></a>Why does increasing the packet size beyond 64 not work?  </dd>
 <dt>Member <a class="el" href="../../d1/dd4/classPluggableUSBMIDI.html#a1ddc5cb7ae054f11cc4165cf87974f7c">PluggableUSBMIDI::setErrorTimeout</a>  (microseconds timeout)</dt>
-<dd><a class="anchor" id="_todo000026"></a>Actually implement this timeout  </dd>
+<dd><a class="anchor" id="_todo000025"></a>Actually implement this timeout  </dd>
 <dt>Member <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a7e4b4827d58eff3dc2b3d598aee0ba19">SevenSegmentDisplay&lt; LENGTH &gt;::getCharacterAt</a>  (uint8_t index) const</dt>
 <dd><a class="anchor" id="_todo000017"></a>Documentation.  </dd>
 <dt>Member <a class="el" href="../../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a47a60e4d4bb2c54b45d2c3a9e00a0165">SevenSegmentDisplay&lt; LENGTH &gt;::getDecimalPointAt</a>  (uint8_t index) const</dt>
 <dd><a class="anchor" id="_todo000018"></a>Documentation.  </dd>
 <dt>Member <a class="el" href="../../de/d93/classTeensyHostMIDI.html#a1ddc5cb7ae054f11cc4165cf87974f7c">TeensyHostMIDI&lt; MaxPacketSize &gt;::setErrorTimeout</a>  (microseconds timeout)</dt>
-<dd><a class="anchor" id="_todo000028"></a>Actually implement this timeout  </dd>
-<dt>Member <a class="el" href="../../da/db8/classTransposer.html#a3b1556a89b2653b369b2dde9afe2ae64">Transposer&lt; MINIMUM_SEMITONES, MAXIMUM_SEMITONES &gt;::getSelection</a>  () const override</dt>
-<dd><a class="anchor" id="_todo000039"></a>The return type is a uint8_t, but it can be negative. This is not an issue, because the result will be the same, since the addition will just overflow and truncate, but it's not really clean. </dd>
+<dd><a class="anchor" id="_todo000027"></a>Actually implement this timeout </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

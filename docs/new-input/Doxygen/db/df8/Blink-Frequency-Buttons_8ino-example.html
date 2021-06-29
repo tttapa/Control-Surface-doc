@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,18 +79,18 @@ $(function() {
   <div class="headertitle"><div class="title">Blink-Frequency-Buttons.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md226"></a>
+<h1><a class="anchor" id="autotoc_md228"></a>
 Blink-Frequency-Buttons</h1>
 <p >This examples shows how to use two push buttons to set the frequency at which an LED blinks.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md227"></a>
+<h2><a class="anchor" id="autotoc_md229"></a>
 Connections</h2>
 <ul>
 <li>2: Momentary push button (other pin to ground)</li>
 <li>3: Momentary push button (other pin to ground)</li>
 </ul>
 <p >The internal pull-up resistors will be enabled.</p>
-<h2><a class="anchor" id="autotoc_md228"></a>
+<h2><a class="anchor" id="autotoc_md230"></a>
 Behavior</h2>
 <ul>
 <li>If you press the first push button, the LED blinks faster.</li>
@@ -101,10 +101,10 @@ Behavior</h2>
 <p >Written by PieterP, 2019-12-10 <br  />
  <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../df/df5/IncrementDecrementButtons_8hpp.html">AH/Hardware/IncrementDecrementButtons.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d1/dd0/MillisMicrosTimer_8hpp.html">AH/Timing/MillisMicrosTimer.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../df/df5/IncrementDecrementButtons_8hpp.html">AH/Hardware/IncrementDecrementButtons.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d1/dd0/MillisMicrosTimer_8hpp.html">AH/Timing/MillisMicrosTimer.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> maxInterval = 2000;    <span class="comment">// ms</span></div>
 <div class="line"><span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> minInterval = 100;     <span class="comment">// ms</span></div>
@@ -115,7 +115,7 @@ Behavior</h2>
 <div class="line">Timer&lt;millis&gt; timer = defaultInterval;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a0"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(LED_BUILTIN, <a name="a1"></a><a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
+<div class="line">  <a name="a0"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(LED_BUILTIN, <a name="a1"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
 <div class="line">  buttons.begin();</div>
 <div class="line">  Serial.begin(115200);</div>
 <div class="line">}</div>
@@ -123,7 +123,7 @@ Behavior</h2>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  <span class="comment">// toggle the LED when the given number of milliseconds have passed</span></div>
 <div class="line">  <span class="keywordflow">if</span> (timer)</div>
-<div class="line">    <a name="a2"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a name="a3"></a><a class="code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(LED_BUILTIN) ? <a name="a4"></a><a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a> : <a name="a5"></a><a class="code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
+<div class="line">    <a name="a2"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a name="a3"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(LED_BUILTIN) ? <a name="a4"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a> : <a name="a5"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// read the buttons, and change interval accordingly</span></div>
 <div class="line">  <span class="keywordflow">switch</span> (buttons.update()) {</div>
@@ -131,13 +131,13 @@ Behavior</h2>
 <div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::IncrementLong:</div>
 <div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::IncrementHold:</div>
 <div class="line">      timer.setInterval(</div>
-<div class="line">        <a name="a6"></a><a class="code" href="../../dd/d5e/group__AH__Math.html#ga9c976cf1a12d963c960d12808675e8a9">AH::max</a>(timer.getInterval() - intervalDelta, minInterval));</div>
+<div class="line">        <a name="a6"></a><a class="highlightmember code" href="../../dd/d5e/group__AH__Math.html#ga9c976cf1a12d963c960d12808675e8a9">AH::max</a>(timer.getInterval() - intervalDelta, minInterval));</div>
 <div class="line">      <span class="keywordflow">break</span>;</div>
 <div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::DecrementShort:</div>
 <div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::DecrementLong:</div>
 <div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::DecrementHold:</div>
 <div class="line">      timer.setInterval(</div>
-<div class="line">        <a name="a7"></a><a class="code" href="../../dd/d5e/group__AH__Math.html#ga5e07739c1fd7a29e6b2840237af7f1bc">AH::min</a>(timer.getInterval() + intervalDelta, maxInterval));</div>
+<div class="line">        <a name="a7"></a><a class="highlightmember code" href="../../dd/d5e/group__AH__Math.html#ga5e07739c1fd7a29e6b2840237af7f1bc">AH::min</a>(timer.getInterval() + intervalDelta, maxInterval));</div>
 <div class="line">      <span class="keywordflow">break</span>;</div>
 <div class="line">    <span class="keywordflow">case</span> IncrementDecrementButtons::Reset:</div>
 <div class="line">      timer.setInterval(defaultInterval);</div>

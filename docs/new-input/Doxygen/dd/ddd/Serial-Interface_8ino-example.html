@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code>new-input</code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">new-input</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,33 +79,33 @@ $(function() {
   <div class="headertitle"><div class="title">Serial-Interface.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md98"></a>
+<h1><a class="anchor" id="autotoc_md99"></a>
 Serial-Interface</h1>
 <p >This example demonstrates how to use a Serial MIDI Interface, for use with 5-pin DIN connectors, for example.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md99"></a>
+<h2><a class="anchor" id="autotoc_md100"></a>
 Connections</h2>
 <ul>
 <li>5: momentary push button (to ground)</li>
 </ul>
 <p >The internal pull-up resistor for the button will be enabled automatically.</p>
-<h2><a class="anchor" id="autotoc_md100"></a>
+<h2><a class="anchor" id="autotoc_md101"></a>
 Behavior</h2>
 <ul>
 <li>This is just a simple MIDI controller with a single note button and an LED.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md101"></a>
+<h2><a class="anchor" id="autotoc_md102"></a>
 Mapping</h2>
 <p >None.</p>
 <p >Written by PieterP, 2020-01-09 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Select the serial port to use.</span></div>
 <div class="line"><span class="keyword">auto</span> &amp;serial = Serial;</div>
 <div class="line"><span class="comment">// Instantiate a Serial MIDI interface at the default MIDI baud rate.</span></div>
-<div class="line"><a name="_a0"></a><a class="code" href="../../d9/db8/classSerialMIDI__Interface.html">SerialMIDI_Interface</a>&lt;decltype(serial)&gt; midi {serial, <a name="a1"></a><a class="code" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI_BAUD</a>};</div>
+<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../d9/db8/classSerialMIDI__Interface.html">SerialMIDI_Interface</a>&lt;decltype(serial)&gt; midi {serial, <a name="a1"></a><a class="highlightmember code" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI_BAUD</a>};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// You can also use the following serial MIDI interfaces:</span></div>
 <div class="line"><span class="comment">//</span></div>
@@ -118,23 +118,23 @@ Mapping</h2>
 <div class="line"><span class="comment">//    HardwareSerialMIDI_Interface midi {Serial1, MIDI_BAUD};</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a NoteButton object</span></div>
-<div class="line"><a name="_a2"></a><a class="code" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {</div>
+<div class="line"><a name="_a2"></a><a class="highlightclass code" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {</div>
 <div class="line">  5,                           <span class="comment">// Push button on pin 5</span></div>
-<div class="line">  {<a name="a3"></a><a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a name="a4"></a><a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
+<div class="line">  {<a name="a3"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a name="a4"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate the LED that will light up when middle C is playing</span></div>
-<div class="line"><a name="_a5"></a><a class="code" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {</div>
+<div class="line"><a name="_a5"></a><a class="highlightclass code" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {</div>
 <div class="line">  LED_BUILTIN,                 <span class="comment">// Pin of built-in LED</span></div>
-<div class="line">  {<a class="code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
+<div class="line">  {<a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a6"></a><a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a7"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize the Control Surface</span></div>
+<div class="line">  <a name="a6"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a7"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize the Control Surface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a8"></a><a class="code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aChannel_8hpp_html_a166aafd26c8b912f9e8bc7acb8b1cd17"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a></div><div class="ttdeci">constexpr Channel CHANNEL_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
