@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['has_5fanalog_5fread_5fresolution_5015',['HAS_ANALOG_READ_RESOLUTION',['../d7/d7c/ADCConfig_8hpp.html#a4af2da2db9e536067c953baac53b70e6',1,'ADCConfig.hpp']]]
+  ['ignore_5fsysex_5832',['IGNORE_SYSEX',['../dc/d4f/Settings_2Settings_8hpp.html#a2a82e3cbc4ddcf68ac47d0d464189e35',1,'Settings.hpp']]]
 ];

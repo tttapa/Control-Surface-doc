@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dotbarmode_4893',['DotBarMode',['../dc/d69/namespaceAH.html#af626aa654815b2c30bbc674379e8807a',1,'AH']]]
+  ['changed_5667',['Changed',['../dc/d11/structMCU_1_1VUState.html#aa57b1a4e6a1c79233913139635169cf1',1,'MCU::VUState']]]
 ];

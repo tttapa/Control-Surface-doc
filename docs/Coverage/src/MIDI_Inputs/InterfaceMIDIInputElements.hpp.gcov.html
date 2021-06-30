@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 6af890a423c5145ce5912584714862e053397d8a - src/MIDI_Inputs/InterfaceMIDIInputElements.hpp</title>
+  <title>LCOV - cddd90b1c2bde71b90dc456a54b76a8da46a56e2 - src/MIDI_Inputs/InterfaceMIDIInputElements.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,20 +28,20 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">6af890a423c5145ce5912584714862e053397d8a</td>
+            <td class="headerValue">cddd90b1c2bde71b90dc456a54b76a8da46a56e2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">15</td>
-            <td class="headerCovTableEntry">15</td>
+            <td class="headerCovTableEntry">11</td>
+            <td class="headerCovTableEntry">11</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-09-08 19:59:05</td>
+            <td class="headerValue">2021-06-30 02:28:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">11</td>
-            <td class="headerCovTableEntry">11</td>
+            <td class="headerCovTableEntry">7</td>
+            <td class="headerCovTableEntry">7</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
@@ -89,9 +89,9 @@
 <a name="19"><span class="lineNum">      19 </span>            : </a>
 <a name="20"><span class="lineNum">      20 </span>            :     /// Check if the value was updated since the last time the dirty flag was</a>
 <a name="21"><span class="lineNum">      21 </span>            :     /// cleared.</a>
-<a name="22"><span class="lineNum">      22 </span><span class="lineCov">          6 :     bool getDirty() const { return dirty; }</span></a>
+<a name="22"><span class="lineNum">      22 </span><span class="lineCov">         17 :     bool getDirty() const { return dirty; }</span></a>
 <a name="23"><span class="lineNum">      23 </span>            :     /// Clear the dirty flag.</a>
-<a name="24"><span class="lineNum">      24 </span><span class="lineCov">          5 :     void clearDirty() { dirty = false; }</span></a>
+<a name="24"><span class="lineNum">      24 </span><span class="lineCov">         11 :     void clearDirty() { dirty = false; }</span></a>
 <a name="25"><span class="lineNum">      25 </span>            : </a>
 <a name="26"><span class="lineNum">      26 </span>            :     /// @}</a>
 <a name="27"><span class="lineNum">      27 </span>            : </a>
@@ -131,9 +131,9 @@
 <a name="61"><span class="lineNum">      61 </span>            : </a>
 <a name="62"><span class="lineNum">      62 </span>            :     /// Check if the value was updated since the last time the dirty flag was</a>
 <a name="63"><span class="lineNum">      63 </span>            :     /// cleared.</a>
-<a name="64"><span class="lineNum">      64 </span><span class="lineCov">          4 :     bool getDirty() const { return dirty; }</span></a>
+<a name="64"><span class="lineNum">      64 </span>            :     bool getDirty() const { return dirty; }</a>
 <a name="65"><span class="lineNum">      65 </span>            :     /// Clear the dirty flag.</a>
-<a name="66"><span class="lineNum">      66 </span><span class="lineCov">          3 :     void clearDirty() { dirty = false; }</span></a>
+<a name="66"><span class="lineNum">      66 </span>            :     void clearDirty() { dirty = false; }</a>
 <a name="67"><span class="lineNum">      67 </span>            : </a>
 <a name="68"><span class="lineNum">      68 </span>            :     /// @}</a>
 <a name="69"><span class="lineNum">      69 </span>            : </a>
@@ -164,19 +164,19 @@
 <a name="94"><span class="lineNum">      94 </span>            : </a>
 <a name="95"><span class="lineNum">      95 </span>            :     /// Check if the value was updated since the last time the dirty flag was</a>
 <a name="96"><span class="lineNum">      96 </span>            :     /// cleared.</a>
-<a name="97"><span class="lineNum">      97 </span><span class="lineCov">          5 :     bool getDirty() const { return dirty; }</span></a>
+<a name="97"><span class="lineNum">      97 </span>            :     bool getDirty() const { return dirty; }</a>
 <a name="98"><span class="lineNum">      98 </span>            :     /// Clear the dirty flag.</a>
-<a name="99"><span class="lineNum">      99 </span><span class="lineCov">          4 :     void clearDirty() { dirty = alwaysDirty; }</span></a>
+<a name="99"><span class="lineNum">      99 </span>            :     void clearDirty() { dirty = alwaysDirty; }</a>
 <a name="100"><span class="lineNum">     100 </span>            : </a>
 <a name="101"><span class="lineNum">     101 </span>            :     /// @}</a>
 <a name="102"><span class="lineNum">     102 </span>            : </a>
-<a name="103"><span class="lineNum">     103 </span>            :     /** Return the VU meter value as an integer. */</a>
+<a name="103"><span class="lineNum">     103 </span>            :     /// Return the VU meter value as an integer.</a>
 <a name="104"><span class="lineNum">     104 </span>            :     virtual uint8_t getValue() = 0;</a>
-<a name="105"><span class="lineNum">     105 </span>            :     /** Return the overload status. */</a>
+<a name="105"><span class="lineNum">     105 </span>            :     /// Return the overload status.</a>
 <a name="106"><span class="lineNum">     106 </span>            :     virtual bool getOverload() = 0;</a>
-<a name="107"><span class="lineNum">     107 </span>            :     /** Get the VU meter value as a floating point number. */</a>
+<a name="107"><span class="lineNum">     107 </span>            :     /// Get the VU meter value as a floating point number.</a>
 <a name="108"><span class="lineNum">     108 </span><span class="lineCov">          1 :     virtual float getFloatValue() { return (float)getValue() / getMax(); }</span></a>
-<a name="109"><span class="lineNum">     109 </span>            :     /** Get the maximum value that this VU meter can return. */</a>
+<a name="109"><span class="lineNum">     109 </span>            :     /// Get the maximum value that this VU meter can return.</a>
 <a name="110"><span class="lineNum">     110 </span><span class="lineCov">          1 :     uint8_t getMax() const { return max; }</span></a>
 <a name="111"><span class="lineNum">     111 </span>            : </a>
 <a name="112"><span class="lineNum">     112 </span>            :   protected:</a>
@@ -200,7 +200,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.14-6-g40580cd</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
   </table>
   <br>
 

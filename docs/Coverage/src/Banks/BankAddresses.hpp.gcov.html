@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - f58de7041fe05e128c0059ca66fb593df6548d83 - src/Banks/BankAddresses.hpp</title>
+  <title>LCOV - cddd90b1c2bde71b90dc456a54b76a8da46a56e2 - src/Banks/BankAddresses.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">f58de7041fe05e128c0059ca66fb593df6548d83</td>
+            <td class="headerValue">cddd90b1c2bde71b90dc456a54b76a8da46a56e2</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">27</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-10-04 13:26:02</td>
+            <td class="headerValue">2021-06-30 02:28:42</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">13</td>
@@ -79,7 +79,7 @@
 <a name="9"><span class="lineNum">       9 </span>            : class SingleAddress : public OutputBankableMIDIAddress {</a>
 <a name="10"><span class="lineNum">      10 </span>            :   public:</a>
 <a name="11"><span class="lineNum">      11 </span><span class="lineCov">         24 :     SingleAddress(BaseOutputBankConfig config, MIDIAddress address)</span></a>
-<a name="12"><span class="lineNum">      12 </span><span class="lineCov">         24 :         : OutputBankableMIDIAddress{config}, address{address} {}</span></a>
+<a name="12"><span class="lineNum">      12 </span><span class="lineCov">         24 :         : OutputBankableMIDIAddress(config), address(address) {}</span></a>
 <a name="13"><span class="lineNum">      13 </span>            : </a>
 <a name="14"><span class="lineNum">      14 </span><span class="lineCov">         32 :     MIDIAddress getBaseAddress() const { return address; }</span></a>
 <a name="15"><span class="lineNum">      15 </span>            : </a>
@@ -96,7 +96,7 @@
 <a name="26"><span class="lineNum">      26 </span>            :   public:</a>
 <a name="27"><span class="lineNum">      27 </span>            :     SingleAddressMultipleBanks(const Array&lt;OutputBankableMIDIAddress, N&gt; &amp;banks,</a>
 <a name="28"><span class="lineNum">      28 </span>            :                                MIDIAddress address)</a>
-<a name="29"><span class="lineNum">      29 </span>            :         : banks{banks}, address{address} {}</a>
+<a name="29"><span class="lineNum">      29 </span>            :         : banks(banks), address(address) {}</a>
 <a name="30"><span class="lineNum">      30 </span>            : </a>
 <a name="31"><span class="lineNum">      31 </span>            :     MIDIAddress getBaseAddress() const { return address; }</a>
 <a name="32"><span class="lineNum">      32 </span>            : </a>
@@ -126,7 +126,7 @@
 <a name="56"><span class="lineNum">      56 </span>            :   public:</a>
 <a name="57"><span class="lineNum">      57 </span><span class="lineCov">          1 :     DualAddresses(BaseOutputBankConfig config,</span></a>
 <a name="58"><span class="lineNum">      58 </span>            :                   const Array&lt;MIDIAddress, 2&gt; &amp;addresses)</a>
-<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          1 :         : OutputBankableMIDIAddress{config}, first(addresses[0]),</span></a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">          1 :         : OutputBankableMIDIAddress(config), first(addresses[0]),</span></a>
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">          2 :           second(addresses[1]) {}</span></a>
 <a name="61"><span class="lineNum">      61 </span>            : </a>
 <a name="62"><span class="lineNum">      62 </span><span class="lineNoCov">          0 :     MIDIAddress getFirstBaseAddress() const { return first; }</span></a>
@@ -143,14 +143,14 @@
 <a name="73"><span class="lineNum">      73 </span>            :     MIDIAddress first, second;</a>
 <a name="74"><span class="lineNum">      74 </span>            : };</a>
 <a name="75"><span class="lineNum">      75 </span>            : </a>
-<a name="76"><span class="lineNum">      76 </span>            : template &lt;uint8_t nb_rows, uint8_t nb_cols&gt;</a>
+<a name="76"><span class="lineNum">      76 </span>            : template &lt;uint8_t NumRows, uint8_t NumCols&gt;</a>
 <a name="77"><span class="lineNum">      77 </span>            : class MatrixAddress : public OutputBankableMIDIAddress {</a>
 <a name="78"><span class="lineNum">      78 </span>            :   public:</a>
 <a name="79"><span class="lineNum">      79 </span><span class="lineCov">          3 :     MatrixAddress(BaseOutputBankConfig config,</span></a>
-<a name="80"><span class="lineNum">      80 </span>            :                   const AddressMatrix&lt;nb_rows, nb_cols&gt; &amp;addresses,</a>
-<a name="81"><span class="lineNum">      81 </span>            :                   MIDIChannelCN channelCN)</a>
-<a name="82"><span class="lineNum">      82 </span><span class="lineCov">          3 :         : OutputBankableMIDIAddress{config}, addresses{addresses},</span></a>
-<a name="83"><span class="lineNum">      83 </span><span class="lineCov">          6 :           channelCN{channelCN} {}</span></a>
+<a name="80"><span class="lineNum">      80 </span>            :                   const AddressMatrix&lt;NumRows, NumCols&gt; &amp;addresses,</a>
+<a name="81"><span class="lineNum">      81 </span>            :                   MIDIChannelCable channelCN)</a>
+<a name="82"><span class="lineNum">      82 </span><span class="lineCov">          3 :         : OutputBankableMIDIAddress(config), addresses(addresses),</span></a>
+<a name="83"><span class="lineNum">      83 </span><span class="lineCov">          6 :           channelCN(channelCN) {}</span></a>
 <a name="84"><span class="lineNum">      84 </span>            : </a>
 <a name="85"><span class="lineNum">      85 </span><span class="lineCov">          4 :     uint8_t getBaseAddress(uint8_t row, uint8_t col) const {</span></a>
 <a name="86"><span class="lineNum">      86 </span><span class="lineCov">          4 :         return addresses[row][col];</span></a>
@@ -162,8 +162,8 @@
 <a name="92"><span class="lineNum">      92 </span><span class="lineCov">          4 :     }</span></a>
 <a name="93"><span class="lineNum">      93 </span>            : </a>
 <a name="94"><span class="lineNum">      94 </span>            :   private:</a>
-<a name="95"><span class="lineNum">      95 </span>            :     AddressMatrix&lt;nb_rows, nb_cols&gt; addresses;</a>
-<a name="96"><span class="lineNum">      96 </span>            :     MIDIChannelCN channelCN;</a>
+<a name="95"><span class="lineNum">      95 </span>            :     AddressMatrix&lt;NumRows, NumCols&gt; addresses;</a>
+<a name="96"><span class="lineNum">      96 </span>            :     MIDIChannelCable channelCN;</a>
 <a name="97"><span class="lineNum">      97 </span>            : };</a>
 <a name="98"><span class="lineNum">      98 </span>            : </a>
 <a name="99"><span class="lineNum">      99 </span>            : namespace ManyAddresses {</a>
@@ -185,7 +185,7 @@
 <a name="115"><span class="lineNum">     115 </span>            :      */</a>
 <a name="116"><span class="lineNum">     116 </span><span class="lineCov">          5 :     ManyAddresses(const Bank&lt;NumBanks&gt; &amp;bank,</span></a>
 <a name="117"><span class="lineNum">     117 </span>            :                   const Array&lt;MIDIAddress, NumBanks&gt; &amp;addresses)</a>
-<a name="118"><span class="lineNum">     118 </span><span class="lineCov">          5 :         : ManyAddresses_Base{bank}, addresses{addresses} {}</span></a>
+<a name="118"><span class="lineNum">     118 </span><span class="lineCov">          5 :         : ManyAddresses_Base(bank), addresses(addresses) {}</span></a>
 <a name="119"><span class="lineNum">     119 </span>            : </a>
 <a name="120"><span class="lineNum">     120 </span><span class="lineNoCov">          0 :     MIDIAddress getActiveAddress() const { return addresses[getSelection()]; }</span></a>
 <a name="121"><span class="lineNum">     121 </span>            : </a>
@@ -202,7 +202,7 @@
 <a name="132"><span class="lineNum">     132 </span>            :   public:</a>
 <a name="133"><span class="lineNum">     133 </span><span class="lineCov">          1 :     DualManyAddresses(const Bank&lt;NumBanks&gt; &amp;bank,</span></a>
 <a name="134"><span class="lineNum">     134 </span>            :                       const Array2D&lt;MIDIAddress, 2, NumBanks&gt; &amp;addresses)</a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineCov">          1 :         : ManyAddresses_Base{bank}, first{addresses[0]}, second{addresses[1]} {}</span></a>
+<a name="135"><span class="lineNum">     135 </span><span class="lineCov">          1 :         : ManyAddresses_Base(bank), first{addresses[0]}, second{addresses[1]} {}</span></a>
 <a name="136"><span class="lineNum">     136 </span>            : </a>
 <a name="137"><span class="lineNum">     137 </span><span class="lineNoCov">          0 :     MIDIAddress getFirstActiveAddress() const { return first[getSelection()]; }</span></a>
 <a name="138"><span class="lineNum">     138 </span><span class="lineNoCov">          0 :     MIDIAddress getSecondActiveAddress() const {</span></a>
@@ -213,15 +213,15 @@
 <a name="143"><span class="lineNum">     143 </span>            :     Array&lt;MIDIAddress, NumBanks&gt; first, second;</a>
 <a name="144"><span class="lineNum">     144 </span>            : };</a>
 <a name="145"><span class="lineNum">     145 </span>            : </a>
-<a name="146"><span class="lineNum">     146 </span>            : template &lt;uint8_t NumBanks, uint8_t nb_rows, uint8_t nb_cols&gt;</a>
+<a name="146"><span class="lineNum">     146 </span>            : template &lt;uint8_t NumBanks, uint8_t NumRows, uint8_t NumCols&gt;</a>
 <a name="147"><span class="lineNum">     147 </span>            : class ManyMatrixAddresses : public ManyAddresses_Base {</a>
 <a name="148"><span class="lineNum">     148 </span>            :   public:</a>
 <a name="149"><span class="lineNum">     149 </span><span class="lineCov">          3 :     ManyMatrixAddresses(</span></a>
 <a name="150"><span class="lineNum">     150 </span>            :         const Bank&lt;NumBanks&gt; &amp;bank,</a>
-<a name="151"><span class="lineNum">     151 </span>            :         const Array&lt;AddressMatrix&lt;nb_rows, nb_cols&gt;, NumBanks&gt; &amp;addresses,</a>
-<a name="152"><span class="lineNum">     152 </span>            :         const Array&lt;MIDIChannelCN, NumBanks&gt; &amp;channelCNs)</a>
-<a name="153"><span class="lineNum">     153 </span><span class="lineCov">          6 :         : ManyAddresses_Base{bank}, addresses{addresses}, channelCNs{</span></a>
-<a name="154"><span class="lineNum">     154 </span><span class="lineCov">          9 :                                                               channelCNs} {}</span></a>
+<a name="151"><span class="lineNum">     151 </span>            :         const Array&lt;AddressMatrix&lt;NumRows, NumCols&gt;, NumBanks&gt; &amp;addresses,</a>
+<a name="152"><span class="lineNum">     152 </span>            :         const Array&lt;MIDIChannelCable, NumBanks&gt; &amp;channelCNs)</a>
+<a name="153"><span class="lineNum">     153 </span><span class="lineCov">          3 :         : ManyAddresses_Base(bank), addresses(addresses), </span></a>
+<a name="154"><span class="lineNum">     154 </span><span class="lineCov">          6 :           channelCNs(channelCNs) {}</span></a>
 <a name="155"><span class="lineNum">     155 </span>            : </a>
 <a name="156"><span class="lineNum">     156 </span><span class="lineCov">          4 :     MIDIAddress getActiveAddress(uint8_t row, uint8_t col) const {</span></a>
 <a name="157"><span class="lineNum">     157 </span><span class="lineCov">          8 :         return {addresses[getSelection()][row][col],</span></a>
@@ -229,8 +229,8 @@
 <a name="159"><span class="lineNum">     159 </span>            :     }</a>
 <a name="160"><span class="lineNum">     160 </span>            : </a>
 <a name="161"><span class="lineNum">     161 </span>            :   private:</a>
-<a name="162"><span class="lineNum">     162 </span>            :     Array&lt;AddressMatrix&lt;nb_rows, nb_cols&gt;, NumBanks&gt; addresses;</a>
-<a name="163"><span class="lineNum">     163 </span>            :     Array&lt;MIDIChannelCN, NumBanks&gt; channelCNs;</a>
+<a name="162"><span class="lineNum">     162 </span>            :     Array&lt;AddressMatrix&lt;NumRows, NumCols&gt;, NumBanks&gt; addresses;</a>
+<a name="163"><span class="lineNum">     163 </span>            :     Array&lt;MIDIChannelCable, NumBanks&gt; channelCNs;</a>
 <a name="164"><span class="lineNum">     164 </span>            : };</a>
 <a name="165"><span class="lineNum">     165 </span>            : </a>
 <a name="166"><span class="lineNum">     166 </span>            : } // namespace ManyAddresses</a>
@@ -245,7 +245,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.14-6-g40580cd</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
   </table>
   <br>
 

@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['timefunction_4889',['timefunction',['../dc/d69/namespaceAH.html#a4086ab91003e2f23ab3d8d590d6f2fe3',1,'AH']]],
-  ['type_4890',['type',['../d0/d32/structAH_1_1Array.html#a834c467da58ea1d81821952d3c473b64',1,'AH::Array::type()'],['../d0/d81/namespaceenc__util.html#a565429e62c1d4fd084335146ba778e17',1,'enc_util::remove_reference::type()'],['../d0/d81/namespaceenc__util.html#a565429e62c1d4fd084335146ba778e17',1,'enc_util::remove_reference&lt; T &amp; &gt;::type()'],['../d0/d81/namespaceenc__util.html#a565429e62c1d4fd084335146ba778e17',1,'enc_util::remove_reference&lt; T &amp;&amp; &gt;::type()']]]
+  ['setting_5ft_5651',['setting_t',['../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0',1,'Def.hpp']]],
+  ['setup_5fpacket_5ft_5652',['setup_packet_t',['../d1/dd4/classPluggableUSBMIDI.html#a2753f328964cbf0d02bf0e41bbcf0856',1,'PluggableUSBMIDI']]],
+  ['signedenc_5ft_5653',['SignedEnc_t',['../df/d5d/classGenericMIDIAbsoluteEncoder.html#acd66cbb5100f17bc2fa8a48f111ea747',1,'GenericMIDIAbsoluteEncoder::SignedEnc_t()'],['../d0/d9e/classGenericMIDIRotaryEncoder.html#acd66cbb5100f17bc2fa8a48f111ea747',1,'GenericMIDIRotaryEncoder::SignedEnc_t()'],['../df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#acd66cbb5100f17bc2fa8a48f111ea747',1,'Bankable::GenericMIDIAbsoluteEncoder::SignedEnc_t()'],['../d6/dcd/classBankable_1_1GenericMIDIRotaryEncoder.html#acd66cbb5100f17bc2fa8a48f111ea747',1,'Bankable::GenericMIDIRotaryEncoder::SignedEnc_t()']]],
+  ['statestoragetype_5654',['StateStorageType',['../dc/d42/classAH_1_1MCP23017Encoders.html#a1aafee5164e94dd1c930007725c37cee',1,'AH::MCP23017Encoders']]],
+  ['storage_5ft_5655',['storage_t',['../d6/d71/classMIDIMessageQueue.html#a535ec86e7dfddf47bedaa7fc92ebb882',1,'MIDIMessageQueue']]],
+  ['syscommonmessagecallback_5656',['SysCommonMessageCallback',['../dc/d45/classControl__Surface__.html#a9165259c78735f3aef5df00ab61b11ca',1,'Control_Surface_']]],
+  ['sysexmessagecallback_5657',['SysExMessageCallback',['../dc/d45/classControl__Surface__.html#a63122459e6bb5d759916e29b83cb8ea5',1,'Control_Surface_']]]
 ];
