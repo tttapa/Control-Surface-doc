@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - cddd90b1c2bde71b90dc456a54b76a8da46a56e2 - src/MIDI_Interfaces/BluetoothMIDI_Interface.cpp</title>
+  <title>LCOV - 89a7bb20277e73a6eb96508ea6f7b830faf70afe - src/MIDI_Interfaces/BluetoothMIDI_Interface.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">cddd90b1c2bde71b90dc456a54b76a8da46a56e2</td>
+            <td class="headerValue">89a7bb20277e73a6eb96508ea6f7b830faf70afe</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">164</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-30 02:28:42</td>
+            <td class="headerValue">2021-06-30 19:41:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">25</td>
@@ -130,7 +130,7 @@
 <a name="60"><span class="lineNum">      60 </span>            : </a>
 <a name="61"><span class="lineNum">      61 </span>            :     // Wait for flush to complete (when the sender clears the flushnow flag)</a>
 <a name="62"><span class="lineNum">      62 </span><span class="lineCov">         23 :     lock.lock();</span></a>
-<a name="63"><span class="lineNum">      63 </span><span class="lineCov">         67 :     cv.wait(lock, [this] { return !flushnow; });</span></a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">         68 :     cv.wait(lock, [this] { return !flushnow; });</span></a>
 <a name="64"><span class="lineNum">      64 </span><span class="lineCov">         23 :     assert(lock.owns_lock());</span></a>
 <a name="65"><span class="lineNum">      65 </span><span class="lineCov">         23 : }</span></a>
 <a name="66"><span class="lineNum">      66 </span>            : </a>

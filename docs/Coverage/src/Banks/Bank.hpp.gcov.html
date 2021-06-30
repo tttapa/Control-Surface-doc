@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - cddd90b1c2bde71b90dc456a54b76a8da46a56e2 - src/Banks/Bank.hpp</title>
+  <title>LCOV - 89a7bb20277e73a6eb96508ea6f7b830faf70afe - src/Banks/Bank.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">cddd90b1c2bde71b90dc456a54b76a8da46a56e2</td>
+            <td class="headerValue">89a7bb20277e73a6eb96508ea6f7b830faf70afe</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">29</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-30 02:28:42</td>
+            <td class="headerValue">2021-06-30 19:41:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">22</td>
@@ -111,21 +111,21 @@
 <a name="41"><span class="lineNum">      41 </span><span class="lineCov">         90 :     void select(setting_t setting) { bankSetting = setting; }</span></a>
 <a name="42"><span class="lineNum">      42 </span>            : </a>
 <a name="43"><span class="lineNum">      43 </span>            :     /// Get the current bank setting (zero-based).</a>
-<a name="44"><span class="lineNum">      44 </span><span class="lineCov">        315 :     setting_t getSelection() const { return bankSetting; }</span></a>
+<a name="44"><span class="lineNum">      44 </span><span class="lineCov">        331 :     setting_t getSelection() const { return bankSetting; }</span></a>
 <a name="45"><span class="lineNum">      45 </span>            :     /// Get the offset of the bank setting.</a>
-<a name="46"><span class="lineNum">      46 </span><span class="lineCov">        136 :     int8_t getSelectionOffset() const { return selectionOffset; }</span></a>
+<a name="46"><span class="lineNum">      46 </span><span class="lineCov">        144 :     int8_t getSelectionOffset() const { return selectionOffset; }</span></a>
 <a name="47"><span class="lineNum">      47 </span>            : </a>
 <a name="48"><span class="lineNum">      48 </span>            :     /// Get the number of tracks per bank.</a>
 <a name="49"><span class="lineNum">      49 </span>            :     /// This is the number of addresses/tracks to skip for each bank setting.</a>
-<a name="50"><span class="lineNum">      50 </span><span class="lineCov">        139 :     uint8_t getTracksPerBank() const { return tracksPerBank; }</span></a>
+<a name="50"><span class="lineNum">      50 </span><span class="lineCov">        147 :     uint8_t getTracksPerBank() const { return tracksPerBank; }</span></a>
 <a name="51"><span class="lineNum">      51 </span>            : </a>
 <a name="52"><span class="lineNum">      52 </span>            :     /// The same as @ref getOffset, but for a given setting.</a>
-<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         52 :     int8_t getOffsetOfSetting(setting_t s) const {</span></a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         52 :         return (s + getSelectionOffset()) * getTracksPerBank();</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         60 :     int8_t getOffsetOfSetting(setting_t s) const {</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         60 :         return (s + getSelectionOffset()) * getTracksPerBank();</span></a>
 <a name="55"><span class="lineNum">      55 </span>            :     }</a>
 <a name="56"><span class="lineNum">      56 </span>            :     /// Get the address offset (number of banks times the index of the selected</a>
 <a name="57"><span class="lineNum">      57 </span>            :     /// bank after applying the offset)</a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         16 :     int8_t getOffset() const { return getOffsetOfSetting(getSelection()); }</span></a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         24 :     int8_t getOffset() const { return getOffsetOfSetting(getSelection()); }</span></a>
 <a name="59"><span class="lineNum">      59 </span>            : </a>
 <a name="60"><span class="lineNum">      60 </span>            :   private:</a>
 <a name="61"><span class="lineNum">      61 </span>            :     uint8_t tracksPerBank;</a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - cddd90b1c2bde71b90dc456a54b76a8da46a56e2 - src/AH/Filters/EMA.hpp</title>
+  <title>LCOV - 89a7bb20277e73a6eb96508ea6f7b830faf70afe - src/AH/Filters/EMA.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">cddd90b1c2bde71b90dc456a54b76a8da46a56e2</td>
+            <td class="headerValue">89a7bb20277e73a6eb96508ea6f7b830faf70afe</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">20</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-30 02:28:42</td>
+            <td class="headerValue">2021-06-30 19:41:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">16</td>
@@ -128,8 +128,8 @@
 <a name="58"><span class="lineNum">      58 </span>            : class EMA {</a>
 <a name="59"><span class="lineNum">      59 </span>            :   public:</a>
 <a name="60"><span class="lineNum">      60 </span>            :     /// Constructor: initialize filter to zero or optional given value.</a>
-<a name="61"><span class="lineNum">      61 </span><span class="lineCov">         23 :     EMA(input_t initial = input_t(0))</span></a>
-<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         23 :       : state(zero + (state_t(initial) &lt;&lt; K) - initial) {}</span></a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">         25 :     EMA(input_t initial = input_t(0))</span></a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         25 :       : state(zero + (state_t(initial) &lt;&lt; K) - initial) {}</span></a>
 <a name="63"><span class="lineNum">      63 </span>            : </a>
 <a name="64"><span class="lineNum">      64 </span>            :     /**</a>
 <a name="65"><span class="lineNum">      65 </span>            :      * @brief   Reset the filter to the given value.</a>
@@ -137,9 +137,9 @@
 <a name="67"><span class="lineNum">      67 </span>            :      * @param   value </a>
 <a name="68"><span class="lineNum">      68 </span>            :      *          The value to reset the filter state to.</a>
 <a name="69"><span class="lineNum">      69 </span>            :      */</a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          7 :     void reset(input_t value = input_t(0)) {</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          7 :         state = zero + (state_t(value) &lt;&lt; K) - value;</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">          7 :     }</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          9 :     void reset(input_t value = input_t(0)) {</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          9 :         state = zero + (state_t(value) &lt;&lt; K) - value;</span></a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">          9 :     }</span></a>
 <a name="73"><span class="lineNum">      73 </span>            : </a>
 <a name="74"><span class="lineNum">      74 </span>            :     /**</a>
 <a name="75"><span class="lineNum">      75 </span>            :      * @brief   Filter the input: Given @f$ x[n] @f$, calculate @f$ y[n] @f$.</a>

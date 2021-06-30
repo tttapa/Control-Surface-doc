@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - cddd90b1c2bde71b90dc456a54b76a8da46a56e2 - src/MIDI_Outputs/Bankable/Abstract/MIDIFilteredAnalog.hpp</title>
+  <title>LCOV - 89a7bb20277e73a6eb96508ea6f7b830faf70afe - src/MIDI_Outputs/Bankable/Abstract/MIDIFilteredAnalog.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">cddd90b1c2bde71b90dc456a54b76a8da46a56e2</td>
+            <td class="headerValue">89a7bb20277e73a6eb96508ea6f7b830faf70afe</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">3</td>
-            <td class="headerCovTableEntry">8</td>
-            <td class="headerCovTableEntryLo">37.5 %</td>
+            <td class="headerCovTableEntry">11</td>
+            <td class="headerCovTableEntryLo">27.3 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-30 02:28:42</td>
+            <td class="headerValue">2021-06-30 19:41:46</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
-            <td class="headerCovTableEntry">20</td>
-            <td class="headerCovTableEntryLo">40.0 %</td>
+            <td class="headerCovTableEntry">24</td>
+            <td class="headerCovTableEntryLo">33.3 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -110,49 +110,55 @@
 <a name="40"><span class="lineNum">      40 </span>            : </a>
 <a name="41"><span class="lineNum">      41 </span><span class="lineNoCov">          0 :     void update() final override {</span></a>
 <a name="42"><span class="lineNum">      42 </span><span class="lineNoCov">          0 :         if (filteredAnalog.update())</span></a>
-<a name="43"><span class="lineNum">      43 </span><span class="lineNoCov">          0 :             sender.send(filteredAnalog.getValue(), address.getActiveAddress());</span></a>
+<a name="43"><span class="lineNum">      43 </span><span class="lineNoCov">          0 :             forcedUpdate();</span></a>
 <a name="44"><span class="lineNum">      44 </span><span class="lineNoCov">          0 :     }</span></a>
 <a name="45"><span class="lineNum">      45 </span>            : </a>
-<a name="46"><span class="lineNum">      46 </span>            :     /**</a>
-<a name="47"><span class="lineNum">      47 </span>            :      * @brief   Specify a mapping function that is applied to the raw</a>
-<a name="48"><span class="lineNum">      48 </span>            :      *          analog value before sending.</a>
-<a name="49"><span class="lineNum">      49 </span>            :      *</a>
-<a name="50"><span class="lineNum">      50 </span>            :      * @param   fn</a>
-<a name="51"><span class="lineNum">      51 </span>            :      *          A function pointer to the mapping function. This function</a>
-<a name="52"><span class="lineNum">      52 </span>            :      *          should take the filtered analog value of @f$ 16 - </a>
-<a name="53"><span class="lineNum">      53 </span>            :      *          \mathrm{ANALOG\_FILTER\_SHIFT\_FACTOR} @f$ bits as a parameter, </a>
-<a name="54"><span class="lineNum">      54 </span>            :      *          and should return a value in the same range.</a>
-<a name="55"><span class="lineNum">      55 </span>            :      * </a>
-<a name="56"><span class="lineNum">      56 </span>            :      * @see     FilteredAnalog::map     </a>
-<a name="57"><span class="lineNum">      57 </span>            :      */</a>
-<a name="58"><span class="lineNum">      58 </span>            :     void map(MappingFunction fn) { filteredAnalog.map(fn); }</a>
-<a name="59"><span class="lineNum">      59 </span>            : </a>
-<a name="60"><span class="lineNum">      60 </span>            :     /// Invert the analog value.</a>
-<a name="61"><span class="lineNum">      61 </span>            :     void invert() { filteredAnalog.invert(); }</a>
-<a name="62"><span class="lineNum">      62 </span>            : </a>
-<a name="63"><span class="lineNum">      63 </span>            :     /**</a>
-<a name="64"><span class="lineNum">      64 </span>            :      * @brief   Get the raw value of the analog input (this is the value </a>
-<a name="65"><span class="lineNum">      65 </span>            :      *          without applying the filter or the mapping function first).</a>
-<a name="66"><span class="lineNum">      66 </span>            :      */</a>
-<a name="67"><span class="lineNum">      67 </span>            :     analog_t getRawValue() const { return filteredAnalog.getRawValue(); }</a>
+<a name="46"><span class="lineNum">      46 </span>            :     /// Send the value of the analog input over MIDI, even if the value didn't</a>
+<a name="47"><span class="lineNum">      47 </span>            :     /// change.</a>
+<a name="48"><span class="lineNum">      48 </span><span class="lineNoCov">          0 :     void forcedUpdate() {</span></a>
+<a name="49"><span class="lineNum">      49 </span><span class="lineNoCov">          0 :         sender.send(filteredAnalog.getValue(), address.getActiveAddress());</span></a>
+<a name="50"><span class="lineNum">      50 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="51"><span class="lineNum">      51 </span>            : </a>
+<a name="52"><span class="lineNum">      52 </span>            :     /**</a>
+<a name="53"><span class="lineNum">      53 </span>            :      * @brief   Specify a mapping function that is applied to the raw</a>
+<a name="54"><span class="lineNum">      54 </span>            :      *          analog value before sending.</a>
+<a name="55"><span class="lineNum">      55 </span>            :      *</a>
+<a name="56"><span class="lineNum">      56 </span>            :      * @param   fn</a>
+<a name="57"><span class="lineNum">      57 </span>            :      *          A function pointer to the mapping function. This function</a>
+<a name="58"><span class="lineNum">      58 </span>            :      *          should take the filtered analog value of @f$ 16 - </a>
+<a name="59"><span class="lineNum">      59 </span>            :      *          \mathrm{ANALOG\_FILTER\_SHIFT\_FACTOR} @f$ bits as a parameter, </a>
+<a name="60"><span class="lineNum">      60 </span>            :      *          and should return a value in the same range.</a>
+<a name="61"><span class="lineNum">      61 </span>            :      * </a>
+<a name="62"><span class="lineNum">      62 </span>            :      * @see     FilteredAnalog::map     </a>
+<a name="63"><span class="lineNum">      63 </span>            :      */</a>
+<a name="64"><span class="lineNum">      64 </span>            :     void map(MappingFunction fn) { filteredAnalog.map(fn); }</a>
+<a name="65"><span class="lineNum">      65 </span>            : </a>
+<a name="66"><span class="lineNum">      66 </span>            :     /// Invert the analog value.</a>
+<a name="67"><span class="lineNum">      67 </span>            :     void invert() { filteredAnalog.invert(); }</a>
 <a name="68"><span class="lineNum">      68 </span>            : </a>
 <a name="69"><span class="lineNum">      69 </span>            :     /**</a>
-<a name="70"><span class="lineNum">      70 </span>            :      * @brief   Get the value of the analog input (this is the value after first</a>
-<a name="71"><span class="lineNum">      71 </span>            :      *          applying the mapping function).</a>
+<a name="70"><span class="lineNum">      70 </span>            :      * @brief   Get the raw value of the analog input (this is the value </a>
+<a name="71"><span class="lineNum">      71 </span>            :      *          without applying the filter or the mapping function first).</a>
 <a name="72"><span class="lineNum">      72 </span>            :      */</a>
-<a name="73"><span class="lineNum">      73 </span>            :     analog_t getValue() const { return filteredAnalog.getValue(); }</a>
+<a name="73"><span class="lineNum">      73 </span>            :     analog_t getRawValue() const { return filteredAnalog.getRawValue(); }</a>
 <a name="74"><span class="lineNum">      74 </span>            : </a>
-<a name="75"><span class="lineNum">      75 </span>            :   private:</a>
-<a name="76"><span class="lineNum">      76 </span>            :     BankAddress address;</a>
-<a name="77"><span class="lineNum">      77 </span>            :     AH::FilteredAnalog&lt;Sender::precision()&gt; filteredAnalog;</a>
-<a name="78"><span class="lineNum">      78 </span>            : </a>
-<a name="79"><span class="lineNum">      79 </span>            :   public:</a>
-<a name="80"><span class="lineNum">      80 </span>            :     Sender sender;</a>
-<a name="81"><span class="lineNum">      81 </span>            : };</a>
-<a name="82"><span class="lineNum">      82 </span>            : </a>
-<a name="83"><span class="lineNum">      83 </span>            : } // namespace Bankable</a>
+<a name="75"><span class="lineNum">      75 </span>            :     /**</a>
+<a name="76"><span class="lineNum">      76 </span>            :      * @brief   Get the value of the analog input (this is the value after first</a>
+<a name="77"><span class="lineNum">      77 </span>            :      *          applying the mapping function).</a>
+<a name="78"><span class="lineNum">      78 </span>            :      */</a>
+<a name="79"><span class="lineNum">      79 </span>            :     analog_t getValue() const { return filteredAnalog.getValue(); }</a>
+<a name="80"><span class="lineNum">      80 </span>            : </a>
+<a name="81"><span class="lineNum">      81 </span>            :   private:</a>
+<a name="82"><span class="lineNum">      82 </span>            :     BankAddress address;</a>
+<a name="83"><span class="lineNum">      83 </span>            :     AH::FilteredAnalog&lt;Sender::precision()&gt; filteredAnalog;</a>
 <a name="84"><span class="lineNum">      84 </span>            : </a>
-<a name="85"><span class="lineNum">      85 </span>            : END_CS_NAMESPACE</a>
+<a name="85"><span class="lineNum">      85 </span>            :   public:</a>
+<a name="86"><span class="lineNum">      86 </span>            :     Sender sender;</a>
+<a name="87"><span class="lineNum">      87 </span>            : };</a>
+<a name="88"><span class="lineNum">      88 </span>            : </a>
+<a name="89"><span class="lineNum">      89 </span>            : } // namespace Bankable</a>
+<a name="90"><span class="lineNum">      90 </span>            : </a>
+<a name="91"><span class="lineNum">      91 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

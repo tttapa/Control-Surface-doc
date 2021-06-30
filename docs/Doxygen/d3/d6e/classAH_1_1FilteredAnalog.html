@@ -112,7 +112,7 @@ class AH::FilteredAnalog&lt; Precision, FilterShiftFactor, FilterType, AnalogTyp
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00263">263</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00268">268</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for FilteredAnalog&lt; Precision, FilterShiftFactor, FilterType, AnalogType, IncRes &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -234,7 +234,7 @@ Private Attributes</h2></td></tr>
 <p>A function pointer to a mapping function to map analog values. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/d36/classAH_1_1GenericFilteredAnalog.html#a55537d6de64435f495f9eaac3985d7e8" title="Specify a mapping function/functor that is applied to the analog value after filtering and before app...">map()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00293">293</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00298">298</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00276">276</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00281">281</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Private Attributes</h2></td></tr>
 <p ><b>This constructor should not be used.</b> <br  />
  It is just a way to easily create arrays of <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html" title="A class that reads and filters an analog input.">FilteredAnalog</a> objects, and initializing them later. Trying to update a default-constructed or uninitialized <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html" title="A class that reads and filters an analog input.">FilteredAnalog</a> object will result in a fatal runtime error. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00289">289</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00294">294</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ Private Attributes</h2></td></tr>
 <p >For example, if the precision is 10 bits, when the analog input measures 1023, the output will be 0, and when the analog input measures 0, the output will be 1023.</p>
 <dl class="section note"><dt>Note</dt><dd>This overrides the mapping function set by the <code>map</code> method. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00302">302</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00307">307</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ Private Attributes</h2></td></tr>
 <p>Reset the filtered value to the value that's currently being measured at the analog input. </p>
 <p >This is useful to avoid transient effects upon initialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -450,7 +450,7 @@ Private Attributes</h2></td></tr>
  Applying it after hysteresis would result in a lower resolution. <br  />
  That's why the mapping function is applied after filtering and before hysteresis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00095">95</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -486,7 +486,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00121">121</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +517,7 @@ Private Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function just returns the value from the last call to <a class="el" href="../../da/d36/classAH_1_1GenericFilteredAnalog.html#aa2aac016e2bf7b5bd2b271786c2791aa">update</a>, it doesn't read the analog input again.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The filtered value of the analog input, as a number of <code>Precision</code> bits wide. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00133">133</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00139">139</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -547,7 +547,7 @@ Private Attributes</h2></td></tr>
 <p>Get the filtered value of the analog input with the mapping function applied as a floating point number from 0.0 to 1.0. </p>
 <dl class="section return"><dt>Returns</dt><dd>The filtered value of the analog input, as a number from 0.0 to 1.0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00142">142</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00148">148</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ Private Attributes</h2></td></tr>
 <dd>
 <a class="el" href="../../d7/d7c/ADCConfig_8hpp.html">ADCConfig.hpp</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00173">173</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00179">179</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -611,7 +611,7 @@ Private Attributes</h2></td></tr>
 <p>Helper function that applies the mapping function if it's enabled. </p>
 <p >This function is only enabled if MappingFunction is explicitly convertible to bool. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00186">186</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00192">192</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
@@ -642,7 +642,7 @@ Private Attributes</h2></td></tr>
 <p>Helper function that applies the mapping function without checking if it's enabled. </p>
 <p >This function is only enabled if MappingFunction is not convertible to bool. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00197">197</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00203">203</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
 </div>
 </div>
