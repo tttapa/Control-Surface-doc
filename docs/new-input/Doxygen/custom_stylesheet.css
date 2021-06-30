@@ -62,6 +62,9 @@ div.contents > div.textblock > hr {
 * {
     max-width: 100%;
 }
+span.mono {
+    font-family: monospace;
+}
 /* These were originally "bold" which is too bold */
 b, dt, caption, div.groupHeader, td.indexkey, th.dirtab,
 .memproto, dl.reflist dt,
@@ -207,6 +210,12 @@ span.mlabel {
 .memdoc {
     border-radius: 0 0 0.4em 0.4em;
 }
+
+/* A bit more space in lists on related pages */
+div.textblock li {
+    margin: 0.4em 0;
+}
+
 code {
     background-color: #f4f4ff;
     border-radius: 6px;
