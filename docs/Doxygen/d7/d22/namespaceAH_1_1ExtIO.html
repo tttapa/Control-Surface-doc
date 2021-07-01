@@ -81,6 +81,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">AH::ExtIO Namespace Reference</div></div>
 </div><!--header-->
@@ -88,15 +89,20 @@ $(function() {
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO pin numbers. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5358d387739677162348180a0a4f196c"><td class="memItemLeft" align="right" valign="top"><a id="a5358d387739677162348180a0a4f196c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNativePin</b> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin)</td></tr>
-<tr class="separator:a5358d387739677162348180a0a4f196c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbba072c415694da1602d8af8df184d1"><td class="memTemplParams" colspan="2"><a id="abbba072c415694da1602d8af8df184d1"></a>
+<tr class="memitem:ad7a04d231255fdef4b00ef33cc7d5646"><td class="memTemplParams" colspan="2"><a id="ad7a04d231255fdef4b00ef33cc7d5646"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:abbba072c415694da1602d8af8df184d1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>inRange</b> (T target, T start, T end)</td></tr>
-<tr class="separator:abbba072c415694da1602d8af8df184d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a04d231255fdef4b00ef33cc7d5646"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>inRange</b> (T target, T start, T end)</td></tr>
+<tr class="separator:ad7a04d231255fdef4b00ef33cc7d5646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a52f56f9126a9210ff6d7b87c7b5c77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html">ExtendedIOElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd3/group__AH__ExtIO.html#ga9a52f56f9126a9210ff6d7b87c7b5c77">getIOElementOfPinOrNull</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin)</td></tr>
+<tr class="memdesc:ga9a52f56f9126a9210ff6d7b87c7b5c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the IO element of a given extended IO pin number.  <a href="../../db/dd3/group__AH__ExtIO.html#ga9a52f56f9126a9210ff6d7b87c7b5c77">More...</a><br /></td></tr>
+<tr class="separator:ga9a52f56f9126a9210ff6d7b87c7b5c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25a0a09a878a9f2c613d2d40aebae2f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html">ExtendedIOElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd3/group__AH__ExtIO.html#ga25a0a09a878a9f2c613d2d40aebae2f2">getIOElementOfPin</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin)</td></tr>
 <tr class="memdesc:ga25a0a09a878a9f2c613d2d40aebae2f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the IO element of a given extended IO pin number.  <a href="../../db/dd3/group__AH__ExtIO.html#ga25a0a09a878a9f2c613d2d40aebae2f2">More...</a><br /></td></tr>
 <tr class="separator:ga25a0a09a878a9f2c613d2d40aebae2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +178,504 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>shiftOut</b> (<a clas
 void&#160;</td><td class="memItemRight" valign="bottom"><b>shiftOut</b> (int dataPin, int clockPin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a43d3c7f80d4a67d87c13e7222466fe28">BitOrder_t</a> bitOrder, uint8_t val)</td></tr>
 <tr class="memdesc:ga9b553f6793c042d88c2d1eb3f4023fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload to Arduino shiftOut function. <br /></td></tr>
 <tr class="separator:ga9b553f6793c042d88c2d1eb3f4023fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5358d387739677162348180a0a4f196c"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNativePin</b> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin)</td></tr>
+<tr class="memdesc:ga5358d387739677162348180a0a4f196c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given pin number is a real Arduino pin number, and not an <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> pin number. <br /></td></tr>
+<tr class="separator:ga5358d387739677162348180a0a4f196c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92bfa942f83aba55633bdeee317e5515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#a92bfa942f83aba55633bdeee317e5515">pinMode</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102">PinMode_t</a> mode)</td></tr>
+<tr class="memdesc:a92bfa942f83aba55633bdeee317e5515"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#a92bfa942f83aba55633bdeee317e5515">More...</a><br /></td></tr>
+<tr class="separator:a92bfa942f83aba55633bdeee317e5515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0237329deba10482fa1f2602023af8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#a4b0237329deba10482fa1f2602023af8">digitalWrite</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d">PinStatus_t</a> val)</td></tr>
+<tr class="memdesc:a4b0237329deba10482fa1f2602023af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#a4b0237329deba10482fa1f2602023af8">More...</a><br /></td></tr>
+<tr class="separator:a4b0237329deba10482fa1f2602023af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b00a8c899ecfb122989895f3e2883ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d">PinStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#a9b00a8c899ecfb122989895f3e2883ff">digitalRead</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin)</td></tr>
+<tr class="memdesc:a9b00a8c899ecfb122989895f3e2883ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#a9b00a8c899ecfb122989895f3e2883ff">More...</a><br /></td></tr>
+<tr class="separator:a9b00a8c899ecfb122989895f3e2883ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1bc154442bf510d1c43f3aa0c59248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#a8d1bc154442bf510d1c43f3aa0c59248">analogRead</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin)</td></tr>
+<tr class="memdesc:a8d1bc154442bf510d1c43f3aa0c59248"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#a8d1bc154442bf510d1c43f3aa0c59248">More...</a><br /></td></tr>
+<tr class="separator:a8d1bc154442bf510d1c43f3aa0c59248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff3664b07e4cd20922a832c1c4b9c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#a3ff3664b07e4cd20922a832c1c4b9c21">analogWrite</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin, <a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a> val)</td></tr>
+<tr class="memdesc:a3ff3664b07e4cd20922a832c1c4b9c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#a3ff3664b07e4cd20922a832c1c4b9c21">More...</a><br /></td></tr>
+<tr class="separator:a3ff3664b07e4cd20922a832c1c4b9c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36b38be0188ac73cdac819e87f4edc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#ae36b38be0188ac73cdac819e87f4edc7">analogWrite</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin, int val)</td></tr>
+<tr class="memdesc:ae36b38be0188ac73cdac819e87f4edc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#ae36b38be0188ac73cdac819e87f4edc7">More...</a><br /></td></tr>
+<tr class="separator:ae36b38be0188ac73cdac819e87f4edc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a07f8b42c357173669780ae0183bc45"><td class="memItemLeft" align="right" valign="top"><a id="a4a07f8b42c357173669780ae0183bc45"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>shiftOut</b> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> dataPin, <a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> clockPin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a43d3c7f80d4a67d87c13e7222466fe28">BitOrder_t</a> bitOrder, uint8_t val)</td></tr>
+<tr class="memdesc:a4a07f8b42c357173669780ae0183bc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. <br /></td></tr>
+<tr class="separator:a4a07f8b42c357173669780ae0183bc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56e5f62aee45af8f252ddde5cb892c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#ae56e5f62aee45af8f252ddde5cb892c2">pinModeBuffered</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102">PinMode_t</a> mode)</td></tr>
+<tr class="memdesc:ae56e5f62aee45af8f252ddde5cb892c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#ae56e5f62aee45af8f252ddde5cb892c2">More...</a><br /></td></tr>
+<tr class="separator:ae56e5f62aee45af8f252ddde5cb892c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dea471c3acbdcb19353bd2078b643a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#a5dea471c3acbdcb19353bd2078b643a3">digitalWriteBuffered</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d">PinStatus_t</a> val)</td></tr>
+<tr class="memdesc:a5dea471c3acbdcb19353bd2078b643a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#a5dea471c3acbdcb19353bd2078b643a3">More...</a><br /></td></tr>
+<tr class="separator:a5dea471c3acbdcb19353bd2078b643a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bac85bc2d4242e35fd93b405fe789b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d">PinStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#af1bac85bc2d4242e35fd93b405fe789b">digitalReadBuffered</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin)</td></tr>
+<tr class="memdesc:af1bac85bc2d4242e35fd93b405fe789b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#af1bac85bc2d4242e35fd93b405fe789b">More...</a><br /></td></tr>
+<tr class="separator:af1bac85bc2d4242e35fd93b405fe789b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6077d4976a5f9aec7a63f41095fdb0ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#a6077d4976a5f9aec7a63f41095fdb0ce">analogReadBuffered</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin)</td></tr>
+<tr class="memdesc:a6077d4976a5f9aec7a63f41095fdb0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#a6077d4976a5f9aec7a63f41095fdb0ce">More...</a><br /></td></tr>
+<tr class="separator:a6077d4976a5f9aec7a63f41095fdb0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d39e565812fa84c5bb1f3aa4fdcb40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#ac6d39e565812fa84c5bb1f3aa4fdcb40">analogWriteBuffered</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin, <a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a> val)</td></tr>
+<tr class="memdesc:ac6d39e565812fa84c5bb1f3aa4fdcb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#ac6d39e565812fa84c5bb1f3aa4fdcb40">More...</a><br /></td></tr>
+<tr class="separator:ac6d39e565812fa84c5bb1f3aa4fdcb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ae6a45096464776b14af8143ca2d71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html#a92ae6a45096464776b14af8143ca2d71">analogWriteBuffered</a> (<a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a> pin, int val)</td></tr>
+<tr class="memdesc:a92ae6a45096464776b14af8143ca2d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function.  <a href="../../d7/d22/namespaceAH_1_1ExtIO.html#a92ae6a45096464776b14af8143ca2d71">More...</a><br /></td></tr>
+<tr class="separator:a92ae6a45096464776b14af8143ca2d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a92bfa942f83aba55633bdeee317e5515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bfa942f83aba55633bdeee317e5515">&#9670;&nbsp;</a></span>pinMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AH::ExtIO::pinMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102">PinMode_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#aa4487c4922d874fbf02bb46dd789a6da" title="Set the mode of a given pin.">ExtendedIOElement::pinMode</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00301">301</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4b0237329deba10482fa1f2602023af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0237329deba10482fa1f2602023af8">&#9670;&nbsp;</a></span>digitalWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AH::ExtIO::digitalWrite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d">PinStatus_t</a>&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#ad233fffb4eb9160de10a6e0502fa02df" title="Set the output of the given pin to the given state.">ExtendedIOElement::digitalWrite</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00306">306</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9b00a8c899ecfb122989895f3e2883ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b00a8c899ecfb122989895f3e2883ff">&#9670;&nbsp;</a></span>digitalRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d">PinStatus_t</a> AH::ExtIO::digitalRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#aff8d57054be9c65c69df7115cf28664f" title="Read the state of the given pin.">ExtendedIOElement::digitalRead</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00311">311</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d1bc154442bf510d1c43f3aa0c59248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1bc154442bf510d1c43f3aa0c59248">&#9670;&nbsp;</a></span>analogRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a> AH::ExtIO::analogRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#a70bb6c81cd8f0e50ea49756cdf5d25a5" title="Read the analog value of the given pin.">ExtendedIOElement::analogRead</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00317">317</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3ff3664b07e4cd20922a832c1c4b9c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff3664b07e4cd20922a832c1c4b9c21">&#9670;&nbsp;</a></span>analogWrite() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AH::ExtIO::analogWrite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#ab3a89ee952ad360c12d8a5385b296392" title="Write an analog (or PWM) value to the given pin.">ExtendedIOElement::analogWrite</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00322">322</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae36b38be0188ac73cdac819e87f4edc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36b38be0188ac73cdac819e87f4edc7">&#9670;&nbsp;</a></span>analogWrite() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AH::ExtIO::analogWrite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#ab3a89ee952ad360c12d8a5385b296392" title="Write an analog (or PWM) value to the given pin.">ExtendedIOElement::analogWrite</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00332">332</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae56e5f62aee45af8f252ddde5cb892c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56e5f62aee45af8f252ddde5cb892c2">&#9670;&nbsp;</a></span>pinModeBuffered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AH::ExtIO::pinModeBuffered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102">PinMode_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#adf73c35b7195c725dc10fddcdffdb23d" title="Set the mode of a given pin in the software buffer.">ExtendedIOElement::pinModeBuffered</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00371">371</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5dea471c3acbdcb19353bd2078b643a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dea471c3acbdcb19353bd2078b643a3">&#9670;&nbsp;</a></span>digitalWriteBuffered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AH::ExtIO::digitalWriteBuffered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d">PinStatus_t</a>&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#aa2e664df97d2e674f549a1200c1cdce3" title="Set the output of a given pin in the software buffer.">ExtendedIOElement::digitalWriteBuffered</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00376">376</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af1bac85bc2d4242e35fd93b405fe789b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1bac85bc2d4242e35fd93b405fe789b">&#9670;&nbsp;</a></span>digitalReadBuffered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d">PinStatus_t</a> AH::ExtIO::digitalReadBuffered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#a7812a768e9998b332cb4bcfb36be30d6" title="Read the state of the given pin from the software buffer.">ExtendedIOElement::digitalReadBuffered</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00381">381</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6077d4976a5f9aec7a63f41095fdb0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6077d4976a5f9aec7a63f41095fdb0ce">&#9670;&nbsp;</a></span>analogReadBuffered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a> AH::ExtIO::analogReadBuffered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#af968d6b0058121e22c45c31131e6855d" title="Read the analog value of the given pin from the software buffer.">ExtendedIOElement::analogReadBuffered</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00387">387</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6d39e565812fa84c5bb1f3aa4fdcb40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d39e565812fa84c5bb1f3aa4fdcb40">&#9670;&nbsp;</a></span>analogWriteBuffered() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AH::ExtIO::analogWriteBuffered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#a5b1eacc5a4c04088989efaa3490265a7" title="Write an analog (or PWM) value to the software buffer given pin.">ExtendedIOElement::analogWriteBuffered</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00392">392</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a92ae6a45096464776b14af8143ca2d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ae6a45096464776b14af8143ca2d71">&#9670;&nbsp;</a></span>analogWriteBuffered() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AH::ExtIO::analogWriteBuffered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html">CachedExtIOPin</a>&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A buffered <a class="el" href="../../d7/d22/namespaceAH_1_1ExtIO.html" title="A namespace with alternatives to the standard Arduino IO functions that can be used with extended IO ...">ExtIO</a> version of the Arduino function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dda/classAH_1_1ExtendedIOElement.html#a5b1eacc5a4c04088989efaa3490265a7" title="Write an analog (or PWM) value to the software buffer given pin.">ExtendedIOElement::analogWriteBuffered</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html#l00402">402</a> of file <a class="el" href="../../d4/d57/ExtendedIOElement_8hpp_source.html">ExtendedIOElement.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
