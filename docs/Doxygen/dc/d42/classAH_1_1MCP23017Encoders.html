@@ -81,7 +81,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
@@ -106,21 +106,22 @@ class AH::MCP23017Encoders&lt; WireType, EncoderPositionType, InterruptSafe &gt;
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for MCP23017Encoders&lt; WireType, EncoderPositionType, InterruptSafe &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d9c/classAH_1_1MCP23017Encoders__coll__graph.svg" width="240" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d9c/classAH_1_1MCP23017Encoders__coll__graph.svg" width="240" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proxy to access a single encoder of the 8 encoders managed by <a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html" title="Class for reading 8 rotary encoders using a MCP23017 I²C port expander.">MCP23017Encoders</a>.  <a href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a53a4a3e521cbea41b54ea2ec76359aa7"><td class="memItemLeft" align="right" valign="top"><a id="a53a4a3e521cbea41b54ea2ec76359aa7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MCP23017Encoder</b> = typename <a class="el" href="../../d6/da6/classAH_1_1RegisterEncoders_1_1Encoder.html">RegisterEncoderType::Encoder</a></td></tr>
+<tr class="memdesc:a53a4a3e521cbea41b54ea2ec76359aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proxy to access a single encoder of the 8 encoders managed by <a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html" title="Class for reading 8 rotary encoders using a MCP23017 I²C port expander.">MCP23017Encoders</a>. <br /></td></tr>
+<tr class="separator:a53a4a3e521cbea41b54ea2ec76359aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -142,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae35e3b5e9f9bdf4aa569607f10cd42a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ae35e3b5e9f9bdf4aa569607f10cd42a4">write</a> (uint8_t idx, EncoderPositionType pos)</td></tr>
 <tr class="memdesc:ae35e3b5e9f9bdf4aa569607f10cd42a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of the given encoder.  <a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#ae35e3b5e9f9bdf4aa569607f10cd42a4">More...</a><br /></td></tr>
 <tr class="separator:ae35e3b5e9f9bdf4aa569607f10cd42a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd99700425989059986af7fae84c3a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">operator[]</a> (uint8_t index)</td></tr>
+<tr class="memitem:abd99700425989059986af7fae84c3a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">operator[]</a> (uint8_t index)</td></tr>
 <tr class="memdesc:abd99700425989059986af7fae84c3a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a proxy to one of the encoders managed by this <a class="el" href="../../d5/dd2/classAH_1_1MCP23017.html" title="Class for MCP23017 I²C I/O expanders.">MCP23017</a>.  <a href="../../dc/d42/classAH_1_1MCP23017Encoders.html#abd99700425989059986af7fae84c3a86">More...</a><br /></td></tr>
 <tr class="separator:abd99700425989059986af7fae84c3a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -164,12 +165,9 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>readGPIO</b> ()</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a1d932c5ccc6fa9db67fdefba579cea0b"><td class="memItemLeft" align="right" valign="top"><a id="a1d932c5ccc6fa9db67fdefba579cea0b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>EncoderPositionStorageType</b> = typename std::conditional&lt; InterruptSafe, volatile EncoderPositionType, EncoderPositionType &gt;::type</td></tr>
-<tr class="separator:a1d932c5ccc6fa9db67fdefba579cea0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aafee5164e94dd1c930007725c37cee"><td class="memItemLeft" align="right" valign="top"><a id="a1aafee5164e94dd1c930007725c37cee"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>StateStorageType</b> = typename std::conditional&lt; InterruptSafe, volatile uint16_t, uint16_t &gt;::type</td></tr>
-<tr class="separator:a1aafee5164e94dd1c930007725c37cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3153ee4351e02ad76581b66d68f58f9e"><td class="memItemLeft" align="right" valign="top"><a id="a3153ee4351e02ad76581b66d68f58f9e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterEncoderType</b> = <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">RegisterEncoders</a>&lt; uint16_t, 8, EncoderPositionType, InterruptSafe &gt;</td></tr>
+<tr class="separator:a3153ee4351e02ad76581b66d68f58f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -182,12 +180,9 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>address</b></td></
 <tr class="memitem:ad2559a2771277e53396bdcd088ac2d0f"><td class="memItemLeft" align="right" valign="top"><a id="ad2559a2771277e53396bdcd088ac2d0f"></a>
 <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>interrupt_pin</b></td></tr>
 <tr class="separator:ad2559a2771277e53396bdcd088ac2d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a77dd35884068a18dc5de0f8ad2ff9c"><td class="memItemLeft" align="right" valign="top"><a id="a1a77dd35884068a18dc5de0f8ad2ff9c"></a>
-<a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1aafee5164e94dd1c930007725c37cee">StateStorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
-<tr class="separator:a1a77dd35884068a18dc5de0f8ad2ff9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8241446b37d41e08817a257b3107bea3"><td class="memItemLeft" align="right" valign="top"><a id="a8241446b37d41e08817a257b3107bea3"></a>
-<a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a1d932c5ccc6fa9db67fdefba579cea0b">EncoderPositionStorageType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>positions</b> [8]</td></tr>
-<tr class="separator:a8241446b37d41e08817a257b3107bea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489662a78576c8cfe48389a82f8942be"><td class="memItemLeft" align="right" valign="top"><a id="a489662a78576c8cfe48389a82f8942be"></a>
+<a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a3153ee4351e02ad76581b66d68f58f9e">RegisterEncoderType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>encs</b></td></tr>
+<tr class="separator:a489662a78576c8cfe48389a82f8942be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -247,7 +242,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00136">136</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +290,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>
@@ -328,7 +323,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
 <p >This function does not initialize the I²C interface. You have to call <code>Wire.begin()</code> before calling this function. </p>
 <p >Initialize the state</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00155">155</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00131">131</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>
@@ -359,7 +354,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
 <p >Can be called from within an ISR on boards that support I²C inside of ISRs, on the condition that <code>InterruptSafe</code> is set to <code>true</code>.</p>
 <p >Don't call this function both from the ISR and from your main program, only call it from one of the two. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00209">209</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00185">185</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +392,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00255">255</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00205">205</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +430,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00276">276</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00217">217</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>
@@ -483,7 +478,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00300">300</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00231">231</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +492,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d4a/classAH_1_1MCP23017Encoders_1_1MCP23017Encoder.html">MCP23017Encoder</a> operator[] </td>
+          <td class="memname"><a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a> operator[] </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -519,7 +514,7 @@ constexpr static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>I
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00380">380</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html#l00246">246</a> of file <a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">MCP23017Encoders.hpp</a>.</p>
 
 </div>
 </div>

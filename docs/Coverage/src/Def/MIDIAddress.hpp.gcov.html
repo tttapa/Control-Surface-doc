@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 89a7bb20277e73a6eb96508ea6f7b830faf70afe - src/Def/MIDIAddress.hpp</title>
+  <title>LCOV - 2a61045a8a4d8bea6cddf0860692e825fefb3ded - src/Def/MIDIAddress.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">89a7bb20277e73a6eb96508ea6f7b830faf70afe</td>
+            <td class="headerValue">2a61045a8a4d8bea6cddf0860692e825fefb3ded</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">62</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-06-30 19:41:46</td>
+            <td class="headerValue">2021-07-01 03:48:17</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">26</td>
@@ -256,14 +256,14 @@
 <a name="186"><span class="lineNum">     186 </span>            :      *          The MIDI USB cable number.  </a>
 <a name="187"><span class="lineNum">     187 </span>            :      *          Use the constants @ref CABLE_1 through @ref CABLE_16.</a>
 <a name="188"><span class="lineNum">     188 </span>            :      */</a>
-<a name="189"><span class="lineNum">     189 </span><span class="lineCov">        104 :     constexpr MIDIAddress(int address, Channel channel = CHANNEL_1,</span></a>
+<a name="189"><span class="lineNum">     189 </span><span class="lineCov">        105 :     constexpr MIDIAddress(int address, Channel channel = CHANNEL_1,</span></a>
 <a name="190"><span class="lineNum">     190 </span>            :                           Cable cableNumber = CABLE_1)</a>
-<a name="191"><span class="lineNum">     191 </span><span class="lineCov">        416 :         : addresses{</span></a>
+<a name="191"><span class="lineNum">     191 </span><span class="lineCov">        420 :         : addresses{</span></a>
 <a name="192"><span class="lineNum">     192 </span>            :               1,</a>
-<a name="193"><span class="lineNum">     193 </span><span class="lineCov">        104 :               (uint8_t)address,</span></a>
-<a name="194"><span class="lineNum">     194 </span><span class="lineCov">        104 :               channel.getRaw(),</span></a>
-<a name="195"><span class="lineNum">     195 </span><span class="lineCov">        104 :               cableNumber.getRaw(),</span></a>
-<a name="196"><span class="lineNum">     196 </span><span class="lineCov">        104 :           } {} // Deliberate overflow for negative numbers</span></a>
+<a name="193"><span class="lineNum">     193 </span><span class="lineCov">        105 :               (uint8_t)address,</span></a>
+<a name="194"><span class="lineNum">     194 </span><span class="lineCov">        105 :               channel.getRaw(),</span></a>
+<a name="195"><span class="lineNum">     195 </span><span class="lineCov">        105 :               cableNumber.getRaw(),</span></a>
+<a name="196"><span class="lineNum">     196 </span><span class="lineCov">        105 :           } {} // Deliberate overflow for negative numbers</span></a>
 <a name="197"><span class="lineNum">     197 </span>            : </a>
 <a name="198"><span class="lineNum">     198 </span>            :     /** </a>
 <a name="199"><span class="lineNum">     199 </span>            :      * @brief Constructor.</a>
@@ -340,16 +340,16 @@
 <a name="270"><span class="lineNum">     270 </span>            :     /// @{</a>
 <a name="271"><span class="lineNum">     271 </span>            : </a>
 <a name="272"><span class="lineNum">     272 </span>            :     /// Get the address [0, 127].</a>
-<a name="273"><span class="lineNum">     273 </span><span class="lineCov">        399 :     constexpr uint8_t getAddress() const { return addresses.address; }</span></a>
+<a name="273"><span class="lineNum">     273 </span><span class="lineCov">        400 :     constexpr uint8_t getAddress() const { return addresses.address; }</span></a>
 <a name="274"><span class="lineNum">     274 </span>            : </a>
 <a name="275"><span class="lineNum">     275 </span>            :     /// Get the channel [CHANNEL_1, CHANNEL_16]</a>
-<a name="276"><span class="lineNum">     276 </span><span class="lineCov">        224 :     constexpr Channel getChannel() const { return Channel{addresses.channel}; }</span></a>
+<a name="276"><span class="lineNum">     276 </span><span class="lineCov">        225 :     constexpr Channel getChannel() const { return Channel{addresses.channel}; }</span></a>
 <a name="277"><span class="lineNum">     277 </span>            :     /// Get the channel as an integer [0, 15]</a>
 <a name="278"><span class="lineNum">     278 </span><span class="lineCov">         32 :     constexpr uint8_t getRawChannel() const { return addresses.channel; }</span></a>
 <a name="279"><span class="lineNum">     279 </span>            : </a>
 <a name="280"><span class="lineNum">     280 </span>            :     /// Get the cable number [CABLE_1, CABLE_16].</a>
-<a name="281"><span class="lineNum">     281 </span><span class="lineCov">        232 :     constexpr Cable getCableNumber() const {</span></a>
-<a name="282"><span class="lineNum">     282 </span><span class="lineCov">        232 :         return Cable(addresses.cableNumber);</span></a>
+<a name="281"><span class="lineNum">     281 </span><span class="lineCov">        233 :     constexpr Cable getCableNumber() const {</span></a>
+<a name="282"><span class="lineNum">     282 </span><span class="lineCov">        233 :         return Cable(addresses.cableNumber);</span></a>
 <a name="283"><span class="lineNum">     283 </span>            :     }</a>
 <a name="284"><span class="lineNum">     284 </span>            :     /// Get the cable number as an integer [0, 15].</a>
 <a name="285"><span class="lineNum">     285 </span><span class="lineCov">         12 :     constexpr uint8_t getRawCableNumber() const {</span></a>
@@ -385,11 +385,11 @@
 <a name="315"><span class="lineNum">     315 </span>            :     }</a>
 <a name="316"><span class="lineNum">     316 </span>            : </a>
 <a name="317"><span class="lineNum">     317 </span>            :     /// Check if the MIDI address is valid.</a>
-<a name="318"><span class="lineNum">     318 </span><span class="lineCov">        246 :     constexpr bool isValid() const { return addresses.valid; }</span></a>
+<a name="318"><span class="lineNum">     318 </span><span class="lineCov">        247 :     constexpr bool isValid() const { return addresses.valid; }</span></a>
 <a name="319"><span class="lineNum">     319 </span>            : </a>
 <a name="320"><span class="lineNum">     320 </span>            :     /// Check if the MIDI address is valid.</a>
 <a name="321"><span class="lineNum">     321 </span>            :     /// @see    isValid</a>
-<a name="322"><span class="lineNum">     322 </span><span class="lineCov">        133 :     constexpr explicit operator bool() const { return isValid(); }</span></a>
+<a name="322"><span class="lineNum">     322 </span><span class="lineCov">        134 :     constexpr explicit operator bool() const { return isValid(); }</span></a>
 <a name="323"><span class="lineNum">     323 </span>            : </a>
 <a name="324"><span class="lineNum">     324 </span>            :     /// @}</a>
 <a name="325"><span class="lineNum">     325 </span>            : </a>
