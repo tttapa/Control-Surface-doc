@@ -103,28 +103,27 @@ class NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;</div><p >Generic
 </ul>
 </td></tr>
     <tr><td class="paramname">RangeLen</td><td>The length of the range of addresses to listen to. </td></tr>
+    <tr><td class="paramname">ColorMapper</td><td>A callable that maps a 7-bit MIDI value and the index in the range to a FastLED CRGB color, see <a class="el" href="../../d8/dc6/structDefaultColorMapper.html">DefaultColorMapper</a> for an example. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d9/d6d/10_8Note-FastLED-ColorMapper_8ino-example.html#_a1">10.Note-FastLED-ColorMapper.ino</a>, and <a class="el" href="../../d8/dd2/9_8Note-FastLED_8ino-example.html#_a1">9.Note-FastLED.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/de5/classNoteCCKPRangeFastLED__inherit__graph.svg" width="280" height="1396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/de5/classNoteCCKPRangeFastLED__inherit__graph.svg" width="280" height="1396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for NoteCCKPRangeFastLED&lt; Type, RangeLen, ColorMapper &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dfb/classNoteCCKPRangeFastLED__coll__graph.svg" width="280" height="1396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/dfb/classNoteCCKPRangeFastLED__coll__graph.svg" width="280" height="1396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Enabling and disabling updatables</h2></td></tr>
@@ -332,7 +331,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>brightness</b> = 2
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +363,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>brightness</b> = 2
 <p >The MIDI index is derived from the note or controller number.</p>
 <p >The function should take the (zero-based) MIDI index value as a parameter, and return the corresponding LED index (zero-based). By default, the LED index is the same as the MIDI index. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00120">120</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00123">123</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
 
 </div>
 </div>
@@ -395,7 +394,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>brightness</b> = 2
 
 <p>Reimplemented from <a class="el" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">MIDIInputElement&lt; Type &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
 
 </div>
 </div>
@@ -426,7 +425,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>brightness</b> = 2
 
 <p>Reimplemented from <a class="el" href="../../d9/db1/classMIDIInputElement.html#a7b0e029102ad38f4b814c6523aedb53d">MIDIInputElement&lt; Type &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00130">130</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00133">133</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
 
 </div>
 </div>
@@ -456,7 +455,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>brightness</b> = 2
 <p>Check if the colors changed since the last time the dirty flag was cleared. </p>
 <p >When it's dirty, you should probably call <code>FastLED.show()</code> in the main loop. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00153">153</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html#l00156">156</a> of file <a class="el" href="../../d0/d37/NoteCCKPRangeFastLED_8hpp_source.html">NoteCCKPRangeFastLED.hpp</a>.</p>
 
 </div>
 </div>

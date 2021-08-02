@@ -105,16 +105,14 @@ class SerialMIDI_Interface&lt; S &gt;</div><p >A wrapper class for MIDI interfac
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d3b/classSerialMIDI__Interface__inherit__graph.svg" width="1007" height="2314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d3b/classSerialMIDI__Interface__inherit__graph.svg" width="1007" height="2314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for SerialMIDI_Interface&lt; S &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d1b/classSerialMIDI__Interface__coll__graph.svg" width="1888" height="3144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d1b/classSerialMIDI__Interface__coll__graph.svg" width="1888" height="3144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Default MIDI Interfaces</h2></td></tr>
@@ -459,6 +457,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1917d6dc9f2756ed9b1655d17a732107"><td class="memTemplParams" colspan="2">template&lt;class MIDIInterface_t &gt; </td></tr>
+<tr class="memitem:a1917d6dc9f2756ed9b1655d17a732107"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#a1917d6dc9f2756ed9b1655d17a732107">handleStall</a> (MIDIInterface_t *iface)</td></tr>
+<tr class="memdesc:a1917d6dc9f2756ed9b1655d17a732107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un-stall the given MIDI interface.  <a href="../../d9/d73/classMIDI__Interface.html#a1917d6dc9f2756ed9b1655d17a732107">More...</a><br /></td></tr>
+<tr class="separator:a1917d6dc9f2756ed9b1655d17a732107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10b82e69347fd0b35ef496a762859ff"><td class="memTemplParams" colspan="2"><a id="ad10b82e69347fd0b35ef496a762859ff"></a>
+template&lt;class MIDIInterface_t &gt; </td></tr>
+<tr class="memitem:ad10b82e69347fd0b35ef496a762859ff"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>updateIncoming</b> (MIDIInterface_t *iface)</td></tr>
+<tr class="memdesc:ad10b82e69347fd0b35ef496a762859ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read, parse and dispatch incoming MIDI messages on the given interface. <br /></td></tr>
+<tr class="separator:ad10b82e69347fd0b35ef496a762859ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82554b32e1949b3f29f3867a43bdcff9"><td class="memTemplParams" colspan="2"><a id="a82554b32e1949b3f29f3867a43bdcff9"></a>
+template&lt;class MIDIInterface_t &gt; </td></tr>
+<tr class="memitem:a82554b32e1949b3f29f3867a43bdcff9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchIncoming</b> (MIDIInterface_t *iface, <a class="el" href="../../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029">MIDIReadEvent</a> event)</td></tr>
+<tr class="memdesc:a82554b32e1949b3f29f3867a43bdcff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch the given type of MIDI message from the given interface. <br /></td></tr>
+<tr class="separator:a82554b32e1949b3f29f3867a43bdcff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57028d85d92ceb81811cd151dbd87d3d"><td class="memItemLeft" align="right" valign="top"><a id="a57028d85d92ceb81811cd151dbd87d3d"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> &amp;a, <a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> &amp;b)</td></tr>
 <tr class="separator:a57028d85d92ceb81811cd151dbd87d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -521,20 +533,6 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getNa
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a1917d6dc9f2756ed9b1655d17a732107"><td class="memTemplParams" colspan="2">template&lt;class MIDIInterface_t &gt; </td></tr>
-<tr class="memitem:a1917d6dc9f2756ed9b1655d17a732107"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d73/classMIDI__Interface.html#a1917d6dc9f2756ed9b1655d17a732107">handleStall</a> (MIDIInterface_t *iface)</td></tr>
-<tr class="memdesc:a1917d6dc9f2756ed9b1655d17a732107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un-stall the given MIDI interface.  <a href="../../d9/d73/classMIDI__Interface.html#a1917d6dc9f2756ed9b1655d17a732107">More...</a><br /></td></tr>
-<tr class="separator:a1917d6dc9f2756ed9b1655d17a732107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad10b82e69347fd0b35ef496a762859ff"><td class="memTemplParams" colspan="2"><a id="ad10b82e69347fd0b35ef496a762859ff"></a>
-template&lt;class MIDIInterface_t &gt; </td></tr>
-<tr class="memitem:ad10b82e69347fd0b35ef496a762859ff"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>updateIncoming</b> (MIDIInterface_t *iface)</td></tr>
-<tr class="memdesc:ad10b82e69347fd0b35ef496a762859ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read, parse and dispatch incoming MIDI messages on the given interface. <br /></td></tr>
-<tr class="separator:ad10b82e69347fd0b35ef496a762859ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82554b32e1949b3f29f3867a43bdcff9"><td class="memTemplParams" colspan="2"><a id="a82554b32e1949b3f29f3867a43bdcff9"></a>
-template&lt;class MIDIInterface_t &gt; </td></tr>
-<tr class="memitem:a82554b32e1949b3f29f3867a43bdcff9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchIncoming</b> (MIDIInterface_t *iface, <a class="el" href="../../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029">MIDIReadEvent</a> event)</td></tr>
-<tr class="memdesc:a82554b32e1949b3f29f3867a43bdcff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch the given type of MIDI message from the given interface. <br /></td></tr>
-<tr class="separator:a82554b32e1949b3f29f3867a43bdcff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9be3c5a5302b9d913b2de161619c96d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/structMIDIStaller.html#ac9be3c5a5302b9d913b2de161619c96d">getNameNull</a> (<a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> *s)</td></tr>
 <tr class="memdesc:ac9be3c5a5302b9d913b2de161619c96d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the staller's name for debugging purposes.  <a href="../../d4/d48/structMIDIStaller.html#ac9be3c5a5302b9d913b2de161619c96d">More...</a><br /></td></tr>
 <tr class="separator:ac9be3c5a5302b9d913b2de161619c96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -960,7 +958,7 @@ static <a class="el" href="../../d9/d73/classMIDI__Interface.html">MIDI_Interfac
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

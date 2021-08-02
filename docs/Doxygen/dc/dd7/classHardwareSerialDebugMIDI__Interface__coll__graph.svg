@@ -13,14 +13,16 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="A class for debug MIDI interfaces sending and receiving human&#45;readable MIDI messages over a HardwareS...">
-<polygon fill="#bfbfbf" stroke="black" points="810.5,-0.5 810.5,-79.5 967.5,-79.5 967.5,-0.5 810.5,-0.5"/>
-<text text-anchor="start" x="818.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">HardwareSerialDebugMIDI</text>
-<text text-anchor="middle" x="889" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Interface</text>
-<polyline fill="none" stroke="black" points="810.5,-49.5 967.5,-49.5 "/>
-<text text-anchor="middle" x="889" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="810.5,-30.5 967.5,-30.5 "/>
-<text text-anchor="start" x="818.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ HardwareSerialDebugMIDI</text>
-<text text-anchor="start" x="818.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Interface()</text>
+<polygon fill="#bfbfbf" stroke="black" points="637.5,-0.5 637.5,-101.5 794.5,-101.5 794.5,-0.5 637.5,-0.5"/>
+<text text-anchor="start" x="645.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">HardwareSerialDebugMIDI</text>
+<text text-anchor="middle" x="716" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Interface</text>
+<polyline fill="none" stroke="black" points="637.5,-71.5 794.5,-71.5 "/>
+<text text-anchor="middle" x="716" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="637.5,-52.5 794.5,-52.5 "/>
+<text text-anchor="start" x="645.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ HardwareSerialDebugMIDI</text>
+<text text-anchor="start" x="645.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Interface()</text>
+<text text-anchor="start" x="645.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ HardwareSerialDebugMIDI</text>
+<text text-anchor="start" x="645.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_Interface()</text>
 </a>
 </g>
 </g>
@@ -28,62 +30,86 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../db/dc4/classSerialDebugMIDI__Interface.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="806,-117.5 806,-196.5 972,-196.5 972,-117.5 806,-117.5"/>
-<text text-anchor="start" x="814" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">SerialDebugMIDI_Interface</text>
-<text text-anchor="middle" x="889" y="-173.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; HardwareSerial &gt;</text>
-<polyline fill="none" stroke="black" points="806,-166.5 972,-166.5 "/>
-<text text-anchor="start" x="814" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; baud</text>
-<polyline fill="none" stroke="black" points="806,-147.5 972,-147.5 "/>
-<text text-anchor="start" x="814" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SerialDebugMIDI_Interface()</text>
-<text text-anchor="start" x="814" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
+<polygon fill="white" stroke="black" points="633,-139.5 633,-229.5 799,-229.5 799,-139.5 633,-139.5"/>
+<text text-anchor="start" x="641" y="-217.5" font-family="Helvetica,sans-Serif" font-size="10.00">SerialDebugMIDI_Interface</text>
+<text text-anchor="middle" x="716" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; HardwareSerial &gt;</text>
+<polyline fill="none" stroke="black" points="633,-199.5 799,-199.5 "/>
+<text text-anchor="start" x="641" y="-187.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; baud</text>
+<polyline fill="none" stroke="black" points="633,-180.5 799,-180.5 "/>
+<text text-anchor="start" x="641" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SerialDebugMIDI_Interface()</text>
+<text text-anchor="start" x="641" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SerialDebugMIDI_Interface()</text>
+<text text-anchor="start" x="641" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M889,-107.2C889,-98.02 889,-88.53 889,-79.71"/>
-<polygon fill="none" stroke="midnightblue" points="885.5,-107.39 889,-117.39 892.5,-107.39 885.5,-107.39"/>
+<path fill="none" stroke="midnightblue" d="M716,-129.22C716,-120.11 716,-110.69 716,-101.7"/>
+<polygon fill="none" stroke="midnightblue" points="712.5,-129.35 716,-139.35 719.5,-129.35 712.5,-129.35"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="../../d8/d0b/classStreamDebugMIDI__Interface.html" target="_top" xlink:title="A class for MIDI interfaces sending and receiving human&#45;readable MIDI messages over a Stream.">
-<polygon fill="white" stroke="black" points="802.5,-234.5 802.5,-467.5 975.5,-467.5 975.5,-234.5 802.5,-234.5"/>
-<text text-anchor="middle" x="889" y="-455.5" font-family="Helvetica,sans-Serif" font-size="10.00">StreamDebugMIDI_Interface</text>
-<polyline fill="none" stroke="black" points="802.5,-448.5 975.5,-448.5 "/>
-<text text-anchor="start" x="810.5" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; hexstream</text>
-<text text-anchor="start" x="810.5" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; prefix</text>
-<polyline fill="none" stroke="black" points="802.5,-418.5 975.5,-418.5 "/>
-<text text-anchor="start" x="810.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ StreamDebugMIDI_Interface()</text>
-<text text-anchor="start" x="810.5" y="-395.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getStream()</text>
-<text text-anchor="start" x="810.5" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ read()</text>
-<text text-anchor="start" x="810.5" y="-373.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getChannelMessage()</text>
-<text text-anchor="start" x="810.5" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysCommonMessage()</text>
-<text text-anchor="start" x="810.5" y="-351.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRealTimeMessage()</text>
-<text text-anchor="start" x="810.5" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysExMessage()</text>
-<text text-anchor="start" x="810.5" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
-<text text-anchor="start" x="810.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPrefix()</text>
-<text text-anchor="start" x="810.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getPrefix()</text>
-<text text-anchor="start" x="810.5" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendChannelMessageImpl()</text>
-<text text-anchor="start" x="810.5" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysCommonImpl()</text>
-<text text-anchor="start" x="810.5" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysExImpl()</text>
-<text text-anchor="start" x="810.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendRealTimeImpl()</text>
-<text text-anchor="start" x="810.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendNowImpl()</text>
-<text text-anchor="start" x="810.5" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
+<polygon fill="white" stroke="black" points="629.5,-267.5 629.5,-467.5 802.5,-467.5 802.5,-267.5 629.5,-267.5"/>
+<text text-anchor="middle" x="716" y="-455.5" font-family="Helvetica,sans-Serif" font-size="10.00">StreamDebugMIDI_Interface</text>
+<polyline fill="none" stroke="black" points="629.5,-448.5 802.5,-448.5 "/>
+<text text-anchor="start" x="637.5" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; hexstream</text>
+<polyline fill="none" stroke="black" points="629.5,-429.5 802.5,-429.5 "/>
+<text text-anchor="start" x="637.5" y="-417.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ StreamDebugMIDI_Interface()</text>
+<text text-anchor="start" x="637.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getStream()</text>
+<text text-anchor="start" x="637.5" y="-395.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ read()</text>
+<text text-anchor="start" x="637.5" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getChannelMessage()</text>
+<text text-anchor="start" x="637.5" y="-373.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysCommonMessage()</text>
+<text text-anchor="start" x="637.5" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getRealTimeMessage()</text>
+<text text-anchor="start" x="637.5" y="-351.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSysExMessage()</text>
+<text text-anchor="start" x="637.5" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
+<text text-anchor="start" x="637.5" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendChannelMessageImpl()</text>
+<text text-anchor="start" x="637.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysCommonImpl()</text>
+<text text-anchor="start" x="637.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysExImpl()</text>
+<text text-anchor="start" x="637.5" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendRealTimeImpl()</text>
+<text text-anchor="start" x="637.5" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendNowImpl()</text>
+<text text-anchor="start" x="637.5" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M889,-224.43C889,-214.56 889,-205.15 889,-196.68"/>
-<polygon fill="none" stroke="midnightblue" points="885.5,-224.44 889,-234.44 892.5,-224.44 885.5,-224.44"/>
+<path fill="none" stroke="midnightblue" d="M716,-257.14C716,-247.52 716,-238.19 716,-229.62"/>
+<polygon fill="none" stroke="midnightblue" points="712.5,-257.26 716,-267.26 719.5,-257.26 712.5,-257.26"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="../../d9/d73/classMIDI__Interface.html" target="_top" xlink:title="An abstract class for MIDI interfaces.">
+<g id="a_node4"><a xlink:href="../../de/d65/classStreamDebugMIDI__Base.html" target="_top" xlink:title="A class that implements MIDI debug send functions.">
+<polygon fill="white" stroke="black" points="452,-609 452,-743 616,-743 616,-609 452,-609"/>
+<text text-anchor="middle" x="534" y="-731" font-family="Helvetica,sans-Serif" font-size="10.00">StreamDebugMIDI_Base</text>
+<polyline fill="none" stroke="black" points="452,-724 616,-724 "/>
+<text text-anchor="start" x="460" y="-712" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; prefix</text>
+<polyline fill="none" stroke="black" points="452,-705 616,-705 "/>
+<text text-anchor="start" x="460" y="-693" font-family="Helvetica,sans-Serif" font-size="10.00">+ StreamDebugMIDI_Base()</text>
+<text text-anchor="start" x="460" y="-682" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPrefix()</text>
+<text text-anchor="start" x="460" y="-671" font-family="Helvetica,sans-Serif" font-size="10.00">+ getPrefix()</text>
+<text text-anchor="start" x="460" y="-660" font-family="Helvetica,sans-Serif" font-size="10.00"># sendChannelMessageImpl()</text>
+<text text-anchor="start" x="460" y="-649" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysCommonImpl()</text>
+<text text-anchor="start" x="460" y="-638" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysExImpl()</text>
+<text text-anchor="start" x="460" y="-627" font-family="Helvetica,sans-Serif" font-size="10.00"># sendRealTimeImpl()</text>
+<text text-anchor="start" x="460" y="-616" font-family="Helvetica,sans-Serif" font-size="10.00"># sendNowImpl()</text>
+</a>
+</g>
+</g>
+<!-- Node4&#45;&gt;Node3 -->
+<g id="edge3" class="edge">
+<title>Node4&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M575.92,-599.91C591.15,-573 608.64,-542.52 625,-515 634.11,-499.69 643.89,-483.58 653.56,-467.87"/>
+<polygon fill="none" stroke="midnightblue" points="572.71,-598.46 570.84,-608.89 578.81,-601.9 572.71,-598.46"/>
+</g>
+<!-- Node5 -->
+<g id="node5" class="node">
+<title>Node5</title>
+<g id="a_node5"><a xlink:href="../../d9/d73/classMIDI__Interface.html" target="_top" xlink:title="An abstract class for MIDI interfaces.">
 <polygon fill="white" stroke="black" points="634,-515.5 634,-836.5 798,-836.5 798,-515.5 634,-515.5"/>
 <text text-anchor="middle" x="716" y="-824.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Interface</text>
 <polyline fill="none" stroke="black" points="634,-817.5 798,-817.5 "/>
@@ -92,24 +118,24 @@
 <text text-anchor="start" x="642" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~MIDI_Interface()</text>
 <text text-anchor="start" x="642" y="-775.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
 <text text-anchor="start" x="642" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
-<text text-anchor="start" x="642" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00"># MIDI_Interface()</text>
-<text text-anchor="start" x="642" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00"># MIDI_Interface()</text>
-<text text-anchor="start" x="642" y="-731.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendChannelMessageImpl()</text>
-<text text-anchor="start" x="642" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysCommonImpl()</text>
-<text text-anchor="start" x="642" y="-709.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysExImpl()</text>
-<text text-anchor="start" x="642" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendRealTimeImpl()</text>
-<text text-anchor="start" x="642" y="-687.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendNowImpl()</text>
-<text text-anchor="start" x="642" y="-676.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sinkMIDIfromPipe()</text>
-<text text-anchor="start" x="642" y="-665.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sinkMIDIfromPipe()</text>
-<text text-anchor="start" x="642" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sinkMIDIfromPipe()</text>
+<text text-anchor="start" x="642" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ updateIncoming()</text>
+<text text-anchor="start" x="642" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dispatchIncoming()</text>
+<text text-anchor="start" x="642" y="-731.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ handleStall()</text>
+<text text-anchor="start" x="642" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00"># MIDI_Interface()</text>
+<text text-anchor="start" x="642" y="-709.5" font-family="Helvetica,sans-Serif" font-size="10.00"># MIDI_Interface()</text>
+<text text-anchor="start" x="642" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendChannelMessageImpl()</text>
+<text text-anchor="start" x="642" y="-687.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysCommonImpl()</text>
+<text text-anchor="start" x="642" y="-676.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendSysExImpl()</text>
+<text text-anchor="start" x="642" y="-665.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendRealTimeImpl()</text>
+<text text-anchor="start" x="642" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sendNowImpl()</text>
 <text text-anchor="start" x="642" y="-643.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sinkMIDIfromPipe()</text>
-<text text-anchor="start" x="642" y="-632.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onChannelMessage()</text>
-<text text-anchor="start" x="642" y="-621.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onSysExMessage()</text>
-<text text-anchor="start" x="642" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onSysCommonMessage()</text>
-<text text-anchor="start" x="642" y="-599.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onRealTimeMessage()</text>
-<text text-anchor="start" x="642" y="-588.5" font-family="Helvetica,sans-Serif" font-size="10.00"># updateIncoming()</text>
-<text text-anchor="start" x="642" y="-577.5" font-family="Helvetica,sans-Serif" font-size="10.00"># dispatchIncoming()</text>
-<text text-anchor="start" x="642" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00"># handleStall()</text>
+<text text-anchor="start" x="642" y="-632.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sinkMIDIfromPipe()</text>
+<text text-anchor="start" x="642" y="-621.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sinkMIDIfromPipe()</text>
+<text text-anchor="start" x="642" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00"># sinkMIDIfromPipe()</text>
+<text text-anchor="start" x="642" y="-599.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onChannelMessage()</text>
+<text text-anchor="start" x="642" y="-588.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onSysExMessage()</text>
+<text text-anchor="start" x="642" y="-577.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onSysCommonMessage()</text>
+<text text-anchor="start" x="642" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00"># onRealTimeMessage()</text>
 <text text-anchor="start" x="642" y="-555.5" font-family="Helvetica,sans-Serif" font-size="10.00">* setAsDefault()</text>
 <text text-anchor="start" x="642" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getDefault()</text>
 <text text-anchor="start" x="642" y="-533.5" font-family="Helvetica,sans-Serif" font-size="10.00">* setCallbacks()</text>
@@ -117,23 +143,23 @@
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node3 -->
-<g id="edge3" class="edge">
-<title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M802.96,-512.64C811.06,-497.52 819.15,-482.41 826.95,-467.84"/>
-<polygon fill="none" stroke="midnightblue" points="799.83,-511.07 798.19,-521.54 806,-514.38 799.83,-511.07"/>
+<!-- Node5&#45;&gt;Node3 -->
+<g id="edge4" class="edge">
+<title>Node5&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M716,-505.18C716,-492.38 716,-479.74 716,-467.61"/>
+<polygon fill="none" stroke="midnightblue" points="712.5,-505.47 716,-515.47 719.5,-505.47 712.5,-505.47"/>
 </g>
-<!-- Node4&#45;&gt;Node4 -->
-<g id="edge23" class="edge">
-<title>Node4&#45;&gt;Node4</title>
+<!-- Node5&#45;&gt;Node5 -->
+<g id="edge24" class="edge">
+<title>Node5&#45;&gt;Node5</title>
 <path fill="none" stroke="#404040" d="M798.38,-706.24C808.99,-700.99 816,-690.91 816,-676 816,-666.45 813.12,-658.88 808.27,-653.29"/>
 <polygon fill="none" stroke="#404040" points="807.93,-653.03 800.73,-652.58 798.38,-645.76 805.58,-646.22 807.93,-653.03"/>
 <text text-anchor="middle" x="873.5" y="-673.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;DefaultMIDI_Interface</text>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node">
-<title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d0/dc3/structTrueMIDI__SinkSource.html" target="_top" xlink:title="A struct that is both a TrueMIDI_Sink and a TrueMIDI_Source.">
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="../../d0/dc3/structTrueMIDI__SinkSource.html" target="_top" xlink:title="A struct that is both a TrueMIDI_Sink and a TrueMIDI_Source.">
 <polygon fill="white" stroke="black" points="439.5,-1093.5 439.5,-1150.5 558.5,-1150.5 558.5,-1093.5 439.5,-1093.5"/>
 <text text-anchor="middle" x="499" y="-1138.5" font-family="Helvetica,sans-Serif" font-size="10.00">TrueMIDI_SinkSource</text>
 <polyline fill="none" stroke="black" points="439.5,-1131.5 558.5,-1131.5 "/>
@@ -143,16 +169,16 @@
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node4 -->
-<g id="edge4" class="edge">
-<title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M505.87,-1083.3C515.53,-1035.3 535.65,-950.62 568,-884 585.85,-847.24 610.12,-810.02 633.85,-777.47"/>
-<polygon fill="none" stroke="midnightblue" points="502.41,-1082.76 503.92,-1093.25 509.28,-1084.11 502.41,-1082.76"/>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge5" class="edge">
+<title>Node6&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M503.01,-1083.29C509.74,-1033.97 526.86,-946.49 568,-884 586.06,-856.58 603.87,-862.13 625,-837 627.98,-833.45 630.92,-829.8 633.8,-826.05"/>
+<polygon fill="none" stroke="midnightblue" points="499.54,-1082.85 501.73,-1093.22 506.48,-1083.75 499.54,-1082.85"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d9/db6/classMIDI__Sink.html" target="_top" xlink:title="Receives MIDI messages from a MIDI pipe.">
+<!-- Node7 -->
+<g id="node7" class="node">
+<title>Node7</title>
+<g id="a_node7"><a xlink:href="../../d9/db6/classMIDI__Sink.html" target="_top" xlink:title="Receives MIDI messages from a MIDI pipe.">
 <polygon fill="white" stroke="black" points="62.5,-1440.5 62.5,-1717.5 243.5,-1717.5 243.5,-1440.5 62.5,-1440.5"/>
 <text text-anchor="middle" x="153" y="-1705.5" font-family="Helvetica,sans-Serif" font-size="10.00">TrueMIDI_Sink</text>
 <polyline fill="none" stroke="black" points="62.5,-1698.5 243.5,-1698.5 "/>
@@ -182,16 +208,16 @@
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node5 -->
-<g id="edge5" class="edge">
-<title>Node6&#45;&gt;Node5</title>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge6" class="edge">
+<title>Node7&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M235.13,-1431.73C240.67,-1423.26 246.32,-1414.96 252,-1407 323.79,-1306.51 424.21,-1199.6 471.85,-1150.53"/>
 <polygon fill="none" stroke="midnightblue" points="232.11,-1429.96 229.62,-1440.26 237.99,-1433.76 232.11,-1429.96"/>
 </g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="../../df/d72/classMIDI__Pipe.html" target="_top" xlink:title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a xlink:href="../../df/d72/classMIDI__Pipe.html" target="_top" xlink:title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">
 <polygon fill="white" stroke="black" points="302,-1798.5 302,-2372.5 484,-2372.5 484,-1798.5 302,-1798.5"/>
 <text text-anchor="middle" x="393" y="-2360.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Pipe</text>
 <polyline fill="none" stroke="black" points="302,-2353.5 484,-2353.5 "/>
@@ -248,25 +274,25 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
-<title>Node7&#45;&gt;Node6</title>
+<!-- Node8&#45;&gt;Node7 -->
+<g id="edge7" class="edge">
+<title>Node8&#45;&gt;Node7</title>
 <path fill="none" stroke="#404040" d="M301.97,-1924.9C277.05,-1878.77 250.9,-1827.92 229,-1780 221.53,-1763.65 214.17,-1746.33 207.14,-1729"/>
 <polygon fill="none" stroke="#404040" points="207.04,-1728.75 201.09,-1724.67 202.57,-1717.62 208.52,-1721.69 207.04,-1728.75"/>
 <text text-anchor="middle" x="261.5" y="-1772" font-family="Helvetica,sans-Serif" font-size="10.00"> #sourcePipe</text>
 </g>
-<!-- Node7&#45;&gt;Node7 -->
-<g id="edge13" class="edge">
-<title>Node7&#45;&gt;Node7</title>
+<!-- Node8&#45;&gt;Node8 -->
+<g id="edge14" class="edge">
+<title>Node8&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M484.04,-2135.45C494.9,-2126.37 502,-2109.72 502,-2085.5 502,-2067.9 498.25,-2054.3 492.04,-2044.7"/>
 <polygon fill="none" stroke="#404040" points="491.94,-2044.58 484.98,-2042.7 484.04,-2035.55 491,-2037.43 491.94,-2044.58"/>
 <text text-anchor="middle" x="531.5" y="-2088.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;throughIn</text>
 <text text-anchor="middle" x="531.5" y="-2077.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;throughOut</text>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="../../d9/db6/classMIDI__Sink.html" target="_top" xlink:title="Receives MIDI messages from a MIDI pipe.">
+<!-- Node9 -->
+<g id="node9" class="node">
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="../../d9/db6/classMIDI__Sink.html" target="_top" xlink:title="Receives MIDI messages from a MIDI pipe.">
 <polygon fill="white" stroke="black" points="261.5,-1440.5 261.5,-1717.5 442.5,-1717.5 442.5,-1440.5 261.5,-1440.5"/>
 <text text-anchor="middle" x="352" y="-1705.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Sink</text>
 <polyline fill="none" stroke="black" points="261.5,-1698.5 442.5,-1698.5 "/>
@@ -296,17 +322,17 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge8" class="edge">
-<title>Node7&#45;&gt;Node8</title>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge9" class="edge">
+<title>Node8&#45;&gt;Node9</title>
 <path fill="none" stroke="#404040" d="M301.93,-1862.3C296.55,-1831.29 294.79,-1799.58 299,-1769 300.77,-1756.14 303.18,-1742.92 306.02,-1729.74"/>
 <polygon fill="none" stroke="#404040" points="306.1,-1729.36 303.51,-1722.63 308.73,-1717.65 311.32,-1724.38 306.1,-1729.36"/>
 <text text-anchor="middle" x="331.5" y="-1772" font-family="Helvetica,sans-Serif" font-size="10.00"> #sourcePipe</text>
 </g>
-<!-- Node9 -->
-<g id="node9" class="node">
-<title>Node9</title>
-<g id="a_node9"><a xlink:href="../../df/d5b/classMIDI__Source.html" target="_top" xlink:title="Class that can send MIDI messages to a MIDI pipe.">
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:href="../../df/d5b/classMIDI__Source.html" target="_top" xlink:title="Class that can send MIDI messages to a MIDI pipe.">
 <polygon fill="white" stroke="black" points="460.5,-1407.5 460.5,-1750.5 629.5,-1750.5 629.5,-1407.5 460.5,-1407.5"/>
 <text text-anchor="middle" x="545" y="-1738.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Source</text>
 <polyline fill="none" stroke="black" points="460.5,-1731.5 629.5,-1731.5 "/>
@@ -342,17 +368,17 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node9 -->
-<g id="edge10" class="edge">
-<title>Node7&#45;&gt;Node9</title>
+<!-- Node8&#45;&gt;Node10 -->
+<g id="edge11" class="edge">
+<title>Node8&#45;&gt;Node10</title>
 <path fill="none" stroke="#404040" d="M431.85,-1798.34C434.69,-1788.38 437.73,-1778.57 441,-1769 443.96,-1760.34 446.57,-1759.01 451,-1751 452.22,-1748.8 453.44,-1746.58 454.67,-1744.35"/>
 <polygon fill="none" stroke="#404040" points="454.68,-1744.33 454.08,-1737.15 460.48,-1733.83 461.08,-1741.01 454.68,-1744.33"/>
 <text text-anchor="middle" x="467.5" y="-1772" font-family="Helvetica,sans-Serif" font-size="10.00"> #sinkPipe</text>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node">
-<title>Node11</title>
-<g id="a_node11"><a xlink:href="../../df/d5b/classMIDI__Source.html" target="_top" xlink:title="Class that can send MIDI messages to a MIDI pipe.">
+<!-- Node12 -->
+<g id="node12" class="node">
+<title>Node12</title>
+<g id="a_node12"><a xlink:href="../../df/d5b/classMIDI__Source.html" target="_top" xlink:title="Class that can send MIDI messages to a MIDI pipe.">
 <polygon fill="white" stroke="black" points="647.5,-1407.5 647.5,-1750.5 816.5,-1750.5 816.5,-1407.5 647.5,-1407.5"/>
 <text text-anchor="middle" x="732" y="-1738.5" font-family="Helvetica,sans-Serif" font-size="10.00">TrueMIDI_Source</text>
 <polyline fill="none" stroke="black" points="647.5,-1731.5 816.5,-1731.5 "/>
@@ -388,43 +414,43 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node11 -->
-<g id="edge16" class="edge">
-<title>Node7&#45;&gt;Node11</title>
+<!-- Node8&#45;&gt;Node12 -->
+<g id="edge17" class="edge">
+<title>Node8&#45;&gt;Node12</title>
 <path fill="none" stroke="#404040" d="M484.17,-1968.3C532.04,-1905.39 590.45,-1825.49 638,-1751 638.97,-1749.48 639.94,-1747.96 640.91,-1746.42"/>
 <polygon fill="none" stroke="#404040" points="640.96,-1746.34 640.73,-1739.13 647.29,-1736.14 647.52,-1743.35 640.96,-1746.34"/>
 <text text-anchor="middle" x="652.5" y="-1772" font-family="Helvetica,sans-Serif" font-size="10.00"> #sinkPipe</text>
 </g>
-<!-- Node8&#45;&gt;Node7 -->
-<g id="edge7" class="edge">
-<title>Node8&#45;&gt;Node7</title>
+<!-- Node9&#45;&gt;Node8 -->
+<g id="edge8" class="edge">
+<title>Node9&#45;&gt;Node8</title>
 <path fill="none" stroke="#8b1a1a" d="M364.02,-1727.92C365.85,-1750.36 367.78,-1774.14 369.74,-1798.35"/>
 <polygon fill="none" stroke="#8b1a1a" points="367.49,-1727.39 363.19,-1717.71 360.51,-1727.96 367.49,-1727.39"/>
 </g>
-<!-- Node8&#45;&gt;Node7 -->
-<g id="edge11" class="edge">
-<title>Node8&#45;&gt;Node7</title>
+<!-- Node9&#45;&gt;Node8 -->
+<g id="edge12" class="edge">
+<title>Node9&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M366.32,-1717.5C367.98,-1734.83 369.58,-1752.32 371,-1769 371.47,-1774.54 371.94,-1780.13 372.4,-1785.76"/>
 <polygon fill="none" stroke="#404040" points="372.44,-1786.19 376.91,-1791.85 373.42,-1798.15 368.94,-1792.5 372.44,-1786.19"/>
 <text text-anchor="middle" x="386" y="-1772" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;sink</text>
 </g>
-<!-- Node9&#45;&gt;Node7 -->
-<g id="edge9" class="edge">
-<title>Node9&#45;&gt;Node7</title>
+<!-- Node10&#45;&gt;Node8 -->
+<g id="edge10" class="edge">
+<title>Node10&#45;&gt;Node8</title>
 <path fill="none" stroke="#8b1a1a" d="M503.52,-1760.32C501.71,-1766.98 499.86,-1773.55 498,-1780 493.61,-1795.18 488.91,-1810.71 484.03,-1826.34"/>
 <polygon fill="none" stroke="#8b1a1a" points="506.94,-1761.08 506.16,-1750.52 500.18,-1759.26 506.94,-1761.08"/>
 </g>
-<!-- Node9&#45;&gt;Node7 -->
-<g id="edge12" class="edge">
-<title>Node9&#45;&gt;Node7</title>
+<!-- Node10&#45;&gt;Node8 -->
+<g id="edge13" class="edge">
+<title>Node10&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M521.19,-1750.76C518.98,-1760.7 516.59,-1770.51 514,-1780 506.74,-1806.65 497.88,-1834.15 488.28,-1861.22"/>
 <polygon fill="none" stroke="#404040" points="488.19,-1861.49 489.92,-1868.49 484.13,-1872.78 482.39,-1865.79 488.19,-1861.49"/>
 <text text-anchor="middle" x="537" y="-1772" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;source</text>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a xlink:href="../../d4/d48/structMIDIStaller.html" target="_top" xlink:title="Struct that can cause a MIDI_Pipe to be stalled.">
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a xlink:href="../../d4/d48/structMIDIStaller.html" target="_top" xlink:title="Struct that can cause a MIDI_Pipe to be stalled.">
 <polygon fill="white" stroke="black" points="0,-2431.5 0,-2521.5 100,-2521.5 100,-2431.5 0,-2431.5"/>
 <text text-anchor="middle" x="50" y="-2509.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDIStaller</text>
 <polyline fill="none" stroke="black" points="0,-2502.5 100,-2502.5 "/>
@@ -437,30 +463,30 @@
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node4 -->
-<g id="edge21" class="edge">
-<title>Node10&#45;&gt;Node4</title>
-<path fill="none" stroke="darkgreen" d="M46.36,-2421.32C41.64,-2346.18 34,-2206.09 34,-2086.5 34,-2086.5 34,-2086.5 34,-1121 34,-837.73 452.34,-725.82 633.73,-690.61"/>
+<!-- Node11&#45;&gt;Node5 -->
+<g id="edge22" class="edge">
+<title>Node11&#45;&gt;Node5</title>
+<path fill="none" stroke="darkgreen" d="M46.36,-2421.32C41.64,-2346.18 34,-2206.09 34,-2086.5 34,-2086.5 34,-2086.5 34,-1121 34,-915.89 240.13,-961.58 430,-884 471.26,-867.14 589.38,-863.8 625,-837 628.06,-834.69 631.04,-832.25 633.93,-829.69"/>
 <polygon fill="none" stroke="darkgreen" points="42.88,-2421.72 47.01,-2431.48 49.87,-2421.28 42.88,-2421.72"/>
 </g>
-<!-- Node10&#45;&gt;Node7 -->
-<g id="edge14" class="edge">
-<title>Node10&#45;&gt;Node7</title>
+<!-- Node11&#45;&gt;Node8 -->
+<g id="edge15" class="edge">
+<title>Node11&#45;&gt;Node8</title>
 <path fill="none" stroke="#404040" d="M89.01,-2431.26C138.45,-2375.19 225.44,-2276.53 293.73,-2199.08"/>
 <polygon fill="none" stroke="#404040" points="294.03,-2198.74 295,-2191.6 301.97,-2189.74 301,-2196.89 294.03,-2198.74"/>
 <text text-anchor="middle" x="164" y="-2405" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;sink_staller</text>
 <text text-anchor="middle" x="164" y="-2394" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;through_staller</text>
 </g>
-<!-- Node11&#45;&gt;Node5 -->
-<g id="edge15" class="edge">
-<title>Node11&#45;&gt;Node5</title>
+<!-- Node12&#45;&gt;Node6 -->
+<g id="edge16" class="edge">
+<title>Node12&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M640.69,-1409.98C639.8,-1408.98 638.9,-1407.98 638,-1407 612.7,-1379.35 590.12,-1390.25 568,-1360 520.44,-1294.97 505.52,-1197.64 500.95,-1150.52"/>
 <polygon fill="none" stroke="midnightblue" points="638.25,-1412.52 647.4,-1417.86 643.57,-1407.98 638.25,-1412.52"/>
 </g>
-<!-- Node12 -->
-<g id="node12" class="node">
-<title>Node12</title>
-<g id="a_node12"><a xlink:href="../../d6/d72/classMIDI__Sender.html" target="_top" xlink:title=" ">
+<!-- Node13 -->
+<g id="node13" class="node">
+<title>Node13</title>
+<g id="a_node13"><a xlink:href="../../d6/d72/classMIDI__Sender.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="577,-884.5 577,-1359.5 749,-1359.5 749,-884.5 577,-884.5"/>
 <text text-anchor="middle" x="663" y="-1347.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Sender&lt; MIDI_Interface &gt;</text>
 <polyline fill="none" stroke="black" points="577,-1340.5 749,-1340.5 "/>
@@ -508,16 +534,16 @@
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node4 -->
-<g id="edge17" class="edge">
-<title>Node12&#45;&gt;Node4</title>
+<!-- Node13&#45;&gt;Node5 -->
+<g id="edge18" class="edge">
+<title>Node13&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M692.46,-874.18C693.98,-861.5 695.48,-848.92 696.95,-836.62"/>
 <polygon fill="none" stroke="midnightblue" points="688.96,-874.03 691.25,-884.38 695.91,-874.86 688.96,-874.03"/>
 </g>
-<!-- Node13 -->
-<g id="node13" class="node">
-<title>Node13</title>
-<g id="a_node13"><a xlink:href="../../d1/d55/classAH_1_1Updatable.html" target="_top" xlink:title=" ">
+<!-- Node14 -->
+<g id="node14" class="node">
+<title>Node14</title>
+<g id="a_node14"><a xlink:href="../../d1/d55/classAH_1_1Updatable.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="767.5,-1077 767.5,-1167 928.5,-1167 928.5,-1077 767.5,-1077"/>
 <text text-anchor="middle" x="848" y="-1155" font-family="Helvetica,sans-Serif" font-size="10.00">Updatable&lt; MIDI_Interface &gt;</text>
 <polyline fill="none" stroke="black" points="767.5,-1148 928.5,-1148 "/>
@@ -530,16 +556,16 @@
 </a>
 </g>
 </g>
-<!-- Node13&#45;&gt;Node4 -->
-<g id="edge18" class="edge">
-<title>Node13&#45;&gt;Node4</title>
+<!-- Node14&#45;&gt;Node5 -->
+<g id="edge19" class="edge">
+<title>Node14&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M831.92,-1066.92C814.96,-1009.87 787.42,-917.22 763.43,-836.55"/>
 <polygon fill="none" stroke="midnightblue" points="828.66,-1068.22 834.86,-1076.8 835.37,-1066.22 828.66,-1068.22"/>
 </g>
-<!-- Node14 -->
-<g id="node14" class="node">
-<title>Node14</title>
-<g id="a_node14"><a xlink:href="../../d8/d1a/classAH_1_1UpdatableCRTP.html" target="_top" xlink:title="A super class for object that have to be updated regularly.">
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a xlink:href="../../d8/d1a/classAH_1_1UpdatableCRTP.html" target="_top" xlink:title="A super class for object that have to be updated regularly.">
 <polygon fill="white" stroke="black" points="835,-1468 835,-1690 987,-1690 987,-1468 835,-1468"/>
 <text text-anchor="middle" x="911" y="-1678" font-family="Helvetica,sans-Serif" font-size="10.00">UpdatableCRTP&lt; Derived &gt;</text>
 <polyline fill="none" stroke="black" points="835,-1671 987,-1671 "/>
@@ -564,16 +590,16 @@
 </a>
 </g>
 </g>
-<!-- Node14&#45;&gt;Node13 -->
-<g id="edge19" class="edge">
-<title>Node14&#45;&gt;Node13</title>
+<!-- Node15&#45;&gt;Node14 -->
+<g id="edge20" class="edge">
+<title>Node15&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M894.36,-1457.83C881.11,-1362.16 863.32,-1233.64 854.1,-1167.09"/>
 <polygon fill="none" stroke="midnightblue" points="890.91,-1458.43 895.75,-1467.86 897.84,-1457.47 890.91,-1458.43"/>
 </g>
-<!-- Node15 -->
-<g id="node15" class="node">
-<title>Node15</title>
-<g id="a_node15"><a xlink:href="../../d4/d23/classDoublyLinkable.html" target="_top" xlink:title=" ">
+<!-- Node16 -->
+<g id="node16" class="node">
+<title>Node16</title>
+<g id="a_node16"><a xlink:href="../../d4/d23/classDoublyLinkable.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="835,-2024 835,-2147 987,-2147 987,-2024 835,-2024"/>
 <text text-anchor="middle" x="911" y="-2135" font-family="Helvetica,sans-Serif" font-size="10.00">DoublyLinkable&lt; Derived &gt;</text>
 <polyline fill="none" stroke="black" points="835,-2128 987,-2128 "/>
@@ -589,16 +615,16 @@
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node14 -->
-<g id="edge20" class="edge">
-<title>Node15&#45;&gt;Node14</title>
+<!-- Node16&#45;&gt;Node15 -->
+<g id="edge21" class="edge">
+<title>Node16&#45;&gt;Node15</title>
 <path fill="none" stroke="midnightblue" d="M911,-2013.69C911,-1929.73 911,-1788.78 911,-1690.44"/>
 <polygon fill="none" stroke="midnightblue" points="907.5,-2013.9 911,-2023.9 914.5,-2013.9 907.5,-2013.9"/>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node">
-<title>Node16</title>
-<g id="a_node16"><a xlink:href="../../de/d55/classMIDI__Callbacks.html" target="_top" xlink:title="A class for callbacks from MIDI input.">
+<!-- Node17 -->
+<g id="node17" class="node">
+<title>Node17</title>
+<g id="a_node17"><a xlink:href="../../de/d55/classMIDI__Callbacks.html" target="_top" xlink:title="A class for callbacks from MIDI input.">
 <polygon fill="white" stroke="black" points="947,-1071.5 947,-1172.5 1099,-1172.5 1099,-1071.5 947,-1071.5"/>
 <text text-anchor="middle" x="1023" y="-1160.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Callbacks</text>
 <polyline fill="none" stroke="black" points="947,-1153.5 1099,-1153.5 "/>
@@ -612,17 +638,17 @@
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node4 -->
-<g id="edge22" class="edge">
-<title>Node16&#45;&gt;Node4</title>
+<!-- Node17&#45;&gt;Node5 -->
+<g id="edge23" class="edge">
+<title>Node17&#45;&gt;Node5</title>
 <path fill="none" stroke="#404040" d="M1012.17,-1071.15C999.66,-1020.91 975.68,-942.64 937,-884 902.27,-831.35 851.56,-782.59 807.47,-745.63"/>
 <polygon fill="none" stroke="#404040" points="807.41,-745.59 800.24,-744.84 798.17,-737.93 805.35,-738.68 807.41,-745.59"/>
 <text text-anchor="middle" x="949.5" y="-858" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;callbacks</text>
 </g>
-<!-- Node17 -->
-<g id="node17" class="node">
-<title>Node17</title>
-<g id="a_node17"><a xlink:href="../../d0/d0d/classSerialMIDI__Parser.html" target="_top" xlink:title="Parser for Serial MIDI streams (and BLE&#45;MIDI).">
+<!-- Node18 -->
+<g id="node18" class="node">
+<title>Node18</title>
+<g id="a_node18"><a xlink:href="../../d0/d0d/classSerialMIDI__Parser.html" target="_top" xlink:title="Parser for Serial MIDI streams (and BLE&#45;MIDI).">
 <polygon fill="white" stroke="black" points="1098.5,-543 1098.5,-809 1291.5,-809 1291.5,-543 1098.5,-543"/>
 <text text-anchor="middle" x="1195" y="-797" font-family="Helvetica,sans-Serif" font-size="10.00">SerialMIDI_Parser</text>
 <polyline fill="none" stroke="black" points="1098.5,-790 1291.5,-790 "/>
@@ -651,17 +677,17 @@
 </a>
 </g>
 </g>
-<!-- Node17&#45;&gt;Node3 -->
-<g id="edge24" class="edge">
-<title>Node17&#45;&gt;Node3</title>
-<path fill="none" stroke="#404040" d="M1098.18,-572.8C1061.79,-534.39 1020.47,-490.78 984.23,-452.52"/>
-<polygon fill="none" stroke="#404040" points="983.87,-452.14 976.84,-450.53 975.61,-443.43 982.64,-445.03 983.87,-452.14"/>
-<text text-anchor="middle" x="1043" y="-489" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;parser</text>
+<!-- Node18&#45;&gt;Node3 -->
+<g id="edge25" class="edge">
+<title>Node18&#45;&gt;Node3</title>
+<path fill="none" stroke="#404040" d="M1098.36,-613.16C1015.32,-560.03 896.19,-483.8 813.05,-430.6"/>
+<polygon fill="none" stroke="#404040" points="812.94,-430.53 805.73,-430.67 802.84,-424.06 810.05,-423.93 812.94,-430.53"/>
+<text text-anchor="middle" x="932" y="-489" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;parser</text>
 </g>
-<!-- Node18 -->
-<g id="node18" class="node">
-<title>Node18</title>
-<g id="a_node18"><a xlink:href="../../df/d0c/classMIDI__Parser.html" target="_top" xlink:title="Base class for MIDI parsers.">
+<!-- Node19 -->
+<g id="node19" class="node">
+<title>Node19</title>
+<g id="a_node19"><a xlink:href="../../df/d0c/classMIDI__Parser.html" target="_top" xlink:title="Base class for MIDI parsers.">
 <polygon fill="white" stroke="black" points="1117,-1071.5 1117,-1172.5 1273,-1172.5 1273,-1071.5 1117,-1071.5"/>
 <text text-anchor="middle" x="1195" y="-1160.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDI_Parser</text>
 <polyline fill="none" stroke="black" points="1117,-1153.5 1273,-1153.5 "/>
@@ -675,16 +701,16 @@
 </a>
 </g>
 </g>
-<!-- Node18&#45;&gt;Node17 -->
-<g id="edge25" class="edge">
-<title>Node18&#45;&gt;Node17</title>
+<!-- Node19&#45;&gt;Node18 -->
+<g id="edge26" class="edge">
+<title>Node19&#45;&gt;Node18</title>
 <path fill="none" stroke="midnightblue" d="M1195,-1061.02C1195,-996.82 1195,-892.94 1195,-809.4"/>
 <polygon fill="none" stroke="midnightblue" points="1191.5,-1061.36 1195,-1071.36 1198.5,-1061.36 1191.5,-1061.36"/>
 </g>
-<!-- Node19 -->
-<g id="node19" class="node">
-<title>Node19</title>
-<g id="a_node19"><a xlink:href="../../d4/d61/structMIDIMessage.html" target="_top" xlink:title=" ">
+<!-- Node20 -->
+<g id="node20" class="node">
+<title>Node20</title>
+<g id="a_node20"><a xlink:href="../../d4/d61/structMIDIMessage.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1043.5,-1451.5 1043.5,-1706.5 1238.5,-1706.5 1238.5,-1451.5 1043.5,-1451.5"/>
 <text text-anchor="middle" x="1141" y="-1694.5" font-family="Helvetica,sans-Serif" font-size="10.00">MIDIMessage</text>
 <polyline fill="none" stroke="black" points="1043.5,-1687.5 1238.5,-1687.5 "/>
@@ -712,17 +738,17 @@
 </a>
 </g>
 </g>
-<!-- Node19&#45;&gt;Node18 -->
-<g id="edge26" class="edge">
-<title>Node19&#45;&gt;Node18</title>
+<!-- Node20&#45;&gt;Node19 -->
+<g id="edge27" class="edge">
+<title>Node20&#45;&gt;Node19</title>
 <path fill="none" stroke="#404040" d="M1156.04,-1451.26C1166.35,-1364.37 1179.58,-1252.91 1187.67,-1184.78"/>
 <polygon fill="none" stroke="#404040" points="1187.7,-1184.5 1184.44,-1178.07 1189.12,-1172.58 1192.38,-1179.01 1187.7,-1184.5"/>
 <text text-anchor="middle" x="1191.5" y="-1381" font-family="Helvetica,sans-Serif" font-size="10.00"> #midimsg</text>
 </g>
-<!-- Node20 -->
-<g id="node20" class="node">
-<title>Node20</title>
-<g id="a_node20"><a xlink:href="../../d2/d75/classCable.html" target="_top" xlink:title="A type&#45;safe class for MIDI USB Cable numbers.">
+<!-- Node21 -->
+<g id="node21" class="node">
+<title>Node21</title>
+<g id="a_node21"><a xlink:href="../../d2/d75/classCable.html" target="_top" xlink:title="A type&#45;safe class for MIDI USB Cable numbers.">
 <polygon fill="white" stroke="black" points="1185,-2007.5 1185,-2163.5 1287,-2163.5 1287,-2007.5 1185,-2007.5"/>
 <text text-anchor="middle" x="1236" y="-2151.5" font-family="Helvetica,sans-Serif" font-size="10.00">Cable</text>
 <polyline fill="none" stroke="black" points="1185,-2144.5 1287,-2144.5 "/>
@@ -741,17 +767,17 @@
 </a>
 </g>
 </g>
-<!-- Node20&#45;&gt;Node19 -->
-<g id="edge27" class="edge">
-<title>Node20&#45;&gt;Node19</title>
+<!-- Node21&#45;&gt;Node20 -->
+<g id="edge28" class="edge">
+<title>Node21&#45;&gt;Node20</title>
 <path fill="none" stroke="#404040" d="M1221.47,-2007.33C1207.05,-1930.77 1184.64,-1811.77 1167.13,-1718.76"/>
 <polygon fill="none" stroke="#404040" points="1167.08,-1718.48 1162.04,-1713.33 1164.86,-1706.69 1169.9,-1711.85 1167.08,-1718.48"/>
 <text text-anchor="middle" x="1197" y="-1772" font-family="Helvetica,sans-Serif" font-size="10.00"> +cable</text>
 </g>
-<!-- Node21 -->
-<g id="node21" class="node">
-<title>Node21</title>
-<g id="a_node21"><a xlink:href="../../d6/d99/structRealTimeMessage.html" target="_top" xlink:title=" ">
+<!-- Node22 -->
+<g id="node22" class="node">
+<title>Node22</title>
+<g id="a_node22"><a xlink:href="../../d6/d99/structRealTimeMessage.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="1256.5,-1462.5 1256.5,-1695.5 1407.5,-1695.5 1407.5,-1462.5 1256.5,-1462.5"/>
 <text text-anchor="middle" x="1332" y="-1683.5" font-family="Helvetica,sans-Serif" font-size="10.00">RealTimeMessage</text>
 <polyline fill="none" stroke="black" points="1256.5,-1676.5 1407.5,-1676.5 "/>
@@ -777,24 +803,24 @@
 </a>
 </g>
 </g>
-<!-- Node20&#45;&gt;Node21 -->
-<g id="edge29" class="edge">
-<title>Node20&#45;&gt;Node21</title>
+<!-- Node21&#45;&gt;Node22 -->
+<g id="edge30" class="edge">
+<title>Node21&#45;&gt;Node22</title>
 <path fill="none" stroke="#404040" d="M1250.68,-2007.33C1265.85,-1927.65 1289.76,-1801.99 1307.73,-1707.52"/>
 <polygon fill="none" stroke="#404040" points="1307.76,-1707.36 1304.96,-1700.72 1310.01,-1695.58 1312.82,-1702.22 1307.76,-1707.36"/>
 <text text-anchor="middle" x="1315" y="-1772" font-family="Helvetica,sans-Serif" font-size="10.00"> +cable</text>
 </g>
-<!-- Node21&#45;&gt;Node18 -->
-<g id="edge28" class="edge">
-<title>Node21&#45;&gt;Node18</title>
+<!-- Node22&#45;&gt;Node19 -->
+<g id="edge29" class="edge">
+<title>Node22&#45;&gt;Node19</title>
 <path fill="none" stroke="#404040" d="M1297.16,-1462.3C1270.56,-1373.95 1234.94,-1255.65 1213.55,-1184.62"/>
 <polygon fill="none" stroke="#404040" points="1213.45,-1184.27 1207.89,-1179.68 1209.99,-1172.78 1215.55,-1177.37 1213.45,-1184.27"/>
 <text text-anchor="middle" x="1294" y="-1381" font-family="Helvetica,sans-Serif" font-size="10.00"> #rtmsg</text>
 </g>
-<!-- Node22 -->
-<g id="node22" class="node">
-<title>Node22</title>
-<g id="a_node22"><a xlink:href="../../d1/db1/classSysExBuffer.html" target="_top" xlink:title="Helper for storing the System Exclusive messages being received by a MIDI parser.">
+<!-- Node23 -->
+<g id="node23" class="node">
+<title>Node23</title>
+<g id="a_node23"><a xlink:href="../../d1/db1/classSysExBuffer.html" target="_top" xlink:title="Helper for storing the System Exclusive messages being received by a MIDI parser.">
 <polygon fill="white" stroke="black" points="1291,-1044 1291,-1200 1391,-1200 1391,-1044 1291,-1044"/>
 <text text-anchor="middle" x="1341" y="-1188" font-family="Helvetica,sans-Serif" font-size="10.00">SysExBuffer</text>
 <polyline fill="none" stroke="black" points="1291,-1181 1391,-1181 "/>
@@ -813,9 +839,9 @@
 </a>
 </g>
 </g>
-<!-- Node22&#45;&gt;Node17 -->
-<g id="edge30" class="edge">
-<title>Node22&#45;&gt;Node17</title>
+<!-- Node23&#45;&gt;Node18 -->
+<g id="edge31" class="edge">
+<title>Node23&#45;&gt;Node18</title>
 <path fill="none" stroke="#404040" d="M1324.95,-1043.83C1314.45,-997.07 1299.46,-936.51 1282,-884 1275.09,-863.23 1267.03,-841.61 1258.65,-820.51"/>
 <polygon fill="none" stroke="#404040" points="1258.58,-820.33 1252.63,-816.25 1254.11,-809.19 1260.06,-813.27 1258.58,-820.33"/>
 <text text-anchor="middle" x="1309.5" y="-858" font-family="Helvetica,sans-Serif" font-size="10.00"> #sysexbuffer</text>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5107a3328db507ef36cfdcad3b390ff85cd46634 - src/AH/PrintStream/PrintStream.hpp</title>
+  <title>LCOV - 57e933c19ddea6434693732da7faadbc0036e4ef - src/AH/PrintStream/PrintStream.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5107a3328db507ef36cfdcad3b390ff85cd46634</td>
+            <td class="headerValue">57e933c19ddea6434693732da7faadbc0036e4ef</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">6</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-07-01 23:42:17</td>
+            <td class="headerValue">2021-08-02 15:58:03</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -178,9 +178,9 @@
 <a name="108"><span class="lineNum">     108 </span><span class="lineCov">          2 :     return os &lt;&lt; static_cast&lt;unsigned short&gt;(u);</span></a>
 <a name="109"><span class="lineNum">     109 </span>            : }</a>
 <a name="110"><span class="lineNum">     110 </span>            : </a>
-<a name="111"><span class="lineNum">     111 </span><span class="lineCov">         48 : inline std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os,</span></a>
+<a name="111"><span class="lineNum">     111 </span><span class="lineCov">         52 : inline std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os,</span></a>
 <a name="112"><span class="lineNum">     112 </span>            :                                 const __FlashStringHelper *s) {</a>
-<a name="113"><span class="lineNum">     113 </span><span class="lineCov">         48 :     return os &lt;&lt; reinterpret_cast&lt;const char *&gt;(s);</span></a>
+<a name="113"><span class="lineNum">     113 </span><span class="lineCov">         52 :     return os &lt;&lt; reinterpret_cast&lt;const char *&gt;(s);</span></a>
 <a name="114"><span class="lineNum">     114 </span>            : }</a>
 <a name="115"><span class="lineNum">     115 </span>            : </a>
 <a name="116"><span class="lineNum">     116 </span>            : std::ostream &amp;operator&lt;&lt;(std::ostream &amp;p, HexDump h);</a>

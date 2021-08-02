@@ -227,7 +227,6 @@ Reducing the number of individual MIDI elements</h2>
 <h2><a class="anchor" id="faq-save-memory-disable-components"></a>
 Disabling memory-hungry components</h2>
 <p >If that's not enough, you could try disabling some of the features of the library that you don't need. For example, if you don't need to be able to receive MIDI System Exclusive messages, you can turn on the <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#a2a82e3cbc4ddcf68ac47d0d464189e35">IGNORE_SYSEX</a> setting in src/Settings/Settings.hpp. If you do need SysEx support but still want to save some memory, you can try decreasing the <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#a3081f3937d694684489a38a344815b29">SYSEX_BUFFER_SIZE</a>.</p>
-<p >If you have many buttons, it might be useful to turn off the <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp.html#ac7d8f5c5d6672ffc748f2c614740d2d6">AH_INDIVIDUAL_BUTTON_INVERT</a> setting in src/AH/Settings/Settings.hpp.</p>
 <h1><a class="anchor" id="faq-midi-note-f"></a>
 Why do I get a compiler error when using the note F?</h1>
 <p >The Arduino core defines a global preprocessor macro <code>F(...)</code> which places string literals in flash memory. Unfortunately, macros do not follow the C++ syntax and scoping rules, so it means that it is impossible to create a constant or function with the name <code>F</code>, even in a separate namespace. Therefore, the note F can be referenced using the name <code>F_</code> (F underscore) instead of <code>F</code>.</p>

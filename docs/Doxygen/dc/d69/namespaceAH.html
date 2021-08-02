@@ -176,6 +176,21 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">RegisterEncoders</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for keeping track of the position of multiple rotary encoders.  <a href="../../d2/d7b/classAH_1_1RegisterEncoders.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db1/structAH_1_1round__div__default.html">round_div_default</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide by N using the default division operator, without explicit rounding This should be used for floating point types.  <a href="../../d5/db1/structAH_1_1round__div__default.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/structAH_1_1round__div__helper.html">round_div_helper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the right rounding division operator, depending on whether T is an integer or not.  <a href="../../df/d72/structAH_1_1round__div__helper.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de8/structAH_1_1round__div__int.html">round_div_int</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the right rounding division operator, depending on whether T is a signed or unsigned integer.  <a href="../../d9/de8/structAH_1_1round__div__int.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3c/structAH_1_1round__div__signed__int.html">round_div_signed_int</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide a signed integer by N, rounding the result.  <a href="../../d3/d3c/structAH_1_1round__div__signed__int.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de0/structAH_1_1round__div__unsigned__int.html">round_div_unsigned_int</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide an unsigned integer by N, rounding the result.  <a href="../../dc/de0/structAH_1_1round__div__unsigned__int.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d5/df7/structAH_1_1Setbase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/group__AH__PrintStream.html#d5/df7/structAH_1_1Setbase">Setbase</a></td></tr>
 <tr class="separator:d5/df7/structAH_1_1Setbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:df/d3f/structAH_1_1Setbytesep"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4b/group__AH__PrintStream.html#df/d3f/structAH_1_1Setbytesep">Setbytesep</a></td></tr>
@@ -360,6 +375,10 @@ template&lt;class T , size_t N&gt; </td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fatalErrorExit</b> () __attribute__((noreturn))</td></tr>
 <tr class="memdesc:a7ff220c57636b72ec9d8df676f72ef0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that executes and loops forever, blinking the built-in LED when a fatal error is encountered. <br /></td></tr>
 <tr class="separator:a7ff220c57636b72ec9d8df676f72ef0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b302d2299f7a2aa9772d8930170c21"><td class="memTemplParams" colspan="2"><a id="a78b302d2299f7a2aa9772d8930170c21"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a78b302d2299f7a2aa9772d8930170c21"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a0e347dda4f213d8306ea384bb5f8b49b">ArduinoPin_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>arduino_pin_cast</b> (T t)</td></tr>
+<tr class="separator:a78b302d2299f7a2aa9772d8930170c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa6ae58be8f78169f36bb00fbd99934dc"><td class="memTemplParams" colspan="2">
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:gaa6ae58be8f78169f36bb00fbd99934dc"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if&lt; std::is_floating_point&lt; T &gt;::value, T &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>rad2deg</b> (T r)</td></tr>
@@ -370,6 +389,10 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:ga49e9c0bb8c06186d9491e4d21a2c6468"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if&lt; std::is_floating_point&lt; T &gt;::value, T &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>deg2rad</b> (T d)</td></tr>
 <tr class="memdesc:ga49e9c0bb8c06186d9491e4d21a2c6468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert degrees to radians. <br /></td></tr>
 <tr class="separator:ga49e9c0bb8c06186d9491e4d21a2c6468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af249b75fac2df36217fdfa7ddf26db5d"><td class="memTemplParams" colspan="2">template&lt;size_t N, class T &gt; </td></tr>
+<tr class="memitem:af249b75fac2df36217fdfa7ddf26db5d"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/d69/namespaceAH.html#af249b75fac2df36217fdfa7ddf26db5d">round_div</a> (T val)</td></tr>
+<tr class="memdesc:af249b75fac2df36217fdfa7ddf26db5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide a number by N and round the result.  <a href="../../dc/d69/namespaceAH.html#af249b75fac2df36217fdfa7ddf26db5d">More...</a><br /></td></tr>
+<tr class="separator:af249b75fac2df36217fdfa7ddf26db5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a344910078ff5ae8293281a7d02d55154"><td class="memTemplParams" colspan="2"><a id="a344910078ff5ae8293281a7d02d55154"></a>
 template&lt;size_t Bits_out, size_t Bits_in, class T_out , class T_in &gt; </td></tr>
 <tr class="memitem:a344910078ff5ae8293281a7d02d55154"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt;(Bits_out&lt;=2 *Bits_in), T_out &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>increaseBitDepthImpl</b> (T_in in)</td></tr>
@@ -606,8 +629,7 @@ constexpr static <a class="el" href="../../df/d4d/classAH_1_1Frequency.html">Fre
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d9d/structAH_1_1function__traits__coll__graph.svg" width="166" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d9d/structAH_1_1function__traits__coll__graph.svg" width="166" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -628,8 +650,7 @@ constexpr static <a class="el" href="../../df/d4d/classAH_1_1Frequency.html">Fre
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dd3/structAH_1_1NormalUpdatable__coll__graph.svg" width="148" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/dd3/structAH_1_1NormalUpdatable__coll__graph.svg" width="148" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -650,7 +671,7 @@ constexpr static <a class="el" href="../../df/d4d/classAH_1_1Frequency.html">Fre
 <p>The unsigned integer type to use for analog inputs during filtering. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html" title="A class that reads and filters an analog input.">FilteredAnalog</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html">AH/Settings/Settings.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00073">73</a> of file <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html">AH/Settings/Settings.hpp</a>.</p>
 
 </div>
 </div>
@@ -743,6 +764,30 @@ constexpr static <a class="el" href="../../df/d4d/classAH_1_1Frequency.html">Fre
 </table>
 
 <p class="definition">Definition at line <a class="el" href="../../da/d69/PrintStream_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../da/d69/PrintStream_8cpp_source.html">PrintStream.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af249b75fac2df36217fdfa7ddf26db5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af249b75fac2df36217fdfa7ddf26db5d">&#9670;&nbsp;</a></span>round_div()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T AH::round_div </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Divide a number by N and round the result. </p>
+<p >Uses different specializations for integers to implement efficient rounding. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d30/Divide_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../dc/d30/Divide_8hpp_source.html">Divide.hpp</a>.</p>
 
 </div>
 </div>
@@ -859,10 +904,10 @@ constexpr static <a class="el" href="../../df/d4d/classAH_1_1Frequency.html">Fre
 <p>The bit depth to use for the ADC (Analog to Digital Converter). </p>
 <p >By default, the maximum supported resolution is used, but if you need it for compatibility with other code that expects the default 10-bit resolution, you can use</p>
 <div class="fragment"><div class="line">constexpr uint8_t <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a8db0fcdeeb644f813c9b29211ce0a1ae">ADC_BITS</a> = 10;</div>
-<div class="ttc" id="anamespaceAH_html_a8db0fcdeeb644f813c9b29211ce0a1ae"><div class="ttname"><a href="../../dc/d69/namespaceAH.html#a8db0fcdeeb644f813c9b29211ce0a1ae">AH::ADC_BITS</a></div><div class="ttdeci">constexpr uint8_t ADC_BITS</div><div class="ttdoc">The bit depth to use for the ADC (Analog to Digital Converter).</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00053">AH/Settings/Settings.hpp:53</a></div></div>
+<div class="ttc" id="anamespaceAH_html_a8db0fcdeeb644f813c9b29211ce0a1ae"><div class="ttname"><a href="../../dc/d69/namespaceAH.html#a8db0fcdeeb644f813c9b29211ce0a1ae">AH::ADC_BITS</a></div><div class="ttdeci">constexpr uint8_t ADC_BITS</div><div class="ttdoc">The bit depth to use for the ADC (Analog to Digital Converter).</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00055">AH/Settings/Settings.hpp:55</a></div></div>
 </div><!-- fragment --><p >If the library doesn't know your specific hardware, it defaults to 10 bits. This might not be the optimal resolution, so it's best to add the actual resolution to <a class="el" href="../../d7/d7c/ADCConfig_8hpp.html">Hardware/ADCConfig.hpp</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html">AH/Settings/Settings.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html">AH/Settings/Settings.hpp</a>.</p>
 
 </div>
 </div>
@@ -890,7 +935,7 @@ constexpr static <a class="el" href="../../df/d4d/classAH_1_1Frequency.html">Fre
  Difference equation: \( y[n] = \alpha\cdot x[n] + (1-\alpha)\cdot y[n-1] \) where \( \alpha = \left(\frac{1}{2}\right)^{ANALOG\_FILTER\_SHIFT\_FACTOR} \). </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html" title="A class that reads and filters an analog input.">FilteredAnalog</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html">AH/Settings/Settings.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html">AH/Settings/Settings.hpp</a>.</p>
 
 </div>
 </div>

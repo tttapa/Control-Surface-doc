@@ -168,19 +168,19 @@ $(function() {
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#ifdef DEBUG_OUT </span><span class="comment">// Debugging enabled ==========================================</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d4/da5/group__AH__Debug.html#ga3dfa58b1c5c2943dd49d8aa1981d377d">   98</a></span>&#160;<span class="preprocessor">#define DEBUG(x)                                                               \</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define DEBUG(x)                                                               \</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">        DEBUG_LOCK_MUTEX                                                       \</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">        DEBUG_OUT &lt;&lt; x &lt;&lt; DEBUG_ENDL;                                          \</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">    } while (0)</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d4/da5/group__AH__Debug.html#gafedb5ed0c0a4ef76c6b968368af014c7">  108</a></span>&#160;<span class="preprocessor">#define DEBUGREF(x)                                                            \</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define DEBUGREF(x)                                                            \</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">        DEBUG_LOCK_MUTEX                                                       \</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">        DEBUG_OUT &lt;&lt; F(DEBUG_LOCATION) &lt;&lt; x &lt;&lt; DEBUG_ENDL;                     \</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">    } while (0)</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../d4/da5/group__AH__Debug.html#ga5e1b7520df0706433ae295a78471fb3c">  118</a></span>&#160;<span class="preprocessor">#define DEBUGFN(x)                                                             \</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define DEBUGFN(x)                                                             \</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">        DEBUG_LOCK_MUTEX                                                       \</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">        DEBUG_OUT &lt;&lt; DEBUG_FUNC_LOCATION &lt;&lt; x &lt;&lt; DEBUG_ENDL;                   \</span></div>
@@ -188,7 +188,7 @@ $(function() {
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#ifdef ARDUINO</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="../../d4/da5/group__AH__Debug.html#ga95d4440a4127650cdd221322b1780833">  130</a></span>&#160;<span class="preprocessor">#define DEBUGTIME(x)                                                           \</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#define DEBUGTIME(x)                                                           \</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">        DEBUG_LOCK_MUTEX                                                       \</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">        unsigned long t = millis();                                            \</span></div>
@@ -229,23 +229,23 @@ $(function() {
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#include &quot;<a class="highlightfile code" href="../../d7/d52/DebugVal_8hpp.html">DebugVal.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="../../d4/da5/group__AH__Debug.html#gaab96fed8c4f7d9e0f985b05cc6a419b2">  178</a></span>&#160;<span class="preprocessor">#define DEBUGVAL(...) DEBUGVALN(COUNT(__VA_ARGS__))(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#define DEBUGVAL(...) DEBUGVALN(COUNT(__VA_ARGS__))(__VA_ARGS__)</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#else </span><span class="comment">// Debugging disabled ====================================================</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#define DEBUG(x)                                                               \</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="../../df/dee/Debug_8hpp.html#a3dfa58b1c5c2943dd49d8aa1981d377d">  182</a></span>&#160;<span class="preprocessor">#define DEBUG(x)                                                               \</span></div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#define DEBUGREF(x)                                                            \</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="../../df/dee/Debug_8hpp.html#afedb5ed0c0a4ef76c6b968368af014c7">  185</a></span>&#160;<span class="preprocessor">#define DEBUGREF(x)                                                            \</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#define DEBUGFN(x)                                                             \</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="../../df/dee/Debug_8hpp.html#a5e1b7520df0706433ae295a78471fb3c">  188</a></span>&#160;<span class="preprocessor">#define DEBUGFN(x)                                                             \</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#define DEBUGTIME(x)                                                           \</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="../../df/dee/Debug_8hpp.html#a95d4440a4127650cdd221322b1780833">  191</a></span>&#160;<span class="preprocessor">#define DEBUGTIME(x)                                                           \</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#define DEBUGVAL(...)                                                          \</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="../../df/dee/Debug_8hpp.html#aab96fed8c4f7d9e0f985b05cc6a419b2">  194</a></span>&#160;<span class="preprocessor">#define DEBUGVAL(...)                                                          \</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">    do {                                                                       \</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">    } while (0)</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>

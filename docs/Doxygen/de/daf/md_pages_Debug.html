@@ -82,10 +82,10 @@ $(function() {
 <div class="textblock"><dl class="section see"><dt>See also</dt><dd>Module <a class="el" href="../../d4/da5/group__AH__Debug.html">Debug</a> for more information. </dd>
 <dd>
 <a class="el" href="../../d5/d99/Debug_8ino-example.html">examples/Arduino-Helpers/Debug</a> for example usage.</dd></dl>
-<h1><a class="anchor" id="autotoc_md305"></a>
+<h1><a class="anchor" id="autotoc_md303"></a>
 Adding a 'Debug' menu in the Arduino IDE</h1>
 <p >If you are going to be debugging a lot, it might be useful to just add a menu option in the IDE to disable/enable debugging. <br  />
- This can be easily done by editing the <code>boards.txt</code> file.</p>
+ This can be done relatively easily by editing the <code>boards.txt</code> file.</p>
 <p >Open the <code>boards.txt</code> file of the board you are using. If you're using version 1.8.x of the Arduino IDE, it'll be located in <code>~/.arduino15/packages/&lt;package-name&gt;/hardware/&lt;architecture&gt;/&lt;version&gt;/</code> or <code>C:\users\&lt;username&gt;\AppData\Local\Arduino15\packages\&lt;package-name&gt;\hardware\&lt;architecture&gt;\&lt;version&gt;\</code>. <br  />
  Open it using a text editor (e.g. Gedit on Linux, or Notepad on Windows).</p>
 <p >First, create the menu option by adding the following line at the top of the file:</p>
@@ -98,8 +98,9 @@ Adding a 'Debug' menu in the Arduino IDE</h1>
 <div class="line">uno.menu.debug.Serial.build.debug_output=-DDEBUG_OUT=Serial</div>
 </div><!-- fragment --><p >Next, add the debugging flags to the compilation options by adding the line:</p>
 <div class="fragment"><div class="line">uno.build.extra_flags={build.debug_output}</div>
-</div><!-- fragment --><p >If your board already has an <code>extra_flags</code> entry, just add <code>{build.debug_output}</code> to the end (separated by a space).</p>
-<p >A complete list of all the AVR boards and their added debug options can be found <a href="https://github.com/tttapa/Arduino-Helpers/blob/master/docs/extra/boards.txt.example"><b>here</b></a>.</p>
+</div><!-- fragment --><p >If your board already has an <code>extra_flags</code> entry, just add <code>{build.debug_output}</code> to the end (separated by a space). For example:</p>
+<div class="fragment"><div class="line">leonardo.build.extra_flags={build.usb_flags} {build.debug_output}</div>
+</div><!-- fragment --><p >A complete list of all the AVR boards and their added debug options can be found <a href="https://github.com/tttapa/Arduino-Helpers/blob/master/docs/extra/boards.txt.example"><b>here</b></a>.</p>
 <p >Finally, restart the IDE. <br  />
  If you now open your the <code>Tools</code> menu in the Arduino IDE, you should see the debug options: <img src="../../Screenshot-Arduino-IDE-Debug.png" alt="" class="inline" title="Selecting the Debug output in the Arduino IDE"/> </p>
 </div></div><!-- contents -->
