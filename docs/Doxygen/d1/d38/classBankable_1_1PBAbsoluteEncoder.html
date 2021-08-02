@@ -95,7 +95,7 @@ $(function() {
 <p><code>#include &lt;<a class="el" href="../../d0/d1c/Bankable_2PBAbsoluteEncoder_8hpp_source.html">MIDI_Outputs/Bankable/PBAbsoluteEncoder.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t NumBanks&gt;<br />
-class Bankable::PBAbsoluteEncoder&lt; NumBanks &gt;</div><p >A class of MIDIOutputElements that read the input of a <b>quadrature (rotary) encoder</b> and send out absolute MIDI <b>Control Change</b> events. </p>
+class Bankable::PBAbsoluteEncoder&lt; NumBanks &gt;</div><p >A class of MIDIOutputElements that read the input of a <b>quadrature (rotary) encoder</b> and send out absolute MIDI <b>Pitch Bend</b> events. </p>
 <p >This version can be banked.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -165,9 +165,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>moveDown</b> ()</td><
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a067158110902002c9ad3b5134ccd222b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d38/classBankable_1_1PBAbsoluteEncoder.html#a067158110902002c9ad3b5134ccd222b">PBAbsoluteEncoder</a> (const <a class="el" href="../../dc/d17/structBankConfig.html">BankConfig</a>&lt; NumBanks &gt; &amp;config, <a class="el" href="../../d0/d3b/classEncoder.html">Encoder</a> &amp;&amp;<a class="el" href="../../df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#ae7a56b402747d8edc074051fa0eb993d">encoder</a>, <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> <a class="el" href="../../df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a189d1968f3d80eb94f17563376e2c9fe">address</a>, int16_t speedMultiply=1, uint8_t pulsesPerStep=4)</td></tr>
-<tr class="memdesc:a067158110902002c9ad3b5134ccd222b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> <a class="el" href="../../d1/d38/classBankable_1_1PBAbsoluteEncoder.html" title="A class of MIDIOutputElements that read the input of a quadrature (rotary) encoder and send out absol...">PBAbsoluteEncoder</a> object with the given pins, controller, channel, speed factor, and number of pulses per step.  <a href="../../d1/d38/classBankable_1_1PBAbsoluteEncoder.html#a067158110902002c9ad3b5134ccd222b">More...</a><br /></td></tr>
-<tr class="separator:a067158110902002c9ad3b5134ccd222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536a30d2d3ee0535c4b9ba4d44fff510"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d38/classBankable_1_1PBAbsoluteEncoder.html#a536a30d2d3ee0535c4b9ba4d44fff510">PBAbsoluteEncoder</a> (const <a class="el" href="../../dc/d17/structBankConfig.html">BankConfig</a>&lt; NumBanks &gt; &amp;config, <a class="el" href="../../d0/d3b/classEncoder.html">Encoder</a> &amp;&amp;<a class="el" href="../../df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#ae7a56b402747d8edc074051fa0eb993d">encoder</a>, <a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> <a class="el" href="../../df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a189d1968f3d80eb94f17563376e2c9fe">address</a>, int16_t speedMultiply=1, uint8_t pulsesPerStep=4)</td></tr>
+<tr class="memdesc:a536a30d2d3ee0535c4b9ba4d44fff510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> <a class="el" href="../../d1/d38/classBankable_1_1PBAbsoluteEncoder.html" title="A class of MIDIOutputElements that read the input of a quadrature (rotary) encoder and send out absol...">PBAbsoluteEncoder</a> object with the given pins, channel, speed factor, and number of pulses per step.  <a href="../../d1/d38/classBankable_1_1PBAbsoluteEncoder.html#a536a30d2d3ee0535c4b9ba4d44fff510">More...</a><br /></td></tr>
+<tr class="separator:a536a30d2d3ee0535c4b9ba4d44fff510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
 <tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this updatable.  <a href="../../df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">More...</a><br /></td></tr>
 <tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,8 +247,8 @@ constexpr static int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m
 <tr class="separator:a590d1b076d6c46be478b4bb319b0755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a067158110902002c9ad3b5134ccd222b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a067158110902002c9ad3b5134ccd222b">&#9670;&nbsp;</a></span>PBAbsoluteEncoder()</h2>
+<a id="a536a30d2d3ee0535c4b9ba4d44fff510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a536a30d2d3ee0535c4b9ba4d44fff510">&#9670;&nbsp;</a></span>PBAbsoluteEncoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +271,7 @@ constexpr static int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
@@ -299,14 +299,14 @@ constexpr static int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m
 </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> <a class="el" href="../../d1/d38/classBankable_1_1PBAbsoluteEncoder.html" title="A class of MIDIOutputElements that read the input of a quadrature (rotary) encoder and send out absol...">PBAbsoluteEncoder</a> object with the given pins, controller, channel, speed factor, and number of pulses per step. </p>
+<p>Construct a new <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> <a class="el" href="../../d1/d38/classBankable_1_1PBAbsoluteEncoder.html" title="A class of MIDIOutputElements that read the input of a quadrature (rotary) encoder and send out absol...">PBAbsoluteEncoder</a> object with the given pins, channel, speed factor, and number of pulses per step. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">config</td><td>The bank configuration to use: the bank to add this element to, and whether to change the address, channel or cable number. </td></tr>
     <tr><td class="paramname">encoder</td><td>The <a class="el" href="../../d0/d3b/classEncoder.html" title="Class for reading quadrature encoders, based on http://www.pjrc.com/teensy/td_libs_Encoder....">Encoder</a> object to use. <br  />
  Usually passed as a list of the two pins connected to the A and B outputs of the encoder, e.g. <code>{2, 3}</code>. <br  />
  The internal pull-up resistors will be enabled by the <a class="el" href="../../d0/d3b/classEncoder.html" title="Class for reading quadrature encoders, based on http://www.pjrc.com/teensy/td_libs_Encoder....">Encoder</a> library. </td></tr>
-    <tr><td class="paramname">address</td><td>The MIDI address containing the controller number [0, 119], channel [CHANNEL_1, CHANNEL_16], and optional cable number [0, 15]. </td></tr>
+    <tr><td class="paramname">address</td><td>The MIDI channel [CHANNEL_1, CHANNEL_16], and optional cable number [0, 15]. </td></tr>
     <tr><td class="paramname">speedMultiply</td><td>A constant factor to increase the speed of the rotary encoder. The difference in position will just be multiplied by this factor. </td></tr>
     <tr><td class="paramname">pulsesPerStep</td><td>The number of pulses per physical click of the encoder. For a normal encoder, this is 4. If you want to increase the resolution, for the use of Jog wheels, for example, you can go as 1. <br  />
  Whereas a greater speedMultiply factor will increase the speed, increasing the number of pulsesPerStep will result in a lower speed. </td></tr>
@@ -314,7 +314,7 @@ constexpr static int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d1c/Bankable_2PBAbsoluteEncoder_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d0/d1c/Bankable_2PBAbsoluteEncoder_8hpp_source.html">Bankable/PBAbsoluteEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d1c/Bankable_2PBAbsoluteEncoder_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d0/d1c/Bankable_2PBAbsoluteEncoder_8hpp_source.html">Bankable/PBAbsoluteEncoder.hpp</a>.</p>
 
 </div>
 </div>
