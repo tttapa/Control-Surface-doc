@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 57e933c19ddea6434693732da7faadbc0036e4ef - src/Banks/BankableAddresses.hpp</title>
+  <title>LCOV - 9c6642836ceecc81f7dd3b5c7c2902a904b1cc5a - src/Banks/BankableAddresses.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">57e933c19ddea6434693732da7faadbc0036e4ef</td>
+            <td class="headerValue">9c6642836ceecc81f7dd3b5c7c2902a904b1cc5a</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">23</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-02 15:58:03</td>
+            <td class="headerValue">2021-08-03 15:06:04</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">11</td>
@@ -90,7 +90,7 @@
 <a name="20"><span class="lineNum">      20 </span>            :      * @param   bank</a>
 <a name="21"><span class="lineNum">      21 </span>            :      *          The bank to add this element to.</a>
 <a name="22"><span class="lineNum">      22 </span>            :      */</a>
-<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         37 :     OutputBankableMIDIAddress_Base(const OutputBank &amp;bank) : bank(bank) {}</span></a>
+<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         42 :     OutputBankableMIDIAddress_Base(const OutputBank &amp;bank) : bank(bank) {}</span></a>
 <a name="24"><span class="lineNum">      24 </span>            : </a>
 <a name="25"><span class="lineNum">      25 </span>            :   public:</a>
 <a name="26"><span class="lineNum">      26 </span>            :     /** </a>
@@ -133,7 +133,7 @@
 <a name="63"><span class="lineNum">      63 </span>            : </a>
 <a name="64"><span class="lineNum">      64 </span>            :   private:</a>
 <a name="65"><span class="lineNum">      65 </span>            :     constexpr static setting_t UNLOCKED = NO_SETTING;</a>
-<a name="66"><span class="lineNum">      66 </span><span class="lineCov">         37 :     setting_t lockedSetting = UNLOCKED;</span></a>
+<a name="66"><span class="lineNum">      66 </span><span class="lineCov">         42 :     setting_t lockedSetting = UNLOCKED;</span></a>
 <a name="67"><span class="lineNum">      67 </span>            : };</a>
 <a name="68"><span class="lineNum">      68 </span>            : </a>
 <a name="69"><span class="lineNum">      69 </span>            : /**</a>
@@ -162,8 +162,8 @@
 <a name="92"><span class="lineNum">      92 </span>            :      * @param   type</a>
 <a name="93"><span class="lineNum">      93 </span>            :      *          What address type to change (address, channel or cable number).</a>
 <a name="94"><span class="lineNum">      94 </span>            :      */</a>
-<a name="95"><span class="lineNum">      95 </span><span class="lineCov">         28 :     OutputBankableMIDIAddress(const OutputBank &amp;bank, BankType type)</span></a>
-<a name="96"><span class="lineNum">      96 </span><span class="lineCov">         28 :         : OutputBankableMIDIAddress_Base(bank), type(type) {}</span></a>
+<a name="95"><span class="lineNum">      95 </span><span class="lineCov">         30 :     OutputBankableMIDIAddress(const OutputBank &amp;bank, BankType type)</span></a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">         30 :         : OutputBankableMIDIAddress_Base(bank), type(type) {}</span></a>
 <a name="97"><span class="lineNum">      97 </span>            : </a>
 <a name="98"><span class="lineNum">      98 </span>            :     /**</a>
 <a name="99"><span class="lineNum">      99 </span>            :      * @brief   Create a new OutputBankableMIDIAddress object.</a>
@@ -173,8 +173,8 @@
 <a name="103"><span class="lineNum">     103 </span>            :      * </a>
 <a name="104"><span class="lineNum">     104 </span>            :      * @see     OutputBankableMIDIAddress::OutputBankableMIDIAddress(Bank&lt;N&gt; &amp;, BankType)</a>
 <a name="105"><span class="lineNum">     105 </span>            :      */</a>
-<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         28 :     OutputBankableMIDIAddress(BaseOutputBankConfig config)</span></a>
-<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         28 :         : OutputBankableMIDIAddress(config.bank, config.type) {}</span></a>
+<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         30 :     OutputBankableMIDIAddress(BaseOutputBankConfig config)</span></a>
+<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         30 :         : OutputBankableMIDIAddress(config.bank, config.type) {}</span></a>
 <a name="108"><span class="lineNum">     108 </span>            : </a>
 <a name="109"><span class="lineNum">     109 </span>            :     /** </a>
 <a name="110"><span class="lineNum">     110 </span>            :      * @brief   Get the offset relative to the base address.</a>
@@ -226,8 +226,8 @@
 <a name="156"><span class="lineNum">     156 </span>            :      *          The number of bank settings @p bank has.</a>
 <a name="157"><span class="lineNum">     157 </span>            :      */</a>
 <a name="158"><span class="lineNum">     158 </span>            :     template &lt;uint8_t NumBanks&gt;</a>
-<a name="159"><span class="lineNum">     159 </span><span class="lineCov">          9 :     ManyAddresses_Base(const Bank&lt;NumBanks&gt; &amp;bank)</span></a>
-<a name="160"><span class="lineNum">     160 </span><span class="lineCov">          9 :         : OutputBankableMIDIAddress_Base(bank) {}</span></a>
+<a name="159"><span class="lineNum">     159 </span><span class="lineCov">         12 :     ManyAddresses_Base(const Bank&lt;NumBanks&gt; &amp;bank)</span></a>
+<a name="160"><span class="lineNum">     160 </span><span class="lineCov">         12 :         : OutputBankableMIDIAddress_Base(bank) {}</span></a>
 <a name="161"><span class="lineNum">     161 </span>            : };</a>
 <a name="162"><span class="lineNum">     162 </span>            : </a>
 <a name="163"><span class="lineNum">     163 </span>            : END_CS_NAMESPACE</a>
