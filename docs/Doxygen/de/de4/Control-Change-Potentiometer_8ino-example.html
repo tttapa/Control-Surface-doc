@@ -105,20 +105,20 @@ Mapping</h2>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI over USB interface.</span></div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a CCPotentiometer object</span></div>
-<div class="line"><a name="_a1"></a><a class="highlightclass code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> potentiometer {</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> potentiometer {</div>
 <div class="line">  A0,                                   <span class="comment">// Analog pin connected to potentiometer</span></div>
-<div class="line">  {<a name="a2"></a><a class="highlightmember code" href="../../d4/dbe/namespaceMIDI__CC.html#ac73258d1263f61f65fc27976b6aa9a64">MIDI_CC::Channel_Volume</a>, <a name="a3"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Channel volume of channel 1</span></div>
+<div class="line">  {<a id="a2" name="a2"></a><a class="highlightmember code" href="../../d4/dbe/namespaceMIDI__CC.html#ac73258d1263f61f65fc27976b6aa9a64">MIDI_CC::Channel_Volume</a>, <a id="a3" name="a3"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Channel volume of channel 1</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a4"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a5"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
+<div class="line">  <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a5" name="a5"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a6"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a6" name="a6"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aChannel_8hpp_html_a166aafd26c8b912f9e8bc7acb8b1cd17"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a></div><div class="ttdeci">constexpr Channel CHANNEL_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>

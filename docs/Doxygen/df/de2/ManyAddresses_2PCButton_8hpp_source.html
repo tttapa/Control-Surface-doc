@@ -83,31 +83,31 @@ $(function() {
   <div class="headertitle"><div class="title">ManyAddresses/PCButton.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../df/de2/ManyAddresses_2PCButton_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d0/dcc/BankAddresses_8hpp.html">Banks/BankAddresses.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dd/d2a/Bankable_2Abstract_2MIDIButton_8hpp.html">MIDI_Outputs/Bankable/Abstract/MIDIButton.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/d5f/ProgramChangeSender_8hpp.html">MIDI_Senders/ProgramChangeSender.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="highlightnamespace code" href="../../d1/dd0/namespaceBankable.html">Bankable</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>ManyAddresses {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;setting_t NumBanks&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">   28</a></span>&#160;<span class="keyword">class </span><a class="highlightclass code" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">PCButton</a> : <span class="keyword">public</span> <a class="highlightclass code" href="../../d9/df9/classBankable_1_1MIDIButton.html">Bankable::MIDIButton</a>&lt;ManyAddresses&lt;NumBanks&gt;,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                             ProgramChangeSender&gt; {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html#a2187455953b9131d0e943205a8520532">   45</a></span>&#160;    <a class="highlightmember code" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html#a2187455953b9131d0e943205a8520532">PCButton</a>(<span class="keyword">const</span> <a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;NumBanks&gt;</a> &amp;bank, <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;             <span class="keyword">const</span> <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">Array&lt;MIDIAddress, NumBanks&gt;</a> &amp;addresses)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        : <a class="highlightclass code" href="../../d9/df9/classBankable_1_1MIDIButton.html">MIDIButton</a>&lt;<a class="highlightclass code" href="../../d8/d58/classBankable_1_1ManyAddresses_1_1ManyAddresses.html">ManyAddresses</a>&lt;NumBanks&gt;, <a class="highlightclass code" href="../../db/d8b/classProgramChangeSender.html">ProgramChangeSender</a>&gt;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;              {bank, addresses}, pin, {}} {}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace ManyAddresses</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace Bankable</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
+<a href="../../df/de2/ManyAddresses_2PCButton_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d0/dcc/BankAddresses_8hpp.html">Banks/BankAddresses.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dd/d2a/Bankable_2Abstract_2MIDIButton_8hpp.html">MIDI_Outputs/Bankable/Abstract/MIDIButton.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/d5f/ProgramChangeSender_8hpp.html">MIDI_Senders/ProgramChangeSender.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="highlightnamespace code" href="../../d1/dd0/namespaceBankable.html">Bankable</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>ManyAddresses {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;setting_t NumBanks&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">   28</a></span><span class="keyword">class </span><a class="highlightclass code" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">PCButton</a> : <span class="keyword">public</span> <a class="highlightclass code" href="../../d9/df9/classBankable_1_1MIDIButton.html">Bankable::MIDIButton</a>&lt;ManyAddresses&lt;NumBanks&gt;,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                             ProgramChangeSender&gt; {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html#a2187455953b9131d0e943205a8520532">   45</a></span>    <a class="highlightmember code" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html#a2187455953b9131d0e943205a8520532">PCButton</a>(<span class="keyword">const</span> <a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;NumBanks&gt;</a> &amp;bank, <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>             <span class="keyword">const</span> <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">Array&lt;MIDIAddress, NumBanks&gt;</a> &amp;addresses)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        : <a class="highlightclass code" href="../../d9/df9/classBankable_1_1MIDIButton.html">MIDIButton</a>&lt;<a class="highlightclass code" href="../../d8/d58/classBankable_1_1ManyAddresses_1_1ManyAddresses.html">ManyAddresses</a>&lt;NumBanks&gt;, <a class="highlightclass code" href="../../db/d8b/classProgramChangeSender.html">ProgramChangeSender</a>&gt;{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>              {bank, addresses}, pin, {}} {}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} <span class="comment">// namespace ManyAddresses</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} <span class="comment">// namespace Bankable</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 <div class="ttc" id="aBankAddresses_8hpp_html"><div class="ttname"><a href="../../d0/dcc/BankAddresses_8hpp.html">BankAddresses.hpp</a></div></div>
 <div class="ttc" id="aBankable_2Abstract_2MIDIButton_8hpp_html"><div class="ttname"><a href="../../dd/d2a/Bankable_2Abstract_2MIDIButton_8hpp.html">MIDIButton.hpp</a></div></div>
 <div class="ttc" id="aProgramChangeSender_8hpp_html"><div class="ttname"><a href="../../dc/d5f/ProgramChangeSender_8hpp.html">ProgramChangeSender.hpp</a></div></div>

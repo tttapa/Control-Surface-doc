@@ -86,33 +86,33 @@ Encoder-Selector-Bank</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// MIDI Interface to use</span></div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Bank with 120 settings in total, increments of 1 address at a time</span></div>
-<div class="line"><a name="_a1"></a><a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;120&gt;</a> bank {1};</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;120&gt;</a> bank {1};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// A rotary encoder to select one of the 120 bank settings</span></div>
-<div class="line"><a name="_a2"></a><a class="highlightclass code" href="../../d3/dc5/classEncoderSelector.html">EncoderSelector&lt;120&gt;</a> selector {</div>
+<div class="line"><a id="_a2" name="_a2"></a><a class="highlightclass code" href="../../d3/dc5/classEncoderSelector.html">EncoderSelector&lt;120&gt;</a> selector {</div>
 <div class="line">  bank,        <span class="comment">// bank to manage</span></div>
 <div class="line">  {2, 3},      <span class="comment">// encoder pins</span></div>
 <div class="line">  4,           <span class="comment">// encoder pulses per step</span></div>
-<div class="line">  <a name="a3"></a><a class="highlightmember code" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5a08825280e3f8137556325061ba67ff8c">Wrap::Clamp</a>, <span class="comment">// clamp or wrap around when going beyond maximum/minimum setting</span></div>
+<div class="line">  <a id="a3" name="a3"></a><a class="highlightmember code" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5a08825280e3f8137556325061ba67ff8c">Wrap::Clamp</a>, <span class="comment">// clamp or wrap around when going beyond maximum/minimum setting</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// The potentiometer that sends MIDI messages</span></div>
 <div class="line"><span class="comment">// the address (controller number) depends on the bank setting</span></div>
-<div class="line"><a name="_a4"></a><a class="highlightclass code" href="../../d7/dc0/classBankable_1_1CCPotentiometer.html">Bankable::CCPotentiometer</a> potentiometer {</div>
-<div class="line">  {bank, <a name="a5"></a><a class="highlightmember code" href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a8e818986f5a41a491dde170eeeb4fd29">BankType::CHANGE_ADDRESS</a>}, <span class="comment">// Bank configuration</span></div>
+<div class="line"><a id="_a4" name="_a4"></a><a class="highlightclass code" href="../../d7/dc0/classBankable_1_1CCPotentiometer.html">Bankable::CCPotentiometer</a> potentiometer {</div>
+<div class="line">  {bank, <a id="a5" name="a5"></a><a class="highlightmember code" href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a8e818986f5a41a491dde170eeeb4fd29">BankType::CHANGE_ADDRESS</a>}, <span class="comment">// Bank configuration</span></div>
 <div class="line">  A0,                               <span class="comment">// Analog pin for potentiometer</span></div>
-<div class="line">  {0x00, <a name="a6"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>},                <span class="comment">// Base CC address</span></div>
+<div class="line">  {0x00, <a id="a6" name="a6"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>},                <span class="comment">// Base CC address</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a7"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a id="a7" name="a7"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a8" name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a9" name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">  <span class="comment">// You can get the bank number using:</span></div>
 <div class="line">  <span class="comment">//   bank.getSelection();</span></div>
 <div class="line">}</div>

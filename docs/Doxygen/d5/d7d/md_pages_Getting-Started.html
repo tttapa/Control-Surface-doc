@@ -81,22 +81,22 @@ $(function() {
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#installation">Installation</a></li>
-<li class="level1"><a href="#first-output">First Output: Creating a Basic MIDI Controller Sketch</a><ul><li class="level2"><a href="#autotoc_md269">1. Include the library</a></li>
+<li class="level1"><a href="#first-output">First Output: Creating a Basic MIDI Controller Sketch</a><ul><li class="level2"><a href="#autotoc_md275">1. Include the library</a></li>
 <li class="level2"><a href="#first-output-midi-interface">2. Instantiate a MIDI Interface</a></li>
 <li class="level2"><a href="#first-output-extio">3. Add Extended Input/Output elements (optional)</a></li>
-<li class="level2"><a href="#autotoc_md270">4. Add MIDI Control Elements</a></li>
+<li class="level2"><a href="#autotoc_md276">4. Add MIDI Control Elements</a></li>
 <li class="level2"><a href="#first-output-init">5. Initialize the Control Surface</a></li>
 <li class="level2"><a href="#first-output-loop">6. Continuously Update the Control Surface</a></li>
-<li class="level2"><a href="#autotoc_md271">The finished sketch</a></li>
+<li class="level2"><a href="#autotoc_md277">The finished sketch</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#first-input">First Input: Getting Feedback from the MIDI Software</a><ul><li class="level2"><a href="#autotoc_md272">1. Include the library</a></li>
-<li class="level2"><a href="#autotoc_md273">2. Instantiate a MIDI Interface</a></li>
-<li class="level2"><a href="#autotoc_md274">3. Add Extended Input/Output elements (optional)</a></li>
-<li class="level2"><a href="#autotoc_md275">4. Add MIDI Control Elements</a></li>
-<li class="level2"><a href="#autotoc_md276">5. Initialize the Control Surface</a></li>
-<li class="level2"><a href="#autotoc_md277">6. Continuously Update the Control Surface</a></li>
-<li class="level2"><a href="#autotoc_md278">The finished sketch</a></li>
+<li class="level1"><a href="#first-input">First Input: Getting Feedback from the MIDI Software</a><ul><li class="level2"><a href="#autotoc_md278">1. Include the library</a></li>
+<li class="level2"><a href="#autotoc_md279">2. Instantiate a MIDI Interface</a></li>
+<li class="level2"><a href="#autotoc_md280">3. Add Extended Input/Output elements (optional)</a></li>
+<li class="level2"><a href="#autotoc_md281">4. Add MIDI Control Elements</a></li>
+<li class="level2"><a href="#autotoc_md282">5. Initialize the Control Surface</a></li>
+<li class="level2"><a href="#autotoc_md283">6. Continuously Update the Control Surface</a></li>
+<li class="level2"><a href="#autotoc_md284">The finished sketch</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#getting-started_md-troubleshooting">Troubleshooting</a></li>
@@ -108,7 +108,7 @@ Installation</h1>
 <p >Instructions on how to install the library and its dependencies can be found on the page <a class="el" href="../../d8/da8/md_pages_Installation.html">Installation</a>.</p>
 <h1><a class="anchor" id="first-output"></a>
 First Output: Creating a Basic MIDI Controller Sketch</h1>
-<h2><a class="anchor" id="autotoc_md269"></a>
+<h2><a class="anchor" id="autotoc_md275"></a>
 1. Include the library</h2>
 <p >Include the library so that you have access to all the classes and functions it provides.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
@@ -146,7 +146,7 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
 <p >We'll connect the three address lines of the multiplexer (<code>S0</code>, <code>S1</code> and <code>S2</code>) to digital pins <code>3</code>, <code>4</code> and <code>5</code>. The output of the multiplexer goes to analog pin <code>A0</code>. Connect the enable pin (<code>Ē</code>) to ground.</p>
 <div class="fragment"><div class="line"><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga3ab4921db62494df27df05daf4b11e70">CD74HC4051</a> mux { A0, {3, 4, 5} };</div>
 <div class="ttc" id="agroup__AH__ExtIO_html_ga3ab4921db62494df27df05daf4b11e70"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#ga3ab4921db62494df27df05daf4b11e70">AH::CD74HC4051</a></div><div class="ttdeci">AnalogMultiplex&lt; 3 &gt; CD74HC4051</div><div class="ttdoc">An alias for AnalogMultiplex&lt;3&gt; to use with CD74HC4051 analog multiplexers.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/def/AnalogMultiplex_8hpp_source.html#l00196">AnalogMultiplex.hpp:196</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md270"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md276"></a>
 4. Add MIDI Control Elements</h2>
 <p >Now, we can specify the objects that read the input of the potentiometers and send out MIDI events accordingly.</p>
 <p >Again, I'll refer to the overview of <a class="el" href="../../d7/dcd/group__MIDIOutputElements.html">MIDI Output Elements</a>.</p>
@@ -216,7 +216,7 @@ First Output: Creating a Basic MIDI Controller Sketch</h1>
 </div><!-- fragment --><blockquote class="doxtable">
 <p ><b>Note</b>: Using blocking code like delays will interfere with the Control Surface, so try to use <a href="https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay">Blink Without Delay</a> techniques instead. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md271"></a>
+<h2><a class="anchor" id="autotoc_md277"></a>
 The finished sketch</h2>
 <p >That's it! <br  />
  Now you can just upload the sketch to your Arduino, open up your favorite audio software, map the potentiometers, and start playing!</p>
@@ -267,15 +267,15 @@ src="https://www.youtube.com/embed/u1IbYXPT6mM?loop=1" frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen></iframe>
 </p>
-<h2><a class="anchor" id="autotoc_md272"></a>
+<h2><a class="anchor" id="autotoc_md278"></a>
 1. Include the library</h2>
 <p >Include the library so that you have access to all the classes and functions.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md273"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md279"></a>
 2. Instantiate a MIDI Interface</h2>
 <p >See <a class="el" href="../../d5/d7d/md_pages_Getting-Started.html#first-output-midi-interface">First Output: Instantiate a MIDI Interface</a>.</p>
 <div class="fragment"><div class="line"><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md274"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md280"></a>
 3. Add Extended Input/Output elements (optional)</h2>
 <p >See <a class="el" href="../../d5/d7d/md_pages_Getting-Started.html#first-output-extio">First Output: Add Extended Input/Output elements</a>.</p>
 <p >In this example, we'll use a 74HC595 8-bit serial in/parallel out shift register. This allows us to drive eight LEDs using just the SPI bus and a single digital pin. You can daisy chain as many shift registers as you want, without requiring any more pins.</p>
@@ -288,7 +288,7 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line">};</div>
 </div><!-- fragment --><p >The <code>8</code> between angle brackets (<code>&lt;&gt;</code>) is the number of bits of the shift register. If you daisy chain two 8-bit shift registers together, you would use <code>16</code> instead of <code>8</code>, for example. <br  />
  The bit order determines which pin of the shift register is the first pin in the program. <code>MSBFIRST</code> means "most significant bit first". You can also use <code>LSBFIRST</code> (least significant bit first).</p>
-<h2><a class="anchor" id="autotoc_md275"></a>
+<h2><a class="anchor" id="autotoc_md281"></a>
 4. Add MIDI Control Elements</h2>
 <p >Now, we can specify the objects that listen for MIDI input, and update the status of the LEDs accordingly.</p>
 <p >I'll refer to the overview of <a class="el" href="../../df/d8b/group__MIDIInputElements.html">MIDI Input Elements</a>.</p>
@@ -322,19 +322,19 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="ttc" id="anamespaceMIDI__Notes_html_ad4db6c301a5bc503bb0ec5a9645090b0"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#ad4db6c301a5bc503bb0ec5a9645090b0">MIDI_Notes::B</a></div><div class="ttdeci">constexpr Note B</div><div class="ttdoc">B (Si)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00051">Notes.hpp:51</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_ad887f404135f1eee183e6f6e465fca25"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#ad887f404135f1eee183e6f6e465fca25">MIDI_Notes::A</a></div><div class="ttdeci">constexpr Note A</div><div class="ttdoc">A (La)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00049">Notes.hpp:49</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_af5d9fc75ec408f3b701c8a6a53b48eed"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#af5d9fc75ec408f3b701c8a6a53b48eed">MIDI_Notes::D</a></div><div class="ttdeci">constexpr Note D</div><div class="ttdoc">D (Re)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00042">Notes.hpp:42</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md276"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md282"></a>
 5. Initialize the Control Surface</h2>
 <p >See <a class="el" href="../../d5/d7d/md_pages_Getting-Started.html#first-output-init">First Output: Initialize the Control Surface</a>.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md277"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md283"></a>
 6. Continuously Update the Control Surface</h2>
 <p >See <a class="el" href="../../d5/d7d/md_pages_Getting-Started.html#first-output-loop">First Output: Continuously Update the Control Surface</a>.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md278"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md284"></a>
 The finished sketch</h2>
 <p >That's it! <br  />
  Now you can just upload the sketch to your Arduino, open up your favorite audio software, redirect the MIDI output to the Arduino, and start playing!</p>

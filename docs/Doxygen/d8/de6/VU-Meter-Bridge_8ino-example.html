@@ -122,7 +122,7 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI interface to use for the Control Surface.</span></div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../d0/d89/classBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../d0/d89/classBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ----------------------------- Display setup ------------------------------ //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
@@ -134,7 +134,7 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line">constexpr int8_t OLED_reset = -1; <span class="comment">// Use the external RC circuit for reset</span></div>
 <div class="line">constexpr int8_t OLED_CS = 2;     <span class="comment">// Chip Select pin of the display</span></div>
 <div class="line"> </div>
-<div class="line">constexpr uint32_t SPI_Frequency = <a name="a1"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a5b86686a1a39f3bd4c50998dc17706e6">SPI_MAX_SPEED</a>;</div>
+<div class="line">constexpr uint32_t SPI_Frequency = <a id="a1" name="a1"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a5b86686a1a39f3bd4c50998dc17706e6">SPI_MAX_SPEED</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate the displays</span></div>
 <div class="line">Adafruit_SSD1306 ssd1306Display {SCREEN_WIDTH, SCREEN_HEIGHT, &amp;SPI,</div>
@@ -145,21 +145,21 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Define and instantiate a display interface</span></div>
-<div class="line"><span class="keyword">class </span>MySSD1306_DisplayInterface : <span class="keyword">public</span> <a name="_a2"></a><a class="highlightclass code" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a> {</div>
+<div class="line"><span class="keyword">class </span>MySSD1306_DisplayInterface : <span class="keyword">public</span> <a id="_a2" name="_a2"></a><a class="highlightclass code" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a> {</div>
 <div class="line"> <span class="keyword">public</span>:</div>
 <div class="line">  MySSD1306_DisplayInterface(Adafruit_SSD1306 &amp;display)</div>
 <div class="line">    : <a class="highlightclass code" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a>(display) {}</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">void</span> <a name="a3"></a><a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>()<span class="keyword"> override </span>{</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a3" name="a3"></a><a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>()<span class="keyword"> override </span>{</div>
 <div class="line">    <span class="comment">// Initialize the Adafruit_SSD1306 display</span></div>
 <div class="line">    <span class="keywordflow">if</span> (!disp.begin())</div>
-<div class="line">      <a name="a4"></a><a class="highlightmember code" href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a>(F(<span class="stringliteral">&quot;SSD1306 allocation failed.&quot;</span>), 0x1306);</div>
+<div class="line">      <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a>(F(<span class="stringliteral">&quot;SSD1306 allocation failed.&quot;</span>), 0x1306);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// If you override the begin method,remember to call the superclass method</span></div>
 <div class="line">    <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">SSD1306_DisplayInterface::begin</a>();</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">void</span> <a name="a5"></a><a class="highlightmember code" href="../../dc/ddd/classSSD1306__DisplayInterface.html#a457c950a3ecc382e18887aeb4684b6d7">drawBackground</a>()<span class="keyword"> override </span>{</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a5" name="a5"></a><a class="highlightmember code" href="../../dc/ddd/classSSD1306__DisplayInterface.html#a457c950a3ecc382e18887aeb4684b6d7">drawBackground</a>()<span class="keyword"> override </span>{</div>
 <div class="line">    disp.drawFastHLine(0, 52, 128, WHITE);</div>
 <div class="line">    disp.drawRect(0, 0, 128, 64, WHITE);</div>
 <div class="line">  }</div>
@@ -168,24 +168,24 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line"><span class="comment">// -------------------------- MIDI Input Elements --------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
-<div class="line"><a name="_a6"></a><a class="highlightclass code" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> mute[8] {</div>
-<div class="line">  {<a name="a7"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga27cc272df01266b9b6fdb70d36caf68b">MCU::MUTE_1</a>}, <span class="comment">// The mute status of the first track</span></div>
-<div class="line">  {<a name="a8"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaeaa52eb7707bae35acd089d691fc899f">MCU::MUTE_2</a>}, {<a name="a9"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaec39bfeee53110110f8dca8761c4a7b2">MCU::MUTE_3</a>}, {<a name="a10"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gab4e78530db6daf52b8191a34060eedde">MCU::MUTE_4</a>}, {<a name="a11"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga6bc5209a554a8e7c327286abff91d048">MCU::MUTE_5</a>},</div>
-<div class="line">  {<a name="a12"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga92841330bac0d7efdacf102a06055737">MCU::MUTE_6</a>}, {<a name="a13"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaab8367d1ad11184ad3208a56e0514eac">MCU::MUTE_7</a>}, {<a name="a14"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaa5de8f50fe78d70e116df42a5cb1fcb5">MCU::MUTE_8</a>},</div>
+<div class="line"><a id="_a6" name="_a6"></a><a class="highlightclass code" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> mute[8] {</div>
+<div class="line">  {<a id="a7" name="a7"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga27cc272df01266b9b6fdb70d36caf68b">MCU::MUTE_1</a>}, <span class="comment">// The mute status of the first track</span></div>
+<div class="line">  {<a id="a8" name="a8"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaeaa52eb7707bae35acd089d691fc899f">MCU::MUTE_2</a>}, {<a id="a9" name="a9"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaec39bfeee53110110f8dca8761c4a7b2">MCU::MUTE_3</a>}, {<a id="a10" name="a10"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gab4e78530db6daf52b8191a34060eedde">MCU::MUTE_4</a>}, {<a id="a11" name="a11"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga6bc5209a554a8e7c327286abff91d048">MCU::MUTE_5</a>},</div>
+<div class="line">  {<a id="a12" name="a12"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga92841330bac0d7efdacf102a06055737">MCU::MUTE_6</a>}, {<a id="a13" name="a13"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaab8367d1ad11184ad3208a56e0514eac">MCU::MUTE_7</a>}, {<a id="a14" name="a14"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaa5de8f50fe78d70e116df42a5cb1fcb5">MCU::MUTE_8</a>},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><a class="highlightclass code" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> solo[8] {</div>
-<div class="line">  {<a name="a15"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga9e2c5de3ddf0b4e3539704d71edca56a">MCU::SOLO_1</a>}, <span class="comment">// The solo status of the first track</span></div>
-<div class="line">  {<a name="a16"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga9aa1347271e1b5e3501845c389a90285">MCU::SOLO_2</a>}, {<a name="a17"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gacb43724a76d6c04e40f80b340cea4a4c">MCU::SOLO_3</a>}, {<a name="a18"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaa6caf8dd7e520deb577ab5e942a9f0e8">MCU::SOLO_4</a>}, {<a name="a19"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaa9970b0ad33ebfb4ecd38b35075f34c4">MCU::SOLO_5</a>},</div>
-<div class="line">  {<a name="a20"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga5de1fc19ade67972e902bbfd6ab4c556">MCU::SOLO_6</a>}, {<a name="a21"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gab97ad947f9917958613e319da2b04aba">MCU::SOLO_7</a>}, {<a name="a22"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaa0e5027ceb7ad42ea4de1def2747291a">MCU::SOLO_8</a>},</div>
+<div class="line">  {<a id="a15" name="a15"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga9e2c5de3ddf0b4e3539704d71edca56a">MCU::SOLO_1</a>}, <span class="comment">// The solo status of the first track</span></div>
+<div class="line">  {<a id="a16" name="a16"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga9aa1347271e1b5e3501845c389a90285">MCU::SOLO_2</a>}, {<a id="a17" name="a17"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gacb43724a76d6c04e40f80b340cea4a4c">MCU::SOLO_3</a>}, {<a id="a18" name="a18"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaa6caf8dd7e520deb577ab5e942a9f0e8">MCU::SOLO_4</a>}, {<a id="a19" name="a19"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaa9970b0ad33ebfb4ecd38b35075f34c4">MCU::SOLO_5</a>},</div>
+<div class="line">  {<a id="a20" name="a20"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga5de1fc19ade67972e902bbfd6ab4c556">MCU::SOLO_6</a>}, {<a id="a21" name="a21"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gab97ad947f9917958613e319da2b04aba">MCU::SOLO_7</a>}, {<a id="a22" name="a22"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaa0e5027ceb7ad42ea4de1def2747291a">MCU::SOLO_8</a>},</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line">constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> decay = <a name="a23"></a><a class="highlightmember code" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da">MCU::VUDecay::Hold</a>;</div>
+<div class="line">constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> decay = <a id="a23" name="a23"></a><a class="highlightmember code" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da">MCU::VUDecay::Hold</a>;</div>
 <div class="line"><span class="comment">// Try this option if your DAW doesn&#39;t decay the VU meters automatically:</span></div>
 <div class="line"><span class="comment">//   constexpr unsigned int decay = 60; // milliseconds to decay one block</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// VU meters</span></div>
-<div class="line"><a name="_a24"></a><a class="highlightclass code" href="../../d8/d4c/classMCU_1_1VU.html">MCU::VU</a> VUMeters[8] {</div>
+<div class="line"><a id="_a24" name="_a24"></a><a class="highlightclass code" href="../../d8/d4c/classMCU_1_1VU.html">MCU::VU</a> VUMeters[8] {</div>
 <div class="line">  {1, decay}, <span class="comment">// The VU meter for the first track, decay time as specified above</span></div>
 <div class="line">  {2, decay}, {3, decay}, {4, decay}, {5, decay},</div>
 <div class="line">  {6, decay}, {7, decay}, {8, decay},</div>
@@ -194,7 +194,7 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line"><span class="comment">// ---------------------------- Display Elements ---------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
-<div class="line"><a name="_a25"></a><a class="highlightclass code" href="../../d4/d42/classMCU_1_1VUDisplay.html">MCU::VUDisplay&lt;&gt;</a> vuDisp[8] {</div>
+<div class="line"><a id="_a25" name="_a25"></a><a class="highlightclass code" href="../../d4/d42/classMCU_1_1VUDisplay.html">MCU::VUDisplay&lt;&gt;</a> vuDisp[8] {</div>
 <div class="line">  <span class="comment">// Draw the first VU meter to the display, at position (2, 50),</span></div>
 <div class="line">  <span class="comment">// (12) pixels wide, blocks of (3) pixels high, a spacing between</span></div>
 <div class="line">  <span class="comment">// blocks of (1) pixel, and draw in white.</span></div>
@@ -208,10 +208,10 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line">  {display, VUMeters[7], {2 + 16 * 7, 50}, 12, 3, 1, WHITE},</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><a name="_a26"></a><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> muteDisp[8] {</div>
+<div class="line"><a id="_a26" name="_a26"></a><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> muteDisp[8] {</div>
 <div class="line">  <span class="comment">// Draw the first mute indicator to the display, at position (4, 54),</span></div>
 <div class="line">  <span class="comment">// using bitmap icon mute_7 with a white foreground color.</span></div>
-<div class="line">  {display, mute[0], <a name="a27"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a6c1858be781a94e10354bffebc8b2653">XBM::mute_7</a>, {4 + 16 * 0, 54}, WHITE},</div>
+<div class="line">  {display, mute[0], <a id="a27" name="a27"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a6c1858be781a94e10354bffebc8b2653">XBM::mute_7</a>, {4 + 16 * 0, 54}, WHITE},</div>
 <div class="line">  {display, mute[1], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a6c1858be781a94e10354bffebc8b2653">XBM::mute_7</a>, {4 + 16 * 1, 54}, WHITE},</div>
 <div class="line">  {display, mute[2], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a6c1858be781a94e10354bffebc8b2653">XBM::mute_7</a>, {4 + 16 * 2, 54}, WHITE},</div>
 <div class="line">  {display, mute[3], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a6c1858be781a94e10354bffebc8b2653">XBM::mute_7</a>, {4 + 16 * 3, 54}, WHITE},</div>
@@ -224,7 +224,7 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line"><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> soloDisp[8] {</div>
 <div class="line">  <span class="comment">// Draw the first solo indicator to the display, at position (4, 54),</span></div>
 <div class="line">  <span class="comment">// using bitmap icon solo_7 with a white foreground color.</span></div>
-<div class="line">  {display, solo[0], <a name="a28"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63">XBM::solo_7</a>, {4 + 16 * 0, 54}, WHITE},</div>
+<div class="line">  {display, solo[0], <a id="a28" name="a28"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63">XBM::solo_7</a>, {4 + 16 * 0, 54}, WHITE},</div>
 <div class="line">  {display, solo[1], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63">XBM::solo_7</a>, {4 + 16 * 1, 54}, WHITE},</div>
 <div class="line">  {display, solo[2], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63">XBM::solo_7</a>, {4 + 16 * 2, 54}, WHITE},</div>
 <div class="line">  {display, solo[3], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63">XBM::solo_7</a>, {4 + 16 * 3, 54}, WHITE},</div>
@@ -238,14 +238,14 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a29"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a30"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
+<div class="line">  <a id="a29" name="a29"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a30" name="a30"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ---------------------------------- Loop ---------------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a31"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Refresh all elements</span></div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a31" name="a31"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Refresh all elements</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00286">Control_Surface_Class.cpp:286</a></div></div>

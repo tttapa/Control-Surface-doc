@@ -104,21 +104,21 @@ Behavior</h2>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI over USB interface</span></div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a program changer with 3 programs</span></div>
-<div class="line"><a name="_a1"></a><a class="highlightclass code" href="../../de/d43/classProgramChanger.html">ProgramChanger&lt;3&gt;</a> programChanger {</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../de/d43/classProgramChanger.html">ProgramChanger&lt;3&gt;</a> programChanger {</div>
 <div class="line">  {</div>
-<div class="line">    <a name="a2"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#ad841d473a095d11c1f6e67557d9f2c8a">MIDI_PC::Acoustic_Grand_Piano</a>, <span class="comment">// list of programs</span></div>
-<div class="line">    <a name="a3"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a2333e468c0f2d1904950e30248870f20">MIDI_PC::Rock_Organ</a>,</div>
-<div class="line">    <a name="a4"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a0973eb72b8a4715e2d632aaeaaab69a8">MIDI_PC::Electric_Bass_Pick</a>,</div>
+<div class="line">    <a id="a2" name="a2"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#ad841d473a095d11c1f6e67557d9f2c8a">MIDI_PC::Acoustic_Grand_Piano</a>, <span class="comment">// list of programs</span></div>
+<div class="line">    <a id="a3" name="a3"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a2333e468c0f2d1904950e30248870f20">MIDI_PC::Rock_Organ</a>,</div>
+<div class="line">    <a id="a4" name="a4"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a0973eb72b8a4715e2d632aaeaaab69a8">MIDI_PC::Electric_Bass_Pick</a>,</div>
 <div class="line">  },</div>
-<div class="line">  <a name="a5"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>, <span class="comment">// MIDI channel to use</span></div>
+<div class="line">  <a id="a5" name="a5"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>, <span class="comment">// MIDI channel to use</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a selector that reads three buttons and controls the program</span></div>
 <div class="line"><span class="comment">// changer</span></div>
-<div class="line"><a name="_a6"></a><a class="highlightclass code" href="../../d3/d69/classManyButtonsSelector.html">ManyButtonsSelector&lt;3&gt;</a> programSelector {</div>
+<div class="line"><a id="_a6" name="_a6"></a><a class="highlightclass code" href="../../d3/d69/classManyButtonsSelector.html">ManyButtonsSelector&lt;3&gt;</a> programSelector {</div>
 <div class="line">  programChanger,</div>
 <div class="line">  {{2, 3, 4}},</div>
 <div class="line">};</div>
@@ -129,11 +129,11 @@ Behavior</h2>
 <div class="line"><span class="comment">// https://tttapa.github.io/Control-Surface-doc/Doxygen/d0/d0c/group__Selectors.html</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a7"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
+<div class="line">  <a id="a7" name="a7"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a8" name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a9" name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aChannel_8hpp_html_a166aafd26c8b912f9e8bc7acb8b1cd17"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a></div><div class="ttdeci">constexpr Channel CHANNEL_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>

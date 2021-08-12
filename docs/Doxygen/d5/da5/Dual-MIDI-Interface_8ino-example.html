@@ -110,26 +110,26 @@ Mapping</h2>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create two MIDI interfaces</span></div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> usbmidi;</div>
-<div class="line"><a name="_a1"></a><a class="highlightclass code" href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a> serialmidi {Serial1, <a name="a2"></a><a class="highlightmember code" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI_BAUD</a>};</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> usbmidi;</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a> serialmidi {Serial1, <a id="a2" name="a2"></a><a class="highlightmember code" href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI_BAUD</a>};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a MIDI pipe factory to connect the MIDI interfaces to Control Surface</span></div>
-<div class="line"><a name="_a3"></a><a class="highlightclass code" href="../../d3/da5/structMIDI__PipeFactory.html">BidirectionalMIDI_PipeFactory&lt;2&gt;</a> pipes;</div>
+<div class="line"><a id="_a3" name="_a3"></a><a class="highlightclass code" href="../../d3/da5/structMIDI__PipeFactory.html">BidirectionalMIDI_PipeFactory&lt;2&gt;</a> pipes;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Add some MIDI elements to show that the MIDI interfaces actually work</span></div>
-<div class="line"><a name="_a4"></a><a class="highlightclass code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> pot {A0, <a name="a5"></a><a class="highlightmember code" href="../../d4/dbe/namespaceMIDI__CC.html#a6eb9900d522be13f07efce201817046d">MIDI_CC::General_Purpose_Controller_1</a>};</div>
-<div class="line"><a name="_a6"></a><a class="highlightclass code" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {LED_BUILTIN, 0x3C};</div>
+<div class="line"><a id="_a4" name="_a4"></a><a class="highlightclass code" href="../../db/d32/classCCPotentiometer.html">CCPotentiometer</a> pot {A0, <a id="a5" name="a5"></a><a class="highlightmember code" href="../../d4/dbe/namespaceMIDI__CC.html#a6eb9900d522be13f07efce201817046d">MIDI_CC::General_Purpose_Controller_1</a>};</div>
+<div class="line"><a id="_a6" name="_a6"></a><a class="highlightclass code" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {LED_BUILTIN, 0x3C};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <span class="comment">// Manually connect the MIDI interfaces to Control Surface</span></div>
-<div class="line">  <a name="a7"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a> | pipes | usbmidi;</div>
+<div class="line">  <a id="a7" name="a7"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a> | pipes | usbmidi;</div>
 <div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a> | pipes | serialmidi;</div>
 <div class="line">  <span class="comment">// Initialize Control Surface _after_ connecting the interfaces</span></div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a8" name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a9" name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>

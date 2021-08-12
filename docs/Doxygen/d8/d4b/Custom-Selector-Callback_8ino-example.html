@@ -112,13 +112,13 @@ Mapping</h2>
 <div class="line"><span class="keyword">class </span>MySelectorCallback {</div>
 <div class="line">  <span class="keyword">public</span>:</div>
 <div class="line">    <span class="comment">// Constructor</span></div>
-<div class="line">    MySelectorCallback(<a name="a0"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> redLED, <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> greenLED, <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> blueLED)</div>
+<div class="line">    MySelectorCallback(<a id="a0" name="a0"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> redLED, <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> greenLED, <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> blueLED)</div>
 <div class="line">      : redLED(redLED), greenLED(greenLED), blueLED(blueLED) {}</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Begin function is called once by Control Surface.</span></div>
 <div class="line">    <span class="comment">// Use it to initialize everything.</span></div>
 <div class="line">    <span class="keywordtype">void</span> begin() {</div>
-<div class="line">      <a name="a1"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(redLED, <a name="a2"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
+<div class="line">      <a id="a1" name="a1"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(redLED, <a id="a2" name="a2"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
 <div class="line">      <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(greenLED, <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
 <div class="line">      <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(blueLED, <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
 <div class="line">      show(0);</div>
@@ -140,7 +140,7 @@ Mapping</h2>
 <div class="line">    <span class="comment">// Show the color of the given setting.</span></div>
 <div class="line">    <span class="keywordtype">void</span> show(<a class="highlightmember code" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f272add970db0">setting_t</a> setting) {</div>
 <div class="line">      uint8_t color = getColor(setting);</div>
-<div class="line">      <a name="a3"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(redLED, color &amp; 0b001 ? <a name="a4"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a> : <a name="a5"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
+<div class="line">      <a id="a3" name="a3"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(redLED, color &amp; 0b001 ? <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a> : <a id="a5" name="a5"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
 <div class="line">      <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(greenLED, color &amp; 0b010 ? <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a> : <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
 <div class="line">      <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(blueLED, color &amp; 0b100 ? <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a> : <a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
 <div class="line">    }</div>
@@ -165,26 +165,26 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</span></div>
 <div class="line"> </div>
-<div class="line"><a name="_a6"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a6" name="_a6"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create 6 banks with one track per bank.</span></div>
-<div class="line"><a name="_a7"></a><a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;6&gt;</a> bank = 1;</div>
+<div class="line"><a id="_a7" name="_a7"></a><a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;6&gt;</a> bank = 1;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a selector that uses our custom callback, to control the bank.</span></div>
-<div class="line"><a name="_a8"></a><a class="highlightclass code" href="../../d3/d78/classGenericIncrementDecrementSelector.html">GenericIncrementDecrementSelector&lt;6, MySelectorCallback&gt;</a> selector {</div>
+<div class="line"><a id="_a8" name="_a8"></a><a class="highlightclass code" href="../../d3/d78/classGenericIncrementDecrementSelector.html">GenericIncrementDecrementSelector&lt;6, MySelectorCallback&gt;</a> selector {</div>
 <div class="line">  bank,         <span class="comment">// bank to manage</span></div>
 <div class="line">  {10, 11, 12}, <span class="comment">// red, green, blue LED pins </span></div>
 <div class="line">                <span class="comment">// (this is the MySelectorCallback constructor defined above)</span></div>
 <div class="line">  {2, 3},       <span class="comment">// incr/decr button pins</span></div>
-<div class="line">  <a name="a9"></a><a class="highlightmember code" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d">Wrap::Wrap</a>,   <span class="comment">// wrap around when reaching setting 6</span></div>
+<div class="line">  <a id="a9" name="a9"></a><a class="highlightmember code" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d">Wrap::Wrap</a>,   <span class="comment">// wrap around when reaching setting 6</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a10"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a11"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// initialize</span></div>
+<div class="line">  <a id="a10" name="a10"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a11" name="a11"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// initialize</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a12"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// update</span></div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a12" name="a12"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// update</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aArduino-Hardware-Types_8hpp_html_a05bc6f80bb782de0d489a41bdb652305"><div class="ttname"><a href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a></div><div class="ttdeci">constexpr PinStatus_t LOW</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3c/Arduino-Hardware-Types_8hpp_source.html#l00063">Arduino-Hardware-Types.hpp:63</a></div></div>
 <div class="ttc" id="aArduino-Hardware-Types_8hpp_html_a4b2f87da16a1a26dce6e6ba3fbe5f572"><div class="ttname"><a href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a></div><div class="ttdeci">constexpr PinStatus_t HIGH</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3c/Arduino-Hardware-Types_8hpp_source.html#l00062">Arduino-Hardware-Types.hpp:62</a></div></div>

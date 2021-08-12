@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3c8ac15a258fcc45fe7822e2dd4cf40532f1db47 - src/MIDI_Interfaces/SerialMIDI_Interface.hpp</title>
+  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Interfaces/SerialMIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3c8ac15a258fcc45fe7822e2dd4cf40532f1db47</td>
+            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">2</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-05 13:35:54</td>
+            <td class="headerValue">2021-08-12 18:03:11</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -231,43 +231,6 @@
 <a name="161"><span class="lineNum">     161 </span>            : #endif</a>
 <a name="162"><span class="lineNum">     162 </span>            : </a>
 <a name="163"><span class="lineNum">     163 </span>            : END_CS_NAMESPACE</a>
-<a name="164"><span class="lineNum">     164 </span>            : </a>
-<a name="165"><span class="lineNum">     165 </span>            : // -------------------------------------------------------------------------- //</a>
-<a name="166"><span class="lineNum">     166 </span>            : </a>
-<a name="167"><span class="lineNum">     167 </span>            : // TODO: Teensy 4.0 SoftwareSerial bug</a>
-<a name="168"><span class="lineNum">     168 </span>            : #if defined(__AVR__) || (defined(TEENSYDUINO) &amp;&amp; TEENSYDUINO != 147) ||        \</a>
-<a name="169"><span class="lineNum">     169 </span>            :     (defined(TEENSYDUINO) &amp;&amp; !defined(__IMXRT1052__) &amp;&amp;                        \</a>
-<a name="170"><span class="lineNum">     170 </span>            :      !defined(__IMXRT1062__))</a>
-<a name="171"><span class="lineNum">     171 </span>            : </a>
-<a name="172"><span class="lineNum">     172 </span>            : #include &lt;SoftwareSerial.h&gt;</a>
-<a name="173"><span class="lineNum">     173 </span>            : </a>
-<a name="174"><span class="lineNum">     174 </span>            : BEGIN_CS_NAMESPACE</a>
-<a name="175"><span class="lineNum">     175 </span>            : </a>
-<a name="176"><span class="lineNum">     176 </span>            : /**</a>
-<a name="177"><span class="lineNum">     177 </span>            :  * @brief   A class for MIDI interfaces sending and receiving</a>
-<a name="178"><span class="lineNum">     178 </span>            :  *          MIDI messages over a SoftwareSerial interface.</a>
-<a name="179"><span class="lineNum">     179 </span>            :  * </a>
-<a name="180"><span class="lineNum">     180 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="181"><span class="lineNum">     181 </span>            :  */</a>
-<a name="182"><span class="lineNum">     182 </span>            : class SoftwareSerialMIDI_Interface</a>
-<a name="183"><span class="lineNum">     183 </span>            :     : public SerialMIDI_Interface&lt;SoftwareSerial&gt; {</a>
-<a name="184"><span class="lineNum">     184 </span>            :   public:</a>
-<a name="185"><span class="lineNum">     185 </span>            :     /**</a>
-<a name="186"><span class="lineNum">     186 </span>            :      * @brief   Create a SoftwareSerialMIDI_Interface on the given</a>
-<a name="187"><span class="lineNum">     187 </span>            :      *          SoftwareSerial interface with the given baud rate.</a>
-<a name="188"><span class="lineNum">     188 </span>            :      *</a>
-<a name="189"><span class="lineNum">     189 </span>            :      * @param   serial</a>
-<a name="190"><span class="lineNum">     190 </span>            :      *          The SoftwareSerial interface.</a>
-<a name="191"><span class="lineNum">     191 </span>            :      * @param   baud</a>
-<a name="192"><span class="lineNum">     192 </span>            :      *          The baud rate for the serial interface.</a>
-<a name="193"><span class="lineNum">     193 </span>            :      */</a>
-<a name="194"><span class="lineNum">     194 </span>            :     SoftwareSerialMIDI_Interface(SoftwareSerial &amp;serial, unsigned long baud)</a>
-<a name="195"><span class="lineNum">     195 </span>            :         : SerialMIDI_Interface(serial, baud) {}</a>
-<a name="196"><span class="lineNum">     196 </span>            : };</a>
-<a name="197"><span class="lineNum">     197 </span>            : </a>
-<a name="198"><span class="lineNum">     198 </span>            : END_CS_NAMESPACE</a>
-<a name="199"><span class="lineNum">     199 </span>            : </a>
-<a name="200"><span class="lineNum">     200 </span>            : #endif</a>
 </pre>
       </td>
     </tr>

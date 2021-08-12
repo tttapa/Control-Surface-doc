@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">3.FilteredAnalogReadSerial.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md241"></a>
+<h1><a class="anchor" id="autotoc_md247"></a>
 3.FilteredAnalogReadSerial</h1>
 <p >This is an example of the AnalogMultiplex and the FilteredAnalog classes. It prints the filtered values of all 16 inputs of a multiplexers to the serial monitor.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md242"></a>
+<h2><a class="anchor" id="autotoc_md248"></a>
 Connections</h2>
 <ul>
 <li>A0: CD74HC4067 signal pin ("common input/output")</li>
@@ -94,7 +94,7 @@ Connections</h2>
 </ul>
 <p >Optionally you can connect the enable pin as well, this is useful if you want to use multiple multiplexers with the same address lines and the same analog input. Otherwise, just connect the enable pin to ground.</p>
 <p >If you are using a 3-bit multiplexer, like the CD74HC4051, you can uncomment the code specific to this multiplexer, and use only three address pins.</p>
-<h2><a class="anchor" id="autotoc_md243"></a>
+<h2><a class="anchor" id="autotoc_md249"></a>
 Behavior</h2>
 <p >Connect some potentiometers or other analog sensors to the 16 inputs of the multiplexer, and open the serial monitor (CTRL+SHIFT+M) or the serial plotter (CTRL+SHIFT+L). You should see all 16 signals printed or plotted.</p>
 <p >Written by Pieter P, 09-04-2019 <br  />
@@ -107,7 +107,7 @@ Behavior</h2>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d5/db6/ArrayHelpers_8hpp.html">AH/Containers/ArrayHelpers.hpp</a>&gt;</span> <span class="comment">// copyAs&lt;&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a multiplexer</span></div>
-<div class="line"><a name="a0"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga76abe1cbb481b44875fb5e08da186ad0">CD74HC4067</a> mux {</div>
+<div class="line"><a id="a0" name="a0"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga76abe1cbb481b44875fb5e08da186ad0">CD74HC4067</a> mux {</div>
 <div class="line">  A0,           <span class="comment">// analog pin</span></div>
 <div class="line">  {3, 4, 5, 6}, <span class="comment">// Address pins S0, S1, S2, S3</span></div>
 <div class="line">  <span class="comment">// 7, // Optionally, specify the enable pin</span></div>

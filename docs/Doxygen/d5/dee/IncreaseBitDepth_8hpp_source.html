@@ -83,47 +83,47 @@ $(function() {
   <div class="headertitle"><div class="title">IncreaseBitDepth.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d5/dee/IncreaseBitDepth_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d1/d65/Warnings_8hpp.html">AH/Settings/Warnings.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>() <span class="comment">// Enable errors on warnings</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;AH/STL/type_traits&gt; </span><span class="comment">// enable_if</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;limits.h&gt;</span>           <span class="comment">// CHAR_BIT</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span>           <span class="comment">// size_t</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Bits_out, <span class="keywordtype">size_t</span> Bits_in, <span class="keyword">class</span> T_out, <span class="keyword">class</span> T_in&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;std::enable_if_t&lt;(Bits_out &lt;= 2 * Bits_in), T_out&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../dc/d69/namespaceAH.html#a344910078ff5ae8293281a7d02d55154">   14</a></span>&#160;<a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a61592338bbb1bd0eb0a74ab8aa8a633d">increaseBitDepthImpl</a>(T_in in) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    constexpr <span class="keywordtype">size_t</span> leftShift = Bits_out - Bits_in;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    constexpr <span class="keywordtype">size_t</span> rightShift = Bits_in - leftShift;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> (T_out(in) &lt;&lt; leftShift) | (in &gt;&gt; rightShift);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Bits_out, <span class="keywordtype">size_t</span> Bits_in, <span class="keyword">class</span> T_out, <span class="keyword">class</span> T_in&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;std::enable_if_t&lt;(Bits_out &gt; 2 * Bits_in), T_out&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dc/d69/namespaceAH.html#a61592338bbb1bd0eb0a74ab8aa8a633d">   22</a></span>&#160;<a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a61592338bbb1bd0eb0a74ab8aa8a633d">increaseBitDepthImpl</a>(T_in in) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    constexpr <span class="keywordtype">size_t</span> leftShift = Bits_out - Bits_in;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> (T_out(in) &lt;&lt; leftShift) |</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;           increaseBitDepthImpl&lt;leftShift, Bits_in, T_out&gt;(in);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Bits_out, <span class="keywordtype">size_t</span> Bits_in, <span class="keyword">class</span> T_out, <span class="keyword">class</span> T_in&gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">   64</a></span>&#160;T_out <a class="highlightmember code" href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">increaseBitDepth</a>(T_in in) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    static_assert(Bits_in &lt;= <span class="keyword">sizeof</span>(T_in) * CHAR_BIT,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                  <span class="stringliteral">&quot;Error: Bits_in &gt; bits(T_in)&quot;</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    static_assert(Bits_out &lt;= <span class="keyword">sizeof</span>(T_out) * CHAR_BIT,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                  <span class="stringliteral">&quot;Error: Bits_out &gt; bits(T_out)&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> increaseBitDepthImpl&lt;Bits_out, Bits_in, T_out&gt;(in);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
+<a href="../../d5/dee/IncreaseBitDepth_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d1/d65/Warnings_8hpp.html">AH/Settings/Warnings.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>() <span class="comment">// Enable errors on warnings</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;AH/STL/type_traits&gt; </span><span class="comment">// enable_if</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;limits.h&gt;</span>           <span class="comment">// CHAR_BIT</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;stddef.h&gt;</span>           <span class="comment">// size_t</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Bits_out, <span class="keywordtype">size_t</span> Bits_in, <span class="keyword">class</span> T_out, <span class="keyword">class</span> T_in&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>std::enable_if_t&lt;(Bits_out &lt;= 2 * Bits_in), T_out&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../dc/d69/namespaceAH.html#a344910078ff5ae8293281a7d02d55154">   14</a></span><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a61592338bbb1bd0eb0a74ab8aa8a633d">increaseBitDepthImpl</a>(T_in in) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    constexpr <span class="keywordtype">size_t</span> leftShift = Bits_out - Bits_in;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    constexpr <span class="keywordtype">size_t</span> rightShift = Bits_in - leftShift;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">return</span> (T_out(in) &lt;&lt; leftShift) | (in &gt;&gt; rightShift);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Bits_out, <span class="keywordtype">size_t</span> Bits_in, <span class="keyword">class</span> T_out, <span class="keyword">class</span> T_in&gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>std::enable_if_t&lt;(Bits_out &gt; 2 * Bits_in), T_out&gt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../dc/d69/namespaceAH.html#a61592338bbb1bd0eb0a74ab8aa8a633d">   22</a></span><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a61592338bbb1bd0eb0a74ab8aa8a633d">increaseBitDepthImpl</a>(T_in in) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    constexpr <span class="keywordtype">size_t</span> leftShift = Bits_out - Bits_in;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> (T_out(in) &lt;&lt; leftShift) |</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>           increaseBitDepthImpl&lt;leftShift, Bits_in, T_out&gt;(in);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Bits_out, <span class="keywordtype">size_t</span> Bits_in, <span class="keyword">class</span> T_out, <span class="keyword">class</span> T_in&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">   64</a></span>T_out <a class="highlightmember code" href="../../dd/d5e/group__AH__Math.html#ga3f1575fa40efb919ec8ff730eb6a87cf">increaseBitDepth</a>(T_in in) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    static_assert(Bits_in &lt;= <span class="keyword">sizeof</span>(T_in) * CHAR_BIT,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                  <span class="stringliteral">&quot;Error: Bits_in &gt; bits(T_in)&quot;</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    static_assert(Bits_out &lt;= <span class="keyword">sizeof</span>(T_out) * CHAR_BIT,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                  <span class="stringliteral">&quot;Error: Bits_out &gt; bits(T_out)&quot;</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> increaseBitDepthImpl&lt;Bits_out, Bits_in, T_out&gt;(in);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><a class="highlightmember code" href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><a class="highlightmember code" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_a03ed68e9e3d1bbe9a28fd924cb7260c1"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a03ed68e9e3d1bbe9a28fd924cb7260c1">END_AH_NAMESPACE</a></div><div class="ttdeci">#define END_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00010">AH/Settings/NamespaceSettings.hpp:10</a></div></div>
 <div class="ttc" id="aAH_2Settings_2NamespaceSettings_8hpp_html_abe0f0e505619b6899c38363f4e42a272"><div class="ttname"><a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#abe0f0e505619b6899c38363f4e42a272">BEGIN_AH_NAMESPACE</a></div><div class="ttdeci">#define BEGIN_AH_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db0/AH_2Settings_2NamespaceSettings_8hpp_source.html#l00009">AH/Settings/NamespaceSettings.hpp:9</a></div></div>
 <div class="ttc" id="aWarnings_8hpp_html"><div class="ttname"><a href="../../d1/d65/Warnings_8hpp.html">Warnings.hpp</a></div></div>

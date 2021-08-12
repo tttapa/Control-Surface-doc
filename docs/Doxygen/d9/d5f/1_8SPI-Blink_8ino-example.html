@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">1.SPI-Blink.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md247"></a>
+<h1><a class="anchor" id="autotoc_md253"></a>
 1.SPI-Blink</h1>
 <p >This example demonstrates the use of shift registers as if they were just normal IO pins. The SPI interface is used because it's easy and fast.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md248"></a>
+<h2><a class="anchor" id="autotoc_md254"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -93,7 +93,7 @@ Connections</h2>
 <p >Connect an LED (and series resistor) between the first output of the shift register and ground.</p>
 <p >Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md249"></a>
+<h2><a class="anchor" id="autotoc_md255"></a>
 Behavior</h2>
 <p >This sketch will blink the LED once a second.</p>
 <p >Written by PieterP, 2018-09-01 <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
@@ -107,19 +107,19 @@ Behavior</h2>
 <div class="line"><span class="comment">// significant bit first, and a total of 8 outputs.</span></div>
 <div class="line">SPIShiftRegisterOut&lt;8&gt; sreg {SPI, SS, MSBFIRST};</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">const</span> <a name="a0"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin = sreg.pin(0); <span class="comment">// first pin of the shift register</span></div>
+<div class="line"><span class="keyword">const</span> <a id="a0" name="a0"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin = sreg.pin(0); <span class="comment">// first pin of the shift register</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  sreg.begin();            <span class="comment">// Initialize the shift registers</span></div>
-<div class="line">  <a name="a1"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(ledPin, <a name="a2"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>); <span class="comment">// You don&#39;t even need this line, since</span></div>
+<div class="line">  <a id="a1" name="a1"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(ledPin, <a id="a2" name="a2"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>); <span class="comment">// You don&#39;t even need this line, since</span></div>
 <div class="line">                           <span class="comment">// shift registers are always outputs</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  <span class="comment">// Toggle the state of the LED every 1/2 second</span></div>
-<div class="line">  <a name="a3"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(ledPin, <a name="a4"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
+<div class="line">  <a id="a3" name="a3"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(ledPin, <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
 <div class="line">  delay(500);</div>
-<div class="line">  <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(ledPin, <a name="a5"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
+<div class="line">  <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(ledPin, <a id="a5" name="a5"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
 <div class="line">  delay(500);</div>
 <div class="line">}</div>
 <div class="ttc" id="aArduino-Hardware-Types_8hpp_html_a05bc6f80bb782de0d489a41bdb652305"><div class="ttname"><a href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a></div><div class="ttdeci">constexpr PinStatus_t LOW</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3c/Arduino-Hardware-Types_8hpp_source.html#l00063">Arduino-Hardware-Types.hpp:63</a></div></div>

@@ -101,7 +101,7 @@ Mapping</h2>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI over USB interface.</span></div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// MIDI Input Element that listens for MIDI Note events that turns on the LED at</span></div>
 <div class="line"><span class="comment">// full brightness if the note value (velocity) is above the threshold,</span></div>
@@ -113,35 +113,35 @@ Mapping</h2>
 <div class="line">  <span class="comment">// you want to listen to MIDI Note events by specifying the MIDI message type,</span></div>
 <div class="line">  <span class="comment">// and use a simple 2-byte message matcher, since MIDI Note events have two</span></div>
 <div class="line">  <span class="comment">// data bytes.</span></div>
-<div class="line">  : <span class="keyword">public</span> <a name="_a1"></a><a class="highlightclass code" href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a>&lt;MIDIMessageType::NOTE_ON,</div>
+<div class="line">  : <span class="keyword">public</span> <a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a>&lt;MIDIMessageType::NOTE_ON,</div>
 <div class="line">                                    TwoByteMIDIMatcher&gt; {</div>
 <div class="line"> <span class="keyword">public</span>:</div>
 <div class="line">  <span class="comment">// Constructor</span></div>
-<div class="line">  CustomNoteLED(<a name="a2"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin, <a name="_a3"></a><a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t lowBrightness)</div>
-<div class="line">    : <a name="a4"></a><a class="highlightmember code" href="../../d5/dae/classMatchingMIDIInputElement.html#a08ddf904fdf20dada2f49a9f7f00aeb0">MatchingMIDIInputElement</a>(address), ledPin(ledPin),</div>
+<div class="line">  CustomNoteLED(<a id="a2" name="a2"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin, <a id="_a3" name="_a3"></a><a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t lowBrightness)</div>
+<div class="line">    : <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d5/dae/classMatchingMIDIInputElement.html#a08ddf904fdf20dada2f49a9f7f00aeb0">MatchingMIDIInputElement</a>(address), ledPin(ledPin),</div>
 <div class="line">      lowBrightness(lowBrightness) {}</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Called once upon initialization, set up the pin mode for the LED,</span></div>
 <div class="line">  <span class="comment">// and output the initial value.</span></div>
-<div class="line">  <span class="keywordtype">void</span> <a name="a5"></a><a class="highlightmember code" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a>()<span class="keyword"> override </span>{</div>
-<div class="line">    <a name="a6"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">ExtIO::pinMode</a>(ledPin, <a name="a7"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
-<div class="line">    <a name="a8"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga5aa3b4dbb8bfffdd022e1f5bb8dc5784">ExtIO::analogWrite</a>(ledPin, lowBrightness);</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a5" name="a5"></a><a class="highlightmember code" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a>()<span class="keyword"> override </span>{</div>
+<div class="line">    <a id="a6" name="a6"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">ExtIO::pinMode</a>(ledPin, <a id="a7" name="a7"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
+<div class="line">    <a id="a8" name="a8"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga5aa3b4dbb8bfffdd022e1f5bb8dc5784">ExtIO::analogWrite</a>(ledPin, lowBrightness);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Called when an incoming MIDI Note message matches this element&#39;s matcher</span></div>
 <div class="line">  <span class="comment">// (i.e. it has the right MIDI address, channel and cable).</span></div>
 <div class="line">  <span class="comment">// The match object that&#39;s passed as a parameter contains the velocity value</span></div>
 <div class="line">  <span class="comment">// of the Note message that matched.</span></div>
-<div class="line">  <span class="keywordtype">void</span> <a name="a9"></a><a class="highlightmember code" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a>(<a name="_a10"></a><a class="highlightclass code" href="../../d8/d6b/structTwoByteMIDIMatcher.html#d5/d5c/structTwoByteMIDIMatcher_1_1Result">TwoByteMIDIMatcher::Result</a> match)<span class="keyword"> override </span>{</div>
-<div class="line">    <span class="keywordflow">if</span> (match.<a name="a11"></a><a class="highlightmember code" href="../../d8/d6b/structTwoByteMIDIMatcher.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">value</a> &gt;= threshold)</div>
-<div class="line">      <a name="a12"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">ExtIO::digitalWrite</a>(ledPin, <a name="a13"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a9" name="a9"></a><a class="highlightmember code" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a>(<a id="_a10" name="_a10"></a><a class="highlightclass code" href="../../d8/d6b/structTwoByteMIDIMatcher.html#d5/d5c/structTwoByteMIDIMatcher_1_1Result">TwoByteMIDIMatcher::Result</a> match)<span class="keyword"> override </span>{</div>
+<div class="line">    <span class="keywordflow">if</span> (match.<a id="a11" name="a11"></a><a class="highlightmember code" href="../../d8/d6b/structTwoByteMIDIMatcher.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">value</a> &gt;= threshold)</div>
+<div class="line">      <a id="a12" name="a12"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">ExtIO::digitalWrite</a>(ledPin, <a id="a13" name="a13"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">      <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga5aa3b4dbb8bfffdd022e1f5bb8dc5784">ExtIO::analogWrite</a>(ledPin, lowBrightness);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Called when the input element is reset (e.g. by an &quot;All notes off&quot; MIDI</span></div>
 <div class="line">  <span class="comment">// event).</span></div>
-<div class="line">  <span class="keywordtype">void</span> <a name="a14"></a><a class="highlightmember code" href="../../d9/db1/classMIDIInputElement.html#a7b0e029102ad38f4b814c6523aedb53d">reset</a>()<span class="keyword"> override </span>{ <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga5aa3b4dbb8bfffdd022e1f5bb8dc5784">ExtIO::analogWrite</a>(ledPin, lowBrightness); }</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a14" name="a14"></a><a class="highlightmember code" href="../../d9/db1/classMIDIInputElement.html#a7b0e029102ad38f4b814c6523aedb53d">reset</a>()<span class="keyword"> override </span>{ <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga5aa3b4dbb8bfffdd022e1f5bb8dc5784">ExtIO::analogWrite</a>(ledPin, lowBrightness); }</div>
 <div class="line"> </div>
 <div class="line"> <span class="keyword">private</span>:</div>
 <div class="line">  <a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin;</div>
@@ -152,16 +152,16 @@ Mapping</h2>
 <div class="line"><span class="comment">// Instantiate the LED that will light up when middle C is playing.</span></div>
 <div class="line">CustomNoteLED led {</div>
 <div class="line">  3,                           <span class="comment">// Pin with the LED connected (PWM capable)</span></div>
-<div class="line">  {<a name="a15"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a name="a16"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
+<div class="line">  {<a id="a15" name="a15"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a id="a16" name="a16"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
 <div class="line">  10,                          <span class="comment">// Intensity when off</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a17"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a18"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
+<div class="line">  <a id="a17" name="a17"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a18" name="a18"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a19"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a19" name="a19"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aArduino-Hardware-Types_8hpp_html_a4b2f87da16a1a26dce6e6ba3fbe5f572"><div class="ttname"><a href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a></div><div class="ttdeci">constexpr PinStatus_t HIGH</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3c/Arduino-Hardware-Types_8hpp_source.html#l00062">Arduino-Hardware-Types.hpp:62</a></div></div>
 <div class="ttc" id="aArduino-Hardware-Types_8hpp_html_ad01d99486fd89841afe767b337b8dc92"><div class="ttname"><a href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a></div><div class="ttdeci">constexpr PinMode_t OUTPUT</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3c/Arduino-Hardware-Types_8hpp_source.html#l00065">Arduino-Hardware-Types.hpp:65</a></div></div>

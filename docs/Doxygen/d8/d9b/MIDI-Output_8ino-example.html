@@ -101,23 +101,23 @@ Mapping</h2>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// The MIDI over USB interface to use</span></div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  midi.<a name="a1"></a><a class="highlightmember code" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>(); <span class="comment">// Initialize the MIDI interface</span></div>
+<div class="line">  midi.<a id="a1" name="a1"></a><a class="highlightmember code" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>(); <span class="comment">// Initialize the MIDI interface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// MIDI note number, channel, and velocity to use</span></div>
-<div class="line"><span class="keyword">const</span> <a name="_a2"></a><a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address {<a name="a3"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a name="a4"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>};</div>
+<div class="line"><span class="keyword">const</span> <a id="_a2" name="_a2"></a><a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address {<a id="a3" name="a3"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>};</div>
 <div class="line"><span class="keyword">const</span> uint8_t velocity = 0x7F;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  midi.<a name="a5"></a><a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a>(address, velocity);</div>
+<div class="line">  midi.<a id="a5" name="a5"></a><a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a>(address, velocity);</div>
 <div class="line">  delay(500);</div>
-<div class="line">  midi.<a name="a6"></a><a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a>(address, velocity);</div>
+<div class="line">  midi.<a id="a6" name="a6"></a><a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a>(address, velocity);</div>
 <div class="line">  delay(500);</div>
 <div class="line"> </div>
-<div class="line">  midi.<a name="a7"></a><a class="highlightmember code" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>(); <span class="comment">// Handle or discard MIDI input</span></div>
+<div class="line">  midi.<a id="a7" name="a7"></a><a class="highlightmember code" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>(); <span class="comment">// Handle or discard MIDI input</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aChannel_8hpp_html_a166aafd26c8b912f9e8bc7acb8b1cd17"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a></div><div class="ttdeci">constexpr Channel CHANNEL_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>

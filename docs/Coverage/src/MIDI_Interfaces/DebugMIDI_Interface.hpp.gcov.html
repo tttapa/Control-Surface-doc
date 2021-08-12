@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3c8ac15a258fcc45fe7822e2dd4cf40532f1db47 - src/MIDI_Interfaces/DebugMIDI_Interface.hpp</title>
+  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Interfaces/DebugMIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3c8ac15a258fcc45fe7822e2dd4cf40532f1db47</td>
+            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">11</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-05 13:35:54</td>
+            <td class="headerValue">2021-08-12 18:03:11</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
@@ -237,249 +237,166 @@
 <a name="167"><span class="lineNum">     167 </span>            :         : SerialDebugMIDI_Output(Serial, prefix) {}</a>
 <a name="168"><span class="lineNum">     168 </span>            : };</a>
 <a name="169"><span class="lineNum">     169 </span>            : </a>
-<a name="170"><span class="lineNum">     170 </span>            : END_CS_NAMESPACE</a>
-<a name="171"><span class="lineNum">     171 </span>            : </a>
-<a name="172"><span class="lineNum">     172 </span>            : // TODO: Teensy 4.0 SoftwareSerial bug</a>
-<a name="173"><span class="lineNum">     173 </span>            : #if defined(__AVR__) || (defined(TEENSYDUINO) &amp;&amp; TEENSYDUINO != 147) ||        \</a>
-<a name="174"><span class="lineNum">     174 </span>            :     (defined(TEENSYDUINO) &amp;&amp; !defined(__IMXRT1052__) &amp;&amp;                        \</a>
-<a name="175"><span class="lineNum">     175 </span>            :      !defined(__IMXRT1062__))</a>
-<a name="176"><span class="lineNum">     176 </span>            : #include &lt;SoftwareSerial.h&gt;</a>
-<a name="177"><span class="lineNum">     177 </span>            : </a>
-<a name="178"><span class="lineNum">     178 </span>            : BEGIN_CS_NAMESPACE</a>
-<a name="179"><span class="lineNum">     179 </span>            : </a>
-<a name="180"><span class="lineNum">     180 </span>            : /**</a>
-<a name="181"><span class="lineNum">     181 </span>            :  * @brief   A class for debug MIDI outputs sending </a>
-<a name="182"><span class="lineNum">     182 </span>            :  *          human-readable MIDI messages over a SoftwareSerial interface.</a>
-<a name="183"><span class="lineNum">     183 </span>            :  * </a>
-<a name="184"><span class="lineNum">     184 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="185"><span class="lineNum">     185 </span>            :  */</a>
-<a name="186"><span class="lineNum">     186 </span>            : class SoftwareSerialDebugMIDI_Output</a>
-<a name="187"><span class="lineNum">     187 </span>            :     : public SerialDebugMIDI_Output&lt;SoftwareSerial&gt; {</a>
-<a name="188"><span class="lineNum">     188 </span>            :   public:</a>
-<a name="189"><span class="lineNum">     189 </span>            :     /**</a>
-<a name="190"><span class="lineNum">     190 </span>            :      * @brief   Construct a SoftwareSerialDebugMIDI_Output on the given </a>
-<a name="191"><span class="lineNum">     191 </span>            :      *          SoftwareSerial interface with the given baud rate.</a>
-<a name="192"><span class="lineNum">     192 </span>            :      * </a>
-<a name="193"><span class="lineNum">     193 </span>            :      * @param   serial</a>
-<a name="194"><span class="lineNum">     194 </span>            :      *          The SoftwareSerial interface.</a>
-<a name="195"><span class="lineNum">     195 </span>            :      * @param   baud</a>
-<a name="196"><span class="lineNum">     196 </span>            :      *          The baud rate for the serial interface.</a>
-<a name="197"><span class="lineNum">     197 </span>            :      * @param   prefix</a>
-<a name="198"><span class="lineNum">     198 </span>            :      *          An optional string to print before each message.</a>
-<a name="199"><span class="lineNum">     199 </span>            :      */</a>
-<a name="200"><span class="lineNum">     200 </span>            :     SoftwareSerialDebugMIDI_Output(SoftwareSerial &amp;serial, unsigned long baud,</a>
-<a name="201"><span class="lineNum">     201 </span>            :                                    const char *prefix = nullptr)</a>
-<a name="202"><span class="lineNum">     202 </span>            :         : SerialDebugMIDI_Output(serial, baud, prefix) {}</a>
-<a name="203"><span class="lineNum">     203 </span>            : };</a>
-<a name="204"><span class="lineNum">     204 </span>            : </a>
-<a name="205"><span class="lineNum">     205 </span>            : END_CS_NAMESPACE</a>
-<a name="206"><span class="lineNum">     206 </span>            : </a>
-<a name="207"><span class="lineNum">     207 </span>            : #endif</a>
-<a name="208"><span class="lineNum">     208 </span>            : </a>
-<a name="209"><span class="lineNum">     209 </span>            : BEGIN_CS_NAMESPACE</a>
-<a name="210"><span class="lineNum">     210 </span>            : </a>
-<a name="211"><span class="lineNum">     211 </span>            : /**</a>
-<a name="212"><span class="lineNum">     212 </span>            :  * @brief   A class for MIDI interfaces sending and receiving </a>
-<a name="213"><span class="lineNum">     213 </span>            :  *          human-readable MIDI messages over a Stream.</a>
-<a name="214"><span class="lineNum">     214 </span>            :  * </a>
-<a name="215"><span class="lineNum">     215 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="216"><span class="lineNum">     216 </span>            :  */</a>
-<a name="217"><span class="lineNum">     217 </span><span class="lineCov">         16 : class StreamDebugMIDI_Interface : public StreamDebugMIDI_Base,</span></a>
-<a name="218"><span class="lineNum">     218 </span>            :                                   public MIDI_Interface {</a>
-<a name="219"><span class="lineNum">     219 </span>            :   public:</a>
-<a name="220"><span class="lineNum">     220 </span>            :     /**</a>
-<a name="221"><span class="lineNum">     221 </span>            :      * @brief   Construct a debug MIDI interface on the given Stream.</a>
-<a name="222"><span class="lineNum">     222 </span>            :      * </a>
-<a name="223"><span class="lineNum">     223 </span>            :      * @param   stream</a>
-<a name="224"><span class="lineNum">     224 </span>            :      *          The Stream interface.</a>
-<a name="225"><span class="lineNum">     225 </span>            :      * @param   prefix</a>
-<a name="226"><span class="lineNum">     226 </span>            :      *          An optional string to print before each message.</a>
-<a name="227"><span class="lineNum">     227 </span>            :      */</a>
-<a name="228"><span class="lineNum">     228 </span><span class="lineCov">         32 :     StreamDebugMIDI_Interface(Stream &amp;stream, const char *prefix = nullptr)</span></a>
-<a name="229"><span class="lineNum">     229 </span><span class="lineCov">         32 :         : StreamDebugMIDI_Base(prefix), hexstream(stream) {}</span></a>
-<a name="230"><span class="lineNum">     230 </span>            : </a>
-<a name="231"><span class="lineNum">     231 </span><span class="lineCov">         17 :     Stream &amp;getStream() const { return hexstream.puller.stream; }</span></a>
-<a name="232"><span class="lineNum">     232 </span>            : </a>
-<a name="233"><span class="lineNum">     233 </span>            :     /// Try reading and parsing a single incoming MIDI message.</a>
-<a name="234"><span class="lineNum">     234 </span>            :     /// @return  Returns the type of the read message, or</a>
-<a name="235"><span class="lineNum">     235 </span>            :     ///          `MIDIReadEvent::NO_MESSAGE` if no MIDI message was available.</a>
-<a name="236"><span class="lineNum">     236 </span>            :     MIDIReadEvent read();</a>
-<a name="237"><span class="lineNum">     237 </span>            : </a>
-<a name="238"><span class="lineNum">     238 </span>            :     /// Return the received channel voice message.</a>
-<a name="239"><span class="lineNum">     239 </span><span class="lineCov">          4 :     ChannelMessage getChannelMessage() const {</span></a>
-<a name="240"><span class="lineNum">     240 </span><span class="lineCov">          4 :         return parser.getChannelMessage();</span></a>
-<a name="241"><span class="lineNum">     241 </span>            :     }</a>
-<a name="242"><span class="lineNum">     242 </span>            :     /// Return the received system common message.</a>
-<a name="243"><span class="lineNum">     243 </span><span class="lineNoCov">          0 :     SysCommonMessage getSysCommonMessage() const {</span></a>
-<a name="244"><span class="lineNum">     244 </span><span class="lineNoCov">          0 :         return parser.getSysCommonMessage();</span></a>
-<a name="245"><span class="lineNum">     245 </span>            :     }</a>
-<a name="246"><span class="lineNum">     246 </span>            :     /// Return the received real-time message.</a>
-<a name="247"><span class="lineNum">     247 </span><span class="lineCov">          1 :     RealTimeMessage getRealTimeMessage() const {</span></a>
-<a name="248"><span class="lineNum">     248 </span><span class="lineCov">          1 :         return parser.getRealTimeMessage();</span></a>
-<a name="249"><span class="lineNum">     249 </span>            :     }</a>
-<a name="250"><span class="lineNum">     250 </span>            :     /// Return the received system exclusive message.</a>
-<a name="251"><span class="lineNum">     251 </span><span class="lineCov">          1 :     SysExMessage getSysExMessage() const { return parser.getSysExMessage(); }</span></a>
-<a name="252"><span class="lineNum">     252 </span>            : </a>
-<a name="253"><span class="lineNum">     253 </span>            :     void update() override;</a>
-<a name="254"><span class="lineNum">     254 </span>            : </a>
-<a name="255"><span class="lineNum">     255 </span>            :   protected:</a>
-<a name="256"><span class="lineNum">     256 </span>            :     // MIDI send implementations</a>
-<a name="257"><span class="lineNum">     257 </span>            :     void sendChannelMessageImpl(ChannelMessage) override;</a>
-<a name="258"><span class="lineNum">     258 </span>            :     void sendSysCommonImpl(SysCommonMessage) override;</a>
-<a name="259"><span class="lineNum">     259 </span>            :     void sendSysExImpl(SysExMessage) override;</a>
-<a name="260"><span class="lineNum">     260 </span>            :     void sendRealTimeImpl(RealTimeMessage) override;</a>
-<a name="261"><span class="lineNum">     261 </span>            :     void sendNowImpl() override;</a>
-<a name="262"><span class="lineNum">     262 </span>            : </a>
-<a name="263"><span class="lineNum">     263 </span>            :   private:</a>
-<a name="264"><span class="lineNum">     264 </span>            :     void handleStall() override;</a>
-<a name="265"><span class="lineNum">     265 </span>            : </a>
-<a name="266"><span class="lineNum">     266 </span>            :   private:</a>
-<a name="267"><span class="lineNum">     267 </span>            :     HexPuller&lt;StreamPuller&gt; hexstream;</a>
-<a name="268"><span class="lineNum">     268 </span>            :     SerialMIDI_Parser parser;</a>
+<a name="170"><span class="lineNum">     170 </span>            : /**</a>
+<a name="171"><span class="lineNum">     171 </span>            :  * @brief   A class for MIDI interfaces sending and receiving </a>
+<a name="172"><span class="lineNum">     172 </span>            :  *          human-readable MIDI messages over a Stream.</a>
+<a name="173"><span class="lineNum">     173 </span>            :  * </a>
+<a name="174"><span class="lineNum">     174 </span>            :  * @ingroup MIDIInterfaces</a>
+<a name="175"><span class="lineNum">     175 </span>            :  */</a>
+<a name="176"><span class="lineNum">     176 </span><span class="lineCov">         16 : class StreamDebugMIDI_Interface : public StreamDebugMIDI_Base,</span></a>
+<a name="177"><span class="lineNum">     177 </span>            :                                   public MIDI_Interface {</a>
+<a name="178"><span class="lineNum">     178 </span>            :   public:</a>
+<a name="179"><span class="lineNum">     179 </span>            :     /**</a>
+<a name="180"><span class="lineNum">     180 </span>            :      * @brief   Construct a debug MIDI interface on the given Stream.</a>
+<a name="181"><span class="lineNum">     181 </span>            :      * </a>
+<a name="182"><span class="lineNum">     182 </span>            :      * @param   stream</a>
+<a name="183"><span class="lineNum">     183 </span>            :      *          The Stream interface.</a>
+<a name="184"><span class="lineNum">     184 </span>            :      * @param   prefix</a>
+<a name="185"><span class="lineNum">     185 </span>            :      *          An optional string to print before each message.</a>
+<a name="186"><span class="lineNum">     186 </span>            :      */</a>
+<a name="187"><span class="lineNum">     187 </span><span class="lineCov">         32 :     StreamDebugMIDI_Interface(Stream &amp;stream, const char *prefix = nullptr)</span></a>
+<a name="188"><span class="lineNum">     188 </span><span class="lineCov">         32 :         : StreamDebugMIDI_Base(prefix), hexstream(stream) {}</span></a>
+<a name="189"><span class="lineNum">     189 </span>            : </a>
+<a name="190"><span class="lineNum">     190 </span><span class="lineCov">         17 :     Stream &amp;getStream() const { return hexstream.puller.stream; }</span></a>
+<a name="191"><span class="lineNum">     191 </span>            : </a>
+<a name="192"><span class="lineNum">     192 </span>            :     /// Try reading and parsing a single incoming MIDI message.</a>
+<a name="193"><span class="lineNum">     193 </span>            :     /// @return  Returns the type of the read message, or</a>
+<a name="194"><span class="lineNum">     194 </span>            :     ///          `MIDIReadEvent::NO_MESSAGE` if no MIDI message was available.</a>
+<a name="195"><span class="lineNum">     195 </span>            :     MIDIReadEvent read();</a>
+<a name="196"><span class="lineNum">     196 </span>            : </a>
+<a name="197"><span class="lineNum">     197 </span>            :     /// Return the received channel voice message.</a>
+<a name="198"><span class="lineNum">     198 </span><span class="lineCov">          4 :     ChannelMessage getChannelMessage() const {</span></a>
+<a name="199"><span class="lineNum">     199 </span><span class="lineCov">          4 :         return parser.getChannelMessage();</span></a>
+<a name="200"><span class="lineNum">     200 </span>            :     }</a>
+<a name="201"><span class="lineNum">     201 </span>            :     /// Return the received system common message.</a>
+<a name="202"><span class="lineNum">     202 </span><span class="lineNoCov">          0 :     SysCommonMessage getSysCommonMessage() const {</span></a>
+<a name="203"><span class="lineNum">     203 </span><span class="lineNoCov">          0 :         return parser.getSysCommonMessage();</span></a>
+<a name="204"><span class="lineNum">     204 </span>            :     }</a>
+<a name="205"><span class="lineNum">     205 </span>            :     /// Return the received real-time message.</a>
+<a name="206"><span class="lineNum">     206 </span><span class="lineCov">          1 :     RealTimeMessage getRealTimeMessage() const {</span></a>
+<a name="207"><span class="lineNum">     207 </span><span class="lineCov">          1 :         return parser.getRealTimeMessage();</span></a>
+<a name="208"><span class="lineNum">     208 </span>            :     }</a>
+<a name="209"><span class="lineNum">     209 </span>            :     /// Return the received system exclusive message.</a>
+<a name="210"><span class="lineNum">     210 </span><span class="lineCov">          1 :     SysExMessage getSysExMessage() const { return parser.getSysExMessage(); }</span></a>
+<a name="211"><span class="lineNum">     211 </span>            : </a>
+<a name="212"><span class="lineNum">     212 </span>            :     void update() override;</a>
+<a name="213"><span class="lineNum">     213 </span>            : </a>
+<a name="214"><span class="lineNum">     214 </span>            :   protected:</a>
+<a name="215"><span class="lineNum">     215 </span>            :     // MIDI send implementations</a>
+<a name="216"><span class="lineNum">     216 </span>            :     void sendChannelMessageImpl(ChannelMessage) override;</a>
+<a name="217"><span class="lineNum">     217 </span>            :     void sendSysCommonImpl(SysCommonMessage) override;</a>
+<a name="218"><span class="lineNum">     218 </span>            :     void sendSysExImpl(SysExMessage) override;</a>
+<a name="219"><span class="lineNum">     219 </span>            :     void sendRealTimeImpl(RealTimeMessage) override;</a>
+<a name="220"><span class="lineNum">     220 </span>            :     void sendNowImpl() override;</a>
+<a name="221"><span class="lineNum">     221 </span>            : </a>
+<a name="222"><span class="lineNum">     222 </span>            :   private:</a>
+<a name="223"><span class="lineNum">     223 </span>            :     void handleStall() override;</a>
+<a name="224"><span class="lineNum">     224 </span>            : </a>
+<a name="225"><span class="lineNum">     225 </span>            :   private:</a>
+<a name="226"><span class="lineNum">     226 </span>            :     HexPuller&lt;StreamPuller&gt; hexstream;</a>
+<a name="227"><span class="lineNum">     227 </span>            :     SerialMIDI_Parser parser;</a>
+<a name="228"><span class="lineNum">     228 </span>            : };</a>
+<a name="229"><span class="lineNum">     229 </span>            : </a>
+<a name="230"><span class="lineNum">     230 </span>            : /**</a>
+<a name="231"><span class="lineNum">     231 </span>            :  * @brief   A wrapper class for debug MIDI interfaces sending and receiving </a>
+<a name="232"><span class="lineNum">     232 </span>            :  *          human-readable MIDI messages over a Serial port of class T.</a>
+<a name="233"><span class="lineNum">     233 </span>            :  * </a>
+<a name="234"><span class="lineNum">     234 </span>            :  * @note    This is a template class because the class of the Serial object</a>
+<a name="235"><span class="lineNum">     235 </span>            :  *          is completely different on different architectures, and they</a>
+<a name="236"><span class="lineNum">     236 </span>            :  *          do not share a common super-class that has a `begin` method.</a>
+<a name="237"><span class="lineNum">     237 </span>            :  * </a>
+<a name="238"><span class="lineNum">     238 </span>            :  * @ingroup MIDIInterfaces</a>
+<a name="239"><span class="lineNum">     239 </span>            :  */</a>
+<a name="240"><span class="lineNum">     240 </span>            : template &lt;typename T&gt;</a>
+<a name="241"><span class="lineNum">     241 </span>            : class SerialDebugMIDI_Interface : public StreamDebugMIDI_Interface {</a>
+<a name="242"><span class="lineNum">     242 </span>            :   public:</a>
+<a name="243"><span class="lineNum">     243 </span>            :     /**</a>
+<a name="244"><span class="lineNum">     244 </span>            :      * @brief   Construct a new Debug MIDI Interface on the given Serial </a>
+<a name="245"><span class="lineNum">     245 </span>            :      *          interface with the given baud rate.</a>
+<a name="246"><span class="lineNum">     246 </span>            :      * </a>
+<a name="247"><span class="lineNum">     247 </span>            :      * @param   serial</a>
+<a name="248"><span class="lineNum">     248 </span>            :      *          The Serial interface.</a>
+<a name="249"><span class="lineNum">     249 </span>            :      * @param   baud</a>
+<a name="250"><span class="lineNum">     250 </span>            :      *          The baud rate for the Serial interface.</a>
+<a name="251"><span class="lineNum">     251 </span>            :      * @param   prefix</a>
+<a name="252"><span class="lineNum">     252 </span>            :      *          An optional string to print before each message.</a>
+<a name="253"><span class="lineNum">     253 </span>            :      */</a>
+<a name="254"><span class="lineNum">     254 </span>            :     SerialDebugMIDI_Interface(T &amp;serial,</a>
+<a name="255"><span class="lineNum">     255 </span>            :                               unsigned long baud = AH::defaultBaudRate,</a>
+<a name="256"><span class="lineNum">     256 </span>            :                               const char *prefix = nullptr)</a>
+<a name="257"><span class="lineNum">     257 </span>            :         : StreamDebugMIDI_Interface(serial, prefix), baud(baud) {}</a>
+<a name="258"><span class="lineNum">     258 </span>            :     /// @see @ref SerialDebugMIDI_Interface(T &amp;,unsigned long,const char *)</a>
+<a name="259"><span class="lineNum">     259 </span>            :     SerialDebugMIDI_Interface(T &amp;serial, const char *prefix)</a>
+<a name="260"><span class="lineNum">     260 </span>            :         : SerialDebugMIDI_Interface(serial, AH::defaultBaudRate, prefix) {}</a>
+<a name="261"><span class="lineNum">     261 </span>            : </a>
+<a name="262"><span class="lineNum">     262 </span>            :     /**</a>
+<a name="263"><span class="lineNum">     263 </span>            :      * @brief   Start the Serial interface at the predefined baud rate.</a>
+<a name="264"><span class="lineNum">     264 </span>            :      */</a>
+<a name="265"><span class="lineNum">     265 </span>            :     void begin() override { static_cast&lt;T &amp;&gt;(getStream()).begin(baud); }</a>
+<a name="266"><span class="lineNum">     266 </span>            : </a>
+<a name="267"><span class="lineNum">     267 </span>            :   private:</a>
+<a name="268"><span class="lineNum">     268 </span>            :     const unsigned long baud;</a>
 <a name="269"><span class="lineNum">     269 </span>            : };</a>
 <a name="270"><span class="lineNum">     270 </span>            : </a>
 <a name="271"><span class="lineNum">     271 </span>            : /**</a>
-<a name="272"><span class="lineNum">     272 </span>            :  * @brief   A wrapper class for debug MIDI interfaces sending and receiving </a>
-<a name="273"><span class="lineNum">     273 </span>            :  *          human-readable MIDI messages over a Serial port of class T.</a>
+<a name="272"><span class="lineNum">     272 </span>            :  * @brief   A class for debug MIDI interfaces sending and receiving </a>
+<a name="273"><span class="lineNum">     273 </span>            :  *          human-readable MIDI messages over a HardwareSerial port.</a>
 <a name="274"><span class="lineNum">     274 </span>            :  * </a>
-<a name="275"><span class="lineNum">     275 </span>            :  * @note    This is a template class because the class of the Serial object</a>
-<a name="276"><span class="lineNum">     276 </span>            :  *          is completely different on different architectures, and they</a>
-<a name="277"><span class="lineNum">     277 </span>            :  *          do not share a common super-class that has a `begin` method.</a>
-<a name="278"><span class="lineNum">     278 </span>            :  * </a>
-<a name="279"><span class="lineNum">     279 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="280"><span class="lineNum">     280 </span>            :  */</a>
-<a name="281"><span class="lineNum">     281 </span>            : template &lt;typename T&gt;</a>
-<a name="282"><span class="lineNum">     282 </span>            : class SerialDebugMIDI_Interface : public StreamDebugMIDI_Interface {</a>
-<a name="283"><span class="lineNum">     283 </span>            :   public:</a>
-<a name="284"><span class="lineNum">     284 </span>            :     /**</a>
-<a name="285"><span class="lineNum">     285 </span>            :      * @brief   Construct a new Debug MIDI Interface on the given Serial </a>
-<a name="286"><span class="lineNum">     286 </span>            :      *          interface with the given baud rate.</a>
-<a name="287"><span class="lineNum">     287 </span>            :      * </a>
-<a name="288"><span class="lineNum">     288 </span>            :      * @param   serial</a>
-<a name="289"><span class="lineNum">     289 </span>            :      *          The Serial interface.</a>
-<a name="290"><span class="lineNum">     290 </span>            :      * @param   baud</a>
-<a name="291"><span class="lineNum">     291 </span>            :      *          The baud rate for the Serial interface.</a>
-<a name="292"><span class="lineNum">     292 </span>            :      * @param   prefix</a>
-<a name="293"><span class="lineNum">     293 </span>            :      *          An optional string to print before each message.</a>
-<a name="294"><span class="lineNum">     294 </span>            :      */</a>
-<a name="295"><span class="lineNum">     295 </span>            :     SerialDebugMIDI_Interface(T &amp;serial,</a>
-<a name="296"><span class="lineNum">     296 </span>            :                               unsigned long baud = AH::defaultBaudRate,</a>
-<a name="297"><span class="lineNum">     297 </span>            :                               const char *prefix = nullptr)</a>
-<a name="298"><span class="lineNum">     298 </span>            :         : StreamDebugMIDI_Interface(serial, prefix), baud(baud) {}</a>
-<a name="299"><span class="lineNum">     299 </span>            :     /// @see @ref SerialDebugMIDI_Interface(T &amp;,unsigned long,const char *)</a>
-<a name="300"><span class="lineNum">     300 </span>            :     SerialDebugMIDI_Interface(T &amp;serial, const char *prefix)</a>
-<a name="301"><span class="lineNum">     301 </span>            :         : SerialDebugMIDI_Interface(serial, AH::defaultBaudRate, prefix) {}</a>
-<a name="302"><span class="lineNum">     302 </span>            : </a>
-<a name="303"><span class="lineNum">     303 </span>            :     /**</a>
-<a name="304"><span class="lineNum">     304 </span>            :      * @brief   Start the Serial interface at the predefined baud rate.</a>
-<a name="305"><span class="lineNum">     305 </span>            :      */</a>
-<a name="306"><span class="lineNum">     306 </span>            :     void begin() override { static_cast&lt;T &amp;&gt;(getStream()).begin(baud); }</a>
-<a name="307"><span class="lineNum">     307 </span>            : </a>
-<a name="308"><span class="lineNum">     308 </span>            :   private:</a>
-<a name="309"><span class="lineNum">     309 </span>            :     const unsigned long baud;</a>
-<a name="310"><span class="lineNum">     310 </span>            : };</a>
-<a name="311"><span class="lineNum">     311 </span>            : </a>
-<a name="312"><span class="lineNum">     312 </span>            : /**</a>
-<a name="313"><span class="lineNum">     313 </span>            :  * @brief   A class for debug MIDI interfaces sending and receiving </a>
-<a name="314"><span class="lineNum">     314 </span>            :  *          human-readable MIDI messages over a HardwareSerial port.</a>
-<a name="315"><span class="lineNum">     315 </span>            :  * </a>
-<a name="316"><span class="lineNum">     316 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="317"><span class="lineNum">     317 </span>            :  */</a>
-<a name="318"><span class="lineNum">     318 </span>            : class HardwareSerialDebugMIDI_Interface</a>
-<a name="319"><span class="lineNum">     319 </span>            :     : public SerialDebugMIDI_Interface&lt;HardwareSerial&gt; {</a>
-<a name="320"><span class="lineNum">     320 </span>            :   public:</a>
-<a name="321"><span class="lineNum">     321 </span>            :     /**</a>
-<a name="322"><span class="lineNum">     322 </span>            :      * @brief   Construct a new Debug MIDI Interface on the given HardwareSerial</a>
-<a name="323"><span class="lineNum">     323 </span>            :      *          interface with the given baud rate.</a>
-<a name="324"><span class="lineNum">     324 </span>            :      * </a>
-<a name="325"><span class="lineNum">     325 </span>            :      * @param   serial</a>
-<a name="326"><span class="lineNum">     326 </span>            :      *          The HardwareSerial interface.</a>
-<a name="327"><span class="lineNum">     327 </span>            :      * @param   baud</a>
-<a name="328"><span class="lineNum">     328 </span>            :      *          The baud rate for the serial interface.</a>
-<a name="329"><span class="lineNum">     329 </span>            :      * @param   prefix</a>
-<a name="330"><span class="lineNum">     330 </span>            :      *          An optional string to print before each message.</a>
-<a name="331"><span class="lineNum">     331 </span>            :      */</a>
-<a name="332"><span class="lineNum">     332 </span>            :     HardwareSerialDebugMIDI_Interface(HardwareSerial &amp;serial,</a>
-<a name="333"><span class="lineNum">     333 </span>            :                                       unsigned long baud = AH::defaultBaudRate,</a>
-<a name="334"><span class="lineNum">     334 </span>            :                                       const char *prefix = nullptr)</a>
-<a name="335"><span class="lineNum">     335 </span>            :         : SerialDebugMIDI_Interface(serial, baud, prefix) {}</a>
-<a name="336"><span class="lineNum">     336 </span>            :     /// @see @ref HardwareSerialDebugMIDI_Interface(HardwareSerial &amp;,unsigned long,const char *)</a>
-<a name="337"><span class="lineNum">     337 </span>            :     HardwareSerialDebugMIDI_Interface(HardwareSerial &amp;serial,</a>
-<a name="338"><span class="lineNum">     338 </span>            :                                       const char *prefix)</a>
-<a name="339"><span class="lineNum">     339 </span>            :         : SerialDebugMIDI_Interface(serial, prefix) {}</a>
-<a name="340"><span class="lineNum">     340 </span>            : };</a>
-<a name="341"><span class="lineNum">     341 </span>            : </a>
-<a name="342"><span class="lineNum">     342 </span>            : /**</a>
-<a name="343"><span class="lineNum">     343 </span>            :  * @brief   A class for debug MIDI interfaces sending and receiving </a>
-<a name="344"><span class="lineNum">     344 </span>            :  *          human-readable MIDI messages over the USB CDC connection.</a>
-<a name="345"><span class="lineNum">     345 </span>            :  * </a>
-<a name="346"><span class="lineNum">     346 </span>            :  *          Boards without a native USB connection (UNO, MEGA, Nano ...)</a>
-<a name="347"><span class="lineNum">     347 </span>            :  *          use HardwareSerial0 for USB communication.</a>
-<a name="348"><span class="lineNum">     348 </span>            :  * </a>
-<a name="349"><span class="lineNum">     349 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="350"><span class="lineNum">     350 </span>            :  */</a>
-<a name="351"><span class="lineNum">     351 </span>            : class USBDebugMIDI_Interface</a>
-<a name="352"><span class="lineNum">     352 </span>            :     : public SerialDebugMIDI_Interface&lt;decltype(Serial)&gt; {</a>
-<a name="353"><span class="lineNum">     353 </span>            :   public:</a>
-<a name="354"><span class="lineNum">     354 </span>            :     /**</a>
-<a name="355"><span class="lineNum">     355 </span>            :      * @brief   Construct a USBDebugMIDI_Interface with the given baud rate.</a>
-<a name="356"><span class="lineNum">     356 </span>            :      * </a>
-<a name="357"><span class="lineNum">     357 </span>            :      * @param   baud</a>
-<a name="358"><span class="lineNum">     358 </span>            :      *          The baud rate to start the USB Serial connection with.</a>
-<a name="359"><span class="lineNum">     359 </span>            :      * @param   prefix</a>
-<a name="360"><span class="lineNum">     360 </span>            :      *          An optional string to print before each message.</a>
-<a name="361"><span class="lineNum">     361 </span>            :      */</a>
-<a name="362"><span class="lineNum">     362 </span>            :     USBDebugMIDI_Interface(unsigned long baud = AH::defaultBaudRate,</a>
-<a name="363"><span class="lineNum">     363 </span>            :                            const char *prefix = nullptr)</a>
-<a name="364"><span class="lineNum">     364 </span>            :         : SerialDebugMIDI_Interface(Serial, baud, prefix) {}</a>
-<a name="365"><span class="lineNum">     365 </span>            :     /// @see @ref USBDebugMIDI_Interface(unsigned long,const char *)</a>
-<a name="366"><span class="lineNum">     366 </span>            :     USBDebugMIDI_Interface(const char *prefix)</a>
-<a name="367"><span class="lineNum">     367 </span>            :         : SerialDebugMIDI_Interface(Serial, prefix) {}</a>
-<a name="368"><span class="lineNum">     368 </span>            : };</a>
-<a name="369"><span class="lineNum">     369 </span>            : </a>
-<a name="370"><span class="lineNum">     370 </span>            : END_CS_NAMESPACE</a>
-<a name="371"><span class="lineNum">     371 </span>            : </a>
-<a name="372"><span class="lineNum">     372 </span>            : // TODO: Teensy 4.0 SoftwareSerial bug</a>
-<a name="373"><span class="lineNum">     373 </span>            : #if defined(__AVR__) || (defined(TEENSYDUINO) &amp;&amp; TEENSYDUINO != 147) ||        \</a>
-<a name="374"><span class="lineNum">     374 </span>            :     (defined(TEENSYDUINO) &amp;&amp; !defined(__IMXRT1052__) &amp;&amp;                        \</a>
-<a name="375"><span class="lineNum">     375 </span>            :      !defined(__IMXRT1062__))</a>
-<a name="376"><span class="lineNum">     376 </span>            : #include &lt;SoftwareSerial.h&gt;</a>
-<a name="377"><span class="lineNum">     377 </span>            : </a>
-<a name="378"><span class="lineNum">     378 </span>            : BEGIN_CS_NAMESPACE</a>
-<a name="379"><span class="lineNum">     379 </span>            : </a>
-<a name="380"><span class="lineNum">     380 </span>            : /**</a>
-<a name="381"><span class="lineNum">     381 </span>            :  * @brief   A class for debug MIDI interfaces sending and receiving </a>
-<a name="382"><span class="lineNum">     382 </span>            :  *          human-readable MIDI messages over a SoftwareSerial interface.</a>
-<a name="383"><span class="lineNum">     383 </span>            :  * </a>
-<a name="384"><span class="lineNum">     384 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="385"><span class="lineNum">     385 </span>            :  */</a>
-<a name="386"><span class="lineNum">     386 </span>            : class SoftwareSerialDebugMIDI_Interface</a>
-<a name="387"><span class="lineNum">     387 </span>            :     : public SerialDebugMIDI_Interface&lt;SoftwareSerial&gt; {</a>
-<a name="388"><span class="lineNum">     388 </span>            :   public:</a>
-<a name="389"><span class="lineNum">     389 </span>            :     /**</a>
-<a name="390"><span class="lineNum">     390 </span>            :      * @brief   Construct a SoftwareSerialDebugMIDI_Interface on the given </a>
-<a name="391"><span class="lineNum">     391 </span>            :      *          SoftwareSerial interface with the given baud rate.</a>
-<a name="392"><span class="lineNum">     392 </span>            :      * </a>
-<a name="393"><span class="lineNum">     393 </span>            :      * @param   serial</a>
-<a name="394"><span class="lineNum">     394 </span>            :      *          The SoftwareSerial interface.</a>
-<a name="395"><span class="lineNum">     395 </span>            :      * @param   baud</a>
-<a name="396"><span class="lineNum">     396 </span>            :      *          The baud rate for the serial interface.</a>
-<a name="397"><span class="lineNum">     397 </span>            :      * @param   prefix</a>
-<a name="398"><span class="lineNum">     398 </span>            :      *          An optional string to print before each message.</a>
-<a name="399"><span class="lineNum">     399 </span>            :      */</a>
-<a name="400"><span class="lineNum">     400 </span>            :     SoftwareSerialDebugMIDI_Interface(SoftwareSerial &amp;serial,</a>
-<a name="401"><span class="lineNum">     401 </span>            :                                       unsigned long baud,</a>
-<a name="402"><span class="lineNum">     402 </span>            :                                       const char *prefix = nullptr)</a>
-<a name="403"><span class="lineNum">     403 </span>            :         : SerialDebugMIDI_Interface(serial, baud, prefix) {}</a>
-<a name="404"><span class="lineNum">     404 </span>            :     /// @see @ref SoftwareSerialDebugMIDI_Interface(SoftwareSerial &amp;,unsigned long,const char *)</a>
-<a name="405"><span class="lineNum">     405 </span>            :     SoftwareSerialDebugMIDI_Interface(SoftwareSerial &amp;serial,</a>
-<a name="406"><span class="lineNum">     406 </span>            :                                       const char *prefix)</a>
-<a name="407"><span class="lineNum">     407 </span>            :         : SerialDebugMIDI_Interface(serial, prefix) {}</a>
-<a name="408"><span class="lineNum">     408 </span>            : };</a>
-<a name="409"><span class="lineNum">     409 </span>            : </a>
-<a name="410"><span class="lineNum">     410 </span>            : END_CS_NAMESPACE</a>
-<a name="411"><span class="lineNum">     411 </span>            : </a>
-<a name="412"><span class="lineNum">     412 </span>            : #endif</a>
+<a name="275"><span class="lineNum">     275 </span>            :  * @ingroup MIDIInterfaces</a>
+<a name="276"><span class="lineNum">     276 </span>            :  */</a>
+<a name="277"><span class="lineNum">     277 </span>            : class HardwareSerialDebugMIDI_Interface</a>
+<a name="278"><span class="lineNum">     278 </span>            :     : public SerialDebugMIDI_Interface&lt;HardwareSerial&gt; {</a>
+<a name="279"><span class="lineNum">     279 </span>            :   public:</a>
+<a name="280"><span class="lineNum">     280 </span>            :     /**</a>
+<a name="281"><span class="lineNum">     281 </span>            :      * @brief   Construct a new Debug MIDI Interface on the given HardwareSerial</a>
+<a name="282"><span class="lineNum">     282 </span>            :      *          interface with the given baud rate.</a>
+<a name="283"><span class="lineNum">     283 </span>            :      * </a>
+<a name="284"><span class="lineNum">     284 </span>            :      * @param   serial</a>
+<a name="285"><span class="lineNum">     285 </span>            :      *          The HardwareSerial interface.</a>
+<a name="286"><span class="lineNum">     286 </span>            :      * @param   baud</a>
+<a name="287"><span class="lineNum">     287 </span>            :      *          The baud rate for the serial interface.</a>
+<a name="288"><span class="lineNum">     288 </span>            :      * @param   prefix</a>
+<a name="289"><span class="lineNum">     289 </span>            :      *          An optional string to print before each message.</a>
+<a name="290"><span class="lineNum">     290 </span>            :      */</a>
+<a name="291"><span class="lineNum">     291 </span>            :     HardwareSerialDebugMIDI_Interface(HardwareSerial &amp;serial,</a>
+<a name="292"><span class="lineNum">     292 </span>            :                                       unsigned long baud = AH::defaultBaudRate,</a>
+<a name="293"><span class="lineNum">     293 </span>            :                                       const char *prefix = nullptr)</a>
+<a name="294"><span class="lineNum">     294 </span>            :         : SerialDebugMIDI_Interface(serial, baud, prefix) {}</a>
+<a name="295"><span class="lineNum">     295 </span>            :     /// @see @ref HardwareSerialDebugMIDI_Interface(HardwareSerial &amp;,unsigned long,const char *)</a>
+<a name="296"><span class="lineNum">     296 </span>            :     HardwareSerialDebugMIDI_Interface(HardwareSerial &amp;serial,</a>
+<a name="297"><span class="lineNum">     297 </span>            :                                       const char *prefix)</a>
+<a name="298"><span class="lineNum">     298 </span>            :         : SerialDebugMIDI_Interface(serial, prefix) {}</a>
+<a name="299"><span class="lineNum">     299 </span>            : };</a>
+<a name="300"><span class="lineNum">     300 </span>            : </a>
+<a name="301"><span class="lineNum">     301 </span>            : /**</a>
+<a name="302"><span class="lineNum">     302 </span>            :  * @brief   A class for debug MIDI interfaces sending and receiving </a>
+<a name="303"><span class="lineNum">     303 </span>            :  *          human-readable MIDI messages over the USB CDC connection.</a>
+<a name="304"><span class="lineNum">     304 </span>            :  * </a>
+<a name="305"><span class="lineNum">     305 </span>            :  *          Boards without a native USB connection (UNO, MEGA, Nano ...)</a>
+<a name="306"><span class="lineNum">     306 </span>            :  *          use HardwareSerial0 for USB communication.</a>
+<a name="307"><span class="lineNum">     307 </span>            :  * </a>
+<a name="308"><span class="lineNum">     308 </span>            :  * @ingroup MIDIInterfaces</a>
+<a name="309"><span class="lineNum">     309 </span>            :  */</a>
+<a name="310"><span class="lineNum">     310 </span>            : class USBDebugMIDI_Interface</a>
+<a name="311"><span class="lineNum">     311 </span>            :     : public SerialDebugMIDI_Interface&lt;decltype(Serial)&gt; {</a>
+<a name="312"><span class="lineNum">     312 </span>            :   public:</a>
+<a name="313"><span class="lineNum">     313 </span>            :     /**</a>
+<a name="314"><span class="lineNum">     314 </span>            :      * @brief   Construct a USBDebugMIDI_Interface with the given baud rate.</a>
+<a name="315"><span class="lineNum">     315 </span>            :      * </a>
+<a name="316"><span class="lineNum">     316 </span>            :      * @param   baud</a>
+<a name="317"><span class="lineNum">     317 </span>            :      *          The baud rate to start the USB Serial connection with.</a>
+<a name="318"><span class="lineNum">     318 </span>            :      * @param   prefix</a>
+<a name="319"><span class="lineNum">     319 </span>            :      *          An optional string to print before each message.</a>
+<a name="320"><span class="lineNum">     320 </span>            :      */</a>
+<a name="321"><span class="lineNum">     321 </span>            :     USBDebugMIDI_Interface(unsigned long baud = AH::defaultBaudRate,</a>
+<a name="322"><span class="lineNum">     322 </span>            :                            const char *prefix = nullptr)</a>
+<a name="323"><span class="lineNum">     323 </span>            :         : SerialDebugMIDI_Interface(Serial, baud, prefix) {}</a>
+<a name="324"><span class="lineNum">     324 </span>            :     /// @see @ref USBDebugMIDI_Interface(unsigned long,const char *)</a>
+<a name="325"><span class="lineNum">     325 </span>            :     USBDebugMIDI_Interface(const char *prefix)</a>
+<a name="326"><span class="lineNum">     326 </span>            :         : SerialDebugMIDI_Interface(Serial, prefix) {}</a>
+<a name="327"><span class="lineNum">     327 </span>            : };</a>
+<a name="328"><span class="lineNum">     328 </span>            : </a>
+<a name="329"><span class="lineNum">     329 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

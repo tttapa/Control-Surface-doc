@@ -104,7 +104,7 @@ Mapping</h2>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// A custom sender to use later. It has to declare two methods:</span></div>
 <div class="line"><span class="comment">// - sendOn(MIDIAddress): will be called when the button is pressed</span></div>
@@ -117,12 +117,12 @@ Mapping</h2>
 <div class="line">  CustomNoteSender(uint8_t onVelocity, uint8_t offVelocity)</div>
 <div class="line">    : onVelocity(onVelocity), offVelocity(offVelocity) {}</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">void</span> sendOn(<a name="_a1"></a><a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address) {</div>
-<div class="line">    <a name="a2"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a3"></a><a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a>(address, onVelocity);</div>
+<div class="line">  <span class="keywordtype">void</span> sendOn(<a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address) {</div>
+<div class="line">    <a id="a2" name="a2"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a3" name="a3"></a><a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a>(address, onVelocity);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">void</span> sendOff(<a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address) {</div>
-<div class="line">    <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a4"></a><a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a>(address, offVelocity);</div>
+<div class="line">    <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a4" name="a4"></a><a class="highlightmember code" href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a>(address, offVelocity);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line"> <span class="keyword">private</span>:</div>
@@ -136,9 +136,9 @@ Mapping</h2>
 <div class="line"><span class="comment">// without having to write `MIDIButton&lt;CustomNoteSender&gt;` all the time,</span></div>
 <div class="line"><span class="comment">// and so we have more control over the constructor arguments.</span></div>
 <div class="line"><span class="comment">// The colon (:) indicates inheritance.</span></div>
-<div class="line"><span class="keyword">struct </span>CustomNoteButton : <a name="_a5"></a><a class="highlightclass code" href="../../d6/d72/classMIDIButton.html">MIDIButton</a>&lt;CustomNoteSender&gt; {</div>
+<div class="line"><span class="keyword">struct </span>CustomNoteButton : <a id="_a5" name="_a5"></a><a class="highlightclass code" href="../../d6/d72/classMIDIButton.html">MIDIButton</a>&lt;CustomNoteSender&gt; {</div>
 <div class="line">  <span class="comment">// Constructor</span></div>
-<div class="line">  CustomNoteButton(<a name="a6"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t onVelocity,</div>
+<div class="line">  CustomNoteButton(<a id="a6" name="a6"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <a class="highlightclass code" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t onVelocity,</div>
 <div class="line">                   uint8_t offVelocity)</div>
 <div class="line">    : <a class="highlightclass code" href="../../d6/d72/classMIDIButton.html">MIDIButton</a>(pin, address, {onVelocity, offVelocity}) {}</div>
 <div class="line">  <span class="comment">//  ^~~~~~~~~~ Initialization of the base class MIDIButton</span></div>
@@ -149,17 +149,17 @@ Mapping</h2>
 <div class="line"><span class="comment">// constructor we wrote a couple of lines back.</span></div>
 <div class="line">CustomNoteButton button {</div>
 <div class="line">  5,              <span class="comment">// button pin</span></div>
-<div class="line">  <a name="a7"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <span class="comment">// MIDI address</span></div>
+<div class="line">  <a id="a7" name="a7"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <span class="comment">// MIDI address</span></div>
 <div class="line">  0x40,           <span class="comment">// on velocity</span></div>
 <div class="line">  0x10,           <span class="comment">// off velocity</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a8" name="a8"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a9" name="a9"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00286">Control_Surface_Class.cpp:286</a></div></div>

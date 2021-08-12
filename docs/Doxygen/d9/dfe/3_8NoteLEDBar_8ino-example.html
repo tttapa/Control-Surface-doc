@@ -106,7 +106,7 @@ Mapping</h2>
 <div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI Interface to use</span></div>
-<div class="line"><a name="_a0"></a><a class="highlightclass code" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a shift register as output for the LEDs</span></div>
 <div class="line">SPIShiftRegisterOut&lt;8&gt; sreg {</div>
@@ -117,16 +117,16 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a LED bar driver that listens for MIDI Note C4 that drives</span></div>
 <div class="line"><span class="comment">// the LEDs connected to the eight output pins of the shift register</span></div>
-<div class="line"><a name="_a1"></a><a class="highlightclass code" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteLEDBar&lt;8&gt;</a> leds { sreg.pins(), <a name="a2"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4) };</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteLEDBar&lt;8&gt;</a> leds { sreg.pins(), <a id="a2" name="a2"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4) };</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Initialize the Control Surface</span></div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a name="a3"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a4"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a id="a3" name="a3"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a4" name="a4"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Update the Control Surface</span></div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a name="a5"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a5" name="a5"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>
@@ -159,7 +159,7 @@ Mapping</h2>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00065">Control_Surface_Class.cpp:65</a></div></div>
 <div class="ttc" id="aclassNoteCCKPLEDBar_html"><div class="ttname"><a href="../../d2/daa/classNoteCCKPLEDBar.html">NoteCCKPLEDBar</a></div><div class="ttdoc">Class that turns on a different number of LEDs depending on the received MIDI velocity,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html#l00030">NoteCCKPLEDBar.hpp:32</a></div></div>
-<div class="ttc" id="aclassUSBDebugMIDI__Interface_html"><div class="ttname"><a href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a></div><div class="ttdoc">A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00351">DebugMIDI_Interface.hpp:352</a></div></div>
+<div class="ttc" id="aclassUSBDebugMIDI__Interface_html"><div class="ttname"><a href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a></div><div class="ttdoc">A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00310">DebugMIDI_Interface.hpp:311</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

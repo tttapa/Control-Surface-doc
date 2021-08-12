@@ -80,7 +80,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md296">The MIDI protocol</a></li>
+<ul><li class="level1"><a href="#autotoc_md302">The MIDI protocol</a></li>
 <li class="level1"><a href="#midi_md-midi-interfaces">MIDI interfaces</a><ul><li class="level2"><a href="#midi_md-interfaces-supported-boards">Supported Arduino-compatible boards</a></li>
 <li class="level2"><a href="#midi_md-interfaces-functionality">Functionality</a></li>
 <li class="level2"><a href="#midi_md-instantiate-a-midi-interface">Instantiating a MIDI interface</a></li>
@@ -104,18 +104,18 @@ $(function() {
 </ul>
 </li>
 <li class="level1"><a href="#midi_md-routing">Routing MIDI messages</a><ul><li class="level2"><a href="#midi_md-default-routing">Default routing</a></li>
-<li class="level2"><a href="#autotoc_md297">Manual routing</a></li>
-<li class="level2"><a href="#autotoc_md298">Bidirectional MIDI pipes</a></li>
-<li class="level2"><a href="#autotoc_md299">Multiple MIDI interfaces</a></li>
-<li class="level2"><a href="#autotoc_md300">MIDI pipe factories</a></li>
-<li class="level2"><a href="#autotoc_md301">Routing between MIDI interfaces</a></li>
+<li class="level2"><a href="#autotoc_md303">Manual routing</a></li>
+<li class="level2"><a href="#autotoc_md304">Bidirectional MIDI pipes</a></li>
+<li class="level2"><a href="#autotoc_md305">Multiple MIDI interfaces</a></li>
+<li class="level2"><a href="#autotoc_md306">MIDI pipe factories</a></li>
+<li class="level2"><a href="#autotoc_md307">Routing between MIDI interfaces</a></li>
 <li class="level2"><a href="#midi_md-routing-more-examples">More examples</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="textblock"><p ><a class="anchor" id="md_pages_MIDI"></a></p>
-<h1><a class="anchor" id="autotoc_md296"></a>
+<h1><a class="anchor" id="autotoc_md302"></a>
 The MIDI protocol</h1>
 <p >This guide expects basic familiarity with the MIDI protocol and the different types of MIDI messages. You can find more information about MIDI on <a href="https://www.midi.org/">https://www.midi.org/</a>, the <a href="https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message">summary of MIDI messages</a> can be especially handy.</p>
 <h1><a class="anchor" id="midi_md-midi-interfaces"></a>
@@ -166,7 +166,7 @@ Instantiating a MIDI interface</h2>
 </div><!-- fragment --><p> Note how the words <code>USBMIDI_Interface</code>, <code>begin</code> and <code>update</code> in the previous snippet are shown in blue and brown: these are links to the documentation for the relevant classes and functions. If you hover over them with your mouse pointer, you'll see a short description, and if you click on the link, it will take you to the detailed documentation.</p>
 <p >The code above doesn't really anything useful yet, it just sets up everything so we can start sending and receiving MIDI messages in the following sections.</p>
 <p >You can of course replace <code>USBMIDI_Interface</code> by a different type, such as <code>USBDebugMIDI_Interface</code> if that's the MIDI interface you need for your application. </p><div class="fragment"><div class="line"><a class="highlightclass code" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi;</div>
-<div class="ttc" id="aclassUSBDebugMIDI__Interface_html"><div class="ttname"><a href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a></div><div class="ttdoc">A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00351">DebugMIDI_Interface.hpp:352</a></div></div>
+<div class="ttc" id="aclassUSBDebugMIDI__Interface_html"><div class="ttname"><a href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a></div><div class="ttdoc">A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00310">DebugMIDI_Interface.hpp:311</a></div></div>
 </div><!-- fragment --><p> Some classes allow you to specify extra parameters: for example, <code>USBDebugMIDI_Interface</code> accepts an optional argument that specifies the baud rate to use when communicating with the Serial Monitor. The possible parameters can be found in the documentation for the <em>constructor</em> of the class in question, for example, see <a class="el" href="../../de/d2d/classUSBDebugMIDI__Interface.html#a8cefbc3dc0153b5b6c39984e10d5e2a5">USBDebugMIDI_Interface::USBDebugMIDI_Interface()</a>, it lists <code>baud</code> as an optional parameter. You can see that it's an optional parameter, because its name is followed by an equal sign (<code>=</code>) and a default value in the function signature.</p>
 <p >To specify the baud rate using this parameter, you can replace the declaration of the <code>midi</code> variable in the previous snippet by the following: </p><div class="fragment"><div class="line"><span class="comment">// Instantiate a debug MIDI interface with a baud rate of 9600</span></div>
 <div class="line"><a class="highlightclass code" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi {9600};</div>
@@ -211,7 +211,7 @@ Simple example</h2>
 <div class="ttc" id="aclassMIDIAddress_html"><div class="ttname"><a href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></div><div class="ttdoc">A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd6/MIDIAddress_8hpp_source.html#l00141">MIDIAddress.hpp:141</a></div></div>
 <div class="ttc" id="aclassMIDI__Sender_html_ad487d041b8e9d10d58aba470a15e1fc6"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">MIDI_Sender::sendNoteOn</a></div><div class="ttdeci">void sendNoteOn(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note On event.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00020">MIDI_Sender.ipp:20</a></div></div>
 <div class="ttc" id="aclassMIDI__Sender_html_ae5438982b69a41d7b4565328f5fd73c8"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">MIDI_Sender::sendNoteOff</a></div><div class="ttdeci">void sendNoteOff(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note Off event.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d05/MIDI__Sender_8ipp_source.html#l00031">MIDI_Sender.ipp:31</a></div></div>
-<div class="ttc" id="aclassSerialDebugMIDI__Interface_html_a7c3e14d99bd3dc0e3670d6956dafcaf2"><div class="ttname"><a href="../../db/dc4/classSerialDebugMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">SerialDebugMIDI_Interface::begin</a></div><div class="ttdeci">void begin() override</div><div class="ttdoc">Start the Serial interface at the predefined baud rate.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00306">DebugMIDI_Interface.hpp:306</a></div></div>
+<div class="ttc" id="aclassSerialDebugMIDI__Interface_html_a7c3e14d99bd3dc0e3670d6956dafcaf2"><div class="ttname"><a href="../../db/dc4/classSerialDebugMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">SerialDebugMIDI_Interface::begin</a></div><div class="ttdeci">void begin() override</div><div class="ttdoc">Start the Serial interface at the predefined baud rate.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00265">DebugMIDI_Interface.hpp:265</a></div></div>
 <div class="ttc" id="aclassStreamDebugMIDI__Interface_html_a44137bb65de2396875934e48a6ee5099"><div class="ttname"><a href="../../d8/d0b/classStreamDebugMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">StreamDebugMIDI_Interface::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Read the MIDI interface and call the callback if a message was received.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html#l00044">DebugMIDI_Interface.cpp:44</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_a5acc232d278a07ae2bbb541c527aac44"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#a5acc232d278a07ae2bbb541c527aac44">MIDI_Notes::note</a></div><div class="ttdeci">constexpr int8_t note(Note note, int8_t numOctave)</div><div class="ttdoc">Get the MIDI note in the given octave.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00056">Notes.hpp:56</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
@@ -500,7 +500,7 @@ Default routing</h2>
 <p >Two pipes are created, one for MIDI output (<code>pipe_tx</code> in the figure), and one for MIDI input (<code>pipe_rx</code>). These pipes are used to connect the <code>Control_Surface</code> part of the code to the MIDI interface defined on line 4 (<code>midi_usb</code>).</p>
 <p >In the main loop of the program, <code>Control_Surface</code> checks if the button was pressed, and if that's the case, a MIDI message is sent by <code>Control_Surface</code>: The message travels over the MIDI output pipe (<code>pipe_tx</code>) to the MIDI interface (<code>midi_usb</code>), which will then send it to the computer over the USB connection.</p>
 <p >Similarly, when a MIDI message from the computer arrives on the USB connection, the MIDI interface (<code>midi_usb</code>) will send it over the MIDI input pipe (<code>pipe_rx</code>) to the <code>Control_Surface</code> code, which will then check whether it's a MIDI Note On/Off message that matches the address of the LED, and turn on/off the LED accordingly.</p>
-<h2><a class="anchor" id="autotoc_md297"></a>
+<h2><a class="anchor" id="autotoc_md303"></a>
 Manual routing</h2>
 <p >As a first exercise, we'll define the same pipes and routing ourselves, without relying on <code>Control_Surface.begin()</code> to do it automagically.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
@@ -531,7 +531,7 @@ Manual routing</h2>
 <div class="line">midi_usb &gt;&gt; pipe_rx &gt;&gt; <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>;</div>
 </div><!-- fragment --><p >It is important to specify the routing <em>before</em> you call <code>Control_Surface.begin()</code>. In that case, Control Surface detects that it is already connected to a MIDI interface, so it won't change anything to the manual routing we specified earlier. <br  />
  If you call <code>Control_Surface.begin()</code> first, it will create its default routing as discussed earlier, and if you then later add your manual connections on top of that, your code might not work as expected.</p>
-<h2><a class="anchor" id="autotoc_md298"></a>
+<h2><a class="anchor" id="autotoc_md304"></a>
 Bidirectional MIDI pipes</h2>
 <p >There are many situations where you want to connect both the MIDI input and output of two endpoints together. It's a bit cumbersome to have to define a separate connection for each of the two directions. Luckily, the library includes bidirectional MIDI pipes, which makes this process a bit more terse.</p>
 <p >The following sketch does exactly the same as the previous two, just using a bidirectional pipe as a shorthand.</p>
@@ -558,7 +558,7 @@ Bidirectional MIDI pipes</h2>
 <div class="line">}</div>
 <div class="ttc" id="agroup__MIDI__Routing_html_ga987286a8b6dfd1b157a8fde75c203627"><div class="ttname"><a href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a></div><div class="ttdeci">std::pair&lt; MIDI_Pipe, MIDI_Pipe &gt; BidirectionalMIDI_Pipe</div><div class="ttdoc">A bidirectional pipe consists of two unidirectional pipes.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00589">MIDI_Pipes.hpp:589</a></div></div>
 </div><!-- fragment --><p> Connections to bidirectional pipes are made using the “vertical pipe” operator (<code>|</code>).</p>
-<h2><a class="anchor" id="autotoc_md299"></a>
+<h2><a class="anchor" id="autotoc_md305"></a>
 Multiple MIDI interfaces</h2>
 <p >If you only have a single MIDI interface, you don't really need to worry about pipes, as you saw in the <a class="el" href="../../d3/df7/midi-tutorial.html#midi_md-default-routing">Default routing</a> section, you can just call <code>Control_Surface.begin()</code> and it will automatically set everything up for you.</p>
 <p >MIDI pipes really shine in scenarios where you have multiple MIDI interfaces in a single program, they allow you to fully customize the routes between them. In the following example, we'll add an extra serial MIDI interface, and route it as follows:</p>
@@ -589,7 +589,7 @@ Multiple MIDI interfaces</h2>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">    <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md300"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md306"></a>
 MIDI pipe factories</h2>
 <p >If you want to keep adding new connections, you need a new pipe for each one. For large numbers of pipes this is cumbersome, so the library includes a pipe factory that gives you a new pipe every time you use it.</p>
 <p >Using the factory, the previous example can be simplified as follows:</p>
@@ -623,7 +623,7 @@ MIDI pipe factories</h2>
 </div><!-- fragment --><p >The number of pipes that the factory can produce is specified between angle brackets (<code>&lt;&gt;</code>). If you try to use more pipes than specified, you will get an error at run time, which is indicated by a blinking on-board LED.</p>
 <p >Instead of specifying a specific pipe when doing the routing in the <code>setup</code> function, you can now just use the <code>pipes</code> factory, it will give you a new pipe each time you use it.</p>
 <p >If you need bidirectional pipes, you can use the <a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab1901f6fc0f19b8c05c5639ab0a0b2ab">BidirectionalMIDI_PipeFactory</a> class instead.</p>
-<h2><a class="anchor" id="autotoc_md301"></a>
+<h2><a class="anchor" id="autotoc_md307"></a>
 Routing between MIDI interfaces</h2>
 <p >Up to now, we've only created connections between <code>Control_Surface</code> itself and a MIDI interface, but you can also create routes between MIDI interfaces. This is demonstrated in the following example, where we connect a debug MIDI interface to a MIDI over USB interface.</p>
 <p ><img src="../../midi-pipes-interfaces.svg" alt="" style="pointer-events: none; margin: 0 auto; display: block; width: 38em" class="inline"/></p>

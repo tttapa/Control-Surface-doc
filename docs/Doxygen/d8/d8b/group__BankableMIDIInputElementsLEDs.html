@@ -89,10 +89,11 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d8b/group__BankableMIDIInputElementsLEDs.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d8b/group__BankableMIDIInputElementsLEDs.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html">VPotRingLEDs&lt; BankSize &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A MIDI input element that represents a Mackie Control Universal VPot ring and displays its value using LEDs.  <a href="../../d2/d89/classMCU_1_1Bankable_1_1VPotRingLEDs.html#details">More...</a><br /></td></tr>
@@ -101,7 +102,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A MIDI input element that represents a Mackie Control Universal <a class="el" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html" title="A MIDI input element that represents a Mackie Control Universal VU meter.">VU</a> meter and displays its value using LEDs.  <a href="../../db/d17/classMCU_1_1Bankable_1_1VULEDs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga4599d49332d2cd30170feaa1cd0e0952"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize&gt; </td></tr>
 <tr class="memitem:ga4599d49332d2cd30170feaa1cd0e0952"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga4599d49332d2cd30170feaa1cd0e0952">NoteLED</a> = <a class="el" href="../../d5/d3a/classBankable_1_1NoteCCKPLED.html">NoteCCKPLED</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a42ab8d6057c68dc3ca7829a9173c24a4">MIDIMessageType::NOTE_ON</a>, BankSize &gt;</td></tr>
@@ -145,23 +146,18 @@ Typedefs</h2></td></tr>
 <tr class="separator:gae6dc9488028d042357ff6f065722413e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e792591326c095055d0d03ef3485d17"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, class ColorMapper  = DefaultColorMapper&gt; </td></tr>
 <tr class="memitem:ga8e792591326c095055d0d03ef3485d17"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga8e792591326c095055d0d03ef3485d17">NoteValueFastLED</a> = <a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gae6dc9488028d042357ff6f065722413e">NoteRangeFastLED</a>&lt; BankSize, 1, ColorMapper &gt;</td></tr>
-<tr class="memdesc:ga8e792591326c095055d0d03ef3485d17"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga8e792591326c095055d0d03ef3485d17">More...</a><br /></td></tr>
 <tr class="separator:ga8e792591326c095055d0d03ef3485d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad15a654d6946a686756c57926bac5f6f"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t RangeLen, class ColorMapper  = DefaultColorMapper&gt; </td></tr>
 <tr class="memitem:gad15a654d6946a686756c57926bac5f6f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad15a654d6946a686756c57926bac5f6f">CCRangeFastLED</a> = <a class="el" href="../../df/ddd/classBankable_1_1NoteCCKPRangeFastLED.html">NoteCCKPRangeFastLED</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ac08bccd1d86dc7033fb7a426455a8ae6">MIDIMessageType::CONTROL_CHANGE</a>, BankSize, RangeLen, ColorMapper &gt;</td></tr>
-<tr class="memdesc:gad15a654d6946a686756c57926bac5f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad15a654d6946a686756c57926bac5f6f">More...</a><br /></td></tr>
 <tr class="separator:gad15a654d6946a686756c57926bac5f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf8400740f3fa6c25c32b7df45bcd119"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, class ColorMapper  = DefaultColorMapper&gt; </td></tr>
 <tr class="memitem:gaaf8400740f3fa6c25c32b7df45bcd119"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gaaf8400740f3fa6c25c32b7df45bcd119">CCValueFastLED</a> = <a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gad15a654d6946a686756c57926bac5f6f">CCRangeFastLED</a>&lt; BankSize, 1, ColorMapper &gt;</td></tr>
-<tr class="memdesc:gaaf8400740f3fa6c25c32b7df45bcd119"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gaaf8400740f3fa6c25c32b7df45bcd119">More...</a><br /></td></tr>
 <tr class="separator:gaaf8400740f3fa6c25c32b7df45bcd119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga94ce027c480e0a6f570a20efe62a5450"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t RangeLen, class ColorMapper  = DefaultColorMapper&gt; </td></tr>
 <tr class="memitem:ga94ce027c480e0a6f570a20efe62a5450"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga94ce027c480e0a6f570a20efe62a5450">KPRangeFastLED</a> = <a class="el" href="../../df/ddd/classBankable_1_1NoteCCKPRangeFastLED.html">NoteCCKPRangeFastLED</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6ce935e284d90c79bb241ed2e75c308a">MIDIMessageType::KEY_PRESSURE</a>, BankSize, RangeLen, ColorMapper &gt;</td></tr>
-<tr class="memdesc:ga94ce027c480e0a6f570a20efe62a5450"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga94ce027c480e0a6f570a20efe62a5450">More...</a><br /></td></tr>
 <tr class="separator:ga94ce027c480e0a6f570a20efe62a5450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa0495b83540d8be274ea158f3208b245"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, class ColorMapper  = DefaultColorMapper&gt; </td></tr>
 <tr class="memitem:gaa0495b83540d8be274ea158f3208b245"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gaa0495b83540d8be274ea158f3208b245">KPValueFastLED</a> = <a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga94ce027c480e0a6f570a20efe62a5450">KPRangeFastLED</a>&lt; BankSize, 1, ColorMapper &gt;</td></tr>
-<tr class="memdesc:gaa0495b83540d8be274ea158f3208b245"><td class="mdescLeft">&#160;</td><td class="mdescRight"> <a href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#gaa0495b83540d8be274ea158f3208b245">More...</a><br /></td></tr>
 <tr class="separator:gaa0495b83540d8be274ea158f3208b245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3480eff39fd10581c8af6cb3a8b021e6"><td class="memTemplParams" colspan="2">template&lt;uint8_t BankSize, uint8_t RangeLen&gt; </td></tr>
 <tr class="memitem:ga3480eff39fd10581c8af6cb3a8b021e6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d8b/group__BankableMIDIInputElementsLEDs.html#ga3480eff39fd10581c8af6cb3a8b021e6">NoteRangeLEDs</a> = <a class="el" href="../../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html">NoteCCKPRangeLEDs</a>&lt; <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a42ab8d6057c68dc3ca7829a9173c24a4">MIDIMessageType::NOTE_ON</a>, BankSize, RangeLen &gt;</td></tr>
@@ -177,7 +173,7 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga51c7641f8a94226f8e3da66d3d146dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga4599d49332d2cd30170feaa1cd0e0952"></a>
+<a id="ga4599d49332d2cd30170feaa1cd0e0952" name="ga4599d49332d2cd30170feaa1cd0e0952"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4599d49332d2cd30170feaa1cd0e0952">&#9670;&nbsp;</a></span>NoteLED</h2>
 
 <div class="memitem">
@@ -196,7 +192,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gafa8349c822f23d52e0e8f216b64de032"></a>
+<a id="gafa8349c822f23d52e0e8f216b64de032" name="gafa8349c822f23d52e0e8f216b64de032"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafa8349c822f23d52e0e8f216b64de032">&#9670;&nbsp;</a></span>CCLED</h2>
 
 <div class="memitem">
@@ -215,7 +211,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9ca58e279e5fc41e94ce64e07980decf"></a>
+<a id="ga9ca58e279e5fc41e94ce64e07980decf" name="ga9ca58e279e5fc41e94ce64e07980decf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9ca58e279e5fc41e94ce64e07980decf">&#9670;&nbsp;</a></span>KPLED</h2>
 
 <div class="memitem">
@@ -234,7 +230,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga99429f8364c1eaa0c9b02c1a814bfa5a"></a>
+<a id="ga99429f8364c1eaa0c9b02c1a814bfa5a" name="ga99429f8364c1eaa0c9b02c1a814bfa5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga99429f8364c1eaa0c9b02c1a814bfa5a">&#9670;&nbsp;</a></span>NoteLEDBar</h2>
 
 <div class="memitem">
@@ -259,7 +255,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gad751641cb6a7e6501f7df5c94741bdea"></a>
+<a id="gad751641cb6a7e6501f7df5c94741bdea" name="gad751641cb6a7e6501f7df5c94741bdea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad751641cb6a7e6501f7df5c94741bdea">&#9670;&nbsp;</a></span>CCLEDBar</h2>
 
 <div class="memitem">
@@ -284,7 +280,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5cd2825175b45fbb6553af031eb1c34e"></a>
+<a id="ga5cd2825175b45fbb6553af031eb1c34e" name="ga5cd2825175b45fbb6553af031eb1c34e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5cd2825175b45fbb6553af031eb1c34e">&#9670;&nbsp;</a></span>KPLEDBar</h2>
 
 <div class="memitem">
@@ -309,7 +305,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gac5bc8488998298f295842bae8a9312cd"></a>
+<a id="gac5bc8488998298f295842bae8a9312cd" name="gac5bc8488998298f295842bae8a9312cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac5bc8488998298f295842bae8a9312cd">&#9670;&nbsp;</a></span>NoteLEDPWM</h2>
 
 <div class="memitem">
@@ -328,7 +324,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2bca887674e86d8c7571084182c60aa2"></a>
+<a id="ga2bca887674e86d8c7571084182c60aa2" name="ga2bca887674e86d8c7571084182c60aa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2bca887674e86d8c7571084182c60aa2">&#9670;&nbsp;</a></span>CCLEDPWM</h2>
 
 <div class="memitem">
@@ -347,7 +343,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gad48c6dc8f805fc468c8a84785568b040"></a>
+<a id="gad48c6dc8f805fc468c8a84785568b040" name="gad48c6dc8f805fc468c8a84785568b040"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad48c6dc8f805fc468c8a84785568b040">&#9670;&nbsp;</a></span>KPLEDPWM</h2>
 
 <div class="memitem">
@@ -366,7 +362,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gae6dc9488028d042357ff6f065722413e"></a>
+<a id="gae6dc9488028d042357ff6f065722413e" name="gae6dc9488028d042357ff6f065722413e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae6dc9488028d042357ff6f065722413e">&#9670;&nbsp;</a></span>NoteRangeFastLED</h2>
 
 <div class="memitem">
@@ -393,7 +389,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8e792591326c095055d0d03ef3485d17"></a>
+<a id="ga8e792591326c095055d0d03ef3485d17" name="ga8e792591326c095055d0d03ef3485d17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8e792591326c095055d0d03ef3485d17">&#9670;&nbsp;</a></span>NoteValueFastLED</h2>
 
 <div class="memitem">
@@ -410,7 +406,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gad15a654d6946a686756c57926bac5f6f"></a>
+<a id="gad15a654d6946a686756c57926bac5f6f" name="gad15a654d6946a686756c57926bac5f6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad15a654d6946a686756c57926bac5f6f">&#9670;&nbsp;</a></span>CCRangeFastLED</h2>
 
 <div class="memitem">
@@ -427,7 +423,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gaaf8400740f3fa6c25c32b7df45bcd119"></a>
+<a id="gaaf8400740f3fa6c25c32b7df45bcd119" name="gaaf8400740f3fa6c25c32b7df45bcd119"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaf8400740f3fa6c25c32b7df45bcd119">&#9670;&nbsp;</a></span>CCValueFastLED</h2>
 
 <div class="memitem">
@@ -444,7 +440,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga94ce027c480e0a6f570a20efe62a5450"></a>
+<a id="ga94ce027c480e0a6f570a20efe62a5450" name="ga94ce027c480e0a6f570a20efe62a5450"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga94ce027c480e0a6f570a20efe62a5450">&#9670;&nbsp;</a></span>KPRangeFastLED</h2>
 
 <div class="memitem">
@@ -461,7 +457,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa0495b83540d8be274ea158f3208b245"></a>
+<a id="gaa0495b83540d8be274ea158f3208b245" name="gaa0495b83540d8be274ea158f3208b245"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa0495b83540d8be274ea158f3208b245">&#9670;&nbsp;</a></span>KPValueFastLED</h2>
 
 <div class="memitem">
@@ -478,7 +474,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga3480eff39fd10581c8af6cb3a8b021e6"></a>
+<a id="ga3480eff39fd10581c8af6cb3a8b021e6" name="ga3480eff39fd10581c8af6cb3a8b021e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3480eff39fd10581c8af6cb3a8b021e6">&#9670;&nbsp;</a></span>NoteRangeLEDs</h2>
 
 <div class="memitem">
@@ -497,7 +493,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="gac3b96fcf5525e19ade0624779dd744ac"></a>
+<a id="gac3b96fcf5525e19ade0624779dd744ac" name="gac3b96fcf5525e19ade0624779dd744ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac3b96fcf5525e19ade0624779dd744ac">&#9670;&nbsp;</a></span>CCRangeLEDs</h2>
 
 <div class="memitem">
@@ -516,7 +512,7 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga51c7641f8a94226f8e3da66d3d146dd4"></a>
+<a id="ga51c7641f8a94226f8e3da66d3d146dd4" name="ga51c7641f8a94226f8e3da66d3d146dd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga51c7641f8a94226f8e3da66d3d146dd4">&#9670;&nbsp;</a></span>KPRangeLEDs</h2>
 
 <div class="memitem">

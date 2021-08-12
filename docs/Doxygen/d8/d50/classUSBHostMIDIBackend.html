@@ -96,39 +96,228 @@ class USBHostMIDIBackend&lt; MaxPacketSize &gt;</div><p >MIDI over USB backend f
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/dd8/classUSBHostMIDIBackend__coll__graph.svg" width="200" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/dd8/classUSBHostMIDIBackend__coll__graph.svg" width="200" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afa563722058cf859e56af41c9b9392d1"><td class="memItemLeft" align="right" valign="top"><a id="afa563722058cf859e56af41c9b9392d1"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MIDIUSBPacket_t</b> = <a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt; uint8_t, 4 &gt;</td></tr>
+<tr class="memitem:afa563722058cf859e56af41c9b9392d1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a> = <a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt; uint8_t, 4 &gt;</td></tr>
 <tr class="separator:afa563722058cf859e56af41c9b9392d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a7ae1655e7fa7dae88f773b07f624f9"><td class="memItemLeft" align="right" valign="top"><a id="a7a7ae1655e7fa7dae88f773b07f624f9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>USBHostMIDIBackend</b> (USBHost &amp;host)</td></tr>
+<tr class="memitem:a7a7ae1655e7fa7dae88f773b07f624f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a7a7ae1655e7fa7dae88f773b07f624f9">USBHostMIDIBackend</a> (USBHost &amp;host)</td></tr>
 <tr class="separator:a7a7ae1655e7fa7dae88f773b07f624f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a059a6594006afe3d6c7cc278eadd9008"><td class="memItemLeft" align="right" valign="top"><a id="a059a6594006afe3d6c7cc278eadd9008"></a>
-<a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> ()</td></tr>
+<tr class="memitem:a059a6594006afe3d6c7cc278eadd9008"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">read</a> ()</td></tr>
 <tr class="separator:a059a6594006afe3d6c7cc278eadd9008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e77f304b353c08cc6f46406afd07ec"><td class="memItemLeft" align="right" valign="top"><a id="a45e77f304b353c08cc6f46406afd07ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (uint8_t cn_cin, uint8_t midi_0, uint8_t midi_1, uint8_t midi_2)</td></tr>
+<tr class="memitem:a45e77f304b353c08cc6f46406afd07ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">write</a> (uint8_t cn_cin, uint8_t midi_0, uint8_t midi_1, uint8_t midi_2)</td></tr>
 <tr class="separator:a45e77f304b353c08cc6f46406afd07ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c491257d08e16bd080823ec5cc5ce0"><td class="memItemLeft" align="right" valign="top"><a id="a02c491257d08e16bd080823ec5cc5ce0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sendNow</b> ()</td></tr>
+<tr class="memitem:a02c491257d08e16bd080823ec5cc5ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a> ()</td></tr>
 <tr class="separator:a02c491257d08e16bd080823ec5cc5ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94e4bd8be37354a41541bb5d3237120f"><td class="memItemLeft" align="right" valign="top"><a id="a94e4bd8be37354a41541bb5d3237120f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>preferImmediateSend</b> ()</td></tr>
+<tr class="memitem:a94e4bd8be37354a41541bb5d3237120f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">preferImmediateSend</a> ()</td></tr>
 <tr class="separator:a94e4bd8be37354a41541bb5d3237120f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae85fa6da805ecd16cb90584830862c12"><td class="memItemLeft" align="right" valign="top"><a id="ae85fa6da805ecd16cb90584830862c12"></a>
-<a class="el" href="../../de/d93/classTeensyHostMIDI.html">TeensyHostMIDI</a>&lt; MaxPacketSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>backend</b></td></tr>
+<tr class="memitem:ae85fa6da805ecd16cb90584830862c12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d93/classTeensyHostMIDI.html">TeensyHostMIDI</a>&lt; MaxPacketSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#ae85fa6da805ecd16cb90584830862c12">backend</a></td></tr>
 <tr class="separator:ae85fa6da805ecd16cb90584830862c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="afa563722058cf859e56af41c9b9392d1" name="afa563722058cf859e56af41c9b9392d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa563722058cf859e56af41c9b9392d1">&#9670;&nbsp;</a></span>MIDIUSBPacket_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a> =  <a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt;uint8_t, 4&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7a7ae1655e7fa7dae88f773b07f624f9" name="a7a7ae1655e7fa7dae88f773b07f624f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7ae1655e7fa7dae88f773b07f624f9">&#9670;&nbsp;</a></span>USBHostMIDIBackend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html">USBHostMIDIBackend</a> </td>
+          <td>(</td>
+          <td class="paramtype">USBHost &amp;&#160;</td>
+          <td class="paramname"><em>host</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a059a6594006afe3d6c7cc278eadd9008" name="a059a6594006afe3d6c7cc278eadd9008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059a6594006afe3d6c7cc278eadd9008">&#9670;&nbsp;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a> read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a45e77f304b353c08cc6f46406afd07ec" name="a45e77f304b353c08cc6f46406afd07ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e77f304b353c08cc6f46406afd07ec">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void write </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cn_cin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>midi_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>midi_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>midi_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a02c491257d08e16bd080823ec5cc5ce0" name="a02c491257d08e16bd080823ec5cc5ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c491257d08e16bd080823ec5cc5ce0">&#9670;&nbsp;</a></span>sendNow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendNow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a94e4bd8be37354a41541bb5d3237120f" name="a94e4bd8be37354a41541bb5d3237120f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e4bd8be37354a41541bb5d3237120f">&#9670;&nbsp;</a></span>preferImmediateSend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool preferImmediateSend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae85fa6da805ecd16cb90584830862c12" name="ae85fa6da805ecd16cb90584830862c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85fa6da805ecd16cb90584830862c12">&#9670;&nbsp;</a></span>backend</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d93/classTeensyHostMIDI.html">TeensyHostMIDI</a>&lt;MaxPacketSize&gt; backend</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a></li>
 </ul>
