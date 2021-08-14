@@ -125,7 +125,7 @@ Behavior</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  PCMSK1 |= pin_mask; <span class="comment">// enable pin change interrupt for given pins in port C</span></div>
-<div class="line">  DDRC &amp;= ~~pin_mask;  <span class="comment">// input mode for port C</span></div>
+<div class="line">  DDRC &amp;= ~pin_mask;  <span class="comment">// input mode for port C</span></div>
 <div class="line">  PORTC |= pin_mask;  <span class="comment">// enable pull-up resistors for port C</span></div>
 <div class="line">  PCICR |= 1 &lt;&lt; 1;    <span class="comment">// enable pin change interrupt for port C</span></div>
 <div class="line">  Serial.begin(115200);</div>

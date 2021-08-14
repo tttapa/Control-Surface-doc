@@ -125,7 +125,7 @@ Behavior</h2>
 <div class="line">ISR (TIMER2_COMPA_vect) { encoders.update(PINC &amp; pin_mask); } <span class="comment">// read port C</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  DDRC &amp;= ~~pin_mask; <span class="comment">// input mode for port C</span></div>
+<div class="line">  DDRC &amp;= ~pin_mask; <span class="comment">// input mode for port C</span></div>
 <div class="line">  PORTC |= pin_mask; <span class="comment">// enable pull-up resistors for port C</span></div>
 <div class="line">  setTimer2Prescaler(Timer2Prescaler::S8);</div>
 <div class="line">  setTimer2WGMode(Timer2WGMode::CTC);</div>
