@@ -104,11 +104,11 @@ $(function() {
 </ul>
 </li>
 <li class="level1"><a href="#midi_md-routing">Routing MIDI messages</a><ul><li class="level2"><a href="#midi_md-default-routing">Default routing</a></li>
-<li class="level2"><a href="#autotoc_md303">Manual routing</a></li>
-<li class="level2"><a href="#autotoc_md304">Bidirectional MIDI pipes</a></li>
-<li class="level2"><a href="#autotoc_md305">Multiple MIDI interfaces</a></li>
-<li class="level2"><a href="#autotoc_md306">MIDI pipe factories</a></li>
-<li class="level2"><a href="#autotoc_md307">Routing between MIDI interfaces</a></li>
+<li class="level2"><a href="#midi_md-manual-routing">Manual routing</a></li>
+<li class="level2"><a href="#midi_md-bidir-pipes">Bidirectional MIDI pipes</a></li>
+<li class="level2"><a href="#midi_md-multiple-interfaces-routing">Multiple MIDI interfaces</a></li>
+<li class="level2"><a href="#midi_md-pipe-factories">MIDI pipe factories</a></li>
+<li class="level2"><a href="#midi_md-routing-between-interfaces">Routing between MIDI interfaces</a></li>
 <li class="level2"><a href="#midi_md-routing-more-examples">More examples</a></li>
 </ul>
 </li>
@@ -500,7 +500,7 @@ Default routing</h2>
 <p >Two pipes are created, one for MIDI output (<code>pipe_tx</code> in the figure), and one for MIDI input (<code>pipe_rx</code>). These pipes are used to connect the <code>Control_Surface</code> part of the code to the MIDI interface defined on line 4 (<code>midi_usb</code>).</p>
 <p >In the main loop of the program, <code>Control_Surface</code> checks if the button was pressed, and if that's the case, a MIDI message is sent by <code>Control_Surface</code>: The message travels over the MIDI output pipe (<code>pipe_tx</code>) to the MIDI interface (<code>midi_usb</code>), which will then send it to the computer over the USB connection.</p>
 <p >Similarly, when a MIDI message from the computer arrives on the USB connection, the MIDI interface (<code>midi_usb</code>) will send it over the MIDI input pipe (<code>pipe_rx</code>) to the <code>Control_Surface</code> code, which will then check whether it's a MIDI Note On/Off message that matches the address of the LED, and turn on/off the LED accordingly.</p>
-<h2><a class="anchor" id="autotoc_md303"></a>
+<h2><a class="anchor" id="midi_md-manual-routing"></a>
 Manual routing</h2>
 <p >As a first exercise, we'll define the same pipes and routing ourselves, without relying on <code>Control_Surface.begin()</code> to do it automagically.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
@@ -531,7 +531,7 @@ Manual routing</h2>
 <div class="line">midi_usb &gt;&gt; pipe_rx &gt;&gt; <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>;</div>
 </div><!-- fragment --><p >It is important to specify the routing <em>before</em> you call <code>Control_Surface.begin()</code>. In that case, Control Surface detects that it is already connected to a MIDI interface, so it won't change anything to the manual routing we specified earlier. <br  />
  If you call <code>Control_Surface.begin()</code> first, it will create its default routing as discussed earlier, and if you then later add your manual connections on top of that, your code might not work as expected.</p>
-<h2><a class="anchor" id="autotoc_md304"></a>
+<h2><a class="anchor" id="midi_md-bidir-pipes"></a>
 Bidirectional MIDI pipes</h2>
 <p >There are many situations where you want to connect both the MIDI input and output of two endpoints together. It's a bit cumbersome to have to define a separate connection for each of the two directions. Luckily, the library includes bidirectional MIDI pipes, which makes this process a bit more terse.</p>
 <p >The following sketch does exactly the same as the previous two, just using a bidirectional pipe as a shorthand.</p>
@@ -558,7 +558,7 @@ Bidirectional MIDI pipes</h2>
 <div class="line">}</div>
 <div class="ttc" id="agroup__MIDI__Routing_html_ga987286a8b6dfd1b157a8fde75c203627"><div class="ttname"><a href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a></div><div class="ttdeci">std::pair&lt; MIDI_Pipe, MIDI_Pipe &gt; BidirectionalMIDI_Pipe</div><div class="ttdoc">A bidirectional pipe consists of two unidirectional pipes.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00589">MIDI_Pipes.hpp:589</a></div></div>
 </div><!-- fragment --><p> Connections to bidirectional pipes are made using the “vertical pipe” operator (<code>|</code>).</p>
-<h2><a class="anchor" id="autotoc_md305"></a>
+<h2><a class="anchor" id="midi_md-multiple-interfaces-routing"></a>
 Multiple MIDI interfaces</h2>
 <p >If you only have a single MIDI interface, you don't really need to worry about pipes, as you saw in the <a class="el" href="../../d3/df7/midi-tutorial.html#midi_md-default-routing">Default routing</a> section, you can just call <code>Control_Surface.begin()</code> and it will automatically set everything up for you.</p>
 <p >MIDI pipes really shine in scenarios where you have multiple MIDI interfaces in a single program, they allow you to fully customize the routes between them. In the following example, we'll add an extra serial MIDI interface, and route it as follows:</p>
@@ -589,7 +589,7 @@ Multiple MIDI interfaces</h2>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">    <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md306"></a>
+</div><!-- fragment --><h2><a class="anchor" id="midi_md-pipe-factories"></a>
 MIDI pipe factories</h2>
 <p >If you want to keep adding new connections, you need a new pipe for each one. For large numbers of pipes this is cumbersome, so the library includes a pipe factory that gives you a new pipe every time you use it.</p>
 <p >Using the factory, the previous example can be simplified as follows:</p>
@@ -623,7 +623,7 @@ MIDI pipe factories</h2>
 </div><!-- fragment --><p >The number of pipes that the factory can produce is specified between angle brackets (<code>&lt;&gt;</code>). If you try to use more pipes than specified, you will get an error at run time, which is indicated by a blinking on-board LED.</p>
 <p >Instead of specifying a specific pipe when doing the routing in the <code>setup</code> function, you can now just use the <code>pipes</code> factory, it will give you a new pipe each time you use it.</p>
 <p >If you need bidirectional pipes, you can use the <a class="el" href="../../df/ddc/group__MIDI__Routing.html#gab1901f6fc0f19b8c05c5639ab0a0b2ab">BidirectionalMIDI_PipeFactory</a> class instead.</p>
-<h2><a class="anchor" id="autotoc_md307"></a>
+<h2><a class="anchor" id="midi_md-routing-between-interfaces"></a>
 Routing between MIDI interfaces</h2>
 <p >Up to now, we've only created connections between <code>Control_Surface</code> itself and a MIDI interface, but you can also create routes between MIDI interfaces. This is demonstrated in the following example, where we connect a debug MIDI interface to a MIDI over USB interface.</p>
 <p ><img src="../../midi-pipes-interfaces.svg" alt="" style="pointer-events: none; margin: 0 auto; display: block; width: 38em" class="inline"/></p>
@@ -655,7 +655,7 @@ Routing between MIDI interfaces</h2>
  Open your favorite MIDI monitor and select the MIDI over USB port of the Arduino. Then open the Serial Monitor, set the line ending to “Newline”, and then enter a MIDI message, e.g. <code>90 3C 7F</code>. You should see the message arrive in the MIDI monitor as a Note On message for note C4 on channel 1 with a velocity of 127. Similarly, if you send a message to the Arduino using the MIDI monitor, it will be printed in the Serial Monitor, because we used a bidirectional pipe.</p>
 <p >If you only want to print MIDI messages, you can use the <a class="el" href="../../d5/dbc/classUSBDebugMIDI__Output.html">USBDebugMIDI_Output</a> class instead of <a class="el" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a>. <a class="el" href="../../d5/dbc/classUSBDebugMIDI__Output.html" title="A class for debug MIDI outputs sending human-readable MIDI messages over the USB CDC connection.">USBDebugMIDI_Output</a> uses less memory, and one of the issues of having multiple USBDebugMIDI_Interfaces is that input cannot work (some of the characters you type in are sent to one of the interfaces, some to the others), <a class="el" href="../../d5/dbc/classUSBDebugMIDI__Output.html">USBDebugMIDI_Output</a> doesn't have this issue.</p>
 <p >In the following example, Control Surface works normally, using the USB MIDI interface: you can try sending note on/off messages for note C4 and it'll turn on/off the on-board LED, and if you press/release the button on pin 2 you'll receive note on/off messages. <br  />
- Additionally, all MIDI input that arrives on the MIDI over USB interface is routed to a secondary MIDI debug output, allowing you to inspect the messages being sent to the Arduino in the Serial Monitor.</p>
+ Additionally, all MIDI input that arrives on the MIDI over USB interface is routed to a secondary MIDI debug output, allowing you to use the Serial Monitor to inspect the messages being sent to the Arduino.</p>
 <p ><img src="../../midi-pipes-mon.svg" alt="" style="pointer-events: none; margin: 0 auto; display: block; width: 38em" class="inline"/></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
