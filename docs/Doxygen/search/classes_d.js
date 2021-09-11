@@ -11,7 +11,7 @@ var searchData=
   ['pixellocation_8',['PixelLocation',['../d0/d4e/Def_8hpp.html#dc/dd2/structPixelLocation',1,'']]],
   ['pluggableusbmidi_9',['PluggableUSBMIDI',['../d1/dd4/classPluggableUSBMIDI.html',1,'']]],
   ['potentiometer_10',['Potentiometer',['../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer',1,'']]],
-  ['programchanger_11',['ProgramChanger',['../de/d43/classProgramChanger.html',1,'']]],
+  ['programchanger_11',['ProgramChanger',['../d1/df9/classBankable_1_1ProgramChanger.html',1,'ProgramChanger&lt; N &gt;'],['../de/d43/classProgramChanger.html',1,'ProgramChanger&lt; N &gt;']]],
   ['programchangeselector_12',['ProgramChangeSelector',['../dd/dd4/classProgramChangeSelector.html',1,'']]],
   ['programchangeselectorleds_13',['ProgramChangeSelectorLEDs',['../d9/dee/classProgramChangeSelectorLEDs.html',1,'']]],
   ['programchangesender_14',['ProgramChangeSender',['../db/d8b/classProgramChangeSender.html',1,'']]]

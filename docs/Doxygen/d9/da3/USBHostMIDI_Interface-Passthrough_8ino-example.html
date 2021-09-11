@@ -79,22 +79,22 @@ $(function() {
   <div class="headertitle"><div class="title">USBHostMIDI_Interface-Passthrough.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md87"></a>
+<h1><a class="anchor" id="autotoc_md96"></a>
 USBHostMIDI_Interface-Passthrough</h1>
 <p >This example demonstrates how to use the <a class="el" href="../../d3/d56/classUSBHostMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages to a MIDI USB device connected to a Teensy&#39;s USB ho...">USBHostMIDI_Interface</a> to send and receive MIDI data to and from USB MIDI devices connected to a Teensy's USB Host port.</p>
 <dl class="section user"><dt>Boards:</dt><dd>Teensy 3.6, Teensy 4.1</dd></dl>
-<h2><a class="anchor" id="autotoc_md88"></a>
+<h2><a class="anchor" id="autotoc_md97"></a>
 Connections</h2>
 <ul>
 <li>Use a <a href="https://www.pjrc.com/store/cable_usb_host_t36.html">USB Host cable</a> to connect a MIDI USB device to the Teensy. Connect the primary USB port of the Teensy to a computer.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md89"></a>
+<h2><a class="anchor" id="autotoc_md98"></a>
 Behavior</h2>
 <ul>
 <li>All messages sent from the computer to the Teensy are forwarded to the USB MIDI device.</li>
 <li>All messages sent by the USB MIDI device are forwarded to the computer.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md90"></a>
+<h2><a class="anchor" id="autotoc_md99"></a>
 Mapping</h2>
 <ul>
 <li>None</li>
@@ -102,21 +102,21 @@ Mapping</h2>
 <p >Written by PieterP, 2021-01-31 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../df/d33/USBHostMIDI__Interface_8hpp.html">MIDI_Interfaces/USBHostMIDI_Interface.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../df/d33/USBHostMIDI__Interface_8hpp.html">MIDI_Interfaces/USBHostMIDI_Interface.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create the ports for USB devices plugged into Teensy&#39;s 2nd USB port (via hubs)</span></div>
 <div class="line">USBHost usb;</div>
 <div class="line">USBHub hub{usb};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// USB Device MIDI (primary USB port)</span></div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> devicemidi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> devicemidi;</div>
 <div class="line"><span class="comment">// USB Host MIDI (second USB port)</span></div>
-<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../d3/d56/classUSBHostMIDI__Interface.html">USBHostMIDI_Interface</a> hostmidi{usb};</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="code hl_class" href="../../d3/d56/classUSBHostMIDI__Interface.html">USBHostMIDI_Interface</a> hostmidi{usb};</div>
 <div class="line"><span class="comment">// Alternatively, use `USBHostMIDI_Interface_BigBuffer`</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Pipe to route MIDI data between two USB ports</span></div>
-<div class="line"><a class="highlightmember code" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> p;</div>
+<div class="line"><a class="code hl_typedef" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> p;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <span class="comment">// Wait 1.5 seconds before turning on USB Host. If connected USB devices</span></div>
@@ -125,15 +125,15 @@ Mapping</h2>
 <div class="line">  delay(1500);</div>
 <div class="line"> </div>
 <div class="line">  hostmidi | p | devicemidi; <span class="comment">// Connect the interfaces using a MIDI pipe</span></div>
-<div class="line">  usb.<a id="a2" name="a2"></a><a class="highlightmember code" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();               <span class="comment">// Initialize the USB Host</span></div>
+<div class="line">  usb.<a id="a2" name="a2"></a><a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();               <span class="comment">// Initialize the USB Host</span></div>
 <div class="line">  hostmidi.begin();          <span class="comment">// Initialize the MIDI interfaces</span></div>
-<div class="line">  devicemidi.<a class="highlightmember code" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();</div>
+<div class="line">  devicemidi.<a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  <span class="comment">// Continuously read incoming MIDI data and route it between the interfaces</span></div>
 <div class="line">  hostmidi.update();</div>
-<div class="line">  devicemidi.<a id="a3" name="a3"></a><a class="highlightmember code" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>();</div>
+<div class="line">  devicemidi.<a id="a3" name="a3"></a><a class="code hl_function" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aUSBHostMIDI__Interface_8hpp_html"><div class="ttname"><a href="../../df/d33/USBHostMIDI__Interface_8hpp.html">USBHostMIDI_Interface.hpp</a></div></div>

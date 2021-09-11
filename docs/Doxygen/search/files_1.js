@@ -80,5 +80,7 @@ var searchData=
   ['pbpotentiometer_2ecpp_77',['PBPotentiometer.cpp',['../de/d09/Bankable_2PBPotentiometer_8cpp.html',1,'']]],
   ['pbpotentiometer_2ehpp_78',['PBPotentiometer.hpp',['../d9/d99/Bankable_2PBPotentiometer_8hpp.html',1,'']]],
   ['pcbutton_2ecpp_79',['PCButton.cpp',['../d8/d2a/Bankable_2PCButton_8cpp.html',1,'']]],
-  ['pcbutton_2ehpp_80',['PCButton.hpp',['../d0/d52/Bankable_2PCButton_8hpp.html',1,'']]]
+  ['pcbutton_2ehpp_80',['PCButton.hpp',['../d0/d52/Bankable_2PCButton_8hpp.html',1,'']]],
+  ['programchanger_2ecpp_81',['ProgramChanger.cpp',['../da/d73/Bankable_2ProgramChanger_8cpp.html',1,'']]],
+  ['programchanger_2ehpp_82',['ProgramChanger.hpp',['../d2/d83/Bankable_2ProgramChanger_8hpp.html',1,'']]]
 ];

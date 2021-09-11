@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">MIDI-Monitor.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md85"></a>
+<h1><a class="anchor" id="autotoc_md115"></a>
 MIDI-Monitor</h1>
 <p >This example shows prints all MIDI messages that arrive over USB to the Serial monitor so you can use the Arduino as a MIDI monitor. It also allows you to enter MIDI messages as text in the Serial monitor, and then sends these messages as MIDI over USB.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR USB, Due, Nano 33 IoT, Nano 33 BLE, Teensy 3.x</dd></dl>
@@ -95,26 +95,26 @@ MIDI-Monitor</h1>
 <p>Written by PieterP, 2021-06-28 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate the two MIDI interfaces</span></div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midiusb;</div>
-<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> mididbg;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midiusb;</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="code hl_class" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> mididbg;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI pipe to connect the two interfaces</span></div>
-<div class="line"><a class="highlightmember code" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> mpipe;</div>
+<div class="line"><a class="code hl_typedef" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> mpipe;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <span class="comment">// Create a bidirectional route between the interfaces: </span></div>
 <div class="line">  <span class="comment">// all input to one interface is sent to the output of the other</span></div>
 <div class="line">  midiusb | mpipe | mididbg;</div>
 <div class="line">  <span class="comment">// Initialize all MIDI interfaces</span></div>
-<div class="line">  <a id="a2" name="a2"></a><a class="highlightmember code" href="../../d1/d55/classAH_1_1Updatable.html#a4f7077a56ec41a07f5a54dd8b3828984">MIDI_Interface::beginAll</a>();</div>
+<div class="line">  <a id="a2" name="a2"></a><a class="code hl_function" href="../../d1/d55/classAH_1_1Updatable.html#a4f7077a56ec41a07f5a54dd8b3828984">MIDI_Interface::beginAll</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  <span class="comment">// Continuously handle MIDI input</span></div>
-<div class="line">  <a id="a3" name="a3"></a><a class="highlightmember code" href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">MIDI_Interface::updateAll</a>();</div>
+<div class="line">  <a id="a3" name="a3"></a><a class="code hl_function" href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">MIDI_Interface::updateAll</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aclassAH_1_1Updatable_html_a44e05f733dace05adcf585b5a17be292"><div class="ttname"><a href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">AH::Updatable&lt; MIDI_Interface &gt;::updateAll</a></div><div class="ttdeci">static void updateAll()</div><div class="ttdoc">Update all enabled instances of this class.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d93/Updatable_8hpp_source.html#l00190">Updatable.hpp:190</a></div></div>

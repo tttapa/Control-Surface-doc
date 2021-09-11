@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u32_5fto_5fbytes_0',['u32_to_bytes',['../d1/d93/USBMIDI_8hpp.html#a3690175938e2a45442a90c7a4f14c907',1,'USBMIDI.hpp']]],
+  ['u32_5fto_5fbytes_0',['u32_to_bytes',['../d1/d93/USBMIDI_8hpp.html#a46f5941e923d2a749e8a642adc2f915d',1,'USBMIDI.hpp']]],
   ['undefined_5frealtime_5f1_1',['UNDEFINED_REALTIME_1',['../d6/d99/structRealTimeMessage.html#a961985140ba61b06aa17c040847f36b1',1,'RealTimeMessage::UNDEFINED_REALTIME_1()'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5afd74f6bffea1bde4b8250d3be9fb17da',1,'UNDEFINED_REALTIME_1():&#160;MIDI_MessageTypes.hpp']]],
   ['undefined_5frealtime_5f2_2',['UNDEFINED_REALTIME_2',['../d6/d99/structRealTimeMessage.html#a6cb30558e23e1533be60a12ba29a94d0',1,'RealTimeMessage::UNDEFINED_REALTIME_2()'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aada20d627395c47483bf4db796985244',1,'UNDEFINED_REALTIME_2():&#160;MIDI_MessageTypes.hpp']]],
   ['undefined_5fsyscommon_5f1_3',['UNDEFINED_SYSCOMMON_1',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aca4ee7c6dcbbc63464280954033e9277',1,'UNDEFINED_SYSCOMMON_1():&#160;MIDI_MessageTypes.hpp'],['../d5/dad/structSysCommonMessage.html#a4c3c57577aa0dc910a35ec69d2a6ddcf',1,'SysCommonMessage::UNDEFINED_SYSCOMMON_1()']]],
@@ -82,6 +82,6 @@ var searchData=
   ['use_5fcs_5fnamespace_79',['USE_CS_NAMESPACE',['../d0/da7/Settings_2NamespaceSettings_8hpp.html#af8965d6cfaa5bf9433e75d5f8618570e',1,'NamespaceSettings.hpp']]],
   ['user_5fswitch_5fa_80',['USER_SWITCH_A',['../de/d44/group__MCU__Notes.html#gaf8e4d50639dc24e966aeb9d2bbd4c87b',1,'MCU']]],
   ['user_5fswitch_5fb_81',['USER_SWITCH_B',['../de/d44/group__MCU__Notes.html#gabd96b3d4cbb9cbe5b52fe54310a0711e',1,'MCU']]],
-  ['using_5fah_5fnamespace_82',['USING_AH_NAMESPACE',['../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a652d295f60f5f72e47f545429e4e1acc',1,'USING_AH_NAMESPACE():&#160;NamespaceSettings.hpp'],['../dc/de6/Arduino__Helpers_8h.html#acefb7f636631fc5f09ef995b53a5b743',1,'USING_AH_NAMESPACE():&#160;Arduino_Helpers.h'],['../db/dbf/Control__Surface_8h.html#acefb7f636631fc5f09ef995b53a5b743',1,'USING_AH_NAMESPACE():&#160;Control_Surface.h']]],
-  ['using_5fcs_5fnamespace_83',['USING_CS_NAMESPACE',['../d0/da7/Settings_2NamespaceSettings_8hpp.html#a22f1f286cc3391571c5f05f89470b8a1',1,'USING_CS_NAMESPACE():&#160;NamespaceSettings.hpp'],['../db/dbf/Control__Surface_8h.html#a0a2ff61c9dc56ec3e616104131d938ef',1,'USING_CS_NAMESPACE():&#160;Control_Surface.h']]]
+  ['using_5fah_5fnamespace_82',['USING_AH_NAMESPACE',['../d6/db0/AH_2Settings_2NamespaceSettings_8hpp.html#a652d295f60f5f72e47f545429e4e1acc',1,'NamespaceSettings.hpp']]],
+  ['using_5fcs_5fnamespace_83',['USING_CS_NAMESPACE',['../d0/da7/Settings_2NamespaceSettings_8hpp.html#a22f1f286cc3391571c5f05f89470b8a1',1,'NamespaceSettings.hpp']]]
 ];

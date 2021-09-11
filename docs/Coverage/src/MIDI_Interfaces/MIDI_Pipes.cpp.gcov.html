@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Interfaces/MIDI_Pipes.cpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/MIDI_Interfaces/MIDI_Pipes.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">256</td>
-            <td class="headerCovTableEntry">262</td>
+            <td class="headerCovTableEntry">257</td>
+            <td class="headerCovTableEntry">263</td>
             <td class="headerCovTableEntryHi">97.7 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">41</td>
-            <td class="headerCovTableEntry">45</td>
-            <td class="headerCovTableEntryHi">91.1 %</td>
+            <td class="headerCovTableEntry">42</td>
+            <td class="headerCovTableEntry">46</td>
+            <td class="headerCovTableEntryHi">91.3 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -90,7 +90,7 @@
 <a name="20"><span class="lineNum">      20 </span><span class="lineCov">        304 :     } else {</span></a>
 <a name="21"><span class="lineNum">      21 </span><span class="lineCov">         95 :         this-&gt;sourcePipe-&gt;connectSourcePipe(source);</span></a>
 <a name="22"><span class="lineNum">      22 </span>            :     }</a>
-<a name="23"><span class="lineNum">      23 </span><span class="lineCov">        398 : }</span></a>
+<a name="23"><span class="lineNum">      23 </span><span class="lineCov">        399 : }</span></a>
 <a name="24"><span class="lineNum">      24 </span>            : </a>
 <a name="25"><span class="lineNum">      25 </span><span class="lineCov">        528 : void MIDI_Sink::disconnectSourcePipes() {</span></a>
 <a name="26"><span class="lineNum">      26 </span><span class="lineCov">        528 :     if (sourcePipe != nullptr) {</span></a>
@@ -141,7 +141,7 @@
 <a name="71"><span class="lineNum">      71 </span>            : }</a>
 <a name="72"><span class="lineNum">      72 </span>            : </a>
 <a name="73"><span class="lineNum">      73 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
-<a name="74"><span class="lineNum">      74 </span>            : </a>
+<a name="74"><span class="lineNum">      74 </span><span class="lineCov">          1 : </span></a>
 <a name="75"><span class="lineNum">      75 </span><span class="lineCov">        362 : void MIDI_Source::connectSinkPipe(MIDI_Pipe *sink) {</span></a>
 <a name="76"><span class="lineNum">      76 </span><span class="lineCov">        362 :     if (this-&gt;sinkPipe == nullptr) {</span></a>
 <a name="77"><span class="lineNum">      77 </span><span class="lineCov">        290 :         sink-&gt;connectSource(this);</span></a>
@@ -149,7 +149,7 @@
 <a name="79"><span class="lineNum">      79 </span><span class="lineCov">        290 :     } else {</span></a>
 <a name="80"><span class="lineNum">      80 </span><span class="lineCov">         72 :         this-&gt;sinkPipe-&gt;connectSinkPipe(sink);</span></a>
 <a name="81"><span class="lineNum">      81 </span>            :     }</a>
-<a name="82"><span class="lineNum">      82 </span><span class="lineCov">        361 : }</span></a>
+<a name="82"><span class="lineNum">      82 </span><span class="lineCov">        362 : }</span></a>
 <a name="83"><span class="lineNum">      83 </span>            : </a>
 <a name="84"><span class="lineNum">      84 </span><span class="lineCov">        642 : void MIDI_Source::disconnectSinkPipes() {</span></a>
 <a name="85"><span class="lineNum">      85 </span><span class="lineCov">        642 :     if (sinkPipe != nullptr) {</span></a>
@@ -227,12 +227,12 @@
 <a name="157"><span class="lineNum">     157 </span><span class="lineCov">         36 : void MIDI_Source::stall(MIDIStaller *cause) {</span></a>
 <a name="158"><span class="lineNum">     158 </span><span class="lineCov">         36 :     if (hasSinkPipe())</span></a>
 <a name="159"><span class="lineNum">     159 </span><span class="lineCov">         36 :         sinkPipe-&gt;stallDownstream(cause, this);</span></a>
-<a name="160"><span class="lineNum">     160 </span><span class="lineCov">         35 : }</span></a>
+<a name="160"><span class="lineNum">     160 </span><span class="lineCov">         36 : }</span></a>
 <a name="161"><span class="lineNum">     161 </span>            : </a>
 <a name="162"><span class="lineNum">     162 </span><span class="lineCov">         22 : void MIDI_Source::unstall(MIDIStaller *cause) {</span></a>
 <a name="163"><span class="lineNum">     163 </span><span class="lineCov">         22 :     if (hasSinkPipe())</span></a>
 <a name="164"><span class="lineNum">     164 </span><span class="lineCov">         22 :         sinkPipe-&gt;unstallDownstream(cause, this);</span></a>
-<a name="165"><span class="lineNum">     165 </span><span class="lineCov">         21 : }</span></a>
+<a name="165"><span class="lineNum">     165 </span><span class="lineCov">         22 : }</span></a>
 <a name="166"><span class="lineNum">     166 </span>            : </a>
 <a name="167"><span class="lineNum">     167 </span><span class="lineCov">         40 : bool MIDI_Source::isStalled() const {</span></a>
 <a name="168"><span class="lineNum">     168 </span><span class="lineCov">         40 :     if (hasSinkPipe())</span></a>
@@ -253,7 +253,7 @@
 <a name="183"><span class="lineNum">     183 </span><span class="lineCov">        150 : void MIDI_Source::handleStallers() const {</span></a>
 <a name="184"><span class="lineNum">     184 </span><span class="lineCov">        150 :     if (hasSinkPipe())</span></a>
 <a name="185"><span class="lineNum">     185 </span><span class="lineCov">        150 :         sinkPipe-&gt;handleStallers();</span></a>
-<a name="186"><span class="lineNum">     186 </span><span class="lineCov">        149 : }</span></a>
+<a name="186"><span class="lineNum">     186 </span><span class="lineCov">        150 : }</span></a>
 <a name="187"><span class="lineNum">     187 </span>            : </a>
 <a name="188"><span class="lineNum">     188 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
 <a name="189"><span class="lineNum">     189 </span>            : </a>
@@ -304,20 +304,20 @@
 <a name="234"><span class="lineNum">     234 </span>            : </a>
 <a name="235"><span class="lineNum">     235 </span><span class="lineCov">        214 : MIDI_Pipe::~MIDI_Pipe() { disconnect(); }</span></a>
 <a name="236"><span class="lineNum">     236 </span>            : </a>
-<a name="237"><span class="lineNum">     237 </span><span class="lineCov">         74 : void MIDI_Pipe::stallDownstream(MIDIStaller *cause, MIDI_Source *stallsrc) {</span></a>
-<a name="238"><span class="lineNum">     238 </span><span class="lineCov">         74 :     if (!sinkIsUnstalledOrStalledBy(cause)) {</span></a>
+<a name="237"><span class="lineNum">     237 </span><span class="lineCov">         83 : void MIDI_Pipe::stallDownstream(MIDIStaller *cause, MIDI_Source *stallsrc) {</span></a>
+<a name="238"><span class="lineNum">     238 </span><span class="lineCov">         83 :     if (!sinkIsUnstalledOrStalledBy(cause)) {</span></a>
 <a name="239"><span class="lineNum">     239 </span><span class="lineCov">          1 :         FATAL_ERROR(F(&quot;Cannot stall pipe from &quot;)</span></a>
 <a name="240"><span class="lineNum">     240 </span>            :                         &lt;&lt; MIDIStaller::getNameNull(cause)</a>
 <a name="241"><span class="lineNum">     241 </span>            :                         &lt;&lt; F(&quot; because pipe is already stalled by &quot;)</a>
 <a name="242"><span class="lineNum">     242 </span>            :                         &lt;&lt; MIDIStaller::getNameNull(sink_staller),</a>
 <a name="243"><span class="lineNum">     243 </span>            :                     0x6665);</a>
 <a name="244"><span class="lineNum">     244 </span>            :     } // LCOV_EXCL_LINE</a>
-<a name="245"><span class="lineNum">     245 </span><span class="lineCov">         73 :     sink_staller = cause;</span></a>
-<a name="246"><span class="lineNum">     246 </span><span class="lineCov">         73 :     if (hasThroughOut() &amp;&amp; stallsrc == source)</span></a>
+<a name="245"><span class="lineNum">     245 </span><span class="lineCov">         82 :     sink_staller = cause;</span></a>
+<a name="246"><span class="lineNum">     246 </span><span class="lineCov">         82 :     if (hasThroughOut() &amp;&amp; stallsrc == source)</span></a>
 <a name="247"><span class="lineNum">     247 </span><span class="lineCov">          1 :         throughOut-&gt;stallDownstream(cause, this);</span></a>
-<a name="248"><span class="lineNum">     248 </span><span class="lineCov">         73 :     if (hasSink())</span></a>
+<a name="248"><span class="lineNum">     248 </span><span class="lineCov">         82 :     if (hasSink())</span></a>
 <a name="249"><span class="lineNum">     249 </span><span class="lineCov">         73 :         sink-&gt;stallDownstream(cause, this);</span></a>
-<a name="250"><span class="lineNum">     250 </span><span class="lineCov">         73 :     if (hasSource() &amp;&amp; source != stallsrc) {</span></a>
+<a name="250"><span class="lineNum">     250 </span><span class="lineCov">         82 :     if (hasSource() &amp;&amp; source != stallsrc) {</span></a>
 <a name="251"><span class="lineNum">     251 </span>            :         // If our through output is stalled, that means our upstream is stalled</a>
 <a name="252"><span class="lineNum">     252 </span>            :         // as well by this staller. Unstall it first, and replace it by the new</a>
 <a name="253"><span class="lineNum">     253 </span>            :         // staller</a>
@@ -325,9 +325,9 @@
 <a name="255"><span class="lineNum">     255 </span><span class="lineCov">          3 :             source-&gt;unstallUpstream(through_staller, this);</span></a>
 <a name="256"><span class="lineNum">     256 </span><span class="lineCov">         37 :         source-&gt;stallUpstream(cause, this);</span></a>
 <a name="257"><span class="lineNum">     257 </span><span class="lineCov">         37 :     }</span></a>
-<a name="258"><span class="lineNum">     258 </span><span class="lineCov">         73 :     if (hasThroughIn() &amp;&amp; throughIn != stallsrc)</span></a>
+<a name="258"><span class="lineNum">     258 </span><span class="lineCov">         82 :     if (hasThroughIn() &amp;&amp; throughIn != stallsrc)</span></a>
 <a name="259"><span class="lineNum">     259 </span><span class="lineCov">          8 :         throughIn-&gt;stallUpstream(cause, this);</span></a>
-<a name="260"><span class="lineNum">     260 </span><span class="lineCov">         74 : }</span></a>
+<a name="260"><span class="lineNum">     260 </span><span class="lineCov">          9 : }</span></a>
 <a name="261"><span class="lineNum">     261 </span>            : </a>
 <a name="262"><span class="lineNum">     262 </span><span class="lineCov">         35 : void MIDI_Pipe::stallUpstream(MIDIStaller *cause, MIDI_Sink *stallsrc) {</span></a>
 <a name="263"><span class="lineNum">     263 </span><span class="lineCov">         35 :     if (stallsrc == sink) {</span></a>
@@ -347,29 +347,29 @@
 <a name="277"><span class="lineNum">     277 </span>            :     }</a>
 <a name="278"><span class="lineNum">     278 </span><span class="lineCov">         35 : }</span></a>
 <a name="279"><span class="lineNum">     279 </span>            : </a>
-<a name="280"><span class="lineNum">     280 </span><span class="lineCov">         41 : void MIDI_Pipe::unstallDownstream(MIDIStaller *cause, MIDI_Source *stallsrc) {</span></a>
-<a name="281"><span class="lineNum">     281 </span><span class="lineCov">         41 :     if (!sinkIsUnstalledOrStalledBy(cause)) {</span></a>
+<a name="280"><span class="lineNum">     280 </span><span class="lineCov">         44 : void MIDI_Pipe::unstallDownstream(MIDIStaller *cause, MIDI_Source *stallsrc) {</span></a>
+<a name="281"><span class="lineNum">     281 </span><span class="lineCov">         44 :     if (!sinkIsUnstalledOrStalledBy(cause)) {</span></a>
 <a name="282"><span class="lineNum">     282 </span><span class="lineCov">          1 :         FATAL_ERROR(F(&quot;Cannot unstall pipe from &quot;)</span></a>
 <a name="283"><span class="lineNum">     283 </span>            :                         &lt;&lt; MIDIStaller::getNameNull(cause)</a>
 <a name="284"><span class="lineNum">     284 </span>            :                         &lt;&lt; F(&quot; because pipe is stalled by &quot;)</a>
 <a name="285"><span class="lineNum">     285 </span>            :                         &lt;&lt; MIDIStaller::getNameNull(sink_staller),</a>
 <a name="286"><span class="lineNum">     286 </span>            :                     0x6666);</a>
 <a name="287"><span class="lineNum">     287 </span>            :     } // LCOV_EXCL_LINE</a>
-<a name="288"><span class="lineNum">     288 </span><span class="lineCov">         40 :     this-&gt;sink_staller = nullptr;</span></a>
-<a name="289"><span class="lineNum">     289 </span><span class="lineCov">         40 :     if (hasThroughOut() &amp;&amp; stallsrc == source)</span></a>
+<a name="288"><span class="lineNum">     288 </span><span class="lineCov">         43 :     this-&gt;sink_staller = nullptr;</span></a>
+<a name="289"><span class="lineNum">     289 </span><span class="lineCov">         43 :     if (hasThroughOut() &amp;&amp; stallsrc == source)</span></a>
 <a name="290"><span class="lineNum">     290 </span><span class="lineCov">          1 :         throughOut-&gt;unstallDownstream(cause, this);</span></a>
-<a name="291"><span class="lineNum">     291 </span><span class="lineCov">         40 :     if (hasSink())</span></a>
+<a name="291"><span class="lineNum">     291 </span><span class="lineCov">         43 :     if (hasSink())</span></a>
 <a name="292"><span class="lineNum">     292 </span><span class="lineCov">         40 :         sink-&gt;unstallDownstream(cause, this);</span></a>
-<a name="293"><span class="lineNum">     293 </span><span class="lineCov">         40 :     if (hasSource() &amp;&amp; source != stallsrc) {</span></a>
+<a name="293"><span class="lineNum">     293 </span><span class="lineCov">         43 :     if (hasSource() &amp;&amp; source != stallsrc) {</span></a>
 <a name="294"><span class="lineNum">     294 </span><span class="lineCov">         18 :         source-&gt;unstallUpstream(cause, this);</span></a>
 <a name="295"><span class="lineNum">     295 </span>            :         // If the through output of this pipe is stalled, we cannot just unstall</a>
 <a name="296"><span class="lineNum">     296 </span>            :         // our upstream, we have to update it our through output staller</a>
 <a name="297"><span class="lineNum">     297 </span><span class="lineCov">         18 :         if (through_staller != nullptr)</span></a>
 <a name="298"><span class="lineNum">     298 </span><span class="lineCov">          4 :             source-&gt;stallUpstream(through_staller, this);</span></a>
 <a name="299"><span class="lineNum">     299 </span><span class="lineCov">         18 :     }</span></a>
-<a name="300"><span class="lineNum">     300 </span><span class="lineCov">         40 :     if (hasThroughIn() &amp;&amp; throughIn != stallsrc)</span></a>
+<a name="300"><span class="lineNum">     300 </span><span class="lineCov">         43 :     if (hasThroughIn() &amp;&amp; throughIn != stallsrc)</span></a>
 <a name="301"><span class="lineNum">     301 </span><span class="lineCov">          7 :         throughIn-&gt;unstallUpstream(cause, this);</span></a>
-<a name="302"><span class="lineNum">     302 </span><span class="lineCov">         41 : }</span></a>
+<a name="302"><span class="lineNum">     302 </span><span class="lineCov">          8 : }</span></a>
 <a name="303"><span class="lineNum">     303 </span>            : </a>
 <a name="304"><span class="lineNum">     304 </span><span class="lineCov">         25 : void MIDI_Pipe::unstallUpstream(MIDIStaller *cause, MIDI_Sink *stallsrc) {</span></a>
 <a name="305"><span class="lineNum">     305 </span><span class="lineCov">         25 :     if (stallsrc == sink) {</span></a>
@@ -411,11 +411,11 @@
 <a name="341"><span class="lineNum">     341 </span><span class="lineCov">          8 :     if (sink_staller == eternal_stall || through_staller == eternal_stall)</span></a>
 <a name="342"><span class="lineNum">     342 </span><span class="lineCov">          1 :         FATAL_ERROR(F(&quot;Unable to unstall pipe (eternal stall)&quot;), 0x4827);</span></a>
 <a name="343"><span class="lineNum">     343 </span><span class="lineCov">          7 :     uint8_t iterations = 10;</span></a>
-<a name="344"><span class="lineNum">     344 </span><span class="lineCov">         23 :     while(isStalled() &amp;&amp; iterations-- &gt; 0) {</span></a>
-<a name="345"><span class="lineNum">     345 </span><span class="lineCov">         16 :         if (sink_staller)</span></a>
-<a name="346"><span class="lineNum">     346 </span><span class="lineCov">         15 :             sink_staller-&gt;handleStall();</span></a>
-<a name="347"><span class="lineNum">     347 </span><span class="lineCov">         16 :         if (through_staller)</span></a>
-<a name="348"><span class="lineNum">     348 </span><span class="lineCov">          1 :             through_staller-&gt;handleStall();</span></a>
+<a name="344"><span class="lineNum">     344 </span><span class="lineCov">         17 :     while(isStalled() &amp;&amp; iterations-- &gt; 0) {</span></a>
+<a name="345"><span class="lineNum">     345 </span><span class="lineCov">         10 :         if (sink_staller)</span></a>
+<a name="346"><span class="lineNum">     346 </span><span class="lineCov">         10 :             sink_staller-&gt;handleStall();</span></a>
+<a name="347"><span class="lineNum">     347 </span><span class="lineCov">         10 :         if (through_staller)</span></a>
+<a name="348"><span class="lineNum">     348 </span><span class="lineCov">         10 :             through_staller-&gt;handleStall();</span></a>
 <a name="349"><span class="lineNum">     349 </span>            :     }</a>
 <a name="350"><span class="lineNum">     350 </span><span class="lineCov">        150 : }</span></a>
 <a name="351"><span class="lineNum">     351 </span>            : </a>

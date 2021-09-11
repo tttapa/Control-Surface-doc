@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/Selectors/LEDs/SelectorLEDs.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/Selectors/LEDs/SelectorLEDs.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">40</td>
-            <td class="headerCovTableEntry">56</td>
-            <td class="headerCovTableEntryLo">71.4 %</td>
+            <td class="headerCovTableEntry">34</td>
+            <td class="headerCovTableEntry">50</td>
+            <td class="headerCovTableEntryLo">68.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">14</td>
@@ -137,7 +137,7 @@
 <a name="67"><span class="lineNum">      67 </span>            :  * @ingroup SelectorsLEDs</a>
 <a name="68"><span class="lineNum">      68 </span>            :  */</a>
 <a name="69"><span class="lineNum">      69 </span>            : template &lt;setting_t N&gt;</a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          1 : class EncoderSelectorLEDs</span></a>
+<a name="70"><span class="lineNum">      70 </span>            : class EncoderSelectorLEDs</a>
 <a name="71"><span class="lineNum">      71 </span>            :     : public GenericEncoderSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
 <a name="72"><span class="lineNum">      72 </span>            :   public:</a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">          1 :     EncoderSelectorLEDs(Selectable&lt;N&gt; &amp;selectable,</span></a>
@@ -164,7 +164,7 @@
 <a name="94"><span class="lineNum">      94 </span>            :  * @ingroup SelectorsLEDs</a>
 <a name="95"><span class="lineNum">      95 </span>            :  */</a>
 <a name="96"><span class="lineNum">      96 </span>            : template &lt;setting_t N&gt;</a>
-<a name="97"><span class="lineNum">      97 </span><span class="lineCov">          1 : class IncrementDecrementSelectorLEDs</span></a>
+<a name="97"><span class="lineNum">      97 </span>            : class IncrementDecrementSelectorLEDs</a>
 <a name="98"><span class="lineNum">      98 </span>            :     : public GenericIncrementDecrementSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
 <a name="99"><span class="lineNum">      99 </span>            :   public:</a>
 <a name="100"><span class="lineNum">     100 </span><span class="lineCov">          1 :     IncrementDecrementSelectorLEDs(Selectable&lt;N&gt; &amp;selectable,</span></a>
@@ -194,7 +194,7 @@
 <a name="124"><span class="lineNum">     124 </span>            :  * @ingroup SelectorsLEDs</a>
 <a name="125"><span class="lineNum">     125 </span>            :  */</a>
 <a name="126"><span class="lineNum">     126 </span>            : template &lt;setting_t N&gt;</a>
-<a name="127"><span class="lineNum">     127 </span><span class="lineCov">          1 : class IncrementSelectorLEDs</span></a>
+<a name="127"><span class="lineNum">     127 </span>            : class IncrementSelectorLEDs</a>
 <a name="128"><span class="lineNum">     128 </span>            :     : public GenericIncrementSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
 <a name="129"><span class="lineNum">     129 </span>            :   public:</a>
 <a name="130"><span class="lineNum">     130 </span><span class="lineCov">          1 :     IncrementSelectorLEDs(Selectable&lt;N&gt; &amp;selectable, const AH::Button &amp;button,</span></a>
@@ -218,7 +218,7 @@
 <a name="148"><span class="lineNum">     148 </span>            :  * @ingroup SelectorsLEDs</a>
 <a name="149"><span class="lineNum">     149 </span>            :  */</a>
 <a name="150"><span class="lineNum">     150 </span>            : template &lt;setting_t N&gt;</a>
-<a name="151"><span class="lineNum">     151 </span><span class="lineCov">          1 : class ManyButtonsSelectorLEDs</span></a>
+<a name="151"><span class="lineNum">     151 </span>            : class ManyButtonsSelectorLEDs</a>
 <a name="152"><span class="lineNum">     152 </span>            :     : public GenericManyButtonsSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
 <a name="153"><span class="lineNum">     153 </span>            :   public:</a>
 <a name="154"><span class="lineNum">     154 </span><span class="lineCov">          1 :     ManyButtonsSelectorLEDs(Selectable&lt;N&gt; &amp;selectable,</span></a>
@@ -246,7 +246,7 @@
 <a name="176"><span class="lineNum">     176 </span>            :  * @ingroup SelectorsLEDs</a>
 <a name="177"><span class="lineNum">     177 </span>            :  */</a>
 <a name="178"><span class="lineNum">     178 </span>            : template &lt;setting_t N&gt;</a>
-<a name="179"><span class="lineNum">     179 </span><span class="lineCov">          1 : class ProgramChangeSelectorLEDs</span></a>
+<a name="179"><span class="lineNum">     179 </span>            : class ProgramChangeSelectorLEDs</a>
 <a name="180"><span class="lineNum">     180 </span>            :     : public GenericProgramChangeSelector&lt;N, SelectorLEDsCallback&lt;N&gt;&gt; {</a>
 <a name="181"><span class="lineNum">     181 </span>            :   public:</a>
 <a name="182"><span class="lineNum">     182 </span><span class="lineCov">          1 :     ProgramChangeSelectorLEDs(Selectable&lt;N&gt; &amp;selectable,</span></a>
@@ -273,7 +273,7 @@
 <a name="203"><span class="lineNum">     203 </span>            :  * @details @copydetails SwitchSelector</a>
 <a name="204"><span class="lineNum">     204 </span>            :  * @ingroup SelectorsLEDs</a>
 <a name="205"><span class="lineNum">     205 </span>            :  */</a>
-<a name="206"><span class="lineNum">     206 </span><span class="lineCov">          1 : class SwitchSelectorLED</span></a>
+<a name="206"><span class="lineNum">     206 </span>            : class SwitchSelectorLED</a>
 <a name="207"><span class="lineNum">     207 </span>            :     : public GenericSwitchSelector&lt;SelectorSingleLEDCallback&gt; {</a>
 <a name="208"><span class="lineNum">     208 </span>            :   public:</a>
 <a name="209"><span class="lineNum">     209 </span><span class="lineCov">          1 :     SwitchSelectorLED(Selectable&lt;2&gt; &amp;selectable, const AH::Button &amp;button,</span></a>

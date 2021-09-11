@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Outputs/Abstract/MIDIFilteredAnalog.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/MIDI_Outputs/Abstract/MIDIFilteredAnalog.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">11</td>
-            <td class="headerCovTableEntry">11</td>
+            <td class="headerCovTableEntry">10</td>
+            <td class="headerCovTableEntry">10</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">14</td>
@@ -84,7 +84,7 @@
 <a name="14"><span class="lineNum">      14 </span>            :  * @see     FilteredAnalog</a>
 <a name="15"><span class="lineNum">      15 </span>            :  */</a>
 <a name="16"><span class="lineNum">      16 </span>            : template &lt;class Sender&gt;</a>
-<a name="17"><span class="lineNum">      17 </span><span class="lineCov">          8 : class MIDIFilteredAnalog : public MIDIOutputElement {</span></a>
+<a name="17"><span class="lineNum">      17 </span>            : class MIDIFilteredAnalog : public MIDIOutputElement {</a>
 <a name="18"><span class="lineNum">      18 </span>            :   protected:</a>
 <a name="19"><span class="lineNum">      19 </span>            :     /**</a>
 <a name="20"><span class="lineNum">      20 </span>            :      * @brief   Construct a new MIDIFilteredAnalog.</a>
@@ -97,7 +97,7 @@
 <a name="27"><span class="lineNum">      27 </span>            :      * @param   sender</a>
 <a name="28"><span class="lineNum">      28 </span>            :      *          The MIDI sender to use.</a>
 <a name="29"><span class="lineNum">      29 </span>            :      */</a>
-<a name="30"><span class="lineNum">      30 </span><span class="lineCov">          8 :     MIDIFilteredAnalog(pin_t analogPin, MIDIAddress address,</span></a>
+<a name="30"><span class="lineNum">      30 </span><span class="lineCov">         16 :     MIDIFilteredAnalog(pin_t analogPin, MIDIAddress address,</span></a>
 <a name="31"><span class="lineNum">      31 </span>            :                        const Sender &amp;sender)</a>
 <a name="32"><span class="lineNum">      32 </span><span class="lineCov">         16 :         : filteredAnalog(analogPin), address(address), sender(sender) {}</span></a>
 <a name="33"><span class="lineNum">      33 </span>            : </a>

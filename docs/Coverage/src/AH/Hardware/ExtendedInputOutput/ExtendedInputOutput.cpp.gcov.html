@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/AH/Hardware/ExtendedInputOutput/ExtendedInputOutput.cpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/AH/Hardware/ExtendedInputOutput/ExtendedInputOutput.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">172</td>
@@ -37,11 +37,11 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">32</td>
-            <td class="headerCovTableEntry">32</td>
+            <td class="headerCovTableEntry">33</td>
+            <td class="headerCovTableEntry">33</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
@@ -135,16 +135,16 @@
 <a name="65"><span class="lineNum">      65 </span><span class="lineCov">          1 :     ::digitalWrite(arduino_pin_cast(pin), val);</span></a>
 <a name="66"><span class="lineNum">      66 </span><span class="lineCov">          1 : }</span></a>
 <a name="67"><span class="lineNum">      67 </span>            : </a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        244 : PinStatus_t digitalRead(pin_t pin) {</span></a>
-<a name="69"><span class="lineNum">      69 </span><span class="lineCov">        244 :     if (pin == NO_PIN)</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        243 : PinStatus_t digitalRead(pin_t pin) {</span></a>
+<a name="69"><span class="lineNum">      69 </span><span class="lineCov">        243 :     if (pin == NO_PIN)</span></a>
 <a name="70"><span class="lineNum">      70 </span>            :         return LOW; // LCOV_EXCL_LINE</a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        243 :     else if (isNativePin(pin)) {</span></a>
-<a name="72"><span class="lineNum">      72 </span><span class="lineCov">        234 :         return ::digitalRead(pin);</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        242 :     else if (isNativePin(pin)) {</span></a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">        233 :         return ::digitalRead(pin);</span></a>
 <a name="73"><span class="lineNum">      73 </span>            :     } else {</a>
-<a name="74"><span class="lineNum">      74 </span><span class="lineCov">          9 :         auto el = getIOElementOfPin(pin);</span></a>
+<a name="74"><span class="lineNum">      74 </span><span class="lineCov">         10 :         auto el = getIOElementOfPin(pin);</span></a>
 <a name="75"><span class="lineNum">      75 </span><span class="lineCov">          9 :         return el-&gt;digitalRead(pin - el-&gt;getStart());</span></a>
 <a name="76"><span class="lineNum">      76 </span><span class="lineCov">          9 :     }</span></a>
-<a name="77"><span class="lineNum">      77 </span><span class="lineCov">        242 : }</span></a>
+<a name="77"><span class="lineNum">      77 </span><span class="lineCov">        243 : }</span></a>
 <a name="78"><span class="lineNum">      78 </span><span class="lineCov">          1 : PinStatus_t digitalRead(int pin) {</span></a>
 <a name="79"><span class="lineNum">      79 </span><span class="lineCov">          1 :     return ::digitalRead(arduino_pin_cast(pin));</span></a>
 <a name="80"><span class="lineNum">      80 </span>            : }</a>

@@ -97,22 +97,22 @@ $(function() {
 <p ><b>Pipe model</b></p>
 <div class="fragment"><div class="line">                 ╭────────────────&gt;  through out</div>
 <div class="line">                 │ ┌────────┐</div>
-<div class="line">    <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a>  &gt;━━━━┷━┥ filter ┝━┯━━━&gt;  <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a></div>
+<div class="line">    <a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a>  &gt;━━━━┷━┥ filter ┝━┯━━━&gt;  <a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a></div>
 <div class="line">                   └────────┘ │</div>
 <div class="line">through in  &gt;─────────────────╯</div>
 <div class="ttc" id="aclassMIDI__Pipe_html_a2ec4ed41308da2aa5481ab73a5a7a2d4"><div class="ttname"><a href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">MIDI_Pipe::source</a></div><div class="ttdeci">MIDI_Source * source</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00573">MIDI_Pipes.hpp:573</a></div></div>
 <div class="ttc" id="aclassMIDI__Pipe_html_a3efac1b3dab8ab97fff25669d972912d"><div class="ttname"><a href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">MIDI_Pipe::sink</a></div><div class="ttdeci">MIDI_Sink * sink</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00572">MIDI_Pipes.hpp:572</a></div></div>
 </div><!-- fragment --><p >For example, if you have one source that should connect to two sinks, the configuration is as follows:</p>
 <div class="fragment"><div class="line">                 through out         × ┌────────┐</div>
-<div class="line">             ╭────────────────&gt; &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt;  <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a> 2</div>
+<div class="line">             ╭────────────────&gt; &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt;  <a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a> 2</div>
 <div class="line">             │ ┌────────┐              └────────┘ ×</div>
-<div class="line"><a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a>  &gt;━━━━┷━┥ pipe 1 ┝━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━&gt;  <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a> 1</div>
+<div class="line"><a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a>  &gt;━━━━┷━┥ pipe 1 ┝━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━&gt;  <a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a> 1</div>
 <div class="line">               └────────┘ ×</div>
 </div><!-- fragment --><p >If you have two sources that should connect to the same sink, a possible configuration is:</p>
 <div class="fragment"><div class="line">                                       × ┌────────┐</div>
-<div class="line"><a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 1  &gt;━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━┥ pipe 1 ┝━┯━━━&gt;  <a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a></div>
+<div class="line"><a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 1  &gt;━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━┥ pipe 1 ┝━┯━━━&gt;  <a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a3efac1b3dab8ab97fff25669d972912d">sink</a></div>
 <div class="line">               × ┌────────┐              └────────┘ │</div>
-<div class="line"><a class="highlightmember code" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 2  &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt; &gt;─────────────────╯</div>
+<div class="line"><a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 2  &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt; &gt;─────────────────╯</div>
 <div class="line">                 └────────┘ ×</div>
 </div><!-- fragment --><p >Each connection between a source and a sink has its own pipe, and no two pipes are connected in series (only through the “through“ inputs/outputs). </p>
 
@@ -138,20 +138,20 @@ $(function() {
 <tr class="memitem:a8357cbc940b1409321ac89aeb8aee4b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a8357cbc940b1409321ac89aeb8aee4b1">isStalled</a> () const</td></tr>
 <tr class="memdesc:a8357cbc940b1409321ac89aeb8aee4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this pipe is stalled.  <a href="../../df/d72/classMIDI__Pipe.html#a8357cbc940b1409321ac89aeb8aee4b1">More...</a><br /></td></tr>
 <tr class="separator:a8357cbc940b1409321ac89aeb8aee4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a861a411dfd26ad7078cecc9026447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a91a861a411dfd26ad7078cecc9026447">getSinkStaller</a> () const</td></tr>
-<tr class="memdesc:a91a861a411dfd26ad7078cecc9026447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the staller (cause of the stall) that causes the sink of this pipe to be stalled.  <a href="../../df/d72/classMIDI__Pipe.html#a91a861a411dfd26ad7078cecc9026447">More...</a><br /></td></tr>
-<tr class="separator:a91a861a411dfd26ad7078cecc9026447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadacb523f9f68f51e7dbf2920e0f6f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#acadacb523f9f68f51e7dbf2920e0f6f4">getSinkStaller</a> () const</td></tr>
+<tr class="memdesc:acadacb523f9f68f51e7dbf2920e0f6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the staller (cause of the stall) that causes the sink of this pipe to be stalled.  <a href="../../df/d72/classMIDI__Pipe.html#acadacb523f9f68f51e7dbf2920e0f6f4">More...</a><br /></td></tr>
+<tr class="separator:acadacb523f9f68f51e7dbf2920e0f6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68cbc7a031ce4989f13501dd583541ce"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a68cbc7a031ce4989f13501dd583541ce">getSinkStallerName</a> () const</td></tr>
 <tr class="memdesc:a68cbc7a031ce4989f13501dd583541ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the staller (cause of the stall) that causes the sink of this pipe to be stalled.  <a href="../../df/d72/classMIDI__Pipe.html#a68cbc7a031ce4989f13501dd583541ce">More...</a><br /></td></tr>
 <tr class="separator:a68cbc7a031ce4989f13501dd583541ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd8d094e13fe75f0549b2ab827fe43c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a3bd8d094e13fe75f0549b2ab827fe43c">getThroughStaller</a> () const</td></tr>
-<tr class="memdesc:a3bd8d094e13fe75f0549b2ab827fe43c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the staller (cause of the stall) that causes the “through” output of this pipe to be stalled.  <a href="../../df/d72/classMIDI__Pipe.html#a3bd8d094e13fe75f0549b2ab827fe43c">More...</a><br /></td></tr>
-<tr class="separator:a3bd8d094e13fe75f0549b2ab827fe43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e540dc022c864761f71456e825d821"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a63e540dc022c864761f71456e825d821">getThroughStaller</a> () const</td></tr>
+<tr class="memdesc:a63e540dc022c864761f71456e825d821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the staller (cause of the stall) that causes the “through” output of this pipe to be stalled.  <a href="../../df/d72/classMIDI__Pipe.html#a63e540dc022c864761f71456e825d821">More...</a><br /></td></tr>
+<tr class="separator:a63e540dc022c864761f71456e825d821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a917808def50396dd5f931b5307aeba9c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a917808def50396dd5f931b5307aeba9c">getThroughStallerName</a> () const</td></tr>
 <tr class="memdesc:a917808def50396dd5f931b5307aeba9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the staller (cause of the stall) that causes the “through” output of this pipe to be stalled.  <a href="../../df/d72/classMIDI__Pipe.html#a917808def50396dd5f931b5307aeba9c">More...</a><br /></td></tr>
 <tr class="separator:a917808def50396dd5f931b5307aeba9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ddbc406c6e70f14cd0254df3ec2c399"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a2ddbc406c6e70f14cd0254df3ec2c399">getStaller</a> () const</td></tr>
-<tr class="memdesc:a2ddbc406c6e70f14cd0254df3ec2c399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any staller: returns <a class="el" href="../../df/d72/classMIDI__Pipe.html#a91a861a411dfd26ad7078cecc9026447">getSinkStaller()</a> if it's not null, <a class="el" href="../../df/d72/classMIDI__Pipe.html#a3bd8d094e13fe75f0549b2ab827fe43c">getThroughStaller()</a> otherwise.  <a href="../../df/d72/classMIDI__Pipe.html#a2ddbc406c6e70f14cd0254df3ec2c399">More...</a><br /></td></tr>
+<tr class="memdesc:a2ddbc406c6e70f14cd0254df3ec2c399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any staller: returns <a class="el" href="../../df/d72/classMIDI__Pipe.html#acadacb523f9f68f51e7dbf2920e0f6f4">getSinkStaller()</a> if it's not null, <a class="el" href="../../df/d72/classMIDI__Pipe.html#a63e540dc022c864761f71456e825d821">getThroughStaller()</a> otherwise.  <a href="../../df/d72/classMIDI__Pipe.html#a2ddbc406c6e70f14cd0254df3ec2c399">More...</a><br /></td></tr>
 <tr class="separator:a2ddbc406c6e70f14cd0254df3ec2c399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e51d192e138f6bf592d67d6a9f054d7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a1e51d192e138f6bf592d67d6a9f054d7">getStallerName</a> () const</td></tr>
 <tr class="memdesc:a1e51d192e138f6bf592d67d6a9f054d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of any staller.  <a href="../../df/d72/classMIDI__Pipe.html#a1e51d192e138f6bf592d67d6a9f054d7">More...</a><br /></td></tr>
@@ -192,24 +192,24 @@ $(function() {
 <tr class="separator:aeb0e0e63cadc60b8de9629534eeb8cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31804de3df1bb1d219cf458927a5ef6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a31804de3df1bb1d219cf458927a5ef6f">disconnect</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;)=delete</td></tr>
 <tr class="separator:a31804de3df1bb1d219cf458927a5ef6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa457fe8b7003b184a9c0dfbd549f70eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#aa457fe8b7003b184a9c0dfbd549f70eb">getSource</a> ()</td></tr>
-<tr class="memdesc:aa457fe8b7003b184a9c0dfbd549f70eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the immediate source of this pipe.  <a href="../../df/d72/classMIDI__Pipe.html#aa457fe8b7003b184a9c0dfbd549f70eb">More...</a><br /></td></tr>
-<tr class="separator:aa457fe8b7003b184a9c0dfbd549f70eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05f6bebda5613c9ec53488f1dfacee7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a05f6bebda5613c9ec53488f1dfacee7e">getSink</a> ()</td></tr>
-<tr class="memdesc:a05f6bebda5613c9ec53488f1dfacee7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the immediate sink of this pipe.  <a href="../../df/d72/classMIDI__Pipe.html#a05f6bebda5613c9ec53488f1dfacee7e">More...</a><br /></td></tr>
-<tr class="separator:a05f6bebda5613c9ec53488f1dfacee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bf26df08c121302c15bf917ec7de51c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a3bf26df08c121302c15bf917ec7de51c">getThroughOut</a> ()</td></tr>
-<tr class="memdesc:a3bf26df08c121302c15bf917ec7de51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pipe connected to the “through” output of this pipe.  <a href="../../df/d72/classMIDI__Pipe.html#a3bf26df08c121302c15bf917ec7de51c">More...</a><br /></td></tr>
-<tr class="separator:a3bf26df08c121302c15bf917ec7de51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07aef97fea8cfe85a09ce5f6a4071cdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a07aef97fea8cfe85a09ce5f6a4071cdc">getThroughIn</a> ()</td></tr>
-<tr class="memdesc:a07aef97fea8cfe85a09ce5f6a4071cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pipe connected to the “through” input of this pipe.  <a href="../../df/d72/classMIDI__Pipe.html#a07aef97fea8cfe85a09ce5f6a4071cdc">More...</a><br /></td></tr>
-<tr class="separator:a07aef97fea8cfe85a09ce5f6a4071cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a90ed917bb28bc76988e12b0837304c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a0a90ed917bb28bc76988e12b0837304c">getFinalSink</a> () override</td></tr>
-<tr class="memdesc:a0a90ed917bb28bc76988e12b0837304c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sink this pipe eventually sinks to, following the chain recursively.  <a href="../../df/d72/classMIDI__Pipe.html#a0a90ed917bb28bc76988e12b0837304c">More...</a><br /></td></tr>
-<tr class="separator:a0a90ed917bb28bc76988e12b0837304c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ee702e48e1a830200511abb2801261"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a64ee702e48e1a830200511abb2801261">getInitialSource</a> () override</td></tr>
-<tr class="memdesc:a64ee702e48e1a830200511abb2801261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the original source that sources to this pipe, following the chain recursively.  <a href="../../df/d72/classMIDI__Pipe.html#a64ee702e48e1a830200511abb2801261">More...</a><br /></td></tr>
-<tr class="separator:a64ee702e48e1a830200511abb2801261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999da490ab8599570995322fb773eaa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a999da490ab8599570995322fb773eaa3">getSource</a> ()</td></tr>
+<tr class="memdesc:a999da490ab8599570995322fb773eaa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the immediate source of this pipe.  <a href="../../df/d72/classMIDI__Pipe.html#a999da490ab8599570995322fb773eaa3">More...</a><br /></td></tr>
+<tr class="separator:a999da490ab8599570995322fb773eaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32b4db454dc4e42f19c0ed212cdaefc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#aa32b4db454dc4e42f19c0ed212cdaefc">getSink</a> ()</td></tr>
+<tr class="memdesc:aa32b4db454dc4e42f19c0ed212cdaefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the immediate sink of this pipe.  <a href="../../df/d72/classMIDI__Pipe.html#aa32b4db454dc4e42f19c0ed212cdaefc">More...</a><br /></td></tr>
+<tr class="separator:aa32b4db454dc4e42f19c0ed212cdaefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e1de3920781778d635b7b8f86d6f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a39e1de3920781778d635b7b8f86d6f11">getThroughOut</a> ()</td></tr>
+<tr class="memdesc:a39e1de3920781778d635b7b8f86d6f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pipe connected to the “through” output of this pipe.  <a href="../../df/d72/classMIDI__Pipe.html#a39e1de3920781778d635b7b8f86d6f11">More...</a><br /></td></tr>
+<tr class="separator:a39e1de3920781778d635b7b8f86d6f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28db3d6fa4f095bc773a6feea3b7fca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#ac28db3d6fa4f095bc773a6feea3b7fca">getThroughIn</a> ()</td></tr>
+<tr class="memdesc:ac28db3d6fa4f095bc773a6feea3b7fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pipe connected to the “through” input of this pipe.  <a href="../../df/d72/classMIDI__Pipe.html#ac28db3d6fa4f095bc773a6feea3b7fca">More...</a><br /></td></tr>
+<tr class="separator:ac28db3d6fa4f095bc773a6feea3b7fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21751c0611d27b8b08ce5e6e63aaa88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#aa21751c0611d27b8b08ce5e6e63aaa88">getFinalSink</a> () override</td></tr>
+<tr class="memdesc:aa21751c0611d27b8b08ce5e6e63aaa88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sink this pipe eventually sinks to, following the chain recursively.  <a href="../../df/d72/classMIDI__Pipe.html#aa21751c0611d27b8b08ce5e6e63aaa88">More...</a><br /></td></tr>
+<tr class="separator:aa21751c0611d27b8b08ce5e6e63aaa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddba8fd16de98802c4a3c11460ba7e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#aeddba8fd16de98802c4a3c11460ba7e3">getInitialSource</a> () override</td></tr>
+<tr class="memdesc:aeddba8fd16de98802c4a3c11460ba7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the original source that sources to this pipe, following the chain recursively.  <a href="../../df/d72/classMIDI__Pipe.html#aeddba8fd16de98802c4a3c11460ba7e3">More...</a><br /></td></tr>
+<tr class="separator:aeddba8fd16de98802c4a3c11460ba7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Mapping and filtering</h2></td></tr>
 <tr class="memitem:a9f1ac3c620465a1ed18336938e3f17e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a9f1ac3c620465a1ed18336938e3f17e5">mapForwardMIDI</a> (<a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a> msg)</td></tr>
@@ -263,9 +263,9 @@ $(function() {
 <tr class="memitem:aeed97531fb23c4a3630fe6e1f38b6404"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/classMIDI__Sink.html#aeed97531fb23c4a3630fe6e1f38b6404">hasSourcePipe</a> () const</td></tr>
 <tr class="memdesc:aeed97531fb23c4a3630fe6e1f38b6404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this sink is connected to a source pipe.  <a href="../../d9/db6/classMIDI__Sink.html#aeed97531fb23c4a3630fe6e1f38b6404">More...</a><br /></td></tr>
 <tr class="separator:aeed97531fb23c4a3630fe6e1f38b6404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af53e229db2fed38fd2854b1c8acbc48f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/classMIDI__Sink.html#af53e229db2fed38fd2854b1c8acbc48f">getSourcePipe</a> ()</td></tr>
-<tr class="memdesc:af53e229db2fed38fd2854b1c8acbc48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the pipe this sink is connected to, or <code>nullptr</code> if not connected.  <a href="../../d9/db6/classMIDI__Sink.html#af53e229db2fed38fd2854b1c8acbc48f">More...</a><br /></td></tr>
-<tr class="separator:af53e229db2fed38fd2854b1c8acbc48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac446c0bbbfe19bd0398521269586b1b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/classMIDI__Sink.html#ac446c0bbbfe19bd0398521269586b1b7">getSourcePipe</a> ()</td></tr>
+<tr class="memdesc:ac446c0bbbfe19bd0398521269586b1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the pipe this sink is connected to, or <code>nullptr</code> if not connected.  <a href="../../d9/db6/classMIDI__Sink.html#ac446c0bbbfe19bd0398521269586b1b7">More...</a><br /></td></tr>
+<tr class="separator:ac446c0bbbfe19bd0398521269586b1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Sending data over a MIDI Pipe</h2></td></tr>
 <tr class="memitem:a374c78639549aaa797415c83a52bf994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5b/classMIDI__Source.html#a374c78639549aaa797415c83a52bf994">sourceMIDItoPipe</a> (<a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>)</td></tr>
@@ -299,9 +299,9 @@ $(function() {
 <tr class="memitem:adf232712724982b960c6a961bfaf462c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5b/classMIDI__Source.html#adf232712724982b960c6a961bfaf462c">hasSinkPipe</a> () const</td></tr>
 <tr class="memdesc:adf232712724982b960c6a961bfaf462c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this source is connected to a sink pipe.  <a href="../../df/d5b/classMIDI__Source.html#adf232712724982b960c6a961bfaf462c">More...</a><br /></td></tr>
 <tr class="separator:adf232712724982b960c6a961bfaf462c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196d6c56139b0486d9e7d829b35fa389"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5b/classMIDI__Source.html#a196d6c56139b0486d9e7d829b35fa389">getSinkPipe</a> ()</td></tr>
-<tr class="memdesc:a196d6c56139b0486d9e7d829b35fa389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the pipe this source is connected to, or <code>nullptr</code> if not connected.  <a href="../../df/d5b/classMIDI__Source.html#a196d6c56139b0486d9e7d829b35fa389">More...</a><br /></td></tr>
-<tr class="separator:a196d6c56139b0486d9e7d829b35fa389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0079f5a1a8690609b600cac5cfa798a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5b/classMIDI__Source.html#a0079f5a1a8690609b600cac5cfa798a3">getSinkPipe</a> ()</td></tr>
+<tr class="memdesc:a0079f5a1a8690609b600cac5cfa798a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the pipe this source is connected to, or <code>nullptr</code> if not connected.  <a href="../../df/d5b/classMIDI__Source.html#a0079f5a1a8690609b600cac5cfa798a3">More...</a><br /></td></tr>
+<tr class="separator:a0079f5a1a8690609b600cac5cfa798a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -311,15 +311,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a41006907d86063b376399baf53116b5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a41006907d86063b376399baf53116b5e">MIDI_Pipe</a> (const <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a41006907d86063b376399baf53116b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (copying not allowed).  <a href="../../df/d72/classMIDI__Pipe.html#a41006907d86063b376399baf53116b5e">More...</a><br /></td></tr>
 <tr class="separator:a41006907d86063b376399baf53116b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869b2a8a3d2dbbbfba65cf61d0f1ffbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a869b2a8a3d2dbbbfba65cf61d0f1ffbc">operator=</a> (const <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;)=delete</td></tr>
-<tr class="memdesc:a869b2a8a3d2dbbbfba65cf61d0f1ffbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment (copying not allowed).  <a href="../../df/d72/classMIDI__Pipe.html#a869b2a8a3d2dbbbfba65cf61d0f1ffbc">More...</a><br /></td></tr>
-<tr class="separator:a869b2a8a3d2dbbbfba65cf61d0f1ffbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cacb253fb8eff4d761fbecbfe65edd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a6cacb253fb8eff4d761fbecbfe65edd5">operator=</a> (const <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a6cacb253fb8eff4d761fbecbfe65edd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment (copying not allowed).  <a href="../../df/d72/classMIDI__Pipe.html#a6cacb253fb8eff4d761fbecbfe65edd5">More...</a><br /></td></tr>
+<tr class="separator:a6cacb253fb8eff4d761fbecbfe65edd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a287abca31a3878cf47e8884d43c27888"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a287abca31a3878cf47e8884d43c27888">MIDI_Pipe</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&amp;)=delete</td></tr>
 <tr class="memdesc:a287abca31a3878cf47e8884d43c27888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="../../df/d72/classMIDI__Pipe.html#a287abca31a3878cf47e8884d43c27888">More...</a><br /></td></tr>
 <tr class="separator:a287abca31a3878cf47e8884d43c27888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a152fdca2c1aadbf6c751ffdb303140e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a152fdca2c1aadbf6c751ffdb303140e5">operator=</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&amp;)=delete</td></tr>
-<tr class="memdesc:a152fdca2c1aadbf6c751ffdb303140e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment.  <a href="../../df/d72/classMIDI__Pipe.html#a152fdca2c1aadbf6c751ffdb303140e5">More...</a><br /></td></tr>
-<tr class="separator:a152fdca2c1aadbf6c751ffdb303140e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9e63aec6a9bb5a486b54dd1e51aabc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a5c9e63aec6a9bb5a486b54dd1e51aabc">operator=</a> (<a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&amp;)=delete</td></tr>
+<tr class="memdesc:a5c9e63aec6a9bb5a486b54dd1e51aabc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment.  <a href="../../df/d72/classMIDI__Pipe.html#a5c9e63aec6a9bb5a486b54dd1e51aabc">More...</a><br /></td></tr>
+<tr class="separator:a5c9e63aec6a9bb5a486b54dd1e51aabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e46f8b15e44c7b3de9b2d9305a2795d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d72/classMIDI__Pipe.html#a8e46f8b15e44c7b3de9b2d9305a2795d">~MIDI_Pipe</a> ()</td></tr>
 <tr class="memdesc:a8e46f8b15e44c7b3de9b2d9305a2795d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="../../df/d72/classMIDI__Pipe.html#a8e46f8b15e44c7b3de9b2d9305a2795d">More...</a><br /></td></tr>
 <tr class="separator:a8e46f8b15e44c7b3de9b2d9305a2795d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,8 +496,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a869b2a8a3d2dbbbfba65cf61d0f1ffbc" name="a869b2a8a3d2dbbbfba65cf61d0f1ffbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a869b2a8a3d2dbbbfba65cf61d0f1ffbc">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a6cacb253fb8eff4d761fbecbfe65edd5" name="a6cacb253fb8eff4d761fbecbfe65edd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cacb253fb8eff4d761fbecbfe65edd5">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +506,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator= </td>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp; operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -524,8 +524,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a152fdca2c1aadbf6c751ffdb303140e5" name="a152fdca2c1aadbf6c751ffdb303140e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a152fdca2c1aadbf6c751ffdb303140e5">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="a5c9e63aec6a9bb5a486b54dd1e51aabc" name="a5c9e63aec6a9bb5a486b54dd1e51aabc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9e63aec6a9bb5a486b54dd1e51aabc">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,7 +534,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>&amp; operator= </td>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp; operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> &amp;&amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -705,8 +705,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a91a861a411dfd26ad7078cecc9026447" name="a91a861a411dfd26ad7078cecc9026447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91a861a411dfd26ad7078cecc9026447">&#9670;&nbsp;</a></span>getSinkStaller()</h2>
+<a id="acadacb523f9f68f51e7dbf2920e0f6f4" name="acadacb523f9f68f51e7dbf2920e0f6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acadacb523f9f68f51e7dbf2920e0f6f4">&#9670;&nbsp;</a></span>getSinkStaller()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -715,7 +715,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a>* getSinkStaller </td>
+          <td class="memname"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> * getSinkStaller </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -756,8 +756,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3bd8d094e13fe75f0549b2ab827fe43c" name="a3bd8d094e13fe75f0549b2ab827fe43c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bd8d094e13fe75f0549b2ab827fe43c">&#9670;&nbsp;</a></span>getThroughStaller()</h2>
+<a id="a63e540dc022c864761f71456e825d821" name="a63e540dc022c864761f71456e825d821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63e540dc022c864761f71456e825d821">&#9670;&nbsp;</a></span>getThroughStaller()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -766,7 +766,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a>* getThroughStaller </td>
+          <td class="memname"><a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> * getThroughStaller </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -822,7 +822,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get any staller: returns <a class="el" href="../../df/d72/classMIDI__Pipe.html#a91a861a411dfd26ad7078cecc9026447">getSinkStaller()</a> if it's not null, <a class="el" href="../../df/d72/classMIDI__Pipe.html#a3bd8d094e13fe75f0549b2ab827fe43c">getThroughStaller()</a> otherwise. </p>
+<p>Get any staller: returns <a class="el" href="../../df/d72/classMIDI__Pipe.html#acadacb523f9f68f51e7dbf2920e0f6f4">getSinkStaller()</a> if it's not null, <a class="el" href="../../df/d72/classMIDI__Pipe.html#a63e540dc022c864761f71456e825d821">getThroughStaller()</a> otherwise. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d8e/MIDI__Pipes_8cpp_source.html#l00330">330</a> of file <a class="el" href="../../d0/d8e/MIDI__Pipes_8cpp_source.html">MIDI_Pipes.cpp</a>.</p>
 
@@ -875,7 +875,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if this pipe is either not stalled at all, or if the pipe is stalled by the given staller (cause). </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d72/classMIDI__Pipe.html#a91a861a411dfd26ad7078cecc9026447" title="Get the staller (cause of the stall) that causes the sink of this pipe to be stalled.">getSinkStaller</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d72/classMIDI__Pipe.html#acadacb523f9f68f51e7dbf2920e0f6f4" title="Get the staller (cause of the stall) that causes the sink of this pipe to be stalled.">getSinkStaller</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00396">396</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
@@ -906,7 +906,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if this pipe is either not stalled at all, or if the pipe is stalled by the given staller (cause). </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d72/classMIDI__Pipe.html#a3bd8d094e13fe75f0549b2ab827fe43c" title="Get the staller (cause of the stall) that causes the “through” output of this pipe to be stalled.">getThroughStaller</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d72/classMIDI__Pipe.html#a63e540dc022c864761f71456e825d821" title="Get the staller (cause of the stall) that causes the “through” output of this pipe to be stalled.">getThroughStaller</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00402">402</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
@@ -1159,8 +1159,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa457fe8b7003b184a9c0dfbd549f70eb" name="aa457fe8b7003b184a9c0dfbd549f70eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa457fe8b7003b184a9c0dfbd549f70eb">&#9670;&nbsp;</a></span>getSource()</h2>
+<a id="a999da490ab8599570995322fb773eaa3" name="a999da490ab8599570995322fb773eaa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999da490ab8599570995322fb773eaa3">&#9670;&nbsp;</a></span>getSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1169,7 +1169,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a>* getSource </td>
+          <td class="memname"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a> * getSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1188,8 +1188,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a05f6bebda5613c9ec53488f1dfacee7e" name="a05f6bebda5613c9ec53488f1dfacee7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05f6bebda5613c9ec53488f1dfacee7e">&#9670;&nbsp;</a></span>getSink()</h2>
+<a id="aa32b4db454dc4e42f19c0ed212cdaefc" name="aa32b4db454dc4e42f19c0ed212cdaefc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa32b4db454dc4e42f19c0ed212cdaefc">&#9670;&nbsp;</a></span>getSink()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1198,7 +1198,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a>* getSink </td>
+          <td class="memname"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> * getSink </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1217,8 +1217,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3bf26df08c121302c15bf917ec7de51c" name="a3bf26df08c121302c15bf917ec7de51c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bf26df08c121302c15bf917ec7de51c">&#9670;&nbsp;</a></span>getThroughOut()</h2>
+<a id="a39e1de3920781778d635b7b8f86d6f11" name="a39e1de3920781778d635b7b8f86d6f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e1de3920781778d635b7b8f86d6f11">&#9670;&nbsp;</a></span>getThroughOut()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1227,7 +1227,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>* getThroughOut </td>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> * getThroughOut </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1246,8 +1246,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a07aef97fea8cfe85a09ce5f6a4071cdc" name="a07aef97fea8cfe85a09ce5f6a4071cdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07aef97fea8cfe85a09ce5f6a4071cdc">&#9670;&nbsp;</a></span>getThroughIn()</h2>
+<a id="ac28db3d6fa4f095bc773a6feea3b7fca" name="ac28db3d6fa4f095bc773a6feea3b7fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28db3d6fa4f095bc773a6feea3b7fca">&#9670;&nbsp;</a></span>getThroughIn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1256,7 +1256,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>* getThroughIn </td>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> * getThroughIn </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1275,8 +1275,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0a90ed917bb28bc76988e12b0837304c" name="a0a90ed917bb28bc76988e12b0837304c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a90ed917bb28bc76988e12b0837304c">&#9670;&nbsp;</a></span>getFinalSink()</h2>
+<a id="aa21751c0611d27b8b08ce5e6e63aaa88" name="aa21751c0611d27b8b08ce5e6e63aaa88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21751c0611d27b8b08ce5e6e63aaa88">&#9670;&nbsp;</a></span>getFinalSink()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1285,7 +1285,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a>* getFinalSink </td>
+          <td class="memname"><a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> * getFinalSink </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1300,14 +1300,14 @@ Private Attributes</h2></td></tr>
 
 <p>Get the sink this pipe eventually sinks to, following the chain recursively. </p>
 
-<p>Reimplemented from <a class="el" href="../../d9/db6/classMIDI__Sink.html#a2e48633ec4a639e9a68550b7bfa7a46c">MIDI_Sink</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d9/db6/classMIDI__Sink.html#a99becc89a7e2d7490cfb4ba1b2140b02">MIDI_Sink</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00478">478</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a64ee702e48e1a830200511abb2801261" name="a64ee702e48e1a830200511abb2801261"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64ee702e48e1a830200511abb2801261">&#9670;&nbsp;</a></span>getInitialSource()</h2>
+<a id="aeddba8fd16de98802c4a3c11460ba7e3" name="aeddba8fd16de98802c4a3c11460ba7e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeddba8fd16de98802c4a3c11460ba7e3">&#9670;&nbsp;</a></span>getInitialSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1316,7 +1316,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a>* getInitialSource </td>
+          <td class="memname"><a class="el" href="../../df/d5b/classMIDI__Source.html">MIDI_Source</a> * getInitialSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1331,7 +1331,7 @@ Private Attributes</h2></td></tr>
 
 <p>Get the original source that sources to this pipe, following the chain recursively. </p>
 
-<p>Reimplemented from <a class="el" href="../../df/d5b/classMIDI__Source.html#a6ad3847fee0f442c8f6218f224f38995">MIDI_Source</a>.</p>
+<p>Reimplemented from <a class="el" href="../../df/d5b/classMIDI__Source.html#a1978a232aba37936b6a17895b6888631">MIDI_Source</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00483">483</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
@@ -1907,8 +1907,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af53e229db2fed38fd2854b1c8acbc48f" name="af53e229db2fed38fd2854b1c8acbc48f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af53e229db2fed38fd2854b1c8acbc48f">&#9670;&nbsp;</a></span>getSourcePipe()</h2>
+<a id="ac446c0bbbfe19bd0398521269586b1b7" name="ac446c0bbbfe19bd0398521269586b1b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac446c0bbbfe19bd0398521269586b1b7">&#9670;&nbsp;</a></span>getSourcePipe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1917,7 +1917,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>* getSourcePipe </td>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> * getSourcePipe </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2284,8 +2284,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a196d6c56139b0486d9e7d829b35fa389" name="a196d6c56139b0486d9e7d829b35fa389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a196d6c56139b0486d9e7d829b35fa389">&#9670;&nbsp;</a></span>getSinkPipe()</h2>
+<a id="a0079f5a1a8690609b600cac5cfa798a3" name="a0079f5a1a8690609b600cac5cfa798a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0079f5a1a8690609b600cac5cfa798a3">&#9670;&nbsp;</a></span>getSinkPipe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2294,7 +2294,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>* getSinkPipe </td>
+          <td class="memname"><a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> * getSinkPipe </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

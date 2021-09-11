@@ -10,7 +10,5 @@ var searchData=
   ['updatables_7',['updatables',['../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08',1,'AH::UpdatableCRTP']]],
   ['usb_5fconnected_8',['usb_connected',['../d1/dd4/classPluggableUSBMIDI.html#a4856620b1642701bcfd3f0ad3a06a215',1,'PluggableUSBMIDI']]],
   ['user_5fswitch_5fa_9',['USER_SWITCH_A',['../de/d44/group__MCU__Notes.html#gaf8e4d50639dc24e966aeb9d2bbd4c87b',1,'MCU']]],
-  ['user_5fswitch_5fb_10',['USER_SWITCH_B',['../de/d44/group__MCU__Notes.html#gabd96b3d4cbb9cbe5b52fe54310a0711e',1,'MCU']]],
-  ['using_5fah_5fnamespace_11',['USING_AH_NAMESPACE',['../dc/de6/Arduino__Helpers_8h.html#acefb7f636631fc5f09ef995b53a5b743',1,'USING_AH_NAMESPACE():&#160;Arduino_Helpers.h'],['../db/dbf/Control__Surface_8h.html#acefb7f636631fc5f09ef995b53a5b743',1,'USING_AH_NAMESPACE():&#160;Control_Surface.h']]],
-  ['using_5fcs_5fnamespace_12',['USING_CS_NAMESPACE',['../db/dbf/Control__Surface_8h.html#a0a2ff61c9dc56ec3e616104131d938ef',1,'Control_Surface.h']]]
+  ['user_5fswitch_5fb_10',['USER_SWITCH_B',['../de/d44/group__MCU__Notes.html#gabd96b3d4cbb9cbe5b52fe54310a0711e',1,'MCU']]]
 ];

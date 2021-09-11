@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">2.VU-Meter-OLED-USB-DAC.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md137"></a>
+<h1><a class="anchor" id="autotoc_md56"></a>
 2.VU-Meter-OLED-USB-DAC</h1>
 <p >This example shows the usage of the <a class="el" href="../../d4/dce/classAudioVU.html" title="A VU meter that reads from an Audio stream using the Analyzer class.">AudioVU</a> and AnalogVUDisplay classes of the Control Surface library. <br  />
 </p>
@@ -87,7 +87,7 @@ $(function() {
  The VU meters imitate the inertia and ballistics of real analog VU meters.</p>
 <p >It acts as a USB Audio DAC (Digital-to-Analog Converter).</p>
 <dl class="section user"><dt>Boards:</dt><dd>Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md138"></a>
+<h2><a class="anchor" id="autotoc_md57"></a>
 Connections</h2>
 <ul>
 <li>A0: wiper of a potentiometer to change the output volume</li>
@@ -105,37 +105,37 @@ Connections</h2>
 <p >Add a capacitor between the reset pin of the displays and ground, and a resistor from reset to 3.3V. The values are not critical, 0.1µF and 10kΩ work fine. <br  />
  You do need some way to reset the displays, without it, it won't work. <br  />
  Alternatively, you could use an IO pin from the Teensy to reset the displays, but this just "wastes" a pin.</p>
-<h2><a class="anchor" id="autotoc_md139"></a>
+<h2><a class="anchor" id="autotoc_md58"></a>
 Behavior</h2>
 <p >Upload the sketch, and select the Control Surface as the audio output of your computer. Connect the output of the DAC to a pair of headphones or powered speakers, and play some music. <br  />
  You should see the VU meters come to life and jump around to the music.</p>
 <p >You can now adjust the volume using the potentiometer on pin A0, and the gain/sensitivity of the meters using the potentiometer on pin A1.</p>
-<h2><a class="anchor" id="autotoc_md140"></a>
+<h2><a class="anchor" id="autotoc_md59"></a>
 Mapping</h2>
 <p >None.</p>
-<h2><a class="anchor" id="autotoc_md141"></a>
+<h2><a class="anchor" id="autotoc_md60"></a>
 Demo</h2>
 <p >Written by PieterP, 2019-08-09 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"><span class="comment">// Include the display interface you&#39;d like to use</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d3/d62/DisplayInterfaceSSD1306_8hpp.html">Display/DisplayInterfaces/DisplayInterfaceSSD1306.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d3/d62/DisplayInterfaceSSD1306_8hpp.html">Display/DisplayInterfaces/DisplayInterfaceSSD1306.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// #define DIGITAL_VU</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ----------------------------- Display setup ------------------------------ //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
-<div class="line">constexpr uint8_t SCREEN_WIDTH = 128;</div>
-<div class="line">constexpr uint8_t SCREEN_HEIGHT = 64;</div>
+<div class="line"><span class="keyword">constexpr</span> uint8_t SCREEN_WIDTH = 128;</div>
+<div class="line"><span class="keyword">constexpr</span> uint8_t SCREEN_HEIGHT = 64;</div>
 <div class="line"> </div>
-<div class="line">constexpr int8_t OLED_DC = 17;    <span class="comment">// Data/Command pin of the display</span></div>
-<div class="line">constexpr int8_t OLED_reset = -1; <span class="comment">// Use the external RC circuit for reset</span></div>
-<div class="line">constexpr int8_t OLED_CS_L = 10;  <span class="comment">// Chip Select pin of the left display</span></div>
-<div class="line">constexpr int8_t OLED_CS_R = 18;  <span class="comment">// Chip Select pin of the right display</span></div>
+<div class="line"><span class="keyword">constexpr</span> int8_t OLED_DC = 17;    <span class="comment">// Data/Command pin of the display</span></div>
+<div class="line"><span class="keyword">constexpr</span> int8_t OLED_reset = -1; <span class="comment">// Use the external RC circuit for reset</span></div>
+<div class="line"><span class="keyword">constexpr</span> int8_t OLED_CS_L = 10;  <span class="comment">// Chip Select pin of the left display</span></div>
+<div class="line"><span class="keyword">constexpr</span> int8_t OLED_CS_R = 18;  <span class="comment">// Chip Select pin of the right display</span></div>
 <div class="line"> </div>
-<div class="line">constexpr uint32_t SPI_Frequency = <a id="a0" name="a0"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a5b86686a1a39f3bd4c50998dc17706e6">SPI_MAX_SPEED</a>;</div>
+<div class="line"><span class="keyword">constexpr</span> uint32_t SPI_Frequency = <a id="a0" name="a0"></a><a class="code hl_variable" href="../../dc/d69/namespaceAH.html#a5b86686a1a39f3bd4c50998dc17706e6">SPI_MAX_SPEED</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate the displays</span></div>
 <div class="line">Adafruit_SSD1306 ssd1306Display_L {</div>
@@ -155,25 +155,25 @@ Demo</h2>
 <div class="line"><span class="comment">// methods.</span></div>
 <div class="line"><span class="comment">// If you want, you can draw a background image of a VU meter first, and then</span></div>
 <div class="line"><span class="comment">// draw the needle on top.</span></div>
-<div class="line"><span class="keyword">class </span>MySSD1306_DisplayInterface : <span class="keyword">public</span> <a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a> {</div>
+<div class="line"><span class="keyword">class </span>MySSD1306_DisplayInterface : <span class="keyword">public</span> <a id="_a1" name="_a1"></a><a class="code hl_class" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a> {</div>
 <div class="line"> <span class="keyword">public</span>:</div>
 <div class="line">  MySSD1306_DisplayInterface(Adafruit_SSD1306 &amp;display)</div>
-<div class="line">    : <a class="highlightclass code" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a>(display) {}</div>
+<div class="line">    : <a class="code hl_class" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a>(display) {}</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">void</span> <a id="a2" name="a2"></a><a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>()<span class="keyword"> override </span>{</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a2" name="a2"></a><a class="code hl_function" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>()<span class="keyword"> override </span>{</div>
 <div class="line">    <span class="comment">// Initialize the Adafruit_SSD1306 display</span></div>
 <div class="line">    <span class="keywordflow">if</span> (!disp.begin())</div>
-<div class="line">      <a id="a3" name="a3"></a><a class="highlightmember code" href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a>(F(<span class="stringliteral">&quot;SSD1306 allocation failed.&quot;</span>), 0x1306);</div>
+<div class="line">      <a id="a3" name="a3"></a><a class="code hl_define" href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a>(F(<span class="stringliteral">&quot;SSD1306 allocation failed.&quot;</span>), 0x1306);</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#ifdef DIGITAL_VU</span></div>
 <div class="line">    disp.setRotation(1); <span class="comment">// Rotate the display in portrait mode</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// If you override the begin method, remember to call the super class method</span></div>
-<div class="line">    <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">SSD1306_DisplayInterface::begin</a>();</div>
+<div class="line">    <a class="code hl_function" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">SSD1306_DisplayInterface::begin</a>();</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">void</span> <a id="a4" name="a4"></a><a class="highlightmember code" href="../../dc/ddd/classSSD1306__DisplayInterface.html#a457c950a3ecc382e18887aeb4684b6d7">drawBackground</a>()<span class="keyword"> override </span>{}</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a4" name="a4"></a><a class="code hl_function" href="../../dc/ddd/classSSD1306__DisplayInterface.html#a457c950a3ecc382e18887aeb4684b6d7">drawBackground</a>()<span class="keyword"> override </span>{}</div>
 <div class="line"> </div>
 <div class="line">} display_L = ssd1306Display_L, display_R = ssd1306Display_R;</div>
 <div class="line"> </div>
@@ -198,22 +198,22 @@ Demo</h2>
 <div class="line"><span class="comment">// ----------------------------- Volume control ----------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
-<div class="line"><a id="_a5" name="_a5"></a><a class="highlightclass code" href="../../d4/de3/classVolumeControl.html">VolumeControl&lt;2&gt;</a> volume {{&amp;mixer_L, &amp;mixer_R}, A0, 1.0};</div>
+<div class="line"><a id="_a5" name="_a5"></a><a class="code hl_class" href="../../d4/de3/classVolumeControl.html">VolumeControl&lt;2&gt;</a> volume {{&amp;mixer_L, &amp;mixer_R}, A0, 1.0};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ------------------------------- VU Meters -------------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#ifdef DIGITAL_VU</span></div>
-<div class="line"><a id="_a6" name="_a6"></a><a class="highlightclass code" href="../../d4/dce/classAudioVU.html">AudioVU</a> vu_L {rms_L, <a id="a7" name="a7"></a><a class="highlightmember code" href="../../d0/d49/classMovingCoilBallistics.html#a1ed573461e69d7bd556d04a8169e1820">MovingCoilBallistics::noOvershoot</a>(), 1, 25};</div>
-<div class="line"><a class="highlightclass code" href="../../d4/dce/classAudioVU.html">AudioVU</a> vu_R {rms_R, <a class="highlightmember code" href="../../d0/d49/classMovingCoilBallistics.html#a1ed573461e69d7bd556d04a8169e1820">MovingCoilBallistics::noOvershoot</a>(), 1, 25};</div>
+<div class="line"><a id="_a6" name="_a6"></a><a class="code hl_class" href="../../d4/dce/classAudioVU.html">AudioVU</a> vu_L {rms_L, <a id="a7" name="a7"></a><a class="code hl_function" href="../../d0/d49/classMovingCoilBallistics.html#a1ed573461e69d7bd556d04a8169e1820">MovingCoilBallistics::noOvershoot</a>(), 1, 25};</div>
+<div class="line"><a class="code hl_class" href="../../d4/dce/classAudioVU.html">AudioVU</a> vu_R {rms_R, <a class="code hl_function" href="../../d0/d49/classMovingCoilBallistics.html#a1ed573461e69d7bd556d04a8169e1820">MovingCoilBallistics::noOvershoot</a>(), 1, 25};</div>
 <div class="line"> </div>
-<div class="line"><a id="_a8" name="_a8"></a><a class="highlightclass code" href="../../d4/d42/classMCU_1_1VUDisplay.html">MCU::VUDisplay&lt;&gt;</a> vu_display_L {display_L, vu_L, {0, 127}, 64, 4, 1, WHITE};</div>
-<div class="line"><a class="highlightclass code" href="../../d4/d42/classMCU_1_1VUDisplay.html">MCU::VUDisplay&lt;&gt;</a> vu_display_R {display_R, vu_R, {0, 127}, 64, 4, 1, WHITE};</div>
+<div class="line"><a id="_a8" name="_a8"></a><a class="code hl_class" href="../../d4/d42/classMCU_1_1VUDisplay.html">MCU::VUDisplay&lt;&gt;</a> vu_display_L {display_L, vu_L, {0, 127}, 64, 4, 1, WHITE};</div>
+<div class="line"><a class="code hl_class" href="../../d4/d42/classMCU_1_1VUDisplay.html">MCU::VUDisplay&lt;&gt;</a> vu_display_R {display_R, vu_R, {0, 127}, 64, 4, 1, WHITE};</div>
 <div class="line"><span class="preprocessor">#else</span></div>
-<div class="line"><a class="highlightclass code" href="../../d4/dce/classAudioVU.html">AudioVU</a> vu_L {rms_L, <a id="a9" name="a9"></a><a class="highlightmember code" href="../../d0/d49/classMovingCoilBallistics.html#a4765b510b12dfd34b286dc6fb0d13cee">MovingCoilBallistics::responsiveVU</a>(1)};</div>
-<div class="line"><a class="highlightclass code" href="../../d4/dce/classAudioVU.html">AudioVU</a> vu_R {rms_R, <a class="highlightmember code" href="../../d0/d49/classMovingCoilBallistics.html#a4765b510b12dfd34b286dc6fb0d13cee">MovingCoilBallistics::responsiveVU</a>(1)};</div>
+<div class="line"><a class="code hl_class" href="../../d4/dce/classAudioVU.html">AudioVU</a> vu_L {rms_L, <a id="a9" name="a9"></a><a class="code hl_function" href="../../d0/d49/classMovingCoilBallistics.html#a4765b510b12dfd34b286dc6fb0d13cee">MovingCoilBallistics::responsiveVU</a>(1)};</div>
+<div class="line"><a class="code hl_class" href="../../d4/dce/classAudioVU.html">AudioVU</a> vu_R {rms_R, <a class="code hl_function" href="../../d0/d49/classMovingCoilBallistics.html#a4765b510b12dfd34b286dc6fb0d13cee">MovingCoilBallistics::responsiveVU</a>(1)};</div>
 <div class="line"> </div>
-<div class="line"><a id="_a10" name="_a10"></a><a class="highlightclass code" href="../../dc/d95/classMCU_1_1AnalogVUDisplay.html">MCU::AnalogVUDisplay&lt;&gt;</a> vu_display_L {</div>
+<div class="line"><a id="_a10" name="_a10"></a><a class="code hl_class" href="../../dc/d95/classMCU_1_1AnalogVUDisplay.html">MCU::AnalogVUDisplay&lt;&gt;</a> vu_display_L {</div>
 <div class="line">  display_L,       <span class="comment">// Display to display on</span></div>
 <div class="line">  vu_L,            <span class="comment">// VU meter to display</span></div>
 <div class="line">  {63, 63},        <span class="comment">// Location of the needle pivot</span></div>
@@ -225,7 +225,7 @@ Demo</h2>
 <div class="line"><span class="comment">// Note that the y axis points downwards (as is common in computer graphics).</span></div>
 <div class="line"><span class="comment">// This means that a positive angle is clockwise, and -140° lies in the top left</span></div>
 <div class="line"><span class="comment">// quadrant</span></div>
-<div class="line"><a class="highlightclass code" href="../../dc/d95/classMCU_1_1AnalogVUDisplay.html">MCU::AnalogVUDisplay&lt;&gt;</a> vu_display_R {</div>
+<div class="line"><a class="code hl_class" href="../../dc/d95/classMCU_1_1AnalogVUDisplay.html">MCU::AnalogVUDisplay&lt;&gt;</a> vu_display_R {</div>
 <div class="line">  display_R, vu_R, {63, 63}, 63, -140 * PI / 180, 100 * PI / 180, WHITE,</div>
 <div class="line">};</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
@@ -233,7 +233,7 @@ Demo</h2>
 <div class="line"><span class="comment">// ------------------------------- Gain knob -------------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
-<div class="line">constexpr <span class="keywordtype">float</span> maxGain = 5;</div>
+<div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">float</span> maxGain = 5;</div>
 <div class="line">FilteredAnalog&lt;&gt; gainKnob = A1;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// --------------------------------- Setup ---------------------------------- //</span></div>
@@ -250,12 +250,12 @@ Demo</h2>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> frametime = 1&#39;000&#39;000 / <a id="a11" name="a11"></a><a class="highlightmember code" href="../../dc/d4f/Settings_2Settings_8hpp.html#ab44cfa307e19c5688403a9506ea0555e">MAX_FPS</a>;</div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> frametime = 1&#39;000&#39;000 / <a id="a11" name="a11"></a><a class="code hl_variable" href="../../dc/d4f/Settings_2Settings_8hpp.html#ab44cfa307e19c5688403a9506ea0555e">MAX_FPS</a>;</div>
 <div class="line">  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> previousFrameTime = micros();</div>
 <div class="line">  <span class="keywordflow">if</span> (micros() - previousFrameTime &gt;= frametime) {</div>
 <div class="line">    previousFrameTime += frametime;</div>
-<div class="line">    <a id="a12" name="a12"></a><a class="highlightmember code" href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">Updatable&lt;AudioVU&gt;::updateAll</a>();       <span class="comment">// Update VU meters</span></div>
-<div class="line">    <a id="a13" name="a13"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a14" name="a14"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#a01abf882f8654c6673a56399b5d47eb9">updateDisplays</a>();      <span class="comment">// Update displays</span></div>
+<div class="line">    <a id="a12" name="a12"></a><a class="code hl_function" href="../../d1/d55/classAH_1_1Updatable.html#a44e05f733dace05adcf585b5a17be292">Updatable&lt;AudioVU&gt;::updateAll</a>();       <span class="comment">// Update VU meters</span></div>
+<div class="line">    <a id="a13" name="a13"></a><a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a14" name="a14"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#a01abf882f8654c6673a56399b5d47eb9">updateDisplays</a>();      <span class="comment">// Update displays</span></div>
 <div class="line">    Updatable&lt;Potentiometer&gt;::updateAll(); <span class="comment">// Update volume controls</span></div>
 <div class="line">  }</div>
 <div class="line">  <span class="keywordflow">if</span> (gainKnob.update()) {</div>

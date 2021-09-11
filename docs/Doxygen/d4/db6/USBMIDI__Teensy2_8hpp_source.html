@@ -83,30 +83,30 @@ $(function() {
   <div class="headertitle"><div class="title">USBMIDI_Teensy2.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d4/db6/USBMIDI__Teensy2_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d9/d98/TeensyUSBTypes_8hpp.html">AH/Teensy/TeensyUSBTypes.hpp</a>&gt;</span></div>
+<a href="../../d4/db6/USBMIDI__Teensy2_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;<a class="code" href="../../d9/d98/TeensyUSBTypes_8hpp.html">AH/Teensy/TeensyUSBTypes.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../de/d76/Array_8hpp.html">AH/Containers/Array.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/d76/Array_8hpp.html">AH/Containers/Array.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Settings/NamespaceSettings.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><a class="code hl_define" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">struct </span><a class="highlightclass code" href="../../d1/d22/structUSBDeviceMIDIBackend.html">USBDeviceMIDIBackend</a> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">    9</a></span>    <span class="keyword">using</span> <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">MIDIUSBPacket_t</a> = <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">AH::Array&lt;uint8_t, 4&gt;</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">   10</a></span>    <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">MIDIUSBPacket_t</a> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">read</a>();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">   11</a></span>    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">write</a>(uint8_t cn_cin, uint8_t midi_0, uint8_t midi_1, uint8_t midi_2);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">   12</a></span>    <span class="keywordtype">void</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a>();</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">   13</a></span>    <span class="keywordtype">bool</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">preferImmediateSend</a>();</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">struct </span><a class="code hl_struct" href="../../d1/d22/structUSBDeviceMIDIBackend.html">USBDeviceMIDIBackend</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">    9</a></span>    <span class="keyword">using</span> <a class="code hl_class" href="../../d0/d32/structAH_1_1Array.html">MIDIUSBPacket_t</a> = <a class="code hl_class" href="../../d0/d32/structAH_1_1Array.html">AH::Array&lt;uint8_t, 4&gt;</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">   10</a></span>    <a class="code hl_class" href="../../d0/d32/structAH_1_1Array.html">MIDIUSBPacket_t</a> <a class="code hl_function" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">read</a>();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">   11</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">write</a>(uint8_t cn_cin, uint8_t midi_0, uint8_t midi_1, uint8_t midi_2);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">   12</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">   13</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">preferImmediateSend</a>();</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><a class="code hl_define" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifdef TEENSY_MIDIUSB_ENABLED</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;usb_private.h&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_define" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">inline</span> <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">USBDeviceMIDIBackend::MIDIUSBPacket_t</a> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#accc821ce353be86b10e43e1043a370b3">USBDeviceMIDIBackend::read</a>() {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d0/d32/structAH_1_1Array.html">USBDeviceMIDIBackend::MIDIUSBPacket_t</a> <a class="code hl_function" href="../../d1/d22/structUSBDeviceMIDIBackend.html#accc821ce353be86b10e43e1043a370b3">USBDeviceMIDIBackend::read</a>() {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// https://github.com/PaulStoffregen/cores/blob/73ea157600a7082686d9cc48786a73caa7567da9/usb_midi/usb_api.cpp#L195</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    uint8_t c, intr_state;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -114,7 +114,7 @@ $(function() {
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    cli();</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">if</span> (!usb_configuration) {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        SREG = intr_state;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>{0};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>{0};</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    UENUM = MIDI_RX_ENDPOINT;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>retry:</div>
@@ -125,10 +125,10 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">goto</span> retry;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        SREG = intr_state;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>{0};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>{0};</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a> packet;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    packet.<a class="highlightmember code" href="../../d0/d32/structAH_1_1Array.html#a6896f24464ed35248eb0bc5cf32e8616">data</a>[0] = UEDATX;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_typedef" href="../../d1/d22/structUSBDeviceMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a> packet;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    packet.<a class="code hl_variable" href="../../d0/d32/structAH_1_1Array.html#a6896f24464ed35248eb0bc5cf32e8616">data</a>[0] = UEDATX;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    packet.data[1] = UEDATX;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    packet.data[2] = UEDATX;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    packet.data[3] = UEDATX;</div>
@@ -139,7 +139,7 @@ $(function() {
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> packet;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">USBDeviceMIDIBackend::write</a>(uint8_t cn_cin, uint8_t midi_0,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">USBDeviceMIDIBackend::write</a>(uint8_t cn_cin, uint8_t midi_0,</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                                        uint8_t midi_1, uint8_t midi_2) {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    uint8_t intr_state, timeout;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
@@ -171,14 +171,14 @@ $(function() {
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    SREG = intr_state;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">USBDeviceMIDIBackend::sendNow</a>() {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">USBDeviceMIDIBackend::sendNow</a>() {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// TODO: I think the UEINTX = 0x3A actually sends/flushes the data, but I&#39;m</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">//       not sure, and I don&#39;t have the right hardware to test it.</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="highlightmember code" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">USBDeviceMIDIBackend::preferImmediateSend</a>() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d22/structUSBDeviceMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">USBDeviceMIDIBackend::preferImmediateSend</a>() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><a class="highlightmember code" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><a class="code hl_define" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aArray_8hpp_html"><div class="ttname"><a href="../../de/d76/Array_8hpp.html">Array.hpp</a></div></div>

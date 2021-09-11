@@ -81,8 +81,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">Control_Surface.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -121,6 +120,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../dd/d09/CCAbsoluteEncoder_8hpp_source.html">MIDI_Outputs/CCAbsoluteEncoder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dd/dd9/CCRotaryEncoder_8hpp_source.html">MIDI_Outputs/CCRotaryEncoder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/d50/PBAbsoluteEncoder_8hpp_source.html">MIDI_Outputs/PBAbsoluteEncoder.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d0c/ProgramChanger_8hpp_source.html">MIDI_Outputs/ProgramChanger.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d15/Bankable_2CCButton_8hpp_source.html">MIDI_Outputs/Bankable/CCButton.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d53/Bankable_2CCButtonLatched_8hpp_source.html">MIDI_Outputs/Bankable/CCButtonLatched.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d2/dac/Bankable_2CCButtonLatching_8hpp_source.html">MIDI_Outputs/Bankable/CCButtonLatching.hpp</a>&gt;</code><br />
@@ -152,6 +152,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d6/d0f/ManyAddresses_2CCAbsoluteEncoder_8hpp_source.html">MIDI_Outputs/ManyAddresses/CCAbsoluteEncoder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/d6f/ManyAddresses_2CCRotaryEncoder_8hpp_source.html">MIDI_Outputs/ManyAddresses/CCRotaryEncoder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/d50/ManyAddresses_2PBAbsoluteEncoder_8hpp_source.html">MIDI_Outputs/ManyAddresses/PBAbsoluteEncoder.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d2/d83/Bankable_2ProgramChanger_8hpp_source.html">MIDI_Outputs/Bankable/ProgramChanger.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/d83/AssignmentDisplay_8hpp_source.html">MIDI_Inputs/MCU/AssignmentDisplay.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d69/LCD_8hpp_source.html">MIDI_Inputs/MCU/LCD.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d4/d18/SevenSegmentDisplay_8hpp_source.html">MIDI_Inputs/MCU/SevenSegmentDisplay.hpp</a>&gt;</code><br />
@@ -176,7 +177,6 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d3/ddf/SwitchSelector_8hpp_source.html">Selectors/SwitchSelector.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d3/dce/SelectorLEDs_8hpp_source.html">Selectors/LEDs/SelectorLEDs.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/d5e/Transposer_8hpp_source.html">Banks/Transposer.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../da/d0c/ProgramChanger_8hpp_source.html">Selectors/ProgramChanger.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d55/DebugMIDI__Interface_8hpp_source.html">MIDI_Interfaces/DebugMIDI_Interface.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/d23/SerialMIDI__Interface_8hpp_source.html">MIDI_Interfaces/SerialMIDI_Interface.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">MIDI_Interfaces/USBMIDI_Interface.hpp</a>&gt;</code><br />
@@ -200,7 +200,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d6c/Control__Surface_8h__incl.svg" width="17468" height="1707"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d6c/Control__Surface_8h__incl.svg" width="17907" height="1707"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -210,13 +210,6 @@ $(function() {
 Macros</h2></td></tr>
 <tr class="memitem:a151ed86bf1c0d294935e39203b904170"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/Control__Surface_8h.html#a151ed86bf1c0d294935e39203b904170">CONTROL_SURFACE_VERSION</a>&#160;&#160;&#160;20000</td></tr>
 <tr class="separator:a151ed86bf1c0d294935e39203b904170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:acefb7f636631fc5f09ef995b53a5b743"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/Control__Surface_8h.html#acefb7f636631fc5f09ef995b53a5b743">USING_AH_NAMESPACE</a></td></tr>
-<tr class="separator:acefb7f636631fc5f09ef995b53a5b743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2ff61c9dc56ec3e616104131d938ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/Control__Surface_8h.html#a0a2ff61c9dc56ec3e616104131d938ef">USING_CS_NAMESPACE</a></td></tr>
-<tr class="separator:a0a2ff61c9dc56ec3e616104131d938ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a151ed86bf1c0d294935e39203b904170" name="a151ed86bf1c0d294935e39203b904170"></a>
@@ -231,40 +224,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dbf/Control__Surface_8h_source.html#l00166">166</a> of file <a class="el" href="../../db/dbf/Control__Surface_8h_source.html">Control_Surface.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="acefb7f636631fc5f09ef995b53a5b743" name="acefb7f636631fc5f09ef995b53a5b743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acefb7f636631fc5f09ef995b53a5b743">&#9670;&nbsp;</a></span>USING_AH_NAMESPACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">USING_AH_NAMESPACE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/dbf/Control__Surface_8h_source.html#l00158">158</a> of file <a class="el" href="../../db/dbf/Control__Surface_8h_source.html">Control_Surface.h</a>.</p>
-
-</div>
-</div>
-<a id="a0a2ff61c9dc56ec3e616104131d938ef" name="a0a2ff61c9dc56ec3e616104131d938ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a2ff61c9dc56ec3e616104131d938ef">&#9670;&nbsp;</a></span>USING_CS_NAMESPACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">USING_CS_NAMESPACE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/dbf/Control__Surface_8h_source.html#l00163">163</a> of file <a class="el" href="../../db/dbf/Control__Surface_8h_source.html">Control_Surface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dbf/Control__Surface_8h_source.html#l00169">169</a> of file <a class="el" href="../../db/dbf/Control__Surface_8h_source.html">Control_Surface.h</a>.</p>
 
 </div>
 </div>

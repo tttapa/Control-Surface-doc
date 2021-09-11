@@ -9,7 +9,7 @@ var searchData=
   ['callback_5fset_5finterface_6',['callback_set_interface',['../d1/dd4/classPluggableUSBMIDI.html#a7eb9e13f8514da617d11b3ed7a993208',1,'PluggableUSBMIDI']]],
   ['callback_5fstate_5fchange_7',['callback_state_change',['../d1/dd4/classPluggableUSBMIDI.html#a5559718c6fff416d1b51895a012290e2',1,'PluggableUSBMIDI']]],
   ['cancelrunningstatus_8',['cancelRunningStatus',['../d0/d0d/classSerialMIDI__Parser.html#afb292403c5cd393ca1499297e7a81cd5',1,'SerialMIDI_Parser']]],
-  ['cat_9',['cat',['../da/de8/group__AH__Containers.html#gaa6f6579d4be6d8119a9b6ea8f081b6bb',1,'AH']]],
+  ['cat_9',['cat',['../da/de8/group__AH__Containers.html#gacdb59456358b1a996662200249d35891',1,'AH']]],
   ['ccabsoluteencoder_10',['CCAbsoluteEncoder',['../da/d5c/classBankable_1_1ManyAddresses_1_1CCAbsoluteEncoder.html#a668c527a5a6b2eb31b7d1d3dbe27e239',1,'Bankable::ManyAddresses::CCAbsoluteEncoder::CCAbsoluteEncoder()'],['../d7/d2c/classBankable_1_1CCAbsoluteEncoder.html#a8b4a784e03e643c42d8a9a1c4e309473',1,'Bankable::CCAbsoluteEncoder::CCAbsoluteEncoder()'],['../d8/d2f/classCCAbsoluteEncoder.html#a33cd755e358d305099b06818e3196cdd',1,'CCAbsoluteEncoder::CCAbsoluteEncoder()']]],
   ['ccbutton_11',['CCButton',['../d1/dd4/classBankable_1_1CCButton.html#aabb58176dc1bc9fccd982bffe0b7eae8',1,'Bankable::CCButton::CCButton()'],['../d2/daa/classCCButton.html#af2fe4f29d78668d1b7160ce809e148ad',1,'CCButton::CCButton()'],['../d0/de3/classBankable_1_1ManyAddresses_1_1CCButton.html#a7531acf0d74eb8e7001e9993b896ed88',1,'Bankable::ManyAddresses::CCButton::CCButton()']]],
   ['ccbuttonlatched_12',['CCButtonLatched',['../d9/d1d/classBankable_1_1CCButtonLatched.html#a7b10e2628c07d7eb6b15f72cb90c72a9',1,'Bankable::CCButtonLatched::CCButtonLatched()'],['../d5/da6/classCCButtonLatched.html#a7e14b2185a9be170f3c0985de8554f6c',1,'CCButtonLatched::CCButtonLatched()']]],
@@ -29,7 +29,7 @@ var searchData=
   ['clearanddrawbackground_26',['clearAndDrawBackground',['../df/d42/classDisplayInterface.html#a489d3fbcc4765773869f3cc415cad79e',1,'DisplayInterface']]],
   ['cleardirty_27',['clearDirty',['../d8/d87/classInterfaces_1_1IValue.html#aef297f1d2096b3082e23b9175ca48253',1,'Interfaces::IValue::clearDirty()'],['../dd/d7f/classInterfaces_1_1IValue14.html#aef297f1d2096b3082e23b9175ca48253',1,'Interfaces::IValue14::clearDirty()'],['../d2/dde/classInterfaces_1_1MCU_1_1IVPot.html#aef297f1d2096b3082e23b9175ca48253',1,'Interfaces::MCU::IVPot::clearDirty()'],['../dc/d25/classInterfaces_1_1MCU_1_1IVU.html#aef297f1d2096b3082e23b9175ca48253',1,'Interfaces::MCU::IVU::clearDirty()'],['../d3/d98/classNoteCCKPRangeFastLED.html#aef297f1d2096b3082e23b9175ca48253',1,'NoteCCKPRangeFastLED::clearDirty()'],['../d5/d2e/classMCU_1_1LCD.html#aef297f1d2096b3082e23b9175ca48253',1,'MCU::LCD::clearDirty()'],['../d5/d54/classMCU_1_1SevenSegmentDisplay.html#aef297f1d2096b3082e23b9175ca48253',1,'MCU::SevenSegmentDisplay::clearDirty()'],['../da/def/classNoteCCKPRange.html#aef297f1d2096b3082e23b9175ca48253',1,'NoteCCKPRange::clearDirty()'],['../d9/dd1/classBankable_1_1NoteCCKPRange.html#aef297f1d2096b3082e23b9175ca48253',1,'Bankable::NoteCCKPRange::clearDirty()']]],
   ['clearwriteerror_28',['clearWriteError',['../d1/dd4/classPluggableUSBMIDI.html#af50f0c1e1c726ef3dee08a84456090b9',1,'PluggableUSBMIDI::clearWriteError()'],['../de/d93/classTeensyHostMIDI.html#af50f0c1e1c726ef3dee08a84456090b9',1,'TeensyHostMIDI::clearWriteError()']]],
-  ['configuration_5fdesc_29',['configuration_desc',['../d1/dd4/classPluggableUSBMIDI.html#a7a6487675ed75d855dbd04cf3a1a49fd',1,'PluggableUSBMIDI']]],
+  ['configuration_5fdesc_29',['configuration_desc',['../d1/dd4/classPluggableUSBMIDI.html#a7a8f1a2bdf73a4bbb5b63d8caf63e25e',1,'PluggableUSBMIDI']]],
   ['conjugated_30',['conjugated',['../da/d32/structAH_1_1Quaternion.html#af7f3344b018f1d032a36b162e09f07f6',1,'AH::Quaternion']]],
   ['connectdefaultmidi_5finterface_31',['connectDefaultMIDI_Interface',['../dc/d45/classControl__Surface__.html#a1809bb1a377d9e466004bdd640bb6883',1,'Control_Surface_']]],
   ['connected_32',['connected',['../d1/dd4/classPluggableUSBMIDI.html#aa0fd96bc25e3d509fb54028c2e4b91f6',1,'PluggableUSBMIDI']]],
@@ -39,10 +39,10 @@ var searchData=
   ['connectsourcepipe_36',['connectSourcePipe',['../d9/db6/classMIDI__Sink.html#a094b2e4e26d211243f5f44a66fdb8648',1,'MIDI_Sink']]],
   ['continuesysex_37',['continueSysEx',['../d7/d8e/classBLEMIDIPacketBuilder.html#a2c7ed84a517b162234e17b06b11b66a1',1,'BLEMIDIPacketBuilder']]],
   ['control_5fsurface_5f_38',['Control_Surface_',['../dc/d45/classControl__Surface__.html#a62fdea11ae4a775c5f1574c33ce35c44',1,'Control_Surface_::Control_Surface_()=default'],['../dc/d45/classControl__Surface__.html#a4c130e7c43674c32395987e2c35692b0',1,'Control_Surface_::Control_Surface_(Control_Surface_ const &amp;)=delete']]],
-  ['copyas_39',['copyAs',['../da/de8/group__AH__Containers.html#ga8de4dc6aafee7c5f2aa1cb7b71ba5735',1,'AH']]],
+  ['copyas_39',['copyAs',['../da/de8/group__AH__Containers.html#ga02e86217734162cd9756f6d83e1e6e4a',1,'AH']]],
   ['cos_40',['cos',['../d6/d99/classBresenhamLine.html#aa4563ad33f7125b6773d0e2bf8ff8761',1,'BresenhamLine']]],
   ['couldcontain_41',['couldContain',['../dd/d16/classDoublyLinkedList.html#a3bb0529b5a1b73e9d59ddfa7edb2a249',1,'DoublyLinkedList::couldContain(const Node *node) const'],['../dd/d16/classDoublyLinkedList.html#a56cf1b6499de50ca5855629091d08f4e',1,'DoublyLinkedList::couldContain(const Node &amp;node) const']]],
   ['createcable_42',['createCable',['../d2/d75/classCable.html#a1a2dcfeb7b035cd962554158fc3fd3b6',1,'Cable']]],
   ['createchannel_43',['createChannel',['../d2/d48/classChannel.html#a69a09435c6239fc134d052b7f1dd0eb1',1,'Channel']]],
-  ['cslice_44',['cslice',['../d0/d32/structAH_1_1Array.html#a095474b2ffde5d8acd7c8979107671ab',1,'AH::Array']]]
+  ['cslice_44',['cslice',['../d0/d32/structAH_1_1Array.html#a990f7e75d8b07729fd9aae277da9f5f8',1,'AH::Array']]]
 ];

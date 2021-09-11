@@ -79,56 +79,56 @@ $(function() {
   <div class="headertitle"><div class="title">ManyAddressesPCButton.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md202"></a>
 ManyAddressesPCButton</h1>
 <p >An advanced example with Program Change buttons in different Banks.</p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
-<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;3&gt;</a> bank(4);</div>
-<div class="line"><a id="_a2" name="_a2"></a><a class="highlightclass code" href="../../d2/deb/classIncrementDecrementSelector.html">IncrementDecrementSelector&lt;3&gt;</a> bankSelector {bank, {A0, A1}, <a id="a3" name="a3"></a><a class="highlightmember code" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5a08825280e3f8137556325061ba67ff8c">Wrap::Clamp</a>};</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="code hl_class" href="../../db/dbd/classBank.html">Bank&lt;3&gt;</a> bank(4);</div>
+<div class="line"><a id="_a2" name="_a2"></a><a class="code hl_class" href="../../d2/deb/classIncrementDecrementSelector.html">IncrementDecrementSelector&lt;3&gt;</a> bankSelector {bank, {A0, A1}, <a id="a3" name="a3"></a><a class="code hl_enumvalue" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5a08825280e3f8137556325061ba67ff8c">Wrap::Clamp</a>};</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using namespace </span><a class="highlightnamespace code" href="../../da/da6/namespaceMIDI__PC.html">MIDI_PC</a>;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../da/da6/namespaceMIDI__PC.html">MIDI_PC</a>;</div>
 <div class="line"> </div>
-<div class="line"><a id="_a4" name="_a4"></a><a class="highlightclass code" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">Bankable::ManyAddresses::PCButton&lt;3&gt;</a> pcbuttons[] {</div>
+<div class="line"><a id="_a4" name="_a4"></a><a class="code hl_class" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">Bankable::ManyAddresses::PCButton&lt;3&gt;</a> pcbuttons[] {</div>
 <div class="line">  {bank,</div>
 <div class="line">   2, <span class="comment">// pin</span></div>
 <div class="line">   {</div>
-<div class="line">     <a id="a5" name="a5"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#ad841d473a095d11c1f6e67557d9f2c8a">Acoustic_Grand_Piano</a>,</div>
-<div class="line">     <a id="a6" name="a6"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a5eabe35c4965223f8a23619f9d3f75d0">Church_Organ</a>,</div>
-<div class="line">     <a id="a7" name="a7"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a68f5003987b702653f2e57495f8949ac">Acoustic_Guitar_Nylon</a>,</div>
+<div class="line">     <a id="a5" name="a5"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#ad841d473a095d11c1f6e67557d9f2c8a">Acoustic_Grand_Piano</a>,</div>
+<div class="line">     <a id="a6" name="a6"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#a5eabe35c4965223f8a23619f9d3f75d0">Church_Organ</a>,</div>
+<div class="line">     <a id="a7" name="a7"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#a68f5003987b702653f2e57495f8949ac">Acoustic_Guitar_Nylon</a>,</div>
 <div class="line">   }},</div>
 <div class="line">  {bank,</div>
 <div class="line">   3, <span class="comment">// pin</span></div>
 <div class="line">   {</div>
-<div class="line">     <a id="a8" name="a8"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#adafed36cf0e55bd8fed9e4d3da0bbd83">HonkyTonk_Piano</a>,</div>
-<div class="line">     <a id="a9" name="a9"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a2333e468c0f2d1904950e30248870f20">Rock_Organ</a>,</div>
-<div class="line">     <a id="a10" name="a10"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a69009a863cc2fbc2bde441bc36504876">Distortion_Guitar</a>,</div>
+<div class="line">     <a id="a8" name="a8"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#adafed36cf0e55bd8fed9e4d3da0bbd83">HonkyTonk_Piano</a>,</div>
+<div class="line">     <a id="a9" name="a9"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#a2333e468c0f2d1904950e30248870f20">Rock_Organ</a>,</div>
+<div class="line">     <a id="a10" name="a10"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#a69009a863cc2fbc2bde441bc36504876">Distortion_Guitar</a>,</div>
 <div class="line">   }},</div>
 <div class="line">  {bank,</div>
 <div class="line">   4, <span class="comment">// pin</span></div>
 <div class="line">   {</div>
-<div class="line">     <a id="a11" name="a11"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#aeeed840429053748377fab6c75d1c205">Electric_Piano_1</a>,</div>
-<div class="line">     <a id="a12" name="a12"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a265a718b5ef31580e98f81facc21ddd9">Drawbar_Organ</a>,</div>
-<div class="line">     <a id="a13" name="a13"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a0973eb72b8a4715e2d632aaeaaab69a8">Electric_Bass_Pick</a>,</div>
+<div class="line">     <a id="a11" name="a11"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#aeeed840429053748377fab6c75d1c205">Electric_Piano_1</a>,</div>
+<div class="line">     <a id="a12" name="a12"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#a265a718b5ef31580e98f81facc21ddd9">Drawbar_Organ</a>,</div>
+<div class="line">     <a id="a13" name="a13"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#a0973eb72b8a4715e2d632aaeaaab69a8">Electric_Bass_Pick</a>,</div>
 <div class="line">   }},</div>
 <div class="line">  {bank,</div>
 <div class="line">   5, <span class="comment">// pin</span></div>
 <div class="line">   {</div>
-<div class="line">     <a id="a14" name="a14"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a585088b446e465a70d12c8db85e9ded4">Harpsichord</a>,</div>
-<div class="line">     <a id="a15" name="a15"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#ac32c866758b3f14e52632c9e456f6f21">Accordion</a>,</div>
-<div class="line">     <a id="a16" name="a16"></a><a class="highlightmember code" href="../../da/da6/namespaceMIDI__PC.html#a9bfa87492731b615c566b52f91158e7d">Slap_Bass_1</a>,</div>
+<div class="line">     <a id="a14" name="a14"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#a585088b446e465a70d12c8db85e9ded4">Harpsichord</a>,</div>
+<div class="line">     <a id="a15" name="a15"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#ac32c866758b3f14e52632c9e456f6f21">Accordion</a>,</div>
+<div class="line">     <a id="a16" name="a16"></a><a class="code hl_variable" href="../../da/da6/namespaceMIDI__PC.html#a9bfa87492731b615c566b52f91158e7d">Slap_Bass_1</a>,</div>
 <div class="line">   }},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a id="a17" name="a17"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a18" name="a18"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a id="a17" name="a17"></a><a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a18" name="a18"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a19" name="a19"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a19" name="a19"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00286">Control_Surface_Class.cpp:286</a></div></div>

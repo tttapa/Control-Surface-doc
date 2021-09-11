@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Outputs/Abstract/MIDIButtonLatched.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/MIDI_Outputs/Abstract/MIDIButtonLatched.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">4</td>
-            <td class="headerCovTableEntry">18</td>
-            <td class="headerCovTableEntryLo">22.2 %</td>
+            <td class="headerCovTableEntry">3</td>
+            <td class="headerCovTableEntry">17</td>
+            <td class="headerCovTableEntryLo">17.6 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
@@ -87,7 +87,7 @@
 <a name="17"><span class="lineNum">      17 </span>            :  * @see     Button</a>
 <a name="18"><span class="lineNum">      18 </span>            :  */</a>
 <a name="19"><span class="lineNum">      19 </span>            : template &lt;class Sender&gt;</a>
-<a name="20"><span class="lineNum">      20 </span><span class="lineCov">          2 : class MIDIButtonLatched : public MIDIOutputElement {</span></a>
+<a name="20"><span class="lineNum">      20 </span>            : class MIDIButtonLatched : public MIDIOutputElement {</a>
 <a name="21"><span class="lineNum">      21 </span>            :   protected:</a>
 <a name="22"><span class="lineNum">      22 </span>            :     /**</a>
 <a name="23"><span class="lineNum">      23 </span>            :      * @brief   Create a new MIDIButtonLatched object on the given pin and </a>
@@ -101,7 +101,7 @@
 <a name="31"><span class="lineNum">      31 </span>            :      * @param   sender</a>
 <a name="32"><span class="lineNum">      32 </span>            :      *          The MIDI sender to use.</a>
 <a name="33"><span class="lineNum">      33 </span>            :      */</a>
-<a name="34"><span class="lineNum">      34 </span><span class="lineCov">          2 :     MIDIButtonLatched(pin_t pin, MIDIAddress address, const Sender &amp;sender)</span></a>
+<a name="34"><span class="lineNum">      34 </span><span class="lineCov">          4 :     MIDIButtonLatched(pin_t pin, MIDIAddress address, const Sender &amp;sender)</span></a>
 <a name="35"><span class="lineNum">      35 </span><span class="lineCov">          4 :         : button(pin), address(address), sender(sender) {}</span></a>
 <a name="36"><span class="lineNum">      36 </span>            : </a>
 <a name="37"><span class="lineNum">      37 </span>            :   public:</a>

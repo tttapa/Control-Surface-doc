@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Interfaces/USBMIDI_Interface.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/MIDI_Interfaces/USBMIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">10</td>
-            <td class="headerCovTableEntry">11</td>
-            <td class="headerCovTableEntryHi">90.9 %</td>
+            <td class="headerCovTableEntry">8</td>
+            <td class="headerCovTableEntry">9</td>
+            <td class="headerCovTableEntryMed">88.9 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">5</td>
@@ -86,13 +86,13 @@
 <a name="16"><span class="lineNum">      16 </span>            :  *          connection.</a>
 <a name="17"><span class="lineNum">      17 </span>            :  */</a>
 <a name="18"><span class="lineNum">      18 </span>            : template &lt;class Backend&gt;</a>
-<a name="19"><span class="lineNum">      19 </span><span class="lineCov">         29 : class GenericUSBMIDI_Interface : public MIDI_Interface {</span></a>
+<a name="19"><span class="lineNum">      19 </span>            : class GenericUSBMIDI_Interface : public MIDI_Interface {</a>
 <a name="20"><span class="lineNum">      20 </span>            :   public:</a>
 <a name="21"><span class="lineNum">      21 </span>            :     /**</a>
 <a name="22"><span class="lineNum">      22 </span>            :      * @brief   Construct a new GenericUSBMIDI_Interface.</a>
 <a name="23"><span class="lineNum">      23 </span>            :      */</a>
 <a name="24"><span class="lineNum">      24 </span>            :     template &lt;class... Args&gt;</a>
-<a name="25"><span class="lineNum">      25 </span><span class="lineCov">         29 :     GenericUSBMIDI_Interface(Args &amp;&amp;...args)</span></a>
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">         58 :     GenericUSBMIDI_Interface(Args &amp;&amp;...args)</span></a>
 <a name="26"><span class="lineNum">      26 </span><span class="lineCov">         29 :         : backend(std::forward&lt;Args&gt;(args)...),</span></a>
 <a name="27"><span class="lineNum">      27 </span><span class="lineCov">         87 :           alwaysSendImmediately_(backend.preferImmediateSend()) {}</span></a>
 <a name="28"><span class="lineNum">      28 </span>            : </a>
@@ -212,7 +212,7 @@
 <a name="142"><span class="lineNum">     142 </span>            :  * </a>
 <a name="143"><span class="lineNum">     143 </span>            :  * @ingroup MIDIInterfaces</a>
 <a name="144"><span class="lineNum">     144 </span>            :  */</a>
-<a name="145"><span class="lineNum">     145 </span><span class="lineCov">         29 : class USBMIDI_Interface</span></a>
+<a name="145"><span class="lineNum">     145 </span>            : class USBMIDI_Interface</a>
 <a name="146"><span class="lineNum">     146 </span>            :     : public GenericUSBMIDI_Interface&lt;USBDeviceMIDIBackend&gt; {</a>
 <a name="147"><span class="lineNum">     147 </span>            :   public:</a>
 <a name="148"><span class="lineNum">     148 </span><span class="lineCov">         29 :     USBMIDI_Interface() = default;</span></a>

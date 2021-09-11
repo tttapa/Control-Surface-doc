@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">Keyboard-Matrix-BCD.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md118"></a>
+<h1><a class="anchor" id="autotoc_md142"></a>
 Keyboard-Matrix-BCD</h1>
 <p >This examples shows how to use a button matrix to read many switches using a BD to decimal decoder. <br  />
  <a href="https://forum.arduino.cc/index.php?topic=651047">https://forum.arduino.cc/index.php?topic=651047</a></p>
@@ -87,50 +87,50 @@ Keyboard-Matrix-BCD</h1>
 <p>Written by Pieter P, 2019-12-01 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;AH/STL/bitset&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Pick one MIDI interface to use:</span></div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi(115200); <span class="comment">// baud rate, use for easy debugging</span></div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi(115200); <span class="comment">// baud rate, use for easy debugging</span></div>
 <div class="line"><span class="comment">// USBMIDI_Interface midi; // Use for final sketch with MIDI firmware</span></div>
 <div class="line"><span class="comment">// HairlessMIDI_Interface midi; // Use for Hairless Serial &lt;-&gt; MIDI bridge</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Dimensions of the keyboard matrix</span></div>
-<div class="line">constexpr uint8_t rows = 10;</div>
-<div class="line">constexpr uint8_t columns = 8;</div>
+<div class="line"><span class="keyword">constexpr</span> uint8_t rows = 10;</div>
+<div class="line"><span class="keyword">constexpr</span> uint8_t columns = 8;</div>
 <div class="line"> </div>
-<div class="line">static_assert(rows &lt;= 10, <span class="stringliteral">&quot;Error: TC4028 only has 10 outputs&quot;</span>);</div>
+<div class="line"><span class="keyword">static_assert</span>(rows &lt;= 10, <span class="stringliteral">&quot;Error: TC4028 only has 10 outputs&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// The note numbers corresponding to the buttons in the matrix</span></div>
-<div class="line"><span class="keyword">const</span> <a class="highlightmember code" href="../../d0/d4e/Def_8hpp.html#a8d19036d6e886e790453fe10ac9e98e4">AddressMatrix&lt;rows, columns&gt;</a> notes {{</div>
+<div class="line"><span class="keyword">const</span> <a class="code hl_typedef" href="../../d0/d4e/Def_8hpp.html#a8d19036d6e886e790453fe10ac9e98e4">AddressMatrix&lt;rows, columns&gt;</a> notes {{</div>
 <div class="line">  {1, 2, 3, 4, 5, 6, 7, 8},        <span class="comment">//</span></div>
 <div class="line">  {9, 10, 11, 12, 13, 14, 15, 16}, <span class="comment">//</span></div>
 <div class="line">  <span class="comment">// 8 more rows ...</span></div>
 <div class="line">}};</div>
 <div class="line"><span class="comment">// The MIDI channel to use</span></div>
-<div class="line"><span class="keyword">const</span> <a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../d2/d48/classChannel.html">Channel</a> channel = <a id="a2" name="a2"></a><a class="highlightmember code" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>;</div>
+<div class="line"><span class="keyword">const</span> <a id="_a1" name="_a1"></a><a class="code hl_class" href="../../d2/d48/classChannel.html">Channel</a> channel = <a id="a2" name="a2"></a><a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Address pins A, B, C &amp; D of TC4028</span></div>
-<div class="line"><span class="keyword">const</span> <a id="_a3" name="_a3"></a><a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">AH::PinList&lt;4&gt;</a> addressPins {{2, 3, 4, 5}};</div>
+<div class="line"><span class="keyword">const</span> <a id="_a3" name="_a3"></a><a class="code hl_struct" href="../../d0/d32/structAH_1_1Array.html">AH::PinList&lt;4&gt;</a> addressPins {{2, 3, 4, 5}};</div>
 <div class="line"><span class="comment">// The pins connected to the columns of the keyboard matrix (with external</span></div>
 <div class="line"><span class="comment">// pull-down resistors)</span></div>
-<div class="line"><span class="keyword">const</span> <a class="highlightclass code" href="../../d0/d32/structAH_1_1Array.html">AH::PinList&lt;columns&gt;</a> columnPins {{6, 7, 8, 9, 10, 11, 12, 13}};</div>
+<div class="line"><span class="keyword">const</span> <a class="code hl_struct" href="../../d0/d32/structAH_1_1Array.html">AH::PinList&lt;columns&gt;</a> columnPins {{6, 7, 8, 9, 10, 11, 12, 13}};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Make the given line [0, 9] of the TC4028 high, the nine others low</span></div>
 <div class="line"><span class="keywordtype">void</span> selectLine(uint8_t line) {</div>
 <div class="line">  uint8_t mask = 1;</div>
-<div class="line">  <span class="keywordflow">for</span> (<a id="a4" name="a4"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> addressPin : addressPins) {</div>
-<div class="line">    <a id="a5" name="a5"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(addressPin, (line &amp; mask) != 0 ? <a id="a6" name="a6"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a> : <a id="a7" name="a7"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
+<div class="line">  <span class="keywordflow">for</span> (<a id="a4" name="a4"></a><a class="code hl_typedef" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> addressPin : addressPins) {</div>
+<div class="line">    <a id="a5" name="a5"></a><a class="code hl_function" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(addressPin, (line &amp; mask) != 0 ? <a id="a6" name="a6"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a> : <a id="a7" name="a7"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a>);</div>
 <div class="line">    mask &lt;&lt;= 1;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <span class="keywordflow">for</span> (<a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> addressPin : addressPins)</div>
-<div class="line">    <a id="a8" name="a8"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(addressPin, <a id="a9" name="a9"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
-<div class="line">  <span class="keywordflow">for</span> (<a class="highlightmember code" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> columnPin : columnPins)</div>
-<div class="line">    <a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(columnPin, <a id="a10" name="a10"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a17a81136a6c5dbdfbfbc77e8e9027fb1">INPUT</a>);</div>
+<div class="line">  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> addressPin : addressPins)</div>
+<div class="line">    <a id="a8" name="a8"></a><a class="code hl_function" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(addressPin, <a id="a9" name="a9"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
+<div class="line">  <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> columnPin : columnPins)</div>
+<div class="line">    <a class="code hl_function" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(columnPin, <a id="a10" name="a10"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a17a81136a6c5dbdfbfbc77e8e9027fb1">INPUT</a>);</div>
 <div class="line"> </div>
 <div class="line">  midi.begin();</div>
 <div class="line">}</div>
@@ -142,7 +142,7 @@ Keyboard-Matrix-BCD</h1>
 <div class="line">  <span class="keywordflow">for</span> (uint8_t row = 0; row &lt; rows; ++row) {</div>
 <div class="line">    selectLine(row);</div>
 <div class="line">    <span class="keywordflow">for</span> (uint8_t col = 0; col &lt; columns; ++col) {</div>
-<div class="line">      <span class="keywordtype">bool</span> newState = <a id="a11" name="a11"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(columnPins[col]);</div>
+<div class="line">      <span class="keywordtype">bool</span> newState = <a id="a11" name="a11"></a><a class="code hl_function" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(columnPins[col]);</div>
 <div class="line">      uint8_t index = row * columns + col; <span class="comment">// index in the bit array</span></div>
 <div class="line">      <span class="comment">// If the state of the switch changed</span></div>
 <div class="line">      <span class="keywordflow">if</span> (newState != previousStates[index]) {</div>

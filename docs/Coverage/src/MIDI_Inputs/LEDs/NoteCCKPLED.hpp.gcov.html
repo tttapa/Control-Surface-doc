@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Inputs/LEDs/NoteCCKPLED.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/MIDI_Inputs/LEDs/NoteCCKPLED.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">34</td>
-            <td class="headerCovTableEntry">39</td>
-            <td class="headerCovTableEntryMed">87.2 %</td>
+            <td class="headerCovTableEntry">32</td>
+            <td class="headerCovTableEntry">37</td>
+            <td class="headerCovTableEntryMed">86.5 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">10</td>
@@ -87,7 +87,7 @@
 <a name="17"><span class="lineNum">      17 </span>            : ///         - MIDIMessageType::CONTROL_CHANGE</a>
 <a name="18"><span class="lineNum">      18 </span>            : ///         - MIDIMessageType::KEY_PRESSURE</a>
 <a name="19"><span class="lineNum">      19 </span>            : template &lt;MIDIMessageType Type&gt;</a>
-<a name="20"><span class="lineNum">      20 </span><span class="lineCov">          1 : class NoteCCKPLED : public MatchingMIDIInputElement&lt;Type, TwoByteMIDIMatcher&gt; {</span></a>
+<a name="20"><span class="lineNum">      20 </span>            : class NoteCCKPLED : public MatchingMIDIInputElement&lt;Type, TwoByteMIDIMatcher&gt; {</a>
 <a name="21"><span class="lineNum">      21 </span>            :   public:</a>
 <a name="22"><span class="lineNum">      22 </span>            :     using Matcher = TwoByteMIDIMatcher;</a>
 <a name="23"><span class="lineNum">      23 </span>            :     using Parent = MatchingMIDIInputElement&lt;Type, Matcher&gt;;</a>
@@ -159,7 +159,7 @@
 <a name="89"><span class="lineNum">      89 </span>            : /// @tparam BankSize</a>
 <a name="90"><span class="lineNum">      90 </span>            : ///         The number of banks.</a>
 <a name="91"><span class="lineNum">      91 </span>            : template &lt;MIDIMessageType Type, uint8_t BankSize&gt;</a>
-<a name="92"><span class="lineNum">      92 </span><span class="lineCov">          1 : class NoteCCKPLED : public NoteCCKPValue&lt;Type, BankSize&gt; {</span></a>
+<a name="92"><span class="lineNum">      92 </span>            : class NoteCCKPLED : public NoteCCKPValue&lt;Type, BankSize&gt; {</a>
 <a name="93"><span class="lineNum">      93 </span>            :   public:</a>
 <a name="94"><span class="lineNum">      94 </span>            :     using Parent = NoteCCKPValue&lt;Type, BankSize&gt;;</a>
 <a name="95"><span class="lineNum">      95 </span>            :     using Matcher = typename Parent::Matcher;</a>

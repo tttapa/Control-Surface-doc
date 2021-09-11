@@ -94,62 +94,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga7eae7037bf6cdc6bf5d46a11572194db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df7/group__AH__Error.html#ga7eae7037bf6cdc6bf5d46a11572194db">ERROR</a>(msg,  errc)</td></tr>
-<tr class="memdesc:ga7eae7037bf6cdc6bf5d46a11572194db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the error message and error code, and stop the execution if <code>FATAL_ERRORS</code> are enabled.  <a href="../../d0/df7/group__AH__Error.html#ga7eae7037bf6cdc6bf5d46a11572194db">More...</a><br /></td></tr>
-<tr class="separator:ga7eae7037bf6cdc6bf5d46a11572194db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3add19f1f413c0aabde3f5c6fe4230c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a>(msg,  errc)</td></tr>
 <tr class="memdesc:ga3add19f1f413c0aabde3f5c6fe4230c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the error message and error code, and stop the execution.  <a href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">More...</a><br /></td></tr>
 <tr class="separator:ga3add19f1f413c0aabde3f5c6fe4230c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga7eae7037bf6cdc6bf5d46a11572194db" name="ga7eae7037bf6cdc6bf5d46a11572194db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7eae7037bf6cdc6bf5d46a11572194db">&#9670;&nbsp;</a></span>ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ERROR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">msg, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">errc&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        DEBUGFN(msg &lt;&lt; <span class="stringliteral">&quot; (0x&quot;</span> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">hex</a> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">uppercase</a> &lt;&lt; errc &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">dec</a>               \</div>
-<div class="line">                    &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">nouppercase</a> &lt;&lt; <span class="charliteral">&#39;)&#39;</span>);                                    \</div>
-<div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="agroup__AH__PrintStream_html_ga173884f5f11dfa9d228c36522d207e28"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">AH::hex</a></div><div class="ttdeci">Print &amp; hex(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00062">PrintStream.cpp:62</a></div></div>
-<div class="ttc" id="agroup__AH__PrintStream_html_ga37f5b21cf4655f13c367bed9a7dad2f2"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">AH::nouppercase</a></div><div class="ttdeci">Print &amp; nouppercase(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00040">PrintStream.cpp:40</a></div></div>
-<div class="ttc" id="agroup__AH__PrintStream_html_ga451c7a0bc380b8838a49fdbe96a52da0"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">AH::uppercase</a></div><div class="ttdeci">Print &amp; uppercase(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00035">PrintStream.cpp:35</a></div></div>
-<div class="ttc" id="agroup__AH__PrintStream_html_gabe27efcfa5b971f354c562b1fdf14db9"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">AH::dec</a></div><div class="ttdeci">Print &amp; dec(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00077">PrintStream.cpp:77</a></div></div>
-</div><!-- fragment -->
-<p>Print the error message and error code, and stop the execution if <code>FATAL_ERRORS</code> are enabled. </p>
-<p >Otherwise just prints the error.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msg</td><td>The information to print, can contain streaming operators (<code>&lt;&lt;</code>) to print multiple things. </td></tr>
-    <tr><td class="paramname">errc</td><td>A unique error code. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d93/Error_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d1/d93/Error_8hpp_source.html">Error.hpp</a>.</p>
-
-</div>
-</div>
 <a id="ga3add19f1f413c0aabde3f5c6fe4230c6" name="ga3add19f1f413c0aabde3f5c6fe4230c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3add19f1f413c0aabde3f5c6fe4230c6">&#9670;&nbsp;</a></span>FATAL_ERROR</h2>
 
@@ -177,10 +126,14 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">        USING_AH_NAMESPACE;                                                    \</div>
-<div class="line">        DEBUGFN(F(<span class="stringliteral">&quot;Fatal Error: &quot;</span>) &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot; (0x&quot;</span> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">hex</a> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">uppercase</a>        \</div>
-<div class="line">                                   &lt;&lt; errc &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">dec</a> &lt;&lt; <a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">nouppercase</a> &lt;&lt; <span class="charliteral">&#39;)&#39;</span>);      \</div>
+<div class="line">        DEBUGFN(F(<span class="stringliteral">&quot;Fatal Error: &quot;</span>) &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot; (0x&quot;</span> &lt;&lt; <a class="code hl_function" href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">hex</a> &lt;&lt; <a class="code hl_function" href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">uppercase</a>        \</div>
+<div class="line">                                   &lt;&lt; errc &lt;&lt; <a class="code hl_function" href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">dec</a> &lt;&lt; <a class="code hl_function" href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">nouppercase</a> &lt;&lt; <span class="charliteral">&#39;)&#39;</span>);      \</div>
 <div class="line">        fatalErrorExit();                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="agroup__AH__PrintStream_html_ga173884f5f11dfa9d228c36522d207e28"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">AH::hex</a></div><div class="ttdeci">Print &amp; hex(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00062">PrintStream.cpp:62</a></div></div>
+<div class="ttc" id="agroup__AH__PrintStream_html_ga37f5b21cf4655f13c367bed9a7dad2f2"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2">AH::nouppercase</a></div><div class="ttdeci">Print &amp; nouppercase(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00040">PrintStream.cpp:40</a></div></div>
+<div class="ttc" id="agroup__AH__PrintStream_html_ga451c7a0bc380b8838a49fdbe96a52da0"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga451c7a0bc380b8838a49fdbe96a52da0">AH::uppercase</a></div><div class="ttdeci">Print &amp; uppercase(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00035">PrintStream.cpp:35</a></div></div>
+<div class="ttc" id="agroup__AH__PrintStream_html_gabe27efcfa5b971f354c562b1fdf14db9"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">AH::dec</a></div><div class="ttdeci">Print &amp; dec(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00077">PrintStream.cpp:77</a></div></div>
 </div><!-- fragment -->
 <p>Print the error message and error code, and stop the execution. </p>
 <p >Doesn't depend on <code>FATAL_ERRORS</code>, it always stops the execution.</p>

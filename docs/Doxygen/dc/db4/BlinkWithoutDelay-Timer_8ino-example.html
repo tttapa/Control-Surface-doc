@@ -79,28 +79,28 @@ $(function() {
   <div class="headertitle"><div class="title">BlinkWithoutDelay-Timer.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md273"></a>
+<h1><a class="anchor" id="autotoc_md213"></a>
 BlinkWithoutDelay-Timer</h1>
 <p >This examples shows how use the Timer class to blink an LED every second, in a non-blocking fashion (without using delay).</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md274"></a>
+<h2><a class="anchor" id="autotoc_md214"></a>
 Behavior</h2>
 <p >Blinks the built-in LED every second.</p>
 <p >Written by PieterP, 2019-12-06 <br  />
  <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d1/dd0/MillisMicrosTimer_8hpp.html">AH/Timing/MillisMicrosTimer.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d1/dd0/MillisMicrosTimer_8hpp.html">AH/Timing/MillisMicrosTimer.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line">Timer&lt;millis&gt; timer = 500; <span class="comment">// milliseconds</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a id="a0" name="a0"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(LED_BUILTIN, <a id="a1" name="a1"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
+<div class="line">  <a id="a0" name="a0"></a><a class="code hl_function" href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">pinMode</a>(LED_BUILTIN, <a id="a1" name="a1"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#ad01d99486fd89841afe767b337b8dc92">OUTPUT</a>);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  <span class="keywordflow">if</span> (timer) {</div>
-<div class="line">    <a id="a2" name="a2"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a id="a3" name="a3"></a><a class="highlightmember code" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(LED_BUILTIN) ? <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a> : <a id="a5" name="a5"></a><a class="highlightmember code" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
+<div class="line">    <a id="a2" name="a2"></a><a class="code hl_function" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(LED_BUILTIN, <a id="a3" name="a3"></a><a class="code hl_function" href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">digitalRead</a>(LED_BUILTIN) ? <a id="a4" name="a4"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a> : <a id="a5" name="a5"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="aArduino-Hardware-Types_8hpp_html_a05bc6f80bb782de0d489a41bdb652305"><div class="ttname"><a href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a></div><div class="ttdeci">constexpr PinStatus_t LOW</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3c/Arduino-Hardware-Types_8hpp_source.html#l00063">Arduino-Hardware-Types.hpp:63</a></div></div>

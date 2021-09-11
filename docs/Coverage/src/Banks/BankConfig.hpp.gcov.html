@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/Banks/BankConfig.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/Banks/BankConfig.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">9</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">10</td>
@@ -129,8 +129,8 @@
 <a name="59"><span class="lineNum">      59 </span>            :  */</a>
 <a name="60"><span class="lineNum">      60 </span>            : class BaseOutputBankConfig {</a>
 <a name="61"><span class="lineNum">      61 </span>            :   protected:</a>
-<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         26 :     BaseOutputBankConfig(OutputBank &amp;bank, BankType type)</span></a>
-<a name="63"><span class="lineNum">      63 </span><span class="lineCov">         26 :         : bank(bank), type(type) {}</span></a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         27 :     BaseOutputBankConfig(OutputBank &amp;bank, BankType type)</span></a>
+<a name="63"><span class="lineNum">      63 </span><span class="lineCov">         27 :         : bank(bank), type(type) {}</span></a>
 <a name="64"><span class="lineNum">      64 </span>            : </a>
 <a name="65"><span class="lineNum">      65 </span>            :   public:</a>
 <a name="66"><span class="lineNum">      66 </span>            :     template &lt;setting_t N&gt;</a>
@@ -144,8 +144,8 @@
 <a name="74"><span class="lineNum">      74 </span>            : /// @copydoc BaseOutputBankConfig</a>
 <a name="75"><span class="lineNum">      75 </span>            : template &lt;BankType DefaultBankType = BankType::CHANGE_ADDRESS&gt;</a>
 <a name="76"><span class="lineNum">      76 </span>            : struct OutputBankConfig : BaseOutputBankConfig {</a>
-<a name="77"><span class="lineNum">      77 </span><span class="lineCov">         26 :     OutputBankConfig(OutputBank &amp;bank, BankType type = DefaultBankType)</span></a>
-<a name="78"><span class="lineNum">      78 </span><span class="lineCov">         26 :         : BaseOutputBankConfig(bank, type) {}</span></a>
+<a name="77"><span class="lineNum">      77 </span><span class="lineCov">         27 :     OutputBankConfig(OutputBank &amp;bank, BankType type = DefaultBankType)</span></a>
+<a name="78"><span class="lineNum">      78 </span><span class="lineCov">         27 :         : BaseOutputBankConfig(bank, type) {}</span></a>
 <a name="79"><span class="lineNum">      79 </span>            : };</a>
 <a name="80"><span class="lineNum">      80 </span>            : </a>
 <a name="81"><span class="lineNum">      81 </span>            : END_CS_NAMESPACE</a>

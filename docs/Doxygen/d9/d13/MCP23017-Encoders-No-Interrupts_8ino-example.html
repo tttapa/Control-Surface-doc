@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">MCP23017-Encoders-No-Interrupts.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md263"></a>
+<h1><a class="anchor" id="autotoc_md221"></a>
 MCP23017-Encoders-No-Interrupts</h1>
 <p >This example demonstrates the use of MCP23017 I²C port expanders with rotary encoders.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md264"></a>
+<h2><a class="anchor" id="autotoc_md222"></a>
 Connections</h2>
 <ul>
 <li>SDA: MCP23017 SDA</li>
@@ -95,10 +95,10 @@ Connections</h2>
  The built-in pull-up resistors of the MCP23017 will be enabled.</p>
 <p >Make sure that the reset and address pins are all configured correctly (reset to Vcc; A0, A1 and A2 to ground).</p>
 <p >If you need more than one MCP23017 with encoders, you can connect their interrupt pins together. This does result in higher latency, because on average, half of the total number of MCP23017s have to be polled, which is relatively slow, and might lead to missed pulses when using a large number of encoders.</p>
-<h2><a class="anchor" id="autotoc_md265"></a>
+<h2><a class="anchor" id="autotoc_md223"></a>
 Behavior</h2>
 <p >When the position of one of the encoders changes, it is printed to the Serial monitor.</p>
-<h2><a class="anchor" id="autotoc_md266"></a>
+<h2><a class="anchor" id="autotoc_md224"></a>
 Cautions</h2>
 <p >The interrupt pin of the MCP23017 doesn't trigger a hardware interrupt on the Arduino. It's used only to determine whether the Arduino should read the GPIO registers from the MCP23017. <br  />
  If the update function isn't called often enough, you will miss encoder pulses, and the position will be incorrect. <br  />
@@ -106,10 +106,10 @@ Cautions</h2>
 <p >Written by PieterP, 2020-04-06 <br  />
  <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d8/dd2/MCP23017Encoders_8hpp.html">AH/Hardware/MCP23017Encoders.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../dd/d80/PrintStream_8hpp.html">AH/PrintStream/PrintStream.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d8/dd2/MCP23017Encoders_8hpp.html">AH/Hardware/MCP23017Encoders.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dd/d80/PrintStream_8hpp.html">AH/PrintStream/PrintStream.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;Wire.h&gt;</span></div>
 <div class="line"> </div>
@@ -137,7 +137,7 @@ Cautions</h2>
 <div class="line">  <span class="comment">// Check if an encoder position changed and print it</span></div>
 <div class="line">  <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; 8; ++i) {</div>
 <div class="line">    <span class="keywordflow">if</span> (enc.read(i) != prevPositions[i]) {</div>
-<div class="line">      Serial &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;] &quot;</span> &lt;&lt; enc.read(i) &lt;&lt; <a id="a0" name="a0"></a><a class="highlightmember code" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
+<div class="line">      Serial &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;] &quot;</span> &lt;&lt; enc.read(i) &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">endl</a>;</div>
 <div class="line">      prevPositions[i] = enc.read(i);</div>
 <div class="line">    }</div>
 <div class="line">  }</div>

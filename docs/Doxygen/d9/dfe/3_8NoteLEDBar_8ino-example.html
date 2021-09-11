@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">3.NoteLEDBar.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md154"></a>
+<h1><a class="anchor" id="autotoc_md48"></a>
 3.NoteLEDBar</h1>
 <p >This example demonstrates the use of LED bar graphs that respond to incoming MIDI note events. The LEDs are driven by a 74HC595 (or equivalent) shift register.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md155"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -93,20 +93,20 @@ Connections</h2>
 <p >Connect eight LEDs (and series resistors) between the outputs of the shift register and ground.</p>
 <p >Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md156"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
 Behavior</h2>
 <p >If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the LED bar display is turned on, the higher the velocity (the harder you press the key), the more LEDs will turn on.</p>
-<h2><a class="anchor" id="autotoc_md157"></a>
+<h2><a class="anchor" id="autotoc_md51"></a>
 Mapping</h2>
 <p >Route the MIDI output of a MIDI keyboard or from an audio workstation to the Arduino's MIDI input.</p>
 <p >Written by PieterP, 2019-11-25 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="comment">// Include the library</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI Interface to use</span></div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a shift register as output for the LEDs</span></div>
 <div class="line">SPIShiftRegisterOut&lt;8&gt; sreg {</div>
@@ -117,16 +117,16 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a LED bar driver that listens for MIDI Note C4 that drives</span></div>
 <div class="line"><span class="comment">// the LEDs connected to the eight output pins of the shift register</span></div>
-<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteLEDBar&lt;8&gt;</a> leds { sreg.pins(), <a id="a2" name="a2"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4) };</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="code hl_class" href="../../d2/daa/classNoteCCKPLEDBar.html">NoteLEDBar&lt;8&gt;</a> leds { sreg.pins(), <a id="a2" name="a2"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4) };</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Initialize the Control Surface</span></div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a id="a3" name="a3"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a4" name="a4"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">  <a id="a3" name="a3"></a><a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a4" name="a4"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Update the Control Surface</span></div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a5" name="a5"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a5" name="a5"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/*</span></div>

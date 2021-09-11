@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Inputs/MIDIInputElement.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/MIDI_Inputs/MIDIInputElement.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">35</td>
-            <td class="headerCovTableEntry">35</td>
+            <td class="headerCovTableEntry">34</td>
+            <td class="headerCovTableEntry">34</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">76</td>
-            <td class="headerCovTableEntry">126</td>
-            <td class="headerCovTableEntryLo">60.3 %</td>
+            <td class="headerCovTableEntry">73</td>
+            <td class="headerCovTableEntry">111</td>
+            <td class="headerCovTableEntryLo">65.8 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -155,7 +155,7 @@
 <a name="85"><span class="lineNum">      85 </span>            : ///</a>
 <a name="86"><span class="lineNum">      86 </span>            : /// @todo   Pass the MIDI message to the @ref handleUpdate() method.</a>
 <a name="87"><span class="lineNum">      87 </span>            : template &lt;MIDIMessageType Type, class Matcher&gt;</a>
-<a name="88"><span class="lineNum">      88 </span><span class="lineCov">         51 : class MatchingMIDIInputElement : public MIDIInputElement&lt;Type&gt; {</span></a>
+<a name="88"><span class="lineNum">      88 </span>            : class MatchingMIDIInputElement : public MIDIInputElement&lt;Type&gt; {</a>
 <a name="89"><span class="lineNum">      89 </span>            :   protected:</a>
 <a name="90"><span class="lineNum">      90 </span><span class="lineCov">         51 :     MatchingMIDIInputElement(const Matcher &amp;matcher) : matcher(matcher) {}</span></a>
 <a name="91"><span class="lineNum">      91 </span>            : </a>
@@ -188,7 +188,7 @@
 <a name="118"><span class="lineNum">     118 </span>            :   protected:</a>
 <a name="119"><span class="lineNum">     119 </span>            :     /// Create a new BankableMatchingMIDIInputElement object, and add it to the</a>
 <a name="120"><span class="lineNum">     120 </span>            :     /// bank.</a>
-<a name="121"><span class="lineNum">     121 </span><span class="lineCov">         17 :     BankableMatchingMIDIInputElement(const Matcher &amp;matcher)</span></a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineCov">         34 :     BankableMatchingMIDIInputElement(const Matcher &amp;matcher)</span></a>
 <a name="122"><span class="lineNum">     122 </span><span class="lineCov">         34 :         : MatchingMIDIInputElement&lt;Type, Matcher&gt;(matcher) {</span></a>
 <a name="123"><span class="lineNum">     123 </span><span class="lineCov">         17 :         this-&gt;matcher.getBank().add(this);</span></a>
 <a name="124"><span class="lineNum">     124 </span><span class="lineCov">         17 :     }</span></a>

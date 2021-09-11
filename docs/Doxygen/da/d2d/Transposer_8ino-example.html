@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">Transposer.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md66"></a>
+<h1><a class="anchor" id="autotoc_md133"></a>
 Transposer</h1>
 <p >This is an example that demonstrates the use a <a class="el" href="../../da/db8/classTransposer.html" title="Class for transposing the address of NoteButton and other MIDI elements.">Transposer</a> to transpose the note events sent out by <a class="el" href="../../d1/d9f/classNoteButton.html" title="A class of MIDIOutputElements that read the input of a momentary push button or switch,...">NoteButton</a>s.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md67"></a>
+<h2><a class="anchor" id="autotoc_md134"></a>
 Connections</h2>
 <ul>
 <li>2-9: momentary push buttons (to ground) to use as "piano keys"</li>
@@ -91,7 +91,7 @@ Connections</h2>
 <li>11: momentary push button (to ground) to transpose one semitone down</li>
 </ul>
 <p >The internal pull-up resistor for the buttons will be enabled automatically.</p>
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md135"></a>
 Behavior</h2>
 <ul>
 <li>By default, the 8 push buttons on pins 2-9 send MIDI Note events for notes C4 - C5.</li>
@@ -99,42 +99,42 @@ Behavior</h2>
 <li>If you press the push button on pin 11, all notes are transposed one semitone down.</li>
 <li>If you press the push buttons on pins 10 and 11 simultaneously, the transposer resets.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md136"></a>
 Mapping</h2>
 <p >Route the Arduino MIDI port into a synth to play the notes.</p>
 <p >Written by PieterP, 2019-10-26 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a MIDI over USB interface.</span></div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a Transposer that can transpose from one octave down to one</span></div>
 <div class="line"><span class="comment">// octave up</span></div>
-<div class="line"><a id="_a1" name="_a1"></a><a class="highlightclass code" href="../../da/db8/classTransposer.html">Transposer</a>&lt;-12, +12&gt; transposer;</div>
+<div class="line"><a id="_a1" name="_a1"></a><a class="code hl_class" href="../../da/db8/classTransposer.html">Transposer</a>&lt;-12, +12&gt; transposer;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate a Selector to change the transposition</span></div>
-<div class="line"><a id="_a2" name="_a2"></a><a class="highlightclass code" href="../../d2/deb/classIncrementDecrementSelector.html">IncrementDecrementSelector</a>&lt;transposer.<a id="a3" name="a3"></a><a class="highlightmember code" href="../../db/dbd/classBank.html#a41f19b593adce8398d8e0ee60e11b4c0">getNumberOfBanks</a>()&gt; selector {</div>
+<div class="line"><a id="_a2" name="_a2"></a><a class="code hl_class" href="../../d2/deb/classIncrementDecrementSelector.html">IncrementDecrementSelector</a>&lt;transposer.<a id="a3" name="a3"></a><a class="code hl_function" href="../../db/dbd/classBank.html#a41f19b593adce8398d8e0ee60e11b4c0">getNumberOfBanks</a>()&gt; selector {</div>
 <div class="line">  transposer,</div>
 <div class="line">  {10, 11},</div>
-<div class="line">  <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5a08825280e3f8137556325061ba67ff8c">Wrap::Clamp</a>,</div>
+<div class="line">  <a id="a4" name="a4"></a><a class="code hl_enumvalue" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5a08825280e3f8137556325061ba67ff8c">Wrap::Clamp</a>,</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate an array of NoteButton objects</span></div>
-<div class="line"><a id="_a5" name="_a5"></a><a class="highlightclass code" href="../../de/d36/classBankable_1_1NoteButton.html">Bankable::NoteButton</a> buttons[] {</div>
-<div class="line">  {transposer, 2, <a id="a6" name="a6"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)}, {transposer, 3, <a id="a7" name="a7"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#af5d9fc75ec408f3b701c8a6a53b48eed">MIDI_Notes::D</a>(4)},</div>
-<div class="line">  {transposer, 4, <a id="a8" name="a8"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#abeea08ce279b402b780ad083ef08c09e">MIDI_Notes::E</a>(4)}, {transposer, 5, <a id="a9" name="a9"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#a14636a71c9387b851a68d9519b490b37">MIDI_Notes::F_</a>(4)},</div>
-<div class="line">  {transposer, 6, <a id="a10" name="a10"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#a96b1b9498229f65757b410e4377ae384">MIDI_Notes::G</a>(4)}, {transposer, 7, <a id="a11" name="a11"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#ad887f404135f1eee183e6f6e465fca25">MIDI_Notes::A</a>(4)},</div>
-<div class="line">  {transposer, 8, <a id="a12" name="a12"></a><a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#ad4db6c301a5bc503bb0ec5a9645090b0">MIDI_Notes::B</a>(4)}, {transposer, 9, <a class="highlightmember code" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(5)},</div>
+<div class="line"><a id="_a5" name="_a5"></a><a class="code hl_class" href="../../de/d36/classBankable_1_1NoteButton.html">Bankable::NoteButton</a> buttons[] {</div>
+<div class="line">  {transposer, 2, <a id="a6" name="a6"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)}, {transposer, 3, <a id="a7" name="a7"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#af5d9fc75ec408f3b701c8a6a53b48eed">MIDI_Notes::D</a>(4)},</div>
+<div class="line">  {transposer, 4, <a id="a8" name="a8"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#abeea08ce279b402b780ad083ef08c09e">MIDI_Notes::E</a>(4)}, {transposer, 5, <a id="a9" name="a9"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#a14636a71c9387b851a68d9519b490b37">MIDI_Notes::F_</a>(4)},</div>
+<div class="line">  {transposer, 6, <a id="a10" name="a10"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#a96b1b9498229f65757b410e4377ae384">MIDI_Notes::G</a>(4)}, {transposer, 7, <a id="a11" name="a11"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#ad887f404135f1eee183e6f6e465fca25">MIDI_Notes::A</a>(4)},</div>
+<div class="line">  {transposer, 8, <a id="a12" name="a12"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#ad4db6c301a5bc503bb0ec5a9645090b0">MIDI_Notes::B</a>(4)}, {transposer, 9, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(5)},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
-<div class="line">  <a id="a13" name="a13"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a14" name="a14"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
+<div class="line">  <a id="a13" name="a13"></a><a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a14" name="a14"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a15" name="a15"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
+<div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a15" name="a15"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00286">Control_Surface_Class.cpp:286</a></div></div>

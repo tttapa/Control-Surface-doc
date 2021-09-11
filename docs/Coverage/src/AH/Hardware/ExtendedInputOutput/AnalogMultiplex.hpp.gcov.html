@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/AH/Hardware/ExtendedInputOutput/AnalogMultiplex.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/AH/Hardware/ExtendedInputOutput/AnalogMultiplex.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">56</td>
-            <td class="headerCovTableEntry">56</td>
+            <td class="headerCovTableEntry">55</td>
+            <td class="headerCovTableEntry">55</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">20</td>
-            <td class="headerCovTableEntry">39</td>
-            <td class="headerCovTableEntryLo">51.3 %</td>
+            <td class="headerCovTableEntry">27</td>
+            <td class="headerCovTableEntryLo">74.1 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -95,7 +95,7 @@
 <a name="25"><span class="lineNum">      25 </span>            :  * @ingroup AH_ExtIO</a>
 <a name="26"><span class="lineNum">      26 </span>            :  */</a>
 <a name="27"><span class="lineNum">      27 </span>            : template &lt;uint8_t N&gt;</a>
-<a name="28"><span class="lineNum">      28 </span><span class="lineCov">         10 : class AnalogMultiplex : public StaticSizeExtendedIOElement&lt;1 &lt;&lt; N&gt; {</span></a>
+<a name="28"><span class="lineNum">      28 </span>            : class AnalogMultiplex : public StaticSizeExtendedIOElement&lt;1 &lt;&lt; N&gt; {</a>
 <a name="29"><span class="lineNum">      29 </span>            :   public:</a>
 <a name="30"><span class="lineNum">      30 </span>            :     /**</a>
 <a name="31"><span class="lineNum">      31 </span>            :      * @brief   Create a new AnalogMultiplex object on the given pins.</a>
@@ -111,7 +111,7 @@
 <a name="41"><span class="lineNum">      41 </span>            :      *          If you don't need the enable pin, you can use NO_PIN, which is </a>
 <a name="42"><span class="lineNum">      42 </span>            :      *          the default.</a>
 <a name="43"><span class="lineNum">      43 </span>            :      */</a>
-<a name="44"><span class="lineNum">      44 </span><span class="lineCov">         10 :     AnalogMultiplex(pin_t analogPin, const Array&lt;pin_t, N&gt; &amp;addressPins,</span></a>
+<a name="44"><span class="lineNum">      44 </span><span class="lineCov">         20 :     AnalogMultiplex(pin_t analogPin, const Array&lt;pin_t, N&gt; &amp;addressPins,</span></a>
 <a name="45"><span class="lineNum">      45 </span>            :                     pin_t enablePin = NO_PIN)</a>
 <a name="46"><span class="lineNum">      46 </span><span class="lineCov">         20 :         : analogPin(analogPin), addressPins(addressPins), enablePin(enablePin) {</span></a>
 <a name="47"><span class="lineNum">      47 </span><span class="lineCov">         10 :     }</span></a>

@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">MCU-OLED-SSD1306.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md183"></a>
+<h1><a class="anchor" id="autotoc_md75"></a>
 MCU-OLED-SSD1306</h1>
 <p >An example demonstrating the use of <a class="el" href="../../d8/d43/classDisplayElement.html" title="An interface for elements that draw to a display.">DisplayElement</a>s to display information from the DAW on a small OLED display.</p>
 <dl class="section user"><dt>Boards:</dt><dd>Mega, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md184"></a>
+<h2><a class="anchor" id="autotoc_md76"></a>
 Connections</h2>
 <ul>
 <li>5: Push button (to ground)</li>
@@ -96,14 +96,14 @@ Connections</h2>
 <p >Add a capacitor between the reset pin of the display and ground, and a resistor from reset to 3.3V. The values are not critical, 0.1µF and 10kΩ work fine. <br  />
  You do need some way to reset the display, without it, it won't work. <br  />
  Alternatively, you could use an IO pin from the Teensy to reset the display, but this just "wastes" a pin.</p>
-<h2><a class="anchor" id="autotoc_md185"></a>
+<h2><a class="anchor" id="autotoc_md77"></a>
 Behavior</h2>
 <ul>
 <li>The time (bars, beats, fraction), play and record status are shown at the top of the display.</li>
 <li>For each of the 8 first tracks, a VU level meter with peak indicator and a V-Pot ring showing the pan are displayed, as well as the the mute, solo and record arm status.</li>
 <li>Two tracks are displayed at once. By pressing the push buttons connected to pins 5 and 6, you can cycle through four banks to display all 8 tracks.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md186"></a>
+<h2><a class="anchor" id="autotoc_md78"></a>
 Mapping</h2>
 <p >Map "Control Surface" as a Mackie Control Universal unit in your DAW.</p>
 <dl class="section note"><dt>Note</dt><dd>There seem to be some differences in the way some applications handle VU meters: some expect the hardware to decay automatically, some don't. <br  />
@@ -111,9 +111,9 @@ Mapping</h2>
 <p>Written by PieterP, 2019-11-12 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span> <span class="comment">// Include the Control Surface library</span></div>
 <div class="line"><span class="comment">// Include the display interface you&#39;d like to use</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="highlightfile code" href="../../d3/d62/DisplayInterfaceSSD1306_8hpp.html">Display/DisplayInterfaces/DisplayInterfaceSSD1306.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d3/d62/DisplayInterfaceSSD1306_8hpp.html">Display/DisplayInterfaces/DisplayInterfaceSSD1306.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ----------------------------- MIDI Interface ----------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
@@ -122,7 +122,7 @@ Mapping</h2>
 <div class="line"><span class="comment">   Instantiate a MIDI interface to use for the Control Surface.</span></div>
 <div class="line"><span class="comment">*/</span></div>
 <div class="line"> </div>
-<div class="line"><a id="_a0" name="_a0"></a><a class="highlightclass code" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
+<div class="line"><a id="_a0" name="_a0"></a><a class="code hl_class" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
 <div class="line"><span class="comment">// USBDebugMIDI_Interface midi(115200);</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ----------------------------- Display setup ------------------------------ //</span></div>
@@ -132,14 +132,14 @@ Mapping</h2>
 <div class="line"><span class="comment">   Instantiate and initialize the SSD1306 OLED display</span></div>
 <div class="line"><span class="comment">*/</span></div>
 <div class="line"> </div>
-<div class="line">constexpr uint8_t SCREEN_WIDTH = 128;</div>
-<div class="line">constexpr uint8_t SCREEN_HEIGHT = 64;</div>
+<div class="line"><span class="keyword">constexpr</span> uint8_t SCREEN_WIDTH = 128;</div>
+<div class="line"><span class="keyword">constexpr</span> uint8_t SCREEN_HEIGHT = 64;</div>
 <div class="line"> </div>
-<div class="line">constexpr int8_t OLED_DC = 17;    <span class="comment">// Data/Command pin of the display</span></div>
-<div class="line">constexpr int8_t OLED_reset = -1; <span class="comment">// Use the external RC circuit for reset</span></div>
-<div class="line">constexpr int8_t OLED_CS = 10;    <span class="comment">// Chip Select pin of the display</span></div>
+<div class="line"><span class="keyword">constexpr</span> int8_t OLED_DC = 17;    <span class="comment">// Data/Command pin of the display</span></div>
+<div class="line"><span class="keyword">constexpr</span> int8_t OLED_reset = -1; <span class="comment">// Use the external RC circuit for reset</span></div>
+<div class="line"><span class="keyword">constexpr</span> int8_t OLED_CS = 10;    <span class="comment">// Chip Select pin of the display</span></div>
 <div class="line"> </div>
-<div class="line">constexpr uint32_t SPI_Frequency = <a id="a1" name="a1"></a><a class="highlightmember code" href="../../dc/d69/namespaceAH.html#a5b86686a1a39f3bd4c50998dc17706e6">SPI_MAX_SPEED</a>;</div>
+<div class="line"><span class="keyword">constexpr</span> uint32_t SPI_Frequency = <a id="a1" name="a1"></a><a class="code hl_variable" href="../../dc/d69/namespaceAH.html#a5b86686a1a39f3bd4c50998dc17706e6">SPI_MAX_SPEED</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate the displays</span></div>
 <div class="line">Adafruit_SSD1306 ssd1306Display {</div>
@@ -152,21 +152,21 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Implement the display interface, specifically, the begin and drawBackground</span></div>
 <div class="line"><span class="comment">// methods.</span></div>
-<div class="line"><span class="keyword">class </span>MySSD1306_DisplayInterface : <span class="keyword">public</span> <a id="_a2" name="_a2"></a><a class="highlightclass code" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a> {</div>
+<div class="line"><span class="keyword">class </span>MySSD1306_DisplayInterface : <span class="keyword">public</span> <a id="_a2" name="_a2"></a><a class="code hl_class" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a> {</div>
 <div class="line"> <span class="keyword">public</span>:</div>
 <div class="line">  MySSD1306_DisplayInterface(Adafruit_SSD1306 &amp;display)</div>
-<div class="line">    : <a class="highlightclass code" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a>(display) {}</div>
+<div class="line">    : <a class="code hl_class" href="../../dc/ddd/classSSD1306__DisplayInterface.html">SSD1306_DisplayInterface</a>(display) {}</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">void</span> <a id="a3" name="a3"></a><a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>()<span class="keyword"> override </span>{</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a3" name="a3"></a><a class="code hl_function" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>()<span class="keyword"> override </span>{</div>
 <div class="line">    <span class="comment">// Initialize the Adafruit_SSD1306 display</span></div>
 <div class="line">    <span class="keywordflow">if</span> (!disp.begin())</div>
-<div class="line">      <a id="a4" name="a4"></a><a class="highlightmember code" href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a>(F(<span class="stringliteral">&quot;SSD1306 allocation failed.&quot;</span>), 0x1306);</div>
+<div class="line">      <a id="a4" name="a4"></a><a class="code hl_define" href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a>(F(<span class="stringliteral">&quot;SSD1306 allocation failed.&quot;</span>), 0x1306);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// If you override the begin method, remember to call the super class method</span></div>
-<div class="line">    <a class="highlightmember code" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">SSD1306_DisplayInterface::begin</a>();</div>
+<div class="line">    <a class="code hl_function" href="../../df/d42/classDisplayInterface.html#ab0bdf5cca484fb2ba637c39384b27fb2">SSD1306_DisplayInterface::begin</a>();</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">void</span> <a id="a5" name="a5"></a><a class="highlightmember code" href="../../dc/ddd/classSSD1306__DisplayInterface.html#a457c950a3ecc382e18887aeb4684b6d7">drawBackground</a>()<span class="keyword"> override </span>{ disp.drawLine(1, 8, 126, 8, WHITE); }</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a5" name="a5"></a><a class="code hl_function" href="../../dc/ddd/classSSD1306__DisplayInterface.html#a457c950a3ecc382e18887aeb4684b6d7">drawBackground</a>()<span class="keyword"> override </span>{ disp.drawLine(1, 8, 126, 8, WHITE); }</div>
 <div class="line"> </div>
 <div class="line">} display = ssd1306Display;</div>
 <div class="line"> </div>
@@ -177,10 +177,10 @@ Mapping</h2>
 <div class="line"><span class="comment">   Create a bank and a bank selector to change its setting.</span></div>
 <div class="line"><span class="comment">*/</span></div>
 <div class="line"> </div>
-<div class="line"><a id="_a6" name="_a6"></a><a class="highlightclass code" href="../../db/dbd/classBank.html">Bank&lt;4&gt;</a> bank(2); <span class="comment">// Create a new bank with two tracks per bank</span></div>
+<div class="line"><a id="_a6" name="_a6"></a><a class="code hl_class" href="../../db/dbd/classBank.html">Bank&lt;4&gt;</a> bank(2); <span class="comment">// Create a new bank with two tracks per bank</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a new bank selector to control the bank using two push buttons</span></div>
-<div class="line"><a id="_a7" name="_a7"></a><a class="highlightclass code" href="../../d2/deb/classIncrementDecrementSelector.html">IncrementDecrementSelector&lt;4&gt;</a> bankselector {bank, {5, 6}, <a id="a8" name="a8"></a><a class="highlightmember code" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d">Wrap::Wrap</a>};</div>
+<div class="line"><a id="_a7" name="_a7"></a><a class="code hl_class" href="../../d2/deb/classIncrementDecrementSelector.html">IncrementDecrementSelector&lt;4&gt;</a> bankselector {bank, {5, 6}, <a id="a8" name="a8"></a><a class="code hl_enumvalue" href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d">Wrap::Wrap</a>};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// -------------------------- MIDI Input Elements --------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
@@ -190,40 +190,40 @@ Mapping</h2>
 <div class="line"><span class="comment">*/</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Time display keeps track of the bar counter</span></div>
-<div class="line"><a id="_a9" name="_a9"></a><a class="highlightclass code" href="../../df/d69/classMCU_1_1TimeDisplay.html">MCU::TimeDisplay</a> timedisplay {};</div>
+<div class="line"><a id="_a9" name="_a9"></a><a class="code hl_class" href="../../df/d69/classMCU_1_1TimeDisplay.html">MCU::TimeDisplay</a> timedisplay {};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Play / Record</span></div>
-<div class="line"><a id="_a10" name="_a10"></a><a class="highlightclass code" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> play {<a id="a11" name="a11"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gacd0b058058b294bbf6a66e264f33a245">MCU::PLAY</a>};</div>
-<div class="line"><a class="highlightclass code" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> record {<a id="a12" name="a12"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga726a60f27a37ce931fdb214045a4ad22">MCU::RECORD</a>};</div>
+<div class="line"><a id="_a10" name="_a10"></a><a class="code hl_class" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> play {<a id="a11" name="a11"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#gacd0b058058b294bbf6a66e264f33a245">MCU::PLAY</a>};</div>
+<div class="line"><a class="code hl_class" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> record {<a id="a12" name="a12"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#ga726a60f27a37ce931fdb214045a4ad22">MCU::RECORD</a>};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Mute</span></div>
-<div class="line"><a id="_a13" name="_a13"></a><a class="highlightclass code" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html">Bankable::NoteValue&lt;4&gt;</a> mute[] {</div>
-<div class="line">  {bank, <a id="a14" name="a14"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga27cc272df01266b9b6fdb70d36caf68b">MCU::MUTE_1</a>},</div>
-<div class="line">  {bank, <a id="a15" name="a15"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gaeaa52eb7707bae35acd089d691fc899f">MCU::MUTE_2</a>},</div>
+<div class="line"><a id="_a13" name="_a13"></a><a class="code hl_class" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html">Bankable::NoteValue&lt;4&gt;</a> mute[] {</div>
+<div class="line">  {bank, <a id="a14" name="a14"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#ga27cc272df01266b9b6fdb70d36caf68b">MCU::MUTE_1</a>},</div>
+<div class="line">  {bank, <a id="a15" name="a15"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#gaeaa52eb7707bae35acd089d691fc899f">MCU::MUTE_2</a>},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Solo</span></div>
-<div class="line"><a class="highlightclass code" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html">Bankable::NoteValue&lt;4&gt;</a> solo[] {</div>
-<div class="line">  {bank, <a id="a16" name="a16"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga9e2c5de3ddf0b4e3539704d71edca56a">MCU::SOLO_1</a>},</div>
-<div class="line">  {bank, <a id="a17" name="a17"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga9aa1347271e1b5e3501845c389a90285">MCU::SOLO_2</a>},</div>
+<div class="line"><a class="code hl_class" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html">Bankable::NoteValue&lt;4&gt;</a> solo[] {</div>
+<div class="line">  {bank, <a id="a16" name="a16"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#ga9e2c5de3ddf0b4e3539704d71edca56a">MCU::SOLO_1</a>},</div>
+<div class="line">  {bank, <a id="a17" name="a17"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#ga9aa1347271e1b5e3501845c389a90285">MCU::SOLO_2</a>},</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><a class="highlightclass code" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> rudeSolo {<a id="a18" name="a18"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#gae147a38ed616a3a525fe30fc0a05e436">MCU::RUDE_SOLO</a>};</div>
+<div class="line"><a class="code hl_class" href="../../d6/d45/classNoteCCKPValue.html">NoteValue</a> rudeSolo {<a id="a18" name="a18"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#gae147a38ed616a3a525fe30fc0a05e436">MCU::RUDE_SOLO</a>};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Record arm / ready</span></div>
-<div class="line"><a class="highlightclass code" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html">Bankable::NoteValue&lt;4&gt;</a> recrdy[] {</div>
-<div class="line">  {bank, <a id="a19" name="a19"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga6907b373b87e288cf7325fd42a6d08d8">MCU::REC_RDY_1</a>},</div>
-<div class="line">  {bank, <a id="a20" name="a20"></a><a class="highlightmember code" href="../../de/d44/group__MCU__Notes.html#ga61b4b1710979dd8d347831cc86f35c22">MCU::REC_RDY_2</a>},</div>
+<div class="line"><a class="code hl_class" href="../../d5/dcd/classBankable_1_1NoteCCKPValue.html">Bankable::NoteValue&lt;4&gt;</a> recrdy[] {</div>
+<div class="line">  {bank, <a id="a19" name="a19"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#ga6907b373b87e288cf7325fd42a6d08d8">MCU::REC_RDY_1</a>},</div>
+<div class="line">  {bank, <a id="a20" name="a20"></a><a class="code hl_variable" href="../../de/d44/group__MCU__Notes.html#ga61b4b1710979dd8d347831cc86f35c22">MCU::REC_RDY_2</a>},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// VU meters</span></div>
-<div class="line"><a id="_a21" name="_a21"></a><a class="highlightclass code" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html">MCU::Bankable::VU&lt;4&gt;</a> vu[] {</div>
-<div class="line">  {bank, 1, <a id="a22" name="a22"></a><a class="highlightmember code" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da">MCU::VUDecay::Hold</a>},</div>
-<div class="line">  {bank, 2, <a class="highlightmember code" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da">MCU::VUDecay::Hold</a>},</div>
+<div class="line"><a id="_a21" name="_a21"></a><a class="code hl_class" href="../../d0/d43/classMCU_1_1Bankable_1_1VU.html">MCU::Bankable::VU&lt;4&gt;</a> vu[] {</div>
+<div class="line">  {bank, 1, <a id="a22" name="a22"></a><a class="code hl_variable" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da">MCU::VUDecay::Hold</a>},</div>
+<div class="line">  {bank, 2, <a class="code hl_variable" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da">MCU::VUDecay::Hold</a>},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// VPot rings</span></div>
-<div class="line"><a id="_a23" name="_a23"></a><a class="highlightclass code" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html">MCU::Bankable::VPotRing&lt;4&gt;</a> vpot[] {</div>
+<div class="line"><a id="_a23" name="_a23"></a><a class="code hl_class" href="../../da/d93/classMCU_1_1Bankable_1_1VPotRing.html">MCU::Bankable::VPotRing&lt;4&gt;</a> vpot[] {</div>
 <div class="line">  {bank, 1},</div>
 <div class="line">  {bank, 2},</div>
 <div class="line">};</div>
@@ -236,56 +236,56 @@ Mapping</h2>
 <div class="line"><span class="comment">*/</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Time display</span></div>
-<div class="line"><a id="_a24" name="_a24"></a><a class="highlightclass code" href="../../d1/dc8/classMCU_1_1TimeDisplayDisplay.html">MCU::TimeDisplayDisplay</a> timedisplaydisplay {</div>
+<div class="line"><a id="_a24" name="_a24"></a><a class="code hl_class" href="../../d1/dc8/classMCU_1_1TimeDisplayDisplay.html">MCU::TimeDisplayDisplay</a> timedisplaydisplay {</div>
 <div class="line">  <span class="comment">// position (0, 0), font size (1)</span></div>
 <div class="line">  display, timedisplay, {0, 0}, 1, WHITE,</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Play / Record</span></div>
-<div class="line"><a id="_a25" name="_a25"></a><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> playDisp {</div>
-<div class="line">  display, play, <a id="a26" name="a26"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#aa28e5ef512363d18ca772ca64e75abd7">XBM::play_7</a>, {16 + 64, 0}, WHITE,</div>
+<div class="line"><a id="_a25" name="_a25"></a><a class="code hl_class" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> playDisp {</div>
+<div class="line">  display, play, <a id="a26" name="a26"></a><a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#aa28e5ef512363d18ca772ca64e75abd7">XBM::play_7</a>, {16 + 64, 0}, WHITE,</div>
 <div class="line">};</div>
-<div class="line"><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> recordDisp {</div>
-<div class="line">  display, record, <a id="a27" name="a27"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a237653bbce4d249496303640b5a2fc82">XBM::record_7</a>, {26 + 64, 0}, WHITE,</div>
+<div class="line"><a class="code hl_class" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> recordDisp {</div>
+<div class="line">  display, record, <a id="a27" name="a27"></a><a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#a237653bbce4d249496303640b5a2fc82">XBM::record_7</a>, {26 + 64, 0}, WHITE,</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Mute</span></div>
-<div class="line"><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> muteDisp[] {</div>
-<div class="line">  {display, mute[0], <a id="a28" name="a28"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#af80b0dcac67be65a07680532d371e972">XBM::mute_10B</a>, {14, 50}, WHITE},</div>
-<div class="line">  {display, mute[1], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#af80b0dcac67be65a07680532d371e972">XBM::mute_10B</a>, {14 + 64, 50}, WHITE},</div>
+<div class="line"><a class="code hl_class" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> muteDisp[] {</div>
+<div class="line">  {display, mute[0], <a id="a28" name="a28"></a><a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#af80b0dcac67be65a07680532d371e972">XBM::mute_10B</a>, {14, 50}, WHITE},</div>
+<div class="line">  {display, mute[1], <a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#af80b0dcac67be65a07680532d371e972">XBM::mute_10B</a>, {14 + 64, 50}, WHITE},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Solo</span></div>
-<div class="line"><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> soloDisp[] {</div>
-<div class="line">  {display, solo[0], <a id="a29" name="a29"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#ae119186147d947301f05ce6f36651fd1">XBM::solo_10B</a>, {14, 50}, WHITE},</div>
-<div class="line">  {display, solo[1], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#ae119186147d947301f05ce6f36651fd1">XBM::solo_10B</a>, {14 + 64, 50}, WHITE},</div>
+<div class="line"><a class="code hl_class" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> soloDisp[] {</div>
+<div class="line">  {display, solo[0], <a id="a29" name="a29"></a><a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#ae119186147d947301f05ce6f36651fd1">XBM::solo_10B</a>, {14, 50}, WHITE},</div>
+<div class="line">  {display, solo[1], <a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#ae119186147d947301f05ce6f36651fd1">XBM::solo_10B</a>, {14 + 64, 50}, WHITE},</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> rudeSoloDisp {</div>
-<div class="line">  display, rudeSolo, <a id="a30" name="a30"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63">XBM::solo_7</a>, {36 + 64, 0}, WHITE};</div>
+<div class="line"><a class="code hl_class" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> rudeSoloDisp {</div>
+<div class="line">  display, rudeSolo, <a id="a30" name="a30"></a><a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63">XBM::solo_7</a>, {36 + 64, 0}, WHITE};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Record arm / ready</span></div>
-<div class="line"><a class="highlightclass code" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> recrdyDisp[] {</div>
-<div class="line">  {display, recrdy[0], <a id="a31" name="a31"></a><a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a6b5183dce52c33f39df380ec3341b678">XBM::rec_rdy_10B</a>, {14 + 14, 50}, WHITE},</div>
-<div class="line">  {display, recrdy[1], <a class="highlightmember code" href="../../dd/d93/namespaceXBM.html#a6b5183dce52c33f39df380ec3341b678">XBM::rec_rdy_10B</a>, {14 + 14 + 64, 50}, WHITE},</div>
+<div class="line"><a class="code hl_class" href="../../da/dce/classBitmapDisplay.html">BitmapDisplay&lt;&gt;</a> recrdyDisp[] {</div>
+<div class="line">  {display, recrdy[0], <a id="a31" name="a31"></a><a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#a6b5183dce52c33f39df380ec3341b678">XBM::rec_rdy_10B</a>, {14 + 14, 50}, WHITE},</div>
+<div class="line">  {display, recrdy[1], <a class="code hl_variable" href="../../dd/d93/namespaceXBM.html#a6b5183dce52c33f39df380ec3341b678">XBM::rec_rdy_10B</a>, {14 + 14 + 64, 50}, WHITE},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// VU meters</span></div>
-<div class="line"><a id="_a32" name="_a32"></a><a class="highlightclass code" href="../../d4/d42/classMCU_1_1VUDisplay.html">MCU::VUDisplay&lt;&gt;</a> vuDisp[] {</div>
+<div class="line"><a id="_a32" name="_a32"></a><a class="code hl_class" href="../../d4/d42/classMCU_1_1VUDisplay.html">MCU::VUDisplay&lt;&gt;</a> vuDisp[] {</div>
 <div class="line">  <span class="comment">// position (32+11, 60), width (16), bar height (3) px, bar spacing (1) px</span></div>
 <div class="line">  {display, vu[0], {32 + 11, 60}, 16, 3, 1, WHITE},</div>
 <div class="line">  {display, vu[1], {32 + 11 + 64, 60}, 16, 3, 1, WHITE},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// VPot rings</span></div>
-<div class="line"><a id="_a33" name="_a33"></a><a class="highlightclass code" href="../../d3/d98/classMCU_1_1VPotDisplay.html">MCU::VPotDisplay&lt;&gt;</a> vpotDisp[] {</div>
+<div class="line"><a id="_a33" name="_a33"></a><a class="code hl_class" href="../../d3/d98/classMCU_1_1VPotDisplay.html">MCU::VPotDisplay&lt;&gt;</a> vpotDisp[] {</div>
 <div class="line">  <span class="comment">// position (0, 10), outer radius (16) px, inner radius (13) px</span></div>
 <div class="line">  {display, vpot[0], {0, 10}, 16, 13, WHITE},</div>
 <div class="line">  {display, vpot[1], {64, 10}, 16, 13, WHITE},</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Bank seting</span></div>
-<div class="line"><a id="_a34" name="_a34"></a><a class="highlightclass code" href="../../d6/dc4/classBankDisplay.html">BankDisplay</a> bankDisp[] {</div>
+<div class="line"><a id="_a34" name="_a34"></a><a class="code hl_class" href="../../d6/dc4/classBankDisplay.html">BankDisplay</a> bankDisp[] {</div>
 <div class="line">  <span class="comment">// first track of the bank (1), position (0, 50), font size (2)</span></div>
 <div class="line">  {display, bank, 1, {0, 50}, 2, WHITE},</div>
 <div class="line">  {display, bank, 2, {64, 50}, 2, WHITE},</div>
@@ -296,15 +296,15 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <span class="comment">// Correct relative mode for MCU rotary encoders</span></div>
-<div class="line">  <a id="a35" name="a35"></a><a class="highlightmember code" href="../../d3/dd0/classRelativeCCSender.html#a0b9837f163967bb06206d3144de73eb9">RelativeCCSender::setMode</a>(<a id="a36" name="a36"></a><a class="highlightmember code" href="../../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dafb57df7f09c11569e6325f0250664288">MACKIE_CONTROL_RELATIVE</a>);</div>
-<div class="line">  <a id="a37" name="a37"></a><a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a38" name="a38"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
+<div class="line">  <a id="a35" name="a35"></a><a class="code hl_function" href="../../d3/dd0/classRelativeCCSender.html#a0b9837f163967bb06206d3144de73eb9">RelativeCCSender::setMode</a>(<a id="a36" name="a36"></a><a class="code hl_enumvalue" href="../../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dafb57df7f09c11569e6325f0250664288">MACKIE_CONTROL_RELATIVE</a>);</div>
+<div class="line">  <a id="a37" name="a37"></a><a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a38" name="a38"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); <span class="comment">// Initialize Control Surface</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ---------------------------------- Loop ---------------------------------- //</span></div>
 <div class="line"><span class="comment">// ========================================================================== //</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="highlightmember code" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a39" name="a39"></a><a class="highlightmember code" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Refresh all elements</span></div>
+<div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a39" name="a39"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Refresh all elements</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00286">Control_Surface_Class.cpp:286</a></div></div>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ad7256154900f809aed827a91db20e20376023b9 - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
+  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ad7256154900f809aed827a91db20e20376023b9</td>
+            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">68</td>
-            <td class="headerCovTableEntry">97</td>
-            <td class="headerCovTableEntryLo">70.1 %</td>
+            <td class="headerCovTableEntry">66</td>
+            <td class="headerCovTableEntry">95</td>
+            <td class="headerCovTableEntryLo">69.5 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-08-14 15:23:34</td>
+            <td class="headerValue">2021-09-11 14:11:07</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">30</td>
@@ -221,7 +221,7 @@
 <a name="151"><span class="lineNum">     151 </span>            :  * </a>
 <a name="152"><span class="lineNum">     152 </span>            :  * @ingroup MIDIInputElements</a>
 <a name="153"><span class="lineNum">     153 </span>            :  */</a>
-<a name="154"><span class="lineNum">     154 </span><span class="lineCov">          1 : class VPotRing</span></a>
+<a name="154"><span class="lineNum">     154 </span>            : class VPotRing</a>
 <a name="155"><span class="lineNum">     155 </span>            :     : public MatchingMIDIInputElement&lt;MIDIMessageType::CONTROL_CHANGE,</a>
 <a name="156"><span class="lineNum">     156 </span>            :                                       VPotMatcher&gt;,</a>
 <a name="157"><span class="lineNum">     157 </span>            :       public Interfaces::MCU::IVPot {</a>
@@ -239,7 +239,7 @@
 <a name="169"><span class="lineNum">     169 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
 <a name="170"><span class="lineNum">     170 </span>            :      *          [CABLE_1, CABLE_16].</a>
 <a name="171"><span class="lineNum">     171 </span>            :      */</a>
-<a name="172"><span class="lineNum">     172 </span><span class="lineCov">          1 :     VPotRing(uint8_t track, MIDIChannelCable channelCN = CHANNEL_1)</span></a>
+<a name="172"><span class="lineNum">     172 </span><span class="lineCov">          2 :     VPotRing(uint8_t track, MIDIChannelCable channelCN = CHANNEL_1)</span></a>
 <a name="173"><span class="lineNum">     173 </span><span class="lineCov">          2 :         : Parent({track, channelCN}) {}</span></a>
 <a name="174"><span class="lineNum">     174 </span>            : </a>
 <a name="175"><span class="lineNum">     175 </span>            :   protected:</a>
@@ -304,7 +304,7 @@
 <a name="234"><span class="lineNum">     234 </span>            :  * @ingroup BankableMIDIInputElements</a>
 <a name="235"><span class="lineNum">     235 </span>            :  */</a>
 <a name="236"><span class="lineNum">     236 </span>            : template &lt;uint8_t BankSize&gt;</a>
-<a name="237"><span class="lineNum">     237 </span><span class="lineCov">          4 : class VPotRing</span></a>
+<a name="237"><span class="lineNum">     237 </span>            : class VPotRing</a>
 <a name="238"><span class="lineNum">     238 </span>            :     : public BankableMatchingMIDIInputElement&lt;MIDIMessageType::CONTROL_CHANGE,</a>
 <a name="239"><span class="lineNum">     239 </span>            :                                               BankableVPotMatcher&lt;BankSize&gt;&gt;,</a>
 <a name="240"><span class="lineNum">     240 </span>            :       public Interfaces::MCU::IVPot {</a>
@@ -325,7 +325,7 @@
 <a name="255"><span class="lineNum">     255 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
 <a name="256"><span class="lineNum">     256 </span>            :      *          [CABLE_1, CABLE_16].</a>
 <a name="257"><span class="lineNum">     257 </span>            :      */</a>
-<a name="258"><span class="lineNum">     258 </span><span class="lineCov">          4 :     VPotRing(BankConfig&lt;BankSize&gt; config, uint8_t track,</span></a>
+<a name="258"><span class="lineNum">     258 </span><span class="lineCov">          8 :     VPotRing(BankConfig&lt;BankSize&gt; config, uint8_t track,</span></a>
 <a name="259"><span class="lineNum">     259 </span>            :              MIDIChannelCable channelCN = CHANNEL_1)</a>
 <a name="260"><span class="lineNum">     260 </span><span class="lineCov">         12 :         : Parent({config, track, channelCN}) {}</span></a>
 <a name="261"><span class="lineNum">     261 </span>            : </a>
