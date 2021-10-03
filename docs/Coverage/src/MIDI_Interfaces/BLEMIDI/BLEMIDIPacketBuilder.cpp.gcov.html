@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - dce224254e14bf80e504014489b73d15ebe2beca - src/MIDI_Interfaces/BLEMIDI/BLEMIDIPacketBuilder.cpp</title>
+  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/MIDI_Interfaces/BLEMIDI/BLEMIDIPacketBuilder.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">dce224254e14bf80e504014489b73d15ebe2beca</td>
+            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">105</td>
-            <td class="headerCovTableEntry">107</td>
-            <td class="headerCovTableEntryHi">98.1 %</td>
+            <td class="headerCovTableEntry">109</td>
+            <td class="headerCovTableEntry">109</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-09-11 14:11:07</td>
+            <td class="headerValue">2021-10-03 14:57:10</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">11</td>
@@ -120,12 +120,12 @@
 <a name="50"><span class="lineNum">      50 </span><span class="lineCov">         63 :     runningHeader = 0;</span></a>
 <a name="51"><span class="lineNum">      51 </span><span class="lineCov">         63 : }</span></a>
 <a name="52"><span class="lineNum">      52 </span>            : </a>
-<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         84 : void BLEMIDIPacketBuilder::setCapacity(uint16_t capacity) {</span></a>
-<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         84 :     if (capacity &lt; 5)</span></a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineNoCov">          0 :         ERROR(F(&quot;capacity less than 5 bytes&quot;), 0x2005);</span></a>
-<a name="56"><span class="lineNum">      56 </span><span class="lineCov">         84 :     buffer.shrink_to_fit();</span></a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         84 :     buffer.reserve(capacity);</span></a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         84 : }</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         86 : void BLEMIDIPacketBuilder::setCapacity(uint16_t capacity) {</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">         86 :     if (capacity &lt; 5)</span></a>
+<a name="55"><span class="lineNum">      55 </span>            :         ERROR(F(&quot;capacity less than 5 bytes&quot;), 0x2005); // LCOV_EXCL_LINE</a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineCov">         86 :     buffer.shrink_to_fit();</span></a>
+<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         86 :     buffer.reserve(capacity);</span></a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         86 : }</span></a>
 <a name="59"><span class="lineNum">      59 </span>            : </a>
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">         51 : bool BLEMIDIPacketBuilder::add3B(uint8_t header, uint8_t data1, uint8_t data2,</span></a>
 <a name="61"><span class="lineNum">      61 </span>            :                                  uint16_t timestamp) {</a>
@@ -172,85 +172,91 @@
 <a name="102"><span class="lineNum">     102 </span><span class="lineCov">          7 :     return true;</span></a>
 <a name="103"><span class="lineNum">     103 </span><span class="lineCov">         10 : }</span></a>
 <a name="104"><span class="lineNum">     104 </span>            : </a>
-<a name="105"><span class="lineNum">     105 </span><span class="lineCov">         18 : bool BLEMIDIPacketBuilder::addSysEx(const uint8_t *&amp;data, size_t &amp;length,</span></a>
+<a name="105"><span class="lineNum">     105 </span><span class="lineCov">         21 : bool BLEMIDIPacketBuilder::addSysEx(const uint8_t *&amp;data, size_t &amp;length,</span></a>
 <a name="106"><span class="lineNum">     106 </span>            :                                     uint16_t timestamp) {</a>
-<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         18 :     initBuffer(timestamp);</span></a>
+<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         21 :     initBuffer(timestamp);</span></a>
 <a name="108"><span class="lineNum">     108 </span>            : </a>
 <a name="109"><span class="lineNum">     109 </span>            :     // We can't do anything with an empty message</a>
-<a name="110"><span class="lineNum">     110 </span><span class="lineCov">         18 :     if (length == 0)</span></a>
-<a name="111"><span class="lineNum">     111 </span><span class="lineNoCov">          0 :         return true;</span></a>
+<a name="110"><span class="lineNum">     110 </span><span class="lineCov">         21 :     if (length == 0)</span></a>
+<a name="111"><span class="lineNum">     111 </span><span class="lineCov">          1 :         return true;</span></a>
 <a name="112"><span class="lineNum">     112 </span>            : </a>
 <a name="113"><span class="lineNum">     113 </span>            :     // If the first byte is a SysExStart byte we first have to write a</a>
 <a name="114"><span class="lineNum">     114 </span>            :     // timestamp + SysExStart.</a>
-<a name="115"><span class="lineNum">     115 </span><span class="lineCov">         18 :     if (*data == SysExStart) {</span></a>
+<a name="115"><span class="lineNum">     115 </span><span class="lineCov">         20 :     if (*data == SysExStart) {</span></a>
 <a name="116"><span class="lineNum">     116 </span>            :         // We need space for at least the timestamp and a SysExStart</a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineCov">         14 :         if (!hasSpaceFor(2))</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineCov">         15 :         if (!hasSpaceFor(2))</span></a>
 <a name="118"><span class="lineNum">     118 </span><span class="lineCov">          3 :             return false; // Buffer full</span></a>
 <a name="119"><span class="lineNum">     119 </span>            : </a>
 <a name="120"><span class="lineNum">     120 </span>            :         // Normal running status is interrupted by SysEx</a>
-<a name="121"><span class="lineNum">     121 </span><span class="lineCov">         11 :         runningHeader = 0;</span></a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineCov">         12 :         runningHeader = 0;</span></a>
 <a name="122"><span class="lineNum">     122 </span>            : </a>
-<a name="123"><span class="lineNum">     123 </span><span class="lineCov">         11 :         const uint8_t timestampLSB = getTimestampLSB(timestamp);</span></a>
+<a name="123"><span class="lineNum">     123 </span><span class="lineCov">         12 :         const uint8_t timestampLSB = getTimestampLSB(timestamp);</span></a>
 <a name="124"><span class="lineNum">     124 </span>            : </a>
 <a name="125"><span class="lineNum">     125 </span>            :         // Start of SysEx</a>
-<a name="126"><span class="lineNum">     126 </span><span class="lineCov">         11 :         buffer.push_back(timestampLSB);</span></a>
-<a name="127"><span class="lineNum">     127 </span><span class="lineCov">         11 :         buffer.push_back(SysExStart);</span></a>
-<a name="128"><span class="lineNum">     128 </span><span class="lineCov">         11 :         ++data; // First byte was added</span></a>
-<a name="129"><span class="lineNum">     129 </span><span class="lineCov">         11 :         --length;</span></a>
-<a name="130"><span class="lineNum">     130 </span><span class="lineCov">         11 :     }</span></a>
+<a name="126"><span class="lineNum">     126 </span><span class="lineCov">         12 :         buffer.push_back(timestampLSB);</span></a>
+<a name="127"><span class="lineNum">     127 </span><span class="lineCov">         12 :         buffer.push_back(SysExStart);</span></a>
+<a name="128"><span class="lineNum">     128 </span><span class="lineCov">         12 :         ++data; // First byte was added</span></a>
+<a name="129"><span class="lineNum">     129 </span><span class="lineCov">         12 :         --length;</span></a>
+<a name="130"><span class="lineNum">     130 </span><span class="lineCov">         12 :     }</span></a>
 <a name="131"><span class="lineNum">     131 </span>            : </a>
 <a name="132"><span class="lineNum">     132 </span>            :     // Copy the rest of the data, and terminate the message if necessary</a>
-<a name="133"><span class="lineNum">     133 </span><span class="lineCov">         15 :     continueSysEx(data, length, timestamp);</span></a>
-<a name="134"><span class="lineNum">     134 </span><span class="lineCov">         15 :     return true;</span></a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineCov">         18 : }</span></a>
+<a name="133"><span class="lineNum">     133 </span><span class="lineCov">         17 :     continueSysEx(data, length, timestamp);</span></a>
+<a name="134"><span class="lineNum">     134 </span><span class="lineCov">         17 :     return true;</span></a>
+<a name="135"><span class="lineNum">     135 </span><span class="lineCov">         21 : }</span></a>
 <a name="136"><span class="lineNum">     136 </span>            : </a>
-<a name="137"><span class="lineNum">     137 </span><span class="lineCov">         33 : void BLEMIDIPacketBuilder::continueSysEx(const uint8_t *&amp;data, size_t &amp;length,</span></a>
+<a name="137"><span class="lineNum">     137 </span><span class="lineCov">         35 : void BLEMIDIPacketBuilder::continueSysEx(const uint8_t *&amp;data, size_t &amp;length,</span></a>
 <a name="138"><span class="lineNum">     138 </span>            :                                          uint16_t timestamp) {</a>
-<a name="139"><span class="lineNum">     139 </span><span class="lineCov">         33 :     initBuffer(timestamp);</span></a>
+<a name="139"><span class="lineNum">     139 </span><span class="lineCov">         35 :     initBuffer(timestamp);</span></a>
 <a name="140"><span class="lineNum">     140 </span>            : </a>
-<a name="141"><span class="lineNum">     141 </span>            :     // Copy as much data as possible, but stop before the last byte, which</a>
-<a name="142"><span class="lineNum">     142 </span>            :     // could be a SysExEnd (and should be handled differently than data bytes)</a>
-<a name="143"><span class="lineNum">     143 </span><span class="lineCov">        111 :     while (length-- &gt; 1 &amp;&amp; buffer.size() &lt; buffer.capacity())</span></a>
-<a name="144"><span class="lineNum">     144 </span><span class="lineCov">         78 :         buffer.push_back(*data++);</span></a>
-<a name="145"><span class="lineNum">     145 </span>            : </a>
-<a name="146"><span class="lineNum">     146 </span>            :     // If everything fit into the buffer</a>
-<a name="147"><span class="lineNum">     147 </span><span class="lineCov">         33 :     if (length == 0) {</span></a>
-<a name="148"><span class="lineNum">     148 </span>            :         // End of SysEx</a>
-<a name="149"><span class="lineNum">     149 </span><span class="lineCov">         21 :         if (*data == SysExEnd) {</span></a>
-<a name="150"><span class="lineNum">     150 </span><span class="lineCov">         17 :             if (hasSpaceFor(2)) {</span></a>
-<a name="151"><span class="lineNum">     151 </span><span class="lineCov">         12 :                 buffer.push_back(getTimestampLSB(timestamp));</span></a>
-<a name="152"><span class="lineNum">     152 </span><span class="lineCov">         12 :                 buffer.push_back(SysExEnd);</span></a>
-<a name="153"><span class="lineNum">     153 </span>            :                 // Message was finished, no continuation</a>
-<a name="154"><span class="lineNum">     154 </span><span class="lineCov">         12 :                 data = nullptr;</span></a>
-<a name="155"><span class="lineNum">     155 </span><span class="lineCov">         12 :             } else {</span></a>
-<a name="156"><span class="lineNum">     156 </span>            :                 // Send the SysExEnd byte next time</a>
-<a name="157"><span class="lineNum">     157 </span><span class="lineCov">          5 :                 ++length;</span></a>
-<a name="158"><span class="lineNum">     158 </span>            :             }</a>
-<a name="159"><span class="lineNum">     159 </span><span class="lineCov">         17 :         }</span></a>
-<a name="160"><span class="lineNum">     160 </span>            :         // End of chunk but not end of SysEx</a>
-<a name="161"><span class="lineNum">     161 </span>            :         else {</a>
-<a name="162"><span class="lineNum">     162 </span><span class="lineCov">          4 :             if (hasSpaceFor(1)) {</span></a>
-<a name="163"><span class="lineNum">     163 </span><span class="lineCov">          3 :                 buffer.push_back(*data);</span></a>
-<a name="164"><span class="lineNum">     164 </span>            :                 // Message was finished, no continuation</a>
-<a name="165"><span class="lineNum">     165 </span><span class="lineCov">          3 :                 data = nullptr;</span></a>
-<a name="166"><span class="lineNum">     166 </span><span class="lineCov">          3 :             } else {</span></a>
-<a name="167"><span class="lineNum">     167 </span>            :                 // Send the last byte next time</a>
-<a name="168"><span class="lineNum">     168 </span><span class="lineCov">          1 :                 ++length;</span></a>
-<a name="169"><span class="lineNum">     169 </span>            :             }</a>
-<a name="170"><span class="lineNum">     170 </span>            :         }</a>
-<a name="171"><span class="lineNum">     171 </span><span class="lineCov">         21 :     }</span></a>
-<a name="172"><span class="lineNum">     172 </span>            :     // If the while loop stopped because the buffer was full</a>
-<a name="173"><span class="lineNum">     173 </span>            :     else {</a>
-<a name="174"><span class="lineNum">     174 </span>            :         // data is not set to nullptr to let the caller know where to start</a>
-<a name="175"><span class="lineNum">     175 </span>            :         // sending the next continuation packet,</a>
-<a name="176"><span class="lineNum">     176 </span><span class="lineCov">         12 :         ++length;</span></a>
-<a name="177"><span class="lineNum">     177 </span>            :     }</a>
-<a name="178"><span class="lineNum">     178 </span><span class="lineCov">         33 : }</span></a>
-<a name="179"><span class="lineNum">     179 </span>            : </a>
-<a name="180"><span class="lineNum">     180 </span>            : constexpr const uint8_t BLEMIDIPacketBuilder::SysExStart;</a>
-<a name="181"><span class="lineNum">     181 </span>            : constexpr const uint8_t BLEMIDIPacketBuilder::SysExEnd;</a>
-<a name="182"><span class="lineNum">     182 </span>            : </a>
-<a name="183"><span class="lineNum">     183 </span>            : END_CS_NAMESPACE</a>
+<a name="141"><span class="lineNum">     141 </span><span class="lineCov">         35 :     if (length == 0) {</span></a>
+<a name="142"><span class="lineNum">     142 </span>            :         // Message was finished, no continuation</a>
+<a name="143"><span class="lineNum">     143 </span><span class="lineCov">          1 :         data = nullptr;</span></a>
+<a name="144"><span class="lineNum">     144 </span><span class="lineCov">          1 :         return;</span></a>
+<a name="145"><span class="lineNum">     145 </span>            :     }</a>
+<a name="146"><span class="lineNum">     146 </span>            : </a>
+<a name="147"><span class="lineNum">     147 </span>            :     // Copy as much data as possible, but stop before the last byte, which</a>
+<a name="148"><span class="lineNum">     148 </span>            :     // could be a SysExEnd (and should be handled differently than data bytes)</a>
+<a name="149"><span class="lineNum">     149 </span><span class="lineCov">        112 :     while (length-- &gt; 1 &amp;&amp; buffer.size() &lt; buffer.capacity())</span></a>
+<a name="150"><span class="lineNum">     150 </span><span class="lineCov">         78 :         buffer.push_back(*data++);</span></a>
+<a name="151"><span class="lineNum">     151 </span>            : </a>
+<a name="152"><span class="lineNum">     152 </span>            :     // If everything fit into the buffer</a>
+<a name="153"><span class="lineNum">     153 </span><span class="lineCov">         34 :     if (length == 0) {</span></a>
+<a name="154"><span class="lineNum">     154 </span>            :         // End of SysEx</a>
+<a name="155"><span class="lineNum">     155 </span><span class="lineCov">         22 :         if (*data == SysExEnd) {</span></a>
+<a name="156"><span class="lineNum">     156 </span><span class="lineCov">         18 :             if (hasSpaceFor(2)) {</span></a>
+<a name="157"><span class="lineNum">     157 </span><span class="lineCov">         13 :                 buffer.push_back(getTimestampLSB(timestamp));</span></a>
+<a name="158"><span class="lineNum">     158 </span><span class="lineCov">         13 :                 buffer.push_back(SysExEnd);</span></a>
+<a name="159"><span class="lineNum">     159 </span>            :                 // Message was finished, no continuation</a>
+<a name="160"><span class="lineNum">     160 </span><span class="lineCov">         13 :                 data = nullptr;</span></a>
+<a name="161"><span class="lineNum">     161 </span><span class="lineCov">         13 :             } else {</span></a>
+<a name="162"><span class="lineNum">     162 </span>            :                 // Send the SysExEnd byte next time</a>
+<a name="163"><span class="lineNum">     163 </span><span class="lineCov">          5 :                 ++length;</span></a>
+<a name="164"><span class="lineNum">     164 </span>            :             }</a>
+<a name="165"><span class="lineNum">     165 </span><span class="lineCov">         18 :         }</span></a>
+<a name="166"><span class="lineNum">     166 </span>            :         // End of chunk but not end of SysEx</a>
+<a name="167"><span class="lineNum">     167 </span>            :         else {</a>
+<a name="168"><span class="lineNum">     168 </span><span class="lineCov">          4 :             if (hasSpaceFor(1)) {</span></a>
+<a name="169"><span class="lineNum">     169 </span><span class="lineCov">          3 :                 buffer.push_back(*data);</span></a>
+<a name="170"><span class="lineNum">     170 </span>            :                 // Message was finished, no continuation</a>
+<a name="171"><span class="lineNum">     171 </span><span class="lineCov">          3 :                 data = nullptr;</span></a>
+<a name="172"><span class="lineNum">     172 </span><span class="lineCov">          3 :             } else {</span></a>
+<a name="173"><span class="lineNum">     173 </span>            :                 // Send the last byte next time</a>
+<a name="174"><span class="lineNum">     174 </span><span class="lineCov">          1 :                 ++length;</span></a>
+<a name="175"><span class="lineNum">     175 </span>            :             }</a>
+<a name="176"><span class="lineNum">     176 </span>            :         }</a>
+<a name="177"><span class="lineNum">     177 </span><span class="lineCov">         22 :     }</span></a>
+<a name="178"><span class="lineNum">     178 </span>            :     // If the while loop stopped because the buffer was full</a>
+<a name="179"><span class="lineNum">     179 </span>            :     else {</a>
+<a name="180"><span class="lineNum">     180 </span>            :         // data is not set to nullptr to let the caller know where to start</a>
+<a name="181"><span class="lineNum">     181 </span>            :         // sending the next continuation packet,</a>
+<a name="182"><span class="lineNum">     182 </span><span class="lineCov">         12 :         ++length;</span></a>
+<a name="183"><span class="lineNum">     183 </span>            :     }</a>
+<a name="184"><span class="lineNum">     184 </span><span class="lineCov">         35 : }</span></a>
+<a name="185"><span class="lineNum">     185 </span>            : </a>
+<a name="186"><span class="lineNum">     186 </span>            : constexpr const uint8_t BLEMIDIPacketBuilder::SysExStart;</a>
+<a name="187"><span class="lineNum">     187 </span>            : constexpr const uint8_t BLEMIDIPacketBuilder::SysExEnd;</a>
+<a name="188"><span class="lineNum">     188 </span>            : </a>
+<a name="189"><span class="lineNum">     189 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>
