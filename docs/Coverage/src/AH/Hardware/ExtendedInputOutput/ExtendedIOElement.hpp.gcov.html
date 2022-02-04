@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/AH/Hardware/ExtendedInputOutput/ExtendedIOElement.hpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/AH/Hardware/ExtendedInputOutput/ExtendedIOElement.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">75</td>
-            <td class="headerCovTableEntry">75</td>
-            <td class="headerCovTableEntryHi">100.0 %</td>
+            <td class="headerCovTableEntry">67</td>
+            <td class="headerCovTableEntry">69</td>
+            <td class="headerCovTableEntryHi">97.1 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">20</td>
-            <td class="headerCovTableEntry">25</td>
-            <td class="headerCovTableEntryMed">80.0 %</td>
+            <td class="headerCovTableEntry">14</td>
+            <td class="headerCovTableEntry">18</td>
+            <td class="headerCovTableEntryMed">77.8 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -352,7 +352,7 @@
 <a name="282"><span class="lineNum">     282 </span>            : </a>
 <a name="283"><span class="lineNum">     283 </span>            :     template &lt;class FRet, class... FArgs, class Fallback&gt;</a>
 <a name="284"><span class="lineNum">     284 </span>            :     FRet __attribute__((always_inline))</a>
-<a name="285"><span class="lineNum">     285 </span><span class="lineCov">         59 :     apply(FRet (ExtendedIOElement::*func)(pin_t, FArgs...), Fallback &amp;&amp;fallback,</span></a>
+<a name="285"><span class="lineNum">     285 </span>            :     apply(FRet (ExtendedIOElement::*func)(pin_t, FArgs...), Fallback &amp;&amp;fallback,</a>
 <a name="286"><span class="lineNum">     286 </span>            :           FArgs... args) {</a>
 <a name="287"><span class="lineNum">     287 </span><span class="lineCov">         59 :         if (element != nullptr)</span></a>
 <a name="288"><span class="lineNum">     288 </span><span class="lineCov">         22 :             return (element-&gt;*func)(elementPin, args...);</span></a>
@@ -360,7 +360,7 @@
 <a name="290"><span class="lineNum">     290 </span><span class="lineCov">         32 :             return fallback(arduino_pin_cast(elementPin), args...);</span></a>
 <a name="291"><span class="lineNum">     291 </span>            :         else</a>
 <a name="292"><span class="lineNum">     292 </span><span class="lineCov">          5 :             return static_cast&lt;FRet&gt;(0);</span></a>
-<a name="293"><span class="lineNum">     293 </span><span class="lineCov">         59 :     }</span></a>
+<a name="293"><span class="lineNum">     293 </span>            :     }</a>
 <a name="294"><span class="lineNum">     294 </span>            : </a>
 <a name="295"><span class="lineNum">     295 </span>            :     ExtendedIOElement *element;</a>
 <a name="296"><span class="lineNum">     296 </span>            :     pin_t elementPin;</a>
@@ -369,37 +369,37 @@
 <a name="299"><span class="lineNum">     299 </span>            : /// An ExtIO version of the Arduino function</a>
 <a name="300"><span class="lineNum">     300 </span>            : /// @see    ExtendedIOElement::pinMode</a>
 <a name="301"><span class="lineNum">     301 </span><span class="lineCov">          2 : inline void pinMode(CachedExtIOPin pin, PinMode_t mode) {</span></a>
-<a name="302"><span class="lineNum">     302 </span><span class="lineCov">          2 :     pin.apply(</span></a>
+<a name="302"><span class="lineNum">     302 </span><span class="lineCov">          4 :     pin.apply(</span></a>
 <a name="303"><span class="lineNum">     303 </span>            :         &amp;ExtendedIOElement::pinMode, //</a>
-<a name="304"><span class="lineNum">     304 </span><span class="lineCov">          2 :         [](ArduinoPin_t p, PinMode_t m) { ::pinMode(p, m); }, mode);</span></a>
+<a name="304"><span class="lineNum">     304 </span><span class="lineNoCov">          0 :         [](ArduinoPin_t p, PinMode_t m) { ::pinMode(p, m); }, mode);</span></a>
 <a name="305"><span class="lineNum">     305 </span><span class="lineCov">          2 : }</span></a>
 <a name="306"><span class="lineNum">     306 </span>            : /// An ExtIO version of the Arduino function</a>
 <a name="307"><span class="lineNum">     307 </span>            : /// @see    ExtendedIOElement::digitalWrite</a>
 <a name="308"><span class="lineNum">     308 </span><span class="lineCov">         50 : inline void digitalWrite(CachedExtIOPin pin, PinStatus_t val) {</span></a>
-<a name="309"><span class="lineNum">     309 </span><span class="lineCov">         50 :     pin.apply(</span></a>
+<a name="309"><span class="lineNum">     309 </span><span class="lineCov">        100 :     pin.apply(</span></a>
 <a name="310"><span class="lineNum">     310 </span>            :         &amp;ExtendedIOElement::digitalWrite, //</a>
-<a name="311"><span class="lineNum">     311 </span><span class="lineCov">         82 :         [](ArduinoPin_t p, PinStatus_t v) { ::digitalWrite(p, v); }, val);</span></a>
+<a name="311"><span class="lineNum">     311 </span><span class="lineCov">         32 :         [](ArduinoPin_t p, PinStatus_t v) { ::digitalWrite(p, v); }, val);</span></a>
 <a name="312"><span class="lineNum">     312 </span><span class="lineCov">         50 : }</span></a>
 <a name="313"><span class="lineNum">     313 </span>            : /// An ExtIO version of the Arduino function</a>
 <a name="314"><span class="lineNum">     314 </span>            : /// @see    ExtendedIOElement::digitalRead</a>
 <a name="315"><span class="lineNum">     315 </span><span class="lineCov">          2 : inline PinStatus_t digitalRead(CachedExtIOPin pin) {</span></a>
-<a name="316"><span class="lineNum">     316 </span><span class="lineCov">          2 :     return pin.apply(&amp;ExtendedIOElement::digitalRead, //</span></a>
-<a name="317"><span class="lineNum">     317 </span><span class="lineCov">          2 :                      [](ArduinoPin_t p) { return ::digitalRead(p); });</span></a>
+<a name="316"><span class="lineNum">     316 </span><span class="lineCov">          4 :     return pin.apply(&amp;ExtendedIOElement::digitalRead, //</span></a>
+<a name="317"><span class="lineNum">     317 </span><span class="lineCov">          4 :                      [](ArduinoPin_t p) { return ::digitalRead(p); });</span></a>
 <a name="318"><span class="lineNum">     318 </span>            : }</a>
 <a name="319"><span class="lineNum">     319 </span>            : </a>
 <a name="320"><span class="lineNum">     320 </span>            : /// An ExtIO version of the Arduino function</a>
 <a name="321"><span class="lineNum">     321 </span>            : /// @see    ExtendedIOElement::analogRead</a>
 <a name="322"><span class="lineNum">     322 </span><span class="lineCov">          2 : inline analog_t analogRead(CachedExtIOPin pin) {</span></a>
-<a name="323"><span class="lineNum">     323 </span><span class="lineCov">          2 :     return pin.apply(&amp;ExtendedIOElement::analogRead, //</span></a>
-<a name="324"><span class="lineNum">     324 </span><span class="lineCov">          2 :                      [](ArduinoPin_t p) { return ::analogRead(p); });</span></a>
+<a name="323"><span class="lineNum">     323 </span><span class="lineCov">          4 :     return pin.apply(&amp;ExtendedIOElement::analogRead, //</span></a>
+<a name="324"><span class="lineNum">     324 </span><span class="lineCov">          4 :                      [](ArduinoPin_t p) { return ::analogRead(p); });</span></a>
 <a name="325"><span class="lineNum">     325 </span>            : }</a>
 <a name="326"><span class="lineNum">     326 </span>            : /// An ExtIO version of the Arduino function</a>
 <a name="327"><span class="lineNum">     327 </span>            : /// @see    ExtendedIOElement::analogWrite</a>
 <a name="328"><span class="lineNum">     328 </span><span class="lineCov">          3 : inline void analogWrite(CachedExtIOPin pin, analog_t val) {</span></a>
 <a name="329"><span class="lineNum">     329 </span>            : #ifndef ESP32</a>
-<a name="330"><span class="lineNum">     330 </span><span class="lineCov">          3 :     pin.apply(</span></a>
+<a name="330"><span class="lineNum">     330 </span><span class="lineCov">          6 :     pin.apply(</span></a>
 <a name="331"><span class="lineNum">     331 </span>            :         &amp;ExtendedIOElement::analogWrite, //</a>
-<a name="332"><span class="lineNum">     332 </span><span class="lineCov">          3 :         [](ArduinoPin_t p, analog_t v) { ::analogWrite(p, v); }, val);</span></a>
+<a name="332"><span class="lineNum">     332 </span><span class="lineNoCov">          0 :         [](ArduinoPin_t p, analog_t v) { ::analogWrite(p, v); }, val);</span></a>
 <a name="333"><span class="lineNum">     333 </span>            : #else</a>
 <a name="334"><span class="lineNum">     334 </span>            :     pin.apply(</a>
 <a name="335"><span class="lineNum">     335 </span>            :         &amp;ExtendedIOElement::analogWrite, //</a>
@@ -419,9 +419,9 @@
 <a name="349"><span class="lineNum">     349 </span><span class="lineCov">          1 :         return;</span></a>
 <a name="350"><span class="lineNum">     350 </span>            :     // Native version</a>
 <a name="351"><span class="lineNum">     351 </span><span class="lineCov">          5 :     if (dataPin.element == nullptr &amp;&amp; clockPin.element == nullptr) {</span></a>
-<a name="352"><span class="lineNum">     352 </span><span class="lineCov">          2 :         ::shiftOut(arduino_pin_cast(dataPin.elementPin),</span></a>
+<a name="352"><span class="lineNum">     352 </span><span class="lineCov">          1 :         ::shiftOut(arduino_pin_cast(dataPin.elementPin),</span></a>
 <a name="353"><span class="lineNum">     353 </span><span class="lineCov">          1 :                    arduino_pin_cast(clockPin.elementPin), bitOrder, val);</span></a>
-<a name="354"><span class="lineNum">     354 </span><span class="lineCov">          1 :     }</span></a>
+<a name="354"><span class="lineNum">     354 </span>            :     }</a>
 <a name="355"><span class="lineNum">     355 </span>            :     // ExtIO version</a>
 <a name="356"><span class="lineNum">     356 </span><span class="lineCov">          4 :     else if (dataPin.element != nullptr &amp;&amp; clockPin.element != nullptr) {</span></a>
 <a name="357"><span class="lineNum">     357 </span><span class="lineCov">          2 :         const auto dataEl = dataPin.element;</span></a>
@@ -433,7 +433,7 @@
 <a name="363"><span class="lineNum">     363 </span><span class="lineCov">         16 :             dataEl-&gt;digitalWrite(dataPinN, (val &amp; mask) ? HIGH : LOW);</span></a>
 <a name="364"><span class="lineNum">     364 </span><span class="lineCov">         16 :             clockEl-&gt;digitalWrite(clockPinN, HIGH);</span></a>
 <a name="365"><span class="lineNum">     365 </span><span class="lineCov">         16 :             clockEl-&gt;digitalWrite(clockPinN, LOW);</span></a>
-<a name="366"><span class="lineNum">     366 </span><span class="lineCov">         16 :         }</span></a>
+<a name="366"><span class="lineNum">     366 </span>            :         }</a>
 <a name="367"><span class="lineNum">     367 </span><span class="lineCov">          2 :     }</span></a>
 <a name="368"><span class="lineNum">     368 </span>            :     // Mixed version (slow)</a>
 <a name="369"><span class="lineNum">     369 </span>            :     else {</a>
@@ -442,9 +442,9 @@
 <a name="372"><span class="lineNum">     372 </span><span class="lineCov">         16 :             digitalWrite(dataPin, (val &amp; mask) ? HIGH : LOW);</span></a>
 <a name="373"><span class="lineNum">     373 </span><span class="lineCov">         16 :             digitalWrite(clockPin, HIGH);</span></a>
 <a name="374"><span class="lineNum">     374 </span><span class="lineCov">         16 :             digitalWrite(clockPin, LOW);</span></a>
-<a name="375"><span class="lineNum">     375 </span><span class="lineCov">         16 :         }</span></a>
+<a name="375"><span class="lineNum">     375 </span>            :         }</a>
 <a name="376"><span class="lineNum">     376 </span>            :     }</a>
-<a name="377"><span class="lineNum">     377 </span><span class="lineCov">          6 : }</span></a>
+<a name="377"><span class="lineNum">     377 </span>            : }</a>
 <a name="378"><span class="lineNum">     378 </span>            : </a>
 <a name="379"><span class="lineNum">     379 </span>            : /// A buffered ExtIO version of the Arduino function</a>
 <a name="380"><span class="lineNum">     380 </span>            : /// @see    ExtendedIOElement::pinModeBuffered</a>
@@ -506,7 +506,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

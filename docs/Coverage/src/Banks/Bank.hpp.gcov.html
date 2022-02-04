@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/Banks/Bank.hpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/Banks/Bank.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">27</td>
             <td class="headerCovTableEntry">28</td>
-            <td class="headerCovTableEntry">29</td>
-            <td class="headerCovTableEntryHi">96.6 %</td>
+            <td class="headerCovTableEntryHi">96.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">20</td>
             <td class="headerCovTableEntry">22</td>
-            <td class="headerCovTableEntry">25</td>
-            <td class="headerCovTableEntryMed">88.0 %</td>
+            <td class="headerCovTableEntryHi">90.9 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -102,7 +102,7 @@
 <a name="32"><span class="lineNum">      32 </span><span class="lineCov">         45 :         if (tracksPerBank == 0)</span></a>
 <a name="33"><span class="lineNum">      33 </span><span class="lineCov">          1 :             FATAL_ERROR(F(&quot;A Bank must have a non-zero number of tracks.&quot;),</span></a>
 <a name="34"><span class="lineNum">      34 </span>            :                         0x4573);</a>
-<a name="35"><span class="lineNum">      35 </span><span class="lineCov">         45 :     }</span></a>
+<a name="35"><span class="lineNum">      35 </span><span class="lineCov">         44 :     }</span></a>
 <a name="36"><span class="lineNum">      36 </span>            : </a>
 <a name="37"><span class="lineNum">      37 </span>            :     /// Select the given bank setting.</a>
 <a name="38"><span class="lineNum">      38 </span>            :     ///</a>
@@ -171,10 +171,10 @@
 <a name="101"><span class="lineNum">     101 </span>            :     /// @param  selectionOffset</a>
 <a name="102"><span class="lineNum">     102 </span>            :     ///         The offset added to the bank setting before computing the</a>
 <a name="103"><span class="lineNum">     103 </span>            :     ///         actual address offset.</a>
-<a name="104"><span class="lineNum">     104 </span><span class="lineCov">         56 :     Bank(uint8_t tracksPerBank = 1, setting_t initialSelection = 0,</span></a>
+<a name="104"><span class="lineNum">     104 </span><span class="lineCov">         28 :     Bank(uint8_t tracksPerBank = 1, setting_t initialSelection = 0,</span></a>
 <a name="105"><span class="lineNum">     105 </span>            :          int8_t selectionOffset = 0)</a>
-<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         28 :         : Selectable&lt;NumBanks&gt;(initialSelection),</span></a>
-<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         84 :           OutputBank(tracksPerBank, initialSelection, selectionOffset) {}</span></a>
+<a name="106"><span class="lineNum">     106 </span>            :         : Selectable&lt;NumBanks&gt;(initialSelection),</a>
+<a name="107"><span class="lineNum">     107 </span><span class="lineCov">         28 :           OutputBank(tracksPerBank, initialSelection, selectionOffset) {}</span></a>
 <a name="108"><span class="lineNum">     108 </span>            : </a>
 <a name="109"><span class="lineNum">     109 </span>            :     /// Select the given bank setting.</a>
 <a name="110"><span class="lineNum">     110 </span>            :     ///</a>
@@ -226,10 +226,10 @@
 <a name="156"><span class="lineNum">     156 </span><span class="lineCov">         17 : }</span></a>
 <a name="157"><span class="lineNum">     157 </span>            : </a>
 <a name="158"><span class="lineNum">     158 </span>            : template &lt;setting_t N&gt;</a>
-<a name="159"><span class="lineNum">     159 </span><span class="lineCov">         79 : void Bank&lt;N&gt;::select(setting_t bankSetting) {</span></a>
-<a name="160"><span class="lineNum">     160 </span><span class="lineCov">         79 :     bankSetting = this-&gt;validateSetting(bankSetting);</span></a>
+<a name="159"><span class="lineNum">     159 </span><span class="lineCov">         80 : void Bank&lt;N&gt;::select(setting_t bankSetting) {</span></a>
+<a name="160"><span class="lineNum">     160 </span><span class="lineCov">         80 :     bankSetting = this-&gt;validateSetting(bankSetting);</span></a>
 <a name="161"><span class="lineNum">     161 </span><span class="lineCov">         79 :     OutputBank::select(bankSetting);</span></a>
-<a name="162"><span class="lineNum">     162 </span><span class="lineCov">        141 :     for (BankSettingChangeCallback &amp;e : inputBankables)</span></a>
+<a name="162"><span class="lineNum">     162 </span><span class="lineCov">        220 :     for (BankSettingChangeCallback &amp;e : inputBankables)</span></a>
 <a name="163"><span class="lineNum">     163 </span><span class="lineCov">         62 :         e.onBankSettingChange();</span></a>
 <a name="164"><span class="lineNum">     164 </span><span class="lineCov">         79 : }</span></a>
 <a name="165"><span class="lineNum">     165 </span>            : </a>
@@ -242,7 +242,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

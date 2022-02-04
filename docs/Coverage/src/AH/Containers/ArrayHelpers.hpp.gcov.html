@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/AH/Containers/ArrayHelpers.hpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/AH/Containers/ArrayHelpers.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">43</td>
-            <td class="headerCovTableEntry">50</td>
-            <td class="headerCovTableEntryMed">86.0 %</td>
+            <td class="headerCovTableEntry">38</td>
+            <td class="headerCovTableEntry">45</td>
+            <td class="headerCovTableEntryMed">84.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">21</td>
-            <td class="headerCovTableEntry">36</td>
-            <td class="headerCovTableEntryLo">58.3 %</td>
+            <td class="headerCovTableEntry">23</td>
+            <td class="headerCovTableEntry">38</td>
+            <td class="headerCovTableEntryLo">60.5 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -106,8 +106,8 @@
 <a name="36"><span class="lineNum">      36 </span><span class="lineCov">          4 :     USE_CONSTEXPR_ARRAY_HELPERS T operator()() {</span></a>
 <a name="37"><span class="lineNum">      37 </span><span class="lineCov">          4 :         T temp = value;</span></a>
 <a name="38"><span class="lineNum">      38 </span><span class="lineCov">          4 :         value += increment;</span></a>
-<a name="39"><span class="lineNum">      39 </span><span class="lineCov">          8 :         return temp;</span></a>
-<a name="40"><span class="lineNum">      40 </span><span class="lineCov">          4 :     }</span></a>
+<a name="39"><span class="lineNum">      39 </span><span class="lineCov">          4 :         return temp;</span></a>
+<a name="40"><span class="lineNum">      40 </span>            :     }</a>
 <a name="41"><span class="lineNum">      41 </span>            : </a>
 <a name="42"><span class="lineNum">      42 </span>            :   private:</a>
 <a name="43"><span class="lineNum">      43 </span>            :     T value;</a>
@@ -155,11 +155,11 @@
 <a name="85"><span class="lineNum">      85 </span>            :  * @return  The generated array.</a>
 <a name="86"><span class="lineNum">      86 </span>            :  */</a>
 <a name="87"><span class="lineNum">      87 </span>            : template &lt;size_t N, class G&gt;</a>
-<a name="88"><span class="lineNum">      88 </span><span class="lineCov">          1 : USE_CONSTEXPR_ARRAY_HELPERS auto generateArray(G generator)</span></a>
+<a name="88"><span class="lineNum">      88 </span><span class="lineCov">          2 : USE_CONSTEXPR_ARRAY_HELPERS auto generateArray(G generator)</span></a>
 <a name="89"><span class="lineNum">      89 </span>            :     -&gt; Array&lt;decltype(generator()), N&gt; {</a>
-<a name="90"><span class="lineNum">      90 </span><span class="lineCov">          1 :     Array&lt;decltype(generator()), N&gt; array{{}};</span></a>
-<a name="91"><span class="lineNum">      91 </span><span class="lineCov">          1 :     std::generate(array.begin(), array.end(), generator);</span></a>
-<a name="92"><span class="lineNum">      92 </span><span class="lineCov">          1 :     return array;</span></a>
+<a name="90"><span class="lineNum">      90 </span><span class="lineCov">          2 :     Array&lt;decltype(generator()), N&gt; array{{}};</span></a>
+<a name="91"><span class="lineNum">      91 </span><span class="lineCov">          2 :     std::generate(array.begin(), array.end(), generator);</span></a>
+<a name="92"><span class="lineNum">      92 </span><span class="lineCov">          2 :     return array;</span></a>
 <a name="93"><span class="lineNum">      93 </span>            : }</a>
 <a name="94"><span class="lineNum">      94 </span>            : </a>
 <a name="95"><span class="lineNum">      95 </span>            : /**</a>
@@ -200,16 +200,16 @@
 <a name="130"><span class="lineNum">     130 </span>            :  * @brief   Fill the array with the same value for each element.</a>
 <a name="131"><span class="lineNum">     131 </span>            :  */</a>
 <a name="132"><span class="lineNum">     132 </span>            : template &lt;class T, size_t N, class... Args&gt;</a>
-<a name="133"><span class="lineNum">     133 </span>            : USE_CONSTEXPR_ARRAY_HELPERS Array&lt;T, N&gt; fillArray(Args... args) {</a>
-<a name="134"><span class="lineNum">     134 </span>            :     return generateArray&lt;N&gt;([&amp;]() { return T{args...}; });</a>
+<a name="133"><span class="lineNum">     133 </span><span class="lineCov">          1 : USE_CONSTEXPR_ARRAY_HELPERS Array&lt;T, N&gt; fillArray(Args... args) {</span></a>
+<a name="134"><span class="lineNum">     134 </span><span class="lineCov">          5 :     return generateArray&lt;N&gt;([&amp;]() { return T{args...}; });</span></a>
 <a name="135"><span class="lineNum">     135 </span>            : }</a>
 <a name="136"><span class="lineNum">     136 </span>            : #else</a>
 <a name="137"><span class="lineNum">     137 </span>            : template &lt;class T, size_t N, class... Args&gt;</a>
-<a name="138"><span class="lineNum">     138 </span><span class="lineCov">          1 : USE_CONSTEXPR_ARRAY_HELPERS Array&lt;T, N&gt; fillArray(Args... args) {</span></a>
-<a name="139"><span class="lineNum">     139 </span><span class="lineCov">          1 :     Array&lt;T, N&gt; array{{}};</span></a>
-<a name="140"><span class="lineNum">     140 </span><span class="lineCov">          5 :     for (auto &amp;el : array)</span></a>
-<a name="141"><span class="lineNum">     141 </span><span class="lineCov">          4 :         el = T{args...};</span></a>
-<a name="142"><span class="lineNum">     142 </span><span class="lineCov">          1 :     return array;</span></a>
+<a name="138"><span class="lineNum">     138 </span>            : USE_CONSTEXPR_ARRAY_HELPERS Array&lt;T, N&gt; fillArray(Args... args) {</a>
+<a name="139"><span class="lineNum">     139 </span>            :     Array&lt;T, N&gt; array{{}};</a>
+<a name="140"><span class="lineNum">     140 </span>            :     for (auto &amp;el : array)</a>
+<a name="141"><span class="lineNum">     141 </span>            :         el = T{args...};</a>
+<a name="142"><span class="lineNum">     142 </span>            :     return array;</a>
 <a name="143"><span class="lineNum">     143 </span>            : }</a>
 <a name="144"><span class="lineNum">     144 </span>            : #endif</a>
 <a name="145"><span class="lineNum">     145 </span>            : </a>
@@ -249,8 +249,8 @@
 <a name="179"><span class="lineNum">     179 </span>            : USE_CONSTEXPR_ARRAY_HELPERS Array&lt;T, N&gt;</a>
 <a name="180"><span class="lineNum">     180 </span><span class="lineCov">          1 : generateIncrementalArray(U start = 0, V increment = V(1)) {</span></a>
 <a name="181"><span class="lineNum">     181 </span><span class="lineCov">          1 :     detail::Incrementor&lt;U, V&gt; g(start, increment);</span></a>
-<a name="182"><span class="lineNum">     182 </span><span class="lineCov">          1 :     return generateArray&lt;T, N&gt;(g);</span></a>
-<a name="183"><span class="lineNum">     183 </span><span class="lineCov">          1 : }</span></a>
+<a name="182"><span class="lineNum">     182 </span><span class="lineCov">          2 :     return generateArray&lt;T, N&gt;(g);</span></a>
+<a name="183"><span class="lineNum">     183 </span>            : }</a>
 <a name="184"><span class="lineNum">     184 </span>            : </a>
 <a name="185"><span class="lineNum">     185 </span>            : /**</a>
 <a name="186"><span class="lineNum">     186 </span>            :  * @brief   Concatenate two arrays.</a>
@@ -287,7 +287,7 @@
 <a name="217"><span class="lineNum">     217 </span><span class="lineCov">          5 :     Array&lt;decltype(T1() * T2()), N1 + N2 - 1&gt; result = {{}};</span></a>
 <a name="218"><span class="lineNum">     218 </span><span class="lineCov">         22 :     for (size_t i = 0; i &lt; N1; ++i)</span></a>
 <a name="219"><span class="lineNum">     219 </span><span class="lineCov">         77 :         for (size_t j = 0; j &lt; N2; ++j)</span></a>
-<a name="220"><span class="lineNum">     220 </span><span class="lineCov">         77 :             result[i + j] += a[i] * b[j];</span></a>
+<a name="220"><span class="lineNum">     220 </span><span class="lineCov">         60 :             result[i + j] += a[i] * b[j];</span></a>
 <a name="221"><span class="lineNum">     221 </span><span class="lineCov">          5 :     return result;</span></a>
 <a name="222"><span class="lineNum">     222 </span>            : }</a>
 <a name="223"><span class="lineNum">     223 </span>            : </a>
@@ -295,7 +295,7 @@
 <a name="225"><span class="lineNum">     225 </span>            : USE_CONSTEXPR_ARRAY_HELPERS Array&lt;decltype(T1() * T2()), N1 + N2 - 1&gt;</a>
 <a name="226"><span class="lineNum">     226 </span><span class="lineCov">          2 : distribute(const ArraySlice&lt;T1, N1, Reverse1, Const1&gt; &amp;a,</span></a>
 <a name="227"><span class="lineNum">     227 </span>            :            const Array&lt;T2, N2&gt; &amp;b) {</a>
-<a name="228"><span class="lineNum">     228 </span><span class="lineCov">          2 :     return distribute(a, b.slice());</span></a>
+<a name="228"><span class="lineNum">     228 </span><span class="lineCov">          4 :     return distribute(a, b.slice());</span></a>
 <a name="229"><span class="lineNum">     229 </span>            : }</a>
 <a name="230"><span class="lineNum">     230 </span>            : </a>
 <a name="231"><span class="lineNum">     231 </span>            : template &lt;class T1, class T2, size_t N1, size_t N2, bool Reverse2, bool Const2&gt;</a>
@@ -308,7 +308,7 @@
 <a name="238"><span class="lineNum">     238 </span>            : template &lt;class T1, class T2, size_t N1, size_t N2&gt;</a>
 <a name="239"><span class="lineNum">     239 </span>            : USE_CONSTEXPR_ARRAY_HELPERS Array&lt;decltype(T1() * T2()), N1 + N2 - 1&gt;</a>
 <a name="240"><span class="lineNum">     240 </span><span class="lineCov">          2 : distribute(const Array&lt;T1, N1&gt; &amp;a, const Array&lt;T2, N2&gt; &amp;b) {</span></a>
-<a name="241"><span class="lineNum">     241 </span><span class="lineCov">          2 :     return distribute(a.slice(), b.slice());</span></a>
+<a name="241"><span class="lineNum">     241 </span><span class="lineCov">          4 :     return distribute(a.slice(), b.slice());</span></a>
 <a name="242"><span class="lineNum">     242 </span>            : }</a>
 <a name="243"><span class="lineNum">     243 </span>            : </a>
 <a name="244"><span class="lineNum">     244 </span>            : /// @}</a>
@@ -370,7 +370,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

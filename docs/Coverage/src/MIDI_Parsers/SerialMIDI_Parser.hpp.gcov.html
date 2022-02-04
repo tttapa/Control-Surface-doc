@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/MIDI_Parsers/SerialMIDI_Parser.hpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/MIDI_Parsers/SerialMIDI_Parser.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">31</td>
-            <td class="headerCovTableEntry">31</td>
+            <td class="headerCovTableEntry">25</td>
+            <td class="headerCovTableEntry">25</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">14</td>
@@ -82,8 +82,8 @@
 <a name="12"><span class="lineNum">      12 </span>            :  */</a>
 <a name="13"><span class="lineNum">      13 </span>            : class SerialMIDI_Parser : public MIDI_Parser {</a>
 <a name="14"><span class="lineNum">      14 </span>            :   public:</a>
-<a name="15"><span class="lineNum">      15 </span><span class="lineCov">        200 :     SerialMIDI_Parser(bool sysCommonCancelsRunningStatus = true)</span></a>
-<a name="16"><span class="lineNum">      16 </span><span class="lineCov">        300 :         : sysCommonCancelsRunningStatus(sysCommonCancelsRunningStatus) {}</span></a>
+<a name="15"><span class="lineNum">      15 </span><span class="lineCov">        100 :     SerialMIDI_Parser(bool sysCommonCancelsRunningStatus = true)</span></a>
+<a name="16"><span class="lineNum">      16 </span><span class="lineCov">        100 :         : sysCommonCancelsRunningStatus(sysCommonCancelsRunningStatus) {}</span></a>
 <a name="17"><span class="lineNum">      17 </span>            :     </a>
 <a name="18"><span class="lineNum">      18 </span>            :     /**</a>
 <a name="19"><span class="lineNum">      19 </span>            :      * @brief   Parse one incoming MIDI message.</a>
@@ -135,8 +135,8 @@
 <a name="65"><span class="lineNum">      65 </span><span class="lineCov">          8 :     uint8_t popStoredByte() {</span></a>
 <a name="66"><span class="lineNum">      66 </span><span class="lineCov">          8 :         uint8_t t = storedByte;</span></a>
 <a name="67"><span class="lineNum">      67 </span><span class="lineCov">          8 :         storedByte = 0xFF;</span></a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">         16 :         return t;</span></a>
-<a name="69"><span class="lineNum">      69 </span><span class="lineCov">          8 :     }</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">          8 :         return t;</span></a>
+<a name="69"><span class="lineNum">      69 </span>            :     }</a>
 <a name="70"><span class="lineNum">      70 </span>            : </a>
 <a name="71"><span class="lineNum">      71 </span>            :   public:</a>
 <a name="72"><span class="lineNum">      72 </span>            :     /// Clear the running status header for MIDI Channel messages. </a>
@@ -148,15 +148,15 @@
 <a name="78"><span class="lineNum">      78 </span>            :     bool sysCommonCancelsRunningStatus;</a>
 <a name="79"><span class="lineNum">      79 </span>            :     /// Flag that remembers that the next data byte will be the third byte of</a>
 <a name="80"><span class="lineNum">      80 </span>            :     /// a message.</a>
-<a name="81"><span class="lineNum">      81 </span><span class="lineCov">        100 :     bool thirdByte = false;</span></a>
+<a name="81"><span class="lineNum">      81 </span>            :     bool thirdByte = false;</a>
 <a name="82"><span class="lineNum">      82 </span>            :     /// Current header (not necessarily running), contains the header of the</a>
 <a name="83"><span class="lineNum">      83 </span>            :     /// message that's currently being received. As soon as the message is </a>
 <a name="84"><span class="lineNum">      84 </span>            :     /// complete, it is set to zero.</a>
-<a name="85"><span class="lineNum">      85 </span><span class="lineCov">        100 :     uint8_t currentHeader = 0;</span></a>
+<a name="85"><span class="lineNum">      85 </span>            :     uint8_t currentHeader = 0;</a>
 <a name="86"><span class="lineNum">      86 </span>            :     /// Running status header.</a>
-<a name="87"><span class="lineNum">      87 </span><span class="lineCov">        100 :     uint8_t runningHeader = 0;</span></a>
+<a name="87"><span class="lineNum">      87 </span>            :     uint8_t runningHeader = 0;</a>
 <a name="88"><span class="lineNum">      88 </span>            :     /// @see @ref storeByte</a>
-<a name="89"><span class="lineNum">      89 </span><span class="lineCov">        100 :     uint8_t storedByte = 0xFF;</span></a>
+<a name="89"><span class="lineNum">      89 </span>            :     uint8_t storedByte = 0xFF;</a>
 <a name="90"><span class="lineNum">      90 </span>            : };</a>
 <a name="91"><span class="lineNum">      91 </span>            : </a>
 <a name="92"><span class="lineNum">      92 </span>            : template &lt;class BytePuller&gt;</a>
@@ -177,7 +177,7 @@
 <a name="107"><span class="lineNum">     107 </span><span class="lineCov">        103 :             return evt;</span></a>
 <a name="108"><span class="lineNum">     108 </span>            :     }</a>
 <a name="109"><span class="lineNum">     109 </span><span class="lineCov">         64 :     return MIDIReadEvent::NO_MESSAGE;</span></a>
-<a name="110"><span class="lineNum">     110 </span><span class="lineCov">        169 : }</span></a>
+<a name="110"><span class="lineNum">     110 </span>            : }</a>
 <a name="111"><span class="lineNum">     111 </span>            : </a>
 <a name="112"><span class="lineNum">     112 </span>            : END_CS_NAMESPACE</a>
 </pre>
@@ -188,7 +188,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/MIDI_Interfaces/BluetoothMIDI_Interface.hpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/MIDI_Interfaces/BluetoothMIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">26</td>
-            <td class="headerCovTableEntry">37</td>
-            <td class="headerCovTableEntryLo">70.3 %</td>
+            <td class="headerCovTableEntry">20</td>
+            <td class="headerCovTableEntry">31</td>
+            <td class="headerCovTableEntryLo">64.5 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
@@ -115,7 +115,7 @@
 <a name="45"><span class="lineNum">      45 </span><span class="lineCov">         12 :     void flush() {</span></a>
 <a name="46"><span class="lineNum">      46 </span><span class="lineCov">         12 :         lock_t lock(mtx);</span></a>
 <a name="47"><span class="lineNum">      47 </span><span class="lineCov">         12 :         flushImpl(lock);</span></a>
-<a name="48"><span class="lineNum">      48 </span><span class="lineCov">         12 :     }</span></a>
+<a name="48"><span class="lineNum">      48 </span><span class="lineCov">         24 :     }</span></a>
 <a name="49"><span class="lineNum">      49 </span>            : </a>
 <a name="50"><span class="lineNum">      50 </span>            :     /// Set the timeout, the number of milliseconds to buffer the outgoing MIDI</a>
 <a name="51"><span class="lineNum">      51 </span>            :     /// messages. A shorter timeout usually results in lower latency, but also</a>
@@ -123,144 +123,147 @@
 <a name="53"><span class="lineNum">      53 </span><span class="lineCov">          4 :     void setTimeout(std::chrono::milliseconds timeout) {</span></a>
 <a name="54"><span class="lineNum">      54 </span><span class="lineCov">          4 :         lock_t lock(mtx);</span></a>
 <a name="55"><span class="lineNum">      55 </span><span class="lineCov">          4 :         this-&gt;timeout = timeout;</span></a>
-<a name="56"><span class="lineNum">      56 </span><span class="lineCov">          4 :     }</span></a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineCov">          8 :     }</span></a>
 <a name="57"><span class="lineNum">      57 </span>            : </a>
 <a name="58"><span class="lineNum">      58 </span>            :   public:</a>
-<a name="59"><span class="lineNum">      59 </span>            :     void begin() override;</a>
-<a name="60"><span class="lineNum">      60 </span>            :     void end();</a>
+<a name="59"><span class="lineNum">      59 </span>            :     /// Set the BLE device name. Must be called before @ref begin().</a>
+<a name="60"><span class="lineNum">      60 </span>            :     void setName(const char *name);</a>
 <a name="61"><span class="lineNum">      61 </span>            : </a>
-<a name="62"><span class="lineNum">      62 </span>            :     MIDIReadEvent read();</a>
-<a name="63"><span class="lineNum">      63 </span>            : </a>
-<a name="64"><span class="lineNum">      64 </span><span class="lineCov">         11 :     void update() override { MIDI_Interface::updateIncoming(this); }</span></a>
-<a name="65"><span class="lineNum">      65 </span>            : </a>
-<a name="66"><span class="lineNum">      66 </span>            :   private:</a>
-<a name="67"><span class="lineNum">      67 </span><span class="lineNoCov">          0 :     void handleStall() override { MIDI_Interface::handleStall(this); }</span></a>
+<a name="62"><span class="lineNum">      62 </span>            :     void begin() override;</a>
+<a name="63"><span class="lineNum">      63 </span>            :     void end();</a>
+<a name="64"><span class="lineNum">      64 </span>            : </a>
+<a name="65"><span class="lineNum">      65 </span>            :     MIDIReadEvent read();</a>
+<a name="66"><span class="lineNum">      66 </span>            : </a>
+<a name="67"><span class="lineNum">      67 </span><span class="lineCov">         11 :     void update() override { MIDI_Interface::updateIncoming(this); }</span></a>
 <a name="68"><span class="lineNum">      68 </span>            : </a>
-<a name="69"><span class="lineNum">      69 </span>            :   public:</a>
-<a name="70"><span class="lineNum">      70 </span>            :     /// Return the received channel voice message.</a>
-<a name="71"><span class="lineNum">      71 </span>            :     ChannelMessage getChannelMessage() const;</a>
-<a name="72"><span class="lineNum">      72 </span>            :     /// Return the received system common message.</a>
-<a name="73"><span class="lineNum">      73 </span>            :     SysCommonMessage getSysCommonMessage() const;</a>
-<a name="74"><span class="lineNum">      74 </span>            :     /// Return the received real-time message.</a>
-<a name="75"><span class="lineNum">      75 </span>            :     RealTimeMessage getRealTimeMessage() const;</a>
-<a name="76"><span class="lineNum">      76 </span>            :     /// Return the received system exclusive message.</a>
-<a name="77"><span class="lineNum">      77 </span>            :     SysExMessage getSysExMessage() const;</a>
-<a name="78"><span class="lineNum">      78 </span>            :     /// Get the BLE-MIDI timestamp of the latest MIDI message.</a>
-<a name="79"><span class="lineNum">      79 </span>            :     /// @note Invalid for SysEx chunks (except the last chunk of a message).</a>
-<a name="80"><span class="lineNum">      80 </span>            :     uint16_t getTimestamp() const;</a>
-<a name="81"><span class="lineNum">      81 </span>            : </a>
-<a name="82"><span class="lineNum">      82 </span>            :   protected:</a>
-<a name="83"><span class="lineNum">      83 </span>            :     // MIDI send implementations</a>
-<a name="84"><span class="lineNum">      84 </span>            :     void sendChannelMessageImpl(ChannelMessage) override;</a>
-<a name="85"><span class="lineNum">      85 </span>            :     void sendSysCommonImpl(SysCommonMessage) override;</a>
-<a name="86"><span class="lineNum">      86 </span>            :     void sendSysExImpl(SysExMessage) override;</a>
-<a name="87"><span class="lineNum">      87 </span>            :     void sendRealTimeImpl(RealTimeMessage) override;</a>
-<a name="88"><span class="lineNum">      88 </span><span class="lineNoCov">          0 :     void sendNowImpl() override { flush(); }</span></a>
-<a name="89"><span class="lineNum">      89 </span>            : </a>
-<a name="90"><span class="lineNum">      90 </span>            :     void sendChannelMessageImpl3Bytes(ChannelMessage);</a>
-<a name="91"><span class="lineNum">      91 </span>            :     void sendChannelMessageImpl2Bytes(ChannelMessage);</a>
+<a name="69"><span class="lineNum">      69 </span>            :   private:</a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineNoCov">          0 :     void handleStall() override { MIDI_Interface::handleStall(this); }</span></a>
+<a name="71"><span class="lineNum">      71 </span>            : </a>
+<a name="72"><span class="lineNum">      72 </span>            :   public:</a>
+<a name="73"><span class="lineNum">      73 </span>            :     /// Return the received channel voice message.</a>
+<a name="74"><span class="lineNum">      74 </span>            :     ChannelMessage getChannelMessage() const;</a>
+<a name="75"><span class="lineNum">      75 </span>            :     /// Return the received system common message.</a>
+<a name="76"><span class="lineNum">      76 </span>            :     SysCommonMessage getSysCommonMessage() const;</a>
+<a name="77"><span class="lineNum">      77 </span>            :     /// Return the received real-time message.</a>
+<a name="78"><span class="lineNum">      78 </span>            :     RealTimeMessage getRealTimeMessage() const;</a>
+<a name="79"><span class="lineNum">      79 </span>            :     /// Return the received system exclusive message.</a>
+<a name="80"><span class="lineNum">      80 </span>            :     SysExMessage getSysExMessage() const;</a>
+<a name="81"><span class="lineNum">      81 </span>            :     /// Get the BLE-MIDI timestamp of the latest MIDI message.</a>
+<a name="82"><span class="lineNum">      82 </span>            :     /// @note Invalid for SysEx chunks (except the last chunk of a message).</a>
+<a name="83"><span class="lineNum">      83 </span>            :     uint16_t getTimestamp() const;</a>
+<a name="84"><span class="lineNum">      84 </span>            : </a>
+<a name="85"><span class="lineNum">      85 </span>            :   protected:</a>
+<a name="86"><span class="lineNum">      86 </span>            :     // MIDI send implementations</a>
+<a name="87"><span class="lineNum">      87 </span>            :     void sendChannelMessageImpl(ChannelMessage) override;</a>
+<a name="88"><span class="lineNum">      88 </span>            :     void sendSysCommonImpl(SysCommonMessage) override;</a>
+<a name="89"><span class="lineNum">      89 </span>            :     void sendSysExImpl(SysExMessage) override;</a>
+<a name="90"><span class="lineNum">      90 </span>            :     void sendRealTimeImpl(RealTimeMessage) override;</a>
+<a name="91"><span class="lineNum">      91 </span><span class="lineNoCov">          0 :     void sendNowImpl() override { flush(); }</span></a>
 <a name="92"><span class="lineNum">      92 </span>            : </a>
-<a name="93"><span class="lineNum">      93 </span>            :   public:</a>
-<a name="94"><span class="lineNum">      94 </span>            :     void parse(const uint8_t *const data, const size_t len);</a>
+<a name="93"><span class="lineNum">      93 </span>            :     void sendChannelMessageImpl3Bytes(ChannelMessage);</a>
+<a name="94"><span class="lineNum">      94 </span>            :     void sendChannelMessageImpl2Bytes(ChannelMessage);</a>
 <a name="95"><span class="lineNum">      95 </span>            : </a>
-<a name="96"><span class="lineNum">      96 </span>            :   private:</a>
-<a name="97"><span class="lineNum">      97 </span>            :     /// The minimum MTU of all connected clients.</a>
-<a name="98"><span class="lineNum">      98 </span><span class="lineCov">         28 :     std::atomic_uint_fast16_t min_mtu{23};</span></a>
-<a name="99"><span class="lineNum">      99 </span>            :     /// Override the minimum MTU (0 means don't override, nonzero overrides if</a>
-<a name="100"><span class="lineNum">     100 </span>            :     /// it's smaller than the minimum MTU of the clients).</a>
-<a name="101"><span class="lineNum">     101 </span>            :     /// @see    @ref forceMinMTU()</a>
-<a name="102"><span class="lineNum">     102 </span><span class="lineCov">         28 :     std::atomic_uint_fast16_t force_min_mtu{0};</span></a>
-<a name="103"><span class="lineNum">     103 </span>            : </a>
-<a name="104"><span class="lineNum">     104 </span>            :     /// Set the maximum transmission unit of the Bluetooth link. Used to compute</a>
-<a name="105"><span class="lineNum">     105 </span>            :     /// the MIDI BLE packet size.</a>
-<a name="106"><span class="lineNum">     106 </span>            :     void updateMTU(uint16_t mtu);</a>
-<a name="107"><span class="lineNum">     107 </span>            : </a>
-<a name="108"><span class="lineNum">     108 </span>            :   public:</a>
-<a name="109"><span class="lineNum">     109 </span>            :     /// Get the minimum MTU of all connected clients.</a>
-<a name="110"><span class="lineNum">     110 </span>            :     uint16_t getMinMTU() const { return min_mtu; }</a>
-<a name="111"><span class="lineNum">     111 </span>            : </a>
-<a name="112"><span class="lineNum">     112 </span>            :     /// Force the MTU to an artificially small value (used for testing).</a>
-<a name="113"><span class="lineNum">     113 </span>            :     void forceMinMTU(uint16_t mtu);</a>
+<a name="96"><span class="lineNum">      96 </span>            :   public:</a>
+<a name="97"><span class="lineNum">      97 </span>            :     void parse(const uint8_t *const data, const size_t len);</a>
+<a name="98"><span class="lineNum">      98 </span>            : </a>
+<a name="99"><span class="lineNum">      99 </span>            :   private:</a>
+<a name="100"><span class="lineNum">     100 </span>            :     /// The minimum MTU of all connected clients.</a>
+<a name="101"><span class="lineNum">     101 </span>            :     std::atomic_uint_fast16_t min_mtu{23};</a>
+<a name="102"><span class="lineNum">     102 </span>            :     /// Override the minimum MTU (0 means don't override, nonzero overrides if</a>
+<a name="103"><span class="lineNum">     103 </span>            :     /// it's smaller than the minimum MTU of the clients).</a>
+<a name="104"><span class="lineNum">     104 </span>            :     /// @see    @ref forceMinMTU()</a>
+<a name="105"><span class="lineNum">     105 </span>            :     std::atomic_uint_fast16_t force_min_mtu{0};</a>
+<a name="106"><span class="lineNum">     106 </span>            : </a>
+<a name="107"><span class="lineNum">     107 </span>            :     /// Set the maximum transmission unit of the Bluetooth link. Used to compute</a>
+<a name="108"><span class="lineNum">     108 </span>            :     /// the MIDI BLE packet size.</a>
+<a name="109"><span class="lineNum">     109 </span>            :     void updateMTU(uint16_t mtu);</a>
+<a name="110"><span class="lineNum">     110 </span>            : </a>
+<a name="111"><span class="lineNum">     111 </span>            :   public:</a>
+<a name="112"><span class="lineNum">     112 </span>            :     /// Get the minimum MTU of all connected clients.</a>
+<a name="113"><span class="lineNum">     113 </span>            :     uint16_t getMinMTU() const { return min_mtu; }</a>
 <a name="114"><span class="lineNum">     114 </span>            : </a>
-<a name="115"><span class="lineNum">     115 </span>            :   private:</a>
-<a name="116"><span class="lineNum">     116 </span>            :     /// Only one active instance.</a>
-<a name="117"><span class="lineNum">     117 </span>            :     static BluetoothMIDI_Interface *instance;</a>
-<a name="118"><span class="lineNum">     118 </span>            :     /// MIDI Parser for incoming data.</a>
-<a name="119"><span class="lineNum">     119 </span><span class="lineCov">         28 :     SerialMIDI_Parser parser{false};</span></a>
-<a name="120"><span class="lineNum">     120 </span>            :     /// Builds outgoing MIDI BLE packets.</a>
-<a name="121"><span class="lineNum">     121 </span>            :     BLEMIDIPacketBuilder packetbuilder;</a>
-<a name="122"><span class="lineNum">     122 </span>            :     /// Queue for incoming MIDI messages.</a>
-<a name="123"><span class="lineNum">     123 </span><span class="lineCov">         28 :     MIDIMessageQueue queue{64};</span></a>
-<a name="124"><span class="lineNum">     124 </span>            :     /// Incoming message that can be from retrieved using the</a>
-<a name="125"><span class="lineNum">     125 </span>            :     /// `getChannelMessage()`, `getSysCommonMessage()`, `getRealTimeMessage()`</a>
-<a name="126"><span class="lineNum">     126 </span>            :     /// and `getSysExMessage()` methods.</a>
-<a name="127"><span class="lineNum">     127 </span>            :     MIDIMessageQueue::MIDIMessageQueueElement incomingMessage;</a>
-<a name="128"><span class="lineNum">     128 </span>            : </a>
-<a name="129"><span class="lineNum">     129 </span>            :   private:</a>
-<a name="130"><span class="lineNum">     130 </span>            :     // Synchronization for asynchronous BLE sending</a>
+<a name="115"><span class="lineNum">     115 </span>            :     /// Force the MTU to an artificially small value (used for testing).</a>
+<a name="116"><span class="lineNum">     116 </span>            :     void forceMinMTU(uint16_t mtu);</a>
+<a name="117"><span class="lineNum">     117 </span>            : </a>
+<a name="118"><span class="lineNum">     118 </span>            :   private:</a>
+<a name="119"><span class="lineNum">     119 </span>            :     /// Only one active instance.</a>
+<a name="120"><span class="lineNum">     120 </span>            :     static BluetoothMIDI_Interface *instance;</a>
+<a name="121"><span class="lineNum">     121 </span>            :     /// MIDI Parser for incoming data.</a>
+<a name="122"><span class="lineNum">     122 </span>            :     SerialMIDI_Parser parser{false};</a>
+<a name="123"><span class="lineNum">     123 </span>            :     /// Builds outgoing MIDI BLE packets.</a>
+<a name="124"><span class="lineNum">     124 </span>            :     BLEMIDIPacketBuilder packetbuilder;</a>
+<a name="125"><span class="lineNum">     125 </span>            :     /// Queue for incoming MIDI messages.</a>
+<a name="126"><span class="lineNum">     126 </span>            :     MIDIMessageQueue queue{64};</a>
+<a name="127"><span class="lineNum">     127 </span>            :     /// Incoming message that can be from retrieved using the</a>
+<a name="128"><span class="lineNum">     128 </span>            :     /// `getChannelMessage()`, `getSysCommonMessage()`, `getRealTimeMessage()`</a>
+<a name="129"><span class="lineNum">     129 </span>            :     /// and `getSysExMessage()` methods.</a>
+<a name="130"><span class="lineNum">     130 </span>            :     MIDIMessageQueue::MIDIMessageQueueElement incomingMessage;</a>
 <a name="131"><span class="lineNum">     131 </span>            : </a>
-<a name="132"><span class="lineNum">     132 </span>            :     /// Lock type used to lock the mutex</a>
-<a name="133"><span class="lineNum">     133 </span>            :     using lock_t = std::unique_lock&lt;std::mutex&gt;;</a>
-<a name="134"><span class="lineNum">     134 </span>            :     /// Mutex to lock the MIDI BLE packet builder and the flush flag.</a>
-<a name="135"><span class="lineNum">     135 </span>            :     std::mutex mtx;</a>
-<a name="136"><span class="lineNum">     136 </span>            :     /// Condition variable used by the background sender thread to wait for</a>
-<a name="137"><span class="lineNum">     137 </span>            :     /// data to send, and for the main thread to wait for the data to be flushed</a>
-<a name="138"><span class="lineNum">     138 </span>            :     /// by the sender thread.</a>
-<a name="139"><span class="lineNum">     139 </span>            :     std::condition_variable cv;</a>
-<a name="140"><span class="lineNum">     140 </span>            :     /// Background thread that sends the actual MIDI BLE packets.</a>
-<a name="141"><span class="lineNum">     141 </span>            :     std::thread send_thread;</a>
-<a name="142"><span class="lineNum">     142 </span>            :     /// Flag to stop the background thread.</a>
-<a name="143"><span class="lineNum">     143 </span><span class="lineCov">         28 :     std::atomic_bool stop_sending{false};</span></a>
-<a name="144"><span class="lineNum">     144 </span>            :     /// Flag to tell the sender thread to send the packet immediately.</a>
-<a name="145"><span class="lineNum">     145 </span><span class="lineCov">         28 :     bool flushnow = false;</span></a>
-<a name="146"><span class="lineNum">     146 </span>            :     /// Timeout before the sender thread sends a packet.</a>
-<a name="147"><span class="lineNum">     147 </span>            :     /// @see    @ref setTimeout()</a>
-<a name="148"><span class="lineNum">     148 </span><span class="lineCov">         28 :     std::chrono::milliseconds timeout{10};</span></a>
-<a name="149"><span class="lineNum">     149 </span>            : </a>
-<a name="150"><span class="lineNum">     150 </span>            :   private:</a>
-<a name="151"><span class="lineNum">     151 </span>            :     /// Launch a thread that sends the BLE packets in the background.</a>
-<a name="152"><span class="lineNum">     152 </span>            :     void startSendingThread();</a>
-<a name="153"><span class="lineNum">     153 </span>            : </a>
-<a name="154"><span class="lineNum">     154 </span>            :     /// Function that waits for BLE packets and sends them in the background.</a>
-<a name="155"><span class="lineNum">     155 </span>            :     /// It either sends them after a timeout (a given number of milliseconds</a>
-<a name="156"><span class="lineNum">     156 </span>            :     /// after the first data was added to the packet), or immediately when it</a>
-<a name="157"><span class="lineNum">     157 </span>            :     /// receives a flush signal from the main thread.</a>
-<a name="158"><span class="lineNum">     158 </span>            :     bool handleSendEvents();</a>
-<a name="159"><span class="lineNum">     159 </span>            : </a>
-<a name="160"><span class="lineNum">     160 </span>            :     /// Tell the background BLE sender thread to send the current packet.</a>
-<a name="161"><span class="lineNum">     161 </span>            :     /// Blocks until the packet is sent.</a>
-<a name="162"><span class="lineNum">     162 </span>            :     ///</a>
-<a name="163"><span class="lineNum">     163 </span>            :     /// @param  lock</a>
-<a name="164"><span class="lineNum">     164 </span>            :     ///         Lock should be locked at entry, will still be locked on exit.</a>
-<a name="165"><span class="lineNum">     165 </span>            :     void flushImpl(lock_t &amp;lock);</a>
-<a name="166"><span class="lineNum">     166 </span>            : </a>
-<a name="167"><span class="lineNum">     167 </span>            : #if !defined(ARDUINO) &amp;&amp; !defined(DOXYGEN)</a>
-<a name="168"><span class="lineNum">     168 </span>            :     public:</a>
-<a name="169"><span class="lineNum">     169 </span>            : #endif</a>
-<a name="170"><span class="lineNum">     170 </span>            :     /// Tell the background BLE sender thread to stop gracefully, and join it.</a>
-<a name="171"><span class="lineNum">     171 </span>            :     void stopSendingThread();</a>
-<a name="172"><span class="lineNum">     172 </span>            : </a>
-<a name="173"><span class="lineNum">     173 </span>            :   public:</a>
-<a name="174"><span class="lineNum">     174 </span><span class="lineNoCov">          0 :     static void midi_write_callback(const uint8_t *data, size_t length) {</span></a>
-<a name="175"><span class="lineNum">     175 </span><span class="lineNoCov">          0 :         if (instance)</span></a>
-<a name="176"><span class="lineNum">     176 </span><span class="lineNoCov">          0 :             instance-&gt;parse(data, length);</span></a>
-<a name="177"><span class="lineNum">     177 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="178"><span class="lineNum">     178 </span>            : </a>
-<a name="179"><span class="lineNum">     179 </span><span class="lineNoCov">          0 :     static void midi_mtu_callback(uint16_t mtu) {</span></a>
-<a name="180"><span class="lineNum">     180 </span><span class="lineNoCov">          0 :         if (instance)</span></a>
-<a name="181"><span class="lineNum">     181 </span><span class="lineNoCov">          0 :             instance-&gt;updateMTU(mtu);</span></a>
-<a name="182"><span class="lineNum">     182 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="183"><span class="lineNum">     183 </span>            : </a>
-<a name="184"><span class="lineNum">     184 </span>            : #ifdef ARDUINO</a>
-<a name="185"><span class="lineNum">     185 </span>            :   private:</a>
-<a name="186"><span class="lineNum">     186 </span>            :     void notifyMIDIBLE(const std::vector&lt;uint8_t&gt; &amp;packet);</a>
-<a name="187"><span class="lineNum">     187 </span>            : #else</a>
-<a name="188"><span class="lineNum">     188 </span>            :   public:</a>
-<a name="189"><span class="lineNum">     189 </span><span class="lineCov">         50 :     MOCK_METHOD(void, notifyMIDIBLE, (const std::vector&lt;uint8_t&gt; &amp;), ());</span></a>
-<a name="190"><span class="lineNum">     190 </span>            : #endif</a>
-<a name="191"><span class="lineNum">     191 </span>            : };</a>
-<a name="192"><span class="lineNum">     192 </span>            : </a>
-<a name="193"><span class="lineNum">     193 </span>            : END_CS_NAMESPACE</a>
+<a name="132"><span class="lineNum">     132 </span>            :   private:</a>
+<a name="133"><span class="lineNum">     133 </span>            :     // Synchronization for asynchronous BLE sending</a>
+<a name="134"><span class="lineNum">     134 </span>            : </a>
+<a name="135"><span class="lineNum">     135 </span>            :     /// Lock type used to lock the mutex</a>
+<a name="136"><span class="lineNum">     136 </span>            :     using lock_t = std::unique_lock&lt;std::mutex&gt;;</a>
+<a name="137"><span class="lineNum">     137 </span>            :     /// Mutex to lock the MIDI BLE packet builder and the flush flag.</a>
+<a name="138"><span class="lineNum">     138 </span>            :     std::mutex mtx;</a>
+<a name="139"><span class="lineNum">     139 </span>            :     /// Condition variable used by the background sender thread to wait for</a>
+<a name="140"><span class="lineNum">     140 </span>            :     /// data to send, and for the main thread to wait for the data to be flushed</a>
+<a name="141"><span class="lineNum">     141 </span>            :     /// by the sender thread.</a>
+<a name="142"><span class="lineNum">     142 </span>            :     std::condition_variable cv;</a>
+<a name="143"><span class="lineNum">     143 </span>            :     /// Background thread that sends the actual MIDI BLE packets.</a>
+<a name="144"><span class="lineNum">     144 </span>            :     std::thread send_thread;</a>
+<a name="145"><span class="lineNum">     145 </span>            :     /// Flag to stop the background thread.</a>
+<a name="146"><span class="lineNum">     146 </span>            :     std::atomic_bool stop_sending{false};</a>
+<a name="147"><span class="lineNum">     147 </span>            :     /// Flag to tell the sender thread to send the packet immediately.</a>
+<a name="148"><span class="lineNum">     148 </span>            :     bool flushnow = false;</a>
+<a name="149"><span class="lineNum">     149 </span>            :     /// Timeout before the sender thread sends a packet.</a>
+<a name="150"><span class="lineNum">     150 </span>            :     /// @see    @ref setTimeout()</a>
+<a name="151"><span class="lineNum">     151 </span><span class="lineCov">         28 :     std::chrono::milliseconds timeout{10};</span></a>
+<a name="152"><span class="lineNum">     152 </span>            : </a>
+<a name="153"><span class="lineNum">     153 </span>            :   private:</a>
+<a name="154"><span class="lineNum">     154 </span>            :     /// Launch a thread that sends the BLE packets in the background.</a>
+<a name="155"><span class="lineNum">     155 </span>            :     void startSendingThread();</a>
+<a name="156"><span class="lineNum">     156 </span>            : </a>
+<a name="157"><span class="lineNum">     157 </span>            :     /// Function that waits for BLE packets and sends them in the background.</a>
+<a name="158"><span class="lineNum">     158 </span>            :     /// It either sends them after a timeout (a given number of milliseconds</a>
+<a name="159"><span class="lineNum">     159 </span>            :     /// after the first data was added to the packet), or immediately when it</a>
+<a name="160"><span class="lineNum">     160 </span>            :     /// receives a flush signal from the main thread.</a>
+<a name="161"><span class="lineNum">     161 </span>            :     bool handleSendEvents();</a>
+<a name="162"><span class="lineNum">     162 </span>            : </a>
+<a name="163"><span class="lineNum">     163 </span>            :     /// Tell the background BLE sender thread to send the current packet.</a>
+<a name="164"><span class="lineNum">     164 </span>            :     /// Blocks until the packet is sent.</a>
+<a name="165"><span class="lineNum">     165 </span>            :     ///</a>
+<a name="166"><span class="lineNum">     166 </span>            :     /// @param  lock</a>
+<a name="167"><span class="lineNum">     167 </span>            :     ///         Lock should be locked at entry, will still be locked on exit.</a>
+<a name="168"><span class="lineNum">     168 </span>            :     void flushImpl(lock_t &amp;lock);</a>
+<a name="169"><span class="lineNum">     169 </span>            : </a>
+<a name="170"><span class="lineNum">     170 </span>            : #if !defined(ARDUINO) &amp;&amp; !defined(DOXYGEN)</a>
+<a name="171"><span class="lineNum">     171 </span>            :     public:</a>
+<a name="172"><span class="lineNum">     172 </span>            : #endif</a>
+<a name="173"><span class="lineNum">     173 </span>            :     /// Tell the background BLE sender thread to stop gracefully, and join it.</a>
+<a name="174"><span class="lineNum">     174 </span>            :     void stopSendingThread();</a>
+<a name="175"><span class="lineNum">     175 </span>            : </a>
+<a name="176"><span class="lineNum">     176 </span>            :   public:</a>
+<a name="177"><span class="lineNum">     177 </span><span class="lineNoCov">          0 :     static void midi_write_callback(const uint8_t *data, size_t length) {</span></a>
+<a name="178"><span class="lineNum">     178 </span><span class="lineNoCov">          0 :         if (instance)</span></a>
+<a name="179"><span class="lineNum">     179 </span><span class="lineNoCov">          0 :             instance-&gt;parse(data, length);</span></a>
+<a name="180"><span class="lineNum">     180 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="181"><span class="lineNum">     181 </span>            : </a>
+<a name="182"><span class="lineNum">     182 </span><span class="lineNoCov">          0 :     static void midi_mtu_callback(uint16_t mtu) {</span></a>
+<a name="183"><span class="lineNum">     183 </span><span class="lineNoCov">          0 :         if (instance)</span></a>
+<a name="184"><span class="lineNum">     184 </span><span class="lineNoCov">          0 :             instance-&gt;updateMTU(mtu);</span></a>
+<a name="185"><span class="lineNum">     185 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="186"><span class="lineNum">     186 </span>            : </a>
+<a name="187"><span class="lineNum">     187 </span>            : #ifdef ARDUINO</a>
+<a name="188"><span class="lineNum">     188 </span>            :   private:</a>
+<a name="189"><span class="lineNum">     189 </span>            :     void notifyMIDIBLE(const std::vector&lt;uint8_t&gt; &amp;packet);</a>
+<a name="190"><span class="lineNum">     190 </span>            : #else</a>
+<a name="191"><span class="lineNum">     191 </span>            :   public:</a>
+<a name="192"><span class="lineNum">     192 </span><span class="lineCov">         50 :     MOCK_METHOD(void, notifyMIDIBLE, (const std::vector&lt;uint8_t&gt; &amp;), ());</span></a>
+<a name="193"><span class="lineNum">     193 </span>            : #endif</a>
+<a name="194"><span class="lineNum">     194 </span>            : };</a>
+<a name="195"><span class="lineNum">     195 </span>            : </a>
+<a name="196"><span class="lineNum">     196 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>
@@ -269,7 +272,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

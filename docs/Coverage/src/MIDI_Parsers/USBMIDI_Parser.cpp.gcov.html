@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/MIDI_Parsers/USBMIDI_Parser.cpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/MIDI_Parsers/USBMIDI_Parser.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,20 +28,20 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">80</td>
-            <td class="headerCovTableEntry">83</td>
-            <td class="headerCovTableEntryHi">96.4 %</td>
+            <td class="headerCovTableEntry">71</td>
+            <td class="headerCovTableEntry">74</td>
+            <td class="headerCovTableEntryHi">95.9 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">10</td>
-            <td class="headerCovTableEntry">10</td>
+            <td class="headerCovTableEntry">9</td>
+            <td class="headerCovTableEntry">9</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
@@ -89,10 +89,10 @@
 <a name="19"><span class="lineNum">      19 </span><span class="lineCov">        102 :     if (packet[1] == uint8_t(MIDIMessageType::SYSEX_START)) {</span></a>
 <a name="20"><span class="lineNum">      20 </span><span class="lineCov">         10 :         startSysEx(cable); // start a new message</span></a>
 <a name="21"><span class="lineNum">      21 </span>            :                            // (overwrites previous unfinished message)</a>
-<a name="22"><span class="lineNum">      22 </span><span class="lineCov">         10 :     }</span></a>
+<a name="22"><span class="lineNum">      22 </span>            :     }</a>
 <a name="23"><span class="lineNum">      23 </span>            :     // If we haven't received a SysExStart</a>
 <a name="24"><span class="lineNum">      24 </span><span class="lineCov">         92 :     else if (!receivingSysEx(cable)) {</span></a>
-<a name="25"><span class="lineNum">      25 </span><span class="lineCov">          1 :         DEBUGREF(F(&quot;No SysExStart received&quot;));</span></a>
+<a name="25"><span class="lineNum">      25 </span>            :         DEBUGREF(F(&quot;No SysExStart received&quot;));</a>
 <a name="26"><span class="lineNum">      26 </span><span class="lineCov">          1 :         return MIDIReadEvent::NO_MESSAGE; // ignore the data</span></a>
 <a name="27"><span class="lineNum">      27 </span>            :     }</a>
 <a name="28"><span class="lineNum">      28 </span>            : </a>
@@ -110,7 +110,7 @@
 <a name="40"><span class="lineNum">      40 </span>            :     (void)cable;</a>
 <a name="41"><span class="lineNum">      41 </span>            : #endif</a>
 <a name="42"><span class="lineNum">      42 </span><span class="lineCov">        100 :     return MIDIReadEvent::NO_MESSAGE; // SysEx is not finished yet</span></a>
-<a name="43"><span class="lineNum">      43 </span><span class="lineCov">        102 : }</span></a>
+<a name="43"><span class="lineNum">      43 </span>            : }</a>
 <a name="44"><span class="lineNum">      44 </span>            : </a>
 <a name="45"><span class="lineNum">      45 </span>            : template &lt;uint8_t NumBytes&gt;</a>
 <a name="46"><span class="lineNum">      46 </span><span class="lineCov">         11 : MIDIReadEvent USBMIDI_Parser::handleSysExEnd(MIDIUSBPacket_t packet,</span></a>
@@ -124,10 +124,10 @@
 <a name="54"><span class="lineNum">      54 </span><span class="lineCov">         11 :     if (packet[1] == uint8_t(MIDIMessageType::SYSEX_START)) {</span></a>
 <a name="55"><span class="lineNum">      55 </span><span class="lineCov">          2 :         startSysEx(cable); // start a new message</span></a>
 <a name="56"><span class="lineNum">      56 </span>            :                            // (overwrites previous unfinished message)</a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">          2 :     }</span></a>
+<a name="57"><span class="lineNum">      57 </span>            :     }</a>
 <a name="58"><span class="lineNum">      58 </span>            :     // If we haven't received a SysExStart</a>
 <a name="59"><span class="lineNum">      59 </span><span class="lineCov">          9 :     else if (!receivingSysEx(cable)) {</span></a>
-<a name="60"><span class="lineNum">      60 </span><span class="lineCov">          2 :         DEBUGFN(F(&quot;No SysExStart received&quot;));</span></a>
+<a name="60"><span class="lineNum">      60 </span>            :         DEBUGFN(F(&quot;No SysExStart received&quot;));</a>
 <a name="61"><span class="lineNum">      61 </span><span class="lineCov">          2 :         return MIDIReadEvent::NO_MESSAGE; // ignore the data</span></a>
 <a name="62"><span class="lineNum">      62 </span>            :     }</a>
 <a name="63"><span class="lineNum">      63 </span>            : </a>
@@ -141,13 +141,13 @@
 <a name="71"><span class="lineNum">      71 </span>            :     // Enough space available in buffer, finish the message</a>
 <a name="72"><span class="lineNum">      72 </span><span class="lineCov">          8 :     addSysExBytes(cable, &amp;packet[1], NumBytes);</span></a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">          8 :     endSysEx(cable);</span></a>
-<a name="74"><span class="lineNum">      74 </span><span class="lineCov">          9 :     return MIDIReadEvent::SYSEX_MESSAGE;</span></a>
+<a name="74"><span class="lineNum">      74 </span><span class="lineCov">          8 :     return MIDIReadEvent::SYSEX_MESSAGE;</span></a>
 <a name="75"><span class="lineNum">      75 </span>            : #else</a>
 <a name="76"><span class="lineNum">      76 </span>            :     (void)packet;</a>
 <a name="77"><span class="lineNum">      77 </span>            :     (void)cable;</a>
 <a name="78"><span class="lineNum">      78 </span>            :     return MIDIReadEvent::NO_MESSAGE;</a>
 <a name="79"><span class="lineNum">      79 </span>            : #endif</a>
-<a name="80"><span class="lineNum">      80 </span><span class="lineCov">         11 : }</span></a>
+<a name="80"><span class="lineNum">      80 </span>            : }</a>
 <a name="81"><span class="lineNum">      81 </span>            : </a>
 <a name="82"><span class="lineNum">      82 </span>            : template &lt;&gt;</a>
 <a name="83"><span class="lineNum">      83 </span><span class="lineCov">          7 : MIDIReadEvent USBMIDI_Parser::handleSysExEnd&lt;1&gt;(MIDIUSBPacket_t packet,</span></a>
@@ -165,7 +165,7 @@
 <a name="95"><span class="lineNum">      95 </span>            :     else {</a>
 <a name="96"><span class="lineNum">      96 </span>            :         // If we haven't received a SysExStart</a>
 <a name="97"><span class="lineNum">      97 </span><span class="lineCov">          5 :         if (!receivingSysEx(cable)) {</span></a>
-<a name="98"><span class="lineNum">      98 </span><span class="lineCov">          1 :             DEBUGREF(F(&quot;No SysExStart received&quot;));</span></a>
+<a name="98"><span class="lineNum">      98 </span>            :             DEBUGREF(F(&quot;No SysExStart received&quot;));</a>
 <a name="99"><span class="lineNum">      99 </span><span class="lineCov">          1 :             return MIDIReadEvent::NO_MESSAGE; // ignore the data</span></a>
 <a name="100"><span class="lineNum">     100 </span>            :         }</a>
 <a name="101"><span class="lineNum">     101 </span>            : </a>
@@ -186,7 +186,7 @@
 <a name="116"><span class="lineNum">     116 </span>            :     (void)cable;</a>
 <a name="117"><span class="lineNum">     117 </span>            :     return MIDIReadEvent::NO_MESSAGE;</a>
 <a name="118"><span class="lineNum">     118 </span>            : #endif</a>
-<a name="119"><span class="lineNum">     119 </span><span class="lineCov">          7 : }</span></a>
+<a name="119"><span class="lineNum">     119 </span>            : }</a>
 <a name="120"><span class="lineNum">     120 </span>            : </a>
 <a name="121"><span class="lineNum">     121 </span><span class="lineCov">          4 : MIDIReadEvent USBMIDI_Parser::handleSysCommon(MIDIUSBPacket_t packet,</span></a>
 <a name="122"><span class="lineNum">     122 </span>            :                                               Cable cable) {</a>
@@ -222,13 +222,13 @@
 <a name="152"><span class="lineNum">     152 </span><span class="lineCov">        133 :     switch (CIN) {</span></a>
 <a name="153"><span class="lineNum">     153 </span>            :         case M::MISC_FUNCTION_CODES: break; // LCOV_EXCL_LINE</a>
 <a name="154"><span class="lineNum">     154 </span>            :         case M::CABLE_EVENTS: break;        // LCOV_EXCL_LINE</a>
-<a name="155"><span class="lineNum">     155 </span>            :         case M::SYSTEM_COMMON_2B:           // fallthrough</a>
+<a name="155"><span class="lineNum">     155 </span><span class="lineCov">          4 :         case M::SYSTEM_COMMON_2B:           // fallthrough</span></a>
 <a name="156"><span class="lineNum">     156 </span><span class="lineCov">          4 :         case M::SYSTEM_COMMON_3B: return handleSysCommon(packet, cable);</span></a>
 <a name="157"><span class="lineNum">     157 </span><span class="lineCov">        102 :         case M::SYSEX_START_CONT: return handleSysExStartCont(packet, cable);</span></a>
 <a name="158"><span class="lineNum">     158 </span><span class="lineCov">          7 :         case M::SYSEX_END_1B: return handleSysExEnd&lt;1&gt;(packet, cable);</span></a>
 <a name="159"><span class="lineNum">     159 </span><span class="lineCov">          5 :         case M::SYSEX_END_2B: return handleSysExEnd&lt;2&gt;(packet, cable);</span></a>
 <a name="160"><span class="lineNum">     160 </span><span class="lineCov">          6 :         case M::SYSEX_END_3B: return handleSysExEnd&lt;3&gt;(packet, cable);</span></a>
-<a name="161"><span class="lineNum">     161 </span>            :         case M::NOTE_OFF:         // fallthrough</a>
+<a name="161"><span class="lineNum">     161 </span><span class="lineCov">          6 :         case M::NOTE_OFF:         // fallthrough</span></a>
 <a name="162"><span class="lineNum">     162 </span>            :         case M::NOTE_ON:          // fallthrough</a>
 <a name="163"><span class="lineNum">     163 </span>            :         case M::KEY_PRESSURE:     // fallthrough</a>
 <a name="164"><span class="lineNum">     164 </span>            :         case M::CONTROL_CHANGE:   // fallthrough</a>
@@ -240,7 +240,7 @@
 <a name="170"><span class="lineNum">     170 </span>            :     }</a>
 <a name="171"><span class="lineNum">     171 </span>            : </a>
 <a name="172"><span class="lineNum">     172 </span>            :     return MIDIReadEvent::NO_MESSAGE; // LCOV_EXCL_LINE</a>
-<a name="173"><span class="lineNum">     173 </span><span class="lineCov">        133 : }</span></a>
+<a name="173"><span class="lineNum">     173 </span>            : }</a>
 <a name="174"><span class="lineNum">     174 </span>            : </a>
 <a name="175"><span class="lineNum">     175 </span><span class="lineCov">         39 : MIDIReadEvent USBMIDI_Parser::resume() {</span></a>
 <a name="176"><span class="lineNum">     176 </span>            : #if !IGNORE_SYSEX</a>
@@ -253,13 +253,13 @@
 <a name="183"><span class="lineNum">     183 </span><span class="lineCov">          2 :     if (receivingSysEx(activeCable)) {</span></a>
 <a name="184"><span class="lineNum">     184 </span>            :         // Reset the buffer for the next chunk</a>
 <a name="185"><span class="lineNum">     185 </span><span class="lineCov">          2 :         startSysEx(activeCable);</span></a>
-<a name="186"><span class="lineNum">     186 </span><span class="lineCov">          2 :     }</span></a>
+<a name="186"><span class="lineNum">     186 </span>            :     }</a>
 <a name="187"><span class="lineNum">     187 </span>            : </a>
 <a name="188"><span class="lineNum">     188 </span><span class="lineCov">          2 :     return feed(packet);</span></a>
 <a name="189"><span class="lineNum">     189 </span>            : #else</a>
 <a name="190"><span class="lineNum">     190 </span>            :     return MIDIReadEvent::NO_MESSAGE;</a>
 <a name="191"><span class="lineNum">     191 </span>            : #endif</a>
-<a name="192"><span class="lineNum">     192 </span><span class="lineCov">         39 : }</span></a>
+<a name="192"><span class="lineNum">     192 </span>            : }</a>
 <a name="193"><span class="lineNum">     193 </span>            : </a>
 <a name="194"><span class="lineNum">     194 </span>            : END_CS_NAMESPACE</a>
 </pre>
@@ -270,7 +270,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

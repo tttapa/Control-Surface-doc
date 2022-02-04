@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/Selectors/Selector.hpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/Selectors/Selector.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">48</td>
-            <td class="headerCovTableEntry">48</td>
+            <td class="headerCovTableEntry">42</td>
+            <td class="headerCovTableEntry">42</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">31</td>
-            <td class="headerCovTableEntry">55</td>
-            <td class="headerCovTableEntryLo">56.4 %</td>
+            <td class="headerCovTableEntry">25</td>
+            <td class="headerCovTableEntry">43</td>
+            <td class="headerCovTableEntryLo">58.1 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -109,7 +109,7 @@
 <a name="39"><span class="lineNum">      39 </span>            : class SelectorBase {</a>
 <a name="40"><span class="lineNum">      40 </span>            :   protected:</a>
 <a name="41"><span class="lineNum">      41 </span>            :     /// Constructor.</a>
-<a name="42"><span class="lineNum">      42 </span><span class="lineCov">         38 :     SelectorBase() = default;</span></a>
+<a name="42"><span class="lineNum">      42 </span><span class="lineCov">         19 :     SelectorBase() = default;</span></a>
 <a name="43"><span class="lineNum">      43 </span>            : </a>
 <a name="44"><span class="lineNum">      44 </span>            :   public:</a>
 <a name="45"><span class="lineNum">      45 </span>            :     /// Get the current selection/setting.</a>
@@ -119,7 +119,7 @@
 <a name="49"><span class="lineNum">      49 </span>            :     /// The selection of the selector. It is saved in the selector as well as</a>
 <a name="50"><span class="lineNum">      50 </span>            :     /// the selectable, because you need it in order to implement</a>
 <a name="51"><span class="lineNum">      51 </span>            :     /// increment/decrement methods.</a>
-<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         19 :     setting_t setting = 0;</span></a>
+<a name="52"><span class="lineNum">      52 </span>            :     setting_t setting = 0;</a>
 <a name="53"><span class="lineNum">      53 </span>            : };</a>
 <a name="54"><span class="lineNum">      54 </span>            : </a>
 <a name="55"><span class="lineNum">      55 </span>            : template &lt;setting_t N, class Callback = EmptySelectorCallback&gt;</a>
@@ -136,8 +136,8 @@
 <a name="66"><span class="lineNum">      66 </span>            :      *          feedback from the selector (e.g. LEDs or some different kind of</a>
 <a name="67"><span class="lineNum">      67 </span>            :      *          display).</a>
 <a name="68"><span class="lineNum">      68 </span>            :      */</a>
-<a name="69"><span class="lineNum">      69 </span><span class="lineCov">         57 :     GenericSelector(Selectable&lt;N&gt; &amp;selectable, const Callback &amp;callback)</span></a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">         57 :         : selectable(selectable), callback(callback) {}</span></a>
+<a name="69"><span class="lineNum">      69 </span><span class="lineCov">         19 :     GenericSelector(Selectable&lt;N&gt; &amp;selectable, const Callback &amp;callback)</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">         19 :         : selectable(selectable), callback(callback) {}</span></a>
 <a name="71"><span class="lineNum">      71 </span>            : </a>
 <a name="72"><span class="lineNum">      72 </span><span class="lineCov">          7 :     void begin() override {</span></a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineCov">          7 :         callback.begin();</span></a>
@@ -166,7 +166,7 @@
 <a name="96"><span class="lineNum">      96 </span><span class="lineCov">         15 :         if (get() != newSetting) {</span></a>
 <a name="97"><span class="lineNum">      97 </span><span class="lineCov">         15 :             callback.update(get(), newSetting);</span></a>
 <a name="98"><span class="lineNum">      98 </span><span class="lineCov">         15 :             this-&gt;setting = newSetting;</span></a>
-<a name="99"><span class="lineNum">      99 </span><span class="lineCov">         15 :         }</span></a>
+<a name="99"><span class="lineNum">      99 </span>            :         }</a>
 <a name="100"><span class="lineNum">     100 </span><span class="lineCov">         15 :     }</span></a>
 <a name="101"><span class="lineNum">     101 </span>            : </a>
 <a name="102"><span class="lineNum">     102 </span>            :     /**</a>
@@ -184,9 +184,9 @@
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">          2 :                 setting = 0;</span></a>
 <a name="115"><span class="lineNum">     115 </span>            :             else</a>
 <a name="116"><span class="lineNum">     116 </span><span class="lineCov">          1 :                 return;</span></a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineCov">          2 :         }</span></a>
+<a name="117"><span class="lineNum">     117 </span>            :         }</a>
 <a name="118"><span class="lineNum">     118 </span><span class="lineCov">          7 :         this-&gt;set(setting);</span></a>
-<a name="119"><span class="lineNum">     119 </span><span class="lineCov">          8 :     }</span></a>
+<a name="119"><span class="lineNum">     119 </span>            :     }</a>
 <a name="120"><span class="lineNum">     120 </span>            : </a>
 <a name="121"><span class="lineNum">     121 </span>            :     /**</a>
 <a name="122"><span class="lineNum">     122 </span>            :      * @brief   Subtract one from the setting, wrap around or clamp, depending </a>
@@ -202,10 +202,10 @@
 <a name="132"><span class="lineNum">     132 </span><span class="lineCov">          1 :                 setting = N;</span></a>
 <a name="133"><span class="lineNum">     133 </span>            :             else</a>
 <a name="134"><span class="lineNum">     134 </span><span class="lineCov">          1 :                 return;</span></a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineCov">          1 :         }</span></a>
+<a name="135"><span class="lineNum">     135 </span>            :         }</a>
 <a name="136"><span class="lineNum">     136 </span><span class="lineCov">          4 :         setting--;</span></a>
 <a name="137"><span class="lineNum">     137 </span><span class="lineCov">          4 :         this-&gt;set(setting);</span></a>
-<a name="138"><span class="lineNum">     138 </span><span class="lineCov">          5 :     }</span></a>
+<a name="138"><span class="lineNum">     138 </span>            :     }</a>
 <a name="139"><span class="lineNum">     139 </span>            : </a>
 <a name="140"><span class="lineNum">     140 </span>            :   private:</a>
 <a name="141"><span class="lineNum">     141 </span>            :     Selectable&lt;N&gt; &amp;selectable;</a>
@@ -236,7 +236,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

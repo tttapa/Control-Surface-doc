@@ -34,7 +34,7 @@ var searchData=
   ['replace_31',['REPLACE',['../de/d44/group__MCU__Notes.html#ga067b28e885dcbd69a77439c2a2a24174',1,'MCU']]],
   ['reset_32',['RESET',['../d6/d99/structRealTimeMessage.html#a6c4c680d322680e900fa7aa7c25dac40',1,'RealTimeMessage']]],
   ['reset_5fall_5fcontrollers_33',['Reset_All_Controllers',['../d4/dbe/namespaceMIDI__CC.html#ae068ca5f93f62423012b27e50f93f7c8',1,'MIDI_CC']]],
-  ['resetaddress_34',['resetAddress',['../dc/dc2/classMIDIIncrementDecrementButtons.html#a007b79ab1f2e3f93e70b369ca580b27c',1,'MIDIIncrementDecrementButtons']]],
+  ['resetaddress_34',['resetAddress',['../dc/dc2/classMIDIIncrementDecrementButtons.html#af17237aef5629c27de6217b100a874fe',1,'MIDIIncrementDecrementButtons']]],
   ['resetsender_35',['resetSender',['../d1/d2f/classBankable_1_1MIDIIncrementDecrementButtons.html#a3bcf0db2ae4a0f443c3785cdcc247952',1,'Bankable::MIDIIncrementDecrementButtons::resetSender()'],['../dc/dc2/classMIDIIncrementDecrementButtons.html#a3bcf0db2ae4a0f443c3785cdcc247952',1,'MIDIIncrementDecrementButtons::resetSender()']]],
   ['reverse_5fcymbal_36',['Reverse_Cymbal',['../da/da6/namespaceMIDI__PC.html#ac1f21cc7ec45e4075e5d6d1fc78d49a8',1,'MIDI_PC']]],
   ['rewind_37',['REWIND',['../de/d44/group__MCU__Notes.html#gae0dac6703ae6ddcc408d3d43d2ff8025',1,'MCU']]],

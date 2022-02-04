@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/AH/Containers/LinkedList.hpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/AH/Containers/LinkedList.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">99</td>
-            <td class="headerCovTableEntry">103</td>
-            <td class="headerCovTableEntryHi">96.1 %</td>
+            <td class="headerCovTableEntry">92</td>
+            <td class="headerCovTableEntry">96</td>
+            <td class="headerCovTableEntryHi">95.8 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">179</td>
-            <td class="headerCovTableEntry">246</td>
-            <td class="headerCovTableEntryLo">72.8 %</td>
+            <td class="headerCovTableEntry">177</td>
+            <td class="headerCovTableEntry">244</td>
+            <td class="headerCovTableEntryLo">72.5 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -92,7 +92,7 @@
 <a name="22"><span class="lineNum">      22 </span>            :  *          The type of the nodes of the list.</a>
 <a name="23"><span class="lineNum">      23 </span>            :  */</a>
 <a name="24"><span class="lineNum">      24 </span>            : template &lt;class Node&gt;</a>
-<a name="25"><span class="lineNum">      25 </span><span class="lineCov">         50 : class DoublyLinkedList {</span></a>
+<a name="25"><span class="lineNum">      25 </span>            : class DoublyLinkedList {</a>
 <a name="26"><span class="lineNum">      26 </span>            :   public:</a>
 <a name="27"><span class="lineNum">      27 </span>            :     /// Base class for doubly linked list iterators</a>
 <a name="28"><span class="lineNum">      28 </span>            :     template &lt;class INode&gt;</a>
@@ -251,7 +251,7 @@
 <a name="181"><span class="lineNum">     181 </span><span class="lineCov">        104 :             ++it;</span></a>
 <a name="182"><span class="lineNum">     182 </span>            :         }</a>
 <a name="183"><span class="lineNum">     183 </span><span class="lineCov">         10 :         append(node);</span></a>
-<a name="184"><span class="lineNum">     184 </span><span class="lineCov">         35 :     }</span></a>
+<a name="184"><span class="lineNum">     184 </span>            :     }</a>
 <a name="185"><span class="lineNum">     185 </span>            : </a>
 <a name="186"><span class="lineNum">     186 </span>            :     /**</a>
 <a name="187"><span class="lineNum">     187 </span>            :      * @brief   Insert a new node at the correct location into a sorted list, </a>
@@ -321,7 +321,7 @@
 <a name="251"><span class="lineNum">     251 </span><span class="lineCov">          2 :             nodeD-&gt;previous = nodeB;</span></a>
 <a name="252"><span class="lineNum">     252 </span>            :         else</a>
 <a name="253"><span class="lineNum">     253 </span><span class="lineCov">          1 :             last = nodeB;</span></a>
-<a name="254"><span class="lineNum">     254 </span><span class="lineCov">         71 :     }</span></a>
+<a name="254"><span class="lineNum">     254 </span>            :     }</a>
 <a name="255"><span class="lineNum">     255 </span>            : </a>
 <a name="256"><span class="lineNum">     256 </span>            :     /**</a>
 <a name="257"><span class="lineNum">     257 </span>            :      * @brief   Move down the given node in the linked list.</a>
@@ -352,8 +352,8 @@
 <a name="282"><span class="lineNum">     282 </span>            :      *          only element of a different linked list.</a>
 <a name="283"><span class="lineNum">     283 </span>            :      */</a>
 <a name="284"><span class="lineNum">     284 </span><span class="lineCov">        505 :     bool couldContain(const Node *node) const {</span></a>
-<a name="285"><span class="lineNum">     285 </span><span class="lineCov">       1010 :         return node &amp;&amp; (node == first || node-&gt;next != nullptr ||</span></a>
-<a name="286"><span class="lineNum">     286 </span><span class="lineCov">        118 :                         node-&gt;previous != nullptr);</span></a>
+<a name="285"><span class="lineNum">     285 </span><span class="lineCov">        623 :         return node &amp;&amp; (node == first || node-&gt;next != nullptr ||</span></a>
+<a name="286"><span class="lineNum">     286 </span><span class="lineCov">        623 :                         node-&gt;previous != nullptr);</span></a>
 <a name="287"><span class="lineNum">     287 </span>            :     }</a>
 <a name="288"><span class="lineNum">     288 </span>            : </a>
 <a name="289"><span class="lineNum">     289 </span>            :     /// @copydoc DoublyLinkedList::couldContain(const Node *) const</a>
@@ -377,8 +377,8 @@
 <a name="307"><span class="lineNum">     307 </span><span class="lineCov">        183 :     Node *getLast() const { return last; }</span></a>
 <a name="308"><span class="lineNum">     308 </span>            : </a>
 <a name="309"><span class="lineNum">     309 </span>            :   private:</a>
-<a name="310"><span class="lineNum">     310 </span><span class="lineCov">         50 :     Node *first = nullptr;</span></a>
-<a name="311"><span class="lineNum">     311 </span><span class="lineCov">         50 :     Node *last = nullptr;</span></a>
+<a name="310"><span class="lineNum">     310 </span>            :     Node *first = nullptr;</a>
+<a name="311"><span class="lineNum">     311 </span>            :     Node *last = nullptr;</a>
 <a name="312"><span class="lineNum">     312 </span>            : };</a>
 <a name="313"><span class="lineNum">     313 </span>            : </a>
 <a name="314"><span class="lineNum">     314 </span>            : /**</a>
@@ -391,11 +391,11 @@
 <a name="321"><span class="lineNum">     321 </span>            : class DoublyLinkable {</a>
 <a name="322"><span class="lineNum">     322 </span>            :   protected:</a>
 <a name="323"><span class="lineNum">     323 </span>            :     friend class DoublyLinkedList&lt;Node&gt;;</a>
-<a name="324"><span class="lineNum">     324 </span><span class="lineCov">        521 :     Node *next = nullptr;</span></a>
-<a name="325"><span class="lineNum">     325 </span><span class="lineCov">        521 :     Node *previous = nullptr;</span></a>
+<a name="324"><span class="lineNum">     324 </span>            :     Node *next = nullptr;</a>
+<a name="325"><span class="lineNum">     325 </span>            :     Node *previous = nullptr;</a>
 <a name="326"><span class="lineNum">     326 </span><span class="lineCov">        521 :     virtual ~DoublyLinkable() = default;</span></a>
 <a name="327"><span class="lineNum">     327 </span>            : </a>
-<a name="328"><span class="lineNum">     328 </span><span class="lineCov">       1042 :     DoublyLinkable() = default;</span></a>
+<a name="328"><span class="lineNum">     328 </span><span class="lineCov">        521 :     DoublyLinkable() = default;</span></a>
 <a name="329"><span class="lineNum">     329 </span>            :     DoublyLinkable(const DoublyLinkable &amp;) {</a>
 <a name="330"><span class="lineNum">     330 </span>            :         // Don't copy the pointers</a>
 <a name="331"><span class="lineNum">     331 </span>            :     }</a>
@@ -423,7 +423,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

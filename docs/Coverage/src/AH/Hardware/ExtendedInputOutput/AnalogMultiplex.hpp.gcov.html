@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - e6542665da8997fdf33aee5ff1e0b7383c7ebe00 - src/AH/Hardware/ExtendedInputOutput/AnalogMultiplex.hpp</title>
+  <title>LCOV - f50cee7a75a8ffc6828c5fc4f1d308f066959354 - src/AH/Hardware/ExtendedInputOutput/AnalogMultiplex.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">e6542665da8997fdf33aee5ff1e0b7383c7ebe00</td>
+            <td class="headerValue">f50cee7a75a8ffc6828c5fc4f1d308f066959354</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">55</td>
-            <td class="headerCovTableEntry">55</td>
+            <td class="headerCovTableEntry">50</td>
+            <td class="headerCovTableEntry">50</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2021-10-03 14:57:10</td>
+            <td class="headerValue">2022-02-04 23:54:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">20</td>
-            <td class="headerCovTableEntry">27</td>
-            <td class="headerCovTableEntryLo">74.1 %</td>
+            <td class="headerCovTableEntry">18</td>
+            <td class="headerCovTableEntry">23</td>
+            <td class="headerCovTableEntryMed">78.3 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -111,9 +111,9 @@
 <a name="41"><span class="lineNum">      41 </span>            :      *          If you don't need the enable pin, you can use NO_PIN, which is </a>
 <a name="42"><span class="lineNum">      42 </span>            :      *          the default.</a>
 <a name="43"><span class="lineNum">      43 </span>            :      */</a>
-<a name="44"><span class="lineNum">      44 </span><span class="lineCov">         20 :     AnalogMultiplex(pin_t analogPin, const Array&lt;pin_t, N&gt; &amp;addressPins,</span></a>
+<a name="44"><span class="lineNum">      44 </span><span class="lineCov">         10 :     AnalogMultiplex(pin_t analogPin, const Array&lt;pin_t, N&gt; &amp;addressPins,</span></a>
 <a name="45"><span class="lineNum">      45 </span>            :                     pin_t enablePin = NO_PIN)</a>
-<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         20 :         : analogPin(analogPin), addressPins(addressPins), enablePin(enablePin) {</span></a>
+<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         10 :         : analogPin(analogPin), addressPins(addressPins), enablePin(enablePin) {</span></a>
 <a name="47"><span class="lineNum">      47 </span><span class="lineCov">         10 :     }</span></a>
 <a name="48"><span class="lineNum">      48 </span>            : </a>
 <a name="49"><span class="lineNum">      49 </span>            :     /**</a>
@@ -220,7 +220,7 @@
 <a name="150"><span class="lineNum">     150 </span>            :     const pin_t analogPin;</a>
 <a name="151"><span class="lineNum">     151 </span>            :     const Array&lt;pin_t, N&gt; addressPins;</a>
 <a name="152"><span class="lineNum">     152 </span>            :     const pin_t enablePin;</a>
-<a name="153"><span class="lineNum">     153 </span><span class="lineCov">         10 :     bool discardFirstReading_ = true;</span></a>
+<a name="153"><span class="lineNum">     153 </span>            :     bool discardFirstReading_ = true;</a>
 <a name="154"><span class="lineNum">     154 </span>            : </a>
 <a name="155"><span class="lineNum">     155 </span>            :     /**</a>
 <a name="156"><span class="lineNum">     156 </span>            :      * @brief   Write the pin number/address to the address pins of the </a>
@@ -282,8 +282,8 @@
 <a name="212"><span class="lineNum">     212 </span><span class="lineCov">          3 :     prepareReading(pin);</span></a>
 <a name="213"><span class="lineNum">     213 </span><span class="lineCov">          3 :     PinStatus_t result = ExtIO::digitalRead(analogPin);</span></a>
 <a name="214"><span class="lineNum">     214 </span><span class="lineCov">          3 :     afterReading();</span></a>
-<a name="215"><span class="lineNum">     215 </span><span class="lineCov">          6 :     return result;</span></a>
-<a name="216"><span class="lineNum">     216 </span><span class="lineCov">          3 : }</span></a>
+<a name="215"><span class="lineNum">     215 </span><span class="lineCov">          3 :     return result;</span></a>
+<a name="216"><span class="lineNum">     216 </span>            : }</a>
 <a name="217"><span class="lineNum">     217 </span>            : </a>
 <a name="218"><span class="lineNum">     218 </span>            : template &lt;uint8_t N&gt;</a>
 <a name="219"><span class="lineNum">     219 </span><span class="lineCov">          1 : PinStatus_t AnalogMultiplex&lt;N&gt;::digitalReadBuffered(pin_t pin) {</span></a>
@@ -297,8 +297,8 @@
 <a name="227"><span class="lineNum">     227 </span><span class="lineCov">          8 :         (void)ExtIO::analogRead(analogPin); // Discard first reading</span></a>
 <a name="228"><span class="lineNum">     228 </span><span class="lineCov">         11 :     analog_t result = ExtIO::analogRead(analogPin);</span></a>
 <a name="229"><span class="lineNum">     229 </span><span class="lineCov">         11 :     afterReading();</span></a>
-<a name="230"><span class="lineNum">     230 </span><span class="lineCov">         22 :     return result;</span></a>
-<a name="231"><span class="lineNum">     231 </span><span class="lineCov">         11 : }</span></a>
+<a name="230"><span class="lineNum">     230 </span><span class="lineCov">         11 :     return result;</span></a>
+<a name="231"><span class="lineNum">     231 </span>            : }</a>
 <a name="232"><span class="lineNum">     232 </span>            : </a>
 <a name="233"><span class="lineNum">     233 </span>            : template &lt;uint8_t N&gt;</a>
 <a name="234"><span class="lineNum">     234 </span><span class="lineCov">          1 : analog_t AnalogMultiplex&lt;N&gt;::analogReadBuffered(pin_t pin) {</span></a>
@@ -312,7 +312,7 @@
 <a name="242"><span class="lineNum">     242 </span><span class="lineCov">         10 :     if (enablePin != NO_PIN) {</span></a>
 <a name="243"><span class="lineNum">     243 </span><span class="lineCov">          7 :         ExtIO::pinMode(enablePin, OUTPUT);</span></a>
 <a name="244"><span class="lineNum">     244 </span><span class="lineCov">          7 :         ExtIO::digitalWrite(enablePin, MUX_DISABLED);</span></a>
-<a name="245"><span class="lineNum">     245 </span><span class="lineCov">          7 :     }</span></a>
+<a name="245"><span class="lineNum">     245 </span>            :     }</a>
 <a name="246"><span class="lineNum">     246 </span><span class="lineCov">         10 : }</span></a>
 <a name="247"><span class="lineNum">     247 </span>            : </a>
 <a name="248"><span class="lineNum">     248 </span>            : template &lt;uint8_t N&gt;</a>
@@ -321,7 +321,7 @@
 <a name="251"><span class="lineNum">     251 </span><span class="lineCov">         67 :     for (const pin_t &amp;addressPin : addressPins) {</span></a>
 <a name="252"><span class="lineNum">     252 </span><span class="lineCov">         53 :         ExtIO::digitalWrite(addressPin, (address &amp; mask) != 0 ? HIGH : LOW);</span></a>
 <a name="253"><span class="lineNum">     253 </span><span class="lineCov">         53 :         mask &lt;&lt;= 1;</span></a>
-<a name="254"><span class="lineNum">     254 </span><span class="lineCov">         53 :     }</span></a>
+<a name="254"><span class="lineNum">     254 </span>            :     }</a>
 <a name="255"><span class="lineNum">     255 </span>            : #if !defined(__AVR__) &amp;&amp; defined(ARDUINO)</a>
 <a name="256"><span class="lineNum">     256 </span>            :     delayMicroseconds(1);</a>
 <a name="257"><span class="lineNum">     257 </span>            : #endif</a>
@@ -351,7 +351,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
   </table>
   <br>
 

@@ -135,6 +135,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa600e500c302f6dfa01b183e0ef865c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc7/midi_8h.html#aa600e500c302f6dfa01b183e0ef865c6">midi_notify</a> (const uint8_t *data, size_t len)</td></tr>
 <tr class="memdesc:aa600e500c302f6dfa01b183e0ef865c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI BLE notification to the client.  <a href="../../dc/dc7/midi_8h.html#aa600e500c302f6dfa01b183e0ef865c6">More...</a><br /></td></tr>
 <tr class="separator:aa600e500c302f6dfa01b183e0ef865c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2df260d849e5ec4b15add0b1ca47504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc7/midi_8h.html#ae2df260d849e5ec4b15add0b1ca47504">set_midi_ble_name</a> (const char *name)</td></tr>
+<tr class="memdesc:ae2df260d849e5ec4b15add0b1ca47504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of the BLE device. Must be set before calling <a class="el" href="../../dc/dc7/midi_8h.html#a57981a470092a596f6e0058b9b8e0aa5">midi_init()</a>.  <a href="../../dc/dc7/midi_8h.html#ae2df260d849e5ec4b15add0b1ca47504">More...</a><br /></td></tr>
+<tr class="separator:ae2df260d849e5ec4b15add0b1ca47504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57981a470092a596f6e0058b9b8e0aa5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc7/midi_8h.html#a57981a470092a596f6e0058b9b8e0aa5">midi_init</a> ()</td></tr>
 <tr class="memdesc:a57981a470092a596f6e0058b9b8e0aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the Bluetooth stack and register the MIDI BLE application with the Bluedroid driver.  <a href="../../dc/dc7/midi_8h.html#a57981a470092a596f6e0058b9b8e0aa5">More...</a><br /></td></tr>
 <tr class="separator:a57981a470092a596f6e0058b9b8e0aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,6 +272,26 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send a MIDI BLE notification to the client. </p>
+
+</div>
+</div>
+<a id="ae2df260d849e5ec4b15add0b1ca47504" name="ae2df260d849e5ec4b15add0b1ca47504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2df260d849e5ec4b15add0b1ca47504">&#9670;&nbsp;</a></span>set_midi_ble_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_midi_ble_name </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the name of the BLE device. Must be set before calling <a class="el" href="../../dc/dc7/midi_8h.html#a57981a470092a596f6e0058b9b8e0aa5">midi_init()</a>. </p>
 
 </div>
 </div>
