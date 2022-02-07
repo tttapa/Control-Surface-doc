@@ -94,16 +94,14 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d49/MIDI__Staller_8hpp__incl.svg" width="599" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d49/MIDI__Staller_8hpp__incl.svg" width="599" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/db6/MIDI__Staller_8hpp__dep__incl.svg" width="9016" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/db6/MIDI__Staller_8hpp__dep__incl.svg" width="9016" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d2/d53/MIDI__Staller_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -118,7 +116,7 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ab7a021152d17f99bb5c962af78adff0a"><td class="memTemplParams" colspan="2">template&lt;class Callback &gt; </td></tr>
 <tr class="memitem:ab7a021152d17f99bb5c962af78adff0a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d53/MIDI__Staller_8hpp.html#ab7a021152d17f99bb5c962af78adff0a">makeMIDIStaller</a> (Callback &amp;&amp;callback) -&gt; <a class="el" href="../../d4/d48/structMIDIStaller.html">MIDIStaller</a> *</td></tr>
-<tr class="memdesc:ab7a021152d17f99bb5c962af78adff0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="../../d4/d48/structMIDIStaller.html" title="Struct that can cause a MIDI_Pipe to be stalled.">MIDIStaller</a> executes the given callback and deletes itself when <a class="el" href="../../d4/d48/structMIDIStaller.html#a7a819d2c70dfd91b8415f7ca824e9b02">MIDIStaller::handleStall</a> is called.  <a href="../../d2/d53/MIDI__Staller_8hpp.html#ab7a021152d17f99bb5c962af78adff0a">More...</a><br /></td></tr>
+<tr class="memdesc:ab7a021152d17f99bb5c962af78adff0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="../../d4/d48/structMIDIStaller.html" title="Struct that can cause a MIDI_Pipe to be stalled.">MIDIStaller</a> that executes the given callback and deletes itself when <a class="el" href="../../d4/d48/structMIDIStaller.html#a7a819d2c70dfd91b8415f7ca824e9b02">MIDIStaller::handleStall</a> is called.  <a href="../../d2/d53/MIDI__Staller_8hpp.html#ab7a021152d17f99bb5c962af78adff0a">More...</a><br /></td></tr>
 <tr class="separator:ab7a021152d17f99bb5c962af78adff0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -138,7 +136,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allocate a <a class="el" href="../../d4/d48/structMIDIStaller.html" title="Struct that can cause a MIDI_Pipe to be stalled.">MIDIStaller</a> executes the given callback and deletes itself when <a class="el" href="../../d4/d48/structMIDIStaller.html#a7a819d2c70dfd91b8415f7ca824e9b02">MIDIStaller::handleStall</a> is called. </p>
+<p>Allocate a <a class="el" href="../../d4/d48/structMIDIStaller.html" title="Struct that can cause a MIDI_Pipe to be stalled.">MIDIStaller</a> that executes the given callback and deletes itself when <a class="el" href="../../d4/d48/structMIDIStaller.html#a7a819d2c70dfd91b8415f7ca824e9b02">MIDIStaller::handleStall</a> is called. </p>
 <dl class="section note"><dt>Note</dt><dd>Don't lose the pointer! If you never call <code>handleStall</code>, the memory won't be deallocated. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d53/MIDI__Staller_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../d2/d53/MIDI__Staller_8hpp_source.html">MIDI_Staller.hpp</a>.</p>
