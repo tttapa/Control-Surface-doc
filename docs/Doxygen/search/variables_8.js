@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i2c_5fbase_5faddress_0',['I2C_BASE_ADDRESS',['../dc/d42/classAH_1_1MCP23017Encoders.html#ad2e3215389df28e097d7a75624763616',1,'AH::MCP23017Encoders::I2C_BASE_ADDRESS()'],['../d5/dd2/classAH_1_1MCP23017.html#ad2e3215389df28e097d7a75624763616',1,'AH::MCP23017::I2C_BASE_ADDRESS()']]],
+  ['i2c_5fbase_5faddress_0',['I2C_BASE_ADDRESS',['../dc/d42/classAH_1_1MCP23017Encoders.html#aad631c539e719dc37c2b04a2413d61d8',1,'AH::MCP23017Encoders::I2C_BASE_ADDRESS()'],['../d5/dd2/classAH_1_1MCP23017.html#aad631c539e719dc37c2b04a2413d61d8',1,'AH::MCP23017::I2C_BASE_ADDRESS()']]],
   ['iface_1',['iface',['../d3/de6/structGenericUSBMIDI__Interface_1_1Sender.html#ab963339dba40dc9a19b9763dc3b6b005',1,'GenericUSBMIDI_Interface::Sender']]],
   ['ignorereset_2',['ignoreReset',['../d5/d54/classMCU_1_1SevenSegmentDisplay.html#a4b690716d97aa8466cf22a87bd7ddcd4',1,'MCU::SevenSegmentDisplay::ignoreReset()'],['../d5/ddb/classMCU_1_1VPotRing.html#a4b690716d97aa8466cf22a87bd7ddcd4',1,'MCU::VPotRing::ignoreReset()'],['../da/d93/classMCU_1_1Bankable_1_1VPotRing.html#a4b690716d97aa8466cf22a87bd7ddcd4',1,'MCU::Bankable::VPotRing::ignoreReset()']]],
   ['incomingmessage_3',['incomingMessage',['../d0/d89/classBluetoothMIDI__Interface.html#a2a4f9d46c675709ce37c03869740ce01',1,'BluetoothMIDI_Interface']]],
@@ -8,7 +8,7 @@ var searchData=
   ['incrementaddress_5',['incrementAddress',['../d2/d87/classMIDIButtons.html#afd0e987099f15d459b706475d1cd3114',1,'MIDIButtons::incrementAddress()'],['../dc/d22/classBankable_1_1MIDIButtons.html#a14d32b824b32507ecd5ebc22eea26fd9',1,'Bankable::MIDIButtons::incrementAddress()']]],
   ['incrementbutton_6',['incrementButton',['../df/dc6/classAH_1_1IncrementDecrementButtons.html#a26ff8759725d759a360f4ed6e81d1fe4',1,'AH::IncrementDecrementButtons']]],
   ['index_7',['index',['../d1/d7a/structTwoByteRangeMIDIMatcher.html#aae5a12e607d0f782506d9e6ec6179c64',1,'TwoByteRangeMIDIMatcher::Result::index()'],['../d5/d9e/structBankableTwoByteRangeMIDIMatcher.html#aae5a12e607d0f782506d9e6ec6179c64',1,'BankableTwoByteRangeMIDIMatcher::Result::index()'],['../d3/da5/structMIDI__PipeFactory.html#a3f42f10d93f6edb91d7d3f6edad25921',1,'MIDI_PipeFactory::index()'],['../d1/dd4/classPluggableUSBMIDI.html#aafd95f8c7a99b9189ede7cdf0871ebe8',1,'PluggableUSBMIDI::Reading::Buffer::index()'],['../de/d93/classTeensyHostMIDI.html#aafd95f8c7a99b9189ede7cdf0871ebe8',1,'TeensyHostMIDI::Reading::Buffer::index()']]],
-  ['initial_8',['initial',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a95a1b7747cc2f7dfbb17c3e879d18731',1,'Bankable::SmartMIDIFilteredAnalog']]],
+  ['initial_8',['initial',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a565e1536a78eb61574cad64f5febeff4',1,'Bankable::SmartMIDIFilteredAnalog']]],
   ['initialselection_9',['initialSelection',['../de/de7/classSelectable.html#a26aceed3b6dca909adbde6b4a6257240',1,'Selectable']]],
   ['innerradius_10',['innerRadius',['../d3/d98/classMCU_1_1VPotDisplay.html#aac4ce4ef97e33d5e413fe4976c2bcdbd',1,'MCU::VPotDisplay']]],
   ['inpipe_11',['inpipe',['../dc/d45/classControl__Surface__.html#a8f55376be2f26e46335a1620886a0ec3',1,'Control_Surface_']]],

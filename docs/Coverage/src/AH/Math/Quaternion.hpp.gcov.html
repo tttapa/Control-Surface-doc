@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d661cf44790e14d482b49d6b7396f7e62eaf23b8 - src/AH/Math/Quaternion.hpp</title>
+  <title>LCOV - 4280624f0387d085048b5696305d14ddf7644efa - src/AH/Math/Quaternion.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d661cf44790e14d482b49d6b7396f7e62eaf23b8</td>
+            <td class="headerValue">4280624f0387d085048b5696305d14ddf7644efa</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">114</td>
-            <td class="headerCovTableEntry">114</td>
+            <td class="headerCovTableEntry">115</td>
+            <td class="headerCovTableEntry">115</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-02-07 18:38:30</td>
+            <td class="headerValue">2022-05-08 18:07:53</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">29</td>
@@ -70,7 +70,7 @@
 <pre class="source">
 <a name="1"><span class="lineNum">       1 </span>            : /**</a>
 <a name="2"><span class="lineNum">       2 </span>            :  * @file</a>
-<a name="3"><span class="lineNum">       3 </span>            :  * @brief       Definition of Quaternion and EulerAngles.</a>
+<a name="3"><span class="lineNum">       3 </span>            :  * @brief    Definition of Quaternion and EulerAngles.</a>
 <a name="4"><span class="lineNum">       4 </span>            :  * </a>
 <a name="5"><span class="lineNum">       5 </span>            :  * Quaternions can be multiplied (Hamiltonian product), normalized and can</a>
 <a name="6"><span class="lineNum">       6 </span>            :  * perform rotations of vectors. Quaternion also has an implementation of the</a>
@@ -95,10 +95,10 @@
 <a name="25"><span class="lineNum">      25 </span>            : AH_DIAGNOSTIC_WERROR() // Enable errors on warnings</a>
 <a name="26"><span class="lineNum">      26 </span>            : </a>
 <a name="27"><span class="lineNum">      27 </span>            : #include &lt;AH/Arduino-Wrapper.h&gt; // Print</a>
-<a name="28"><span class="lineNum">      28 </span>            : #include &lt;AH/Math/Degrees.hpp&gt; // rad2deg()</a>
-<a name="29"><span class="lineNum">      29 </span>            : #include &lt;AH/Math/Vector.hpp&gt; // Vec3f</a>
-<a name="30"><span class="lineNum">      30 </span>            : #include &lt;AH/STL/cmath&gt; // std::sqrt</a>
-<a name="31"><span class="lineNum">      31 </span>            : #include &lt;AH/STL/limits&gt; // std::numeric_limits</a>
+<a name="28"><span class="lineNum">      28 </span>            : #include &lt;AH/Math/Degrees.hpp&gt;  // rad2deg()</a>
+<a name="29"><span class="lineNum">      29 </span>            : #include &lt;AH/Math/Vector.hpp&gt;   // Vec3f</a>
+<a name="30"><span class="lineNum">      30 </span>            : #include &lt;AH/STL/cmath&gt;         // std::sqrt</a>
+<a name="31"><span class="lineNum">      31 </span>            : #include &lt;AH/STL/limits&gt;        // std::numeric_limits</a>
 <a name="32"><span class="lineNum">      32 </span>            : </a>
 <a name="33"><span class="lineNum">      33 </span>            : #ifndef ARDUINO</a>
 <a name="34"><span class="lineNum">      34 </span>            : #include &lt;iosfwd&gt; // std::ostream</a>
@@ -242,7 +242,7 @@
 <a name="172"><span class="lineNum">     172 </span><span class="lineCov">    1000006 :             M11 * v.x + M12 * v.y + M13 * v.z,</span></a>
 <a name="173"><span class="lineNum">     173 </span><span class="lineCov">    1000006 :             M21 * v.x + M22 * v.y + M23 * v.z,</span></a>
 <a name="174"><span class="lineNum">     174 </span><span class="lineCov">    1000006 :             M31 * v.x + M32 * v.y + M33 * v.z,</span></a>
-<a name="175"><span class="lineNum">     175 </span><span class="lineCov">    1000006 :         };</span></a>
+<a name="175"><span class="lineNum">     175 </span><span class="lineCov">    3000018 :         };</span></a>
 <a name="176"><span class="lineNum">     176 </span>            :     }</a>
 <a name="177"><span class="lineNum">     177 </span>            : </a>
 <a name="178"><span class="lineNum">     178 </span>            :     /// Equality check.</a>
@@ -299,11 +299,11 @@
 <a name="229"><span class="lineNum">     229 </span>            :         // Calculate the angle ϑ.</a>
 <a name="230"><span class="lineNum">     230 </span><span class="lineCov">    1000003 :         float angle = std::asin(crossNorm);</span></a>
 <a name="231"><span class="lineNum">     231 </span><span class="lineCov">    1000003 :         if (v.z &lt; 0)</span></a>
-<a name="232"><span class="lineNum">     232 </span><span class="lineCov">     499712 :             angle = float(M_PI) - angle;</span></a>
+<a name="232"><span class="lineNum">     232 </span><span class="lineCov">     499712 :             angle = float(180_deg) - angle;</span></a>
 <a name="233"><span class="lineNum">     233 </span>            : </a>
 <a name="234"><span class="lineNum">     234 </span>            :         // Calculate the resulting quaternion.</a>
 <a name="235"><span class="lineNum">     235 </span>            :         return {</a>
-<a name="236"><span class="lineNum">     236 </span>            :             std::cos(angle / 2),           //</a>
+<a name="236"><span class="lineNum">     236 </span><span class="lineCov">    1000003 :             std::cos(angle / 2),           //</span></a>
 <a name="237"><span class="lineNum">     237 </span><span class="lineCov">    1000003 :             std::sin(angle / 2) * cross.x, //</span></a>
 <a name="238"><span class="lineNum">     238 </span><span class="lineCov">    2000006 :             std::sin(angle / 2) * cross.y, //</span></a>
 <a name="239"><span class="lineNum">     239 </span>            :             0,                             // = std::sin(angle / 2) * cross.z</a>
@@ -329,7 +329,7 @@
 <a name="259"><span class="lineNum">     259 </span><span class="lineCov">          1 :             -std::tan(xAngle), // y</span></a>
 <a name="260"><span class="lineNum">     260 </span>            :             1,                 // z</a>
 <a name="261"><span class="lineNum">     261 </span><span class="lineCov">          2 :         };</span></a>
-<a name="262"><span class="lineNum">     262 </span><span class="lineCov">          3 :         return Quaternion::fromDirection(v);</span></a>
+<a name="262"><span class="lineNum">     262 </span><span class="lineCov">          2 :         return Quaternion::fromDirection(v);</span></a>
 <a name="263"><span class="lineNum">     263 </span>            :     }</a>
 <a name="264"><span class="lineNum">     264 </span>            : </a>
 <a name="265"><span class="lineNum">     265 </span>            :     /// Quaternion multiplication.</a>
@@ -450,7 +450,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
   </table>
   <br>
 

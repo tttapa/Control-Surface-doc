@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['e_0',['E',['../d5/dc2/classMIDI__Notes_1_1Note.html#a098d6493a07b3bcf20ab7a6dbbffc7d3',1,'MIDI_Notes::Note']]],
-  ['eb_1',['Eb',['../d5/dc2/classMIDI__Notes_1_1Note.html#a6c0804fe32705415665d7bdc8fb9d040',1,'MIDI_Notes::Note']]],
+  ['e_0',['E',['../d5/dc2/classMIDI__Notes_1_1Note.html#a59496bde77d9a3856d636f64ef31eef7',1,'MIDI_Notes::Note']]],
+  ['eb_1',['Eb',['../d5/dc2/classMIDI__Notes_1_1Note.html#aa4ede5439baa24776c89dcc79926a4f7',1,'MIDI_Notes::Note']]],
   ['ema_2',['EMA',['../d7/d40/classEMA.html#a95bb4eddb2663733be16924e9b0da123',1,'EMA']]],
   ['ema_5ff_3',['EMA_f',['../db/d6f/classEMA__f.html#ad49ecf310d82070c95e8d798cb7e51ad',1,'EMA_f']]],
   ['empty_4',['empty',['../d7/d8e/classBLEMIDIPacketBuilder.html#a644718bb2fb240de962dc3c9a1fdf0dc',1,'BLEMIDIPacketBuilder']]],

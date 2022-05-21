@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d661cf44790e14d482b49d6b7396f7e62eaf23b8 - src/Def/MIDIAddress.hpp</title>
+  <title>LCOV - 4280624f0387d085048b5696305d14ddf7644efa - src/Def/MIDIAddress.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d661cf44790e14d482b49d6b7396f7e62eaf23b8</td>
+            <td class="headerValue">4280624f0387d085048b5696305d14ddf7644efa</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">57</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-02-07 18:38:30</td>
+            <td class="headerValue">2022-05-08 18:07:53</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">23</td>
@@ -135,7 +135,7 @@
 <a name="65"><span class="lineNum">      65 </span>            :     /// equal.</a>
 <a name="66"><span class="lineNum">      66 </span>            :     /// @note   Invalid addresses are not equal nor inequal.</a>
 <a name="67"><span class="lineNum">      67 </span><span class="lineCov">          4 :     constexpr bool operator==(MIDIChannelCable rhs) const {</span></a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">          4 :         return this-&gt;addresses.valid &amp;&amp; rhs.addresses.valid &amp;&amp;</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">          8 :         return this-&gt;addresses.valid &amp;&amp; rhs.addresses.valid &amp;&amp;</span></a>
 <a name="69"><span class="lineNum">      69 </span><span class="lineCov">         11 :                this-&gt;addresses.channel == rhs.addresses.channel &amp;&amp;</span></a>
 <a name="70"><span class="lineNum">      70 </span><span class="lineCov">          7 :                this-&gt;addresses.cableNumber == rhs.addresses.cableNumber;</span></a>
 <a name="71"><span class="lineNum">      71 </span>            :     }</a>
@@ -234,11 +234,11 @@
 <a name="164"><span class="lineNum">     164 </span>            :      *          The MIDI Channel and the MIDI USB cable number.</a>
 <a name="165"><span class="lineNum">     165 </span>            :      */</a>
 <a name="166"><span class="lineNum">     166 </span><span class="lineCov">        234 :     constexpr MIDIAddress(int address, MIDIChannelCable channelCN)</span></a>
-<a name="167"><span class="lineNum">     167 </span><span class="lineCov">        702 :         : addresses{</span></a>
+<a name="167"><span class="lineNum">     167 </span><span class="lineCov">        234 :         : addresses{</span></a>
 <a name="168"><span class="lineNum">     168 </span>            :               1,</a>
 <a name="169"><span class="lineNum">     169 </span><span class="lineCov">        234 :               (uint8_t)address,</span></a>
-<a name="170"><span class="lineNum">     170 </span><span class="lineCov">        234 :               channelCN.getRawChannel(),</span></a>
-<a name="171"><span class="lineNum">     171 </span><span class="lineCov">        234 :               channelCN.getRawCableNumber(),</span></a>
+<a name="170"><span class="lineNum">     170 </span><span class="lineCov">        468 :               channelCN.getRawChannel(),</span></a>
+<a name="171"><span class="lineNum">     171 </span><span class="lineCov">        468 :               channelCN.getRawCableNumber(),</span></a>
 <a name="172"><span class="lineNum">     172 </span><span class="lineCov">        234 :           } {} // Deliberate overflow for negative numbers</span></a>
 <a name="173"><span class="lineNum">     173 </span>            : </a>
 <a name="174"><span class="lineNum">     174 </span>            :     /** </a>
@@ -258,11 +258,11 @@
 <a name="188"><span class="lineNum">     188 </span>            :      */</a>
 <a name="189"><span class="lineNum">     189 </span><span class="lineCov">         82 :     constexpr MIDIAddress(int address, Channel channel = CHANNEL_1,</span></a>
 <a name="190"><span class="lineNum">     190 </span>            :                           Cable cableNumber = CABLE_1)</a>
-<a name="191"><span class="lineNum">     191 </span><span class="lineCov">        246 :         : addresses{</span></a>
+<a name="191"><span class="lineNum">     191 </span><span class="lineCov">         82 :         : addresses{</span></a>
 <a name="192"><span class="lineNum">     192 </span>            :               1,</a>
 <a name="193"><span class="lineNum">     193 </span><span class="lineCov">         82 :               (uint8_t)address,</span></a>
-<a name="194"><span class="lineNum">     194 </span><span class="lineCov">         82 :               channel.getRaw(),</span></a>
-<a name="195"><span class="lineNum">     195 </span><span class="lineCov">         82 :               cableNumber.getRaw(),</span></a>
+<a name="194"><span class="lineNum">     194 </span><span class="lineCov">        164 :               channel.getRaw(),</span></a>
+<a name="195"><span class="lineNum">     195 </span><span class="lineCov">        164 :               cableNumber.getRaw(),</span></a>
 <a name="196"><span class="lineNum">     196 </span><span class="lineCov">         82 :           } {} // Deliberate overflow for negative numbers</span></a>
 <a name="197"><span class="lineNum">     197 </span>            : </a>
 <a name="198"><span class="lineNum">     198 </span>            :     /** </a>
@@ -367,7 +367,7 @@
 <a name="297"><span class="lineNum">     297 </span>            :     /// number are equal.</a>
 <a name="298"><span class="lineNum">     298 </span>            :     /// @note   Invalid addresses are not equal nor inequal.</a>
 <a name="299"><span class="lineNum">     299 </span><span class="lineCov">         32 :     constexpr bool operator==(MIDIAddress rhs) const {</span></a>
-<a name="300"><span class="lineNum">     300 </span><span class="lineCov">         31 :         return this-&gt;addresses.valid &amp;&amp; rhs.addresses.valid &amp;&amp;</span></a>
+<a name="300"><span class="lineNum">     300 </span><span class="lineCov">         63 :         return this-&gt;addresses.valid &amp;&amp; rhs.addresses.valid &amp;&amp;</span></a>
 <a name="301"><span class="lineNum">     301 </span><span class="lineCov">         31 :                this-&gt;addresses.address == rhs.addresses.address &amp;&amp;</span></a>
 <a name="302"><span class="lineNum">     302 </span><span class="lineCov">         92 :                this-&gt;addresses.channel == rhs.addresses.channel &amp;&amp;</span></a>
 <a name="303"><span class="lineNum">     303 </span><span class="lineCov">         61 :                this-&gt;addresses.cableNumber == rhs.addresses.cableNumber;</span></a>
@@ -428,7 +428,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
   </table>
   <br>
 

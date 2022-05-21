@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['c_0',['C',['../d5/dc2/classMIDI__Notes_1_1Note.html#a48c89b1a4d47b85519eb020badb0075f',1,'MIDI_Notes::Note']]],
+  ['c_0',['C',['../d5/dc2/classMIDI__Notes_1_1Note.html#aa124e9d743ae0eaca5424e9eebff1625',1,'MIDI_Notes::Note']]],
   ['cable_1',['Cable',['../d2/d75/classCable.html#a9096f2fcbe0dd4b64375eb46c3bf5d1b',1,'Cable']]],
   ['cachedextiopin_2',['CachedExtIOPin',['../d4/d4f/structAH_1_1ExtIO_1_1CachedExtIOPin.html#a477bce34cd469dfa7334f6984811dbc5',1,'AH::ExtIO::CachedExtIOPin']]],
   ['callback_5frequest_3',['callback_request',['../d1/dd4/classPluggableUSBMIDI.html#abb111f447ed862cbe4d686b975a8dd70',1,'PluggableUSBMIDI']]],
@@ -9,7 +9,7 @@ var searchData=
   ['callback_5fset_5finterface_6',['callback_set_interface',['../d1/dd4/classPluggableUSBMIDI.html#a7eb9e13f8514da617d11b3ed7a993208',1,'PluggableUSBMIDI']]],
   ['callback_5fstate_5fchange_7',['callback_state_change',['../d1/dd4/classPluggableUSBMIDI.html#a5559718c6fff416d1b51895a012290e2',1,'PluggableUSBMIDI']]],
   ['cancelrunningstatus_8',['cancelRunningStatus',['../d0/d0d/classSerialMIDI__Parser.html#afb292403c5cd393ca1499297e7a81cd5',1,'SerialMIDI_Parser']]],
-  ['cat_9',['cat',['../da/de8/group__AH__Containers.html#gacdb59456358b1a996662200249d35891',1,'AH']]],
+  ['cat_9',['cat',['../da/de8/group__AH__Containers.html#gaf10f22dc968e5fc106ceaa4e6eeface5',1,'AH']]],
   ['ccabsoluteencoder_10',['CCAbsoluteEncoder',['../da/d5c/classBankable_1_1ManyAddresses_1_1CCAbsoluteEncoder.html#a668c527a5a6b2eb31b7d1d3dbe27e239',1,'Bankable::ManyAddresses::CCAbsoluteEncoder::CCAbsoluteEncoder()'],['../d7/d2c/classBankable_1_1CCAbsoluteEncoder.html#a8b4a784e03e643c42d8a9a1c4e309473',1,'Bankable::CCAbsoluteEncoder::CCAbsoluteEncoder()'],['../d8/d2f/classCCAbsoluteEncoder.html#a33cd755e358d305099b06818e3196cdd',1,'CCAbsoluteEncoder::CCAbsoluteEncoder()']]],
   ['ccbutton_11',['CCButton',['../d1/dd4/classBankable_1_1CCButton.html#aabb58176dc1bc9fccd982bffe0b7eae8',1,'Bankable::CCButton::CCButton()'],['../d2/daa/classCCButton.html#af2fe4f29d78668d1b7160ce809e148ad',1,'CCButton::CCButton()'],['../d0/de3/classBankable_1_1ManyAddresses_1_1CCButton.html#a7531acf0d74eb8e7001e9993b896ed88',1,'Bankable::ManyAddresses::CCButton::CCButton()']]],
   ['ccbuttonlatched_12',['CCButtonLatched',['../d9/d1d/classBankable_1_1CCButtonLatched.html#a7b10e2628c07d7eb6b15f72cb90c72a9',1,'Bankable::CCButtonLatched::CCButtonLatched()'],['../d5/da6/classCCButtonLatched.html#a7e14b2185a9be170f3c0985de8554f6c',1,'CCButtonLatched::CCButtonLatched()']]],
@@ -39,7 +39,7 @@ var searchData=
   ['connectsourcepipe_36',['connectSourcePipe',['../d9/db6/classMIDI__Sink.html#a094b2e4e26d211243f5f44a66fdb8648',1,'MIDI_Sink']]],
   ['continuesysex_37',['continueSysEx',['../d7/d8e/classBLEMIDIPacketBuilder.html#a2c7ed84a517b162234e17b06b11b66a1',1,'BLEMIDIPacketBuilder']]],
   ['control_5fsurface_5f_38',['Control_Surface_',['../dc/d45/classControl__Surface__.html#a62fdea11ae4a775c5f1574c33ce35c44',1,'Control_Surface_::Control_Surface_()=default'],['../dc/d45/classControl__Surface__.html#a4c130e7c43674c32395987e2c35692b0',1,'Control_Surface_::Control_Surface_(Control_Surface_ const &amp;)=delete']]],
-  ['copyas_39',['copyAs',['../da/de8/group__AH__Containers.html#ga02e86217734162cd9756f6d83e1e6e4a',1,'AH']]],
+  ['copyas_39',['copyAs',['../da/de8/group__AH__Containers.html#ga6ee13d5c260727ac6a7de2ee21cc76f9',1,'AH']]],
   ['cos_40',['cos',['../d6/d99/classBresenhamLine.html#aa4563ad33f7125b6773d0e2bf8ff8761',1,'BresenhamLine']]],
   ['couldcontain_41',['couldContain',['../dd/d16/classDoublyLinkedList.html#a3bb0529b5a1b73e9d59ddfa7edb2a249',1,'DoublyLinkedList::couldContain(const Node *node) const'],['../dd/d16/classDoublyLinkedList.html#a56cf1b6499de50ca5855629091d08f4e',1,'DoublyLinkedList::couldContain(const Node &amp;node) const']]],
   ['createcable_42',['createCable',['../d2/d75/classCable.html#a1a2dcfeb7b035cd962554158fc3fd3b6',1,'Cable']]],

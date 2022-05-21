@@ -2,7 +2,7 @@ var searchData=
 [
   ['neversendimmediately_0',['neverSendImmediately',['../dd/d0e/classGenericUSBMIDI__Interface.html#a46f444ff70d97096dc29d0a5cd5ccb29',1,'GenericUSBMIDI_Interface']]],
   ['next_1',['next',['../d6/d99/classBresenhamLine.html#a2a5761f47b8f764a9a7e6a1587d4df6a',1,'BresenhamLine']]],
-  ['nibble_5fto_5fhex_2',['nibble_to_hex',['../dc/d69/namespaceAH.html#a5e3639c2c25a8c57b4e57c1a1832771e',1,'AH']]],
+  ['nibble_5fto_5fhex_2',['nibble_to_hex',['../dc/d69/namespaceAH.html#a7df4d5e824296b753f67be09e88593e3',1,'AH']]],
   ['noboolalpha_3',['noboolalpha',['../d8/d4b/group__AH__PrintStream.html#gac645d410f08e9b0b80b29e56a8cbe4e1',1,'AH']]],
   ['node_5fiterator_4',['node_iterator',['../dd/d02/classDoublyLinkedList_1_1node__iterator.html#ada137d965190b4d74fdd449a6e14abb8',1,'DoublyLinkedList::node_iterator']]],
   ['node_5fiterator_5fbase_5',['node_iterator_base',['../db/d52/classDoublyLinkedList_1_1node__iterator__base.html#aa1e1021a3c378cae4c2ed20d079074f0',1,'DoublyLinkedList::node_iterator_base']]],
@@ -14,7 +14,7 @@ var searchData=
   ['normsquared_11',['normSquared',['../da/d32/structAH_1_1Quaternion.html#a60d5552f33ab79dee1b884b530ea0441',1,'AH::Quaternion::normSquared()'],['../d4/dec/structAH_1_1Vec2f.html#a60d5552f33ab79dee1b884b530ea0441',1,'AH::Vec2f::normSquared()'],['../d2/d04/structAH_1_1Vec3f.html#a60d5552f33ab79dee1b884b530ea0441',1,'AH::Vec3f::normSquared()']]],
   ['noshowbase_12',['noshowbase',['../d8/d4b/group__AH__PrintStream.html#gaa550b16085fa0e495a5c896ef71edcb4',1,'AH']]],
   ['note_13',['Note',['../d5/dc2/classMIDI__Notes_1_1Note.html#a85f0ee7ad48a66b0ee8b018901d59036',1,'MIDI_Notes::Note']]],
-  ['note_14',['note',['../d7/d78/namespaceMIDI__Notes.html#a5acc232d278a07ae2bbb541c527aac44',1,'MIDI_Notes']]],
+  ['note_14',['note',['../d7/d78/namespaceMIDI__Notes.html#a2e24f539c8d167db46ebd2ee6514ecec',1,'MIDI_Notes']]],
   ['notebutton_15',['NoteButton',['../d1/d9f/classNoteButton.html#aa5118184dda04641c9ca82185af850eb',1,'NoteButton::NoteButton()'],['../d2/d33/classBankable_1_1ManyAddresses_1_1NoteButton.html#ac721ad0113444df3a4c39d834c71b79c',1,'Bankable::ManyAddresses::NoteButton::NoteButton()'],['../de/d36/classBankable_1_1NoteButton.html#a6df908cc6549d8d67ffda4fc1718fa3d',1,'Bankable::NoteButton::NoteButton()']]],
   ['notebuttonlatched_16',['NoteButtonLatched',['../de/def/classNoteButtonLatched.html#a788f5a7508ce07719bd440d3c034c878',1,'NoteButtonLatched::NoteButtonLatched()'],['../d2/dbf/classBankable_1_1NoteButtonLatched.html#a080ee0d95555dbdbf80212359fa9607c',1,'Bankable::NoteButtonLatched::NoteButtonLatched()']]],
   ['notebuttonlatching_17',['NoteButtonLatching',['../d3/d6c/classNoteButtonLatching.html#a051ed183c4e331bfaa5daebbe2626ada',1,'NoteButtonLatching::NoteButtonLatching()'],['../d9/d3f/classBankable_1_1NoteButtonLatching.html#a94197c92edc94fefc02cb6297686a3d5',1,'Bankable::NoteButtonLatching::NoteButtonLatching()']]],

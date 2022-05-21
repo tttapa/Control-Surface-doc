@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d661cf44790e14d482b49d6b7396f7e62eaf23b8 - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
+  <title>LCOV - 4280624f0387d085048b5696305d14ddf7644efa - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d661cf44790e14d482b49d6b7396f7e62eaf23b8</td>
+            <td class="headerValue">4280624f0387d085048b5696305d14ddf7644efa</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">96</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-02-07 18:38:30</td>
+            <td class="headerValue">2022-05-08 18:07:53</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">57</td>
@@ -141,7 +141,7 @@
 <a name="71"><span class="lineNum">      71 </span>            : class MIDI_Sink {</a>
 <a name="72"><span class="lineNum">      72 </span>            :   public:</a>
 <a name="73"><span class="lineNum">      73 </span>            :     /// Default constructor.</a>
-<a name="74"><span class="lineNum">      74 </span><span class="lineCov">        443 :     MIDI_Sink() = default;</span></a>
+<a name="74"><span class="lineNum">      74 </span><span class="lineCov">       2192 :     MIDI_Sink() = default;</span></a>
 <a name="75"><span class="lineNum">      75 </span>            : </a>
 <a name="76"><span class="lineNum">      76 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="77"><span class="lineNum">      77 </span>            :     MIDI_Sink(const MIDI_Sink &amp;) = delete;</a>
@@ -224,7 +224,7 @@
 <a name="154"><span class="lineNum">     154 </span>            : class MIDI_Source {</a>
 <a name="155"><span class="lineNum">     155 </span>            :   public:</a>
 <a name="156"><span class="lineNum">     156 </span>            :     /// Default constructor.</a>
-<a name="157"><span class="lineNum">     157 </span><span class="lineCov">        352 :     MIDI_Source() = default;</span></a>
+<a name="157"><span class="lineNum">     157 </span><span class="lineCov">       2101 :     MIDI_Source() = default;</span></a>
 <a name="158"><span class="lineNum">     158 </span>            : </a>
 <a name="159"><span class="lineNum">     159 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="160"><span class="lineNum">     160 </span>            :     MIDI_Source(const MIDI_Source &amp;) = delete;</a>
@@ -396,7 +396,7 @@
 <a name="326"><span class="lineNum">     326 </span>            : class MIDI_Pipe : private MIDI_Sink, private MIDI_Source {</a>
 <a name="327"><span class="lineNum">     327 </span>            :   public:</a>
 <a name="328"><span class="lineNum">     328 </span>            :     /// Default constructor</a>
-<a name="329"><span class="lineNum">     329 </span><span class="lineCov">        214 :     MIDI_Pipe() = default;</span></a>
+<a name="329"><span class="lineNum">     329 </span><span class="lineCov">       1380 :     MIDI_Pipe() = default;</span></a>
 <a name="330"><span class="lineNum">     330 </span>            : </a>
 <a name="331"><span class="lineNum">     331 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="332"><span class="lineNum">     332 </span>            :     MIDI_Pipe(const MIDI_Pipe &amp;) = delete;</a>
@@ -484,15 +484,15 @@
 <a name="414"><span class="lineNum">     414 </span>            :     /// @{</a>
 <a name="415"><span class="lineNum">     415 </span>            : </a>
 <a name="416"><span class="lineNum">     416 </span>            :     /// Check if this pipe is connected to a sink.</a>
-<a name="417"><span class="lineNum">     417 </span><span class="lineCov">       1379 :     bool hasSink() const { return sink != nullptr; }</span></a>
+<a name="417"><span class="lineNum">     417 </span><span class="lineCov">       3711 :     bool hasSink() const { return sink != nullptr; }</span></a>
 <a name="418"><span class="lineNum">     418 </span>            :     /// Check if this pipe is connected to a source.</a>
-<a name="419"><span class="lineNum">     419 </span><span class="lineCov">       1241 :     bool hasSource() const { return source != nullptr; }</span></a>
+<a name="419"><span class="lineNum">     419 </span><span class="lineCov">       3573 :     bool hasSource() const { return source != nullptr; }</span></a>
 <a name="420"><span class="lineNum">     420 </span>            :     /// Check if this pipe has a “through” output that sends all incoming</a>
 <a name="421"><span class="lineNum">     421 </span>            :     /// messages from the input (source) to another pipe.</a>
-<a name="422"><span class="lineNum">     422 </span><span class="lineCov">       1087 :     bool hasThroughOut() const { return throughOut != nullptr; }</span></a>
+<a name="422"><span class="lineNum">     422 </span><span class="lineCov">       2253 :     bool hasThroughOut() const { return throughOut != nullptr; }</span></a>
 <a name="423"><span class="lineNum">     423 </span>            :     /// Check if this pipe has a “through” input that merges all messages from</a>
 <a name="424"><span class="lineNum">     424 </span>            :     /// another pipe into the output (sink).</a>
-<a name="425"><span class="lineNum">     425 </span><span class="lineCov">        930 :     bool hasThroughIn() const { return throughIn != nullptr; }</span></a>
+<a name="425"><span class="lineNum">     425 </span><span class="lineCov">       2096 :     bool hasThroughIn() const { return throughIn != nullptr; }</span></a>
 <a name="426"><span class="lineNum">     426 </span>            : </a>
 <a name="427"><span class="lineNum">     427 </span>            :     /// @}</a>
 <a name="428"><span class="lineNum">     428 </span>            : </a>
@@ -786,7 +786,7 @@
 
   <table width="100%" border=0 cellspacing=0 cellpadding=0>
     <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
-    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.0</a></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
   </table>
   <br>
 

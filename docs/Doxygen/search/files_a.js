@@ -68,13 +68,14 @@ var searchData=
   ['move_2eh_65',['move.h',['../d9/d83/move_8h.html',1,'']]],
   ['movingcoilballistics_2ecpp_66',['MovingCoilBallistics.cpp',['../da/d77/MovingCoilBallistics_8cpp.html',1,'']]],
   ['movingcoilballistics_2ehpp_67',['MovingCoilBallistics.hpp',['../d9/d4f/MovingCoilBallistics_8hpp.html',1,'']]],
-  ['notebutton_2ecpp_68',['NoteButton.cpp',['../dc/d9d/ManyAddresses_2NoteButton_8cpp.html',1,'']]],
-  ['notebutton_2ehpp_69',['NoteButton.hpp',['../de/d14/ManyAddresses_2NoteButton_8hpp.html',1,'']]],
-  ['notebuttonmatrix_2ecpp_70',['NoteButtonMatrix.cpp',['../de/d9d/ManyAddresses_2NoteButtonMatrix_8cpp.html',1,'']]],
-  ['notebuttonmatrix_2ehpp_71',['NoteButtonMatrix.hpp',['../d1/da1/ManyAddresses_2NoteButtonMatrix_8hpp.html',1,'']]],
-  ['pbabsoluteencoder_2ehpp_72',['PBAbsoluteEncoder.hpp',['../d7/d50/ManyAddresses_2PBAbsoluteEncoder_8hpp.html',1,'']]],
-  ['pbpotentiometer_2ecpp_73',['PBPotentiometer.cpp',['../df/dba/ManyAddresses_2PBPotentiometer_8cpp.html',1,'']]],
-  ['pbpotentiometer_2ehpp_74',['PBPotentiometer.hpp',['../da/df2/ManyAddresses_2PBPotentiometer_8hpp.html',1,'']]],
-  ['pcbutton_2ecpp_75',['PCButton.cpp',['../dc/d08/ManyAddresses_2PCButton_8cpp.html',1,'']]],
-  ['pcbutton_2ehpp_76',['PCButton.hpp',['../df/de2/ManyAddresses_2PCButton_8hpp.html',1,'']]]
+  ['multipurposebutton_2ehpp_68',['MultiPurposeButton.hpp',['../dc/dc5/MultiPurposeButton_8hpp.html',1,'']]],
+  ['notebutton_2ecpp_69',['NoteButton.cpp',['../dc/d9d/ManyAddresses_2NoteButton_8cpp.html',1,'']]],
+  ['notebutton_2ehpp_70',['NoteButton.hpp',['../de/d14/ManyAddresses_2NoteButton_8hpp.html',1,'']]],
+  ['notebuttonmatrix_2ecpp_71',['NoteButtonMatrix.cpp',['../de/d9d/ManyAddresses_2NoteButtonMatrix_8cpp.html',1,'']]],
+  ['notebuttonmatrix_2ehpp_72',['NoteButtonMatrix.hpp',['../d1/da1/ManyAddresses_2NoteButtonMatrix_8hpp.html',1,'']]],
+  ['pbabsoluteencoder_2ehpp_73',['PBAbsoluteEncoder.hpp',['../d7/d50/ManyAddresses_2PBAbsoluteEncoder_8hpp.html',1,'']]],
+  ['pbpotentiometer_2ecpp_74',['PBPotentiometer.cpp',['../df/dba/ManyAddresses_2PBPotentiometer_8cpp.html',1,'']]],
+  ['pbpotentiometer_2ehpp_75',['PBPotentiometer.hpp',['../da/df2/ManyAddresses_2PBPotentiometer_8hpp.html',1,'']]],
+  ['pcbutton_2ecpp_76',['PCButton.cpp',['../dc/d08/ManyAddresses_2PCButton_8cpp.html',1,'']]],
+  ['pcbutton_2ehpp_77',['PCButton.hpp',['../df/de2/ManyAddresses_2PCButton_8hpp.html',1,'']]]
 ];

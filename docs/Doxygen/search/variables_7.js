@@ -1,8 +1,8 @@
 var searchData=
 [
   ['hairless_5fbaud_0',['HAIRLESS_BAUD',['../dc/d4f/Settings_2Settings_8hpp.html#aee625974250707110fbe8686b37ae3a1',1,'Settings.hpp']]],
-  ['half_1',['half',['../d7/d40/classEMA.html#a733b1c223c0b1cdbad64d520a590d99f',1,'EMA']]],
-  ['half_5fstate_2',['half_state',['../d7/d40/classEMA.html#afbf309584b07ded2d0cde2c719173dc2',1,'EMA']]],
+  ['half_1',['half',['../d7/d40/classEMA.html#a1ac0d30afd365cf3e72cdd9d750e0b34',1,'EMA']]],
+  ['half_5fstate_2',['half_state',['../d7/d40/classEMA.html#adcb507f386326b6ae02d07c3e9358f9e',1,'EMA']]],
   ['harmonica_3',['Harmonica',['../da/da6/namespaceMIDI__PC.html#a36a71ce2d2e93fa7a07713408d945023',1,'MIDI_PC']]],
   ['harpsichord_4',['Harpsichord',['../da/da6/namespaceMIDI__PC.html#a585088b446e465a70d12c8db85e9ded4',1,'MIDI_PC']]],
   ['header_5',['header',['../d4/d61/structMIDIMessage.html#a3707517cb22eb26bf33bbb859fb010d2',1,'MIDIMessage']]],

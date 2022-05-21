@@ -7,12 +7,13 @@ var searchData=
   ['pcbutton_4',['PCButton',['../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html',1,'PCButton&lt; NumBanks &gt;'],['../d6/d5c/classBankable_1_1PCButton.html',1,'PCButton'],['../dd/d3d/classPCButton.html',1,'PCButton']]],
   ['pitchbendmidimatcher_5',['PitchBendMIDIMatcher',['../d7/d37/structPitchBendMIDIMatcher.html',1,'']]],
   ['pitchbendsender_6',['PitchBendSender',['../de/d46/classPitchBendSender.html',1,'']]],
-  ['pixel_7',['Pixel',['../d4/d38/structBresenhamLine_1_1Pixel.html',1,'BresenhamLine']]],
-  ['pixellocation_8',['PixelLocation',['../d0/d4e/Def_8hpp.html#dc/dd2/structPixelLocation',1,'']]],
-  ['pluggableusbmidi_9',['PluggableUSBMIDI',['../d1/dd4/classPluggableUSBMIDI.html',1,'']]],
-  ['potentiometer_10',['Potentiometer',['../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer',1,'']]],
-  ['programchanger_11',['ProgramChanger',['../d1/df9/classBankable_1_1ProgramChanger.html',1,'ProgramChanger&lt; N &gt;'],['../de/d43/classProgramChanger.html',1,'ProgramChanger&lt; N &gt;']]],
-  ['programchangeselector_12',['ProgramChangeSelector',['../dd/dd4/classProgramChangeSelector.html',1,'']]],
-  ['programchangeselectorleds_13',['ProgramChangeSelectorLEDs',['../d9/dee/classProgramChangeSelectorLEDs.html',1,'']]],
-  ['programchangesender_14',['ProgramChangeSender',['../db/d8b/classProgramChangeSender.html',1,'']]]
+  ['pitchbendsender_3c_2010_20_3e_7',['PitchBendSender&lt; 10 &gt;',['../de/d46/classPitchBendSender.html',1,'']]],
+  ['pixel_8',['Pixel',['../d4/d38/structBresenhamLine_1_1Pixel.html',1,'BresenhamLine']]],
+  ['pixellocation_9',['PixelLocation',['../d0/d4e/Def_8hpp.html#dc/dd2/structPixelLocation',1,'']]],
+  ['pluggableusbmidi_10',['PluggableUSBMIDI',['../d1/dd4/classPluggableUSBMIDI.html',1,'']]],
+  ['potentiometer_11',['Potentiometer',['../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer',1,'']]],
+  ['programchanger_12',['ProgramChanger',['../d1/df9/classBankable_1_1ProgramChanger.html',1,'ProgramChanger&lt; N &gt;'],['../de/d43/classProgramChanger.html',1,'ProgramChanger&lt; N &gt;']]],
+  ['programchangeselector_13',['ProgramChangeSelector',['../dd/dd4/classProgramChangeSelector.html',1,'']]],
+  ['programchangeselectorleds_14',['ProgramChangeSelectorLEDs',['../d9/dee/classProgramChangeSelectorLEDs.html',1,'']]],
+  ['programchangesender_15',['ProgramChangeSender',['../db/d8b/classProgramChangeSender.html',1,'']]]
 ];
