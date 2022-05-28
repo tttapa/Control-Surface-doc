@@ -16,8 +16,10 @@ Documentation for [**tttapa/Control-Surface**](https://github.com/tttapa/Control
 
 ### Other Branches
 
-- **pico**  
-  [Doxygen](pico/Doxygen/index.html) ─ [Coverage](pico/Coverage/index.html)
+- **pin-t-adl**  
+  [Doxygen](pin-t-adl/Doxygen/index.html) ─ [Coverage](pin-t-adl/Coverage/index.html)
+- **stm32**  
+  [Doxygen](stm32/Doxygen/index.html) ─ [Coverage](stm32/Coverage/index.html)
 
 ***
 
