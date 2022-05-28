@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">MCP23017.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md221"></a>
+<h1><a class="anchor" id="autotoc_md172"></a>
 MCP23017</h1>
 <p >This example demonstrates the use of MCP23017 IO expanders as if they were just normal IO pins.</p>
-<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md222"></a>
+<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Pi Pico, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
+<h2><a class="anchor" id="autotoc_md173"></a>
 Connections</h2>
 <ul>
 <li>SDA: MCP23017 SDA</li>
@@ -92,15 +92,17 @@ Connections</h2>
 </ul>
 <p >Connect an LED (and series resistor) between pin GPA0 of the MCP and ground. Connect a push button between pin GPB0 of the MCP and ground. The internal pull-up resistor will be used.</p>
 <p >Tie the three address lines of the MCP to ground.</p>
-<h2><a class="anchor" id="autotoc_md223"></a>
+<h2><a class="anchor" id="autotoc_md174"></a>
 Behavior</h2>
 <p >When the push button is pressed, the LED turns on.</p>
 <p >Written by PieterP, 2020-11-20 <br  />
  <a href="https://github.com/tttapa/Arduino-Helpers">https://github.com/tttapa/Arduino-Helpers</a></p>
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d7/dca/MCP23017_8hpp.html">AH/Hardware/ExtendedInputOutput/MCP23017.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;Wire.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../d7/dca/MCP23017_8hpp.html">AH/Hardware/ExtendedInputOutput/MCP23017.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span>ExtIO; <span class="comment">// Use the extended input/output functions</span></div>
 <div class="line"> </div>
@@ -108,7 +110,7 @@ Behavior</h2>
 <div class="line">MCP23017&lt;WireType&gt; mcp {</div>
 <div class="line">  Wire, <span class="comment">// The I²C driver to use</span></div>
 <div class="line">  0x0,  <span class="comment">// The I²C address offset (depends on the state of the address pins)</span></div>
-<div class="line">  2,    <span class="comment">// Optional: interrupt pin to detect input changes </span></div>
+<div class="line">  2,    <span class="comment">// Optional: interrupt pin to detect input changes</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><a id="a0" name="a0"></a><a class="code hl_typedef" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> ledPin = mcp.pinA(0);    <span class="comment">// GPIOA0</span></div>
@@ -128,8 +130,8 @@ Behavior</h2>
 <div class="line">  <a id="a5" name="a5"></a><a class="code hl_function" href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">digitalWrite</a>(ledPin, buttonState ? <a id="a6" name="a6"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a> : <a id="a7" name="a7"></a><a class="code hl_variable" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a>);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Note: </span></div>
-<div class="line"><span class="comment">// The “interrupt” pin is not used to trigger an actual interrupt on the </span></div>
+<div class="line"><span class="comment">// Note:</span></div>
+<div class="line"><span class="comment">// The “interrupt” pin is not used to trigger an actual interrupt on the</span></div>
 <div class="line"><span class="comment">// microcontroller. It is just used to check whether any of the inputs of</span></div>
 <div class="line"><span class="comment">// the MCP23017 changed without having to do an I²C transaction. Using this</span></div>
 <div class="line"><span class="comment">// pin can speed up your code, but it&#39;s not necessary, you can leave it out</span></div>

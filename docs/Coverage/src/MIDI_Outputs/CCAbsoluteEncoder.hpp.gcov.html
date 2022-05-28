@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 4280624f0387d085048b5696305d14ddf7644efa - src/MIDI_Outputs/CCAbsoluteEncoder.hpp</title>
+  <title>LCOV - 08b36b598fc554ff05d725def3c52808c9a680ef - src/MIDI_Outputs/CCAbsoluteEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">4280624f0387d085048b5696305d14ddf7644efa</td>
+            <td class="headerValue">08b36b598fc554ff05d725def3c52808c9a680ef</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">3</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-05-08 18:07:53</td>
+            <td class="headerValue">2022-05-28 12:06:35</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -112,7 +112,7 @@
 <a name="42"><span class="lineNum">      42 </span>            :      *          speed, increasing the number of pulsesPerStep will result in a </a>
 <a name="43"><span class="lineNum">      43 </span>            :      *          lower speed.</a>
 <a name="44"><span class="lineNum">      44 </span>            :      */</a>
-<a name="45"><span class="lineNum">      45 </span><span class="lineCov">          1 :     CCAbsoluteEncoder(Encoder &amp;&amp;encoder, MIDIAddress address,</span></a>
+<a name="45"><span class="lineNum">      45 </span><span class="lineCov">          1 :     CCAbsoluteEncoder(AHEncoder &amp;&amp;encoder, MIDIAddress address,</span></a>
 <a name="46"><span class="lineNum">      46 </span>            :                       int16_t multiplier = 1, uint8_t pulsesPerStep = 4)</a>
 <a name="47"><span class="lineNum">      47 </span><span class="lineCov">          1 :         : MIDIAbsoluteEncoder&lt;ContinuousCCSender&gt;(</span></a>
 <a name="48"><span class="lineNum">      48 </span><span class="lineCov">          1 :               std::move(encoder), address, multiplier, pulsesPerStep, {}) {}</span></a>

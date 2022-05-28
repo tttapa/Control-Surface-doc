@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 4280624f0387d085048b5696305d14ddf7644efa - src/MIDI_Outputs/CCRotaryEncoder.hpp</title>
+  <title>LCOV - 08b36b598fc554ff05d725def3c52808c9a680ef - src/MIDI_Outputs/CCRotaryEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">4280624f0387d085048b5696305d14ddf7644efa</td>
+            <td class="headerValue">08b36b598fc554ff05d725def3c52808c9a680ef</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">3</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-05-08 18:07:53</td>
+            <td class="headerValue">2022-05-28 12:06:35</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -113,7 +113,7 @@
 <a name="43"><span class="lineNum">      43 </span>            :      *          speed, increasing the number of pulsesPerStep will result in a </a>
 <a name="44"><span class="lineNum">      44 </span>            :      *          lower speed.</a>
 <a name="45"><span class="lineNum">      45 </span>            :      */</a>
-<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         13 :     CCRotaryEncoder(Encoder &amp;&amp;encoder, MIDIAddress address,</span></a>
+<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         13 :     CCRotaryEncoder(AHEncoder &amp;&amp;encoder, MIDIAddress address,</span></a>
 <a name="47"><span class="lineNum">      47 </span>            :                     int16_t speedMultiply = 1, uint8_t pulsesPerStep = 4)</a>
 <a name="48"><span class="lineNum">      48 </span><span class="lineCov">         13 :         : MIDIRotaryEncoder&lt;RelativeCCSender&gt;(</span></a>
 <a name="49"><span class="lineNum">      49 </span><span class="lineCov">         13 :               std::move(encoder), address, speedMultiply, pulsesPerStep, {}) {}</span></a>
@@ -156,7 +156,7 @@
 <a name="86"><span class="lineNum">      86 </span>            :      *          speed, increasing the number of pulsesPerStep will result in a </a>
 <a name="87"><span class="lineNum">      87 </span>            :      *          lower speed.</a>
 <a name="88"><span class="lineNum">      88 </span>            :      */</a>
-<a name="89"><span class="lineNum">      89 </span>            :     BorrowedCCRotaryEncoder(Encoder &amp;encoder, MIDIAddress address,</a>
+<a name="89"><span class="lineNum">      89 </span>            :     BorrowedCCRotaryEncoder(AHEncoder &amp;encoder, MIDIAddress address,</a>
 <a name="90"><span class="lineNum">      90 </span>            :                             int16_t speedMultiply = 1, uint8_t pulsesPerStep = 4)</a>
 <a name="91"><span class="lineNum">      91 </span>            :         : BorrowedMIDIRotaryEncoder&lt;RelativeCCSender&gt;(</a>
 <a name="92"><span class="lineNum">      92 </span>            :               encoder, address, speedMultiply, pulsesPerStep, {}) {}</a>

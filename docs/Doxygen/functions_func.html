@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -83,9 +83,10 @@ $(function() {
 <li>Ab()&#160;:&#160;<a class="el" href="d5/dc2/classMIDI__Notes_1_1Note.html#af5ebb0c09be8987a5bbf3fe4a51e7b86">Note</a></li>
 <li>acceptMIDIfromSource()&#160;:&#160;<a class="el" href="df/d72/classMIDI__Pipe.html#a07f10bea080a7c320d8ff88ef554a282">MIDI_Pipe</a></li>
 <li>activate()&#160;:&#160;<a class="el" href="d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a8011fcbeb5efeda20bd2dbffbbb70165">SmartMIDIFilteredAnalog&lt; NumBanks, BankAddress, Sender &gt;</a></li>
-<li>add()&#160;:&#160;<a class="el" href="db/dbd/classBank.html#a4209c482266982a22fd76bd1b4f7dc04">Bank&lt; NumBanks &gt;</a>, <a class="el" href="d1/db1/classSysExBuffer.html#aade66e493f2671bbe212727b87c2d9f8">SysExBuffer</a></li>
+<li>add()&#160;:&#160;<a class="el" href="de/d62/structAtomicPosition.html#ab85e6b48420413a18bfceff9fa0d23c8">AtomicPosition&lt; T &gt;</a>, <a class="el" href="db/dbd/classBank.html#a4209c482266982a22fd76bd1b4f7dc04">Bank&lt; NumBanks &gt;</a>, <a class="el" href="d1/db1/classSysExBuffer.html#aade66e493f2671bbe212727b87c2d9f8">SysExBuffer</a></li>
 <li>add2B()&#160;:&#160;<a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#a72e819256a3236668ca21796feebdb70">BLEMIDIPacketBuilder</a></li>
 <li>add3B()&#160;:&#160;<a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#aeea6539b85771e065d9b2a20265671b9">BLEMIDIPacketBuilder</a></li>
+<li>add_isr()&#160;:&#160;<a class="el" href="de/d62/structAtomicPosition.html#a7d270e879eaf56904db2c7149060bc35">AtomicPosition&lt; T &gt;</a></li>
 <li>addImpl()&#160;:&#160;<a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#ade34ae8c7d2364ac3ba9b4cf96c65bdb">BLEMIDIPacketBuilder</a></li>
 <li>addRealTime()&#160;:&#160;<a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#aa66e5a45f2dbd33f6803a1dbbe4882ba">BLEMIDIPacketBuilder</a></li>
 <li>addSysCommon()&#160;:&#160;<a class="el" href="d7/d8e/classBLEMIDIPacketBuilder.html#a7921f58172823382a248ba3082c731ad">BLEMIDIPacketBuilder</a></li>
@@ -93,6 +94,7 @@ $(function() {
 <li>addSysExByte()&#160;:&#160;<a class="el" href="d0/d0d/classSerialMIDI__Parser.html#af90ff3c8af630628b7ebd04f70125c41">SerialMIDI_Parser</a>, <a class="el" href="db/db0/classUSBMIDI__Parser.html#aa3d847dfde171d8bbaaca2fb0469b1f2">USBMIDI_Parser</a></li>
 <li>addSysExBytes()&#160;:&#160;<a class="el" href="db/db0/classUSBMIDI__Parser.html#aafeb07dec560a546ac8fd0d75cee24ed">USBMIDI_Parser</a></li>
 <li>afterReading()&#160;:&#160;<a class="el" href="d2/d94/classAH_1_1AnalogMultiplex.html#a9958d9974fc696854a5b77db0201a075">AnalogMultiplex&lt; N &gt;</a></li>
+<li>AHEncoder()&#160;:&#160;<a class="el" href="dd/da9/classAHEncoder.html#a43c3945dfd5a67aae2c2cb8f4c2dd970">AHEncoder</a></li>
 <li>alwaysSendImmediately()&#160;:&#160;<a class="el" href="dd/d0e/classGenericUSBMIDI__Interface.html#a31ada757af49a5dd1a6466b69ce54461">GenericUSBMIDI_Interface&lt; Backend &gt;</a></li>
 <li>alwaysSendsImmediately()&#160;:&#160;<a class="el" href="dd/d0e/classGenericUSBMIDI__Interface.html#ab01e7a4208f44f8d50be8e94f52a4b64">GenericUSBMIDI_Interface&lt; Backend &gt;</a></li>
 <li>AnalogMultiplex()&#160;:&#160;<a class="el" href="d2/d94/classAH_1_1AnalogMultiplex.html#a0a2d2327d5aa0996c8a1009ce63a4737">AnalogMultiplex&lt; N &gt;</a></li>
@@ -106,7 +108,8 @@ $(function() {
 <li>ArraySlice()&#160;:&#160;<a class="el" href="d2/dc9/classAH_1_1ArraySlice.html#a4d1735860de2456adfc31f3472b6d874">ArraySlice&lt; T, N, Reverse, Const &gt;</a></li>
 <li>asArray()&#160;:&#160;<a class="el" href="d2/dc9/classAH_1_1ArraySlice.html#aac32f5df7e286c383359dfe1e77b2aeb">ArraySlice&lt; T, N, Reverse, Const &gt;</a></li>
 <li>AssignmentDisplay()&#160;:&#160;<a class="el" href="d1/d08/classMCU_1_1AssignmentDisplay.html#a9cf51acc4fbfc719a00062dcbae75efe">AssignmentDisplay</a></li>
-<li>attachInterruptCtx()&#160;:&#160;<a class="el" href="d0/d3b/classEncoder.html#a325dbf65dbf5f3bb106bd095b18bc0bc">Encoder</a></li>
+<li>AtomicPosition()&#160;:&#160;<a class="el" href="de/d62/structAtomicPosition.html#a1bba61227ed6c5a6935aa6ae89c50780">AtomicPosition&lt; T &gt;</a></li>
+<li>attachInterruptCtx()&#160;:&#160;<a class="el" href="dd/da9/classAHEncoder.html#a325dbf65dbf5f3bb106bd095b18bc0bc">AHEncoder</a></li>
 <li>AudioVU()&#160;:&#160;<a class="el" href="d4/dce/classAudioVU.html#ac4821dbb095cbc81bacc4ab7c7efd3af">AudioVU</a></li>
 <li>AudioVULEDs()&#160;:&#160;<a class="el" href="d9/dbf/classAudioVULEDs.html#ae9a482cdf099da00bff5f93ccfc6a6cc">AudioVULEDs&lt; N &gt;</a></li>
 <li>available()&#160;:&#160;<a class="el" href="d0/d18/classAudioVU_1_1Analyzer.html#a9b8af08c84002ce80db79bf7c3dfe0b2">AudioVU::Analyzer</a></li>

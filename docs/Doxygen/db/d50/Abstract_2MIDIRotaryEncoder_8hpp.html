@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -91,13 +91,13 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d0/d81/TypeTraits_8hpp_source.html">Def/TypeTraits.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/d03/EncoderState_8hpp_source.html">MIDI_Outputs/Abstract/EncoderState.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/d41/MIDIOutputElement_8hpp_source.html">MIDI_Outputs/Abstract/MIDIOutputElement.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../db/de4/Encoder_8h_source.html">Submodules/Encoder/Encoder.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/ddd/AHEncoder_8hpp_source.html">Submodules/Encoder/AHEncoder.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for Abstract/MIDIRotaryEncoder.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d7a/Abstract_2MIDIRotaryEncoder_8hpp__incl.svg" width="2871" height="1142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d7a/Abstract_2MIDIRotaryEncoder_8hpp__incl.svg" width="2514" height="1127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -119,22 +119,22 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:abdf97fef3cbd683a836fe297965ea3ac"><td class="memTemplParams" colspan="2">template&lt;class Sender &gt; </td></tr>
-<tr class="memitem:abdf97fef3cbd683a836fe297965ea3ac"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html#abdf97fef3cbd683a836fe297965ea3ac">MIDIRotaryEncoder</a> = <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html">GenericMIDIRotaryEncoder</a>&lt; <a class="el" href="../../d0/d3b/classEncoder.html">Encoder</a>, Sender &gt;</td></tr>
-<tr class="separator:abdf97fef3cbd683a836fe297965ea3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4d54dc8a83770122eb2247787f0f49"><td class="memTemplParams" colspan="2">template&lt;class Sender &gt; </td></tr>
-<tr class="memitem:a6b4d54dc8a83770122eb2247787f0f49"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html#a6b4d54dc8a83770122eb2247787f0f49">BorrowedMIDIRotaryEncoder</a> = <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html">GenericMIDIRotaryEncoder</a>&lt; <a class="el" href="../../d0/d3b/classEncoder.html">Encoder</a> &amp;, Sender &gt;</td></tr>
-<tr class="separator:a6b4d54dc8a83770122eb2247787f0f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8479b10fea5c65d924036ffa2994b26e"><td class="memTemplParams" colspan="2">template&lt;class Sender &gt; </td></tr>
+<tr class="memitem:a8479b10fea5c65d924036ffa2994b26e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html#a8479b10fea5c65d924036ffa2994b26e">MIDIRotaryEncoder</a> = <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html">GenericMIDIRotaryEncoder</a>&lt; <a class="el" href="../../dd/da9/classAHEncoder.html">AHEncoder</a>, Sender &gt;</td></tr>
+<tr class="separator:a8479b10fea5c65d924036ffa2994b26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20dc6571fab90168cae83cf32ccfe5cb"><td class="memTemplParams" colspan="2">template&lt;class Sender &gt; </td></tr>
+<tr class="memitem:a20dc6571fab90168cae83cf32ccfe5cb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html#a20dc6571fab90168cae83cf32ccfe5cb">BorrowedMIDIRotaryEncoder</a> = <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html">GenericMIDIRotaryEncoder</a>&lt; <a class="el" href="../../dd/da9/classAHEncoder.html">AHEncoder</a> &amp;, Sender &gt;</td></tr>
+<tr class="separator:a20dc6571fab90168cae83cf32ccfe5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="abdf97fef3cbd683a836fe297965ea3ac" name="abdf97fef3cbd683a836fe297965ea3ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdf97fef3cbd683a836fe297965ea3ac">&#9670;&nbsp;</a></span>MIDIRotaryEncoder</h2>
+<a id="a8479b10fea5c65d924036ffa2994b26e" name="a8479b10fea5c65d924036ffa2994b26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8479b10fea5c65d924036ffa2994b26e">&#9670;&nbsp;</a></span>MIDIRotaryEncoder</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html#abdf97fef3cbd683a836fe297965ea3ac">MIDIRotaryEncoder</a> =  <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html">GenericMIDIRotaryEncoder</a>&lt;<a class="el" href="../../d0/d3b/classEncoder.html">Encoder</a>, Sender&gt;</td>
+          <td class="memname">using <a class="el" href="../../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html#a8479b10fea5c65d924036ffa2994b26e">MIDIRotaryEncoder</a> =  <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html">GenericMIDIRotaryEncoder</a>&lt;<a class="el" href="../../dd/da9/classAHEncoder.html">AHEncoder</a>, Sender&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -143,14 +143,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b4d54dc8a83770122eb2247787f0f49" name="a6b4d54dc8a83770122eb2247787f0f49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4d54dc8a83770122eb2247787f0f49">&#9670;&nbsp;</a></span>BorrowedMIDIRotaryEncoder</h2>
+<a id="a20dc6571fab90168cae83cf32ccfe5cb" name="a20dc6571fab90168cae83cf32ccfe5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20dc6571fab90168cae83cf32ccfe5cb">&#9670;&nbsp;</a></span>BorrowedMIDIRotaryEncoder</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html#a6b4d54dc8a83770122eb2247787f0f49">BorrowedMIDIRotaryEncoder</a> =  <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html">GenericMIDIRotaryEncoder</a>&lt;<a class="el" href="../../d0/d3b/classEncoder.html">Encoder</a> &amp;, Sender&gt;</td>
+          <td class="memname">using <a class="el" href="../../db/d50/Abstract_2MIDIRotaryEncoder_8hpp.html#a20dc6571fab90168cae83cf32ccfe5cb">BorrowedMIDIRotaryEncoder</a> =  <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html">GenericMIDIRotaryEncoder</a>&lt;<a class="el" href="../../dd/da9/classAHEncoder.html">AHEncoder</a> &amp;, Sender&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

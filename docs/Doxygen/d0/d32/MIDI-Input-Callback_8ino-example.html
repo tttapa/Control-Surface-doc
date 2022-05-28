@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,19 +79,19 @@ $(function() {
   <div class="headertitle"><div class="title">MIDI-Input-Callback.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md25"></a>
+<h1><a class="anchor" id="autotoc_md244"></a>
 MIDI-Input-Callback</h1>
 <p >This is an example on how to attach your own callbacks for receiving MIDI input data.</p>
-<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
+<h2><a class="anchor" id="autotoc_md245"></a>
 Connections</h2>
 <p >None.</p>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md246"></a>
 Behavior</h2>
 <ul>
 <li>When MIDI messages are sent to the USB interface, they are printed to the Serial port.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md247"></a>
 Mapping</h2>
 <p >None.</p>
 <p >Written by PieterP, 2019-08-07 <br  />
@@ -161,7 +161,7 @@ Mapping</h2>
 <div class="ttc" id="aclassControl__Surface___html_a4e633c2fd2bfe626e22cc580f8888c76"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#a4e633c2fd2bfe626e22cc580f8888c76">Control_Surface_::setMIDIInputCallbacks</a></div><div class="ttdeci">void setMIDIInputCallbacks(ChannelMessageCallback channelMessageCallback, SysExMessageCallback sysExMessageCallback, SysCommonMessageCallback sysCommonMessageCallback, RealTimeMessageCallback realTimeMessageCallback)</div><div class="ttdoc">Set the MIDI input callbacks.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/Control__Surface__Class_8hpp_source.html#l00119">Control_Surface_Class.hpp:119</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00065">Control_Surface_Class.cpp:65</a></div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00145">USBMIDI_Interface.hpp:146</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00146">USBMIDI_Interface.hpp:147</a></div></div>
 <div class="ttc" id="agroup__AH__PrintStream_html_ga173884f5f11dfa9d228c36522d207e28"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28">AH::hex</a></div><div class="ttdeci">Print &amp; hex(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00062">PrintStream.cpp:62</a></div></div>
 <div class="ttc" id="agroup__AH__PrintStream_html_ga439f453f806df7d97e736ff0e7151344"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#ga439f453f806df7d97e736ff0e7151344">AH::endl</a></div><div class="ttdeci">Print &amp; endl(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00027">PrintStream.cpp:27</a></div></div>
 <div class="ttc" id="agroup__AH__PrintStream_html_gabe27efcfa5b971f354c562b1fdf14db9"><div class="ttname"><a href="../../d8/d4b/group__AH__PrintStream.html#gabe27efcfa5b971f354c562b1fdf14db9">AH::dec</a></div><div class="ttdeci">Print &amp; dec(Print &amp;printer)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d69/PrintStream_8cpp_source.html#l00077">PrintStream.cpp:77</a></div></div>

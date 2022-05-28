@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 4280624f0387d085048b5696305d14ddf7644efa - src/MIDI_Outputs/Bankable/Abstract/MIDIRotaryEncoder.hpp</title>
+  <title>LCOV - 08b36b598fc554ff05d725def3c52808c9a680ef - src/MIDI_Outputs/Bankable/Abstract/MIDIRotaryEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">4280624f0387d085048b5696305d14ddf7644efa</td>
+            <td class="headerValue">08b36b598fc554ff05d725def3c52808c9a680ef</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">8</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-05-08 18:07:53</td>
+            <td class="headerValue">2022-05-28 12:06:35</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -78,7 +78,7 @@
 <a name="8"><span class="lineNum">       8 </span>            : #include &lt;MIDI_Outputs/Abstract/MIDIOutputElement.hpp&gt;</a>
 <a name="9"><span class="lineNum">       9 </span>            : </a>
 <a name="10"><span class="lineNum">      10 </span>            : #ifdef ARDUINO</a>
-<a name="11"><span class="lineNum">      11 </span>            : #include &lt;Submodules/Encoder/Encoder.h&gt;</a>
+<a name="11"><span class="lineNum">      11 </span>            : #include &lt;Submodules/Encoder/AHEncoder.hpp&gt;</a>
 <a name="12"><span class="lineNum">      12 </span>            : #else</a>
 <a name="13"><span class="lineNum">      13 </span>            : #include &lt;Encoder.h&gt; // Mock</a>
 <a name="14"><span class="lineNum">      14 </span>            : #endif</a>
@@ -133,11 +133,11 @@
 <a name="63"><span class="lineNum">      63 </span>            : </a>
 <a name="64"><span class="lineNum">      64 </span>            : template &lt;class BankAddress, class Sender&gt;</a>
 <a name="65"><span class="lineNum">      65 </span>            : using MIDIRotaryEncoder =</a>
-<a name="66"><span class="lineNum">      66 </span>            :     GenericMIDIRotaryEncoder&lt;Encoder, BankAddress, Sender&gt;;</a>
+<a name="66"><span class="lineNum">      66 </span>            :     GenericMIDIRotaryEncoder&lt;AHEncoder, BankAddress, Sender&gt;;</a>
 <a name="67"><span class="lineNum">      67 </span>            : </a>
 <a name="68"><span class="lineNum">      68 </span>            : template &lt;class BankAddress, class Sender&gt;</a>
 <a name="69"><span class="lineNum">      69 </span>            : using BorrowedMIDIRotaryEncoder =</a>
-<a name="70"><span class="lineNum">      70 </span>            :     GenericMIDIRotaryEncoder&lt;Encoder &amp;, BankAddress, Sender&gt;;</a>
+<a name="70"><span class="lineNum">      70 </span>            :     GenericMIDIRotaryEncoder&lt;AHEncoder &amp;, BankAddress, Sender&gt;;</a>
 <a name="71"><span class="lineNum">      71 </span>            : </a>
 <a name="72"><span class="lineNum">      72 </span>            : } // namespace Bankable</a>
 <a name="73"><span class="lineNum">      73 </span>            : </a>

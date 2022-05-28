@@ -51,114 +51,117 @@
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="../../dd/d0e/classGenericUSBMIDI__Interface.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-497 0,-763 180,-763 180,-497 0,-497"/>
-<text text-anchor="start" x="8" y="-751" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface</text>
-<text text-anchor="middle" x="90" y="-740" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; USBHostMIDIBackend&lt; 64 &gt; &gt;</text>
-<polyline fill="none" stroke="black" points="0,-733 180,-733 "/>
-<text text-anchor="start" x="8" y="-721" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parser</text>
-<text text-anchor="start" x="8" y="-710" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sender</text>
-<text text-anchor="start" x="8" y="-699" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; alwaysSendImmediately_</text>
-<polyline fill="none" stroke="black" points="0,-692 180,-692 "/>
-<text text-anchor="start" x="8" y="-680" font-family="Helvetica,sans-Serif" font-size="10.00">+ GenericUSBMIDI_Interface()</text>
-<text text-anchor="start" x="8" y="-669" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
-<text text-anchor="start" x="8" y="-658" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendChannelMessageImpl()</text>
-<text text-anchor="start" x="8" y="-647" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysCommonImpl()</text>
-<text text-anchor="start" x="8" y="-636" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExImpl()</text>
-<text text-anchor="start" x="8" y="-625" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendRealTimeImpl()</text>
-<text text-anchor="start" x="8" y="-614" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendNowImpl()</text>
-<text text-anchor="start" x="8" y="-603" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
-<text text-anchor="start" x="8" y="-592" font-family="Helvetica,sans-Serif" font-size="10.00">* backend</text>
-<text text-anchor="start" x="8" y="-581" font-family="Helvetica,sans-Serif" font-size="10.00">* read()</text>
-<text text-anchor="start" x="8" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00">* getChannelMessage()</text>
-<text text-anchor="start" x="8" y="-559" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysCommonMessage()</text>
-<text text-anchor="start" x="8" y="-548" font-family="Helvetica,sans-Serif" font-size="10.00">* getRealTimeMessage()</text>
-<text text-anchor="start" x="8" y="-537" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysExMessage()</text>
-<text text-anchor="start" x="8" y="-526" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendsImmediately()</text>
-<text text-anchor="start" x="8" y="-515" font-family="Helvetica,sans-Serif" font-size="10.00">* neverSendImmediately()</text>
-<text text-anchor="start" x="8" y="-504" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendImmediately()</text>
+<polygon fill="white" stroke="black" points="0,-491.5 0,-768.5 180,-768.5 180,-491.5 0,-491.5"/>
+<text text-anchor="start" x="8" y="-756.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface</text>
+<text text-anchor="middle" x="90" y="-745.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; USBHostMIDIBackend&lt; 64 &gt; &gt;</text>
+<polyline fill="none" stroke="black" points="0,-738.5 180,-738.5 "/>
+<text text-anchor="start" x="8" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parser</text>
+<text text-anchor="start" x="8" y="-715.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sender</text>
+<text text-anchor="start" x="8" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; alwaysSendImmediately_</text>
+<polyline fill="none" stroke="black" points="0,-697.5 180,-697.5 "/>
+<text text-anchor="start" x="8" y="-685.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GenericUSBMIDI_Interface()</text>
+<text text-anchor="start" x="8" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
+<text text-anchor="start" x="8" y="-663.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
+<text text-anchor="start" x="8" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendChannelMessageImpl()</text>
+<text text-anchor="start" x="8" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysCommonImpl()</text>
+<text text-anchor="start" x="8" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExImpl()</text>
+<text text-anchor="start" x="8" y="-619.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendRealTimeImpl()</text>
+<text text-anchor="start" x="8" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendNowImpl()</text>
+<text text-anchor="start" x="8" y="-597.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
+<text text-anchor="start" x="8" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">* backend</text>
+<text text-anchor="start" x="8" y="-575.5" font-family="Helvetica,sans-Serif" font-size="10.00">* read()</text>
+<text text-anchor="start" x="8" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getChannelMessage()</text>
+<text text-anchor="start" x="8" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysCommonMessage()</text>
+<text text-anchor="start" x="8" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getRealTimeMessage()</text>
+<text text-anchor="start" x="8" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysExMessage()</text>
+<text text-anchor="start" x="8" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendsImmediately()</text>
+<text text-anchor="start" x="8" y="-509.5" font-family="Helvetica,sans-Serif" font-size="10.00">* neverSendImmediately()</text>
+<text text-anchor="start" x="8" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendImmediately()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M689.6,-1095.51C560.85,-1080.96 327.71,-1036.44 189,-901 151.31,-864.2 127.87,-811.88 113.34,-763.08"/>
+<path fill="none" stroke="midnightblue" d="M689.6,-1095.51C560.85,-1080.96 327.71,-1036.44 189,-901 152.74,-865.6 129.67,-815.82 115.03,-768.64"/>
 <polygon fill="none" stroke="midnightblue" points="689.51,-1099.02 699.83,-1096.63 690.27,-1092.06 689.51,-1099.02"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="../../dd/d0e/classGenericUSBMIDI__Interface.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="198,-497 198,-763 384,-763 384,-497 198,-497"/>
-<text text-anchor="start" x="206" y="-751" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface</text>
-<text text-anchor="middle" x="291" y="-740" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; USBHostMIDIBackend&lt; 512 &gt; &gt;</text>
-<polyline fill="none" stroke="black" points="198,-733 384,-733 "/>
-<text text-anchor="start" x="206" y="-721" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parser</text>
-<text text-anchor="start" x="206" y="-710" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sender</text>
-<text text-anchor="start" x="206" y="-699" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; alwaysSendImmediately_</text>
-<polyline fill="none" stroke="black" points="198,-692 384,-692 "/>
-<text text-anchor="start" x="206" y="-680" font-family="Helvetica,sans-Serif" font-size="10.00">+ GenericUSBMIDI_Interface()</text>
-<text text-anchor="start" x="206" y="-669" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
-<text text-anchor="start" x="206" y="-658" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendChannelMessageImpl()</text>
-<text text-anchor="start" x="206" y="-647" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysCommonImpl()</text>
-<text text-anchor="start" x="206" y="-636" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExImpl()</text>
-<text text-anchor="start" x="206" y="-625" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendRealTimeImpl()</text>
-<text text-anchor="start" x="206" y="-614" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendNowImpl()</text>
-<text text-anchor="start" x="206" y="-603" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
-<text text-anchor="start" x="206" y="-592" font-family="Helvetica,sans-Serif" font-size="10.00">* backend</text>
-<text text-anchor="start" x="206" y="-581" font-family="Helvetica,sans-Serif" font-size="10.00">* read()</text>
-<text text-anchor="start" x="206" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00">* getChannelMessage()</text>
-<text text-anchor="start" x="206" y="-559" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysCommonMessage()</text>
-<text text-anchor="start" x="206" y="-548" font-family="Helvetica,sans-Serif" font-size="10.00">* getRealTimeMessage()</text>
-<text text-anchor="start" x="206" y="-537" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysExMessage()</text>
-<text text-anchor="start" x="206" y="-526" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendsImmediately()</text>
-<text text-anchor="start" x="206" y="-515" font-family="Helvetica,sans-Serif" font-size="10.00">* neverSendImmediately()</text>
-<text text-anchor="start" x="206" y="-504" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendImmediately()</text>
+<polygon fill="white" stroke="black" points="198,-491.5 198,-768.5 384,-768.5 384,-491.5 198,-491.5"/>
+<text text-anchor="start" x="206" y="-756.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface</text>
+<text text-anchor="middle" x="291" y="-745.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; USBHostMIDIBackend&lt; 512 &gt; &gt;</text>
+<polyline fill="none" stroke="black" points="198,-738.5 384,-738.5 "/>
+<text text-anchor="start" x="206" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parser</text>
+<text text-anchor="start" x="206" y="-715.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sender</text>
+<text text-anchor="start" x="206" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; alwaysSendImmediately_</text>
+<polyline fill="none" stroke="black" points="198,-697.5 384,-697.5 "/>
+<text text-anchor="start" x="206" y="-685.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GenericUSBMIDI_Interface()</text>
+<text text-anchor="start" x="206" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
+<text text-anchor="start" x="206" y="-663.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
+<text text-anchor="start" x="206" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendChannelMessageImpl()</text>
+<text text-anchor="start" x="206" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysCommonImpl()</text>
+<text text-anchor="start" x="206" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExImpl()</text>
+<text text-anchor="start" x="206" y="-619.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendRealTimeImpl()</text>
+<text text-anchor="start" x="206" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendNowImpl()</text>
+<text text-anchor="start" x="206" y="-597.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
+<text text-anchor="start" x="206" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">* backend</text>
+<text text-anchor="start" x="206" y="-575.5" font-family="Helvetica,sans-Serif" font-size="10.00">* read()</text>
+<text text-anchor="start" x="206" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getChannelMessage()</text>
+<text text-anchor="start" x="206" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysCommonMessage()</text>
+<text text-anchor="start" x="206" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getRealTimeMessage()</text>
+<text text-anchor="start" x="206" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysExMessage()</text>
+<text text-anchor="start" x="206" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendsImmediately()</text>
+<text text-anchor="start" x="206" y="-509.5" font-family="Helvetica,sans-Serif" font-size="10.00">* neverSendImmediately()</text>
+<text text-anchor="start" x="206" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendImmediately()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
 <g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M690.26,-1076.17C602.85,-1046.72 473.03,-990.96 393,-901 358.53,-862.25 335.26,-810.7 319.77,-763.03"/>
+<path fill="none" stroke="midnightblue" d="M690.26,-1076.17C602.85,-1046.72 473.03,-990.96 393,-901 359.86,-863.75 337.07,-814.67 321.6,-768.58"/>
 <polygon fill="none" stroke="midnightblue" points="689.32,-1079.54 699.91,-1079.37 691.52,-1072.9 689.32,-1079.54"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
 <g id="a_node14"><a xlink:href="../../dd/d0e/classGenericUSBMIDI__Interface.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="402,-497 402,-763 566,-763 566,-497 402,-497"/>
-<text text-anchor="start" x="410" y="-751" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface</text>
-<text text-anchor="middle" x="484" y="-740" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; USBDeviceMIDIBackend &gt;</text>
-<polyline fill="none" stroke="black" points="402,-733 566,-733 "/>
-<text text-anchor="start" x="410" y="-721" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parser</text>
-<text text-anchor="start" x="410" y="-710" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sender</text>
-<text text-anchor="start" x="410" y="-699" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; alwaysSendImmediately_</text>
-<polyline fill="none" stroke="black" points="402,-692 566,-692 "/>
-<text text-anchor="start" x="410" y="-680" font-family="Helvetica,sans-Serif" font-size="10.00">+ GenericUSBMIDI_Interface()</text>
-<text text-anchor="start" x="410" y="-669" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
-<text text-anchor="start" x="410" y="-658" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendChannelMessageImpl()</text>
-<text text-anchor="start" x="410" y="-647" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysCommonImpl()</text>
-<text text-anchor="start" x="410" y="-636" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExImpl()</text>
-<text text-anchor="start" x="410" y="-625" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendRealTimeImpl()</text>
-<text text-anchor="start" x="410" y="-614" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendNowImpl()</text>
-<text text-anchor="start" x="410" y="-603" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
-<text text-anchor="start" x="410" y="-592" font-family="Helvetica,sans-Serif" font-size="10.00">* backend</text>
-<text text-anchor="start" x="410" y="-581" font-family="Helvetica,sans-Serif" font-size="10.00">* read()</text>
-<text text-anchor="start" x="410" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00">* getChannelMessage()</text>
-<text text-anchor="start" x="410" y="-559" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysCommonMessage()</text>
-<text text-anchor="start" x="410" y="-548" font-family="Helvetica,sans-Serif" font-size="10.00">* getRealTimeMessage()</text>
-<text text-anchor="start" x="410" y="-537" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysExMessage()</text>
-<text text-anchor="start" x="410" y="-526" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendsImmediately()</text>
-<text text-anchor="start" x="410" y="-515" font-family="Helvetica,sans-Serif" font-size="10.00">* neverSendImmediately()</text>
-<text text-anchor="start" x="410" y="-504" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendImmediately()</text>
+<polygon fill="white" stroke="black" points="402,-491.5 402,-768.5 566,-768.5 566,-491.5 402,-491.5"/>
+<text text-anchor="start" x="410" y="-756.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface</text>
+<text text-anchor="middle" x="484" y="-745.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; USBDeviceMIDIBackend &gt;</text>
+<polyline fill="none" stroke="black" points="402,-738.5 566,-738.5 "/>
+<text text-anchor="start" x="410" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parser</text>
+<text text-anchor="start" x="410" y="-715.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sender</text>
+<text text-anchor="start" x="410" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; alwaysSendImmediately_</text>
+<polyline fill="none" stroke="black" points="402,-697.5 566,-697.5 "/>
+<text text-anchor="start" x="410" y="-685.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GenericUSBMIDI_Interface()</text>
+<text text-anchor="start" x="410" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
+<text text-anchor="start" x="410" y="-663.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
+<text text-anchor="start" x="410" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendChannelMessageImpl()</text>
+<text text-anchor="start" x="410" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysCommonImpl()</text>
+<text text-anchor="start" x="410" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExImpl()</text>
+<text text-anchor="start" x="410" y="-619.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendRealTimeImpl()</text>
+<text text-anchor="start" x="410" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendNowImpl()</text>
+<text text-anchor="start" x="410" y="-597.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
+<text text-anchor="start" x="410" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">* backend</text>
+<text text-anchor="start" x="410" y="-575.5" font-family="Helvetica,sans-Serif" font-size="10.00">* read()</text>
+<text text-anchor="start" x="410" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getChannelMessage()</text>
+<text text-anchor="start" x="410" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysCommonMessage()</text>
+<text text-anchor="start" x="410" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getRealTimeMessage()</text>
+<text text-anchor="start" x="410" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysExMessage()</text>
+<text text-anchor="start" x="410" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendsImmediately()</text>
+<text text-anchor="start" x="410" y="-509.5" font-family="Helvetica,sans-Serif" font-size="10.00">* neverSendImmediately()</text>
+<text text-anchor="start" x="410" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendImmediately()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node14 -->
 <g id="edge13" class="edge">
 <title>Node1&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M692.07,-1032.03C651.61,-996.42 606.07,-950.34 575,-901 548.71,-859.25 529.09,-809.04 514.93,-763.3"/>
+<path fill="none" stroke="midnightblue" d="M692.07,-1032.03C651.61,-996.42 606.07,-950.34 575,-901 549.76,-860.92 530.67,-813.05 516.66,-768.83"/>
 <polygon fill="none" stroke="midnightblue" points="689.98,-1034.85 699.82,-1038.78 694.58,-1029.58 689.98,-1034.85"/>
 </g>
 <!-- Node16 -->
@@ -264,38 +267,39 @@
 <g id="node18" class="node">
 <title>Node18</title>
 <g id="a_node18"><a xlink:href="../../dd/d0e/classGenericUSBMIDI__Interface.html" target="_top" xlink:title="A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.">
-<polygon fill="white" stroke="black" points="982,-497 982,-763 1146,-763 1146,-497 982,-497"/>
-<text text-anchor="start" x="990" y="-751" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface</text>
-<text text-anchor="middle" x="1064" y="-740" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Backend &gt;</text>
-<polyline fill="none" stroke="black" points="982,-733 1146,-733 "/>
-<text text-anchor="start" x="990" y="-721" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parser</text>
-<text text-anchor="start" x="990" y="-710" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sender</text>
-<text text-anchor="start" x="990" y="-699" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; alwaysSendImmediately_</text>
-<polyline fill="none" stroke="black" points="982,-692 1146,-692 "/>
-<text text-anchor="start" x="990" y="-680" font-family="Helvetica,sans-Serif" font-size="10.00">+ GenericUSBMIDI_Interface()</text>
-<text text-anchor="start" x="990" y="-669" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
-<text text-anchor="start" x="990" y="-658" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendChannelMessageImpl()</text>
-<text text-anchor="start" x="990" y="-647" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysCommonImpl()</text>
-<text text-anchor="start" x="990" y="-636" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExImpl()</text>
-<text text-anchor="start" x="990" y="-625" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendRealTimeImpl()</text>
-<text text-anchor="start" x="990" y="-614" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendNowImpl()</text>
-<text text-anchor="start" x="990" y="-603" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
-<text text-anchor="start" x="990" y="-592" font-family="Helvetica,sans-Serif" font-size="10.00">* backend</text>
-<text text-anchor="start" x="990" y="-581" font-family="Helvetica,sans-Serif" font-size="10.00">* read()</text>
-<text text-anchor="start" x="990" y="-570" font-family="Helvetica,sans-Serif" font-size="10.00">* getChannelMessage()</text>
-<text text-anchor="start" x="990" y="-559" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysCommonMessage()</text>
-<text text-anchor="start" x="990" y="-548" font-family="Helvetica,sans-Serif" font-size="10.00">* getRealTimeMessage()</text>
-<text text-anchor="start" x="990" y="-537" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysExMessage()</text>
-<text text-anchor="start" x="990" y="-526" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendsImmediately()</text>
-<text text-anchor="start" x="990" y="-515" font-family="Helvetica,sans-Serif" font-size="10.00">* neverSendImmediately()</text>
-<text text-anchor="start" x="990" y="-504" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendImmediately()</text>
+<polygon fill="white" stroke="black" points="982,-491.5 982,-768.5 1146,-768.5 1146,-491.5 982,-491.5"/>
+<text text-anchor="start" x="990" y="-756.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface</text>
+<text text-anchor="middle" x="1064" y="-745.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Backend &gt;</text>
+<polyline fill="none" stroke="black" points="982,-738.5 1146,-738.5 "/>
+<text text-anchor="start" x="990" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; parser</text>
+<text text-anchor="start" x="990" y="-715.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sender</text>
+<text text-anchor="start" x="990" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; alwaysSendImmediately_</text>
+<polyline fill="none" stroke="black" points="982,-697.5 1146,-697.5 "/>
+<text text-anchor="start" x="990" y="-685.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GenericUSBMIDI_Interface()</text>
+<text text-anchor="start" x="990" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
+<text text-anchor="start" x="990" y="-663.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ update()</text>
+<text text-anchor="start" x="990" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendChannelMessageImpl()</text>
+<text text-anchor="start" x="990" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysCommonImpl()</text>
+<text text-anchor="start" x="990" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExImpl()</text>
+<text text-anchor="start" x="990" y="-619.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendRealTimeImpl()</text>
+<text text-anchor="start" x="990" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendNowImpl()</text>
+<text text-anchor="start" x="990" y="-597.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; handleStall()</text>
+<text text-anchor="start" x="990" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">* backend</text>
+<text text-anchor="start" x="990" y="-575.5" font-family="Helvetica,sans-Serif" font-size="10.00">* read()</text>
+<text text-anchor="start" x="990" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getChannelMessage()</text>
+<text text-anchor="start" x="990" y="-553.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysCommonMessage()</text>
+<text text-anchor="start" x="990" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getRealTimeMessage()</text>
+<text text-anchor="start" x="990" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">* getSysExMessage()</text>
+<text text-anchor="start" x="990" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendsImmediately()</text>
+<text text-anchor="start" x="990" y="-509.5" font-family="Helvetica,sans-Serif" font-size="10.00">* neverSendImmediately()</text>
+<text text-anchor="start" x="990" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">* alwaysSendImmediately()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node18 -->
 <g id="edge17" class="edge">
 <title>Node1&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M871.58,-1024.23C907.09,-989.41 945.85,-946.11 973,-901 998.38,-858.83 1017.78,-808.66 1032.01,-763.07"/>
+<path fill="none" stroke="midnightblue" d="M871.58,-1024.23C907.09,-989.41 945.85,-946.11 973,-901 997.36,-860.53 1016.21,-812.68 1030.27,-768.59"/>
 <polygon fill="none" stroke="midnightblue" points="868.8,-1022.05 864.06,-1031.53 873.67,-1027.08 868.8,-1022.05"/>
 </g>
 <!-- Node19 -->
@@ -644,8 +648,8 @@
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M90,-486.66C90,-419.23 90,-345.05 90,-306.02"/>
-<polygon fill="none" stroke="midnightblue" points="86.5,-486.99 90,-496.99 93.5,-486.99 86.5,-486.99"/>
+<path fill="none" stroke="midnightblue" d="M90,-481.37C90,-415.41 90,-344.1 90,-306.08"/>
+<polygon fill="none" stroke="midnightblue" points="86.5,-481.48 90,-491.48 93.5,-481.48 86.5,-481.48"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
@@ -665,8 +669,8 @@
 <!-- Node12&#45;&gt;Node13 -->
 <g id="edge12" class="edge">
 <title>Node12&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M291,-486.77C291,-425.19 291,-357.98 291,-317.03"/>
-<polygon fill="none" stroke="midnightblue" points="287.5,-486.99 291,-496.99 294.5,-486.99 287.5,-486.99"/>
+<path fill="none" stroke="midnightblue" d="M291,-481.13C291,-421.25 291,-356.99 291,-317.26"/>
+<polygon fill="none" stroke="midnightblue" points="287.5,-481.48 291,-491.48 294.5,-481.48 287.5,-481.48"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
@@ -684,8 +688,8 @@
 <!-- Node14&#45;&gt;Node15 -->
 <g id="edge14" class="edge">
 <title>Node14&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M484,-486.66C484,-419.23 484,-345.05 484,-306.02"/>
-<polygon fill="none" stroke="midnightblue" points="480.5,-486.99 484,-496.99 487.5,-486.99 480.5,-486.99"/>
+<path fill="none" stroke="midnightblue" d="M484,-481.37C484,-415.41 484,-344.1 484,-306.08"/>
+<polygon fill="none" stroke="midnightblue" points="480.5,-481.48 484,-491.48 487.5,-481.48 480.5,-481.48"/>
 </g>
 <!-- Node20 -->
 <g id="node20" class="node">

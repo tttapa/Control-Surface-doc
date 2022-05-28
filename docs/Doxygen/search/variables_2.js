@@ -68,7 +68,7 @@ var searchData=
   ['colormapper_65',['colormapper',['../d3/d98/classNoteCCKPRangeFastLED.html#abde4dda7a1804b31c41a63d57ec9ae84',1,'NoteCCKPRangeFastLED::colormapper()'],['../df/ddd/classBankable_1_1NoteCCKPRangeFastLED.html#abde4dda7a1804b31c41a63d57ec9ae84',1,'Bankable::NoteCCKPRangeFastLED::colormapper()']]],
   ['colpins_66',['colPins',['../dd/d29/classAH_1_1ButtonMatrix.html#ad99f0b62bfe7649a17edeb4d9b357bce',1,'AH::ButtonMatrix']]],
   ['config_67',['config',['../de/d12/structBankableOneByteMIDIMatcher.html#a8b2b31e6da272105025a62a77bde9561',1,'BankableOneByteMIDIMatcher::config()'],['../d5/d9e/structBankableTwoByteRangeMIDIMatcher.html#a8b2b31e6da272105025a62a77bde9561',1,'BankableTwoByteRangeMIDIMatcher::config()'],['../d5/d2c/structBankablePitchBendMIDIMatcher.html#a8b2b31e6da272105025a62a77bde9561',1,'BankablePitchBendMIDIMatcher::config()'],['../d3/d28/structBankableTwoByteMIDIMatcher.html#a8b2b31e6da272105025a62a77bde9561',1,'BankableTwoByteMIDIMatcher::config()'],['../dc/d84/structMCU_1_1BankableVUMatcher.html#a8b2b31e6da272105025a62a77bde9561',1,'MCU::BankableVUMatcher::config()']]],
-  ['config_5fdescriptor_68',['config_descriptor',['../d1/dd4/classPluggableUSBMIDI.html#adaf4deb2c2c785e79cc5028fd39a4880',1,'PluggableUSBMIDI']]],
+  ['config_5fdescriptor_68',['config_descriptor',['../d1/dd4/classPluggableUSBMIDI.html#a574dde53bfc4fe244d96c395be304c88',1,'PluggableUSBMIDI']]],
   ['continue_69',['CONTINUE',['../d6/d99/structRealTimeMessage.html#a77a0b9501b52652f5b1fb47bfd6cafb7',1,'RealTimeMessage']]],
   ['contrabass_70',['Contrabass',['../da/da6/namespaceMIDI__PC.html#a17c0aef97952af87f599d461f040e51b',1,'MIDI_PC']]],
   ['control_71',['CONTROL',['../de/d44/group__MCU__Notes.html#gae72506cf64535d2463307a2260595825',1,'MCU']]],

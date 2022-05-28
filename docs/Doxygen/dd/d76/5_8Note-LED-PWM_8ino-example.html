@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,19 +79,19 @@ $(function() {
   <div class="headertitle"><div class="title">5.Note-LED-PWM.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md111"></a>
+<h1><a class="anchor" id="autotoc_md114"></a>
 5.Note-LED-PWM</h1>
 <p >This example demonstrates the use of LEDs that respond to incoming MIDI note events by changing the brightness of an LED using PWM.</p>
-<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md112"></a>
+<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, Teensy 3.x</dd></dl>
+<h2><a class="anchor" id="autotoc_md115"></a>
 Connections</h2>
 <p >Connect an LED (+ current limiting resistor) to any PWM pin. Then change the pin number in the <code>ledPin</code> constant to match the pin with your LED connected.</p>
-<h2><a class="anchor" id="autotoc_md113"></a>
+<h2><a class="anchor" id="autotoc_md116"></a>
 Behavior</h2>
 <p >If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the LED will light up, with the brightness depending on the velocity. <br  />
  If a Note Off event for that note is sent, the LED will turn off. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="autotoc_md114"></a>
+<h2><a class="anchor" id="autotoc_md117"></a>
 Mapping</h2>
 <p >Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C on the keyboard.</p>
 <p >Written by PieterP, 2020-01-03 <br  />
@@ -123,7 +123,7 @@ Mapping</h2>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00065">Control_Surface_Class.cpp:65</a></div></div>
 <div class="ttc" id="aclassNoteCCKPLEDPWM_html"><div class="ttname"><a href="../../d3/d99/classNoteCCKPLEDPWM.html">NoteCCKPLEDPWM</a></div><div class="ttdoc">Generic base class for classes that listen for MIDI Note, Control Change and Key Pressure events on a...</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d26/NoteCCKPLEDPWM_8hpp_source.html#l00021">NoteCCKPLEDPWM.hpp:22</a></div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00145">USBMIDI_Interface.hpp:146</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00146">USBMIDI_Interface.hpp:147</a></div></div>
 <div class="ttc" id="anamespaceAH_html_ae9cbfef0ba7a84ef222eff1fc509f88b"><div class="ttname"><a href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">AH::pin_t</a></div><div class="ttdeci">uint16_t pin_t</div><div class="ttdoc">The type for Arduino pins (and ExtendedIOElement pins).</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d35/Hardware-Types_8hpp_source.html#l00017">Hardware-Types.hpp:17</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->

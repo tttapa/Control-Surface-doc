@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -80,7 +80,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md305">The MIDI protocol</a></li>
+<ul><li class="level1"><a href="#autotoc_md311">The MIDI protocol</a></li>
 <li class="level1"><a href="#midi_md-midi-interfaces">MIDI interfaces</a><ul><li class="level2"><a href="#midi_md-interfaces-supported-boards">Supported Arduino-compatible boards</a></li>
 <li class="level2"><a href="#midi_md-interfaces-functionality">Functionality</a></li>
 <li class="level2"><a href="#midi_md-instantiate-a-midi-interface">Instantiating a MIDI interface</a></li>
@@ -115,7 +115,7 @@ $(function() {
 </ul>
 </div>
 <div class="textblock"><p ><a class="anchor" id="md_pages_MIDI"></a></p>
-<h1><a class="anchor" id="autotoc_md305"></a>
+<h1><a class="anchor" id="autotoc_md311"></a>
 The MIDI protocol</h1>
 <p >This guide expects basic familiarity with the MIDI protocol and the different types of MIDI messages. You can find more information about MIDI on <a href="https://www.midi.org/">https://www.midi.org/</a>, the <a href="https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message">summary of MIDI messages</a> can be especially handy.</p>
 <h1><a class="anchor" id="midi_md-midi-interfaces"></a>
@@ -152,7 +152,7 @@ Instantiating a MIDI interface</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    <span class="comment">// Initialize the MIDI interface so it&#39;s ready to be used</span></div>
-<div class="line">    midi.<a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();</div>
+<div class="line">    midi.<a class="code hl_function" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
@@ -160,9 +160,9 @@ Instantiating a MIDI interface</h2>
 <div class="line">    midi.<a class="code hl_function" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>();</div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
-<div class="ttc" id="aclassGenericUSBMIDI__Interface_html_a44137bb65de2396875934e48a6ee5099"><div class="ttname"><a href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericUSBMIDI_Interface::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Read the MIDI interface and call the callback if a message was received.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd3/USBMIDI__Interface_8ipp_source.html#l00018">USBMIDI_Interface.ipp:18</a></div></div>
-<div class="ttc" id="aclassMIDI__Interface_html_a7c3e14d99bd3dc0e3670d6956dafcaf2"><div class="ttname"><a href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">MIDI_Interface::begin</a></div><div class="ttdeci">void begin() override</div><div class="ttdoc">Initialize the MIDI Interface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00033">MIDI_Interface.hpp:33</a></div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00145">USBMIDI_Interface.hpp:146</a></div></div>
+<div class="ttc" id="aclassGenericUSBMIDI__Interface_html_a44137bb65de2396875934e48a6ee5099"><div class="ttname"><a href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericUSBMIDI_Interface::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Read the MIDI interface and call the callback if a message was received.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd3/USBMIDI__Interface_8ipp_source.html#l00026">USBMIDI_Interface.ipp:26</a></div></div>
+<div class="ttc" id="aclassGenericUSBMIDI__Interface_html_a7c3e14d99bd3dc0e3670d6956dafcaf2"><div class="ttname"><a href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericUSBMIDI_Interface::begin</a></div><div class="ttdeci">void begin() override</div><div class="ttdoc">Initialize the MIDI Interface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd3/USBMIDI__Interface_8ipp_source.html#l00019">USBMIDI_Interface.ipp:19</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00146">USBMIDI_Interface.hpp:147</a></div></div>
 </div><!-- fragment --><p> Note how the words <code>USBMIDI_Interface</code>, <code>begin</code> and <code>update</code> in the previous snippet are shown in blue and brown: these are links to the documentation for the relevant classes and functions. If you hover over them with your mouse pointer, you'll see a short description, and if you click on the link, it will take you to the detailed documentation.</p>
 <p >The code above doesn't really anything useful yet, it just sets up everything so we can start sending and receiving MIDI messages in the following sections.</p>
 <p >You can of course replace <code>USBMIDI_Interface</code> by a different type, such as <code>USBDebugMIDI_Interface</code> if that's the MIDI interface you need for your application. </p><div class="fragment"><div class="line"><a class="code hl_class" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi;</div>
@@ -314,7 +314,7 @@ Simple example</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    Serial.begin(115200);        <span class="comment">// For printing the messages</span></div>
-<div class="line">    midi.<a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();                <span class="comment">// Initialize the MIDI interface</span></div>
+<div class="line">    midi.<a class="code hl_function" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();                <span class="comment">// Initialize the MIDI interface</span></div>
 <div class="line">    midi.<a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#ad38edab932c8860dfe3f907697d09e2b">setCallbacks</a>(callback); <span class="comment">// Attach the custom callback</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -350,7 +350,7 @@ Customizable callbacks</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    Serial.begin(115200);        <span class="comment">// For printing the messages</span></div>
-<div class="line">    midi.<a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();                <span class="comment">// Initialize the MIDI interface</span></div>
+<div class="line">    midi.<a class="code hl_function" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a>();                <span class="comment">// Initialize the MIDI interface</span></div>
 <div class="line">    midi.<a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#ad38edab932c8860dfe3f907697d09e2b">setCallbacks</a>(callback); <span class="comment">// Attach the custom callback</span></div>
 <div class="line">}</div>
 <div class="line"> </div>

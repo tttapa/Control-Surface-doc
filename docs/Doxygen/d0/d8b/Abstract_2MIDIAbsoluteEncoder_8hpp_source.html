@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -93,9 +93,9 @@ $(function() {
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="../../d1/d41/MIDIOutputElement_8hpp.html">MIDI_Outputs/Abstract/MIDIOutputElement.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifdef ARDUINO</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="../../db/de4/Encoder_8h.html">Submodules/Encoder/Encoder.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="../../d8/ddd/AHEncoder_8hpp.html">Submodules/Encoder/AHEncoder.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="../../db/de4/Encoder_8h.html">Encoder.h</a>&gt;</span> <span class="comment">// Mock</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;Encoder.h&gt;</span> <span class="comment">// Mock</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><a class="code hl_define" href="../../d1/d65/Warnings_8hpp.html#a9f2deeea1dd06b45ebc381da1633c7ee">AH_DIAGNOSTIC_WERROR</a>()</div>
@@ -155,18 +155,18 @@ $(function() {
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Sender&gt;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp.html#a7704b0d3057a930aa737efe2e65277fe">   88</a></span><span class="keyword">using </span><a class="code hl_class" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">MIDIAbsoluteEncoder</a> = <a class="code hl_class" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">GenericMIDIAbsoluteEncoder&lt;Encoder, Sender&gt;</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp.html#a89d4b4f38d756dc822f40bc3a985560e">   88</a></span><span class="keyword">using </span><a class="code hl_class" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">MIDIAbsoluteEncoder</a> = <a class="code hl_class" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">GenericMIDIAbsoluteEncoder&lt;AHEncoder, Sender&gt;</a>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Sender&gt;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp.html#a9dc8ffd1d4650274d509516d880a8e7c">   91</a></span><span class="keyword">using </span><a class="code hl_class" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">BorrowedMIDIAbsoluteEncoder</a> =</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_class" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">GenericMIDIAbsoluteEncoder&lt;Encoder &amp;, Sender&gt;</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp.html#ad47f29a23651ed73d91aa9975551cd59">   91</a></span><span class="keyword">using </span><a class="code hl_class" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">BorrowedMIDIAbsoluteEncoder</a> =</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_class" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">GenericMIDIAbsoluteEncoder&lt;AHEncoder &amp;, Sender&gt;</a>;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><a class="code hl_define" href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><a class="code hl_define" href="../../d1/d65/Warnings_8hpp.html#a4f088fb95f1d6dc4279357ca2a562cbe">AH_DIAGNOSTIC_POP</a>()</div>
+<div class="ttc" id="aAHEncoder_8hpp_html"><div class="ttname"><a href="../../d8/ddd/AHEncoder_8hpp.html">AHEncoder.hpp</a></div></div>
 <div class="ttc" id="aDef_8hpp_html"><div class="ttname"><a href="../../d0/d4e/Def_8hpp.html">Def.hpp</a></div></div>
 <div class="ttc" id="aEncoderState_8hpp_html"><div class="ttname"><a href="../../d6/d03/EncoderState_8hpp.html">EncoderState.hpp</a></div></div>
-<div class="ttc" id="aEncoder_8h_html"><div class="ttname"><a href="../../db/de4/Encoder_8h.html">Encoder.h</a></div></div>
 <div class="ttc" id="aMIDIOutputElement_8hpp_html"><div class="ttname"><a href="../../d1/d41/MIDIOutputElement_8hpp.html">MIDIOutputElement.hpp</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9305dd4bad1398506431b42a5a100f8d"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9305dd4bad1398506431b42a5a100f8d">END_CS_NAMESPACE</a></div><div class="ttdeci">#define END_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00010">Settings/NamespaceSettings.hpp:10</a></div></div>
 <div class="ttc" id="aSettings_2NamespaceSettings_8hpp_html_a9432e3744c64fcf8e711ef91eff6a5cd"><div class="ttname"><a href="../../d0/da7/Settings_2NamespaceSettings_8hpp.html#a9432e3744c64fcf8e711ef91eff6a5cd">BEGIN_CS_NAMESPACE</a></div><div class="ttdeci">#define BEGIN_CS_NAMESPACE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/Settings_2NamespaceSettings_8hpp_source.html#l00009">Settings/NamespaceSettings.hpp:9</a></div></div>

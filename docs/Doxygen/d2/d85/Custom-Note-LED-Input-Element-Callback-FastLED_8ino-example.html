@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,19 +79,19 @@ $(function() {
   <div class="headertitle"><div class="title">Custom-Note-LED-Input-Element-Callback-FastLED.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md178"></a>
+<h1><a class="anchor" id="autotoc_md270"></a>
 Custom-Note-LED-Input-Element-Callback-FastLED</h1>
 <p >This example demonstrates how to attach custom callbacks to Note or Control Change MIDI Input Elements.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md179"></a>
+<h2><a class="anchor" id="autotoc_md271"></a>
 Connections</h2>
 <ul>
 <li>Pin 2: The data pin of a Neopixel LED strip with (at least) 8 LEDs</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md180"></a>
+<h2><a class="anchor" id="autotoc_md272"></a>
 Behavior</h2>
 <p >If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, its velocity value sets the red value of the first LED, note 0x3D controls the green value of the first LED, note 0x3E controls the blue value of the first LED, note 0x3F controls the red value of the second LED, 0x40 controls the green value of the second LED, etc.</p>
-<h2><a class="anchor" id="autotoc_md181"></a>
+<h2><a class="anchor" id="autotoc_md273"></a>
 Mapping</h2>
 <p >Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play some notes in the two octaves above middle C. <br  />
  Alternatively, map it in you DAW, for example, in VirtualDJ: <br  />
@@ -186,7 +186,7 @@ Mapping</h2>
 <div class="ttc" id="aclassMIDIInputElement_html_a2d8ec6ac27419ce65e20d415ebfe1495"><div class="ttname"><a href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">MIDIInputElement::begin</a></div><div class="ttdeci">virtual void begin()</div><div class="ttdoc">Initialize the input element.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00034">MIDIInputElement.hpp:34</a></div></div>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a></div><div class="ttdoc">The MIDIInputElement base class is very general: you give it a MIDI message, and it calls the updateW...</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00088">MIDIInputElement.hpp:88</a></div></div>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html_a7d8b3295e878d374fe9af277f6983204"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">MatchingMIDIInputElement::handleUpdate</a></div><div class="ttdeci">virtual void handleUpdate(typename Matcher::Result match)=0</div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00145">USBMIDI_Interface.hpp:146</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00146">USBMIDI_Interface.hpp:147</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
 <div class="ttc" id="astructTwoByteRangeMIDIMatcher_html"><div class="ttname"><a href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html">TwoByteRangeMIDIMatcher</a></div><div class="ttdoc">Matcher for MIDI messages with 2 data bytes, such as Note On/Off, Control Change, Key Pressure (but n...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00082">MIDIInputElementMatchers.hpp:82</a></div></div>
 <div class="ttc" id="astructTwoByteRangeMIDIMatcher_html_a638e4503e0ae6ce655b7ad2e17e8f0ad"><div class="ttname"><a href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">TwoByteRangeMIDIMatcher::Result::value</a></div><div class="ttdeci">uint8_t value</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00088">MIDIInputElementMatchers.hpp:88</a></div></div>

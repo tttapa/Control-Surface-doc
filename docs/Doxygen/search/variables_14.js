@@ -8,7 +8,7 @@ var searchData=
   ['unlocked_5',['UNLOCKED',['../d2/d4e/classOutputBankableMIDIAddress__Base.html#a93fca8e8f61a9e4beff5ff4232f9f8bd',1,'OutputBankableMIDIAddress_Base']]],
   ['up_6',['UP',['../de/d44/group__MCU__Notes.html#gaf774c817f2988667ae8ec405056a891d',1,'MCU']]],
   ['updatables_7',['updatables',['../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08',1,'AH::UpdatableCRTP']]],
-  ['usb_5fconnected_8',['usb_connected',['../d1/dd4/classPluggableUSBMIDI.html#a4856620b1642701bcfd3f0ad3a06a215',1,'PluggableUSBMIDI']]],
+  ['usb_5fconnected_8',['usb_connected',['../d1/dd4/classPluggableUSBMIDI.html#ab1c3e9b82180c5303d5061b95c156478',1,'PluggableUSBMIDI']]],
   ['usb_5fstring_5fmidi_5fport1_9',['usb_string_midi_port1',['../da/da3/Teensy-USB-MIDI-name_8c.html#ae54b34cab1a56b0af20678ebfa5d18f7',1,'Teensy-USB-MIDI-name.c']]],
   ['usb_5fstring_5fmidi_5fport10_10',['usb_string_midi_port10',['../da/da3/Teensy-USB-MIDI-name_8c.html#af1a97667a9727dcc2f165863f535d301',1,'Teensy-USB-MIDI-name.c']]],
   ['usb_5fstring_5fmidi_5fport11_11',['usb_string_midi_port11',['../da/da3/Teensy-USB-MIDI-name_8c.html#a6c8a5b2640bdfe654a76ca798741b9da',1,'Teensy-USB-MIDI-name.c']]],

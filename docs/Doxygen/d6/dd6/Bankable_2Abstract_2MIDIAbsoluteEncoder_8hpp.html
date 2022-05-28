@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -93,13 +93,13 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d0/d81/TypeTraits_8hpp_source.html">Def/TypeTraits.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/d03/EncoderState_8hpp_source.html">MIDI_Outputs/Abstract/EncoderState.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/d41/MIDIOutputElement_8hpp_source.html">MIDI_Outputs/Abstract/MIDIOutputElement.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../db/de4/Encoder_8h_source.html">Submodules/Encoder/Encoder.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/ddd/AHEncoder_8hpp_source.html">Submodules/Encoder/AHEncoder.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for Bankable/Abstract/MIDIAbsoluteEncoder.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dfb/Bankable_2Abstract_2MIDIAbsoluteEncoder_8hpp__incl.svg" width="2710" height="1216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/dfb/Bankable_2Abstract_2MIDIAbsoluteEncoder_8hpp__incl.svg" width="2774" height="1202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,12 +127,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a7098830e07ac670ae4c7be137f95bfe6"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumBanks, class BankAddress , class Sender &gt; </td></tr>
-<tr class="memitem:a7098830e07ac670ae4c7be137f95bfe6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#a7098830e07ac670ae4c7be137f95bfe6">MIDIAbsoluteEncoder</a> = <a class="el" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">GenericMIDIAbsoluteEncoder</a>&lt; <a class="el" href="../../d0/d3b/classEncoder.html">Encoder</a>, NumBanks, BankAddress, Sender &gt;</td></tr>
-<tr class="separator:a7098830e07ac670ae4c7be137f95bfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ff1c57cb7f2a1cfc6de1c75af2eae6"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumBanks, class BankAddress , class Sender &gt; </td></tr>
-<tr class="memitem:ad5ff1c57cb7f2a1cfc6de1c75af2eae6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#ad5ff1c57cb7f2a1cfc6de1c75af2eae6">BorrowedMIDIAbsoluteEncoder</a> = <a class="el" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">GenericMIDIAbsoluteEncoder</a>&lt; <a class="el" href="../../d0/d3b/classEncoder.html">Encoder</a> &amp;, NumBanks, BankAddress, Sender &gt;</td></tr>
-<tr class="separator:ad5ff1c57cb7f2a1cfc6de1c75af2eae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b119ab90be283a82b6086b0161d50b"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumBanks, class BankAddress , class Sender &gt; </td></tr>
+<tr class="memitem:a16b119ab90be283a82b6086b0161d50b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#a16b119ab90be283a82b6086b0161d50b">MIDIAbsoluteEncoder</a> = <a class="el" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">GenericMIDIAbsoluteEncoder</a>&lt; <a class="el" href="../../dd/da9/classAHEncoder.html">AHEncoder</a>, NumBanks, BankAddress, Sender &gt;</td></tr>
+<tr class="separator:a16b119ab90be283a82b6086b0161d50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338c7df7bddec7e8cbec6ee8864291ef"><td class="memTemplParams" colspan="2">template&lt;uint8_t NumBanks, class BankAddress , class Sender &gt; </td></tr>
+<tr class="memitem:a338c7df7bddec7e8cbec6ee8864291ef"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dd0/namespaceBankable.html#a338c7df7bddec7e8cbec6ee8864291ef">BorrowedMIDIAbsoluteEncoder</a> = <a class="el" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html">GenericMIDIAbsoluteEncoder</a>&lt; <a class="el" href="../../dd/da9/classAHEncoder.html">AHEncoder</a> &amp;, NumBanks, BankAddress, Sender &gt;</td></tr>
+<tr class="separator:a338c7df7bddec7e8cbec6ee8864291ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

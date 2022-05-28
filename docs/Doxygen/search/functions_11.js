@@ -4,7 +4,7 @@ var searchData=
   ['throughisunstalledorstalledby_1',['throughIsUnstalledOrStalledBy',['../df/d72/classMIDI__Pipe.html#ae7b3fe26f4a4a7a3d52f559fb0a4eabd',1,'MIDI_Pipe']]],
   ['timedisplay_2',['TimeDisplay',['../df/d69/classMCU_1_1TimeDisplay.html#ab6a607b1abfe4a4ac7853c9973aba444',1,'MCU::TimeDisplay']]],
   ['timedisplaydisplay_3',['TimeDisplayDisplay',['../d1/dc8/classMCU_1_1TimeDisplayDisplay.html#a8ad23b9c139715c5eabc2ff1a5db18c1',1,'MCU::TimeDisplayDisplay']]],
-  ['timeout_5fcallback_4',['timeout_callback',['../d1/dd4/classPluggableUSBMIDI.html#a41acc00ed84d7f5e7dbed71a7cfa57c2',1,'PluggableUSBMIDI::timeout_callback()'],['../de/d93/classTeensyHostMIDI.html#a41acc00ed84d7f5e7dbed71a7cfa57c2',1,'TeensyHostMIDI::timeout_callback()']]],
+  ['timeout_5fcallback_4',['timeout_callback',['../d1/dd4/classPluggableUSBMIDI.html#a41acc00ed84d7f5e7dbed71a7cfa57c2',1,'PluggableUSBMIDI::timeout_callback()'],['../d1/dd4/classPluggableUSBMIDI.html#a41acc00ed84d7f5e7dbed71a7cfa57c2',1,'PluggableUSBMIDI::timeout_callback()'],['../de/d93/classTeensyHostMIDI.html#a41acc00ed84d7f5e7dbed71a7cfa57c2',1,'TeensyHostMIDI::timeout_callback()']]],
   ['timer_5',['Timer',['../d2/de5/classAH_1_1Timer.html#a601e4fc3c3d5fa54634192a88819ad5a',1,'AH::Timer']]],
   ['timer_5fevent_6',['timer_event',['../de/d93/classTeensyHostMIDI.html#a44fbcbb6762d10d18b29a2ad6616c4bd',1,'TeensyHostMIDI']]],
   ['tobinaryoffset7bit_7',['toBinaryOffset7bit',['../d3/dd0/classRelativeCCSender.html#a479b94b4b2b2db91c9496c11b7e53108',1,'RelativeCCSender']]],

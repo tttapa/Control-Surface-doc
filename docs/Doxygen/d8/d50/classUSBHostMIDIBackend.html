@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -111,8 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7a7ae1655e7fa7dae88f773b07f624f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a059a6594006afe3d6c7cc278eadd9008"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a059a6594006afe3d6c7cc278eadd9008">read</a> ()</td></tr>
 <tr class="separator:a059a6594006afe3d6c7cc278eadd9008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e77f304b353c08cc6f46406afd07ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a45e77f304b353c08cc6f46406afd07ec">write</a> (uint8_t cn_cin, uint8_t midi_0, uint8_t midi_1, uint8_t midi_2)</td></tr>
-<tr class="separator:a45e77f304b353c08cc6f46406afd07ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23255f1f66f20a277dc0013c0cae71b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a23255f1f66f20a277dc0013c0cae71b9">write</a> (<a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a> data)</td></tr>
+<tr class="separator:a23255f1f66f20a277dc0013c0cae71b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02c491257d08e16bd080823ec5cc5ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a> ()</td></tr>
 <tr class="separator:a02c491257d08e16bd080823ec5cc5ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94e4bd8be37354a41541bb5d3237120f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#a94e4bd8be37354a41541bb5d3237120f">preferImmediateSend</a> ()</td></tr>
@@ -197,8 +197,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a45e77f304b353c08cc6f46406afd07ec" name="a45e77f304b353c08cc6f46406afd07ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45e77f304b353c08cc6f46406afd07ec">&#9670;&nbsp;</a></span>write()</h2>
+<a id="a23255f1f66f20a277dc0013c0cae71b9" name="a23255f1f66f20a277dc0013c0cae71b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23255f1f66f20a277dc0013c0cae71b9">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,31 +209,9 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void write </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>cn_cin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="../../d8/d50/classUSBHostMIDIBackend.html#afa563722058cf859e56af41c9b9392d1">MIDIUSBPacket_t</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>midi_0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>midi_1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>midi_2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -270,7 +248,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00021">21</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -297,7 +275,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -314,7 +292,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp_source.html">USBHostMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>

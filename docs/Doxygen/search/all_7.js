@@ -51,7 +51,7 @@ var searchData=
   ['hertz_48',['hertz',['../df/d4d/classAH_1_1Frequency.html#a7fe9942aae73998b9b5b65367d16f472',1,'AH::Frequency']]],
   ['hex_49',['hex',['../d8/d4b/group__AH__PrintStream.html#ga173884f5f11dfa9d228c36522d207e28',1,'AH']]],
   ['hex2int_50',['hex2int',['../d5/d1f/classHexPuller.html#a6cd60eb28645ba3e1b0d067635f49481',1,'HexPuller']]],
-  ['hexdump_51',['HexDump',['../d2/d57/structAH_1_1HexDump.html',1,'HexDump'],['../d2/d57/structAH_1_1HexDump.html#a7306c515dc10bed9f728c717be0467a7',1,'AH::HexDump::HexDump()']]],
+  ['hexdump_51',['HexDump',['../d2/d57/structAH_1_1HexDump.html',1,'HexDump'],['../d2/d57/structAH_1_1HexDump.html#a7306c515dc10bed9f728c717be0467a7',1,'AH::HexDump::HexDump(const uint8_t *data, size_t length)'],['../d2/d57/structAH_1_1HexDump.html#a7821d68fdafc10a1743431017f573e8c',1,'AH::HexDump::HexDump(const uint8_t(&amp;data)[N])']]],
   ['hexpuller_52',['HexPuller',['../d5/d1f/classHexPuller.html',1,'HexPuller&lt; CharPuller &gt;'],['../d5/d1f/classHexPuller.html#a8ca29f65a8b383b94b5cf2f96e2e1e9f',1,'HexPuller::HexPuller()']]],
   ['hexpuller_2ehpp_53',['HexPuller.hpp',['../df/de1/HexPuller_8hpp.html',1,'']]],
   ['hexpuller_3c_20streampuller_20_3e_54',['HexPuller&lt; StreamPuller &gt;',['../d5/d1f/classHexPuller.html',1,'']]],

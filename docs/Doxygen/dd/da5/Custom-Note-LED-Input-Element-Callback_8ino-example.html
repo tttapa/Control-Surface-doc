@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -79,20 +79,20 @@ $(function() {
   <div class="headertitle"><div class="title">Custom-Note-LED-Input-Element-Callback.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md182"></a>
+<h1><a class="anchor" id="autotoc_md274"></a>
 Custom-Note-LED-Input-Element-Callback</h1>
 <p >This example demonstrates how to attach custom actions to incoming Note or Control Change MIDI events.</p>
-<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md183"></a>
+<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, Teensy 3.x</dd></dl>
+<h2><a class="anchor" id="autotoc_md275"></a>
 Connections</h2>
 <ul>
 <li>Pin 3 (PWM pin): An LED (with current-limiting resistor) to ground.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md184"></a>
+<h2><a class="anchor" id="autotoc_md276"></a>
 Behavior</h2>
 <p >If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the built-in LED will light up at full brightness, if a Note Off event for that note is sent, the LED will light dimly. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="autotoc_md185"></a>
+<h2><a class="anchor" id="autotoc_md277"></a>
 Mapping</h2>
 <p >Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C on the keyboard.</p>
 <p >Written by PieterP, 2020-03-10 <br  />
@@ -176,7 +176,7 @@ Mapping</h2>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a></div><div class="ttdoc">The MIDIInputElement base class is very general: you give it a MIDI message, and it calls the updateW...</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00088">MIDIInputElement.hpp:88</a></div></div>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html_a08ddf904fdf20dada2f49a9f7f00aeb0"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html#a08ddf904fdf20dada2f49a9f7f00aeb0">MatchingMIDIInputElement::MatchingMIDIInputElement</a></div><div class="ttdeci">MatchingMIDIInputElement(const Matcher &amp;matcher)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00090">MIDIInputElement.hpp:90</a></div></div>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html_a7d8b3295e878d374fe9af277f6983204"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">MatchingMIDIInputElement::handleUpdate</a></div><div class="ttdeci">virtual void handleUpdate(typename Matcher::Result match)=0</div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00145">USBMIDI_Interface.hpp:146</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00146">USBMIDI_Interface.hpp:147</a></div></div>
 <div class="ttc" id="agroup__AH__ExtIO_html_ga5aa3b4dbb8bfffdd022e1f5bb8dc5784"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#ga5aa3b4dbb8bfffdd022e1f5bb8dc5784">AH::ExtIO::analogWrite</a></div><div class="ttdeci">void analogWrite(pin_t pin, analog_t val)</div><div class="ttdoc">An ExtIO version of the Arduino function.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3c/ExtendedInputOutput_8cpp_source.html#l00094">ExtendedInputOutput.cpp:94</a></div></div>
 <div class="ttc" id="agroup__AH__ExtIO_html_ga6500d2ccee66ed7f10b09e4ce51c74e9"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">AH::ExtIO::pinMode</a></div><div class="ttdeci">void pinMode(pin_t pin, PinMode_t mode)</div><div class="ttdoc">An ExtIO version of the Arduino function.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3c/ExtendedInputOutput_8cpp_source.html#l00040">ExtendedInputOutput.cpp:40</a></div></div>
 <div class="ttc" id="agroup__AH__ExtIO_html_gaff89e0a727f5b97e0618b8f2f65b3356"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">AH::ExtIO::digitalWrite</a></div><div class="ttdeci">void digitalWrite(pin_t pin, PinStatus_t val)</div><div class="ttdoc">An ExtIO version of the Arduino function.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3c/ExtendedInputOutput_8cpp_source.html#l00054">ExtendedInputOutput.cpp:54</a></div></div>

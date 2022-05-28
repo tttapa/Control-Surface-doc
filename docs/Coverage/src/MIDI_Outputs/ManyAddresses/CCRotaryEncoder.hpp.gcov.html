@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 4280624f0387d085048b5696305d14ddf7644efa - src/MIDI_Outputs/ManyAddresses/CCRotaryEncoder.hpp</title>
+  <title>LCOV - 08b36b598fc554ff05d725def3c52808c9a680ef - src/MIDI_Outputs/ManyAddresses/CCRotaryEncoder.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">4280624f0387d085048b5696305d14ddf7644efa</td>
+            <td class="headerValue">08b36b598fc554ff05d725def3c52808c9a680ef</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">3</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-05-08 18:07:53</td>
+            <td class="headerValue">2022-05-28 12:06:35</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -122,7 +122,7 @@
 <a name="52"><span class="lineNum">      52 </span>            :      *          speed, increasing the number of pulsesPerStep will result in a </a>
 <a name="53"><span class="lineNum">      53 </span>            :      *          lower speed.</a>
 <a name="54"><span class="lineNum">      54 </span>            :      */</a>
-<a name="55"><span class="lineNum">      55 </span><span class="lineCov">          1 :     CCRotaryEncoder(const Bank&lt;NumBanks&gt; &amp;bank, Encoder &amp;&amp;encoder,</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineCov">          1 :     CCRotaryEncoder(const Bank&lt;NumBanks&gt; &amp;bank, AHEncoder &amp;&amp;encoder,</span></a>
 <a name="56"><span class="lineNum">      56 </span>            :                     const Array&lt;MIDIAddress, NumBanks&gt; &amp;addresses,</a>
 <a name="57"><span class="lineNum">      57 </span>            :                     int16_t speedMultiply = 1, uint8_t pulsesPerStep = 4)</a>
 <a name="58"><span class="lineNum">      58 </span>            :         : MIDIRotaryEncoder&lt;ManyAddresses&lt;NumBanks&gt;, RelativeCCSender&gt;(</a>

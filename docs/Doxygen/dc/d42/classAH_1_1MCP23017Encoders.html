@@ -34,7 +34,7 @@ window.MathJax = {
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Arduino-Helpers/">master</a></code></span>
+   <div id="projectname">Control Surface<span id="projectnumber">&#160;<code><a href="/Control-Surface-doc/">master</a></code></span>
    </div>
    <div id="projectbrief">MIDI Control Surface library for Arduino</div>
   </td>
@@ -96,11 +96,11 @@ $(function() {
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class WireType, class EncoderPositionType = int32_t, bool InterruptSafe = false&gt;<br />
 class AH::MCP23017Encoders&lt; WireType, EncoderPositionType, InterruptSafe &gt;</div><p >Class for reading 8 rotary encoders using a <a class="el" href="../../d5/dd2/classAH_1_1MCP23017.html" title="Class for MCP23017 I²C I/O expanders.">MCP23017</a> I²C port expander. </p>
-<p >Encoders are indexed by a number from 0 to 7. <a class="el" href="../../d0/d3b/classEncoder.html" title="Class for reading quadrature encoders, based on http://www.pjrc.com/teensy/td_libs_Encoder....">Encoder</a> #0 is connected to pins GPA0 and GPA1, <a class="el" href="../../d0/d3b/classEncoder.html" title="Class for reading quadrature encoders, based on http://www.pjrc.com/teensy/td_libs_Encoder....">Encoder</a> #1 is connected to pins GPA2 and GPA3, ..., <a class="el" href="../../d0/d3b/classEncoder.html" title="Class for reading quadrature encoders, based on http://www.pjrc.com/teensy/td_libs_Encoder....">Encoder</a> #7 is connected to pins GPB6 and GPB7.</p>
+<p >Encoders are indexed by a number from 0 to 7. Encoder #0 is connected to pins GPA0 and GPA1, Encoder #1 is connected to pins GPA2 and GPA3, ..., Encoder #7 is connected to pins GPB6 and GPB7.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">WireType</td><td>The type of the <code>Wire</code> I²C driver to use. </td></tr>
-    <tr><td class="paramname">EncoderPositionType</td><td>The type used for saving the encoder positions. <code>int32_t</code> is the default because this matches the <a class="el" href="../../d0/d3b/classEncoder.html" title="Class for reading quadrature encoders, based on http://www.pjrc.com/teensy/td_libs_Encoder....">Encoder</a> library. You can use small unsigned types such as <code>uint8_t</code> or <code>uint16_t</code> if you're just interrested in the deltas. </td></tr>
+    <tr><td class="paramname">EncoderPositionType</td><td>The type used for saving the encoder positions. <code>int32_t</code> is the default because this matches the Encoder library. You can use small unsigned types such as <code>uint8_t</code> or <code>uint16_t</code> if you're just interrested in the deltas. </td></tr>
     <tr><td class="paramname">InterruptSafe</td><td>Make the <code>update</code> method safe to use inside of an interrupt. It makes the necessary variables <code>volatile</code> and disables interrupts while reading the positions from the main program. </td></tr>
   </table>
   </dd>

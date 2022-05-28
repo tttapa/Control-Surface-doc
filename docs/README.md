@@ -1,10 +1,23 @@
-# Control-Surface-doc
+Documentation for [**tttapa/Control-Surface**](https://github.com/tttapa/Control-Surface).
 
-Documentation for [**Control Surface**](https://github.com/tttapa/Control-Surface).
+### Main Branch
 
-- [master](https://tttapa.github.io/Control-Surface-doc/Doxygen/index.html)
-- [share-encoder](https://tttapa.github.io/Control-Surface-doc/share-encoder/Doxygen/index.html)
-- [new-input](https://tttapa.github.io/Control-Surface-doc/new-input/Doxygen/index.html)
-- [1.2.0](https://tttapa.github.io/Control-Surface-doc/1.2.0/Doxygen/index.html)
-- [1.1.1](https://tttapa.github.io/Control-Surface-doc/1.1.1/Doxygen/index.html)
-- [1.1.0](https://tttapa.github.io/Control-Surface-doc/1.1.0/Doxygen/index.html)
+- **master**  
+  [Doxygen](Doxygen/index.html) ─ [Coverage](Coverage/index.html)
+
+### Tags and Releases
+
+- **1.2.0**  
+  [Doxygen](1.2.0/Doxygen/index.html) ─ [Coverage](1.2.0/Coverage/index.html)
+- **1.1.1**  
+  [Doxygen](1.1.1/Doxygen/index.html) ─ [Coverage](1.1.1/Coverage/index.html)
+- **1.1.0**  
+  [Doxygen](1.1.0/Doxygen/index.html) ─ [Coverage](1.1.0/Coverage/index.html)
+
+### Other Branches
+
+- **pico**  
+  [Doxygen](pico/Doxygen/index.html) ─ [Coverage](pico/Coverage/index.html)
+
+***
+
