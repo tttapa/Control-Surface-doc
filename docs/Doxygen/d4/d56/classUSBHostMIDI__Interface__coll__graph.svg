@@ -1098,26 +1098,27 @@
 <g id="node31" class="node">
 <title>Node31</title>
 <g id="a_node31"><a xlink:href="../../df/dda/classUSBMIDI__Sender.html" target="_top" xlink:title="A class for sending MIDI USB messages.">
-<polygon fill="white" stroke="black" points="388.5,-481 388.5,-615 552.5,-615 552.5,-481 388.5,-481"/>
-<text text-anchor="middle" x="470.5" y="-603" font-family="Helvetica,sans-Serif" font-size="10.00">USBMIDI_Sender</text>
-<polyline fill="none" stroke="black" points="388.5,-596 552.5,-596 "/>
-<text text-anchor="start" x="396.5" y="-584" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExData</text>
-<text text-anchor="start" x="396.5" y="-573" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExLength</text>
-<polyline fill="none" stroke="black" points="388.5,-566 552.5,-566 "/>
-<text text-anchor="start" x="396.5" y="-554" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendChannelMessage()</text>
-<text text-anchor="start" x="396.5" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysCommonMessage()</text>
-<text text-anchor="start" x="396.5" y="-532" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendRealTimeMessage()</text>
-<text text-anchor="start" x="396.5" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysEx()</text>
-<text text-anchor="start" x="396.5" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont1()</text>
-<text text-anchor="start" x="396.5" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont()</text>
-<text text-anchor="start" x="396.5" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExEnd()</text>
+<polygon fill="white" stroke="black" points="388.5,-475.5 388.5,-620.5 552.5,-620.5 552.5,-475.5 388.5,-475.5"/>
+<text text-anchor="middle" x="470.5" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">USBMIDI_Sender</text>
+<polyline fill="none" stroke="black" points="388.5,-601.5 552.5,-601.5 "/>
+<text text-anchor="start" x="396.5" y="-589.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExData</text>
+<text text-anchor="start" x="396.5" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExLength</text>
+<polyline fill="none" stroke="black" points="388.5,-571.5 552.5,-571.5 "/>
+<text text-anchor="start" x="396.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendChannelMessage()</text>
+<text text-anchor="start" x="396.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysCommonMessage()</text>
+<text text-anchor="start" x="396.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendRealTimeMessage()</text>
+<text text-anchor="start" x="396.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysEx()</text>
+<text text-anchor="start" x="396.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendFullSysEx()</text>
+<text text-anchor="start" x="396.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont1()</text>
+<text text-anchor="start" x="396.5" y="-493.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont()</text>
+<text text-anchor="start" x="396.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExEnd()</text>
 </a>
 </g>
 </g>
 <!-- Node31&#45;&gt;Node2 -->
 <g id="edge42" class="edge">
 <title>Node31&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M498.17,-480.98C513.53,-449.85 534.94,-413.77 561.5,-387 615.5,-332.58 690.68,-289.65 751.09,-260.74"/>
+<path fill="none" stroke="#404040" d="M500.96,-475.39C516.09,-445.6 536.52,-412.18 561.5,-387 615.5,-332.58 690.68,-289.65 751.09,-260.74"/>
 <polygon fill="none" stroke="#404040" points="751.34,-260.63 755.06,-254.45 762.19,-255.51 758.47,-261.69 751.34,-260.63"/>
 <text text-anchor="middle" x="607.5" y="-361" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;sender</text>
 </g>

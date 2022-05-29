@@ -1100,26 +1100,27 @@
 <g id="node31" class="node">
 <title>Node31</title>
 <g id="a_node31"><a xlink:href="../../df/dda/classUSBMIDI__Sender.html" target="_top" xlink:title="A class for sending MIDI USB messages.">
-<polygon fill="white" stroke="black" points="388.5,-503 388.5,-637 552.5,-637 552.5,-503 388.5,-503"/>
-<text text-anchor="middle" x="470.5" y="-625" font-family="Helvetica,sans-Serif" font-size="10.00">USBMIDI_Sender</text>
-<polyline fill="none" stroke="black" points="388.5,-618 552.5,-618 "/>
-<text text-anchor="start" x="396.5" y="-606" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExData</text>
-<text text-anchor="start" x="396.5" y="-595" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExLength</text>
-<polyline fill="none" stroke="black" points="388.5,-588 552.5,-588 "/>
-<text text-anchor="start" x="396.5" y="-576" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendChannelMessage()</text>
-<text text-anchor="start" x="396.5" y="-565" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysCommonMessage()</text>
-<text text-anchor="start" x="396.5" y="-554" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendRealTimeMessage()</text>
-<text text-anchor="start" x="396.5" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysEx()</text>
-<text text-anchor="start" x="396.5" y="-532" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont1()</text>
-<text text-anchor="start" x="396.5" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont()</text>
-<text text-anchor="start" x="396.5" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExEnd()</text>
+<polygon fill="white" stroke="black" points="388.5,-497.5 388.5,-642.5 552.5,-642.5 552.5,-497.5 388.5,-497.5"/>
+<text text-anchor="middle" x="470.5" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">USBMIDI_Sender</text>
+<polyline fill="none" stroke="black" points="388.5,-623.5 552.5,-623.5 "/>
+<text text-anchor="start" x="396.5" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExData</text>
+<text text-anchor="start" x="396.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExLength</text>
+<polyline fill="none" stroke="black" points="388.5,-593.5 552.5,-593.5 "/>
+<text text-anchor="start" x="396.5" y="-581.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendChannelMessage()</text>
+<text text-anchor="start" x="396.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysCommonMessage()</text>
+<text text-anchor="start" x="396.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendRealTimeMessage()</text>
+<text text-anchor="start" x="396.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysEx()</text>
+<text text-anchor="start" x="396.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendFullSysEx()</text>
+<text text-anchor="start" x="396.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont1()</text>
+<text text-anchor="start" x="396.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont()</text>
+<text text-anchor="start" x="396.5" y="-504.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExEnd()</text>
 </a>
 </g>
 </g>
 <!-- Node31&#45;&gt;Node2 -->
 <g id="edge42" class="edge">
 <title>Node31&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M498.17,-502.98C513.53,-471.85 534.94,-435.77 561.5,-409 614.63,-355.46 688.26,-313.04 748.16,-284.15"/>
+<path fill="none" stroke="#404040" d="M500.96,-497.39C516.09,-467.6 536.52,-434.18 561.5,-409 614.63,-355.46 688.26,-313.04 748.16,-284.15"/>
 <polygon fill="none" stroke="#404040" points="748.34,-284.07 752.04,-277.88 759.18,-278.92 755.47,-285.11 748.34,-284.07"/>
 <text text-anchor="middle" x="607.5" y="-383" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;sender</text>
 </g>

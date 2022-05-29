@@ -1160,26 +1160,27 @@
 <g id="node31" class="node">
 <title>Node31</title>
 <g id="a_node31"><a xlink:href="../../df/dda/classUSBMIDI__Sender.html" target="_top" xlink:title="A class for sending MIDI USB messages.">
-<polygon fill="white" stroke="black" points="388.5,-508.5 388.5,-642.5 552.5,-642.5 552.5,-508.5 388.5,-508.5"/>
-<text text-anchor="middle" x="470.5" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">USBMIDI_Sender</text>
-<polyline fill="none" stroke="black" points="388.5,-623.5 552.5,-623.5 "/>
-<text text-anchor="start" x="396.5" y="-611.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExData</text>
-<text text-anchor="start" x="396.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExLength</text>
-<polyline fill="none" stroke="black" points="388.5,-593.5 552.5,-593.5 "/>
-<text text-anchor="start" x="396.5" y="-581.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendChannelMessage()</text>
-<text text-anchor="start" x="396.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysCommonMessage()</text>
-<text text-anchor="start" x="396.5" y="-559.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendRealTimeMessage()</text>
-<text text-anchor="start" x="396.5" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysEx()</text>
-<text text-anchor="start" x="396.5" y="-537.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont1()</text>
-<text text-anchor="start" x="396.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont()</text>
-<text text-anchor="start" x="396.5" y="-515.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExEnd()</text>
+<polygon fill="white" stroke="black" points="388.5,-503 388.5,-648 552.5,-648 552.5,-503 388.5,-503"/>
+<text text-anchor="middle" x="470.5" y="-636" font-family="Helvetica,sans-Serif" font-size="10.00">USBMIDI_Sender</text>
+<polyline fill="none" stroke="black" points="388.5,-629 552.5,-629 "/>
+<text text-anchor="start" x="396.5" y="-617" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExData</text>
+<text text-anchor="start" x="396.5" y="-606" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExLength</text>
+<polyline fill="none" stroke="black" points="388.5,-599 552.5,-599 "/>
+<text text-anchor="start" x="396.5" y="-587" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendChannelMessage()</text>
+<text text-anchor="start" x="396.5" y="-576" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysCommonMessage()</text>
+<text text-anchor="start" x="396.5" y="-565" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendRealTimeMessage()</text>
+<text text-anchor="start" x="396.5" y="-554" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysEx()</text>
+<text text-anchor="start" x="396.5" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendFullSysEx()</text>
+<text text-anchor="start" x="396.5" y="-532" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont1()</text>
+<text text-anchor="start" x="396.5" y="-521" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont()</text>
+<text text-anchor="start" x="396.5" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExEnd()</text>
 </a>
 </g>
 </g>
 <!-- Node31&#45;&gt;Node2 -->
 <g id="edge43" class="edge">
 <title>Node31&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M491.38,-508.33C506.18,-469.49 529.2,-421.44 561.5,-387 618.02,-326.73 701.04,-282.14 764.94,-254.02"/>
+<path fill="none" stroke="#404040" d="M493.47,-502.92C508.32,-465.11 530.69,-419.86 561.5,-387 618.02,-326.73 701.04,-282.14 764.94,-254.02"/>
 <polygon fill="none" stroke="#404040" points="765.22,-253.9 769.14,-247.84 776.24,-249.13 772.32,-255.19 765.22,-253.9"/>
 <text text-anchor="middle" x="607.5" y="-361" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;sender</text>
 </g>

@@ -105,6 +105,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a2a82e3cbc4ddcf68ac47d0d464189e35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#a2a82e3cbc4ddcf68ac47d0d464189e35">IGNORE_SYSEX</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:a2a82e3cbc4ddcf68ac47d0d464189e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Don't parse incoming System Exclusive messages.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#a2a82e3cbc4ddcf68ac47d0d464189e35">More...</a><br /></td></tr>
 <tr class="separator:a2a82e3cbc4ddcf68ac47d0d464189e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae4753367a4adac0c45a92bad885e5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#aaae4753367a4adac0c45a92bad885e5c">NO_SYSEX_OUTPUT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:aaae4753367a4adac0c45a92bad885e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Don't include code for sending System Exclusive messages.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#aaae4753367a4adac0c45a92bad885e5c">More...</a><br /></td></tr>
+<tr class="separator:aaae4753367a4adac0c45a92bad885e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a415020f82b6474f74f9f4516af2bfffd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#a415020f82b6474f74f9f4516af2bfffd">CS_TRUE_CONTROL_SURFACE_INSTANCE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a415020f82b6474f74f9f4516af2bfffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the global instance <code>Control_Surface</code> as a true global variable.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#a415020f82b6474f74f9f4516af2bfffd">More...</a><br /></td></tr>
 <tr class="separator:a415020f82b6474f74f9f4516af2bfffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,9 +126,9 @@ Variables</h2></td></tr>
 <tr class="memitem:ad73f28073ff4298bbf7bdde13c083393"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#ad73f28073ff4298bbf7bdde13c083393">NOTE_VELOCITY_THRESHOLD</a> = 1</td></tr>
 <tr class="memdesc:ad73f28073ff4298bbf7bdde13c083393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines when a note input should be interpreted as 'on'.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#ad73f28073ff4298bbf7bdde13c083393">More...</a><br /></td></tr>
 <tr class="separator:ad73f28073ff4298bbf7bdde13c083393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3081f3937d694684489a38a344815b29"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#a3081f3937d694684489a38a344815b29">SYSEX_BUFFER_SIZE</a> = 128</td></tr>
-<tr class="memdesc:a3081f3937d694684489a38a344815b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the maximum System Exclusive message that can be received.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#a3081f3937d694684489a38a344815b29">More...</a><br /></td></tr>
-<tr class="separator:a3081f3937d694684489a38a344815b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48d0a4efaf52fc688a8ced019e561ef"><td class="memItemLeft" align="right" valign="top">constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#af48d0a4efaf52fc688a8ced019e561ef">SYSEX_BUFFER_SIZE</a> = 128</td></tr>
+<tr class="memdesc:af48d0a4efaf52fc688a8ced019e561ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the maximum System Exclusive message that can be received.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#af48d0a4efaf52fc688a8ced019e561ef">More...</a><br /></td></tr>
+<tr class="separator:af48d0a4efaf52fc688a8ced019e561ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41878747cdda1658fb70fd7e65cd1a7"><td class="memItemLeft" align="right" valign="top">constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#aa41878747cdda1658fb70fd7e65cd1a7">SYSEX_CHUNK_TIMEOUT</a> = 500</td></tr>
 <tr class="memdesc:aa41878747cdda1658fb70fd7e65cd1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout in milliseconds to wait for a SysEx chunk to complete.  <a href="../../dc/d4f/Settings_2Settings_8hpp.html#aa41878747cdda1658fb70fd7e65cd1a7">More...</a><br /></td></tr>
 <tr class="separator:aa41878747cdda1658fb70fd7e65cd1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +155,24 @@ Variables</h2></td></tr>
 <p>Don't parse incoming System Exclusive messages. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html">Settings/Settings.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaae4753367a4adac0c45a92bad885e5c" name="aaae4753367a4adac0c45a92bad885e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaae4753367a4adac0c45a92bad885e5c">&#9670;&nbsp;</a></span>NO_SYSEX_OUTPUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_SYSEX_OUTPUT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Don't include code for sending System Exclusive messages. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp_source.html">Settings/Settings.hpp</a>.</p>
 
 </div>
 </div>
@@ -281,8 +302,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3081f3937d694684489a38a344815b29" name="a3081f3937d694684489a38a344815b29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3081f3937d694684489a38a344815b29">&#9670;&nbsp;</a></span>SYSEX_BUFFER_SIZE</h2>
+<a id="af48d0a4efaf52fc688a8ced019e561ef" name="af48d0a4efaf52fc688a8ced019e561ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48d0a4efaf52fc688a8ced019e561ef">&#9670;&nbsp;</a></span>SYSEX_BUFFER_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +312,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t SYSEX_BUFFER_SIZE = 128</td>
+          <td class="memname">constexpr uint16_t SYSEX_BUFFER_SIZE = 128</td>
         </tr>
       </table>
   </td>

@@ -881,27 +881,28 @@
 <g id="node23" class="node">
 <title>Node23</title>
 <g id="a_node23"><a xlink:href="../../df/dda/classUSBMIDI__Sender.html" target="_top" xlink:title="A class for sending MIDI USB messages.">
-<polygon fill="white" stroke="black" points="1594.57,-397 1594.57,-531 1758.57,-531 1758.57,-397 1594.57,-397"/>
-<text text-anchor="middle" x="1676.57" y="-519" font-family="Helvetica,sans-Serif" font-size="10.00">USBMIDI_Sender</text>
-<polyline fill="none" stroke="black" points="1594.57,-512 1758.57,-512 "/>
-<text text-anchor="start" x="1602.57" y="-500" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExData</text>
-<text text-anchor="start" x="1602.57" y="-489" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExLength</text>
-<polyline fill="none" stroke="black" points="1594.57,-482 1758.57,-482 "/>
-<text text-anchor="start" x="1602.57" y="-470" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendChannelMessage()</text>
-<text text-anchor="start" x="1602.57" y="-459" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysCommonMessage()</text>
-<text text-anchor="start" x="1602.57" y="-448" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendRealTimeMessage()</text>
-<text text-anchor="start" x="1602.57" y="-437" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysEx()</text>
-<text text-anchor="start" x="1602.57" y="-426" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont1()</text>
-<text text-anchor="start" x="1602.57" y="-415" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont()</text>
-<text text-anchor="start" x="1602.57" y="-404" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExEnd()</text>
+<polygon fill="white" stroke="black" points="1594.57,-391.5 1594.57,-536.5 1758.57,-536.5 1758.57,-391.5 1594.57,-391.5"/>
+<text text-anchor="middle" x="1676.57" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">USBMIDI_Sender</text>
+<polyline fill="none" stroke="black" points="1594.57,-517.5 1758.57,-517.5 "/>
+<text text-anchor="start" x="1602.57" y="-505.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExData</text>
+<text text-anchor="start" x="1602.57" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; storedSysExLength</text>
+<polyline fill="none" stroke="black" points="1594.57,-487.5 1758.57,-487.5 "/>
+<text text-anchor="start" x="1602.57" y="-475.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendChannelMessage()</text>
+<text text-anchor="start" x="1602.57" y="-464.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysCommonMessage()</text>
+<text text-anchor="start" x="1602.57" y="-453.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendRealTimeMessage()</text>
+<text text-anchor="start" x="1602.57" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendSysEx()</text>
+<text text-anchor="start" x="1602.57" y="-431.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ sendFullSysEx()</text>
+<text text-anchor="start" x="1602.57" y="-420.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont1()</text>
+<text text-anchor="start" x="1602.57" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExStartCont()</text>
+<text text-anchor="start" x="1602.57" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sendSysExEnd()</text>
 </a>
 </g>
 </g>
 <!-- Node23&#45;&gt;Node1 -->
 <g id="edge34" class="edge">
 <title>Node23&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M1641.58,-396.61C1621.96,-359.36 1596.72,-311.47 1573.03,-266.51"/>
-<polygon fill="none" stroke="#404040" points="1572.96,-266.38 1566.62,-262.94 1567.36,-255.76 1573.7,-259.21 1572.96,-266.38"/>
+<path fill="none" stroke="#404040" d="M1638.81,-391.35C1619.63,-354.95 1595.66,-309.46 1573.09,-266.63"/>
+<polygon fill="none" stroke="#404040" points="1572.98,-266.42 1566.64,-262.98 1567.38,-255.8 1573.72,-259.25 1572.98,-266.42"/>
 <text text-anchor="middle" x="1598.57" y="-277" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;sender</text>
 </g>
 </g>
