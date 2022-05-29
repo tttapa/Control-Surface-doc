@@ -2,7 +2,7 @@ Documentation for [**tttapa/Control-Surface**](https://github.com/tttapa/Control
 
 ### Main Branch
 
-- **master**  
+- **main**  
   [Doxygen](Doxygen/index.html) ─ [Coverage](Coverage/index.html)
 
 ### Tags and Releases
