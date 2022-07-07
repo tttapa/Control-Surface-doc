@@ -6,5 +6,5 @@ var searchData=
   ['pinmode_5ft_3',['PinMode_t',['../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102',1,'Arduino-Hardware-Types.hpp']]],
   ['pinstatus_5ft_4',['PinStatus_t',['../d2/d3c/Arduino-Hardware-Types_8hpp.html#a8db45e6eae91e4d8258786a8cf70941d',1,'Arduino-Hardware-Types.hpp']]],
   ['pint_5',['pint',['../d6/d99/classBresenhamLine.html#a2a619335fd6291aec4c6dea0a6899326',1,'BresenhamLine']]],
-  ['pointer_6',['pointer',['../df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#a10ebe0a2b5f7dceda6f042beb2ef2198',1,'AH::ArraySlice::Iterator::pointer()'],['../dd/d02/classDoublyLinkedList_1_1node__iterator.html#a0b42c2b115077f26456b0086207dc114',1,'DoublyLinkedList::node_iterator::pointer()'],['../d1/d4c/classDoublyLinkedList_1_1reverse__node__iterator.html#a0b42c2b115077f26456b0086207dc114',1,'DoublyLinkedList::reverse_node_iterator::pointer()']]]
+  ['pointer_6',['pointer',['../dd/d02/classDoublyLinkedList_1_1node__iterator.html#a0b42c2b115077f26456b0086207dc114',1,'DoublyLinkedList::node_iterator::pointer()'],['../d1/d4c/classDoublyLinkedList_1_1reverse__node__iterator.html#a0b42c2b115077f26456b0086207dc114',1,'DoublyLinkedList::reverse_node_iterator::pointer()']]]
 ];

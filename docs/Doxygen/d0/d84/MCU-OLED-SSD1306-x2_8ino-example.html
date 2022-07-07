@@ -79,11 +79,11 @@ $(function() {
   <div class="headertitle"><div class="title">MCU-OLED-SSD1306-x2.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md253"></a>
+<h1><a class="anchor" id="autotoc_md94"></a>
 MCU-OLED-SSD1306-x2</h1>
 <p >An example demonstrating the use of <a class="el" href="../../d8/d43/classDisplayElement.html" title="An interface for elements that draw to a display.">DisplayElement</a>s to display information from the DAW on two small OLED displays.</p>
 <dl class="section user"><dt>Boards:</dt><dd>Mega, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md254"></a>
+<h2><a class="anchor" id="autotoc_md95"></a>
 Connections</h2>
 <ul>
 <li>5: Push button (to ground)</li>
@@ -96,19 +96,19 @@ Connections</h2>
 <p >Add a capacitor between the reset pins of the displays and ground, and a resistor from reset to 3.3V. The values are not critical, 0.1µF and 10kΩ work fine. <br  />
  You do need some way to reset the displays, without it, it won't work. <br  />
  Alternatively, you could use an IO pin from the Teensy to reset the displays, but this just "wastes" a pin.</p>
-<h2><a class="anchor" id="autotoc_md255"></a>
+<h2><a class="anchor" id="autotoc_md96"></a>
 Behavior</h2>
 <ul>
 <li>The time (bars, beats, fraction), play and record status are shown at the top of the display.</li>
 <li>For each of the 8 first tracks, a VU level meter with peak indicator and a V-Pot ring showing the pan are displayed, as well as the the mute, solo and record arm status.</li>
 <li>Four tracks are displayed at once. By pressing the push button connected to pin 5, you can switch between two banks to display all 8 tracks.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md256"></a>
+<h2><a class="anchor" id="autotoc_md97"></a>
 Mapping</h2>
 <p >Map "Control Surface" as a Mackie Control Universal unit in your DAW.</p>
 <dl class="section note"><dt>Note</dt><dd>There seem to be some differences in the way some applications handle VU meters: some expect the hardware to decay automatically, some don't. <br  />
  If you notice that the meters behave strangely, try both <a class="el" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da" title="Don&#39;t decay automatically, hold the latest value until a new one is received.">MCU::VUDecay::Hold</a> and <a class="el" href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ab8e20bc4798982b19f31c569b8dbb7db" title="Decay one segment/block every 150 ms if no new values are received.">MCU::VUDecay::Default</a>, or try a different decay time.</dd></dl>
-<h2><a class="anchor" id="autotoc_md257"></a>
+<h2><a class="anchor" id="autotoc_md98"></a>
 Demo</h2>
 <p > 
 <iframe width="560" height="315"
@@ -398,7 +398,7 @@ picture-in-picture" allowfullscreen></iframe>
 <div class="ttc" id="agroup__MCU__Notes_html_gae147a38ed616a3a525fe30fc0a05e436"><div class="ttname"><a href="../../de/d44/group__MCU__Notes.html#gae147a38ed616a3a525fe30fc0a05e436">MCU::RUDE_SOLO</a></div><div class="ttdeci">constexpr uint8_t RUDE_SOLO</div><div class="ttdoc">Rude solo light (In)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d60/MCU_8hpp_source.html#l00157">MCU.hpp:157</a></div></div>
 <div class="ttc" id="agroup__MCU__Notes_html_gaeaa52eb7707bae35acd089d691fc899f"><div class="ttname"><a href="../../de/d44/group__MCU__Notes.html#gaeaa52eb7707bae35acd089d691fc899f">MCU::MUTE_2</a></div><div class="ttdeci">constexpr uint8_t MUTE_2</div><div class="ttdoc">Mute 2 (In/Out)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d60/MCU_8hpp_source.html#l00041">MCU.hpp:41</a></div></div>
 <div class="ttc" id="agroup__MCU__Notes_html_gaec39bfeee53110110f8dca8761c4a7b2"><div class="ttname"><a href="../../de/d44/group__MCU__Notes.html#gaec39bfeee53110110f8dca8761c4a7b2">MCU::MUTE_3</a></div><div class="ttdeci">constexpr uint8_t MUTE_3</div><div class="ttdoc">Mute 3 (In/Out)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d60/MCU_8hpp_source.html#l00042">MCU.hpp:42</a></div></div>
-<div class="ttc" id="anamespaceAH_html_a19dcde97c67ed7db5a54bb2175575339"><div class="ttname"><a href="../../dc/d69/namespaceAH.html#a19dcde97c67ed7db5a54bb2175575339">AH::SPI_MAX_SPEED</a></div><div class="ttdeci">static constexpr Frequency SPI_MAX_SPEED</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00087">AH/Settings/Settings.hpp:87</a></div></div>
+<div class="ttc" id="anamespaceAH_html_a19dcde97c67ed7db5a54bb2175575339"><div class="ttname"><a href="../../dc/d69/namespaceAH.html#a19dcde97c67ed7db5a54bb2175575339">AH::SPI_MAX_SPEED</a></div><div class="ttdeci">static constexpr Frequency SPI_MAX_SPEED</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d4f/AH_2Settings_2Settings_8hpp_source.html#l00092">AH/Settings/Settings.hpp:92</a></div></div>
 <div class="ttc" id="anamespaceMCU_1_1VUDecay_html_ac4cd1576514f126eb68fd54327c2a4da"><div class="ttname"><a href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ac4cd1576514f126eb68fd54327c2a4da">MCU::VUDecay::Hold</a></div><div class="ttdeci">constexpr unsigned int Hold</div><div class="ttdoc">Don't decay automatically, hold the latest value until a new one is received.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dda/VU_8hpp_source.html#l00177">VU.hpp:177</a></div></div>
 <div class="ttc" id="anamespaceXBM_html_a1e492ffaafff0e0f33a671b9eb434a63"><div class="ttname"><a href="../../dd/d93/namespaceXBM.html#a1e492ffaafff0e0f33a671b9eb434a63">XBM::solo_7</a></div><div class="ttdeci">const XBitmap solo_7</div><div class="ttdoc">XBitmap solo_7 (7px × 7px)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d33/XBitmaps_8hpp_source.html#l00130">XBitmaps.hpp:130</a></div></div>
 <div class="ttc" id="anamespaceXBM_html_a237653bbce4d249496303640b5a2fc82"><div class="ttname"><a href="../../dd/d93/namespaceXBM.html#a237653bbce4d249496303640b5a2fc82">XBM::record_7</a></div><div class="ttdeci">const XBitmap record_7</div><div class="ttdoc">XBitmap record_7 (7px × 7px)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d33/XBitmaps_8hpp_source.html#l00102">XBitmaps.hpp:102</a></div></div>

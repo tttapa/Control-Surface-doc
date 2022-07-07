@@ -79,23 +79,23 @@ $(function() {
   <div class="headertitle"><div class="title">Control-Change-Potentiometer.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md68"></a>
+<h1><a class="anchor" id="autotoc_md231"></a>
 Control-Change-Potentiometer</h1>
 <p >This example demonstrates the use of MIDI Control Change potentiometers that can be used for changing effect parameters, volumes, pan and balance controls, etc. It can control almost any knob in your DAW software.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md232"></a>
 Connections</h2>
 <ul>
 <li>A0: wiper of a potentiometer</li>
 </ul>
 <p >Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>.</p>
-<h2><a class="anchor" id="autotoc_md70"></a>
+<h2><a class="anchor" id="autotoc_md233"></a>
 Behavior</h2>
 <ul>
 <li>When you turn the potentiometer, you should receive MIDI Control Change events, with a value between 0 and 127.</li>
 <li>The analog input is filtered, so there shouldn't be any noise on the position. If there is, check your wiring, and make sure that the resistance of the potentiometer isn't too high (10 kΩ is ideal).</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md71"></a>
+<h2><a class="anchor" id="autotoc_md234"></a>
 Mapping</h2>
 <p >Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the potentiometer to a function. <br  />
  It will send the MIDI Control Change <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Volume parameter for channel 1.</p>

@@ -46,7 +46,7 @@ var searchData=
   ['prefix_43',['prefix',['../de/d65/classStreamDebugMIDI__Base.html#a5b41c5ae4505891e6c53e26df197e02b',1,'StreamDebugMIDI_Base']]],
   ['prevbouncetime_44',['prevBounceTime',['../dc/db4/structAH_1_1Button_1_1InternalState.html#ab9c2c01614891d5d9b4e859f16075b30',1,'AH::Button::InternalState']]],
   ['previnput_45',['prevInput',['../dc/db4/structAH_1_1Button_1_1InternalState.html#a883b0cf1dda8588777ae7724287d12fe',1,'AH::Button::InternalState']]],
-  ['previous_46',['previous',['../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df',1,'DoublyLinkable::previous()'],['../d6/dc4/classBankDisplay.html#a8c55f1625951397fd6ed19080d34a6f8',1,'BankDisplay::previous()'],['../d3/d51/classSelectorDisplay.html#a93e9698a5d38131314f7da25aed2ebd5',1,'SelectorDisplay::previous()'],['../d2/de5/classAH_1_1Timer.html#ab6e03867f916dd6860f34c44b61f53dc',1,'AH::Timer::previous()']]],
+  ['previous_46',['previous',['../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df',1,'DoublyLinkable::previous()'],['../d2/de5/classAH_1_1Timer.html#ab6e03867f916dd6860f34c44b61f53dc',1,'AH::Timer::previous()'],['../d6/dc4/classBankDisplay.html#a8c55f1625951397fd6ed19080d34a6f8',1,'BankDisplay::previous()'],['../d3/d51/classSelectorDisplay.html#a93e9698a5d38131314f7da25aed2ebd5',1,'SelectorDisplay::previous()']]],
   ['previousbank_47',['previousBank',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#afda4032d5bb62800a55610ca93904773',1,'Bankable::SmartMIDIFilteredAnalog']]],
   ['previousdecay_48',['previousDecay',['../d4/d42/classMCU_1_1VUDisplay.html#a7d80f348f83589246cb6edb9a49eb764',1,'MCU::VUDisplay']]],
   ['previousposition_49',['previousPosition',['../da/dbf/classGenericEncoderSelector.html#a0b628d81dd2917e3effdbe144b4d22ad',1,'GenericEncoderSelector']]],
@@ -60,9 +60,8 @@ var searchData=
   ['program_5fchange_57',['PROGRAM_CHANGE',['../d7/d3f/structChannelMessage.html#a07f89e5694fa3f9209fdd123ae47117e',1,'ChannelMessage']]],
   ['programchange_58',['ProgramChange',['../d2/d91/namespaceDebugMIDIMessageNames.html#a9e768c6dbeacc2f68010ea32838f0b96',1,'DebugMIDIMessageNames']]],
   ['programs_59',['programs',['../de/d43/classProgramChanger.html#af91257406d5d0b457f765894993e7c91',1,'ProgramChanger::programs()'],['../d1/df9/classBankable_1_1ProgramChanger.html#af91257406d5d0b457f765894993e7c91',1,'Bankable::ProgramChanger::programs()']]],
-  ['ptr_60',['ptr',['../df/d2b/classAH_1_1ArraySlice_1_1Iterator.html#abf1aa9d0f834b189e83e5794a21ec37b',1,'AH::ArraySlice::Iterator']]],
-  ['puller_61',['puller',['../d5/d1f/classHexPuller.html#ac10ec26e39aaa9402aae92f84cb943a1',1,'HexPuller']]],
-  ['pullupsdirty_62',['pullupsDirty',['../d5/dd2/classAH_1_1MCP23017.html#ad86d2b8bed1112f8943a6932095df8c9',1,'AH::MCP23017']]],
-  ['pulsesperstep_63',['pulsesPerStep',['../da/dbf/classGenericEncoderSelector.html#ad290c1b18065543a0e6f1c3d2def4ea3',1,'GenericEncoderSelector::pulsesPerStep()'],['../db/dd2/classEncoderState.html#a9fcf26ac5e5de9cf33b64ac4f8ad9c4c',1,'EncoderState::pulsesPerStep()']]],
-  ['px_64',['px',['../d6/d99/classBresenhamLine.html#addf4563a05fdd1b3158a5deb72ba7dd1',1,'BresenhamLine']]]
+  ['puller_60',['puller',['../d5/d1f/classHexPuller.html#ac10ec26e39aaa9402aae92f84cb943a1',1,'HexPuller']]],
+  ['pullupsdirty_61',['pullupsDirty',['../d5/dd2/classAH_1_1MCP23017.html#ad86d2b8bed1112f8943a6932095df8c9',1,'AH::MCP23017']]],
+  ['pulsesperstep_62',['pulsesPerStep',['../da/dbf/classGenericEncoderSelector.html#ad290c1b18065543a0e6f1c3d2def4ea3',1,'GenericEncoderSelector::pulsesPerStep()'],['../db/dd2/classEncoderState.html#a9fcf26ac5e5de9cf33b64ac4f8ad9c4c',1,'EncoderState::pulsesPerStep()']]],
+  ['px_63',['px',['../d6/d99/classBresenhamLine.html#addf4563a05fdd1b3158a5deb72ba7dd1',1,'BresenhamLine']]]
 ];

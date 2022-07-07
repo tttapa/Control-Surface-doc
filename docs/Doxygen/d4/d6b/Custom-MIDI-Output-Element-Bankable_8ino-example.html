@@ -79,26 +79,26 @@ $(function() {
   <div class="headertitle"><div class="title">Custom-MIDI-Output-Element-Bankable.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md262"></a>
+<h1><a class="anchor" id="autotoc_md88"></a>
 Custom-MIDI-Output-Element-Bankable</h1>
 <p >This is an example that demonstrates how to extend the library using your own <a class="el" href="../../d1/dd0/namespaceBankable.html" title="A namespace for MIDI elements that can be added to a Bank, to change their address or channel.">Bankable</a> MIDI Output Elements. The example declares a MIDI Output Element that sends MIDI Note events when a push button is pressed or released. It can be banked to change the MIDI address. It's a simplified version of the <a class="el" href="../../de/d36/classBankable_1_1NoteButton.html">Bankable::NoteButton</a> class.</p>
 <p >To understand this example, you need to understand the <a class="el" href="../../d0/d74/Bank_8ino-example.html">Bank.ino</a> and the <a class="el" href="../../d4/d3b/Custom-MIDI-Output-Element_8ino-example.html">Custom-MIDI-Output-Element.ino</a> examples first.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md263"></a>
+<h2><a class="anchor" id="autotoc_md89"></a>
 Connections</h2>
 <ul>
 <li>5: momentary push button (to ground) to send MIDI notes</li>
 <li>6: momentary push button (to ground) to select the next bank</li>
 </ul>
 <p >The internal pull-up resistors for the buttons will be enabled automatically.</p>
-<h2><a class="anchor" id="autotoc_md264"></a>
+<h2><a class="anchor" id="autotoc_md90"></a>
 Behavior</h2>
 <ul>
 <li>When the button on pin 5 is pressed, a MIDI Note On message is sent for note C in the octave determined by the bank setting.</li>
 <li>When the button on pin 5 is released, a MIDI Note Off message is sent for note C in the octave determined by the bank setting.</li>
 <li>When the button on pin 6 is pressed, the bank setting is incremented.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md265"></a>
+<h2><a class="anchor" id="autotoc_md91"></a>
 Mapping</h2>
 <p >Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the button to a function.</p>
 <p >Written by PieterP, 2020-09-29 <br  />
