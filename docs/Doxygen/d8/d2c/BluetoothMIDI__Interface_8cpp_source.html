@@ -102,7 +102,7 @@ $(function() {
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            ; <span class="comment">// loop</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    };</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">// Need larger stack than default, pin to non-Arduino core</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_struct" href="../../de/d27/structScopedThreadConfig.html">ScopedThreadConfig</a>(4096, 3, <span class="keyword">true</span>, <span class="stringliteral">&quot;SendBLEMIDI&quot;</span>, 0);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_struct" href="../../de/d27/structScopedThreadConfig.html">ScopedThreadConfig</a> sc {4096, 3, <span class="keyword">true</span>, <span class="stringliteral">&quot;SendBLEMIDI&quot;</span>, 0};</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">// Launch the thread</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_variable" href="../../d0/d89/classBluetoothMIDI__Interface.html#ac0b97c3d43e512fc8118c01b655f2636">send_thread</a> = std::thread(send_loop);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>

@@ -91,7 +91,8 @@ var searchData=
   ['midimessagequeueelement_88',['MIDIMessageQueueElement',['../d9/d4b/structMIDIMessageQueue_1_1MIDIMessageQueueElement.html',1,'MIDIMessageQueue']]],
   ['midioutputonly_89',['MIDIOutputOnly',['../d5/d12/classMIDIOutputOnly.html',1,'']]],
   ['midistaller_90',['MIDIStaller',['../d4/d48/structMIDIStaller.html',1,'']]],
-  ['motorfader_91',['MotorFader',['../d0/d4e/Def_8hpp.html#d1/d0f/structMotorFader',1,'']]],
-  ['movingcoilballistics_92',['MovingCoilBallistics',['../d0/d49/classMovingCoilBallistics.html',1,'']]],
-  ['multipurposebutton_93',['MultiPurposeButton',['../d9/d8e/classAH_1_1MultiPurposeButton.html',1,'AH']]]
+  ['midiusb_5fusbdevicemidibackend_91',['MIDIUSB_USBDeviceMIDIBackend',['../d1/d3a/structMIDIUSB__USBDeviceMIDIBackend.html',1,'']]],
+  ['motorfader_92',['MotorFader',['../d0/d4e/Def_8hpp.html#d1/d0f/structMotorFader',1,'']]],
+  ['movingcoilballistics_93',['MovingCoilBallistics',['../d0/d49/classMovingCoilBallistics.html',1,'']]],
+  ['multipurposebutton_94',['MultiPurposeButton',['../d9/d8e/classAH_1_1MultiPurposeButton.html',1,'AH']]]
 ];

@@ -53,7 +53,7 @@ var searchData=
   ['previousswitchstate_50',['previousSwitchState',['../da/dbf/classGenericEncoderSelector.html#a43a4ae4bde11db50691d1bea9691d554',1,'GenericEncoderSelector']]],
   ['previousvalue_51',['previousValue',['../d9/dbf/classAudioVULEDs.html#a842a0f25b08f03ab272c580e3358194e',1,'AudioVULEDs']]],
   ['previousvalues_52',['previousValues',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a72e560f01a1be911a46a1e6860809df1',1,'Bankable::SmartMIDIFilteredAnalog']]],
-  ['prevlevel_53',['prevLevel',['../d2/dcb/classHysteresis.html#a2131cc63eb3bb996deb8881d0a2a9dd1',1,'Hysteresis']]],
+  ['prevlevel_53',['prevLevel',['../d2/dcb/classHysteresis.html#a2131cc63eb3bb996deb8881d0a2a9dd1',1,'Hysteresis::prevLevel()'],['../df/dcd/classHysteresis_3_010_00_01T__in_00_01T__out_01_4.html#ae2d86df0349c70317c5f7218174f9097',1,'Hysteresis&lt; 0, T_in, T_out &gt;::prevLevel()']]],
   ['prevrefresh_54',['prevRefresh',['../dd/d29/classAH_1_1ButtonMatrix.html#a57103211dd8cea9970a10b6a99061331',1,'AH::ButtonMatrix']]],
   ['prevstates_55',['prevStates',['../dd/d29/classAH_1_1ButtonMatrix.html#a72ee75c7a33505f3b41fe009bb471eab',1,'AH::ButtonMatrix']]],
   ['prevwastimestamp_56',['prevWasTimestamp',['../d9/d19/classBLEMIDIParser.html#acd1153a3ce3bcdaa04ecb5517355bc72',1,'BLEMIDIParser']]],

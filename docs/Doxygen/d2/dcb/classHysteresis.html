@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Control Surface: Hysteresis&lt; BITS, T_in, T_out &gt; Class Template Reference</title>
+<title>Control Surface: Hysteresis&lt; Bits, T_in, T_out &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -81,14 +81,14 @@ $(function() {
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="../../dd/d0d/classHysteresis-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Hysteresis&lt; BITS, T_in, T_out &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../d7/d07/group__AH__group.html">Arduino Helpers</a> &raquo; <a class="el" href="../../dc/def/group__AH__Filters.html">Filters</a></div></div></div>
+  <div class="headertitle"><div class="title">Hysteresis&lt; Bits, T_in, T_out &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../d7/d07/group__AH__group.html">Arduino Helpers</a> &raquo; <a class="el" href="../../dc/def/group__AH__Filters.html">Filters</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="../../d3/d09/Hysteresis_8hpp_source.html">AH/Filters/Hysteresis.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;uint8_t BITS, class T_in = uint16_t, class T_out = uint8_t&gt;<br />
-class Hysteresis&lt; BITS, T_in, T_out &gt;</div><p >A class for applying hysteresis to a given input. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;uint8_t Bits, class T_in = uint16_t, class T_out = uint8_t&gt;<br />
+class Hysteresis&lt; Bits, T_in, T_out &gt;</div><p >A class for applying hysteresis to a given input. </p>
 <p >This reduces the noise by decreasing the resolution, and it prevents flipping back and forth between two values.</p>
 <p ><b>An example for <code>BITS</code> = 7 and an input from 0 to 1023</b> </p><div class="fragment"><div class="line">   7                                                     ┌───◄───┬───</div>
 <div class="line">o  6                                             ┌───◄───┼───►───┘</div>
@@ -109,11 +109,11 @@ class Hysteresis&lt; BITS, T_in, T_out &gt;</div><p >A class for applying hyster
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d09/Hysteresis_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../d3/d09/Hysteresis_8hpp_source.html">Hysteresis.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for Hysteresis&lt; BITS, T_in, T_out &gt;:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for Hysteresis&lt; Bits, T_in, T_out &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d3c/classHysteresis__coll__graph.svg" width="162" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d3c/classHysteresis__coll__graph.svg" width="158" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -136,13 +136,13 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:aebe1fd0dd115203f543e946103ae8a78"><td class="memItemLeft" align="right" valign="top">static constexpr T_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcb/classHysteresis.html#aebe1fd0dd115203f543e946103ae8a78">margin</a> = (1UL &lt;&lt; BITS) - 1</td></tr>
+<tr class="memitem:aebe1fd0dd115203f543e946103ae8a78"><td class="memItemLeft" align="right" valign="top">static constexpr T_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcb/classHysteresis.html#aebe1fd0dd115203f543e946103ae8a78">margin</a> = (1ul &lt;&lt; Bits) - 1ul</td></tr>
 <tr class="separator:aebe1fd0dd115203f543e946103ae8a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f1420d7e7efbb28fc1d4b155dc25c9"><td class="memItemLeft" align="right" valign="top">static constexpr T_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcb/classHysteresis.html#ae8f1420d7e7efbb28fc1d4b155dc25c9">offset</a> = 1UL &lt;&lt; (BITS - 1)</td></tr>
+<tr class="memitem:ae8f1420d7e7efbb28fc1d4b155dc25c9"><td class="memItemLeft" align="right" valign="top">static constexpr T_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcb/classHysteresis.html#ae8f1420d7e7efbb28fc1d4b155dc25c9">offset</a> = Bits &gt;= 1 ? 1ul &lt;&lt; (Bits - 1) : 0</td></tr>
 <tr class="separator:ae8f1420d7e7efbb28fc1d4b155dc25c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ce01db50d094defbb6cd3b51c03545"><td class="memItemLeft" align="right" valign="top">static constexpr T_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcb/classHysteresis.html#a64ce01db50d094defbb6cd3b51c03545">max_in</a> = -1</td></tr>
+<tr class="memitem:a64ce01db50d094defbb6cd3b51c03545"><td class="memItemLeft" align="right" valign="top">static constexpr T_in&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcb/classHysteresis.html#a64ce01db50d094defbb6cd3b51c03545">max_in</a> = static_cast&lt;T_in&gt;(-1)</td></tr>
 <tr class="separator:a64ce01db50d094defbb6cd3b51c03545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c5b539d2e4cb26bae1dfe889261dd2"><td class="memItemLeft" align="right" valign="top">static constexpr T_out&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcb/classHysteresis.html#a11c5b539d2e4cb26bae1dfe889261dd2">max_out</a> = static_cast&lt;T_out&gt;(<a class="el" href="../../d2/dcb/classHysteresis.html#a64ce01db50d094defbb6cd3b51c03545">max_in</a> &gt;&gt; BITS)</td></tr>
+<tr class="memitem:a11c5b539d2e4cb26bae1dfe889261dd2"><td class="memItemLeft" align="right" valign="top">static constexpr T_out&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dcb/classHysteresis.html#a11c5b539d2e4cb26bae1dfe889261dd2">max_out</a> = static_cast&lt;T_out&gt;(<a class="el" href="../../d2/dcb/classHysteresis.html#a64ce01db50d094defbb6cd3b51c03545">max_in</a> &gt;&gt; Bits)</td></tr>
 <tr class="separator:a11c5b539d2e4cb26bae1dfe889261dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -284,7 +284,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T_in margin = (1UL &lt;&lt; BITS) - 1</td>
+          <td class="memname">constexpr T_in margin = (1ul &lt;&lt; Bits) - 1ul</td>
         </tr>
       </table>
   </td>
@@ -308,7 +308,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T_in offset = 1UL &lt;&lt; (BITS - 1)</td>
+          <td class="memname">constexpr T_in offset = Bits &gt;= 1 ? 1ul &lt;&lt; (Bits - 1) : 0</td>
         </tr>
       </table>
   </td>
@@ -332,7 +332,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T_in max_in = -1</td>
+          <td class="memname">constexpr T_in max_in = static_cast&lt;T_in&gt;(-1)</td>
         </tr>
       </table>
   </td>
@@ -356,7 +356,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T_out max_out = static_cast&lt;T_out&gt;(<a class="el" href="../../d2/dcb/classHysteresis.html#a64ce01db50d094defbb6cd3b51c03545">max_in</a> &gt;&gt; BITS)</td>
+          <td class="memname">constexpr T_out max_out = static_cast&lt;T_out&gt;(<a class="el" href="../../d2/dcb/classHysteresis.html#a64ce01db50d094defbb6cd3b51c03545">max_in</a> &gt;&gt; Bits)</td>
         </tr>
       </table>
   </td>

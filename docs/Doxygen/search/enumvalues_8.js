@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['key_5fpressure_0',['KEY_PRESSURE',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6ce935e284d90c79bb241ed2e75c308a',1,'KEY_PRESSURE():&#160;MIDI_MessageTypes.hpp'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a6ce935e284d90c79bb241ed2e75c308a',1,'KEY_PRESSURE():&#160;MIDI_MessageTypes.hpp']]],
-  ['korg_5fkontrol_5finc_5fdec_5f1_1',['KORG_KONTROL_INC_DEC_1',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da128d0dd03d1004eb449f75aa329d21d9',1,'RelativeCCSender.hpp']]]
+  ['longpress_0',['LongPress',['../d7/d83/classAH_1_1IncrementButton.html#a06fc87d81c62e9abb8790b6e5713c55bade879c91413c9c7b60f9ca1fb92eb234',1,'AH::IncrementButton::LongPress()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#adf764cbdea00d65edcd07bb9953ad2b7ade879c91413c9c7b60f9ca1fb92eb234',1,'AH::IncrementDecrementButtons::LongPress()'],['../d9/d8e/classAH_1_1MultiPurposeButton.html#a5667b805d857c6d28f83f6038a0272d3ade879c91413c9c7b60f9ca1fb92eb234',1,'AH::MultiPurposeButton::LongPress()']]],
+  ['longpressrelease_1',['LongPressRelease',['../d9/d8e/classAH_1_1MultiPurposeButton.html#a5667b805d857c6d28f83f6038a0272d3aaf680c7bdb1decf552c565f5122dd153',1,'AH::MultiPurposeButton']]],
+  ['lower_2',['Lower',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a5d74787dedbc4e11c1ab15bf487e61f8af886b397626076218462d53d50eb96bc',1,'Bankable::SmartMIDIFilteredAnalog']]],
+  ['lowercase_3',['LOWERCASE',['../dc/d69/namespaceAH.html#a6674af4819a4f85e8c40be5971746668af8ee0dcc4d45543df8763035c19ef2fc',1,'AH']]]
 ];

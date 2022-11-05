@@ -81,17 +81,17 @@ $(function() {
 <div class="contents">
 <p >This is an example of the <code><a class="el" href="../../db/d32/classCCPotentiometer.html" title="A class of MIDIOutputElements that read the analog input from a potentiometer or fader,...">CCPotentiometer</a></code> class of the Control_Surface library, and specifically, how to use the <code>map</code> function to account for non-linearities of the potentiometer.</p>
 <p >This is an example of the <code><a class="el" href="../../db/d32/classCCPotentiometer.html" title="A class of MIDIOutputElements that read the analog input from a potentiometer or fader,...">CCPotentiometer</a></code> class of the Control_Surface library, and specifically, how to use the <code>map</code> function to account for non-linearities of the potentiometer.</p>
-<h1><a class="anchor" id="autotoc_md227"></a>
+<h1><a class="anchor" id="autotoc_md171"></a>
 CCPotentiometer-Map</h1>
 <p >The map function in this example corrects for potentiometers that don't go all the way to the extreme values. Some potentiometers still read a value that's greater than 0 when turned all the way to the left. To fix that, tweak the <code>minimumValue</code> constant. If the potentiometer doesn't read the maximum value when turned all the way to the right, tweak the <code>maximumValue</code> constant.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, ESP32, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md228"></a>
+<h2><a class="anchor" id="autotoc_md172"></a>
 Connections</h2>
 <ul>
 <li>A0: wiper of a potentiometer</li>
 </ul>
 <p >Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>.</p>
-<h2><a class="anchor" id="autotoc_md229"></a>
+<h2><a class="anchor" id="autotoc_md173"></a>
 Behavior</h2>
 <ul>
 <li>If you open the Serial Monitor, you'll see the raw potentiometer values being printed.</li>
@@ -100,7 +100,7 @@ Behavior</h2>
 </li>
 <li>Now turn the potentiometer all the way to the right, and do the same thing for <code>maximumValue</code>.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md230"></a>
+<h2><a class="anchor" id="autotoc_md174"></a>
 Mapping</h2>
 <p >Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the potentiometer to a function. <br  />
  It will send the MIDI Control Change <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Volume parameter for channel 1.</p>

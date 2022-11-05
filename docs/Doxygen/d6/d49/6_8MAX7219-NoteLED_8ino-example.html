@@ -79,22 +79,22 @@ $(function() {
   <div class="headertitle"><div class="title">6.MAX7219-NoteLED.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md115"></a>
+<h1><a class="anchor" id="autotoc_md205"></a>
 6.MAX7219-NoteLED</h1>
 <p >This example demonstrates the use of LEDs that respond to incoming MIDI note events. The LEDs are driven by a MAX7219.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
-<h2><a class="anchor" id="autotoc_md116"></a>
+<h2><a class="anchor" id="autotoc_md206"></a>
 Connections</h2>
 <ul>
 <li>SS: MAX7219 CS</li>
 <li>MOSI: MAX7219 DIN</li>
 <li>SCK: MAX7219 CLK</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md117"></a>
+<h2><a class="anchor" id="autotoc_md207"></a>
 Behavior</h2>
 <p >If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the first LED of the MAX7219 will light up, if a Note Off event for that note is sent, the LED will turn off. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="autotoc_md118"></a>
+<h2><a class="anchor" id="autotoc_md208"></a>
 Mapping</h2>
 <p >Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C on the keyboard.</p>
 <p >Written by PieterP, 2020-03-24 <br  />

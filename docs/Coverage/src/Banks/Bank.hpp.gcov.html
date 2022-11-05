@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - ebec32b97fd474ba21cb1e31b7a06ea7200233c1 - src/Banks/Bank.hpp</title>
+  <title>LCOV - 3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0 - src/Banks/Bank.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">ebec32b97fd474ba21cb1e31b7a06ea7200233c1</td>
+            <td class="headerValue">3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">27</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-07-07 23:39:20</td>
+            <td class="headerValue">2022-10-23 11:29:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">20</td>
@@ -215,18 +215,18 @@
 <a name="145"><span class="lineNum">     145 </span>            : </a>
 <a name="146"><span class="lineNum">     146 </span>            : BEGIN_CS_NAMESPACE</a>
 <a name="147"><span class="lineNum">     147 </span>            : </a>
-<a name="148"><span class="lineNum">     148 </span>            : template &lt;setting_t N&gt;</a>
-<a name="149"><span class="lineNum">     149 </span><span class="lineCov">         17 : void Bank&lt;N&gt;::add(BankSettingChangeCallback *bankable) {</span></a>
+<a name="148"><span class="lineNum">     148 </span>            : template &lt;setting_t NumBanks&gt;</a>
+<a name="149"><span class="lineNum">     149 </span><span class="lineCov">         17 : void Bank&lt;NumBanks&gt;::add(BankSettingChangeCallback *bankable) {</span></a>
 <a name="150"><span class="lineNum">     150 </span><span class="lineCov">         17 :     inputBankables.append(bankable);</span></a>
 <a name="151"><span class="lineNum">     151 </span><span class="lineCov">         17 : }</span></a>
 <a name="152"><span class="lineNum">     152 </span>            : </a>
-<a name="153"><span class="lineNum">     153 </span>            : template &lt;setting_t N&gt;</a>
-<a name="154"><span class="lineNum">     154 </span><span class="lineCov">         17 : void Bank&lt;N&gt;::remove(BankSettingChangeCallback *bankable) {</span></a>
+<a name="153"><span class="lineNum">     153 </span>            : template &lt;setting_t NumBanks&gt;</a>
+<a name="154"><span class="lineNum">     154 </span><span class="lineCov">         17 : void Bank&lt;NumBanks&gt;::remove(BankSettingChangeCallback *bankable) {</span></a>
 <a name="155"><span class="lineNum">     155 </span><span class="lineCov">         17 :     inputBankables.remove(bankable);</span></a>
 <a name="156"><span class="lineNum">     156 </span><span class="lineCov">         17 : }</span></a>
 <a name="157"><span class="lineNum">     157 </span>            : </a>
-<a name="158"><span class="lineNum">     158 </span>            : template &lt;setting_t N&gt;</a>
-<a name="159"><span class="lineNum">     159 </span><span class="lineCov">         80 : void Bank&lt;N&gt;::select(setting_t bankSetting) {</span></a>
+<a name="158"><span class="lineNum">     158 </span>            : template &lt;setting_t NumBanks&gt;</a>
+<a name="159"><span class="lineNum">     159 </span><span class="lineCov">         80 : void Bank&lt;NumBanks&gt;::select(setting_t bankSetting) {</span></a>
 <a name="160"><span class="lineNum">     160 </span><span class="lineCov">         80 :     bankSetting = this-&gt;validateSetting(bankSetting);</span></a>
 <a name="161"><span class="lineNum">     161 </span><span class="lineCov">         79 :     OutputBank::select(bankSetting);</span></a>
 <a name="162"><span class="lineNum">     162 </span><span class="lineCov">        141 :     for (BankSettingChangeCallback &amp;e : inputBankables)</span></a>

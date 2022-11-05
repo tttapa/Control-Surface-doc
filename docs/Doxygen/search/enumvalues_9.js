@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['longpress_0',['LongPress',['../d7/d83/classAH_1_1IncrementButton.html#a06fc87d81c62e9abb8790b6e5713c55bade879c91413c9c7b60f9ca1fb92eb234',1,'AH::IncrementButton::LongPress()'],['../df/dc6/classAH_1_1IncrementDecrementButtons.html#adf764cbdea00d65edcd07bb9953ad2b7ade879c91413c9c7b60f9ca1fb92eb234',1,'AH::IncrementDecrementButtons::LongPress()'],['../d9/d8e/classAH_1_1MultiPurposeButton.html#a5667b805d857c6d28f83f6038a0272d3ade879c91413c9c7b60f9ca1fb92eb234',1,'AH::MultiPurposeButton::LongPress()']]],
-  ['longpressrelease_1',['LongPressRelease',['../d9/d8e/classAH_1_1MultiPurposeButton.html#a5667b805d857c6d28f83f6038a0272d3aaf680c7bdb1decf552c565f5122dd153',1,'AH::MultiPurposeButton']]],
-  ['lower_2',['Lower',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a5d74787dedbc4e11c1ab15bf487e61f8af886b397626076218462d53d50eb96bc',1,'Bankable::SmartMIDIFilteredAnalog']]],
-  ['lowercase_3',['LOWERCASE',['../dc/d69/namespaceAH.html#a6674af4819a4f85e8c40be5971746668af8ee0dcc4d45543df8763035c19ef2fc',1,'AH']]]
+  ['mackie_5fcontrol_5frelative_0',['MACKIE_CONTROL_RELATIVE',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71dafb57df7f09c11569e6325f0250664288',1,'RelativeCCSender.hpp']]],
+  ['misc_5ffunction_5fcodes_1',['MISC_FUNCTION_CODES',['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a2d398458ffe46eeba0c0f51b3ed6d6bd',1,'MIDI_MessageTypes.hpp']]],
+  ['mtc_5fquarter_5fframe_2',['MTC_QUARTER_FRAME',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a1956f105dbeecbe80e7f6b93f07ccf10',1,'MIDI_MessageTypes.hpp']]],
+  ['multipress_3',['MultiPress',['../d9/d8e/classAH_1_1MultiPurposeButton.html#a5667b805d857c6d28f83f6038a0272d3af4c4e051d25aee55c68ac355a1f97822',1,'AH::MultiPurposeButton']]],
+  ['multipressdone_4',['MultiPressDone',['../d9/d8e/classAH_1_1MultiPurposeButton.html#a5667b805d857c6d28f83f6038a0272d3ada5c814e5e0bfee8a6232005f6a4f781',1,'AH::MultiPurposeButton']]]
 ];
