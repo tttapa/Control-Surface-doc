@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0 - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
+  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Inputs/MCU/VPotRing.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0</td>
+            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">58</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-10-23 11:29:54</td>
+            <td class="headerValue">2023-09-03 17:01:56</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">28</td>
@@ -182,8 +182,8 @@
 <a name="112"><span class="lineNum">     112 </span>            :      * @param   track</a>
 <a name="113"><span class="lineNum">     113 </span>            :      *          The track of the VPot [1, 8].</a>
 <a name="114"><span class="lineNum">     114 </span>            :      * @param   channelCN</a>
-<a name="115"><span class="lineNum">     115 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
-<a name="116"><span class="lineNum">     116 </span>            :      *          [CABLE_1, CABLE_16].</a>
+<a name="115"><span class="lineNum">     115 </span>            :      *          The MIDI channel [Channel_1, Channel_16] and Cable Number </a>
+<a name="116"><span class="lineNum">     116 </span>            :      *          [Cable_1, Cable_16].</a>
 <a name="117"><span class="lineNum">     117 </span>            :      */</a>
 <a name="118"><span class="lineNum">     118 </span><span class="lineCov">          1 :     VPotMatcher(uint8_t track, MIDIChannelCable channelCN)</span></a>
 <a name="119"><span class="lineNum">     119 </span><span class="lineCov">          1 :         : TwoByteMIDIMatcher({track + 0x30 - 1, channelCN}) {}</span></a>
@@ -204,8 +204,8 @@
 <a name="134"><span class="lineNum">     134 </span>            :      * @param   track</a>
 <a name="135"><span class="lineNum">     135 </span>            :      *          The track of the VPot [1, 8].</a>
 <a name="136"><span class="lineNum">     136 </span>            :      * @param   channelCN</a>
-<a name="137"><span class="lineNum">     137 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
-<a name="138"><span class="lineNum">     138 </span>            :      *          [CABLE_1, CABLE_16].</a>
+<a name="137"><span class="lineNum">     137 </span>            :      *          The MIDI channel [Channel_1, Channel_16] and Cable Number </a>
+<a name="138"><span class="lineNum">     138 </span>            :      *          [Cable_1, Cable_16].</a>
 <a name="139"><span class="lineNum">     139 </span>            :      */</a>
 <a name="140"><span class="lineNum">     140 </span><span class="lineCov">          4 :     BankableVPotMatcher(BankConfig&lt;BankSize&gt; config, uint8_t track,</span></a>
 <a name="141"><span class="lineNum">     141 </span>            :                         MIDIChannelCable channelCN)</a>
@@ -236,10 +236,10 @@
 <a name="166"><span class="lineNum">     166 </span>            :      * @param   track</a>
 <a name="167"><span class="lineNum">     167 </span>            :      *          The track of the VPot [1, 8].</a>
 <a name="168"><span class="lineNum">     168 </span>            :      * @param   channelCN</a>
-<a name="169"><span class="lineNum">     169 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
-<a name="170"><span class="lineNum">     170 </span>            :      *          [CABLE_1, CABLE_16].</a>
+<a name="169"><span class="lineNum">     169 </span>            :      *          The MIDI channel [Channel_1, Channel_16] and Cable Number </a>
+<a name="170"><span class="lineNum">     170 </span>            :      *          [Cable_1, Cable_16].</a>
 <a name="171"><span class="lineNum">     171 </span>            :      */</a>
-<a name="172"><span class="lineNum">     172 </span><span class="lineCov">          1 :     VPotRing(uint8_t track, MIDIChannelCable channelCN = CHANNEL_1)</span></a>
+<a name="172"><span class="lineNum">     172 </span><span class="lineCov">          1 :     VPotRing(uint8_t track, MIDIChannelCable channelCN = Channel_1)</span></a>
 <a name="173"><span class="lineNum">     173 </span><span class="lineCov">          1 :         : Parent({track, channelCN}) {}</span></a>
 <a name="174"><span class="lineNum">     174 </span>            : </a>
 <a name="175"><span class="lineNum">     175 </span>            :   protected:</a>
@@ -322,11 +322,11 @@
 <a name="252"><span class="lineNum">     252 </span>            :      * @param   track</a>
 <a name="253"><span class="lineNum">     253 </span>            :      *          The track of the VPot [1, 8].</a>
 <a name="254"><span class="lineNum">     254 </span>            :      * @param   channelCN</a>
-<a name="255"><span class="lineNum">     255 </span>            :      *          The MIDI channel [CHANNEL_1, CHANNEL_16] and Cable Number </a>
-<a name="256"><span class="lineNum">     256 </span>            :      *          [CABLE_1, CABLE_16].</a>
+<a name="255"><span class="lineNum">     255 </span>            :      *          The MIDI channel [Channel_1, Channel_16] and Cable Number </a>
+<a name="256"><span class="lineNum">     256 </span>            :      *          [Cable_1, Cable_16].</a>
 <a name="257"><span class="lineNum">     257 </span>            :      */</a>
 <a name="258"><span class="lineNum">     258 </span><span class="lineCov">          4 :     VPotRing(BankConfig&lt;BankSize&gt; config, uint8_t track,</span></a>
-<a name="259"><span class="lineNum">     259 </span>            :              MIDIChannelCable channelCN = CHANNEL_1)</a>
+<a name="259"><span class="lineNum">     259 </span>            :              MIDIChannelCable channelCN = Channel_1)</a>
 <a name="260"><span class="lineNum">     260 </span><span class="lineCov">          4 :         : Parent({config, track, channelCN}) {}</span></a>
 <a name="261"><span class="lineNum">     261 </span>            : </a>
 <a name="262"><span class="lineNum">     262 </span>            :   protected:</a>

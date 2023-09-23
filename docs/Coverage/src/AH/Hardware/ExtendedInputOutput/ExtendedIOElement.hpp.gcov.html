@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0 - src/AH/Hardware/ExtendedInputOutput/ExtendedIOElement.hpp</title>
+  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/AH/Hardware/ExtendedInputOutput/ExtendedIOElement.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0</td>
+            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">67</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-10-23 11:29:54</td>
+            <td class="headerValue">2023-09-03 17:01:56</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">14</td>
@@ -346,7 +346,7 @@
 <a name="276"><span class="lineNum">     276 </span>            : </a>
 <a name="277"><span class="lineNum">     277 </span>            : struct CachedExtIOPin {</a>
 <a name="278"><span class="lineNum">     278 </span><span class="lineCov">         22 :     explicit CachedExtIOPin(pin_t pin)</span></a>
-<a name="279"><span class="lineNum">     279 </span><span class="lineCov">         22 :         : element(pin == NO_PIN || isNativePin(pin) ? nullptr</span></a>
+<a name="279"><span class="lineNum">     279 </span><span class="lineCov">         33 :         : element(pin == NO_PIN || isNativePin(pin) ? nullptr</span></a>
 <a name="280"><span class="lineNum">     280 </span><span class="lineCov">         11 :                                                     : getIOElementOfPin(pin)),</span></a>
 <a name="281"><span class="lineNum">     281 </span><span class="lineCov">         22 :           elementPin(element ? pin - element-&gt;getStart() : pin) {}</span></a>
 <a name="282"><span class="lineNum">     282 </span>            : </a>
@@ -433,8 +433,8 @@
 <a name="363"><span class="lineNum">     363 </span><span class="lineCov">         16 :             dataEl-&gt;digitalWrite(dataPinN, (val &amp; mask) ? HIGH : LOW);</span></a>
 <a name="364"><span class="lineNum">     364 </span><span class="lineCov">         16 :             clockEl-&gt;digitalWrite(clockPinN, HIGH);</span></a>
 <a name="365"><span class="lineNum">     365 </span><span class="lineCov">         16 :             clockEl-&gt;digitalWrite(clockPinN, LOW);</span></a>
-<a name="366"><span class="lineNum">     366 </span><span class="lineCov">          2 :         }</span></a>
-<a name="367"><span class="lineNum">     367 </span>            :     }</a>
+<a name="366"><span class="lineNum">     366 </span>            :         }</a>
+<a name="367"><span class="lineNum">     367 </span><span class="lineCov">          2 :     }</span></a>
 <a name="368"><span class="lineNum">     368 </span>            :     // Mixed version (slow)</a>
 <a name="369"><span class="lineNum">     369 </span>            :     else {</a>
 <a name="370"><span class="lineNum">     370 </span><span class="lineCov">         18 :         for (uint8_t i = 0; i &lt; 8; i++) {</span></a>

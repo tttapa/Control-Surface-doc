@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0 - src/MIDI_Interfaces/BLEMIDI/MIDIMessageQueue.cpp</title>
+  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Interfaces/BLEMIDI/MIDIMessageQueue.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0</td>
+            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">51</td>
-            <td class="headerCovTableEntry">60</td>
-            <td class="headerCovTableEntryMed">85.0 %</td>
+            <td class="headerCovTableEntry">52</td>
+            <td class="headerCovTableEntry">61</td>
+            <td class="headerCovTableEntryMed">85.2 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-10-23 11:29:54</td>
+            <td class="headerValue">2023-09-03 17:01:56</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">9</td>
@@ -137,7 +137,7 @@
 <a name="67"><span class="lineNum">      67 </span><span class="lineNoCov">          0 :         return false;</span></a>
 <a name="68"><span class="lineNum">      68 </span>            : </a>
 <a name="69"><span class="lineNum">      69 </span>            :     // Allocate storage for the actual SysEx data and copy the data</a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          8 :     MIDIMessageQueueElement el(message, timestamp);</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">          4 :     MIDIMessageQueueElement el(message, timestamp);</span></a>
 <a name="71"><span class="lineNum">      71 </span>            :     // Check if allocation failed</a>
 <a name="72"><span class="lineNum">      72 </span><span class="lineCov">          4 :     if (el.eventType == MIDIReadEvent::NO_MESSAGE)</span></a>
 <a name="73"><span class="lineNum">      73 </span><span class="lineNoCov">          0 :         return true; // TODO: should we try again later?</span></a>
@@ -147,7 +147,7 @@
 <a name="77"><span class="lineNum">      77 </span><span class="lineCov">          4 :     size.fetch_add(1, std::memory_order_release);</span></a>
 <a name="78"><span class="lineNum">      78 </span>            : </a>
 <a name="79"><span class="lineNum">      79 </span><span class="lineCov">          4 :     return true;</span></a>
-<a name="80"><span class="lineNum">      80 </span>            : }</a>
+<a name="80"><span class="lineNum">      80 </span><span class="lineCov">          4 : }</span></a>
 <a name="81"><span class="lineNum">      81 </span>            : </a>
 <a name="82"><span class="lineNum">      82 </span><span class="lineCov">         34 : bool MIDIMessageQueue::pop(MIDIMessageQueueElement &amp;message) {</span></a>
 <a name="83"><span class="lineNum">      83 </span><span class="lineCov">         68 :     if (size.load(std::memory_order_acquire) == 0)</span></a>

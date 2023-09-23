@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0 - src/MIDI_Interfaces/MIDI_Sender.ipp</title>
+  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Interfaces/MIDI_Sender.ipp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0</td>
+            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">87</td>
-            <td class="headerCovTableEntry">87</td>
+            <td class="headerCovTableEntry">95</td>
+            <td class="headerCovTableEntry">95</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-10-23 11:29:54</td>
+            <td class="headerValue">2023-09-03 17:01:56</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">32</td>
@@ -91,7 +91,7 @@
 <a name="21"><span class="lineNum">      21 </span><span class="lineCov">         27 :     if (address)</span></a>
 <a name="22"><span class="lineNum">      22 </span><span class="lineCov">         54 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="23"><span class="lineNum">      23 </span>            :             MIDIMessageType::NOTE_ON,</a>
-<a name="24"><span class="lineNum">      24 </span>            :             address.getChannel(),</a>
+<a name="24"><span class="lineNum">      24 </span><span class="lineCov">         27 :             address.getChannel(),</span></a>
 <a name="25"><span class="lineNum">      25 </span><span class="lineCov">         27 :             address.getAddress(),</span></a>
 <a name="26"><span class="lineNum">      26 </span><span class="lineCov">         27 :             uint8_t(velocity &amp; 0x7F),</span></a>
 <a name="27"><span class="lineNum">      27 </span>            :             address.getCableNumber(),</a>
@@ -102,7 +102,7 @@
 <a name="32"><span class="lineNum">      32 </span><span class="lineCov">         22 :     if (address)</span></a>
 <a name="33"><span class="lineNum">      33 </span><span class="lineCov">         44 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="34"><span class="lineNum">      34 </span>            :             MIDIMessageType::NOTE_OFF,</a>
-<a name="35"><span class="lineNum">      35 </span>            :             address.getChannel(),</a>
+<a name="35"><span class="lineNum">      35 </span><span class="lineCov">         22 :             address.getChannel(),</span></a>
 <a name="36"><span class="lineNum">      36 </span><span class="lineCov">         22 :             address.getAddress(),</span></a>
 <a name="37"><span class="lineNum">      37 </span><span class="lineCov">         22 :             uint8_t(velocity &amp; 0x7F),</span></a>
 <a name="38"><span class="lineNum">      38 </span>            :             address.getCableNumber(),</a>
@@ -114,7 +114,7 @@
 <a name="44"><span class="lineNum">      44 </span><span class="lineCov">          2 :     if (address)</span></a>
 <a name="45"><span class="lineNum">      45 </span><span class="lineCov">          4 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="46"><span class="lineNum">      46 </span>            :             MIDIMessageType::KEY_PRESSURE,</a>
-<a name="47"><span class="lineNum">      47 </span>            :             address.getChannel(),</a>
+<a name="47"><span class="lineNum">      47 </span><span class="lineCov">          2 :             address.getChannel(),</span></a>
 <a name="48"><span class="lineNum">      48 </span><span class="lineCov">          2 :             address.getAddress(),</span></a>
 <a name="49"><span class="lineNum">      49 </span><span class="lineCov">          2 :             uint8_t(pressure &amp; 0x7F),</span></a>
 <a name="50"><span class="lineNum">      50 </span>            :             address.getCableNumber(),</a>
@@ -126,7 +126,7 @@
 <a name="56"><span class="lineNum">      56 </span><span class="lineCov">         81 :     if (address)</span></a>
 <a name="57"><span class="lineNum">      57 </span><span class="lineCov">        162 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="58"><span class="lineNum">      58 </span>            :             MIDIMessageType::CONTROL_CHANGE,</a>
-<a name="59"><span class="lineNum">      59 </span>            :             address.getChannel(),</a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">         81 :             address.getChannel(),</span></a>
 <a name="60"><span class="lineNum">      60 </span><span class="lineCov">         81 :             address.getAddress(),</span></a>
 <a name="61"><span class="lineNum">      61 </span><span class="lineCov">         81 :             uint8_t(value &amp; 0x7F),</span></a>
 <a name="62"><span class="lineNum">      62 </span>            :             address.getCableNumber(),</a>
@@ -138,7 +138,7 @@
 <a name="68"><span class="lineNum">      68 </span><span class="lineCov">          6 :     if (address)</span></a>
 <a name="69"><span class="lineNum">      69 </span><span class="lineCov">         12 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="70"><span class="lineNum">      70 </span>            :             MIDIMessageType::PROGRAM_CHANGE,</a>
-<a name="71"><span class="lineNum">      71 </span>            :             address.getChannel(),</a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">          6 :             address.getChannel(),</span></a>
 <a name="72"><span class="lineNum">      72 </span><span class="lineCov">          6 :             uint8_t(value &amp; 0x7F),</span></a>
 <a name="73"><span class="lineNum">      73 </span>            :             uint8_t(0x00),</a>
 <a name="74"><span class="lineNum">      74 </span>            :             address.getCableNumber(),</a>
@@ -149,7 +149,7 @@
 <a name="79"><span class="lineNum">      79 </span><span class="lineCov">          2 :     if (address)</span></a>
 <a name="80"><span class="lineNum">      80 </span><span class="lineCov">          4 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="81"><span class="lineNum">      81 </span>            :             MIDIMessageType::PROGRAM_CHANGE,</a>
-<a name="82"><span class="lineNum">      82 </span>            :             address.getChannel(),</a>
+<a name="82"><span class="lineNum">      82 </span><span class="lineCov">          2 :             address.getChannel(),</span></a>
 <a name="83"><span class="lineNum">      83 </span><span class="lineCov">          2 :             address.getAddress(),</span></a>
 <a name="84"><span class="lineNum">      84 </span>            :             uint8_t(0x00),</a>
 <a name="85"><span class="lineNum">      85 </span>            :             address.getCableNumber(),</a>
@@ -161,7 +161,7 @@
 <a name="91"><span class="lineNum">      91 </span><span class="lineCov">          2 :     if (address)</span></a>
 <a name="92"><span class="lineNum">      92 </span><span class="lineCov">          4 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="93"><span class="lineNum">      93 </span>            :             MIDIMessageType::CHANNEL_PRESSURE,</a>
-<a name="94"><span class="lineNum">      94 </span>            :             address.getChannel(),</a>
+<a name="94"><span class="lineNum">      94 </span><span class="lineCov">          2 :             address.getChannel(),</span></a>
 <a name="95"><span class="lineNum">      95 </span><span class="lineCov">          2 :             uint8_t(pressure &amp; 0x7F),</span></a>
 <a name="96"><span class="lineNum">      96 </span>            :             uint8_t(0x00),</a>
 <a name="97"><span class="lineNum">      97 </span>            :             address.getCableNumber(),</a>
@@ -173,7 +173,7 @@
 <a name="103"><span class="lineNum">     103 </span><span class="lineCov">         11 :     if (address)</span></a>
 <a name="104"><span class="lineNum">     104 </span><span class="lineCov">         22 :         CRTP(Derived).sendChannelMessageImpl({</span></a>
 <a name="105"><span class="lineNum">     105 </span>            :             MIDIMessageType::PITCH_BEND,</a>
-<a name="106"><span class="lineNum">     106 </span>            :             address.getChannel(),</a>
+<a name="106"><span class="lineNum">     106 </span><span class="lineCov">         11 :             address.getChannel(),</span></a>
 <a name="107"><span class="lineNum">     107 </span><span class="lineCov">         11 :             uint8_t((value &gt;&gt; 0) &amp; 0x7F),</span></a>
 <a name="108"><span class="lineNum">     108 </span><span class="lineCov">         11 :             uint8_t((value &gt;&gt; 7) &amp; 0x7F),</span></a>
 <a name="109"><span class="lineNum">     109 </span>            :             address.getCableNumber(),</a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0 - src/Def/Cable.hpp</title>
+  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/Def/Cable.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3b8d61a32e29a0e92a2055d94a4ff328ae66b4a0</td>
+            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">8</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2022-10-23 11:29:54</td>
+            <td class="headerValue">2023-09-03 17:01:56</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">5</td>
@@ -88,15 +88,15 @@
 <a name="18"><span class="lineNum">      18 </span>            :      * @param   zeroBasedCable</a>
 <a name="19"><span class="lineNum">      19 </span>            :      *          The zero-based cable (0 is the first cable).</a>
 <a name="20"><span class="lineNum">      20 </span>            :      */</a>
-<a name="21"><span class="lineNum">      21 </span><span class="lineCov">       2543 :     explicit constexpr Cable(uint8_t zeroBasedCable)</span></a>
-<a name="22"><span class="lineNum">      22 </span><span class="lineCov">       2543 :         : zeroBasedCable(zeroBasedCable) {}</span></a>
+<a name="21"><span class="lineNum">      21 </span><span class="lineCov">       2534 :     explicit constexpr Cable(uint8_t zeroBasedCable)</span></a>
+<a name="22"><span class="lineNum">      22 </span><span class="lineCov">       2534 :         : zeroBasedCable(zeroBasedCable) {}</span></a>
 <a name="23"><span class="lineNum">      23 </span>            : </a>
 <a name="24"><span class="lineNum">      24 </span>            :     /**</a>
 <a name="25"><span class="lineNum">      25 </span>            :      * @brief   Get the cable as an integer.</a>
 <a name="26"><span class="lineNum">      26 </span>            :      * </a>
 <a name="27"><span class="lineNum">      27 </span>            :      * @return  The zero-based cable (0 is the first cable).</a>
 <a name="28"><span class="lineNum">      28 </span>            :      */</a>
-<a name="29"><span class="lineNum">      29 </span><span class="lineCov">       3087 :     constexpr uint8_t getRaw() const { return zeroBasedCable; }</span></a>
+<a name="29"><span class="lineNum">      29 </span><span class="lineCov">       3078 :     constexpr uint8_t getRaw() const { return zeroBasedCable; }</span></a>
 <a name="30"><span class="lineNum">      30 </span>            : </a>
 <a name="31"><span class="lineNum">      31 </span>            :     /**</a>
 <a name="32"><span class="lineNum">      32 </span>            :      * @brief   Get the cable as an integer.</a>
@@ -185,26 +185,51 @@
 <a name="115"><span class="lineNum">     115 </span>            :     uint8_t zeroBasedCable : 4;</a>
 <a name="116"><span class="lineNum">     116 </span>            : };</a>
 <a name="117"><span class="lineNum">     117 </span>            : </a>
-<a name="118"><span class="lineNum">     118 </span>            : constexpr Cable CABLE_1 = Cable::createCable(1);</a>
-<a name="119"><span class="lineNum">     119 </span>            : constexpr Cable CABLE_2 = Cable::createCable(2);</a>
-<a name="120"><span class="lineNum">     120 </span>            : constexpr Cable CABLE_3 = Cable::createCable(3);</a>
-<a name="121"><span class="lineNum">     121 </span>            : constexpr Cable CABLE_4 = Cable::createCable(4);</a>
-<a name="122"><span class="lineNum">     122 </span>            : constexpr Cable CABLE_5 = Cable::createCable(5);</a>
-<a name="123"><span class="lineNum">     123 </span>            : constexpr Cable CABLE_6 = Cable::createCable(6);</a>
-<a name="124"><span class="lineNum">     124 </span>            : constexpr Cable CABLE_7 = Cable::createCable(7);</a>
-<a name="125"><span class="lineNum">     125 </span>            : constexpr Cable CABLE_8 = Cable::createCable(8);</a>
-<a name="126"><span class="lineNum">     126 </span>            : constexpr Cable CABLE_9 = Cable::createCable(9);</a>
-<a name="127"><span class="lineNum">     127 </span>            : constexpr Cable CABLE_10 = Cable::createCable(10);</a>
-<a name="128"><span class="lineNum">     128 </span>            : constexpr Cable CABLE_11 = Cable::createCable(11);</a>
-<a name="129"><span class="lineNum">     129 </span>            : constexpr Cable CABLE_12 = Cable::createCable(12);</a>
-<a name="130"><span class="lineNum">     130 </span>            : constexpr Cable CABLE_13 = Cable::createCable(13);</a>
-<a name="131"><span class="lineNum">     131 </span>            : constexpr Cable CABLE_14 = Cable::createCable(14);</a>
-<a name="132"><span class="lineNum">     132 </span>            : constexpr Cable CABLE_15 = Cable::createCable(15);</a>
-<a name="133"><span class="lineNum">     133 </span>            : constexpr Cable CABLE_16 = Cable::createCable(16);</a>
+<a name="118"><span class="lineNum">     118 </span>            : constexpr Cable Cable_1 = Cable::createCable(1);</a>
+<a name="119"><span class="lineNum">     119 </span>            : constexpr Cable Cable_2 = Cable::createCable(2);</a>
+<a name="120"><span class="lineNum">     120 </span>            : constexpr Cable Cable_3 = Cable::createCable(3);</a>
+<a name="121"><span class="lineNum">     121 </span>            : constexpr Cable Cable_4 = Cable::createCable(4);</a>
+<a name="122"><span class="lineNum">     122 </span>            : constexpr Cable Cable_5 = Cable::createCable(5);</a>
+<a name="123"><span class="lineNum">     123 </span>            : constexpr Cable Cable_6 = Cable::createCable(6);</a>
+<a name="124"><span class="lineNum">     124 </span>            : constexpr Cable Cable_7 = Cable::createCable(7);</a>
+<a name="125"><span class="lineNum">     125 </span>            : constexpr Cable Cable_8 = Cable::createCable(8);</a>
+<a name="126"><span class="lineNum">     126 </span>            : constexpr Cable Cable_9 = Cable::createCable(9);</a>
+<a name="127"><span class="lineNum">     127 </span>            : constexpr Cable Cable_10 = Cable::createCable(10);</a>
+<a name="128"><span class="lineNum">     128 </span>            : constexpr Cable Cable_11 = Cable::createCable(11);</a>
+<a name="129"><span class="lineNum">     129 </span>            : constexpr Cable Cable_12 = Cable::createCable(12);</a>
+<a name="130"><span class="lineNum">     130 </span>            : constexpr Cable Cable_13 = Cable::createCable(13);</a>
+<a name="131"><span class="lineNum">     131 </span>            : constexpr Cable Cable_14 = Cable::createCable(14);</a>
+<a name="132"><span class="lineNum">     132 </span>            : constexpr Cable Cable_15 = Cable::createCable(15);</a>
+<a name="133"><span class="lineNum">     133 </span>            : constexpr Cable Cable_16 = Cable::createCable(16);</a>
 <a name="134"><span class="lineNum">     134 </span>            : </a>
-<a name="135"><span class="lineNum">     135 </span>            : Print &amp;operator&lt;&lt;(Print &amp;, Cable);</a>
-<a name="136"><span class="lineNum">     136 </span>            : </a>
-<a name="137"><span class="lineNum">     137 </span>            : END_CS_NAMESPACE</a>
+<a name="135"><span class="lineNum">     135 </span>            : #if __cplusplus &gt;= 201402L</a>
+<a name="136"><span class="lineNum">     136 </span>            : #define CS_DEPREC(msg) [[deprecated(msg)]]</a>
+<a name="137"><span class="lineNum">     137 </span>            : #else</a>
+<a name="138"><span class="lineNum">     138 </span>            : #define CS_DEPREC(...)</a>
+<a name="139"><span class="lineNum">     139 </span>            : #endif</a>
+<a name="140"><span class="lineNum">     140 </span>            : </a>
+<a name="141"><span class="lineNum">     141 </span>            : constexpr Cable CABLE_1 CS_DEPREC(&quot;Use Cable_1 instead&quot;) = Cable_1;</a>
+<a name="142"><span class="lineNum">     142 </span>            : constexpr Cable CABLE_2 CS_DEPREC(&quot;Use Cable_2 instead&quot;) = Cable_2;</a>
+<a name="143"><span class="lineNum">     143 </span>            : constexpr Cable CABLE_3 CS_DEPREC(&quot;Use Cable_3 instead&quot;) = Cable_3;</a>
+<a name="144"><span class="lineNum">     144 </span>            : constexpr Cable CABLE_4 CS_DEPREC(&quot;Use Cable_4 instead&quot;) = Cable_4;</a>
+<a name="145"><span class="lineNum">     145 </span>            : constexpr Cable CABLE_5 CS_DEPREC(&quot;Use Cable_5 instead&quot;) = Cable_5;</a>
+<a name="146"><span class="lineNum">     146 </span>            : constexpr Cable CABLE_6 CS_DEPREC(&quot;Use Cable_6 instead&quot;) = Cable_6;</a>
+<a name="147"><span class="lineNum">     147 </span>            : constexpr Cable CABLE_7 CS_DEPREC(&quot;Use Cable_7 instead&quot;) = Cable_7;</a>
+<a name="148"><span class="lineNum">     148 </span>            : constexpr Cable CABLE_8 CS_DEPREC(&quot;Use Cable_8 instead&quot;) = Cable_8;</a>
+<a name="149"><span class="lineNum">     149 </span>            : constexpr Cable CABLE_9 CS_DEPREC(&quot;Use Cable_9 instead&quot;) = Cable_9;</a>
+<a name="150"><span class="lineNum">     150 </span>            : constexpr Cable CABLE_10 CS_DEPREC(&quot;Use Cable_10 instead&quot;) = Cable_10;</a>
+<a name="151"><span class="lineNum">     151 </span>            : constexpr Cable CABLE_11 CS_DEPREC(&quot;Use Cable_11 instead&quot;) = Cable_11;</a>
+<a name="152"><span class="lineNum">     152 </span>            : constexpr Cable CABLE_12 CS_DEPREC(&quot;Use Cable_12 instead&quot;) = Cable_12;</a>
+<a name="153"><span class="lineNum">     153 </span>            : constexpr Cable CABLE_13 CS_DEPREC(&quot;Use Cable_13 instead&quot;) = Cable_13;</a>
+<a name="154"><span class="lineNum">     154 </span>            : constexpr Cable CABLE_14 CS_DEPREC(&quot;Use Cable_14 instead&quot;) = Cable_14;</a>
+<a name="155"><span class="lineNum">     155 </span>            : constexpr Cable CABLE_15 CS_DEPREC(&quot;Use Cable_15 instead&quot;) = Cable_15;</a>
+<a name="156"><span class="lineNum">     156 </span>            : constexpr Cable CABLE_16 CS_DEPREC(&quot;Use Cable_16 instead&quot;) = Cable_16;</a>
+<a name="157"><span class="lineNum">     157 </span>            : </a>
+<a name="158"><span class="lineNum">     158 </span>            : #undef CS_DEPREC</a>
+<a name="159"><span class="lineNum">     159 </span>            : </a>
+<a name="160"><span class="lineNum">     160 </span>            : Print &amp;operator&lt;&lt;(Print &amp;, Cable);</a>
+<a name="161"><span class="lineNum">     161 </span>            : </a>
+<a name="162"><span class="lineNum">     162 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

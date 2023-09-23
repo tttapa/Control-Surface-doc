@@ -102,7 +102,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/db9/classCCAbsoluteEncoder__inherit__graph.svg" width="247" height="1206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/db9/classCCAbsoluteEncoder__inherit__graph.svg" width="247" height="1220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -110,7 +110,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/deb/classCCAbsoluteEncoder__coll__graph.svg" width="1046" height="1362"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/deb/classCCAbsoluteEncoder__coll__graph.svg" width="1047" height="1376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -184,6 +184,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a047faf611c45404fcc29b998f3d3f47a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html#a047faf611c45404fcc29b998f3d3f47a">setAddress</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> <a class="el" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html#a04261fc6c380a671d9910fbdedcd77ea">address</a>)</td></tr>
 <tr class="memdesc:a047faf611c45404fcc29b998f3d3f47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the MIDI address.  <a href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html#a047faf611c45404fcc29b998f3d3f47a">More...</a><br /></td></tr>
 <tr class="separator:a047faf611c45404fcc29b998f3d3f47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0384fdd49fc38c7dfe58c7fef7c464df"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html#a0384fdd49fc38c7dfe58c7fef7c464df">resetPositionOffset</a> ()</td></tr>
+<tr class="separator:a0384fdd49fc38c7dfe58c7fef7c464df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -277,7 +279,7 @@ Static Private Attributes</h2></td></tr>
     <tr><td class="paramname">encoder</td><td>The Encoder object to use. <br  />
  Usually passed as a list of the two pins connected to the A and B outputs of the encoder, e.g. <code>{2, 3}</code>. <br  />
  The internal pull-up resistors will be enabled by the Encoder library. </td></tr>
-    <tr><td class="paramname">address</td><td>The MIDI address containing the controller number [0, 119], channel [CHANNEL_1, CHANNEL_16], and optional cable number [CABLE_1, CABLE_16]. </td></tr>
+    <tr><td class="paramname">address</td><td>The MIDI address containing the controller number [0, 119], channel [Channel_1, Channel_16], and optional cable number [Cable_1, Cable_16]. </td></tr>
     <tr><td class="paramname">multiplier</td><td>A constant factor to increase the speed of the rotary encoder. The position will just be multiplied by this factor. </td></tr>
     <tr><td class="paramname">pulsesPerStep</td><td>The number of pulses per physical click of the encoder. For a normal encoder, this is 4. If you want to increase the resolution, for the use of Jog wheels, for example, you can go as 1. <br  />
  Whereas a greater speedMultiplier factor will increase the speed, increasing the number of pulsesPerStep will result in a lower speed. </td></tr>
@@ -580,6 +582,33 @@ Static Private Attributes</h2></td></tr>
 <p>Set the MIDI address. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00073">73</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0384fdd49fc38c7dfe58c7fef7c464df" name="a0384fdd49fc38c7dfe58c7fef7c464df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0384fdd49fc38c7dfe58c7fef7c464df">&#9670;&nbsp;</a></span>resetPositionOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t resetPositionOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -961,7 +990,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00076">76</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1014,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00082">82</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1038,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1062,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1086,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00086">86</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1110,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../d0/d8b/Abstract_2MIDIAbsoluteEncoder_8hpp_source.html">Abstract/MIDIAbsoluteEncoder.hpp</a>.</p>
 
 </div>
 </div>

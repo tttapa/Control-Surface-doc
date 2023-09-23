@@ -79,12 +79,12 @@ $(function() {
   <div class="headertitle"><div class="title">4.VULEDs.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md225"></a>
+<h1><a class="anchor" id="autotoc_md75"></a>
 4.VULEDs</h1>
 <p >This example demonstrates the use of the VULEDs class that displays the VU or level meters from your DAW as an LED bar graph.</p>
 <p >Shift registers are used to drive the LEDs.</p>
-<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, Pi Pico, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md226"></a>
+<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
+<h2><a class="anchor" id="autotoc_md76"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -95,11 +95,11 @@ Connections</h2>
 <p >Connect an LED (and series resistor) between each of the first 12 outputs of the shift registers and ground.</p>
 <p >Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md227"></a>
+<h2><a class="anchor" id="autotoc_md77"></a>
 Behavior</h2>
 <p >The LEDs display the level of the first track in your DAW. <br  />
  When the push button is pressed, the VU meter switches from bar mode to dot mode and back.</p>
-<h2><a class="anchor" id="autotoc_md228"></a>
+<h2><a class="anchor" id="autotoc_md78"></a>
 Mapping</h2>
 <p >Map the Arduino as a Mackie Control Universal in your DAW.</p>
 <p >Written by PieterP, 2019-12-09 <br  />
@@ -148,11 +148,11 @@ Mapping</h2>
 <div class="line">    vu.toggleMode(); <span class="comment">// toggle between dot and bar mode</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
-<div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00286">Control_Surface_Class.cpp:286</a></div></div>
+<div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00338">Control_Surface_Class.cpp:338</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
-<div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00065">Control_Surface_Class.cpp:65</a></div></div>
+<div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00071">Control_Surface_Class.cpp:71</a></div></div>
 <div class="ttc" id="aclassMCU_1_1VULEDs_html"><div class="ttname"><a href="../../df/d36/classMCU_1_1VULEDs.html">MCU::VULEDs</a></div><div class="ttdoc">A MIDI input element that represents a Mackie Control Universal VU meter and displays its value using...</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3d/VULEDs_8hpp_source.html#l00043">VULEDs.hpp:43</a></div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00146">USBMIDI_Interface.hpp:147</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00148">USBMIDI_Interface.hpp:149</a></div></div>
 <div class="ttc" id="anamespaceMCU_1_1VUDecay_html_ab8e20bc4798982b19f31c569b8dbb7db"><div class="ttname"><a href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ab8e20bc4798982b19f31c569b8dbb7db">MCU::VUDecay::Default</a></div><div class="ttdeci">constexpr unsigned int Default</div><div class="ttdoc">Decay one segment/block every 150 ms if no new values are received.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dda/VU_8hpp_source.html#l00179">VU.hpp:179</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

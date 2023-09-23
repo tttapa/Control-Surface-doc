@@ -79,20 +79,20 @@ $(function() {
   <div class="headertitle"><div class="title">MIDI-Output.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md30"></a>
 MIDI-Output</h1>
 <p >This is an example on how to send MIDI messages.</p>
-<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
+<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
 <p>For a full list of available MIDI send functions, see <a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a>.</p>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md31"></a>
 Connections</h2>
 <p >None.</p>
-<h2><a class="anchor" id="autotoc_md21"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 Behavior</h2>
 <ul>
 <li>Sends a pair of MIDI note on/off messages every second.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md33"></a>
 Mapping</h2>
 <p >None.</p>
 <p >Written by PieterP, 2020-06-11 <br  />
@@ -108,7 +108,7 @@ Mapping</h2>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// MIDI note number, channel, and velocity to use</span></div>
-<div class="line"><span class="keyword">const</span> <a id="_a2" name="_a2"></a><a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address {<a id="a3" name="a3"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a id="a4" name="a4"></a><a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>};</div>
+<div class="line"><span class="keyword">const</span> <a id="_a2" name="_a2"></a><a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address {<a id="a3" name="a3"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a id="a4" name="a4"></a><a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>};</div>
 <div class="line"><span class="keyword">const</span> uint8_t velocity = 0x7F;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
@@ -119,14 +119,14 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line">  midi.<a id="a7" name="a7"></a><a class="code hl_function" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a>(); <span class="comment">// Handle or discard MIDI input</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aChannel_8hpp_html_a166aafd26c8b912f9e8bc7acb8b1cd17"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a></div><div class="ttdeci">constexpr Channel CHANNEL_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
+<div class="ttc" id="aChannel_8hpp_html_a40d189f24e13a7304f2c9094038588ae"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a></div><div class="ttdeci">constexpr Channel Channel_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aclassGenericUSBMIDI__Interface_html_a44137bb65de2396875934e48a6ee5099"><div class="ttname"><a href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericUSBMIDI_Interface::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Read the MIDI interface and call the callback if a message was received.</div></div>
 <div class="ttc" id="aclassGenericUSBMIDI__Interface_html_a7c3e14d99bd3dc0e3670d6956dafcaf2"><div class="ttname"><a href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericUSBMIDI_Interface::begin</a></div><div class="ttdeci">void begin() override</div><div class="ttdoc">Initialize the MIDI Interface.</div></div>
-<div class="ttc" id="aclassMIDIAddress_html"><div class="ttname"><a href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></div><div class="ttdoc">A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd6/MIDIAddress_8hpp_source.html#l00141">MIDIAddress.hpp:141</a></div></div>
+<div class="ttc" id="aclassMIDIAddress_html"><div class="ttname"><a href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></div><div class="ttdoc">A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd6/MIDIAddress_8hpp_source.html#l00145">MIDIAddress.hpp:145</a></div></div>
 <div class="ttc" id="aclassMIDI__Sender_html_ad487d041b8e9d10d58aba470a15e1fc6"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">MIDI_Sender::sendNoteOn</a></div><div class="ttdeci">void sendNoteOn(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note On event.</div></div>
 <div class="ttc" id="aclassMIDI__Sender_html_ae5438982b69a41d7b4565328f5fd73c8"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">MIDI_Sender::sendNoteOff</a></div><div class="ttdeci">void sendNoteOff(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note Off event.</div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00146">USBMIDI_Interface.hpp:147</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00148">USBMIDI_Interface.hpp:149</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

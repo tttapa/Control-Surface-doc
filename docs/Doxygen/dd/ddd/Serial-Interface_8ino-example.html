@@ -79,22 +79,22 @@ $(function() {
   <div class="headertitle"><div class="title">Serial-Interface.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md0"></a>
 Serial-Interface</h1>
 <p >This example demonstrates how to use a Serial MIDI Interface, for use with 5-pin DIN connectors, for example.</p>
-<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
+<h2><a class="anchor" id="autotoc_md1"></a>
 Connections</h2>
 <ul>
 <li>5: momentary push button (to ground)</li>
 </ul>
 <p >The internal pull-up resistor for the button will be enabled automatically.</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md2"></a>
 Behavior</h2>
 <ul>
 <li>This is just a simple MIDI controller with a single note button and an LED.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 Mapping</h2>
 <p >None.</p>
 <p >Written by PieterP, 2020-01-09 <br  />
@@ -120,13 +120,13 @@ Mapping</h2>
 <div class="line"><span class="comment">// Instantiate a NoteButton object</span></div>
 <div class="line"><a id="_a2" name="_a2"></a><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {</div>
 <div class="line">  5,                           <span class="comment">// Push button on pin 5</span></div>
-<div class="line">  {<a id="a3" name="a3"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a id="a4" name="a4"></a><a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
+<div class="line">  {<a id="a3" name="a3"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a id="a4" name="a4"></a><a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate the LED that will light up when middle C is playing</span></div>
 <div class="line"><a id="_a5" name="_a5"></a><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {</div>
 <div class="line">  LED_BUILTIN,                 <span class="comment">// Pin of built-in LED</span></div>
-<div class="line">  {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
+<div class="line">  {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
@@ -136,15 +136,15 @@ Mapping</h2>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a8" name="a8"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); <span class="comment">// Update the Control Surface</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aChannel_8hpp_html_a166aafd26c8b912f9e8bc7acb8b1cd17"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a166aafd26c8b912f9e8bc7acb8b1cd17">CHANNEL_1</a></div><div class="ttdeci">constexpr Channel CHANNEL_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
+<div class="ttc" id="aChannel_8hpp_html_a40d189f24e13a7304f2c9094038588ae"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a></div><div class="ttdeci">constexpr Channel Channel_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
-<div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00286">Control_Surface_Class.cpp:286</a></div></div>
+<div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00338">Control_Surface_Class.cpp:338</a></div></div>
 <div class="ttc" id="aMIDI__Interface_8hpp_html_a96266024e624236301a52383246fa42f"><div class="ttname"><a href="../../d6/d04/MIDI__Interface_8hpp.html#a96266024e624236301a52383246fa42f">MIDI_BAUD</a></div><div class="ttdeci">constexpr auto MIDI_BAUD</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d04/MIDI__Interface_8hpp_source.html#l00013">MIDI_Interface.hpp:13</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
-<div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00065">Control_Surface_Class.cpp:65</a></div></div>
+<div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00071">Control_Surface_Class.cpp:71</a></div></div>
 <div class="ttc" id="aclassNoteButton_html"><div class="ttname"><a href="../../d1/d9f/classNoteButton.html">NoteButton</a></div><div class="ttdoc">A class of MIDIOutputElements that read the input of a momentary push button or switch,...</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d80/NoteButton_8hpp_source.html#l00019">NoteButton.hpp:19</a></div></div>
 <div class="ttc" id="aclassNoteCCKPLED_html"><div class="ttname"><a href="../../d9/d55/classNoteCCKPLED.html">NoteCCKPLED</a></div><div class="ttdoc">Generic base class for classes that listen for MIDI Note, Control Change and Key Pressure events on a...</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df7/NoteCCKPLED_8hpp_source.html#l00020">NoteCCKPLED.hpp:20</a></div></div>
-<div class="ttc" id="aclassSerialMIDI__Interface_html"><div class="ttname"><a href="../../d9/db8/classSerialMIDI__Interface.html">SerialMIDI_Interface</a></div><div class="ttdoc">A wrapper class for MIDI interfaces sending and receiving MIDI messages over a Serial port of generic...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d23/SerialMIDI__Interface_8hpp_source.html#l00070">SerialMIDI_Interface.hpp:70</a></div></div>
+<div class="ttc" id="aclassSerialMIDI__Interface_html"><div class="ttname"><a href="../../d9/db8/classSerialMIDI__Interface.html">SerialMIDI_Interface</a></div><div class="ttdoc">A wrapper class for MIDI interfaces sending and receiving MIDI messages over a Serial port of generic...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d23/SerialMIDI__Interface_8hpp_source.html#l00072">SerialMIDI_Interface.hpp:72</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

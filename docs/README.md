@@ -16,6 +16,8 @@ Documentation for [**tttapa/Control-Surface**](https://github.com/tttapa/Control
 
 ### Other Branches
 
+- **disable-pipes**  
+  [Doxygen](disable-pipes/Doxygen/index.html) ─ [Coverage](disable-pipes/Coverage/index.html)
 - **pin-t-adl**  
   [Doxygen](pin-t-adl/Doxygen/index.html) ─ [Coverage](pin-t-adl/Coverage/index.html)
 - **stm32**  
