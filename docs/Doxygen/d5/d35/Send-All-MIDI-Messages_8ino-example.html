@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">Send-All-MIDI-Messages.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md88"></a>
 Send-All-MIDI-Messages</h1>
 <p >Example showing how to send any MIDI message.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
@@ -91,20 +91,20 @@ Send-All-MIDI-Messages</h1>
 <div class="line">Program Change   Channel: 9 Data 1: 0x06</div>
 <div class="line">Channel Pressure Channel: 3 Data 1: 0x40</div>
 <div class="line">Pitch Bend       Channel: 3 Data 1: 0x7f  Data 2: 0x7f (16383)</div>
-<div class="line">System Common    MTC_QUARTER_FRAME  Data 1: 0x2f</div>
-<div class="line">System Common    SONG_POSITION_POINTER  Data 1: 0x10  Data 2: 0x4e (10000)</div>
-<div class="line">System Common    SONG_SELECT  Data 1: 0x46</div>
-<div class="line">System Common    TUNE_REQUEST</div>
+<div class="line">System Common    MTCQuarterFrame    Data 1: 0x2f</div>
+<div class="line">System Common    SongPositionPointer    Data 1: 0x10  Data 2: 0x4e (10000)</div>
+<div class="line">System Common    SongSelect Data 1: 0x46</div>
+<div class="line">System Common    TuneRequest</div>
 <div class="line">System Exclusive [10] F0 00 01 02 03 04 05 06 07 F7</div>
 <div class="line">System Exclusive [6+] F0 10 11 12 13 14</div>
 <div class="line">System Exclusive [6+] 15 16 17 18 19 1A</div>
 <div class="line">System Exclusive [6]  1B 1C 1D 1E 1F F7</div>
-<div class="line">Real-Time        TIMING_CLOCK</div>
-<div class="line">Real-Time        START</div>
-<div class="line">Real-Time        CONTINUE</div>
-<div class="line">Real-Time        STOP</div>
-<div class="line">Real-Time        ACTIVE_SENSING</div>
-<div class="line">Real-Time        SYSTEM_RESET</div>
+<div class="line">Real-Time        TimingClock</div>
+<div class="line">Real-Time        Start</div>
+<div class="line">Real-Time        Continue</div>
+<div class="line">Real-Time        Stop</div>
+<div class="line">Real-Time        ActiveSensing</div>
+<div class="line">Real-Time        SystemReset</div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/df7/midi-tutorial.html#midi_md-sending">MIDI Tutorial: Sending MIDI messages</a></dd></dl>
 <p>Written by PieterP, 2021-06-28 <br  />
  <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
@@ -201,8 +201,8 @@ Send-All-MIDI-Messages</h1>
 <div class="ttc" id="aclassStreamDebugMIDI__Interface_html_a44137bb65de2396875934e48a6ee5099"><div class="ttname"><a href="../../d8/d0b/classStreamDebugMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">StreamDebugMIDI_Interface::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Read the MIDI interface and call the callback if a message was received.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html#l00044">DebugMIDI_Interface.cpp:44</a></div></div>
 <div class="ttc" id="aclassUSBDebugMIDI__Interface_html"><div class="ttname"><a href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a></div><div class="ttdoc">A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00314">DebugMIDI_Interface.hpp:315</a></div></div>
 <div class="ttc" id="anamespaceMIDI__CC_html_ac73258d1263f61f65fc27976b6aa9a64"><div class="ttname"><a href="../../d4/dbe/namespaceMIDI__CC.html#ac73258d1263f61f65fc27976b6aa9a64">MIDI_CC::Channel_Volume</a></div><div class="ttdeci">constexpr uint8_t Channel_Volume</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d43/Control__Change_8hpp_source.html#l00023">Control_Change.hpp:23</a></div></div>
-<div class="ttc" id="anamespaceMIDI__Notes_html_a2e24f539c8d167db46ebd2ee6514ecec"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#a2e24f539c8d167db46ebd2ee6514ecec">MIDI_Notes::note</a></div><div class="ttdeci">constexpr int8_t note(Note note, int8_t numOctave)</div><div class="ttdoc">Get the MIDI note in the given octave.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00056">Notes.hpp:56</a></div></div>
-<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
+<div class="ttc" id="anamespaceMIDI__Notes_html_a2e24f539c8d167db46ebd2ee6514ecec"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#a2e24f539c8d167db46ebd2ee6514ecec">MIDI_Notes::note</a></div><div class="ttdeci">constexpr int8_t note(Note note, int8_t numOctave)</div><div class="ttdoc">Get the MIDI note in the given octave.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00070">Notes.hpp:70</a></div></div>
+<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
 <div class="ttc" id="anamespaceMIDI__PC_html_a585088b446e465a70d12c8db85e9ded4"><div class="ttname"><a href="../../da/da6/namespaceMIDI__PC.html#a585088b446e465a70d12c8db85e9ded4">MIDI_PC::Harpsichord</a></div><div class="ttdeci">constexpr uint8_t Harpsichord</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df3/Program__Change_8hpp_source.html#l00022">Program_Change.hpp:22</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

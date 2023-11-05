@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/Def/Channel.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/Def/Channel.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">20</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
@@ -202,36 +202,28 @@
 <a name="132"><span class="lineNum">     132 </span>            : constexpr Channel Channel_15 = Channel::createChannel(15);</a>
 <a name="133"><span class="lineNum">     133 </span>            : constexpr Channel Channel_16 = Channel::createChannel(16);</a>
 <a name="134"><span class="lineNum">     134 </span>            : </a>
-<a name="135"><span class="lineNum">     135 </span>            : #if __cplusplus &gt;= 201402L</a>
-<a name="136"><span class="lineNum">     136 </span>            : #define CS_DEPREC(msg) [[deprecated(msg)]]</a>
-<a name="137"><span class="lineNum">     137 </span>            : #else</a>
-<a name="138"><span class="lineNum">     138 </span>            : #define CS_DEPREC(...)</a>
-<a name="139"><span class="lineNum">     139 </span>            : #endif</a>
-<a name="140"><span class="lineNum">     140 </span>            : </a>
-<a name="141"><span class="lineNum">     141 </span>            : #ifndef CHANNEL_1 // ArduinoCore-renesas defines this</a>
-<a name="142"><span class="lineNum">     142 </span>            : constexpr Channel CHANNEL_1 CS_DEPREC(&quot;Use Channel_1 instead&quot;) = Channel_1;</a>
-<a name="143"><span class="lineNum">     143 </span>            : constexpr Channel CHANNEL_2 CS_DEPREC(&quot;Use Channel_2 instead&quot;) = Channel_2;</a>
-<a name="144"><span class="lineNum">     144 </span>            : constexpr Channel CHANNEL_3 CS_DEPREC(&quot;Use Channel_3 instead&quot;) = Channel_3;</a>
-<a name="145"><span class="lineNum">     145 </span>            : constexpr Channel CHANNEL_4 CS_DEPREC(&quot;Use Channel_4 instead&quot;) = Channel_4;</a>
-<a name="146"><span class="lineNum">     146 </span>            : constexpr Channel CHANNEL_5 CS_DEPREC(&quot;Use Channel_5 instead&quot;) = Channel_5;</a>
-<a name="147"><span class="lineNum">     147 </span>            : constexpr Channel CHANNEL_6 CS_DEPREC(&quot;Use Channel_6 instead&quot;) = Channel_6;</a>
-<a name="148"><span class="lineNum">     148 </span>            : constexpr Channel CHANNEL_7 CS_DEPREC(&quot;Use Channel_7 instead&quot;) = Channel_7;</a>
-<a name="149"><span class="lineNum">     149 </span>            : constexpr Channel CHANNEL_8 CS_DEPREC(&quot;Use Channel_8 instead&quot;) = Channel_8;</a>
-<a name="150"><span class="lineNum">     150 </span>            : constexpr Channel CHANNEL_9 CS_DEPREC(&quot;Use Channel_9 instead&quot;) = Channel_9;</a>
-<a name="151"><span class="lineNum">     151 </span>            : constexpr Channel CHANNEL_10 CS_DEPREC(&quot;Use Channel_10 instead&quot;) = Channel_10;</a>
-<a name="152"><span class="lineNum">     152 </span>            : constexpr Channel CHANNEL_11 CS_DEPREC(&quot;Use Channel_11 instead&quot;) = Channel_11;</a>
-<a name="153"><span class="lineNum">     153 </span>            : constexpr Channel CHANNEL_12 CS_DEPREC(&quot;Use Channel_12 instead&quot;) = Channel_12;</a>
-<a name="154"><span class="lineNum">     154 </span>            : constexpr Channel CHANNEL_13 CS_DEPREC(&quot;Use Channel_13 instead&quot;) = Channel_13;</a>
-<a name="155"><span class="lineNum">     155 </span>            : constexpr Channel CHANNEL_14 CS_DEPREC(&quot;Use Channel_14 instead&quot;) = Channel_14;</a>
-<a name="156"><span class="lineNum">     156 </span>            : constexpr Channel CHANNEL_15 CS_DEPREC(&quot;Use Channel_15 instead&quot;) = Channel_15;</a>
-<a name="157"><span class="lineNum">     157 </span>            : constexpr Channel CHANNEL_16 CS_DEPREC(&quot;Use Channel_16 instead&quot;) = Channel_16;</a>
-<a name="158"><span class="lineNum">     158 </span>            : #endif</a>
-<a name="159"><span class="lineNum">     159 </span>            : </a>
-<a name="160"><span class="lineNum">     160 </span>            : #undef CS_DEPREC</a>
-<a name="161"><span class="lineNum">     161 </span>            : </a>
-<a name="162"><span class="lineNum">     162 </span>            : Print &amp;operator&lt;&lt;(Print &amp;, Channel);</a>
-<a name="163"><span class="lineNum">     163 </span>            : </a>
-<a name="164"><span class="lineNum">     164 </span>            : END_CS_NAMESPACE</a>
+<a name="135"><span class="lineNum">     135 </span>            : #ifndef CHANNEL_1 // ArduinoCore-renesas defines this</a>
+<a name="136"><span class="lineNum">     136 </span>            : constexpr Channel CHANNEL_1 CS_DEPREC(&quot;Use Channel_1 instead&quot;) = Channel_1;</a>
+<a name="137"><span class="lineNum">     137 </span>            : constexpr Channel CHANNEL_2 CS_DEPREC(&quot;Use Channel_2 instead&quot;) = Channel_2;</a>
+<a name="138"><span class="lineNum">     138 </span>            : constexpr Channel CHANNEL_3 CS_DEPREC(&quot;Use Channel_3 instead&quot;) = Channel_3;</a>
+<a name="139"><span class="lineNum">     139 </span>            : constexpr Channel CHANNEL_4 CS_DEPREC(&quot;Use Channel_4 instead&quot;) = Channel_4;</a>
+<a name="140"><span class="lineNum">     140 </span>            : constexpr Channel CHANNEL_5 CS_DEPREC(&quot;Use Channel_5 instead&quot;) = Channel_5;</a>
+<a name="141"><span class="lineNum">     141 </span>            : constexpr Channel CHANNEL_6 CS_DEPREC(&quot;Use Channel_6 instead&quot;) = Channel_6;</a>
+<a name="142"><span class="lineNum">     142 </span>            : constexpr Channel CHANNEL_7 CS_DEPREC(&quot;Use Channel_7 instead&quot;) = Channel_7;</a>
+<a name="143"><span class="lineNum">     143 </span>            : constexpr Channel CHANNEL_8 CS_DEPREC(&quot;Use Channel_8 instead&quot;) = Channel_8;</a>
+<a name="144"><span class="lineNum">     144 </span>            : constexpr Channel CHANNEL_9 CS_DEPREC(&quot;Use Channel_9 instead&quot;) = Channel_9;</a>
+<a name="145"><span class="lineNum">     145 </span>            : constexpr Channel CHANNEL_10 CS_DEPREC(&quot;Use Channel_10 instead&quot;) = Channel_10;</a>
+<a name="146"><span class="lineNum">     146 </span>            : constexpr Channel CHANNEL_11 CS_DEPREC(&quot;Use Channel_11 instead&quot;) = Channel_11;</a>
+<a name="147"><span class="lineNum">     147 </span>            : constexpr Channel CHANNEL_12 CS_DEPREC(&quot;Use Channel_12 instead&quot;) = Channel_12;</a>
+<a name="148"><span class="lineNum">     148 </span>            : constexpr Channel CHANNEL_13 CS_DEPREC(&quot;Use Channel_13 instead&quot;) = Channel_13;</a>
+<a name="149"><span class="lineNum">     149 </span>            : constexpr Channel CHANNEL_14 CS_DEPREC(&quot;Use Channel_14 instead&quot;) = Channel_14;</a>
+<a name="150"><span class="lineNum">     150 </span>            : constexpr Channel CHANNEL_15 CS_DEPREC(&quot;Use Channel_15 instead&quot;) = Channel_15;</a>
+<a name="151"><span class="lineNum">     151 </span>            : constexpr Channel CHANNEL_16 CS_DEPREC(&quot;Use Channel_16 instead&quot;) = Channel_16;</a>
+<a name="152"><span class="lineNum">     152 </span>            : #endif</a>
+<a name="153"><span class="lineNum">     153 </span>            : </a>
+<a name="154"><span class="lineNum">     154 </span>            : Print &amp;operator&lt;&lt;(Print &amp;, Channel);</a>
+<a name="155"><span class="lineNum">     155 </span>            : </a>
+<a name="156"><span class="lineNum">     156 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

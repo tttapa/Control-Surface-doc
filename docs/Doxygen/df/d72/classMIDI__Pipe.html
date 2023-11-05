@@ -115,6 +115,8 @@ $(function() {
 <div class="line"><a class="code hl_variable" href="../../df/d72/classMIDI__Pipe.html#a2ec4ed41308da2aa5481ab73a5a7a2d4">source</a> 2  &gt;━━━━┷━┥ pipe 2 ┝━┯━━━&gt; &gt;─────────────────╯</div>
 <div class="line">                 └────────┘ ×</div>
 </div><!-- fragment --><p >Each connection between a source and a sink has its own pipe, and no two pipes are connected in series (only through the “through“ inputs/outputs). </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d13/MIDI_Pipes-Filter_8ino-example.html#_a1">MIDI_Pipes-Filter.ino</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00329">329</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -578,6 +580,8 @@ Private Attributes</h2></td></tr>
 
 <p>Function that maps, edits or filters MIDI messages, and then forwards them to the sink of the pipe. </p>
 <p >The <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a> base class just forwards the messages to the sink, but you can override this method to create pipes that filter out some messages, transposes notes, changes the channel, etc. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d13/MIDI_Pipes-Filter_8ino-example.html#a2">MIDI_Pipes-Filter.ino</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00358">358</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
@@ -1485,6 +1489,8 @@ Private Attributes</h2></td></tr>
 
 <p>Send the given MIDI message to the sink of this pipe. </p>
 <p >Useful when overriding <a class="el" href="../../df/d72/classMIDI__Pipe.html#a9f1ac3c620465a1ed18336938e3f17e5">mapForwardMIDI</a>. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d13/MIDI_Pipes-Filter_8ino-example.html#a10">MIDI_Pipes-Filter.ino</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00515">515</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 

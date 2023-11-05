@@ -79,20 +79,20 @@ $(function() {
   <div class="headertitle"><div class="title">Custom-Note-LED-Input-Element-Callback.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md95"></a>
+<h1><a class="anchor" id="autotoc_md151"></a>
 Custom-Note-LED-Input-Element-Callback</h1>
 <p >This example demonstrates how to attach custom actions to incoming Note or Control Change MIDI events.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md96"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 Connections</h2>
 <ul>
 <li>Pin 3 (PWM pin): An LED (with current-limiting resistor) to ground.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md97"></a>
+<h2><a class="anchor" id="autotoc_md153"></a>
 Behavior</h2>
 <p >If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the built-in LED will light up at full brightness, if a Note Off event for that note is sent, the LED will light dimly. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="autotoc_md98"></a>
+<h2><a class="anchor" id="autotoc_md154"></a>
 Mapping</h2>
 <p >Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C on the keyboard.</p>
 <p >Written by PieterP, 2020-03-10 <br  />
@@ -113,7 +113,7 @@ Mapping</h2>
 <div class="line">  <span class="comment">// you want to listen to MIDI Note events by specifying the MIDI message type,</span></div>
 <div class="line">  <span class="comment">// and use a simple 2-byte message matcher, since MIDI Note events have two</span></div>
 <div class="line">  <span class="comment">// data bytes.</span></div>
-<div class="line">  : <span class="keyword">public</span> <a id="_a1" name="_a1"></a><a class="code hl_class" href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a>&lt;MIDIMessageType::NOTE_ON,</div>
+<div class="line">  : <span class="keyword">public</span> <a id="_a1" name="_a1"></a><a class="code hl_class" href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a>&lt;MIDIMessageType::NoteOn,</div>
 <div class="line">                                    TwoByteMIDIMatcher&gt; {</div>
 <div class="line"> <span class="keyword">public</span>:</div>
 <div class="line">  <span class="comment">// Constructor</span></div>
@@ -151,9 +151,9 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate the LED that will light up when middle C is playing.</span></div>
 <div class="line">CustomNoteLED led {</div>
-<div class="line">  3,                           <span class="comment">// Pin with the LED connected (PWM capable)</span></div>
+<div class="line">  3,                             <span class="comment">// Pin with the LED connected (PWM capable)</span></div>
 <div class="line">  {<a id="a15" name="a15"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a id="a16" name="a16"></a><a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>}, <span class="comment">// Note C4 on MIDI channel 1</span></div>
-<div class="line">  10,                          <span class="comment">// Intensity when off</span></div>
+<div class="line">  10,                            <span class="comment">// Intensity when off</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
@@ -181,7 +181,7 @@ Mapping</h2>
 <div class="ttc" id="agroup__AH__ExtIO_html_ga6500d2ccee66ed7f10b09e4ce51c74e9"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">AH::ExtIO::pinMode</a></div><div class="ttdeci">void pinMode(pin_t pin, PinMode_t mode)</div><div class="ttdoc">An ExtIO version of the Arduino function.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3c/ExtendedInputOutput_8cpp_source.html#l00040">ExtendedInputOutput.cpp:40</a></div></div>
 <div class="ttc" id="agroup__AH__ExtIO_html_gaff89e0a727f5b97e0618b8f2f65b3356"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">AH::ExtIO::digitalWrite</a></div><div class="ttdeci">void digitalWrite(pin_t pin, PinStatus_t val)</div><div class="ttdoc">An ExtIO version of the Arduino function.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3c/ExtendedInputOutput_8cpp_source.html#l00054">ExtendedInputOutput.cpp:54</a></div></div>
 <div class="ttc" id="anamespaceAH_html_ae9cbfef0ba7a84ef222eff1fc509f88b"><div class="ttname"><a href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">AH::pin_t</a></div><div class="ttdeci">uint16_t pin_t</div><div class="ttdoc">The type for Arduino pins (and ExtendedIOElement pins).</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d35/Hardware-Types_8hpp_source.html#l00017">Hardware-Types.hpp:17</a></div></div>
-<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
+<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
 <div class="ttc" id="astructTwoByteMIDIMatcher_html_a638e4503e0ae6ce655b7ad2e17e8f0ad"><div class="ttname"><a href="../../d8/d6b/structTwoByteMIDIMatcher.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">TwoByteMIDIMatcher::Result::value</a></div><div class="ttdeci">uint8_t value</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00042">MIDIInputElementMatchers.hpp:42</a></div></div>
 <div class="ttc" id="astructTwoByteMIDIMatcher_html_d5/d5c/structTwoByteMIDIMatcher_1_1Result"><div class="ttname"><a href="../../d8/d6b/structTwoByteMIDIMatcher.html#d5/d5c/structTwoByteMIDIMatcher_1_1Result">TwoByteMIDIMatcher::Result</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00040">MIDIInputElementMatchers.hpp:40</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->

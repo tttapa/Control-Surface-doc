@@ -87,10 +87,10 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_Parsers/MIDI_MessageTypes.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#_a10">MIDI-Input-Callback.ino</a>, <a class="el" href="../../da/d27/MIDI-Input-Fine-Grained-All-Callbacks_8ino-example.html#_a14">MIDI-Input-Fine-Grained-All-Callbacks.ino</a>, <a class="el" href="../../d1/d5d/MIDI-Input_8ino-example.html#_a14">MIDI-Input.ino</a>, <a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#_a14">Mackie-Control-Universal-Reverse-Engineering.ino</a>, and <a class="el" href="../../d2/d93/SysEx-Send-Receive_8ino-example.html#_a4">SysEx-Send-Receive.ino</a>.</dd>
+<div class="textblock"><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#_a10">MIDI-Input-Callback.ino</a>, <a class="el" href="../../da/d27/MIDI-Input-Fine-Grained-All-Callbacks_8ino-example.html#_a14">MIDI-Input-Fine-Grained-All-Callbacks.ino</a>, <a class="el" href="../../d1/d5d/MIDI-Input_8ino-example.html#_a14">MIDI-Input.ino</a>, <a class="el" href="../../d4/d13/MIDI_Pipes-Filter_8ino-example.html#_a11">MIDI_Pipes-Filter.ino</a>, <a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#_a14">Mackie-Control-Universal-Reverse-Engineering.ino</a>, and <a class="el" href="../../d2/d93/SysEx-Send-Receive_8ino-example.html#_a4">SysEx-Send-Receive.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00278">278</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00303">303</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for SysExMessage:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -143,10 +143,10 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a95ac94db7836ac93ca15cb282fdd6c06"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d45/structSysExMessage.html#a95ac94db7836ac93ca15cb282fdd6c06">SYSEX_START</a> = MIDIMessageType::SYSEX_START</td></tr>
-<tr class="separator:a95ac94db7836ac93ca15cb282fdd6c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07efcfbe7666c074e819f1a2a1c11dc6"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d45/structSysExMessage.html#a07efcfbe7666c074e819f1a2a1c11dc6">SYSEX_END</a> = MIDIMessageType::SYSEX_END</td></tr>
-<tr class="separator:a07efcfbe7666c074e819f1a2a1c11dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1f7f9ca131c0ac6f59bf922f6fb163"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d45/structSysExMessage.html#afc1f7f9ca131c0ac6f59bf922f6fb163">SysExStart</a> = MIDIMessageType::SysExStart</td></tr>
+<tr class="separator:afc1f7f9ca131c0ac6f59bf922f6fb163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a2ad2b8dd38ee8fdade4315f6ec76a"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d45/structSysExMessage.html#a77a2ad2b8dd38ee8fdade4315f6ec76a">SysExEnd</a> = MIDIMessageType::SysExEnd</td></tr>
+<tr class="separator:a77a2ad2b8dd38ee8fdade4315f6ec76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a279a3e3c4d73645a8a19cfb1e866ba13" name="a279a3e3c4d73645a8a19cfb1e866ba13"></a>
@@ -174,7 +174,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00280">280</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00305">305</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +220,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00283">283</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00308">308</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00287">287</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00312">312</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -300,7 +300,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00292">292</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00317">317</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00300">300</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00325">325</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00305">305</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00330">330</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Get the MIDI USB cable number of the message. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00308">308</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00333">333</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Set the MIDI USB cable number of the message. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00310">310</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00335">335</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +443,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00312">312</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00337">337</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00316">316</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00341">341</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00321">321</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00346">346</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ Static Public Attributes</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#a13">MIDI-Input-Callback.ino</a>, <a class="el" href="../../da/d27/MIDI-Input-Fine-Grained-All-Callbacks_8ino-example.html#a17">MIDI-Input-Fine-Grained-All-Callbacks.ino</a>, <a class="el" href="../../d1/d5d/MIDI-Input_8ino-example.html#a17">MIDI-Input.ino</a>, <a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#a17">Mackie-Control-Universal-Reverse-Engineering.ino</a>, and <a class="el" href="../../d2/d93/SysEx-Send-Receive_8ino-example.html#a6">SysEx-Send-Receive.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00295">295</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00320">320</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ Static Public Attributes</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#a11">MIDI-Input-Callback.ino</a>, <a class="el" href="../../da/d27/MIDI-Input-Fine-Grained-All-Callbacks_8ino-example.html#a15">MIDI-Input-Fine-Grained-All-Callbacks.ino</a>, <a class="el" href="../../d1/d5d/MIDI-Input_8ino-example.html#a15">MIDI-Input.ino</a>, <a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#a15">Mackie-Control-Universal-Reverse-Engineering.ino</a>, and <a class="el" href="../../d2/d93/SysEx-Send-Receive_8ino-example.html#a7">SysEx-Send-Receive.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00296">296</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00321">321</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
@@ -552,36 +552,12 @@ Static Public Attributes</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/d32/MIDI-Input-Callback_8ino-example.html#a14">MIDI-Input-Callback.ino</a>, <a class="el" href="../../da/d27/MIDI-Input-Fine-Grained-All-Callbacks_8ino-example.html#a18">MIDI-Input-Fine-Grained-All-Callbacks.ino</a>, <a class="el" href="../../d1/d5d/MIDI-Input_8ino-example.html#a18">MIDI-Input.ino</a>, <a class="el" href="../../d3/d85/Mackie-Control-Universal-Reverse-Engineering_8ino-example.html#a18">Mackie-Control-Universal-Reverse-Engineering.ino</a>, and <a class="el" href="../../d2/d93/SysEx-Send-Receive_8ino-example.html#a8">SysEx-Send-Receive.ino</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00298">298</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a95ac94db7836ac93ca15cb282fdd6c06" name="a95ac94db7836ac93ca15cb282fdd6c06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95ac94db7836ac93ca15cb282fdd6c06">&#9670;&nbsp;</a></span>SYSEX_START</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto SYSEX_START = MIDIMessageType::SYSEX_START</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 <p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00323">323</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a07efcfbe7666c074e819f1a2a1c11dc6" name="a07efcfbe7666c074e819f1a2a1c11dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07efcfbe7666c074e819f1a2a1c11dc6">&#9670;&nbsp;</a></span>SYSEX_END</h2>
+<a id="afc1f7f9ca131c0ac6f59bf922f6fb163" name="afc1f7f9ca131c0ac6f59bf922f6fb163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1f7f9ca131c0ac6f59bf922f6fb163">&#9670;&nbsp;</a></span>SysExStart</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -590,7 +566,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto SYSEX_END = MIDIMessageType::SYSEX_END</td>
+          <td class="memname">constexpr auto SysExStart = MIDIMessageType::SysExStart</td>
         </tr>
       </table>
   </td>
@@ -600,7 +576,31 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00324">324</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00348">348</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a77a2ad2b8dd38ee8fdade4315f6ec76a" name="a77a2ad2b8dd38ee8fdade4315f6ec76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a2ad2b8dd38ee8fdade4315f6ec76a">&#9670;&nbsp;</a></span>SysExEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto SysExEnd = MIDIMessageType::SysExEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html#l00349">349</a> of file <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp_source.html">MIDI_MessageTypes.hpp</a>.</p>
 
 </div>
 </div>

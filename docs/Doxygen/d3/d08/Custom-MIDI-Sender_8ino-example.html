@@ -79,24 +79,24 @@ $(function() {
   <div class="headertitle"><div class="title">Custom-MIDI-Sender.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md87"></a>
+<h1><a class="anchor" id="autotoc_md135"></a>
 Custom-MIDI-Sender</h1>
 <p >This is an example that demonstrates how to extend the library using your own MIDI Senders. It implements functionality similar to the built-in <a class="el" href="../../dc/dd4/classDigitalNoteSender.html">DigitalNoteSender</a> class, but with support for different on and off velocities.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/dab/group__MIDI__Senders.html">MIDI Senders</a> for different kinds of MIDI senders to start from.</dd></dl>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md88"></a>
+<h2><a class="anchor" id="autotoc_md136"></a>
 Connections</h2>
 <ul>
 <li>5: momentary push button (to ground)</li>
 </ul>
 <p >The internal pull-up resistor for the button will be enabled automatically.</p>
-<h2><a class="anchor" id="autotoc_md89"></a>
+<h2><a class="anchor" id="autotoc_md137"></a>
 Behavior</h2>
 <ul>
 <li>When the button on pin 5 is pressed, a MIDI Note On message is sent for note C4 with velocity 0x40.</li>
 <li>When the button on pin 5 is released, a MIDI Note Off message is sent for note C4 with velocity 0x10.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md90"></a>
+<h2><a class="anchor" id="autotoc_md138"></a>
 Mapping</h2>
 <p >Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the button to a function.</p>
 <p >Written by PieterP, 2020-04-18 <br  />
@@ -148,10 +148,10 @@ Mapping</h2>
 <div class="line"><span class="comment">// The four arguments match the ones of the CustomNoteButton</span></div>
 <div class="line"><span class="comment">// constructor we wrote a couple of lines back.</span></div>
 <div class="line">CustomNoteButton button {</div>
-<div class="line">  5,              <span class="comment">// button pin</span></div>
+<div class="line">  5,                <span class="comment">// button pin</span></div>
 <div class="line">  <a id="a7" name="a7"></a><a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <span class="comment">// MIDI address</span></div>
-<div class="line">  0x40,           <span class="comment">// on velocity</span></div>
-<div class="line">  0x10,           <span class="comment">// off velocity</span></div>
+<div class="line">  0x40,             <span class="comment">// on velocity</span></div>
+<div class="line">  0x10,             <span class="comment">// off velocity</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
@@ -171,7 +171,7 @@ Mapping</h2>
 <div class="ttc" id="aclassMIDI__Sender_html_ae5438982b69a41d7b4565328f5fd73c8"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">MIDI_Sender::sendNoteOff</a></div><div class="ttdeci">void sendNoteOff(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note Off event.</div></div>
 <div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00148">USBMIDI_Interface.hpp:149</a></div></div>
 <div class="ttc" id="anamespaceAH_html_ae9cbfef0ba7a84ef222eff1fc509f88b"><div class="ttname"><a href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">AH::pin_t</a></div><div class="ttdeci">uint16_t pin_t</div><div class="ttdoc">The type for Arduino pins (and ExtendedIOElement pins).</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d35/Hardware-Types_8hpp_source.html#l00017">Hardware-Types.hpp:17</a></div></div>
-<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00040">Notes.hpp:40</a></div></div>
+<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -84,24 +84,27 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="../../de/dfa/midi-notify_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifdef ESP32</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/de2/midi-private_8h.html">midi-private.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/ded/ble2902_8h.html">ble2902.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/dc7/midi_8h.html#aa600e500c302f6dfa01b183e0ef865c6">midi_notify</a>(<span class="keyword">const</span> uint8_t *data, <span class="keywordtype">size_t</span> length) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/de2/midi-private_8h.html#a69d62e5289c89e89ddc237c98b5de672">midi_get_gatts_if</a>() == ESP_GATT_IF_NONE)</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../db/ded/ble2902_8h.html#a2fcebb03be75a2cef420342da7b7f55f">ble2902_notifications_enabled</a>(<a class="code hl_function" href="../../da/de2/midi-private_8h.html#ad421ca3f24fb6c76ec442bc58c018e52">midi_get_descriptor_handle</a>()))</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;sdkconfig.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#if CONFIG_BT_BLE_ENABLED</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/ded/ble2902_8h.html">ble2902.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/de2/midi-private_8h.html">midi-private.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/dc7/midi_8h.html#aa600e500c302f6dfa01b183e0ef865c6">midi_notify</a>(<span class="keyword">const</span> uint8_t *data, <span class="keywordtype">size_t</span> length) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/de2/midi-private_8h.html#a69d62e5289c89e89ddc237c98b5de672">midi_get_gatts_if</a>() == ESP_GATT_IF_NONE)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> (length &gt; <a class="code hl_function" href="../../dc/dc7/midi_8h.html#add819085e4b766a93931f526289fa7ba">midi_get_mtu</a>() - 3)</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../db/ded/ble2902_8h.html#a2fcebb03be75a2cef420342da7b7f55f">ble2902_notifications_enabled</a>(<a class="code hl_function" href="../../da/de2/midi-private_8h.html#ad421ca3f24fb6c76ec442bc58c018e52">midi_get_descriptor_handle</a>()))</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    esp_err_t ret = esp_ble_gatts_send_indicate(</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_function" href="../../da/de2/midi-private_8h.html#a69d62e5289c89e89ddc237c98b5de672">midi_get_gatts_if</a>(), <a class="code hl_function" href="../../da/de2/midi-private_8h.html#af4c3572d5b20faa8a392ca5fabdc8e41">midi_get_connection_id</a>(),</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_function" href="../../da/de2/midi-private_8h.html#ade45156dbb249e99426b86f5077711cd">midi_get_characteristic_handle</a>(), length, (uint8_t *)data, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> ret == ESP_OK;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">if</span> (length &gt; <a class="code hl_function" href="../../dc/dc7/midi_8h.html#add819085e4b766a93931f526289fa7ba">midi_get_mtu</a>() - 3)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    esp_err_t ret = esp_ble_gatts_send_indicate(</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_function" href="../../da/de2/midi-private_8h.html#a69d62e5289c89e89ddc237c98b5de672">midi_get_gatts_if</a>(), <a class="code hl_function" href="../../da/de2/midi-private_8h.html#af4c3572d5b20faa8a392ca5fabdc8e41">midi_get_connection_id</a>(),</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_function" href="../../da/de2/midi-private_8h.html#ade45156dbb249e99426b86f5077711cd">midi_get_characteristic_handle</a>(), length, (uint8_t *)data, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> ret == ESP_OK;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="able2902_8h_html"><div class="ttname"><a href="../../db/ded/ble2902_8h.html">ble2902.h</a></div><div class="ttdoc">Handling the Client Characteristic Configuration Descriptor (UUID 0x2902) for MIDI over Bluetooth Low...</div></div>
 <div class="ttc" id="able2902_8h_html_a2fcebb03be75a2cef420342da7b7f55f"><div class="ttname"><a href="../../db/ded/ble2902_8h.html#a2fcebb03be75a2cef420342da7b7f55f">ble2902_notifications_enabled</a></div><div class="ttdeci">bool ble2902_notifications_enabled(uint16_t handle)</div><div class="ttdoc">Check if notifications are enabled by the client.</div></div>
 <div class="ttc" id="amidi-private_8h_html"><div class="ttname"><a href="../../da/de2/midi-private_8h.html">midi-private.h</a></div><div class="ttdoc">Declarations of internal functions for the MIDI over BLE system, used in the midi-*....</div></div>

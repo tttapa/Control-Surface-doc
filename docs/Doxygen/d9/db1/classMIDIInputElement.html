@@ -100,7 +100,7 @@ class MIDIInputElement&lt; Type &gt;</div><p >A class for objects that listen fo
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/dce/classMIDIInputElement__inherit__graph.svg" width="5438" height="2263"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/dce/classMIDIInputElement__inherit__graph.svg" width="5360" height="2263"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -146,8 +146,8 @@ class MIDIInputElement&lt; Type &gt;</div><p >A class for objects that listen fo
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac83f3130ebf7d31ec9fe2f69463d6e17"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> = typename std::conditional&lt; Type==<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6fa589806f029d47693026d61f69b201">MIDIMessageType::SYSEX_START</a>, <a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a>, <a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a> &gt;::type</td></tr>
-<tr class="separator:ac83f3130ebf7d31ec9fe2f69463d6e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb3ebaa42dffaa3099d972c9127ea00"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#abfb3ebaa42dffaa3099d972c9127ea00">MessageType</a> = typename std::conditional&lt; Type==<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a4a5f77af205a7255016e0435fee449d2">MIDIMessageType::SysExStart</a>, <a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a>, <a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a> &gt;::type</td></tr>
+<tr class="separator:abfb3ebaa42dffaa3099d972c9127ea00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -162,13 +162,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> ()</td></tr>
 <tr class="memdesc:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the value of the input element. Used for decaying VU meters etc.  <a href="../../d9/db1/classMIDIInputElement.html#acd36d7881ea8503d5c5824e7a5ad6c7e">More...</a><br /></td></tr>
 <tr class="separator:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae967727a5d21c3e07459f2cebdcc214c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ae967727a5d21c3e07459f2cebdcc214c">updateWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg)=0</td></tr>
+<tr class="memitem:ae967727a5d21c3e07459f2cebdcc214c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ae967727a5d21c3e07459f2cebdcc214c">updateWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#abfb3ebaa42dffaa3099d972c9127ea00">MessageType</a> midimsg)=0</td></tr>
 <tr class="memdesc:ae967727a5d21c3e07459f2cebdcc214c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a new MIDI message and update the internal state.  <a href="../../d9/db1/classMIDIInputElement.html#ae967727a5d21c3e07459f2cebdcc214c">More...</a><br /></td></tr>
 <tr class="separator:ae967727a5d21c3e07459f2cebdcc214c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af8e83e6344db343c94b3730d55ff029a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">updateAllWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> midimsg)</td></tr>
+<tr class="memitem:af8e83e6344db343c94b3730d55ff029a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">updateAllWith</a> (<a class="el" href="../../d9/db1/classMIDIInputElement.html#abfb3ebaa42dffaa3099d972c9127ea00">MessageType</a> midimsg)</td></tr>
 <tr class="memdesc:af8e83e6344db343c94b3730d55ff029a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <a href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">More...</a><br /></td></tr>
 <tr class="separator:af8e83e6344db343c94b3730d55ff029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
@@ -199,14 +199,14 @@ Static Protected Attributes</h2></td></tr>
 <tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ac83f3130ebf7d31ec9fe2f69463d6e17" name="ac83f3130ebf7d31ec9fe2f69463d6e17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83f3130ebf7d31ec9fe2f69463d6e17">&#9670;&nbsp;</a></span>MessageType</h2>
+<a id="abfb3ebaa42dffaa3099d972c9127ea00" name="abfb3ebaa42dffaa3099d972c9127ea00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb3ebaa42dffaa3099d972c9127ea00">&#9670;&nbsp;</a></span>MessageType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a> =  typename std::conditional&lt;Type == <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a6fa589806f029d47693026d61f69b201">MIDIMessageType::SYSEX_START</a>, <a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a>, <a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>&gt;::type</td>
+          <td class="memname">using <a class="el" href="../../d9/db1/classMIDIInputElement.html#abfb3ebaa42dffaa3099d972c9127ea00">MessageType</a> =  typename std::conditional&lt;Type == <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a4a5f77af205a7255016e0435fee449d2">MIDIMessageType::SysExStart</a>, <a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a>, <a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a>&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -376,7 +376,7 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual bool updateWith </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#abfb3ebaa42dffaa3099d972c9127ea00">MessageType</a>&#160;</td>
           <td class="paramname"><em>midimsg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -390,7 +390,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Receive a new MIDI message and update the internal state. </p>
 
-<p>Implemented in <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, Matcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankableTwoByteRangeMIDIMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankableTwoByteMIDIMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankablePitchBendMIDIMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::PROGRAM_CHANGE, OneByteMIDIMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::CONTROL_CHANGE, TwoByteRangeMIDIMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankableVPotMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankableVUMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::CONTROL_CHANGE, VPotMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::CHANNEL_PRESSURE, VUMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, TwoByteMIDIMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, TwoByteRangeMIDIMatcher &gt;</a>, and <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::PITCH_BEND, PitchBendMIDIMatcher &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, Matcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankableTwoByteRangeMIDIMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankableTwoByteMIDIMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankablePitchBendMIDIMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::ProgramChange, OneByteMIDIMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::ControlChange, TwoByteRangeMIDIMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankableVPotMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, BankableVUMatcher&lt; BankSize &gt; &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::ControlChange, VPotMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::ChannelPressure, VUMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, TwoByteMIDIMatcher &gt;</a>, <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; Type, TwoByteRangeMIDIMatcher &gt;</a>, and <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">MatchingMIDIInputElement&lt; MIDIMessageType::PitchBend, PitchBendMIDIMatcher &gt;</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">static bool updateAllWith </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#ac83f3130ebf7d31ec9fe2f69463d6e17">MessageType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#abfb3ebaa42dffaa3099d972c9127ea00">MessageType</a>&#160;</td>
           <td class="paramname"><em>midimsg</em></td><td>)</td>
           <td></td>
         </tr>

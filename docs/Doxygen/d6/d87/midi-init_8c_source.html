@@ -84,22 +84,22 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="../../d6/d87/midi-init_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifdef ESP32</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/dd2/events_8h.html">events.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/de2/midi-private_8h.html">midi-private.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;esp32-hal-bt.h&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;esp_bt_main.h&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;esp_gap_ble_api.h&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;esp_gatt_common_api.h&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;sdkconfig.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#if CONFIG_BT_BLE_ENABLED</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/dd2/events_8h.html">events.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/de2/midi-private_8h.html">midi-private.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;esp32-hal-bt.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;esp_bt_main.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;esp_gap_ble_api.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;esp_gatt_common_api.h&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">const</span> <span class="keywordtype">char</span> *midi_ble_name = <span class="stringliteral">&quot;Control Surface (BLE)&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/dc7/midi_8h.html#ae2df260d849e5ec4b15add0b1ca47504">set_midi_ble_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    midi_ble_name = name;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">const</span> <span class="keywordtype">char</span> *midi_ble_name = <span class="stringliteral">&quot;Control Surface (BLE)&quot;</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/dc7/midi_8h.html#ae2df260d849e5ec4b15add0b1ca47504">set_midi_ble_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) { midi_ble_name = name; }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/dc7/midi_8h.html#a57981a470092a596f6e0058b9b8e0aa5">midi_init</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> (!btStarted() &amp;&amp; !btStart())</div>
@@ -199,6 +199,7 @@ $(function() {
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/dc7/midi_8h.html#a25cd3ab0c944e5cb12316b79cb1e3566">midi_deinit</a>(<span class="keywordtype">void</span>) { assert(!<span class="stringliteral">&quot;Not implemented&quot;</span>); }</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aevents_8h_html"><div class="ttname"><a href="../../db/dd2/events_8h.html">events.h</a></div><div class="ttdoc">Handlers for Bluetooth and BLE events.</div></div>
 <div class="ttc" id="aevents_8h_html_a1a48bac59e80a396a3fc9c0a3c5ae805"><div class="ttname"><a href="../../db/dd2/events_8h.html#a1a48bac59e80a396a3fc9c0a3c5ae805">gap_event_handler</a></div><div class="ttdeci">void gap_event_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param)</div></div>
 <div class="ttc" id="aevents_8h_html_a9ea7447dc9109415cf708353b98b2c5b"><div class="ttname"><a href="../../db/dd2/events_8h.html#a9ea7447dc9109415cf708353b98b2c5b">gatts_event_handler</a></div><div class="ttdeci">void gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param)</div></div>

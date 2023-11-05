@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Inputs/LEDs/MCU/VULEDs.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/MIDI_Inputs/LEDs/MCU/VULEDs.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">29</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">8</td>
@@ -127,8 +127,8 @@
 <a name="57"><span class="lineNum">      57 </span>            :     ///         step.  </a>
 <a name="58"><span class="lineNum">      58 </span>            :     ///         The MCU protocol uses 300 ms per division, and two steps</a>
 <a name="59"><span class="lineNum">      59 </span>            :     ///         per division, so the default is 150 ms per step.  </a>
-<a name="60"><span class="lineNum">      60 </span>            :     ///         Some software doesn't work if the VU meter decays automatically, </a>
-<a name="61"><span class="lineNum">      61 </span>            :     ///         in that case, you can set the decay time to zero to disable </a>
+<a name="60"><span class="lineNum">      60 </span>            :     ///         Some software doesn't work if the VU meter decays automatically,</a>
+<a name="61"><span class="lineNum">      61 </span>            :     ///         in that case, you can set the decay time to zero to disable</a>
 <a name="62"><span class="lineNum">      62 </span>            :     ///         the decay.</a>
 <a name="63"><span class="lineNum">      63 </span>            :     ///         @see    @ref MCU::VUDecay</a>
 <a name="64"><span class="lineNum">      64 </span>            :     VULEDs(const PinList&lt;NumLEDs&gt; &amp;leds, uint8_t track,</a>
@@ -145,8 +145,8 @@
 <a name="75"><span class="lineNum">      75 </span>            :     ///         step.  </a>
 <a name="76"><span class="lineNum">      76 </span>            :     ///         The MCU protocol uses 300 ms per division, and two steps</a>
 <a name="77"><span class="lineNum">      77 </span>            :     ///         per division, so the default is 150 ms per step.  </a>
-<a name="78"><span class="lineNum">      78 </span>            :     ///         Some software doesn't work if the VU meter decays automatically, </a>
-<a name="79"><span class="lineNum">      79 </span>            :     ///         in that case, you can set the decay time to zero to disable </a>
+<a name="78"><span class="lineNum">      78 </span>            :     ///         Some software doesn't work if the VU meter decays automatically,</a>
+<a name="79"><span class="lineNum">      79 </span>            :     ///         in that case, you can set the decay time to zero to disable</a>
 <a name="80"><span class="lineNum">      80 </span>            :     ///         the decay.</a>
 <a name="81"><span class="lineNum">      81 </span>            :     ///         @see    @ref MCU::VUDecay</a>
 <a name="82"><span class="lineNum">      82 </span>            :     VULEDs(const PinList&lt;NumLEDs&gt; &amp;leds, uint8_t track,</a>
@@ -220,15 +220,15 @@
 <a name="150"><span class="lineNum">     150 </span>            :     ///         step.  </a>
 <a name="151"><span class="lineNum">     151 </span>            :     ///         The MCU protocol uses 300 ms per division, and two steps</a>
 <a name="152"><span class="lineNum">     152 </span>            :     ///         per division, so the default is 150 ms per step.  </a>
-<a name="153"><span class="lineNum">     153 </span>            :     ///         Some software doesn't work if the VU meter decays automatically, </a>
-<a name="154"><span class="lineNum">     154 </span>            :     ///         in that case, you can set the decay time to zero to disable </a>
+<a name="153"><span class="lineNum">     153 </span>            :     ///         Some software doesn't work if the VU meter decays automatically,</a>
+<a name="154"><span class="lineNum">     154 </span>            :     ///         in that case, you can set the decay time to zero to disable</a>
 <a name="155"><span class="lineNum">     155 </span>            :     ///         the decay.</a>
 <a name="156"><span class="lineNum">     156 </span>            :     ///         @see    @ref MCU::VUDecay</a>
 <a name="157"><span class="lineNum">     157 </span><span class="lineCov">          1 :     VULEDs(BankConfig&lt;BankSize&gt; config, const PinList&lt;NumLEDs&gt; &amp;leds,</span></a>
 <a name="158"><span class="lineNum">     158 </span>            :            uint8_t track, MIDIChannelCable channelCN,</a>
 <a name="159"><span class="lineNum">     159 </span>            :            unsigned int decayTime = VUDecay::Default)</a>
-<a name="160"><span class="lineNum">     160 </span>            :         : Parent(config, track, channelCN, decayTime), VULEDsDriver&lt;NumLEDs&gt;(</a>
-<a name="161"><span class="lineNum">     161 </span><span class="lineCov">          1 :                                                            leds) {}</span></a>
+<a name="160"><span class="lineNum">     160 </span>            :         : Parent(config, track, channelCN, decayTime),</a>
+<a name="161"><span class="lineNum">     161 </span><span class="lineCov">          1 :           VULEDsDriver&lt;NumLEDs&gt;(leds) {}</span></a>
 <a name="162"><span class="lineNum">     162 </span>            : </a>
 <a name="163"><span class="lineNum">     163 </span>            :     /// @param  config</a>
 <a name="164"><span class="lineNum">     164 </span>            :     ///         The bank configuration to use.</a>
@@ -241,8 +241,8 @@
 <a name="171"><span class="lineNum">     171 </span>            :     ///         step.  </a>
 <a name="172"><span class="lineNum">     172 </span>            :     ///         The MCU protocol uses 300 ms per division, and two steps</a>
 <a name="173"><span class="lineNum">     173 </span>            :     ///         per division, so the default is 150 ms per step.  </a>
-<a name="174"><span class="lineNum">     174 </span>            :     ///         Some software doesn't work if the VU meter decays automatically, </a>
-<a name="175"><span class="lineNum">     175 </span>            :     ///         in that case, you can set the decay time to zero to disable </a>
+<a name="174"><span class="lineNum">     174 </span>            :     ///         Some software doesn't work if the VU meter decays automatically,</a>
+<a name="175"><span class="lineNum">     175 </span>            :     ///         in that case, you can set the decay time to zero to disable</a>
 <a name="176"><span class="lineNum">     176 </span>            :     ///         the decay.</a>
 <a name="177"><span class="lineNum">     177 </span>            :     ///         @see    @ref MCU::VUDecay</a>
 <a name="178"><span class="lineNum">     178 </span>            :     VULEDs(BankConfig&lt;BankSize&gt; config, const PinList&lt;NumLEDs&gt; &amp;leds,</a>

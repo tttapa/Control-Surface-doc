@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/Banks/BankableAddresses.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/Banks/BankableAddresses.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">21</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">11</td>
@@ -106,7 +106,7 @@
 <a name="36"><span class="lineNum">      36 </span>            :      * is returned.</a>
 <a name="37"><span class="lineNum">      37 </span>            :      */</a>
 <a name="38"><span class="lineNum">      38 </span><span class="lineCov">         44 :     setting_t getSelection() const {</span></a>
-<a name="39"><span class="lineNum">      39 </span><span class="lineCov">         44 :         return lockedSetting == UNLOCKED ? getRawBankSetting() : lockedSetting;</span></a>
+<a name="39"><span class="lineNum">      39 </span><span class="lineCov">         44 :         return lockedSetting == Unlocked ? getRawBankSetting() : lockedSetting;</span></a>
 <a name="40"><span class="lineNum">      40 </span>            :     }</a>
 <a name="41"><span class="lineNum">      41 </span>            : </a>
 <a name="42"><span class="lineNum">      42 </span>            :     /**</a>
@@ -116,7 +116,7 @@
 <a name="46"><span class="lineNum">      46 </span>            :      * independent from the actual bank setting.</a>
 <a name="47"><span class="lineNum">      47 </span>            :      */</a>
 <a name="48"><span class="lineNum">      48 </span><span class="lineCov">         14 :     void lock() {</span></a>
-<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         14 :         if (lockedSetting == UNLOCKED)</span></a>
+<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         14 :         if (lockedSetting == Unlocked)</span></a>
 <a name="50"><span class="lineNum">      50 </span><span class="lineCov">         14 :             lockedSetting = getRawBankSetting();</span></a>
 <a name="51"><span class="lineNum">      51 </span><span class="lineCov">         14 :     }</span></a>
 <a name="52"><span class="lineNum">      52 </span>            : </a>
@@ -126,14 +126,14 @@
 <a name="56"><span class="lineNum">      56 </span>            :      * After unlocking, @ref getSelection will return the actual bank setting </a>
 <a name="57"><span class="lineNum">      57 </span>            :      * again.</a>
 <a name="58"><span class="lineNum">      58 </span>            :      */</a>
-<a name="59"><span class="lineNum">      59 </span><span class="lineCov">         14 :     void unlock() { lockedSetting = UNLOCKED; }</span></a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">         14 :     void unlock() { lockedSetting = Unlocked; }</span></a>
 <a name="60"><span class="lineNum">      60 </span>            : </a>
 <a name="61"><span class="lineNum">      61 </span>            :   protected:</a>
 <a name="62"><span class="lineNum">      62 </span>            :     const OutputBank &amp;bank;</a>
 <a name="63"><span class="lineNum">      63 </span>            : </a>
 <a name="64"><span class="lineNum">      64 </span>            :   private:</a>
-<a name="65"><span class="lineNum">      65 </span>            :     constexpr static setting_t UNLOCKED = NO_SETTING;</a>
-<a name="66"><span class="lineNum">      66 </span>            :     setting_t lockedSetting = UNLOCKED;</a>
+<a name="65"><span class="lineNum">      65 </span>            :     constexpr static setting_t Unlocked = NoSetting;</a>
+<a name="66"><span class="lineNum">      66 </span>            :     setting_t lockedSetting = Unlocked;</a>
 <a name="67"><span class="lineNum">      67 </span>            : };</a>
 <a name="68"><span class="lineNum">      68 </span>            : </a>
 <a name="69"><span class="lineNum">      69 </span>            : /**</a>
@@ -182,9 +182,9 @@
 <a name="112"><span class="lineNum">     112 </span><span class="lineCov">         36 :     RelativeMIDIAddress getAddressOffset(setting_t bankindex) const {</span></a>
 <a name="113"><span class="lineNum">     113 </span><span class="lineCov">         36 :         int8_t offset = bank.getOffsetOfSetting(bankindex);</span></a>
 <a name="114"><span class="lineNum">     114 </span><span class="lineCov">         36 :         switch (type) {</span></a>
-<a name="115"><span class="lineNum">     115 </span><span class="lineCov">         36 :             case CHANGE_ADDRESS: return {offset, 0, 0};</span></a>
-<a name="116"><span class="lineNum">     116 </span><span class="lineNoCov">          0 :             case CHANGE_CHANNEL: return {0, offset, 0};</span></a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineNoCov">          0 :             case CHANGE_CABLENB: return {0, 0, offset};</span></a>
+<a name="115"><span class="lineNum">     115 </span><span class="lineCov">         36 :             case ChangeAddress: return {offset, 0, 0};</span></a>
+<a name="116"><span class="lineNum">     116 </span><span class="lineNoCov">          0 :             case ChangeChannel: return {0, offset, 0};</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineNoCov">          0 :             case ChangeCable: return {0, 0, offset};</span></a>
 <a name="118"><span class="lineNum">     118 </span><span class="lineNoCov">          0 :             default: return {};</span></a>
 <a name="119"><span class="lineNum">     119 </span>            :         }</a>
 <a name="120"><span class="lineNum">     120 </span>            :     }</a>

@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Inputs/MCU/VU.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/MIDI_Inputs/MCU/VU.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">80</td>
-            <td class="headerCovTableEntry">95</td>
-            <td class="headerCovTableEntryMed">84.2 %</td>
+            <td class="headerCovTableEntry">76</td>
+            <td class="headerCovTableEntry">89</td>
+            <td class="headerCovTableEntryMed">85.4 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">38</td>
@@ -255,13 +255,13 @@
 <a name="185"><span class="lineNum">     185 </span>            :  * </a>
 <a name="186"><span class="lineNum">     186 </span>            :  * @ingroup MIDIInputElements</a>
 <a name="187"><span class="lineNum">     187 </span>            :  */</a>
-<a name="188"><span class="lineNum">     188 </span>            : class VU : public MatchingMIDIInputElement&lt;MIDIMessageType::CHANNEL_PRESSURE,</a>
+<a name="188"><span class="lineNum">     188 </span>            : class VU : public MatchingMIDIInputElement&lt;MIDIMessageType::ChannelPressure,</a>
 <a name="189"><span class="lineNum">     189 </span>            :                                            VUMatcher&gt;,</a>
 <a name="190"><span class="lineNum">     190 </span>            :            public Interfaces::MCU::IVU {</a>
 <a name="191"><span class="lineNum">     191 </span>            :   public:</a>
 <a name="192"><span class="lineNum">     192 </span>            :     using Matcher = VUMatcher;</a>
-<a name="193"><span class="lineNum">     193 </span>            :     using Parent = MatchingMIDIInputElement&lt;MIDIMessageType::CHANNEL_PRESSURE,</a>
-<a name="194"><span class="lineNum">     194 </span>            :                                             Matcher&gt;;</a>
+<a name="193"><span class="lineNum">     193 </span>            :     using Parent =</a>
+<a name="194"><span class="lineNum">     194 </span>            :         MatchingMIDIInputElement&lt;MIDIMessageType::ChannelPressure, Matcher&gt;;</a>
 <a name="195"><span class="lineNum">     195 </span>            :     /**</a>
 <a name="196"><span class="lineNum">     196 </span>            :      * @brief   Constructor.</a>
 <a name="197"><span class="lineNum">     197 </span>            :      * </a>
@@ -282,214 +282,208 @@
 <a name="212"><span class="lineNum">     212 </span>            :      */</a>
 <a name="213"><span class="lineNum">     213 </span><span class="lineCov">          7 :     VU(uint8_t track, MIDIChannelCable channelCN,</span></a>
 <a name="214"><span class="lineNum">     214 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
-<a name="215"><span class="lineNum">     215 </span><span class="lineCov">          7 :         : Parent({{track - 1, channelCN}}),</span></a>
-<a name="216"><span class="lineNum">     216 </span><span class="lineCov">          7 :           IVU(12), decayTimer(decayTime) {}</span></a>
-<a name="217"><span class="lineNum">     217 </span>            : </a>
-<a name="218"><span class="lineNum">     218 </span>            :     /**</a>
-<a name="219"><span class="lineNum">     219 </span>            :      * @brief   Constructor.</a>
-<a name="220"><span class="lineNum">     220 </span>            :      * </a>
-<a name="221"><span class="lineNum">     221 </span>            :      * @param   track</a>
-<a name="222"><span class="lineNum">     222 </span>            :      *          The track of the VU meter. [1, 8]</a>
-<a name="223"><span class="lineNum">     223 </span>            :      * @param   decayTime</a>
-<a name="224"><span class="lineNum">     224 </span>            :      *          The time in milliseconds it takes for the value to decay one</a>
-<a name="225"><span class="lineNum">     225 </span>            :      *          step.  </a>
-<a name="226"><span class="lineNum">     226 </span>            :      *          The MCU protocol uses 300 ms per division, and two steps</a>
-<a name="227"><span class="lineNum">     227 </span>            :      *          per division, so the default is 150 ms per step.  </a>
-<a name="228"><span class="lineNum">     228 </span>            :      *          Some software doesn't work if the VU meter decays automatically, </a>
-<a name="229"><span class="lineNum">     229 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
-<a name="230"><span class="lineNum">     230 </span>            :      *          the decay.</a>
-<a name="231"><span class="lineNum">     231 </span>            :      *          @see    @ref MCU::VUDecay</a>
-<a name="232"><span class="lineNum">     232 </span>            :      */</a>
-<a name="233"><span class="lineNum">     233 </span>            :     VU(uint8_t track, unsigned int decayTime = VUDecay::Default)</a>
-<a name="234"><span class="lineNum">     234 </span>            :         : VU(track, Channel_1, decayTime) {}</a>
-<a name="235"><span class="lineNum">     235 </span>            : </a>
-<a name="236"><span class="lineNum">     236 </span>            :   protected:</a>
-<a name="237"><span class="lineNum">     237 </span><span class="lineCov">         10 :     bool handleUpdateImpl(typename Matcher::Result match) {</span></a>
-<a name="238"><span class="lineNum">     238 </span><span class="lineCov">         10 :         auto changed = state.update(match.data);</span></a>
-<a name="239"><span class="lineNum">     239 </span><span class="lineCov">         10 :         if (changed == VUState::ValueChanged)</span></a>
-<a name="240"><span class="lineNum">     240 </span>            :             // reset the timer and fire after one interval</a>
-<a name="241"><span class="lineNum">     241 </span><span class="lineCov">          5 :             decayTimer.beginNextPeriod();</span></a>
-<a name="242"><span class="lineNum">     242 </span><span class="lineCov">         10 :         return changed;</span></a>
-<a name="243"><span class="lineNum">     243 </span>            :     }</a>
-<a name="244"><span class="lineNum">     244 </span>            : </a>
-<a name="245"><span class="lineNum">     245 </span><span class="lineCov">         10 :     void handleUpdate(typename Matcher::Result match) override {</span></a>
-<a name="246"><span class="lineNum">     246 </span><span class="lineCov">         10 :         dirty |= handleUpdateImpl(match);</span></a>
-<a name="247"><span class="lineNum">     247 </span><span class="lineCov">         10 :     }</span></a>
-<a name="248"><span class="lineNum">     248 </span>            : </a>
-<a name="249"><span class="lineNum">     249 </span><span class="lineCov">          1 :     bool decay() {</span></a>
-<a name="250"><span class="lineNum">     250 </span><span class="lineCov">          1 :         return decayTimer.getInterval() != VUDecay::Hold &amp;&amp; </span></a>
-<a name="251"><span class="lineNum">     251 </span><span class="lineCov">          2 :                decayTimer &amp;&amp;</span></a>
-<a name="252"><span class="lineNum">     252 </span><span class="lineCov">          2 :                state.decay();</span></a>
-<a name="253"><span class="lineNum">     253 </span>            :     }</a>
-<a name="254"><span class="lineNum">     254 </span>            : </a>
-<a name="255"><span class="lineNum">     255 </span>            :   public:</a>
-<a name="256"><span class="lineNum">     256 </span>            :     /// Reset all values to zero.</a>
-<a name="257"><span class="lineNum">     257 </span><span class="lineCov">          1 :     void reset() override { state = {}; }</span></a>
-<a name="258"><span class="lineNum">     258 </span>            : </a>
-<a name="259"><span class="lineNum">     259 </span>            :     /// Decay the VU meter.</a>
-<a name="260"><span class="lineNum">     260 </span><span class="lineCov">          1 :     void update() override {</span></a>
-<a name="261"><span class="lineNum">     261 </span><span class="lineCov">          1 :         dirty |= decay();</span></a>
-<a name="262"><span class="lineNum">     262 </span><span class="lineCov">          1 :     }</span></a>
+<a name="215"><span class="lineNum">     215 </span><span class="lineCov">          7 :         : Parent({{track - 1, channelCN}}), IVU(12), decayTimer(decayTime) {}</span></a>
+<a name="216"><span class="lineNum">     216 </span>            : </a>
+<a name="217"><span class="lineNum">     217 </span>            :     /**</a>
+<a name="218"><span class="lineNum">     218 </span>            :      * @brief   Constructor.</a>
+<a name="219"><span class="lineNum">     219 </span>            :      * </a>
+<a name="220"><span class="lineNum">     220 </span>            :      * @param   track</a>
+<a name="221"><span class="lineNum">     221 </span>            :      *          The track of the VU meter. [1, 8]</a>
+<a name="222"><span class="lineNum">     222 </span>            :      * @param   decayTime</a>
+<a name="223"><span class="lineNum">     223 </span>            :      *          The time in milliseconds it takes for the value to decay one</a>
+<a name="224"><span class="lineNum">     224 </span>            :      *          step.  </a>
+<a name="225"><span class="lineNum">     225 </span>            :      *          The MCU protocol uses 300 ms per division, and two steps</a>
+<a name="226"><span class="lineNum">     226 </span>            :      *          per division, so the default is 150 ms per step.  </a>
+<a name="227"><span class="lineNum">     227 </span>            :      *          Some software doesn't work if the VU meter decays automatically, </a>
+<a name="228"><span class="lineNum">     228 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
+<a name="229"><span class="lineNum">     229 </span>            :      *          the decay.</a>
+<a name="230"><span class="lineNum">     230 </span>            :      *          @see    @ref MCU::VUDecay</a>
+<a name="231"><span class="lineNum">     231 </span>            :      */</a>
+<a name="232"><span class="lineNum">     232 </span>            :     VU(uint8_t track, unsigned int decayTime = VUDecay::Default)</a>
+<a name="233"><span class="lineNum">     233 </span>            :         : VU(track, Channel_1, decayTime) {}</a>
+<a name="234"><span class="lineNum">     234 </span>            : </a>
+<a name="235"><span class="lineNum">     235 </span>            :   protected:</a>
+<a name="236"><span class="lineNum">     236 </span><span class="lineCov">         10 :     bool handleUpdateImpl(typename Matcher::Result match) {</span></a>
+<a name="237"><span class="lineNum">     237 </span><span class="lineCov">         10 :         auto changed = state.update(match.data);</span></a>
+<a name="238"><span class="lineNum">     238 </span><span class="lineCov">         10 :         if (changed == VUState::ValueChanged)</span></a>
+<a name="239"><span class="lineNum">     239 </span>            :             // reset the timer and fire after one interval</a>
+<a name="240"><span class="lineNum">     240 </span><span class="lineCov">          5 :             decayTimer.beginNextPeriod();</span></a>
+<a name="241"><span class="lineNum">     241 </span><span class="lineCov">         10 :         return changed;</span></a>
+<a name="242"><span class="lineNum">     242 </span>            :     }</a>
+<a name="243"><span class="lineNum">     243 </span>            : </a>
+<a name="244"><span class="lineNum">     244 </span><span class="lineCov">         10 :     void handleUpdate(typename Matcher::Result match) override {</span></a>
+<a name="245"><span class="lineNum">     245 </span><span class="lineCov">         10 :         dirty |= handleUpdateImpl(match);</span></a>
+<a name="246"><span class="lineNum">     246 </span><span class="lineCov">         10 :     }</span></a>
+<a name="247"><span class="lineNum">     247 </span>            : </a>
+<a name="248"><span class="lineNum">     248 </span><span class="lineCov">          1 :     bool decay() {</span></a>
+<a name="249"><span class="lineNum">     249 </span><span class="lineCov">          2 :         return decayTimer.getInterval() != VUDecay::Hold &amp;&amp; decayTimer &amp;&amp;</span></a>
+<a name="250"><span class="lineNum">     250 </span><span class="lineCov">          2 :                state.decay();</span></a>
+<a name="251"><span class="lineNum">     251 </span>            :     }</a>
+<a name="252"><span class="lineNum">     252 </span>            : </a>
+<a name="253"><span class="lineNum">     253 </span>            :   public:</a>
+<a name="254"><span class="lineNum">     254 </span>            :     /// Reset all values to zero.</a>
+<a name="255"><span class="lineNum">     255 </span><span class="lineCov">          1 :     void reset() override { state = {}; }</span></a>
+<a name="256"><span class="lineNum">     256 </span>            : </a>
+<a name="257"><span class="lineNum">     257 </span>            :     /// Decay the VU meter.</a>
+<a name="258"><span class="lineNum">     258 </span><span class="lineCov">          1 :     void update() override { dirty |= decay(); }</span></a>
+<a name="259"><span class="lineNum">     259 </span>            : </a>
+<a name="260"><span class="lineNum">     260 </span>            :   public:</a>
+<a name="261"><span class="lineNum">     261 </span>            :     /// @name Data access</a>
+<a name="262"><span class="lineNum">     262 </span>            :     /// @{</a>
 <a name="263"><span class="lineNum">     263 </span>            : </a>
-<a name="264"><span class="lineNum">     264 </span>            :   public:</a>
-<a name="265"><span class="lineNum">     265 </span>            :     /// @name Data access</a>
-<a name="266"><span class="lineNum">     266 </span>            :     /// @{</a>
-<a name="267"><span class="lineNum">     267 </span>            : </a>
-<a name="268"><span class="lineNum">     268 </span>            :     /// Get the most recent VU position that was received.</a>
-<a name="269"><span class="lineNum">     269 </span><span class="lineCov">         11 :     uint8_t getValue() override { return state.value; }</span></a>
-<a name="270"><span class="lineNum">     270 </span>            :     /// Get the status of the overload indicator.</a>
-<a name="271"><span class="lineNum">     271 </span><span class="lineCov">          3 :     bool getOverload() override { return state.overload; }</span></a>
-<a name="272"><span class="lineNum">     272 </span>            : </a>
-<a name="273"><span class="lineNum">     273 </span>            :     /// @}</a>
-<a name="274"><span class="lineNum">     274 </span>            : </a>
-<a name="275"><span class="lineNum">     275 </span>            :   private:</a>
-<a name="276"><span class="lineNum">     276 </span>            :     VUState state = {};</a>
-<a name="277"><span class="lineNum">     277 </span>            :     AH::Timer&lt;millis&gt; decayTimer;</a>
-<a name="278"><span class="lineNum">     278 </span>            : };</a>
+<a name="264"><span class="lineNum">     264 </span>            :     /// Get the most recent VU position that was received.</a>
+<a name="265"><span class="lineNum">     265 </span><span class="lineCov">         11 :     uint8_t getValue() override { return state.value; }</span></a>
+<a name="266"><span class="lineNum">     266 </span>            :     /// Get the status of the overload indicator.</a>
+<a name="267"><span class="lineNum">     267 </span><span class="lineCov">          3 :     bool getOverload() override { return state.overload; }</span></a>
+<a name="268"><span class="lineNum">     268 </span>            : </a>
+<a name="269"><span class="lineNum">     269 </span>            :     /// @}</a>
+<a name="270"><span class="lineNum">     270 </span>            : </a>
+<a name="271"><span class="lineNum">     271 </span>            :   private:</a>
+<a name="272"><span class="lineNum">     272 </span>            :     VUState state = {};</a>
+<a name="273"><span class="lineNum">     273 </span>            :     AH::Timer&lt;millis&gt; decayTimer;</a>
+<a name="274"><span class="lineNum">     274 </span>            : };</a>
+<a name="275"><span class="lineNum">     275 </span>            : </a>
+<a name="276"><span class="lineNum">     276 </span>            : // -------------------------------------------------------------------------- //</a>
+<a name="277"><span class="lineNum">     277 </span>            : </a>
+<a name="278"><span class="lineNum">     278 </span>            : namespace Bankable {</a>
 <a name="279"><span class="lineNum">     279 </span>            : </a>
-<a name="280"><span class="lineNum">     280 </span>            : // -------------------------------------------------------------------------- //</a>
-<a name="281"><span class="lineNum">     281 </span>            : </a>
-<a name="282"><span class="lineNum">     282 </span>            : namespace Bankable {</a>
-<a name="283"><span class="lineNum">     283 </span>            : </a>
-<a name="284"><span class="lineNum">     284 </span>            : /** </a>
-<a name="285"><span class="lineNum">     285 </span>            :  * @brief   A MIDI input element that represents a Mackie Control Universal VU</a>
-<a name="286"><span class="lineNum">     286 </span>            :  *          meter. This version can be banked.</a>
-<a name="287"><span class="lineNum">     287 </span>            :  *</a>
-<a name="288"><span class="lineNum">     288 </span>            :  * @tparam  BankSize</a>
-<a name="289"><span class="lineNum">     289 </span>            :  *          The number of banks.</a>
-<a name="290"><span class="lineNum">     290 </span>            :  * </a>
-<a name="291"><span class="lineNum">     291 </span>            :  * @ingroup BankableMIDIInputElements</a>
-<a name="292"><span class="lineNum">     292 </span>            :  */</a>
-<a name="293"><span class="lineNum">     293 </span>            : template &lt;uint8_t BankSize&gt;</a>
-<a name="294"><span class="lineNum">     294 </span>            : class VU</a>
-<a name="295"><span class="lineNum">     295 </span>            :     : public BankableMatchingMIDIInputElement&lt;MIDIMessageType::CHANNEL_PRESSURE,</a>
-<a name="296"><span class="lineNum">     296 </span>            :                                               BankableVUMatcher&lt;BankSize&gt;&gt;,</a>
-<a name="297"><span class="lineNum">     297 </span>            :       public Interfaces::MCU::IVU {</a>
-<a name="298"><span class="lineNum">     298 </span>            :   public:</a>
-<a name="299"><span class="lineNum">     299 </span>            :     using Matcher = BankableVUMatcher&lt;BankSize&gt;;</a>
-<a name="300"><span class="lineNum">     300 </span>            :     using Parent</a>
-<a name="301"><span class="lineNum">     301 </span>            :         = BankableMatchingMIDIInputElement&lt;MIDIMessageType::CHANNEL_PRESSURE,</a>
-<a name="302"><span class="lineNum">     302 </span>            :                                            Matcher&gt;;</a>
-<a name="303"><span class="lineNum">     303 </span>            : </a>
-<a name="304"><span class="lineNum">     304 </span>            :     /**</a>
-<a name="305"><span class="lineNum">     305 </span>            :      * @brief   Constructor.</a>
-<a name="306"><span class="lineNum">     306 </span>            :      * </a>
-<a name="307"><span class="lineNum">     307 </span>            :      * @param   config</a>
-<a name="308"><span class="lineNum">     308 </span>            :      *          The bank configuration to use.</a>
-<a name="309"><span class="lineNum">     309 </span>            :      * @param   track</a>
-<a name="310"><span class="lineNum">     310 </span>            :      *          The track of the VU meter. [1, 8]</a>
-<a name="311"><span class="lineNum">     311 </span>            :      * @param   channelCN</a>
-<a name="312"><span class="lineNum">     312 </span>            :      *          The MIDI channel [Channel_1, Channel_16] and Cable</a>
-<a name="313"><span class="lineNum">     313 </span>            :      *          Number [Cable_1, Cable_16].</a>
-<a name="314"><span class="lineNum">     314 </span>            :      * @param   decayTime</a>
-<a name="315"><span class="lineNum">     315 </span>            :      *          The time in milliseconds it takes for the value to decay one</a>
-<a name="316"><span class="lineNum">     316 </span>            :      *          step.  </a>
-<a name="317"><span class="lineNum">     317 </span>            :      *          The MCU protocol uses 300 ms per division, and two steps</a>
-<a name="318"><span class="lineNum">     318 </span>            :      *          per division, so the default is 150 ms per step.  </a>
-<a name="319"><span class="lineNum">     319 </span>            :      *          Some software doesn't work if the VU meter decays automatically, </a>
-<a name="320"><span class="lineNum">     320 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
-<a name="321"><span class="lineNum">     321 </span>            :      *          the decay.</a>
-<a name="322"><span class="lineNum">     322 </span>            :      *          @see    @ref MCU::VUDecay</a>
-<a name="323"><span class="lineNum">     323 </span>            :      */</a>
-<a name="324"><span class="lineNum">     324 </span><span class="lineCov">          5 :     VU(BankConfig&lt;BankSize&gt; config, uint8_t track, MIDIChannelCable channelCN,</span></a>
-<a name="325"><span class="lineNum">     325 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
-<a name="326"><span class="lineNum">     326 </span><span class="lineCov">          5 :         : Parent({config, {track - 1, channelCN}}),</span></a>
-<a name="327"><span class="lineNum">     327 </span><span class="lineCov">          5 :           IVU(12), decayTimer(decayTime) {}</span></a>
-<a name="328"><span class="lineNum">     328 </span>            : </a>
-<a name="329"><span class="lineNum">     329 </span>            :     /**</a>
-<a name="330"><span class="lineNum">     330 </span>            :      * @brief   Constructor.</a>
-<a name="331"><span class="lineNum">     331 </span>            :      * </a>
-<a name="332"><span class="lineNum">     332 </span>            :      * @param   config</a>
-<a name="333"><span class="lineNum">     333 </span>            :      *          The bank configuration to use.</a>
-<a name="334"><span class="lineNum">     334 </span>            :      * @param   track</a>
-<a name="335"><span class="lineNum">     335 </span>            :      *          The track of the VU meter. [1, 8]</a>
-<a name="336"><span class="lineNum">     336 </span>            :      * @param   decayTime</a>
-<a name="337"><span class="lineNum">     337 </span>            :      *          The time in milliseconds it takes for the value to decay one</a>
-<a name="338"><span class="lineNum">     338 </span>            :      *          step.  </a>
-<a name="339"><span class="lineNum">     339 </span>            :      *          The MCU protocol uses 300 ms per division, and two steps</a>
-<a name="340"><span class="lineNum">     340 </span>            :      *          per division, so the default is 150 ms per step.  </a>
-<a name="341"><span class="lineNum">     341 </span>            :      *          Some software doesn't work if the VU meter decays automatically, </a>
-<a name="342"><span class="lineNum">     342 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
-<a name="343"><span class="lineNum">     343 </span>            :      *          the decay.</a>
-<a name="344"><span class="lineNum">     344 </span>            :      *          @see    @ref MCU::VUDecay</a>
-<a name="345"><span class="lineNum">     345 </span>            :      */</a>
-<a name="346"><span class="lineNum">     346 </span>            :     VU(BankConfig&lt;BankSize&gt; config, uint8_t track,</a>
-<a name="347"><span class="lineNum">     347 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
-<a name="348"><span class="lineNum">     348 </span>            :         : VU(config, track, Channel_1, decayTime) {}</a>
-<a name="349"><span class="lineNum">     349 </span>            : </a>
-<a name="350"><span class="lineNum">     350 </span>            :   protected:</a>
-<a name="351"><span class="lineNum">     351 </span><span class="lineCov">          9 :     bool handleUpdateImpl(typename Matcher::Result match) {</span></a>
-<a name="352"><span class="lineNum">     352 </span><span class="lineCov">          9 :         auto changed = states[match.bankIndex].update(match.data);</span></a>
-<a name="353"><span class="lineNum">     353 </span><span class="lineCov">         16 :         if (changed == VUState::ValueChanged &amp;&amp;</span></a>
-<a name="354"><span class="lineNum">     354 </span><span class="lineCov">          7 :             match.bankIndex == this-&gt;getActiveBank())</span></a>
-<a name="355"><span class="lineNum">     355 </span>            :             // Only care about active bank's decay.</a>
-<a name="356"><span class="lineNum">     356 </span>            :             // Other banks will decay as well, but not as precisely.</a>
-<a name="357"><span class="lineNum">     357 </span>            :             // They aren't visible anyway, so it's a good compromise.</a>
-<a name="358"><span class="lineNum">     358 </span><span class="lineCov">          1 :             decayTimer.beginNextPeriod();</span></a>
-<a name="359"><span class="lineNum">     359 </span><span class="lineCov">          9 :         return changed &amp;&amp; match.bankIndex == this-&gt;getActiveBank();</span></a>
-<a name="360"><span class="lineNum">     360 </span>            :         // Only mark dirty if the value of the active bank changed</a>
-<a name="361"><span class="lineNum">     361 </span>            :     }</a>
+<a name="280"><span class="lineNum">     280 </span>            : /** </a>
+<a name="281"><span class="lineNum">     281 </span>            :  * @brief   A MIDI input element that represents a Mackie Control Universal VU</a>
+<a name="282"><span class="lineNum">     282 </span>            :  *          meter. This version can be banked.</a>
+<a name="283"><span class="lineNum">     283 </span>            :  *</a>
+<a name="284"><span class="lineNum">     284 </span>            :  * @tparam  BankSize</a>
+<a name="285"><span class="lineNum">     285 </span>            :  *          The number of banks.</a>
+<a name="286"><span class="lineNum">     286 </span>            :  * </a>
+<a name="287"><span class="lineNum">     287 </span>            :  * @ingroup BankableMIDIInputElements</a>
+<a name="288"><span class="lineNum">     288 </span>            :  */</a>
+<a name="289"><span class="lineNum">     289 </span>            : template &lt;uint8_t BankSize&gt;</a>
+<a name="290"><span class="lineNum">     290 </span>            : class VU</a>
+<a name="291"><span class="lineNum">     291 </span>            :     : public BankableMatchingMIDIInputElement&lt;MIDIMessageType::ChannelPressure,</a>
+<a name="292"><span class="lineNum">     292 </span>            :                                               BankableVUMatcher&lt;BankSize&gt;&gt;,</a>
+<a name="293"><span class="lineNum">     293 </span>            :       public Interfaces::MCU::IVU {</a>
+<a name="294"><span class="lineNum">     294 </span>            :   public:</a>
+<a name="295"><span class="lineNum">     295 </span>            :     using Matcher = BankableVUMatcher&lt;BankSize&gt;;</a>
+<a name="296"><span class="lineNum">     296 </span>            :     using Parent =</a>
+<a name="297"><span class="lineNum">     297 </span>            :         BankableMatchingMIDIInputElement&lt;MIDIMessageType::ChannelPressure,</a>
+<a name="298"><span class="lineNum">     298 </span>            :                                          Matcher&gt;;</a>
+<a name="299"><span class="lineNum">     299 </span>            : </a>
+<a name="300"><span class="lineNum">     300 </span>            :     /**</a>
+<a name="301"><span class="lineNum">     301 </span>            :      * @brief   Constructor.</a>
+<a name="302"><span class="lineNum">     302 </span>            :      * </a>
+<a name="303"><span class="lineNum">     303 </span>            :      * @param   config</a>
+<a name="304"><span class="lineNum">     304 </span>            :      *          The bank configuration to use.</a>
+<a name="305"><span class="lineNum">     305 </span>            :      * @param   track</a>
+<a name="306"><span class="lineNum">     306 </span>            :      *          The track of the VU meter. [1, 8]</a>
+<a name="307"><span class="lineNum">     307 </span>            :      * @param   channelCN</a>
+<a name="308"><span class="lineNum">     308 </span>            :      *          The MIDI channel [Channel_1, Channel_16] and Cable</a>
+<a name="309"><span class="lineNum">     309 </span>            :      *          Number [Cable_1, Cable_16].</a>
+<a name="310"><span class="lineNum">     310 </span>            :      * @param   decayTime</a>
+<a name="311"><span class="lineNum">     311 </span>            :      *          The time in milliseconds it takes for the value to decay one</a>
+<a name="312"><span class="lineNum">     312 </span>            :      *          step.  </a>
+<a name="313"><span class="lineNum">     313 </span>            :      *          The MCU protocol uses 300 ms per division, and two steps</a>
+<a name="314"><span class="lineNum">     314 </span>            :      *          per division, so the default is 150 ms per step.  </a>
+<a name="315"><span class="lineNum">     315 </span>            :      *          Some software doesn't work if the VU meter decays automatically, </a>
+<a name="316"><span class="lineNum">     316 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
+<a name="317"><span class="lineNum">     317 </span>            :      *          the decay.</a>
+<a name="318"><span class="lineNum">     318 </span>            :      *          @see    @ref MCU::VUDecay</a>
+<a name="319"><span class="lineNum">     319 </span>            :      */</a>
+<a name="320"><span class="lineNum">     320 </span><span class="lineCov">          5 :     VU(BankConfig&lt;BankSize&gt; config, uint8_t track, MIDIChannelCable channelCN,</span></a>
+<a name="321"><span class="lineNum">     321 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
+<a name="322"><span class="lineNum">     322 </span><span class="lineCov">          5 :         : Parent({config, {track - 1, channelCN}}), IVU(12),</span></a>
+<a name="323"><span class="lineNum">     323 </span><span class="lineCov">          5 :           decayTimer(decayTime) {}</span></a>
+<a name="324"><span class="lineNum">     324 </span>            : </a>
+<a name="325"><span class="lineNum">     325 </span>            :     /**</a>
+<a name="326"><span class="lineNum">     326 </span>            :      * @brief   Constructor.</a>
+<a name="327"><span class="lineNum">     327 </span>            :      * </a>
+<a name="328"><span class="lineNum">     328 </span>            :      * @param   config</a>
+<a name="329"><span class="lineNum">     329 </span>            :      *          The bank configuration to use.</a>
+<a name="330"><span class="lineNum">     330 </span>            :      * @param   track</a>
+<a name="331"><span class="lineNum">     331 </span>            :      *          The track of the VU meter. [1, 8]</a>
+<a name="332"><span class="lineNum">     332 </span>            :      * @param   decayTime</a>
+<a name="333"><span class="lineNum">     333 </span>            :      *          The time in milliseconds it takes for the value to decay one</a>
+<a name="334"><span class="lineNum">     334 </span>            :      *          step.  </a>
+<a name="335"><span class="lineNum">     335 </span>            :      *          The MCU protocol uses 300 ms per division, and two steps</a>
+<a name="336"><span class="lineNum">     336 </span>            :      *          per division, so the default is 150 ms per step.  </a>
+<a name="337"><span class="lineNum">     337 </span>            :      *          Some software doesn't work if the VU meter decays automatically, </a>
+<a name="338"><span class="lineNum">     338 </span>            :      *          in that case, you can set the decay time to zero to disable </a>
+<a name="339"><span class="lineNum">     339 </span>            :      *          the decay.</a>
+<a name="340"><span class="lineNum">     340 </span>            :      *          @see    @ref MCU::VUDecay</a>
+<a name="341"><span class="lineNum">     341 </span>            :      */</a>
+<a name="342"><span class="lineNum">     342 </span>            :     VU(BankConfig&lt;BankSize&gt; config, uint8_t track,</a>
+<a name="343"><span class="lineNum">     343 </span>            :        unsigned int decayTime = VUDecay::Default)</a>
+<a name="344"><span class="lineNum">     344 </span>            :         : VU(config, track, Channel_1, decayTime) {}</a>
+<a name="345"><span class="lineNum">     345 </span>            : </a>
+<a name="346"><span class="lineNum">     346 </span>            :   protected:</a>
+<a name="347"><span class="lineNum">     347 </span><span class="lineCov">          9 :     bool handleUpdateImpl(typename Matcher::Result match) {</span></a>
+<a name="348"><span class="lineNum">     348 </span><span class="lineCov">          9 :         auto changed = states[match.bankIndex].update(match.data);</span></a>
+<a name="349"><span class="lineNum">     349 </span><span class="lineCov">         16 :         if (changed == VUState::ValueChanged &amp;&amp;</span></a>
+<a name="350"><span class="lineNum">     350 </span><span class="lineCov">          7 :             match.bankIndex == this-&gt;getActiveBank())</span></a>
+<a name="351"><span class="lineNum">     351 </span>            :             // Only care about active bank's decay.</a>
+<a name="352"><span class="lineNum">     352 </span>            :             // Other banks will decay as well, but not as precisely.</a>
+<a name="353"><span class="lineNum">     353 </span>            :             // They aren't visible anyway, so it's a good compromise.</a>
+<a name="354"><span class="lineNum">     354 </span><span class="lineCov">          1 :             decayTimer.beginNextPeriod();</span></a>
+<a name="355"><span class="lineNum">     355 </span><span class="lineCov">          9 :         return changed &amp;&amp; match.bankIndex == this-&gt;getActiveBank();</span></a>
+<a name="356"><span class="lineNum">     356 </span>            :         // Only mark dirty if the value of the active bank changed</a>
+<a name="357"><span class="lineNum">     357 </span>            :     }</a>
+<a name="358"><span class="lineNum">     358 </span>            : </a>
+<a name="359"><span class="lineNum">     359 </span><span class="lineCov">          7 :     void handleUpdate(typename Matcher::Result match) override {</span></a>
+<a name="360"><span class="lineNum">     360 </span><span class="lineCov">          7 :         dirty |= handleUpdateImpl(match);</span></a>
+<a name="361"><span class="lineNum">     361 </span><span class="lineCov">          7 :     }</span></a>
 <a name="362"><span class="lineNum">     362 </span>            : </a>
-<a name="363"><span class="lineNum">     363 </span><span class="lineCov">          7 :     void handleUpdate(typename Matcher::Result match) override {</span></a>
-<a name="364"><span class="lineNum">     364 </span><span class="lineCov">          7 :         dirty |= handleUpdateImpl(match);</span></a>
-<a name="365"><span class="lineNum">     365 </span><span class="lineCov">          7 :     }</span></a>
-<a name="366"><span class="lineNum">     366 </span>            : </a>
-<a name="367"><span class="lineNum">     367 </span><span class="lineCov">          2 :     bool decay() {</span></a>
-<a name="368"><span class="lineNum">     368 </span><span class="lineCov">          2 :         bool newdirty = false;</span></a>
-<a name="369"><span class="lineNum">     369 </span><span class="lineCov">          2 :         if (decayTimer.getInterval() != VUDecay::Hold &amp;&amp; decayTimer)</span></a>
-<a name="370"><span class="lineNum">     370 </span><span class="lineNoCov">          0 :             for (uint8_t i = 0; i &lt; BankSize; ++i)</span></a>
-<a name="371"><span class="lineNum">     371 </span><span class="lineNoCov">          0 :                 newdirty |= states[i].decay() &amp;&amp; i == this-&gt;getActiveBank();</span></a>
-<a name="372"><span class="lineNum">     372 </span>            :         // Only mark dirty if the value of the active bank decayed</a>
-<a name="373"><span class="lineNum">     373 </span><span class="lineCov">          2 :         return newdirty;</span></a>
-<a name="374"><span class="lineNum">     374 </span>            :     }</a>
-<a name="375"><span class="lineNum">     375 </span>            : </a>
-<a name="376"><span class="lineNum">     376 </span>            :   public:</a>
-<a name="377"><span class="lineNum">     377 </span>            :     /// Reset all values to zero.</a>
-<a name="378"><span class="lineNum">     378 </span><span class="lineNoCov">          0 :     void reset() override {</span></a>
-<a name="379"><span class="lineNum">     379 </span><span class="lineNoCov">          0 :         states = {{}};</span></a>
-<a name="380"><span class="lineNum">     380 </span><span class="lineNoCov">          0 :         dirty = true;</span></a>
-<a name="381"><span class="lineNum">     381 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="382"><span class="lineNum">     382 </span>            : </a>
-<a name="383"><span class="lineNum">     383 </span>            :     /// Decay the VU meter.</a>
-<a name="384"><span class="lineNum">     384 </span><span class="lineNoCov">          0 :     void update() override {</span></a>
-<a name="385"><span class="lineNum">     385 </span><span class="lineNoCov">          0 :         dirty |= decay();</span></a>
-<a name="386"><span class="lineNum">     386 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="387"><span class="lineNum">     387 </span>            : </a>
-<a name="388"><span class="lineNum">     388 </span>            :   protected:</a>
-<a name="389"><span class="lineNum">     389 </span><span class="lineCov">         12 :     void onBankSettingChange() override { dirty = true; }</span></a>
-<a name="390"><span class="lineNum">     390 </span>            : </a>
-<a name="391"><span class="lineNum">     391 </span>            :   public:</a>
-<a name="392"><span class="lineNum">     392 </span>            :     /// @name Data access</a>
-<a name="393"><span class="lineNum">     393 </span>            :     /// @{</a>
-<a name="394"><span class="lineNum">     394 </span>            : </a>
-<a name="395"><span class="lineNum">     395 </span>            :     /// Get the most recent VU position that was received for the given bank.</a>
-<a name="396"><span class="lineNum">     396 </span><span class="lineCov">         15 :     uint8_t getValue(uint8_t bank) const { return states[bank].value; }</span></a>
-<a name="397"><span class="lineNum">     397 </span>            :     /// Get the status of the overload indicator for the given bank.</a>
-<a name="398"><span class="lineNum">     398 </span><span class="lineCov">          6 :     bool getOverload(uint8_t bank) const { return states[bank].overload; }</span></a>
-<a name="399"><span class="lineNum">     399 </span>            :     /// Get the most recent VU position for the given bank as a value between</a>
-<a name="400"><span class="lineNum">     400 </span>            :     /// 0 and 1.</a>
-<a name="401"><span class="lineNum">     401 </span>            :     float getFloatValue(uint8_t bank) const { return getValue(bank) / 12.f; }</a>
-<a name="402"><span class="lineNum">     402 </span>            : </a>
-<a name="403"><span class="lineNum">     403 </span>            :     /// Get the most recent VU position that was received for the active bank.</a>
-<a name="404"><span class="lineNum">     404 </span><span class="lineCov">         15 :     uint8_t getValue() override { return getValue(this-&gt;getActiveBank()); }</span></a>
-<a name="405"><span class="lineNum">     405 </span>            :     /// Get the status of the overload indicator for the active bank.</a>
-<a name="406"><span class="lineNum">     406 </span><span class="lineCov">          6 :     bool getOverload() override { return getOverload(this-&gt;getActiveBank()); }</span></a>
-<a name="407"><span class="lineNum">     407 </span>            :     /// Get the most recent VU position for the active bank as a value between</a>
-<a name="408"><span class="lineNum">     408 </span>            :     /// 0 and 1.</a>
-<a name="409"><span class="lineNum">     409 </span><span class="lineNoCov">          0 :     float getFloatValue() override { return getValue() / 12.f; }</span></a>
-<a name="410"><span class="lineNum">     410 </span>            : </a>
-<a name="411"><span class="lineNum">     411 </span>            :     /// @}</a>
-<a name="412"><span class="lineNum">     412 </span>            : </a>
-<a name="413"><span class="lineNum">     413 </span>            :   private:</a>
-<a name="414"><span class="lineNum">     414 </span>            :     AH::Array&lt;VUState, BankSize&gt; states = {{}};</a>
-<a name="415"><span class="lineNum">     415 </span>            :     AH::Timer&lt;millis&gt; decayTimer;</a>
-<a name="416"><span class="lineNum">     416 </span>            : };</a>
-<a name="417"><span class="lineNum">     417 </span>            : </a>
-<a name="418"><span class="lineNum">     418 </span>            : } // namespace Bankable</a>
-<a name="419"><span class="lineNum">     419 </span>            : </a>
-<a name="420"><span class="lineNum">     420 </span>            : } // namespace MCU</a>
-<a name="421"><span class="lineNum">     421 </span>            : </a>
-<a name="422"><span class="lineNum">     422 </span>            : END_CS_NAMESPACE</a>
+<a name="363"><span class="lineNum">     363 </span><span class="lineCov">          2 :     bool decay() {</span></a>
+<a name="364"><span class="lineNum">     364 </span><span class="lineCov">          2 :         bool newdirty = false;</span></a>
+<a name="365"><span class="lineNum">     365 </span><span class="lineCov">          2 :         if (decayTimer.getInterval() != VUDecay::Hold &amp;&amp; decayTimer)</span></a>
+<a name="366"><span class="lineNum">     366 </span><span class="lineNoCov">          0 :             for (uint8_t i = 0; i &lt; BankSize; ++i)</span></a>
+<a name="367"><span class="lineNum">     367 </span><span class="lineNoCov">          0 :                 newdirty |= states[i].decay() &amp;&amp; i == this-&gt;getActiveBank();</span></a>
+<a name="368"><span class="lineNum">     368 </span>            :         // Only mark dirty if the value of the active bank decayed</a>
+<a name="369"><span class="lineNum">     369 </span><span class="lineCov">          2 :         return newdirty;</span></a>
+<a name="370"><span class="lineNum">     370 </span>            :     }</a>
+<a name="371"><span class="lineNum">     371 </span>            : </a>
+<a name="372"><span class="lineNum">     372 </span>            :   public:</a>
+<a name="373"><span class="lineNum">     373 </span>            :     /// Reset all values to zero.</a>
+<a name="374"><span class="lineNum">     374 </span><span class="lineNoCov">          0 :     void reset() override {</span></a>
+<a name="375"><span class="lineNum">     375 </span><span class="lineNoCov">          0 :         states = {{}};</span></a>
+<a name="376"><span class="lineNum">     376 </span><span class="lineNoCov">          0 :         dirty = true;</span></a>
+<a name="377"><span class="lineNum">     377 </span><span class="lineNoCov">          0 :     }</span></a>
+<a name="378"><span class="lineNum">     378 </span>            : </a>
+<a name="379"><span class="lineNum">     379 </span>            :     /// Decay the VU meter.</a>
+<a name="380"><span class="lineNum">     380 </span><span class="lineNoCov">          0 :     void update() override { dirty |= decay(); }</span></a>
+<a name="381"><span class="lineNum">     381 </span>            : </a>
+<a name="382"><span class="lineNum">     382 </span>            :   protected:</a>
+<a name="383"><span class="lineNum">     383 </span><span class="lineCov">         12 :     void onBankSettingChange() override { dirty = true; }</span></a>
+<a name="384"><span class="lineNum">     384 </span>            : </a>
+<a name="385"><span class="lineNum">     385 </span>            :   public:</a>
+<a name="386"><span class="lineNum">     386 </span>            :     /// @name Data access</a>
+<a name="387"><span class="lineNum">     387 </span>            :     /// @{</a>
+<a name="388"><span class="lineNum">     388 </span>            : </a>
+<a name="389"><span class="lineNum">     389 </span>            :     /// Get the most recent VU position that was received for the given bank.</a>
+<a name="390"><span class="lineNum">     390 </span><span class="lineCov">         15 :     uint8_t getValue(uint8_t bank) const { return states[bank].value; }</span></a>
+<a name="391"><span class="lineNum">     391 </span>            :     /// Get the status of the overload indicator for the given bank.</a>
+<a name="392"><span class="lineNum">     392 </span><span class="lineCov">          6 :     bool getOverload(uint8_t bank) const { return states[bank].overload; }</span></a>
+<a name="393"><span class="lineNum">     393 </span>            :     /// Get the most recent VU position for the given bank as a value between</a>
+<a name="394"><span class="lineNum">     394 </span>            :     /// 0 and 1.</a>
+<a name="395"><span class="lineNum">     395 </span>            :     float getFloatValue(uint8_t bank) const { return getValue(bank) / 12.f; }</a>
+<a name="396"><span class="lineNum">     396 </span>            : </a>
+<a name="397"><span class="lineNum">     397 </span>            :     /// Get the most recent VU position that was received for the active bank.</a>
+<a name="398"><span class="lineNum">     398 </span><span class="lineCov">         15 :     uint8_t getValue() override { return getValue(this-&gt;getActiveBank()); }</span></a>
+<a name="399"><span class="lineNum">     399 </span>            :     /// Get the status of the overload indicator for the active bank.</a>
+<a name="400"><span class="lineNum">     400 </span><span class="lineCov">          6 :     bool getOverload() override { return getOverload(this-&gt;getActiveBank()); }</span></a>
+<a name="401"><span class="lineNum">     401 </span>            :     /// Get the most recent VU position for the active bank as a value between</a>
+<a name="402"><span class="lineNum">     402 </span>            :     /// 0 and 1.</a>
+<a name="403"><span class="lineNum">     403 </span><span class="lineNoCov">          0 :     float getFloatValue() override { return getValue() / 12.f; }</span></a>
+<a name="404"><span class="lineNum">     404 </span>            : </a>
+<a name="405"><span class="lineNum">     405 </span>            :     /// @}</a>
+<a name="406"><span class="lineNum">     406 </span>            : </a>
+<a name="407"><span class="lineNum">     407 </span>            :   private:</a>
+<a name="408"><span class="lineNum">     408 </span>            :     AH::Array&lt;VUState, BankSize&gt; states = {{}};</a>
+<a name="409"><span class="lineNum">     409 </span>            :     AH::Timer&lt;millis&gt; decayTimer;</a>
+<a name="410"><span class="lineNum">     410 </span>            : };</a>
+<a name="411"><span class="lineNum">     411 </span>            : </a>
+<a name="412"><span class="lineNum">     412 </span>            : } // namespace Bankable</a>
+<a name="413"><span class="lineNum">     413 </span>            : </a>
+<a name="414"><span class="lineNum">     414 </span>            : } // namespace MCU</a>
+<a name="415"><span class="lineNum">     415 </span>            : </a>
+<a name="416"><span class="lineNum">     416 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

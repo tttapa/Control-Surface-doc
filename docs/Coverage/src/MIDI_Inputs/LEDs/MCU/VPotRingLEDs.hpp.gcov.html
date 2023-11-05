@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Inputs/LEDs/MCU/VPotRingLEDs.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/MIDI_Inputs/LEDs/MCU/VPotRingLEDs.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">24</td>
-            <td class="headerCovTableEntry">28</td>
-            <td class="headerCovTableEntryMed">85.7 %</td>
+            <td class="headerCovTableEntry">22</td>
+            <td class="headerCovTableEntry">26</td>
+            <td class="headerCovTableEntryMed">84.6 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">7</td>
@@ -122,95 +122,90 @@
 <a name="52"><span class="lineNum">      52 </span>            :         this-&gt;dirty |= newdirty;</a>
 <a name="53"><span class="lineNum">      53 </span>            :     }</a>
 <a name="54"><span class="lineNum">      54 </span>            : </a>
-<a name="55"><span class="lineNum">      55 </span>            :     void updateDisplay() {</a>
-<a name="56"><span class="lineNum">      56 </span>            :         this-&gt;displayVPot(this-&gt;getState());</a>
-<a name="57"><span class="lineNum">      57 </span>            :     }</a>
-<a name="58"><span class="lineNum">      58 </span>            : </a>
-<a name="59"><span class="lineNum">      59 </span>            :   public:</a>
-<a name="60"><span class="lineNum">      60 </span>            :     void begin() override {</a>
-<a name="61"><span class="lineNum">      61 </span>            :         Parent::begin();</a>
-<a name="62"><span class="lineNum">      62 </span>            :         VPotRingLEDsDriver::begin();</a>
-<a name="63"><span class="lineNum">      63 </span>            :         updateDisplay();</a>
-<a name="64"><span class="lineNum">      64 </span>            :     }</a>
-<a name="65"><span class="lineNum">      65 </span>            : </a>
-<a name="66"><span class="lineNum">      66 </span>            :     void reset() override {</a>
-<a name="67"><span class="lineNum">      67 </span>            :         Parent::reset();</a>
-<a name="68"><span class="lineNum">      68 </span>            :         updateDisplay();</a>
-<a name="69"><span class="lineNum">      69 </span>            :     }</a>
-<a name="70"><span class="lineNum">      70 </span>            : };</a>
+<a name="55"><span class="lineNum">      55 </span>            :     void updateDisplay() { this-&gt;displayVPot(this-&gt;getState()); }</a>
+<a name="56"><span class="lineNum">      56 </span>            : </a>
+<a name="57"><span class="lineNum">      57 </span>            :   public:</a>
+<a name="58"><span class="lineNum">      58 </span>            :     void begin() override {</a>
+<a name="59"><span class="lineNum">      59 </span>            :         Parent::begin();</a>
+<a name="60"><span class="lineNum">      60 </span>            :         VPotRingLEDsDriver::begin();</a>
+<a name="61"><span class="lineNum">      61 </span>            :         updateDisplay();</a>
+<a name="62"><span class="lineNum">      62 </span>            :     }</a>
+<a name="63"><span class="lineNum">      63 </span>            : </a>
+<a name="64"><span class="lineNum">      64 </span>            :     void reset() override {</a>
+<a name="65"><span class="lineNum">      65 </span>            :         Parent::reset();</a>
+<a name="66"><span class="lineNum">      66 </span>            :         updateDisplay();</a>
+<a name="67"><span class="lineNum">      67 </span>            :     }</a>
+<a name="68"><span class="lineNum">      68 </span>            : };</a>
+<a name="69"><span class="lineNum">      69 </span>            : </a>
+<a name="70"><span class="lineNum">      70 </span>            : namespace Bankable {</a>
 <a name="71"><span class="lineNum">      71 </span>            : </a>
-<a name="72"><span class="lineNum">      72 </span>            : namespace Bankable {</a>
-<a name="73"><span class="lineNum">      73 </span>            : </a>
-<a name="74"><span class="lineNum">      74 </span>            : /**</a>
-<a name="75"><span class="lineNum">      75 </span>            :  * @brief   A MIDI input element that represents a Mackie Control Universal VPot</a>
-<a name="76"><span class="lineNum">      76 </span>            :  *          ring and displays its value using LEDs. This version can be banked.</a>
-<a name="77"><span class="lineNum">      77 </span>            :  * </a>
-<a name="78"><span class="lineNum">      78 </span>            :  * @tparam  BankSize</a>
-<a name="79"><span class="lineNum">      79 </span>            :  *          The number of banks.</a>
-<a name="80"><span class="lineNum">      80 </span>            :  * </a>
-<a name="81"><span class="lineNum">      81 </span>            :  * @ingroup BankableMIDIInputElementsLEDs</a>
-<a name="82"><span class="lineNum">      82 </span>            :  */</a>
-<a name="83"><span class="lineNum">      83 </span>            : template &lt;uint8_t BankSize&gt;</a>
-<a name="84"><span class="lineNum">      84 </span>            : class VPotRingLEDs : public VPotRing&lt;BankSize&gt;, public VPotRingLEDsDriver {</a>
-<a name="85"><span class="lineNum">      85 </span>            :   public:</a>
-<a name="86"><span class="lineNum">      86 </span>            :     using Parent = VPotRing&lt;BankSize&gt;;</a>
-<a name="87"><span class="lineNum">      87 </span>            :     using Matcher = typename Parent::Matcher;</a>
-<a name="88"><span class="lineNum">      88 </span>            : </a>
-<a name="89"><span class="lineNum">      89 </span>            :     /** </a>
-<a name="90"><span class="lineNum">      90 </span>            :      * Constructor.</a>
-<a name="91"><span class="lineNum">      91 </span>            :      * </a>
-<a name="92"><span class="lineNum">      92 </span>            :      * @param   config</a>
-<a name="93"><span class="lineNum">      93 </span>            :      *          The bank configuration to use: the bank to add this element to,</a>
-<a name="94"><span class="lineNum">      94 </span>            :      *          and whether to change the address, channel or cable number.</a>
-<a name="95"><span class="lineNum">      95 </span>            :      * @param   leds</a>
-<a name="96"><span class="lineNum">      96 </span>            :      *          The pins with LEDs connected.</a>
-<a name="97"><span class="lineNum">      97 </span>            :      * @param   track</a>
-<a name="98"><span class="lineNum">      98 </span>            :      *          The track of the VPot. [1, 8]</a>
-<a name="99"><span class="lineNum">      99 </span>            :      * @param   channelCN</a>
-<a name="100"><span class="lineNum">     100 </span>            :      *          The MIDI channel [Channel_1, Channel_16] and Cable</a>
-<a name="101"><span class="lineNum">     101 </span>            :      *          Number [Cable_1, Cable_16].</a>
-<a name="102"><span class="lineNum">     102 </span>            :      */</a>
-<a name="103"><span class="lineNum">     103 </span><span class="lineCov">          1 :     VPotRingLEDs(BankConfig&lt;BankSize&gt; config, const PinList&lt;11&gt; &amp;leds,</span></a>
-<a name="104"><span class="lineNum">     104 </span>            :                  uint8_t track, MIDIChannelCable channelCN = Channel_1)</a>
-<a name="105"><span class="lineNum">     105 </span>            :         : Parent(config, track, channelCN),</a>
-<a name="106"><span class="lineNum">     106 </span><span class="lineCov">          1 :           VPotRingLEDsDriver(leds) {}</span></a>
-<a name="107"><span class="lineNum">     107 </span>            : </a>
-<a name="108"><span class="lineNum">     108 </span>            :   protected:</a>
-<a name="109"><span class="lineNum">     109 </span><span class="lineCov">          2 :     void handleUpdate(typename Matcher::Result match) override {</span></a>
-<a name="110"><span class="lineNum">     110 </span><span class="lineCov">          2 :         bool newdirty = Parent::handleUpdateImpl(match);</span></a>
-<a name="111"><span class="lineNum">     111 </span><span class="lineCov">          2 :         if (newdirty)</span></a>
-<a name="112"><span class="lineNum">     112 </span><span class="lineCov">          1 :             updateDisplay();</span></a>
-<a name="113"><span class="lineNum">     113 </span><span class="lineCov">          2 :         this-&gt;dirty |= newdirty;</span></a>
-<a name="114"><span class="lineNum">     114 </span><span class="lineCov">          2 :     }</span></a>
-<a name="115"><span class="lineNum">     115 </span>            : </a>
-<a name="116"><span class="lineNum">     116 </span><span class="lineCov">          3 :     void updateDisplay() {</span></a>
-<a name="117"><span class="lineNum">     117 </span><span class="lineCov">          3 :         this-&gt;displayVPot(this-&gt;getState());</span></a>
-<a name="118"><span class="lineNum">     118 </span><span class="lineCov">          3 :     }</span></a>
-<a name="119"><span class="lineNum">     119 </span>            : </a>
-<a name="120"><span class="lineNum">     120 </span>            :   public:</a>
-<a name="121"><span class="lineNum">     121 </span><span class="lineCov">          1 :     void begin() override {</span></a>
-<a name="122"><span class="lineNum">     122 </span><span class="lineCov">          1 :         Parent::begin();</span></a>
-<a name="123"><span class="lineNum">     123 </span><span class="lineCov">          1 :         VPotRingLEDsDriver::begin();</span></a>
-<a name="124"><span class="lineNum">     124 </span><span class="lineCov">          1 :         updateDisplay();</span></a>
-<a name="125"><span class="lineNum">     125 </span><span class="lineCov">          1 :     }</span></a>
+<a name="72"><span class="lineNum">      72 </span>            : /**</a>
+<a name="73"><span class="lineNum">      73 </span>            :  * @brief   A MIDI input element that represents a Mackie Control Universal VPot</a>
+<a name="74"><span class="lineNum">      74 </span>            :  *          ring and displays its value using LEDs. This version can be banked.</a>
+<a name="75"><span class="lineNum">      75 </span>            :  * </a>
+<a name="76"><span class="lineNum">      76 </span>            :  * @tparam  BankSize</a>
+<a name="77"><span class="lineNum">      77 </span>            :  *          The number of banks.</a>
+<a name="78"><span class="lineNum">      78 </span>            :  * </a>
+<a name="79"><span class="lineNum">      79 </span>            :  * @ingroup BankableMIDIInputElementsLEDs</a>
+<a name="80"><span class="lineNum">      80 </span>            :  */</a>
+<a name="81"><span class="lineNum">      81 </span>            : template &lt;uint8_t BankSize&gt;</a>
+<a name="82"><span class="lineNum">      82 </span>            : class VPotRingLEDs : public VPotRing&lt;BankSize&gt;, public VPotRingLEDsDriver {</a>
+<a name="83"><span class="lineNum">      83 </span>            :   public:</a>
+<a name="84"><span class="lineNum">      84 </span>            :     using Parent = VPotRing&lt;BankSize&gt;;</a>
+<a name="85"><span class="lineNum">      85 </span>            :     using Matcher = typename Parent::Matcher;</a>
+<a name="86"><span class="lineNum">      86 </span>            : </a>
+<a name="87"><span class="lineNum">      87 </span>            :     /** </a>
+<a name="88"><span class="lineNum">      88 </span>            :      * Constructor.</a>
+<a name="89"><span class="lineNum">      89 </span>            :      * </a>
+<a name="90"><span class="lineNum">      90 </span>            :      * @param   config</a>
+<a name="91"><span class="lineNum">      91 </span>            :      *          The bank configuration to use: the bank to add this element to,</a>
+<a name="92"><span class="lineNum">      92 </span>            :      *          and whether to change the address, channel or cable number.</a>
+<a name="93"><span class="lineNum">      93 </span>            :      * @param   leds</a>
+<a name="94"><span class="lineNum">      94 </span>            :      *          The pins with LEDs connected.</a>
+<a name="95"><span class="lineNum">      95 </span>            :      * @param   track</a>
+<a name="96"><span class="lineNum">      96 </span>            :      *          The track of the VPot. [1, 8]</a>
+<a name="97"><span class="lineNum">      97 </span>            :      * @param   channelCN</a>
+<a name="98"><span class="lineNum">      98 </span>            :      *          The MIDI channel [Channel_1, Channel_16] and Cable</a>
+<a name="99"><span class="lineNum">      99 </span>            :      *          Number [Cable_1, Cable_16].</a>
+<a name="100"><span class="lineNum">     100 </span>            :      */</a>
+<a name="101"><span class="lineNum">     101 </span><span class="lineCov">          1 :     VPotRingLEDs(BankConfig&lt;BankSize&gt; config, const PinList&lt;11&gt; &amp;leds,</span></a>
+<a name="102"><span class="lineNum">     102 </span>            :                  uint8_t track, MIDIChannelCable channelCN = Channel_1)</a>
+<a name="103"><span class="lineNum">     103 </span><span class="lineCov">          1 :         : Parent(config, track, channelCN), VPotRingLEDsDriver(leds) {}</span></a>
+<a name="104"><span class="lineNum">     104 </span>            : </a>
+<a name="105"><span class="lineNum">     105 </span>            :   protected:</a>
+<a name="106"><span class="lineNum">     106 </span><span class="lineCov">          2 :     void handleUpdate(typename Matcher::Result match) override {</span></a>
+<a name="107"><span class="lineNum">     107 </span><span class="lineCov">          2 :         bool newdirty = Parent::handleUpdateImpl(match);</span></a>
+<a name="108"><span class="lineNum">     108 </span><span class="lineCov">          2 :         if (newdirty)</span></a>
+<a name="109"><span class="lineNum">     109 </span><span class="lineCov">          1 :             updateDisplay();</span></a>
+<a name="110"><span class="lineNum">     110 </span><span class="lineCov">          2 :         this-&gt;dirty |= newdirty;</span></a>
+<a name="111"><span class="lineNum">     111 </span><span class="lineCov">          2 :     }</span></a>
+<a name="112"><span class="lineNum">     112 </span>            : </a>
+<a name="113"><span class="lineNum">     113 </span><span class="lineCov">          3 :     void updateDisplay() { this-&gt;displayVPot(this-&gt;getState()); }</span></a>
+<a name="114"><span class="lineNum">     114 </span>            : </a>
+<a name="115"><span class="lineNum">     115 </span>            :   public:</a>
+<a name="116"><span class="lineNum">     116 </span><span class="lineCov">          1 :     void begin() override {</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineCov">          1 :         Parent::begin();</span></a>
+<a name="118"><span class="lineNum">     118 </span><span class="lineCov">          1 :         VPotRingLEDsDriver::begin();</span></a>
+<a name="119"><span class="lineNum">     119 </span><span class="lineCov">          1 :         updateDisplay();</span></a>
+<a name="120"><span class="lineNum">     120 </span><span class="lineCov">          1 :     }</span></a>
+<a name="121"><span class="lineNum">     121 </span>            : </a>
+<a name="122"><span class="lineNum">     122 </span><span class="lineNoCov">          0 :     void reset() override {</span></a>
+<a name="123"><span class="lineNum">     123 </span><span class="lineNoCov">          0 :         Parent::reset();</span></a>
+<a name="124"><span class="lineNum">     124 </span><span class="lineNoCov">          0 :         updateDisplay();</span></a>
+<a name="125"><span class="lineNum">     125 </span><span class="lineNoCov">          0 :     }</span></a>
 <a name="126"><span class="lineNum">     126 </span>            : </a>
-<a name="127"><span class="lineNum">     127 </span><span class="lineNoCov">          0 :     void reset() override {</span></a>
-<a name="128"><span class="lineNum">     128 </span><span class="lineNoCov">          0 :         Parent::reset();</span></a>
-<a name="129"><span class="lineNum">     129 </span><span class="lineNoCov">          0 :         updateDisplay();</span></a>
-<a name="130"><span class="lineNum">     130 </span><span class="lineNoCov">          0 :     }</span></a>
-<a name="131"><span class="lineNum">     131 </span>            : </a>
-<a name="132"><span class="lineNum">     132 </span>            :   protected:</a>
-<a name="133"><span class="lineNum">     133 </span><span class="lineCov">          1 :     void onBankSettingChange() override {</span></a>
-<a name="134"><span class="lineNum">     134 </span><span class="lineCov">          1 :         Parent::onBankSettingChange();</span></a>
-<a name="135"><span class="lineNum">     135 </span><span class="lineCov">          1 :         updateDisplay();</span></a>
-<a name="136"><span class="lineNum">     136 </span><span class="lineCov">          1 :     }</span></a>
-<a name="137"><span class="lineNum">     137 </span>            : };</a>
-<a name="138"><span class="lineNum">     138 </span>            : </a>
-<a name="139"><span class="lineNum">     139 </span>            : } // namespace Bankable</a>
-<a name="140"><span class="lineNum">     140 </span>            : </a>
-<a name="141"><span class="lineNum">     141 </span>            : } // namespace MCU</a>
-<a name="142"><span class="lineNum">     142 </span>            : </a>
-<a name="143"><span class="lineNum">     143 </span>            : END_CS_NAMESPACE</a>
+<a name="127"><span class="lineNum">     127 </span>            :   protected:</a>
+<a name="128"><span class="lineNum">     128 </span><span class="lineCov">          1 :     void onBankSettingChange() override {</span></a>
+<a name="129"><span class="lineNum">     129 </span><span class="lineCov">          1 :         Parent::onBankSettingChange();</span></a>
+<a name="130"><span class="lineNum">     130 </span><span class="lineCov">          1 :         updateDisplay();</span></a>
+<a name="131"><span class="lineNum">     131 </span><span class="lineCov">          1 :     }</span></a>
+<a name="132"><span class="lineNum">     132 </span>            : };</a>
+<a name="133"><span class="lineNum">     133 </span>            : </a>
+<a name="134"><span class="lineNum">     134 </span>            : } // namespace Bankable</a>
+<a name="135"><span class="lineNum">     135 </span>            : </a>
+<a name="136"><span class="lineNum">     136 </span>            : } // namespace MCU</a>
+<a name="137"><span class="lineNum">     137 </span>            : </a>
+<a name="138"><span class="lineNum">     138 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

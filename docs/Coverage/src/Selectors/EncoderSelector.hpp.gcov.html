@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/Selectors/EncoderSelector.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/Selectors/EncoderSelector.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,16 +28,16 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">6</td>
-            <td class="headerCovTableEntry">29</td>
-            <td class="headerCovTableEntryLo">20.7 %</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntry">28</td>
+            <td class="headerCovTableEntryLo">17.9 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -91,9 +91,9 @@
 <a name="21"><span class="lineNum">      21 </span><span class="lineCov">          2 :     GenericEncoderSelector(Selectable&lt;N&gt; &amp;selectable, const Callback &amp;callback,</span></a>
 <a name="22"><span class="lineNum">      22 </span>            :                            const EncoderSwitchPinList &amp;pins,</a>
 <a name="23"><span class="lineNum">      23 </span>            :                            int8_t pulsesPerStep = 4, Wrap wrap = Wrap::Wrap)</a>
-<a name="24"><span class="lineNum">      24 </span><span class="lineCov">          2 :         : GenericSelector&lt;N, Callback&gt; {selectable, callback}, encoder {pins.A,</span></a>
-<a name="25"><span class="lineNum">      25 </span><span class="lineCov">          2 :                                                                         pins.B},</span></a>
-<a name="26"><span class="lineNum">      26 </span><span class="lineCov">          4 :           switchPin(pins.switchPin), pulsesPerStep(pulsesPerStep), wrap(wrap) {}</span></a>
+<a name="24"><span class="lineNum">      24 </span>            :         : GenericSelector&lt;N, Callback&gt; {selectable, callback},</a>
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">          2 :           encoder {pins.A, pins.B}, switchPin(pins.switchPin),</span></a>
+<a name="26"><span class="lineNum">      26 </span><span class="lineCov">          4 :           pulsesPerStep(pulsesPerStep), wrap(wrap) {}</span></a>
 <a name="27"><span class="lineNum">      27 </span>            : </a>
 <a name="28"><span class="lineNum">      28 </span><span class="lineNoCov">          0 :     void begin() override {</span></a>
 <a name="29"><span class="lineNum">      29 </span><span class="lineNoCov">          0 :         Parent::begin();</span></a>

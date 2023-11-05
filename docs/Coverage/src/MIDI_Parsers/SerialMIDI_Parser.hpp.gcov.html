@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Parsers/SerialMIDI_Parser.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/MIDI_Parsers/SerialMIDI_Parser.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">25</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">14</td>
@@ -84,7 +84,7 @@
 <a name="14"><span class="lineNum">      14 </span>            :   public:</a>
 <a name="15"><span class="lineNum">      15 </span><span class="lineCov">        100 :     SerialMIDI_Parser(bool sysCommonCancelsRunningStatus = true)</span></a>
 <a name="16"><span class="lineNum">      16 </span><span class="lineCov">        100 :         : sysCommonCancelsRunningStatus(sysCommonCancelsRunningStatus) {}</span></a>
-<a name="17"><span class="lineNum">      17 </span>            :     </a>
+<a name="17"><span class="lineNum">      17 </span>            : </a>
 <a name="18"><span class="lineNum">      18 </span>            :     /**</a>
 <a name="19"><span class="lineNum">      19 </span>            :      * @brief   Parse one incoming MIDI message.</a>
 <a name="20"><span class="lineNum">      20 </span>            :      * @param   puller</a>
@@ -129,7 +129,7 @@
 <a name="59"><span class="lineNum">      59 </span>            :     /// for example. The byte cannot be added to the buffer now, so store it to</a>
 <a name="60"><span class="lineNum">      60 </span>            :     /// add it the next time the parser is updated.</a>
 <a name="61"><span class="lineNum">      61 </span><span class="lineCov">         11 :     void storeByte(uint8_t midiByte) { storedByte = midiByte; }</span></a>
-<a name="62"><span class="lineNum">      62 </span>            :     /// Check whether there's a stored byte. If this is the case, this byte </a>
+<a name="62"><span class="lineNum">      62 </span>            :     /// Check whether there's a stored byte. If this is the case, this byte</a>
 <a name="63"><span class="lineNum">      63 </span>            :     /// should be parsed before reading a new byte.</a>
 <a name="64"><span class="lineNum">      64 </span><span class="lineCov">        169 :     bool hasStoredByte() const { return storedByte != 0xFF; }</span></a>
 <a name="65"><span class="lineNum">      65 </span>            :     /// Get the stored byte. Afterwards, @ref hasStoredByte will return false.</a>
@@ -140,7 +140,7 @@
 <a name="70"><span class="lineNum">      70 </span>            :     }</a>
 <a name="71"><span class="lineNum">      71 </span>            : </a>
 <a name="72"><span class="lineNum">      72 </span>            :   public:</a>
-<a name="73"><span class="lineNum">      73 </span>            :     /// Clear the running status header for MIDI Channel messages. </a>
+<a name="73"><span class="lineNum">      73 </span>            :     /// Clear the running status header for MIDI Channel messages.</a>
 <a name="74"><span class="lineNum">      74 </span>            :     /// Internal method.</a>
 <a name="75"><span class="lineNum">      75 </span><span class="lineCov">         13 :     void cancelRunningStatus() { runningHeader = 0; }</span></a>
 <a name="76"><span class="lineNum">      76 </span>            : </a>
@@ -151,7 +151,7 @@
 <a name="81"><span class="lineNum">      81 </span>            :     /// a message.</a>
 <a name="82"><span class="lineNum">      82 </span>            :     bool thirdByte = false;</a>
 <a name="83"><span class="lineNum">      83 </span>            :     /// Current header (not necessarily running), contains the header of the</a>
-<a name="84"><span class="lineNum">      84 </span>            :     /// message that's currently being received. As soon as the message is </a>
+<a name="84"><span class="lineNum">      84 </span>            :     /// message that's currently being received. As soon as the message is</a>
 <a name="85"><span class="lineNum">      85 </span>            :     /// complete, it is set to zero.</a>
 <a name="86"><span class="lineNum">      86 </span>            :     uint8_t currentHeader = 0;</a>
 <a name="87"><span class="lineNum">      87 </span>            :     /// Running status header.</a>

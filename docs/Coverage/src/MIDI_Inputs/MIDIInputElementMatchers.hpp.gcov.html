@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Inputs/MIDIInputElementMatchers.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/MIDI_Inputs/MIDIInputElementMatchers.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">41</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">15</td>
@@ -116,7 +116,7 @@
 <a name="46"><span class="lineNum">      46 </span><span class="lineCov">         16 :         if (!MIDIAddress::matchSingle(m.getAddress(), address))</span></a>
 <a name="47"><span class="lineNum">      47 </span><span class="lineNoCov">          0 :             return {false, 0};</span></a>
 <a name="48"><span class="lineNum">      48 </span>            :         uint8_t value =</a>
-<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         16 :             m.getMessageType() == MIDIMessageType::NOTE_OFF ? 0 : m.getData2();</span></a>
+<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         16 :             m.getMessageType() == MIDIMessageType::NoteOff ? 0 : m.getData2();</span></a>
 <a name="50"><span class="lineNum">      50 </span><span class="lineCov">         16 :         return {true, value};</span></a>
 <a name="51"><span class="lineNum">      51 </span>            :     }</a>
 <a name="52"><span class="lineNum">      52 </span>            : </a>
@@ -163,7 +163,7 @@
 <a name="93"><span class="lineNum">      93 </span><span class="lineCov">         96 :         if (!MIDIAddress::matchAddressInRange(m.getAddress(), address, length))</span></a>
 <a name="94"><span class="lineNum">      94 </span><span class="lineCov">          2 :             return {false, 0, 0};</span></a>
 <a name="95"><span class="lineNum">      95 </span>            :         uint8_t value =</a>
-<a name="96"><span class="lineNum">      96 </span><span class="lineCov">         94 :             m.getMessageType() == MIDIMessageType::NOTE_OFF ? 0 : m.getData2();</span></a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">         94 :             m.getMessageType() == MIDIMessageType::NoteOff ? 0 : m.getData2();</span></a>
 <a name="97"><span class="lineNum">      97 </span><span class="lineCov">         94 :         uint8_t index = m.getData1() - address.getAddress();</span></a>
 <a name="98"><span class="lineNum">      98 </span><span class="lineCov">         94 :         return {true, value, index};</span></a>
 <a name="99"><span class="lineNum">      99 </span>            :     }</a>
@@ -179,7 +179,7 @@
 <a name="109"><span class="lineNum">     109 </span>            : template &lt;uint8_t BankSize&gt;</a>
 <a name="110"><span class="lineNum">     110 </span>            : struct BankableOneByteMIDIMatcher {</a>
 <a name="111"><span class="lineNum">     111 </span>            :     BankableOneByteMIDIMatcher(</a>
-<a name="112"><span class="lineNum">     112 </span>            :         BankConfig&lt;BankSize, BankType::CHANGE_CHANNEL&gt; config,</a>
+<a name="112"><span class="lineNum">     112 </span>            :         BankConfig&lt;BankSize, BankType::ChangeChannel&gt; config,</a>
 <a name="113"><span class="lineNum">     113 </span>            :         MIDIChannelCable address)</a>
 <a name="114"><span class="lineNum">     114 </span>            :         : config(config), address(address) {}</a>
 <a name="115"><span class="lineNum">     115 </span>            : </a>
@@ -233,7 +233,7 @@
 <a name="163"><span class="lineNum">     163 </span><span class="lineCov">         11 :         if (!matchBankable(m.getAddress(), address, config))</span></a>
 <a name="164"><span class="lineNum">     164 </span><span class="lineNoCov">          0 :             return {false, 0, 0};</span></a>
 <a name="165"><span class="lineNum">     165 </span><span class="lineCov">         11 :         uint8_t value =</span></a>
-<a name="166"><span class="lineNum">     166 </span><span class="lineCov">         20 :             m.getMessageType() == MIDIMessageType::NOTE_OFF ? 0 : m.getData2();</span></a>
+<a name="166"><span class="lineNum">     166 </span><span class="lineCov">         20 :             m.getMessageType() == MIDIMessageType::NoteOff ? 0 : m.getData2();</span></a>
 <a name="167"><span class="lineNum">     167 </span><span class="lineCov">         11 :         uint8_t bankIndex = getBankIndex(m.getAddress(), address, config);</span></a>
 <a name="168"><span class="lineNum">     168 </span><span class="lineCov">         11 :         return {true, value, bankIndex};</span></a>
 <a name="169"><span class="lineNum">     169 </span>            :     }</a>
@@ -258,7 +258,7 @@
 <a name="188"><span class="lineNum">     188 </span>            : template &lt;uint8_t BankSize&gt;</a>
 <a name="189"><span class="lineNum">     189 </span>            : struct BankablePitchBendMIDIMatcher {</a>
 <a name="190"><span class="lineNum">     190 </span>            :     BankablePitchBendMIDIMatcher(</a>
-<a name="191"><span class="lineNum">     191 </span>            :         BankConfig&lt;BankSize, BankType::CHANGE_CHANNEL&gt; config,</a>
+<a name="191"><span class="lineNum">     191 </span>            :         BankConfig&lt;BankSize, BankType::ChangeChannel&gt; config,</a>
 <a name="192"><span class="lineNum">     192 </span>            :         MIDIChannelCable address)</a>
 <a name="193"><span class="lineNum">     193 </span>            :         : config(config), address(address) {}</a>
 <a name="194"><span class="lineNum">     194 </span>            : </a>
@@ -315,7 +315,7 @@
 <a name="245"><span class="lineNum">     245 </span>            :         using BankableMIDIMatcherHelpers::matchBankableInRange;</a>
 <a name="246"><span class="lineNum">     246 </span><span class="lineCov">         30 :         if (!matchBankableInRange(m.getAddress(), address, config, length))</span></a>
 <a name="247"><span class="lineNum">     247 </span><span class="lineCov">         18 :             return {false, 0, 0, 0};</span></a>
-<a name="248"><span class="lineNum">     248 </span><span class="lineCov">         12 :         uint8_t value = m.getMessageType() == m.NOTE_OFF ? 0 : m.getData2();</span></a>
+<a name="248"><span class="lineNum">     248 </span><span class="lineCov">         12 :         uint8_t value = m.getMessageType() == m.NoteOff ? 0 : m.getData2();</span></a>
 <a name="249"><span class="lineNum">     249 </span><span class="lineCov">         12 :         uint8_t bankIndex = getBankIndex(m.getAddress(), address, config);</span></a>
 <a name="250"><span class="lineNum">     250 </span><span class="lineCov">         12 :         uint8_t rangeIndex = getRangeIndex(m.getAddress(), address, config);</span></a>
 <a name="251"><span class="lineNum">     251 </span><span class="lineCov">         12 :         return {true, value, bankIndex, rangeIndex};</span></a>

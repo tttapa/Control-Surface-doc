@@ -79,7 +79,7 @@ $(function() {
   <div class="headertitle"><div class="title">Encoder-Selector-Bank.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md278"></a>
+<h1><a class="anchor" id="autotoc_md115"></a>
 Encoder-Selector-Bank</h1>
 <p ><a href="https://github.com/tttapa/Control-Surface/issues/66">https://github.com/tttapa/Control-Surface/issues/66</a></p>
 <div class="fragment"><div class="line"> </div>
@@ -102,9 +102,9 @@ Encoder-Selector-Bank</h1>
 <div class="line"><span class="comment">// The potentiometer that sends MIDI messages</span></div>
 <div class="line"><span class="comment">// the address (controller number) depends on the bank setting</span></div>
 <div class="line"><a id="_a4" name="_a4"></a><a class="code hl_class" href="../../d7/dc0/classBankable_1_1CCPotentiometer.html">Bankable::CCPotentiometer</a> potentiometer {</div>
-<div class="line">  {bank, <a id="a5" name="a5"></a><a class="code hl_enumvalue" href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a8e818986f5a41a491dde170eeeb4fd29">BankType::CHANGE_ADDRESS</a>}, <span class="comment">// Bank configuration</span></div>
-<div class="line">  A0,                               <span class="comment">// Analog pin for potentiometer</span></div>
-<div class="line">  {0x00, <a id="a6" name="a6"></a><a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>},                <span class="comment">// Base CC address</span></div>
+<div class="line">  {bank, <a id="a5" name="a5"></a><a class="code hl_enumvalue" href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a0eb3478cb6007336615f1f1282b34f0e">BankType::ChangeAddress</a>}, <span class="comment">// Bank configuration</span></div>
+<div class="line">  A0,                              <span class="comment">// Analog pin for potentiometer</span></div>
+<div class="line">  {0x00, <a id="a6" name="a6"></a><a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>},               <span class="comment">// Base CC address</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
@@ -116,7 +116,7 @@ Encoder-Selector-Bank</h1>
 <div class="line">  <span class="comment">// You can get the bank number using:</span></div>
 <div class="line">  <span class="comment">//   bank.getSelection();</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aBankConfig_8hpp_html_a6fe085db0aa80588322c415f46d74bf1a8e818986f5a41a491dde170eeeb4fd29"><div class="ttname"><a href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a8e818986f5a41a491dde170eeeb4fd29">CHANGE_ADDRESS</a></div><div class="ttdeci">@ CHANGE_ADDRESS</div><div class="ttdoc">Change the offset of the address (i.e.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d1f/BankConfig_8hpp_source.html#l00017">BankConfig.hpp:17</a></div></div>
+<div class="ttc" id="aBankConfig_8hpp_html_a6fe085db0aa80588322c415f46d74bf1a0eb3478cb6007336615f1f1282b34f0e"><div class="ttname"><a href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1a0eb3478cb6007336615f1f1282b34f0e">ChangeAddress</a></div><div class="ttdeci">@ ChangeAddress</div><div class="ttdoc">Change the offset of the address (i.e.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d1f/BankConfig_8hpp_source.html#l00017">BankConfig.hpp:17</a></div></div>
 <div class="ttc" id="aChannel_8hpp_html_a40d189f24e13a7304f2c9094038588ae"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a></div><div class="ttdeci">constexpr Channel Channel_1</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00118">Channel.hpp:118</a></div></div>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00338">Control_Surface_Class.cpp:338</a></div></div>

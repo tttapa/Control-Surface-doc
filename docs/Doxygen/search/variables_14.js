@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['undefined_5frealtime_5f1_0',['UNDEFINED_REALTIME_1',['../d6/d99/structRealTimeMessage.html#a6386d15f9af090caa12c3592e3eb944c',1,'RealTimeMessage']]],
-  ['undefined_5frealtime_5f2_1',['UNDEFINED_REALTIME_2',['../d6/d99/structRealTimeMessage.html#a01056e0e2e54a9946de74b8ec827cf38',1,'RealTimeMessage']]],
-  ['undefined_5fsyscommon_5f1_2',['UNDEFINED_SYSCOMMON_1',['../d5/dad/structSysCommonMessage.html#adae3977987d28ed101908809327ee15b',1,'SysCommonMessage']]],
-  ['undefined_5fsyscommon_5f2_3',['UNDEFINED_SYSCOMMON_2',['../d5/dad/structSysCommonMessage.html#a32692df68fdee6ece2030735c418bdfb',1,'SysCommonMessage']]],
+  ['undefinedrealtime1_0',['UndefinedRealTime1',['../d6/d99/structRealTimeMessage.html#a198738929ce6c974f5d8e4bc8abf40b7',1,'RealTimeMessage']]],
+  ['undefinedrealtime2_1',['UndefinedRealTime2',['../d6/d99/structRealTimeMessage.html#a38c35c0504efa637f790ad435c2cdf88',1,'RealTimeMessage']]],
+  ['undefinedsyscommon1_2',['UndefinedSysCommon1',['../d5/dad/structSysCommonMessage.html#a286bb62bc1d402ef021f52943fa20fb9',1,'SysCommonMessage']]],
+  ['undefinedsyscommon2_3',['UndefinedSysCommon2',['../d5/dad/structSysCommonMessage.html#a90f71b439174fcc7889c3c11a9146a33',1,'SysCommonMessage']]],
   ['undo_4',['UNDO',['../de/d44/group__MCU__Notes.html#ga3d4fa452c126e6044dd7a121db038a8f',1,'MCU']]],
-  ['unlocked_5',['UNLOCKED',['../d2/d4e/classOutputBankableMIDIAddress__Base.html#a93fca8e8f61a9e4beff5ff4232f9f8bd',1,'OutputBankableMIDIAddress_Base']]],
+  ['unlocked_5',['Unlocked',['../d2/d4e/classOutputBankableMIDIAddress__Base.html#ac5e53526f5c6faf6cbbbf016d9b3cd37',1,'OutputBankableMIDIAddress_Base']]],
   ['up_6',['UP',['../de/d44/group__MCU__Notes.html#gaf774c817f2988667ae8ec405056a891d',1,'MCU']]],
   ['updatables_7',['updatables',['../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08',1,'AH::UpdatableCRTP']]],
   ['usb_5fconnected_8',['usb_connected',['../d1/dd4/classPluggableUSBMIDI.html#ab1c3e9b82180c5303d5061b95c156478',1,'PluggableUSBMIDI']]],

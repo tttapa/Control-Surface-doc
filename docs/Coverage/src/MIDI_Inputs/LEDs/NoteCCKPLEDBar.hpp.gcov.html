@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19 - src/MIDI_Inputs/LEDs/NoteCCKPLEDBar.hpp</title>
+  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/MIDI_Inputs/LEDs/NoteCCKPLEDBar.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">5acdb1c955bf5f22e443e2e6622f3d7a57fa3e19</td>
+            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">12</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-09-03 17:01:56</td>
+            <td class="headerValue">2023-11-05 11:29:24</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">5</td>
@@ -135,7 +135,7 @@
 <a name="65"><span class="lineNum">      65 </span>            : ///          The number of LEDs the display has.</a>
 <a name="66"><span class="lineNum">      66 </span>            : /// @ingroup midi-input-elements-leds</a>
 <a name="67"><span class="lineNum">      67 </span>            : template &lt;uint8_t NumLEDs&gt;</a>
-<a name="68"><span class="lineNum">      68 </span>            : using NoteLEDBar = NoteCCKPLEDBar&lt;MIDIMessageType::NOTE_ON, NumLEDs&gt;;</a>
+<a name="68"><span class="lineNum">      68 </span>            : using NoteLEDBar = NoteCCKPLEDBar&lt;MIDIMessageType::NoteOn, NumLEDs&gt;;</a>
 <a name="69"><span class="lineNum">      69 </span>            : </a>
 <a name="70"><span class="lineNum">      70 </span>            : /// Class that listens for **Control Change** events and displays the</a>
 <a name="71"><span class="lineNum">      71 </span>            : /// value on an **LED Bar Graph**, turning on a different number of LEDs</a>
@@ -145,7 +145,7 @@
 <a name="75"><span class="lineNum">      75 </span>            : ///          The number of LEDs the display has.</a>
 <a name="76"><span class="lineNum">      76 </span>            : /// @ingroup midi-input-elements-leds</a>
 <a name="77"><span class="lineNum">      77 </span>            : template &lt;uint8_t NumLEDs&gt;</a>
-<a name="78"><span class="lineNum">      78 </span>            : using CCLEDBar = NoteCCKPLEDBar&lt;MIDIMessageType::CONTROL_CHANGE, NumLEDs&gt;;</a>
+<a name="78"><span class="lineNum">      78 </span>            : using CCLEDBar = NoteCCKPLEDBar&lt;MIDIMessageType::ControlChange, NumLEDs&gt;;</a>
 <a name="79"><span class="lineNum">      79 </span>            : </a>
 <a name="80"><span class="lineNum">      80 </span>            : /// Class that listens for **Key Pressure** events and displays the pressure on</a>
 <a name="81"><span class="lineNum">      81 </span>            : /// an **LED Bar Graph**, turning on a different number of LEDs</a>
@@ -155,7 +155,7 @@
 <a name="85"><span class="lineNum">      85 </span>            : ///          The number of LEDs the display has.</a>
 <a name="86"><span class="lineNum">      86 </span>            : /// @ingroup midi-input-elements-leds</a>
 <a name="87"><span class="lineNum">      87 </span>            : template &lt;uint8_t NumLEDs&gt;</a>
-<a name="88"><span class="lineNum">      88 </span>            : using KPLEDBar = NoteCCKPLEDBar&lt;MIDIMessageType::KEY_PRESSURE, NumLEDs&gt;;</a>
+<a name="88"><span class="lineNum">      88 </span>            : using KPLEDBar = NoteCCKPLEDBar&lt;MIDIMessageType::KeyPressure, NumLEDs&gt;;</a>
 <a name="89"><span class="lineNum">      89 </span>            : </a>
 <a name="90"><span class="lineNum">      90 </span>            : // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: //</a>
 <a name="91"><span class="lineNum">      91 </span>            : </a>
@@ -225,7 +225,7 @@
 <a name="155"><span class="lineNum">     155 </span>            : ///          The number of LEDs the display has.</a>
 <a name="156"><span class="lineNum">     156 </span>            : /// @ingroup BankableMIDIInputElementsLEDs</a>
 <a name="157"><span class="lineNum">     157 </span>            : template &lt;uint8_t BankSize, uint8_t NumLEDs&gt;</a>
-<a name="158"><span class="lineNum">     158 </span>            : using NoteLEDBar = NoteCCKPLEDBar&lt;MIDIMessageType::NOTE_ON, BankSize, NumLEDs&gt;;</a>
+<a name="158"><span class="lineNum">     158 </span>            : using NoteLEDBar = NoteCCKPLEDBar&lt;MIDIMessageType::NoteOn, BankSize, NumLEDs&gt;;</a>
 <a name="159"><span class="lineNum">     159 </span>            : </a>
 <a name="160"><span class="lineNum">     160 </span>            : /// Class that listens for **Control Change** events and displays the</a>
 <a name="161"><span class="lineNum">     161 </span>            : /// value on an **LED Bar Graph**, turning on a different number of LEDs</a>
@@ -239,7 +239,7 @@
 <a name="169"><span class="lineNum">     169 </span>            : /// @ingroup BankableMIDIInputElementsLEDs</a>
 <a name="170"><span class="lineNum">     170 </span>            : template &lt;uint8_t BankSize, uint8_t NumLEDs&gt;</a>
 <a name="171"><span class="lineNum">     171 </span>            : using CCLEDBar =</a>
-<a name="172"><span class="lineNum">     172 </span>            :     NoteCCKPLEDBar&lt;MIDIMessageType::CONTROL_CHANGE, BankSize, NumLEDs&gt;;</a>
+<a name="172"><span class="lineNum">     172 </span>            :     NoteCCKPLEDBar&lt;MIDIMessageType::ControlChange, BankSize, NumLEDs&gt;;</a>
 <a name="173"><span class="lineNum">     173 </span>            : </a>
 <a name="174"><span class="lineNum">     174 </span>            : /// Class that listens for **Key Pressure** events and displays the pressure on</a>
 <a name="175"><span class="lineNum">     175 </span>            : /// an **LED Bar Graph**, turning on a different number of LEDs</a>
@@ -253,7 +253,7 @@
 <a name="183"><span class="lineNum">     183 </span>            : /// @ingroup BankableMIDIInputElementsLEDs</a>
 <a name="184"><span class="lineNum">     184 </span>            : template &lt;uint8_t BankSize, uint8_t NumLEDs&gt;</a>
 <a name="185"><span class="lineNum">     185 </span>            : using KPLEDBar =</a>
-<a name="186"><span class="lineNum">     186 </span>            :     NoteCCKPLEDBar&lt;MIDIMessageType::KEY_PRESSURE, BankSize, NumLEDs&gt;;</a>
+<a name="186"><span class="lineNum">     186 </span>            :     NoteCCKPLEDBar&lt;MIDIMessageType::KeyPressure, BankSize, NumLEDs&gt;;</a>
 <a name="187"><span class="lineNum">     187 </span>            : </a>
 <a name="188"><span class="lineNum">     188 </span>            : } // namespace Bankable</a>
 <a name="189"><span class="lineNum">     189 </span>            : </a>
