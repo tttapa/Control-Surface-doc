@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/Control_Surface/Control_Surface_Class.cpp</title>
+  <title>LCOV - 90b37ca390c9b50f1e8ccbc0d30eeb816f712ff5 - src/Control_Surface/Control_Surface_Class.cpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
+            <td class="headerValue">90b37ca390c9b50f1e8ccbc0d30eeb816f712ff5</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">13</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-11-05 11:29:24</td>
+            <td class="headerValue">2023-12-14 23:06:50</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -84,9 +84,9 @@
 <a name="14"><span class="lineNum">      14 </span>            : </a>
 <a name="15"><span class="lineNum">      15 </span>            : using AH::ExtendedIOElement;</a>
 <a name="16"><span class="lineNum">      16 </span>            : </a>
-<a name="17"><span class="lineNum">      17 </span><span class="lineCov">        588 : Control_Surface_ &amp;Control_Surface_::getInstance() {</span></a>
-<a name="18"><span class="lineNum">      18 </span><span class="lineCov">        588 :     static Control_Surface_ instance;</span></a>
-<a name="19"><span class="lineNum">      19 </span><span class="lineCov">        588 :     return instance;</span></a>
+<a name="17"><span class="lineNum">      17 </span><span class="lineCov">        589 : Control_Surface_ &amp;Control_Surface_::getInstance() {</span></a>
+<a name="18"><span class="lineNum">      18 </span><span class="lineCov">        589 :     static Control_Surface_ instance;</span></a>
+<a name="19"><span class="lineNum">      19 </span><span class="lineCov">        589 :     return instance;</span></a>
 <a name="20"><span class="lineNum">      20 </span>            : }</a>
 <a name="21"><span class="lineNum">      21 </span>            : </a>
 <a name="22"><span class="lineNum">      22 </span><span class="lineNoCov">          0 : void Control_Surface_::begin() {</span></a>
@@ -114,18 +114,18 @@
 <a name="44"><span class="lineNum">      44 </span><span class="lineNoCov">          0 :     displayTimer.begin();</span></a>
 <a name="45"><span class="lineNum">      45 </span><span class="lineNoCov">          0 : }</span></a>
 <a name="46"><span class="lineNum">      46 </span>            : </a>
-<a name="47"><span class="lineNum">      47 </span><span class="lineCov">         38 : bool Control_Surface_::connectDefaultMIDI_Interface() {</span></a>
+<a name="47"><span class="lineNum">      47 </span><span class="lineCov">         39 : bool Control_Surface_::connectDefaultMIDI_Interface() {</span></a>
 <a name="48"><span class="lineNum">      48 </span>            : #if !DISABLE_PIPES</a>
-<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         38 :     if (hasSinkPipe() || hasSourcePipe())</span></a>
+<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         39 :     if (hasSinkPipe() || hasSourcePipe())</span></a>
 <a name="50"><span class="lineNum">      50 </span><span class="lineNoCov">          0 :         return false;</span></a>
-<a name="51"><span class="lineNum">      51 </span><span class="lineCov">         38 :     auto def = MIDI_Interface::getDefault();</span></a>
-<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         38 :     if (def == nullptr) {</span></a>
+<a name="51"><span class="lineNum">      51 </span><span class="lineCov">         39 :     auto def = MIDI_Interface::getDefault();</span></a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         39 :     if (def == nullptr) {</span></a>
 <a name="53"><span class="lineNum">      53 </span><span class="lineNoCov">          0 :         FATAL_ERROR(F(&quot;No default MIDI Interface&quot;), 0xF123);</span></a>
 <a name="54"><span class="lineNum">      54 </span>            :         return false;</a>
 <a name="55"><span class="lineNum">      55 </span>            :     }</a>
-<a name="56"><span class="lineNum">      56 </span><span class="lineCov">         38 :     *this &lt;&lt; inpipe &lt;&lt; *def;</span></a>
-<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         38 :     *this &gt;&gt; outpipe &gt;&gt; *def;</span></a>
-<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         38 :     return true;</span></a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineCov">         39 :     *this &lt;&lt; inpipe &lt;&lt; *def;</span></a>
+<a name="57"><span class="lineNum">      57 </span><span class="lineCov">         39 :     *this &gt;&gt; outpipe &gt;&gt; *def;</span></a>
+<a name="58"><span class="lineNum">      58 </span><span class="lineCov">         39 :     return true;</span></a>
 <a name="59"><span class="lineNum">      59 </span>            : #else</a>
 <a name="60"><span class="lineNum">      60 </span>            :     return MIDI_Interface::getDefault();</a>
 <a name="61"><span class="lineNum">      61 </span>            : #endif</a>
@@ -180,9 +180,9 @@
 <a name="110"><span class="lineNum">     110 </span><span class="lineNoCov">          0 : }</span></a>
 <a name="111"><span class="lineNum">     111 </span>            : </a>
 <a name="112"><span class="lineNum">     112 </span>            : #if !DISABLE_PIPES</a>
-<a name="113"><span class="lineNum">     113 </span><span class="lineCov">        124 : void Control_Surface_::sendChannelMessageImpl(ChannelMessage msg) {</span></a>
-<a name="114"><span class="lineNum">     114 </span><span class="lineCov">        124 :     this-&gt;sourceMIDItoPipe(msg);</span></a>
-<a name="115"><span class="lineNum">     115 </span><span class="lineCov">        124 : }</span></a>
+<a name="113"><span class="lineNum">     113 </span><span class="lineCov">        125 : void Control_Surface_::sendChannelMessageImpl(ChannelMessage msg) {</span></a>
+<a name="114"><span class="lineNum">     114 </span><span class="lineCov">        125 :     this-&gt;sourceMIDItoPipe(msg);</span></a>
+<a name="115"><span class="lineNum">     115 </span><span class="lineCov">        125 : }</span></a>
 <a name="116"><span class="lineNum">     116 </span><span class="lineNoCov">          0 : void Control_Surface_::sendSysExImpl(SysExMessage msg) {</span></a>
 <a name="117"><span class="lineNum">     117 </span><span class="lineNoCov">          0 :     this-&gt;sourceMIDItoPipe(msg);</span></a>
 <a name="118"><span class="lineNum">     118 </span><span class="lineNoCov">          0 : }</span></a>

@@ -81,7 +81,7 @@ $(function() {
 <div class="contents">
 <p >Filtering and modifying MIDI messages that travel through a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>.</p>
 <p >Filtering and modifying MIDI messages that travel through a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>.</p>
-<h1><a class="anchor" id="autotoc_md67"></a>
+<h1><a class="anchor" id="autotoc_md160"></a>
 MIDI_Pipes-Filter</h1>
 <p >This example demonstrates how to create custom MIDI pipes that can filter out and modify the messages that travel through it. It uses a debug MIDI interface for demonstration purposes, and loops back only MIDI note and real-time messages, messages of any other type are dropped. Additionally, all MIDI note messages are transposed down an octave, and their channel is set to 5.</p>
 <p >To try it out, open the Serial monitor (at 115200 baud) and type <code>98 3C 7F</code> (Note On, channel 9, C4, full velocity). When you press enter, you'll get back the following message (note how the channel and pitch changed):</p>

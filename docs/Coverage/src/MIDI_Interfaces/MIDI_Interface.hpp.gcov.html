@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 39d1ab5785cb122dca752ca8683b34b80b20a76f - src/MIDI_Interfaces/MIDI_Interface.hpp</title>
+  <title>LCOV - 90b37ca390c9b50f1e8ccbc0d30eeb816f712ff5 - src/MIDI_Interfaces/MIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">39d1ab5785cb122dca752ca8683b34b80b20a76f</td>
+            <td class="headerValue">90b37ca390c9b50f1e8ccbc0d30eeb816f712ff5</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">43</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-11-05 11:29:24</td>
+            <td class="headerValue">2023-12-14 23:06:50</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">14</td>
@@ -92,7 +92,7 @@
 <a name="22"><span class="lineNum">      22 </span>            :                        public AH::Updatable&lt;MIDI_Interface&gt;,</a>
 <a name="23"><span class="lineNum">      23 </span>            :                        protected MIDIStaller {</a>
 <a name="24"><span class="lineNum">      24 </span>            :   protected:</a>
-<a name="25"><span class="lineNum">      25 </span><span class="lineCov">        133 :     MIDI_Interface() = default;</span></a>
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">        134 :     MIDI_Interface() = default;</span></a>
 <a name="26"><span class="lineNum">      26 </span>            :     MIDI_Interface(MIDI_Interface &amp;&amp;) = default;</a>
 <a name="27"><span class="lineNum">      27 </span>            : </a>
 <a name="28"><span class="lineNum">      28 </span>            :   public:</a>
@@ -158,7 +158,7 @@
 <a name="88"><span class="lineNum">      88 </span>            :   protected:</a>
 <a name="89"><span class="lineNum">      89 </span>            : #if !DISABLE_PIPES</a>
 <a name="90"><span class="lineNum">      90 </span>            :     /// Accept an incoming MIDI Channel message from the source pipe.</a>
-<a name="91"><span class="lineNum">      91 </span><span class="lineCov">        131 :     void sinkMIDIfromPipe(ChannelMessage msg) override { send(msg); }</span></a>
+<a name="91"><span class="lineNum">      91 </span><span class="lineCov">        132 :     void sinkMIDIfromPipe(ChannelMessage msg) override { send(msg); }</span></a>
 <a name="92"><span class="lineNum">      92 </span>            :     /// Accept an incoming MIDI System Exclusive message from the source pipe.</a>
 <a name="93"><span class="lineNum">      93 </span><span class="lineCov">          8 :     void sinkMIDIfromPipe(SysExMessage msg) override { send(msg); }</span></a>
 <a name="94"><span class="lineNum">      94 </span>            :     /// Accept an incoming MIDI System Common message from the source pipe.</a>

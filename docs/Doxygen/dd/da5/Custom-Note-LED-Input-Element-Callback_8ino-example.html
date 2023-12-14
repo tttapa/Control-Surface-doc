@@ -79,20 +79,20 @@ $(function() {
   <div class="headertitle"><div class="title">Custom-Note-LED-Input-Element-Callback.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md151"></a>
+<h1><a class="anchor" id="autotoc_md259"></a>
 Custom-Note-LED-Input-Element-Callback</h1>
 <p >This example demonstrates how to attach custom actions to incoming Note or Control Change MIDI events.</p>
 <dl class="section user"><dt>Boards:</dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="autotoc_md152"></a>
+<h2><a class="anchor" id="autotoc_md260"></a>
 Connections</h2>
 <ul>
 <li>Pin 3 (PWM pin): An LED (with current-limiting resistor) to ground.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md153"></a>
+<h2><a class="anchor" id="autotoc_md261"></a>
 Behavior</h2>
 <p >If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the built-in LED will light up at full brightness, if a Note Off event for that note is sent, the LED will light dimly. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="autotoc_md154"></a>
+<h2><a class="anchor" id="autotoc_md262"></a>
 Mapping</h2>
 <p >Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C on the keyboard.</p>
 <p >Written by PieterP, 2020-03-10 <br  />
