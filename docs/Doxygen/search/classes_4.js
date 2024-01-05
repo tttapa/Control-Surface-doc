@@ -12,6 +12,7 @@ var searchData=
   ['encoderstate_9',['EncoderState',['../db/dd2/classEncoderState.html',1,'']]],
   ['encoderstate_3c_20decltype_28encoder_2eread_28_29_29_3e_10',['EncoderState&lt; decltype(encoder.read())&gt;',['../db/dd2/classEncoderState.html',1,'']]],
   ['encoderswitchpinlist_11',['EncoderSwitchPinList',['../d7/dc2/structEncoderSwitchPinList.html',1,'']]],
-  ['eulerangles_12',['EulerAngles',['../dd/dd2/structAH_1_1EulerAngles.html',1,'AH']]],
-  ['extendedioelement_13',['ExtendedIOElement',['../d2/dda/classAH_1_1ExtendedIOElement.html',1,'AH']]]
+  ['esp32_5fusbdevicemidibackend_12',['ESP32_USBDeviceMIDIBackend',['../df/d45/structESP32__USBDeviceMIDIBackend.html',1,'']]],
+  ['eulerangles_13',['EulerAngles',['../dd/dd2/structAH_1_1EulerAngles.html',1,'AH']]],
+  ['extendedioelement_14',['ExtendedIOElement',['../d2/dda/classAH_1_1ExtendedIOElement.html',1,'AH']]]
 ];

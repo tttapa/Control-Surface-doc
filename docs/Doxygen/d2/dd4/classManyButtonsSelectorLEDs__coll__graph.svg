@@ -259,30 +259,32 @@
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="../../d0/d32/structAH_1_1Array.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="3.5,-310.5 3.5,-477.5 134.5,-477.5 134.5,-310.5 3.5,-310.5"/>
-<text text-anchor="middle" x="69" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">Array&lt; AH::Button, N &gt;</text>
-<polyline fill="none" stroke="black" points="3.5,-458.5 134.5,-458.5 "/>
-<text text-anchor="start" x="11.5" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ length</text>
-<polyline fill="none" stroke="black" points="3.5,-439.5 134.5,-439.5 "/>
+<polygon fill="white" stroke="black" points="3.5,-299.5 3.5,-488.5 134.5,-488.5 134.5,-299.5 3.5,-299.5"/>
+<text text-anchor="middle" x="69" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">Array&lt; AH::Button, N &gt;</text>
+<polyline fill="none" stroke="black" points="3.5,-469.5 134.5,-469.5 "/>
+<text text-anchor="start" x="11.5" y="-457.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ length</text>
+<polyline fill="none" stroke="black" points="3.5,-450.5 134.5,-450.5 "/>
+<text text-anchor="start" x="11.5" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
 <text text-anchor="start" x="11.5" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
-<text text-anchor="start" x="11.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
+<text text-anchor="start" x="11.5" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
 <text text-anchor="start" x="11.5" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
-<text text-anchor="start" x="11.5" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ begin()</text>
+<text text-anchor="start" x="11.5" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ end()</text>
 <text text-anchor="start" x="11.5" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ end()</text>
-<text text-anchor="start" x="11.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ end()</text>
-<text text-anchor="start" x="11.5" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator==()</text>
-<text text-anchor="start" x="11.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator!=()</text>
+<text text-anchor="start" x="11.5" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator==()</text>
+<text text-anchor="start" x="11.5" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator!=()</text>
+<text text-anchor="start" x="11.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ slice()</text>
 <text text-anchor="start" x="11.5" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ slice()</text>
 <text text-anchor="start" x="11.5" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ slice()</text>
-<text text-anchor="start" x="11.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ cslice()</text>
+<text text-anchor="start" x="11.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ slice()</text>
+<text text-anchor="start" x="11.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ cslice()</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node2 -->
 <g id="edge11" class="edge">
 <title>Node10&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M93.18,-310.4C102.91,-277.13 113.95,-239.42 122.96,-208.62"/>
-<polygon fill="none" stroke="#404040" points="123.07,-208.26 120.92,-201.38 126.44,-196.75 128.59,-203.63 123.07,-208.26"/>
+<path fill="none" stroke="#404040" d="M96.43,-299.3C105.32,-268.9 114.96,-235.97 122.99,-208.53"/>
+<polygon fill="none" stroke="#404040" points="123.07,-208.25 120.92,-201.37 126.44,-196.73 128.6,-203.62 123.07,-208.25"/>
 <text text-anchor="middle" x="142" y="-218" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;buttons</text>
 </g>
 <!-- Node11 -->
@@ -313,8 +315,8 @@
 <!-- Node11&#45;&gt;Node10 -->
 <g id="edge12" class="edge">
 <title>Node11&#45;&gt;Node10</title>
-<path fill="none" stroke="#404040" d="M69,-602.41C69,-566.67 69,-525.91 69,-490.04"/>
-<polygon fill="none" stroke="#404040" points="69,-489.57 65,-483.57 69,-477.57 73,-483.57 69,-489.57"/>
+<path fill="none" stroke="#404040" d="M69,-602.41C69,-570.13 69,-533.76 69,-500.59"/>
+<polygon fill="none" stroke="#404040" points="69,-500.53 65,-494.53 69,-488.53 73,-494.53 69,-500.53"/>
 <text text-anchor="middle" x="86" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00"> +data</text>
 </g>
 <!-- Node12 -->

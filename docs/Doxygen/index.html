@@ -80,7 +80,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p ><a class="anchor" id="md__home_runner_work_Control_Surface_Control_Surface_README"></a> <a href="https://github.com/tttapa/Control-Surface/actions?query=workflow%3A" title="CI+Tests"><img src="https://github.com/tttapa/Control-Surface/workflows/CI%20Tests/badge.svg?branch=main" alt="Build Status" style="pointer-events: none;" class="inline"/></a> <a href="https://tttapa.github.io/Control-Surface-doc/Coverage/index.html"><img src="https://img.shields.io/endpoint?url=https://tttapa.github.io/Control-Surface-doc/Coverage/shield.io.coverage.json" alt="Test Coverage" class="inline"/></a> <a href="https://github.com/tttapa/Control-Surface/actions?query=workflow%3AExamples"><img src="https://github.com/tttapa/Control-Surface/workflows/Examples/badge.svg?branch=main" alt="Examples" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/tttapa/Control-Surface"><img src="https://img.shields.io/github/stars/tttapa/Control-Surface?label=GitHub&amp;logo=github" alt="GitHub" class="inline"/></a> <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen"><img src="https://img.shields.io/badge/Documentation-main-blue" alt="Documentation" class="inline"/></a></p>
-<h1><a class="anchor" id="autotoc_md313"></a>
+<h1><a class="anchor" id="autotoc_md315"></a>
 Control Surface</h1>
 <p >Control Surface is an Arduino library for building MIDI controllers and control surfaces. At its core is a <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d3/df7/midi-tutorial.html">general-purpose MIDI abstraction layer</a> with support for serial MIDI, MIDI over USB, MIDI over BLE, etc., which can be useful for any MIDI-related project. <br  />
  Besides MIDI input/output, Control Surface also includes easy-to-use utilities specifically for building MIDI controllers, supporting controls that send MIDI ─ like potentiometers, push buttons, rotary encoders, etc. ─ and controls that react to incoming MIDI ─ LEDs, displays, and so on. They can also be combined into controls that use both MIDI input and output, such as motorized faders.</p>
@@ -96,12 +96,12 @@ Control Surface</h1>
  </p>
 </blockquote>
 <p><a class="anchor" id="overview"></a></p>
-<h2><a class="anchor" id="autotoc_md314"></a>
+<h2><a class="anchor" id="autotoc_md316"></a>
 Overview</h2>
 <p >This library turns your Arduino-compatible board into a MIDI control surface. <br  />
  Just connect some push buttons, potentiometers, LEDs ... and declare them in your code.</p>
 <p >The following sections give a brief overview of the features of the library.</p>
-<h3><a class="anchor" id="autotoc_md315"></a>
+<h3><a class="anchor" id="autotoc_md317"></a>
 MIDI Interfaces</h3>
 <ul>
 <li><b>MIDI over USB</b></li>
@@ -111,7 +111,7 @@ MIDI Interfaces</h3>
 <li><b>AppleMIDI</b> over WiFi or Ethernet</li>
 </ul>
 <p ><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/dc/df0/group__MIDIInterfaces.html"><em>MIDI Interfaces documentation</em></a></sub></p>
-<h3><a class="anchor" id="autotoc_md316"></a>
+<h3><a class="anchor" id="autotoc_md318"></a>
 MIDI Control Output</h3>
 <ul>
 <li><b>Push buttons</b> and <b>toggle switches</b></li>
@@ -122,7 +122,7 @@ MIDI Control Output</h3>
 <p >Digital inputs are <b>debounced</b>, and analog inputs are filtered using <b>digital filters and hysteresis</b>. This results in high accuracy without noise, without introducing latency.</p>
 <p >These MIDI control outputs can be used to send MIDI notes, Control Change, Pitch Bend, Program/Patch change, etc.</p>
 <p ><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d7/dcd/group__MIDIOutputElements.html"><em>MIDI Output Elements documentation</em></a></sub></p>
-<h3><a class="anchor" id="autotoc_md317"></a>
+<h3><a class="anchor" id="autotoc_md319"></a>
 MIDI Control Input</h3>
 <ul>
 <li><b>LEDs</b> (e.g. to indicate whether a track is muted/armed/soloed)</li>
@@ -134,30 +134,30 @@ MIDI Control Input</h3>
 </ul>
 <p >A large portion of the <b>Mackie Control Universal</b> (<a class="el" href="d7/dc7/namespaceMCU.html">MCU</a>) protocol is implemented.</p>
 <p ><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/df/d8b/group__MIDIInputElements.html"><em>MIDI Input Elements documentation</em></a></sub></p>
-<h3><a class="anchor" id="autotoc_md318"></a>
+<h3><a class="anchor" id="autotoc_md320"></a>
 Motorized faders</h3>
 <ul>
 <li><b>Motorized faders</b> are supported through the <a href="https://github.com/tttapa/Control-Surface-Motor-Fader">tttapa/Control-Surface-Motor-Fader</a> repository.</li>
 </ul>
 <p ><sub>→ <a href="https://tttapa.github.io/Pages/Arduino/Control-Theory/Motor-Fader/"><em>Control Surface Motor Fader documentation</em></a></sub></p>
-<h3><a class="anchor" id="autotoc_md319"></a>
+<h3><a class="anchor" id="autotoc_md321"></a>
 Bank support</h3>
 <p >All controls can be arranged in <b>banks</b>: for example, if you have only 4 physical faders, you can make them bankable, so they can be used to control the volume of many more different tracks. Changing banks can be done using push buttons, rotary encoders, etc. <br  />
  Apart from banks and bank selectors, you can also add <b>transposers</b> to change the key of your notes, for example.</p>
-<h3><a class="anchor" id="autotoc_md320"></a>
+<h3><a class="anchor" id="autotoc_md322"></a>
 Extended input/output</h3>
 <p >In order to save some IO pins, the library natively supports <b>multiplexers</b> (e.g. 74HC4051 or 74HC4067) to read many switches or potentiometers, <b>Shift Registers</b> (e.g. 74HC595) to drive many LEDs, <b>MAX7219 LED drivers</b>, etc.</p>
 <p ><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/db/dd3/group__AH__ExtIO.html"><em>Extended IO documentation</em></a></sub></p>
-<h3><a class="anchor" id="autotoc_md321"></a>
+<h3><a class="anchor" id="autotoc_md323"></a>
 Audio</h3>
 <p >If you are using a Teensy 3.x or 4.x, you can use it as a <b>USB audio interface</b>. Just add an I²S DAC (e.g. PCM5102) and 5 lines of code, and you can start playing audio through your Teensy, by combining Control Surface with the Teensy Audio library. <br  />
  You can also add volume controls and VU meters for these audio connections.</p>
 <p ><sub>→ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d3/d5c/group__Audio.html"><em>Teensy Audio documentation</em></a></sub></p>
-<h3><a class="anchor" id="autotoc_md322"></a>
+<h3><a class="anchor" id="autotoc_md324"></a>
 Modular and extensible</h3>
 <p >Thanks to the structure of the library, you can easily add your own MIDI or display elements, using some minimal, high level code. All low level stuff is completely <b>reusable</b> (e.g. all MIDI operations, debouncing switches, filtering analog inputs, and so on).</p>
 <p ><a class="anchor" id="example-usage"></a></p>
-<h2><a class="anchor" id="autotoc_md323"></a>
+<h2><a class="anchor" id="autotoc_md325"></a>
 Example usage</h2>
 <p >A complete sketch for a MIDI controller with a potentiometer that sends out MIDI Control Change message can be written in just five lines of code:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
@@ -226,13 +226,13 @@ Example usage</h2>
 <div class="ttc" id="aclassNoteCCKPLED_html"><div class="ttname"><a href="d9/d55/classNoteCCKPLED.html">NoteCCKPLED</a></div><div class="ttdoc">Generic base class for classes that listen for MIDI Note, Control Change and Key Pressure events on a...</div><div class="ttdef"><b>Definition:</b> <a href="d2/df7/NoteCCKPLED_8hpp_source.html#l00020">NoteCCKPLED.hpp:20</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition:</b> <a href="d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
 </div><!-- fragment --><p ><a class="anchor" id="getting-started"></a></p>
-<h2><a class="anchor" id="autotoc_md324"></a>
+<h2><a class="anchor" id="autotoc_md326"></a>
 Getting started</h2>
 <p >See the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d5/d7d/md_pages_Getting-Started.html"><b>Getting Started</b></a> page to get started using the library. <br  />
  It'll also point you to the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d8/da8/md_pages_Installation.html"><b>Installation Instructions</b></a>.</p>
 <p >The <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d3/df7/midi-tutorial.html"><b>MIDI tutorial</b></a> might be useful if you want to use Control Surface as a regular MIDI library, for sending and receiving MIDI messages.</p>
 <p ><a class="anchor" id="documentation"></a></p>
-<h2><a class="anchor" id="autotoc_md325"></a>
+<h2><a class="anchor" id="autotoc_md327"></a>
 Documentation</h2>
 <p >The automatically generated Doxygen documentation for this library can be found here: <br  />
  <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/index.html"><b>Documentation</b></a> <br  />
@@ -243,7 +243,7 @@ Documentation</h2>
 <p >Have a look at the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/modules.html"><b>modules</b></a> for an overview of the features of the library, it's the best entry point for the documentation.</p>
 <p >You can find an answer to some frequently asked questions on the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/da/dc1/FAQ.html"><b>FAQ</b></a> page.</p>
 <p ><a class="anchor" id="supported-boards"></a></p>
-<h2><a class="anchor" id="autotoc_md326"></a>
+<h2><a class="anchor" id="autotoc_md328"></a>
 Supported boards</h2>
 <p >For each commit, the continuous integration tests compile the examples for the following boards:</p>
 <ul>
@@ -268,14 +268,14 @@ Supported boards</h2>
  For MIDI over USB support, check out the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d8/d4a/md_pages_MIDI-over-USB.html"><b>MIDI over USB</b></a> documentation page. As a general rule of thumb, if your board is supported by the <a href="https://github.com/arduino-libraries/MIDIUSB">MIDIUSB library</a> or if it's a Teensy, MIDI over USB should be supported. <br  />
  MIDI over BLE is currently only supported on ESP32.</p>
 <p ><a class="anchor" id="information-for-developers"></a></p>
-<h2><a class="anchor" id="autotoc_md327"></a>
+<h2><a class="anchor" id="autotoc_md329"></a>
 Information for developers</h2>
 <p >Information for people that would like to help improve the Control Surface library can be found here: <a href="https://tttapa.github.io/Pages/Arduino/Control-Surface/Developers/index.html">https://tttapa.github.io/Pages/Arduino/Control-Surface/Developers/index.html</a> <br  />
  It covers installation instructions for developers, instructions for running the tests and generating documentation, a style guide, etc.</p>
 <p ><a class="anchor" id="change-log-and-updating"></a></p>
-<h2><a class="anchor" id="autotoc_md328"></a>
+<h2><a class="anchor" id="autotoc_md330"></a>
 Change log and updating</h2>
-<h3><a class="anchor" id="autotoc_md329"></a>
+<h3><a class="anchor" id="autotoc_md331"></a>
 2.x</h3>
 <ul>
 <li>(<a href="https://github.com/tttapa/Control-Surface/commit/9c4cdd452990c470ee429b3121bdeb178ba7f42e">ba7f42e</a>) <br  />
@@ -306,7 +306,7 @@ Change log and updating</h2>
 <li>(<a href="https://github.com/tttapa/Control-Surface/commit/40e3d7a4377b281e58dd7725f1bb8c6198855ce6">40e3d7a</a>) <br  />
  Control Surface now comes with an Encoder library out of the box. You no longer have to install or include <code>Encoder.h</code> in your sketches.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md330"></a>
+<h3><a class="anchor" id="autotoc_md332"></a>
 1.x</h3>
 <ul>
 <li>(<a href="https://github.com/tttapa/Control-Surface/commit/8a3b1b314cf5b4aedf3ad60cbbc492fbcbb25c73">8a3b1b3</a>) <br  />

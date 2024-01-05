@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 90b37ca390c9b50f1e8ccbc0d30eeb816f712ff5 - src/AH/Containers/Array.hpp</title>
+  <title>LCOV - 48b14f4e5d485ee6bea68bd406514136e7dbd1e0 - src/AH/Containers/Array.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">90b37ca390c9b50f1e8ccbc0d30eeb816f712ff5</td>
+            <td class="headerValue">48b14f4e5d485ee6bea68bd406514136e7dbd1e0</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">119</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2023-12-14 23:06:50</td>
+            <td class="headerValue">2024-01-05 19:24:43</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">167</td>
@@ -302,8 +302,8 @@
 <a name="232"><span class="lineNum">     232 </span>            : </a>
 <a name="233"><span class="lineNum">     233 </span>            : template &lt;class T, size_t N&gt;</a>
 <a name="234"><span class="lineNum">     234 </span>            : template &lt;size_t Start, size_t End&gt;</a>
-<a name="235"><span class="lineNum">     235 </span>            : inline ArraySlice&lt;T, abs_diff(Start, End) + 1, (End &lt; Start), false&gt;</a>
-<a name="236"><span class="lineNum">     236 </span><span class="lineCov">         35 : Array&lt;T, N&gt;::slice() {</span></a>
+<a name="235"><span class="lineNum">     235 </span><span class="lineCov">         35 : auto Array&lt;T, N&gt;::slice()</span></a>
+<a name="236"><span class="lineNum">     236 </span>            :     -&gt; ArraySlice&lt;T, abs_diff(Start, End) + 1, (End &lt; Start), false&gt; {</a>
 <a name="237"><span class="lineNum">     237 </span>            :     static_assert(Start &lt; N, &quot;&quot;);</a>
 <a name="238"><span class="lineNum">     238 </span>            :     static_assert(End &lt; N, &quot;&quot;);</a>
 <a name="239"><span class="lineNum">     239 </span><span class="lineCov">         35 :     return &amp;(*this)[Start];</span></a>
@@ -311,8 +311,8 @@
 <a name="241"><span class="lineNum">     241 </span>            : </a>
 <a name="242"><span class="lineNum">     242 </span>            : template &lt;class T, size_t N&gt;</a>
 <a name="243"><span class="lineNum">     243 </span>            : template &lt;size_t Start, size_t End&gt;</a>
-<a name="244"><span class="lineNum">     244 </span>            : inline ArraySlice&lt;T, abs_diff(Start, End) + 1, (End &lt; Start), true&gt;</a>
-<a name="245"><span class="lineNum">     245 </span><span class="lineCov">         23 : Array&lt;T, N&gt;::slice() const {</span></a>
+<a name="244"><span class="lineNum">     244 </span><span class="lineCov">         23 : auto Array&lt;T, N&gt;::slice() const</span></a>
+<a name="245"><span class="lineNum">     245 </span>            :     -&gt; ArraySlice&lt;T, abs_diff(Start, End) + 1, (End &lt; Start), true&gt; {</a>
 <a name="246"><span class="lineNum">     246 </span>            :     static_assert(Start &lt; N, &quot;&quot;);</a>
 <a name="247"><span class="lineNum">     247 </span>            :     static_assert(End &lt; N, &quot;&quot;);</a>
 <a name="248"><span class="lineNum">     248 </span><span class="lineCov">         23 :     return &amp;(*this)[Start];</span></a>
@@ -320,8 +320,8 @@
 <a name="250"><span class="lineNum">     250 </span>            : </a>
 <a name="251"><span class="lineNum">     251 </span>            : template &lt;class T, size_t N, bool Reverse, bool Const&gt;</a>
 <a name="252"><span class="lineNum">     252 </span>            : template &lt;size_t Start, size_t End&gt;</a>
-<a name="253"><span class="lineNum">     253 </span>            : ArraySlice&lt;T, abs_diff(End, Start) + 1, Reverse ^ (End &lt; Start), Const&gt;</a>
-<a name="254"><span class="lineNum">     254 </span><span class="lineCov">          2 : ArraySlice&lt;T, N, Reverse, Const&gt;::slice() const {</span></a>
+<a name="253"><span class="lineNum">     253 </span><span class="lineCov">          2 : auto ArraySlice&lt;T, N, Reverse, Const&gt;::slice() const</span></a>
+<a name="254"><span class="lineNum">     254 </span>            :     -&gt; ArraySlice&lt;T, abs_diff(End, Start) + 1, Reverse ^ (End &lt; Start), Const&gt; {</a>
 <a name="255"><span class="lineNum">     255 </span>            :     static_assert(Start &lt; N, &quot;&quot;);</a>
 <a name="256"><span class="lineNum">     256 </span>            :     static_assert(End &lt; N, &quot;&quot;);</a>
 <a name="257"><span class="lineNum">     257 </span><span class="lineCov">          2 :     return &amp;(*this)[Start];</span></a>
