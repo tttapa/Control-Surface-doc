@@ -96,7 +96,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dab/classBLEMIDIParser__coll__graph.svg" width="172" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/dab/classBLEMIDIParser__coll__graph.svg" width="172" height="191"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -104,6 +104,9 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad698120a03b8ec7e1bf0820a7d648cf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#ad698120a03b8ec7e1bf0820a7d648cf5">BLEMIDIParser</a> (const uint8_t *<a class="el" href="../../d9/d19/classBLEMIDIParser.html#a579f5164b5b16e18ddcdb0296ef81799">data</a>, size_t length)</td></tr>
 <tr class="separator:ad698120a03b8ec7e1bf0820a7d648cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be1e839e94a6d546a09a31efeeaf8ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#a2be1e839e94a6d546a09a31efeeaf8ba">extend</a> (const uint8_t *<a class="el" href="../../d9/d19/classBLEMIDIParser.html#a579f5164b5b16e18ddcdb0296ef81799">data</a>, size_t length)</td></tr>
+<tr class="memdesc:a2be1e839e94a6d546a09a31efeeaf8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend the BLE packet with the given buffer.  <a href="../../d9/d19/classBLEMIDIParser.html#a2be1e839e94a6d546a09a31efeeaf8ba">More...</a><br /></td></tr>
+<tr class="separator:a2be1e839e94a6d546a09a31efeeaf8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46132af31fab37d083eda24f9c72fd47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#a46132af31fab37d083eda24f9c72fd47">pull</a> (uint8_t &amp;output)</td></tr>
 <tr class="memdesc:a46132af31fab37d083eda24f9c72fd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next MIDI byte from the BLE packet (if available).  <a href="../../d9/d19/classBLEMIDIParser.html#a46132af31fab37d083eda24f9c72fd47">More...</a><br /></td></tr>
 <tr class="separator:a46132af31fab37d083eda24f9c72fd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,8 +123,8 @@ Static Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a579f5164b5b16e18ddcdb0296ef81799"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#a579f5164b5b16e18ddcdb0296ef81799">data</a></td></tr>
 <tr class="separator:a579f5164b5b16e18ddcdb0296ef81799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f720546391e9119dcf778f1525ac0c2"><td class="memItemLeft" align="right" valign="top">const uint8_t *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#a4f720546391e9119dcf778f1525ac0c2">end</a></td></tr>
-<tr class="separator:a4f720546391e9119dcf778f1525ac0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9c887147aec6839c2433e29b78285f"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#a1a9c887147aec6839c2433e29b78285f">end</a></td></tr>
+<tr class="separator:a1a9c887147aec6839c2433e29b78285f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1153a3ce3bcdaa04ecb5517355bc72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#acd1153a3ce3bcdaa04ecb5517355bc72">prevWasTimestamp</a> = true</td></tr>
 <tr class="separator:acd1153a3ce3bcdaa04ecb5517355bc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad67bd8f6a86812860afe84df6c1cc94d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d19/classBLEMIDIParser.html#ad67bd8f6a86812860afe84df6c1cc94d">timestamp</a> = 0</td></tr>
@@ -167,6 +170,48 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2be1e839e94a6d546a09a31efeeaf8ba" name="a2be1e839e94a6d546a09a31efeeaf8ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be1e839e94a6d546a09a31efeeaf8ba">&#9670;&nbsp;</a></span>extend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void extend </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extend the BLE packet with the given buffer. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>The previous buffer was fully consumed (<a class="el" href="../../d9/d19/classBLEMIDIParser.html#a46132af31fab37d083eda24f9c72fd47">pull</a> returned false). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function should only be used for a single packet that spans multiple buffers. If you want to parse a new packet, you should create a new <a class="el" href="../../d9/d19/classBLEMIDIParser.html" title="Class for parsing BLE-MIDI packets.">BLEMIDIParser</a> instance. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a46132af31fab37d083eda24f9c72fd47" name="a46132af31fab37d083eda24f9c72fd47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46132af31fab37d083eda24f9c72fd47">&#9670;&nbsp;</a></span>pull()</h2>
 
@@ -194,7 +239,7 @@ Private Attributes</h2></td></tr>
 <p>Get the next MIDI byte from the BLE packet (if available). </p>
 <dl class="section return"><dt>Returns</dt><dd>True if a byte was available, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00050">50</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +266,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00099">99</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
 
 </div>
 </div>
@@ -251,7 +296,7 @@ Private Attributes</h2></td></tr>
 
 <p>Check if the given byte is a data byte (and not a header, timestamp or status byte). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
 
 </div>
 </div>
@@ -276,12 +321,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a4f720546391e9119dcf778f1525ac0c2" name="a4f720546391e9119dcf778f1525ac0c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f720546391e9119dcf778f1525ac0c2">&#9670;&nbsp;</a></span>end</h2>
+<a id="a1a9c887147aec6839c2433e29b78285f" name="a1a9c887147aec6839c2433e29b78285f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9c887147aec6839c2433e29b78285f">&#9670;&nbsp;</a></span>end</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +335,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t* const end</td>
+          <td class="memname">const uint8_t* end</td>
         </tr>
       </table>
   </td>
@@ -300,7 +345,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00082">82</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00103">103</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +369,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00104">104</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
 
 </div>
 </div>
@@ -348,7 +393,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">BLEMIDIParser.hpp</a>.</p>
 
 </div>
 </div>

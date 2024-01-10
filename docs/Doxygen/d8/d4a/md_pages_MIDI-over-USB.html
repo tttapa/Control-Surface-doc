@@ -83,7 +83,7 @@ $(function() {
 <p >✅ = supported <br  />
  🔼 = implemented but not tested (if you try it out, please let me know by <a href="https://github.com/tttapa/Control-Surface/discussions">opening a discussion</a>!) <br  />
  ❓ = supported by hardware but not implemented <br  />
- ❌ = unsupported by hardware <br  />
+ ❌ = unsupported by hardware or Arduino core <br  />
 </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -93,33 +93,33 @@ $(function() {
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft">Arduino Nano   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Arduino Nano 33 IoT   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
+<td class="markdownTableBodyLeft">Arduino Nano 33 IoT   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft">Arduino Nano RP2040   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❓    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">Arduino Nano ESP32   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">🔼    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Arduino Nano 33 BLE   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❓    </td></tr>
+<td class="markdownTableBodyLeft">Arduino Nano 33 BLE   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">&emsp;❌⁽⁴⁾   </td><td class="markdownTableBodyCenter">❓    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">Arduino Nano Every   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">&emsp;❌⁽²⁾   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft">Arduino MKR 1000   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❓    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Arduino UNO R4 Minima   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❌    </td></tr>
+<td class="markdownTableBodyLeft">Arduino UNO R4 Minima   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">&emsp;❌⁽³⁾   </td><td class="markdownTableBodyCenter">&emsp;❌⁽⁴⁾   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Arduino UNO R4 WiFi   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❓    </td></tr>
+<td class="markdownTableBodyLeft">Arduino UNO R4 WiFi   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">&emsp;❌⁽³⁾   </td><td class="markdownTableBodyCenter">&emsp;❌⁽⁴⁾   </td><td class="markdownTableBodyCenter">❓    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">Arduino Leonardo   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft">Arduino Micro   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Arduino Zero   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
+<td class="markdownTableBodyLeft">Arduino Zero   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft">Arduino Mega 2560   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">&emsp;❌⁽¹⁾   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">Arduino Due   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Arduino GIGA R1 WiFi   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❌    </td></tr>
+<td class="markdownTableBodyLeft">Arduino GIGA R1 WiFi   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">&emsp;❌⁽⁴⁾   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">Teensy 2.0, Teensy++ 2.0   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowEven">
@@ -143,6 +143,8 @@ $(function() {
 </table>
 <p ><small>(1) Secondary microcontroller can be flashed with custom MIDI firmware.</small> <br  />
  <small>(2) Secondary microcontroller could <em>in theory</em> be flashed with custom MIDI firmware.</small> <br  />
+ <small>(3) Hardware supports it, but the Arduino core explicitly disables MIDI over USB support by setting <code>CFG_TUD_MIDI=0</code> in <a href="https://github.com/arduino/ArduinoCore-renesas/blob/6ee152ff2a9c00c8ab2ccff4f1eaee7e1f3388c1/variants/MINIMA/tusb_config.h#L81">their TinyUSB config</a>.</small> <br  />
+ <small>(4) Hardware supports it, but the Arduino core does not support it.</small> <br  />
 </p>
 <h1><a class="anchor" id="autotoc_md306"></a>
 Arduino boards with native USB support</h1>

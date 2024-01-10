@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 0746005c4ee3a984f7343b072185bf1465a42196 - src/MIDI_Interfaces/Util/ESP32Threads.hpp</title>
+  <title>LCOV - 49ee43ad16630a99ae917ead03c1c9cc4f1d0fa5 - src/MIDI_Interfaces/Util/ESP32Threads.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">0746005c4ee3a984f7343b072185bf1465a42196</td>
+            <td class="headerValue">49ee43ad16630a99ae917ead03c1c9cc4f1d0fa5</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">2</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-01-06 01:03:26</td>
+            <td class="headerValue">2024-01-10 19:59:49</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -103,14 +103,14 @@
 <a name="33"><span class="lineNum">      33 </span>            :     bool hadPreviousConfig;</a>
 <a name="34"><span class="lineNum">      34 </span>            :     esp_pthread_cfg_t previousConfig;</a>
 <a name="35"><span class="lineNum">      35 </span>            : #else</a>
-<a name="36"><span class="lineNum">      36 </span><span class="lineCov">         27 :     ScopedThreadConfig(size_t stack_size, size_t priority, bool inherit_cfg,</span></a>
+<a name="36"><span class="lineNum">      36 </span><span class="lineCov">         29 :     ScopedThreadConfig(size_t stack_size, size_t priority, bool inherit_cfg,</span></a>
 <a name="37"><span class="lineNum">      37 </span>            :                        const char *thread_name, int pin_to_core = -1) {</a>
 <a name="38"><span class="lineNum">      38 </span>            :         (void)stack_size;</a>
 <a name="39"><span class="lineNum">      39 </span>            :         (void)priority;</a>
 <a name="40"><span class="lineNum">      40 </span>            :         (void)inherit_cfg;</a>
 <a name="41"><span class="lineNum">      41 </span>            :         (void)thread_name;</a>
 <a name="42"><span class="lineNum">      42 </span>            :         (void)pin_to_core;</a>
-<a name="43"><span class="lineNum">      43 </span><span class="lineCov">         27 :     }</span></a>
+<a name="43"><span class="lineNum">      43 </span><span class="lineCov">         29 :     }</span></a>
 <a name="44"><span class="lineNum">      44 </span>            : #endif</a>
 <a name="45"><span class="lineNum">      45 </span>            : };</a>
 <a name="46"><span class="lineNum">      46 </span>            : </a>
