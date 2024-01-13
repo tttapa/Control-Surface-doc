@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printstream_0',['PrintStream',['../d8/d4b/group__AH__PrintStream.html',1,'']]]
+  ['leds_0',['LEDs',['../d8/d8b/group__BankableMIDIInputElementsLEDs.html',1,'Bankable MIDI Input Elements LEDs'],['../d7/de4/group__midi-input-elements-leds.html',1,'MIDI Input Elements LEDs'],['../dd/d37/group__SelectorsLEDs.html',1,'Selectors LEDs']]]
 ];
