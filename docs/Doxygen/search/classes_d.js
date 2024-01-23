@@ -9,11 +9,15 @@ var searchData=
   ['pitchbendsender_6',['PitchBendSender',['../de/d46/classPitchBendSender.html',1,'']]],
   ['pitchbendsender_3c_2010_20_3e_7',['PitchBendSender&lt; 10 &gt;',['../de/d46/classPitchBendSender.html',1,'']]],
   ['pixel_8',['Pixel',['../d4/d38/structBresenhamLine_1_1Pixel.html',1,'BresenhamLine']]],
-  ['pixellocation_9',['PixelLocation',['../d0/d4e/Def_8hpp.html#dc/dd2/structPixelLocation',1,'']]],
+  ['pixellocation_9',['PixelLocation',['../dc/dd2/structPixelLocation.html',1,'']]],
   ['pluggableusbmidi_10',['PluggableUSBMIDI',['../d1/dd4/classPluggableUSBMIDI.html',1,'']]],
-  ['potentiometer_11',['Potentiometer',['../d0/d4e/Def_8hpp.html#d5/d0f/structPotentiometer',1,'']]],
-  ['programchanger_12',['ProgramChanger',['../d1/df9/classBankable_1_1ProgramChanger.html',1,'ProgramChanger&lt; N &gt;'],['../de/d43/classProgramChanger.html',1,'ProgramChanger&lt; N &gt;']]],
-  ['programchangeselector_13',['ProgramChangeSelector',['../dd/dd4/classProgramChangeSelector.html',1,'']]],
-  ['programchangeselectorleds_14',['ProgramChangeSelectorLEDs',['../d9/dee/classProgramChangeSelectorLEDs.html',1,'']]],
-  ['programchangesender_15',['ProgramChangeSender',['../db/d8b/classProgramChangeSender.html',1,'']]]
+  ['pollingblemidisender_11',['PollingBLEMIDISender',['../d9/dc8/classPollingBLEMIDISender.html',1,'']]],
+  ['pollingblemidisender_3c_20arduinoblebackend_20_3e_12',['PollingBLEMIDISender&lt; ArduinoBLEBackend &gt;',['../d9/dc8/classPollingBLEMIDISender.html',1,'']]],
+  ['pollingblemidisender_3c_20btstackbackgroundbackend_20_3e_13',['PollingBLEMIDISender&lt; BTstackBackgroundBackend &gt;',['../d9/dc8/classPollingBLEMIDISender.html',1,'']]],
+  ['potentiometer_14',['Potentiometer',['../d5/d0f/structPotentiometer.html',1,'']]],
+  ['programchanger_15',['ProgramChanger',['../d1/df9/classBankable_1_1ProgramChanger.html',1,'ProgramChanger&lt; N &gt;'],['../de/d43/classProgramChanger.html',1,'ProgramChanger&lt; N &gt;']]],
+  ['programchangeselector_16',['ProgramChangeSelector',['../dd/dd4/classProgramChangeSelector.html',1,'']]],
+  ['programchangeselectorleds_17',['ProgramChangeSelectorLEDs',['../d9/dee/classProgramChangeSelectorLEDs.html',1,'']]],
+  ['programchangesender_18',['ProgramChangeSender',['../db/d8b/classProgramChangeSender.html',1,'']]],
+  ['protectedbuilder_19',['ProtectedBuilder',['../d6/d2f/structPollingBLEMIDISender_1_1ProtectedBuilder.html',1,'PollingBLEMIDISender&lt; Derived &gt;::ProtectedBuilder'],['../de/d11/structThreadedBLEMIDISender_1_1ProtectedBuilder.html',1,'ThreadedBLEMIDISender&lt; Derived &gt;::ProtectedBuilder']]]
 ];

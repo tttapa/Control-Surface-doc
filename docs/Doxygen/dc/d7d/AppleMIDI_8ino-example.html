@@ -88,18 +88,18 @@ $(function() {
   <div class="headertitle"><div class="title">AppleMIDI.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md189"></a>
+<h1><a class="anchor" id="applemidi"></a>
 AppleMIDI</h1>
 <p>This example demonstrates how to use the AppleMIDI library to use Control Surface over the network.</p>
 <p>This example requires the <a href="https://github.com/lathoub/Arduino-AppleMIDI-Library">AppleMIDI</a> and <a href="https://github.com/FortySevenEffects/arduino_midi_library">MIDI</a> libraries.</p>
-<dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>&emsp; ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md190"></a>
+<dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>ESP32</dd></dl>
+<h2><a class="anchor" id="connections-48"></a>
 Connections</h2>
 <p>The on-board LED will be used, as well as the push button on GPIO0. These should be present on most ESP32 boards, if this is not the case for your board, connect an LED (+ series resistor) and a push button to the relevant pins (in the "MIDI Elements" section below). For more details, see the <a class="el" href="../../de/dcc/NoteButton_8ino-example.html">NoteButton.ino</a> and <a class="el" href="../../d8/d92/1_8Note-LED_8ino-example.html">1.Note-LED.ino</a> examples.</p>
-<h2><a class="anchor" id="autotoc_md191"></a>
+<h2><a class="anchor" id="wifi-credentials"></a>
 WiFi Credentials</h2>
 <p>Open the tab <code>WiFi-Credentials.example.h</code>, enter your WiFi credentials, and rename the file to <code>WiFi-Credentials.h</code>.</p>
-<h2><a class="anchor" id="autotoc_md192"></a>
+<h2><a class="anchor" id="behavior-52"></a>
 Behavior</h2>
 <p>Upload the code to the ESP32, and open the Serial monitor. You should see output like this</p>
 <div class="fragment"><div class="line">Connecting to Your WiFi Network ...</div>
@@ -111,7 +111,7 @@ Behavior</h2>
 <div class="fragment"><div class="line">Connected to session Your Session Name</div>
 </div><!-- fragment --><p>When the button is pushed, a MIDI note on message for note C4 (middle C) is sent. <br  />
  When the ESP32 receives a MIDI note message for that note, it turn on/off the LED accordingly.</p>
-<h2><a class="anchor" id="autotoc_md193"></a>
+<h2><a class="anchor" id="rtp-midi-bridge-linux"></a>
 RTP MIDI Bridge (Linux)</h2>
 <p>If you're on Linux, you can use the rtpmidi-bridge application in the example folder. You'll need to install Node.js and NPM.</p>
 <p>First, install the necessary dependencies and build tools:</p>
@@ -127,7 +127,7 @@ RTP MIDI Bridge (Linux)</h2>
 <div class="fragment"><div class="line">Connected to session Node RTPMidi</div>
 </div><!-- fragment --><div class="fragment"><div class="line">2020-05-06T15:50:42.956Z info:  Invitation accepted by ESP32</div>
 <div class="line">2020-05-06T15:50:42.962Z info:  Data channel to ESP32 established</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md194"></a>
+</div><!-- fragment --><h2><a class="anchor" id="mapping-26"></a>
 Mapping</h2>
 <p>Connect the virtual MIDI ports or the AppleMIDI connection to a device or application that can send and receive MIDI notes.</p>
 <p>Written by PieterP, 2020-05-06 <br  />

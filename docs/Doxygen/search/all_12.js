@@ -1,7 +1,7 @@
 var searchData=
 [
   ['kalimba_0',['Kalimba',['../da/da6/namespaceMIDI__PC.html#ad793da529f1df34de411c8a3935db445',1,'MIDI_PC']]],
-  ['keyboard_20matrix_20bcd_1',['Keyboard-Matrix-BCD',['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#autotoc_md227',1,'']]],
+  ['keyboard_20matrix_20bcd_1',['Keyboard-Matrix-BCD',['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#keyboard-matrix-bcd',1,'']]],
   ['keypressure_2',['KeyPressure',['../d7/d3f/structChannelMessage.html#ae1c0885571aa65bbac4f86818a515341',1,'ChannelMessage::KeyPressure'],['../d2/d91/namespaceDebugMIDIMessageNames.html#a3ede724586e89d22c4f741d8a13c736d',1,'DebugMIDIMessageNames::KeyPressure'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a179bd0f283c066910da723865a9b9d2f',1,'KeyPressure:&#160;MIDI_MessageTypes.hpp'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a179bd0f283c066910da723865a9b9d2f',1,'KeyPressure:&#160;MIDI_MessageTypes.hpp']]],
   ['kinds_20of_20displays_3',['How can I add support for different kinds of displays?',['../da/dc1/FAQ.html#faq-add-display-support',1,'']]],
   ['korg_5fkontrol_5finc_5fdec_5f1_4',['KORG_KONTROL_INC_DEC_1',['../d9/d24/RelativeCCSender_8hpp.html#a793b4d05f50a2c3af3ddeeef50e7a71da128d0dd03d1004eb449f75aa329d21d9',1,'RelativeCCSender.hpp']]],

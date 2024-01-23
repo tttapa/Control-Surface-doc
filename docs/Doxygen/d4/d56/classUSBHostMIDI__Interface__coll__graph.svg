@@ -34,22 +34,22 @@
 <text text-anchor="start" x="1266" y="-348" font-family="Helvetica,sans-Serif" font-size="10.00">alwaysSendImmediately_</text>
 <text text-anchor="start" x="1249" y="-333" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="1266" y="-333" font-family="Helvetica,sans-Serif" font-size="10.00">GenericUSBMIDI_Interface()</text>
-<text text-anchor="start" x="1249" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1266" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">begin()</text>
-<text text-anchor="start" x="1249" y="-303" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1266" y="-303" font-family="Helvetica,sans-Serif" font-size="10.00">update()</text>
+<text text-anchor="start" x="1251.5" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1266" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">sendChannelMessageImpl()</text>
+<text text-anchor="start" x="1251.5" y="-303" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1266" y="-303" font-family="Helvetica,sans-Serif" font-size="10.00">sendSysCommonImpl()</text>
 <text text-anchor="start" x="1251.5" y="-288" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1266" y="-288" font-family="Helvetica,sans-Serif" font-size="10.00">sendChannelMessageImpl()</text>
+<text text-anchor="start" x="1266" y="-288" font-family="Helvetica,sans-Serif" font-size="10.00">sendSysExImpl()</text>
 <text text-anchor="start" x="1251.5" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1266" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00">sendSysCommonImpl()</text>
+<text text-anchor="start" x="1266" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00">sendRealTimeImpl()</text>
 <text text-anchor="start" x="1251.5" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1266" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">sendSysExImpl()</text>
+<text text-anchor="start" x="1266" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">sendNowImpl()</text>
 <text text-anchor="start" x="1251.5" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1266" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00">sendRealTimeImpl()</text>
-<text text-anchor="start" x="1251.5" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1266" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">sendNowImpl()</text>
-<text text-anchor="start" x="1251.5" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1266" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">handleStall()</text>
+<text text-anchor="start" x="1266" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00">handleStall()</text>
+<text text-anchor="start" x="1250.5" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">*</text>
+<text text-anchor="start" x="1266" y="-228" font-family="Helvetica,sans-Serif" font-size="10.00">begin()</text>
+<text text-anchor="start" x="1250.5" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">*</text>
+<text text-anchor="start" x="1266" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">update()</text>
 <text text-anchor="start" x="1250.5" y="-198" font-family="Helvetica,sans-Serif" font-size="10.00">*</text>
 <text text-anchor="start" x="1266" y="-198" font-family="Helvetica,sans-Serif" font-size="10.00">read()</text>
 <text text-anchor="start" x="1250.5" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">*</text>
@@ -1186,7 +1186,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="../../de/d93/classTeensyHostMIDI.html#d1/d81/structTeensyHostMIDI_1_1Reading" target="_top" xlink:title="State for reading incoming USB&#45;MIDI data.">
+<g id="a_Node000020"><a xlink:href="../../d1/d81/structTeensyHostMIDI_1_1Reading.html" target="_top" xlink:title="State for reading incoming USB&#45;MIDI data.">
 <polygon fill="white" stroke="transparent" points="1146.5,-1892.5 1079.5,-1892.5 1079.5,-1798.5 1146.5,-1798.5 1146.5,-1892.5"/>
 <text text-anchor="start" x="1093.5" y="-1880.5" font-family="Helvetica,sans-Serif" font-size="10.00">Reading</text>
 <text text-anchor="start" x="1084" y="-1865.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -1218,7 +1218,7 @@
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="../../de/d93/classTeensyHostMIDI.html#d6/ddc/structTeensyHostMIDI_1_1Reading_1_1Buffer" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="../../d6/ddc/structTeensyHostMIDI_1_1Reading_1_1Buffer.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="transparent" points="1138,-2528.5 1088,-2528.5 1088,-2449.5 1138,-2449.5 1138,-2528.5"/>
 <text text-anchor="start" x="1098" y="-2516" font-family="Helvetica,sans-Serif" font-size="10.00">Buffer</text>
 <text text-anchor="start" x="1092" y="-2501" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -1248,7 +1248,7 @@
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="../../de/d93/classTeensyHostMIDI.html#d0/d0e/structTeensyHostMIDI_1_1Writing" target="_top" xlink:title="State for writing outgoing USB&#45;MIDI data.">
+<g id="a_Node000022"><a xlink:href="../../d0/d0e/structTeensyHostMIDI_1_1Writing.html" target="_top" xlink:title="State for writing outgoing USB&#45;MIDI data.">
 <polygon fill="white" stroke="transparent" points="1299,-1907.5 1165,-1907.5 1165,-1783.5 1299,-1783.5 1299,-1907.5"/>
 <text text-anchor="start" x="1214" y="-1895.5" font-family="Helvetica,sans-Serif" font-size="10.00">Writing</text>
 <text text-anchor="start" x="1169" y="-1880.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -1284,7 +1284,7 @@
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="../../de/d93/classTeensyHostMIDI.html#d9/dec/structTeensyHostMIDI_1_1Writing_1_1Buffer" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="../../d9/dec/structTeensyHostMIDI_1_1Writing_1_1Buffer.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="transparent" points="1278.5,-2528.5 1185.5,-2528.5 1185.5,-2449.5 1278.5,-2449.5 1278.5,-2528.5"/>
 <text text-anchor="start" x="1217.5" y="-2516" font-family="Helvetica,sans-Serif" font-size="10.00">Buffer</text>
 <text text-anchor="start" x="1190" y="-2501" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

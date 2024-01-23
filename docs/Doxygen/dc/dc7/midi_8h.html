@@ -90,7 +90,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">midi.h File Reference</div></div>
 </div><!--header-->
@@ -114,34 +113,16 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d36/midi_8h__dep__incl.svg" width="358" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d36/midi_8h__dep__incl.svg" width="126" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../dc/dc7/midi_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ac46a87b2d0143fa694428ab082a9036c" id="r_ac46a87b2d0143fa694428ab082a9036c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac46a87b2d0143fa694428ab082a9036c">midi_mtu_callback_t</a>) (uint16_t)</td></tr>
-<tr class="memdesc:ac46a87b2d0143fa694428ab082a9036c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the MTU negotiation callback.  <br /></td></tr>
-<tr class="separator:ac46a87b2d0143fa694428ab082a9036c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c8be8928b4bc82f39a52c977685a07f" id="r_a9c8be8928b4bc82f39a52c977685a07f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c8be8928b4bc82f39a52c977685a07f">midi_write_callback_t</a>) (const uint8_t *, size_t)</td></tr>
-<tr class="memdesc:a9c8be8928b4bc82f39a52c977685a07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the BLE MIDI write callback.  <br /></td></tr>
-<tr class="separator:a9c8be8928b4bc82f39a52c977685a07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9d22b3d6becc73fe2ed32e563cdae100" id="r_a9d22b3d6becc73fe2ed32e563cdae100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d22b3d6becc73fe2ed32e563cdae100">midi_set_mtu_callback</a> (<a class="el" href="#ac46a87b2d0143fa694428ab082a9036c">midi_mtu_callback_t</a> cb)</td></tr>
-<tr class="memdesc:a9d22b3d6becc73fe2ed32e563cdae100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback that is to be called when the MTU negotiation with the BLE client is finished.  <br /></td></tr>
-<tr class="separator:a9d22b3d6becc73fe2ed32e563cdae100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add819085e4b766a93931f526289fa7ba" id="r_add819085e4b766a93931f526289fa7ba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add819085e4b766a93931f526289fa7ba">midi_get_mtu</a> (void)</td></tr>
-<tr class="memdesc:add819085e4b766a93931f526289fa7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current MTU (maximum transmission unit) of the link with the BLE client.  <br /></td></tr>
-<tr class="separator:add819085e4b766a93931f526289fa7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87000ead29f63a1b923aab803bdb775f" id="r_a87000ead29f63a1b923aab803bdb775f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87000ead29f63a1b923aab803bdb775f">midi_set_write_callback</a> (<a class="el" href="#a9c8be8928b4bc82f39a52c977685a07f">midi_write_callback_t</a> cb)</td></tr>
-<tr class="memdesc:a87000ead29f63a1b923aab803bdb775f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback that is to be called when the client writes (sends) a MIDI packet.  <br /></td></tr>
-<tr class="separator:a87000ead29f63a1b923aab803bdb775f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa600e500c302f6dfa01b183e0ef865c6" id="r_aa600e500c302f6dfa01b183e0ef865c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa600e500c302f6dfa01b183e0ef865c6">midi_notify</a> (const uint8_t *data, size_t len)</td></tr>
-<tr class="memdesc:aa600e500c302f6dfa01b183e0ef865c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI BLE notification to the client.  <br /></td></tr>
-<tr class="separator:aa600e500c302f6dfa01b183e0ef865c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f7889d4ea2bb58248fd0f9194128a2" id="r_ae6f7889d4ea2bb58248fd0f9194128a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6f7889d4ea2bb58248fd0f9194128a2">midi_notify</a> (uint16_t conn_handle, uint16_t char_handle, const uint8_t *data, size_t len)</td></tr>
+<tr class="memdesc:ae6f7889d4ea2bb58248fd0f9194128a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI BLE notification to the client.  <br /></td></tr>
+<tr class="separator:ae6f7889d4ea2bb58248fd0f9194128a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2df260d849e5ec4b15add0b1ca47504" id="r_ae2df260d849e5ec4b15add0b1ca47504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2df260d849e5ec4b15add0b1ca47504">set_midi_ble_name</a> (const char *name)</td></tr>
 <tr class="memdesc:ae2df260d849e5ec4b15add0b1ca47504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of the BLE device. Must be set before calling <a class="el" href="#a57981a470092a596f6e0058b9b8e0aa5">midi_init()</a>.  <br /></td></tr>
 <tr class="separator:ae2df260d849e5ec4b15add0b1ca47504"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,105 +133,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:a25cd3ab0c944e5cb12316b79cb1e3566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup the MIDI BLE application and de-initialize the Bluetooth stack.  <br /></td></tr>
 <tr class="separator:a25cd3ab0c944e5cb12316b79cb1e3566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ac46a87b2d0143fa694428ab082a9036c" name="ac46a87b2d0143fa694428ab082a9036c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac46a87b2d0143fa694428ab082a9036c">&#9670;&#160;</a></span>midi_mtu_callback_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* midi_mtu_callback_t) (uint16_t)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type for the MTU negotiation callback. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Used in C code, use C calling convention (use <code>extern "C"</code> to declare this function in C++ code). </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../dc/dc7/midi_8h_source.html#l00020">20</a> of file <a class="el" href="../../dc/dc7/midi_8h_source.html">midi.h</a>.</p>
-
-</div>
-</div>
-<a id="a9c8be8928b4bc82f39a52c977685a07f" name="a9c8be8928b4bc82f39a52c977685a07f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c8be8928b4bc82f39a52c977685a07f">&#9670;&#160;</a></span>midi_write_callback_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* midi_write_callback_t) (const uint8_t *, size_t)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type for the BLE MIDI write callback. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Used in C code, use C calling convention (use <code>extern "C"</code> to declare this function in C++ code). </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../dc/dc7/midi_8h_source.html#l00031">31</a> of file <a class="el" href="../../dc/dc7/midi_8h_source.html">midi.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9d22b3d6becc73fe2ed32e563cdae100" name="a9d22b3d6becc73fe2ed32e563cdae100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d22b3d6becc73fe2ed32e563cdae100">&#9670;&#160;</a></span>midi_set_mtu_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void midi_set_mtu_callback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ac46a87b2d0143fa694428ab082a9036c">midi_mtu_callback_t</a></td>          <td class="paramname"><span class="paramname"><em>cb</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the callback that is to be called when the MTU negotiation with the BLE client is finished. </p>
-
-</div>
-</div>
-<a id="add819085e4b766a93931f526289fa7ba" name="add819085e4b766a93931f526289fa7ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add819085e4b766a93931f526289fa7ba">&#9670;&#160;</a></span>midi_get_mtu()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t midi_get_mtu </td>
-          <td>(</td>
-          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the current MTU (maximum transmission unit) of the link with the BLE client. </p>
-
-</div>
-</div>
-<a id="a87000ead29f63a1b923aab803bdb775f" name="a87000ead29f63a1b923aab803bdb775f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87000ead29f63a1b923aab803bdb775f">&#9670;&#160;</a></span>midi_set_write_callback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void midi_set_write_callback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#a9c8be8928b4bc82f39a52c977685a07f">midi_write_callback_t</a></td>          <td class="paramname"><span class="paramname"><em>cb</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the callback that is to be called when the client writes (sends) a MIDI packet. </p>
-
-</div>
-</div>
-<a id="aa600e500c302f6dfa01b183e0ef865c6" name="aa600e500c302f6dfa01b183e0ef865c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa600e500c302f6dfa01b183e0ef865c6">&#9670;&#160;</a></span>midi_notify()</h2>
+<a id="ae6f7889d4ea2bb58248fd0f9194128a2" name="ae6f7889d4ea2bb58248fd0f9194128a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f7889d4ea2bb58248fd0f9194128a2">&#9670;&#160;</a></span>midi_notify()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,6 +143,16 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool midi_notify </td>
           <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>conn_handle</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>char_handle</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
         </tr>
         <tr>

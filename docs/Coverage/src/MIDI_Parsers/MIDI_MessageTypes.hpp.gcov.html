@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 7fbff1e994dea4fc249da2b88d4df05f62f7fec9 - src/MIDI_Parsers/MIDI_MessageTypes.hpp</title>
+  <title>LCOV - 3cd56f613e0cc2f201e4867c327136e4b7e7c179 - src/MIDI_Parsers/MIDI_MessageTypes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">7fbff1e994dea4fc249da2b88d4df05f62f7fec9</td>
+            <td class="headerValue">3cd56f613e0cc2f201e4867c327136e4b7e7c179</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">83</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-01-13 16:22:24</td>
+            <td class="headerValue">2024-01-23 17:24:20</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">48</td>
@@ -187,9 +187,9 @@
 <a name="117"><span class="lineNum">     117 </span>            : </a>
 <a name="118"><span class="lineNum">     118 </span>            : struct MIDIMessage {</a>
 <a name="119"><span class="lineNum">     119 </span>            :     /// Constructor.</a>
-<a name="120"><span class="lineNum">     120 </span><span class="lineCov">        657 :     MIDIMessage(uint8_t header, uint8_t data1, uint8_t data2,</span></a>
+<a name="120"><span class="lineNum">     120 </span><span class="lineCov">        656 :     MIDIMessage(uint8_t header, uint8_t data1, uint8_t data2,</span></a>
 <a name="121"><span class="lineNum">     121 </span>            :                 Cable cable = Cable_1)</a>
-<a name="122"><span class="lineNum">     122 </span><span class="lineCov">        657 :         : header(header), data1(data1), data2(data2), cable(cable) {}</span></a>
+<a name="122"><span class="lineNum">     122 </span><span class="lineCov">        656 :         : header(header), data1(data1), data2(data2), cable(cable) {}</span></a>
 <a name="123"><span class="lineNum">     123 </span>            : </a>
 <a name="124"><span class="lineNum">     124 </span>            :     /// Constructor.</a>
 <a name="125"><span class="lineNum">     125 </span><span class="lineCov">          7 :     MIDIMessage(MIDIMessageType header, uint8_t data1, uint8_t data2,</span></a>
@@ -350,16 +350,16 @@
 <a name="280"><span class="lineNum">     280 </span><span class="lineCov">         41 :     explicit SysCommonMessage(const MIDIMessage &amp;msg) : MIDIMessage(msg) {}</span></a>
 <a name="281"><span class="lineNum">     281 </span>            : </a>
 <a name="282"><span class="lineNum">     282 </span>            :     /// Get the MIDI message type.</a>
-<a name="283"><span class="lineNum">     283 </span><span class="lineCov">         55 :     MIDIMessageType getMessageType() const {</span></a>
-<a name="284"><span class="lineNum">     284 </span><span class="lineCov">         55 :         return static_cast&lt;MIDIMessageType&gt;(header);</span></a>
+<a name="283"><span class="lineNum">     283 </span><span class="lineCov">         57 :     MIDIMessageType getMessageType() const {</span></a>
+<a name="284"><span class="lineNum">     284 </span><span class="lineCov">         57 :         return static_cast&lt;MIDIMessageType&gt;(header);</span></a>
 <a name="285"><span class="lineNum">     285 </span>            :     }</a>
 <a name="286"><span class="lineNum">     286 </span>            : </a>
 <a name="287"><span class="lineNum">     287 </span>            :     /// Get the number of data bytes of this type of System Common message.</a>
-<a name="288"><span class="lineNum">     288 </span><span class="lineCov">         29 :     uint8_t getNumberOfDataBytes() const {</span></a>
-<a name="289"><span class="lineNum">     289 </span><span class="lineCov">         29 :         if (getMessageType() == MIDIMessageType::SongPositionPointer)</span></a>
+<a name="288"><span class="lineNum">     288 </span><span class="lineCov">         30 :     uint8_t getNumberOfDataBytes() const {</span></a>
+<a name="289"><span class="lineNum">     289 </span><span class="lineCov">         30 :         if (getMessageType() == MIDIMessageType::SongPositionPointer)</span></a>
 <a name="290"><span class="lineNum">     290 </span><span class="lineCov">         10 :             return 2;</span></a>
-<a name="291"><span class="lineNum">     291 </span><span class="lineCov">         19 :         else if (getMessageType() &lt;= MIDIMessageType::SongSelect)</span></a>
-<a name="292"><span class="lineNum">     292 </span><span class="lineCov">         17 :             return 1;</span></a>
+<a name="291"><span class="lineNum">     291 </span><span class="lineCov">         20 :         else if (getMessageType() &lt;= MIDIMessageType::SongSelect)</span></a>
+<a name="292"><span class="lineNum">     292 </span><span class="lineCov">         18 :             return 1;</span></a>
 <a name="293"><span class="lineNum">     293 </span>            :         else</a>
 <a name="294"><span class="lineNum">     294 </span><span class="lineCov">          2 :             return 0;</span></a>
 <a name="295"><span class="lineNum">     295 </span>            :     }</a>
@@ -380,12 +380,12 @@
 <a name="310"><span class="lineNum">     310 </span><span class="lineCov">          2 :     SysExMessage() : data(nullptr), length(0), cable(Cable_1) {}</span></a>
 <a name="311"><span class="lineNum">     311 </span>            : </a>
 <a name="312"><span class="lineNum">     312 </span>            :     /// Constructor.</a>
-<a name="313"><span class="lineNum">     313 </span><span class="lineCov">        157 :     SysExMessage(const uint8_t *data, uint16_t length, Cable cable = Cable_1)</span></a>
-<a name="314"><span class="lineNum">     314 </span><span class="lineCov">        157 :         : data(data), length(length), cable(cable.getRaw()) {}</span></a>
+<a name="313"><span class="lineNum">     313 </span><span class="lineCov">        156 :     SysExMessage(const uint8_t *data, uint16_t length, Cable cable = Cable_1)</span></a>
+<a name="314"><span class="lineNum">     314 </span><span class="lineCov">        156 :         : data(data), length(length), cable(cable.getRaw()) {}</span></a>
 <a name="315"><span class="lineNum">     315 </span>            : </a>
 <a name="316"><span class="lineNum">     316 </span>            :     /// Constructor.</a>
-<a name="317"><span class="lineNum">     317 </span><span class="lineCov">         28 :     SysExMessage(const std::vector&lt;uint8_t&gt; &amp;vec, Cable cable = Cable_1)</span></a>
-<a name="318"><span class="lineNum">     318 </span><span class="lineCov">         28 :         : SysExMessage(vec.data(), vec.size(), cable) {}</span></a>
+<a name="317"><span class="lineNum">     317 </span><span class="lineCov">         27 :     SysExMessage(const std::vector&lt;uint8_t&gt; &amp;vec, Cable cable = Cable_1)</span></a>
+<a name="318"><span class="lineNum">     318 </span><span class="lineCov">         27 :         : SysExMessage(vec.data(), vec.size(), cable) {}</span></a>
 <a name="319"><span class="lineNum">     319 </span>            : </a>
 <a name="320"><span class="lineNum">     320 </span>            :     /// Constructor.</a>
 <a name="321"><span class="lineNum">     321 </span>            :     template &lt;uint16_t N&gt;</a>
@@ -426,8 +426,8 @@
 <a name="356"><span class="lineNum">     356 </span>            : </a>
 <a name="357"><span class="lineNum">     357 </span>            : struct RealTimeMessage {</a>
 <a name="358"><span class="lineNum">     358 </span>            :     /// Constructor.</a>
-<a name="359"><span class="lineNum">     359 </span><span class="lineCov">       2123 :     RealTimeMessage(uint8_t message, Cable cable = Cable_1)</span></a>
-<a name="360"><span class="lineNum">     360 </span><span class="lineCov">       2123 :         : message(message), cable(cable.getRaw()) {}</span></a>
+<a name="359"><span class="lineNum">     359 </span><span class="lineCov">        197 :     RealTimeMessage(uint8_t message, Cable cable = Cable_1)</span></a>
+<a name="360"><span class="lineNum">     360 </span><span class="lineCov">        197 :         : message(message), cable(cable.getRaw()) {}</span></a>
 <a name="361"><span class="lineNum">     361 </span>            : </a>
 <a name="362"><span class="lineNum">     362 </span>            :     /// Constructor.</a>
 <a name="363"><span class="lineNum">     363 </span><span class="lineCov">         10 :     RealTimeMessage(MIDIMessageType message, Cable cable = Cable_1)</span></a>

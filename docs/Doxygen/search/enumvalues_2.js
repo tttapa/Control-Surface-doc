@@ -10,6 +10,8 @@ var searchData=
   ['channel_5fmessage_7',['CHANNEL_MESSAGE',['../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a1059c30ffa7691a2219835859583bda2',1,'MIDIReadEvent.hpp']]],
   ['channelpressure_8',['ChannelPressure',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5ab9ee37141db8aade98233a4f73262238',1,'ChannelPressure:&#160;MIDI_MessageTypes.hpp'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8ab9ee37141db8aade98233a4f73262238',1,'ChannelPressure:&#160;MIDI_MessageTypes.hpp']]],
   ['clamp_9',['Clamp',['../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5a08825280e3f8137556325061ba67ff8c',1,'Selector.hpp']]],
-  ['continue_10',['Continue',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aa0bfb8e59e6c13fc8d990781f77694fe',1,'MIDI_MessageTypes.hpp']]],
-  ['controlchange_11',['ControlChange',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a8313cf6eab18c71c8129afef3cf7c3b1',1,'ControlChange:&#160;MIDI_MessageTypes.hpp'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a8313cf6eab18c71c8129afef3cf7c3b1',1,'ControlChange:&#160;MIDI_MessageTypes.hpp']]]
+  ['consumeimmediately_10',['ConsumeImmediately',['../dd/d05/BLEAPI_8hpp.html#ae61d750f66560f832c218fb9a0a02fa8a4a2626e8ab153672d9ef9d8cecdc47e1',1,'BLEAPI.hpp']]],
+  ['continuation_11',['Continuation',['../dd/d05/BLEAPI_8hpp.html#a09b27d85b796fc012c33aad253143d9baf11580a0250ef12842e64f487810cc70',1,'BLEAPI.hpp']]],
+  ['continue_12',['Continue',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5aa0bfb8e59e6c13fc8d990781f77694fe',1,'MIDI_MessageTypes.hpp']]],
+  ['controlchange_13',['ControlChange',['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a8313cf6eab18c71c8129afef3cf7c3b1',1,'ControlChange:&#160;MIDI_MessageTypes.hpp'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a1b8216844e27979cf788e8aef6467dc8a8313cf6eab18c71c8129afef3cf7c3b1',1,'ControlChange:&#160;MIDI_MessageTypes.hpp']]]
 ];

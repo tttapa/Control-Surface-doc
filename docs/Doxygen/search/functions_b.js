@@ -29,6 +29,6 @@ var searchData=
   ['notecckprangeleds_26',['NoteCCKPRangeLEDs',['../d7/d5f/classNoteCCKPRangeLEDs.html#a6c458a221882cfecee3f76191ecacd5b',1,'NoteCCKPRangeLEDs::NoteCCKPRangeLEDs()'],['../d6/d56/classBankable_1_1NoteCCKPRangeLEDs.html#aad73d5b762216b8a9f558a9a71ba1e65',1,'Bankable::NoteCCKPRangeLEDs::NoteCCKPRangeLEDs()']]],
   ['notecckpvalue_27',['NoteCCKPValue',['../d6/d45/classNoteCCKPValue.html#a27ac02eceb5d7d34ef959a4e4aeeabac',1,'NoteCCKPValue::NoteCCKPValue()'],['../d5/dcd/classBankable_1_1NoteCCKPValue.html#ac25b7ae359145b29bdcfb8ef047737bc',1,'Bankable::NoteCCKPValue::NoteCCKPValue()']]],
   ['notechordbutton_28',['NoteChordButton',['../d8/d9d/classBankable_1_1NoteChordButton.html#ac507a2b698ea1a8c0e704227b8abcbee',1,'Bankable::NoteChordButton::NoteChordButton()'],['../d3/d3b/classNoteChordButton.html#a700757008a4aae12761279ac817bccbd',1,'NoteChordButton::NoteChordButton()']]],
-  ['notifymidible_29',['notifyMIDIBLE',['../d0/d89/classBluetoothMIDI__Interface.html#acb0235e1dec5da5120871d207b87586b',1,'BluetoothMIDI_Interface']]],
+  ['notify_29',['notify',['../d8/d83/namespacearduino__ble__midi.html#a38f479639863c1767935cc9409d40be0',1,'arduino_ble_midi::notify()'],['../dc/d49/namespacecs_1_1midi__ble__btstack.html#a8cbbc4f7b1b4c503de04efbf2e9a2a55',1,'cs::midi_ble_btstack::notify()'],['../db/d4d/namespacecs_1_1midi__ble__nimble.html#a3a4f1f0b5390eceb38440f0b70869428',1,'cs::midi_ble_nimble::notify()']]],
   ['nouppercase_30',['nouppercase',['../d8/d4b/group__AH__PrintStream.html#ga37f5b21cf4655f13c367bed9a7dad2f2',1,'AH']]]
 ];

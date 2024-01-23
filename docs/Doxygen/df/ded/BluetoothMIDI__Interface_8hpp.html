@@ -90,45 +90,79 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">BluetoothMIDI_Interface.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d1/d93/Error_8hpp_source.html">AH/Error/Error.hpp</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/d21/BLEMIDIPacketBuilder_8hpp_source.html">BLEMIDI/BLEMIDIPacketBuilder.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d52/MIDIMessageQueue_8hpp_source.html">BLEMIDI/MIDIMessageQueue.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d04/MIDI__Interface_8hpp_source.html">MIDI_Interface.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d31/ESP32Threads_8hpp_source.html">Util/ESP32Threads.hpp</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="../../de/d66/BLEMIDIParser_8hpp_source.html">MIDI_Parsers/BLEMIDIParser.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d1/d22/SerialMIDI__Parser_8hpp_source.html">MIDI_Parsers/SerialMIDI_Parser.hpp</a>&gt;</code><br />
-<code>#include &lt;atomic&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;condition_variable&gt;</code><br />
-<code>#include &lt;mutex&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
+<div class="textblock"><code>#include &lt;Settings/NamespaceSettings.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d61/GenericBLEMIDI__Interface_8hpp_source.html">GenericBLEMIDI_Interface.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for BluetoothMIDI_Interface.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d45/BluetoothMIDI__Interface_8hpp__incl.svg" width="2988" height="1254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/ddb/BluetoothMIDI__Interface_8hpp__dep__incl.svg" width="219" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/d45/BluetoothMIDI__Interface_8hpp__incl.svg" width="3351" height="1312"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../df/ded/BluetoothMIDI__Interface_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d89/classBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bluetooth Low Energy MIDI Interface for the ESP32.  <a href="../../d0/d89/classBluetoothMIDI__Interface.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df7/structBLEMIDIBackend.html">BLEMIDIBackend</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default backend for the <a class="el" href="../../df/d43/structBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a> class.  <a href="../../dc/df7/structBLEMIDIBackend.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d43/structBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for MIDI interfaces sending MIDI messages over a Bluetooth Low Energy (BLE) connection.  <a href="../../df/d43/structBluetoothMIDI__Interface.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a632bb37a2df0096363d0510370bd43fa" id="r_a632bb37a2df0096363d0510370bd43fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a632bb37a2df0096363d0510370bd43fa">CS_BLE_MIDI_SUPPORTED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a632bb37a2df0096363d0510370bd43fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether <a class="el" href="../../dc/df7/structBLEMIDIBackend.html">BLEMIDIBackend</a> and <a class="el" href="../../df/d43/structBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a> are defined for this board.  <br /></td></tr>
+<tr class="separator:a632bb37a2df0096363d0510370bd43fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18505a0db7051305855bf0d9155c90f" id="r_ab18505a0db7051305855bf0d9155c90f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab18505a0db7051305855bf0d9155c90f">CS_USE_NIMBLE</a></td></tr>
+<tr class="memdesc:ab18505a0db7051305855bf0d9155c90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">On ESP32, changes the default MIDI over BLE backend from Bluedroid to NimBLE.  <br /></td></tr>
+<tr class="separator:ab18505a0db7051305855bf0d9155c90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a632bb37a2df0096363d0510370bd43fa" name="a632bb37a2df0096363d0510370bd43fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632bb37a2df0096363d0510370bd43fa">&#9670;&#160;</a></span>CS_BLE_MIDI_SUPPORTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CS_BLE_MIDI_SUPPORTED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates whether <a class="el" href="../../dc/df7/structBLEMIDIBackend.html">BLEMIDIBackend</a> and <a class="el" href="../../df/d43/structBluetoothMIDI__Interface.html">BluetoothMIDI_Interface</a> are defined for this board. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/ded/BluetoothMIDI__Interface_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../df/ded/BluetoothMIDI__Interface_8hpp_source.html">BluetoothMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab18505a0db7051305855bf0d9155c90f" name="ab18505a0db7051305855bf0d9155c90f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18505a0db7051305855bf0d9155c90f">&#9670;&#160;</a></span>CS_USE_NIMBLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CS_USE_NIMBLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>On ESP32, changes the default MIDI over BLE backend from Bluedroid to NimBLE. </p>
+<p>This macro should be defined before including any Control Surface headers. Requires the <a href="https://github.com/h2zero/NimBLE-Arduino">NimBLE-Arduino</a> library. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/ded/BluetoothMIDI__Interface_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../df/ded/BluetoothMIDI__Interface_8hpp_source.html">BluetoothMIDI_Interface.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

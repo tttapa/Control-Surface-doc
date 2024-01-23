@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 7fbff1e994dea4fc249da2b88d4df05f62f7fec9 - src/MIDI_Parsers/BLEMIDIParser.hpp</title>
+  <title>LCOV - 3cd56f613e0cc2f201e4867c327136e4b7e7c179 - src/MIDI_Parsers/BLEMIDIParser.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,21 +28,21 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">7fbff1e994dea4fc249da2b88d4df05f62f7fec9</td>
+            <td class="headerValue">3cd56f613e0cc2f201e4867c327136e4b7e7c179</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">32</td>
-            <td class="headerCovTableEntry">32</td>
-            <td class="headerCovTableEntryHi">100.0 %</td>
+            <td class="headerCovTableEntry">36</td>
+            <td class="headerCovTableEntryMed">88.9 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-01-13 16:22:24</td>
+            <td class="headerValue">2024-01-23 17:24:20</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">4</td>
-            <td class="headerCovTableEntry">4</td>
-            <td class="headerCovTableEntryHi">100.0 %</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntryMed">80.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -85,15 +85,15 @@
 <a name="15"><span class="lineNum">      15 </span>            :  */</a>
 <a name="16"><span class="lineNum">      16 </span>            : class BLEMIDIParser {</a>
 <a name="17"><span class="lineNum">      17 </span>            :   public:</a>
-<a name="18"><span class="lineNum">      18 </span><span class="lineCov">         15 :     BLEMIDIParser(const uint8_t *data, size_t length)</span></a>
-<a name="19"><span class="lineNum">      19 </span><span class="lineCov">         15 :         : data(data), end(data + length) {</span></a>
+<a name="18"><span class="lineNum">      18 </span><span class="lineCov">         44 :     BLEMIDIParser(const uint8_t *data, size_t length)</span></a>
+<a name="19"><span class="lineNum">      19 </span><span class="lineCov">         44 :         : data(data), end(data + length) {</span></a>
 <a name="20"><span class="lineNum">      20 </span>            :         // Need at least two bytes to be useful.</a>
 <a name="21"><span class="lineNum">      21 </span>            :         // Usually, we have header, timestamp and at least one MIDI byte,</a>
 <a name="22"><span class="lineNum">      22 </span>            :         // but a SysEx continuation could perhaps have only a header and a</a>
 <a name="23"><span class="lineNum">      23 </span>            :         // single data byte (this is not explicitly allowed by the spec, but</a>
 <a name="24"><span class="lineNum">      24 </span>            :         // handling this case requires no extra effort)</a>
-<a name="25"><span class="lineNum">      25 </span><span class="lineCov">         15 :         if (length &lt; 2) {</span></a>
-<a name="26"><span class="lineNum">      26 </span><span class="lineCov">          1 :             this-&gt;data = end;</span></a>
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">         44 :         if (length &lt; 2) {</span></a>
+<a name="26"><span class="lineNum">      26 </span><span class="lineCov">         30 :             this-&gt;data = end;</span></a>
 <a name="27"><span class="lineNum">      27 </span>            :         }</a>
 <a name="28"><span class="lineNum">      28 </span>            :         // First byte should be a header. If it's a data byte, discard packet.</a>
 <a name="29"><span class="lineNum">      29 </span><span class="lineCov">         14 :         else if (isData(data[0])) {</span></a>
@@ -113,22 +113,22 @@
 <a name="43"><span class="lineNum">      43 </span><span class="lineCov">         12 :             this-&gt;timestamp |= data[1] &amp; 0x7F;</span></a>
 <a name="44"><span class="lineNum">      44 </span><span class="lineCov">         12 :             this-&gt;data += 2;</span></a>
 <a name="45"><span class="lineNum">      45 </span>            :         }</a>
-<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         15 :     }</span></a>
+<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         44 :     }</span></a>
 <a name="47"><span class="lineNum">      47 </span>            : </a>
 <a name="48"><span class="lineNum">      48 </span>            :     /// Extend the BLE packet with the given buffer.</a>
 <a name="49"><span class="lineNum">      49 </span>            :     /// @pre    The previous buffer was fully consumed (@ref pull returned false).</a>
 <a name="50"><span class="lineNum">      50 </span>            :     /// @note   This function should only be used for a single packet that spans</a>
 <a name="51"><span class="lineNum">      51 </span>            :     ///         multiple buffers. If you want to parse a new packet, you should</a>
 <a name="52"><span class="lineNum">      52 </span>            :     ///         create a new BLEMIDIParser instance.</a>
-<a name="53"><span class="lineNum">      53 </span>            :     void extend(const uint8_t *data, size_t length) {</a>
-<a name="54"><span class="lineNum">      54 </span>            :         this-&gt;data = data;</a>
-<a name="55"><span class="lineNum">      55 </span>            :         this-&gt;end = data + length;</a>
-<a name="56"><span class="lineNum">      56 </span>            :     }</a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineNoCov">          0 :     void extend(const uint8_t *data, size_t length) {</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineNoCov">          0 :         this-&gt;data = data;</span></a>
+<a name="55"><span class="lineNum">      55 </span><span class="lineNoCov">          0 :         this-&gt;end = data + length;</span></a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineNoCov">          0 :     }</span></a>
 <a name="57"><span class="lineNum">      57 </span>            : </a>
 <a name="58"><span class="lineNum">      58 </span>            :     /// Get the next MIDI byte from the BLE packet (if available).</a>
 <a name="59"><span class="lineNum">      59 </span>            :     /// @return True if a byte was available, false otherwise.</a>
-<a name="60"><span class="lineNum">      60 </span><span class="lineCov">        121 :     bool pull(uint8_t &amp;output) {</span></a>
-<a name="61"><span class="lineNum">      61 </span><span class="lineCov">        144 :         while (data != end) {</span></a>
+<a name="60"><span class="lineNum">      60 </span><span class="lineCov">        133 :     bool pull(uint8_t &amp;output) {</span></a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">        156 :         while (data != end) {</span></a>
 <a name="62"><span class="lineNum">      62 </span>            :             // Simply pass on all normal data bytes to the MIDI parser.</a>
 <a name="63"><span class="lineNum">      63 </span><span class="lineCov">        129 :             if (isData(*data)) {</span></a>
 <a name="64"><span class="lineNum">      64 </span><span class="lineCov">         77 :                 output = *data++;</span></a>
@@ -163,7 +163,7 @@
 <a name="93"><span class="lineNum">      93 </span>            :                 }</a>
 <a name="94"><span class="lineNum">      94 </span>            :             }</a>
 <a name="95"><span class="lineNum">      95 </span>            :         }</a>
-<a name="96"><span class="lineNum">      96 </span><span class="lineCov">         15 :         return false;</span></a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">         27 :         return false;</span></a>
 <a name="97"><span class="lineNum">      97 </span>            :     }</a>
 <a name="98"><span class="lineNum">      98 </span>            : </a>
 <a name="99"><span class="lineNum">      99 </span><span class="lineCov">         40 :     uint16_t getTimestamp() const { return timestamp; }</span></a>

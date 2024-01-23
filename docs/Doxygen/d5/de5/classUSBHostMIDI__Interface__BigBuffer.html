@@ -123,6 +123,14 @@ $(function() {
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/dc9/classUSBHostMIDI__Interface__BigBuffer__coll__graph.svg" width="2332" height="4064"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Initialization and polling</h2></td></tr>
+<tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2" id="r_a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
+<tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize.  <br /></td></tr>
+<tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099" id="r_a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="memdesc:a44137bb65de2396875934e48a6ee5099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the backend (if necessary) and invoke the callbacks for any received MIDI messages, as well as sending them over the pipes connected to this interface.  <br /></td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Reading incoming MIDI messages</h2></td></tr>
 <tr class="memitem:adb02fa6b9ddb7404758bcad36115a26e" id="r_adb02fa6b9ddb7404758bcad36115a26e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029">MIDIReadEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#adb02fa6b9ddb7404758bcad36115a26e">read</a> ()</td></tr>
 <tr class="memdesc:adb02fa6b9ddb7404758bcad36115a26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try reading and parsing a single incoming MIDI message.  <br /></td></tr>
@@ -419,12 +427,6 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab42eb05e854f9d67ff92b3c42871c7b6" id="r_ab42eb05e854f9d67ff92b3c42871c7b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab42eb05e854f9d67ff92b3c42871c7b6">USBHostMIDI_Interface_BigBuffer</a> (USBHost &amp;host)</td></tr>
 <tr class="separator:ab42eb05e854f9d67ff92b3c42871c7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2" id="r_a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
-<tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this updatable.  <br /></td></tr>
-<tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44137bb65de2396875934e48a6ee5099" id="r_a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
-<tr class="memdesc:a44137bb65de2396875934e48a6ee5099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the MIDI interface and call the callback if a message was received.  <br /></td></tr>
-<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -822,7 +824,7 @@ template&lt;class MIDIInterface_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize this updatable. </p>
+<p>Initialize. </p>
 
 <p>Implements <a class="el" href="../../d1/d55/classAH_1_1Updatable.html#aaf893c33f3c041e289a12c153dcc9789">Updatable&lt; MIDI_Interface &gt;</a>.</p>
 
@@ -851,7 +853,7 @@ template&lt;class MIDIInterface_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Read the MIDI interface and call the callback if a message was received. </p>
+<p>Poll the backend (if necessary) and invoke the callbacks for any received MIDI messages, as well as sending them over the pipes connected to this interface. </p>
 
 <p>Implements <a class="el" href="../../d9/d73/classMIDI__Interface.html#af422b88b08d79a925ad5edb2a98a7605">MIDI_Interface</a>.</p>
 
@@ -881,7 +883,7 @@ template&lt;class MIDIInterface_t &gt; </div>
 </div><div class="memdoc">
 
 <p>Try reading and parsing a single incoming MIDI message. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the type of the read message, or <code><a class="el" href="../../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a3b6e8876bb7ebb1a30be0d1611780f7a" title="No new messages were received.">MIDIReadEvent::NO_MESSAGE</a></code> if no MIDI message was available. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the type of the message read, or <code><a class="el" href="../../d1/d70/MIDIReadEvent_8hpp.html#a16d614a4b221d351c71d73a72820c029a3b6e8876bb7ebb1a30be0d1611780f7a" title="No new messages were received.">MIDIReadEvent::NO_MESSAGE</a></code> if no MIDI message was available. </dd></dl>
 
 </div>
 </div>
@@ -1019,7 +1021,7 @@ template&lt;class MIDIInterface_t &gt; </div>
 <p>Check if this USB interface always sends its USB packets immediately after sending a MIDI message. </p>
 <p>The default value depends on the MIDI USB backend being used: <code>true</code> for the <code>MIDIUSB</code> library, and <code>false</code> for the Teensy Core USB MIDI functions (because they have a short timeout). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1051,7 @@ template&lt;class MIDIInterface_t &gt; </div>
 <p>Don't send the USB packets immediately after sending a MIDI message. </p>
 <p>By disabling immediate transmission, packets are buffered until you call <a class="el" href="../../d6/d72/classMIDI__Sender.html#a02c491257d08e16bd080823ec5cc5ce0">sendNow()</a> or until a timeout is reached, so multiple MIDI messages can be transmitted in a single USB packet. This is more efficient and results in a higher maximum bandwidth, but it could increase latency when used incorrectly. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -1079,7 +1081,7 @@ template&lt;class MIDIInterface_t &gt; </div>
 <p>Send the USB packets immediately after sending a MIDI message. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a46f444ff70d97096dc29d0a5cd5ccb29">neverSendImmediately()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00120">120</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -3781,8 +3783,8 @@ template&lt;class MIDIInterface_t &gt; </div>
 </div><div class="memdoc">
 
 <p>Begin all enabled instances of this class. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin()</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d0b/MIDI-Monitor_8ino-example.html#a2">MIDI-Monitor.ino</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2" title="Initialize.">begin()</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d5e/BLEMIDI-Adapter_8ino-example.html#a3">BLEMIDI-Adapter.ino</a>, <a class="el" href="../../dc/d0b/MIDI-Monitor_8ino-example.html#a2">MIDI-Monitor.ino</a>, and <a class="el" href="../../dd/db2/USBMIDI-Adapter_8ino-example.html#a2">USBMIDI-Adapter.ino</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00186">186</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
@@ -3813,8 +3815,8 @@ template&lt;class MIDIInterface_t &gt; </div>
 </div><div class="memdoc">
 
 <p>Update all enabled instances of this class. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">update()</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d0b/MIDI-Monitor_8ino-example.html#a3">MIDI-Monitor.ino</a>.</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099" title="Poll the backend (if necessary) and invoke the callbacks for any received MIDI messages,...">update()</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/d5e/BLEMIDI-Adapter_8ino-example.html#a5">BLEMIDI-Adapter.ino</a>, <a class="el" href="../../dc/d0b/MIDI-Monitor_8ino-example.html#a3">MIDI-Monitor.ino</a>, and <a class="el" href="../../dd/db2/USBMIDI-Adapter_8ino-example.html#a3">USBMIDI-Adapter.ino</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d93/Updatable_8hpp_source.html#l00190">190</a> of file <a class="el" href="../../d4/d93/Updatable_8hpp_source.html">Updatable.hpp</a>.</p>
@@ -4218,7 +4220,7 @@ template&lt;class Derived &gt; </div>
 
 <p>The (platform-specific) backend used for MIDI over USB communication. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -4244,7 +4246,7 @@ template&lt;class Derived &gt; </div>
 
 <p>Parses USB packets into MIDI messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -4270,7 +4272,7 @@ template&lt;class Derived &gt; </div>
 
 <p>Sends USB MIDI messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00098">98</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>
@@ -4295,7 +4297,7 @@ template&lt;class Derived &gt; </div>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a46f444ff70d97096dc29d0a5cd5ccb29" title="Don&#39;t send the USB packets immediately after sending a MIDI message.">neverSendImmediately()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00091">91</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00100">100</a> of file <a class="el" href="../../d1/d64/USBMIDI__Interface_8hpp_source.html">USBMIDI_Interface.hpp</a>.</p>
 
 </div>
 </div>

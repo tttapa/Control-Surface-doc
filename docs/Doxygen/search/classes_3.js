@@ -5,7 +5,7 @@ var searchData=
   ['digitalnotesender_2',['DigitalNoteSender',['../dc/dd4/classDigitalNoteSender.html',1,'']]],
   ['directpinread_3',['DirectPinRead',['../dc/d9d/structDirectPinRead.html',1,'']]],
   ['directpinreadreg_4',['DirectPinReadReg',['../d2/d63/structDirectPinReadReg.html',1,'']]],
-  ['display_5',['Display',['../d0/d4e/Def_8hpp.html#d9/d11/structDisplay',1,'']]],
+  ['display_5',['Display',['../d9/d11/structDisplay.html',1,'']]],
   ['displayelement_6',['DisplayElement',['../d8/d43/classDisplayElement.html',1,'']]],
   ['displayinterface_7',['DisplayInterface',['../df/d42/classDisplayInterface.html',1,'']]],
   ['dotbardisplayleds_8',['DotBarDisplayLEDs',['../d9/d89/classAH_1_1DotBarDisplayLEDs.html',1,'AH']]],

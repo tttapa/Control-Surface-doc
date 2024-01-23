@@ -88,19 +88,19 @@ $(function() {
   <div class="headertitle"><div class="title">Custom-Note-LED-Input-Element-Callback-FastLED.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md275"></a>
+<h1><a class="anchor" id="custom-note-led-input-element-callback-fastled"></a>
 Custom-Note-LED-Input-Element-Callback-FastLED</h1>
 <p>This example demonstrates how to attach custom callbacks to Note or Control Change MIDI Input Elements.</p>
-<dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>&emsp; AVR, AVR USB, Due, Nano 33 IoT, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="autotoc_md276"></a>
+<dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Teensy 3.x, ESP32</dd></dl>
+<h2><a class="anchor" id="connections-66"></a>
 Connections</h2>
 <ul>
 <li>Pin 2: The data pin of a Neopixel LED strip with (at least) 8 LEDs</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md277"></a>
+<h2><a class="anchor" id="behavior-70"></a>
 Behavior</h2>
 <p>If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, its velocity value sets the red value of the first LED, note 0x3D controls the green value of the first LED, note 0x3E controls the blue value of the first LED, note 0x3F controls the red value of the second LED, 0x40 controls the green value of the second LED, etc.</p>
-<h2><a class="anchor" id="autotoc_md278"></a>
+<h2><a class="anchor" id="mapping-43"></a>
 Mapping</h2>
 <p>Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play some notes in the two octaves above middle C. <br  />
  Alternatively, map it in you DAW, for example, in VirtualDJ: <br  />
@@ -133,8 +133,8 @@ Mapping</h2>
 <div class="line">  <span class="comment">// (i.e. it has the right MIDI address, channel and cable).</span></div>
 <div class="line">  <span class="comment">// The match object that&#39;s passed as a parameter contains the velocity value</span></div>
 <div class="line">  <span class="comment">// of the Note message that matched.</span></div>
-<div class="line">  <span class="keywordtype">void</span> <a id="a6" name="a6"></a><a class="code hl_function" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a>(<span class="keyword">typename</span> <a id="_a7" name="_a7"></a><a class="code hl_struct" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result">TwoByteRangeMIDIMatcher::Result</a> match)<span class="keyword"> override </span>{</div>
-<div class="line">    updateLED(match.<a id="a8" name="a8"></a><a class="code hl_variable" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#aae5a12e607d0f782506d9e6ec6179c64">index</a>, match.<a id="a9" name="a9"></a><a class="code hl_variable" href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">value</a>);</div>
+<div class="line">  <span class="keywordtype">void</span> <a id="a6" name="a6"></a><a class="code hl_function" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a>(<span class="keyword">typename</span> <a id="_a7" name="_a7"></a><a class="code hl_struct" href="../../d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result.html">TwoByteRangeMIDIMatcher::Result</a> match)<span class="keyword"> override </span>{</div>
+<div class="line">    updateLED(match.<a id="a8" name="a8"></a><a class="code hl_variable" href="../../d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result.html#aae5a12e607d0f782506d9e6ec6179c64">index</a>, match.<a id="a9" name="a9"></a><a class="code hl_variable" href="../../d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">value</a>);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Called each time a MIDI message is received and an LED has to be updated.</span></div>
@@ -195,12 +195,12 @@ Mapping</h2>
 <div class="ttc" id="aclassMIDIInputElement_html_a2d8ec6ac27419ce65e20d415ebfe1495"><div class="ttname"><a href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">MIDIInputElement::begin</a></div><div class="ttdeci">virtual void begin()</div><div class="ttdoc">Initialize the input element.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00038">MIDIInputElement.hpp:38</a></div></div>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a></div><div class="ttdoc">The MIDIInputElement base class is very general: you give it a MIDI message, and it calls the updateW...</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00092">MIDIInputElement.hpp:92</a></div></div>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html_a7d8b3295e878d374fe9af277f6983204"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">MatchingMIDIInputElement::handleUpdate</a></div><div class="ttdeci">virtual void handleUpdate(typename Matcher::Result match)=0</div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00148">USBMIDI_Interface.hpp:149</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00157">USBMIDI_Interface.hpp:158</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
+<div class="ttc" id="astructTwoByteRangeMIDIMatcher_1_1Result_html"><div class="ttname"><a href="../../d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result.html">TwoByteRangeMIDIMatcher::Result</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00086">MIDIInputElementMatchers.hpp:86</a></div></div>
+<div class="ttc" id="astructTwoByteRangeMIDIMatcher_1_1Result_html_a638e4503e0ae6ce655b7ad2e17e8f0ad"><div class="ttname"><a href="../../d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">TwoByteRangeMIDIMatcher::Result::value</a></div><div class="ttdeci">uint8_t value</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00088">MIDIInputElementMatchers.hpp:88</a></div></div>
+<div class="ttc" id="astructTwoByteRangeMIDIMatcher_1_1Result_html_aae5a12e607d0f782506d9e6ec6179c64"><div class="ttname"><a href="../../d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result.html#aae5a12e607d0f782506d9e6ec6179c64">TwoByteRangeMIDIMatcher::Result::index</a></div><div class="ttdeci">uint8_t index</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00089">MIDIInputElementMatchers.hpp:89</a></div></div>
 <div class="ttc" id="astructTwoByteRangeMIDIMatcher_html"><div class="ttname"><a href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html">TwoByteRangeMIDIMatcher</a></div><div class="ttdoc">Matcher for MIDI messages with 2 data bytes, such as Note On/Off, Control Change, Key Pressure (but n...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00082">MIDIInputElementMatchers.hpp:82</a></div></div>
-<div class="ttc" id="astructTwoByteRangeMIDIMatcher_html_a638e4503e0ae6ce655b7ad2e17e8f0ad"><div class="ttname"><a href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">TwoByteRangeMIDIMatcher::Result::value</a></div><div class="ttdeci">uint8_t value</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00088">MIDIInputElementMatchers.hpp:88</a></div></div>
-<div class="ttc" id="astructTwoByteRangeMIDIMatcher_html_aae5a12e607d0f782506d9e6ec6179c64"><div class="ttname"><a href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#aae5a12e607d0f782506d9e6ec6179c64">TwoByteRangeMIDIMatcher::Result::index</a></div><div class="ttdeci">uint8_t index</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00089">MIDIInputElementMatchers.hpp:89</a></div></div>
-<div class="ttc" id="astructTwoByteRangeMIDIMatcher_html_d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result"><div class="ttname"><a href="../../d1/d7a/structTwoByteRangeMIDIMatcher.html#d6/d0e/structTwoByteRangeMIDIMatcher_1_1Result">TwoByteRangeMIDIMatcher::Result</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00086">MIDIInputElementMatchers.hpp:86</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

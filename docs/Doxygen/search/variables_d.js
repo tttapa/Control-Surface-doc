@@ -10,12 +10,13 @@ var searchData=
   ['note_5fvelocity_5fthreshold_7',['NOTE_VELOCITY_THRESHOLD',['../dc/d4f/Settings_2Settings_8hpp.html#ad73f28073ff4298bbf7bdde13c083393',1,'Settings.hpp']]],
   ['noteoff_8',['NoteOff',['../d7/d3f/structChannelMessage.html#ae288cbd5714192982ac24e317ae1a4f4',1,'ChannelMessage::NoteOff'],['../d2/d91/namespaceDebugMIDIMessageNames.html#a90d4e52f2711121364df71ae03b2c465',1,'DebugMIDIMessageNames::NoteOff']]],
   ['noteon_9',['NoteOn',['../d7/d3f/structChannelMessage.html#a35187e10c578f1ff079af83ffb2aba0a',1,'ChannelMessage::NoteOn'],['../d2/d91/namespaceDebugMIDIMessageNames.html#aa744b623c444ec91ac4d6fd84c26f93d',1,'DebugMIDIMessageNames::NoteOn']]],
-  ['novationlaunchpadcolorlut_10',['NovationLaunchpadColorLUT',['../d0/db2/NovationLaunchpadColorLUT_8hpp.html#a1b1289abac60261344e3a121ce7e3b3f',1,'NovationLaunchpadColorLUT.hpp']]],
-  ['nrpn_5flsb_11',['NRPN_LSB',['../d4/dbe/namespaceMIDI__CC.html#a2631727ccff10242de31bb76258a1042',1,'MIDI_CC']]],
-  ['nrpn_5fmsb_12',['NRPN_MSB',['../d4/dbe/namespaceMIDI__CC.html#a797fa4c7b3696a2d76b42143b5e6b42b',1,'MIDI_CC']]],
-  ['nudge_13',['NUDGE',['../de/d44/group__MCU__Notes.html#gae12c271c858f5b0bc02ba53de54ba31c',1,'MCU']]],
-  ['numbanks_14',['NumBanks',['../da/db8/classTransposer.html#a9af4788c43212c21ef564d7d9b660858',1,'Transposer']]],
-  ['number_5farguments_15',['number_arguments',['../d4/dfd/structAH_1_1function__traits_3_01Return_07Args_8_8_8_08_4.html#a9184a94a28a45562855731a9841ffb87',1,'AH::function_traits&lt; Return(Args...)&gt;']]],
-  ['numericchars_16',['NumericChars',['../dc/d69/namespaceAH.html#a22aef2ea85e50ea5193e012410dfb4b0',1,'AH']]],
-  ['numrxpackets_17',['NumRxPackets',['../d1/dd4/classPluggableUSBMIDI.html#a0270e3aabb9811aebdb6578d112d0b3a',1,'PluggableUSBMIDI::NumRxPackets'],['../de/d93/classTeensyHostMIDI.html#ad38f56be092daefd5d46c1dd105c187b',1,'TeensyHostMIDI::NumRxPackets']]]
+  ['notify_10',['notify',['../da/d50/structble__backend_1_1ESP32BluedroidBLE.html#a145764feed2ae40d7efd467e082696fb',1,'ble_backend::ESP32BluedroidBLE::notify'],['../d3/da4/structble__backend_1_1ESP32NimBLE.html#a145764feed2ae40d7efd467e082696fb',1,'ble_backend::ESP32NimBLE::notify']]],
+  ['novationlaunchpadcolorlut_11',['NovationLaunchpadColorLUT',['../d0/db2/NovationLaunchpadColorLUT_8hpp.html#a1b1289abac60261344e3a121ce7e3b3f',1,'NovationLaunchpadColorLUT.hpp']]],
+  ['nrpn_5flsb_12',['NRPN_LSB',['../d4/dbe/namespaceMIDI__CC.html#a2631727ccff10242de31bb76258a1042',1,'MIDI_CC']]],
+  ['nrpn_5fmsb_13',['NRPN_MSB',['../d4/dbe/namespaceMIDI__CC.html#a797fa4c7b3696a2d76b42143b5e6b42b',1,'MIDI_CC']]],
+  ['nudge_14',['NUDGE',['../de/d44/group__MCU__Notes.html#gae12c271c858f5b0bc02ba53de54ba31c',1,'MCU']]],
+  ['numbanks_15',['NumBanks',['../da/db8/classTransposer.html#a9af4788c43212c21ef564d7d9b660858',1,'Transposer']]],
+  ['number_5farguments_16',['number_arguments',['../d4/dfd/structAH_1_1function__traits_3_01Return_07Args_8_8_8_08_4.html#a9184a94a28a45562855731a9841ffb87',1,'AH::function_traits&lt; Return(Args...)&gt;']]],
+  ['numericchars_17',['NumericChars',['../dc/d69/namespaceAH.html#a22aef2ea85e50ea5193e012410dfb4b0',1,'AH']]],
+  ['numrxpackets_18',['NumRxPackets',['../d1/dd4/classPluggableUSBMIDI.html#a0270e3aabb9811aebdb6578d112d0b3a',1,'PluggableUSBMIDI::NumRxPackets'],['../de/d93/classTeensyHostMIDI.html#ad38f56be092daefd5d46c1dd105c187b',1,'TeensyHostMIDI::NumRxPackets']]]
 ];

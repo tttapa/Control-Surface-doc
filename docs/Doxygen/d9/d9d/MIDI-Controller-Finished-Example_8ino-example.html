@@ -88,12 +88,12 @@ $(function() {
   <div class="headertitle"><div class="title">MIDI-Controller-Finished-Example.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md134"></a>
+<h1><a class="anchor" id="midi-controller-finished-example"></a>
 MIDI-Controller-Finished-Example</h1>
 <p>This is the code I used for my specific MIDI controller. <br  />
 </p>
-<dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>&emsp; Leonardo</dd></dl>
-<h2><a class="anchor" id="autotoc_md135"></a>
+<dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>Leonardo</dd></dl>
+<h2><a class="anchor" id="connections-33"></a>
 Connections</h2>
 <p>I used an Arduino Leonardo with:</p><ul>
 <li>4 faders on A0-A3</li>
@@ -103,7 +103,7 @@ Connections</h2>
 <li>1 toggle switch (for bank select) on pin 11</li>
 <li>1 LED on pin 13</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md136"></a>
+<h2><a class="anchor" id="behavior-37"></a>
 Behavior</h2>
 <ul>
 <li>When bank select is 0, faders 1-4 are channel volumes 1-4, potSide 1-4 are pan/balance of channel 1-4, switches 1-4 are mute channel 5-8.</li>
@@ -111,7 +111,7 @@ Behavior</h2>
 <li>PotTop 1-4 are not in the bank, because I use them as effect or EQ parameters, and they are channel independent.</li>
 <li>Enc1 is used for scrolling.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md137"></a>
+<h2><a class="anchor" id="mapping-17"></a>
 Mapping</h2>
 <p>Create a custom mapping using the MIDI learn option in your DAW.</p>
 <p>Written by PieterP, 07-09-2017 <a href="https://github.com/tttapa/Control-Surface">https://github.com/tttapa/Control-Surface</a></p>
@@ -191,7 +191,7 @@ Mapping</h2>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00071">Control_Surface_Class.cpp:71</a></div></div>
 <div class="ttc" id="aclassSwitchSelector_html"><div class="ttname"><a href="../../df/def/classSwitchSelector.html">SwitchSelector</a></div><div class="ttdoc">Selector that selects one of two settings, based on the state of a toggle or momentary switch.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/ddf/SwitchSelector_8hpp_source.html#l00050">SwitchSelector.hpp:50</a></div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00148">USBMIDI_Interface.hpp:149</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00157">USBMIDI_Interface.hpp:158</a></div></div>
 <div class="ttc" id="agroup__AH__ExtIO_html_ga6500d2ccee66ed7f10b09e4ce51c74e9"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#ga6500d2ccee66ed7f10b09e4ce51c74e9">AH::ExtIO::pinMode</a></div><div class="ttdeci">void pinMode(pin_t pin, PinMode_t mode)</div><div class="ttdoc">An ExtIO version of the Arduino function.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d3c/ExtendedInputOutput_8cpp_source.html#l00040">ExtendedInputOutput.cpp:40</a></div></div>
 <div class="ttc" id="agroup__AH__ExtIO_html_gae8d2306a5dd18ac1fe5a5826aa19407c"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#gae8d2306a5dd18ac1fe5a5826aa19407c">AH::ExtIO::digitalRead</a></div><div class="ttdeci">PinStatus_t digitalRead(pin_t pin)</div><div class="ttdoc">An ExtIO version of the Arduino function.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d3c/ExtendedInputOutput_8cpp_source.html#l00068">ExtendedInputOutput.cpp:68</a></div></div>
 <div class="ttc" id="agroup__AH__ExtIO_html_gaff89e0a727f5b97e0618b8f2f65b3356"><div class="ttname"><a href="../../db/dd3/group__AH__ExtIO.html#gaff89e0a727f5b97e0618b8f2f65b3356">AH::ExtIO::digitalWrite</a></div><div class="ttdeci">void digitalWrite(pin_t pin, PinStatus_t val)</div><div class="ttdoc">An ExtIO version of the Arduino function.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d3c/ExtendedInputOutput_8cpp_source.html#l00054">ExtendedInputOutput.cpp:54</a></div></div>

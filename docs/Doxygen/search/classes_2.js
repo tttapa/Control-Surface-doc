@@ -15,7 +15,7 @@ var searchData=
   ['channel_12',['Channel',['../d2/d48/classChannel.html',1,'']]],
   ['channelmessage_13',['ChannelMessage',['../d7/d3f/structChannelMessage.html',1,'']]],
   ['chord_14',['Chord',['../d5/dc0/classChord.html',1,'']]],
-  ['color_15',['Color',['../d0/d37/NoteCCKPRangeFastLED_8hpp.html#d0/da2/structColor',1,'']]],
+  ['color_15',['Color',['../d0/da2/structColor.html',1,'']]],
   ['continuousccsender_16',['ContinuousCCSender',['../da/d07/classContinuousCCSender.html',1,'']]],
   ['continuousccsender14_17',['ContinuousCCSender14',['../d4/d76/classContinuousCCSender14.html',1,'']]],
   ['control_5fsurface_5f_18',['Control_Surface_',['../dc/d45/classControl__Surface__.html',1,'']]]

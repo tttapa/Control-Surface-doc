@@ -88,11 +88,11 @@ $(function() {
   <div class="headertitle"><div class="title">MIDI-Monitor-OLED.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md162"></a>
+<h1><a class="anchor" id="midi-monitor-oled"></a>
 MIDI-Monitor-OLED</h1>
 <p>This example shows all incoming and outgoing MIDI messages on an SSD1306 OLED display. This can be handy for debugging purposes when you don't have access to the Serial Monitor.</p>
-<dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>&emsp; AVR, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Teensy 3.x, ESP32, ESP8266</dd></dl>
-<h2><a class="anchor" id="autotoc_md163"></a>
+<dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Teensy 3.x, ESP32, ESP8266</dd></dl>
+<h2><a class="anchor" id="connections-40"></a>
 Connections</h2>
 <ul>
 <li>5: Push button (to ground)</li>
@@ -102,7 +102,7 @@ Connections</h2>
 <li>9: OLED Data/Command</li>
 <li>10: OLED Cable Select</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md164"></a>
+<h2><a class="anchor" id="behavior-44"></a>
 Behavior</h2>
 <ul>
 <li>When sending MIDI messages to the Arduino using the USB interface, these messages are printed on the OLED display, prefixed by a right arrow (→).</li>
@@ -112,7 +112,7 @@ Behavior</h2>
 </div>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md165"></a>
+<h2><a class="anchor" id="explanation"></a>
 Explanation</h2>
 <p>The code below defines the <code>OLEDDebugMIDI_Output</code> class, which implements the <a class="el" href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a> and <a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a> interfaces. This means that it can accept MIDI messages coming from <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>s, and it provides all of the usual functions for sending MIDI messages.</p>
 <p>The MIDI over USB interface (<code>midi</code>) will be used as the primary MIDI interface (as in the other Control Surface examples). <br  />
@@ -291,7 +291,7 @@ Explanation</h2>
 <div class="ttc" id="aclassMIDI__Sink_html"><div class="ttname"><a href="../../d9/db6/classMIDI__Sink.html">MIDI_Sink</a></div><div class="ttdoc">Receives MIDI messages from a MIDI pipe.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00074">MIDI_Pipes.hpp:74</a></div></div>
 <div class="ttc" id="aclassMIDI__Sink_html_aab6607e3286111a031f88ece706b44a5"><div class="ttname"><a href="../../d9/db6/classMIDI__Sink.html#aab6607e3286111a031f88ece706b44a5">MIDI_Sink::sinkMIDIfromPipe</a></div><div class="ttdeci">virtual void sinkMIDIfromPipe(ChannelMessage)=0</div><div class="ttdoc">Accept an incoming MIDI Channel message.</div></div>
 <div class="ttc" id="aclassNoteButton_html"><div class="ttname"><a href="../../d1/d9f/classNoteButton.html">NoteButton</a></div><div class="ttdoc">A class of MIDIOutputElements that read the input of a momentary push button or switch,...</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d80/NoteButton_8hpp_source.html#l00019">NoteButton.hpp:19</a></div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00148">USBMIDI_Interface.hpp:149</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00157">USBMIDI_Interface.hpp:158</a></div></div>
 <div class="ttc" id="agroup__AH__Error_html_ga3add19f1f413c0aabde3f5c6fe4230c6"><div class="ttname"><a href="../../d0/df7/group__AH__Error.html#ga3add19f1f413c0aabde3f5c6fe4230c6">FATAL_ERROR</a></div><div class="ttdeci">#define FATAL_ERROR(msg, errc)</div><div class="ttdoc">Print the error message and error code, and stop the execution.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d93/Error_8hpp_source.html#l00060">Error.hpp:60</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
 <div class="ttc" id="astructAH_1_1HexDump_html"><div class="ttname"><a href="../../d2/d57/structAH_1_1HexDump.html">AH::HexDump</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/d80/PrintStream_8hpp_source.html#l00075">PrintStream.hpp:75</a></div></div>

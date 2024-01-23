@@ -17,5 +17,6 @@ var searchData=
   ['usbmidi_5fteensy2_2ehpp_14',['USBMIDI_Teensy2.hpp',['../d4/db6/USBMIDI__Teensy2_8hpp.html',1,'']]],
   ['usbmidi_5fteensy3_2ehpp_15',['USBMIDI_Teensy3.hpp',['../d6/d0f/USBMIDI__Teensy3_8hpp.html',1,'']]],
   ['usbmidi_5fteensy4_2ehpp_16',['USBMIDI_Teensy4.hpp',['../db/db8/USBMIDI__Teensy4_8hpp.html',1,'']]],
-  ['usbmidi_5fteensylc_2ehpp_17',['USBMIDI_TeensyLC.hpp',['../dd/db3/USBMIDI__TeensyLC_8hpp.html',1,'']]]
+  ['usbmidi_5fteensylc_2ehpp_17',['USBMIDI_TeensyLC.hpp',['../dd/db3/USBMIDI__TeensyLC_8hpp.html',1,'']]],
+  ['util_2ehpp_18',['util.hpp',['../d0/d3f/util_8hpp.html',1,'']]]
 ];

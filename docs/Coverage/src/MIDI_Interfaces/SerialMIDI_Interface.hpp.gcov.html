@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 7fbff1e994dea4fc249da2b88d4df05f62f7fec9 - src/MIDI_Interfaces/SerialMIDI_Interface.hpp</title>
+  <title>LCOV - 3cd56f613e0cc2f201e4867c327136e4b7e7c179 - src/MIDI_Interfaces/SerialMIDI_Interface.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">7fbff1e994dea4fc249da2b88d4df05f62f7fec9</td>
+            <td class="headerValue">3cd56f613e0cc2f201e4867c327136e4b7e7c179</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">2</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-01-13 16:22:24</td>
+            <td class="headerValue">2024-01-23 17:24:20</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -214,25 +214,24 @@
 <a name="144"><span class="lineNum">     144 </span>            : /**</a>
 <a name="145"><span class="lineNum">     145 </span>            :  * @brief   A class for MIDI Interfaces sending and receiving</a>
 <a name="146"><span class="lineNum">     146 </span>            :  *          data over the USB Serial CDC connection for the use</a>
-<a name="147"><span class="lineNum">     147 </span>            :  *          with the [Hairless MIDI&lt;-&gt;Serial Bridge]</a>
-<a name="148"><span class="lineNum">     148 </span>            :  *          (http://projectgus.github.io/hairless-midiserial/).</a>
-<a name="149"><span class="lineNum">     149 </span>            :  * </a>
-<a name="150"><span class="lineNum">     150 </span>            :  * @ingroup MIDIInterfaces</a>
-<a name="151"><span class="lineNum">     151 </span>            :  */</a>
-<a name="152"><span class="lineNum">     152 </span>            : class HairlessMIDI_Interface : public USBSerialMIDI_Interface {</a>
-<a name="153"><span class="lineNum">     153 </span>            :   public:</a>
-<a name="154"><span class="lineNum">     154 </span>            :     /**</a>
-<a name="155"><span class="lineNum">     155 </span>            :      * @brief   Construct a HairlessMIDI_Interface.</a>
-<a name="156"><span class="lineNum">     156 </span>            :      *</a>
-<a name="157"><span class="lineNum">     157 </span>            :      * The default Hairless baud rate of 115200 baud is used.</a>
-<a name="158"><span class="lineNum">     158 </span>            :      * This can be changed in the Settings.hpp file.</a>
-<a name="159"><span class="lineNum">     159 </span>            :      */</a>
-<a name="160"><span class="lineNum">     160 </span>            :     HairlessMIDI_Interface(unsigned long baud = HAIRLESS_BAUD)</a>
-<a name="161"><span class="lineNum">     161 </span>            :         : USBSerialMIDI_Interface(baud) {}</a>
-<a name="162"><span class="lineNum">     162 </span>            : };</a>
-<a name="163"><span class="lineNum">     163 </span>            : #endif</a>
-<a name="164"><span class="lineNum">     164 </span>            : </a>
-<a name="165"><span class="lineNum">     165 </span>            : END_CS_NAMESPACE</a>
+<a name="147"><span class="lineNum">     147 </span>            :  *          with the [Hairless MIDI&lt;-&gt;Serial Bridge](http://projectgus.github.io/hairless-midiserial/).</a>
+<a name="148"><span class="lineNum">     148 </span>            :  * </a>
+<a name="149"><span class="lineNum">     149 </span>            :  * @ingroup MIDIInterfaces</a>
+<a name="150"><span class="lineNum">     150 </span>            :  */</a>
+<a name="151"><span class="lineNum">     151 </span>            : class HairlessMIDI_Interface : public USBSerialMIDI_Interface {</a>
+<a name="152"><span class="lineNum">     152 </span>            :   public:</a>
+<a name="153"><span class="lineNum">     153 </span>            :     /**</a>
+<a name="154"><span class="lineNum">     154 </span>            :      * @brief   Construct a HairlessMIDI_Interface.</a>
+<a name="155"><span class="lineNum">     155 </span>            :      *</a>
+<a name="156"><span class="lineNum">     156 </span>            :      * The default Hairless baud rate of 115200 baud is used.</a>
+<a name="157"><span class="lineNum">     157 </span>            :      * This can be changed in the Settings.hpp file.</a>
+<a name="158"><span class="lineNum">     158 </span>            :      */</a>
+<a name="159"><span class="lineNum">     159 </span>            :     HairlessMIDI_Interface(unsigned long baud = HAIRLESS_BAUD)</a>
+<a name="160"><span class="lineNum">     160 </span>            :         : USBSerialMIDI_Interface(baud) {}</a>
+<a name="161"><span class="lineNum">     161 </span>            : };</a>
+<a name="162"><span class="lineNum">     162 </span>            : #endif</a>
+<a name="163"><span class="lineNum">     163 </span>            : </a>
+<a name="164"><span class="lineNum">     164 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>
