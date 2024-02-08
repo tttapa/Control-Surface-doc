@@ -103,8 +103,8 @@ $(function() {
 <div class="line">midiA &gt;&gt; pipes &gt;&gt; midiB;</div>
 <div class="line">midiC &gt;&gt; pipes &gt;&gt; midiB;</div>
 <div class="line">midiC &lt;&lt; pipes &lt;&lt; midiB;</div>
-<div class="ttc" id="aclassHardwareSerialMIDI__Interface_html"><div class="ttname"><a href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending and receiving MIDI messages over a Hardware Serial port.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d23/SerialMIDI__Interface_8hpp_source.html#l00103">SerialMIDI_Interface.hpp:104</a></div></div>
-<div class="ttc" id="astructMIDI__PipeFactory_html"><div class="ttname"><a href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a></div><div class="ttdoc">Class that produces multiple MIDI_Pipes.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00648">MIDI_Pipes.hpp:648</a></div></div>
+<div class="ttc" id="aclassHardwareSerialMIDI__Interface_html"><div class="ttname"><a href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending and receiving MIDI messages over a Hardware Serial port.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d23/SerialMIDI__Interface_8hpp_source.html#l00106">SerialMIDI_Interface.hpp:107</a></div></div>
+<div class="ttc" id="astructMIDI__PipeFactory_html"><div class="ttname"><a href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory</a></div><div class="ttdoc">Class that produces multiple MIDI_Pipes.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00662">MIDI_Pipes.hpp:662</a></div></div>
 </div><!-- fragment --><p>Or for bidirectional connections:</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a> </div>
 <div class="line">    midiA = Serial1, midiB = Serial2, midiC = Serial3;</div>
@@ -117,7 +117,8 @@ $(function() {
 <li><a class="el" href="../../d0/dc4/MIDI_Pipes-Routing_8ino-example.html">MIDI_Pipes-Routing.ino</a></li>
 <li><a class="el" href="../../d5/da5/Dual-MIDI-Interface_8ino-example.html">Dual-MIDI-Interface.ino</a></li>
 </ul>
-<p>If you're interested how the pipes work, see the documentation for <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>. </p>
+<p>If you're interested how the pipes work, see the documentation for <a class="el" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/df7/midi-tutorial.html#midi_md-routing">Routing MIDI messages</a> (MIDI tutorial) </dd></dl>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -215,7 +216,7 @@ Functions</h2></td></tr>
 
 <p>A <a class="el" href="../../d9/db6/classMIDI__Sink.html" title="Receives MIDI messages from a MIDI pipe.">MIDI_Sink</a> that is not a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +234,7 @@ Functions</h2></td></tr>
 
 <p>A <a class="el" href="../../df/d5b/classMIDI__Source.html" title="Class that can send MIDI messages to a MIDI pipe.">MIDI_Source</a> that is not a <a class="el" href="../../df/d72/classMIDI__Pipe.html" title="Class that routes MIDI messages from a MIDI_Source to a MIDI_Sink.">MIDI_Pipe</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00073">73</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -250,8 +251,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A bidirectional pipe consists of two unidirectional pipes. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/ddc/group__MIDI__Routing.html">MIDI Routing</a> </dd>
+<dd>
+<a class="el" href="../../d3/df7/midi-tutorial.html#midi_md-routing">Routing MIDI messages</a> (MIDI tutorial) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00592">592</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00603">603</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -271,7 +275,7 @@ template&lt;size_t N&gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_struct" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory&lt;N, BidirectionalMIDI_Pipe&gt;</a></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00662">662</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00676">676</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -305,7 +309,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Connect a source to a pipe (<code>source &gt;&gt; pipe</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00595">595</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00606">606</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -338,7 +342,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Connect a pipe to a sink (<code>pipe &gt;&gt; sink</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00601">601</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00612">612</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -371,7 +375,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Connect a sink to a pipe (<code>sink &lt;&lt; pipe</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00607">607</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00618">618</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -404,7 +408,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Connect a pipe to a source (<code>pipe &lt;&lt; source</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00613">613</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00624">624</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -468,7 +472,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Connect a pipe to a sink+source (<code>pipe | source+sink</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00622">622</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00633">633</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -501,7 +505,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Connect a sink+source to a pipe (<code>source+sink | pipe</code>). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00630">630</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00641">641</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +538,7 @@ template&lt;size_t N, class Pipe &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00666">666</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00680">680</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -598,7 +602,7 @@ template&lt;size_t N, class Pipe &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00675">675</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00689">689</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -662,7 +666,7 @@ template&lt;size_t N, class Pipe &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00684">684</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00698">698</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -695,7 +699,7 @@ template&lt;size_t N, class Pipe &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00690">690</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00704">704</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -728,7 +732,7 @@ template&lt;size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00697">697</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00711">711</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>
@@ -761,7 +765,7 @@ template&lt;size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00704">704</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html#l00718">718</a> of file <a class="el" href="../../dd/ddf/MIDI__Pipes_8hpp_source.html">MIDI_Pipes.hpp</a>.</p>
 
 </div>
 </div>

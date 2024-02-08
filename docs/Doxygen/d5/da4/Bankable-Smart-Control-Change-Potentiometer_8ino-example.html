@@ -92,7 +92,7 @@ $(function() {
 Bankable-Smart-Control-Change-Potentiometer</h1>
 <p>This example introduces smart bankable potentiometers to prevent values jumping around when changing banks.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
-<h2><a class="anchor" id="connections-59"></a>
+<h2><a class="anchor" id="connections-36"></a>
 Connections</h2>
 <ul>
 <li>A0: wiper of a potentiometer</li>
@@ -101,12 +101,12 @@ Connections</h2>
 </ul>
 <p>Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>. <br  />
  The internal pull-up resistors for the push buttons will be enabled.</p>
-<h2><a class="anchor" id="behavior-63"></a>
+<h2><a class="anchor" id="behavior-38"></a>
 Behavior</h2>
 <p>If you move the potentiometer to, say, 60%, then switch to bank #2, move the potentiometer to 20%, and then switch back to bank #1, the potentiometer will be disabled, until you move it up to 60% again.</p>
 <p>This prevents values jumping around in your DAW when cycling through the different banks.</p>
 <p>Changing banks is done using the two push buttons. The push button on pin 2 increments the bank number, the push button on pin 3 decrements the bank number.</p>
-<h2><a class="anchor" id="mapping-36"></a>
+<h2><a class="anchor" id="mapping-15"></a>
 Mapping</h2>
 <p>Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the potentiometer to a function, change the <br  />
  bank using the buttons, and map the potentiometer again. It will send the MIDI Control Change <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Volume parameter for channels 1, 2, 3 and 4 (for banks #1, #2, #3 and #4 respectively).</p>
@@ -173,7 +173,7 @@ Mapping</h2>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00071">Control_Surface_Class.cpp:71</a></div></div>
 <div class="ttc" id="aclassIncrementDecrementSelector_html"><div class="ttname"><a href="../../d2/deb/classIncrementDecrementSelector.html">IncrementDecrementSelector</a></div><div class="ttdoc">Selector with two buttons (one to increment, one to decrement).</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/IncrementDecrementSelector_8hpp_source.html#l00069">IncrementDecrementSelector.hpp:69</a></div></div>
-<div class="ttc" id="aclassUSBDebugMIDI__Interface_html"><div class="ttname"><a href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a></div><div class="ttdoc">A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...</div><div class="ttdef"><b>Definition</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00314">DebugMIDI_Interface.hpp:315</a></div></div>
+<div class="ttc" id="aclassUSBDebugMIDI__Interface_html"><div class="ttname"><a href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a></div><div class="ttdoc">A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...</div><div class="ttdef"><b>Definition</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00317">DebugMIDI_Interface.hpp:318</a></div></div>
 <div class="ttc" id="anamespaceMIDI__CC_html_ac73258d1263f61f65fc27976b6aa9a64"><div class="ttname"><a href="../../d4/dbe/namespaceMIDI__CC.html#ac73258d1263f61f65fc27976b6aa9a64">MIDI_CC::Channel_Volume</a></div><div class="ttdeci">constexpr uint8_t Channel_Volume</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d43/Control__Change_8hpp_source.html#l00023">Control_Change.hpp:23</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

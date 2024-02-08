@@ -43,7 +43,7 @@ var searchData=
   ['position_40',['position',['../d6/da6/classAH_1_1RegisterEncoders_1_1Encoder.html#a2285b41549d3cd0213b4187c2de98140',1,'AH::RegisterEncoders::Encoder::position'],['../dd/da9/classAHEncoder.html#a161c37ddd5b633ae3fdc7b6aed527dd6',1,'AHEncoder::position']]],
   ['positions_41',['positions',['../d2/d7b/classAH_1_1RegisterEncoders.html#ab1b9eba4cf905b74a7b704dafaac30e1',1,'AH::RegisterEncoders']]],
   ['precisionprintstream_42',['precisionPrintStream',['../dc/d69/namespaceAH.html#ad0b67665a208d879d805bc8d0bdc3506',1,'AH']]],
-  ['prefix_43',['prefix',['../de/d65/classStreamDebugMIDI__Base.html#a5b41c5ae4505891e6c53e26df197e02b',1,'StreamDebugMIDI_Base']]],
+  ['prefix_43',['prefix',['../db/d85/classPrintDebugMIDI__Base.html#a5b41c5ae4505891e6c53e26df197e02b',1,'PrintDebugMIDI_Base']]],
   ['prevbouncetime_44',['prevBounceTime',['../dc/db4/structAH_1_1Button_1_1InternalState.html#ab9c2c01614891d5d9b4e859f16075b30',1,'AH::Button::InternalState']]],
   ['previnput_45',['prevInput',['../dc/db4/structAH_1_1Button_1_1InternalState.html#a883b0cf1dda8588777ae7724287d12fe',1,'AH::Button::InternalState']]],
   ['previous_46',['previous',['../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df',1,'DoublyLinkable::previous'],['../d2/de5/classAH_1_1Timer.html#ab6e03867f916dd6860f34c44b61f53dc',1,'AH::Timer::previous'],['../d3/d51/classSelectorDisplay.html#a93e9698a5d38131314f7da25aed2ebd5',1,'SelectorDisplay::previous'],['../d6/dc4/classBankDisplay.html#a8c55f1625951397fd6ed19080d34a6f8',1,'BankDisplay::previous']]],

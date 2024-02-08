@@ -93,19 +93,19 @@ Custom-MIDI-Sender</h1>
 <p>This is an example that demonstrates how to extend the library using your own MIDI Senders. It implements functionality similar to the built-in <a class="el" href="../../dc/dd4/classDigitalNoteSender.html">DigitalNoteSender</a> class, but with support for different on and off velocities.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/dab/group__MIDI__Senders.html">MIDI Senders</a> for different kinds of MIDI senders to start from.</dd></dl>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="connections-68"></a>
+<h2><a class="anchor" id="connections-41"></a>
 Connections</h2>
 <ul>
 <li>5: momentary push button (to ground)</li>
 </ul>
 <p>The internal pull-up resistor for the button will be enabled automatically.</p>
-<h2><a class="anchor" id="behavior-72"></a>
+<h2><a class="anchor" id="behavior-43"></a>
 Behavior</h2>
 <ul>
 <li>When the button on pin 5 is pressed, a MIDI Note On message is sent for note C4 with velocity 0x40.</li>
 <li>When the button on pin 5 is released, a MIDI Note Off message is sent for note C4 with velocity 0x10.</li>
 </ul>
-<h2><a class="anchor" id="mapping-45"></a>
+<h2><a class="anchor" id="mapping-19"></a>
 Mapping</h2>
 <p>Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the button to a function.</p>
 <p>Written by PieterP, 2020-04-18 <br  />
@@ -178,7 +178,7 @@ Mapping</h2>
 <div class="ttc" id="aclassMIDIButton_html"><div class="ttname"><a href="../../d6/d72/classMIDIButton.html">MIDIButton</a></div><div class="ttdoc">An abstract class for momentary push buttons that send MIDI events.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d47/Abstract_2MIDIButton_8hpp_source.html#l00017">Abstract/MIDIButton.hpp:17</a></div></div>
 <div class="ttc" id="aclassMIDI__Sender_html_ad487d041b8e9d10d58aba470a15e1fc6"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">MIDI_Sender::sendNoteOn</a></div><div class="ttdeci">void sendNoteOn(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note On event.</div></div>
 <div class="ttc" id="aclassMIDI__Sender_html_ae5438982b69a41d7b4565328f5fd73c8"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">MIDI_Sender::sendNoteOff</a></div><div class="ttdeci">void sendNoteOff(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note Off event.</div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00157">USBMIDI_Interface.hpp:158</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00160">USBMIDI_Interface.hpp:161</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

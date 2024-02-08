@@ -99,16 +99,16 @@ Custom-USB-MIDI-Backend</h1>
 <dd>
 <a class="el" href="../../df/d33/USBHostMIDI__Interface_8hpp.html">src/MIDI_Interfaces/USBHostMIDI_Interface.hpp</a></dd></dl>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="connections-64"></a>
+<h2><a class="anchor" id="connections-43"></a>
 Connections</h2>
 <p>None.</p>
-<h2><a class="anchor" id="behavior-68"></a>
+<h2><a class="anchor" id="behavior-45"></a>
 Behavior</h2>
 <ul>
 <li>Prints the raw MIDI USB packets to the Serial Monitor.</li>
 <li>Receives no MIDI input.</li>
 </ul>
-<h2><a class="anchor" id="mapping-41"></a>
+<h2><a class="anchor" id="mapping-21"></a>
 Mapping</h2>
 <p>None.</p>
 <p>Written by PieterP, 2022-05-28 <br  />
@@ -120,7 +120,7 @@ Mapping</h2>
 <div class="line"><span class="comment">// backend.</span></div>
 <div class="line"><span class="keyword">struct </span>MyUSBMIDIBackend {</div>
 <div class="line">  <span class="comment">// USB MIDI packages are 4 bytes.</span></div>
-<div class="line">  <span class="keyword">using </span>MIDIUSBPacket_t = <a id="_a0" name="_a0"></a><a class="code hl_class" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">AH::Array&lt;uint8_t, 4&gt;</a>;</div>
+<div class="line">  <span class="keyword">using </span>MIDIUSBPacket_t = <a id="_a0" name="_a0"></a><a class="code hl_class" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AH::Array&lt;uint8_t, 4&gt;</a>;</div>
 <div class="line">  <span class="comment">// This method is optional. It is called once upon initialization.</span></div>
 <div class="line">  <span class="keywordtype">void</span> begin() { Serial.begin(115200); }</div>
 <div class="line">  <span class="comment">// Read a single packet. Return a packet of all zeros if there is no packet.</span></div>
@@ -159,7 +159,7 @@ Mapping</h2>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00338">Control_Surface_Class.cpp:338</a></div></div>
 <div class="ttc" id="aMIDI__MessageTypes_8hpp_html_a0f3f6ac1a61700bdea6873fdfe9248f5a1ddcb3ed2c3d2c2db2300553751a0271"><div class="ttname"><a href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a1ddcb3ed2c3d2c2db2300553751a0271">MIDIMessageType::TimingClock</a></div><div class="ttdeci">@ TimingClock</div><div class="ttdoc">Timing Clock System Real-Time message.</div></div>
-<div class="ttc" id="aclassAH_1_1RegisterEncoders_html"><div class="ttname"><a href="../../d2/d7b/classAH_1_1RegisterEncoders.html">AH::RegisterEncoders</a></div><div class="ttdoc">Class for keeping track of the position of multiple rotary encoders.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/ddf/RegisterEncoders_8hpp_source.html#l00058">RegisterEncoders.hpp:58</a></div></div>
+<div class="ttc" id="aclassAH_1_1FilteredAnalog_html"><div class="ttname"><a href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AH::FilteredAnalog</a></div><div class="ttdoc">A class that reads and filters an analog input.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00268">FilteredAnalog.hpp:271</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00071">Control_Surface_Class.cpp:71</a></div></div>
 <div class="ttc" id="aclassGenericUSBMIDI__Interface_html"><div class="ttname"><a href="../../dd/d0e/classGenericUSBMIDI__Interface.html">GenericUSBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00019">USBMIDI_Interface.hpp:19</a></div></div>

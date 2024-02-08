@@ -101,7 +101,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../d7/def/AnalogMultiplex_8hpp_source.html">AH/Hardware/ExtendedInputOutput/AnalogMultiplex.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt;<br />
 class AH::AnalogMultiplex&lt; N &gt;</div><p>A class for reading multiplexed analog inputs. </p>
 <p>Supports 74HC4067, 74HC4051, etc.</p>
 <p>You can use many multiplexers on the same address lines if each of the multiplexers has a different enable line.</p>
@@ -130,80 +130,80 @@ class AH::AnalogMultiplex&lt; N &gt;</div><p>A class for reading multiplexed ana
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a2d2327d5aa0996c8a1009ce63a4737" id="r_a0a2d2327d5aa0996c8a1009ce63a4737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2d2327d5aa0996c8a1009ce63a4737">AnalogMultiplex</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="el" href="#a66f65580427e2512fca5f49b4742f5d8">analogPin</a>, <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, N &gt; &amp;<a class="el" href="#a1944405e0abd4d8f5b8bc34c392d2338">addressPins</a>, <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="el" href="#a559afa2d89a827ab58baad7f444ff69d">enablePin</a>=<a class="el" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a>)</td></tr>
+<tr class="memitem:a0a2d2327d5aa0996c8a1009ce63a4737" id="r_a0a2d2327d5aa0996c8a1009ce63a4737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a2d2327d5aa0996c8a1009ce63a4737">AnalogMultiplex</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="el" href="#a66f65580427e2512fca5f49b4742f5d8">analogPin</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, N &gt; &amp;<a class="el" href="#a1944405e0abd4d8f5b8bc34c392d2338">addressPins</a>, <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="el" href="#a559afa2d89a827ab58baad7f444ff69d">enablePin</a>=<a class="el" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a>)</td></tr>
 <tr class="memdesc:a0a2d2327d5aa0996c8a1009ce63a4737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d2/d94/classAH_1_1AnalogMultiplex.html" title="A class for reading multiplexed analog inputs.">AnalogMultiplex</a> object on the given pins.  <br /></td></tr>
 <tr class="separator:a0a2d2327d5aa0996c8a1009ce63a4737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d58e1c7ac954786bcaa8e1d8f4e84c" id="r_ac4d58e1c7ac954786bcaa8e1d8f4e84c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d58e1c7ac954786bcaa8e1d8f4e84c">pinMode</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102">PinMode_t</a> mode) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:ac4d58e1c7ac954786bcaa8e1d8f4e84c" id="r_ac4d58e1c7ac954786bcaa8e1d8f4e84c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d58e1c7ac954786bcaa8e1d8f4e84c">pinMode</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102">PinMode_t</a> mode) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:ac4d58e1c7ac954786bcaa8e1d8f4e84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pin mode of the analog input pin.  <br /></td></tr>
 <tr class="separator:ac4d58e1c7ac954786bcaa8e1d8f4e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5a1bc9932a6b2f6f06890a758d6ca7" id="r_a5f5a1bc9932a6b2f6f06890a758d6ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f5a1bc9932a6b2f6f06890a758d6ca7">pinModeBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102">PinMode_t</a> mode) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:a5f5a1bc9932a6b2f6f06890a758d6ca7" id="r_a5f5a1bc9932a6b2f6f06890a758d6ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f5a1bc9932a6b2f6f06890a758d6ca7">pinModeBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a71be39a78679afc888a18a96cf38b102">PinMode_t</a> mode) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:a5f5a1bc9932a6b2f6f06890a758d6ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pin mode of the analog input pin.    <br /></td></tr>
 <tr class="separator:a5f5a1bc9932a6b2f6f06890a758d6ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8ceb0539ad48c5bdbf7ffd2e69e0d1b" id="r_ad8ceb0539ad48c5bdbf7ffd2e69e0d1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8ceb0539ad48c5bdbf7ffd2e69e0d1b">digitalWrite</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a3332df7e6bf568b69af128c0681c733c">PinStatus_t</a>) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a> __attribute__((<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">deprecated</a>))</td></tr>
+<tr class="memitem:ad8ceb0539ad48c5bdbf7ffd2e69e0d1b" id="r_ad8ceb0539ad48c5bdbf7ffd2e69e0d1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8ceb0539ad48c5bdbf7ffd2e69e0d1b">digitalWrite</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a3332df7e6bf568b69af128c0681c733c">PinStatus_t</a>) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a> __attribute__((<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">deprecated</a>))</td></tr>
 <tr class="memdesc:ad8ceb0539ad48c5bdbf7ffd2e69e0d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The digitalWrite function is not implemented because writing an output to a multiplexer is not useful.  <br /></td></tr>
 <tr class="separator:ad8ceb0539ad48c5bdbf7ffd2e69e0d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebd456a2a958adb4860863c26181541" id="r_a7ebd456a2a958adb4860863c26181541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ebd456a2a958adb4860863c26181541">digitalWriteBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a3332df7e6bf568b69af128c0681c733c">PinStatus_t</a>) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a> __attribute__((<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">deprecated</a>))</td></tr>
+<tr class="memitem:a7ebd456a2a958adb4860863c26181541" id="r_a7ebd456a2a958adb4860863c26181541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ebd456a2a958adb4860863c26181541">digitalWriteBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a3332df7e6bf568b69af128c0681c733c">PinStatus_t</a>) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a> __attribute__((<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">deprecated</a>))</td></tr>
 <tr class="memdesc:a7ebd456a2a958adb4860863c26181541"><td class="mdescLeft">&#160;</td><td class="mdescRight">The digitalWrite function is not implemented because writing an output to a multiplexer is not useful.    <br /></td></tr>
 <tr class="separator:a7ebd456a2a958adb4860863c26181541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518d1d6d9d416a970eaed990a3f25b91" id="r_a518d1d6d9d416a970eaed990a3f25b91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a3332df7e6bf568b69af128c0681c733c">PinStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a518d1d6d9d416a970eaed990a3f25b91">digitalRead</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:a518d1d6d9d416a970eaed990a3f25b91" id="r_a518d1d6d9d416a970eaed990a3f25b91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a3332df7e6bf568b69af128c0681c733c">PinStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a518d1d6d9d416a970eaed990a3f25b91">digitalRead</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:a518d1d6d9d416a970eaed990a3f25b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the digital state of the given input.  <br /></td></tr>
 <tr class="separator:a518d1d6d9d416a970eaed990a3f25b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e78c1a3c380803f48a79d94b386c464" id="r_a4e78c1a3c380803f48a79d94b386c464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a3332df7e6bf568b69af128c0681c733c">PinStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e78c1a3c380803f48a79d94b386c464">digitalReadBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:a4e78c1a3c380803f48a79d94b386c464" id="r_a4e78c1a3c380803f48a79d94b386c464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a3332df7e6bf568b69af128c0681c733c">PinStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e78c1a3c380803f48a79d94b386c464">digitalReadBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:a4e78c1a3c380803f48a79d94b386c464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the digital state of the given input.    <br /></td></tr>
 <tr class="separator:a4e78c1a3c380803f48a79d94b386c464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e6cf5e65d0f38cba3839725bfaca7b5" id="r_a6e6cf5e65d0f38cba3839725bfaca7b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e6cf5e65d0f38cba3839725bfaca7b5">analogRead</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:a6e6cf5e65d0f38cba3839725bfaca7b5" id="r_a6e6cf5e65d0f38cba3839725bfaca7b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e6cf5e65d0f38cba3839725bfaca7b5">analogRead</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:a6e6cf5e65d0f38cba3839725bfaca7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the analog value of the given input.  <br /></td></tr>
 <tr class="separator:a6e6cf5e65d0f38cba3839725bfaca7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab135b538148933155a92cc289e9a2e8b" id="r_ab135b538148933155a92cc289e9a2e8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab135b538148933155a92cc289e9a2e8b">analogReadBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:ab135b538148933155a92cc289e9a2e8b" id="r_ab135b538148933155a92cc289e9a2e8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab135b538148933155a92cc289e9a2e8b">analogReadBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> pin) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:ab135b538148933155a92cc289e9a2e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the analog value of the given input.    <br /></td></tr>
 <tr class="separator:ab135b538148933155a92cc289e9a2e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a251172dbebd68a9bf81f2ea0b47a2315" id="r_a251172dbebd68a9bf81f2ea0b47a2315"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a251172dbebd68a9bf81f2ea0b47a2315">analogWrite</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, <a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a> __attribute__((<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">deprecated</a>))</td></tr>
+<tr class="memitem:a251172dbebd68a9bf81f2ea0b47a2315" id="r_a251172dbebd68a9bf81f2ea0b47a2315"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a251172dbebd68a9bf81f2ea0b47a2315">analogWrite</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, <a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a> __attribute__((<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">deprecated</a>))</td></tr>
 <tr class="memdesc:a251172dbebd68a9bf81f2ea0b47a2315"><td class="mdescLeft">&#160;</td><td class="mdescRight">The analogWrite function is not implemented because writing an output to a multiplexer is not useful.  <br /></td></tr>
 <tr class="separator:a251172dbebd68a9bf81f2ea0b47a2315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0564e9fbf466c51d0c3a99a2be7465fe" id="r_a0564e9fbf466c51d0c3a99a2be7465fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0564e9fbf466c51d0c3a99a2be7465fe">analogWriteBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, <a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>) <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a> __attribute__((<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">deprecated</a>))</td></tr>
+<tr class="memitem:a0564e9fbf466c51d0c3a99a2be7465fe" id="r_a0564e9fbf466c51d0c3a99a2be7465fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0564e9fbf466c51d0c3a99a2be7465fe">analogWriteBuffered</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, <a class="el" href="../../dc/d69/namespaceAH.html#a30fffbcff933a72fdd7bfc161d386bef">analog_t</a>) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a> __attribute__((<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">deprecated</a>))</td></tr>
 <tr class="memdesc:a0564e9fbf466c51d0c3a99a2be7465fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The analogWrite function is not implemented because writing an output to a multiplexer is not useful.    <br /></td></tr>
 <tr class="separator:a0564e9fbf466c51d0c3a99a2be7465fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2" id="r_a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2" id="r_a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the multiplexer: set the pin mode of the address pins and the enable pin to output mode.  <br /></td></tr>
 <tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a0229c188bb291fb7388ea74c31abf" id="r_a20a0229c188bb291fb7388ea74c31abf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a0229c188bb291fb7388ea74c31abf">updateBufferedOutputs</a> () <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:a20a0229c188bb291fb7388ea74c31abf" id="r_a20a0229c188bb291fb7388ea74c31abf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a0229c188bb291fb7388ea74c31abf">updateBufferedOutputs</a> () <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:a20a0229c188bb291fb7388ea74c31abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">No periodic updating of the state is necessary, all actions are carried out when the user calls analogRead or digitalRead.  <br /></td></tr>
 <tr class="separator:a20a0229c188bb291fb7388ea74c31abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a651e4e7a2bab28c5980e990b040dc4b6" id="r_a651e4e7a2bab28c5980e990b040dc4b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a651e4e7a2bab28c5980e990b040dc4b6">updateBufferedInputs</a> () <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">override</a></td></tr>
+<tr class="memitem:a651e4e7a2bab28c5980e990b040dc4b6" id="r_a651e4e7a2bab28c5980e990b040dc4b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a651e4e7a2bab28c5980e990b040dc4b6">updateBufferedInputs</a> () <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">override</a></td></tr>
 <tr class="memdesc:a651e4e7a2bab28c5980e990b040dc4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">No periodic updating of the state is necessary, all actions are carried out when the user calls analogRead or digitalRead.  <br /></td></tr>
 <tr class="separator:a651e4e7a2bab28c5980e990b040dc4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06cf22445d2b12ed38d0e3138d4d6537" id="r_a06cf22445d2b12ed38d0e3138d4d6537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06cf22445d2b12ed38d0e3138d4d6537">discardFirstReading</a> (<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">bool</a> <a class="el" href="#aa57df9fded18d752b37623379afed801">discardFirstReading_</a>)</td></tr>
+<tr class="memitem:a06cf22445d2b12ed38d0e3138d4d6537" id="r_a06cf22445d2b12ed38d0e3138d4d6537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06cf22445d2b12ed38d0e3138d4d6537">discardFirstReading</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> <a class="el" href="#aa57df9fded18d752b37623379afed801">discardFirstReading_</a>)</td></tr>
 <tr class="memdesc:a06cf22445d2b12ed38d0e3138d4d6537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify whether to discard the first analog reading after changing the address lines (enabled by default).  <br /></td></tr>
 <tr class="separator:a06cf22445d2b12ed38d0e3138d4d6537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af6fdf126c6e5ba7d52ee93e1c9724f8d" id="r_af6fdf126c6e5ba7d52ee93e1c9724f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6fdf126c6e5ba7d52ee93e1c9724f8d">setMuxAddress</a> (<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> address)</td></tr>
+<tr class="memitem:af6fdf126c6e5ba7d52ee93e1c9724f8d" id="r_af6fdf126c6e5ba7d52ee93e1c9724f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6fdf126c6e5ba7d52ee93e1c9724f8d">setMuxAddress</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> address)</td></tr>
 <tr class="memdesc:af6fdf126c6e5ba7d52ee93e1c9724f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the pin number/address to the address pins of the multiplexer.  <br /></td></tr>
 <tr class="separator:af6fdf126c6e5ba7d52ee93e1c9724f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5798a8cedc5a75b987da0f5f0ca6076" id="r_ad5798a8cedc5a75b987da0f5f0ca6076"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5798a8cedc5a75b987da0f5f0ca6076">prepareReading</a> (<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> address)</td></tr>
+<tr class="memitem:ad5798a8cedc5a75b987da0f5f0ca6076" id="r_ad5798a8cedc5a75b987da0f5f0ca6076"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5798a8cedc5a75b987da0f5f0ca6076">prepareReading</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> address)</td></tr>
 <tr class="memdesc:ad5798a8cedc5a75b987da0f5f0ca6076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the correct address and enable the multiplexer.  <br /></td></tr>
 <tr class="separator:ad5798a8cedc5a75b987da0f5f0ca6076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9958d9974fc696854a5b77db0201a075" id="r_a9958d9974fc696854a5b77db0201a075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9958d9974fc696854a5b77db0201a075">afterReading</a> ()</td></tr>
+<tr class="memitem:a9958d9974fc696854a5b77db0201a075" id="r_a9958d9974fc696854a5b77db0201a075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9958d9974fc696854a5b77db0201a075">afterReading</a> ()</td></tr>
 <tr class="memdesc:a9958d9974fc696854a5b77db0201a075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the multiplexer.  <br /></td></tr>
 <tr class="separator:a9958d9974fc696854a5b77db0201a075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a66f65580427e2512fca5f49b4742f5d8" id="r_a66f65580427e2512fca5f49b4742f5d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f65580427e2512fca5f49b4742f5d8">analogPin</a></td></tr>
+<tr class="memitem:a66f65580427e2512fca5f49b4742f5d8" id="r_a66f65580427e2512fca5f49b4742f5d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f65580427e2512fca5f49b4742f5d8">analogPin</a></td></tr>
 <tr class="separator:a66f65580427e2512fca5f49b4742f5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1944405e0abd4d8f5b8bc34c392d2338" id="r_a1944405e0abd4d8f5b8bc34c392d2338"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1944405e0abd4d8f5b8bc34c392d2338">addressPins</a></td></tr>
+<tr class="memitem:a1944405e0abd4d8f5b8bc34c392d2338" id="r_a1944405e0abd4d8f5b8bc34c392d2338"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1944405e0abd4d8f5b8bc34c392d2338">addressPins</a></td></tr>
 <tr class="separator:a1944405e0abd4d8f5b8bc34c392d2338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a559afa2d89a827ab58baad7f444ff69d" id="r_a559afa2d89a827ab58baad7f444ff69d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a559afa2d89a827ab58baad7f444ff69d">enablePin</a></td></tr>
+<tr class="memitem:a559afa2d89a827ab58baad7f444ff69d" id="r_a559afa2d89a827ab58baad7f444ff69d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a559afa2d89a827ab58baad7f444ff69d">enablePin</a></td></tr>
 <tr class="separator:a559afa2d89a827ab58baad7f444ff69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57df9fded18d752b37623379afed801" id="r_aa57df9fded18d752b37623379afed801"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa57df9fded18d752b37623379afed801">discardFirstReading_</a> = <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">true</a></td></tr>
+<tr class="memitem:aa57df9fded18d752b37623379afed801" id="r_aa57df9fded18d752b37623379afed801"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa57df9fded18d752b37623379afed801">discardFirstReading_</a> = <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">true</a></td></tr>
 <tr class="separator:aa57df9fded18d752b37623379afed801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:ae96b12a03ef7873cce719e57515bdc62" id="r_ae96b12a03ef7873cce719e57515bdc62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">static</a> <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">constexpr</a> <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae96b12a03ef7873cce719e57515bdc62">MUX_ENABLED</a> = <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a></td></tr>
+<tr class="memitem:ae96b12a03ef7873cce719e57515bdc62" id="r_ae96b12a03ef7873cce719e57515bdc62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">constexpr</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae96b12a03ef7873cce719e57515bdc62">MUX_ENABLED</a> = <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a></td></tr>
 <tr class="separator:ae96b12a03ef7873cce719e57515bdc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e9207e9725919b6b5b6fd66a684d213" id="r_a0e9207e9725919b6b5b6fd66a684d213"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">static</a> <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">constexpr</a> <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e9207e9725919b6b5b6fd66a684d213">MUX_DISABLED</a> = <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a></td></tr>
+<tr class="memitem:a0e9207e9725919b6b5b6fd66a684d213" id="r_a0e9207e9725919b6b5b6fd66a684d213"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">constexpr</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e9207e9725919b6b5b6fd66a684d213">MUX_DISABLED</a> = <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a></td></tr>
 <tr class="separator:a0e9207e9725919b6b5b6fd66a684d213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -213,7 +213,7 @@ Static Protected Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -226,7 +226,7 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>addressPins</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>addressPins</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -263,13 +263,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> pinMode </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> pinMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a></td>          <td class="paramname"><span class="paramname"><em>pin</em>, </span></td>
         </tr>
@@ -310,13 +310,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> pinModeBuffered </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> pinModeBuffered </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a></td>          <td class="paramname"><span class="paramname"><em>pin</em>, </span></td>
         </tr>
@@ -357,13 +357,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> digitalWrite </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> digitalWrite </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a></td>          <td class="paramname"><span class="paramname">, </span></td>
         </tr>
@@ -392,13 +392,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> digitalWriteBuffered </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> digitalWriteBuffered </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a></td>          <td class="paramname"><span class="paramname">, </span></td>
         </tr>
@@ -427,7 +427,7 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -464,7 +464,7 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -501,7 +501,7 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -538,7 +538,7 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -575,13 +575,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> analogWrite </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> analogWrite </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a></td>          <td class="paramname"><span class="paramname">, </span></td>
         </tr>
@@ -610,13 +610,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> analogWriteBuffered </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> analogWriteBuffered </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a></td>          <td class="paramname"><span class="paramname">, </span></td>
         </tr>
@@ -645,13 +645,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> begin </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> begin </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -676,13 +676,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> updateBufferedOutputs </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> updateBufferedOutputs </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -707,13 +707,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> updateBufferedInputs </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> updateBufferedInputs </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -738,15 +738,15 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> discardFirstReading </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> discardFirstReading </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">bool</a></td>          <td class="paramname"><span class="paramname"><em>discardFirstReading_</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a></td>          <td class="paramname"><span class="paramname"><em>discardFirstReading_</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -769,15 +769,15 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> setMuxAddress </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> setMuxAddress </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>address</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>address</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -806,15 +806,15 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> prepareReading </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> prepareReading </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>address</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>address</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -843,13 +843,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">void</a> afterReading </td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> afterReading </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -875,13 +875,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> analogPin</td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> analogPin</td>
         </tr>
       </table>
   </td>
@@ -901,13 +901,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt;<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, N&gt; addressPins</td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt;<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>, N&gt; addressPins</td>
         </tr>
       </table>
   </td>
@@ -927,13 +927,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> enablePin</td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> enablePin</td>
         </tr>
       </table>
   </td>
@@ -953,13 +953,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">bool</a> discardFirstReading_ = <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">true</a></td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> discardFirstReading_ = <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">true</a></td>
         </tr>
       </table>
   </td>
@@ -979,13 +979,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">constexpr</a> <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">auto</a> MUX_ENABLED = <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a></td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">constexpr</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">auto</a> MUX_ENABLED = <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a05bc6f80bb782de0d489a41bdb652305">LOW</a></td>
         </tr>
       </table>
   </td>
@@ -1005,13 +1005,13 @@ template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">u
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">uint8_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">constexpr</a> <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">auto</a> MUX_DISABLED = <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a></td>
+          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">constexpr</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">auto</a> MUX_DISABLED = <a class="el" href="../../d2/d3c/Arduino-Hardware-Types_8hpp.html#a4b2f87da16a1a26dce6e6ba3fbe5f572">HIGH</a></td>
         </tr>
       </table>
   </td>

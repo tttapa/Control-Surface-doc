@@ -15,9 +15,10 @@ var searchData=
   ['pollingblemidisender_3c_20arduinoblebackend_20_3e_12',['PollingBLEMIDISender&lt; ArduinoBLEBackend &gt;',['../d9/dc8/classPollingBLEMIDISender.html',1,'']]],
   ['pollingblemidisender_3c_20btstackbackgroundbackend_20_3e_13',['PollingBLEMIDISender&lt; BTstackBackgroundBackend &gt;',['../d9/dc8/classPollingBLEMIDISender.html',1,'']]],
   ['potentiometer_14',['Potentiometer',['../d5/d0f/structPotentiometer.html',1,'']]],
-  ['programchanger_15',['ProgramChanger',['../d1/df9/classBankable_1_1ProgramChanger.html',1,'ProgramChanger&lt; N &gt;'],['../de/d43/classProgramChanger.html',1,'ProgramChanger&lt; N &gt;']]],
-  ['programchangeselector_16',['ProgramChangeSelector',['../dd/dd4/classProgramChangeSelector.html',1,'']]],
-  ['programchangeselectorleds_17',['ProgramChangeSelectorLEDs',['../d9/dee/classProgramChangeSelectorLEDs.html',1,'']]],
-  ['programchangesender_18',['ProgramChangeSender',['../db/d8b/classProgramChangeSender.html',1,'']]],
-  ['protectedbuilder_19',['ProtectedBuilder',['../d6/d2f/structPollingBLEMIDISender_1_1ProtectedBuilder.html',1,'PollingBLEMIDISender&lt; Derived &gt;::ProtectedBuilder'],['../de/d11/structThreadedBLEMIDISender_1_1ProtectedBuilder.html',1,'ThreadedBLEMIDISender&lt; Derived &gt;::ProtectedBuilder']]]
+  ['printdebugmidi_5fbase_15',['PrintDebugMIDI_Base',['../db/d85/classPrintDebugMIDI__Base.html',1,'']]],
+  ['programchanger_16',['ProgramChanger',['../d1/df9/classBankable_1_1ProgramChanger.html',1,'ProgramChanger&lt; N &gt;'],['../de/d43/classProgramChanger.html',1,'ProgramChanger&lt; N &gt;']]],
+  ['programchangeselector_17',['ProgramChangeSelector',['../dd/dd4/classProgramChangeSelector.html',1,'']]],
+  ['programchangeselectorleds_18',['ProgramChangeSelectorLEDs',['../d9/dee/classProgramChangeSelectorLEDs.html',1,'']]],
+  ['programchangesender_19',['ProgramChangeSender',['../db/d8b/classProgramChangeSender.html',1,'']]],
+  ['protectedbuilder_20',['ProtectedBuilder',['../d6/d2f/structPollingBLEMIDISender_1_1ProtectedBuilder.html',1,'PollingBLEMIDISender&lt; Derived &gt;::ProtectedBuilder'],['../de/d11/structThreadedBLEMIDISender_1_1ProtectedBuilder.html',1,'ThreadedBLEMIDISender&lt; Derived &gt;::ProtectedBuilder']]]
 ];

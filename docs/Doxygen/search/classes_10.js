@@ -44,14 +44,13 @@ var searchData=
   ['staticsizeextendedioelement_41',['StaticSizeExtendedIOElement',['../d6/d57/classAH_1_1StaticSizeExtendedIOElement.html',1,'AH']]],
   ['staticsizeextendedioelement_3c_2016_20_3e_42',['StaticSizeExtendedIOElement&lt; 16 &gt;',['../d6/d57/classAH_1_1StaticSizeExtendedIOElement.html',1,'AH']]],
   ['staticsizeextendedioelement_3c_208_20_2a8_20_2a1_20_3e_43',['StaticSizeExtendedIOElement&lt; 8 *8 *1 &gt;',['../d6/d57/classAH_1_1StaticSizeExtendedIOElement.html',1,'AH']]],
-  ['streamdebugmidi_5fbase_44',['StreamDebugMIDI_Base',['../de/d65/classStreamDebugMIDI__Base.html',1,'']]],
-  ['streamdebugmidi_5finterface_45',['StreamDebugMIDI_Interface',['../d8/d0b/classStreamDebugMIDI__Interface.html',1,'']]],
-  ['streamdebugmidi_5foutput_46',['StreamDebugMIDI_Output',['../d0/d9c/classStreamDebugMIDI__Output.html',1,'']]],
-  ['streammidi_5finterface_47',['StreamMIDI_Interface',['../d3/dc3/classStreamMIDI__Interface.html',1,'']]],
-  ['streampuller_48',['StreamPuller',['../de/ded/classStreamPuller.html',1,'']]],
-  ['switchselector_49',['SwitchSelector',['../df/def/classSwitchSelector.html',1,'']]],
-  ['switchselectorled_50',['SwitchSelectorLED',['../df/d64/classSwitchSelectorLED.html',1,'']]],
-  ['syscommonmessage_51',['SysCommonMessage',['../d5/dad/structSysCommonMessage.html',1,'']]],
-  ['sysexbuffer_52',['SysExBuffer',['../d1/db1/classSysExBuffer.html',1,'']]],
-  ['sysexmessage_53',['SysExMessage',['../db/d45/structSysExMessage.html',1,'']]]
+  ['streamdebugmidi_5finterface_44',['StreamDebugMIDI_Interface',['../d8/d0b/classStreamDebugMIDI__Interface.html',1,'']]],
+  ['streamdebugmidi_5foutput_45',['StreamDebugMIDI_Output',['../d0/d9c/classStreamDebugMIDI__Output.html',1,'']]],
+  ['streammidi_5finterface_46',['StreamMIDI_Interface',['../d3/dc3/classStreamMIDI__Interface.html',1,'']]],
+  ['streampuller_47',['StreamPuller',['../de/ded/classStreamPuller.html',1,'']]],
+  ['switchselector_48',['SwitchSelector',['../df/def/classSwitchSelector.html',1,'']]],
+  ['switchselectorled_49',['SwitchSelectorLED',['../df/d64/classSwitchSelectorLED.html',1,'']]],
+  ['syscommonmessage_50',['SysCommonMessage',['../d5/dad/structSysCommonMessage.html',1,'']]],
+  ['sysexbuffer_51',['SysExBuffer',['../d1/db1/classSysExBuffer.html',1,'']]],
+  ['sysexmessage_52',['SysExMessage',['../db/d45/structSysExMessage.html',1,'']]]
 ];

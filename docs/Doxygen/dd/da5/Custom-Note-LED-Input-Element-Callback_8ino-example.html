@@ -92,16 +92,16 @@ $(function() {
 Custom-Note-LED-Input-Element-Callback</h1>
 <p>This example demonstrates how to attach custom actions to incoming Note or Control Change MIDI events.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="connections-63"></a>
+<h2><a class="anchor" id="connections-42"></a>
 Connections</h2>
 <ul>
 <li>Pin 3 (PWM pin): An LED (with current-limiting resistor) to ground.</li>
 </ul>
-<h2><a class="anchor" id="behavior-67"></a>
+<h2><a class="anchor" id="behavior-44"></a>
 Behavior</h2>
 <p>If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, the built-in LED will light up at full brightness, if a Note Off event for that note is sent, the LED will light dimly. <br  />
  (A Note On event with a velocity of zero also counts as a Note Off event.)</p>
-<h2><a class="anchor" id="mapping-40"></a>
+<h2><a class="anchor" id="mapping-20"></a>
 Mapping</h2>
 <p>Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play a middle C on the keyboard.</p>
 <p>Written by PieterP, 2020-03-10 <br  />
@@ -185,7 +185,7 @@ Mapping</h2>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html">MatchingMIDIInputElement</a></div><div class="ttdoc">The MIDIInputElement base class is very general: you give it a MIDI message, and it calls the updateW...</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00092">MIDIInputElement.hpp:92</a></div></div>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html_a08ddf904fdf20dada2f49a9f7f00aeb0"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html#a08ddf904fdf20dada2f49a9f7f00aeb0">MatchingMIDIInputElement::MatchingMIDIInputElement</a></div><div class="ttdeci">MatchingMIDIInputElement(const Matcher &amp;matcher)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d90/MIDIInputElement_8hpp_source.html#l00094">MIDIInputElement.hpp:94</a></div></div>
 <div class="ttc" id="aclassMatchingMIDIInputElement_html_a7d8b3295e878d374fe9af277f6983204"><div class="ttname"><a href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">MatchingMIDIInputElement::handleUpdate</a></div><div class="ttdeci">virtual void handleUpdate(typename Matcher::Result match)=0</div></div>
-<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00157">USBMIDI_Interface.hpp:158</a></div></div>
+<div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00160">USBMIDI_Interface.hpp:161</a></div></div>
 <div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
 <div class="ttc" id="astructTwoByteMIDIMatcher_1_1Result_html"><div class="ttname"><a href="../../d5/d5c/structTwoByteMIDIMatcher_1_1Result.html">TwoByteMIDIMatcher::Result</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00040">MIDIInputElementMatchers.hpp:40</a></div></div>
 <div class="ttc" id="astructTwoByteMIDIMatcher_1_1Result_html_a638e4503e0ae6ce655b7ad2e17e8f0ad"><div class="ttname"><a href="../../d5/d5c/structTwoByteMIDIMatcher_1_1Result.html#a638e4503e0ae6ce655b7ad2e17e8f0ad">TwoByteMIDIMatcher::Result::value</a></div><div class="ttdeci">uint8_t value</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d9e/MIDIInputElementMatchers_8hpp_source.html#l00042">MIDIInputElementMatchers.hpp:42</a></div></div>

@@ -130,7 +130,7 @@ $(function() {
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft">Arduino Due   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Arduino GIGA R1 WiFi   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">❓   </td><td class="markdownTableBodyCenter">&emsp;❌⁽⁴⁾   </td><td class="markdownTableBodyCenter">🔼    </td></tr>
+<td class="markdownTableBodyLeft">Arduino GIGA R1 WiFi   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">&emsp;❌⁽⁴⁾   </td><td class="markdownTableBodyCenter">🔼    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft">Teensy 2.0, Teensy++ 2.0   </td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">🔼   </td><td class="markdownTableBodyCenter">❌   </td><td class="markdownTableBodyCenter">❌    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -176,7 +176,7 @@ Teensy</h1>
 <p><em>Teensy 2.0, Teensy++ 2.0, Teensy LC, Teensy 3.0, Teensy 3.1, Teensy 3.2, Teensy 3.5, Teensy 3.6, Teensy 4.0, Teensy 4.1</em> <br  />
  </p><hr  />
 <p> Teensy boards have native USB support as well. You don't even need to install anything, because MIDI over USB is implemented in the Teensy Core. <br  />
- You just need to select the 'MIDI' USB type from Tools &gt; USB Type &gt; MIDI. Other USB types that include MIDI can be used as well.</p>
+ You just need to select the &lsquo;'MIDI&rsquo;` USB type from <code>Tools</code> &gt; <code>USB Type</code>. Other USB types that include MIDI can be used as well.</p>
 <p>You can use up to 16 USB MIDI virtual cables over a single USB connection, they will show up as 16 different MIDI devices on your computer. (On a Teensy 2, this number is limited to 4 USB MIDI cables).</p>
 <h1><a class="anchor" id="arduino-boards-with-an-atmega16u2-atmega8u2"></a>
 Arduino boards with an ATmega16U2 (ATmega8U2)</h1>
@@ -232,7 +232,7 @@ Espressif ESP32 boards with USB support</h1>
 <p><em>ESP32-S2 and ESP32-S3</em> </p><hr  />
 <p> The ESP32-S2 and ESP32-S3 chips have native USB support, and MIDI over USB is supported by Control Surface when using version 3.0.0 or later of the <code>arduino-esp32</code> core. <br  />
  At the time of writing, this version has not yet been officially released, and you may need to add the development release link to the boards manager URLs to install it (see <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html">https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html</a> for more information).</p>
-<p>To enable MIDI over USB support, select the <code>"USB-OTG"</code> mode in the Tools &gt; USB Type menu.</p>
+<p>To enable MIDI over USB support, select the <code>"USB-OTG (TinyUSB)"</code> mode in the <code>Tools</code> &gt; <code>USB Mode</code> menu.</p>
 <h1><a class="anchor" id="other-espressif-boards"></a>
 Other Espressif boards</h1>
 <p><em>ESP8266, ESP32, ESP32-C3, ESP32-C6, ESP32-H2</em> </p><hr  />

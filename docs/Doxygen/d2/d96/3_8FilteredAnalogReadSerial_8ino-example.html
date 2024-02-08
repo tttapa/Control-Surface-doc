@@ -92,7 +92,7 @@ $(function() {
 3.FilteredAnalogReadSerial</h1>
 <p>This is an example of the AnalogMultiplex and the FilteredAnalog classes. It prints the filtered values of all 16 inputs of a multiplexers to the serial monitor.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="connections-14"></a>
+<h2><a class="anchor" id="connections-25"></a>
 Connections</h2>
 <ul>
 <li>A0: CD74HC4067 signal pin ("common input/output")</li>
@@ -103,7 +103,7 @@ Connections</h2>
 </ul>
 <p>Optionally you can connect the enable pin as well, this is useful if you want to use multiple multiplexers with the same address lines and the same analog input. Otherwise, just connect the enable pin to ground.</p>
 <p>If you are using a 3-bit multiplexer, like the CD74HC4051, you can uncomment the code specific to this multiplexer, and use only three address pins.</p>
-<h2><a class="anchor" id="behavior-14"></a>
+<h2><a class="anchor" id="behavior-25"></a>
 Behavior</h2>
 <p>Connect some potentiometers or other analog sensors to the 16 inputs of the multiplexer, and open the serial monitor (CTRL+SHIFT+M) or the serial plotter (CTRL+SHIFT+L). You should see all 16 signals printed or plotted.</p>
 <p>Written by Pieter P, 09-04-2019 <br  />
@@ -141,7 +141,7 @@ Behavior</h2>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">  <span class="comment">// Loop over all FilteredAnalog objects in the array</span></div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;analog : filteredAnalogs) {</div>
-<div class="line">    analog.<a id="a0" name="a0"></a><a class="code hl_function" href="../../d2/d7b/classAH_1_1RegisterEncoders.html#ab1cc15c13e950f83a66ae7baa920f76a">update</a>(); <span class="comment">// actually read the analog value and filter it</span></div>
+<div class="line">    analog.<a id="a0" name="a0"></a><a class="code hl_function" href="../../da/d36/classAH_1_1GenericFilteredAnalog.html#aa2aac016e2bf7b5bd2b271786c2791aa">update</a>(); <span class="comment">// actually read the analog value and filter it</span></div>
 <div class="line">    Serial.print(analog.getValue());</div>
 <div class="line">    Serial.print(<span class="charliteral">&#39;\t&#39;</span>);</div>
 <div class="line">  }</div>
@@ -151,7 +151,7 @@ Behavior</h2>
 <div class="ttc" id="aArduino__Helpers_8h_html"><div class="ttname"><a href="../../dc/de6/Arduino__Helpers_8h.html">Arduino_Helpers.h</a></div><div class="ttdoc">Dummy header file for Arduino builder.</div></div>
 <div class="ttc" id="aArrayHelpers_8hpp_html"><div class="ttname"><a href="../../d5/db6/ArrayHelpers_8hpp.html">ArrayHelpers.hpp</a></div></div>
 <div class="ttc" id="aFilteredAnalog_8hpp_html"><div class="ttname"><a href="../../d8/df3/FilteredAnalog_8hpp.html">FilteredAnalog.hpp</a></div></div>
-<div class="ttc" id="aclassAH_1_1RegisterEncoders_html_ab1cc15c13e950f83a66ae7baa920f76a"><div class="ttname"><a href="../../d2/d7b/classAH_1_1RegisterEncoders.html#ab1cc15c13e950f83a66ae7baa920f76a">AH::RegisterEncoders::update</a></div><div class="ttdeci">bool update(RegisterType newstate)</div><div class="ttdoc">Update the encoder positions based on the new state.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/ddf/RegisterEncoders_8hpp_source.html#l00102">RegisterEncoders.hpp:102</a></div></div>
+<div class="ttc" id="aclassAH_1_1GenericFilteredAnalog_html_aa2aac016e2bf7b5bd2b271786c2791aa"><div class="ttname"><a href="../../da/d36/classAH_1_1GenericFilteredAnalog.html#aa2aac016e2bf7b5bd2b271786c2791aa">AH::GenericFilteredAnalog::update</a></div><div class="ttdeci">bool update()</div><div class="ttdoc">Read the analog input value, apply the mapping function, and update the average.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00121">FilteredAnalog.hpp:121</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

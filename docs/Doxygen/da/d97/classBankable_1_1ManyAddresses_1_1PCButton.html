@@ -175,7 +175,7 @@ class Bankable::ManyAddresses::PCButton&lt; NumBanks &gt;</div><p>A class of MID
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2187455953b9131d0e943205a8520532" id="r_a2187455953b9131d0e943205a8520532"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2187455953b9131d0e943205a8520532">PCButton</a> (const <a class="el" href="../../db/dbd/classBank.html">Bank</a>&lt; NumBanks &gt; &amp;bank, pin_t pin, const <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>, NumBanks &gt; &amp;addresses)</td></tr>
+<tr class="memitem:a2187455953b9131d0e943205a8520532" id="r_a2187455953b9131d0e943205a8520532"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2187455953b9131d0e943205a8520532">PCButton</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../db/dbd/classBank.html">Bank</a>&lt; NumBanks &gt; &amp;bank, pin_t pin, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>, NumBanks &gt; &amp;addresses)</td></tr>
 <tr class="memdesc:a2187455953b9131d0e943205a8520532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html" title="A class of MIDIOutputElements that read the input of a momentary push button or switch,...">PCButton</a> object with the given pin, program number and channel.  <br /></td></tr>
 <tr class="separator:a2187455953b9131d0e943205a8520532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2" id="r_a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df9/classBankable_1_1MIDIButton.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
@@ -225,7 +225,7 @@ template&lt;<a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f
         <tr>
           <td class="memname"><a class="el" href="../../da/d97/classBankable_1_1ManyAddresses_1_1PCButton.html">PCButton</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../db/dbd/classBank.html">Bank</a>&lt; NumBanks &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bank</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../db/dbd/classBank.html">Bank</a>&lt; NumBanks &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bank</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -235,7 +235,7 @@ template&lt;<a class="el" href="../../d0/d4e/Def_8hpp.html#a51d33bc7af1fb6a6705f
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>, NumBanks &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>addresses</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Array</a>&lt; <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a>, NumBanks &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>addresses</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -487,7 +487,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -518,7 +518,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -551,7 +551,7 @@ template&lt;class U , size_t N&gt; </div>
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -613,7 +613,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -644,7 +644,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -677,7 +677,7 @@ template&lt;class U , size_t N&gt; </div>
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/d7b/classAH_1_1RegisterEncoders.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -71,7 +71,7 @@ var searchData=
   ['deg2rad_68',['deg2rad',['../dd/d5e/group__AH__Math.html#gaccb36fc36848d04b4bad6ff98b0a88ab',1,'AH']]],
   ['degrees_2ehpp_69',['Degrees.hpp',['../de/d79/Degrees_8hpp.html',1,'']]],
   ['deltaoffset_70',['deltaOffset',['../db/dd2/classEncoderState.html#a36fe5aea6e89f694e5db856d374e53ff',1,'EncoderState']]],
-  ['demo_71',['Demo',['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#demo',1,'Demo'],['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#demo-1',1,'Demo'],['../todo.html#_todo000001',1,'Demo'],['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#demo-2',1,'Demo'],['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#demo-3',1,'Demo']]],
+  ['demo_71',['Demo',['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#demo',1,'Demo'],['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#demo-1',1,'Demo'],['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#demo-2',1,'Demo'],['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#demo-3',1,'Demo'],['../todo.html#_todo000001',1,'Demo']]],
   ['dependencies_72',['Dependencies',['../d8/da8/md_pages_Installation.html#dependencies',1,'']]],
   ['detachinterruptctx_73',['detachInterruptCtx',['../dd/da9/classAHEncoder.html#a396f0c10510632a37ae85c49d415fcf7',1,'AHEncoder']]],
   ['device_5fname_74',['device_name',['../d2/d62/structBLESettings.html#a77c7adc4663824cee5fa2e15b9e266e7',1,'BLESettings']]],

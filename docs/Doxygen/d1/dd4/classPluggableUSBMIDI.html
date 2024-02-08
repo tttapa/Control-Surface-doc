@@ -108,7 +108,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db6/classPluggableUSBMIDI__inherit__graph.svg" width="223" height="1559"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/db6/classPluggableUSBMIDI__inherit__graph.svg" width="223" height="1579"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for PluggableUSBMIDI:</div>
@@ -290,16 +290,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a7a8f1a2bdf73a4bbb5b63d8caf63e25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36525379af5f4195f5983765ce236341" id="r_a36525379af5f4195f5983765ce236341"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36525379af5f4195f5983765ce236341">getProductVersion</a> () override</td></tr>
 <tr class="separator:a36525379af5f4195f5983765ce236341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f41aafa522e0de91c7b2ca4f5d64953" id="r_a1f41aafa522e0de91c7b2ca4f5d64953"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f41aafa522e0de91c7b2ca4f5d64953">index_of</a> (<a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *p) const</td></tr>
+<tr class="separator:a1f41aafa522e0de91c7b2ca4f5d64953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613ccc34a9788e285b38ad99ff73405c" id="r_a613ccc34a9788e285b38ad99ff73405c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a613ccc34a9788e285b38ad99ff73405c">other_buf</a> (<a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *p)</td></tr>
+<tr class="separator:a613ccc34a9788e285b38ad99ff73405c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882a50852cb24c6fa21a3a5fc7266d5f" id="r_a882a50852cb24c6fa21a3a5fc7266d5f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a882a50852cb24c6fa21a3a5fc7266d5f">write_impl</a> (const uint32_t *msgs, uint32_t num_msgs, bool nonblocking)</td></tr>
 <tr class="separator:a882a50852cb24c6fa21a3a5fc7266d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef3a37ed076ba3800afbdaae9bf5ef0" id="r_aaef3a37ed076ba3800afbdaae9bf5ef0"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; uint32_t, <a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaef3a37ed076ba3800afbdaae9bf5ef0">read_writebuf_size</a> ()</td></tr>
-<tr class="separator:aaef3a37ed076ba3800afbdaae9bf5ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e8ae3a9bf6f36e5785a105e80159d6" id="r_a47e8ae3a9bf6f36e5785a105e80159d6"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47e8ae3a9bf6f36e5785a105e80159d6">read_writebuf_size</a> ()</td></tr>
+<tr class="separator:a47e8ae3a9bf6f36e5785a105e80159d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0af7e89bde42fc3688a3c80866077d" id="r_a5a0af7e89bde42fc3688a3c80866077d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a0af7e89bde42fc3688a3c80866077d">write_start_sync</a> (uint8_t *buffer, uint32_t size)</td></tr>
 <tr class="separator:a5a0af7e89bde42fc3688a3c80866077d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3af530712a3fe3626fabe1705ce72d" id="r_a1f3af530712a3fe3626fabe1705ce72d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f3af530712a3fe3626fabe1705ce72d">send_in_callback</a> (uint32_t activebuf_idx)</td></tr>
-<tr class="separator:a1f3af530712a3fe3626fabe1705ce72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6b65c3ff3a9dd7f132393ab96157fe5" id="r_ab6b65c3ff3a9dd7f132393ab96157fe5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6b65c3ff3a9dd7f132393ab96157fe5">send_now_impl_nonblock</a> (uint32_t activebuf_idx)</td></tr>
-<tr class="separator:ab6b65c3ff3a9dd7f132393ab96157fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801d2d1162de507334a885e4ae14a031" id="r_a801d2d1162de507334a885e4ae14a031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a801d2d1162de507334a885e4ae14a031">send_now_impl_nonblock</a> (<a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *write_buffer)</td></tr>
+<tr class="separator:a801d2d1162de507334a885e4ae14a031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41acc00ed84d7f5e7dbed71a7cfa57c2" id="r_a41acc00ed84d7f5e7dbed71a7cfa57c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41acc00ed84d7f5e7dbed71a7cfa57c2">timeout_callback</a> ()</td></tr>
 <tr class="separator:a41acc00ed84d7f5e7dbed71a7cfa57c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6e0f18674167319b8cb8dd364eb11be" id="r_ac6e0f18674167319b8cb8dd364eb11be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6e0f18674167319b8cb8dd364eb11be">in_callback</a> ()</td></tr>
@@ -494,7 +496,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html#l00126">126</a> of file <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html">mbed/PluggableUSBMIDI.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html">mbed/PluggableUSBMIDI.hpp</a>.</p>
 
 </div>
 </div>
@@ -518,7 +520,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html#l00143">143</a> of file <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html">mbed/PluggableUSBMIDI.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html#l00142">142</a> of file <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html">mbed/PluggableUSBMIDI.hpp</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1220,7 @@ template&lt;size_t N&gt; </div>
 </div>
 </div>
 <a id="a1f3af530712a3fe3626fabe1705ce72d" name="a1f3af530712a3fe3626fabe1705ce72d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3af530712a3fe3626fabe1705ce72d">&#9670;&#160;</a></span>send_in_callback() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3af530712a3fe3626fabe1705ce72d">&#9670;&#160;</a></span>send_in_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1879,6 +1881,60 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
+<a id="a1f41aafa522e0de91c7b2ca4f5d64953" name="a1f41aafa522e0de91c7b2ca4f5d64953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f41aafa522e0de91c7b2ca4f5d64953">&#9670;&#160;</a></span>index_of()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t index_of </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html#l00148">148</a> of file <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html">mbed/PluggableUSBMIDI.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a613ccc34a9788e285b38ad99ff73405c" name="a613ccc34a9788e285b38ad99ff73405c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a613ccc34a9788e285b38ad99ff73405c">&#9670;&#160;</a></span>other_buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> * other_buf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html#l00149">149</a> of file <a class="el" href="../../d4/d0e/mbed_2PluggableUSBMIDI_8hpp_source.html">mbed/PluggableUSBMIDI.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a882a50852cb24c6fa21a3a5fc7266d5f" name="a882a50852cb24c6fa21a3a5fc7266d5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a882a50852cb24c6fa21a3a5fc7266d5f">&#9670;&#160;</a></span>write_impl() <span class="overload">[2/2]</span></h2>
 
@@ -1913,8 +1969,8 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
-<a id="aaef3a37ed076ba3800afbdaae9bf5ef0" name="aaef3a37ed076ba3800afbdaae9bf5ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaef3a37ed076ba3800afbdaae9bf5ef0">&#9670;&#160;</a></span>read_writebuf_size() <span class="overload">[2/2]</span></h2>
+<a id="a47e8ae3a9bf6f36e5785a105e80159d6" name="a47e8ae3a9bf6f36e5785a105e80159d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e8ae3a9bf6f36e5785a105e80159d6">&#9670;&#160;</a></span>read_writebuf_size() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1923,7 +1979,7 @@ template&lt;size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::tuple&lt; uint32_t, <a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *, uint32_t &gt; read_writebuf_size </td>
+          <td class="memname">std::tuple&lt; <a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *, uint32_t &gt; read_writebuf_size </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -1967,33 +2023,8 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a1f3af530712a3fe3626fabe1705ce72d" name="a1f3af530712a3fe3626fabe1705ce72d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3af530712a3fe3626fabe1705ce72d">&#9670;&#160;</a></span>send_in_callback() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void send_in_callback </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>activebuf_idx</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab6b65c3ff3a9dd7f132393ab96157fe5" name="ab6b65c3ff3a9dd7f132393ab96157fe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6b65c3ff3a9dd7f132393ab96157fe5">&#9670;&#160;</a></span>send_now_impl_nonblock() <span class="overload">[2/2]</span></h2>
+<a id="a801d2d1162de507334a885e4ae14a031" name="a801d2d1162de507334a885e4ae14a031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801d2d1162de507334a885e4ae14a031">&#9670;&#160;</a></span>send_now_impl_nonblock() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2004,7 +2035,7 @@ template&lt;size_t N&gt; </div>
         <tr>
           <td class="memname">bool send_now_impl_nonblock </td>
           <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>activebuf_idx</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a3df5ae0f32b76ef1ed960c4756945123">wbuffer_t</a> *</td>          <td class="paramname"><span class="paramname"><em>write_buffer</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2138,7 +2169,7 @@ template&lt;size_t N&gt; </div>
 </div><div class="memdoc">
 
 <p>USB packet size. </p>
-<p>Must be a power of two. </p>
+<p>USB packet size. Must be a power of two.</p>
 <p>Must be a power of two.  </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/dbc/mbed-m0_2PluggableUSBMIDI_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d6/dbc/mbed-m0_2PluggableUSBMIDI_8hpp_source.html">mbed-m0/PluggableUSBMIDI.hpp</a>.</p>
