@@ -13,6 +13,5 @@ var searchData=
   ['round_5fdiv_5fhelper_10',['round_div_helper',['../df/d72/structAH_1_1round__div__helper.html',1,'AH']]],
   ['round_5fdiv_5fint_11',['round_div_int',['../d9/de8/structAH_1_1round__div__int.html',1,'AH']]],
   ['round_5fdiv_5fsigned_5fint_12',['round_div_signed_int',['../d3/d3c/structAH_1_1round__div__signed__int.html',1,'AH']]],
-  ['round_5fdiv_5funsigned_5fint_13',['round_div_unsigned_int',['../dc/de0/structAH_1_1round__div__unsigned__int.html',1,'AH']]],
-  ['rp2040_5fusbdevicemidibackend_14',['RP2040_USBDeviceMIDIBackend',['../dd/d6e/structRP2040__USBDeviceMIDIBackend.html',1,'']]]
+  ['round_5fdiv_5funsigned_5fint_13',['round_div_unsigned_int',['../dc/de0/structAH_1_1round__div__unsigned__int.html',1,'AH']]]
 ];

@@ -107,7 +107,7 @@ Control Surface</h1>
 </blockquote>
 <h2><a class="anchor" id="example-usage"></a>
 Example usage</h2>
-<p>An extensive list of examples can be found <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/examples.html">in the documentation</a>. Below are a handful of simple examples that give an idea of how the Control Surface library can be used.</p>
+<p>An extensive list of examples can be found <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d4/de9/examples.html">in the documentation</a>. Below are a handful of simple examples that give an idea of how the Control Surface library can be used.</p>
 <p><b>Example 1</b>: A complete sketch for a MIDI controller with a potentiometer that sends out MIDI Control Change message can be written in just five lines of code:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
@@ -166,12 +166,12 @@ Example usage</h2>
 </div><!-- fragment --><p><b>Example 3</b>: Control Surface also supports many types of MIDI inputs. For example, an LED that turns on when a MIDI Note On message for middle C is received: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi;</div>
-<div class="line"><a class="code hl_class" href="d9/d55/classNoteCCKPLED.html">NoteLED</a> led { LED_BUILTIN, <a class="code hl_variable" href="d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4) };</div>
+<div class="line"><a class="code hl_class" href="d9/d55/classNoteCCKPLED.html">NoteLED</a> led { LED_BUILTIN, <a class="code hl_variable" href="d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4] };</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() { <a class="code hl_variable" href="d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code hl_function" href="dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>(); }</div>
 <div class="line"><span class="keywordtype">void</span> loop() { <a class="code hl_variable" href="d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code hl_function" href="dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>(); }</div>
 <div class="ttc" id="aclassNoteCCKPLED_html"><div class="ttname"><a href="d9/d55/classNoteCCKPLED.html">NoteCCKPLED</a></div><div class="ttdoc">Generic base class for classes that listen for MIDI Note, Control Change and Key Pressure events on a...</div><div class="ttdef"><b>Definition</b> <a href="d2/df7/NoteCCKPLED_8hpp_source.html#l00020">NoteCCKPLED.hpp:20</a></div></div>
-<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
+<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="d9/dc5/Notes_8hpp_source.html#l00056">Notes.hpp:56</a></div></div>
 </div><!-- fragment --><p><b>Example 4</b>: Control Surface's MIDI interfaces can also be used directly, for example, to implement a MIDI-over-USB to MIDI-over-BLE adapter: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiate MIDI over BLE and MIDI over USB interfaces</span></div>
@@ -203,13 +203,11 @@ Getting started</h2>
 <p>The <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d3/df7/midi-tutorial.html"><b>MIDI tutorial</b></a> might be useful if you want to use Control Surface as a regular MIDI library, for sending and receiving MIDI messages.</p>
 <h2><a class="anchor" id="documentation"></a>
 Documentation</h2>
-<p>The automatically generated Doxygen documentation for this library can be found here: <br  />
+<p>Detailed documentation for this library can be found here: <br  />
  <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/index.html"><b>Documentation</b></a> <br  />
- Test coverage information can be found here: <br  />
- <a href="https://tttapa.github.io/Control-Surface-doc/Coverage/index.html"><b>Code Coverage</b></a> <br  />
  Arduino examples can be found here: <br  />
- <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/examples.html"><b>Examples</b></a></p>
-<p>Have a look at the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/topics.html"><b>Topics</b></a> page for an overview of the features of the library, it's the best entry point for the documentation.</p>
+ <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d4/de9/examples.html"><b>Examples</b></a></p>
+<p>The <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/d3/da5/manual.html"><b>User Manual</b></a> is the best entry point to the documentation. To get a complete overview of all features of the Control Surface library, have a look at the following section and at the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/topics.html"><b>Topics</b></a> page.</p>
 <p>You can find an answer to some frequently asked questions on the <a href="https://tttapa.github.io/Control-Surface-doc/Doxygen/da/dc1/FAQ.html"><b>FAQ</b></a> page.</p>
 <h2><a class="anchor" id="feature-overview"></a>
 Feature overview</h2>
@@ -300,9 +298,19 @@ Change log and updating</h2>
 <h3><a class="anchor" id="autotoc_md2x"></a>
 2.x</h3>
 <ul>
-<li>(<a href="https://github.com/tttapa/Control-Surface/commit/3ae51946d57e27f0e37d001bb8e0ce418fae1933">fae1933</a>) <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/b0f4d636838b12907bea6cf989d20760a8a998bf">b0f4d63</a>) <br  />
+ Replace <code>MIDI_Notes::X(n)</code> by <code>MIDI_Notes::X[n]</code> to avoid issues with the Arduino <code>F(...)</code> macro.</li>
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/7b0eee16f15d730f0d68f6e38e6a60c634d861ad">7b0eee1</a>) <br  />
+ Speed up compilation by removing many source files that were only used for testing.</li>
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/07b8729a29f290b95bc0e68af188a19e829db749">07b8729</a>) <br  />
+ Improved Mbed OS USB MIDI implementation.</li>
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/d7a4e69c4f7a098fcd932f33f01ffc7870497e64">d7a4e69</a>) <br  />
+ Added support for <code><a class="el" href="df/d43/structBluetoothMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a Bluetooth Low Energy (BLE) connection.">BluetoothMIDI_Interface</a></code> on the Raspberry Pi Pico W.</li>
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/196b5fce12b97eaa56c5ad0c45c1a940943f7941">196b5fc</a>) <br  />
+ Added <code>ArduinoBLE</code> backend for <code><a class="el" href="df/d43/structBluetoothMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a Bluetooth Low Energy (BLE) connection.">BluetoothMIDI_Interface</a></code>.</li>
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/d4d7435181986e75fd0319a1df184a7f0c182e90">d4d7435</a>) <br  />
  Completely refactored <code><a class="el" href="df/d43/structBluetoothMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a Bluetooth Low Energy (BLE) connection.">BluetoothMIDI_Interface</a></code>, with support for the NimBLE and ArduinoBLE backends.</li>
-<li>(<a href="https://github.com/tttapa/Control-Surface/commit/9c4cdd452990c470ee429b3121bdeb178ba7f42e">ba7f42e</a>) <br  />
+<li>(<a href="https://github.com/tttapa/Control-Surface/commit/9c4cdd452990c470ee429b3121bdeb178ba7f42e">9c4cdd4</a>) <br  />
  More upper case constants and enumerators have been deprecated. For example, <code>ControlChange</code> should be used instead of <code>CONTROL_CHANGE</code>. If you continue using the old versions, you will get a compiler warning. These old versions will be removed in a future version of Control Surface.</li>
 <li>(<a href="https://github.com/tttapa/Control-Surface/commit/aaf6eea2206c6e3b6a2004e0520100342945983f">aaf6eea</a>) <br  />
  The upper case <code>CHANNEL_x</code> and <code>CABLE_x</code> constants have been deprecated in favor of the title case versions <code>Channel_x</code> and <code>Cable_x</code>. This was done to avoid conflicts with macros defined by the ArduinoCore-renesas. <br  />

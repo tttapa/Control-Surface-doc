@@ -108,7 +108,6 @@ $(function() {
 <li class="level2"><a href="#faq-save-memory-disable-components">Disabling memory-hungry components</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#faq-midi-note-f">Why do I get a compiler error when using the note F?</a></li>
 <li class="level1"><a href="#faq-control-surface-vs-midi-controller">What&#39;s the difference between the Control Surface and MIDI Controller libraries?</a></li>
 </ul>
 </div>
@@ -128,7 +127,7 @@ Sending MIDI</h2>
 <p>You can use the functions defined by the <a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a> class to send all kinds of MIDI messages. These functions can be used on all <a class="el" href="../../dc/df0/group__MIDIInterfaces.html">MIDI interfaces</a> and on the main <code>Control_Surface</code> class.</p>
 <p>Here's a basic MIDI output example: </p><div class="fragment"><div class="line"><a class="code hl_class" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi; <span class="comment">// Instantiate the MIDI over USB interface</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">const</span> <a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> noteAddress = {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>};</div>
+<div class="line"><span class="keyword">const</span> <a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> noteAddress = {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4], <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>};</div>
 <div class="line"><span class="keyword">const</span> uint8_t velocity = 0x7F;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
@@ -147,7 +146,7 @@ Sending MIDI</h2>
 <div class="ttc" id="aclassMIDI__Sender_html_ad487d041b8e9d10d58aba470a15e1fc6"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ad487d041b8e9d10d58aba470a15e1fc6">MIDI_Sender::sendNoteOn</a></div><div class="ttdeci">void sendNoteOn(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note On event.</div></div>
 <div class="ttc" id="aclassMIDI__Sender_html_ae5438982b69a41d7b4565328f5fd73c8"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">MIDI_Sender::sendNoteOff</a></div><div class="ttdeci">void sendNoteOff(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note Off event.</div></div>
 <div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00160">USBMIDI_Interface.hpp:161</a></div></div>
-<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
+<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00056">Notes.hpp:56</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="faq-recv-midi"></a>
 Receiving MIDI</h2>
 <p>For MIDI input, a class with callback functions for the different messages is used. When an incoming MIDI message is available, <code>midi.update()</code> will call the callbacks for you. See the <a class="el" href="../../de/d55/classMIDI__Callbacks.html">MIDI_Callbacks</a> class and the examples listed below.</p>
@@ -212,7 +211,7 @@ Normal banks</h2>
 <div class="line">    {bank, pin3, 3}, <span class="comment">// base address 3 (b = 3)</span></div>
 <div class="line">    {bank, pin4, 4}, <span class="comment">// base address 4 (b = 4)</span></div>
 <div class="line">};</div>
-<div class="ttc" id="aclassBank_html"><div class="ttname"><a href="../../db/dbd/classBank.html">Bank</a></div><div class="ttdoc">A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d57/Bank_8hpp_source.html#l00091">Bank.hpp:91</a></div></div>
+<div class="ttc" id="aclassBank_html"><div class="ttname"><a href="../../db/dbd/classBank.html">Bank</a></div><div class="ttdoc">A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d57/Bank_8hpp_source.html#l00094">Bank.hpp:94</a></div></div>
 <div class="ttc" id="aclassBankable_1_1NoteButton_html"><div class="ttname"><a href="../../de/d36/classBankable_1_1NoteButton.html">Bankable::NoteButton</a></div><div class="ttdoc">A class of MIDIOutputElements that read the input of a momentary push button or switch,...</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d8e/Bankable_2NoteButton_8hpp_source.html#l00022">Bankable/NoteButton.hpp:22</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="faq-banks-many-addresses"></a>
 Many addresses</h2>
@@ -238,18 +237,7 @@ Disabling memory-hungry components</h2>
 <p>If that's not enough, you could try disabling some of the features of the library that you don't need. For example, if you don't need to be able to receive MIDI System Exclusive messages, you can turn on the <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#a2a82e3cbc4ddcf68ac47d0d464189e35">IGNORE_SYSEX</a> and <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#aaae4753367a4adac0c45a92bad885e5c">NO_SYSEX_OUTPUT</a> settings in src/Settings/Settings.hpp. If you do need SysEx support but still want to save some memory, you can try decreasing the <a class="el" href="../../dc/d4f/Settings_2Settings_8hpp.html#af48d0a4efaf52fc688a8ced019e561ef">SYSEX_BUFFER_SIZE</a>.</p>
 <p>If you don't need support for multiple MIDI interfaces, you can set <code>DISABLE_PIPES</code> to <code>1</code>. This disables support for MIDI pipe routing, and causes Control Surface to use the default interface only.</p>
 <p>If you're not using the <code>Control_Surface</code> instance, you can save memory by setting <code>CS_TRUE_CONTROL_SURFACE_INSTANCE</code> to <code>0</code>. This replaces <code>Control_Surface</code> by a macro that expands to a function call, rather than defining <code>Control_Surface</code> as a global variable. This allows the optimizer and the linker to optimize out parts of the library more effectively, but may reduce the quality of code completion. It does not affect the behavior of the library.</p>
-<h1><a class="anchor" id="faq-midi-note-f"></a>
-Why do I get a compiler error when using the note F?</h1>
-<p>The Arduino core defines a global preprocessor macro <code>F(...)</code> which places string literals in flash memory. Unfortunately, macros do not follow the C++ syntax and scoping rules, so it means that it is impossible to create a constant or function with the name <code>F</code>, even in a separate namespace. Therefore, the note F can be referenced using the name <code>F_</code> (F underscore) instead of <code>F</code>.</p>
-<p>If you get this wrong, you might get an error saying the following: </p><div class="fragment"><div class="line">In file included from /home/user/.arduino15/packages/arduino/hardware/avr/1.8.3/cores/arduino/Arduino.h:232:0,</div>
-<div class="line">                 from /tmp/arduino-sketch-XXXXX/sketch/sketch.ino.cpp:1:</div>
-<div class="line">/home/user/.arduino15/packages/arduino/hardware/avr/1.8.3/cores/arduino/WString.h:38:27: error: expected unqualified-id before &#39;(&#39; token</div>
-<div class="line"> #define F(string_literal) (reinterpret_cast&lt;const __FlashStringHelper *&gt;(PSTR(string_literal)))</div>
-<div class="line">                           ^</div>
-<div class="line">sketch.ino: note: in expansion of macro &#39;F&#39;</div>
-<div class="line">   { pin, MIDI_Notes::F(4) }</div>
-<div class="line">                      ^</div>
-</div><!-- fragment --><h1><a class="anchor" id="faq-control-surface-vs-midi-controller"></a>
+<h1><a class="anchor" id="faq-control-surface-vs-midi-controller"></a>
 What's the difference between the Control Surface and MIDI Controller libraries?</h1>
 <p>You might already have found my other Arduino MIDI library, <a href="https://github.com/tttapa/MIDI_Controller">MIDI Controller</a>, and are wondering which one you should use for your project.</p>
 <p>Short answer: Use Control Surface. MIDI Controller is no longer supported and Control Surface completely replaces every aspect of it.</p>

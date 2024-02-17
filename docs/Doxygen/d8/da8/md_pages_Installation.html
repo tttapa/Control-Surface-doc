@@ -88,45 +88,33 @@ $(function() {
   <div class="headertitle"><div class="title">Installation</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_pages_2Installation"></a> This document assumes that the <b>Arduino IDE</b> is already installed, as well as the necessary hardware support packages, such as Teensyduino or the ESP32 Core, if you're not using a standard board. <br  />
- Here are some links to installation instructions for the Arduino IDE on <a href="https://tttapa.github.io/Pages/Ubuntu/Software-Installation/Arduino/Arduino-IDE.html"><b>Linux</b></a>, on <a href="https://www.arduino.cc/en/guide/windows"><b>Windows</b></a>, and on <a href="https://www.arduino.cc/en/guide/macOSX"><b>OSX</b></a>. <br  />
- If you're using an AVR board (e.g. Arduino Uno, Mega, Nano, Leonardo), you need at least version 1.8.1 of the Arduino AVR Core (see Tools &gt; Board &gt; Boards Manager).</p>
-<p>You have to install the Control Surface library itself, as well as some dependencies.</p>
-<p>If you want to keep up to date with the latest developments, or if you want an easy way to update, the Git install is recommended. Otherwise, the installation without Git will be fine as well.</p>
-<p>If you're using <b>PlatformIO</b>, you can download the library using the PIO Library Manager: <a href="https://platformio.org/lib/show/6793/Control%20Surface/installation">https://platformio.org/lib/show/6793/Control Surface/installation</a></p>
-<h1><a class="anchor" id="installation-no-git"></a>
-Installation (No Git)</h1>
+<div class="textblock"><p><a class="anchor" id="md_pages_2Installation"></a> </p>
+<h1><a class="anchor" id="arduino"></a>
+Arduino</h1>
+<p>This document assumes that the <b>Arduino IDE</b> is already installed, as well as the necessary hardware support packages, such as Teensyduino or the ESP32 Core, if you're not using a standard board. <br  />
+ See the <a href="https://www.arduino.cc/en/guide">Arduino website</a> for more details. <br  />
+</p>
+<p>You'll have to install the Control Surface library itself, as well as some dependencies.</p>
 <h2><a class="anchor" id="autotoc_md1-download"></a>
 1. Download</h2>
 <p>Download the repository as a ZIP archive by going to the <a href="https://github.com/tttapa/Control-Surface">home page of the repository</a> and clicking the green <code>Code</code> button in the top right, then choosing “Download ZIP”.</p>
+<p>Alternatively, click the following direct download link: <a href="https://github.com/tttapa/Control-Surface/archive/refs/heads/main.zip">https://github.com/tttapa/Control-Surface/archive/refs/heads/main.zip</a></p>
 <h2><a class="anchor" id="autotoc_md2-install-the-library-in-the-arduino-ide"></a>
 2. Install the Library in the Arduino IDE</h2>
 <p>Open the Arduino IDE, and go to the <em>Sketch &gt; Include Library &gt; Add .ZIP Library</em> menu. <br  />
  Then navigate to your downloads directory where you just downloaded the library. <br  />
  Select it, and click <em>Ok</em>.</p>
-<h1><a class="anchor" id="installation-git"></a>
-Installation (Git)</h1>
-<h2><a class="anchor" id="autotoc_md0-install-git"></a>
-0. Install Git</h2>
-<p>If you haven't already, install Git from <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> or use your system's package manager.</p>
-<p>On Ubuntu and other Debian-based distros: </p><div class="fragment"><div class="line">sudo apt install git</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md1-browse-to-your-arduino-libraries-folder"></a>
-1. Browse to your Arduino Libraries folder</h2>
-<p>Open a terminal window and change the directory to your Arduino folder.</p>
-<p>In a Linux terminal or Git Bash: </p><div class="fragment"><div class="line">mkdir -p ~/Arduino/libraries &amp;&amp; cd $_</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md2-clone-the-library"></a>
-2. Clone the Library</h2>
-<div class="fragment"><div class="line">git clone https://github.com/tttapa/Control-Surface</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3-updating-to-the-latest-version"></a>
-3. Updating to the latest version</h2>
-<p>If you installed the library using Git, you can easily update it when a new version comes out. <br  />
- To update to the latest <code>main</code> version:</p>
-<div class="fragment"><div class="line">git pull</div>
-</div><!-- fragment --><h1><a class="anchor" id="dependencies"></a>
-Dependencies</h1>
-<p>If you are using an Arduino board with on-board USB capabilities, you need the <a href="https://github.com/arduino-libraries/MIDIUSB"><b>MIDIUSB library</b></a>. Install it as explained before, or by using the <a href="https://www.arduino.cc/en/Guide/Libraries#toc3">Library Manager</a>.</p>
-<p>To use AppleMIDI, you also need the <a href="https://github.com/lathoub/Arduino-AppleMIDI-Library">AppleMIDI</a> library and its dependencies. </p>
-</div></div><!-- contents -->
+<h2><a class="anchor" id="autotoc_md3-dependencies"></a>
+3. Dependencies</h2>
+<p>If you are using an Arduino board with on-board USB capabilities, you need the <a href="https://github.com/arduino-libraries/MIDIUSB"><b>MIDIUSB library</b></a>. Install it as explained before, or by using the <a href="https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/">Library Manager</a>.</p>
+<p>For MIDI over BLE support, some boards may require the installation of the <a href="https://github.com/arduino-libraries/ArduinoBLE"><b>ArduinoBLE library</b></a>. <br  />
+ Some of the examples may also depend on any of the following libraries: <a href="https://github.com/adafruit/Adafruit_SSD1306">Adafruit SSD1306</a>, <a href="https://github.com/FastLED/FastLED">FastLED</a>, <a href="https://github.com/lathoub/Arduino-AppleMIDI-Library">Arduino AppleMIDI Library</a>.</p>
+<h1><a class="anchor" id="platformio"></a>
+PlatformIO</h1>
+<p>To use Control Surface in a PlatformIO project, add the following to your <code>platformio.ini</code> configuration:</p>
+<div class="fragment"><div class="line">lib_deps = https://github.com/tttapa/Control-Surface.git#main</div>
+<div class="line">lib_ignore = MIDIUSB</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -120,7 +120,7 @@ Bank</h1>
  In this example, we'll use an <a class="el" href="../../d2/deb/classIncrementDecrementSelector.html">IncrementDecrementSelector</a>. It has one push button to increment the bank setting, and one push button to decrement the bank setting.</p>
 <p>To display which bank is currently active, you can use the Selectors with LED feedback in the <a class="el" href="../../dd/d37/group__SelectorsLEDs.html">Selectors LEDs</a> module, or you can write your own callback that gets called when the setting changes. The latter is demonstrated in the <a class="el" href="../../d8/d4b/Custom-Selector-Callback_8ino-example.html">Custom-Selector-Callback.ino</a> example.</p>
 <p>For more information about banks, have a look at the <a class="el" href="../../da/dc1/FAQ.html#faq-banks">“How do banks work?”</a> FAQ page, it includes a nice animation.</p>
-<h2><a class="anchor" id="connections-39"></a>
+<h2><a class="anchor" id="connections-59"></a>
 Connections</h2>
 <ul>
 <li>2: momentary push button (to ground)</li>
@@ -130,7 +130,7 @@ Connections</h2>
 </ul>
 <p>Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>. <br  />
  The internal pull-up resistors for the buttons will be enabled automatically.</p>
-<h2><a class="anchor" id="behavior-41"></a>
+<h2><a class="anchor" id="behavior-61"></a>
 Behavior</h2>
 <ul>
 <li>Press the <a class="el" href="../../db/dbd/classBank.html" title="A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...">Bank</a> selector buttons while turning the potentiometers. Notice how the channel of the MIDI messages changes when you change the <a class="el" href="../../db/dbd/classBank.html" title="A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...">Bank</a>, as explained above.</li>
@@ -201,7 +201,7 @@ Behavior</h2>
 <div class="ttc" id="aControl__Surface_8h_html"><div class="ttname"><a href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a></div><div class="ttdoc">The main header file that includes all Control-Surface header files.</div></div>
 <div class="ttc" id="aControl__Surface__Class_8cpp_html_af7a5d250297d82b2b29605dd7ac250df"><div class="ttname"><a href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a></div><div class="ttdeci">Control_Surface_ &amp; Control_Surface</div><div class="ttdoc">A predefined instance of the Control Surface to use in the Arduino sketches.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00338">Control_Surface_Class.cpp:338</a></div></div>
 <div class="ttc" id="aSelector_8hpp_html_aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d"><div class="ttname"><a href="../../d6/d16/Selector_8hpp.html#aa387053cf4222bcbf8bfa5d3c5da9db5aa212b19ef5f2fb30acf92e6cbccc1f2d">Wrap::Wrap</a></div><div class="ttdeci">@ Wrap</div><div class="ttdoc">When the maximum (minimum) setting is reached, wrap around to the minimum (maximum) setting.</div></div>
-<div class="ttc" id="aclassBank_html"><div class="ttname"><a href="../../db/dbd/classBank.html">Bank</a></div><div class="ttdoc">A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d57/Bank_8hpp_source.html#l00091">Bank.hpp:91</a></div></div>
+<div class="ttc" id="aclassBank_html"><div class="ttname"><a href="../../db/dbd/classBank.html">Bank</a></div><div class="ttdoc">A class that groups Bankable MIDI Output Elements and Bankable MIDI Input Elements,...</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d57/Bank_8hpp_source.html#l00094">Bank.hpp:94</a></div></div>
 <div class="ttc" id="aclassBankable_1_1CCPotentiometer_html"><div class="ttname"><a href="../../d7/dc0/classBankable_1_1CCPotentiometer.html">Bankable::CCPotentiometer</a></div><div class="ttdoc">A class of MIDIOutputElements that read the analog input from a potentiometer or fader,...</div><div class="ttdef"><b>Definition</b> <a href="../../d6/ddd/Bankable_2CCPotentiometer_8hpp_source.html#l00022">Bankable/CCPotentiometer.hpp:23</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_ab0bdf5cca484fb2ba637c39384b27fb2"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">Control_Surface_::begin</a></div><div class="ttdeci">void begin()</div><div class="ttdoc">Initialize the Control_Surface.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00022">Control_Surface_Class.cpp:22</a></div></div>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00071">Control_Surface_Class.cpp:71</a></div></div>

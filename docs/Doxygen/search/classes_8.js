@@ -13,8 +13,12 @@ var searchData=
   ['incrementselectorleds_10',['IncrementSelectorLEDs',['../dc/df8/classIncrementSelectorLEDs.html',1,'']]],
   ['indexmask_11',['IndexMask',['../db/dc2/structAH_1_1MAX7219_1_1IndexMask.html',1,'AH::MAX7219']]],
   ['internalstate_12',['InternalState',['../dc/db4/structAH_1_1Button_1_1InternalState.html',1,'AH::Button']]],
-  ['ivalue_13',['IValue',['../d8/d87/classInterfaces_1_1IValue.html',1,'Interfaces']]],
-  ['ivalue14_14',['IValue14',['../dd/d7f/classInterfaces_1_1IValue14.html',1,'Interfaces']]],
-  ['ivpot_15',['IVPot',['../d2/dde/classInterfaces_1_1MCU_1_1IVPot.html',1,'Interfaces::MCU']]],
-  ['ivu_16',['IVU',['../dc/d25/classInterfaces_1_1MCU_1_1IVU.html',1,'Interfaces::MCU']]]
+  ['interrupt_5fatomic_13',['interrupt_atomic',['../de/df5/classinterrupt__atomic.html',1,'']]],
+  ['interrupt_5fatomic_3c_20bool_20_3e_14',['interrupt_atomic&lt; bool &gt;',['../de/df5/classinterrupt__atomic.html',1,'']]],
+  ['interrupt_5fatomic_3c_20pluggableusbmidi_3a_3awriting_3a_3abuffer_20_2a_20_3e_15',['interrupt_atomic&lt; PluggableUSBMIDI::Writing::Buffer * &gt;',['../de/df5/classinterrupt__atomic.html',1,'']]],
+  ['interrupt_5fatomic_3c_20uint32_5ft_20_3e_16',['interrupt_atomic&lt; uint32_t &gt;',['../de/df5/classinterrupt__atomic.html',1,'']]],
+  ['ivalue_17',['IValue',['../d8/d87/classInterfaces_1_1IValue.html',1,'Interfaces']]],
+  ['ivalue14_18',['IValue14',['../dd/d7f/classInterfaces_1_1IValue14.html',1,'Interfaces']]],
+  ['ivpot_19',['IVPot',['../d2/dde/classInterfaces_1_1MCU_1_1IVPot.html',1,'Interfaces::MCU']]],
+  ['ivu_20',['IVU',['../dc/d25/classInterfaces_1_1MCU_1_1IVU.html',1,'Interfaces::MCU']]]
 ];

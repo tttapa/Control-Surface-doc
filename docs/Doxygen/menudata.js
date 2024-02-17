@@ -24,6 +24,7 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
+{text:"User Manual",url:"d3/da5/manual.html"},
 {text:"Related Pages",url:"pages.html"},
 {text:"Topics",url:"topics.html"},
 {text:"Namespaces",url:"namespaces.html",children:[
@@ -304,4 +305,4 @@ var menudata={children:[
 {text:"i",url:"globals_defs.html#index_i"},
 {text:"n",url:"globals_defs.html#index_n"},
 {text:"u",url:"globals_defs.html#index_u"}]}]}]},
-{text:"Examples",url:"examples.html"}]}
+{text:"Examples",url:"d4/de9/examples.html"}]}

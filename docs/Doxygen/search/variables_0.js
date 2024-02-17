@@ -7,7 +7,7 @@ var searchData=
   ['acoustic_5fgrand_5fpiano_4',['Acoustic_Grand_Piano',['../da/da6/namespaceMIDI__PC.html#ad841d473a095d11c1f6e67557d9f2c8a',1,'MIDI_PC']]],
   ['acoustic_5fguitar_5fnylon_5',['Acoustic_Guitar_Nylon',['../da/da6/namespaceMIDI__PC.html#a68f5003987b702653f2e57495f8949ac',1,'MIDI_PC']]],
   ['acoustic_5fguitar_5fsteel_6',['Acoustic_Guitar_Steel',['../da/da6/namespaceMIDI__PC.html#af104b605620c9ac97febb856d1cea91d',1,'MIDI_PC']]],
-  ['active_5fwritebuffer_7',['active_writebuffer',['../da/d5e/structPluggableUSBMIDI_1_1Writing.html#a111028c550cf9b90bd5c50072a8c4953',1,'PluggableUSBMIDI::Writing::active_writebuffer'],['../da/d5e/structPluggableUSBMIDI_1_1Writing.html#a00f6ac6bdf6d40ec5a2b1f661da89b73',1,'PluggableUSBMIDI::Writing::active_writebuffer'],['../d0/d0e/structTeensyHostMIDI_1_1Writing.html#a5d0600248640756c2e4301d3b4896410',1,'TeensyHostMIDI::Writing::active_writebuffer']]],
+  ['active_5fwritebuffer_7',['active_writebuffer',['../da/d5e/structPluggableUSBMIDI_1_1Writing.html#a0ec8403075dd7b9af36087dff8323080',1,'PluggableUSBMIDI::Writing::active_writebuffer'],['../d0/d0e/structTeensyHostMIDI_1_1Writing.html#a5d0600248640756c2e4301d3b4896410',1,'TeensyHostMIDI::Writing::active_writebuffer']]],
   ['activebuttons_8',['activeButtons',['../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a2643a90bc676680033bc6b8b08ac8ccc',1,'Bankable::MIDIButtonMatrix::activeButtons'],['../dc/d22/classBankable_1_1MIDIButtons.html#a634a7b67351a9235d932b28bb7a1d5c7',1,'Bankable::MIDIButtons::activeButtons']]],
   ['activecable_9',['activeCable',['../db/db0/classUSBMIDI__Parser.html#aa6f9c42d85c6acfc193e561b0bdd4fd5',1,'USBMIDI_Parser']]],
   ['activesensing_10',['ActiveSensing',['../d6/d99/structRealTimeMessage.html#afc5b95f2161e26ea4c4cf55d5b5f0374',1,'RealTimeMessage']]],
@@ -47,5 +47,5 @@ var searchData=
   ['automation_5ftouch_44',['AUTOMATION_TOUCH',['../de/d44/group__MCU__Notes.html#gaa21570085b03e90d11132abafb4713c4',1,'MCU']]],
   ['automation_5ftrim_45',['AUTOMATION_TRIM',['../de/d44/group__MCU__Notes.html#ga9adb75640a982b568593d0cfe410a039',1,'MCU']]],
   ['automation_5fwrite_46',['AUTOMATION_WRITE',['../de/d44/group__MCU__Notes.html#ga8ea03657091b12273414495178531278',1,'MCU']]],
-  ['available_47',['available',['../d3/d97/structPluggableUSBMIDI_1_1Reading.html#aa331db918971c5702a57f4b8a66df26f',1,'PluggableUSBMIDI::Reading::available'],['../d3/d97/structPluggableUSBMIDI_1_1Reading.html#a659526f5473580291941ab508328db34',1,'PluggableUSBMIDI::Reading::available'],['../d1/d81/structTeensyHostMIDI_1_1Reading.html#a659526f5473580291941ab508328db34',1,'TeensyHostMIDI::Reading::available']]]
+  ['available_47',['available',['../d3/d97/structPluggableUSBMIDI_1_1Reading.html#a7accf2aea8a7012a8506639d03c297cd',1,'PluggableUSBMIDI::Reading::available'],['../d1/d81/structTeensyHostMIDI_1_1Reading.html#a659526f5473580291941ab508328db34',1,'TeensyHostMIDI::Reading::available']]]
 ];

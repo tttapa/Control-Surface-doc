@@ -95,19 +95,19 @@ AbsoluteRotaryEncoder</h1>
  Usually, encoders send relative messages ("5 ticks to the left", "1 tick to the right").</p>
 <p>Similar to the <a class="el" href="../../d8/d2f/classCCAbsoluteEncoder.html" title="A class of MIDIOutputElements that read the input of a quadrature (rotary) encoder and send out absol...">CCAbsoluteEncoder</a>, there's also <a class="el" href="../../d7/d70/classPBAbsoluteEncoder.html" title="A class of MIDIOutputElements that read the input of a quadrature (rotary) encoder and send out absol...">PBAbsoluteEncoder</a> that sends absolute MIDI Pitch Bend messages.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="connections-5"></a>
+<h2><a class="anchor" id="connections-10"></a>
 Connections</h2>
 <ul>
 <li>2: pin A of the encoder</li>
 <li>3: pin B of the encoder</li>
 </ul>
 <p>Connect the common terminal of the encoder to ground. The built-in pullup resistors will be enabled.</p>
-<h2><a class="anchor" id="behavior-5"></a>
+<h2><a class="anchor" id="behavior-10"></a>
 Behavior</h2>
 <ul>
 <li>When you turn the encoder, you should receive absolute MIDI Control Change messages with the absolute position of the encoder.</li>
 </ul>
-<h2><a class="anchor" id="mapping-5"></a>
+<h2><a class="anchor" id="mapping-9"></a>
 Mapping</h2>
 <p>Select the Arduino as a custom MIDI controller in your DAW, and map it like a normal CC controller (not a relative one).</p>
 <p>Written by PieterP, 2019-12-18 <br  />

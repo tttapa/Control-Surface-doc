@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getting_20started_0',['Getting Started',['../d5/d7d/md_pages_Getting-Started.html',1,'']]]
+  ['frequently_20asked_20questions_0',['Frequently Asked Questions',['../da/dc1/FAQ.html',1,'']]]
 ];

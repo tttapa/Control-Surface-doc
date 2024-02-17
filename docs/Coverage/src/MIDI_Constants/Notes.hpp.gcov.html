@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 13267978f2a1b0fc31bf91cc119a030f91c852e7 - src/MIDI_Constants/Notes.hpp</title>
+  <title>LCOV - 38c672a13eed80a337d96b195d2398953862193b - src/MIDI_Constants/Notes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,20 +28,20 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">13267978f2a1b0fc31bf91cc119a030f91c852e7</td>
+            <td class="headerValue">38c672a13eed80a337d96b195d2398953862193b</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntry">2</td>
-            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">3</td>
+            <td class="headerCovTableEntry">3</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-02-08 18:42:41</td>
+            <td class="headerValue">2024-02-17 23:46:09</td>
             <td></td>
             <td class="headerItem">Functions:</td>
-            <td class="headerCovTableEntry">1</td>
-            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
             <td class="headerCovTableEntryHi">100.0 %</td>
           </tr>
           <tr>
@@ -107,43 +107,47 @@
 <a name="37"><span class="lineNum">      37 </span><span class="lineCov">          4 :     constexpr int8_t operator()(int8_t octave = -1) const {</span></a>
 <a name="38"><span class="lineNum">      38 </span><span class="lineCov">          4 :         return base + 12 * (octave + 1);</span></a>
 <a name="39"><span class="lineNum">      39 </span>            :     }</a>
-<a name="40"><span class="lineNum">      40 </span>            : </a>
-<a name="41"><span class="lineNum">      41 </span>            :     constexpr static Note C() { return Note {0}; }</a>
-<a name="42"><span class="lineNum">      42 </span>            :     constexpr static Note Db() { return Note {1}; }</a>
-<a name="43"><span class="lineNum">      43 </span>            :     constexpr static Note D() { return Note {2}; }</a>
-<a name="44"><span class="lineNum">      44 </span>            :     constexpr static Note Eb() { return Note {3}; }</a>
-<a name="45"><span class="lineNum">      45 </span>            :     constexpr static Note E() { return Note {4}; }</a>
-<a name="46"><span class="lineNum">      46 </span>            :     constexpr static Note F_() { return Note {5}; }</a>
-<a name="47"><span class="lineNum">      47 </span>            :     constexpr static Note Gb() { return Note {6}; }</a>
-<a name="48"><span class="lineNum">      48 </span>            :     constexpr static Note G() { return Note {7}; }</a>
-<a name="49"><span class="lineNum">      49 </span>            :     constexpr static Note Ab() { return Note {8}; }</a>
-<a name="50"><span class="lineNum">      50 </span>            :     constexpr static Note A() { return Note {9}; }</a>
-<a name="51"><span class="lineNum">      51 </span>            :     constexpr static Note Bb() { return Note {10}; }</a>
-<a name="52"><span class="lineNum">      52 </span>            :     constexpr static Note B() { return Note {11}; }</a>
-<a name="53"><span class="lineNum">      53 </span>            : };</a>
-<a name="54"><span class="lineNum">      54 </span>            : </a>
-<a name="55"><span class="lineNum">      55 </span>            : constexpr Note C = Note::C();   ///&lt; C (Do)</a>
-<a name="56"><span class="lineNum">      56 </span>            : constexpr Note Db = Note::Db(); ///&lt; C♯, D♭ (Do sharp, Re flat)</a>
-<a name="57"><span class="lineNum">      57 </span>            : constexpr Note D = Note::D();   ///&lt; D (Re)</a>
-<a name="58"><span class="lineNum">      58 </span>            : constexpr Note Eb = Note::Eb(); ///&lt; D♯, E♭ (Re sharp, Mi flat)</a>
-<a name="59"><span class="lineNum">      59 </span>            : constexpr Note E = Note::E();   ///&lt; E (Mi)</a>
-<a name="60"><span class="lineNum">      60 </span>            : constexpr Note F_ = Note::F_(); ///&lt; F (Fa)</a>
-<a name="61"><span class="lineNum">      61 </span>            : constexpr Note Gb = Note::Gb(); ///&lt; F♯, G♭ (Fa sharp, Sol flat)</a>
-<a name="62"><span class="lineNum">      62 </span>            : constexpr Note G = Note::G();   ///&lt; G (Sol)</a>
-<a name="63"><span class="lineNum">      63 </span>            : constexpr Note Ab = Note::Ab(); ///&lt; G♯, A♭ (Sol sharp, La flat)</a>
-<a name="64"><span class="lineNum">      64 </span>            : constexpr Note A = Note::A();   ///&lt; A (La)</a>
-<a name="65"><span class="lineNum">      65 </span>            : constexpr Note Bb = Note::Bb(); ///&lt; A♯, B♭ (La sharp, Si flat)</a>
-<a name="66"><span class="lineNum">      66 </span>            : constexpr Note B = Note::B();   ///&lt; B (Si)</a>
-<a name="67"><span class="lineNum">      67 </span>            : </a>
-<a name="68"><span class="lineNum">      68 </span>            : /// Get the MIDI note in the given octave.</a>
-<a name="69"><span class="lineNum">      69 </span>            : CS_DEPREC(&quot;Instead of `note(C, 4)`, use `MIDI_Notes::C(4)`&quot;)</a>
-<a name="70"><span class="lineNum">      70 </span>            : constexpr int8_t note(Note note, int8_t numOctave) { return note(numOctave); }</a>
+<a name="40"><span class="lineNum">      40 </span><span class="lineCov">          4 :     constexpr int8_t operator[](int8_t octave) const { return (*this)(octave); }</span></a>
+<a name="41"><span class="lineNum">      41 </span>            : </a>
+<a name="42"><span class="lineNum">      42 </span>            :     constexpr static Note(C)() { return Note {0}; }</a>
+<a name="43"><span class="lineNum">      43 </span>            :     constexpr static Note(Db)() { return Note {1}; }</a>
+<a name="44"><span class="lineNum">      44 </span>            :     constexpr static Note(D)() { return Note {2}; }</a>
+<a name="45"><span class="lineNum">      45 </span>            :     constexpr static Note(Eb)() { return Note {3}; }</a>
+<a name="46"><span class="lineNum">      46 </span>            :     constexpr static Note(E)() { return Note {4}; }</a>
+<a name="47"><span class="lineNum">      47 </span>            :     constexpr static Note(F)() { return Note {5}; }</a>
+<a name="48"><span class="lineNum">      48 </span>            :     constexpr static Note(Gb)() { return Note {6}; }</a>
+<a name="49"><span class="lineNum">      49 </span>            :     constexpr static Note(G)() { return Note {7}; }</a>
+<a name="50"><span class="lineNum">      50 </span>            :     constexpr static Note(Ab)() { return Note {8}; }</a>
+<a name="51"><span class="lineNum">      51 </span>            :     constexpr static Note(A)() { return Note {9}; }</a>
+<a name="52"><span class="lineNum">      52 </span>            :     constexpr static Note(Bb)() { return Note {10}; }</a>
+<a name="53"><span class="lineNum">      53 </span>            :     constexpr static Note(B)() { return Note {11}; }</a>
+<a name="54"><span class="lineNum">      54 </span>            : };</a>
+<a name="55"><span class="lineNum">      55 </span>            : </a>
+<a name="56"><span class="lineNum">      56 </span>            : constexpr Note C = (Note::C)();   ///&lt; C (Do)</a>
+<a name="57"><span class="lineNum">      57 </span>            : constexpr Note Db = (Note::Db)(); ///&lt; C♯, D♭ (Do sharp, Re flat)</a>
+<a name="58"><span class="lineNum">      58 </span>            : constexpr Note D = (Note::D)();   ///&lt; D (Re)</a>
+<a name="59"><span class="lineNum">      59 </span>            : constexpr Note Eb = (Note::Eb)(); ///&lt; D♯, E♭ (Re sharp, Mi flat)</a>
+<a name="60"><span class="lineNum">      60 </span>            : constexpr Note E = (Note::E)();   ///&lt; E (Mi)</a>
+<a name="61"><span class="lineNum">      61 </span>            : constexpr Note F = (Note::F)();   ///&lt; F (Fa)</a>
+<a name="62"><span class="lineNum">      62 </span>            : constexpr Note Gb = (Note::Gb)(); ///&lt; F♯, G♭ (Fa sharp, Sol flat)</a>
+<a name="63"><span class="lineNum">      63 </span>            : constexpr Note G = (Note::G)();   ///&lt; G (Sol)</a>
+<a name="64"><span class="lineNum">      64 </span>            : constexpr Note Ab = (Note::Ab)(); ///&lt; G♯, A♭ (Sol sharp, La flat)</a>
+<a name="65"><span class="lineNum">      65 </span>            : constexpr Note A = (Note::A)();   ///&lt; A (La)</a>
+<a name="66"><span class="lineNum">      66 </span>            : constexpr Note Bb = (Note::Bb)(); ///&lt; A♯, B♭ (La sharp, Si flat)</a>
+<a name="67"><span class="lineNum">      67 </span>            : constexpr Note B = (Note::B)();   ///&lt; B (Si)</a>
+<a name="68"><span class="lineNum">      68 </span>            : </a>
+<a name="69"><span class="lineNum">      69 </span>            : CS_DEPREC(&quot;Instead of `MIDI_Notes::F_(4)`, use `MIDI_Notes::F[4]`&quot;)</a>
+<a name="70"><span class="lineNum">      70 </span>            : constexpr Note F_ = (Note::F)(); ///&lt; F (Fa)</a>
 <a name="71"><span class="lineNum">      71 </span>            : </a>
-<a name="72"><span class="lineNum">      72 </span>            : } // namespace MIDI_Notes</a>
-<a name="73"><span class="lineNum">      73 </span>            : </a>
-<a name="74"><span class="lineNum">      74 </span>            : /// @}</a>
+<a name="72"><span class="lineNum">      72 </span>            : /// Get the MIDI note in the given octave.</a>
+<a name="73"><span class="lineNum">      73 </span>            : CS_DEPREC(&quot;Instead of `note(C, 4)`, use `MIDI_Notes::C(4)`&quot;)</a>
+<a name="74"><span class="lineNum">      74 </span>            : constexpr int8_t note(Note note, int8_t numOctave) { return note(numOctave); }</a>
 <a name="75"><span class="lineNum">      75 </span>            : </a>
-<a name="76"><span class="lineNum">      76 </span>            : END_CS_NAMESPACE</a>
+<a name="76"><span class="lineNum">      76 </span>            : } // namespace MIDI_Notes</a>
+<a name="77"><span class="lineNum">      77 </span>            : </a>
+<a name="78"><span class="lineNum">      78 </span>            : /// @}</a>
+<a name="79"><span class="lineNum">      79 </span>            : </a>
+<a name="80"><span class="lineNum">      80 </span>            : END_CS_NAMESPACE</a>
 </pre>
       </td>
     </tr>

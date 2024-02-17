@@ -16,5 +16,6 @@ var searchData=
   ['cs_5fmidi_5fble_5fesp_5fidf_5fnimble_13',['CS_MIDI_BLE_ESP_IDF_NIMBLE',['../d7/d2a/ble_8h.html#a243b22f3caafea04cf9e100eaf925e39',1,'ble.h']]],
   ['cs_5fnamespace_5fname_14',['CS_NAMESPACE_NAME',['../d0/da7/Settings_2NamespaceSettings_8hpp.html#a353461c7ea8d0f14aca0516594049e30',1,'NamespaceSettings.hpp']]],
   ['cs_5ftrue_5fcontrol_5fsurface_5finstance_15',['CS_TRUE_CONTROL_SURFACE_INSTANCE',['../dc/d4f/Settings_2Settings_8hpp.html#a415020f82b6474f74f9f4516af2bfffd',1,'Settings.hpp']]],
-  ['cs_5fuse_5fnimble_16',['CS_USE_NIMBLE',['../df/ded/BluetoothMIDI__Interface_8hpp.html#ab18505a0db7051305855bf0d9155c90f',1,'BluetoothMIDI_Interface.hpp']]]
+  ['cs_5fuse_5fatomic_5frmw_16',['CS_USE_ATOMIC_RMW',['../df/d81/Atomic_8hpp.html#a8d8ffd1aba0aa76472e8fd4b4876d2dd',1,'Atomic.hpp']]],
+  ['cs_5fuse_5fnimble_17',['CS_USE_NIMBLE',['../df/ded/BluetoothMIDI__Interface_8hpp.html#ab18505a0db7051305855bf0d9155c90f',1,'BluetoothMIDI_Interface.hpp']]]
 ];

@@ -92,7 +92,7 @@ $(function() {
 <ul><li class="level1"><a href="#the-midi-protocol">The MIDI protocol</a></li>
 <li class="level1"><a href="#midi_md-midi-interfaces">MIDI interfaces</a><ul><li class="level2"><a href="#midi_md-interfaces-supported-boards">Supported Arduino-compatible boards</a></li>
 <li class="level2"><a href="#midi_md-interfaces-functionality">Functionality</a></li>
-<li class="level2"><a href="#midi_md-instantiate-a-midi-interface">Instantiating a MIDI interface</a></li>
+<li class="level2"><a href="#midi_md-instantiate-a-midi-interface">Instantiating, initializing and updating a MIDI interface</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#midi_md-sending">Sending MIDI messages</a><ul><li class="level2"><a href="#midi_md-sending-simple-example">Simple example</a></li>
@@ -131,7 +131,7 @@ The MIDI protocol</h1>
 <h1><a class="anchor" id="midi_md-midi-interfaces"></a>
 MIDI interfaces</h1>
 <p>Control Surface supports sending and receiving MIDI messages in many different ways: over a standard 5-pin DIN MIDI cable, over USB, over Bluetooth, over WiFi ... <br  />
- Each of those methods is available as a “MIDI Interface” class in the code, you can find a full overview in the <a class="el" href="../../dc/df0/group__MIDIInterfaces.html">MIDI Interfaces</a> module.</p>
+ Each of those methods of transport is available as a “MIDI Interface” class in the code, you can find a full overview in the <a class="el" href="../../dc/df0/group__MIDIInterfaces.html">MIDI Interfaces</a> module.</p>
 <p>The interfaces you're most likely to use are:</p><ul>
 <li><a class="el" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> : the Arduino will be recognized as a MIDI USB device when you plug it into your computer, and this interface allows you to send and receive MIDI messages to and from applications running on the computer.</li>
 <li><a class="el" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> : prints all messages to the Arduino Serial Monitor in a human-readable format, and allows you to easily check that your code sends the correct messages. Also allows you to send messages to the Arduino from the Serial Monitor.</li>
@@ -152,7 +152,7 @@ Functionality</h2>
 </ul>
 <p>In the remainder of this tutorial, one section will be devoted to each of these functions.</p>
 <h2><a class="anchor" id="midi_md-instantiate-a-midi-interface"></a>
-Instantiating a MIDI interface</h2>
+Instantiating, initializing and updating a MIDI interface</h2>
 <p>The following code snippet demonstrates how to instantiate, initialize, and update a MIDI over USB interface. By “instantiate”, we mean that a variable is created that is an <em>instance</em> of the <code><a class="el" href="../../de/d05/classUSBMIDI__Interface.html" title="A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.">USBMIDI_Interface</a></code> type.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
 <div class="line"> </div>
@@ -173,8 +173,8 @@ Instantiating a MIDI interface</h2>
 <div class="ttc" id="aclassGenericUSBMIDI__Interface_html_a44137bb65de2396875934e48a6ee5099"><div class="ttname"><a href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericUSBMIDI_Interface::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Poll the backend (if necessary) and invoke the callbacks for any received MIDI messages,...</div></div>
 <div class="ttc" id="aclassGenericUSBMIDI__Interface_html_a7c3e14d99bd3dc0e3670d6956dafcaf2"><div class="ttname"><a href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">GenericUSBMIDI_Interface::begin</a></div><div class="ttdeci">void begin() override</div><div class="ttdoc">Initialize.</div></div>
 <div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00160">USBMIDI_Interface.hpp:161</a></div></div>
-</div><!-- fragment --><p> Note how the words <code>USBMIDI_Interface</code>, <code>begin</code> and <code>update</code> in the previous snippet are shown in blue and brown: these are links to the documentation for the relevant classes and functions. If you hover over them with your mouse pointer, you'll see a short description, and if you click on the link, it will take you to the detailed documentation.</p>
-<p>The code above doesn't really anything useful yet, it just sets up everything so we can start sending and receiving MIDI messages in the following sections.</p>
+</div><!-- fragment --><p> Note how the words <code>USBMIDI_Interface</code>, <code>begin</code> and <code>update</code> in the previous snippet are shown in different colors: these are links to the documentation for the relevant classes and functions. If you hover over them with your mouse pointer, you'll see a short description, and if you click on the link, it will take you to the detailed documentation.</p>
+<p>The code above doesn't really do anything useful yet, it just sets up everything so we can start sending and receiving MIDI messages in the following sections.</p>
 <p>You can of course replace <code>USBMIDI_Interface</code> by a different type, such as <code>USBDebugMIDI_Interface</code> if that's the MIDI interface you need for your application. </p><div class="fragment"><div class="line"><a class="code hl_class" href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a> midi;</div>
 <div class="ttc" id="aclassUSBDebugMIDI__Interface_html"><div class="ttname"><a href="../../de/d2d/classUSBDebugMIDI__Interface.html">USBDebugMIDI_Interface</a></div><div class="ttdoc">A class for debug MIDI interfaces sending and receiving human-readable MIDI messages over the USB CDC...</div><div class="ttdef"><b>Definition</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00317">DebugMIDI_Interface.hpp:318</a></div></div>
 </div><!-- fragment --><p> Some classes allow you to specify extra parameters: for example, <code>USBDebugMIDI_Interface</code> accepts an optional argument that specifies the baud rate to use when communicating with the Serial Monitor. The possible parameters can be found in the documentation for the <em>constructor</em> of the class in question, for example, see <a class="el" href="../../de/d2d/classUSBDebugMIDI__Interface.html#a8cefbc3dc0153b5b6c39984e10d5e2a5">USBDebugMIDI_Interface::USBDebugMIDI_Interface()</a>, it lists <code>baud</code> as an optional parameter. You can see that it's an optional parameter, because its name is followed by an equal sign (<code>=</code>) and a default value in the function signature.</p>
@@ -205,7 +205,7 @@ Simple example</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Specify the MIDI note number to trigger, and the velocity with which to </span></div>
 <div class="line"><span class="comment">// trigger it</span></div>
-<div class="line"><span class="keyword">const</span> <a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> note = <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4); <span class="comment">// C(4) is middle C</span></div>
+<div class="line"><span class="keyword">const</span> <a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> note = <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]; <span class="comment">// C4 is middle C</span></div>
 <div class="line"><span class="keyword">const</span> uint8_t velocity = 127;              <span class="comment">// 127 is maximum velocity</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
@@ -223,10 +223,10 @@ Simple example</h2>
 <div class="ttc" id="aclassMIDI__Sender_html_ae5438982b69a41d7b4565328f5fd73c8"><div class="ttname"><a href="../../d6/d72/classMIDI__Sender.html#ae5438982b69a41d7b4565328f5fd73c8">MIDI_Sender::sendNoteOff</a></div><div class="ttdeci">void sendNoteOff(MIDIAddress address, uint8_t velocity)</div><div class="ttdoc">Send a MIDI Note Off event.</div></div>
 <div class="ttc" id="aclassSerialDebugMIDI__Interface_html_a7c3e14d99bd3dc0e3670d6956dafcaf2"><div class="ttname"><a href="../../db/dc4/classSerialDebugMIDI__Interface.html#a7c3e14d99bd3dc0e3670d6956dafcaf2">SerialDebugMIDI_Interface::begin</a></div><div class="ttdeci">void begin() override</div><div class="ttdoc">Start the Serial interface at the predefined baud rate.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00272">DebugMIDI_Interface.hpp:272</a></div></div>
 <div class="ttc" id="aclassStreamDebugMIDI__Interface_html_a44137bb65de2396875934e48a6ee5099"><div class="ttname"><a href="../../d8/d0b/classStreamDebugMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">StreamDebugMIDI_Interface::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">Read the MIDI interface and call the callback if a message was received.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d40/DebugMIDI__Interface_8cpp_source.html#l00048">DebugMIDI_Interface.cpp:48</a></div></div>
-<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00055">Notes.hpp:55</a></div></div>
-</div><!-- fragment --><p>First of all, compare this example to the code under <a class="el" href="#midi_md-instantiate-a-midi-interface">Instantiating a MIDI interface</a> : you'll see that the instantiation, initialization and updating of the MIDI interface are exactly the same.</p>
+<div class="ttc" id="anamespaceMIDI__Notes_html_adc612a1e4e057463777480eabc3fb0ca"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a></div><div class="ttdeci">constexpr Note C</div><div class="ttdoc">C (Do)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00056">Notes.hpp:56</a></div></div>
+</div><!-- fragment --><p>First of all, compare this example to the code under <a class="el" href="#midi_md-instantiate-a-midi-interface">Instantiating, initializing and updating a MIDI interface</a> : you'll see that the instantiation, initialization and updating of the MIDI interface are exactly the same.</p>
 <p>The second thing you'll notice are the two constants, <code>note</code> and <code>velocity</code>: these define the MIDI note number and the velocity (how hard the key is struck) to be used when sending the MIDI messages later. <br  />
- The function <code><a class="el" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca" title="C (Do)">MIDI_Notes::C(4)</a></code> gives you the note C in the fourth octave, or middle C. The velocity is a value between 1 and 127, with higher values being louder and harder.</p>
+ The expression <code><a class="el" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca" title="C (Do)">MIDI_Notes::C</a>[4]</code> gives you the note C in the fourth octave, or middle C. The velocity is a value between 1 and 127, with higher values being louder and harder.</p>
 <p>The <code><a class="el" href="../../d7/d0f/classMIDIAddress.html" title="A type-safe utility class for saving a MIDI address consisting of a 7-bit address,...">MIDIAddress</a></code> data type is one of the most important types in the library, it specifies the destination of each MIDI message: in this case, it specifies the note we want to trigger. In a following section, we'll look into <code>MIDIAddress</code> in a bit more detail.</p>
 <p>In the loop function, the <code>note</code> and <code>velocity</code> constants are then used to actually send the MIDI messages. This is done by calling the <code>sendNoteOn()</code> and <code>sendNoteOff()</code> member functions of the MIDI interface. You can find the documentation in the <a class="el" href="../../d6/d72/classMIDI__Sender.html">MIDI_Sender</a> class mentioned earlier, or you can click the brown links in the code snippet.</p>
 <h2><a class="anchor" id="midi_md-midi-addresses"></a>
@@ -266,13 +266,9 @@ Creating a MIDI address variable</h3>
 <h3><a class="anchor" id="midi_md-midi-note-names"></a>
 MIDI Note names</h3>
 <p>For entering MIDI note numbers, you can use the note names in the <a class="el" href="../../d7/d78/namespaceMIDI__Notes.html">MIDI_Notes</a> namespace: </p><div class="fragment"><div class="line"><span class="comment">// MIDI Note middle C (C in the fourth octave) on MIDI Channel 16:</span></div>
-<div class="line"><a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a6531b6a78ab220e27918d0587f66db09">Channel_16</a>};</div>
+<div class="line"><a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4], <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a6531b6a78ab220e27918d0587f66db09">Channel_16</a>};</div>
 <div class="ttc" id="aChannel_8hpp_html_a6531b6a78ab220e27918d0587f66db09"><div class="ttname"><a href="../../d7/d42/Channel_8hpp.html#a6531b6a78ab220e27918d0587f66db09">Channel_16</a></div><div class="ttdeci">constexpr Channel Channel_16</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d42/Channel_8hpp_source.html#l00133">Channel.hpp:133</a></div></div>
-</div><!-- fragment --><p>For reasons explained <a class="el" href="../../da/dc1/FAQ.html#faq-midi-note-f">here</a>, the note F is an exception, you have to add a trailing underscore to avoid conflicts with Arduino's <code>F(...)</code> macro: </p><div class="fragment"><div class="line"><span class="comment">// MIDI Note F in the fourth octave on MIDI Channel 16:</span></div>
-<div class="line"><a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> myAddress = {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#a14636a71c9387b851a68d9519b490b37">MIDI_Notes::F_</a>(4), <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a6531b6a78ab220e27918d0587f66db09">Channel_16</a>};</div>
-<div class="line"><span class="comment">//          note the underscore here  ^</span></div>
-<div class="ttc" id="anamespaceMIDI__Notes_html_a14636a71c9387b851a68d9519b490b37"><div class="ttname"><a href="../../d7/d78/namespaceMIDI__Notes.html#a14636a71c9387b851a68d9519b490b37">MIDI_Notes::F_</a></div><div class="ttdeci">constexpr Note F_</div><div class="ttdoc">F (Fa)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc5/Notes_8hpp_source.html#l00060">Notes.hpp:60</a></div></div>
-</div><!-- fragment --><p> If you look at the full list of note names in the <a class="el" href="../../d7/d78/namespaceMIDI__Notes.html">MIDI_Notes</a> namespace, you'll see that the sharps are missing: you can simply use the flats instead (e.g. instead of using G♯, you can use A♭).</p>
+</div><!-- fragment --><p>If you look at the full list of note names in the <a class="el" href="../../d7/d78/namespaceMIDI__Notes.html">MIDI_Notes</a> namespace, you'll see that the sharps are missing: you can simply use the flats instead (e.g. instead of using G♯, you can use A♭).</p>
 <h3><a class="anchor" id="midi_md-midi-control-change-names"></a>
 MIDI Control Change names</h3>
 <p>Instead of specifying the controller number (address) as a number, you can also use the predefined constants in the <a class="el" href="../../d4/dbe/namespaceMIDI__CC.html">MIDI_CC</a> namespace: </p><div class="fragment"><div class="line"><span class="comment">// Control Change General Purpose Controller #1 on MIDI Channel 2:</span></div>
@@ -436,7 +432,7 @@ Listening for specific messages</h2>
 <div class="line">        <span class="comment">// Check if it&#39;s a note message:</span></div>
 <div class="line">        <span class="keywordtype">bool</span> note_msg = type == msg.NOTE_ON || type == msg.NOTE_OFF;</div>
 <div class="line">        <span class="comment">// Check if it&#39;s the specific note and channel we&#39;re looking for</span></div>
-<div class="line">        <span class="keywordtype">bool</span> our_note = channel == <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a> &amp;&amp; note == <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4);</div>
+<div class="line">        <span class="keywordtype">bool</span> our_note = channel == <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a> &amp;&amp; note == <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4];</div>
 <div class="line">        <span class="comment">// If both conditions are satisfies, print the message</span></div>
 <div class="line">        <span class="keywordflow">if</span> (note_msg &amp;&amp; our_note)</div>
 <div class="line">            Serial &lt;&lt; type &lt;&lt; <span class="stringliteral">&quot; middle C on Channel 1 with velocity &quot;</span></div>
@@ -456,7 +452,7 @@ Listening for specific messages</h2>
 <div class="line">        <span class="comment">// Check if it&#39;s a note message:</span></div>
 <div class="line">        <span class="keywordtype">bool</span> note_msg = type == msg.NOTE_ON || type == msg.NOTE_OFF;</div>
 <div class="line">        <span class="comment">// Define the address we&#39;re interested in</span></div>
-<div class="line">        <span class="keyword">const</span> <a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> our_special_note = {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4), <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>};</div>
+<div class="line">        <span class="keyword">const</span> <a class="code hl_class" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> our_special_note = {<a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4], <a class="code hl_variable" href="../../d7/d42/Channel_8hpp.html#a40d189f24e13a7304f2c9094038588ae">Channel_1</a>};</div>
 <div class="line">        <span class="comment">// If it&#39;s a note message that matches our specific address, print it</span></div>
 <div class="line">        <span class="keywordflow">if</span> (note_msg &amp;&amp; msg.<a class="code hl_function" href="../../d7/d3f/structChannelMessage.html#a9046dc3d1e9082fbcf2ed48be187a3da">getAddress</a>() == our_special_note)</div>
 <div class="line">            Serial &lt;&lt; type &lt;&lt; <span class="stringliteral">&quot; middle C on Channel 1 with velocity &quot;</span></div>
@@ -483,8 +479,8 @@ Default routing</h2>
 <div class="line"><span class="comment">// Instantiate a MIDI over USB interface with the name `midi_usb`</span></div>
 <div class="line"><a class="code hl_class" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi_usb;</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
-<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
+<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
+<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    <span class="comment">// Initialize everything, including MIDI interfaces and default routes</span></div>
@@ -504,7 +500,16 @@ Default routing</h2>
 <p>Two pipes are created, one for MIDI output (<code>pipe_tx</code> in the figure), and one for MIDI input (<code>pipe_rx</code>). These pipes are used to connect the <code>Control_Surface</code> part of the code to the MIDI interface defined on line 4 (<code>midi_usb</code>).</p>
 <p>In the main loop of the program, <code>Control_Surface</code> checks if the button was pressed, and if that's the case, a MIDI message is sent by <code>Control_Surface</code>: The message travels over the MIDI output pipe (<code>pipe_tx</code>) to the MIDI interface (<code>midi_usb</code>), which will then send it to the computer over the USB connection.</p>
 <p>Similarly, when a MIDI message from the computer arrives on the USB connection, the MIDI interface (<code>midi_usb</code>) will send it over the MIDI input pipe (<code>pipe_rx</code>) to the <code>Control_Surface</code> code, which will then check whether it's a MIDI Note On/Off message that matches the address of the LED, and turn on/off the LED accordingly.</p>
-<h2><a class="anchor" id="midi_md-manual-routing"></a>
+<p>If you have multiple MIDI interfaces, you should explicitly set the default interface in your <code>setup</code> function before calling <code>Control_Surface.begin()</code>, using the <a class="el" href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">MIDI_Interface::setAsDefault()</a> function:</p>
+<div class="fragment"><div class="line"><a class="code hl_class" href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a> midi_usb;</div>
+<div class="line"><a class="code hl_class" href="../../d9/d78/classHardwareSerialMIDI__Interface.html">HardwareSerialMIDI_Interface</a> midi_din {Serial1};</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> setup() {</div>
+<div class="line">    midi_usb.<a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">setAsDefault</a>();</div>
+<div class="line">    <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassMIDI__Interface_html_a922dd87d272bb2be2771c43ac974481a"><div class="ttname"><a href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">MIDI_Interface::setAsDefault</a></div><div class="ttdeci">void setAsDefault()</div><div class="ttdoc">Set this MIDI interface as the default interface.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d0f/MIDI__Interface_8cpp_source.html#l00015">MIDI_Interface.cpp:15</a></div></div>
+</div><!-- fragment --><h2><a class="anchor" id="midi_md-manual-routing"></a>
 Manual routing</h2>
 <p>As a first exercise, we'll define the same pipes and routing ourselves, without relying on <code>Control_Surface.begin()</code> to do it automagically.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="../../db/dbf/Control__Surface_8h.html">Control_Surface.h</a>&gt;</span></div>
@@ -514,8 +519,8 @@ Manual routing</h2>
 <div class="line"><span class="comment">// Instantiate the two pipes to connect the interface to Control_Surface</span></div>
 <div class="line"><a class="code hl_class" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> pipe_tx, pipe_rx;</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
-<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
+<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
+<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    <span class="comment">// Manually route MIDI output from Control_Surface to the MIDI interface</span></div>
@@ -546,8 +551,8 @@ Bidirectional MIDI pipes</h2>
 <div class="line"><span class="comment">// Instantiate the pipe to connect the interface to Control_Surface</span></div>
 <div class="line"><a class="code hl_typedef" href="../../df/ddc/group__MIDI__Routing.html#ga987286a8b6dfd1b157a8fde75c203627">BidirectionalMIDI_Pipe</a> pipe_txrx;</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
-<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
+<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
+<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    <span class="comment">// Manually route MIDI output from Control_Surface to the MIDI interface,</span></div>
@@ -576,8 +581,8 @@ Multiple MIDI interfaces</h2>
 <div class="line"><span class="comment">// Instantiate the three pipes to connect the interfaces to Control_Surface</span></div>
 <div class="line"><a class="code hl_class" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> pipe_tx_u, pipe_rx_u, pipe_tx_s;</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
-<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
+<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
+<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    <span class="comment">// Manually route MIDI output from Control_Surface to the USB MIDI interface</span></div>
@@ -606,8 +611,8 @@ MIDI pipe factories</h2>
 <div class="line"><span class="comment">// Instantiate a factory that can produce three pipes</span></div>
 <div class="line"><a class="code hl_struct" href="../../d3/da5/structMIDI__PipeFactory.html">MIDI_PipeFactory&lt;3&gt;</a> pipes;</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
-<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4)};</div>
+<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> button {2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
+<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a> led {13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4]};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    <span class="comment">// Manually route MIDI output from Control_Surface to the USB MIDI interface</span></div>
@@ -673,8 +678,8 @@ Routing between MIDI interfaces</h2>
 <div class="line"><a class="code hl_class" href="../../df/d72/classMIDI__Pipe.html">MIDI_Pipe</a> mpipe;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// You can add normal Control Surface MIDI elements:</span></div>
-<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> btn {  2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4) };</div>
-<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a>    led { 13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>(4) };</div>
+<div class="line"><a class="code hl_class" href="../../d1/d9f/classNoteButton.html">NoteButton</a> btn {  2, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4] };</div>
+<div class="line"><a class="code hl_class" href="../../d9/d55/classNoteCCKPLED.html">NoteLED</a>    led { 13, <a class="code hl_variable" href="../../d7/d78/namespaceMIDI__Notes.html#adc612a1e4e057463777480eabc3fb0ca">MIDI_Notes::C</a>[4] };</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">    midi.<a class="code hl_function" href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">setAsDefault</a>(); <span class="comment">// Make this the primary interface.</span></div>
@@ -685,7 +690,6 @@ Routing between MIDI interfaces</h2>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
 <div class="line">    <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassMIDI__Interface_html_a922dd87d272bb2be2771c43ac974481a"><div class="ttname"><a href="../../d9/d73/classMIDI__Interface.html#a922dd87d272bb2be2771c43ac974481a">MIDI_Interface::setAsDefault</a></div><div class="ttdeci">void setAsDefault()</div><div class="ttdoc">Set this MIDI interface as the default interface.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d0f/MIDI__Interface_8cpp_source.html#l00015">MIDI_Interface.cpp:15</a></div></div>
 <div class="ttc" id="aclassUSBDebugMIDI__Output_html"><div class="ttname"><a href="../../d5/dbc/classUSBDebugMIDI__Output.html">USBDebugMIDI_Output</a></div><div class="ttdoc">A class for debug MIDI outputs sending human-readable MIDI messages over the USB CDC connection.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d55/DebugMIDI__Interface_8hpp_source.html#l00154">DebugMIDI_Interface.hpp:154</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="midi_md-pipes-filtering"></a>
 Filtering or modifying messages passing through a pipe</h2>

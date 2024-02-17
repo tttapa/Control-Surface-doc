@@ -17,7 +17,7 @@ var searchData=
   ['_7emidiinputelement_14',['~MIDIInputElement',['../d9/db1/classMIDIInputElement.html#a83248ce997d320fcec84a313d57caa69',1,'MIDIInputElement']]],
   ['_7emidioutputonly_15',['~MIDIOutputOnly',['../d5/d12/classMIDIOutputOnly.html#ae333dbe030127574aea076736187dff5',1,'MIDIOutputOnly']]],
   ['_7emidistaller_16',['~MIDIStaller',['../d4/d48/structMIDIStaller.html#aafe1c6295a71d3faf87a2ed968db9ea8',1,'MIDIStaller']]],
-  ['_7epluggableusbmidi_17',['~PluggableUSBMIDI',['../d1/dd4/classPluggableUSBMIDI.html#aeba20480da8c27eab07bff6cceef84cb',1,'PluggableUSBMIDI::~PluggableUSBMIDI()'],['../d1/dd4/classPluggableUSBMIDI.html#aeba20480da8c27eab07bff6cceef84cb',1,'PluggableUSBMIDI::~PluggableUSBMIDI()']]],
+  ['_7epluggableusbmidi_17',['~PluggableUSBMIDI',['../d1/dd4/classPluggableUSBMIDI.html#aeba20480da8c27eab07bff6cceef84cb',1,'PluggableUSBMIDI']]],
   ['_7epollingblemidisender_18',['~PollingBLEMIDISender',['../d9/dc8/classPollingBLEMIDISender.html#ad6ced890e964d7ff6ed3bafdf75694aa',1,'PollingBLEMIDISender']]],
   ['_7ethreadedblemidisender_19',['~ThreadedBLEMIDISender',['../dd/da0/classThreadedBLEMIDISender.html#afb14a6fe30b9f45e1bb9dcfe5a619afe',1,'ThreadedBLEMIDISender']]],
   ['_7eupdatablecrtp_20',['~UpdatableCRTP',['../d8/d1a/classAH_1_1UpdatableCRTP.html#a8c6961fd0771eb386881f1e8fcbbb205',1,'AH::UpdatableCRTP']]]
