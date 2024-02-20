@@ -77,7 +77,7 @@ var searchData=
   ['other_74',['Other',['../d4/de9/examples.html#examples-midi-output-elements-other',1,'Other'],['../d4/de9/examples.html#examples-midi-input-elements-other',1,'Other']]],
   ['other_20espressif_20boards_75',['Other Espressif boards',['../d8/d4a/md_pages_MIDI-over-USB.html#other-espressif-boards',1,'']]],
   ['other_20examples_76',['Other examples',['../d4/de9/examples.html#examples-other-examples',1,'']]],
-  ['other_5fbuf_77',['other_buf',['../d1/dd4/classPluggableUSBMIDI.html#a613ccc34a9788e285b38ad99ff73405c',1,'PluggableUSBMIDI']]],
+  ['other_5fbuf_77',['other_buf',['../dc/d2d/structBulkTX.html#a613ccc34a9788e285b38ad99ff73405c',1,'BulkTX']]],
   ['out_20of_20ram_78',['How can I save memory when running out of RAM?',['../da/dc1/FAQ.html#faq-save-memory',1,'']]],
   ['out_5fcallback_79',['out_callback',['../d1/dd4/classPluggableUSBMIDI.html#a30a12fb9a8c72ffd7f4090f609f2ebc9',1,'PluggableUSBMIDI::out_callback()'],['../de/d93/classTeensyHostMIDI.html#abf1e8abce967cba5ae9949a0fe7d24cb',1,'TeensyHostMIDI::out_callback()']]],
   ['outpipe_80',['outpipe',['../dc/d45/classControl__Surface__.html#aab804d70bb0ddb06326bfaf9a111d9ff',1,'Control_Surface_']]],

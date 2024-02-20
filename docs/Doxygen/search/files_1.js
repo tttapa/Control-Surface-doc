@@ -52,7 +52,9 @@ var searchData=
   ['btstackbackgroundbackend_2ehpp_49',['BTstackBackgroundBackend.hpp',['../d7/d71/BTstackBackgroundBackend_8hpp.html',1,'']]],
   ['bufferedblemidiparser_2ehpp_50',['BufferedBLEMIDIParser.hpp',['../dc/d8a/BufferedBLEMIDIParser_8hpp.html',1,'']]],
   ['bufferpuller_2ehpp_51',['BufferPuller.hpp',['../db/d69/BufferPuller_8hpp.html',1,'']]],
-  ['button_2ecpp_52',['Button.cpp',['../de/dd1/Button_8cpp.html',1,'']]],
-  ['button_2ehpp_53',['Button.hpp',['../d4/db3/Button_8hpp.html',1,'']]],
-  ['buttonmatrix_2ehpp_54',['ButtonMatrix.hpp',['../d9/d4b/ButtonMatrix_8hpp.html',1,'']]]
+  ['bulkrx_2ehpp_52',['BulkRX.hpp',['../d0/d64/BulkRX_8hpp.html',1,'']]],
+  ['bulktx_2ehpp_53',['BulkTX.hpp',['../d5/d4e/BulkTX_8hpp.html',1,'']]],
+  ['button_2ecpp_54',['Button.cpp',['../de/dd1/Button_8cpp.html',1,'']]],
+  ['button_2ehpp_55',['Button.hpp',['../d4/db3/Button_8hpp.html',1,'']]],
+  ['buttonmatrix_2ehpp_56',['ButtonMatrix.hpp',['../d9/d4b/ButtonMatrix_8hpp.html',1,'']]]
 ];

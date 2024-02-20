@@ -6,7 +6,7 @@ var searchData=
   ['p8_3',['P8',['../da/dd4/namespaceIntervals.html#a6a81b6a493dc7113e8c2c47c5926a67c',1,'Intervals']]],
   ['packet_4',['packet',['../d9/dc8/classPollingBLEMIDISender.html#a08dd189b76526d18ab0ada69c5a5c6ee',1,'PollingBLEMIDISender::packet'],['../d6/d2f/structPollingBLEMIDISender_1_1ProtectedBuilder.html#a3f8c09e824c4c4b49d30e017118fff39',1,'PollingBLEMIDISender::ProtectedBuilder::packet'],['../dd/da0/classThreadedBLEMIDISender.html#a08dd189b76526d18ab0ada69c5a5c6ee',1,'ThreadedBLEMIDISender::packet'],['../de/d11/structThreadedBLEMIDISender_1_1ProtectedBuilder.html#a3f8c09e824c4c4b49d30e017118fff39',1,'ThreadedBLEMIDISender::ProtectedBuilder::packet']]],
   ['packet_5fstart_5ftime_5',['packet_start_time',['../d9/dc8/classPollingBLEMIDISender.html#a84776e9fe0d81e037b8c199137c4dc68',1,'PollingBLEMIDISender']]],
-  ['packetsize_6',['PacketSize',['../d1/dd4/classPluggableUSBMIDI.html#a18bfd805d3010177c33003fbfd58baa5',1,'PluggableUSBMIDI::PacketSize'],['../de/d93/classTeensyHostMIDI.html#a18bfd805d3010177c33003fbfd58baa5',1,'TeensyHostMIDI::PacketSize']]],
+  ['packetsize_6',['PacketSize',['../d5/d1c/structBulkRX.html#afe46822e3867527602b57969da82687e',1,'BulkRX::PacketSize'],['../dc/d2d/structBulkTX.html#afe46822e3867527602b57969da82687e',1,'BulkTX::PacketSize'],['../de/d93/classTeensyHostMIDI.html#a18bfd805d3010177c33003fbfd58baa5',1,'TeensyHostMIDI::PacketSize']]],
   ['pad_5f1_7',['Pad_1',['../da/da6/namespaceMIDI__PC.html#a0daec6fe90ff6ff2f7079778f98af194',1,'MIDI_PC']]],
   ['pad_5f2_8',['Pad_2',['../da/da6/namespaceMIDI__PC.html#a662378340e8e83a6bc564c86fc5c9987',1,'MIDI_PC']]],
   ['pad_5f3_9',['Pad_3',['../da/da6/namespaceMIDI__PC.html#aa486bf6eb613979a90037ff54a433c22',1,'MIDI_PC']]],

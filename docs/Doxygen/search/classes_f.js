@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['reading_0',['Reading',['../d3/d97/structPluggableUSBMIDI_1_1Reading.html',1,'PluggableUSBMIDI::Reading'],['../d1/d81/structTeensyHostMIDI_1_1Reading.html',1,'TeensyHostMIDI&lt; MaxPacketSize &gt;::Reading']]],
+  ['reading_0',['Reading',['../d2/da9/structBulkRX_1_1Reading.html',1,'BulkRX&lt; Derived, MessageTypeT, PacketSizeV &gt;::Reading'],['../d1/d81/structTeensyHostMIDI_1_1Reading.html',1,'TeensyHostMIDI&lt; MaxPacketSize &gt;::Reading']]],
   ['realtimemessage_1',['RealTimeMessage',['../d6/d99/structRealTimeMessage.html',1,'']]],
   ['registerencoders_2',['RegisterEncoders',['../d2/d7b/classAH_1_1RegisterEncoders.html',1,'AH']]],
   ['registerencoders_3c_20uint16_5ft_2c_208_2c_20int32_5ft_2c_20false_20_3e_3',['RegisterEncoders&lt; uint16_t, 8, int32_t, false &gt;',['../d2/d7b/classAH_1_1RegisterEncoders.html',1,'AH']]],

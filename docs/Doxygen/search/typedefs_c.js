@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rbuffer_5ft_0',['rbuffer_t',['../d1/dd4/classPluggableUSBMIDI.html#a3052fbdabb9e4292e5414202be987b48',1,'PluggableUSBMIDI::rbuffer_t'],['../de/d93/classTeensyHostMIDI.html#a779a03f15b33a309cab4fa66b775902d',1,'TeensyHostMIDI::rbuffer_t']]],
+  ['rbuffer_5ft_0',['rbuffer_t',['../d5/d1c/structBulkRX.html#a3052fbdabb9e4292e5414202be987b48',1,'BulkRX::rbuffer_t'],['../de/d93/classTeensyHostMIDI.html#a779a03f15b33a309cab4fa66b775902d',1,'TeensyHostMIDI::rbuffer_t']]],
   ['realtimemessagecallback_1',['RealTimeMessageCallback',['../dc/d45/classControl__Surface__.html#a65169ea1d6451a127b4c27a855d0c875',1,'Control_Surface_']]],
   ['reference_2',['reference',['../dd/d02/classDoublyLinkedList_1_1node__iterator.html#a1cb518c14833569c92498bb062f6206f',1,'DoublyLinkedList::node_iterator::reference'],['../d1/d4c/classDoublyLinkedList_1_1reverse__node__iterator.html#a1cb518c14833569c92498bb062f6206f',1,'DoublyLinkedList::reverse_node_iterator::reference']]],
   ['registerencodertype_3',['RegisterEncoderType',['../dc/d42/classAH_1_1MCP23017Encoders.html#af38d7b101da7868519c569e5c14fcd43',1,'AH::MCP23017Encoders']]],
