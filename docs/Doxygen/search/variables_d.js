@@ -18,5 +18,5 @@ var searchData=
   ['numbanks_15',['NumBanks',['../da/db8/classTransposer.html#a9af4788c43212c21ef564d7d9b660858',1,'Transposer']]],
   ['number_5farguments_16',['number_arguments',['../d4/dfd/structAH_1_1function__traits_3_01Return_07Args_8_8_8_08_4.html#a9184a94a28a45562855731a9841ffb87',1,'AH::function_traits&lt; Return(Args...)&gt;']]],
   ['numericchars_17',['NumericChars',['../dc/d69/namespaceAH.html#a22aef2ea85e50ea5193e012410dfb4b0',1,'AH']]],
-  ['numrxpackets_18',['NumRxPackets',['../d5/d1c/structBulkRX.html#ad61efd6c22f7570f48cd3b3baecd6dd3',1,'BulkRX::NumRxPackets'],['../de/d93/classTeensyHostMIDI.html#ad38f56be092daefd5d46c1dd105c187b',1,'TeensyHostMIDI::NumRxPackets']]]
+  ['numrxpackets_18',['NumRxPackets',['../d5/d1c/structBulkRX.html#ad61efd6c22f7570f48cd3b3baecd6dd3',1,'BulkRX']]]
 ];

@@ -33,7 +33,7 @@ var searchData=
   ['acquirepacket_30',['acquirePacket',['../d9/dc8/classPollingBLEMIDISender.html#a904bc2f66351893faadd7f6967ed920d',1,'PollingBLEMIDISender::acquirePacket()'],['../dd/da0/classThreadedBLEMIDISender.html#a904bc2f66351893faadd7f6967ed920d',1,'ThreadedBLEMIDISender::acquirePacket()'],['../de/d82/classESP32BLEBackend.html#a904bc2f66351893faadd7f6967ed920d',1,'ESP32BLEBackend::acquirePacket()']]],
   ['activate_31',['activate',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a8011fcbeb5efeda20bd2dbffbbb70165',1,'Bankable::SmartMIDIFilteredAnalog']]],
   ['active_32',['Active',['../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a5d74787dedbc4e11c1ab15bf487e61f8a26bd8444261cc58df7a86753c79d2520',1,'Bankable::SmartMIDIFilteredAnalog']]],
-  ['active_5fwritebuffer_33',['active_writebuffer',['../d4/d25/structBulkTX_1_1Writing.html#a0ec8403075dd7b9af36087dff8323080',1,'BulkTX::Writing::active_writebuffer'],['../d0/d0e/structTeensyHostMIDI_1_1Writing.html#a5d0600248640756c2e4301d3b4896410',1,'TeensyHostMIDI::Writing::active_writebuffer']]],
+  ['active_5fwritebuffer_33',['active_writebuffer',['../d4/d25/structBulkTX_1_1Writing.html#a0ec8403075dd7b9af36087dff8323080',1,'BulkTX::Writing']]],
   ['activebuttons_34',['activeButtons',['../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a2643a90bc676680033bc6b8b08ac8ccc',1,'Bankable::MIDIButtonMatrix::activeButtons'],['../dc/d22/classBankable_1_1MIDIButtons.html#a634a7b67351a9235d932b28bb7a1d5c7',1,'Bankable::MIDIButtons::activeButtons']]],
   ['activecable_35',['activeCable',['../db/db0/classUSBMIDI__Parser.html#aa6f9c42d85c6acfc193e561b0bdd4fd5',1,'USBMIDI_Parser']]],
   ['activesensing_36',['ActiveSensing',['../d6/d99/structRealTimeMessage.html#afc5b95f2161e26ea4c4cf55d5b5f0374',1,'RealTimeMessage::ActiveSensing'],['../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5a3c7c00966421fa6a30941853ca8f2344',1,'ActiveSensing:&#160;MIDI_MessageTypes.hpp']]],
@@ -107,7 +107,7 @@ var searchData=
   ['all_20midi_20messages_104',['Send-All-MIDI-Messages',['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#send-all-midi-messages',1,'']]],
   ['all_5fnotes_5foff_105',['All_Notes_Off',['../d4/dbe/namespaceMIDI__CC.html#ae134077aeb69df5c00392399f9e45a5b',1,'MIDI_CC']]],
   ['all_5fsound_5foff_106',['All_Sound_Off',['../d4/dbe/namespaceMIDI__CC.html#a08f4685858e8d25f7533f19875daa9e4',1,'MIDI_CC']]],
-  ['alpha_107',['alpha',['../db/d6f/classEMA__f.html#ab1551d8043c2aa4410fb7dbb1fe3be7b',1,'EMA_f']]],
+  ['alpha_107',['alpha',['../d7/d89/classAH_1_1EMA__f.html#ab1551d8043c2aa4410fb7dbb1fe3be7b',1,'AH::EMA_f']]],
   ['alphachars_108',['AlphaChars',['../dc/d69/namespaceAH.html#a421add2f41548ad816d5d9bb028cfa6f',1,'AH']]],
   ['alto_5fsax_109',['Alto_Sax',['../da/da6/namespaceMIDI__PC.html#ad8b68fbc88c0fbebfe3bd0b2a0c7ba67',1,'MIDI_PC']]],
   ['alwaysdirty_110',['alwaysDirty',['../dc/d25/classInterfaces_1_1MCU_1_1IVU.html#a8796e23a9c190581d7c7c952f18fd67c',1,'Interfaces::MCU::IVU']]],
@@ -249,5 +249,5 @@ var searchData=
   ['automation_5ftouch_246',['AUTOMATION_TOUCH',['../de/d44/group__MCU__Notes.html#gaa21570085b03e90d11132abafb4713c4',1,'MCU']]],
   ['automation_5ftrim_247',['AUTOMATION_TRIM',['../de/d44/group__MCU__Notes.html#ga9adb75640a982b568593d0cfe410a039',1,'MCU']]],
   ['automation_5fwrite_248',['AUTOMATION_WRITE',['../de/d44/group__MCU__Notes.html#ga8ea03657091b12273414495178531278',1,'MCU']]],
-  ['available_249',['available',['../d2/da9/structBulkRX_1_1Reading.html#a7accf2aea8a7012a8506639d03c297cd',1,'BulkRX::Reading::available'],['../d1/d81/structTeensyHostMIDI_1_1Reading.html#a659526f5473580291941ab508328db34',1,'TeensyHostMIDI::Reading::available'],['../d0/d18/classAudioVU_1_1Analyzer.html#a9b8af08c84002ce80db79bf7c3dfe0b2',1,'AudioVU::Analyzer::available()']]]
+  ['available_249',['available',['../d2/da9/structBulkRX_1_1Reading.html#a7accf2aea8a7012a8506639d03c297cd',1,'BulkRX::Reading::available'],['../d0/d18/classAudioVU_1_1Analyzer.html#a9b8af08c84002ce80db79bf7c3dfe0b2',1,'AudioVU::Analyzer::available()']]]
 ];

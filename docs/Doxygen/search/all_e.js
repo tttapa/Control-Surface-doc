@@ -2,8 +2,8 @@ var searchData=
 [
   ['hairless_5fbaud_0',['HAIRLESS_BAUD',['../dc/d4f/Settings_2Settings_8hpp.html#aee625974250707110fbe8686b37ae3a1',1,'Settings.hpp']]],
   ['hairlessmidi_5finterface_1',['HairlessMIDI_Interface',['../dc/dff/classHairlessMIDI__Interface.html',1,'HairlessMIDI_Interface'],['../dc/dff/classHairlessMIDI__Interface.html#a712c666f6a1a627ebfbb3f39a0533ad9',1,'HairlessMIDI_Interface::HairlessMIDI_Interface()']]],
-  ['half_2',['half',['../d7/d40/classEMA.html#a1ac0d30afd365cf3e72cdd9d750e0b34',1,'EMA']]],
-  ['half_5fstate_3',['half_state',['../d7/d40/classEMA.html#adcb507f386326b6ae02d07c3e9358f9e',1,'EMA']]],
+  ['half_2',['half',['../d9/d74/classAH_1_1EMA.html#a1ac0d30afd365cf3e72cdd9d750e0b34',1,'AH::EMA']]],
+  ['half_5fstate_3',['half_state',['../d9/d74/classAH_1_1EMA.html#adcb507f386326b6ae02d07c3e9358f9e',1,'AH::EMA']]],
   ['hamiltonianproduct_4',['hamiltonianProduct',['../da/d32/structAH_1_1Quaternion.html#a59e5752ae9fde2d095ed008aa8d4dd6d',1,'AH::Quaternion']]],
   ['handlechannelmessage_5',['handleChannelMessage',['../db/db0/classUSBMIDI__Parser.html#a55094cd2ad151f2c97a640179629160c',1,'USBMIDI_Parser']]],
   ['handleconnect_6',['handleConnect',['../d9/d88/classArduinoBLEBackend.html#a592a6a7c0e9f1eee1ec2b3f5e189c70a',1,'ArduinoBLEBackend::handleConnect()'],['../dd/da4/classMIDIBLEInstance.html#abbf80b0bc310ef73759a17f44858543f',1,'MIDIBLEInstance::handleConnect()'],['../d5/d2a/classBTstackBackgroundBackend.html#a14c292c4e41e6c855cff231524751ae8',1,'BTstackBackgroundBackend::handleConnect()'],['../de/d82/classESP32BLEBackend.html#a14c292c4e41e6c855cff231524751ae8',1,'ESP32BLEBackend::handleConnect()']]],
@@ -77,10 +77,10 @@ var searchData=
   ['how_20can_20i_20save_20memory_20when_20running_20out_20of_20ram_74',['How can I save memory when running out of RAM?',['../da/dc1/FAQ.html#faq-save-memory',1,'']]],
   ['how_20do_20banks_20work_75',['How do banks work?',['../da/dc1/FAQ.html#faq-banks',1,'']]],
   ['hungry_20components_76',['Disabling memory-hungry components',['../da/dc1/FAQ.html#faq-save-memory-disable-components',1,'']]],
-  ['hysteresis_77',['Hysteresis',['../d2/dcb/classHysteresis.html',1,'']]],
+  ['hysteresis_77',['Hysteresis',['../da/df9/classAH_1_1Hysteresis.html',1,'AH']]],
   ['hysteresis_78',['hysteresis',['../da/d36/classAH_1_1GenericFilteredAnalog.html#ac59ad53f58c22dda10715b40fcf441dc',1,'AH::GenericFilteredAnalog']]],
   ['hysteresis_2ehpp_79',['Hysteresis.hpp',['../d3/d09/Hysteresis_8hpp.html',1,'']]],
-  ['hysteresis_3c_200_2c_20t_5fin_2c_20t_5fout_20_3e_80',['Hysteresis&lt; 0, T_in, T_out &gt;',['../df/dcd/classHysteresis_3_010_00_01T__in_00_01T__out_01_4.html',1,'']]],
-  ['hysteresis_3c_20adc_5fbits_2bincres_20_2d_20precision_2c_20analog_5ft_2c_20analog_5ft_20_3e_81',['Hysteresis&lt; ADC_BITS+IncRes - Precision, analog_t, analog_t &gt;',['../d2/dcb/classHysteresis.html',1,'']]],
-  ['hysteresis_3c_20adc_5fbits_2bmaximumfilteredanalogincres_3c_20analog_5ffilter_5fshift_5ffactor_2c_20analog_5ffilter_5ftype_2c_20analog_5ft_20_3e_3a_3avalue_20_2d_2010_2c_20analog_5ft_2c_20analog_5ft_20_3e_82',['Hysteresis&lt; ADC_BITS+MaximumFilteredAnalogIncRes&lt; ANALOG_FILTER_SHIFT_FACTOR, ANALOG_FILTER_TYPE, analog_t &gt;::value - 10, analog_t, analog_t &gt;',['../d2/dcb/classHysteresis.html',1,'']]]
+  ['hysteresis_3c_200_2c_20t_5fin_2c_20t_5fout_20_3e_80',['Hysteresis&lt; 0, T_in, T_out &gt;',['../d6/dae/classAH_1_1Hysteresis_3_010_00_01T__in_00_01T__out_01_4.html',1,'AH']]],
+  ['hysteresis_3c_20adc_5fbits_2bincres_20_2d_20precision_2c_20analog_5ft_2c_20analog_5ft_20_3e_81',['Hysteresis&lt; ADC_BITS+IncRes - Precision, analog_t, analog_t &gt;',['../da/df9/classAH_1_1Hysteresis.html',1,'AH']]],
+  ['hysteresis_3c_20adc_5fbits_2bmaximumfilteredanalogincres_3c_20analog_5ffilter_5fshift_5ffactor_2c_20analog_5ffilter_5ftype_2c_20analog_5ft_20_3e_3a_3avalue_20_2d_2010_2c_20analog_5ft_2c_20analog_5ft_20_3e_82',['Hysteresis&lt; ADC_BITS+MaximumFilteredAnalogIncRes&lt; ANALOG_FILTER_SHIFT_FACTOR, ANALOG_FILTER_TYPE, analog_t &gt;::value - 10, analog_t, analog_t &gt;',['../da/df9/classAH_1_1Hysteresis.html',1,'AH']]]
 ];

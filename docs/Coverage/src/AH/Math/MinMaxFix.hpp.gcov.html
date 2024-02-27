@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d6a5fb1313f8e483b13619dba1fa80d0ec09ca62 - src/AH/Math/MinMaxFix.hpp</title>
+  <title>LCOV - 344324d0e662e2a4c2b1a7336d078f14c5e13c16 - src/AH/Math/MinMaxFix.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d6a5fb1313f8e483b13619dba1fa80d0ec09ca62</td>
+            <td class="headerValue">344324d0e662e2a4c2b1a7336d078f14c5e13c16</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">4</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-02-20 22:09:33</td>
+            <td class="headerValue">2024-02-27 23:25:53</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -70,32 +70,27 @@
 <pre class="source">
 <a name="1"><span class="lineNum">       1 </span>            : #pragma once</a>
 <a name="2"><span class="lineNum">       2 </span>            : </a>
-<a name="3"><span class="lineNum">       3 </span>            : #include &lt;AH/Settings/Warnings.hpp&gt;</a>
-<a name="4"><span class="lineNum">       4 </span>            : AH_DIAGNOSTIC_WERROR() // Enable errors on warnings</a>
-<a name="5"><span class="lineNum">       5 </span>            : </a>
-<a name="6"><span class="lineNum">       6 </span>            : #include &lt;AH/Math/FixArduinoMacros.hpp&gt;</a>
-<a name="7"><span class="lineNum">       7 </span>            : </a>
-<a name="8"><span class="lineNum">       8 </span>            : #include &lt;AH/Settings/NamespaceSettings.hpp&gt;</a>
-<a name="9"><span class="lineNum">       9 </span>            : </a>
-<a name="10"><span class="lineNum">      10 </span>            : BEGIN_AH_NAMESPACE</a>
-<a name="11"><span class="lineNum">      11 </span>            : </a>
-<a name="12"><span class="lineNum">      12 </span>            : /// Return the smaller of two numbers/objects.</a>
-<a name="13"><span class="lineNum">      13 </span>            : /// @ingroup    AH_Math</a>
-<a name="14"><span class="lineNum">      14 </span>            : template &lt;class T, class U&gt;</a>
-<a name="15"><span class="lineNum">      15 </span><span class="lineCov">    1000003 : constexpr auto min(const T &amp;a, const U &amp;b) -&gt; decltype(b &lt; a ? b : a) {</span></a>
-<a name="16"><span class="lineNum">      16 </span><span class="lineCov">    1000003 :     return b &lt; a ? b : a;</span></a>
-<a name="17"><span class="lineNum">      17 </span>            : }</a>
-<a name="18"><span class="lineNum">      18 </span>            : </a>
-<a name="19"><span class="lineNum">      19 </span>            : /// Return the larger of two numbers/objects.</a>
-<a name="20"><span class="lineNum">      20 </span>            : /// @ingroup    AH_Math</a>
-<a name="21"><span class="lineNum">      21 </span>            : template &lt;class T, class U&gt;</a>
-<a name="22"><span class="lineNum">      22 </span><span class="lineCov">       5236 : constexpr auto max(const T &amp;a, const U &amp;b) -&gt; decltype(a &lt; b ? b : a) {</span></a>
-<a name="23"><span class="lineNum">      23 </span><span class="lineCov">       5236 :     return a &lt; b ? b : a;</span></a>
-<a name="24"><span class="lineNum">      24 </span>            : }</a>
-<a name="25"><span class="lineNum">      25 </span>            : </a>
-<a name="26"><span class="lineNum">      26 </span>            : END_AH_NAMESPACE</a>
-<a name="27"><span class="lineNum">      27 </span>            : </a>
-<a name="28"><span class="lineNum">      28 </span>            : AH_DIAGNOSTIC_POP()</a>
+<a name="3"><span class="lineNum">       3 </span>            : #include &lt;AH/Math/FixArduinoMacros.hpp&gt;</a>
+<a name="4"><span class="lineNum">       4 </span>            : </a>
+<a name="5"><span class="lineNum">       5 </span>            : #include &lt;AH/Settings/NamespaceSettings.hpp&gt;</a>
+<a name="6"><span class="lineNum">       6 </span>            : </a>
+<a name="7"><span class="lineNum">       7 </span>            : BEGIN_AH_NAMESPACE</a>
+<a name="8"><span class="lineNum">       8 </span>            : </a>
+<a name="9"><span class="lineNum">       9 </span>            : /// Return the smaller of two numbers/objects.</a>
+<a name="10"><span class="lineNum">      10 </span>            : /// @ingroup    AH_Math</a>
+<a name="11"><span class="lineNum">      11 </span>            : template &lt;class T, class U&gt;</a>
+<a name="12"><span class="lineNum">      12 </span><span class="lineCov">    1000003 : constexpr auto min(const T &amp;a, const U &amp;b) -&gt; decltype(b &lt; a ? b : a) {</span></a>
+<a name="13"><span class="lineNum">      13 </span><span class="lineCov">    1000003 :     return b &lt; a ? b : a;</span></a>
+<a name="14"><span class="lineNum">      14 </span>            : }</a>
+<a name="15"><span class="lineNum">      15 </span>            : </a>
+<a name="16"><span class="lineNum">      16 </span>            : /// Return the larger of two numbers/objects.</a>
+<a name="17"><span class="lineNum">      17 </span>            : /// @ingroup    AH_Math</a>
+<a name="18"><span class="lineNum">      18 </span>            : template &lt;class T, class U&gt;</a>
+<a name="19"><span class="lineNum">      19 </span><span class="lineCov">       5236 : constexpr auto max(const T &amp;a, const U &amp;b) -&gt; decltype(a &lt; b ? b : a) {</span></a>
+<a name="20"><span class="lineNum">      20 </span><span class="lineCov">       5236 :     return a &lt; b ? b : a;</span></a>
+<a name="21"><span class="lineNum">      21 </span>            : }</a>
+<a name="22"><span class="lineNum">      22 </span>            : </a>
+<a name="23"><span class="lineNum">      23 </span>            : END_AH_NAMESPACE</a>
 </pre>
       </td>
     </tr>

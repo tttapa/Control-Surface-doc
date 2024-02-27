@@ -105,5 +105,5 @@ var searchData=
   ['numeric_102',['Numeric',['..//home/runner/work/Control-Surface/Control-Surface/examples/examples.dox#numeric',1,'']]],
   ['numericchars_103',['NumericChars',['../dc/d69/namespaceAH.html#a22aef2ea85e50ea5193e012410dfb4b0',1,'AH']]],
   ['numinterrupts_2ehpp_104',['NumInterrupts.hpp',['../d0/d8c/NumInterrupts_8hpp.html',1,'']]],
-  ['numrxpackets_105',['NumRxPackets',['../d5/d1c/structBulkRX.html#ad61efd6c22f7570f48cd3b3baecd6dd3',1,'BulkRX::NumRxPackets'],['../de/d93/classTeensyHostMIDI.html#ad38f56be092daefd5d46c1dd105c187b',1,'TeensyHostMIDI::NumRxPackets']]]
+  ['numrxpackets_105',['NumRxPackets',['../d5/d1c/structBulkRX.html#ad61efd6c22f7570f48cd3b3baecd6dd3',1,'BulkRX']]]
 ];

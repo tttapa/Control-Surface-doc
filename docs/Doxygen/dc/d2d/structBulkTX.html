@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Control Surface: BulkTX&lt; Derived, MessageTypeT, PacketSizeV &gt; Struct Template Reference</title>
+<title>Control Surface: BulkTX&lt; Derived, MessageTypeT, MaxPacketSizeV &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,22 +95,29 @@ $(function() {
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="../../d1/df4/structBulkTX-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">BulkTX&lt; Derived, MessageTypeT, PacketSizeV &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">BulkTX&lt; Derived, MessageTypeT, MaxPacketSizeV &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">MIDI_Interfaces/USBMIDI/LowLevel/BulkTX.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class Derived, class MessageTypeT, uint16_t PacketSizeV&gt;<br />
-struct BulkTX&lt; Derived, MessageTypeT, PacketSizeV &gt;</div><p>Sends Bulk packets (IN for device mode, OUT for host mode) </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class Derived, class MessageTypeT, uint16_t MaxPacketSizeV&gt;<br />
+struct BulkTX&lt; Derived, MessageTypeT, MaxPacketSizeV &gt;</div><p>Sends Bulk packets (IN for device mode, OUT for host mode) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00012">12</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for BulkTX&lt; Derived, MessageTypeT, PacketSizeV &gt;:</div>
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Inheritance diagram for BulkTX&lt; Derived, MessageTypeT, MaxPacketSizeV &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dee/structBulkTX__coll__graph.svg" width="388" height="1414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d89/structBulkTX__inherit__graph.svg" width="215" height="1594"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Collaboration diagram for BulkTX&lt; Derived, MessageTypeT, MaxPacketSizeV &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/dee/structBulkTX__coll__graph.svg" width="327" height="1046"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -142,11 +149,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58dd3883e327a344ac7c2d52b58e7280" id="r_a58dd3883e327a344ac7c2d52b58e7280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58dd3883e327a344ac7c2d52b58e7280">send_now</a> ()</td></tr>
 <tr class="memdesc:a58dd3883e327a344ac7c2d52b58e7280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try sending the buffered data now.  <br /></td></tr>
 <tr class="separator:a58dd3883e327a344ac7c2d52b58e7280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8263fe2be2a6bbea9b57190f014e7815" id="r_a8263fe2be2a6bbea9b57190f014e7815"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8263fe2be2a6bbea9b57190f014e7815">is_done</a> () const</td></tr>
+<tr class="memdesc:a8263fe2be2a6bbea9b57190f014e7815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if all transfers have completed.  <br /></td></tr>
+<tr class="separator:a8263fe2be2a6bbea9b57190f014e7815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55" id="r_ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
-<tr class="separator:ad20897c5c8bd47f5d4005989bead0e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b35a22ba0acf5d531732552008541a1" id="r_a9b35a22ba0acf5d531732552008541a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b35a22ba0acf5d531732552008541a1">reset</a> (uint16_t packet_size=<a class="el" href="#a8d749ba22f12f17ddcc32deb706cb8a6">MaxPacketSize</a>)</td></tr>
+<tr class="separator:a9b35a22ba0acf5d531732552008541a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a396cb7380c874afe185b8298507e0eae" id="r_a396cb7380c874afe185b8298507e0eae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a396cb7380c874afe185b8298507e0eae">start_timeout</a> ()=delete</td></tr>
 <tr class="memdesc:a396cb7380c874afe185b8298507e0eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a timeout (e.g.  <br /></td></tr>
 <tr class="separator:a396cb7380c874afe185b8298507e0eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,14 +188,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a1f41aafa522e0de91c7b2ca4f5d64953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613ccc34a9788e285b38ad99ff73405c" id="r_a613ccc34a9788e285b38ad99ff73405c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa6b27c0bda2c712cb5c0e5222b4d8385">wbuffer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a613ccc34a9788e285b38ad99ff73405c">other_buf</a> (<a class="el" href="#aa6b27c0bda2c712cb5c0e5222b4d8385">wbuffer_t</a> *p)</td></tr>
 <tr class="separator:a613ccc34a9788e285b38ad99ff73405c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4a02e2e4aec8f8b6473512b747e7e3c" id="r_aa4a02e2e4aec8f8b6473512b747e7e3c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4a02e2e4aec8f8b6473512b747e7e3c">write_impl</a> (const <a class="el" href="#a3ed579d076284676d13eabba62514cda">MessageType</a> *msgs, uint32_t num_msgs, bool nonblocking)</td></tr>
-<tr class="separator:aa4a02e2e4aec8f8b6473512b747e7e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95716b19974747e96d2cbdce6d5027cc" id="r_a95716b19974747e96d2cbdce6d5027cc"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="#aa6b27c0bda2c712cb5c0e5222b4d8385">wbuffer_t</a> *, uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95716b19974747e96d2cbdce6d5027cc">read_writebuf_size</a> ()</td></tr>
-<tr class="separator:a95716b19974747e96d2cbdce6d5027cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a872d6d8884d8e76ec8a8a1f09b3613c5" id="r_a872d6d8884d8e76ec8a8a1f09b3613c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a872d6d8884d8e76ec8a8a1f09b3613c5">send_now_impl_nonblock</a> (<a class="el" href="#aa6b27c0bda2c712cb5c0e5222b4d8385">wbuffer_t</a> *write_buffer)</td></tr>
-<tr class="separator:a872d6d8884d8e76ec8a8a1f09b3613c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7b918c261b2254a04384a10900a54b0" id="r_ac7b918c261b2254a04384a10900a54b0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7b918c261b2254a04384a10900a54b0">prepare_tx</a> (<a class="el" href="#aa6b27c0bda2c712cb5c0e5222b4d8385">wbuffer_t</a> *send_buffer)</td></tr>
-<tr class="separator:ac7b918c261b2254a04384a10900a54b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d818f7c700430af17e5bd84626a6f2" id="r_af7d818f7c700430af17e5bd84626a6f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7d818f7c700430af17e5bd84626a6f2">write_impl</a> (const <a class="el" href="#a3ed579d076284676d13eabba62514cda">MessageType</a> *msgs, uint32_t num_msgs)</td></tr>
+<tr class="separator:af7d818f7c700430af17e5bd84626a6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -194,9 +198,9 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:afe46822e3867527602b57969da82687e" id="r_afe46822e3867527602b57969da82687e"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe46822e3867527602b57969da82687e">PacketSize</a> = PacketSizeV</td></tr>
-<tr class="separator:afe46822e3867527602b57969da82687e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ff0c9365336963d49eb60fcf64dcb8" id="r_ac5ff0c9365336963d49eb60fcf64dcb8"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5ff0c9365336963d49eb60fcf64dcb8">SizeReserved</a> = <a class="el" href="#afe46822e3867527602b57969da82687e">PacketSize</a> + 1</td></tr>
+<tr class="memitem:a8d749ba22f12f17ddcc32deb706cb8a6" id="r_a8d749ba22f12f17ddcc32deb706cb8a6"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d749ba22f12f17ddcc32deb706cb8a6">MaxPacketSize</a> = MaxPacketSizeV</td></tr>
+<tr class="separator:a8d749ba22f12f17ddcc32deb706cb8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ff0c9365336963d49eb60fcf64dcb8" id="r_ac5ff0c9365336963d49eb60fcf64dcb8"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5ff0c9365336963d49eb60fcf64dcb8">SizeReserved</a> = <a class="el" href="#a8d749ba22f12f17ddcc32deb706cb8a6">MaxPacketSize</a> + 1</td></tr>
 <tr class="separator:ac5ff0c9365336963d49eb60fcf64dcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13722abc1871bdefb0edc9ebdb2c322c" id="r_a13722abc1871bdefb0edc9ebdb2c322c"><td class="memItemLeft" align="right" valign="top">static constexpr std::memory_order&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13722abc1871bdefb0edc9ebdb2c322c">mo_seq</a> = std::memory_order_seq_cst</td></tr>
 <tr class="separator:a13722abc1871bdefb0edc9ebdb2c322c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,7 +220,7 @@ Static Private Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="#a3ed579d076284676d13eabba62514cda">MessageType</a> = MessageTypeT</td>
@@ -224,7 +228,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00014">14</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -234,7 +238,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -250,7 +254,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00091">91</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -261,7 +265,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void write </td>
@@ -289,7 +293,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void write </td>
@@ -322,7 +326,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <div class="memtemplate">
 template&lt;size_t N&gt; </div>
 <table class="mlabels">
@@ -345,7 +349,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Send multiple MIDI USB messages. May block. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -355,7 +359,7 @@ template&lt;size_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">uint32_t write_nonblock </td>
@@ -388,7 +392,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void send_now </td>
@@ -404,13 +408,34 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 
 </div>
 </div>
-<a id="ad20897c5c8bd47f5d4005989bead0e55" name="ad20897c5c8bd47f5d4005989bead0e55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad20897c5c8bd47f5d4005989bead0e55">&#9670;&#160;</a></span>reset()</h2>
+<a id="a8263fe2be2a6bbea9b57190f014e7815" name="a8263fe2be2a6bbea9b57190f014e7815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8263fe2be2a6bbea9b57190f014e7815">&#9670;&#160;</a></span>is_done()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_done </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if all transfers have completed. </p>
+
+</div>
+</div>
+<a id="a9b35a22ba0acf5d531732552008541a1" name="a9b35a22ba0acf5d531732552008541a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b35a22ba0acf5d531732552008541a1">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -418,7 +443,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
         <tr>
           <td class="memname">void reset </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>packet_size</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a8d749ba22f12f17ddcc32deb706cb8a6">MaxPacketSize</a></span></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -437,7 +462,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -467,7 +492,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -496,7 +521,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -529,7 +554,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -562,7 +587,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -595,7 +620,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -614,7 +639,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00093">93</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -624,7 +649,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -643,17 +668,17 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00097">97</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
-<a id="aa4a02e2e4aec8f8b6473512b747e7e3c" name="aa4a02e2e4aec8f8b6473512b747e7e3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4a02e2e4aec8f8b6473512b747e7e3c">&#9670;&#160;</a></span>write_impl()</h2>
+<a id="af7d818f7c700430af17e5bd84626a6f2" name="af7d818f7c700430af17e5bd84626a6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d818f7c700430af17e5bd84626a6f2">&#9670;&#160;</a></span>write_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -666,93 +691,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>num_msgs</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>nonblocking</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a95716b19974747e96d2cbdce6d5027cc" name="a95716b19974747e96d2cbdce6d5027cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95716b19974747e96d2cbdce6d5027cc">&#9670;&#160;</a></span>read_writebuf_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::tuple&lt; <a class="el" href="#aa6b27c0bda2c712cb5c0e5222b4d8385">wbuffer_t</a> *, uint16_t &gt; read_writebuf_size </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a872d6d8884d8e76ec8a8a1f09b3613c5" name="a872d6d8884d8e76ec8a8a1f09b3613c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a872d6d8884d8e76ec8a8a1f09b3613c5">&#9670;&#160;</a></span>send_now_impl_nonblock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void send_now_impl_nonblock </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa6b27c0bda2c712cb5c0e5222b4d8385">wbuffer_t</a> *</td>          <td class="paramname"><span class="paramname"><em>write_buffer</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac7b918c261b2254a04384a10900a54b0" name="ac7b918c261b2254a04384a10900a54b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7b918c261b2254a04384a10900a54b0">&#9670;&#160;</a></span>prepare_tx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t prepare_tx </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa6b27c0bda2c712cb5c0e5222b4d8385">wbuffer_t</a> *</td>          <td class="paramname"><span class="paramname"><em>send_buffer</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>num_msgs</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -770,7 +709,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -797,7 +736,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -819,19 +758,19 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afe46822e3867527602b57969da82687e" name="afe46822e3867527602b57969da82687e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe46822e3867527602b57969da82687e">&#9670;&#160;</a></span>PacketSize</h2>
+<a id="a8d749ba22f12f17ddcc32deb706cb8a6" name="a8d749ba22f12f17ddcc32deb706cb8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d749ba22f12f17ddcc32deb706cb8a6">&#9670;&#160;</a></span>MaxPacketSize</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr uint16_t PacketSize = PacketSizeV</td>
+          <td class="memname">constexpr uint16_t MaxPacketSize = MaxPacketSizeV</td>
         </tr>
       </table>
   </td>
@@ -841,7 +780,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -851,13 +790,13 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr uint16_t SizeReserved = <a class="el" href="#afe46822e3867527602b57969da82687e">PacketSize</a> + 1</td>
+          <td class="memname">constexpr uint16_t SizeReserved = <a class="el" href="#a8d749ba22f12f17ddcc32deb706cb8a6">MaxPacketSize</a> + 1</td>
         </tr>
       </table>
   </td>
@@ -867,7 +806,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -877,7 +816,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -893,7 +832,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00076">76</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -903,7 +842,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -919,7 +858,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -929,7 +868,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -945,7 +884,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00076">76</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -955,7 +894,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -971,7 +910,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -981,7 +920,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -997,7 +936,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../d5/d4e/BulkTX_8hpp_source.html">BulkTX.hpp</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +946,7 @@ template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived , class MessageTypeT , uint16_t PacketSizeV&gt; </div>
+template&lt;class Derived , class MessageTypeT , uint16_t MaxPacketSizeV&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

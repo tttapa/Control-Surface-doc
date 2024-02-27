@@ -7,7 +7,7 @@ var searchData=
   ['acoustic_5fgrand_5fpiano_4',['Acoustic_Grand_Piano',['../da/da6/namespaceMIDI__PC.html#ad841d473a095d11c1f6e67557d9f2c8a',1,'MIDI_PC']]],
   ['acoustic_5fguitar_5fnylon_5',['Acoustic_Guitar_Nylon',['../da/da6/namespaceMIDI__PC.html#a68f5003987b702653f2e57495f8949ac',1,'MIDI_PC']]],
   ['acoustic_5fguitar_5fsteel_6',['Acoustic_Guitar_Steel',['../da/da6/namespaceMIDI__PC.html#af104b605620c9ac97febb856d1cea91d',1,'MIDI_PC']]],
-  ['active_5fwritebuffer_7',['active_writebuffer',['../d4/d25/structBulkTX_1_1Writing.html#a0ec8403075dd7b9af36087dff8323080',1,'BulkTX::Writing::active_writebuffer'],['../d0/d0e/structTeensyHostMIDI_1_1Writing.html#a5d0600248640756c2e4301d3b4896410',1,'TeensyHostMIDI::Writing::active_writebuffer']]],
+  ['active_5fwritebuffer_7',['active_writebuffer',['../d4/d25/structBulkTX_1_1Writing.html#a0ec8403075dd7b9af36087dff8323080',1,'BulkTX::Writing']]],
   ['activebuttons_8',['activeButtons',['../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a2643a90bc676680033bc6b8b08ac8ccc',1,'Bankable::MIDIButtonMatrix::activeButtons'],['../dc/d22/classBankable_1_1MIDIButtons.html#a634a7b67351a9235d932b28bb7a1d5c7',1,'Bankable::MIDIButtons::activeButtons']]],
   ['activecable_9',['activeCable',['../db/db0/classUSBMIDI__Parser.html#aa6f9c42d85c6acfc193e561b0bdd4fd5',1,'USBMIDI_Parser']]],
   ['activesensing_10',['ActiveSensing',['../d6/d99/structRealTimeMessage.html#afc5b95f2161e26ea4c4cf55d5b5f0374',1,'RealTimeMessage']]],
@@ -22,7 +22,7 @@ var searchData=
   ['alignment_19',['alignment',['../d6/d93/structNonatomicBLERingBufSize.html#ac15e6b5f88a94c672b70f8a914798517',1,'NonatomicBLERingBufSize::alignment'],['../de/d5f/structBTstackBackgroundBackend_1_1VolatileSize.html#ac15e6b5f88a94c672b70f8a914798517',1,'BTstackBackgroundBackend::VolatileSize::alignment'],['../dd/d81/structESP32BLEBackend_1_1AtomicSize.html#ac15e6b5f88a94c672b70f8a914798517',1,'ESP32BLEBackend::AtomicSize::alignment']]],
   ['all_5fnotes_5foff_20',['All_Notes_Off',['../d4/dbe/namespaceMIDI__CC.html#ae134077aeb69df5c00392399f9e45a5b',1,'MIDI_CC']]],
   ['all_5fsound_5foff_21',['All_Sound_Off',['../d4/dbe/namespaceMIDI__CC.html#a08f4685858e8d25f7533f19875daa9e4',1,'MIDI_CC']]],
-  ['alpha_22',['alpha',['../db/d6f/classEMA__f.html#ab1551d8043c2aa4410fb7dbb1fe3be7b',1,'EMA_f']]],
+  ['alpha_22',['alpha',['../d7/d89/classAH_1_1EMA__f.html#ab1551d8043c2aa4410fb7dbb1fe3be7b',1,'AH::EMA_f']]],
   ['alphachars_23',['AlphaChars',['../dc/d69/namespaceAH.html#a421add2f41548ad816d5d9bb028cfa6f',1,'AH']]],
   ['alto_5fsax_24',['Alto_Sax',['../da/da6/namespaceMIDI__PC.html#ad8b68fbc88c0fbebfe3bd0b2a0c7ba67',1,'MIDI_PC']]],
   ['alwaysdirty_25',['alwaysDirty',['../dc/d25/classInterfaces_1_1MCU_1_1IVU.html#a8796e23a9c190581d7c7c952f18fd67c',1,'Interfaces::MCU::IVU']]],
@@ -47,5 +47,5 @@ var searchData=
   ['automation_5ftouch_44',['AUTOMATION_TOUCH',['../de/d44/group__MCU__Notes.html#gaa21570085b03e90d11132abafb4713c4',1,'MCU']]],
   ['automation_5ftrim_45',['AUTOMATION_TRIM',['../de/d44/group__MCU__Notes.html#ga9adb75640a982b568593d0cfe410a039',1,'MCU']]],
   ['automation_5fwrite_46',['AUTOMATION_WRITE',['../de/d44/group__MCU__Notes.html#ga8ea03657091b12273414495178531278',1,'MCU']]],
-  ['available_47',['available',['../d2/da9/structBulkRX_1_1Reading.html#a7accf2aea8a7012a8506639d03c297cd',1,'BulkRX::Reading::available'],['../d1/d81/structTeensyHostMIDI_1_1Reading.html#a659526f5473580291941ab508328db34',1,'TeensyHostMIDI::Reading::available']]]
+  ['available_47',['available',['../d2/da9/structBulkRX_1_1Reading.html#a7accf2aea8a7012a8506639d03c297cd',1,'BulkRX::Reading']]]
 ];

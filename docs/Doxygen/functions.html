@@ -94,7 +94,7 @@ $(function() {
 <li>acquirePacket()&#160;:&#160;<a class="el" href="de/d82/classESP32BLEBackend.html#a904bc2f66351893faadd7f6967ed920d">ESP32BLEBackend&lt; Impl &gt;</a>, <a class="el" href="d9/dc8/classPollingBLEMIDISender.html#a904bc2f66351893faadd7f6967ed920d">PollingBLEMIDISender&lt; Derived &gt;</a>, <a class="el" href="dd/da0/classThreadedBLEMIDISender.html#a904bc2f66351893faadd7f6967ed920d">ThreadedBLEMIDISender&lt; Derived &gt;</a></li>
 <li>activate()&#160;:&#160;<a class="el" href="d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a8011fcbeb5efeda20bd2dbffbbb70165">SmartMIDIFilteredAnalog&lt; NumBanks, BankAddress, Sender &gt;</a></li>
 <li>Active&#160;:&#160;<a class="el" href="d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a5d74787dedbc4e11c1ab15bf487e61f8a26bd8444261cc58df7a86753c79d2520">SmartMIDIFilteredAnalog&lt; NumBanks, BankAddress, Sender &gt;</a></li>
-<li>active_writebuffer&#160;:&#160;<a class="el" href="d4/d25/structBulkTX_1_1Writing.html#a0ec8403075dd7b9af36087dff8323080">BulkTX&lt; Derived, MessageTypeT, PacketSizeV &gt;::Writing</a>, <a class="el" href="d0/d0e/structTeensyHostMIDI_1_1Writing.html#a5d0600248640756c2e4301d3b4896410">TeensyHostMIDI&lt; MaxPacketSize &gt;::Writing</a></li>
+<li>active_writebuffer&#160;:&#160;<a class="el" href="d4/d25/structBulkTX_1_1Writing.html#a0ec8403075dd7b9af36087dff8323080">BulkTX&lt; Derived, MessageTypeT, MaxPacketSizeV &gt;::Writing</a></li>
 <li>activeButtons&#160;:&#160;<a class="el" href="d3/d65/classBankable_1_1MIDIButtonMatrix.html#a2643a90bc676680033bc6b8b08ac8ccc">MIDIButtonMatrix&lt; BankAddress, Sender, NumRows, NumCols &gt;</a>, <a class="el" href="dc/d22/classBankable_1_1MIDIButtons.html#a634a7b67351a9235d932b28bb7a1d5c7">MIDIButtons&lt; BankAddress, Sender, NumButtons &gt;</a></li>
 <li>activeCable&#160;:&#160;<a class="el" href="db/db0/classUSBMIDI__Parser.html#aa6f9c42d85c6acfc193e561b0bdd4fd5">USBMIDI_Parser</a></li>
 <li>ActiveSensing&#160;:&#160;<a class="el" href="d6/d99/structRealTimeMessage.html#afc5b95f2161e26ea4c4cf55d5b5f0374">RealTimeMessage</a></li>
@@ -120,7 +120,7 @@ $(function() {
 <li>AfterReset&#160;:&#160;<a class="el" href="df/dc6/classAH_1_1IncrementDecrementButtons.html#adf764cbdea00d65edcd07bb9953ad2b7aaed1b2195f61c416fc4c072613d73099">IncrementDecrementButtons</a></li>
 <li>AHEncoder()&#160;:&#160;<a class="el" href="dd/da9/classAHEncoder.html#a43c3945dfd5a67aae2c2cb8f4c2dd970">AHEncoder</a></li>
 <li>alignment&#160;:&#160;<a class="el" href="de/d5f/structBTstackBackgroundBackend_1_1VolatileSize.html#ac15e6b5f88a94c672b70f8a914798517">BTstackBackgroundBackend::VolatileSize</a>, <a class="el" href="dd/d81/structESP32BLEBackend_1_1AtomicSize.html#ac15e6b5f88a94c672b70f8a914798517">ESP32BLEBackend&lt; Impl &gt;::AtomicSize</a>, <a class="el" href="d6/d93/structNonatomicBLERingBufSize.html#ac15e6b5f88a94c672b70f8a914798517">NonatomicBLERingBufSize&lt; T &gt;</a></li>
-<li>alpha&#160;:&#160;<a class="el" href="db/d6f/classEMA__f.html#ab1551d8043c2aa4410fb7dbb1fe3be7b">EMA_f</a></li>
+<li>alpha&#160;:&#160;<a class="el" href="d7/d89/classAH_1_1EMA__f.html#ab1551d8043c2aa4410fb7dbb1fe3be7b">EMA_f</a></li>
 <li>alwaysDirty&#160;:&#160;<a class="el" href="dc/d25/classInterfaces_1_1MCU_1_1IVU.html#a8796e23a9c190581d7c7c952f18fd67c">IVU</a></li>
 <li>alwaysSendImmediately()&#160;:&#160;<a class="el" href="dd/d0e/classGenericUSBMIDI__Interface.html#a31ada757af49a5dd1a6466b69ce54461">GenericUSBMIDI_Interface&lt; Backend &gt;</a></li>
 <li>alwaysSendImmediately_&#160;:&#160;<a class="el" href="dd/d0e/classGenericUSBMIDI__Interface.html#aa439687769f1a07895252cb853a58951">GenericUSBMIDI_Interface&lt; Backend &gt;</a></li>
@@ -136,18 +136,18 @@ $(function() {
 <li>Analyzer()&#160;:&#160;<a class="el" href="d0/d18/classAudioVU_1_1Analyzer.html#acd1eaf515214662d4b5ab252bcbe8bb1">AudioVU::Analyzer</a></li>
 <li>angleSpacing&#160;:&#160;<a class="el" href="d3/d98/classMCU_1_1VPotDisplay.html#a9d5d7485a4ceab3c8901c64fa1dae30d">VPotDisplay&lt; VPot_t &gt;</a></li>
 <li>AnyMIDIMessage()&#160;:&#160;<a class="el" href="de/d94/structAnyMIDIMessage.html#ac18d47030f23e1679d4a3c0ca325b36e">AnyMIDIMessage</a></li>
-<li>append()&#160;:&#160;<a class="el" href="dd/d16/classDoublyLinkedList.html#a90bb254293416d158c8d56006d97354c">DoublyLinkedList&lt; Node &gt;</a></li>
+<li>append()&#160;:&#160;<a class="el" href="dd/d16/classDoublyLinkedList.html#a368e48ecd7bac79f14a42a0669574e38">DoublyLinkedList&lt; Node &gt;</a></li>
 <li>argument_t&#160;:&#160;<a class="el" href="d4/dfd/structAH_1_1function__traits_3_01Return_07Args_8_8_8_08_4.html#a1f83b072514006de46a299984bcf0540">function_traits&lt; Return(Args...)&gt;</a></li>
 <li>array&#160;:&#160;<a class="el" href="d2/dc9/classAH_1_1ArraySlice.html#a42d993c77e4cebbfa52f41b61f78185e">ArraySlice&lt; T, N, Reverse, Const &gt;</a></li>
 <li>ArraySlice()&#160;:&#160;<a class="el" href="d2/dc9/classAH_1_1ArraySlice.html#a4d1735860de2456adfc31f3472b6d874">ArraySlice&lt; T, N, Reverse, Const &gt;</a></li>
 <li>asArray()&#160;:&#160;<a class="el" href="d2/dc9/classAH_1_1ArraySlice.html#aac32f5df7e286c383359dfe1e77b2aeb">ArraySlice&lt; T, N, Reverse, Const &gt;</a></li>
 <li>AssignmentDisplay()&#160;:&#160;<a class="el" href="d1/d08/classMCU_1_1AssignmentDisplay.html#a82d493eb6f3530c5205f019e80373118">AssignmentDisplay</a></li>
-<li>AtomicPosition()&#160;:&#160;<a class="el" href="de/d62/structAtomicPosition.html#ac7325f12d80b0aa5f2d3abf3bf65b9c1">AtomicPosition&lt; T &gt;</a></li>
+<li>AtomicPosition()&#160;:&#160;<a class="el" href="de/d62/structAtomicPosition.html#a1bba61227ed6c5a6935aa6ae89c50780">AtomicPosition&lt; T &gt;</a></li>
 <li>AtomicSize()&#160;:&#160;<a class="el" href="dd/d81/structESP32BLEBackend_1_1AtomicSize.html#affcc56b15bdaf7f4fbcf5e67e9df4c41">ESP32BLEBackend&lt; Impl &gt;::AtomicSize</a></li>
 <li>attachInterruptCtx()&#160;:&#160;<a class="el" href="dd/da9/classAHEncoder.html#a325dbf65dbf5f3bb106bd095b18bc0bc">AHEncoder</a></li>
 <li>AudioVU()&#160;:&#160;<a class="el" href="d4/dce/classAudioVU.html#ac4821dbb095cbc81bacc4ab7c7efd3af">AudioVU</a></li>
 <li>AudioVULEDs()&#160;:&#160;<a class="el" href="d9/dbf/classAudioVULEDs.html#ae9a482cdf099da00bff5f93ccfc6a6cc">AudioVULEDs&lt; N &gt;</a></li>
-<li>available()&#160;:&#160;<a class="el" href="d0/d18/classAudioVU_1_1Analyzer.html#a9b8af08c84002ce80db79bf7c3dfe0b2">AudioVU::Analyzer</a>, <a class="el" href="d2/da9/structBulkRX_1_1Reading.html#a7accf2aea8a7012a8506639d03c297cd">BulkRX&lt; Derived, MessageTypeT, PacketSizeV &gt;::Reading</a>, <a class="el" href="d1/d81/structTeensyHostMIDI_1_1Reading.html#a659526f5473580291941ab508328db34">TeensyHostMIDI&lt; MaxPacketSize &gt;::Reading</a></li>
+<li>available()&#160;:&#160;<a class="el" href="d0/d18/classAudioVU_1_1Analyzer.html#a9b8af08c84002ce80db79bf7c3dfe0b2">AudioVU::Analyzer</a>, <a class="el" href="d2/da9/structBulkRX_1_1Reading.html#a7accf2aea8a7012a8506639d03c297cd">BulkRX&lt; Derived, MessageTypeT, MaxPacketSizeV &gt;::Reading</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

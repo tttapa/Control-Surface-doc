@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['teensyhostmidi_0',['TeensyHostMIDI',['../de/d93/classTeensyHostMIDI.html#a9b3b03159f5a7a3954586289a46bb2cb',1,'TeensyHostMIDI']]],
+  ['teensyhostmidi_0',['TeensyHostMIDI',['../de/d93/classTeensyHostMIDI.html#a62aa15c45721d0c37c292e6a41704116',1,'TeensyHostMIDI']]],
   ['threadedblemidisender_1',['ThreadedBLEMIDISender',['../dd/da0/classThreadedBLEMIDISender.html#ab6d202f168c4342219f8455d7f9f75d0',1,'ThreadedBLEMIDISender::ThreadedBLEMIDISender()=default'],['../dd/da0/classThreadedBLEMIDISender.html#a710a778279b359bf7def0ec1c96f737e',1,'ThreadedBLEMIDISender::ThreadedBLEMIDISender(const ThreadedBLEMIDISender &amp;)=delete']]],
   ['throughisunstalledorstalledby_2',['throughIsUnstalledOrStalledBy',['../df/d72/classMIDI__Pipe.html#ae7b3fe26f4a4a7a3d52f559fb0a4eabd',1,'MIDI_Pipe']]],
   ['timedisplay_3',['TimeDisplay',['../df/d69/classMCU_1_1TimeDisplay.html#a9399228803786586e268a08e394b6f9b',1,'MCU::TimeDisplay']]],
@@ -17,7 +17,7 @@ var searchData=
   ['twobytemidimatcher_14',['TwoByteMIDIMatcher',['../d8/d6b/structTwoByteMIDIMatcher.html#ac122245d3bb5b86495e13d7008f6f09f',1,'TwoByteMIDIMatcher']]],
   ['twobyterangemidimatcher_15',['TwoByteRangeMIDIMatcher',['../d1/d7a/structTwoByteRangeMIDIMatcher.html#a0d98b5e829eeae673d2906f047b897e8',1,'TwoByteRangeMIDIMatcher']]],
   ['tx_5fcallback_16',['tx_callback',['../dc/d2d/structBulkTX.html#a141a1a1a4a76dd260b49c14719b22375',1,'BulkTX::tx_callback()'],['../de/d93/classTeensyHostMIDI.html#aa83e8ea4754349ff5e211448a29c3c4f',1,'TeensyHostMIDI::tx_callback()']]],
-  ['tx_5fstart_17',['tx_start',['../dc/d2d/structBulkTX.html#ac54a38fe83f200541851b2f4424e21d9',1,'BulkTX::tx_start()'],['../d1/dd4/classPluggableUSBMIDI.html#af3422cf0ff70e71d3e694a5d24679db6',1,'PluggableUSBMIDI::tx_start()']]],
-  ['tx_5fstart_5fisr_18',['tx_start_isr',['../dc/d2d/structBulkTX.html#a551f77cc6773f84f9fb9dac1326fa32d',1,'BulkTX::tx_start_isr()'],['../d1/dd4/classPluggableUSBMIDI.html#acaae07feca8c4f871a3eed5bbc25970b',1,'PluggableUSBMIDI::tx_start_isr()']]],
-  ['tx_5fstart_5ftimeout_19',['tx_start_timeout',['../dc/d2d/structBulkTX.html#ae965c3ee7333ca69d4d4c465f391a201',1,'BulkTX::tx_start_timeout()'],['../d1/dd4/classPluggableUSBMIDI.html#ad90ca8d5f54444a6e90f666019ef2736',1,'PluggableUSBMIDI::tx_start_timeout()']]]
+  ['tx_5fstart_17',['tx_start',['../dc/d2d/structBulkTX.html#ac54a38fe83f200541851b2f4424e21d9',1,'BulkTX::tx_start()'],['../d1/dd4/classPluggableUSBMIDI.html#af3422cf0ff70e71d3e694a5d24679db6',1,'PluggableUSBMIDI::tx_start()'],['../de/d93/classTeensyHostMIDI.html#af3422cf0ff70e71d3e694a5d24679db6',1,'TeensyHostMIDI::tx_start()']]],
+  ['tx_5fstart_5fisr_18',['tx_start_isr',['../dc/d2d/structBulkTX.html#a551f77cc6773f84f9fb9dac1326fa32d',1,'BulkTX::tx_start_isr()'],['../d1/dd4/classPluggableUSBMIDI.html#acaae07feca8c4f871a3eed5bbc25970b',1,'PluggableUSBMIDI::tx_start_isr()'],['../de/d93/classTeensyHostMIDI.html#acaae07feca8c4f871a3eed5bbc25970b',1,'TeensyHostMIDI::tx_start_isr()']]],
+  ['tx_5fstart_5ftimeout_19',['tx_start_timeout',['../dc/d2d/structBulkTX.html#ae965c3ee7333ca69d4d4c465f391a201',1,'BulkTX::tx_start_timeout()'],['../d1/dd4/classPluggableUSBMIDI.html#ad90ca8d5f54444a6e90f666019ef2736',1,'PluggableUSBMIDI::tx_start_timeout()'],['../de/d93/classTeensyHostMIDI.html#ad90ca8d5f54444a6e90f666019ef2736',1,'TeensyHostMIDI::tx_start_timeout()']]]
 ];

@@ -14,7 +14,7 @@ var searchData=
   ['timedisplayaddress_11',['TimeDisplayAddress',['../d7/dc7/namespaceMCU.html#ae237eb5298fdc948e39872bcb9839f2f',1,'MCU']]],
   ['timedisplaylength_12',['TimeDisplayLength',['../d7/dc7/namespaceMCU.html#ad9ac4efbbebe7bcd7214209f2e9194d1',1,'MCU']]],
   ['timeout_13',['timeout',['../d9/dc8/classPollingBLEMIDISender.html#a639e65bbd749de17060d658eb233f72b',1,'PollingBLEMIDISender::timeout'],['../dd/da0/classThreadedBLEMIDISender.html#a26727d2ea528cebfed726e19997ecadc',1,'ThreadedBLEMIDISender::timeout'],['../d1/dd4/classPluggableUSBMIDI.html#a6e57015656efd1aaf85d66cdc1647db7',1,'PluggableUSBMIDI::timeout']]],
-  ['timeout_5fduration_14',['timeout_duration',['../d1/dd4/classPluggableUSBMIDI.html#a7d269aad97071a86a751313751f8e348',1,'PluggableUSBMIDI::timeout_duration'],['../d0/d0e/structTeensyHostMIDI_1_1Writing.html#a7d269aad97071a86a751313751f8e348',1,'TeensyHostMIDI::Writing::timeout_duration']]],
+  ['timeout_5fduration_14',['timeout_duration',['../d1/dd4/classPluggableUSBMIDI.html#a7d269aad97071a86a751313751f8e348',1,'PluggableUSBMIDI']]],
   ['timestamp_15',['timestamp',['../de/d94/structAnyMIDIMessage.html#ad67bd8f6a86812860afe84df6c1cc94d',1,'AnyMIDIMessage::timestamp'],['../d9/d19/classBLEMIDIParser.html#ad67bd8f6a86812860afe84df6c1cc94d',1,'BLEMIDIParser::timestamp']]],
   ['timingclock_16',['TimingClock',['../d6/d99/structRealTimeMessage.html#aaf4024ae972747229b4fd5ca4f3834cb',1,'RealTimeMessage']]],
   ['timpani_17',['Timpani',['../da/da6/namespaceMIDI__PC.html#a19784608fc9bd4556677039c86f8e240',1,'MIDI_PC']]],
@@ -37,6 +37,6 @@ var searchData=
   ['tx_5fep_34',['tx_ep',['../de/d93/classTeensyHostMIDI.html#a8871179cdcc4d9bbd6e5f5b8c33cac94',1,'TeensyHostMIDI']]],
   ['tx_5fep_5ftype_35',['tx_ep_type',['../de/d93/classTeensyHostMIDI.html#a35da833c39eb09c0f650070551d03cce',1,'TeensyHostMIDI']]],
   ['tx_5fsize_36',['tx_size',['../de/d93/classTeensyHostMIDI.html#a61dd999005a1db0d031ae7934ea05bc1',1,'TeensyHostMIDI']]],
-  ['txpipe_37',['txpipe',['../de/d93/classTeensyHostMIDI.html#a7e37312471513e8da2bc95bbad025372',1,'TeensyHostMIDI']]],
+  ['txpipe_37',['txpipe',['../de/d93/classTeensyHostMIDI.html#a4b6968bf09ac06183bb24584f50ada31',1,'TeensyHostMIDI']]],
   ['type_38',['type',['../d0/d18/classAudioVU_1_1Analyzer.html#a0103d772b378b5d89000f17b6f32541a',1,'AudioVU::Analyzer::type'],['../d2/d97/classOutputBankableMIDIAddress.html#abaef3e94f43dc46f739ad180a9404a45',1,'OutputBankableMIDIAddress::type'],['../d7/daf/classBaseBankConfig.html#abaef3e94f43dc46f739ad180a9404a45',1,'BaseBankConfig::type'],['../d3/d5f/classBaseOutputBankConfig.html#abaef3e94f43dc46f739ad180a9404a45',1,'BaseOutputBankConfig::type'],['../d2/da4/structBLERingBuf_1_1Header.html#a1d127017fb298b889f4ba24752d08b8e',1,'BLERingBuf::Header::type']]]
 ];
