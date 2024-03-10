@@ -95,7 +95,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../db/db4/NoteCCKPLEDBar_8hpp_source.html">MIDI_Inputs/LEDs/NoteCCKPLEDBar.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;uint8_t NumLEDs&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> NumLEDs&gt;<br />
 class NoteCCKPLEDBarDriver&lt; NumLEDs &gt;</div><p>Callback class that drives a LED dot/bar display based on a note or control change value. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -122,47 +122,47 @@ class NoteCCKPLEDBarDriver&lt; NumLEDs &gt;</div><p>Callback class that drives a
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a69af7aeabe37a8873b9e383fbeb84aeb" id="r_a69af7aeabe37a8873b9e383fbeb84aeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69af7aeabe37a8873b9e383fbeb84aeb">NoteCCKPLEDBarDriver</a> (const <a class="el" href="../../dc/d69/namespaceAH.html#a2cad4766e2eb5bb24649f97d53635b73">AH::PinList</a>&lt; NumLEDs &gt; &amp;leds)</td></tr>
+<tr class="memitem:a69af7aeabe37a8873b9e383fbeb84aeb" id="r_a69af7aeabe37a8873b9e383fbeb84aeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69af7aeabe37a8873b9e383fbeb84aeb">NoteCCKPLEDBarDriver</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#a2cad4766e2eb5bb24649f97d53635b73">AH::PinList</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">NumLEDs</a> &gt; &amp;<a class="el" href="../../d0/d32/structAH_1_1Array.html">leds</a>)</td></tr>
 <tr class="separator:a69af7aeabe37a8873b9e383fbeb84aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388c6dfd842941b8c253af553ee0cab1" id="r_a388c6dfd842941b8c253af553ee0cab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a388c6dfd842941b8c253af553ee0cab1">displayBar</a> (uint8_t value)</td></tr>
+<tr class="memitem:a388c6dfd842941b8c253af553ee0cab1" id="r_a388c6dfd842941b8c253af553ee0cab1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a388c6dfd842941b8c253af553ee0cab1">displayBar</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> value)</td></tr>
 <tr class="separator:a388c6dfd842941b8c253af553ee0cab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7fc7b8b1ea244b5a162b3d2bae55d72" id="r_aa7fc7b8b1ea244b5a162b3d2bae55d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#aa7fc7b8b1ea244b5a162b3d2bae55d72">display</a> (uint16_t value) const</td></tr>
+<tr class="memitem:aa7fc7b8b1ea244b5a162b3d2bae55d72" id="r_aa7fc7b8b1ea244b5a162b3d2bae55d72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#aa7fc7b8b1ea244b5a162b3d2bae55d72">display</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> value) <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:aa7fc7b8b1ea244b5a162b3d2bae55d72"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d9/d11/structDisplay.html">Display</a> the given number of <a class="el" href="../../df/d06/classAH_1_1LEDs.html" title="A class for collections of LEDs that can display ranges.">LEDs</a> on the LED bar.  <br /></td></tr>
 <tr class="separator:aa7fc7b8b1ea244b5a162b3d2bae55d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c653b463a49e26299ab95904372641a" id="r_a1c653b463a49e26299ab95904372641a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a1c653b463a49e26299ab95904372641a">display</a> (float value) const</td></tr>
+<tr class="memitem:a1c653b463a49e26299ab95904372641a" id="r_a1c653b463a49e26299ab95904372641a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a1c653b463a49e26299ab95904372641a">display</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">float</a> value) <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:a1c653b463a49e26299ab95904372641a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d9/d11/structDisplay.html">Display</a> the given fraction of the LED bar.  <br /></td></tr>
 <tr class="separator:a1c653b463a49e26299ab95904372641a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add03bf21030c26bfffd733237b69411a" id="r_add03bf21030c26bfffd733237b69411a"><td class="memItemLeft" align="right" valign="top">DotBarMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#add03bf21030c26bfffd733237b69411a">getMode</a> () const</td></tr>
+<tr class="memitem:add03bf21030c26bfffd733237b69411a" id="r_add03bf21030c26bfffd733237b69411a"><td class="memItemLeft" align="right" valign="top">DotBarMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#add03bf21030c26bfffd733237b69411a">getMode</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:add03bf21030c26bfffd733237b69411a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dot/bar mode.  <br /></td></tr>
 <tr class="separator:add03bf21030c26bfffd733237b69411a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7acb8262e1b34ec0d41e6a80d3cc4e1c" id="r_a7acb8262e1b34ec0d41e6a80d3cc4e1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a7acb8262e1b34ec0d41e6a80d3cc4e1c">setMode</a> (DotBarMode <a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a5238ef04e9caeb86f50f51d775e16127">mode</a>)</td></tr>
+<tr class="memitem:a7acb8262e1b34ec0d41e6a80d3cc4e1c" id="r_a7acb8262e1b34ec0d41e6a80d3cc4e1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a7acb8262e1b34ec0d41e6a80d3cc4e1c">setMode</a> (DotBarMode <a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a5238ef04e9caeb86f50f51d775e16127">mode</a>)</td></tr>
 <tr class="memdesc:a7acb8262e1b34ec0d41e6a80d3cc4e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mode to either dot or bar mode.  <br /></td></tr>
 <tr class="separator:a7acb8262e1b34ec0d41e6a80d3cc4e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afea99f014e9f1bfc928e6190d736dd3f" id="r_afea99f014e9f1bfc928e6190d736dd3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#afea99f014e9f1bfc928e6190d736dd3f">dotMode</a> ()</td></tr>
+<tr class="memitem:afea99f014e9f1bfc928e6190d736dd3f" id="r_afea99f014e9f1bfc928e6190d736dd3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#afea99f014e9f1bfc928e6190d736dd3f">dotMode</a> ()</td></tr>
 <tr class="memdesc:afea99f014e9f1bfc928e6190d736dd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mode to dot mode.  <br /></td></tr>
 <tr class="separator:afea99f014e9f1bfc928e6190d736dd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeeba1b73c4d56b72673288026516c29" id="r_afeeba1b73c4d56b72673288026516c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#afeeba1b73c4d56b72673288026516c29">barMode</a> ()</td></tr>
+<tr class="memitem:afeeba1b73c4d56b72673288026516c29" id="r_afeeba1b73c4d56b72673288026516c29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#afeeba1b73c4d56b72673288026516c29">barMode</a> ()</td></tr>
 <tr class="memdesc:afeeba1b73c4d56b72673288026516c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mode to bar mode.  <br /></td></tr>
 <tr class="separator:afeeba1b73c4d56b72673288026516c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ffa1ba1cd260f6e8ffd484452c3bab7" id="r_a2ffa1ba1cd260f6e8ffd484452c3bab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a2ffa1ba1cd260f6e8ffd484452c3bab7">toggleMode</a> ()</td></tr>
+<tr class="memitem:a2ffa1ba1cd260f6e8ffd484452c3bab7" id="r_a2ffa1ba1cd260f6e8ffd484452c3bab7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a2ffa1ba1cd260f6e8ffd484452c3bab7">toggleMode</a> ()</td></tr>
 <tr class="memdesc:a2ffa1ba1cd260f6e8ffd484452c3bab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the dot/bar mode.  <br /></td></tr>
 <tr class="separator:a2ffa1ba1cd260f6e8ffd484452c3bab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad82a5b04cc538aa3200ed2c11e9d37ea" id="r_ad82a5b04cc538aa3200ed2c11e9d37ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#ad82a5b04cc538aa3200ed2c11e9d37ea">begin</a> () const</td></tr>
+<tr class="memitem:ad82a5b04cc538aa3200ed2c11e9d37ea" id="r_ad82a5b04cc538aa3200ed2c11e9d37ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#ad82a5b04cc538aa3200ed2c11e9d37ea">begin</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:ad82a5b04cc538aa3200ed2c11e9d37ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize (set LED pins as outputs).  <br /></td></tr>
 <tr class="separator:ad82a5b04cc538aa3200ed2c11e9d37ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8209cfafa37115e1d4618623474b170" id="r_af8209cfafa37115e1d4618623474b170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#af8209cfafa37115e1d4618623474b170">displayRange</a> (uint16_t startOn, uint16_t startOff) const</td></tr>
+<tr class="memitem:af8209cfafa37115e1d4618623474b170" id="r_af8209cfafa37115e1d4618623474b170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#af8209cfafa37115e1d4618623474b170">displayRange</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">startOn</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">startOff</a>) <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:af8209cfafa37115e1d4618623474b170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on a range of the <a class="el" href="../../df/d06/classAH_1_1LEDs.html" title="A class for collections of LEDs that can display ranges.">LEDs</a>.  <br /></td></tr>
 <tr class="separator:af8209cfafa37115e1d4618623474b170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd082f43280a346d70e51e66a7f1b85a" id="r_abd082f43280a346d70e51e66a7f1b85a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#abd082f43280a346d70e51e66a7f1b85a">set</a> (uint16_t index) const</td></tr>
+<tr class="memitem:abd082f43280a346d70e51e66a7f1b85a" id="r_abd082f43280a346d70e51e66a7f1b85a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#abd082f43280a346d70e51e66a7f1b85a">set</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> index) <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:abd082f43280a346d70e51e66a7f1b85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the given LED.  <br /></td></tr>
 <tr class="separator:abd082f43280a346d70e51e66a7f1b85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a815f7de6517402a913ac301a95ef66e6" id="r_a815f7de6517402a913ac301a95ef66e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#a815f7de6517402a913ac301a95ef66e6">clear</a> (uint16_t index) const</td></tr>
+<tr class="memitem:a815f7de6517402a913ac301a95ef66e6" id="r_a815f7de6517402a913ac301a95ef66e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#a815f7de6517402a913ac301a95ef66e6">clear</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> index) <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:a815f7de6517402a913ac301a95ef66e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off the given LED.  <br /></td></tr>
 <tr class="separator:a815f7de6517402a913ac301a95ef66e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1d9633e64d0de6a36e0af17ccd8163" id="r_adf1d9633e64d0de6a36e0af17ccd8163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#adf1d9633e64d0de6a36e0af17ccd8163">clear</a> () const</td></tr>
+<tr class="memitem:adf1d9633e64d0de6a36e0af17ccd8163" id="r_adf1d9633e64d0de6a36e0af17ccd8163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#adf1d9633e64d0de6a36e0af17ccd8163">clear</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:adf1d9633e64d0de6a36e0af17ccd8163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off all <a class="el" href="../../df/d06/classAH_1_1LEDs.html" title="A class for collections of LEDs that can display ranges.">LEDs</a>.  <br /></td></tr>
 <tr class="separator:adf1d9633e64d0de6a36e0af17ccd8163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af589ec97612f1ec63d9410603acf2900" id="r_af589ec97612f1ec63d9410603acf2900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#af589ec97612f1ec63d9410603acf2900">displayDot</a> (uint16_t led) const</td></tr>
+<tr class="memitem:af589ec97612f1ec63d9410603acf2900" id="r_af589ec97612f1ec63d9410603acf2900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#af589ec97612f1ec63d9410603acf2900">displayDot</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">led</a>) <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:af589ec97612f1ec63d9410603acf2900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on a single LED, and turn off all others.  <br /></td></tr>
 <tr class="separator:af589ec97612f1ec63d9410603acf2900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5238ef04e9caeb86f50f51d775e16127" id="r_a5238ef04e9caeb86f50f51d775e16127"><td class="memItemLeft" align="right" valign="top">DotBarMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d89/classAH_1_1DotBarDisplayLEDs.html#a5238ef04e9caeb86f50f51d775e16127">mode</a></td></tr>
 <tr class="separator:a5238ef04e9caeb86f50f51d775e16127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a3e573dcc046bdb0c21a28313570f9" id="r_a80a3e573dcc046bdb0c21a28313570f9"><td class="memItemLeft" align="right" valign="top">const PinList&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#a80a3e573dcc046bdb0c21a28313570f9">ledPins</a></td></tr>
+<tr class="memitem:a80a3e573dcc046bdb0c21a28313570f9" id="r_a80a3e573dcc046bdb0c21a28313570f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> PinList&lt; N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/classAH_1_1LEDs.html#a80a3e573dcc046bdb0c21a28313570f9">ledPins</a></td></tr>
 <tr class="separator:a80a3e573dcc046bdb0c21a28313570f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -180,7 +180,7 @@ Private Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint8_t NumLEDs&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> NumLEDs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -188,7 +188,7 @@ template&lt;uint8_t NumLEDs&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../d6/d44/classNoteCCKPLEDBarDriver.html">NoteCCKPLEDBarDriver</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dc/d69/namespaceAH.html#a2cad4766e2eb5bb24649f97d53635b73">AH::PinList</a>&lt; NumLEDs &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>leds</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../dc/d69/namespaceAH.html#a2cad4766e2eb5bb24649f97d53635b73">AH::PinList</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">NumLEDs</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>leds</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -210,15 +210,15 @@ template&lt;uint8_t NumLEDs&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint8_t NumLEDs&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> NumLEDs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void displayBar </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> displayBar </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -243,9 +243,9 @@ template&lt;uint8_t NumLEDs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void display </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> display </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -278,9 +278,9 @@ template&lt;uint8_t NumLEDs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void display </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> display </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">float</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">float</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -342,7 +342,7 @@ template&lt;uint8_t NumLEDs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void setMode </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> setMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d69/namespaceAH.html#af626aa654815b2c30bbc674379e8807a">DotBarMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
           <td></td>
@@ -377,7 +377,7 @@ template&lt;uint8_t NumLEDs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dotMode </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> dotMode </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -406,7 +406,7 @@ template&lt;uint8_t NumLEDs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void barMode </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> barMode </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -435,7 +435,7 @@ template&lt;uint8_t NumLEDs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void toggleMode </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> toggleMode </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -460,13 +460,13 @@ template&lt;uint8_t NumLEDs&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint16_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void begin </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> begin </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -491,20 +491,20 @@ template&lt;uint16_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint16_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void displayRange </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> displayRange </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>startOn</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>startOn</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>startOff</em></span>&#160;) const</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>startOff</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -533,15 +533,15 @@ template&lt;uint16_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint16_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void set </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -564,15 +564,15 @@ template&lt;uint16_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint16_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void clear </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> clear </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -595,13 +595,13 @@ template&lt;uint16_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint16_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void clear </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> clear </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -626,15 +626,15 @@ template&lt;uint16_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint16_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void displayDot </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> displayDot </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>led</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>led</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -688,13 +688,13 @@ template&lt;uint16_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint16_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const PinList&lt;N&gt; ledPins</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> PinList&lt;N&gt; ledPins</td>
         </tr>
       </table>
   </td>

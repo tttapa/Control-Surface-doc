@@ -104,7 +104,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../d0/db9/VUDisplay_8hpp_source.html">Display/MCU/VUDisplay.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class VU_t = Interfaces::MCU::IVU &amp;&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a> = Interfaces::MCU::IVU &amp;&gt;<br />
 class MCU::VUDisplay&lt; VU_t &gt;</div><p>Displays a <a class="el" href="../../d7/dc7/namespaceMCU.html">MCU</a> level meter. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d9/d3a/2_8VU-Meter-OLED-USB-DAC_8ino-example.html#_a7">2.VU-Meter-OLED-USB-DAC.ino</a>, <a class="el" href="../../d0/d84/MCU-OLED-SSD1306-x2_8ino-example.html#_a38">MCU-OLED-SSD1306-x2.ino</a>, <a class="el" href="../../dd/d42/MCU-OLED-SSD1306_8ino-example.html#_a31">MCU-OLED-SSD1306.ino</a>, and <a class="el" href="../../d8/de6/VU-Meter-Bridge_8ino-example.html#_a24">VU-Meter-Bridge.ino</a>.</dd>
 </dl>
@@ -126,64 +126,64 @@ class MCU::VUDisplay&lt; VU_t &gt;</div><p>Displays a <a class="el" href="../../
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Enabling and disabling display elements</h2></td></tr>
-<tr class="memitem:a486f22824bd83c5308a0d70ffac6f758" id="r_a486f22824bd83c5308a0d70ffac6f758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a486f22824bd83c5308a0d70ffac6f758">enable</a> ()</td></tr>
+<tr class="memitem:a486f22824bd83c5308a0d70ffac6f758" id="r_a486f22824bd83c5308a0d70ffac6f758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a486f22824bd83c5308a0d70ffac6f758">enable</a> ()</td></tr>
 <tr class="memdesc:a486f22824bd83c5308a0d70ffac6f758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this display element: insert it into the linked list of instances, so it gets drawn to the display.  <br /></td></tr>
 <tr class="separator:a486f22824bd83c5308a0d70ffac6f758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfbbe53c1cf6e3054736daea3044c0f" id="r_a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a8cfbbe53c1cf6e3054736daea3044c0f">disable</a> ()</td></tr>
+<tr class="memitem:a8cfbbe53c1cf6e3054736daea3044c0f" id="r_a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a8cfbbe53c1cf6e3054736daea3044c0f">disable</a> ()</td></tr>
 <tr class="memdesc:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this display element: remove it from the linked list of instances, so it no longer gets drawn to the display.  <br /></td></tr>
 <tr class="separator:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb819fb241851fd9fc045271baa4034" id="r_aacb819fb241851fd9fc045271baa4034"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#aacb819fb241851fd9fc045271baa4034">isEnabled</a> () const</td></tr>
+<tr class="memitem:aacb819fb241851fd9fc045271baa4034" id="r_aacb819fb241851fd9fc045271baa4034"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#aacb819fb241851fd9fc045271baa4034">isEnabled</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:aacb819fb241851fd9fc045271baa4034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this display element is enabled.  <br /></td></tr>
 <tr class="separator:aacb819fb241851fd9fc045271baa4034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d7097af0ddb2dd7d63234151f8229e8" id="r_a4d7097af0ddb2dd7d63234151f8229e8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a4d7097af0ddb2dd7d63234151f8229e8">enable</a> (<a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> *element)</td></tr>
+<tr class="memitem:a4d7097af0ddb2dd7d63234151f8229e8" id="r_a4d7097af0ddb2dd7d63234151f8229e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a4d7097af0ddb2dd7d63234151f8229e8">enable</a> (<a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> *element)</td></tr>
 <tr class="memdesc:a4d7097af0ddb2dd7d63234151f8229e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this display element: insert it into the linked list of instances, so it gets drawn to the display.    <br /></td></tr>
 <tr class="separator:a4d7097af0ddb2dd7d63234151f8229e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e59bfd804e0331d86e126b3af410e49" id="r_a0e59bfd804e0331d86e126b3af410e49"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a0e59bfd804e0331d86e126b3af410e49">enable</a> (<a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &amp;element)</td></tr>
+<tr class="memitem:a0e59bfd804e0331d86e126b3af410e49" id="r_a0e59bfd804e0331d86e126b3af410e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a0e59bfd804e0331d86e126b3af410e49">enable</a> (<a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &amp;element)</td></tr>
 <tr class="memdesc:a0e59bfd804e0331d86e126b3af410e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this display element: insert it into the linked list of instances, so it gets drawn to the display.    <br /></td></tr>
 <tr class="separator:a0e59bfd804e0331d86e126b3af410e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf" id="r_a2f775da7b162931d468d6d6b6950dfcf"><td class="memTemplParams" colspan="2">template&lt;class U , size_t N&gt; </td></tr>
-<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a2f775da7b162931d468d6d6b6950dfcf">enable</a> (U(&amp;array)[N])</td></tr>
+<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf" id="r_a2f775da7b162931d468d6d6b6950dfcf"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </td></tr>
+<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a2f775da7b162931d468d6d6b6950dfcf">enable</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;array)[N])</td></tr>
 <tr class="memdesc:a2f775da7b162931d468d6d6b6950dfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this display element: insert it into the linked list of instances, so it gets drawn to the display.    <br /></td></tr>
 <tr class="separator:a2f775da7b162931d468d6d6b6950dfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2b0d8b8415b3af365d803b2a14142db" id="r_ac2b0d8b8415b3af365d803b2a14142db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#ac2b0d8b8415b3af365d803b2a14142db">disable</a> (<a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> *element)</td></tr>
+<tr class="memitem:ac2b0d8b8415b3af365d803b2a14142db" id="r_ac2b0d8b8415b3af365d803b2a14142db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#ac2b0d8b8415b3af365d803b2a14142db">disable</a> (<a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> *element)</td></tr>
 <tr class="memdesc:ac2b0d8b8415b3af365d803b2a14142db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this display element: remove it from the linked list of instances, so it no longer gets drawn to the display.    <br /></td></tr>
 <tr class="separator:ac2b0d8b8415b3af365d803b2a14142db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abda1be983f54046ccf5e9d2df5d60015" id="r_abda1be983f54046ccf5e9d2df5d60015"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#abda1be983f54046ccf5e9d2df5d60015">disable</a> (<a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &amp;element)</td></tr>
+<tr class="memitem:abda1be983f54046ccf5e9d2df5d60015" id="r_abda1be983f54046ccf5e9d2df5d60015"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#abda1be983f54046ccf5e9d2df5d60015">disable</a> (<a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &amp;element)</td></tr>
 <tr class="memdesc:abda1be983f54046ccf5e9d2df5d60015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this display element: remove it from the linked list of instances, so it no longer gets drawn to the display.    <br /></td></tr>
 <tr class="separator:abda1be983f54046ccf5e9d2df5d60015"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0" id="r_ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplParams" colspan="2">template&lt;class U , size_t N&gt; </td></tr>
-<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#ac05c991ba1ef6cb7363a44e2232119f0">disable</a> (U(&amp;array)[N])</td></tr>
+<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0" id="r_ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </td></tr>
+<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#ac05c991ba1ef6cb7363a44e2232119f0">disable</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;array)[N])</td></tr>
 <tr class="memdesc:ac05c991ba1ef6cb7363a44e2232119f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this display element: remove it from the linked list of instances, so it no longer gets drawn to the display.    <br /></td></tr>
 <tr class="separator:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3f27921b0ea7f5f5776493f62776567" id="r_aa3f27921b0ea7f5f5776493f62776567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3f27921b0ea7f5f5776493f62776567">VUDisplay</a> (<a class="el" href="../../df/d42/classDisplayInterface.html">DisplayInterface</a> &amp;<a class="el" href="../../d8/d43/classDisplayElement.html#ad2f652e0abcd7c017daf3405ee8db4ad">display</a>, VU_t &amp;&amp;<a class="el" href="#a5e4bc78be14005902833ab8921c67603">vu</a>, <a class="el" href="../../dc/dd2/structPixelLocation.html">PixelLocation</a> loc, uint16_t <a class="el" href="#ad0eab1042455a2067c812ab8071d5376">width</a>, uint8_t <a class="el" href="#a9c5fde48bed65108053f4889916c4719">blockheight</a>, uint8_t <a class="el" href="#a079b9d1bddc3b383c59fc48c559ef212">spacing</a>, uint16_t <a class="el" href="#a0b10c5b0fa8e65e009263b93ba2671ae">color</a>)</td></tr>
+<tr class="memitem:aa3f27921b0ea7f5f5776493f62776567" id="r_aa3f27921b0ea7f5f5776493f62776567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3f27921b0ea7f5f5776493f62776567">VUDisplay</a> (<a class="el" href="../../df/d42/classDisplayInterface.html">DisplayInterface</a> &amp;<a class="el" href="../../d8/d43/classDisplayElement.html#ad2f652e0abcd7c017daf3405ee8db4ad">display</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a> &amp;&amp;<a class="el" href="#a5e4bc78be14005902833ab8921c67603">vu</a>, <a class="el" href="../../dc/dd2/structPixelLocation.html">PixelLocation</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">loc</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> <a class="el" href="#ad0eab1042455a2067c812ab8071d5376">width</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="#a9c5fde48bed65108053f4889916c4719">blockheight</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="#a079b9d1bddc3b383c59fc48c559ef212">spacing</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> <a class="el" href="#a0b10c5b0fa8e65e009263b93ba2671ae">color</a>)</td></tr>
 <tr class="separator:aa3f27921b0ea7f5f5776493f62776567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affe69e621fb184c78e0334ddbc2442b0" id="r_affe69e621fb184c78e0334ddbc2442b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affe69e621fb184c78e0334ddbc2442b0">draw</a> () override</td></tr>
+<tr class="memitem:affe69e621fb184c78e0334ddbc2442b0" id="r_affe69e621fb184c78e0334ddbc2442b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affe69e621fb184c78e0334ddbc2442b0">draw</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="memdesc:affe69e621fb184c78e0334ddbc2442b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw this <a class="el" href="../../d8/d43/classDisplayElement.html" title="An interface for elements that draw to a display.">DisplayElement</a> to the display buffer.  <br /></td></tr>
 <tr class="separator:affe69e621fb184c78e0334ddbc2442b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0590b14fd1c551c5364a88b3c1d01f5b" id="r_a0590b14fd1c551c5364a88b3c1d01f5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0590b14fd1c551c5364a88b3c1d01f5b">getDirty</a> () const override</td></tr>
+<tr class="memitem:a0590b14fd1c551c5364a88b3c1d01f5b" id="r_a0590b14fd1c551c5364a88b3c1d01f5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0590b14fd1c551c5364a88b3c1d01f5b">getDirty</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="memdesc:a0590b14fd1c551c5364a88b3c1d01f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this <a class="el" href="../../d8/d43/classDisplayElement.html" title="An interface for elements that draw to a display.">DisplayElement</a> has to be re-drawn.  <br /></td></tr>
 <tr class="separator:a0590b14fd1c551c5364a88b3c1d01f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80093eddd7a8674b63f0cbb088d2f8b4" id="r_a80093eddd7a8674b63f0cbb088d2f8b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d42/classDisplayInterface.html">DisplayInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a80093eddd7a8674b63f0cbb088d2f8b4">getDisplay</a> ()</td></tr>
 <tr class="memdesc:a80093eddd7a8674b63f0cbb088d2f8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the display that this element draws to.  <br /></td></tr>
 <tr class="separator:a80093eddd7a8674b63f0cbb088d2f8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a512330a563f8ee3b3422dd5be0255964" id="r_a512330a563f8ee3b3422dd5be0255964"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../df/d42/classDisplayInterface.html">DisplayInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a512330a563f8ee3b3422dd5be0255964">getDisplay</a> () const</td></tr>
+<tr class="memitem:a512330a563f8ee3b3422dd5be0255964" id="r_a512330a563f8ee3b3422dd5be0255964"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../df/d42/classDisplayInterface.html">DisplayInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a512330a563f8ee3b3422dd5be0255964">getDisplay</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:a512330a563f8ee3b3422dd5be0255964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the display that this element draws to.  <br /></td></tr>
 <tr class="separator:a512330a563f8ee3b3422dd5be0255964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b3b19f4ad4de71b5c8f9d97e9d7d80f" id="r_a1b3b19f4ad4de71b5c8f9d97e9d7d80f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a1b3b19f4ad4de71b5c8f9d97e9d7d80f">getAll</a> ()</td></tr>
+<tr class="memitem:a1b3b19f4ad4de71b5c8f9d97e9d7d80f" id="r_a1b3b19f4ad4de71b5c8f9d97e9d7d80f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a1b3b19f4ad4de71b5c8f9d97e9d7d80f">getAll</a> ()</td></tr>
 <tr class="memdesc:a1b3b19f4ad4de71b5c8f9d97e9d7d80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all <a class="el" href="../../d8/d43/classDisplayElement.html" title="An interface for elements that draw to a display.">DisplayElement</a> instances.  <br /></td></tr>
 <tr class="separator:a1b3b19f4ad4de71b5c8f9d97e9d7d80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab435408a6b1eb1705f5dd6d9b274dd75" id="r_ab435408a6b1eb1705f5dd6d9b274dd75"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab435408a6b1eb1705f5dd6d9b274dd75">drawPeak</a> (uint8_t <a class="el" href="#a8f15d3934a28b642e8e63e1766aad14d">peak</a>)</td></tr>
+<tr class="memitem:ab435408a6b1eb1705f5dd6d9b274dd75" id="r_ab435408a6b1eb1705f5dd6d9b274dd75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab435408a6b1eb1705f5dd6d9b274dd75">drawPeak</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="#a8f15d3934a28b642e8e63e1766aad14d">peak</a>)</td></tr>
 <tr class="separator:ab435408a6b1eb1705f5dd6d9b274dd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca9c8bc40c4a5a3811ef787a05050a86" id="r_aca9c8bc40c4a5a3811ef787a05050a86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca9c8bc40c4a5a3811ef787a05050a86">drawBlocks</a> (uint8_t value)</td></tr>
+<tr class="memitem:aca9c8bc40c4a5a3811ef787a05050a86" id="r_aca9c8bc40c4a5a3811ef787a05050a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca9c8bc40c4a5a3811ef787a05050a86">drawBlocks</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> value)</td></tr>
 <tr class="separator:aca9c8bc40c4a5a3811ef787a05050a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -197,41 +197,41 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a189dd1cd90bedceb195c9adde4a18c1c" id="r_a189dd1cd90bedceb195c9adde4a18c1c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a189dd1cd90bedceb195c9adde4a18c1c">elements</a></td></tr>
+<tr class="memitem:a189dd1cd90bedceb195c9adde4a18c1c" id="r_a189dd1cd90bedceb195c9adde4a18c1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d43/classDisplayElement.html#a189dd1cd90bedceb195c9adde4a18c1c">elements</a></td></tr>
 <tr class="separator:a189dd1cd90bedceb195c9adde4a18c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ac2c359e42087a1bf3dc5b4d3e5be5812" id="r_ac2c359e42087a1bf3dc5b4d3e5be5812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2c359e42087a1bf3dc5b4d3e5be5812">updatePeak</a> (uint8_t value)</td></tr>
+<tr class="memitem:ac2c359e42087a1bf3dc5b4d3e5be5812" id="r_ac2c359e42087a1bf3dc5b4d3e5be5812"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2c359e42087a1bf3dc5b4d3e5be5812">updatePeak</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> value)</td></tr>
 <tr class="separator:ac2c359e42087a1bf3dc5b4d3e5be5812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b6f27c4f68b62bb9345035dacba100" id="r_ac3b6f27c4f68b62bb9345035dacba100"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3b6f27c4f68b62bb9345035dacba100">shouldStartDecaying</a> () const</td></tr>
+<tr class="memitem:ac3b6f27c4f68b62bb9345035dacba100" id="r_ac3b6f27c4f68b62bb9345035dacba100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3b6f27c4f68b62bb9345035dacba100">shouldStartDecaying</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="separator:ac3b6f27c4f68b62bb9345035dacba100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42149ed4ee782bb2f544a274adb3bb3d" id="r_a42149ed4ee782bb2f544a274adb3bb3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42149ed4ee782bb2f544a274adb3bb3d">shouldUpdateDecay</a> () const</td></tr>
+<tr class="memitem:a42149ed4ee782bb2f544a274adb3bb3d" id="r_a42149ed4ee782bb2f544a274adb3bb3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42149ed4ee782bb2f544a274adb3bb3d">shouldUpdateDecay</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="separator:a42149ed4ee782bb2f544a274adb3bb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5e4bc78be14005902833ab8921c67603" id="r_a5e4bc78be14005902833ab8921c67603"><td class="memItemLeft" align="right" valign="top">VU_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e4bc78be14005902833ab8921c67603">vu</a></td></tr>
+<tr class="memitem:a5e4bc78be14005902833ab8921c67603" id="r_a5e4bc78be14005902833ab8921c67603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e4bc78be14005902833ab8921c67603">vu</a></td></tr>
 <tr class="separator:a5e4bc78be14005902833ab8921c67603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1c2d516777e6b42af0d281c9ecc7375" id="r_ae1c2d516777e6b42af0d281c9ecc7375"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1c2d516777e6b42af0d281c9ecc7375">x</a></td></tr>
+<tr class="memitem:ae1c2d516777e6b42af0d281c9ecc7375" id="r_ae1c2d516777e6b42af0d281c9ecc7375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1c2d516777e6b42af0d281c9ecc7375">x</a></td></tr>
 <tr class="separator:ae1c2d516777e6b42af0d281c9ecc7375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af77b1a54442f2443cf64a4766f916bcd" id="r_af77b1a54442f2443cf64a4766f916bcd"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af77b1a54442f2443cf64a4766f916bcd">y</a></td></tr>
+<tr class="memitem:af77b1a54442f2443cf64a4766f916bcd" id="r_af77b1a54442f2443cf64a4766f916bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af77b1a54442f2443cf64a4766f916bcd">y</a></td></tr>
 <tr class="separator:af77b1a54442f2443cf64a4766f916bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0eab1042455a2067c812ab8071d5376" id="r_ad0eab1042455a2067c812ab8071d5376"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0eab1042455a2067c812ab8071d5376">width</a></td></tr>
+<tr class="memitem:ad0eab1042455a2067c812ab8071d5376" id="r_ad0eab1042455a2067c812ab8071d5376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0eab1042455a2067c812ab8071d5376">width</a></td></tr>
 <tr class="separator:ad0eab1042455a2067c812ab8071d5376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c5fde48bed65108053f4889916c4719" id="r_a9c5fde48bed65108053f4889916c4719"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c5fde48bed65108053f4889916c4719">blockheight</a></td></tr>
+<tr class="memitem:a9c5fde48bed65108053f4889916c4719" id="r_a9c5fde48bed65108053f4889916c4719"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c5fde48bed65108053f4889916c4719">blockheight</a></td></tr>
 <tr class="separator:a9c5fde48bed65108053f4889916c4719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a079b9d1bddc3b383c59fc48c559ef212" id="r_a079b9d1bddc3b383c59fc48c559ef212"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079b9d1bddc3b383c59fc48c559ef212">spacing</a></td></tr>
+<tr class="memitem:a079b9d1bddc3b383c59fc48c559ef212" id="r_a079b9d1bddc3b383c59fc48c559ef212"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079b9d1bddc3b383c59fc48c559ef212">spacing</a></td></tr>
 <tr class="separator:a079b9d1bddc3b383c59fc48c559ef212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b10c5b0fa8e65e009263b93ba2671ae" id="r_a0b10c5b0fa8e65e009263b93ba2671ae"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b10c5b0fa8e65e009263b93ba2671ae">color</a></td></tr>
+<tr class="memitem:a0b10c5b0fa8e65e009263b93ba2671ae" id="r_a0b10c5b0fa8e65e009263b93ba2671ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b10c5b0fa8e65e009263b93ba2671ae">color</a></td></tr>
 <tr class="separator:a0b10c5b0fa8e65e009263b93ba2671ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f15d3934a28b642e8e63e1766aad14d" id="r_a8f15d3934a28b642e8e63e1766aad14d"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f15d3934a28b642e8e63e1766aad14d">peak</a> = 0</td></tr>
+<tr class="memitem:a8f15d3934a28b642e8e63e1766aad14d" id="r_a8f15d3934a28b642e8e63e1766aad14d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f15d3934a28b642e8e63e1766aad14d">peak</a> = 0</td></tr>
 <tr class="separator:a8f15d3934a28b642e8e63e1766aad14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d80f348f83589246cb6edb9a49eb764" id="r_a7d80f348f83589246cb6edb9a49eb764"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d80f348f83589246cb6edb9a49eb764">previousDecay</a> = 0</td></tr>
+<tr class="memitem:a7d80f348f83589246cb6edb9a49eb764" id="r_a7d80f348f83589246cb6edb9a49eb764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">unsigned</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">long</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d80f348f83589246cb6edb9a49eb764">previousDecay</a> = 0</td></tr>
 <tr class="separator:a7d80f348f83589246cb6edb9a49eb764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d04354863bacdc6307f6d68b881fc2" id="r_a28d04354863bacdc6307f6d68b881fc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28d04354863bacdc6307f6d68b881fc2">decaying</a> = false</td></tr>
+<tr class="memitem:a28d04354863bacdc6307f6d68b881fc2" id="r_a28d04354863bacdc6307f6d68b881fc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28d04354863bacdc6307f6d68b881fc2">decaying</a> = <a class="el" href="../../d0/d32/structAH_1_1Array.html">false</a></td></tr>
 <tr class="separator:a28d04354863bacdc6307f6d68b881fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a404f3fbdb9d1362ce83e4c9570207460" id="r_a404f3fbdb9d1362ce83e4c9570207460"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a404f3fbdb9d1362ce83e4c9570207460">decayTime</a></td></tr>
+<tr class="memitem:a404f3fbdb9d1362ce83e4c9570207460" id="r_a404f3fbdb9d1362ce83e4c9570207460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">unsigned</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">long</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a404f3fbdb9d1362ce83e4c9570207460">decayTime</a></td></tr>
 <tr class="separator:a404f3fbdb9d1362ce83e4c9570207460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -241,7 +241,7 @@ Private Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>  = Interfaces::MCU::IVU &amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -254,7 +254,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">VU_t &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>vu</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>vu</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -264,22 +264,22 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>width</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>width</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>blockheight</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>blockheight</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>spacing</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>spacing</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -300,13 +300,13 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>  = Interfaces::MCU::IVU &amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void draw </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> draw </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -333,13 +333,13 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>  = Interfaces::MCU::IVU &amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool getDirty </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> getDirty </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -366,15 +366,15 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>  = Interfaces::MCU::IVU &amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void drawPeak </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> drawPeak </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>peak</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>peak</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -395,15 +395,15 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>  = Interfaces::MCU::IVU &amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void drawBlocks </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> drawBlocks </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -424,15 +424,15 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>  = Interfaces::MCU::IVU &amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void updatePeak </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> updatePeak </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -453,13 +453,13 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>  = Interfaces::MCU::IVU &amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool shouldStartDecaying </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> shouldStartDecaying </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -482,13 +482,13 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a>  = Interfaces::MCU::IVU &amp;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool shouldUpdateDecay </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> shouldUpdateDecay </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -515,7 +515,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void enable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> enable </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -544,7 +544,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void enable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> enable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
@@ -573,7 +573,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void enable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> enable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
@@ -598,15 +598,15 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class U , size_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void enable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> enable </td>
           <td>(</td>
-          <td class="paramtype">U(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -633,7 +633,7 @@ template&lt;class U , size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void disable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> disable </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -662,7 +662,7 @@ template&lt;class U , size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void disable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> disable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
@@ -691,7 +691,7 @@ template&lt;class U , size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void disable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> disable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
@@ -716,15 +716,15 @@ template&lt;class U , size_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class U , size_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void disable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> disable </td>
           <td>(</td>
-          <td class="paramtype">U(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -751,7 +751,7 @@ template&lt;class U , size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool isEnabled </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> isEnabled </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -810,7 +810,7 @@ template&lt;class U , size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../df/d42/classDisplayInterface.html">DisplayInterface</a> &amp; getDisplay </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../df/d42/classDisplayInterface.html">DisplayInterface</a> &amp; getDisplay </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -839,7 +839,7 @@ template&lt;class U , size_t N&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &gt; &amp; getAll </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d8/d43/classDisplayElement.html">DisplayElement</a> &gt; &amp; getAll </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -871,7 +871,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VU_t vu</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">VU_t</a> vu</td>
         </tr>
       </table>
   </td>
@@ -897,7 +897,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t x</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">int16_t</a> x</td>
         </tr>
       </table>
   </td>
@@ -923,7 +923,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t y</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">int16_t</a> y</td>
         </tr>
       </table>
   </td>
@@ -949,7 +949,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t width</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> width</td>
         </tr>
       </table>
   </td>
@@ -975,7 +975,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t blockheight</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> blockheight</td>
         </tr>
       </table>
   </td>
@@ -1001,7 +1001,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t spacing</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> spacing</td>
         </tr>
       </table>
   </td>
@@ -1027,7 +1027,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t color</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> color</td>
         </tr>
       </table>
   </td>
@@ -1053,7 +1053,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t peak = 0</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">int16_t</a> peak = 0</td>
         </tr>
       </table>
   </td>
@@ -1079,7 +1079,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long previousDecay = 0</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">unsigned</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">long</a> previousDecay = 0</td>
         </tr>
       </table>
   </td>
@@ -1105,7 +1105,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool decaying = false</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> decaying = <a class="el" href="../../d0/d32/structAH_1_1Array.html">false</a></td>
         </tr>
       </table>
   </td>
@@ -1131,7 +1131,7 @@ template&lt;class VU_t  = Interfaces::MCU::IVU &amp;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long decayTime</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">unsigned</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">long</a> decayTime</td>
         </tr>
       </table>
   </td>

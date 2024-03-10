@@ -171,6 +171,11 @@ Mbed OS boards with native USB support</h1>
 <p><em>Arduino Nano 33 BLE, Raspberry Pi Pico</em> </p><hr  />
 <p> While these boards are not supported by the Arduino MIDIUSB library, they still support MIDI over USB through Control Surface's custom <code><a class="el" href="../../d1/dd4/classPluggableUSBMIDI.html">PluggableUSBMIDI</a></code> implementation, which is built on top of <a href="https://github.com/arduino/ArduinoCore-mbed">arduino/ArduinoCore-mbed</a>'s <code>PluggableUSB</code> system.</p>
 <p>You can also use the <a href="https://github.com/earlephilhower/arduino-pico">earlephilhower/arduino-pico</a> core instead of the official one from Arduino, in which case you have to enable the Adafruit TinyUSB library in the <code>Tools &gt; USB Stack</code> menu.</p>
+<p>Known issues:</p><ul>
+<li><a href="https://github.com/arduino/ArduinoCore-mbed/issues/129">ArduinoCore-mbed/issues#129</a>: Nano 33 BLE unreliable USB communication</li>
+<li><a href="https://github.com/adafruit/Adafruit_TinyUSB_Arduino/issues/400">adafruit/Adafruit_TinyUSB_Arduino#400</a>: USB descriptors not correctly updated if Bluetooth stack is initialized before Adafruit_TinyUSB</li>
+<li><a href="https://github.com/adafruit/Adafruit_TinyUSB_Arduino/issues/238">adafruit/Adafruit_TinyUSB_Arduino#238</a>: TinyUSB MIDI crashes when simultaneously receiving and sending messages</li>
+</ul>
 <h1><a class="anchor" id="teensy"></a>
 Teensy</h1>
 <p><em>Teensy 2.0, Teensy++ 2.0, Teensy LC, Teensy 3.0, Teensy 3.1, Teensy 3.2, Teensy 3.5, Teensy 3.6, Teensy 4.0, Teensy 4.1</em> <br  />

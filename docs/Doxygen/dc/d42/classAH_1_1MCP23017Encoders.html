@@ -103,7 +103,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../d8/dd2/MCP23017Encoders_8hpp_source.html">AH/Hardware/MCP23017Encoders.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a> = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a> = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt;<br />
 class AH::MCP23017Encoders&lt; WireType, EncoderPositionType, InterruptSafe &gt;</div><p>Class for reading 8 rotary encoders using a <a class="el" href="../../d5/dd2/classAH_1_1MCP23017.html" title="Class for MCP23017 I²C I/O expanders.">MCP23017</a> I²C port expander. </p>
 <p>Encoders are indexed by a number from 0 to 7. Encoder #0 is connected to pins GPA0 and GPA1, Encoder #1 is connected to pins GPA2 and GPA3, ..., Encoder #7 is connected to pins GPB6 and GPB7.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -126,58 +126,58 @@ class AH::MCP23017Encoders&lt; WireType, EncoderPositionType, InterruptSafe &gt;
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a53a4a3e521cbea41b54ea2ec76359aa7" id="r_a53a4a3e521cbea41b54ea2ec76359aa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a> = <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">typename</a> RegisterEncoderType::Encoder</td></tr>
+<tr class="memitem:a53a4a3e521cbea41b54ea2ec76359aa7" id="r_a53a4a3e521cbea41b54ea2ec76359aa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a> = <a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> RegisterEncoderType::Encoder</td></tr>
 <tr class="memdesc:a53a4a3e521cbea41b54ea2ec76359aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proxy to access a single encoder of the 8 encoders managed by <a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html" title="Class for reading 8 rotary encoders using a MCP23017 I²C port expander.">MCP23017Encoders</a>.  <br /></td></tr>
 <tr class="separator:a53a4a3e521cbea41b54ea2ec76359aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a046a4c660f75a59c62e31e1786e79cef" id="r_a046a4c660f75a59c62e31e1786e79cef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a046a4c660f75a59c62e31e1786e79cef">MCP23017Encoders</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> &amp;<a class="el" href="#abb22f0995af28df02733c1b64c7e8239">wire</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">addr_offset</a>=0, <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="el" href="#ad2559a2771277e53396bdcd088ac2d0f">interrupt_pin</a>=<a class="el" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a>)</td></tr>
+<tr class="memitem:a046a4c660f75a59c62e31e1786e79cef" id="r_a046a4c660f75a59c62e31e1786e79cef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a046a4c660f75a59c62e31e1786e79cef">MCP23017Encoders</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> &amp;<a class="el" href="#abb22f0995af28df02733c1b64c7e8239">wire</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">addr_offset</a>=0, <a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="el" href="#ad2559a2771277e53396bdcd088ac2d0f">interrupt_pin</a>=<a class="el" href="../../dc/d69/namespaceAH.html#a4a1c4604f2bf0c0c2fcfb0b1e0f91c25">NO_PIN</a>)</td></tr>
 <tr class="memdesc:a046a4c660f75a59c62e31e1786e79cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a046a4c660f75a59c62e31e1786e79cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0bdf5cca484fb2ba637c39384b27fb2" id="r_ab0bdf5cca484fb2ba637c39384b27fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a> ()</td></tr>
+<tr class="memitem:ab0bdf5cca484fb2ba637c39384b27fb2" id="r_ab0bdf5cca484fb2ba637c39384b27fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a> ()</td></tr>
 <tr class="memdesc:ab0bdf5cca484fb2ba637c39384b27fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="../../d5/dd2/classAH_1_1MCP23017.html" title="Class for MCP23017 I²C I/O expanders.">MCP23017</a>.  <br /></td></tr>
 <tr class="separator:ab0bdf5cca484fb2ba637c39384b27fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725" id="r_ac5c54df7ed3b930268c8d7752c101725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
+<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725" id="r_ac5c54df7ed3b930268c8d7752c101725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
 <tr class="memdesc:ac5c54df7ed3b930268c8d7752c101725"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the state of the <a class="el" href="../../d5/dd2/classAH_1_1MCP23017.html" title="Class for MCP23017 I²C I/O expanders.">MCP23017</a>'s GPIO changed, read the new state and update the encoder positions.  <br /></td></tr>
 <tr class="separator:ac5c54df7ed3b930268c8d7752c101725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db8e54b71ae7a3f328414a86cae6717" id="r_a6db8e54b71ae7a3f328414a86cae6717"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6db8e54b71ae7a3f328414a86cae6717">read</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">idx</a>) <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a></td></tr>
+<tr class="memitem:a6db8e54b71ae7a3f328414a86cae6717" id="r_a6db8e54b71ae7a3f328414a86cae6717"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6db8e54b71ae7a3f328414a86cae6717">read</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">idx</a>) <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:a6db8e54b71ae7a3f328414a86cae6717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the position of the given encoder.  <br /></td></tr>
 <tr class="separator:a6db8e54b71ae7a3f328414a86cae6717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3fb22aa61f8554521927328279bcba8" id="r_ac3fb22aa61f8554521927328279bcba8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3fb22aa61f8554521927328279bcba8">readAndReset</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">idx</a>)</td></tr>
+<tr class="memitem:ac3fb22aa61f8554521927328279bcba8" id="r_ac3fb22aa61f8554521927328279bcba8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3fb22aa61f8554521927328279bcba8">readAndReset</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">idx</a>)</td></tr>
 <tr class="memdesc:ac3fb22aa61f8554521927328279bcba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the position of the given encoder and reset it to zero.  <br /></td></tr>
 <tr class="separator:ac3fb22aa61f8554521927328279bcba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae35e3b5e9f9bdf4aa569607f10cd42a4" id="r_ae35e3b5e9f9bdf4aa569607f10cd42a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae35e3b5e9f9bdf4aa569607f10cd42a4">write</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">idx</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">pos</a>)</td></tr>
+<tr class="memitem:ae35e3b5e9f9bdf4aa569607f10cd42a4" id="r_ae35e3b5e9f9bdf4aa569607f10cd42a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae35e3b5e9f9bdf4aa569607f10cd42a4">write</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">idx</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">pos</a>)</td></tr>
 <tr class="memdesc:ae35e3b5e9f9bdf4aa569607f10cd42a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of the given encoder.  <br /></td></tr>
 <tr class="separator:ae35e3b5e9f9bdf4aa569607f10cd42a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd99700425989059986af7fae84c3a86" id="r_abd99700425989059986af7fae84c3a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd99700425989059986af7fae84c3a86">operator[]</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> index)</td></tr>
+<tr class="memitem:abd99700425989059986af7fae84c3a86" id="r_abd99700425989059986af7fae84c3a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd99700425989059986af7fae84c3a86">operator[]</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> index)</td></tr>
 <tr class="memdesc:abd99700425989059986af7fae84c3a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a proxy to one of the encoders managed by this <a class="el" href="../../d5/dd2/classAH_1_1MCP23017.html" title="Class for MCP23017 I²C I/O expanders.">MCP23017</a>.  <br /></td></tr>
 <tr class="separator:abd99700425989059986af7fae84c3a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af79deb139fa4983e4e2767f1320a0145" id="r_af79deb139fa4983e4e2767f1320a0145"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">size_t</a> N&gt; </td></tr>
-<tr class="memitem:af79deb139fa4983e4e2767f1320a0145"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af79deb139fa4983e4e2767f1320a0145">writeI2C</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a>(&amp;values)[N])</td></tr>
+<tr class="memitem:af79deb139fa4983e4e2767f1320a0145" id="r_af79deb139fa4983e4e2767f1320a0145"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </td></tr>
+<tr class="memitem:af79deb139fa4983e4e2767f1320a0145"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af79deb139fa4983e4e2767f1320a0145">writeI2C</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>(&amp;values)[N])</td></tr>
 <tr class="memdesc:af79deb139fa4983e4e2767f1320a0145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write any data to the <a class="el" href="../../d5/dd2/classAH_1_1MCP23017.html" title="Class for MCP23017 I²C I/O expanders.">MCP23017</a>.  <br /></td></tr>
 <tr class="separator:af79deb139fa4983e4e2767f1320a0145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27f2277ab2f22b85c947ee6bda46a7e" id="r_ad27f2277ab2f22b85c947ee6bda46a7e"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:ad27f2277ab2f22b85c947ee6bda46a7e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad27f2277ab2f22b85c947ee6bda46a7e">writeI2C</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">addr</a>, Args... values)</td></tr>
+<tr class="memitem:ad27f2277ab2f22b85c947ee6bda46a7e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad27f2277ab2f22b85c947ee6bda46a7e">writeI2C</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">addr</a>, Args... values)</td></tr>
 <tr class="memdesc:ad27f2277ab2f22b85c947ee6bda46a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write any data to the <a class="el" href="../../d5/dd2/classAH_1_1MCP23017.html" title="Class for MCP23017 I²C I/O expanders.">MCP23017</a>.  <br /></td></tr>
 <tr class="separator:ad27f2277ab2f22b85c947ee6bda46a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ce0b38752b71d2c5edf0d6056b8bcc" id="r_a99ce0b38752b71d2c5edf0d6056b8bcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ce0b38752b71d2c5edf0d6056b8bcc">readGPIO</a> ()</td></tr>
+<tr class="memitem:a99ce0b38752b71d2c5edf0d6056b8bcc" id="r_a99ce0b38752b71d2c5edf0d6056b8bcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ce0b38752b71d2c5edf0d6056b8bcc">readGPIO</a> ()</td></tr>
 <tr class="memdesc:a99ce0b38752b71d2c5edf0d6056b8bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the state of all GPIO pins.  <br /></td></tr>
 <tr class="separator:a99ce0b38752b71d2c5edf0d6056b8bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:af38d7b101da7868519c569e5c14fcd43" id="r_af38d7b101da7868519c569e5c14fcd43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af38d7b101da7868519c569e5c14fcd43">RegisterEncoderType</a></td></tr>
+<tr class="memitem:af38d7b101da7868519c569e5c14fcd43" id="r_af38d7b101da7868519c569e5c14fcd43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af38d7b101da7868519c569e5c14fcd43">RegisterEncoderType</a></td></tr>
 <tr class="separator:af38d7b101da7868519c569e5c14fcd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abb22f0995af28df02733c1b64c7e8239" id="r_abb22f0995af28df02733c1b64c7e8239"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb22f0995af28df02733c1b64c7e8239">wire</a></td></tr>
+<tr class="memitem:abb22f0995af28df02733c1b64c7e8239" id="r_abb22f0995af28df02733c1b64c7e8239"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb22f0995af28df02733c1b64c7e8239">wire</a></td></tr>
 <tr class="separator:abb22f0995af28df02733c1b64c7e8239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f726014b044194def151079f1f2d89" id="r_af3f726014b044194def151079f1f2d89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3f726014b044194def151079f1f2d89">address</a></td></tr>
+<tr class="memitem:af3f726014b044194def151079f1f2d89" id="r_af3f726014b044194def151079f1f2d89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3f726014b044194def151079f1f2d89">address</a></td></tr>
 <tr class="separator:af3f726014b044194def151079f1f2d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2559a2771277e53396bdcd088ac2d0f" id="r_ad2559a2771277e53396bdcd088ac2d0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2559a2771277e53396bdcd088ac2d0f">interrupt_pin</a></td></tr>
 <tr class="separator:ad2559a2771277e53396bdcd088ac2d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +186,7 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:aad631c539e719dc37c2b04a2413d61d8" id="r_aad631c539e719dc37c2b04a2413d61d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">constexpr</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad631c539e719dc37c2b04a2413d61d8">I2C_BASE_ADDRESS</a> = 0x20</td></tr>
+<tr class="memitem:aad631c539e719dc37c2b04a2413d61d8" id="r_aad631c539e719dc37c2b04a2413d61d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad631c539e719dc37c2b04a2413d61d8">I2C_BASE_ADDRESS</a> = 0x20</td></tr>
 <tr class="separator:aad631c539e719dc37c2b04a2413d61d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -196,13 +196,13 @@ Static Private Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">using</a> <a class="el" href="#af38d7b101da7868519c569e5c14fcd43">RegisterEncoderType</a></td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a> <a class="el" href="#af38d7b101da7868519c569e5c14fcd43">RegisterEncoderType</a></td>
         </tr>
       </table>
   </td>
@@ -224,10 +224,10 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">using</a> <a class="el" href="#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a> = <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">typename</a> RegisterEncoderType::Encoder</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a> <a class="el" href="#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a> = <a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> RegisterEncoderType::Encoder</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,7 +245,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -253,12 +253,12 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
         <tr>
           <td class="memname"><a class="el" href="../../dc/d42/classAH_1_1MCP23017Encoders.html">MCP23017Encoders</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>wire</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>wire</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>addr_offset</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>addr_offset</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -295,17 +295,17 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">size_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> writeI2C </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> writeI2C </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>values</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>values</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -328,7 +328,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">siz
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <div class="memtemplate">
 template&lt;class... Args&gt; </div>
 <table class="mlabels">
@@ -336,9 +336,9 @@ template&lt;class... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> writeI2C </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> writeI2C </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>addr</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>addr</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -372,13 +372,13 @@ template&lt;class... Args&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint16_t</a> readGPIO </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> readGPIO </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -403,13 +403,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> begin </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> begin </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -438,13 +438,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> update </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> update </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -471,15 +471,15 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a> read </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a> read </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -510,15 +510,15 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a> readAndReset </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a> readAndReset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -549,20 +549,20 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> write </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> write </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>idx</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>idx</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -592,15 +592,15 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">operator</a>[] </td>
+          <td class="memname"><a class="el" href="#a53a4a3e521cbea41b54ea2ec76359aa7">MCP23017Encoder</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">operator</a>[] </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -630,13 +630,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">constexpr</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> I2C_BASE_ADDRESS = 0x20</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> I2C_BASE_ADDRESS = 0x20</td>
         </tr>
       </table>
   </td>
@@ -656,13 +656,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a>* wire</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a>* wire</td>
         </tr>
       </table>
   </td>
@@ -682,13 +682,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> address</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> address</td>
         </tr>
       </table>
   </td>
@@ -708,7 +708,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -734,7 +734,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">WireType</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> InterruptSafe = false&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">WireType</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">EncoderPositionType</a>  = int32_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> InterruptSafe = false&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

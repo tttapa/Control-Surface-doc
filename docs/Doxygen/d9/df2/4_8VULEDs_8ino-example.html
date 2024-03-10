@@ -93,7 +93,7 @@ $(function() {
 <p>This example demonstrates the use of the VULEDs class that displays the VU or level meters from your DAW as an LED bar graph.</p>
 <p>Shift registers are used to drive the LEDs.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Nano Every, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Due, Teensy 3.x, ESP8266, ESP32</dd></dl>
-<h2><a class="anchor" id="connections-64"></a>
+<h2><a class="anchor" id="connections-23"></a>
 Connections</h2>
 <ul>
 <li>SS: 74HC595 ST_CP</li>
@@ -104,11 +104,11 @@ Connections</h2>
 <p>Connect an LED (and series resistor) between each of the first 12 outputs of the shift registers and ground.</p>
 <p>Remember to connect the enable pin of the shift register to ground and the master reset pin to Vcc in order to enable it. <br  />
 </p>
-<h2><a class="anchor" id="behavior-67"></a>
+<h2><a class="anchor" id="behavior-26"></a>
 Behavior</h2>
 <p>The LEDs display the level of the first track in your DAW. <br  />
  When the push button is pressed, the VU meter switches from bar mode to dot mode and back.</p>
-<h2><a class="anchor" id="mapping-40"></a>
+<h2><a class="anchor" id="mapping-6"></a>
 Mapping</h2>
 <p>Map the Arduino as a Mackie Control Universal in your DAW.</p>
 <p>Written by PieterP, 2019-12-09 <br  />
@@ -148,11 +148,11 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <a id="a3" name="a3"></a><a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a4" name="a4"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
-<div class="line">  dotBarModeButton.begin();</div>
+<div class="line">  dotBarModeButton.<a id="a5" name="a5"></a><a class="code hl_function" href="../../d0/d32/structAH_1_1Array.html#a90a285d3deb303b8ce684a1e4fdfe032">begin</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a5" name="a5"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a6" name="a6"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">  <span class="keywordflow">if</span> (dotBarModeButton.update() == Button::Falling) <span class="comment">// when button is pressed</span></div>
 <div class="line">    vu.toggleMode(); <span class="comment">// toggle between dot and bar mode</span></div>
 <div class="line">}</div>
@@ -163,6 +163,7 @@ Mapping</h2>
 <div class="ttc" id="aclassMCU_1_1VULEDs_html"><div class="ttname"><a href="../../df/d36/classMCU_1_1VULEDs.html">MCU::VULEDs</a></div><div class="ttdoc">A MIDI input element that represents a Mackie Control Universal VU meter and displays its value using...</div><div class="ttdef"><b>Definition</b> <a href="../../de/d3d/VULEDs_8hpp_source.html#l00043">VULEDs.hpp:43</a></div></div>
 <div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00158">USBMIDI_Interface.hpp:159</a></div></div>
 <div class="ttc" id="anamespaceMCU_1_1VUDecay_html_ab8e20bc4798982b19f31c569b8dbb7db"><div class="ttname"><a href="../../d6/d98/namespaceMCU_1_1VUDecay.html#ab8e20bc4798982b19f31c569b8dbb7db">MCU::VUDecay::Default</a></div><div class="ttdeci">constexpr unsigned int Default</div><div class="ttdoc">Decay one segment/block every 150 ms if no new values are received.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dda/VU_8hpp_source.html#l00179">VU.hpp:179</a></div></div>
+<div class="ttc" id="astructAH_1_1Array_html_a90a285d3deb303b8ce684a1e4fdfe032"><div class="ttname"><a href="../../d0/d32/structAH_1_1Array.html#a90a285d3deb303b8ce684a1e4fdfe032">AH::Array::begin</a></div><div class="ttdeci">T * begin()</div><div class="ttdoc">Get a pointer to the first element.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d76/Array_8hpp_source.html#l00074">Array.hpp:74</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -105,7 +105,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../db/d4b/PBValue_8hpp_source.html">MIDI_Inputs/PBValue.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;uint8_t BankSize&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> BankSize&gt;<br />
 class Bankable::PBValue&lt; BankSize &gt;</div><p>Class that listens for MIDI Pitch Bend events on a single address and saves their value. </p>
 <p>This version listens accross multiple banks.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -132,10 +132,10 @@ class Bankable::PBValue&lt; BankSize &gt;</div><p>Class that listens for MIDI Pi
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Data access</h2></td></tr>
-<tr class="memitem:a0b871528327c49dc0d7be83de09cdc91" id="r_a0b871528327c49dc0d7be83de09cdc91"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b871528327c49dc0d7be83de09cdc91">getValue</a> () const override</td></tr>
+<tr class="memitem:a0b871528327c49dc0d7be83de09cdc91" id="r_a0b871528327c49dc0d7be83de09cdc91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b871528327c49dc0d7be83de09cdc91">getValue</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="memdesc:a0b871528327c49dc0d7be83de09cdc91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recent MIDI value that was received for the active bank.  <br /></td></tr>
 <tr class="separator:a0b871528327c49dc0d7be83de09cdc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e22bedfe165f76c3097c456a425c67e" id="r_a9e22bedfe165f76c3097c456a425c67e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e22bedfe165f76c3097c456a425c67e">getValue</a> (uint8_t bank) const</td></tr>
+<tr class="memitem:a9e22bedfe165f76c3097c456a425c67e" id="r_a9e22bedfe165f76c3097c456a425c67e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e22bedfe165f76c3097c456a425c67e">getValue</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> bank) <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:a9e22bedfe165f76c3097c456a425c67e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the most recent MIDI value that was received for the given bank.  <br /></td></tr>
 <tr class="separator:a9e22bedfe165f76c3097c456a425c67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -181,58 +181,58 @@ class Bankable::PBValue&lt; BankSize &gt;</div><p>Class that listens for MIDI Pi
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab735c8d050fdd499ea41b950fe228d4a" id="r_ab735c8d050fdd499ea41b950fe228d4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a> = <a class="el" href="../../d5/d2c/structBankablePitchBendMIDIMatcher.html">BankablePitchBendMIDIMatcher</a>&lt;BankSize&gt;</td></tr>
+<tr class="memitem:ab735c8d050fdd499ea41b950fe228d4a" id="r_ab735c8d050fdd499ea41b950fe228d4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a> = <a class="el" href="../../d5/d2c/structBankablePitchBendMIDIMatcher.html">BankablePitchBendMIDIMatcher</a>&lt;BankSize&gt;</td></tr>
 <tr class="separator:ab735c8d050fdd499ea41b950fe228d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc34c039598608cd9882e5d6ce28b741" id="r_abc34c039598608cd9882e5d6ce28b741"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc34c039598608cd9882e5d6ce28b741">Parent</a> = <a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html">BankableMatchingMIDIInputElement</a>&lt;<a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a>, <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a>&gt;</td></tr>
+<tr class="memitem:abc34c039598608cd9882e5d6ce28b741" id="r_abc34c039598608cd9882e5d6ce28b741"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc34c039598608cd9882e5d6ce28b741">Parent</a> = <a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html">BankableMatchingMIDIInputElement</a>&lt;<a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a>, <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a>&gt;</td></tr>
 <tr class="separator:abc34c039598608cd9882e5d6ce28b741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4730cd43f9206e013a64ee4ea8306472" id="r_a4730cd43f9206e013a64ee4ea8306472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4730cd43f9206e013a64ee4ea8306472">PBValue</a> (<a class="el" href="../../dc/d17/structBankConfig.html">BankConfig</a>&lt; BankSize, <a class="el" href="../../dd/d1f/BankConfig_8hpp.html#a6fe085db0aa80588322c415f46d74bf1ad449d327304dea59a191ccbb268d4fb4">BankType::ChangeChannel</a> &gt; config, <a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address)</td></tr>
 <tr class="separator:a4730cd43f9206e013a64ee4ea8306472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebfcdbbd0fe4efbff10b180be50ca6bc" id="r_aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebfcdbbd0fe4efbff10b180be50ca6bc">reset</a> () override</td></tr>
+<tr class="memitem:aebfcdbbd0fe4efbff10b180be50ca6bc" id="r_aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebfcdbbd0fe4efbff10b180be50ca6bc">reset</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="memdesc:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all values to zero.  <br /></td></tr>
 <tr class="separator:aebfcdbbd0fe4efbff10b180be50ca6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5573c8032407bdf439730a1cf7b6a5e3" id="r_a5573c8032407bdf439730a1cf7b6a5e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">updateWith</a> (<a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> midimsg) override</td></tr>
+<tr class="memitem:a5573c8032407bdf439730a1cf7b6a5e3" id="r_a5573c8032407bdf439730a1cf7b6a5e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a5573c8032407bdf439730a1cf7b6a5e3">updateWith</a> (<a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> midimsg) <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="memdesc:a5573c8032407bdf439730a1cf7b6a5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a new MIDI message and update the internal state.  <br /></td></tr>
 <tr class="separator:a5573c8032407bdf439730a1cf7b6a5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8b3295e878d374fe9af277f6983204" id="r_a7d8b3295e878d374fe9af277f6983204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a> (typename <a class="el" href="../../d8/ddc/structBankablePitchBendMIDIMatcher_1_1Result.html">Matcher::Result</a> match)=0</td></tr>
+<tr class="memitem:a7d8b3295e878d374fe9af277f6983204" id="r_a7d8b3295e878d374fe9af277f6983204"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#a7d8b3295e878d374fe9af277f6983204">handleUpdate</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> <a class="el" href="../../d8/ddc/structBankablePitchBendMIDIMatcher_1_1Result.html">Matcher::Result</a> match)=0</td></tr>
 <tr class="separator:a7d8b3295e878d374fe9af277f6983204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8ec6ac27419ce65e20d415ebfe1495" id="r_a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a> ()</td></tr>
+<tr class="memitem:a2d8ec6ac27419ce65e20d415ebfe1495" id="r_a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a2d8ec6ac27419ce65e20d415ebfe1495">begin</a> ()</td></tr>
 <tr class="memdesc:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the input element.  <br /></td></tr>
 <tr class="separator:a2d8ec6ac27419ce65e20d415ebfe1495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd36d7881ea8503d5c5824e7a5ad6c7e" id="r_acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> ()</td></tr>
+<tr class="memitem:acd36d7881ea8503d5c5824e7a5ad6c7e" id="r_acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> ()</td></tr>
 <tr class="memdesc:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the value of the input element. Used for decaying VU meters etc.  <br /></td></tr>
 <tr class="separator:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af8e83e6344db343c94b3730d55ff029a" id="r_af8e83e6344db343c94b3730d55ff029a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">updateAllWith</a> (<a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> midimsg)</td></tr>
+<tr class="memitem:af8e83e6344db343c94b3730d55ff029a" id="r_af8e83e6344db343c94b3730d55ff029a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#af8e83e6344db343c94b3730d55ff029a">updateAllWith</a> (<a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> midimsg)</td></tr>
 <tr class="memdesc:af8e83e6344db343c94b3730d55ff029a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <br /></td></tr>
 <tr class="separator:af8e83e6344db343c94b3730d55ff029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e05f733dace05adcf585b5a17be292" id="r_a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
+<tr class="memitem:a44e05f733dace05adcf585b5a17be292" id="r_a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
 <tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all.  <br /></td></tr>
 <tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f7077a56ec41a07f5a54dd8b3828984" id="r_a4f7077a56ec41a07f5a54dd8b3828984"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a> ()</td></tr>
+<tr class="memitem:a4f7077a56ec41a07f5a54dd8b3828984" id="r_a4f7077a56ec41a07f5a54dd8b3828984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a> ()</td></tr>
 <tr class="memdesc:a4f7077a56ec41a07f5a54dd8b3828984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin all.  <br /></td></tr>
 <tr class="separator:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef9a22e0ad427812e1089edcf3bb85e1" id="r_aef9a22e0ad427812e1089edcf3bb85e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#aef9a22e0ad427812e1089edcf3bb85e1">resetAll</a> ()</td></tr>
+<tr class="memitem:aef9a22e0ad427812e1089edcf3bb85e1" id="r_aef9a22e0ad427812e1089edcf3bb85e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classMIDIInputElement.html#aef9a22e0ad427812e1089edcf3bb85e1">resetAll</a> ()</td></tr>
 <tr class="memdesc:aef9a22e0ad427812e1089edcf3bb85e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all.  <br /></td></tr>
 <tr class="separator:aef9a22e0ad427812e1089edcf3bb85e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae729be5eae2c0fd38cd5cf64471e4ce8" id="r_ae729be5eae2c0fd38cd5cf64471e4ce8"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae729be5eae2c0fd38cd5cf64471e4ce8">MessageType</a> = <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5accc5c5aaa32fc84dc9fae9dc5b26e28e">MIDIMessageType::PitchBend</a></td></tr>
+<tr class="memitem:ae729be5eae2c0fd38cd5cf64471e4ce8" id="r_ae729be5eae2c0fd38cd5cf64471e4ce8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">auto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae729be5eae2c0fd38cd5cf64471e4ce8">MessageType</a> = <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5accc5c5aaa32fc84dc9fae9dc5b26e28e">MIDIMessageType::PitchBend</a></td></tr>
 <tr class="separator:ae729be5eae2c0fd38cd5cf64471e4ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad253a3eefdc42722ead170e31e21a150" id="r_ad253a3eefdc42722ead170e31e21a150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad253a3eefdc42722ead170e31e21a150">handleUpdate</a> (typename <a class="el" href="../../d8/ddc/structBankablePitchBendMIDIMatcher_1_1Result.html">Matcher::Result</a> match) override</td></tr>
+<tr class="memitem:ad253a3eefdc42722ead170e31e21a150" id="r_ad253a3eefdc42722ead170e31e21a150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad253a3eefdc42722ead170e31e21a150">handleUpdate</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> <a class="el" href="../../d8/ddc/structBankablePitchBendMIDIMatcher_1_1Result.html">Matcher::Result</a> match) <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="separator:ad253a3eefdc42722ead170e31e21a150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ac6640153d56b6858943d51607973d4" id="r_a6ac6640153d56b6858943d51607973d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac6640153d56b6858943d51607973d4">onBankSettingChange</a> () override</td></tr>
+<tr class="memitem:a6ac6640153d56b6858943d51607973d4" id="r_a6ac6640153d56b6858943d51607973d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac6640153d56b6858943d51607973d4">onBankSettingChange</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="memdesc:a6ac6640153d56b6858943d51607973d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to be executed each time the bank setting changes.  <br /></td></tr>
 <tr class="separator:a6ac6640153d56b6858943d51607973d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ababd417b912ff8f2e52cba11a836094d" id="r_ababd417b912ff8f2e52cba11a836094d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html#ababd417b912ff8f2e52cba11a836094d">getActiveBank</a> () const</td></tr>
+<tr class="memitem:ababd417b912ff8f2e52cba11a836094d" id="r_ababd417b912ff8f2e52cba11a836094d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html#ababd417b912ff8f2e52cba11a836094d">getActiveBank</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="separator:ababd417b912ff8f2e52cba11a836094d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -257,7 +257,7 @@ Static Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af32c97878b4524b1296a229556fc478f" id="r_af32c97878b4524b1296a229556fc478f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt; uint16_t, BankSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af32c97878b4524b1296a229556fc478f">values</a> = {{}}</td></tr>
+<tr class="memitem:af32c97878b4524b1296a229556fc478f" id="r_af32c97878b4524b1296a229556fc478f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a>, BankSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af32c97878b4524b1296a229556fc478f">values</a> = {{}}</td></tr>
 <tr class="separator:af32c97878b4524b1296a229556fc478f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -270,7 +270,7 @@ Private Attributes</h2></td></tr>
 template&lt;uint8_t BankSize&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a> = <a class="el" href="../../d5/d2c/structBankablePitchBendMIDIMatcher.html">BankablePitchBendMIDIMatcher</a>&lt;BankSize&gt;</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a> <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a> = <a class="el" href="../../d5/d2c/structBankablePitchBendMIDIMatcher.html">BankablePitchBendMIDIMatcher</a>&lt;BankSize&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -288,7 +288,7 @@ template&lt;uint8_t BankSize&gt; </div>
 template&lt;uint8_t BankSize&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#abc34c039598608cd9882e5d6ce28b741">Parent</a> = <a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html">BankableMatchingMIDIInputElement</a>&lt;<a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a>, <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a>&gt;</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a> <a class="el" href="#abc34c039598608cd9882e5d6ce28b741">Parent</a> = <a class="el" href="../../d9/dc0/classBankableMatchingMIDIInputElement.html">BankableMatchingMIDIInputElement</a>&lt;<a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a>, <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -304,7 +304,7 @@ template&lt;uint8_t BankSize&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint8_t BankSize&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> BankSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -345,15 +345,15 @@ template&lt;uint8_t BankSize&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint8_t BankSize&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> BankSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void handleUpdate </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> handleUpdate </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="../../d8/ddc/structBankablePitchBendMIDIMatcher_1_1Result.html">Matcher::Result</a></td>          <td class="paramname"><span class="paramname"><em>match</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> <a class="el" href="../../d8/ddc/structBankablePitchBendMIDIMatcher_1_1Result.html">Matcher::Result</a></td>          <td class="paramname"><span class="paramname"><em>match</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -374,13 +374,13 @@ template&lt;uint8_t BankSize&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint8_t BankSize&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> BankSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t getValue </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> getValue </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -407,15 +407,15 @@ template&lt;uint8_t BankSize&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint8_t BankSize&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> BankSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t getValue </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> getValue </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bank</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>bank</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -438,13 +438,13 @@ template&lt;uint8_t BankSize&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint8_t BankSize&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> BankSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void reset </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> reset </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -471,13 +471,13 @@ template&lt;uint8_t BankSize&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;uint8_t BankSize&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> BankSize&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void onBankSettingChange </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> onBankSettingChange </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -509,7 +509,7 @@ template&lt;uint8_t BankSize&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t getActiveBank </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> getActiveBank </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -532,13 +532,13 @@ template&lt;uint8_t BankSize&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> Type, class <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a> &gt; </div>
+template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> Type, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool updateWith </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> updateWith </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a></td>          <td class="paramname"><span class="paramname"><em>midimsg</em></span></td><td>)</td>
           <td></td>
@@ -565,15 +565,15 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> Type, class <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a> &gt; </div>
+template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> Type, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="#ab735c8d050fdd499ea41b950fe228d4a">Matcher</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void handleUpdate </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> handleUpdate </td>
           <td>(</td>
-          <td class="paramtype">typename Matcher::Result</td>          <td class="paramname"><span class="paramname"><em>match</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> Matcher::Result</td>          <td class="paramname"><span class="paramname"><em>match</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -602,7 +602,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void begin </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> begin </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -637,7 +637,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void update </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> update </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -670,7 +670,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool updateAllWith </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> updateAllWith </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d9/db1/classMIDIInputElement.html#a18d9158a76f021b57d8eae7e1028b348">MessageType</a></td>          <td class="paramname"><span class="paramname"><em>midimsg</em></span></td><td>)</td>
           <td></td>
@@ -701,7 +701,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void updateAll </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> updateAll </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -732,7 +732,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void beginAll </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> beginAll </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -763,7 +763,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void resetAll </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> resetAll </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -823,7 +823,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Type</a> &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Type</a> &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -852,7 +852,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Type</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Type</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -881,7 +881,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -939,7 +939,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Type</a> &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Type</a> &gt; &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -968,7 +968,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Type</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d9/db1/classMIDIInputElement.html">MIDIInputElement</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Type</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -997,7 +997,7 @@ template&lt;<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1144,7 +1144,7 @@ template&lt;uint8_t BankSize&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> = <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5accc5c5aaa32fc84dc9fae9dc5b26e28e">MIDIMessageType::PitchBend</a></td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">auto</a> <a class="el" href="../../d5/dae/classMatchingMIDIInputElement.html#aa732e43eeb1ed1c03893ef1bfd0dce5c">MessageType</a> = <a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5accc5c5aaa32fc84dc9fae9dc5b26e28e">MIDIMessageType::PitchBend</a></td>
         </tr>
       </table>
   </td>
@@ -1170,7 +1170,7 @@ template&lt;uint8_t BankSize&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt;uint16_t, BankSize&gt; values = {{}}</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AH::Array</a>&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a>, BankSize&gt; values = {{}}</td>
         </tr>
       </table>
   </td>

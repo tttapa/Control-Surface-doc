@@ -102,7 +102,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">AH/Hardware/FilteredAnalog.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a> = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a> = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt;<br />
 class AH::GenericFilteredAnalog&lt; MappingFunction, Precision, FilterShiftFactor, FilterType, AnalogType, IncRes &gt;</div><p><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html" title="A class that reads and filters an analog input.">FilteredAnalog</a> base class with generic MappingFunction. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html" title="A class that reads and filters an analog input.">FilteredAnalog</a> </dd></dl>
 
@@ -124,59 +124,59 @@ class AH::GenericFilteredAnalog&lt; MappingFunction, Precision, FilterShiftFacto
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a185f36ed491dad9a906a5df3192c378d" id="r_a185f36ed491dad9a906a5df3192c378d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a185f36ed491dad9a906a5df3192c378d">GenericFilteredAnalog</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="el" href="#a14a694c01cf8f7a34d197120c9cd5906">analogPin</a>, <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> <a class="el" href="#ac0b34350a8c36183ef0611f470c594c0">mapFn</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> initial=0)</td></tr>
+<tr class="memitem:a185f36ed491dad9a906a5df3192c378d" id="r_a185f36ed491dad9a906a5df3192c378d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a185f36ed491dad9a906a5df3192c378d">GenericFilteredAnalog</a> (<a class="el" href="../../dc/d69/namespaceAH.html#ae9cbfef0ba7a84ef222eff1fc509f88b">pin_t</a> <a class="el" href="#a14a694c01cf8f7a34d197120c9cd5906">analogPin</a>, <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> <a class="el" href="#ac0b34350a8c36183ef0611f470c594c0">mapFn</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> initial=0)</td></tr>
 <tr class="memdesc:a185f36ed491dad9a906a5df3192c378d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../da/d36/classAH_1_1GenericFilteredAnalog.html" title="FilteredAnalog base class with generic MappingFunction.">GenericFilteredAnalog</a> object.  <br /></td></tr>
 <tr class="separator:a185f36ed491dad9a906a5df3192c378d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a674927f3c54db0ef2b817c89c569231d" id="r_a674927f3c54db0ef2b817c89c569231d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a674927f3c54db0ef2b817c89c569231d">reset</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> value=0)</td></tr>
+<tr class="memitem:a674927f3c54db0ef2b817c89c569231d" id="r_a674927f3c54db0ef2b817c89c569231d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a674927f3c54db0ef2b817c89c569231d">reset</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> value=0)</td></tr>
 <tr class="memdesc:a674927f3c54db0ef2b817c89c569231d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the filter to the given value.  <br /></td></tr>
 <tr class="separator:a674927f3c54db0ef2b817c89c569231d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ec6f8b6a600fac80d3366840e5c55f" id="r_a22ec6f8b6a600fac80d3366840e5c55f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22ec6f8b6a600fac80d3366840e5c55f">resetToCurrentValue</a> ()</td></tr>
+<tr class="memitem:a22ec6f8b6a600fac80d3366840e5c55f" id="r_a22ec6f8b6a600fac80d3366840e5c55f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22ec6f8b6a600fac80d3366840e5c55f">resetToCurrentValue</a> ()</td></tr>
 <tr class="memdesc:a22ec6f8b6a600fac80d3366840e5c55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the filtered value to the value that's currently being measured at the analog input.  <br /></td></tr>
 <tr class="separator:a22ec6f8b6a600fac80d3366840e5c55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55537d6de64435f495f9eaac3985d7e8" id="r_a55537d6de64435f495f9eaac3985d7e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55537d6de64435f495f9eaac3985d7e8">map</a> (<a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">fn</a>)</td></tr>
+<tr class="memitem:a55537d6de64435f495f9eaac3985d7e8" id="r_a55537d6de64435f495f9eaac3985d7e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55537d6de64435f495f9eaac3985d7e8">map</a> (<a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">fn</a>)</td></tr>
 <tr class="memdesc:a55537d6de64435f495f9eaac3985d7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a mapping function/functor that is applied to the analog value after filtering and before applying hysteresis.  <br /></td></tr>
 <tr class="separator:a55537d6de64435f495f9eaac3985d7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ad3b355d0723d98e6f21e1862d1c98" id="r_aa2ad3b355d0723d98e6f21e1862d1c98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2ad3b355d0723d98e6f21e1862d1c98">getMappingFunction</a> ()</td></tr>
 <tr class="memdesc:aa2ad3b355d0723d98e6f21e1862d1c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the mapping function.  <br /></td></tr>
 <tr class="separator:aa2ad3b355d0723d98e6f21e1862d1c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4259e33d7998a8ebde0ec3037e6938a" id="r_ad4259e33d7998a8ebde0ec3037e6938a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4259e33d7998a8ebde0ec3037e6938a">getMappingFunction</a> () <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a></td></tr>
+<tr class="memitem:ad4259e33d7998a8ebde0ec3037e6938a" id="r_ad4259e33d7998a8ebde0ec3037e6938a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4259e33d7998a8ebde0ec3037e6938a">getMappingFunction</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:ad4259e33d7998a8ebde0ec3037e6938a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the mapping function.  <br /></td></tr>
 <tr class="separator:ad4259e33d7998a8ebde0ec3037e6938a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2aac016e2bf7b5bd2b271786c2791aa" id="r_aa2aac016e2bf7b5bd2b271786c2791aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2aac016e2bf7b5bd2b271786c2791aa">update</a> ()</td></tr>
+<tr class="memitem:aa2aac016e2bf7b5bd2b271786c2791aa" id="r_aa2aac016e2bf7b5bd2b271786c2791aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2aac016e2bf7b5bd2b271786c2791aa">update</a> ()</td></tr>
 <tr class="memdesc:aa2aac016e2bf7b5bd2b271786c2791aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the analog input value, apply the mapping function, and update the average.  <br /></td></tr>
 <tr class="separator:aa2aac016e2bf7b5bd2b271786c2791aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a4d365b8958084f9cb9176fe638bfae" id="r_a8a4d365b8958084f9cb9176fe638bfae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a4d365b8958084f9cb9176fe638bfae">getValue</a> () <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a></td></tr>
+<tr class="memitem:a8a4d365b8958084f9cb9176fe638bfae" id="r_a8a4d365b8958084f9cb9176fe638bfae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a4d365b8958084f9cb9176fe638bfae">getValue</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:a8a4d365b8958084f9cb9176fe638bfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the filtered value of the analog input (with the mapping function applied).  <br /></td></tr>
 <tr class="separator:a8a4d365b8958084f9cb9176fe638bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6e5dccd615d65041ffc174d01cb9b8" id="r_a8b6e5dccd615d65041ffc174d01cb9b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b6e5dccd615d65041ffc174d01cb9b8">getFloatValue</a> () <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a></td></tr>
+<tr class="memitem:a8b6e5dccd615d65041ffc174d01cb9b8" id="r_a8b6e5dccd615d65041ffc174d01cb9b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b6e5dccd615d65041ffc174d01cb9b8">getFloatValue</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:a8b6e5dccd615d65041ffc174d01cb9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the filtered value of the analog input with the mapping function applied as a floating point number from 0.0 to 1.0.  <br /></td></tr>
 <tr class="separator:a8b6e5dccd615d65041ffc174d01cb9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a3e6c660c868d044afaeaf53e7872b3" id="r_a5a3e6c660c868d044afaeaf53e7872b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a3e6c660c868d044afaeaf53e7872b3">getRawValue</a> () <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a></td></tr>
+<tr class="memitem:a5a3e6c660c868d044afaeaf53e7872b3" id="r_a5a3e6c660c868d044afaeaf53e7872b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a3e6c660c868d044afaeaf53e7872b3">getRawValue</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:a5a3e6c660c868d044afaeaf53e7872b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the raw value of the analog input without any filtering or mapping applied, but with its bit depth increased by <code>IncRes</code>.  <br /></td></tr>
 <tr class="separator:a5a3e6c660c868d044afaeaf53e7872b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae890034508efe794687fc950d594507d" id="r_ae890034508efe794687fc950d594507d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">constexpr</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae890034508efe794687fc950d594507d">getMaxRawValue</a> ()</td></tr>
+<tr class="memitem:ae890034508efe794687fc950d594507d" id="r_ae890034508efe794687fc950d594507d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae890034508efe794687fc950d594507d">getMaxRawValue</a> ()</td></tr>
 <tr class="memdesc:ae890034508efe794687fc950d594507d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum value that can be returned from <a class="el" href="#a5a3e6c660c868d044afaeaf53e7872b3">getRawValue</a>.  <br /></td></tr>
 <tr class="separator:ae890034508efe794687fc950d594507d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cec68e11b712453289f34d1634f86b8" id="r_a3cec68e11b712453289f34d1634f86b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cec68e11b712453289f34d1634f86b8">setupADC</a> ()</td></tr>
+<tr class="memitem:a3cec68e11b712453289f34d1634f86b8" id="r_a3cec68e11b712453289f34d1634f86b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cec68e11b712453289f34d1634f86b8">setupADC</a> ()</td></tr>
 <tr class="memdesc:a3cec68e11b712453289f34d1634f86b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the configured ADC resolution.  <br /></td></tr>
 <tr class="separator:a3cec68e11b712453289f34d1634f86b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a4ac3abd6fea63f6ac483d0e8509ebe65" id="r_a4ac3abd6fea63f6ac483d0e8509ebe65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ac3abd6fea63f6ac483d0e8509ebe65">EMA_t</a> = <a class="el" href="../../d9/d74/classAH_1_1EMA.html">EMA</a>&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterShiftFactor</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>&gt;</td></tr>
+<tr class="memitem:a4ac3abd6fea63f6ac483d0e8509ebe65" id="r_a4ac3abd6fea63f6ac483d0e8509ebe65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ac3abd6fea63f6ac483d0e8509ebe65">EMA_t</a> = <a class="el" href="../../d9/d74/classAH_1_1EMA.html">EMA</a>&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterShiftFactor</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>&gt;</td></tr>
 <tr class="separator:a4ac3abd6fea63f6ac483d0e8509ebe65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a80ae65b235ea2c4fee89011a1d20b2cd" id="r_a80ae65b235ea2c4fee89011a1d20b2cd"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">typename</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">M</a>  = MappingFunction&gt; </td></tr>
-<tr class="memitem:a80ae65b235ea2c4fee89011a1d20b2cd"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_constructible&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">M</a> &gt;::value, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a80ae65b235ea2c4fee89011a1d20b2cd">mapFnHelper</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">input</a>)</td></tr>
+<tr class="memitem:a80ae65b235ea2c4fee89011a1d20b2cd" id="r_a80ae65b235ea2c4fee89011a1d20b2cd"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">M</a>  = MappingFunction&gt; </td></tr>
+<tr class="memitem:a80ae65b235ea2c4fee89011a1d20b2cd"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_constructible&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">M</a> &gt;::value, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a80ae65b235ea2c4fee89011a1d20b2cd">mapFnHelper</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">input</a>)</td></tr>
 <tr class="memdesc:a80ae65b235ea2c4fee89011a1d20b2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function that applies the mapping function if it's enabled.  <br /></td></tr>
 <tr class="separator:a80ae65b235ea2c4fee89011a1d20b2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44f1fe2a62cc5f2e57377c3dcf62e47a" id="r_a44f1fe2a62cc5f2e57377c3dcf62e47a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">typename</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">M</a>  = MappingFunction&gt; </td></tr>
-<tr class="memitem:a44f1fe2a62cc5f2e57377c3dcf62e47a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!std::is_constructible&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">M</a> &gt;::value, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a44f1fe2a62cc5f2e57377c3dcf62e47a">mapFnHelper</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">input</a>)</td></tr>
+<tr class="memitem:a44f1fe2a62cc5f2e57377c3dcf62e47a" id="r_a44f1fe2a62cc5f2e57377c3dcf62e47a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">M</a>  = MappingFunction&gt; </td></tr>
+<tr class="memitem:a44f1fe2a62cc5f2e57377c3dcf62e47a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!std::is_constructible&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">M</a> &gt;::value, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a44f1fe2a62cc5f2e57377c3dcf62e47a">mapFnHelper</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">input</a>)</td></tr>
 <tr class="memdesc:a44f1fe2a62cc5f2e57377c3dcf62e47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function that applies the mapping function without checking if it's enabled.  <br /></td></tr>
 <tr class="separator:a44f1fe2a62cc5f2e57377c3dcf62e47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -188,7 +188,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac0b34350a8c36183ef0611f470c594c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cbecfb797bcd7b367dc19c47e67b84c" id="r_a8cbecfb797bcd7b367dc19c47e67b84c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4ac3abd6fea63f6ac483d0e8509ebe65">EMA_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cbecfb797bcd7b367dc19c47e67b84c">filter</a></td></tr>
 <tr class="separator:a8cbecfb797bcd7b367dc19c47e67b84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59ad53f58c22dda10715b40fcf441dc" id="r_ac59ad53f58c22dda10715b40fcf441dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df9/classAH_1_1Hysteresis.html">Hysteresis</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#a8db0fcdeeb644f813c9b29211ce0a1ae">ADC_BITS</a>+<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">IncRes</a> - <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Precision</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac59ad53f58c22dda10715b40fcf441dc">hysteresis</a></td></tr>
+<tr class="memitem:ac59ad53f58c22dda10715b40fcf441dc" id="r_ac59ad53f58c22dda10715b40fcf441dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df9/classAH_1_1Hysteresis.html">Hysteresis</a>&lt; <a class="el" href="../../dc/d69/namespaceAH.html#a8db0fcdeeb644f813c9b29211ce0a1ae">ADC_BITS</a>+<a class="el" href="../../d0/d32/structAH_1_1Array.html">IncRes</a> - <a class="el" href="../../d0/d32/structAH_1_1Array.html">Precision</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac59ad53f58c22dda10715b40fcf441dc">hysteresis</a></td></tr>
 <tr class="separator:ac59ad53f58c22dda10715b40fcf441dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -198,13 +198,13 @@ Private Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">using</a> <a class="el" href="#a4ac3abd6fea63f6ac483d0e8509ebe65">EMA_t</a> = <a class="el" href="../../d9/d74/classAH_1_1EMA.html">EMA</a>&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterShiftFactor</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>&gt;</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">using</a> <a class="el" href="#a4ac3abd6fea63f6ac483d0e8509ebe65">EMA_t</a> = <a class="el" href="../../d9/d74/classAH_1_1EMA.html">EMA</a>&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterShiftFactor</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>&gt;</td>
         </tr>
       </table>
   </td>
@@ -225,7 +225,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -243,7 +243,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a></td>          <td class="paramname"><span class="paramname"><em>initial</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a></td>          <td class="paramname"><span class="paramname"><em>initial</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -274,15 +274,15 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> reset </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> reset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a></td>          <td class="paramname"><span class="paramname"><em>value</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a></td>          <td class="paramname"><span class="paramname"><em>value</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -311,13 +311,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> resetToCurrentValue </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> resetToCurrentValue </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -343,13 +343,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> map </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> map </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a></td>          <td class="paramname"><span class="paramname"><em>fn</em></span></td><td>)</td>
           <td></td>
@@ -383,7 +383,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -414,13 +414,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> &amp; getMappingFunction </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> &amp; getMappingFunction </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -445,13 +445,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> update </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> update </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -472,8 +472,6 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d2/d96/3_8FilteredAnalogReadSerial_8ino-example.html#a0">3.FilteredAnalogReadSerial.ino</a>, and <a class="el" href="../../d7/dac/MCP23017-RotaryEncoder-No-Interrupts_8ino-example.html#a14">MCP23017-RotaryEncoder-No-Interrupts.ino</a>.</dd>
-</dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html#l00118">118</a> of file <a class="el" href="../../d8/df3/FilteredAnalog_8hpp_source.html">FilteredAnalog.hpp</a>.</p>
 
@@ -485,13 +483,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> getValue </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> getValue </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -518,13 +516,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">float</a> getFloatValue </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">float</a> getFloatValue </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -550,13 +548,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> getRawValue </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> getRawValue </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -581,13 +579,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">constexpr</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> getMaxRawValue </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> getMaxRawValue </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -612,13 +610,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> setupADC </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> setupADC </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -647,17 +645,17 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">typename</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">M</a>  = MappingFunction&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">M</a>  = MappingFunction&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt; std::is_constructible&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">M</a> &gt;::value, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> &gt;::type mapFnHelper </td>
+          <td class="memname">std::enable_if&lt; std::is_constructible&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">M</a> &gt;::value, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> &gt;::type mapFnHelper </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a></td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a></td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -681,17 +679,17 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">typ
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">typename</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">M</a>  = MappingFunction&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">typename</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">M</a>  = MappingFunction&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;!std::is_constructible&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">M</a> &gt;::value, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a> &gt;::type mapFnHelper </td>
+          <td class="memname">std::enable_if&lt;!std::is_constructible&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">M</a> &gt;::value, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a> &gt;::type mapFnHelper </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a></td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a></td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -716,7 +714,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">typ
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -742,7 +740,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -768,7 +766,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -794,13 +792,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> Precision = 10, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>  = analog_t, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d4e/Def_8hpp.html#a8a88619567eb674b733cb39ac9b06ad6">MappingFunction</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> Precision = 10, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> FilterShiftFactor = ANALOG_FILTER_SHIFT_FACTOR, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">FilterType</a>  = ANALOG_FILTER_TYPE, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>  = analog_t, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> IncRes = MaximumFilteredAnalogIncRes&lt;              FilterShiftFactor, FilterType, AnalogType&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../da/df9/classAH_1_1Hysteresis.html">Hysteresis</a>&lt;<a class="el" href="../../dc/d69/namespaceAH.html#a8db0fcdeeb644f813c9b29211ce0a1ae">ADC_BITS</a> + <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">IncRes</a> - <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Precision</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>, <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">AnalogType</a>&gt; hysteresis</td>
+          <td class="memname"><a class="el" href="../../da/df9/classAH_1_1Hysteresis.html">Hysteresis</a>&lt;<a class="el" href="../../dc/d69/namespaceAH.html#a8db0fcdeeb644f813c9b29211ce0a1ae">ADC_BITS</a> + <a class="el" href="../../d0/d32/structAH_1_1Array.html">IncRes</a> - <a class="el" href="../../d0/d32/structAH_1_1Array.html">Precision</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">AnalogType</a>&gt; hysteresis</td>
         </tr>
       </table>
   </td>

@@ -102,7 +102,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../dc/d34/Bankable_2Abstract_2MIDIChordButton_8hpp_source.html">MIDI_Outputs/Bankable/Abstract/MIDIChordButton.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class Sender&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> Sender&gt;<br />
 class Bankable::MIDIChordButton&lt; Sender &gt;</div><p>An abstract class for momentary push buttons that send multiple MIDI events. </p>
 <p>The button is debounced.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../de/d0d/classAH_1_1Button.html" title="A class for reading and debouncing buttons and switches.">AH::Button</a> </dd></dl>
@@ -167,22 +167,22 @@ class Bankable::MIDIChordButton&lt; Sender &gt;</div><p>An abstract class for mo
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a864504d3062613d1dba349e41a19a7dd" id="r_a864504d3062613d1dba349e41a19a7dd"><td class="memTemplParams" colspan="2">template&lt;uint8_t N&gt; </td></tr>
-<tr class="memitem:a864504d3062613d1dba349e41a19a7dd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a864504d3062613d1dba349e41a19a7dd">MIDIChordButton</a> (<a class="el" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a>&lt;&gt; config, pin_t pin, <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> <a class="el" href="#aca2429c738109ec5bdc556bbd192ae06">address</a>, <a class="el" href="../../d5/dc0/classChord.html">Chord</a>&lt; N &gt; <a class="el" href="#ab9cfd02aeff8f98b50832e1228934489">chord</a>, const Sender &amp;<a class="el" href="#a3296e2217dd530ddb922f24a450fec82">sender</a>)</td></tr>
+<tr class="memitem:a864504d3062613d1dba349e41a19a7dd" id="r_a864504d3062613d1dba349e41a19a7dd"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> N&gt; </td></tr>
+<tr class="memitem:a864504d3062613d1dba349e41a19a7dd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a864504d3062613d1dba349e41a19a7dd">MIDIChordButton</a> (<a class="el" href="../../d0/d24/structOutputBankConfig.html">OutputBankConfig</a>&lt;&gt; config, pin_t pin, <a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> <a class="el" href="#aca2429c738109ec5bdc556bbd192ae06">address</a>, <a class="el" href="../../d5/dc0/classChord.html">Chord</a>&lt; N &gt; <a class="el" href="#ab9cfd02aeff8f98b50832e1228934489">chord</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> Sender &amp;<a class="el" href="#a3296e2217dd530ddb922f24a450fec82">sender</a>)</td></tr>
 <tr class="memdesc:a864504d3062613d1dba349e41a19a7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new bankable <a class="el" href="../../da/d96/classBankable_1_1MIDIChordButton.html" title="An abstract class for momentary push buttons that send multiple MIDI events.">MIDIChordButton</a>.  <br /></td></tr>
 <tr class="separator:a864504d3062613d1dba349e41a19a7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2" id="r_a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () override</td></tr>
+<tr class="memitem:a7c3e14d99bd3dc0e3670d6956dafcaf2" id="r_a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c3e14d99bd3dc0e3670d6956dafcaf2">begin</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="memdesc:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this updatable.  <br /></td></tr>
 <tr class="separator:a7c3e14d99bd3dc0e3670d6956dafcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44137bb65de2396875934e48a6ee5099" id="r_a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099" id="r_a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44137bb65de2396875934e48a6ee5099">update</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">override</a></td></tr>
 <tr class="memdesc:a44137bb65de2396875934e48a6ee5099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this updatable.  <br /></td></tr>
 <tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fa1616cc61c19a5efcc863c950f7f30" id="r_a7fa1616cc61c19a5efcc863c950f7f30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fa1616cc61c19a5efcc863c950f7f30">invert</a> ()</td></tr>
+<tr class="memitem:a7fa1616cc61c19a5efcc863c950f7f30" id="r_a7fa1616cc61c19a5efcc863c950f7f30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fa1616cc61c19a5efcc863c950f7f30">invert</a> ()</td></tr>
 <tr class="separator:a7fa1616cc61c19a5efcc863c950f7f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c8c834002cd1700bb1da13a96935dd1" id="r_a2c8c834002cd1700bb1da13a96935dd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d0d/classAH_1_1Button.html#a5d74787dedbc4e11c1ab15bf487e61f8">AH::Button::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c8c834002cd1700bb1da13a96935dd1">getButtonState</a> () const</td></tr>
+<tr class="memitem:a2c8c834002cd1700bb1da13a96935dd1" id="r_a2c8c834002cd1700bb1da13a96935dd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d0d/classAH_1_1Button.html#a5d74787dedbc4e11c1ab15bf487e61f8">AH::Button::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c8c834002cd1700bb1da13a96935dd1">getButtonState</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="separator:a2c8c834002cd1700bb1da13a96935dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4abd2c0250cfb739c19b115086b9839" id="r_af4abd2c0250cfb739c19b115086b9839"><td class="memTemplParams" colspan="2">template&lt;uint8_t N&gt; </td></tr>
-<tr class="memitem:af4abd2c0250cfb739c19b115086b9839"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af4abd2c0250cfb739c19b115086b9839">setChord</a> (<a class="el" href="../../d5/dc0/classChord.html">Chord</a>&lt; N &gt; <a class="el" href="#ab9cfd02aeff8f98b50832e1228934489">chord</a>)</td></tr>
+<tr class="memitem:af4abd2c0250cfb739c19b115086b9839" id="r_af4abd2c0250cfb739c19b115086b9839"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> N&gt; </td></tr>
+<tr class="memitem:af4abd2c0250cfb739c19b115086b9839"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af4abd2c0250cfb739c19b115086b9839">setChord</a> (<a class="el" href="../../d5/dc0/classChord.html">Chord</a>&lt; N &gt; <a class="el" href="#ab9cfd02aeff8f98b50832e1228934489">chord</a>)</td></tr>
 <tr class="separator:af4abd2c0250cfb739c19b115086b9839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -208,9 +208,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aca2429c738109ec5bdc556bbd192ae06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09a1022b8e549dbbb727963b460a6c5b" id="r_a09a1022b8e549dbbb727963b460a6c5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d0d/classAH_1_1Button.html">AH::Button</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09a1022b8e549dbbb727963b460a6c5b">button</a></td></tr>
 <tr class="separator:a09a1022b8e549dbbb727963b460a6c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9cfd02aeff8f98b50832e1228934489" id="r_ab9cfd02aeff8f98b50832e1228934489"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; const <a class="el" href="../../db/dbe/classIChord.html">IChord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9cfd02aeff8f98b50832e1228934489">chord</a></td></tr>
+<tr class="memitem:ab9cfd02aeff8f98b50832e1228934489" id="r_ab9cfd02aeff8f98b50832e1228934489"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../db/dbe/classIChord.html">IChord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9cfd02aeff8f98b50832e1228934489">chord</a></td></tr>
 <tr class="separator:ab9cfd02aeff8f98b50832e1228934489"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47fd462c65baa7db64dc2edae7651f96" id="r_a47fd462c65baa7db64dc2edae7651f96"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; const <a class="el" href="../../db/dbe/classIChord.html">IChord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47fd462c65baa7db64dc2edae7651f96">newChord</a></td></tr>
+<tr class="memitem:a47fd462c65baa7db64dc2edae7651f96" id="r_a47fd462c65baa7db64dc2edae7651f96"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../db/dbe/classIChord.html">IChord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47fd462c65baa7db64dc2edae7651f96">newChord</a></td></tr>
 <tr class="separator:a47fd462c65baa7db64dc2edae7651f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -220,9 +220,9 @@ Private Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Sender &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> Sender &gt; </div>
 <div class="memtemplate">
-template&lt;uint8_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -250,7 +250,7 @@ template&lt;uint8_t N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Sender &amp;</td>          <td class="paramname"><span class="paramname"><em>sender</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> Sender &amp;</td>          <td class="paramname"><span class="paramname"><em>sender</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -283,13 +283,13 @@ template&lt;uint8_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Sender &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> Sender &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void begin </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> begin </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -316,13 +316,13 @@ template&lt;class Sender &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Sender &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> Sender &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void update </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> update </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -349,13 +349,13 @@ template&lt;class Sender &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Sender &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> Sender &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void invert </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> invert </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -379,7 +379,7 @@ template&lt;class Sender &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Sender &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> Sender &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -408,15 +408,15 @@ template&lt;class Sender &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Sender &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> Sender &gt; </div>
 <div class="memtemplate">
-template&lt;uint8_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void setChord </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> setChord </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d5/dc0/classChord.html">Chord</a>&lt; N &gt;</td>          <td class="paramname"><span class="paramname"><em>chord</em></span></td><td>)</td>
           <td></td>
@@ -542,7 +542,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -573,7 +573,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -606,7 +606,7 @@ template&lt;class U , size_t N&gt; </div>
         <tr>
           <td class="memname">static void enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -668,7 +668,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -699,7 +699,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -732,7 +732,7 @@ template&lt;class U , size_t N&gt; </div>
         <tr>
           <td class="memname">static void disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -877,7 +877,7 @@ template&lt;class Sender &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;const <a class="el" href="../../db/dbe/classIChord.html">IChord</a>&gt; chord</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../db/dbe/classIChord.html">IChord</a>&gt; chord</td>
         </tr>
       </table>
   </td>
@@ -903,7 +903,7 @@ template&lt;class Sender &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;const <a class="el" href="../../db/dbe/classIChord.html">IChord</a>&gt; newChord</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../db/dbe/classIChord.html">IChord</a>&gt; newChord</td>
         </tr>
       </table>
   </td>

@@ -93,7 +93,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../d2/d9a/MIDI__Sender_8hpp_source.html">MIDI_Interfaces/MIDI_Sender.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class Derived&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a>&gt;<br />
 class MIDI_Sender&lt; Derived &gt;</div><p>Statically polymorphic template for classes that send MIDI messages. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d2/d77/MIDI-Monitor-OLED_8ino-example.html#_a1">MIDI-Monitor-OLED.ino</a>.</dd>
 </dl>
@@ -108,132 +108,132 @@ class MIDI_Sender&lt; Derived &gt;</div><p>Statically polymorphic template for c
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI Channel Voice messages</h2></td></tr>
-<tr class="memitem:a73a6527752f718e279d94348d82a76f5" id="r_a73a6527752f718e279d94348d82a76f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73a6527752f718e279d94348d82a76f5">send</a> (<a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a> message)</td></tr>
+<tr class="memitem:a73a6527752f718e279d94348d82a76f5" id="r_a73a6527752f718e279d94348d82a76f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73a6527752f718e279d94348d82a76f5">send</a> (<a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a> message)</td></tr>
 <tr class="memdesc:a73a6527752f718e279d94348d82a76f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Channel Voice message.  <br /></td></tr>
 <tr class="separator:a73a6527752f718e279d94348d82a76f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aa9b0021721829431a43a3ccd978e93" id="r_a6aa9b0021721829431a43a3ccd978e93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6aa9b0021721829431a43a3ccd978e93">sendChannelMessage</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, <a class="el" href="../../d2/d48/classChannel.html">Channel</a> c, uint8_t d1, uint8_t d2, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a6aa9b0021721829431a43a3ccd978e93" id="r_a6aa9b0021721829431a43a3ccd978e93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6aa9b0021721829431a43a3ccd978e93">sendChannelMessage</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">m</a>, <a class="el" href="../../d2/d48/classChannel.html">Channel</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">c</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">d1</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">d2</a>, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a6aa9b0021721829431a43a3ccd978e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 3-byte MIDI Channel Voice message.  <br /></td></tr>
 <tr class="separator:a6aa9b0021721829431a43a3ccd978e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae140dc02cd90a37a026f9896b207b9a2" id="r_ae140dc02cd90a37a026f9896b207b9a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae140dc02cd90a37a026f9896b207b9a2">sendChannelMessage</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, <a class="el" href="../../d2/d48/classChannel.html">Channel</a> c, uint8_t d1, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:ae140dc02cd90a37a026f9896b207b9a2" id="r_ae140dc02cd90a37a026f9896b207b9a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae140dc02cd90a37a026f9896b207b9a2">sendChannelMessage</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">m</a>, <a class="el" href="../../d2/d48/classChannel.html">Channel</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">c</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">d1</a>, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:ae140dc02cd90a37a026f9896b207b9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a 2-byte MIDI Channel Voice message.  <br /></td></tr>
 <tr class="separator:ae140dc02cd90a37a026f9896b207b9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad487d041b8e9d10d58aba470a15e1fc6" id="r_ad487d041b8e9d10d58aba470a15e1fc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t velocity)</td></tr>
+<tr class="memitem:ad487d041b8e9d10d58aba470a15e1fc6" id="r_ad487d041b8e9d10d58aba470a15e1fc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad487d041b8e9d10d58aba470a15e1fc6">sendNoteOn</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> velocity)</td></tr>
 <tr class="memdesc:ad487d041b8e9d10d58aba470a15e1fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Note On event.  <br /></td></tr>
 <tr class="separator:ad487d041b8e9d10d58aba470a15e1fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5438982b69a41d7b4565328f5fd73c8" id="r_ae5438982b69a41d7b4565328f5fd73c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t velocity)</td></tr>
+<tr class="memitem:ae5438982b69a41d7b4565328f5fd73c8" id="r_ae5438982b69a41d7b4565328f5fd73c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5438982b69a41d7b4565328f5fd73c8">sendNoteOff</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> velocity)</td></tr>
 <tr class="memdesc:ae5438982b69a41d7b4565328f5fd73c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Note Off event.  <br /></td></tr>
 <tr class="separator:ae5438982b69a41d7b4565328f5fd73c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88982533de6f46173eccd7069425babe" id="r_a88982533de6f46173eccd7069425babe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88982533de6f46173eccd7069425babe">sendKeyPressure</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t pressure)</td></tr>
+<tr class="memitem:a88982533de6f46173eccd7069425babe" id="r_a88982533de6f46173eccd7069425babe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88982533de6f46173eccd7069425babe">sendKeyPressure</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">pressure</a>)</td></tr>
 <tr class="memdesc:a88982533de6f46173eccd7069425babe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Key Pressure event.  <br /></td></tr>
 <tr class="separator:a88982533de6f46173eccd7069425babe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e05cc39766771989374c1dd26b77a4" id="r_aa0e05cc39766771989374c1dd26b77a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0e05cc39766771989374c1dd26b77a4">sendControlChange</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t value)</td></tr>
+<tr class="memitem:aa0e05cc39766771989374c1dd26b77a4" id="r_aa0e05cc39766771989374c1dd26b77a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0e05cc39766771989374c1dd26b77a4">sendControlChange</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> value)</td></tr>
 <tr class="memdesc:aa0e05cc39766771989374c1dd26b77a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Control Change event.  <br /></td></tr>
 <tr class="separator:aa0e05cc39766771989374c1dd26b77a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f6d6afd79c73c67548e57bc4fa148a" id="r_a69f6d6afd79c73c67548e57bc4fa148a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69f6d6afd79c73c67548e57bc4fa148a">sendProgramChange</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address)</td></tr>
+<tr class="memitem:a69f6d6afd79c73c67548e57bc4fa148a" id="r_a69f6d6afd79c73c67548e57bc4fa148a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69f6d6afd79c73c67548e57bc4fa148a">sendProgramChange</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address)</td></tr>
 <tr class="memdesc:a69f6d6afd79c73c67548e57bc4fa148a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event.  <br /></td></tr>
 <tr class="separator:a69f6d6afd79c73c67548e57bc4fa148a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f98989f2f186ede97480c8b9c3b4c8f" id="r_a5f98989f2f186ede97480c8b9c3b4c8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f98989f2f186ede97480c8b9c3b4c8f">sendProgramChange</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t value)</td></tr>
+<tr class="memitem:a5f98989f2f186ede97480c8b9c3b4c8f" id="r_a5f98989f2f186ede97480c8b9c3b4c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f98989f2f186ede97480c8b9c3b4c8f">sendProgramChange</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> value)</td></tr>
 <tr class="memdesc:a5f98989f2f186ede97480c8b9c3b4c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event.  <br /></td></tr>
 <tr class="separator:a5f98989f2f186ede97480c8b9c3b4c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0893df10734cfe6c5fc7e4a968715648" id="r_a0893df10734cfe6c5fc7e4a968715648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0893df10734cfe6c5fc7e4a968715648">sendChannelPressure</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t pressure)</td></tr>
+<tr class="memitem:a0893df10734cfe6c5fc7e4a968715648" id="r_a0893df10734cfe6c5fc7e4a968715648"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0893df10734cfe6c5fc7e4a968715648">sendChannelPressure</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">pressure</a>)</td></tr>
 <tr class="memdesc:a0893df10734cfe6c5fc7e4a968715648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Channel Pressure event.  <br /></td></tr>
 <tr class="separator:a0893df10734cfe6c5fc7e4a968715648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9bf7eb7560466dab452620fe2db223e" id="r_af9bf7eb7560466dab452620fe2db223e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9bf7eb7560466dab452620fe2db223e">sendPitchBend</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint16_t value)</td></tr>
+<tr class="memitem:af9bf7eb7560466dab452620fe2db223e" id="r_af9bf7eb7560466dab452620fe2db223e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9bf7eb7560466dab452620fe2db223e">sendPitchBend</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> value)</td></tr>
 <tr class="memdesc:af9bf7eb7560466dab452620fe2db223e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Pitch Bend event.  <br /></td></tr>
 <tr class="separator:af9bf7eb7560466dab452620fe2db223e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI System Common messages</h2></td></tr>
-<tr class="memitem:a051c7228a56e8653ce9decf1eb75532b" id="r_a051c7228a56e8653ce9decf1eb75532b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a051c7228a56e8653ce9decf1eb75532b">send</a> (<a class="el" href="../../d5/dad/structSysCommonMessage.html">SysCommonMessage</a> message)</td></tr>
+<tr class="memitem:a051c7228a56e8653ce9decf1eb75532b" id="r_a051c7228a56e8653ce9decf1eb75532b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a051c7228a56e8653ce9decf1eb75532b">send</a> (<a class="el" href="../../d5/dad/structSysCommonMessage.html">SysCommonMessage</a> message)</td></tr>
 <tr class="memdesc:a051c7228a56e8653ce9decf1eb75532b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message.  <br /></td></tr>
 <tr class="separator:a051c7228a56e8653ce9decf1eb75532b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5438919a6b32a1bc83b669be9c5df69" id="r_ad5438919a6b32a1bc83b669be9c5df69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5438919a6b32a1bc83b669be9c5df69">sendSysCommon</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:ad5438919a6b32a1bc83b669be9c5df69" id="r_ad5438919a6b32a1bc83b669be9c5df69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5438919a6b32a1bc83b669be9c5df69">sendSysCommon</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">m</a>, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:ad5438919a6b32a1bc83b669be9c5df69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message.  <br /></td></tr>
 <tr class="separator:ad5438919a6b32a1bc83b669be9c5df69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa3da449ea996a61b80c4acdc8ef5d8c" id="r_afa3da449ea996a61b80c4acdc8ef5d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa3da449ea996a61b80c4acdc8ef5d8c">sendSysCommon</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, uint8_t data1, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:afa3da449ea996a61b80c4acdc8ef5d8c" id="r_afa3da449ea996a61b80c4acdc8ef5d8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa3da449ea996a61b80c4acdc8ef5d8c">sendSysCommon</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">m</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> data1, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:afa3da449ea996a61b80c4acdc8ef5d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message.  <br /></td></tr>
 <tr class="separator:afa3da449ea996a61b80c4acdc8ef5d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac9346edc7d88272b2297b8cacf719a5" id="r_aac9346edc7d88272b2297b8cacf719a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac9346edc7d88272b2297b8cacf719a5">sendSysCommon</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> m, uint8_t data1, uint8_t data2, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:aac9346edc7d88272b2297b8cacf719a5" id="r_aac9346edc7d88272b2297b8cacf719a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac9346edc7d88272b2297b8cacf719a5">sendSysCommon</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">m</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> data1, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> data2, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:aac9346edc7d88272b2297b8cacf719a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Common message.  <br /></td></tr>
 <tr class="separator:aac9346edc7d88272b2297b8cacf719a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a884b87fc39c2530c41e214c3f180bccd" id="r_a884b87fc39c2530c41e214c3f180bccd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a884b87fc39c2530c41e214c3f180bccd">sendMTCQuarterFrame</a> (uint8_t data, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a884b87fc39c2530c41e214c3f180bccd" id="r_a884b87fc39c2530c41e214c3f180bccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a884b87fc39c2530c41e214c3f180bccd">sendMTCQuarterFrame</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> data, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a884b87fc39c2530c41e214c3f180bccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Time Code Quarter Frame.  <br /></td></tr>
 <tr class="separator:a884b87fc39c2530c41e214c3f180bccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cd1efd833dbe59236a6a8850cdf5091" id="r_a5cd1efd833dbe59236a6a8850cdf5091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cd1efd833dbe59236a6a8850cdf5091">sendMTCQuarterFrame</a> (uint8_t messageType, uint8_t values, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a5cd1efd833dbe59236a6a8850cdf5091" id="r_a5cd1efd833dbe59236a6a8850cdf5091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cd1efd833dbe59236a6a8850cdf5091">sendMTCQuarterFrame</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">messageType</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> values, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a5cd1efd833dbe59236a6a8850cdf5091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Time Code Quarter Frame.  <br /></td></tr>
 <tr class="separator:a5cd1efd833dbe59236a6a8850cdf5091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a71e73cd218dde16208f6dfff243afc" id="r_a8a71e73cd218dde16208f6dfff243afc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a71e73cd218dde16208f6dfff243afc">sendSongPositionPointer</a> (uint16_t spp, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a8a71e73cd218dde16208f6dfff243afc" id="r_a8a71e73cd218dde16208f6dfff243afc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a71e73cd218dde16208f6dfff243afc">sendSongPositionPointer</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">spp</a>, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a8a71e73cd218dde16208f6dfff243afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Song Position Pointer message.  <br /></td></tr>
 <tr class="separator:a8a71e73cd218dde16208f6dfff243afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc1d42792f847b9f40959e861b10f17" id="r_a0cc1d42792f847b9f40959e861b10f17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc1d42792f847b9f40959e861b10f17">sendSongSelect</a> (uint8_t song, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a0cc1d42792f847b9f40959e861b10f17" id="r_a0cc1d42792f847b9f40959e861b10f17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc1d42792f847b9f40959e861b10f17">sendSongSelect</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">song</a>, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a0cc1d42792f847b9f40959e861b10f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Song Select message.  <br /></td></tr>
 <tr class="separator:a0cc1d42792f847b9f40959e861b10f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e27c81d55d72b5a9f46ed0d4eb8152" id="r_ac8e27c81d55d72b5a9f46ed0d4eb8152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8e27c81d55d72b5a9f46ed0d4eb8152">sendTuneRequest</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:ac8e27c81d55d72b5a9f46ed0d4eb8152" id="r_ac8e27c81d55d72b5a9f46ed0d4eb8152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8e27c81d55d72b5a9f46ed0d4eb8152">sendTuneRequest</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:ac8e27c81d55d72b5a9f46ed0d4eb8152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Tune Request.  <br /></td></tr>
 <tr class="separator:ac8e27c81d55d72b5a9f46ed0d4eb8152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI System Exclusive messages</h2></td></tr>
-<tr class="memitem:a65b036bfe699f4731ee56cef5ce297ef" id="r_a65b036bfe699f4731ee56cef5ce297ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b036bfe699f4731ee56cef5ce297ef">send</a> (<a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a> message)</td></tr>
+<tr class="memitem:a65b036bfe699f4731ee56cef5ce297ef" id="r_a65b036bfe699f4731ee56cef5ce297ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b036bfe699f4731ee56cef5ce297ef">send</a> (<a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a> message)</td></tr>
 <tr class="memdesc:a65b036bfe699f4731ee56cef5ce297ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Exclusive message.  <br /></td></tr>
 <tr class="separator:a65b036bfe699f4731ee56cef5ce297ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6414b980c9302d875c7701a58cae6625" id="r_a6414b980c9302d875c7701a58cae6625"><td class="memTemplParams" colspan="2">template&lt;uint16_t N&gt; </td></tr>
-<tr class="memitem:a6414b980c9302d875c7701a58cae6625"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6414b980c9302d875c7701a58cae6625">sendSysEx</a> (const uint8_t(&amp;sysexdata)[N], <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a6414b980c9302d875c7701a58cae6625" id="r_a6414b980c9302d875c7701a58cae6625"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </td></tr>
+<tr class="memitem:a6414b980c9302d875c7701a58cae6625"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6414b980c9302d875c7701a58cae6625">sendSysEx</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>(&amp;<a class="el" href="../../d0/d32/structAH_1_1Array.html">sysexdata</a>)[N], <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a6414b980c9302d875c7701a58cae6625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Exclusive message.  <br /></td></tr>
 <tr class="separator:a6414b980c9302d875c7701a58cae6625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb65549f8c0836b8d46b2127fbae968c" id="r_aeb65549f8c0836b8d46b2127fbae968c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb65549f8c0836b8d46b2127fbae968c">sendSysEx</a> (const uint8_t *data, uint16_t length, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:aeb65549f8c0836b8d46b2127fbae968c" id="r_aeb65549f8c0836b8d46b2127fbae968c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb65549f8c0836b8d46b2127fbae968c">sendSysEx</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> *data, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> length, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:aeb65549f8c0836b8d46b2127fbae968c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Exclusive message.  <br /></td></tr>
 <tr class="separator:aeb65549f8c0836b8d46b2127fbae968c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Sending MIDI Real-Time messages</h2></td></tr>
-<tr class="memitem:a2df24a4d059579e81eedd12f9774985e" id="r_a2df24a4d059579e81eedd12f9774985e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2df24a4d059579e81eedd12f9774985e">send</a> (<a class="el" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a> message)</td></tr>
+<tr class="memitem:a2df24a4d059579e81eedd12f9774985e" id="r_a2df24a4d059579e81eedd12f9774985e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2df24a4d059579e81eedd12f9774985e">send</a> (<a class="el" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a> message)</td></tr>
 <tr class="memdesc:a2df24a4d059579e81eedd12f9774985e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Real-Time message.  <br /></td></tr>
 <tr class="separator:a2df24a4d059579e81eedd12f9774985e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af50be88ea5127b679e4ea7445dfad46b" id="r_af50be88ea5127b679e4ea7445dfad46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af50be88ea5127b679e4ea7445dfad46b">sendRealTime</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> rt, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:af50be88ea5127b679e4ea7445dfad46b" id="r_af50be88ea5127b679e4ea7445dfad46b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af50be88ea5127b679e4ea7445dfad46b">sendRealTime</a> (<a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">rt</a>, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:af50be88ea5127b679e4ea7445dfad46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Real-Time message.  <br /></td></tr>
 <tr class="separator:af50be88ea5127b679e4ea7445dfad46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a010fe7c1bdd0b99b591bb9e7f2f91431" id="r_a010fe7c1bdd0b99b591bb9e7f2f91431"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a010fe7c1bdd0b99b591bb9e7f2f91431">sendRealTime</a> (uint8_t rt, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a010fe7c1bdd0b99b591bb9e7f2f91431" id="r_a010fe7c1bdd0b99b591bb9e7f2f91431"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a010fe7c1bdd0b99b591bb9e7f2f91431">sendRealTime</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">rt</a>, <a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a010fe7c1bdd0b99b591bb9e7f2f91431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Real-Time message.  <br /></td></tr>
 <tr class="separator:a010fe7c1bdd0b99b591bb9e7f2f91431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a772f525a57c4f52d60417f81500dd741" id="r_a772f525a57c4f52d60417f81500dd741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a772f525a57c4f52d60417f81500dd741">sendTimingClock</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a772f525a57c4f52d60417f81500dd741" id="r_a772f525a57c4f52d60417f81500dd741"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a772f525a57c4f52d60417f81500dd741">sendTimingClock</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a772f525a57c4f52d60417f81500dd741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Timing Clock message.  <br /></td></tr>
 <tr class="separator:a772f525a57c4f52d60417f81500dd741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1bf7f6ffd2bba88ac2fc4dd1eb13aaa" id="r_aa1bf7f6ffd2bba88ac2fc4dd1eb13aaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1bf7f6ffd2bba88ac2fc4dd1eb13aaa">sendStart</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:aa1bf7f6ffd2bba88ac2fc4dd1eb13aaa" id="r_aa1bf7f6ffd2bba88ac2fc4dd1eb13aaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1bf7f6ffd2bba88ac2fc4dd1eb13aaa">sendStart</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:aa1bf7f6ffd2bba88ac2fc4dd1eb13aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Start message.  <br /></td></tr>
 <tr class="separator:aa1bf7f6ffd2bba88ac2fc4dd1eb13aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f6cd85b521e6f02157f29cbe1c6b182" id="r_a2f6cd85b521e6f02157f29cbe1c6b182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f6cd85b521e6f02157f29cbe1c6b182">sendContinue</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a2f6cd85b521e6f02157f29cbe1c6b182" id="r_a2f6cd85b521e6f02157f29cbe1c6b182"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f6cd85b521e6f02157f29cbe1c6b182">sendContinue</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a2f6cd85b521e6f02157f29cbe1c6b182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Continue message.  <br /></td></tr>
 <tr class="separator:a2f6cd85b521e6f02157f29cbe1c6b182"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d00753e856d5be5115f76ec7235f88c" id="r_a1d00753e856d5be5115f76ec7235f88c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d00753e856d5be5115f76ec7235f88c">sendStop</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:a1d00753e856d5be5115f76ec7235f88c" id="r_a1d00753e856d5be5115f76ec7235f88c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d00753e856d5be5115f76ec7235f88c">sendStop</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:a1d00753e856d5be5115f76ec7235f88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Stop message.  <br /></td></tr>
 <tr class="separator:a1d00753e856d5be5115f76ec7235f88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affba51ccc2346281c5e703ee7fd26836" id="r_affba51ccc2346281c5e703ee7fd26836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affba51ccc2346281c5e703ee7fd26836">sendActiveSensing</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:affba51ccc2346281c5e703ee7fd26836" id="r_affba51ccc2346281c5e703ee7fd26836"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affba51ccc2346281c5e703ee7fd26836">sendActiveSensing</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:affba51ccc2346281c5e703ee7fd26836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Active Sensing message.  <br /></td></tr>
 <tr class="separator:affba51ccc2346281c5e703ee7fd26836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40ef1ccd4865f1dfa1168c315d92278" id="r_ab40ef1ccd4865f1dfa1168c315d92278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab40ef1ccd4865f1dfa1168c315d92278">sendSystemReset</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
+<tr class="memitem:ab40ef1ccd4865f1dfa1168c315d92278" id="r_ab40ef1ccd4865f1dfa1168c315d92278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab40ef1ccd4865f1dfa1168c315d92278">sendSystemReset</a> (<a class="el" href="../../d2/d75/classCable.html">Cable</a> cable=<a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a>)</td></tr>
 <tr class="memdesc:ab40ef1ccd4865f1dfa1168c315d92278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI System Reset message.  <br /></td></tr>
 <tr class="separator:ab40ef1ccd4865f1dfa1168c315d92278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Flushing the MIDI send buffer</h2></td></tr>
-<tr class="memitem:a02c491257d08e16bd080823ec5cc5ce0" id="r_a02c491257d08e16bd080823ec5cc5ce0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a> ()</td></tr>
+<tr class="memitem:a02c491257d08e16bd080823ec5cc5ce0" id="r_a02c491257d08e16bd080823ec5cc5ce0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02c491257d08e16bd080823ec5cc5ce0">sendNow</a> ()</td></tr>
 <tr class="memdesc:a02c491257d08e16bd080823ec5cc5ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes all buffered messages to be sent immediately.  <br /></td></tr>
 <tr class="separator:a02c491257d08e16bd080823ec5cc5ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Deprecated</h2></td></tr>
-<tr class="memitem:a3ae95f4b370848150507245806455a50" id="r_a3ae95f4b370848150507245806455a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae95f4b370848150507245806455a50">sendKP</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t pressure)</td></tr>
+<tr class="memitem:a3ae95f4b370848150507245806455a50" id="r_a3ae95f4b370848150507245806455a50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae95f4b370848150507245806455a50">sendKP</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">pressure</a>)</td></tr>
 <tr class="memdesc:a3ae95f4b370848150507245806455a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Key Pressure event.  <br /></td></tr>
 <tr class="separator:a3ae95f4b370848150507245806455a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82b919f54a86238cc55ae5ed7eeac578" id="r_a82b919f54a86238cc55ae5ed7eeac578"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b919f54a86238cc55ae5ed7eeac578">sendCC</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, uint8_t value)</td></tr>
+<tr class="memitem:a82b919f54a86238cc55ae5ed7eeac578" id="r_a82b919f54a86238cc55ae5ed7eeac578"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b919f54a86238cc55ae5ed7eeac578">sendCC</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> value)</td></tr>
 <tr class="memdesc:a82b919f54a86238cc55ae5ed7eeac578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Control Change event.  <br /></td></tr>
 <tr class="separator:a82b919f54a86238cc55ae5ed7eeac578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac409060e87ff64e9a4c2525f1746b64d" id="r_ac409060e87ff64e9a4c2525f1746b64d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac409060e87ff64e9a4c2525f1746b64d">sendPC</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address)</td></tr>
+<tr class="memitem:ac409060e87ff64e9a4c2525f1746b64d" id="r_ac409060e87ff64e9a4c2525f1746b64d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac409060e87ff64e9a4c2525f1746b64d">sendPC</a> (<a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a> address)</td></tr>
 <tr class="memdesc:ac409060e87ff64e9a4c2525f1746b64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event.  <br /></td></tr>
 <tr class="separator:ac409060e87ff64e9a4c2525f1746b64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c9fca4660babdf1399254eacd9a91e" id="r_a73c9fca4660babdf1399254eacd9a91e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73c9fca4660babdf1399254eacd9a91e">sendPC</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t value)</td></tr>
+<tr class="memitem:a73c9fca4660babdf1399254eacd9a91e" id="r_a73c9fca4660babdf1399254eacd9a91e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73c9fca4660babdf1399254eacd9a91e">sendPC</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> value)</td></tr>
 <tr class="memdesc:a73c9fca4660babdf1399254eacd9a91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Program Change event.  <br /></td></tr>
 <tr class="separator:a73c9fca4660babdf1399254eacd9a91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a658b5ce998f761a47c620b7db009fd" id="r_a7a658b5ce998f761a47c620b7db009fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a658b5ce998f761a47c620b7db009fd">sendCP</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint8_t pressure)</td></tr>
+<tr class="memitem:a7a658b5ce998f761a47c620b7db009fd" id="r_a7a658b5ce998f761a47c620b7db009fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a658b5ce998f761a47c620b7db009fd">sendCP</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">pressure</a>)</td></tr>
 <tr class="memdesc:a7a658b5ce998f761a47c620b7db009fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Channel Pressure event.  <br /></td></tr>
 <tr class="separator:a7a658b5ce998f761a47c620b7db009fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b54e3bee0d150883792d94b34995088" id="r_a0b54e3bee0d150883792d94b34995088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b54e3bee0d150883792d94b34995088">sendPB</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, uint16_t value)</td></tr>
+<tr class="memitem:a0b54e3bee0d150883792d94b34995088" id="r_a0b54e3bee0d150883792d94b34995088"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b54e3bee0d150883792d94b34995088">sendPB</a> (<a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a> address, <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> value)</td></tr>
 <tr class="memdesc:a0b54e3bee0d150883792d94b34995088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a MIDI Pitch Bend event.  <br /></td></tr>
 <tr class="separator:a0b54e3bee0d150883792d94b34995088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -244,10 +244,10 @@ class MIDI_Sender&lt; Derived &gt;</div><p>Statically polymorphic template for c
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void send </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> send </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d3f/structChannelMessage.html">ChannelMessage</a></td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
           <td></td>
@@ -267,10 +267,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendChannelMessage </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendChannelMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a></td>          <td class="paramname"><span class="paramname"><em>m</em>, </span></td>
         </tr>
@@ -282,12 +282,12 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>d1</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>d1</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>d2</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>d2</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -317,10 +317,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendChannelMessage </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendChannelMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a></td>          <td class="paramname"><span class="paramname"><em>m</em>, </span></td>
         </tr>
@@ -332,7 +332,7 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>d1</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>d1</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -361,17 +361,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendNoteOn </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendNoteOn </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -386,17 +386,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendNoteOff </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendNoteOff </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -411,17 +411,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendKeyPressure </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendKeyPressure </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -436,17 +436,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendControlChange </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendControlChange </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -461,10 +461,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendProgramChange </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendProgramChange </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></td>          <td class="paramname"><span class="paramname"><em>address</em></span></td><td>)</td>
           <td></td>
@@ -482,17 +482,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendProgramChange </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendProgramChange </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -507,17 +507,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendChannelPressure </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendChannelPressure </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -532,17 +532,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendPitchBend </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendPitchBend </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -557,10 +557,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void send </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> send </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d5/dad/structSysCommonMessage.html">SysCommonMessage</a></td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
           <td></td>
@@ -578,10 +578,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendSysCommon </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendSysCommon </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a></td>          <td class="paramname"><span class="paramname"><em>m</em>, </span></td>
         </tr>
@@ -603,17 +603,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendSysCommon </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendSysCommon </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a></td>          <td class="paramname"><span class="paramname"><em>m</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data1</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>data1</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -633,22 +633,22 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendSysCommon </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendSysCommon </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a></td>          <td class="paramname"><span class="paramname"><em>m</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data1</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>data1</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data2</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>data2</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -668,12 +668,12 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendMTCQuarterFrame </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendMTCQuarterFrame </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -693,17 +693,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendMTCQuarterFrame </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendMTCQuarterFrame </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>messageType</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>messageType</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>values</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>values</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -723,12 +723,12 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendSongPositionPointer </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendSongPositionPointer </td>
           <td>(</td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>spp</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>spp</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -748,12 +748,12 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendSongSelect </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendSongSelect </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>song</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>song</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -773,10 +773,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendTuneRequest </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendTuneRequest </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d75/classCable.html">Cable</a></td>          <td class="paramname"><span class="paramname"><em>cable</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a></span></span></td><td>)</td>
           <td></td>
@@ -794,10 +794,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void send </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> send </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/d45/structSysExMessage.html">SysExMessage</a></td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
           <td></td>
@@ -815,14 +815,14 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <div class="memtemplate">
-template&lt;uint16_t N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a> N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendSysEx </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendSysEx </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t(&amp;)</td>          <td class="paramname"><span class="paramname"><em>sysexdata</em>[N], </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>sysexdata</em>[N], </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -842,17 +842,17 @@ template&lt;uint16_t N&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendSysEx </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendSysEx </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a> *</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>length</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>length</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -872,10 +872,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void send </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> send </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/d99/structRealTimeMessage.html">RealTimeMessage</a></td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
           <td></td>
@@ -893,10 +893,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendRealTime </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendRealTime </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/d40/MIDI__MessageTypes_8hpp.html#a0f3f6ac1a61700bdea6873fdfe9248f5">MIDIMessageType</a></td>          <td class="paramname"><span class="paramname"><em>rt</em>, </span></td>
         </tr>
@@ -918,12 +918,12 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendRealTime </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendRealTime </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>rt</em>, </span></td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>rt</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -943,10 +943,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendTimingClock </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendTimingClock </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d75/classCable.html">Cable</a></td>          <td class="paramname"><span class="paramname"><em>cable</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a></span></span></td><td>)</td>
           <td></td>
@@ -964,10 +964,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendStart </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendStart </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d75/classCable.html">Cable</a></td>          <td class="paramname"><span class="paramname"><em>cable</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a></span></span></td><td>)</td>
           <td></td>
@@ -985,10 +985,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendContinue </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendContinue </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d75/classCable.html">Cable</a></td>          <td class="paramname"><span class="paramname"><em>cable</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a></span></span></td><td>)</td>
           <td></td>
@@ -1006,10 +1006,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendStop </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendStop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d75/classCable.html">Cable</a></td>          <td class="paramname"><span class="paramname"><em>cable</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a></span></span></td><td>)</td>
           <td></td>
@@ -1027,10 +1027,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendActiveSensing </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendActiveSensing </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d75/classCable.html">Cable</a></td>          <td class="paramname"><span class="paramname"><em>cable</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a></span></span></td><td>)</td>
           <td></td>
@@ -1048,10 +1048,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendSystemReset </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendSystemReset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d75/classCable.html">Cable</a></td>          <td class="paramname"><span class="paramname"><em>cable</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d2/dbc/Cable_8hpp.html#af5cfabc9ecb43e686ae0c1d0aac10497">Cable_1</a></span></span></td><td>)</td>
           <td></td>
@@ -1069,10 +1069,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendNow </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendNow </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -1091,17 +1091,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendKP </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendKP </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1116,17 +1116,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendCC </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendCC </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1141,10 +1141,10 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendPC </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendPC </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d0f/classMIDIAddress.html">MIDIAddress</a></td>          <td class="paramname"><span class="paramname"><em>address</em></span></td><td>)</td>
           <td></td>
@@ -1162,17 +1162,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendPC </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendPC </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1187,17 +1187,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendCP </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendCP </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a></td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1212,17 +1212,17 @@ template&lt;class Derived &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Derived &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void sendPB </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> sendPB </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/d46/classMIDIChannelCable.html">MIDIChannelCable</a></td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">uint16_t</a></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

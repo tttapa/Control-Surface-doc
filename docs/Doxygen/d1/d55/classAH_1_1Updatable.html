@@ -99,7 +99,7 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../d4/d93/Updatable_8hpp_source.html">AH/Containers/Updatable.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">T</a> = NormalUpdatable&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T</a> = NormalUpdatable&gt;<br />
 class AH::Updatable&lt; T &gt;</div><p>A super class for object that have to be updated regularly. </p>
 <p>All instances of this class are kept in a linked list, so it's easy to iterate over all of them to update them. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d6b/Custom-MIDI-Output-Element-Bankable_8ino-example.html#_a1">Custom-MIDI-Output-Element-Bankable.ino</a>, and <a class="el" href="../../d4/d3b/Custom-MIDI-Output-Element_8ino-example.html#_a1">Custom-MIDI-Output-Element.ino</a>.</dd>
@@ -122,63 +122,63 @@ class AH::Updatable&lt; T &gt;</div><p>A super class for object that have to be 
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Main initialization and updating methods</h2></td></tr>
-<tr class="memitem:aaf893c33f3c041e289a12c153dcc9789" id="r_aaf893c33f3c041e289a12c153dcc9789"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">virtual</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf893c33f3c041e289a12c153dcc9789">begin</a> ()=0</td></tr>
+<tr class="memitem:aaf893c33f3c041e289a12c153dcc9789" id="r_aaf893c33f3c041e289a12c153dcc9789"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf893c33f3c041e289a12c153dcc9789">begin</a> ()=0</td></tr>
 <tr class="memdesc:aaf893c33f3c041e289a12c153dcc9789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this updatable.  <br /></td></tr>
 <tr class="separator:aaf893c33f3c041e289a12c153dcc9789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99b02345a8a15d3c5ea2844a2253f510" id="r_a99b02345a8a15d3c5ea2844a2253f510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">virtual</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99b02345a8a15d3c5ea2844a2253f510">update</a> ()=0</td></tr>
+<tr class="memitem:a99b02345a8a15d3c5ea2844a2253f510" id="r_a99b02345a8a15d3c5ea2844a2253f510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99b02345a8a15d3c5ea2844a2253f510">update</a> ()=0</td></tr>
 <tr class="memdesc:a99b02345a8a15d3c5ea2844a2253f510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this updatable.  <br /></td></tr>
 <tr class="separator:a99b02345a8a15d3c5ea2844a2253f510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f7077a56ec41a07f5a54dd8b3828984" id="r_a4f7077a56ec41a07f5a54dd8b3828984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a> ()</td></tr>
+<tr class="memitem:a4f7077a56ec41a07f5a54dd8b3828984" id="r_a4f7077a56ec41a07f5a54dd8b3828984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f7077a56ec41a07f5a54dd8b3828984">beginAll</a> ()</td></tr>
 <tr class="memdesc:a4f7077a56ec41a07f5a54dd8b3828984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin all enabled instances of this class.  <br /></td></tr>
 <tr class="separator:a4f7077a56ec41a07f5a54dd8b3828984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e05f733dace05adcf585b5a17be292" id="r_a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
+<tr class="memitem:a44e05f733dace05adcf585b5a17be292" id="r_a44e05f733dace05adcf585b5a17be292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44e05f733dace05adcf585b5a17be292">updateAll</a> ()</td></tr>
 <tr class="memdesc:a44e05f733dace05adcf585b5a17be292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all enabled instances of this class.  <br /></td></tr>
 <tr class="separator:a44e05f733dace05adcf585b5a17be292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Enabling and disabling updatables</h2></td></tr>
-<tr class="memitem:a486f22824bd83c5308a0d70ffac6f758" id="r_a486f22824bd83c5308a0d70ffac6f758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486f22824bd83c5308a0d70ffac6f758">enable</a> ()</td></tr>
+<tr class="memitem:a486f22824bd83c5308a0d70ffac6f758" id="r_a486f22824bd83c5308a0d70ffac6f758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486f22824bd83c5308a0d70ffac6f758">enable</a> ()</td></tr>
 <tr class="memdesc:a486f22824bd83c5308a0d70ffac6f758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.  <br /></td></tr>
 <tr class="separator:a486f22824bd83c5308a0d70ffac6f758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfbbe53c1cf6e3054736daea3044c0f" id="r_a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8cfbbe53c1cf6e3054736daea3044c0f">disable</a> ()</td></tr>
+<tr class="memitem:a8cfbbe53c1cf6e3054736daea3044c0f" id="r_a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a8cfbbe53c1cf6e3054736daea3044c0f">disable</a> ()</td></tr>
 <tr class="memdesc:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.  <br /></td></tr>
 <tr class="separator:a8cfbbe53c1cf6e3054736daea3044c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb819fb241851fd9fc045271baa4034" id="r_aacb819fb241851fd9fc045271baa4034"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#aacb819fb241851fd9fc045271baa4034">isEnabled</a> () <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">const</a></td></tr>
+<tr class="memitem:aacb819fb241851fd9fc045271baa4034" id="r_aacb819fb241851fd9fc045271baa4034"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#aacb819fb241851fd9fc045271baa4034">isEnabled</a> () <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a></td></tr>
 <tr class="memdesc:aacb819fb241851fd9fc045271baa4034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this updatable is enabled.  <br /></td></tr>
 <tr class="separator:aacb819fb241851fd9fc045271baa4034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486267210dfc8118e23e6b1bc6090286" id="r_a486267210dfc8118e23e6b1bc6090286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486267210dfc8118e23e6b1bc6090286">moveDown</a> ()</td></tr>
+<tr class="memitem:a486267210dfc8118e23e6b1bc6090286" id="r_a486267210dfc8118e23e6b1bc6090286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a486267210dfc8118e23e6b1bc6090286">moveDown</a> ()</td></tr>
 <tr class="memdesc:a486267210dfc8118e23e6b1bc6090286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move down this element in the list.  <br /></td></tr>
 <tr class="separator:a486267210dfc8118e23e6b1bc6090286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12acee2ce11483080385d904cee97bd" id="r_ad12acee2ce11483080385d904cee97bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad12acee2ce11483080385d904cee97bd">enable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a> *element)</td></tr>
+<tr class="memitem:ad12acee2ce11483080385d904cee97bd" id="r_ad12acee2ce11483080385d904cee97bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ad12acee2ce11483080385d904cee97bd">enable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a> *element)</td></tr>
 <tr class="memdesc:ad12acee2ce11483080385d904cee97bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.    <br /></td></tr>
 <tr class="separator:ad12acee2ce11483080385d904cee97bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da0232ed3b2839c53832dde4f72b8dc" id="r_a0da0232ed3b2839c53832dde4f72b8dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a0da0232ed3b2839c53832dde4f72b8dc">enable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a> &amp;element)</td></tr>
+<tr class="memitem:a0da0232ed3b2839c53832dde4f72b8dc" id="r_a0da0232ed3b2839c53832dde4f72b8dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a0da0232ed3b2839c53832dde4f72b8dc">enable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a> &amp;element)</td></tr>
 <tr class="memdesc:a0da0232ed3b2839c53832dde4f72b8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.    <br /></td></tr>
 <tr class="separator:a0da0232ed3b2839c53832dde4f72b8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf" id="r_a2f775da7b162931d468d6d6b6950dfcf"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">size_t</a> N&gt; </td></tr>
-<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2f775da7b162931d468d6d6b6950dfcf">enable</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;array)[N])</td></tr>
+<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf" id="r_a2f775da7b162931d468d6d6b6950dfcf"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </td></tr>
+<tr class="memitem:a2f775da7b162931d468d6d6b6950dfcf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a2f775da7b162931d468d6d6b6950dfcf">enable</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;array)[N])</td></tr>
 <tr class="memdesc:a2f775da7b162931d468d6d6b6950dfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable this updatable: insert it into the linked list of instances, so it gets updated automatically.    <br /></td></tr>
 <tr class="separator:a2f775da7b162931d468d6d6b6950dfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacbfe5d6ba589f29a195bd0a54f35772" id="r_aacbfe5d6ba589f29a195bd0a54f35772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#aacbfe5d6ba589f29a195bd0a54f35772">disable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a> *element)</td></tr>
+<tr class="memitem:aacbfe5d6ba589f29a195bd0a54f35772" id="r_aacbfe5d6ba589f29a195bd0a54f35772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#aacbfe5d6ba589f29a195bd0a54f35772">disable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a> *element)</td></tr>
 <tr class="memdesc:aacbfe5d6ba589f29a195bd0a54f35772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.    <br /></td></tr>
 <tr class="separator:aacbfe5d6ba589f29a195bd0a54f35772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67781608cee470244316e2302f6290d6" id="r_a67781608cee470244316e2302f6290d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a67781608cee470244316e2302f6290d6">disable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a> &amp;element)</td></tr>
+<tr class="memitem:a67781608cee470244316e2302f6290d6" id="r_a67781608cee470244316e2302f6290d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a67781608cee470244316e2302f6290d6">disable</a> (<a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a> &amp;element)</td></tr>
 <tr class="memdesc:a67781608cee470244316e2302f6290d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.    <br /></td></tr>
 <tr class="separator:a67781608cee470244316e2302f6290d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0" id="r_ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">size_t</a> N&gt; </td></tr>
-<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac05c991ba1ef6cb7363a44e2232119f0">disable</a> (<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;array)[N])</td></tr>
+<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0" id="r_ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </td></tr>
+<tr class="memitem:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#ac05c991ba1ef6cb7363a44e2232119f0">disable</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;array)[N])</td></tr>
 <tr class="memdesc:ac05c991ba1ef6cb7363a44e2232119f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable this updatable: remove it from the linked list of instances, so it no longer gets updated automatically.    <br /></td></tr>
 <tr class="separator:ac05c991ba1ef6cb7363a44e2232119f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2" id="r_a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
+<tr class="memitem:a00dd0a636d0c9134072b4bc7951d08c2" id="r_a00dd0a636d0c9134072b4bc7951d08c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#a00dd0a636d0c9134072b4bc7951d08c2">next</a></td></tr>
 <tr class="separator:a00dd0a636d0c9134072b4bc7951d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df" id="r_adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
+<tr class="memitem:adbc3186d4d3faa0f9cd6c6492c5494df" id="r_adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classDoublyLinkable.html#adbc3186d4d3faa0f9cd6c6492c5494df">previous</a></td></tr>
 <tr class="separator:adbc3186d4d3faa0f9cd6c6492c5494df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a4943fe5ee6614da25808705c1471da08" id="r_a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
+<tr class="memitem:a4943fe5ee6614da25808705c1471da08" id="r_a4943fe5ee6614da25808705c1471da08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html#a4943fe5ee6614da25808705c1471da08">updatables</a></td></tr>
 <tr class="separator:a4943fe5ee6614da25808705c1471da08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -188,13 +188,13 @@ Static Protected Attributes</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">T</a>  = NormalUpdatable&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T</a>  = NormalUpdatable&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">virtual</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> begin </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> begin </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -221,13 +221,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">T</a>  = NormalUpdatable&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T</a>  = NormalUpdatable&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">virtual</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> update </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">virtual</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> update </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -243,7 +243,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <p>Update this updatable. </p>
 
 <p>Implemented in <a class="el" href="../../d3/d88/classMIDIButtonLatched.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtonLatched&lt; Sender &gt;</a>, <a class="el" href="../../d3/d88/classMIDIButtonLatched.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtonLatched&lt; DigitalCCSender &gt;</a>, <a class="el" href="../../d3/d88/classMIDIButtonLatched.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtonLatched&lt; DigitalNoteSender &gt;</a>, <a class="el" href="../../d0/d54/classMIDIButtonMatrix.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtonMatrix&lt; Sender, NumRows, NumCols &gt;</a>, <a class="el" href="../../d0/d54/classMIDIButtonMatrix.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtonMatrix&lt; DigitalCCSender, NumRows, NumCols &gt;</a>, <a class="el" href="../../d0/d54/classMIDIButtonMatrix.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtonMatrix&lt; DigitalNoteSender, NumRows, NumCols &gt;</a>, <a class="el" href="../../d2/d87/classMIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtons&lt; Sender, NumButtons &gt;</a>, <a class="el" href="../../d2/d87/classMIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtons&lt; DigitalCCSender, NumButtons &gt;</a>, <a class="el" href="../../d2/d87/classMIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtons&lt; DigitalNoteSender, NumButtons &gt;</a>, <a class="el" href="../../dd/d29/classMIDIChordButton.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIChordButton&lt; Sender &gt;</a>, <a class="el" href="../../d5/d8e/classMIDIFilteredAnalog.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIFilteredAnalog&lt; Sender &gt;</a>, <a class="el" href="../../d5/d8e/classMIDIFilteredAnalog.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIFilteredAnalog&lt; ContinuousCCSender &gt;</a>, <a class="el" href="../../d5/d8e/classMIDIFilteredAnalog.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIFilteredAnalog&lt; PitchBendSender&lt; 10 &gt; &gt;</a>, <a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtons&lt; BankAddress, Sender, NumButtons &gt;</a>, <a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtons&lt; SingleAddress, DigitalCCSender, NumButtons &gt;</a>, <a class="el" href="../../dc/d22/classBankable_1_1MIDIButtons.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIButtons&lt; SingleAddress, DigitalNoteSender, NumButtons &gt;</a>, <a class="el" href="../../db/ddc/classBankable_1_1MIDIFilteredAnalog.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIFilteredAnalog&lt; BankAddress, Sender &gt;</a>, <a class="el" href="../../db/ddc/classBankable_1_1MIDIFilteredAnalog.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIFilteredAnalog&lt; ManyAddresses&lt; NumBanks &gt;, ContinuousCCSender &gt;</a>, <a class="el" href="../../db/ddc/classBankable_1_1MIDIFilteredAnalog.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIFilteredAnalog&lt; ManyAddresses&lt; NumBanks &gt;, PitchBendSender&lt; 10 &gt; &gt;</a>, <a class="el" href="../../db/ddc/classBankable_1_1MIDIFilteredAnalog.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIFilteredAnalog&lt; SingleAddress, ContinuousCCSender &gt;</a>, <a class="el" href="../../db/ddc/classBankable_1_1MIDIFilteredAnalog.html#af7d7ae0df8d1dfd74402446af1e6ef60">MIDIFilteredAnalog&lt; SingleAddress, PitchBendSender&lt; 10 &gt; &gt;</a>, <a class="el" href="../../d9/dbf/classAudioVULEDs.html#a44137bb65de2396875934e48a6ee5099">AudioVULEDs&lt; N &gt;</a>, <a class="el" href="../../d4/de3/classVolumeControl.html#a44137bb65de2396875934e48a6ee5099">VolumeControl&lt; N &gt;</a>, <a class="el" href="../../d8/d0b/classStreamDebugMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">StreamDebugMIDI_Interface</a>, <a class="el" href="../../d0/dea/classGenericBLEMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericBLEMIDI_Interface&lt; Backend &gt;</a>, <a class="el" href="../../d0/dea/classGenericBLEMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericBLEMIDI_Interface&lt; BLEMIDIBackend &gt;</a>, <a class="el" href="../../d3/dc3/classStreamMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">StreamMIDI_Interface</a>, <a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericUSBMIDI_Interface&lt; Backend &gt;</a>, <a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericUSBMIDI_Interface&lt; USBDeviceMIDIBackend &gt;</a>, <a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericUSBMIDI_Interface&lt; USBHostMIDIBackend&lt; 512 &gt; &gt;</a>, <a class="el" href="../../dd/d0e/classGenericUSBMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">GenericUSBMIDI_Interface&lt; USBHostMIDIBackend&lt; 64 &gt; &gt;</a>, <a class="el" href="../../dd/dd7/classFortySevenEffectsMIDI__Interface.html#a44137bb65de2396875934e48a6ee5099">FortySevenEffectsMIDI_Interface&lt; MidiInterface &gt;</a>, <a class="el" href="../../df/d5d/classGenericMIDIAbsoluteEncoder.html#a44137bb65de2396875934e48a6ee5099">GenericMIDIAbsoluteEncoder&lt; Enc, Sender &gt;</a>, <a class="el" href="../../d6/d72/classMIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; Sender &gt;</a>, <a class="el" href="../../d6/d72/classMIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; DigitalCCSender &gt;</a>, <a class="el" href="../../d6/d72/classMIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; DigitalNoteSender &gt;</a>, <a class="el" href="../../d6/d72/classMIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; ProgramChangeSender &gt;</a>, <a class="el" href="../../d8/de1/classMIDIButtonLatching.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatching&lt; Sender &gt;</a>, <a class="el" href="../../d8/de1/classMIDIButtonLatching.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatching&lt; DigitalCCSender &gt;</a>, <a class="el" href="../../d8/de1/classMIDIButtonLatching.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatching&lt; DigitalNoteSender &gt;</a>, <a class="el" href="../../dc/dc2/classMIDIIncrementDecrementButtons.html#a44137bb65de2396875934e48a6ee5099">MIDIIncrementDecrementButtons&lt; RelativeSender, ResetSender &gt;</a>, <a class="el" href="../../dc/dc2/classMIDIIncrementDecrementButtons.html#a44137bb65de2396875934e48a6ee5099">MIDIIncrementDecrementButtons&lt; RelativeCCSender, DigitalNoteSender &gt;</a>, <a class="el" href="../../d0/d9e/classGenericMIDIRotaryEncoder.html#a44137bb65de2396875934e48a6ee5099">GenericMIDIRotaryEncoder&lt; Enc, Sender &gt;</a>, <a class="el" href="../../df/db5/classBankable_1_1GenericMIDIAbsoluteEncoder.html#a44137bb65de2396875934e48a6ee5099">GenericMIDIAbsoluteEncoder&lt; Enc, NumBanks, BankAddress, Sender &gt;</a>, <a class="el" href="../../d9/df9/classBankable_1_1MIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; BankAddress, Sender &gt;</a>, <a class="el" href="../../d9/df9/classBankable_1_1MIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; ManyAddresses&lt; NumBanks &gt;, DigitalCCSender &gt;</a>, <a class="el" href="../../d9/df9/classBankable_1_1MIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; ManyAddresses&lt; NumBanks &gt;, DigitalNoteSender &gt;</a>, <a class="el" href="../../d9/df9/classBankable_1_1MIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; ManyAddresses&lt; NumBanks &gt;, ProgramChangeSender &gt;</a>, <a class="el" href="../../d9/df9/classBankable_1_1MIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; SingleAddress, DigitalCCSender &gt;</a>, <a class="el" href="../../d9/df9/classBankable_1_1MIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; SingleAddress, DigitalNoteSender &gt;</a>, <a class="el" href="../../d9/df9/classBankable_1_1MIDIButton.html#a44137bb65de2396875934e48a6ee5099">MIDIButton&lt; SingleAddress, ProgramChangeSender &gt;</a>, <a class="el" href="../../df/dca/classBankable_1_1MIDIButtonLatched.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatched&lt; NumBanks, BankAddress, Sender &gt;</a>, <a class="el" href="../../df/dca/classBankable_1_1MIDIButtonLatched.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatched&lt; NumBanks, SingleAddress, DigitalCCSender &gt;</a>, <a class="el" href="../../df/dca/classBankable_1_1MIDIButtonLatched.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatched&lt; NumBanks, SingleAddress, DigitalNoteSender &gt;</a>, <a class="el" href="../../d3/d0b/classBankable_1_1MIDIButtonLatching.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatching&lt; BankAddress, Sender &gt;</a>, <a class="el" href="../../d3/d0b/classBankable_1_1MIDIButtonLatching.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatching&lt; SingleAddress, DigitalCCSender &gt;</a>, <a class="el" href="../../d3/d0b/classBankable_1_1MIDIButtonLatching.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonLatching&lt; SingleAddress, DigitalNoteSender &gt;</a>, <a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonMatrix&lt; BankAddress, Sender, NumRows, NumCols &gt;</a>, <a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonMatrix&lt; ManyMatrixAddresses&lt; NumBanks, NumRows, NumCols &gt;, DigitalCCSender, NumRows, NumCols &gt;</a>, <a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonMatrix&lt; ManyMatrixAddresses&lt; NumBanks, NumRows, NumCols &gt;, DigitalNoteSender, NumRows, NumCols &gt;</a>, <a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonMatrix&lt; MatrixAddress&lt; NumRows, NumCols &gt;, DigitalCCSender, NumRows, NumCols &gt;</a>, <a class="el" href="../../d3/d65/classBankable_1_1MIDIButtonMatrix.html#a44137bb65de2396875934e48a6ee5099">MIDIButtonMatrix&lt; MatrixAddress&lt; NumRows, NumCols &gt;, DigitalNoteSender, NumRows, NumCols &gt;</a>, <a class="el" href="../../da/d96/classBankable_1_1MIDIChordButton.html#a44137bb65de2396875934e48a6ee5099">MIDIChordButton&lt; Sender &gt;</a>, <a class="el" href="../../da/d96/classBankable_1_1MIDIChordButton.html#a44137bb65de2396875934e48a6ee5099">MIDIChordButton&lt; DigitalNoteSender &gt;</a>, <a class="el" href="../../d1/d2f/classBankable_1_1MIDIIncrementDecrementButtons.html#a44137bb65de2396875934e48a6ee5099">MIDIIncrementDecrementButtons&lt; BankAddress, RelativeSender, ResetSender &gt;</a>, <a class="el" href="../../d1/d2f/classBankable_1_1MIDIIncrementDecrementButtons.html#a44137bb65de2396875934e48a6ee5099">MIDIIncrementDecrementButtons&lt; DualAddresses, RelativeCCSender, DigitalNoteSender &gt;</a>, <a class="el" href="../../d1/d2f/classBankable_1_1MIDIIncrementDecrementButtons.html#a44137bb65de2396875934e48a6ee5099">MIDIIncrementDecrementButtons&lt; DualManyAddresses&lt; NumBanks &gt;, RelativeCCSender, DigitalNoteSender &gt;</a>, <a class="el" href="../../d6/dcd/classBankable_1_1GenericMIDIRotaryEncoder.html#a44137bb65de2396875934e48a6ee5099">GenericMIDIRotaryEncoder&lt; Enc, BankAddress, Sender &gt;</a>, <a class="el" href="../../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a44137bb65de2396875934e48a6ee5099">SmartMIDIFilteredAnalog&lt; NumBanks, BankAddress, Sender &gt;</a>, <a class="el" href="../../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a44137bb65de2396875934e48a6ee5099">SmartMIDIFilteredAnalog&lt; NumBanks, SingleAddress, ContinuousCCSender &gt;</a>, <a class="el" href="../../d2/db7/classBankable_1_1SmartMIDIFilteredAnalog.html#a44137bb65de2396875934e48a6ee5099">SmartMIDIFilteredAnalog&lt; NumBanks, SingleAddress, PitchBendSender&lt; 10 &gt; &gt;</a>, <a class="el" href="../../da/dbf/classGenericEncoderSelector.html#a44137bb65de2396875934e48a6ee5099">GenericEncoderSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../da/dbf/classGenericEncoderSelector.html#a44137bb65de2396875934e48a6ee5099">GenericEncoderSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d3/d78/classGenericIncrementDecrementSelector.html#a44137bb65de2396875934e48a6ee5099">GenericIncrementDecrementSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d3/d78/classGenericIncrementDecrementSelector.html#a44137bb65de2396875934e48a6ee5099">GenericIncrementDecrementSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d1/d94/classGenericIncrementSelector.html#a44137bb65de2396875934e48a6ee5099">GenericIncrementSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d1/d94/classGenericIncrementSelector.html#a44137bb65de2396875934e48a6ee5099">GenericIncrementSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../de/d1e/classGenericManyButtonsSelector.html#a44137bb65de2396875934e48a6ee5099">GenericManyButtonsSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../de/d1e/classGenericManyButtonsSelector.html#a44137bb65de2396875934e48a6ee5099">GenericManyButtonsSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d0/d04/classGenericSelector.html#a44137bb65de2396875934e48a6ee5099">GenericSelector&lt; N, Callback &gt;</a>, <a class="el" href="../../d0/d04/classGenericSelector.html#a44137bb65de2396875934e48a6ee5099">GenericSelector&lt; 2, EmptySelectorCallback &gt;</a>, <a class="el" href="../../d0/d04/classGenericSelector.html#a44137bb65de2396875934e48a6ee5099">GenericSelector&lt; 2, SelectorSingleLEDCallback &gt;</a>, <a class="el" href="../../d0/d04/classGenericSelector.html#a44137bb65de2396875934e48a6ee5099">GenericSelector&lt; N, EmptySelectorCallback &gt;</a>, <a class="el" href="../../d0/d04/classGenericSelector.html#a44137bb65de2396875934e48a6ee5099">GenericSelector&lt; N, SelectorLEDsCallback&lt; N &gt; &gt;</a>, <a class="el" href="../../d2/d1c/classGenericSwitchSelector.html#a44137bb65de2396875934e48a6ee5099">GenericSwitchSelector&lt; Callback &gt;</a>, <a class="el" href="../../d2/d1c/classGenericSwitchSelector.html#a44137bb65de2396875934e48a6ee5099">GenericSwitchSelector&lt; SelectorSingleLEDCallback &gt;</a>, and <a class="el" href="../../d9/d73/classMIDI__Interface.html#af422b88b08d79a925ad5edb2a98a7605">MIDI_Interface</a>.</p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d6b/Custom-MIDI-Output-Element-Bankable_8ino-example.html#a5">Custom-MIDI-Output-Element-Bankable.ino</a>, and <a class="el" href="../../d4/d3b/Custom-MIDI-Output-Element_8ino-example.html#a4">Custom-MIDI-Output-Element.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d6b/Custom-MIDI-Output-Element-Bankable_8ino-example.html#a6">Custom-MIDI-Output-Element-Bankable.ino</a>, and <a class="el" href="../../d4/d3b/Custom-MIDI-Output-Element_8ino-example.html#a5">Custom-MIDI-Output-Element.ino</a>.</dd>
 </dl>
 
 </div>
@@ -254,13 +254,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">T</a>  = NormalUpdatable&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T</a>  = NormalUpdatable&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> beginAll </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> beginAll </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -286,13 +286,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">T</a>  = NormalUpdatable&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T</a>  = NormalUpdatable&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> updateAll </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> updateAll </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -318,13 +318,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> enable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> enable </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -349,15 +349,15 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> enable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -380,15 +380,15 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> enable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -411,17 +411,17 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">size_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> enable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> enable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -444,13 +444,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> disable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> disable </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -475,15 +475,15 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> disable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -506,15 +506,15 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> disable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d1a/classAH_1_1UpdatableCRTP.html">UpdatableCRTP</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -537,17 +537,17 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a> , <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">size_t</a> N&gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> N&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">static</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> disable </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> disable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a>(&amp;)</td>          <td class="paramname"><span class="paramname"><em>array</em>[N]</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -570,13 +570,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">bool</a> isEnabled </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">bool</a> isEnabled </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -602,13 +602,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">void</a> moveDown </td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a> moveDown </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -634,13 +634,13 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">class</a> <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; </div>
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> &gt; updatables</td>
+          <td class="memname"><a class="el" href="../../dd/d16/classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> &gt; updatables</td>
         </tr>
       </table>
   </td>
@@ -664,7 +664,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> * next</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> * next</td>
         </tr>
       </table>
   </td>
@@ -688,7 +688,7 @@ template&lt;<a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d6e/classAH_1_1FilteredAnalog.html">Derived</a> * previous</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">Derived</a> * previous</td>
         </tr>
       </table>
   </td>

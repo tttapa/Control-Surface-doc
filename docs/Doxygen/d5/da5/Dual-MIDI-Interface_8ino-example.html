@@ -96,19 +96,19 @@ Dual-MIDI-Interface</h1>
 <p>When you call <code>Control_Surface.begin()</code>, it automatically connects itself to the default MIDI interface (<a class="el" href="../../d9/d73/classMIDI__Interface.html#aea39e2d359376a21ff1a490b2e0b5f22">MIDI_Interface::getDefault()</a>). <br  />
  If you want to route everything manually, you have to connect it before calling <code>Control_Surface.begin()</code>, or you have to disconnect the default pipes before connecting your own, using <a class="el" href="../../dc/d45/classControl__Surface__.html#a1c2b4dbd39e9279eef247ad25f7109dd">Control_Surface_::disconnectMIDI_Interfaces()</a>.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR USB, Nano Every, Due, Teensy 3.x</dd></dl>
-<h2><a class="anchor" id="connections-28"></a>
+<h2><a class="anchor" id="connections-56"></a>
 Connections</h2>
 <ul>
 <li>A0: wiper of a potentiometer</li>
 </ul>
 <p>Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>.</p>
-<h2><a class="anchor" id="behavior-28"></a>
+<h2><a class="anchor" id="behavior-60"></a>
 Behavior</h2>
 <ul>
 <li>When you turn the potentiometer, you should receive MIDI Control Change events on both the Serial MIDI interface and the USB MIDI interface.</li>
 <li>When a MIDI Note event for middle C is received on either MIDI interface, the state of the built-in LED will change accordingly.</li>
 </ul>
-<h2><a class="anchor" id="mapping-22"></a>
+<h2><a class="anchor" id="mapping-34"></a>
 Mapping</h2>
 <ul>
 <li>None</li>

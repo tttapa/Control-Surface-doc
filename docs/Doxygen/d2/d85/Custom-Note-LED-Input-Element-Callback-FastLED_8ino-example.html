@@ -92,15 +92,15 @@ $(function() {
 Custom-Note-LED-Input-Element-Callback-FastLED</h1>
 <p>This example demonstrates how to attach custom callbacks to Note or Control Change MIDI Input Elements.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="connections-54"></a>
+<h2><a class="anchor" id="connections-63"></a>
 Connections</h2>
 <ul>
 <li>Pin 2: The data pin of a Neopixel LED strip with (at least) 8 LEDs</li>
 </ul>
-<h2><a class="anchor" id="behavior-56"></a>
+<h2><a class="anchor" id="behavior-67"></a>
 Behavior</h2>
 <p>If a MIDI Note On event for note 0x3C (C4 or middle C) is sent, its velocity value sets the red value of the first LED, note 0x3D controls the green value of the first LED, note 0x3E controls the blue value of the first LED, note 0x3F controls the red value of the second LED, 0x40 controls the green value of the second LED, etc.</p>
-<h2><a class="anchor" id="mapping-30"></a>
+<h2><a class="anchor" id="mapping-40"></a>
 Mapping</h2>
 <p>Route the MIDI output of a MIDI keyboard to the Arduino's MIDI input. Then play some notes in the two octaves above middle C. <br  />
  Alternatively, map it in you DAW, for example, in VirtualDJ: <br  />

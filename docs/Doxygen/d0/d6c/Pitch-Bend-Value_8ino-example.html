@@ -92,13 +92,13 @@ $(function() {
 Pitch-Bend-Value</h1>
 <p>This example demonstrates how to listen for incoming MIDI Pitch Bend events.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
-<h2><a class="anchor" id="connections-69"></a>
+<h2><a class="anchor" id="connections-22"></a>
 Connections</h2>
 <p>None.</p>
-<h2><a class="anchor" id="behavior-73"></a>
+<h2><a class="anchor" id="behavior-24"></a>
 Behavior</h2>
 <p>If a MIDI Pitch Bend message on channel 1 is received, its value is printed to the serial port.</p>
-<h2><a class="anchor" id="mapping-46"></a>
+<h2><a class="anchor" id="mapping-4"></a>
 Mapping</h2>
 <p>Route the MIDI output of a program or device that sends MIDI Pitch Bend messages to the Arduino's MIDI input.</p>
 <p>Written by PieterP, 2020-09-08 <br  />
@@ -113,11 +113,11 @@ Mapping</h2>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
 <div class="line">  <a id="a3" name="a3"></a><a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a4" name="a4"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#ab0bdf5cca484fb2ba637c39384b27fb2">begin</a>();</div>
-<div class="line">  Serial.begin(115200);</div>
+<div class="line">  Serial.<a id="a5" name="a5"></a><a class="code hl_function" href="../../d0/d32/structAH_1_1Array.html#a90a285d3deb303b8ce684a1e4fdfe032">begin</a>(115200);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> loop() {</div>
-<div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a5" name="a5"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
+<div class="line">  <a class="code hl_variable" href="../../d9/d38/Control__Surface__Class_8cpp.html#af7a5d250297d82b2b29605dd7ac250df">Control_Surface</a>.<a id="a6" name="a6"></a><a class="code hl_function" href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">loop</a>();</div>
 <div class="line">  <span class="comment">// If the Pitch Bend value changed</span></div>
 <div class="line">  <span class="keywordflow">if</span> (pb.getDirty()) {</div>
 <div class="line">    <span class="comment">// Print it</span></div>
@@ -133,6 +133,7 @@ Mapping</h2>
 <div class="ttc" id="aclassControl__Surface___html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="../../dc/d45/classControl__Surface__.html#afe461d27b9c48d5921c00d521181f12f">Control_Surface_::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">Update all MIDI elements, send MIDI events and read MIDI input.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d38/Control__Surface__Class_8cpp_source.html#l00071">Control_Surface_Class.cpp:71</a></div></div>
 <div class="ttc" id="aclassPBValue_html"><div class="ttname"><a href="../../d2/d47/classPBValue.html">PBValue</a></div><div class="ttdoc">Class that listens for MIDI Pitch Bend events on a single address and saves their value.</div><div class="ttdef"><b>Definition</b> <a href="../../db/d4b/PBValue_8hpp_source.html#l00013">PBValue.hpp:15</a></div></div>
 <div class="ttc" id="aclassUSBMIDI__Interface_html"><div class="ttname"><a href="../../de/d05/classUSBMIDI__Interface.html">USBMIDI_Interface</a></div><div class="ttdoc">A class for MIDI interfaces sending MIDI messages over a USB MIDI connection.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d64/USBMIDI__Interface_8hpp_source.html#l00158">USBMIDI_Interface.hpp:159</a></div></div>
+<div class="ttc" id="astructAH_1_1Array_html_a90a285d3deb303b8ce684a1e4fdfe032"><div class="ttname"><a href="../../d0/d32/structAH_1_1Array.html#a90a285d3deb303b8ce684a1e4fdfe032">AH::Array::begin</a></div><div class="ttdeci">T * begin()</div><div class="ttdoc">Get a pointer to the first element.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d76/Array_8hpp_source.html#l00074">Array.hpp:74</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
