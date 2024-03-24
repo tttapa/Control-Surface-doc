@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d16582db32cad30a40e638556c096a92bec45fca - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
+  <title>LCOV - 3a807a259ebe0769dd942f7f612dca5273937539 - src/MIDI_Interfaces/MIDI_Pipes.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d16582db32cad30a40e638556c096a92bec45fca</td>
+            <td class="headerValue">3a807a259ebe0769dd942f7f612dca5273937539</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">96</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-03-10 14:18:44</td>
+            <td class="headerValue">2024-03-24 17:16:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">57</td>
@@ -145,7 +145,7 @@
 <a name="75"><span class="lineNum">      75 </span>            : class MIDI_Sink {</a>
 <a name="76"><span class="lineNum">      76 </span>            :   public:</a>
 <a name="77"><span class="lineNum">      77 </span>            :     /// Default constructor.</a>
-<a name="78"><span class="lineNum">      78 </span><span class="lineCov">       2018 :     MIDI_Sink() = default;</span></a>
+<a name="78"><span class="lineNum">      78 </span><span class="lineCov">       2021 :     MIDI_Sink() = default;</span></a>
 <a name="79"><span class="lineNum">      79 </span>            : </a>
 <a name="80"><span class="lineNum">      80 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="81"><span class="lineNum">      81 </span>            :     MIDI_Sink(const MIDI_Sink &amp;) = delete;</a>
@@ -230,7 +230,7 @@
 <a name="160"><span class="lineNum">     160 </span>            : class MIDI_Source {</a>
 <a name="161"><span class="lineNum">     161 </span>            :   public:</a>
 <a name="162"><span class="lineNum">     162 </span>            :     /// Default constructor.</a>
-<a name="163"><span class="lineNum">     163 </span><span class="lineCov">       1927 :     MIDI_Source() = default;</span></a>
+<a name="163"><span class="lineNum">     163 </span><span class="lineCov">       1930 :     MIDI_Source() = default;</span></a>
 <a name="164"><span class="lineNum">     164 </span>            : </a>
 <a name="165"><span class="lineNum">     165 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="166"><span class="lineNum">     166 </span>            :     MIDI_Source(const MIDI_Source &amp;) = delete;</a>
@@ -405,7 +405,7 @@
 <a name="335"><span class="lineNum">     335 </span>            : class MIDI_Pipe : private MIDI_Sink, private MIDI_Source {</a>
 <a name="336"><span class="lineNum">     336 </span>            :   public:</a>
 <a name="337"><span class="lineNum">     337 </span>            :     /// Default constructor</a>
-<a name="338"><span class="lineNum">     338 </span><span class="lineCov">       1192 :     MIDI_Pipe() = default;</span></a>
+<a name="338"><span class="lineNum">     338 </span><span class="lineCov">       1194 :     MIDI_Pipe() = default;</span></a>
 <a name="339"><span class="lineNum">     339 </span>            : </a>
 <a name="340"><span class="lineNum">     340 </span>            :     /// Copy constructor (copying not allowed).</a>
 <a name="341"><span class="lineNum">     341 </span>            :     MIDI_Pipe(const MIDI_Pipe &amp;) = delete;</a>
@@ -493,15 +493,15 @@
 <a name="423"><span class="lineNum">     423 </span>            :     /// @{</a>
 <a name="424"><span class="lineNum">     424 </span>            : </a>
 <a name="425"><span class="lineNum">     425 </span>            :     /// Check if this pipe is connected to a sink.</a>
-<a name="426"><span class="lineNum">     426 </span><span class="lineCov">       3764 :     bool hasSink() const { return sink != nullptr; }</span></a>
+<a name="426"><span class="lineNum">     426 </span><span class="lineCov">       3768 :     bool hasSink() const { return sink != nullptr; }</span></a>
 <a name="427"><span class="lineNum">     427 </span>            :     /// Check if this pipe is connected to a source.</a>
-<a name="428"><span class="lineNum">     428 </span><span class="lineCov">       3625 :     bool hasSource() const { return source != nullptr; }</span></a>
+<a name="428"><span class="lineNum">     428 </span><span class="lineCov">       3629 :     bool hasSource() const { return source != nullptr; }</span></a>
 <a name="429"><span class="lineNum">     429 </span>            :     /// Check if this pipe has a “through” output that sends all incoming</a>
 <a name="430"><span class="lineNum">     430 </span>            :     /// messages from the input (source) to another pipe.</a>
-<a name="431"><span class="lineNum">     431 </span><span class="lineCov">       2282 :     bool hasThroughOut() const { return getThroughOut() != nullptr; }</span></a>
+<a name="431"><span class="lineNum">     431 </span><span class="lineCov">       2284 :     bool hasThroughOut() const { return getThroughOut() != nullptr; }</span></a>
 <a name="432"><span class="lineNum">     432 </span>            :     /// Check if this pipe has a “through” input that merges all messages from</a>
 <a name="433"><span class="lineNum">     433 </span>            :     /// another pipe into the output (sink).</a>
-<a name="434"><span class="lineNum">     434 </span><span class="lineCov">       2124 :     bool hasThroughIn() const { return getThroughIn() != nullptr; }</span></a>
+<a name="434"><span class="lineNum">     434 </span><span class="lineCov">       2126 :     bool hasThroughIn() const { return getThroughIn() != nullptr; }</span></a>
 <a name="435"><span class="lineNum">     435 </span>            : </a>
 <a name="436"><span class="lineNum">     436 </span>            :     /// @}</a>
 <a name="437"><span class="lineNum">     437 </span>            : </a>
@@ -548,9 +548,9 @@
 <a name="478"><span class="lineNum">     478 </span>            :     /// Get the immediate sink of this pipe.</a>
 <a name="479"><span class="lineNum">     479 </span><span class="lineCov">          4 :     MIDI_Sink *getSink() const { return sink; }</span></a>
 <a name="480"><span class="lineNum">     480 </span>            :     /// Get the pipe connected to the “through” output of this pipe.</a>
-<a name="481"><span class="lineNum">     481 </span><span class="lineCov">       2323 :     MIDI_Pipe *getThroughOut() const { return MIDI_Source::sinkPipe; }</span></a>
+<a name="481"><span class="lineNum">     481 </span><span class="lineCov">       2325 :     MIDI_Pipe *getThroughOut() const { return MIDI_Source::sinkPipe; }</span></a>
 <a name="482"><span class="lineNum">     482 </span>            :     /// Get the pipe connected to the “through” input of this pipe.</a>
-<a name="483"><span class="lineNum">     483 </span><span class="lineCov">       2246 :     MIDI_Pipe *getThroughIn() const { return MIDI_Sink::sourcePipe; }</span></a>
+<a name="483"><span class="lineNum">     483 </span><span class="lineCov">       2248 :     MIDI_Pipe *getThroughIn() const { return MIDI_Sink::sourcePipe; }</span></a>
 <a name="484"><span class="lineNum">     484 </span>            : </a>
 <a name="485"><span class="lineNum">     485 </span>            :     /// Get the sink this pipe eventually sinks to, following the chain</a>
 <a name="486"><span class="lineNum">     486 </span>            :     /// recursively.</a>

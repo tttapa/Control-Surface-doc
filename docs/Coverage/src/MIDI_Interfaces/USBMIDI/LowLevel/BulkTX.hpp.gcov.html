@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - d16582db32cad30a40e638556c096a92bec45fca - src/MIDI_Interfaces/USBMIDI/LowLevel/BulkTX.hpp</title>
+  <title>LCOV - 3a807a259ebe0769dd942f7f612dca5273937539 - src/MIDI_Interfaces/USBMIDI/LowLevel/BulkTX.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">d16582db32cad30a40e638556c096a92bec45fca</td>
+            <td class="headerValue">3a807a259ebe0769dd942f7f612dca5273937539</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">3</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-03-10 14:18:44</td>
+            <td class="headerValue">2024-03-24 17:16:54</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">2</td>
@@ -163,9 +163,9 @@
 <a name="93"><span class="lineNum">      93 </span>            :     } writing;</a>
 <a name="94"><span class="lineNum">      94 </span>            :     using wbuffer_t = typename Writing::Buffer;</a>
 <a name="95"><span class="lineNum">      95 </span>            : </a>
-<a name="96"><span class="lineNum">      96 </span><span class="lineCov">      94938 :     uint32_t index_of(wbuffer_t *p) const { return p - writing.buffers; }</span></a>
-<a name="97"><span class="lineNum">      97 </span><span class="lineCov">      94938 :     wbuffer_t *other_buf(wbuffer_t *p) {</span></a>
-<a name="98"><span class="lineNum">      98 </span><span class="lineCov">      94938 :         return &amp;writing.buffers[!index_of(p)];</span></a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">      94937 :     uint32_t index_of(wbuffer_t *p) const { return p - writing.buffers; }</span></a>
+<a name="97"><span class="lineNum">      97 </span><span class="lineCov">      94937 :     wbuffer_t *other_buf(wbuffer_t *p) {</span></a>
+<a name="98"><span class="lineNum">      98 </span><span class="lineCov">      94937 :         return &amp;writing.buffers[!index_of(p)];</span></a>
 <a name="99"><span class="lineNum">      99 </span>            :     }</a>
 <a name="100"><span class="lineNum">     100 </span>            :     uint32_t write_impl(const MessageType *msgs, uint32_t num_msgs);</a>
 <a name="101"><span class="lineNum">     101 </span>            : </a>

@@ -96,7 +96,7 @@ MCP23017-RotaryEncoder-Interrupts</h1>
  I've tested it using a Teensy 3.2 and a Teensy 4.0.</p>
 <p>AVR boards (Arduino Uno, Mega, etc.) don't support I²C inside of interrupt service routines, so there's no way to read the state of the MCP23017 inside of an ISR. <br  />
  The same goes for ESP32 and ESP8266, although there may be ways around this by using alternative I²C drivers or by using FreeRTOS features.</p>
-<h2><a class="anchor" id="connections-42"></a>
+<h2><a class="anchor" id="connections-62"></a>
 Connections</h2>
 <ul>
 <li>SDA: MCP23017 SDA</li>
@@ -108,10 +108,10 @@ Connections</h2>
  The built-in pull-up resistors of the MCP23017 will be enabled.</p>
 <p>Make sure that the reset and address pins are all configured correctly (reset to Vcc; A0, A1 and A2 to ground).</p>
 <p>If you need more than one MCP23017 with encoders, you can connect their interrupt pins together. This does result in higher latency, because on average, half of the total number of MCP23017s have to be polled, which is relatively slow, and might lead to missed pulses when using a large number of encoders.</p>
-<h2><a class="anchor" id="behavior-46"></a>
+<h2><a class="anchor" id="behavior-66"></a>
 Behavior</h2>
 <p>When the position of one of the encoders changes, a relative Control Change message is sent.</p>
-<h2><a class="anchor" id="mapping-23"></a>
+<h2><a class="anchor" id="mapping-39"></a>
 Mapping</h2>
 <p>Map the Arduino as a Mackie Control Universal in your DAW. The encoders will control the pan (just like the V-Pots on an <a class="el" href="../../d7/dc7/namespaceMCU.html">MCU</a>).</p>
 <p>The interrupt pin of the MCP23017 triggers a hardware interrupt on the Arduino. This means that you don't have to manually poll the encoders all the time.</p>

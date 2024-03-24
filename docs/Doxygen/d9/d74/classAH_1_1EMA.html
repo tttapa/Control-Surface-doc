@@ -133,9 +133,9 @@ class AH::EMA&lt; K, input_t, state_t &gt;</div><p>Exponential moving average fi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a95bb4eddb2663733be16924e9b0da123" id="r_a95bb4eddb2663733be16924e9b0da123"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95bb4eddb2663733be16924e9b0da123">EMA</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a> initial=<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>(0))</td></tr>
-<tr class="memdesc:a95bb4eddb2663733be16924e9b0da123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: initialize filter to zero or optional given value.  <br /></td></tr>
-<tr class="separator:a95bb4eddb2663733be16924e9b0da123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c933ee89ab958a085ce46546f46057" id="r_a98c933ee89ab958a085ce46546f46057"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98c933ee89ab958a085ce46546f46057">EMA</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a> initial=<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>{0})</td></tr>
+<tr class="memdesc:a98c933ee89ab958a085ce46546f46057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: initialize filter to zero or optional given value.  <br /></td></tr>
+<tr class="separator:a98c933ee89ab958a085ce46546f46057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34796a605d1a5cad431efa015727ba2c" id="r_a34796a605d1a5cad431efa015727ba2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34796a605d1a5cad431efa015727ba2c">reset</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a> value=<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>(0))</td></tr>
 <tr class="memdesc:a34796a605d1a5cad431efa015727ba2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the filter to the given value.  <br /></td></tr>
 <tr class="separator:a34796a605d1a5cad431efa015727ba2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,9 +159,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:aa427889e1c516e677c1be39359fe4d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb507f386326b6ae02d07c3e9358f9e" id="r_adcb507f386326b6ae02d07c3e9358f9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcb507f386326b6ae02d07c3e9358f9e">half_state</a> = <a class="el" href="#aa427889e1c516e677c1be39359fe4d28">max_state</a> / 2 + 1</td></tr>
 <tr class="separator:adcb507f386326b6ae02d07c3e9358f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf4e77a1448975361fa952a604fb4bf" id="r_aeaf4e77a1448975361fa952a604fb4bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaf4e77a1448975361fa952a604fb4bf">zero</a> = std::is_unsigned&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>&gt;::value ? <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>(0) : <a class="el" href="#adcb507f386326b6ae02d07c3e9358f9e">half_state</a></td></tr>
+<tr class="memitem:aeaf4e77a1448975361fa952a604fb4bf" id="r_aeaf4e77a1448975361fa952a604fb4bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaf4e77a1448975361fa952a604fb4bf">zero</a> = std::is_unsigned&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>&gt;::value ? <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>{0} : <a class="el" href="#adcb507f386326b6ae02d07c3e9358f9e">half_state</a></td></tr>
 <tr class="separator:aeaf4e77a1448975361fa952a604fb4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ac0d30afd365cf3e72cdd9d750e0b34" id="r_a1ac0d30afd365cf3e72cdd9d750e0b34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ac0d30afd365cf3e72cdd9d750e0b34">half</a> = <a class="el" href="../../d0/d32/structAH_1_1Array.html">K</a> &gt; 0 ? <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>(1) &lt;&lt; (<a class="el" href="../../d0/d32/structAH_1_1Array.html">K</a> - 1) : <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>(0)</td></tr>
+<tr class="memitem:a1ac0d30afd365cf3e72cdd9d750e0b34" id="r_a1ac0d30afd365cf3e72cdd9d750e0b34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">static</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ac0d30afd365cf3e72cdd9d750e0b34">half</a> = <a class="el" href="../../d0/d32/structAH_1_1Array.html">K</a> &gt; 0 ? <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>{1} &lt;&lt; (<a class="el" href="../../d0/d32/structAH_1_1Array.html">K</a> - 1) : <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>{0}</td></tr>
 <tr class="separator:a1ac0d30afd365cf3e72cdd9d750e0b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -170,8 +170,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a499e7824037af983d0524a98081e7f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a95bb4eddb2663733be16924e9b0da123" name="a95bb4eddb2663733be16924e9b0da123"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95bb4eddb2663733be16924e9b0da123">&#9670;&#160;</a></span>EMA()</h2>
+<a id="a98c933ee89ab958a085ce46546f46057" name="a98c933ee89ab958a085ce46546f46057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c933ee89ab958a085ce46546f46057">&#9670;&#160;</a></span>EMA()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +184,7 @@ template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>
         <tr>
           <td class="memname"><a class="el" href="../../d9/d74/classAH_1_1EMA.html">EMA</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a></td>          <td class="paramname"><span class="paramname"><em>initial</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>(0)</span></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a></td>          <td class="paramname"><span class="paramname"><em>initial</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>{0}</span></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -235,7 +235,7 @@ template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/df0/EMA_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../d3/df0/EMA_8hpp_source.html">EMA.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/df0/EMA_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../d3/df0/EMA_8hpp_source.html">EMA.hpp</a>.</p>
 
 </div>
 </div>
@@ -425,7 +425,7 @@ template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a> zero = std::is_unsigned&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>&gt;::value ? <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>(0) : <a class="el" href="#adcb507f386326b6ae02d07c3e9358f9e">half_state</a></td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a> zero = std::is_unsigned&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">input_t</a>&gt;::value ? <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>{0} : <a class="el" href="#adcb507f386326b6ae02d07c3e9358f9e">half_state</a></td>
         </tr>
       </table>
   </td>
@@ -451,7 +451,7 @@ template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">uint8_t</a>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a> half = <a class="el" href="../../d0/d32/structAH_1_1Array.html">K</a> &gt; 0 ? <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>(1) &lt;&lt; (<a class="el" href="../../d0/d32/structAH_1_1Array.html">K</a> - 1) : <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>(0)</td>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a> half = <a class="el" href="../../d0/d32/structAH_1_1Array.html">K</a> &gt; 0 ? <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>{1} &lt;&lt; (<a class="el" href="../../d0/d32/structAH_1_1Array.html">K</a> - 1) : <a class="el" href="../../d0/d32/structAH_1_1Array.html">state_t</a>{0}</td>
         </tr>
       </table>
   </td>

@@ -8,7 +8,7 @@ var searchData=
   ['in_5fplace_5ftype_5',['in_place_type',['../d2/d16/namespacecompat.html#adfb5739b16e259814a681536e54be9a9',1,'compat']]],
   ['in_5freg_6',['in_reg',['../d2/d63/structDirectPinReadReg.html#ae8694b59909bfffa1c119cc626f6a15d',1,'DirectPinReadReg']]],
   ['incomingmessage_7',['incomingMessage',['../d0/dea/classGenericBLEMIDI__Interface.html#a07a973001d721ea25eda9bcc7407940d',1,'GenericBLEMIDI_Interface']]],
-  ['increasebitdepthimpl_8',['increaseBitDepthImpl',['../dc/d69/namespaceAH.html#a5017009c2e494cdf01887077d1c7e472',1,'AH']]],
+  ['increasebitdepthimpl_8',['increaseBitDepthImpl',['../dd/dbc/namespaceAH_1_1detail.html#a5017009c2e494cdf01887077d1c7e472',1,'AH::detail']]],
   ['increment_9',['increment',['../d8/df6/classAH_1_1detail_1_1Incrementor.html#aae161df163b048a3dd86d09214e0c3b9',1,'AH::detail::Incrementor']]],
   ['incrementaddress_10',['incrementAddress',['../d2/d87/classMIDIButtons.html#afd0e987099f15d459b706475d1cd3114',1,'MIDIButtons::incrementAddress'],['../dc/d22/classBankable_1_1MIDIButtons.html#a14d32b824b32507ecd5ebc22eea26fd9',1,'Bankable::MIDIButtons::incrementAddress']]],
   ['incrementbutton_11',['incrementButton',['../df/dc6/classAH_1_1IncrementDecrementButtons.html#a26ff8759725d759a360f4ed6e81d1fe4',1,'AH::IncrementDecrementButtons']]],

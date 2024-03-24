@@ -121,6 +121,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga46fa72568df66520decc1fd69b4d37be"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">T_out</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga46fa72568df66520decc1fd69b4d37be">increaseBitDepth</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">T_in</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">in</a>)</td></tr>
 <tr class="memdesc:ga46fa72568df66520decc1fd69b4d37be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the bit depth of the given value from <code>Bits_in</code> bits wide to <code>Bits_out</code> bits wide, (approximately) evenly distributing the error across the entire range, such that the error for each element is between -1 and +1.  <br /></td></tr>
 <tr class="separator:ga46fa72568df66520decc1fd69b4d37be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga274ecbe8f2a095423f25beef281cb9de" id="r_ga274ecbe8f2a095423f25beef281cb9de"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> Bits_out, <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> Bits_in, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T_out</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T_in</a> &gt; </td></tr>
+<tr class="memitem:ga274ecbe8f2a095423f25beef281cb9de"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">T_out</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga274ecbe8f2a095423f25beef281cb9de">increaseBitDepthMiddle</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">T_in</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">in</a>)</td></tr>
+<tr class="memdesc:ga274ecbe8f2a095423f25beef281cb9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the bit depth of the given value from <code>Bits_in</code> bits wide to <code>Bits_out</code> bits wide, while ensuring that the middle of the input range maps exactly to the middle of the output range, i.e.  <br /></td></tr>
+<tr class="separator:ga274ecbe8f2a095423f25beef281cb9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga14defb38b6c00778e25b94ea91b0b4ac" id="r_ga14defb38b6c00778e25b94ea91b0b4ac"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> &gt; </td></tr>
 <tr class="memitem:ga14defb38b6c00778e25b94ea91b0b4ac"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d0/d32/structAH_1_1Array.html">constexpr</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">auto</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga14defb38b6c00778e25b94ea91b0b4ac">min</a> (<a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T</a> &amp;<a class="el" href="../../d0/d32/structAH_1_1Array.html">a</a>, <a class="el" href="../../d0/d32/structAH_1_1Array.html">const</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">U</a> &amp;b) -&gt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">decltype</a>(b&lt; <a class="el" href="../../d0/d32/structAH_1_1Array.html">a</a> ? b :<a class="el" href="../../d0/d32/structAH_1_1Array.html">a</a>)</td></tr>
 <tr class="memdesc:ga14defb38b6c00778e25b94ea91b0b4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the smaller of two numbers/objects.  <br /></td></tr>
@@ -211,6 +215,7 @@ template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> 
 </div><div class="memdoc">
 
 <p>Increase the bit depth of the given value from <code>Bits_in</code> bits wide to <code>Bits_out</code> bits wide, (approximately) evenly distributing the error across the entire range, such that the error for each element is between -1 and +1. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga274ecbe8f2a095423f25beef281cb9de">increaseBitDepthMiddle</a></dd></dl>
 <p>For example, converting 3-bit numbers to 7-bit numbers would result in the following:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -232,6 +237,10 @@ template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> 
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">7   </td><td class="markdownTableBodyCenter">111   </td><td class="markdownTableBodyCenter">111'1111   </td><td class="markdownTableBodyCenter">127   </td><td class="markdownTableBodyCenter">127.00   </td><td class="markdownTableBodyCenter">+0.00   </td></tr>
 </table>
+<p>The following is a comparison to the <a class="el" href="#ga274ecbe8f2a095423f25beef281cb9de">increaseBitDepthMiddle</a> function.</p>
+<div class="image">
+<object type="image/svg+xml" data="../../increase-bit-depth.svg" style="pointer-events: none;"></object>
+</div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Bits_out</td><td>The number of bits of the output range. </td></tr>
@@ -249,7 +258,73 @@ template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The scaled up value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dee/IncreaseBitDepth_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d5/dee/IncreaseBitDepth_8hpp_source.html">IncreaseBitDepth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dee/IncreaseBitDepth_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d5/dee/IncreaseBitDepth_8hpp_source.html">IncreaseBitDepth.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ga274ecbe8f2a095423f25beef281cb9de" name="ga274ecbe8f2a095423f25beef281cb9de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga274ecbe8f2a095423f25beef281cb9de">&#9670;&#160;</a></span>increaseBitDepthMiddle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> Bits_out, <a class="el" href="../../d0/d32/structAH_1_1Array.html">size_t</a> Bits_in, <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T_out</a> , <a class="el" href="../../d0/d32/structAH_1_1Array.html">class</a> <a class="el" href="../../d0/d32/structAH_1_1Array.html">T_in</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d32/structAH_1_1Array.html">T_out</a> increaseBitDepthMiddle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d32/structAH_1_1Array.html">T_in</a></td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Increase the bit depth of the given value from <code>Bits_in</code> bits wide to <code>Bits_out</code> bits wide, while ensuring that the middle of the input range maps exactly to the middle of the output range, i.e. </p>
+<p>\( 2^{\texttt{Bits\_in} - 1} \) maps to \( 2^{\texttt{Bits\_out} - 1} \).</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga46fa72568df66520decc1fd69b4d37be">increaseBitDepth</a></dd></dl>
+<p>For example, converting 3-bit numbers to 7-bit numbers would result in the following:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">in (dec)   </th><th class="markdownTableHeadCenter">in (bin)   </th><th class="markdownTableHeadCenter">out (bin)   </th><th class="markdownTableHeadCenter">out (dec)   </th><th class="markdownTableHeadCenter">exact   </th><th class="markdownTableHeadCenter">error    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0   </td><td class="markdownTableBodyCenter">000   </td><td class="markdownTableBodyCenter">000'0000   </td><td class="markdownTableBodyCenter">0   </td><td class="markdownTableBodyCenter">0.00   </td><td class="markdownTableBodyCenter">+0.00    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">1   </td><td class="markdownTableBodyCenter">001   </td><td class="markdownTableBodyCenter">001'0000   </td><td class="markdownTableBodyCenter">16   </td><td class="markdownTableBodyCenter">18.14   </td><td class="markdownTableBodyCenter">-2.14    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">2   </td><td class="markdownTableBodyCenter">010   </td><td class="markdownTableBodyCenter">010'0000   </td><td class="markdownTableBodyCenter">32   </td><td class="markdownTableBodyCenter">36.29   </td><td class="markdownTableBodyCenter">-4.29    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">3   </td><td class="markdownTableBodyCenter">011   </td><td class="markdownTableBodyCenter">011'0000   </td><td class="markdownTableBodyCenter">48   </td><td class="markdownTableBodyCenter">54.43   </td><td class="markdownTableBodyCenter">-6.43    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">4   </td><td class="markdownTableBodyCenter">100   </td><td class="markdownTableBodyCenter">100'0000   </td><td class="markdownTableBodyCenter">64   </td><td class="markdownTableBodyCenter">72.57   </td><td class="markdownTableBodyCenter">-8.57    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">5   </td><td class="markdownTableBodyCenter">101   </td><td class="markdownTableBodyCenter">101'0101   </td><td class="markdownTableBodyCenter">85   </td><td class="markdownTableBodyCenter">90.71   </td><td class="markdownTableBodyCenter">-5.71    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">6   </td><td class="markdownTableBodyCenter">110   </td><td class="markdownTableBodyCenter">110'1010   </td><td class="markdownTableBodyCenter">106   </td><td class="markdownTableBodyCenter">108.86   </td><td class="markdownTableBodyCenter">-2.86    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">7   </td><td class="markdownTableBodyCenter">111   </td><td class="markdownTableBodyCenter">111'1111   </td><td class="markdownTableBodyCenter">127   </td><td class="markdownTableBodyCenter">127.00   </td><td class="markdownTableBodyCenter">+0.00   </td></tr>
+</table>
+<p>The following is a comparison to the <a class="el" href="#ga46fa72568df66520decc1fd69b4d37be">increaseBitDepth</a> function.</p>
+<div class="image">
+<object type="image/svg+xml" data="../../increase-bit-depth.svg" style="pointer-events: none;"></object>
+</div>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Bits_out</td><td>The number of bits of the output range. </td></tr>
+    <tr><td class="paramname">Bits_in</td><td>The number of bits of the input range. </td></tr>
+    <tr><td class="paramname">T_out</td><td>The type of the output (return type). </td></tr>
+    <tr><td class="paramname">T_in</td><td>The type of the input. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>The value to scale up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled up value. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dee/IncreaseBitDepth_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d5/dee/IncreaseBitDepth_8hpp_source.html">IncreaseBitDepth.hpp</a>.</p>
 
 </div>
 </div>

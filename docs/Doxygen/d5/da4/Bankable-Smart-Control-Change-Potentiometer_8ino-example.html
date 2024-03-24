@@ -92,7 +92,7 @@ $(function() {
 Bankable-Smart-Control-Change-Potentiometer</h1>
 <p>This example introduces smart bankable potentiometers to prevent values jumping around when changing banks.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Nano Every, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32, ESP8266</dd></dl>
-<h2><a class="anchor" id="connections-47"></a>
+<h2><a class="anchor" id="connections-50"></a>
 Connections</h2>
 <ul>
 <li>A0: wiper of a potentiometer</li>
@@ -101,12 +101,12 @@ Connections</h2>
 </ul>
 <p>Connect the left terminal of the potentiometer to ground, and the right one to V<sub>CC</sub>. <br  />
  The internal pull-up resistors for the push buttons will be enabled.</p>
-<h2><a class="anchor" id="behavior-51"></a>
+<h2><a class="anchor" id="behavior-54"></a>
 Behavior</h2>
 <p>If you move the potentiometer to, say, 60%, then switch to bank #2, move the potentiometer to 20%, and then switch back to bank #1, the potentiometer will be disabled, until you move it up to 60% again.</p>
 <p>This prevents values jumping around in your DAW when cycling through the different banks.</p>
 <p>Changing banks is done using the two push buttons. The push button on pin 2 increments the bank number, the push button on pin 3 decrements the bank number.</p>
-<h2><a class="anchor" id="mapping-27"></a>
+<h2><a class="anchor" id="mapping-31"></a>
 Mapping</h2>
 <p>Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the potentiometer to a function, change the <br  />
  bank using the buttons, and map the potentiometer again. It will send the MIDI Control Change <a class="el" href="../../d2/d48/classChannel.html" title="A type-safe class for MIDI channels.">Channel</a> Volume parameter for channels 1, 2, 3 and 4 (for banks #1, #2, #3 and #4 respectively).</p>

@@ -92,19 +92,19 @@ $(function() {
 Custom-MIDI-Output-Element</h1>
 <p>This is an example that demonstrates how to extend the library using your own MIDI Output Elements. The example declares a MIDI Output Element that sends MIDI Note events when a push button is pressed or released. It's a simplified version of the <a class="el" href="../../d1/d9f/classNoteButton.html">NoteButton</a> class.</p>
 <dl class="section user"><dt>Boards: <b class="boards-info" title="Control Surface&apos;s automated continuous integration workflows regularly verify that this example compiles successfully for the following boards. The list is not exhaustive, and the example will most likely work on other boards as well (perhaps requiring slight modifications).">🛈</b> </dt><dd>AVR, AVR USB, Due, Nano 33 IoT, Nano 33 BLE, UNO R4, Pi Pico, Teensy 3.x, ESP32</dd></dl>
-<h2><a class="anchor" id="connections-65"></a>
+<h2><a class="anchor" id="connections-44"></a>
 Connections</h2>
 <ul>
 <li>5: momentary push button (to ground)</li>
 </ul>
 <p>The internal pull-up resistor for the button will be enabled automatically.</p>
-<h2><a class="anchor" id="behavior-69"></a>
+<h2><a class="anchor" id="behavior-48"></a>
 Behavior</h2>
 <ul>
 <li>When the button on pin 5 is pressed, a MIDI Note On message is sent for note C4.</li>
 <li>When the button on pin 5 is released, a MIDI Note Off message is sent for note C4.</li>
 </ul>
-<h2><a class="anchor" id="mapping-42"></a>
+<h2><a class="anchor" id="mapping-25"></a>
 Mapping</h2>
 <p>Select the Arduino as a custom MIDI controller in your DAW, and use the MIDI learn option to assign the button to a function.</p>
 <p>Written by PieterP, 2020-02-04 <br  />

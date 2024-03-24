@@ -2,7 +2,7 @@ var searchData=
 [
   ['e_0',['E',['../d5/dc2/classMIDI__Notes_1_1Note.html#a59496bde77d9a3856d636f64ef31eef7',1,'MIDI_Notes::Note']]],
   ['eb_1',['Eb',['../d5/dc2/classMIDI__Notes_1_1Note.html#aa4ede5439baa24776c89dcc79926a4f7',1,'MIDI_Notes::Note']]],
-  ['ema_2',['EMA',['../d9/d74/classAH_1_1EMA.html#a95bb4eddb2663733be16924e9b0da123',1,'AH::EMA']]],
+  ['ema_2',['EMA',['../d9/d74/classAH_1_1EMA.html#a98c933ee89ab958a085ce46546f46057',1,'AH::EMA']]],
   ['ema_5ff_3',['EMA_f',['../d7/d89/classAH_1_1EMA__f.html#ad49ecf310d82070c95e8d798cb7e51ad',1,'AH::EMA_f']]],
   ['empty_4',['empty',['../d7/d8e/classBLEMIDIPacketBuilder.html#a644718bb2fb240de962dc3c9a1fdf0dc',1,'BLEMIDIPacketBuilder']]],
   ['enable_5',['enable',['../d8/d1a/classAH_1_1UpdatableCRTP.html#a486f22824bd83c5308a0d70ffac6f758',1,'AH::UpdatableCRTP::enable()'],['../d8/d1a/classAH_1_1UpdatableCRTP.html#ad12acee2ce11483080385d904cee97bd',1,'AH::UpdatableCRTP::enable(UpdatableCRTP *element)'],['../d8/d1a/classAH_1_1UpdatableCRTP.html#a0da0232ed3b2839c53832dde4f72b8dc',1,'AH::UpdatableCRTP::enable(UpdatableCRTP &amp;element)'],['../d8/d1a/classAH_1_1UpdatableCRTP.html#a2f775da7b162931d468d6d6b6950dfcf',1,'AH::UpdatableCRTP::enable(U(&amp;array)[N])'],['../d8/d43/classDisplayElement.html#a486f22824bd83c5308a0d70ffac6f758',1,'DisplayElement::enable()'],['../d8/d43/classDisplayElement.html#a4d7097af0ddb2dd7d63234151f8229e8',1,'DisplayElement::enable(DisplayElement *element)'],['../d8/d43/classDisplayElement.html#a0e59bfd804e0331d86e126b3af410e49',1,'DisplayElement::enable(DisplayElement &amp;element)'],['../d8/d43/classDisplayElement.html#a2f775da7b162931d468d6d6b6950dfcf',1,'DisplayElement::enable(U(&amp;array)[N])']]],
