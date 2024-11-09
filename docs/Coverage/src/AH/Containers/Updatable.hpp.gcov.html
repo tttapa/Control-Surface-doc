@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3a807a259ebe0769dd942f7f612dca5273937539 - src/AH/Containers/Updatable.hpp</title>
+  <title>LCOV - 169c36a3797bc662d84b5726f34a3f37d3c58247 - src/AH/Containers/Updatable.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3a807a259ebe0769dd942f7f612dca5273937539</td>
+            <td class="headerValue">169c36a3797bc662d84b5726f34a3f37d3c58247</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">32</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-03-24 17:16:54</td>
+            <td class="headerValue">2024-11-09 15:32:27</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">31</td>
@@ -117,9 +117,9 @@
 <a name="47"><span class="lineNum">      47 </span>            :   protected:</a>
 <a name="48"><span class="lineNum">      48 </span>            :     /// Constructor: create an Updatable and add it to the linked list of</a>
 <a name="49"><span class="lineNum">      49 </span>            :     /// instances.</a>
-<a name="50"><span class="lineNum">      50 </span><span class="lineCov">        394 :     UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
-<a name="51"><span class="lineNum">      51 </span><span class="lineCov">        394 :         updatables.append(CRTP(Derived));</span></a>
-<a name="52"><span class="lineNum">      52 </span><span class="lineCov">        394 :     }</span></a>
+<a name="50"><span class="lineNum">      50 </span><span class="lineCov">        395 :     UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
+<a name="51"><span class="lineNum">      51 </span><span class="lineCov">        395 :         updatables.append(CRTP(Derived));</span></a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">        395 :     }</span></a>
 <a name="53"><span class="lineNum">      53 </span>            : </a>
 <a name="54"><span class="lineNum">      54 </span>            :     UpdatableCRTP(const UpdatableCRTP &amp;)</a>
 <a name="55"><span class="lineNum">      55 </span>            :         __attribute__((no_sanitize(&quot;undefined&quot;)))</a>
@@ -135,10 +135,10 @@
 <a name="65"><span class="lineNum">      65 </span>            : </a>
 <a name="66"><span class="lineNum">      66 </span>            :   public:</a>
 <a name="67"><span class="lineNum">      67 </span>            :     /// Destructor: remove the updatable from the linked list of instances.</a>
-<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        394 :     virtual ~UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
-<a name="69"><span class="lineNum">      69 </span><span class="lineCov">        394 :         if (updatables.couldContain(CRTP(Derived)))</span></a>
-<a name="70"><span class="lineNum">      70 </span><span class="lineCov">        378 :             updatables.remove(CRTP(Derived));</span></a>
-<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        788 :     }</span></a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">        395 :     virtual ~UpdatableCRTP() __attribute__((no_sanitize(&quot;undefined&quot;))) {</span></a>
+<a name="69"><span class="lineNum">      69 </span><span class="lineCov">        395 :         if (updatables.couldContain(CRTP(Derived)))</span></a>
+<a name="70"><span class="lineNum">      70 </span><span class="lineCov">        379 :             updatables.remove(CRTP(Derived));</span></a>
+<a name="71"><span class="lineNum">      71 </span><span class="lineCov">        790 :     }</span></a>
 <a name="72"><span class="lineNum">      72 </span>            : </a>
 <a name="73"><span class="lineNum">      73 </span>            : #if defined(__GNUC__) &amp;&amp; !defined(__clang__)</a>
 <a name="74"><span class="lineNum">      74 </span>            : #pragma GCC diagnostic pop</a>
@@ -214,7 +214,7 @@
 <a name="144"><span class="lineNum">     144 </span><span class="lineCov">          2 :     }</span></a>
 <a name="145"><span class="lineNum">     145 </span>            : </a>
 <a name="146"><span class="lineNum">     146 </span>            :     /// Move down this element in the list.</a>
-<a name="147"><span class="lineNum">     147 </span><span class="lineCov">         66 :     void moveDown() { updatables.moveDown(CRTP(Derived)); }</span></a>
+<a name="147"><span class="lineNum">     147 </span><span class="lineCov">         67 :     void moveDown() { updatables.moveDown(CRTP(Derived)); }</span></a>
 <a name="148"><span class="lineNum">     148 </span>            : </a>
 <a name="149"><span class="lineNum">     149 </span>            :     /// @}</a>
 <a name="150"><span class="lineNum">     150 </span>            : </a>

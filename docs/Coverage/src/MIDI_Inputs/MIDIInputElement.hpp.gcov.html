@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3a807a259ebe0769dd942f7f612dca5273937539 - src/MIDI_Inputs/MIDIInputElement.hpp</title>
+  <title>LCOV - 169c36a3797bc662d84b5726f34a3f37d3c58247 - src/MIDI_Inputs/MIDIInputElement.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3a807a259ebe0769dd942f7f612dca5273937539</td>
+            <td class="headerValue">169c36a3797bc662d84b5726f34a3f37d3c58247</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">31</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-03-24 17:16:54</td>
+            <td class="headerValue">2024-11-09 15:32:27</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">60</td>
@@ -90,10 +90,10 @@
 <a name="20"><span class="lineNum">      20 </span>            : template &lt;MIDIMessageType Type&gt;</a>
 <a name="21"><span class="lineNum">      21 </span>            : class MIDIInputElement : public AH::UpdatableCRTP&lt;MIDIInputElement&lt;Type&gt;&gt; {</a>
 <a name="22"><span class="lineNum">      22 </span>            :   protected:</a>
-<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         63 :     MIDIInputElement() = default;</span></a>
+<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         64 :     MIDIInputElement() = default;</span></a>
 <a name="24"><span class="lineNum">      24 </span>            : </a>
 <a name="25"><span class="lineNum">      25 </span>            :   public:</a>
-<a name="26"><span class="lineNum">      26 </span><span class="lineCov">         63 :     virtual ~MIDIInputElement() = default;</span></a>
+<a name="26"><span class="lineNum">      26 </span><span class="lineCov">         64 :     virtual ~MIDIInputElement() = default;</span></a>
 <a name="27"><span class="lineNum">      27 </span>            : </a>
 <a name="28"><span class="lineNum">      28 </span>            :   public:</a>
 <a name="29"><span class="lineNum">      29 </span>            :     using MessageType =</a>
@@ -113,11 +113,11 @@
 <a name="43"><span class="lineNum">      43 </span>            :     virtual bool updateWith(MessageType midimsg) = 0;</a>
 <a name="44"><span class="lineNum">      44 </span>            : </a>
 <a name="45"><span class="lineNum">      45 </span>            :     /// Update all</a>
-<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         71 :     static bool updateAllWith(MessageType midimsg) {</span></a>
-<a name="47"><span class="lineNum">      47 </span><span class="lineCov">        150 :         for (auto &amp;el : MIDIInputElement::updatables) {</span></a>
-<a name="48"><span class="lineNum">      48 </span><span class="lineCov">         74 :             if (el.updateWith(midimsg)) {</span></a>
-<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         66 :                 el.moveDown();</span></a>
-<a name="50"><span class="lineNum">      50 </span><span class="lineCov">         66 :                 return true;</span></a>
+<a name="46"><span class="lineNum">      46 </span><span class="lineCov">         72 :     static bool updateAllWith(MessageType midimsg) {</span></a>
+<a name="47"><span class="lineNum">      47 </span><span class="lineCov">        152 :         for (auto &amp;el : MIDIInputElement::updatables) {</span></a>
+<a name="48"><span class="lineNum">      48 </span><span class="lineCov">         75 :             if (el.updateWith(midimsg)) {</span></a>
+<a name="49"><span class="lineNum">      49 </span><span class="lineCov">         67 :                 el.moveDown();</span></a>
+<a name="50"><span class="lineNum">      50 </span><span class="lineCov">         67 :                 return true;</span></a>
 <a name="51"><span class="lineNum">      51 </span>            :             }</a>
 <a name="52"><span class="lineNum">      52 </span>            :         }</a>
 <a name="53"><span class="lineNum">      53 </span><span class="lineCov">          5 :         return false;</span></a>

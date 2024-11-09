@@ -16,10 +16,12 @@ Documentation for [**tttapa/Control-Surface**](https://github.com/tttapa/Control
 
 ### Other Branches
 
-- **disable-pipes**  
-  [Doxygen](disable-pipes/Doxygen/index.html) ─ [Coverage](disable-pipes/Coverage/index.html)
 - **pin-t-adl**  
   [Doxygen](pin-t-adl/Doxygen/index.html) ─ [Coverage](pin-t-adl/Coverage/index.html)
+- **usb-midi-backend-check-connection**  
+  [Doxygen](usb-midi-backend-check-connection/Doxygen/index.html) ─ [Coverage](usb-midi-backend-check-connection/Coverage/index.html)
+- **disable-pipes**  
+  [Doxygen](disable-pipes/Doxygen/index.html) ─ [Coverage](disable-pipes/Coverage/index.html)
 - **stm32**  
   [Doxygen](stm32/Doxygen/index.html) ─ [Coverage](stm32/Coverage/index.html)
 

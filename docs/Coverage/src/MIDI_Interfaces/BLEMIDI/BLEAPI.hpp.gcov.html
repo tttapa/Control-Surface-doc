@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>LCOV - 3a807a259ebe0769dd942f7f612dca5273937539 - src/MIDI_Interfaces/BLEMIDI/BLEAPI.hpp</title>
+  <title>LCOV - 169c36a3797bc662d84b5726f34a3f37d3c58247 - src/MIDI_Interfaces/BLEMIDI/BLEAPI.hpp</title>
   <link rel="stylesheet" type="text/css" href="../../../gcov.css">
 </head>
 
@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test:</td>
-            <td class="headerValue">3a807a259ebe0769dd942f7f612dca5273937539</td>
+            <td class="headerValue">169c36a3797bc662d84b5726f34a3f37d3c58247</td>
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">3</td>
@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2024-03-24 17:16:54</td>
+            <td class="headerValue">2024-11-09 15:32:27</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">3</td>
@@ -226,11 +226,16 @@
 <a name="156"><span class="lineNum">     156 </span>            :         uint16_t minimum = 0x000C;</a>
 <a name="157"><span class="lineNum">     157 </span>            :         uint16_t maximum = 0x000C;</a>
 <a name="158"><span class="lineNum">     158 </span>            :     } connection_interval {};</a>
-<a name="159"><span class="lineNum">     159 </span>            : };</a>
-<a name="160"><span class="lineNum">     160 </span>            : </a>
-<a name="161"><span class="lineNum">     161 </span>            : END_CS_NAMESPACE</a>
-<a name="162"><span class="lineNum">     162 </span>            : </a>
-<a name="163"><span class="lineNum">     163 </span>            : #include &quot;BLEAPI.ipp&quot;</a>
+<a name="159"><span class="lineNum">     159 </span>            :     /// Set to true if you want the Arduino to always initiate the Bluetooth</a>
+<a name="160"><span class="lineNum">     160 </span>            :     /// bonding or secure connection. As a result, it will show up as a &quot;paired&quot;</a>
+<a name="161"><span class="lineNum">     161 </span>            :     /// device on your computer/phone/tablet. If set to false, security is still</a>
+<a name="162"><span class="lineNum">     162 </span>            :     /// supported, but the central device should take the initiative.</a>
+<a name="163"><span class="lineNum">     163 </span>            :     bool initiate_security = false;</a>
+<a name="164"><span class="lineNum">     164 </span>            : };</a>
+<a name="165"><span class="lineNum">     165 </span>            : </a>
+<a name="166"><span class="lineNum">     166 </span>            : END_CS_NAMESPACE</a>
+<a name="167"><span class="lineNum">     167 </span>            : </a>
+<a name="168"><span class="lineNum">     168 </span>            : #include &quot;BLEAPI.ipp&quot;</a>
 </pre>
       </td>
     </tr>
